@@ -1,6 +1,13 @@
 {
     "name": "bjhansen/workday-wsdl",
     "description": "Package generated from https://wd5-impl-services1.workday.com/ccx/service/uasys4/Human_Resources/v33.0?wsdl using wsdltophp/packagegenerator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BJ Hansen",
+            "email": "bjhansen@ualr.edu"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",
