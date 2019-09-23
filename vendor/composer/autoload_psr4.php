@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'WsdlToPhp\\PackageBase\\' => array($vendorDir . '/wsdltophp/packagebase/src'),
-    'WorkdayWsdl\\' => array($baseDir . '/src'),
+    '' => array($baseDir . '/src'),
 );

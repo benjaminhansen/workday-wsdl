@@ -10,7 +10,6 @@ class ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11
         'W' => 
         array (
             'WsdlToPhp\\PackageBase\\' => 22,
-            'WorkdayWsdl\\' => 12,
         ),
     );
 
@@ -19,10 +18,10 @@ class ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-        'WorkdayWsdl\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -30,6 +29,7 @@ class ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInite229c3e8abbf7977b2b80d0f91c3cc11::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }
