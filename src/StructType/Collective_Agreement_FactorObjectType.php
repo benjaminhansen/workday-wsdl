@@ -1,0 +1,143 @@
+<?php
+
+namespace StructType;
+
+use \WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for Collective_Agreement_FactorObjectType StructType
+ * @subpackage Structs
+ */
+class Collective_Agreement_FactorObjectType extends AbstractStructBase
+{
+    /**
+     * The ID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var \StructType\Collective_Agreement_FactorObjectIDType[]
+     */
+    public $ID;
+    /**
+     * The Descriptor
+     * Meta information extracted from the WSDL
+     * - documentation: Display information used to describe an instance of an object. This 'optional' information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.
+     * @var string
+     */
+    public $Descriptor;
+    /**
+     * Constructor method for Collective_Agreement_FactorObjectType
+     * @uses Collective_Agreement_FactorObjectType::setID()
+     * @uses Collective_Agreement_FactorObjectType::setDescriptor()
+     * @param \StructType\Collective_Agreement_FactorObjectIDType[] $iD
+     * @param string $descriptor
+     */
+    public function __construct(array $iD = array(), $descriptor = null)
+    {
+        $this
+            ->setID($iD)
+            ->setDescriptor($descriptor);
+    }
+    /**
+     * Get ID value
+     * @return \StructType\Collective_Agreement_FactorObjectIDType[]|null
+     */
+    public function getID()
+    {
+        return $this->ID;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setID method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setID method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateIDForArrayConstraintsFromSetID(array $values = array())
+    {
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $collective_Agreement_FactorObjectTypeIDItem) {
+            // validation for constraint: itemType
+            if (!$collective_Agreement_FactorObjectTypeIDItem instanceof \StructType\Collective_Agreement_FactorObjectIDType) {
+                $invalidValues[] = is_object($collective_Agreement_FactorObjectTypeIDItem) ? get_class($collective_Agreement_FactorObjectTypeIDItem) : sprintf('%s(%s)', gettype($collective_Agreement_FactorObjectTypeIDItem), var_export($collective_Agreement_FactorObjectTypeIDItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The ID property can only contain items of type \StructType\Collective_Agreement_FactorObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        return $message;
+    }
+    /**
+     * Set ID value
+     * @throws \InvalidArgumentException
+     * @param \StructType\Collective_Agreement_FactorObjectIDType[] $iD
+     * @return \StructType\Collective_Agreement_FactorObjectType
+     */
+    public function setID(array $iD = array())
+    {
+        // validation for constraint: array
+        if ('' !== ($iDArrayErrorMessage = self::validateIDForArrayConstraintsFromSetID($iD))) {
+            throw new \InvalidArgumentException($iDArrayErrorMessage, __LINE__);
+        }
+        $this->ID = $iD;
+        return $this;
+    }
+    /**
+     * Add item to ID value
+     * @throws \InvalidArgumentException
+     * @param \StructType\Collective_Agreement_FactorObjectIDType $item
+     * @return \StructType\Collective_Agreement_FactorObjectType
+     */
+    public function addToID(\StructType\Collective_Agreement_FactorObjectIDType $item)
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \StructType\Collective_Agreement_FactorObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Collective_Agreement_FactorObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->ID[] = $item;
+        return $this;
+    }
+    /**
+     * Get Descriptor value
+     * @return string|null
+     */
+    public function getDescriptor()
+    {
+        return $this->Descriptor;
+    }
+    /**
+     * Set Descriptor value
+     * @param string $descriptor
+     * @return \StructType\Collective_Agreement_FactorObjectType
+     */
+    public function setDescriptor($descriptor = null)
+    {
+        // validation for constraint: string
+        if (!is_null($descriptor) && !is_string($descriptor)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($descriptor, true), gettype($descriptor)), __LINE__);
+        }
+        $this->Descriptor = $descriptor;
+        return $this;
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see AbstractStructBase::__set_state()
+     * @uses AbstractStructBase::__set_state()
+     * @param array $array the exported values
+     * @return \StructType\Collective_Agreement_FactorObjectType
+     */
+    public static function __set_state(array $array)
+    {
+        return parent::__set_state($array);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}
