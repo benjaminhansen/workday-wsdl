@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Transaction_LogObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Transaction_LogReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Transaction_LogReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Transaction_LogReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Transaction_LogReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Transaction_LogObjectIDType
+     * @return \WorkdayWsdl\\StructType\Transaction_LogObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Transaction_LogReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Transaction_LogReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Transaction_LogReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Transaction_LogReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Transaction_LogReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Transaction_LogReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Transaction_LogObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Transaction_LogObjectIDType
+     * @return \WorkdayWsdl\\StructType\Transaction_LogObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Transaction_LogObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transaction_LogObjectIDType
+     * @return \WorkdayWsdl\\StructType\Transaction_LogObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -223,7 +223,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -245,7 +245,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Job_Profile_Basic_Data value
      * @param bool $include_Job_Profile_Basic_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Job_Profile_Basic_Data($include_Job_Profile_Basic_Data = null)
     {
@@ -267,7 +267,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Job_Classification_Data value
      * @param bool $include_Job_Classification_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Job_Classification_Data($include_Job_Classification_Data = null)
     {
@@ -289,7 +289,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Job_Profile_Pay_Rate_Data value
      * @param bool $include_Job_Profile_Pay_Rate_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Job_Profile_Pay_Rate_Data($include_Job_Profile_Pay_Rate_Data = null)
     {
@@ -311,7 +311,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Job_Profile_Exempt_Data value
      * @param bool $include_Job_Profile_Exempt_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Job_Profile_Exempt_Data($include_Job_Profile_Exempt_Data = null)
     {
@@ -333,7 +333,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Workers_Compensation_Data value
      * @param bool $include_Workers_Compensation_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Workers_Compensation_Data($include_Workers_Compensation_Data = null)
     {
@@ -355,7 +355,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Responsibility_Qualifications value
      * @param bool $include_Responsibility_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Responsibility_Qualifications($include_Responsibility_Qualifications = null)
     {
@@ -377,7 +377,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Work_Experience_Qualifications value
      * @param bool $include_Work_Experience_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Work_Experience_Qualifications($include_Work_Experience_Qualifications = null)
     {
@@ -399,7 +399,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Education_Qualifications value
      * @param bool $include_Education_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Education_Qualifications($include_Education_Qualifications = null)
     {
@@ -421,7 +421,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Language_Qualifications value
      * @param bool $include_Language_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Language_Qualifications($include_Language_Qualifications = null)
     {
@@ -443,7 +443,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Competency_Qualifications value
      * @param bool $include_Competency_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Competency_Qualifications($include_Competency_Qualifications = null)
     {
@@ -465,7 +465,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Certification_Qualifications value
      * @param bool $include_Certification_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Certification_Qualifications($include_Certification_Qualifications = null)
     {
@@ -487,7 +487,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Certification_Reference_Only value
      * @param bool $include_Certification_Reference_Only
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Certification_Reference_Only($include_Certification_Reference_Only = null)
     {
@@ -509,7 +509,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Training_Qualifications value
      * @param bool $include_Training_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Training_Qualifications($include_Training_Qualifications = null)
     {
@@ -531,7 +531,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Job_Profile_Compensation_Data value
      * @param bool $include_Job_Profile_Compensation_Data
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Job_Profile_Compensation_Data($include_Job_Profile_Compensation_Data = null)
     {
@@ -553,7 +553,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Skill_Qualifications value
      * @param bool $include_Skill_Qualifications
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public function setInclude_Skill_Qualifications($include_Skill_Qualifications = null)
     {
@@ -570,7 +570,7 @@ class Job_Profile_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public static function __set_state(array $array)
     {

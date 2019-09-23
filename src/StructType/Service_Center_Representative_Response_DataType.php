@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
      * - documentation: Element containing Service Center Representative data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeType[]
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeType[]
      */
     public $Service_Center_Representative;
     /**
      * Constructor method for Service_Center_Representative_Response_DataType
      * @uses Service_Center_Representative_Response_DataType::setService_Center_Representative()
-     * @param \StructType\Service_Center_RepresentativeType[] $service_Center_Representative
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeType[] $service_Center_Representative
      */
     public function __construct(array $service_Center_Representative = array())
     {
@@ -33,7 +33,7 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Service_Center_Representative value
-     * @return \StructType\Service_Center_RepresentativeType[]|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeType[]|null
      */
     public function getService_Center_Representative()
     {
@@ -51,12 +51,12 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem) {
             // validation for constraint: itemType
-            if (!$service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem instanceof \StructType\Service_Center_RepresentativeType) {
+            if (!$service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeType) {
                 $invalidValues[] = is_object($service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem) ? get_class($service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem) : sprintf('%s(%s)', gettype($service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem), var_export($service_Center_Representative_Response_DataTypeService_Center_RepresentativeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Service_Center_Representative property can only contain items of type \StructType\Service_Center_RepresentativeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Service_Center_Representative property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
     /**
      * Set Service_Center_Representative value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeType[] $service_Center_Representative
-     * @return \StructType\Service_Center_Representative_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeType[] $service_Center_Representative
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Response_DataType
      */
     public function setService_Center_Representative(array $service_Center_Representative = array())
     {
@@ -79,14 +79,14 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
     /**
      * Add item to Service_Center_Representative value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeType $item
-     * @return \StructType\Service_Center_Representative_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeType $item
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Response_DataType
      */
-    public function addToService_Center_Representative(\StructType\Service_Center_RepresentativeType $item)
+    public function addToService_Center_Representative(\WorkdayWsdl\\StructType\Service_Center_RepresentativeType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service_Center_RepresentativeType) {
-            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative property can only contain items of type \StructType\Service_Center_RepresentativeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeType) {
+            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Service_Center_Representative[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Service_Center_Representative_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Response_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
      * - documentation: Reference element representing a unique instance of LGBT Identification
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LGBT_IdentificationType[]
+     * @var \WorkdayWsdl\\StructType\LGBT_IdentificationType[]
      */
     public $LGBT_Identification;
     /**
      * Constructor method for LGBT_Identification_Response_DataType
      * @uses LGBT_Identification_Response_DataType::setLGBT_Identification()
-     * @param \StructType\LGBT_IdentificationType[] $lGBT_Identification
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationType[] $lGBT_Identification
      */
     public function __construct(array $lGBT_Identification = array())
     {
@@ -33,7 +33,7 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
     }
     /**
      * Get LGBT_Identification value
-     * @return \StructType\LGBT_IdentificationType[]|null
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationType[]|null
      */
     public function getLGBT_Identification()
     {
@@ -51,12 +51,12 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $lGBT_Identification_Response_DataTypeLGBT_IdentificationItem) {
             // validation for constraint: itemType
-            if (!$lGBT_Identification_Response_DataTypeLGBT_IdentificationItem instanceof \StructType\LGBT_IdentificationType) {
+            if (!$lGBT_Identification_Response_DataTypeLGBT_IdentificationItem instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationType) {
                 $invalidValues[] = is_object($lGBT_Identification_Response_DataTypeLGBT_IdentificationItem) ? get_class($lGBT_Identification_Response_DataTypeLGBT_IdentificationItem) : sprintf('%s(%s)', gettype($lGBT_Identification_Response_DataTypeLGBT_IdentificationItem), var_export($lGBT_Identification_Response_DataTypeLGBT_IdentificationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The LGBT_Identification property can only contain items of type \StructType\LGBT_IdentificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The LGBT_Identification property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
     /**
      * Set LGBT_Identification value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationType[] $lGBT_Identification
-     * @return \StructType\LGBT_Identification_Response_DataType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationType[] $lGBT_Identification
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Response_DataType
      */
     public function setLGBT_Identification(array $lGBT_Identification = array())
     {
@@ -79,14 +79,14 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
     /**
      * Add item to LGBT_Identification value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationType $item
-     * @return \StructType\LGBT_Identification_Response_DataType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationType $item
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Response_DataType
      */
-    public function addToLGBT_Identification(\StructType\LGBT_IdentificationType $item)
+    public function addToLGBT_Identification(\WorkdayWsdl\\StructType\LGBT_IdentificationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LGBT_IdentificationType) {
-            throw new \InvalidArgumentException(sprintf('The LGBT_Identification property can only contain items of type \StructType\LGBT_IdentificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationType) {
+            throw new \InvalidArgumentException(sprintf('The LGBT_Identification property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->LGBT_Identification[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class LGBT_Identification_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LGBT_Identification_Response_DataType
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Response_DataType
      */
     public static function __set_state(array $array)
     {

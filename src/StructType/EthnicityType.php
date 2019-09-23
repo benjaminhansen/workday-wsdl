@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class EthnicityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Ethnicity.
      * - minOccurs: 0
-     * @var \StructType\EthnicityObjectType
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectType
      */
     public $Ethnicity_Reference;
     /**
@@ -25,17 +25,17 @@ class EthnicityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the detailed information about an Ethnicity.
      * - minOccurs: 0
-     * @var \StructType\Ethnicity_DataType
+     * @var \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public $Ethnicity_Data;
     /**
      * Constructor method for EthnicityType
      * @uses EthnicityType::setEthnicity_Reference()
      * @uses EthnicityType::setEthnicity_Data()
-     * @param \StructType\EthnicityObjectType $ethnicity_Reference
-     * @param \StructType\Ethnicity_DataType $ethnicity_Data
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference
+     * @param \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data
      */
-    public function __construct(\StructType\EthnicityObjectType $ethnicity_Reference = null, \StructType\Ethnicity_DataType $ethnicity_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference = null, \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data = null)
     {
         $this
             ->setEthnicity_Reference($ethnicity_Reference)
@@ -43,7 +43,7 @@ class EthnicityType extends AbstractStructBase
     }
     /**
      * Get Ethnicity_Reference value
-     * @return \StructType\EthnicityObjectType|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType|null
      */
     public function getEthnicity_Reference()
     {
@@ -51,17 +51,17 @@ class EthnicityType extends AbstractStructBase
     }
     /**
      * Set Ethnicity_Reference value
-     * @param \StructType\EthnicityObjectType $ethnicity_Reference
-     * @return \StructType\EthnicityType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference
+     * @return \WorkdayWsdl\\StructType\EthnicityType
      */
-    public function setEthnicity_Reference(\StructType\EthnicityObjectType $ethnicity_Reference = null)
+    public function setEthnicity_Reference(\WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference = null)
     {
         $this->Ethnicity_Reference = $ethnicity_Reference;
         return $this;
     }
     /**
      * Get Ethnicity_Data value
-     * @return \StructType\Ethnicity_DataType|null
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType|null
      */
     public function getEthnicity_Data()
     {
@@ -69,10 +69,10 @@ class EthnicityType extends AbstractStructBase
     }
     /**
      * Set Ethnicity_Data value
-     * @param \StructType\Ethnicity_DataType $ethnicity_Data
-     * @return \StructType\EthnicityType
+     * @param \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data
+     * @return \WorkdayWsdl\\StructType\EthnicityType
      */
-    public function setEthnicity_Data(\StructType\Ethnicity_DataType $ethnicity_Data = null)
+    public function setEthnicity_Data(\WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data = null)
     {
         $this->Ethnicity_Data = $ethnicity_Data;
         return $this;
@@ -83,7 +83,7 @@ class EthnicityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EthnicityType
+     * @return \WorkdayWsdl\\StructType\EthnicityType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Course_SubjectObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Course_SubjectReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Course_SubjectReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Course_SubjectReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Course_SubjectReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Course_SubjectObjectIDType
+     * @return \WorkdayWsdl\\StructType\Course_SubjectObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Course_SubjectReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Course_SubjectReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Course_SubjectReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Course_SubjectReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Course_SubjectReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Course_SubjectReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Course_SubjectObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Course_SubjectObjectIDType
+     * @return \WorkdayWsdl\\StructType\Course_SubjectObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Course_SubjectObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Course_SubjectObjectIDType
+     * @return \WorkdayWsdl\\StructType\Course_SubjectObjectIDType
      */
     public static function __set_state(array $array)
     {

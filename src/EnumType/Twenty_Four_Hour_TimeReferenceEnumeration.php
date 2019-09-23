@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace WorkdayWsdl\\EnumType;
 
 /**
  * This class stands for Twenty_Four_Hour_TimeReferenceEnumeration EnumType

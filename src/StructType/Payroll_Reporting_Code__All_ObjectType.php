@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Payroll_Reporting_Code__All_ObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
      * Constructor method for Payroll_Reporting_Code__All_ObjectType
      * @uses Payroll_Reporting_Code__All_ObjectType::setID()
      * @uses Payroll_Reporting_Code__All_ObjectType::setDescriptor()
-     * @param \StructType\Payroll_Reporting_Code__All_ObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $payroll_Reporting_Code_All_ObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$payroll_Reporting_Code_All_ObjectTypeIDItem instanceof \StructType\Payroll_Reporting_Code__All_ObjectIDType) {
+            if (!$payroll_Reporting_Code_All_ObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType) {
                 $invalidValues[] = is_object($payroll_Reporting_Code_All_ObjectTypeIDItem) ? get_class($payroll_Reporting_Code_All_ObjectTypeIDItem) : sprintf('%s(%s)', gettype($payroll_Reporting_Code_All_ObjectTypeIDItem), var_export($payroll_Reporting_Code_All_ObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Payroll_Reporting_Code__All_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Payroll_Reporting_Code__All_ObjectIDType[] $iD
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectType
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Payroll_Reporting_Code__All_ObjectIDType $item
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectType
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType
      */
-    public function addToID(\StructType\Payroll_Reporting_Code__All_ObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Payroll_Reporting_Code__All_ObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Payroll_Reporting_Code__All_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Payroll_Reporting_Code__All_ObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Self_Identification_of_Disability_StatusObjectIDType extends AbstractStruc
     }
     /**
      * Set type value
-     * @uses \EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Self_Identification_of_Disability_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Self_Identification_of_Disability_StatusReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Self_Identification_of_Disability_StatusObjectIDType extends AbstractStruc
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Self_Identification_of_Disability_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectIDType
      */
     public function set_($_ = null)
     {
@@ -92,7 +92,7 @@ class Self_Identification_of_Disability_StatusObjectIDType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Self_Identification_of_Disability_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectIDType
      */
     public static function __set_state(array $array)
     {

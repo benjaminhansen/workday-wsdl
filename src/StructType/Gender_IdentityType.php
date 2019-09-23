@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Gender_IdentityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the gender identity of the person.
      * - minOccurs: 0
-     * @var \StructType\Gender_IdentityObjectType
+     * @var \WorkdayWsdl\\StructType\Gender_IdentityObjectType
      */
     public $Gender_Identity_Reference;
     /**
@@ -25,17 +25,17 @@ class Gender_IdentityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Gender_Identity_DataType[]
+     * @var \WorkdayWsdl\\StructType\Gender_Identity_DataType[]
      */
     public $Gender_Identity_Data;
     /**
      * Constructor method for Gender_IdentityType
      * @uses Gender_IdentityType::setGender_Identity_Reference()
      * @uses Gender_IdentityType::setGender_Identity_Data()
-     * @param \StructType\Gender_IdentityObjectType $gender_Identity_Reference
-     * @param \StructType\Gender_Identity_DataType[] $gender_Identity_Data
+     * @param \WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_DataType[] $gender_Identity_Data
      */
-    public function __construct(\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null, array $gender_Identity_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null, array $gender_Identity_Data = array())
     {
         $this
             ->setGender_Identity_Reference($gender_Identity_Reference)
@@ -43,7 +43,7 @@ class Gender_IdentityType extends AbstractStructBase
     }
     /**
      * Get Gender_Identity_Reference value
-     * @return \StructType\Gender_IdentityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityObjectType|null
      */
     public function getGender_Identity_Reference()
     {
@@ -51,17 +51,17 @@ class Gender_IdentityType extends AbstractStructBase
     }
     /**
      * Set Gender_Identity_Reference value
-     * @param \StructType\Gender_IdentityObjectType $gender_Identity_Reference
-     * @return \StructType\Gender_IdentityType
+     * @param \WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityType
      */
-    public function setGender_Identity_Reference(\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null)
+    public function setGender_Identity_Reference(\WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null)
     {
         $this->Gender_Identity_Reference = $gender_Identity_Reference;
         return $this;
     }
     /**
      * Get Gender_Identity_Data value
-     * @return \StructType\Gender_Identity_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType[]|null
      */
     public function getGender_Identity_Data()
     {
@@ -79,12 +79,12 @@ class Gender_IdentityType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $gender_IdentityTypeGender_Identity_DataItem) {
             // validation for constraint: itemType
-            if (!$gender_IdentityTypeGender_Identity_DataItem instanceof \StructType\Gender_Identity_DataType) {
+            if (!$gender_IdentityTypeGender_Identity_DataItem instanceof \WorkdayWsdl\\StructType\Gender_Identity_DataType) {
                 $invalidValues[] = is_object($gender_IdentityTypeGender_Identity_DataItem) ? get_class($gender_IdentityTypeGender_Identity_DataItem) : sprintf('%s(%s)', gettype($gender_IdentityTypeGender_Identity_DataItem), var_export($gender_IdentityTypeGender_Identity_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Gender_Identity_Data property can only contain items of type \StructType\Gender_Identity_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Gender_Identity_Data property can only contain items of type \WorkdayWsdl\\StructType\Gender_Identity_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Gender_IdentityType extends AbstractStructBase
     /**
      * Set Gender_Identity_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Gender_Identity_DataType[] $gender_Identity_Data
-     * @return \StructType\Gender_IdentityType
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_DataType[] $gender_Identity_Data
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityType
      */
     public function setGender_Identity_Data(array $gender_Identity_Data = array())
     {
@@ -107,14 +107,14 @@ class Gender_IdentityType extends AbstractStructBase
     /**
      * Add item to Gender_Identity_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Gender_Identity_DataType $item
-     * @return \StructType\Gender_IdentityType
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_DataType $item
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityType
      */
-    public function addToGender_Identity_Data(\StructType\Gender_Identity_DataType $item)
+    public function addToGender_Identity_Data(\WorkdayWsdl\\StructType\Gender_Identity_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Gender_Identity_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Gender_Identity_Data property can only contain items of type \StructType\Gender_Identity_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Gender_Identity_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Gender_Identity_Data property can only contain items of type \WorkdayWsdl\\StructType\Gender_Identity_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Gender_Identity_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Gender_IdentityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Gender_IdentityType
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityType
      */
     public static function __set_state(array $array)
     {

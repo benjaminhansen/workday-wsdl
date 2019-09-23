@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace WorkdayWsdl\\EnumType;
 
 /**
  * This class stands for CIP_Code__Workday_Owned_ReferenceEnumeration EnumType

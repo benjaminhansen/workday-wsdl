@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class Organization_Inactivate_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Organization_Inactivate_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Inactivate_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -57,7 +57,7 @@ class Organization_Inactivate_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Inactivate_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Inactivate_DataType
      */
     public static function __set_state(array $array)
     {

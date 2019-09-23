@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Person_Photo_DataType[]
+     * @var \WorkdayWsdl\\StructType\Change_Person_Photo_DataType[]
      */
     public $Person_Photo_Data;
     /**
      * Constructor method for Change_Person_Photo_HV_DataType
      * @uses Change_Person_Photo_HV_DataType::setPerson_Photo_Data()
-     * @param \StructType\Change_Person_Photo_DataType[] $person_Photo_Data
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType[] $person_Photo_Data
      */
     public function __construct(array $person_Photo_Data = array())
     {
@@ -32,7 +32,7 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Photo_Data value
-     * @return \StructType\Change_Person_Photo_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType[]|null
      */
     public function getPerson_Photo_Data()
     {
@@ -50,12 +50,12 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Person_Photo_HV_DataTypePerson_Photo_DataItem) {
             // validation for constraint: itemType
-            if (!$change_Person_Photo_HV_DataTypePerson_Photo_DataItem instanceof \StructType\Change_Person_Photo_DataType) {
+            if (!$change_Person_Photo_HV_DataTypePerson_Photo_DataItem instanceof \WorkdayWsdl\\StructType\Change_Person_Photo_DataType) {
                 $invalidValues[] = is_object($change_Person_Photo_HV_DataTypePerson_Photo_DataItem) ? get_class($change_Person_Photo_HV_DataTypePerson_Photo_DataItem) : sprintf('%s(%s)', gettype($change_Person_Photo_HV_DataTypePerson_Photo_DataItem), var_export($change_Person_Photo_HV_DataTypePerson_Photo_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Photo_Data property can only contain items of type \StructType\Change_Person_Photo_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Photo_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Person_Photo_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
     /**
      * Set Person_Photo_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Person_Photo_DataType[] $person_Photo_Data
-     * @return \StructType\Change_Person_Photo_HV_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType[] $person_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType
      */
     public function setPerson_Photo_Data(array $person_Photo_Data = array())
     {
@@ -78,14 +78,14 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
     /**
      * Add item to Person_Photo_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Person_Photo_DataType $item
-     * @return \StructType\Change_Person_Photo_HV_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType
      */
-    public function addToPerson_Photo_Data(\StructType\Change_Person_Photo_DataType $item)
+    public function addToPerson_Photo_Data(\WorkdayWsdl\\StructType\Change_Person_Photo_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Person_Photo_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Photo_Data property can only contain items of type \StructType\Change_Person_Photo_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Person_Photo_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Photo_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Person_Photo_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Photo_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Change_Person_Photo_HV_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Person_Photo_HV_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType
      */
     public static function __set_state(array $array)
     {

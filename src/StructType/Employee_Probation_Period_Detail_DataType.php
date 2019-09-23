@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Probation Period Event Reference for the Worker's effective Position
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Employee_Probation_Period_Event_Reference;
     /**
@@ -25,7 +25,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Probation Period reference.
      * - minOccurs: 0
-     * @var \StructType\Employee_Probation_PeriodObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType
      */
     public $Employee_Probation_Period_Reference;
     /**
@@ -60,7 +60,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Probation Type of the Probation Period belonging to the effective Position
      * - minOccurs: 0
-     * @var \StructType\Employee_Probation_Period_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType
      */
     public $Probation_Type_Reference;
     /**
@@ -68,7 +68,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Probation Reason of the Probation Period belonging to the effective Position
      * - minOccurs: 0
-     * @var \StructType\Employee_Probation_Period_ReasonObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType
      */
     public $Probation_Reason_Reference;
     /**
@@ -100,17 +100,17 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * @uses Employee_Probation_Period_Detail_DataType::setProbation_Reason_Reference()
      * @uses Employee_Probation_Period_Detail_DataType::setExtended_End_Date()
      * @uses Employee_Probation_Period_Detail_DataType::setNote()
-     * @param \StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference
-     * @param \StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference
      * @param string $effective_Date
      * @param string $start_Date
      * @param string $end_Date
-     * @param \StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference
-     * @param \StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference
      * @param string $extended_End_Date
      * @param string $note
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference = null, \StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference = null, $effective_Date = null, $start_Date = null, $end_Date = null, \StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference = null, \StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference = null, $extended_End_Date = null, $note = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference = null, \WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference = null, $effective_Date = null, $start_Date = null, $end_Date = null, \WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference = null, \WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference = null, $extended_End_Date = null, $note = null)
     {
         $this
             ->setEmployee_Probation_Period_Event_Reference($employee_Probation_Period_Event_Reference)
@@ -125,7 +125,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Probation_Period_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEmployee_Probation_Period_Event_Reference()
     {
@@ -133,17 +133,17 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Probation_Period_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
-    public function setEmployee_Probation_Period_Event_Reference(\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference = null)
+    public function setEmployee_Probation_Period_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $employee_Probation_Period_Event_Reference = null)
     {
         $this->Employee_Probation_Period_Event_Reference = $employee_Probation_Period_Event_Reference;
         return $this;
     }
     /**
      * Get Employee_Probation_Period_Reference value
-     * @return \StructType\Employee_Probation_PeriodObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType|null
      */
     public function getEmployee_Probation_Period_Reference()
     {
@@ -151,10 +151,10 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Probation_Period_Reference value
-     * @param \StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
-    public function setEmployee_Probation_Period_Reference(\StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference = null)
+    public function setEmployee_Probation_Period_Reference(\WorkdayWsdl\\StructType\Employee_Probation_PeriodObjectType $employee_Probation_Period_Reference = null)
     {
         $this->Employee_Probation_Period_Reference = $employee_Probation_Period_Reference;
         return $this;
@@ -170,7 +170,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -192,7 +192,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -214,7 +214,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -227,7 +227,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Probation_Type_Reference value
-     * @return \StructType\Employee_Probation_Period_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType|null
      */
     public function getProbation_Type_Reference()
     {
@@ -235,17 +235,17 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Probation_Type_Reference value
-     * @param \StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
-    public function setProbation_Type_Reference(\StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference = null)
+    public function setProbation_Type_Reference(\WorkdayWsdl\\StructType\Employee_Probation_Period_TypeObjectType $probation_Type_Reference = null)
     {
         $this->Probation_Type_Reference = $probation_Type_Reference;
         return $this;
     }
     /**
      * Get Probation_Reason_Reference value
-     * @return \StructType\Employee_Probation_Period_ReasonObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType|null
      */
     public function getProbation_Reason_Reference()
     {
@@ -253,10 +253,10 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Probation_Reason_Reference value
-     * @param \StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
-    public function setProbation_Reason_Reference(\StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference = null)
+    public function setProbation_Reason_Reference(\WorkdayWsdl\\StructType\Employee_Probation_Period_ReasonObjectType $probation_Reason_Reference = null)
     {
         $this->Probation_Reason_Reference = $probation_Reason_Reference;
         return $this;
@@ -272,7 +272,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     /**
      * Set Extended_End_Date value
      * @param string $extended_End_Date
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public function setExtended_End_Date($extended_End_Date = null)
     {
@@ -294,7 +294,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
     /**
      * Set Note value
      * @param string $note
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public function setNote($note = null)
     {
@@ -311,7 +311,7 @@ class Employee_Probation_Period_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Probation_Period_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Probation_Period_Detail_DataType
      */
     public static function __set_state(array $array)
     {

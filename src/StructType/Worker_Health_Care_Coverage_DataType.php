@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the level of coverage elected.
      * - minOccurs: 0
-     * @var \StructType\Health_Care_Coverage_TargetObjectType
+     * @var \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType
      */
     public $Health_Care_Coverage_Target_Reference;
     /**
@@ -43,7 +43,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The election information for the coverage.
      * - minOccurs: 0
-     * @var \StructType\Worker_Benefit_Election_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public $Benefit_Election_Data;
     /**
@@ -52,7 +52,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
      * - documentation: Contains the dependents covered for the election.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Dependent_Coverage_DataType[]
+     * @var \WorkdayWsdl\\StructType\Dependent_Coverage_DataType[]
      */
     public $Dependent_Coverage_Data;
     /**
@@ -62,13 +62,13 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
      * @uses Worker_Health_Care_Coverage_DataType::setProvider_ID()
      * @uses Worker_Health_Care_Coverage_DataType::setBenefit_Election_Data()
      * @uses Worker_Health_Care_Coverage_DataType::setDependent_Coverage_Data()
-     * @param \StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference
+     * @param \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference
      * @param string $original_Coverage_Begin_Date_for_Coverage_Target
      * @param string $provider_ID
-     * @param \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
-     * @param \StructType\Dependent_Coverage_DataType[] $dependent_Coverage_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
+     * @param \WorkdayWsdl\\StructType\Dependent_Coverage_DataType[] $dependent_Coverage_Data
      */
-    public function __construct(\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference = null, $original_Coverage_Begin_Date_for_Coverage_Target = null, $provider_ID = null, \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null, array $dependent_Coverage_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference = null, $original_Coverage_Begin_Date_for_Coverage_Target = null, $provider_ID = null, \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null, array $dependent_Coverage_Data = array())
     {
         $this
             ->setHealth_Care_Coverage_Target_Reference($health_Care_Coverage_Target_Reference)
@@ -79,7 +79,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get Health_Care_Coverage_Target_Reference value
-     * @return \StructType\Health_Care_Coverage_TargetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType|null
      */
     public function getHealth_Care_Coverage_Target_Reference()
     {
@@ -87,10 +87,10 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Care_Coverage_Target_Reference value
-     * @param \StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
-    public function setHealth_Care_Coverage_Target_Reference(\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference = null)
+    public function setHealth_Care_Coverage_Target_Reference(\WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType $health_Care_Coverage_Target_Reference = null)
     {
         $this->Health_Care_Coverage_Target_Reference = $health_Care_Coverage_Target_Reference;
         return $this;
@@ -106,7 +106,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date_for_Coverage_Target value
      * @param string $original_Coverage_Begin_Date_for_Coverage_Target
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
     public function setOriginal_Coverage_Begin_Date_for_Coverage_Target($original_Coverage_Begin_Date_for_Coverage_Target = null)
     {
@@ -128,7 +128,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     /**
      * Set Provider_ID value
      * @param string $provider_ID
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
     public function setProvider_ID($provider_ID = null)
     {
@@ -141,7 +141,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Election_Data value
-     * @return \StructType\Worker_Benefit_Election_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType|null
      */
     public function getBenefit_Election_Data()
     {
@@ -149,17 +149,17 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Election_Data value
-     * @param \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
-    public function setBenefit_Election_Data(\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null)
+    public function setBenefit_Election_Data(\WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null)
     {
         $this->Benefit_Election_Data = $benefit_Election_Data;
         return $this;
     }
     /**
      * Get Dependent_Coverage_Data value
-     * @return \StructType\Dependent_Coverage_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType[]|null
      */
     public function getDependent_Coverage_Data()
     {
@@ -177,12 +177,12 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem instanceof \StructType\Dependent_Coverage_DataType) {
+            if (!$worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem instanceof \WorkdayWsdl\\StructType\Dependent_Coverage_DataType) {
                 $invalidValues[] = is_object($worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem) ? get_class($worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem) : sprintf('%s(%s)', gettype($worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem), var_export($worker_Health_Care_Coverage_DataTypeDependent_Coverage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Dependent_Coverage_Data property can only contain items of type \StructType\Dependent_Coverage_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Dependent_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Dependent_Coverage_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -190,8 +190,8 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     /**
      * Set Dependent_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Dependent_Coverage_DataType[] $dependent_Coverage_Data
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Dependent_Coverage_DataType[] $dependent_Coverage_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
     public function setDependent_Coverage_Data(array $dependent_Coverage_Data = array())
     {
@@ -205,14 +205,14 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
     /**
      * Add item to Dependent_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Dependent_Coverage_DataType $item
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Dependent_Coverage_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
-    public function addToDependent_Coverage_Data(\StructType\Dependent_Coverage_DataType $item)
+    public function addToDependent_Coverage_Data(\WorkdayWsdl\\StructType\Dependent_Coverage_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Dependent_Coverage_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Dependent_Coverage_Data property can only contain items of type \StructType\Dependent_Coverage_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Dependent_Coverage_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Dependent_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Dependent_Coverage_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Dependent_Coverage_Data[] = $item;
         return $this;
@@ -223,7 +223,7 @@ class Worker_Health_Care_Coverage_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Health_Care_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Coverage_DataType
      */
     public static function __set_state(array $array)
     {

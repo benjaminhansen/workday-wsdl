@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class Employee_Photo_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Employee_Photo_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Photo_DataType
      */
     public function setID($iD = null)
     {
@@ -90,7 +90,7 @@ class Employee_Photo_DataType extends AbstractStructBase
     /**
      * Set Filename value
      * @param string $filename
-     * @return \StructType\Employee_Photo_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Photo_DataType
      */
     public function setFilename($filename = null)
     {
@@ -116,7 +116,7 @@ class Employee_Photo_DataType extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Employee_Photo_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Photo_DataType
      */
     public function setFile($file = null)
     {
@@ -133,7 +133,7 @@ class Employee_Photo_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Photo_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Photo_DataType
      */
     public static function __set_state(array $array)
     {

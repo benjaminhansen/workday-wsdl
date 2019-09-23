@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CurrencyObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class CurrencyObjectType extends AbstractStructBase
      * Constructor method for CurrencyObjectType
      * @uses CurrencyObjectType::setID()
      * @uses CurrencyObjectType::setDescriptor()
-     * @param \StructType\CurrencyObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class CurrencyObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\CurrencyObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class CurrencyObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $currencyObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$currencyObjectTypeIDItem instanceof \StructType\CurrencyObjectIDType) {
+            if (!$currencyObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\CurrencyObjectIDType) {
                 $invalidValues[] = is_object($currencyObjectTypeIDItem) ? get_class($currencyObjectTypeIDItem) : sprintf('%s(%s)', gettype($currencyObjectTypeIDItem), var_export($currencyObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\CurrencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CurrencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class CurrencyObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CurrencyObjectIDType[] $iD
-     * @return \StructType\CurrencyObjectType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class CurrencyObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CurrencyObjectIDType $item
-     * @return \StructType\CurrencyObjectType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType
      */
-    public function addToID(\StructType\CurrencyObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\CurrencyObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CurrencyObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\CurrencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CurrencyObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CurrencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class CurrencyObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\CurrencyObjectType
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class CurrencyObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CurrencyObjectType
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public static function __set_state(array $array)
     {

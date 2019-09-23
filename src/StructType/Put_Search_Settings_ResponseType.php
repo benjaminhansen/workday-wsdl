@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Search_Settings_DataType[]
+     * @var \WorkdayWsdl\\StructType\Search_Settings_DataType[]
      */
     public $Search_Settings_Data;
     /**
@@ -31,7 +31,7 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
      * Constructor method for Put_Search_Settings_ResponseType
      * @uses Put_Search_Settings_ResponseType::setSearch_Settings_Data()
      * @uses Put_Search_Settings_ResponseType::setVersion()
-     * @param \StructType\Search_Settings_DataType[] $search_Settings_Data
+     * @param \WorkdayWsdl\\StructType\Search_Settings_DataType[] $search_Settings_Data
      * @param string $version
      */
     public function __construct(array $search_Settings_Data = array(), $version = null)
@@ -42,7 +42,7 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
     }
     /**
      * Get Search_Settings_Data value
-     * @return \StructType\Search_Settings_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType[]|null
      */
     public function getSearch_Settings_Data()
     {
@@ -60,12 +60,12 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Search_Settings_ResponseTypeSearch_Settings_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Search_Settings_ResponseTypeSearch_Settings_DataItem instanceof \StructType\Search_Settings_DataType) {
+            if (!$put_Search_Settings_ResponseTypeSearch_Settings_DataItem instanceof \WorkdayWsdl\\StructType\Search_Settings_DataType) {
                 $invalidValues[] = is_object($put_Search_Settings_ResponseTypeSearch_Settings_DataItem) ? get_class($put_Search_Settings_ResponseTypeSearch_Settings_DataItem) : sprintf('%s(%s)', gettype($put_Search_Settings_ResponseTypeSearch_Settings_DataItem), var_export($put_Search_Settings_ResponseTypeSearch_Settings_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Search_Settings_Data property can only contain items of type \StructType\Search_Settings_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Search_Settings_Data property can only contain items of type \WorkdayWsdl\\StructType\Search_Settings_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
     /**
      * Set Search_Settings_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Search_Settings_DataType[] $search_Settings_Data
-     * @return \StructType\Put_Search_Settings_ResponseType
+     * @param \WorkdayWsdl\\StructType\Search_Settings_DataType[] $search_Settings_Data
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_ResponseType
      */
     public function setSearch_Settings_Data(array $search_Settings_Data = array())
     {
@@ -88,14 +88,14 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
     /**
      * Add item to Search_Settings_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Search_Settings_DataType $item
-     * @return \StructType\Put_Search_Settings_ResponseType
+     * @param \WorkdayWsdl\\StructType\Search_Settings_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_ResponseType
      */
-    public function addToSearch_Settings_Data(\StructType\Search_Settings_DataType $item)
+    public function addToSearch_Settings_Data(\WorkdayWsdl\\StructType\Search_Settings_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Search_Settings_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Search_Settings_Data property can only contain items of type \StructType\Search_Settings_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Search_Settings_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Search_Settings_Data property can only contain items of type \WorkdayWsdl\\StructType\Search_Settings_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Search_Settings_Data[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Search_Settings_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -128,7 +128,7 @@ class Put_Search_Settings_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Search_Settings_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_ResponseType
      */
     public static function __set_state(array $array)
     {

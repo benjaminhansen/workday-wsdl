@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,12 +29,12 @@ class Organization_InactivateType extends AbstractStructBase
     public $Validate_Only;
     /**
      * The Organization_Reference_Data
-     * @var \StructType\Organization_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType
      */
     public $Organization_Reference_Data;
     /**
      * The Organization_Inactivate_Data
-     * @var \StructType\Organization_Inactivate_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Inactivate_DataType
      */
     public $Organization_Inactivate_Data;
     /**
@@ -51,7 +51,7 @@ class Organization_InactivateType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Use this element to specify the new superior organization for current subordinates. When blank, default behavior is that active organizations are moved to superior.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_for_Subordinates_Reference;
     /**
@@ -59,7 +59,7 @@ class Organization_InactivateType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Use this element to specify the new superior organization for current included organizations. When blank, default behavior is that active organizations are moved to superior.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_for_Included_Organizations_Reference;
     /**
@@ -90,15 +90,15 @@ class Organization_InactivateType extends AbstractStructBase
      * @uses Organization_InactivateType::setRemove_All_Role_Assignments()
      * @uses Organization_InactivateType::setVersion()
      * @param bool $validate_Only
-     * @param \StructType\Organization_ReferenceType $organization_Reference_Data
-     * @param \StructType\Organization_Inactivate_DataType $organization_Inactivate_Data
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Organization_Inactivate_DataType $organization_Inactivate_Data
      * @param bool $keep_in_Hierarchy
-     * @param \StructType\OrganizationObjectType $organization_for_Subordinates_Reference
-     * @param \StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Subordinates_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference
      * @param bool $remove_All_Role_Assignments
      * @param string $version
      */
-    public function __construct($validate_Only = null, \StructType\Organization_ReferenceType $organization_Reference_Data = null, \StructType\Organization_Inactivate_DataType $organization_Inactivate_Data = null, $keep_in_Hierarchy = null, \StructType\OrganizationObjectType $organization_for_Subordinates_Reference = null, \StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference = null, $remove_All_Role_Assignments = null, $version = null)
+    public function __construct($validate_Only = null, \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference_Data = null, \WorkdayWsdl\\StructType\Organization_Inactivate_DataType $organization_Inactivate_Data = null, $keep_in_Hierarchy = null, \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Subordinates_Reference = null, \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference = null, $remove_All_Role_Assignments = null, $version = null)
     {
         $this
             ->setValidate_Only($validate_Only)
@@ -121,7 +121,7 @@ class Organization_InactivateType extends AbstractStructBase
     /**
      * Set Validate_Only value
      * @param bool $validate_Only
-     * @return \StructType\Organization_InactivateType
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
     public function setValidate_Only($validate_Only = null)
     {
@@ -134,7 +134,7 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference_Data value
-     * @return \StructType\Organization_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType|null
      */
     public function getOrganization_Reference_Data()
     {
@@ -142,17 +142,17 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference_Data value
-     * @param \StructType\Organization_ReferenceType $organization_Reference_Data
-     * @return \StructType\Organization_InactivateType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
-    public function setOrganization_Reference_Data(\StructType\Organization_ReferenceType $organization_Reference_Data = null)
+    public function setOrganization_Reference_Data(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference_Data = null)
     {
         $this->Organization_Reference_Data = $organization_Reference_Data;
         return $this;
     }
     /**
      * Get Organization_Inactivate_Data value
-     * @return \StructType\Organization_Inactivate_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Inactivate_DataType|null
      */
     public function getOrganization_Inactivate_Data()
     {
@@ -160,10 +160,10 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Set Organization_Inactivate_Data value
-     * @param \StructType\Organization_Inactivate_DataType $organization_Inactivate_Data
-     * @return \StructType\Organization_InactivateType
+     * @param \WorkdayWsdl\\StructType\Organization_Inactivate_DataType $organization_Inactivate_Data
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
-    public function setOrganization_Inactivate_Data(\StructType\Organization_Inactivate_DataType $organization_Inactivate_Data = null)
+    public function setOrganization_Inactivate_Data(\WorkdayWsdl\\StructType\Organization_Inactivate_DataType $organization_Inactivate_Data = null)
     {
         $this->Organization_Inactivate_Data = $organization_Inactivate_Data;
         return $this;
@@ -179,7 +179,7 @@ class Organization_InactivateType extends AbstractStructBase
     /**
      * Set Keep_in_Hierarchy value
      * @param bool $keep_in_Hierarchy
-     * @return \StructType\Organization_InactivateType
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
     public function setKeep_in_Hierarchy($keep_in_Hierarchy = null)
     {
@@ -192,7 +192,7 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Get Organization_for_Subordinates_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_for_Subordinates_Reference()
     {
@@ -200,17 +200,17 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Set Organization_for_Subordinates_Reference value
-     * @param \StructType\OrganizationObjectType $organization_for_Subordinates_Reference
-     * @return \StructType\Organization_InactivateType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Subordinates_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
-    public function setOrganization_for_Subordinates_Reference(\StructType\OrganizationObjectType $organization_for_Subordinates_Reference = null)
+    public function setOrganization_for_Subordinates_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Subordinates_Reference = null)
     {
         $this->Organization_for_Subordinates_Reference = $organization_for_Subordinates_Reference;
         return $this;
     }
     /**
      * Get Organization_for_Included_Organizations_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_for_Included_Organizations_Reference()
     {
@@ -218,10 +218,10 @@ class Organization_InactivateType extends AbstractStructBase
     }
     /**
      * Set Organization_for_Included_Organizations_Reference value
-     * @param \StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference
-     * @return \StructType\Organization_InactivateType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
-    public function setOrganization_for_Included_Organizations_Reference(\StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference = null)
+    public function setOrganization_for_Included_Organizations_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_for_Included_Organizations_Reference = null)
     {
         $this->Organization_for_Included_Organizations_Reference = $organization_for_Included_Organizations_Reference;
         return $this;
@@ -237,7 +237,7 @@ class Organization_InactivateType extends AbstractStructBase
     /**
      * Set Remove_All_Role_Assignments value
      * @param bool $remove_All_Role_Assignments
-     * @return \StructType\Organization_InactivateType
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
     public function setRemove_All_Role_Assignments($remove_All_Role_Assignments = null)
     {
@@ -259,7 +259,7 @@ class Organization_InactivateType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Organization_InactivateType
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
     public function setVersion($version = null)
     {
@@ -276,7 +276,7 @@ class Organization_InactivateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_InactivateType
+     * @return \WorkdayWsdl\\StructType\Organization_InactivateType
      */
     public static function __set_state(array $array)
     {

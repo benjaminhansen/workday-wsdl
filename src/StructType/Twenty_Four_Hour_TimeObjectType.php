@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Twenty_Four_Hour_TimeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
      * Constructor method for Twenty_Four_Hour_TimeObjectType
      * @uses Twenty_Four_Hour_TimeObjectType::setID()
      * @uses Twenty_Four_Hour_TimeObjectType::setDescriptor()
-     * @param \StructType\Twenty_Four_Hour_TimeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Twenty_Four_Hour_TimeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $twenty_Four_Hour_TimeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$twenty_Four_Hour_TimeObjectTypeIDItem instanceof \StructType\Twenty_Four_Hour_TimeObjectIDType) {
+            if (!$twenty_Four_Hour_TimeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType) {
                 $invalidValues[] = is_object($twenty_Four_Hour_TimeObjectTypeIDItem) ? get_class($twenty_Four_Hour_TimeObjectTypeIDItem) : sprintf('%s(%s)', gettype($twenty_Four_Hour_TimeObjectTypeIDItem), var_export($twenty_Four_Hour_TimeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Twenty_Four_Hour_TimeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Twenty_Four_Hour_TimeObjectIDType[] $iD
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Twenty_Four_Hour_TimeObjectIDType $item
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
-    public function addToID(\StructType\Twenty_Four_Hour_TimeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Twenty_Four_Hour_TimeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Twenty_Four_Hour_TimeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Twenty_Four_Hour_TimeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
     public static function __set_state(array $array)
     {

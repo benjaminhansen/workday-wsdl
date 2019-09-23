@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Event_TargetObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Event_TargetReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Event_TargetReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Event_TargetReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Event_TargetReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Event_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Event_TargetReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Event_TargetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Event_TargetReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Event_TargetReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Event_TargetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Event_TargetReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Event_TargetObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Event_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Event_TargetObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Event_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Event_TargetObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Event_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Event_TargetObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Event_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType
      */
     public static function __set_state(array $array)
     {

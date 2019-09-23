@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Appointment Specialty. Used to identify the Appointment Specialty to update. Leave blank on an Add.
      * - minOccurs: 0
-     * @var \StructType\Appointment_SpecialtyObjectType
+     * @var \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType
      */
     public $Appointment_Specialty_Reference;
     /**
      * The Appointment_Specialty_Data
      * Meta information extracted from the WSDL
      * - documentation: Data for Appointment Specialty
-     * @var \StructType\Appointment_Specialty_DataType
+     * @var \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
     public $Appointment_Specialty_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
      * @uses Put_Appointment_Specialty_RequestType::setAppointment_Specialty_Data()
      * @uses Put_Appointment_Specialty_RequestType::setAdd_Only()
      * @uses Put_Appointment_Specialty_RequestType::setVersion()
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @param \StructType\Appointment_Specialty_DataType $appointment_Specialty_Data
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Appointment_Specialty_DataType $appointment_Specialty_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, \StructType\Appointment_Specialty_DataType $appointment_Specialty_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, \WorkdayWsdl\\StructType\Appointment_Specialty_DataType $appointment_Specialty_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setAppointment_Specialty_Reference($appointment_Specialty_Reference)
@@ -62,7 +62,7 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
     }
     /**
      * Get Appointment_Specialty_Reference value
-     * @return \StructType\Appointment_SpecialtyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType|null
      */
     public function getAppointment_Specialty_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
     }
     /**
      * Set Appointment_Specialty_Reference value
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @return \StructType\Put_Appointment_Specialty_RequestType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_RequestType
      */
-    public function setAppointment_Specialty_Reference(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
+    public function setAppointment_Specialty_Reference(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
     {
         $this->Appointment_Specialty_Reference = $appointment_Specialty_Reference;
         return $this;
     }
     /**
      * Get Appointment_Specialty_Data value
-     * @return \StructType\Appointment_Specialty_DataType|null
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType|null
      */
     public function getAppointment_Specialty_Data()
     {
@@ -88,10 +88,10 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
     }
     /**
      * Set Appointment_Specialty_Data value
-     * @param \StructType\Appointment_Specialty_DataType $appointment_Specialty_Data
-     * @return \StructType\Put_Appointment_Specialty_RequestType
+     * @param \WorkdayWsdl\\StructType\Appointment_Specialty_DataType $appointment_Specialty_Data
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_RequestType
      */
-    public function setAppointment_Specialty_Data(\StructType\Appointment_Specialty_DataType $appointment_Specialty_Data = null)
+    public function setAppointment_Specialty_Data(\WorkdayWsdl\\StructType\Appointment_Specialty_DataType $appointment_Specialty_Data = null)
     {
         $this->Appointment_Specialty_Data = $appointment_Specialty_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Appointment_Specialty_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Appointment_Specialty_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Appointment_Specialty_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Appointment_Specialty_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_RequestType
      */
     public static function __set_state(array $array)
     {

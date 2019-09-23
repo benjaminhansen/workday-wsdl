@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Component_CompletionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Component_CompletionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Component_CompletionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Component_CompletionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Component_CompletionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Component_CompletionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Component_CompletionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Component_CompletionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Component_CompletionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Component_CompletionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Component_CompletionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Component_CompletionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Component_CompletionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Component_CompletionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Component_CompletionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Component_CompletionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectIDType
      */
     public static function __set_state(array $array)
     {

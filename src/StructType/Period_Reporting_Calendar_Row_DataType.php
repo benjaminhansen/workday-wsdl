@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The academic period associated with this period row. (Is Optional!)
      * - minOccurs: 0
-     * @var \StructType\Academic_PeriodObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_PeriodObjectType
      */
     public $Academic_Period_Reference;
     /**
@@ -67,7 +67,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
      * The Evaluation_Constraint_Reference
      * Meta information extracted from the WSDL
      * - documentation: The specification of how the status of a period is calculated based on the date range
-     * @var \StructType\Evaluation_ConstraintObjectType
+     * @var \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType
      */
     public $Evaluation_Constraint_Reference;
     /**
@@ -98,14 +98,14 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
      * @param string $order
      * @param string $iD
      * @param string $calendar_Period_Name
-     * @param \StructType\Academic_PeriodObjectType $academic_Period_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_PeriodObjectType $academic_Period_Reference
      * @param string $start_Date
      * @param string $end_Date
-     * @param \StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference
+     * @param \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference
      * @param bool $delete
      * @param bool $add_Only
      */
-    public function __construct($order = null, $iD = null, $calendar_Period_Name = null, \StructType\Academic_PeriodObjectType $academic_Period_Reference = null, $start_Date = null, $end_Date = null, \StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference = null, $delete = null, $add_Only = null)
+    public function __construct($order = null, $iD = null, $calendar_Period_Name = null, \WorkdayWsdl\\StructType\Academic_PeriodObjectType $academic_Period_Reference = null, $start_Date = null, $end_Date = null, \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference = null, $delete = null, $add_Only = null)
     {
         $this
             ->setOrder($order)
@@ -129,7 +129,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set Order value
      * @param string $order
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setOrder($order = null)
     {
@@ -155,7 +155,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setID($iD = null)
     {
@@ -177,7 +177,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set Calendar_Period_Name value
      * @param string $calendar_Period_Name
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setCalendar_Period_Name($calendar_Period_Name = null)
     {
@@ -190,7 +190,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Period_Reference value
-     * @return \StructType\Academic_PeriodObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectType|null
      */
     public function getAcademic_Period_Reference()
     {
@@ -198,10 +198,10 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Period_Reference value
-     * @param \StructType\Academic_PeriodObjectType $academic_Period_Reference
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_PeriodObjectType $academic_Period_Reference
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
-    public function setAcademic_Period_Reference(\StructType\Academic_PeriodObjectType $academic_Period_Reference = null)
+    public function setAcademic_Period_Reference(\WorkdayWsdl\\StructType\Academic_PeriodObjectType $academic_Period_Reference = null)
     {
         $this->Academic_Period_Reference = $academic_Period_Reference;
         return $this;
@@ -217,7 +217,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -239,7 +239,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -252,7 +252,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     }
     /**
      * Get Evaluation_Constraint_Reference value
-     * @return \StructType\Evaluation_ConstraintObjectType|null
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType|null
      */
     public function getEvaluation_Constraint_Reference()
     {
@@ -260,10 +260,10 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     }
     /**
      * Set Evaluation_Constraint_Reference value
-     * @param \StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @param \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
-    public function setEvaluation_Constraint_Reference(\StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference = null)
+    public function setEvaluation_Constraint_Reference(\WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType $evaluation_Constraint_Reference = null)
     {
         $this->Evaluation_Constraint_Reference = $evaluation_Constraint_Reference;
         return $this;
@@ -279,7 +279,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setDelete($delete = null)
     {
@@ -301,7 +301,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -318,7 +318,7 @@ class Period_Reporting_Calendar_Row_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Period_Reporting_Calendar_Row_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Row_DataType
      */
     public static function __set_state(array $array)
     {

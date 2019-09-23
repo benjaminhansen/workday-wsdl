@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
      * Meta information extracted from the WSDL
      * - documentation: The Contact Information for Person Event created by the corresponding request
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Contact_Information_for_Person_Event_Reference;
     /**
@@ -33,10 +33,10 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
      * Maintain_Contact_Information_for_Person_Event_ResponseType
      * @uses Maintain_Contact_Information_for_Person_Event_ResponseType::setContact_Information_for_Person_Event_Reference()
      * @uses Maintain_Contact_Information_for_Person_Event_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference = null, $version = null)
     {
         $this
             ->setContact_Information_for_Person_Event_Reference($contact_Information_for_Person_Event_Reference)
@@ -44,7 +44,7 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
     }
     /**
      * Get Contact_Information_for_Person_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getContact_Information_for_Person_Event_Reference()
     {
@@ -52,10 +52,10 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
     }
     /**
      * Set Contact_Information_for_Person_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
      */
-    public function setContact_Information_for_Person_Event_Reference(\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference = null)
+    public function setContact_Information_for_Person_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $contact_Information_for_Person_Event_Reference = null)
     {
         $this->Contact_Information_for_Person_Event_Reference = $contact_Information_for_Person_Event_Reference;
         return $this;
@@ -71,7 +71,7 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -88,7 +88,7 @@ class Maintain_Contact_Information_for_Person_Event_ResponseType extends Abstrac
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
      */
     public static function __set_state(array $array)
     {

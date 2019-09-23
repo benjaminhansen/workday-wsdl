@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class FrequencyObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\FrequencyReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\FrequencyReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\FrequencyReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\FrequencyReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\FrequencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\FrequencyReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\FrequencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\FrequencyReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\FrequencyReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\FrequencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\FrequencyReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class FrequencyObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\FrequencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class FrequencyObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FrequencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectIDType
      */
     public static function __set_state(array $array)
     {

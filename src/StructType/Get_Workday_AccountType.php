@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Get_Workday_AccountType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the Workday Account.
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Workday_Account_Reference;
     /**
@@ -25,17 +25,17 @@ class Get_Workday_AccountType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Workday_Account_for_Worker_DataType[]
+     * @var \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType[]
      */
     public $Workday_Account_for_Worker_Data;
     /**
      * Constructor method for Get_Workday_AccountType
      * @uses Get_Workday_AccountType::setWorkday_Account_Reference()
      * @uses Get_Workday_AccountType::setWorkday_Account_for_Worker_Data()
-     * @param \StructType\RoleObjectType $workday_Account_Reference
-     * @param \StructType\Workday_Account_for_Worker_DataType[] $workday_Account_for_Worker_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType[] $workday_Account_for_Worker_Data
      */
-    public function __construct(\StructType\RoleObjectType $workday_Account_Reference = null, array $workday_Account_for_Worker_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $workday_Account_Reference = null, array $workday_Account_for_Worker_Data = array())
     {
         $this
             ->setWorkday_Account_Reference($workday_Account_Reference)
@@ -43,7 +43,7 @@ class Get_Workday_AccountType extends AbstractStructBase
     }
     /**
      * Get Workday_Account_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getWorkday_Account_Reference()
     {
@@ -51,17 +51,17 @@ class Get_Workday_AccountType extends AbstractStructBase
     }
     /**
      * Set Workday_Account_Reference value
-     * @param \StructType\RoleObjectType $workday_Account_Reference
-     * @return \StructType\Get_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Get_Workday_AccountType
      */
-    public function setWorkday_Account_Reference(\StructType\RoleObjectType $workday_Account_Reference = null)
+    public function setWorkday_Account_Reference(\WorkdayWsdl\\StructType\RoleObjectType $workday_Account_Reference = null)
     {
         $this->Workday_Account_Reference = $workday_Account_Reference;
         return $this;
     }
     /**
      * Get Workday_Account_for_Worker_Data value
-     * @return \StructType\Workday_Account_for_Worker_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType[]|null
      */
     public function getWorkday_Account_for_Worker_Data()
     {
@@ -79,12 +79,12 @@ class Get_Workday_AccountType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem) {
             // validation for constraint: itemType
-            if (!$get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem instanceof \StructType\Workday_Account_for_Worker_DataType) {
+            if (!$get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem instanceof \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType) {
                 $invalidValues[] = is_object($get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem) ? get_class($get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem) : sprintf('%s(%s)', gettype($get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem), var_export($get_Workday_AccountTypeWorkday_Account_for_Worker_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workday_Account_for_Worker_Data property can only contain items of type \StructType\Workday_Account_for_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workday_Account_for_Worker_Data property can only contain items of type \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Get_Workday_AccountType extends AbstractStructBase
     /**
      * Set Workday_Account_for_Worker_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workday_Account_for_Worker_DataType[] $workday_Account_for_Worker_Data
-     * @return \StructType\Get_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType[] $workday_Account_for_Worker_Data
+     * @return \WorkdayWsdl\\StructType\Get_Workday_AccountType
      */
     public function setWorkday_Account_for_Worker_Data(array $workday_Account_for_Worker_Data = array())
     {
@@ -107,14 +107,14 @@ class Get_Workday_AccountType extends AbstractStructBase
     /**
      * Add item to Workday_Account_for_Worker_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workday_Account_for_Worker_DataType $item
-     * @return \StructType\Get_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $item
+     * @return \WorkdayWsdl\\StructType\Get_Workday_AccountType
      */
-    public function addToWorkday_Account_for_Worker_Data(\StructType\Workday_Account_for_Worker_DataType $item)
+    public function addToWorkday_Account_for_Worker_Data(\WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workday_Account_for_Worker_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Workday_Account_for_Worker_Data property can only contain items of type \StructType\Workday_Account_for_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Workday_Account_for_Worker_Data property can only contain items of type \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workday_Account_for_Worker_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Get_Workday_AccountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Workday_AccountType
+     * @return \WorkdayWsdl\\StructType\Get_Workday_AccountType
      */
     public static function __set_state(array $array)
     {

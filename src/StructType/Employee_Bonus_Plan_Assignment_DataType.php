@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Bonus Plan to update or assign. Does not default for Request Compensation Change.
      * - minOccurs: 0
-     * @var \StructType\Bonus_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Bonus_PlanObjectType
      */
     public $Compensation_Plan_Reference;
     /**
@@ -25,7 +25,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Compensation Element.
      * - minOccurs: 0
-     * @var \StructType\Compensation_Pay_EarningObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType
      */
     public $Compensation_Element_Reference;
     /**
@@ -94,7 +94,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -102,7 +102,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Frequency.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -140,19 +140,19 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * @uses Employee_Bonus_Plan_Assignment_DataType::setFrequency_Reference()
      * @uses Employee_Bonus_Plan_Assignment_DataType::setPercent_Assigned()
      * @uses Employee_Bonus_Plan_Assignment_DataType::setAssignment_Effective_Date()
-     * @param \StructType\Bonus_PlanObjectType $compensation_Plan_Reference
-     * @param \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
+     * @param \WorkdayWsdl\\StructType\Bonus_PlanObjectType $compensation_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
      * @param float $individual_Target_Amount
      * @param float $default_Target_Amount
      * @param float $individual_Target_Percent
      * @param float $default_Target_Percent
      * @param bool $guaranteed_Minimum
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      * @param float $percent_Assigned
      * @param string $assignment_Effective_Date
      */
-    public function __construct(\StructType\Bonus_PlanObjectType $compensation_Plan_Reference = null, \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null, $individual_Target_Amount = null, $default_Target_Amount = null, $individual_Target_Percent = null, $default_Target_Percent = null, $guaranteed_Minimum = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null, $percent_Assigned = null, $assignment_Effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Bonus_PlanObjectType $compensation_Plan_Reference = null, \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null, $individual_Target_Amount = null, $default_Target_Amount = null, $individual_Target_Percent = null, $default_Target_Percent = null, $guaranteed_Minimum = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, $percent_Assigned = null, $assignment_Effective_Date = null)
     {
         $this
             ->setCompensation_Plan_Reference($compensation_Plan_Reference)
@@ -169,7 +169,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Plan_Reference value
-     * @return \StructType\Bonus_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectType|null
      */
     public function getCompensation_Plan_Reference()
     {
@@ -177,17 +177,17 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Plan_Reference value
-     * @param \StructType\Bonus_PlanObjectType $compensation_Plan_Reference
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Bonus_PlanObjectType $compensation_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
-    public function setCompensation_Plan_Reference(\StructType\Bonus_PlanObjectType $compensation_Plan_Reference = null)
+    public function setCompensation_Plan_Reference(\WorkdayWsdl\\StructType\Bonus_PlanObjectType $compensation_Plan_Reference = null)
     {
         $this->Compensation_Plan_Reference = $compensation_Plan_Reference;
         return $this;
     }
     /**
      * Get Compensation_Element_Reference value
-     * @return \StructType\Compensation_Pay_EarningObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType|null
      */
     public function getCompensation_Element_Reference()
     {
@@ -195,10 +195,10 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Element_Reference value
-     * @param \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Reference(\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null)
+    public function setCompensation_Element_Reference(\WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null)
     {
         $this->Compensation_Element_Reference = $compensation_Element_Reference;
         return $this;
@@ -214,7 +214,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Amount value
      * @param float $individual_Target_Amount
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Amount($individual_Target_Amount = null)
     {
@@ -244,7 +244,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Default_Target_Amount value
      * @param float $default_Target_Amount
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setDefault_Target_Amount($default_Target_Amount = null)
     {
@@ -274,7 +274,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Percent value
      * @param float $individual_Target_Percent
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Percent($individual_Target_Percent = null)
     {
@@ -308,7 +308,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Default_Target_Percent value
      * @param float $default_Target_Percent
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setDefault_Target_Percent($default_Target_Percent = null)
     {
@@ -342,7 +342,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Guaranteed_Minimum value
      * @param bool $guaranteed_Minimum
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setGuaranteed_Minimum($guaranteed_Minimum = null)
     {
@@ -355,7 +355,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -363,17 +363,17 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -381,10 +381,10 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -400,7 +400,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Percent_Assigned value
      * @param float $percent_Assigned
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setPercent_Assigned($percent_Assigned = null)
     {
@@ -434,7 +434,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Assignment_Effective_Date value
      * @param string $assignment_Effective_Date
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public function setAssignment_Effective_Date($assignment_Effective_Date = null)
     {
@@ -451,7 +451,7 @@ class Employee_Bonus_Plan_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Bonus_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Bonus_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

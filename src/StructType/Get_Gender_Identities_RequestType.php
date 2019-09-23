@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Gender_Identity_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType
      */
     public $Request_References;
     /**
@@ -29,14 +29,14 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Gender_Identity_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -52,12 +52,12 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * @uses Get_Gender_Identities_RequestType::setRequest_Criteria()
      * @uses Get_Gender_Identities_RequestType::setResponse_Filter()
      * @uses Get_Gender_Identities_RequestType::setVersion()
-     * @param \StructType\Gender_Identity_Request_ReferencesType $request_References
-     * @param \StructType\Gender_Identity_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
      * @param string $version
      */
-    public function __construct(\StructType\Gender_Identity_Request_ReferencesType $request_References = null, \StructType\Gender_Identity_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -67,7 +67,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Gender_Identity_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -106,10 +106,10 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Gender_Identity_Request_ReferencesType $request_References
-     * @return \StructType\Get_Gender_Identities_RequestType
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Gender_Identities_RequestType
      */
-    public function setRequest_References(\StructType\Gender_Identity_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Gender_Identity_Request_ReferencesType $request_References = null)
     {
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($request_ReferencesChoiceErrorMessage = self::validateRequest_ReferencesForChoiceConstraintsFromSetRequest_References($request_References))) {
@@ -124,7 +124,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Gender_Identity_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -163,10 +163,10 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Gender_Identity_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Gender_Identities_RequestType
+     * @param \WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Gender_Identities_RequestType
      */
-    public function setRequest_Criteria(\StructType\Gender_Identity_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Gender_Identity_Request_CriteriaType $request_Criteria = null)
     {
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($request_CriteriaChoiceErrorMessage = self::validateRequest_CriteriaForChoiceConstraintsFromSetRequest_Criteria($request_Criteria))) {
@@ -181,7 +181,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -189,10 +189,10 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Gender_Identities_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Gender_Identities_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
@@ -208,7 +208,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Gender_Identities_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Gender_Identities_RequestType
      */
     public function setVersion($version = null)
     {
@@ -225,7 +225,7 @@ class Get_Gender_Identities_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Gender_Identities_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Gender_Identities_RequestType
      */
     public static function __set_state(array $array)
     {

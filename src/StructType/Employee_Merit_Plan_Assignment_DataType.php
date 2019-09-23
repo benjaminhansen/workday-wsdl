@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Merit (Percent) Plan.
      * - minOccurs: 0
-     * @var \StructType\Merit_Percent_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType
      */
     public $Compensation_Plan_Reference;
     /**
@@ -52,7 +52,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Merit Increase Matrix.
      * - minOccurs: 0
-     * @var \StructType\Compensation_MatrixObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
     public $Merit_Increase_Matrix_Reference;
     /**
@@ -81,14 +81,14 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
      * @uses Employee_Merit_Plan_Assignment_DataType::setMerit_Increase_Matrix_Reference()
      * @uses Employee_Merit_Plan_Assignment_DataType::setGuaranteed_Minimum()
      * @uses Employee_Merit_Plan_Assignment_DataType::setAssignment_Effective_Date()
-     * @param \StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference
      * @param float $individual_Target_Percent
      * @param float $default_Target_Percent
-     * @param \StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference
      * @param bool $guaranteed_Minimum
      * @param string $assignment_Effective_Date
      */
-    public function __construct(\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference = null, $individual_Target_Percent = null, $default_Target_Percent = null, \StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference = null, $guaranteed_Minimum = null, $assignment_Effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference = null, $individual_Target_Percent = null, $default_Target_Percent = null, \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference = null, $guaranteed_Minimum = null, $assignment_Effective_Date = null)
     {
         $this
             ->setCompensation_Plan_Reference($compensation_Plan_Reference)
@@ -100,7 +100,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Plan_Reference value
-     * @return \StructType\Merit_Percent_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType|null
      */
     public function getCompensation_Plan_Reference()
     {
@@ -108,10 +108,10 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Plan_Reference value
-     * @param \StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
-    public function setCompensation_Plan_Reference(\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference = null)
+    public function setCompensation_Plan_Reference(\WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType $compensation_Plan_Reference = null)
     {
         $this->Compensation_Plan_Reference = $compensation_Plan_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Percent value
      * @param float $individual_Target_Percent
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Percent($individual_Target_Percent = null)
     {
@@ -161,7 +161,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Default_Target_Percent value
      * @param float $default_Target_Percent
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
     public function setDefault_Target_Percent($default_Target_Percent = null)
     {
@@ -186,7 +186,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Merit_Increase_Matrix_Reference value
-     * @return \StructType\Compensation_MatrixObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType|null
      */
     public function getMerit_Increase_Matrix_Reference()
     {
@@ -194,10 +194,10 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Merit_Increase_Matrix_Reference value
-     * @param \StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
-    public function setMerit_Increase_Matrix_Reference(\StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference = null)
+    public function setMerit_Increase_Matrix_Reference(\WorkdayWsdl\\StructType\Compensation_MatrixObjectType $merit_Increase_Matrix_Reference = null)
     {
         $this->Merit_Increase_Matrix_Reference = $merit_Increase_Matrix_Reference;
         return $this;
@@ -213,7 +213,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Guaranteed_Minimum value
      * @param bool $guaranteed_Minimum
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
     public function setGuaranteed_Minimum($guaranteed_Minimum = null)
     {
@@ -235,7 +235,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Assignment_Effective_Date value
      * @param string $assignment_Effective_Date
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
     public function setAssignment_Effective_Date($assignment_Effective_Date = null)
     {
@@ -252,7 +252,7 @@ class Employee_Merit_Plan_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Merit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Merit_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

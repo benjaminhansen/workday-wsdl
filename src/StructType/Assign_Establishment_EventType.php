@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Assign_Establishment_EventType extends AbstractStructBase
      * - documentation: Workers Secured by Transaction Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Workers_Secured_by_Transaction_Reference;
     /**
@@ -27,15 +27,15 @@ class Assign_Establishment_EventType extends AbstractStructBase
      * - documentation: The request element containing all necessary information to manually assign an establishment to a worker position
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Assign_Establishment_DataType[]
+     * @var \WorkdayWsdl\\StructType\Assign_Establishment_DataType[]
      */
     public $Assign_Establishment_Data;
     /**
      * Constructor method for Assign_Establishment_EventType
      * @uses Assign_Establishment_EventType::setWorkers_Secured_by_Transaction_Reference()
      * @uses Assign_Establishment_EventType::setAssign_Establishment_Data()
-     * @param \StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
-     * @param \StructType\Assign_Establishment_DataType[] $assign_Establishment_Data
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_DataType[] $assign_Establishment_Data
      */
     public function __construct(array $workers_Secured_by_Transaction_Reference = array(), array $assign_Establishment_Data = array())
     {
@@ -45,7 +45,7 @@ class Assign_Establishment_EventType extends AbstractStructBase
     }
     /**
      * Get Workers_Secured_by_Transaction_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorkers_Secured_by_Transaction_Reference()
     {
@@ -63,12 +63,12 @@ class Assign_Establishment_EventType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem) ? get_class($assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem) : sprintf('%s(%s)', gettype($assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem), var_export($assign_Establishment_EventTypeWorkers_Secured_by_Transaction_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -76,8 +76,8 @@ class Assign_Establishment_EventType extends AbstractStructBase
     /**
      * Set Workers_Secured_by_Transaction_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
-     * @return \StructType\Assign_Establishment_EventType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType
      */
     public function setWorkers_Secured_by_Transaction_Reference(array $workers_Secured_by_Transaction_Reference = array())
     {
@@ -91,21 +91,21 @@ class Assign_Establishment_EventType extends AbstractStructBase
     /**
      * Add item to Workers_Secured_by_Transaction_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Assign_Establishment_EventType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType
      */
-    public function addToWorkers_Secured_by_Transaction_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorkers_Secured_by_Transaction_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workers_Secured_by_Transaction_Reference[] = $item;
         return $this;
     }
     /**
      * Get Assign_Establishment_Data value
-     * @return \StructType\Assign_Establishment_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType[]|null
      */
     public function getAssign_Establishment_Data()
     {
@@ -123,12 +123,12 @@ class Assign_Establishment_EventType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_Establishment_EventTypeAssign_Establishment_DataItem) {
             // validation for constraint: itemType
-            if (!$assign_Establishment_EventTypeAssign_Establishment_DataItem instanceof \StructType\Assign_Establishment_DataType) {
+            if (!$assign_Establishment_EventTypeAssign_Establishment_DataItem instanceof \WorkdayWsdl\\StructType\Assign_Establishment_DataType) {
                 $invalidValues[] = is_object($assign_Establishment_EventTypeAssign_Establishment_DataItem) ? get_class($assign_Establishment_EventTypeAssign_Establishment_DataItem) : sprintf('%s(%s)', gettype($assign_Establishment_EventTypeAssign_Establishment_DataItem), var_export($assign_Establishment_EventTypeAssign_Establishment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Assign_Establishment_Data property can only contain items of type \StructType\Assign_Establishment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Assign_Establishment_Data property can only contain items of type \WorkdayWsdl\\StructType\Assign_Establishment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -136,8 +136,8 @@ class Assign_Establishment_EventType extends AbstractStructBase
     /**
      * Set Assign_Establishment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_Establishment_DataType[] $assign_Establishment_Data
-     * @return \StructType\Assign_Establishment_EventType
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_DataType[] $assign_Establishment_Data
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType
      */
     public function setAssign_Establishment_Data(array $assign_Establishment_Data = array())
     {
@@ -151,14 +151,14 @@ class Assign_Establishment_EventType extends AbstractStructBase
     /**
      * Add item to Assign_Establishment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_Establishment_DataType $item
-     * @return \StructType\Assign_Establishment_EventType
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_DataType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType
      */
-    public function addToAssign_Establishment_Data(\StructType\Assign_Establishment_DataType $item)
+    public function addToAssign_Establishment_Data(\WorkdayWsdl\\StructType\Assign_Establishment_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Assign_Establishment_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Assign_Establishment_Data property can only contain items of type \StructType\Assign_Establishment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Assign_Establishment_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Assign_Establishment_Data property can only contain items of type \WorkdayWsdl\\StructType\Assign_Establishment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Assign_Establishment_Data[] = $item;
         return $this;
@@ -169,7 +169,7 @@ class Assign_Establishment_EventType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Establishment_EventType
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Emergency_ContactObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Emergency_ContactReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Emergency_ContactReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Emergency_ContactReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Emergency_ContactReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Emergency_ContactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Emergency_ContactReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Emergency_ContactReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Emergency_ContactReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Emergency_ContactReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Emergency_ContactReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Emergency_ContactReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Emergency_ContactObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Emergency_ContactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Emergency_ContactObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Emergency_ContactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType
      */
     public static function __set_state(array $array)
     {

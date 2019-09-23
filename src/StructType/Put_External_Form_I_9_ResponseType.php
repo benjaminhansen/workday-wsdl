@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_External_Form_I_9_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Complete Form I-9 Event Process created from the request.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Complete_Form_I_9_Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_External_Form_I_9_ResponseType extends AbstractStructBase
      * Constructor method for Put_External_Form_I-9_ResponseType
      * @uses Put_External_Form_I_9_ResponseType::setComplete_Form_I_9_Event_Reference()
      * @uses Put_External_Form_I_9_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference = null, $version = null)
     {
         $this
             ->setComplete_Form_I_9_Event_Reference($complete_Form_I_9_Event_Reference)
@@ -51,9 +51,9 @@ class Put_External_Form_I_9_ResponseType extends AbstractStructBase
     /**
      * Set complete_Form_I_Event_Reference value
      * @param complete_Form_I_Event_Reference $complete_Form_I_Event_Reference
-     * @return \StructType\Put_External_Form_I_9_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_ResponseType
      */
-    public function setComplete_Form_I_9_Event_Reference(\StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference = null)
+    public function setComplete_Form_I_9_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $complete_Form_I_9_Event_Reference = null)
     {
         $this->Complete_Form_I_9_Event_Reference = $this->{'Complete_Form_I-9_Event_Reference'} = $complete_Form_I_9_Event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_External_Form_I_9_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_External_Form_I_9_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_External_Form_I_9_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_External_Form_I_9_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_ResponseType
      */
     public static function __set_state(array $array)
     {

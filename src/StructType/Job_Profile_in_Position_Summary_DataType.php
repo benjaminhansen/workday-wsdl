@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the job profile.
      * - minOccurs: 0
-     * @var \StructType\Job_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public $Job_Profile_Reference;
     /**
@@ -34,7 +34,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the management level.
      * - minOccurs: 0
-     * @var \StructType\Management_LevelObjectType
+     * @var \WorkdayWsdl\\StructType\Management_LevelObjectType
      */
     public $Management_Level_Reference;
     /**
@@ -42,7 +42,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the job category.
      * - minOccurs: 0
-     * @var \StructType\Job_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Job_CategoryObjectType
      */
     public $Job_Category_Reference;
     /**
@@ -51,7 +51,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * - documentation: A unique identifier for the job family.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Family_BaseObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_Family_BaseObjectType[]
      */
     public $Job_Family_Reference;
     /**
@@ -86,7 +86,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the difficulty to fill.
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_FillObjectType
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public $Difficulty_to_Fill_Reference;
     /**
@@ -100,17 +100,17 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * @uses Job_Profile_in_Position_Summary_DataType::setWork_Shift_Required()
      * @uses Job_Profile_in_Position_Summary_DataType::setCritical_Job()
      * @uses Job_Profile_in_Position_Summary_DataType::setDifficulty_to_Fill_Reference()
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
      * @param bool $job_Exempt
-     * @param \StructType\Management_LevelObjectType $management_Level_Reference
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @param \StructType\Job_Family_BaseObjectType[] $job_Family_Reference
+     * @param \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectType[] $job_Family_Reference
      * @param string $job_Profile_Name
      * @param bool $work_Shift_Required
      * @param bool $critical_Job
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
      */
-    public function __construct(\StructType\Job_ProfileObjectType $job_Profile_Reference = null, $job_Exempt = null, \StructType\Management_LevelObjectType $management_Level_Reference = null, \StructType\Job_CategoryObjectType $job_Category_Reference = null, array $job_Family_Reference = array(), $job_Profile_Name = null, $work_Shift_Required = null, $critical_Job = null, \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null, $job_Exempt = null, \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference = null, \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null, array $job_Family_Reference = array(), $job_Profile_Name = null, $work_Shift_Required = null, $critical_Job = null, \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
     {
         $this
             ->setJob_Profile_Reference($job_Profile_Reference)
@@ -125,7 +125,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Reference value
-     * @return \StructType\Job_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType|null
      */
     public function getJob_Profile_Reference()
     {
@@ -133,10 +133,10 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Reference value
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
-    public function setJob_Profile_Reference(\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
+    public function setJob_Profile_Reference(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
     {
         $this->Job_Profile_Reference = $job_Profile_Reference;
         return $this;
@@ -152,7 +152,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Set Job_Exempt value
      * @param bool $job_Exempt
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public function setJob_Exempt($job_Exempt = null)
     {
@@ -165,7 +165,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Management_Level_Reference value
-     * @return \StructType\Management_LevelObjectType|null
+     * @return \WorkdayWsdl\\StructType\Management_LevelObjectType|null
      */
     public function getManagement_Level_Reference()
     {
@@ -173,17 +173,17 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Management_Level_Reference value
-     * @param \StructType\Management_LevelObjectType $management_Level_Reference
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
-    public function setManagement_Level_Reference(\StructType\Management_LevelObjectType $management_Level_Reference = null)
+    public function setManagement_Level_Reference(\WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference = null)
     {
         $this->Management_Level_Reference = $management_Level_Reference;
         return $this;
     }
     /**
      * Get Job_Category_Reference value
-     * @return \StructType\Job_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryObjectType|null
      */
     public function getJob_Category_Reference()
     {
@@ -191,17 +191,17 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Category_Reference value
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
-    public function setJob_Category_Reference(\StructType\Job_CategoryObjectType $job_Category_Reference = null)
+    public function setJob_Category_Reference(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null)
     {
         $this->Job_Category_Reference = $job_Category_Reference;
         return $this;
     }
     /**
      * Get Job_Family_Reference value
-     * @return \StructType\Job_Family_BaseObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType[]|null
      */
     public function getJob_Family_Reference()
     {
@@ -219,12 +219,12 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem instanceof \StructType\Job_Family_BaseObjectType) {
+            if (!$job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_Family_BaseObjectType) {
                 $invalidValues[] = is_object($job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem) ? get_class($job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem) : sprintf('%s(%s)', gettype($job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem), var_export($job_Profile_in_Position_Summary_DataTypeJob_Family_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Family_Reference property can only contain items of type \StructType\Job_Family_BaseObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Family_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_BaseObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -232,8 +232,8 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Set Job_Family_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_BaseObjectType[] $job_Family_Reference
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectType[] $job_Family_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public function setJob_Family_Reference(array $job_Family_Reference = array())
     {
@@ -247,14 +247,14 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Add item to Job_Family_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_BaseObjectType $item
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
-    public function addToJob_Family_Reference(\StructType\Job_Family_BaseObjectType $item)
+    public function addToJob_Family_Reference(\WorkdayWsdl\\StructType\Job_Family_BaseObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Family_BaseObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Family_Reference property can only contain items of type \StructType\Job_Family_BaseObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Family_BaseObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Family_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_BaseObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Family_Reference[] = $item;
         return $this;
@@ -270,7 +270,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Name value
      * @param string $job_Profile_Name
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public function setJob_Profile_Name($job_Profile_Name = null)
     {
@@ -292,7 +292,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Set Work_Shift_Required value
      * @param bool $work_Shift_Required
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public function setWork_Shift_Required($work_Shift_Required = null)
     {
@@ -314,7 +314,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     /**
      * Set Critical_Job value
      * @param bool $critical_Job
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public function setCritical_Job($critical_Job = null)
     {
@@ -327,7 +327,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Difficulty_to_Fill_Reference value
-     * @return \StructType\Difficulty_to_FillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType|null
      */
     public function getDifficulty_to_Fill_Reference()
     {
@@ -335,10 +335,10 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Difficulty_to_Fill_Reference value
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
-    public function setDifficulty_to_Fill_Reference(\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
+    public function setDifficulty_to_Fill_Reference(\WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
     {
         $this->Difficulty_to_Fill_Reference = $difficulty_to_Fill_Reference;
         return $this;
@@ -349,7 +349,7 @@ class Job_Profile_in_Position_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType
      */
     public static function __set_state(array $array)
     {

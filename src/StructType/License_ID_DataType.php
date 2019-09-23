@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class License_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: License Identifier Type.
      * - minOccurs: 0
-     * @var \StructType\License_ID_Type__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType
      */
     public $ID_Type_Reference;
     /**
@@ -34,7 +34,7 @@ class License_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country issuing the License Identifier. No more than one Country Reference, Country Region Reference, or Authority Reference can be specified.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -42,7 +42,7 @@ class License_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country Region issuing the License Identifier. No more than one Country Reference, Country Region Reference, or Authority Reference can be specified.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Country_Region_Reference;
     /**
@@ -59,7 +59,7 @@ class License_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Authority issuing the License Identifier. No more than one Country Reference, Country Region Reference, or Authority Reference can be specified.
      * - minOccurs: 0
-     * @var \StructType\AuthorityObjectType
+     * @var \WorkdayWsdl\\StructType\AuthorityObjectType
      */
     public $Authority_Reference;
     /**
@@ -103,7 +103,7 @@ class License_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker who verified the ID.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Verified_By_Reference;
     /**
@@ -120,18 +120,18 @@ class License_ID_DataType extends AbstractStructBase
      * @uses License_ID_DataType::setVerification_Date()
      * @uses License_ID_DataType::setVerified_By_Reference()
      * @param string $iD
-     * @param \StructType\License_ID_Type__All_ObjectType $iD_Type_Reference
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
+     * @param \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType $iD_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
      * @param string $country_Region_Descriptor
-     * @param \StructType\AuthorityObjectType $authority_Reference
+     * @param \WorkdayWsdl\\StructType\AuthorityObjectType $authority_Reference
      * @param string $license_Class
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
-     * @param \StructType\WorkerObjectType $verified_By_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference
      */
-    public function __construct($iD = null, \StructType\License_ID_Type__All_ObjectType $iD_Type_Reference = null, \StructType\CountryObjectType $country_Reference = null, \StructType\Country_RegionObjectType $country_Region_Reference = null, $country_Region_Descriptor = null, \StructType\AuthorityObjectType $authority_Reference = null, $license_Class = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \StructType\WorkerObjectType $verified_By_Reference = null)
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType $iD_Type_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null, $country_Region_Descriptor = null, \WorkdayWsdl\\StructType\AuthorityObjectType $authority_Reference = null, $license_Class = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference = null)
     {
         $this
             ->setID($iD)
@@ -157,7 +157,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setID($iD = null)
     {
@@ -170,7 +170,7 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Get ID_Type_Reference value
-     * @return \StructType\License_ID_Type__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType|null
      */
     public function getID_Type_Reference()
     {
@@ -178,17 +178,17 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Set ID_Type_Reference value
-     * @param \StructType\License_ID_Type__All_ObjectType $iD_Type_Reference
-     * @return \StructType\License_ID_DataType
+     * @param \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType $iD_Type_Reference
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
-    public function setID_Type_Reference(\StructType\License_ID_Type__All_ObjectType $iD_Type_Reference = null)
+    public function setID_Type_Reference(\WorkdayWsdl\\StructType\License_ID_Type__All_ObjectType $iD_Type_Reference = null)
     {
         $this->ID_Type_Reference = $iD_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -196,17 +196,17 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\License_ID_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Country_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getCountry_Region_Reference()
     {
@@ -214,10 +214,10 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
-     * @return \StructType\License_ID_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
-    public function setCountry_Region_Reference(\StructType\Country_RegionObjectType $country_Region_Reference = null)
+    public function setCountry_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null)
     {
         $this->Country_Region_Reference = $country_Region_Reference;
         return $this;
@@ -233,7 +233,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set Country_Region_Descriptor value
      * @param string $country_Region_Descriptor
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setCountry_Region_Descriptor($country_Region_Descriptor = null)
     {
@@ -246,7 +246,7 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Get Authority_Reference value
-     * @return \StructType\AuthorityObjectType|null
+     * @return \WorkdayWsdl\\StructType\AuthorityObjectType|null
      */
     public function getAuthority_Reference()
     {
@@ -254,10 +254,10 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Authority_Reference value
-     * @param \StructType\AuthorityObjectType $authority_Reference
-     * @return \StructType\License_ID_DataType
+     * @param \WorkdayWsdl\\StructType\AuthorityObjectType $authority_Reference
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
-    public function setAuthority_Reference(\StructType\AuthorityObjectType $authority_Reference = null)
+    public function setAuthority_Reference(\WorkdayWsdl\\StructType\AuthorityObjectType $authority_Reference = null)
     {
         $this->Authority_Reference = $authority_Reference;
         return $this;
@@ -273,7 +273,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set License_Class value
      * @param string $license_Class
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setLicense_Class($license_Class = null)
     {
@@ -295,7 +295,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -317,7 +317,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -339,7 +339,7 @@ class License_ID_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -352,7 +352,7 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Get Verified_By_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getVerified_By_Reference()
     {
@@ -360,10 +360,10 @@ class License_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Verified_By_Reference value
-     * @param \StructType\WorkerObjectType $verified_By_Reference
-     * @return \StructType\License_ID_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
-    public function setVerified_By_Reference(\StructType\WorkerObjectType $verified_By_Reference = null)
+    public function setVerified_By_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference = null)
     {
         $this->Verified_By_Reference = $verified_By_Reference;
         return $this;
@@ -374,7 +374,7 @@ class License_ID_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\License_ID_DataType
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public static function __set_state(array $array)
     {

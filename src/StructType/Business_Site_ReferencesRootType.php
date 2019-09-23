@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class Business_Site_ReferencesRootType extends Business_Site_ReferencesType
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Business_Site_ReferencesRootType
+     * @return \WorkdayWsdl\\StructType\Business_Site_ReferencesRootType
      */
     public function setVersion($version = null)
     {
@@ -55,7 +55,7 @@ class Business_Site_ReferencesRootType extends Business_Site_ReferencesType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Site_ReferencesRootType
+     * @return \WorkdayWsdl\\StructType\Business_Site_ReferencesRootType
      */
     public static function __set_state(array $array)
     {

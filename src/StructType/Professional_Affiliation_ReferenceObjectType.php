@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Professional_Affiliation_ReferenceObjectType
      * @uses Professional_Affiliation_ReferenceObjectType::setID()
      * @uses Professional_Affiliation_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Professional_Affiliation_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Professional_Affiliation_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $professional_Affiliation_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$professional_Affiliation_ReferenceObjectTypeIDItem instanceof \StructType\Professional_Affiliation_ReferenceObjectIDType) {
+            if (!$professional_Affiliation_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($professional_Affiliation_ReferenceObjectTypeIDItem) ? get_class($professional_Affiliation_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($professional_Affiliation_ReferenceObjectTypeIDItem), var_export($professional_Affiliation_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_ReferenceObjectIDType[] $iD
-     * @return \StructType\Professional_Affiliation_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_ReferenceObjectIDType $item
-     * @return \StructType\Professional_Affiliation_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType
      */
-    public function addToID(\StructType\Professional_Affiliation_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Affiliation_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Professional_Affiliation_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Professional_Affiliation_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Affiliation_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

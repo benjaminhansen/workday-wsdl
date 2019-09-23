@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Establishment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Establish for Country
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -69,7 +69,7 @@ class Establishment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Location(s) for Establishment
      * - maxOccurs: unbounded
-     * @var \StructType\LocationObjectType[]
+     * @var \WorkdayWsdl\\StructType\LocationObjectType[]
      */
     public $Location_Reference;
     /**
@@ -77,7 +77,7 @@ class Establishment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Primary Location
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Primary_Location_Reference;
     /**
@@ -85,7 +85,7 @@ class Establishment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Legal Entities for Establishment
      * - maxOccurs: unbounded
-     * @var \StructType\Establishment_Legal_EntityObjectType[]
+     * @var \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType[]
      */
     public $Establishment_Legal_Entity_Reference;
     /**
@@ -191,13 +191,13 @@ class Establishment_DataType extends AbstractStructBase
      * @uses Establishment_DataType::setEstablishment_Headquarters()
      * @param string $establishment_Number
      * @param string $iD
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      * @param string $effective_Date
      * @param string $establishment_Name
      * @param bool $inactive
-     * @param \StructType\LocationObjectType[] $location_Reference
-     * @param \StructType\LocationObjectType $primary_Location_Reference
-     * @param \StructType\Establishment_Legal_EntityObjectType[] $establishment_Legal_Entity_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $primary_Location_Reference
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType[] $establishment_Legal_Entity_Reference
      * @param string $cCC_Text
      * @param string $dUNS_Text
      * @param string $eEO_Text
@@ -208,7 +208,7 @@ class Establishment_DataType extends AbstractStructBase
      * @param string $vETS_Text
      * @param bool $establishment_Headquarters
      */
-    public function __construct($establishment_Number = null, $iD = null, \StructType\CountryObjectType $country_Reference = null, $effective_Date = null, $establishment_Name = null, $inactive = null, array $location_Reference = array(), \StructType\LocationObjectType $primary_Location_Reference = null, array $establishment_Legal_Entity_Reference = array(), $cCC_Text = null, $dUNS_Text = null, $eEO_Text = null, $industry_Code_Text = null, $sIREN_Text = null, $nIC_Text = null, $sIRET_Text = null, $vETS_Text = null, $establishment_Headquarters = null)
+    public function __construct($establishment_Number = null, $iD = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, $effective_Date = null, $establishment_Name = null, $inactive = null, array $location_Reference = array(), \WorkdayWsdl\\StructType\LocationObjectType $primary_Location_Reference = null, array $establishment_Legal_Entity_Reference = array(), $cCC_Text = null, $dUNS_Text = null, $eEO_Text = null, $industry_Code_Text = null, $sIREN_Text = null, $nIC_Text = null, $sIRET_Text = null, $vETS_Text = null, $establishment_Headquarters = null)
     {
         $this
             ->setEstablishment_Number($establishment_Number)
@@ -241,7 +241,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Establishment_Number value
      * @param string $establishment_Number
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEstablishment_Number($establishment_Number = null)
     {
@@ -263,7 +263,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setID($iD = null)
     {
@@ -276,7 +276,7 @@ class Establishment_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -284,10 +284,10 @@ class Establishment_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -303,7 +303,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -325,7 +325,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Establishment_Name value
      * @param string $establishment_Name
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEstablishment_Name($establishment_Name = null)
     {
@@ -347,7 +347,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -360,7 +360,7 @@ class Establishment_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType[]|null
      */
     public function getLocation_Reference()
     {
@@ -378,12 +378,12 @@ class Establishment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $establishment_DataTypeLocation_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$establishment_DataTypeLocation_ReferenceItem instanceof \StructType\LocationObjectType) {
+            if (!$establishment_DataTypeLocation_ReferenceItem instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
                 $invalidValues[] = is_object($establishment_DataTypeLocation_ReferenceItem) ? get_class($establishment_DataTypeLocation_ReferenceItem) : sprintf('%s(%s)', gettype($establishment_DataTypeLocation_ReferenceItem), var_export($establishment_DataTypeLocation_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -391,8 +391,8 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType[] $location_Reference
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setLocation_Reference(array $location_Reference = array())
     {
@@ -406,21 +406,21 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Add item to Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType $item
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
-    public function addToLocation_Reference(\StructType\LocationObjectType $item)
+    public function addToLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Reference[] = $item;
         return $this;
     }
     /**
      * Get Primary_Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getPrimary_Location_Reference()
     {
@@ -428,17 +428,17 @@ class Establishment_DataType extends AbstractStructBase
     }
     /**
      * Set Primary_Location_Reference value
-     * @param \StructType\LocationObjectType $primary_Location_Reference
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $primary_Location_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
-    public function setPrimary_Location_Reference(\StructType\LocationObjectType $primary_Location_Reference = null)
+    public function setPrimary_Location_Reference(\WorkdayWsdl\\StructType\LocationObjectType $primary_Location_Reference = null)
     {
         $this->Primary_Location_Reference = $primary_Location_Reference;
         return $this;
     }
     /**
      * Get Establishment_Legal_Entity_Reference value
-     * @return \StructType\Establishment_Legal_EntityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType[]|null
      */
     public function getEstablishment_Legal_Entity_Reference()
     {
@@ -456,12 +456,12 @@ class Establishment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem instanceof \StructType\Establishment_Legal_EntityObjectType) {
+            if (!$establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem instanceof \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType) {
                 $invalidValues[] = is_object($establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem) ? get_class($establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem) : sprintf('%s(%s)', gettype($establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem), var_export($establishment_DataTypeEstablishment_Legal_Entity_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Establishment_Legal_Entity_Reference property can only contain items of type \StructType\Establishment_Legal_EntityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Establishment_Legal_Entity_Reference property can only contain items of type \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -469,8 +469,8 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Establishment_Legal_Entity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Establishment_Legal_EntityObjectType[] $establishment_Legal_Entity_Reference
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType[] $establishment_Legal_Entity_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEstablishment_Legal_Entity_Reference(array $establishment_Legal_Entity_Reference = array())
     {
@@ -484,14 +484,14 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Add item to Establishment_Legal_Entity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Establishment_Legal_EntityObjectType $item
-     * @return \StructType\Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
-    public function addToEstablishment_Legal_Entity_Reference(\StructType\Establishment_Legal_EntityObjectType $item)
+    public function addToEstablishment_Legal_Entity_Reference(\WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Establishment_Legal_EntityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Establishment_Legal_Entity_Reference property can only contain items of type \StructType\Establishment_Legal_EntityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Establishment_Legal_Entity_Reference property can only contain items of type \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Establishment_Legal_Entity_Reference[] = $item;
         return $this;
@@ -507,7 +507,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set CCC_Text value
      * @param string $cCC_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setCCC_Text($cCC_Text = null)
     {
@@ -529,7 +529,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set DUNS_Text value
      * @param string $dUNS_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setDUNS_Text($dUNS_Text = null)
     {
@@ -551,7 +551,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set EEO_Text value
      * @param string $eEO_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEEO_Text($eEO_Text = null)
     {
@@ -573,7 +573,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Industry_Code_Text value
      * @param string $industry_Code_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setIndustry_Code_Text($industry_Code_Text = null)
     {
@@ -595,7 +595,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set SIREN_Text value
      * @param string $sIREN_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setSIREN_Text($sIREN_Text = null)
     {
@@ -617,7 +617,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set NIC_Text value
      * @param string $nIC_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setNIC_Text($nIC_Text = null)
     {
@@ -639,7 +639,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set SIRET_Text value
      * @param string $sIRET_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setSIRET_Text($sIRET_Text = null)
     {
@@ -661,7 +661,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set VETS_Text value
      * @param string $vETS_Text
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setVETS_Text($vETS_Text = null)
     {
@@ -683,7 +683,7 @@ class Establishment_DataType extends AbstractStructBase
     /**
      * Set Establishment_Headquarters value
      * @param bool $establishment_Headquarters
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public function setEstablishment_Headquarters($establishment_Headquarters = null)
     {
@@ -700,7 +700,7 @@ class Establishment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public static function __set_state(array $array)
     {

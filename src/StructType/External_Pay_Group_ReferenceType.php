@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class External_Pay_Group_ReferenceType extends AbstractStructBase
     /**
      * Set Pay_Group_ID value
      * @param string $pay_Group_ID
-     * @return \StructType\External_Pay_Group_ReferenceType
+     * @return \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType
      */
     public function setPay_Group_ID($pay_Group_ID = null)
     {
@@ -58,7 +58,7 @@ class External_Pay_Group_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Pay_Group_ReferenceType
+     * @return \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class Safety_Incident_Note_DataType extends AbstractStructBase
     /**
      * Set Note_Date value
      * @param string $note_Date
-     * @return \StructType\Safety_Incident_Note_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Note_DataType
      */
     public function setNote_Date($note_Date = null)
     {
@@ -101,7 +101,7 @@ class Safety_Incident_Note_DataType extends AbstractStructBase
     /**
      * Set Note_Subject value
      * @param string $note_Subject
-     * @return \StructType\Safety_Incident_Note_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Note_DataType
      */
     public function setNote_Subject($note_Subject = null)
     {
@@ -123,7 +123,7 @@ class Safety_Incident_Note_DataType extends AbstractStructBase
     /**
      * Set Note_Content value
      * @param string $note_Content
-     * @return \StructType\Safety_Incident_Note_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Note_DataType
      */
     public function setNote_Content($note_Content = null)
     {
@@ -145,7 +145,7 @@ class Safety_Incident_Note_DataType extends AbstractStructBase
     /**
      * Set Is_Witness_Note value
      * @param bool $is_Witness_Note
-     * @return \StructType\Safety_Incident_Note_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Note_DataType
      */
     public function setIs_Witness_Note($is_Witness_Note = null)
     {
@@ -162,7 +162,7 @@ class Safety_Incident_Note_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Note_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Note_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Training Type.
      * - maxOccurs: unbounded
-     * @var \StructType\Training_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Training_TypeObjectType[]
      */
     public $Training_Type_Reference;
     /**
      * Constructor method for Training_Type_Request_ReferencesType
      * @uses Training_Type_Request_ReferencesType::setTraining_Type_Reference()
-     * @param \StructType\Training_TypeObjectType[] $training_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType[] $training_Type_Reference
      */
     public function __construct(array $training_Type_Reference = array())
     {
@@ -32,7 +32,7 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Training_Type_Reference value
-     * @return \StructType\Training_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Training_TypeObjectType[]|null
      */
     public function getTraining_Type_Reference()
     {
@@ -50,12 +50,12 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem instanceof \StructType\Training_TypeObjectType) {
+            if (!$training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Training_TypeObjectType) {
                 $invalidValues[] = is_object($training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem) ? get_class($training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem) : sprintf('%s(%s)', gettype($training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem), var_export($training_Type_Request_ReferencesTypeTraining_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Training_Type_Reference property can only contain items of type \StructType\Training_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Training_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Training_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Training_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Training_TypeObjectType[] $training_Type_Reference
-     * @return \StructType\Training_Type_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType[] $training_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Training_Type_Request_ReferencesType
      */
     public function setTraining_Type_Reference(array $training_Type_Reference = array())
     {
@@ -78,14 +78,14 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Training_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Training_TypeObjectType $item
-     * @return \StructType\Training_Type_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Training_Type_Request_ReferencesType
      */
-    public function addToTraining_Type_Reference(\StructType\Training_TypeObjectType $item)
+    public function addToTraining_Type_Reference(\WorkdayWsdl\\StructType\Training_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Training_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Training_Type_Reference property can only contain items of type \StructType\Training_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Training_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Training_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Training_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Training_Type_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Training_Type_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Training_Type_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Training_Type_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

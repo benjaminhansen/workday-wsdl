@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Position_Time_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Time_Type_Description value
      * @param string $time_Type_Description
-     * @return \StructType\Position_Time_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType
      */
     public function setTime_Type_Description($time_Type_Description = null)
     {
@@ -58,7 +58,7 @@ class Position_Time_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Position_Time_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Career_PreferenceObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Career_PreferenceReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Career_PreferenceReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Career_PreferenceReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Career_PreferenceReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Career_PreferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Career_PreferenceReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Career_PreferenceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Career_PreferenceReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Career_PreferenceReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Career_PreferenceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Career_PreferenceReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Career_PreferenceObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Career_PreferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Career_PreferenceObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Career_PreferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType
      */
     public static function __set_state(array $array)
     {

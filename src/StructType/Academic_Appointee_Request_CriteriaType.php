@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
      * - documentation: Academic Track Type Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Track_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[]
      */
     public $By_Academic_Track_Type_Reference;
     /**
@@ -64,7 +64,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
      * @uses Academic_Appointee_Request_CriteriaType::setBy_Affiliate()
      * @uses Academic_Appointee_Request_CriteriaType::setBy_Student()
      * @uses Academic_Appointee_Request_CriteriaType::setBy_Active_Role()
-     * @param \StructType\Academic_Track_TypeObjectType[] $by_Academic_Track_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[] $by_Academic_Track_Type_Reference
      * @param bool $by_Worker
      * @param bool $by_Affiliate
      * @param bool $by_Student
@@ -81,7 +81,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get By_Academic_Track_Type_Reference value
-     * @return \StructType\Academic_Track_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[]|null
      */
     public function getBy_Academic_Track_Type_Reference()
     {
@@ -99,12 +99,12 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem instanceof \StructType\Academic_Track_TypeObjectType) {
+            if (!$academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType) {
                 $invalidValues[] = is_object($academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem) ? get_class($academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem), var_export($academic_Appointee_Request_CriteriaTypeBy_Academic_Track_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The By_Academic_Track_Type_Reference property can only contain items of type \StructType\Academic_Track_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The By_Academic_Track_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -112,8 +112,8 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Set By_Academic_Track_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectType[] $by_Academic_Track_Type_Reference
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[] $by_Academic_Track_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public function setBy_Academic_Track_Type_Reference(array $by_Academic_Track_Type_Reference = array())
     {
@@ -127,14 +127,14 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to By_Academic_Track_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectType $item
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
-    public function addToBy_Academic_Track_Type_Reference(\StructType\Academic_Track_TypeObjectType $item)
+    public function addToBy_Academic_Track_Type_Reference(\WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Track_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The By_Academic_Track_Type_Reference property can only contain items of type \StructType\Academic_Track_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The By_Academic_Track_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->By_Academic_Track_Type_Reference[] = $item;
         return $this;
@@ -150,7 +150,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Set By_Worker value
      * @param bool $by_Worker
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public function setBy_Worker($by_Worker = null)
     {
@@ -172,7 +172,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Set By_Affiliate value
      * @param bool $by_Affiliate
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public function setBy_Affiliate($by_Affiliate = null)
     {
@@ -194,7 +194,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Set By_Student value
      * @param bool $by_Student
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public function setBy_Student($by_Student = null)
     {
@@ -216,7 +216,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
     /**
      * Set By_Active_Role value
      * @param bool $by_Active_Role
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public function setBy_Active_Role($by_Active_Role = null)
     {
@@ -233,7 +233,7 @@ class Academic_Appointee_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointee_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

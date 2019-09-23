@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Collective_AgreementObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Collective_AgreementReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Collective_AgreementReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Collective_AgreementReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Collective_AgreementReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Collective_AgreementObjectIDType
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Collective_AgreementReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Collective_AgreementReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Collective_AgreementReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Collective_AgreementReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Collective_AgreementReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Collective_AgreementReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Collective_AgreementObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Collective_AgreementObjectIDType
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Collective_AgreementObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_AgreementObjectIDType
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType
      */
     public static function __set_state(array $array)
     {

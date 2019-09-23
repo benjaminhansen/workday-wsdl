@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Relative_Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Holds a reference to a main relative name reference, with a single instance referencing all versions of a relative name.
      * - minOccurs: 0
-     * @var \StructType\Relative_Name_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType
      */
     public $Relative_Name_Reference_Reference;
     /**
@@ -25,14 +25,14 @@ class Relative_Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Relative Type specified in this request is inactive. Only active statuses are allowed. | Type to specify the relative person relationship.
      * - minOccurs: 0
-     * @var \StructType\Relative_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Relative_TypeObjectType
      */
     public $Relative_Type_Reference;
     /**
      * The Name_Detail_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Person_Name_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public $Name_Detail_Data;
     /**
@@ -48,12 +48,12 @@ class Relative_Name_DataType extends AbstractStructBase
      * @uses Relative_Name_DataType::setRelative_Type_Reference()
      * @uses Relative_Name_DataType::setName_Detail_Data()
      * @uses Relative_Name_DataType::setDelete()
-     * @param \StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference
-     * @param \StructType\Relative_TypeObjectType $relative_Type_Reference
-     * @param \StructType\Person_Name_Detail_DataType $name_Detail_Data
+     * @param \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference
+     * @param \WorkdayWsdl\\StructType\Relative_TypeObjectType $relative_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data
      * @param bool $delete
      */
-    public function __construct(\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference = null, \StructType\Relative_TypeObjectType $relative_Type_Reference = null, \StructType\Person_Name_Detail_DataType $name_Detail_Data = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference = null, \WorkdayWsdl\\StructType\Relative_TypeObjectType $relative_Type_Reference = null, \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data = null, $delete = null)
     {
         $this
             ->setRelative_Name_Reference_Reference($relative_Name_Reference_Reference)
@@ -63,7 +63,7 @@ class Relative_Name_DataType extends AbstractStructBase
     }
     /**
      * Get Relative_Name_Reference_Reference value
-     * @return \StructType\Relative_Name_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType|null
      */
     public function getRelative_Name_Reference_Reference()
     {
@@ -71,17 +71,17 @@ class Relative_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Relative_Name_Reference_Reference value
-     * @param \StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference
-     * @return \StructType\Relative_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType
      */
-    public function setRelative_Name_Reference_Reference(\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference = null)
+    public function setRelative_Name_Reference_Reference(\WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType $relative_Name_Reference_Reference = null)
     {
         $this->Relative_Name_Reference_Reference = $relative_Name_Reference_Reference;
         return $this;
     }
     /**
      * Get Relative_Type_Reference value
-     * @return \StructType\Relative_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Relative_TypeObjectType|null
      */
     public function getRelative_Type_Reference()
     {
@@ -89,17 +89,17 @@ class Relative_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Relative_Type_Reference value
-     * @param \StructType\Relative_TypeObjectType $relative_Type_Reference
-     * @return \StructType\Relative_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Relative_TypeObjectType $relative_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType
      */
-    public function setRelative_Type_Reference(\StructType\Relative_TypeObjectType $relative_Type_Reference = null)
+    public function setRelative_Type_Reference(\WorkdayWsdl\\StructType\Relative_TypeObjectType $relative_Type_Reference = null)
     {
         $this->Relative_Type_Reference = $relative_Type_Reference;
         return $this;
     }
     /**
      * Get Name_Detail_Data value
-     * @return \StructType\Person_Name_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType|null
      */
     public function getName_Detail_Data()
     {
@@ -107,10 +107,10 @@ class Relative_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Name_Detail_Data value
-     * @param \StructType\Person_Name_Detail_DataType $name_Detail_Data
-     * @return \StructType\Relative_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType
      */
-    public function setName_Detail_Data(\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
+    public function setName_Detail_Data(\WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
     {
         $this->Name_Detail_Data = $name_Detail_Data;
         return $this;
@@ -126,7 +126,7 @@ class Relative_Name_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Relative_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType
      */
     public function setDelete($delete = null)
     {
@@ -143,7 +143,7 @@ class Relative_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Relative_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType
      */
     public static function __set_state(array $array)
     {

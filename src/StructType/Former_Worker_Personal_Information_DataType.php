@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * The Name_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Person_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public $Name_Data;
     /**
@@ -34,7 +34,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * - documentation: Indicates the ethnicities that a person has.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EthnicityObjectType[]
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectType[]
      */
     public $Ethnicity_Reference;
     /**
@@ -50,7 +50,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * The Contact_Information_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public $Contact_Information_Data;
     /**
@@ -58,7 +58,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\National_IDType[]
+     * @var \WorkdayWsdl\\StructType\National_IDType[]
      */
     public $National_Identifier_Data;
     /**
@@ -69,14 +69,14 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * @uses Former_Worker_Personal_Information_DataType::setHispanic_or_Latino()
      * @uses Former_Worker_Personal_Information_DataType::setContact_Information_Data()
      * @uses Former_Worker_Personal_Information_DataType::setNational_Identifier_Data()
-     * @param \StructType\Person_Name_DataType $name_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $name_Data
      * @param string $birth_Date
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
      * @param bool $hispanic_or_Latino
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @param \StructType\National_IDType[] $national_Identifier_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\National_IDType[] $national_Identifier_Data
      */
-    public function __construct(\StructType\Person_Name_DataType $name_Data = null, $birth_Date = null, array $ethnicity_Reference = array(), $hispanic_or_Latino = null, \StructType\Contact_Information_DataType $contact_Information_Data = null, array $national_Identifier_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Person_Name_DataType $name_Data = null, $birth_Date = null, array $ethnicity_Reference = array(), $hispanic_or_Latino = null, \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null, array $national_Identifier_Data = array())
     {
         $this
             ->setName_Data($name_Data)
@@ -88,7 +88,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Name_Data value
-     * @return \StructType\Person_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType|null
      */
     public function getName_Data()
     {
@@ -96,10 +96,10 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Name_Data value
-     * @param \StructType\Person_Name_DataType $name_Data
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $name_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
-    public function setName_Data(\StructType\Person_Name_DataType $name_Data = null)
+    public function setName_Data(\WorkdayWsdl\\StructType\Person_Name_DataType $name_Data = null)
     {
         $this->Name_Data = $name_Data;
         return $this;
@@ -115,7 +115,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Birth_Date value
      * @param string $birth_Date
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public function setBirth_Date($birth_Date = null)
     {
@@ -128,7 +128,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Ethnicity_Reference value
-     * @return \StructType\EthnicityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType[]|null
      */
     public function getEthnicity_Reference()
     {
@@ -146,12 +146,12 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem instanceof \StructType\EthnicityObjectType) {
+            if (!$former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
                 $invalidValues[] = is_object($former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem) ? get_class($former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem) : sprintf('%s(%s)', gettype($former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem), var_export($former_Worker_Personal_Information_DataTypeEthnicity_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -159,8 +159,8 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public function setEthnicity_Reference(array $ethnicity_Reference = array())
     {
@@ -174,14 +174,14 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType $item
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
-    public function addToEthnicity_Reference(\StructType\EthnicityObjectType $item)
+    public function addToEthnicity_Reference(\WorkdayWsdl\\StructType\EthnicityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EthnicityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Ethnicity_Reference[] = $item;
         return $this;
@@ -197,7 +197,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Hispanic_or_Latino value
      * @param bool $hispanic_or_Latino
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public function setHispanic_or_Latino($hispanic_or_Latino = null)
     {
@@ -210,7 +210,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType|null
      */
     public function getContact_Information_Data()
     {
@@ -218,17 +218,17 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Contact_Information_Data value
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
-    public function setContact_Information_Data(\StructType\Contact_Information_DataType $contact_Information_Data = null)
+    public function setContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null)
     {
         $this->Contact_Information_Data = $contact_Information_Data;
         return $this;
     }
     /**
      * Get National_Identifier_Data value
-     * @return \StructType\National_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\National_IDType[]|null
      */
     public function getNational_Identifier_Data()
     {
@@ -246,12 +246,12 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem instanceof \StructType\National_IDType) {
+            if (!$former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem instanceof \WorkdayWsdl\\StructType\National_IDType) {
                 $invalidValues[] = is_object($former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem) ? get_class($former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem) : sprintf('%s(%s)', gettype($former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem), var_export($former_Worker_Personal_Information_DataTypeNational_Identifier_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The National_Identifier_Data property can only contain items of type \StructType\National_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The National_Identifier_Data property can only contain items of type \WorkdayWsdl\\StructType\National_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -259,8 +259,8 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set National_Identifier_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_IDType[] $national_Identifier_Data
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\National_IDType[] $national_Identifier_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public function setNational_Identifier_Data(array $national_Identifier_Data = array())
     {
@@ -274,14 +274,14 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to National_Identifier_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_IDType $item
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\National_IDType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
-    public function addToNational_Identifier_Data(\StructType\National_IDType $item)
+    public function addToNational_Identifier_Data(\WorkdayWsdl\\StructType\National_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\National_IDType) {
-            throw new \InvalidArgumentException(sprintf('The National_Identifier_Data property can only contain items of type \StructType\National_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\National_IDType) {
+            throw new \InvalidArgumentException(sprintf('The National_Identifier_Data property can only contain items of type \WorkdayWsdl\\StructType\National_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->National_Identifier_Data[] = $item;
         return $this;
@@ -292,7 +292,7 @@ class Former_Worker_Personal_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public static function __set_state(array $array)
     {

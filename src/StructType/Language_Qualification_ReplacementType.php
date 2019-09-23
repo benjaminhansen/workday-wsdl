@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Language_Qualification_Profile_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType[]
      */
     public $Language_Qualification_Replacement_Data;
     /**
@@ -31,7 +31,7 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
      * Constructor method for Language_Qualification_ReplacementType
      * @uses Language_Qualification_ReplacementType::setLanguage_Qualification_Replacement_Data()
      * @uses Language_Qualification_ReplacementType::setDelete()
-     * @param \StructType\Language_Qualification_Profile_Replacement_DataType[] $language_Qualification_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType[] $language_Qualification_Replacement_Data
      * @param bool $delete
      */
     public function __construct(array $language_Qualification_Replacement_Data = array(), $delete = null)
@@ -42,7 +42,7 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
     }
     /**
      * Get Language_Qualification_Replacement_Data value
-     * @return \StructType\Language_Qualification_Profile_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType[]|null
      */
     public function getLanguage_Qualification_Replacement_Data()
     {
@@ -60,12 +60,12 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem instanceof \StructType\Language_Qualification_Profile_Replacement_DataType) {
+            if (!$language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType) {
                 $invalidValues[] = is_object($language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem) ? get_class($language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem) : sprintf('%s(%s)', gettype($language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem), var_export($language_Qualification_ReplacementTypeLanguage_Qualification_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language_Qualification_Replacement_Data property can only contain items of type \StructType\Language_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Language_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Qualification_Profile_Replacement_DataType[] $language_Qualification_Replacement_Data
-     * @return \StructType\Language_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType[] $language_Qualification_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Language_Qualification_ReplacementType
      */
     public function setLanguage_Qualification_Replacement_Data(array $language_Qualification_Replacement_Data = array())
     {
@@ -88,14 +88,14 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Add item to Language_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Qualification_Profile_Replacement_DataType $item
-     * @return \StructType\Language_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Language_Qualification_ReplacementType
      */
-    public function addToLanguage_Qualification_Replacement_Data(\StructType\Language_Qualification_Profile_Replacement_DataType $item)
+    public function addToLanguage_Qualification_Replacement_Data(\WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Language_Qualification_Profile_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Language_Qualification_Replacement_Data property can only contain items of type \StructType\Language_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Language_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Language_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language_Qualification_Replacement_Data[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Language_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Language_Qualification_ReplacementType
      */
     public function setDelete($delete = null)
     {
@@ -128,7 +128,7 @@ class Language_Qualification_ReplacementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Language_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Language_Qualification_ReplacementType
      */
     public static function __set_state(array $array)
     {

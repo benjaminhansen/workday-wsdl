@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Time_Lost_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Report_Safety_Incident_Time_Away_DataType[]
+     * @var \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType[]
      */
     public $Time_Away_Data;
     /**
@@ -45,7 +45,7 @@ class Time_Lost_DataType extends AbstractStructBase
      * @uses Time_Lost_DataType::setTime_Away_Data()
      * @param bool $full_Day_Lost
      * @param bool $job_Restrictions
-     * @param \StructType\Report_Safety_Incident_Time_Away_DataType[] $time_Away_Data
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType[] $time_Away_Data
      */
     public function __construct($full_Day_Lost = null, $job_Restrictions = null, array $time_Away_Data = array())
     {
@@ -65,7 +65,7 @@ class Time_Lost_DataType extends AbstractStructBase
     /**
      * Set Full_Day_Lost value
      * @param bool $full_Day_Lost
-     * @return \StructType\Time_Lost_DataType
+     * @return \WorkdayWsdl\\StructType\Time_Lost_DataType
      */
     public function setFull_Day_Lost($full_Day_Lost = null)
     {
@@ -87,7 +87,7 @@ class Time_Lost_DataType extends AbstractStructBase
     /**
      * Set Job_Restrictions value
      * @param bool $job_Restrictions
-     * @return \StructType\Time_Lost_DataType
+     * @return \WorkdayWsdl\\StructType\Time_Lost_DataType
      */
     public function setJob_Restrictions($job_Restrictions = null)
     {
@@ -100,7 +100,7 @@ class Time_Lost_DataType extends AbstractStructBase
     }
     /**
      * Get Time_Away_Data value
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType[]|null
      */
     public function getTime_Away_Data()
     {
@@ -118,12 +118,12 @@ class Time_Lost_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $time_Lost_DataTypeTime_Away_DataItem) {
             // validation for constraint: itemType
-            if (!$time_Lost_DataTypeTime_Away_DataItem instanceof \StructType\Report_Safety_Incident_Time_Away_DataType) {
+            if (!$time_Lost_DataTypeTime_Away_DataItem instanceof \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType) {
                 $invalidValues[] = is_object($time_Lost_DataTypeTime_Away_DataItem) ? get_class($time_Lost_DataTypeTime_Away_DataItem) : sprintf('%s(%s)', gettype($time_Lost_DataTypeTime_Away_DataItem), var_export($time_Lost_DataTypeTime_Away_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Time_Away_Data property can only contain items of type \StructType\Report_Safety_Incident_Time_Away_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Time_Away_Data property can only contain items of type \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -131,8 +131,8 @@ class Time_Lost_DataType extends AbstractStructBase
     /**
      * Set Time_Away_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Report_Safety_Incident_Time_Away_DataType[] $time_Away_Data
-     * @return \StructType\Time_Lost_DataType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType[] $time_Away_Data
+     * @return \WorkdayWsdl\\StructType\Time_Lost_DataType
      */
     public function setTime_Away_Data(array $time_Away_Data = array())
     {
@@ -146,14 +146,14 @@ class Time_Lost_DataType extends AbstractStructBase
     /**
      * Add item to Time_Away_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Report_Safety_Incident_Time_Away_DataType $item
-     * @return \StructType\Time_Lost_DataType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType $item
+     * @return \WorkdayWsdl\\StructType\Time_Lost_DataType
      */
-    public function addToTime_Away_Data(\StructType\Report_Safety_Incident_Time_Away_DataType $item)
+    public function addToTime_Away_Data(\WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Report_Safety_Incident_Time_Away_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Time_Away_Data property can only contain items of type \StructType\Report_Safety_Incident_Time_Away_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Time_Away_Data property can only contain items of type \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Time_Away_Data[] = $item;
         return $this;
@@ -164,7 +164,7 @@ class Time_Lost_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Time_Lost_DataType
+     * @return \WorkdayWsdl\\StructType\Time_Lost_DataType
      */
     public static function __set_state(array $array)
     {

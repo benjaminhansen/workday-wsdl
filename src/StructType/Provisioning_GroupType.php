@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Provisioning_GroupType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a provisioning group.
      * - minOccurs: 0
-     * @var \StructType\Provisioning_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Provisioning_GroupObjectType
      */
     public $Provisioning_Group_Reference;
     /**
      * The Provisioning_Group_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Provisioning_Group_DataType
+     * @var \WorkdayWsdl\\StructType\Provisioning_Group_DataType
      */
     public $Provisioning_Group_Data;
     /**
      * Constructor method for Provisioning_GroupType
      * @uses Provisioning_GroupType::setProvisioning_Group_Reference()
      * @uses Provisioning_GroupType::setProvisioning_Group_Data()
-     * @param \StructType\Provisioning_GroupObjectType $provisioning_Group_Reference
-     * @param \StructType\Provisioning_Group_DataType $provisioning_Group_Data
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_DataType $provisioning_Group_Data
      */
-    public function __construct(\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference = null, \StructType\Provisioning_Group_DataType $provisioning_Group_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference = null, \WorkdayWsdl\\StructType\Provisioning_Group_DataType $provisioning_Group_Data = null)
     {
         $this
             ->setProvisioning_Group_Reference($provisioning_Group_Reference)
@@ -42,7 +42,7 @@ class Provisioning_GroupType extends AbstractStructBase
     }
     /**
      * Get Provisioning_Group_Reference value
-     * @return \StructType\Provisioning_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType|null
      */
     public function getProvisioning_Group_Reference()
     {
@@ -50,17 +50,17 @@ class Provisioning_GroupType extends AbstractStructBase
     }
     /**
      * Set Provisioning_Group_Reference value
-     * @param \StructType\Provisioning_GroupObjectType $provisioning_Group_Reference
-     * @return \StructType\Provisioning_GroupType
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupType
      */
-    public function setProvisioning_Group_Reference(\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference = null)
+    public function setProvisioning_Group_Reference(\WorkdayWsdl\\StructType\Provisioning_GroupObjectType $provisioning_Group_Reference = null)
     {
         $this->Provisioning_Group_Reference = $provisioning_Group_Reference;
         return $this;
     }
     /**
      * Get Provisioning_Group_Data value
-     * @return \StructType\Provisioning_Group_DataType|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_DataType|null
      */
     public function getProvisioning_Group_Data()
     {
@@ -68,10 +68,10 @@ class Provisioning_GroupType extends AbstractStructBase
     }
     /**
      * Set Provisioning_Group_Data value
-     * @param \StructType\Provisioning_Group_DataType $provisioning_Group_Data
-     * @return \StructType\Provisioning_GroupType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_DataType $provisioning_Group_Data
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupType
      */
-    public function setProvisioning_Group_Data(\StructType\Provisioning_Group_DataType $provisioning_Group_Data = null)
+    public function setProvisioning_Group_Data(\WorkdayWsdl\\StructType\Provisioning_Group_DataType $provisioning_Group_Data = null)
     {
         $this->Provisioning_Group_Data = $provisioning_Group_Data;
         return $this;
@@ -82,7 +82,7 @@ class Provisioning_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_GroupType
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupType
      */
     public static function __set_state(array $array)
     {

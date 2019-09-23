@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
      * - documentation: Data for agenda item attachments
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[]
      */
     public $Committee_Meeting_Agenda_Item_Attachment_Data;
     /**
      * Constructor method for Committee_Meeting_Agenda_Item_AttachmentsType
      * @uses Committee_Meeting_Agenda_Item_AttachmentsType::setCommittee_Meeting_Agenda_Item_Attachment_Data()
-     * @param \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[] $committee_Meeting_Agenda_Item_Attachment_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[] $committee_Meeting_Agenda_Item_Attachment_Data
      */
     public function __construct(array $committee_Meeting_Agenda_Item_Attachment_Data = array())
     {
@@ -33,7 +33,7 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
     }
     /**
      * Get Committee_Meeting_Agenda_Item_Attachment_Data value
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[]|null
      */
     public function getCommittee_Meeting_Agenda_Item_Attachment_Data()
     {
@@ -51,12 +51,12 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem instanceof \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType) {
+            if (!$committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType) {
                 $invalidValues[] = is_object($committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem) ? get_class($committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem) : sprintf('%s(%s)', gettype($committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem), var_export($committee_Meeting_Agenda_Item_AttachmentsTypeCommittee_Meeting_Agenda_Item_Attachment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Meeting_Agenda_Item_Attachment_Data property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Meeting_Agenda_Item_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
     /**
      * Set Committee_Meeting_Agenda_Item_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[] $committee_Meeting_Agenda_Item_Attachment_Data
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentsType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType[] $committee_Meeting_Agenda_Item_Attachment_Data
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType
      */
     public function setCommittee_Meeting_Agenda_Item_Attachment_Data(array $committee_Meeting_Agenda_Item_Attachment_Data = array())
     {
@@ -79,14 +79,14 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
     /**
      * Add item to Committee_Meeting_Agenda_Item_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType $item
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentsType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType
      */
-    public function addToCommittee_Meeting_Agenda_Item_Attachment_Data(\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType $item)
+    public function addToCommittee_Meeting_Agenda_Item_Attachment_Data(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Agenda_Item_Attachment_Data property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Agenda_Item_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Meeting_Agenda_Item_Attachment_Data[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Committee_Meeting_Agenda_Item_AttachmentsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentsType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType
      */
     public static function __set_state(array $array)
     {

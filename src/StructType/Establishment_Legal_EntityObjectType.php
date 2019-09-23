@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Establishment_Legal_EntityObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
      * Constructor method for Establishment_Legal_EntityObjectType
      * @uses Establishment_Legal_EntityObjectType::setID()
      * @uses Establishment_Legal_EntityObjectType::setDescriptor()
-     * @param \StructType\Establishment_Legal_EntityObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Establishment_Legal_EntityObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $establishment_Legal_EntityObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$establishment_Legal_EntityObjectTypeIDItem instanceof \StructType\Establishment_Legal_EntityObjectIDType) {
+            if (!$establishment_Legal_EntityObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType) {
                 $invalidValues[] = is_object($establishment_Legal_EntityObjectTypeIDItem) ? get_class($establishment_Legal_EntityObjectTypeIDItem) : sprintf('%s(%s)', gettype($establishment_Legal_EntityObjectTypeIDItem), var_export($establishment_Legal_EntityObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Establishment_Legal_EntityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Establishment_Legal_EntityObjectIDType[] $iD
-     * @return \StructType\Establishment_Legal_EntityObjectType
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Establishment_Legal_EntityObjectIDType $item
-     * @return \StructType\Establishment_Legal_EntityObjectType
+     * @param \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType
      */
-    public function addToID(\StructType\Establishment_Legal_EntityObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Establishment_Legal_EntityObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Establishment_Legal_EntityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Establishment_Legal_EntityObjectType
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Establishment_Legal_EntityObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Establishment_Legal_EntityObjectType
+     * @return \WorkdayWsdl\\StructType\Establishment_Legal_EntityObjectType
      */
     public static function __set_state(array $array)
     {

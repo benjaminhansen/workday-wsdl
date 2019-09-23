@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
      * - documentation: Requested User-Based Security Group References
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\User_Based_Security_GroupObjectType[]
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType[]
      */
     public $User_Based_Security_Group_Reference;
     /**
      * Constructor method for User-Based_Security_Group_Request_ReferencesType
      * @uses User_Based_Security_Group_Request_ReferencesType::setUser_Based_Security_Group_Reference()
-     * @param \StructType\User_Based_Security_GroupObjectType[] $user_Based_Security_Group_Reference
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType[] $user_Based_Security_Group_Reference
      */
     public function __construct(array $user_Based_Security_Group_Reference = array())
     {
@@ -34,7 +34,7 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
     }
     /**
      * Get User_Based_Security_Group_Reference value
-     * @return \StructType\User_Based_Security_GroupObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType[]|null
      */
     public function getUser_Based_Security_Group_Reference()
     {
@@ -52,12 +52,12 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem instanceof \StructType\User_Based_Security_GroupObjectType) {
+            if (!$user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem instanceof \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType) {
                 $invalidValues[] = is_object($user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem) ? get_class($user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem) : sprintf('%s(%s)', gettype($user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem), var_export($user_Based_Security_Group_Request_ReferencesTypeUser_Based_Security_Group_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The User_Based_Security_Group_Reference property can only contain items of type \StructType\User_Based_Security_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The User_Based_Security_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
     /**
      * Set User_Based_Security_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_GroupObjectType[] $user_Based_Security_Group_Reference
-     * @return \StructType\User_Based_Security_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType[] $user_Based_Security_Group_Reference
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType
      */
     public function setUser_Based_Security_Group_Reference(array $user_Based_Security_Group_Reference = array())
     {
@@ -80,14 +80,14 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
     /**
      * Add item to User_Based_Security_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_GroupObjectType $item
-     * @return \StructType\User_Based_Security_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $item
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType
      */
-    public function addToUser_Based_Security_Group_Reference(\StructType\User_Based_Security_GroupObjectType $item)
+    public function addToUser_Based_Security_Group_Reference(\WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_Based_Security_GroupObjectType) {
-            throw new \InvalidArgumentException(sprintf('The User_Based_Security_Group_Reference property can only contain items of type \StructType\User_Based_Security_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType) {
+            throw new \InvalidArgumentException(sprintf('The User_Based_Security_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->User_Based_Security_Group_Reference[] = $this->{'User-Based_Security_Group_Reference'}[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class User_Based_Security_Group_Request_ReferencesType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\User_Based_Security_Group_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

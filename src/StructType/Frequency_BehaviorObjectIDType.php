@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Frequency_BehaviorObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Frequency_BehaviorReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Frequency_BehaviorReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Frequency_BehaviorReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Frequency_BehaviorReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Frequency_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Frequency_BehaviorObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Frequency_BehaviorReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Frequency_BehaviorReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Frequency_BehaviorReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Frequency_BehaviorReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Frequency_BehaviorReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Frequency_BehaviorReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Frequency_BehaviorObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Frequency_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Frequency_BehaviorObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Frequency_BehaviorObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Frequency_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Frequency_BehaviorObjectIDType
      */
     public static function __set_state(array $array)
     {

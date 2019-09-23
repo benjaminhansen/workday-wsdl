@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Twenty_Four_Hour_TimeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Twenty_Four_Hour_TimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Twenty_Four_Hour_TimeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Twenty_Four_Hour_TimeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Twenty_Four_Hour_TimeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Twenty_Four_Hour_TimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Twenty_Four_Hour_TimeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Twenty_Four_Hour_TimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectIDType
      */
     public static function __set_state(array $array)
     {

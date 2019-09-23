@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
      * The Employee_Reference
      * Meta information extracted from the WSDL
      * - documentation: The employee for which the External Disability Self-Identification Record refers.
-     * @var \StructType\EmployeeObjectType
+     * @var \WorkdayWsdl\\StructType\EmployeeObjectType
      */
     public $Employee_Reference;
     /**
@@ -34,7 +34,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
      * Meta information extracted from the WSDL
      * - documentation: The disability status of the External Disability Self-Identification Record.
      * - minOccurs: 0
-     * @var \StructType\Self_Identification_of_Disability_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType
      */
     public $Disability_Status_Reference;
     /**
@@ -63,12 +63,12 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
      * @uses External_Disability_Self_Identification_Record_DataType::setInvitation_Date()
      * @uses External_Disability_Self_Identification_Record_DataType::setResponse_Date()
      * @param string $iD
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @param \StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference
      * @param string $invitation_Date
      * @param string $response_Date
      */
-    public function __construct($iD = null, \StructType\EmployeeObjectType $employee_Reference = null, \StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference = null, $invitation_Date = null, $response_Date = null)
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null, \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference = null, $invitation_Date = null, $response_Date = null)
     {
         $this
             ->setID($iD)
@@ -88,7 +88,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
     public function setID($iD = null)
     {
@@ -101,7 +101,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\EmployeeObjectType|null
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectType|null
      */
     public function getEmployee_Reference()
     {
@@ -109,17 +109,17 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
-    public function setEmployee_Reference(\StructType\EmployeeObjectType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Disability_Status_Reference value
-     * @return \StructType\Self_Identification_of_Disability_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType|null
      */
     public function getDisability_Status_Reference()
     {
@@ -127,10 +127,10 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     }
     /**
      * Set Disability_Status_Reference value
-     * @param \StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @param \WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
-    public function setDisability_Status_Reference(\StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference = null)
+    public function setDisability_Status_Reference(\WorkdayWsdl\\StructType\Self_Identification_of_Disability_StatusObjectType $disability_Status_Reference = null)
     {
         $this->Disability_Status_Reference = $disability_Status_Reference;
         return $this;
@@ -146,7 +146,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     /**
      * Set Invitation_Date value
      * @param string $invitation_Date
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
     public function setInvitation_Date($invitation_Date = null)
     {
@@ -168,7 +168,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
     /**
      * Set Response_Date value
      * @param string $response_Date
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
     public function setResponse_Date($response_Date = null)
     {
@@ -185,7 +185,7 @@ class External_Disability_Self_Identification_Record_DataType extends AbstractSt
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
     public static function __set_state(array $array)
     {

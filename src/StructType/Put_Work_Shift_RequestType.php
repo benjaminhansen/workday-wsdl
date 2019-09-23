@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Work Shift. Only needed when updating a reference id on the Work Shift.
      * - minOccurs: 0
-     * @var \StructType\Work_ShiftObjectType
+     * @var \WorkdayWsdl\\StructType\Work_ShiftObjectType
      */
     public $Work_Shift_Reference;
     /**
      * The Work_Shift_Data
-     * @var \StructType\Work_Shift_DataType
+     * @var \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public $Work_Shift_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
      * @uses Put_Work_Shift_RequestType::setWork_Shift_Data()
      * @uses Put_Work_Shift_RequestType::setAdd_Only()
      * @uses Put_Work_Shift_RequestType::setVersion()
-     * @param \StructType\Work_ShiftObjectType $work_Shift_Reference
-     * @param \StructType\Work_Shift_DataType $work_Shift_Data
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Shift_DataType $work_Shift_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Work_ShiftObjectType $work_Shift_Reference = null, \StructType\Work_Shift_DataType $work_Shift_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference = null, \WorkdayWsdl\\StructType\Work_Shift_DataType $work_Shift_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setWork_Shift_Reference($work_Shift_Reference)
@@ -60,7 +60,7 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
     }
     /**
      * Get Work_Shift_Reference value
-     * @return \StructType\Work_ShiftObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_ShiftObjectType|null
      */
     public function getWork_Shift_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
     }
     /**
      * Set Work_Shift_Reference value
-     * @param \StructType\Work_ShiftObjectType $work_Shift_Reference
-     * @return \StructType\Put_Work_Shift_RequestType
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Work_Shift_RequestType
      */
-    public function setWork_Shift_Reference(\StructType\Work_ShiftObjectType $work_Shift_Reference = null)
+    public function setWork_Shift_Reference(\WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference = null)
     {
         $this->Work_Shift_Reference = $work_Shift_Reference;
         return $this;
     }
     /**
      * Get Work_Shift_Data value
-     * @return \StructType\Work_Shift_DataType|null
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType|null
      */
     public function getWork_Shift_Data()
     {
@@ -86,10 +86,10 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
     }
     /**
      * Set Work_Shift_Data value
-     * @param \StructType\Work_Shift_DataType $work_Shift_Data
-     * @return \StructType\Put_Work_Shift_RequestType
+     * @param \WorkdayWsdl\\StructType\Work_Shift_DataType $work_Shift_Data
+     * @return \WorkdayWsdl\\StructType\Put_Work_Shift_RequestType
      */
-    public function setWork_Shift_Data(\StructType\Work_Shift_DataType $work_Shift_Data = null)
+    public function setWork_Shift_Data(\WorkdayWsdl\\StructType\Work_Shift_DataType $work_Shift_Data = null)
     {
         $this->Work_Shift_Data = $work_Shift_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Work_Shift_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Shift_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Work_Shift_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Shift_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Work_Shift_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Work_Shift_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Shift_RequestType
      */
     public static function __set_state(array $array)
     {

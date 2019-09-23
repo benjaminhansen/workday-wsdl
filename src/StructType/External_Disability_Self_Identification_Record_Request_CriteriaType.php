@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class External_Disability_Self_Identification_Record_Request_CriteriaType extend
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_Record_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

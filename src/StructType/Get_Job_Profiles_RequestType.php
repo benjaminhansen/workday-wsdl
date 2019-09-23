@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,28 +16,28 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
      * The Request_References
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Request_Criteria
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
      * The Response_Group
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Response_GroupType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType
      */
     public $Response_Group;
     /**
@@ -54,13 +54,13 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
      * @uses Get_Job_Profiles_RequestType::setResponse_Filter()
      * @uses Get_Job_Profiles_RequestType::setResponse_Group()
      * @uses Get_Job_Profiles_RequestType::setVersion()
-     * @param \StructType\Job_Profile_Request_ReferencesType $request_References
-     * @param \StructType\Job_Profile_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Job_Profile_Response_GroupType $response_Group
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType $response_Group
      * @param string $version
      */
-    public function __construct(\StructType\Job_Profile_Request_ReferencesType $request_References = null, \StructType\Job_Profile_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Job_Profile_Response_GroupType $response_Group = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType $response_Group = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -71,7 +71,7 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Job_Profile_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -79,17 +79,17 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Job_Profile_Request_ReferencesType $request_References
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
-    public function setRequest_References(\StructType\Job_Profile_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Job_Profile_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Job_Profile_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -97,17 +97,17 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_Criteria value
-     * @param \StructType\Job_Profile_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
-    public function setRequest_Criteria(\StructType\Job_Profile_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Job_Profile_Request_CriteriaType $request_Criteria = null)
     {
         $this->Request_Criteria = $request_Criteria;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -115,17 +115,17 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\Job_Profile_Response_GroupType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType|null
      */
     public function getResponse_Group()
     {
@@ -133,10 +133,10 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Group value
-     * @param \StructType\Job_Profile_Response_GroupType $response_Group
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Response_GroupType $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
-    public function setResponse_Group(\StructType\Job_Profile_Response_GroupType $response_Group = null)
+    public function setResponse_Group(\WorkdayWsdl\\StructType\Job_Profile_Response_GroupType $response_Group = null)
     {
         $this->Response_Group = $response_Group;
         return $this;
@@ -152,7 +152,7 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
     public function setVersion($version = null)
     {
@@ -169,7 +169,7 @@ class Get_Job_Profiles_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Job_Profiles_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Job_Profiles_RequestType
      */
     public static function __set_state(array $array)
     {

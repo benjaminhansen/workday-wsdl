@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ReligionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ReligionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\ReligionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class ReligionObjectType extends AbstractStructBase
      * Constructor method for ReligionObjectType
      * @uses ReligionObjectType::setID()
      * @uses ReligionObjectType::setDescriptor()
-     * @param \StructType\ReligionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\ReligionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class ReligionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\ReligionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\ReligionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class ReligionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $religionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$religionObjectTypeIDItem instanceof \StructType\ReligionObjectIDType) {
+            if (!$religionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\ReligionObjectIDType) {
                 $invalidValues[] = is_object($religionObjectTypeIDItem) ? get_class($religionObjectTypeIDItem) : sprintf('%s(%s)', gettype($religionObjectTypeIDItem), var_export($religionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\ReligionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\ReligionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class ReligionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\ReligionObjectIDType[] $iD
-     * @return \StructType\ReligionObjectType
+     * @param \WorkdayWsdl\\StructType\ReligionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\ReligionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class ReligionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\ReligionObjectIDType $item
-     * @return \StructType\ReligionObjectType
+     * @param \WorkdayWsdl\\StructType\ReligionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\ReligionObjectType
      */
-    public function addToID(\StructType\ReligionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\ReligionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ReligionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\ReligionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\ReligionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\ReligionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class ReligionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\ReligionObjectType
+     * @return \WorkdayWsdl\\StructType\ReligionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class ReligionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReligionObjectType
+     * @return \WorkdayWsdl\\StructType\ReligionObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class CurrencyObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\CurrencyReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\CurrencyReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\CurrencyReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\CurrencyReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\CurrencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CurrencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\CurrencyReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\CurrencyReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\CurrencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\CurrencyReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class CurrencyObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CurrencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class CurrencyObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CurrencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Employee_Contribution_Percentage_DataType extends AbstractStructBase
     /**
      * Set Election_Percentage value
      * @param float $election_Percentage
-     * @return \StructType\Employee_Contribution_Percentage_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType
      */
     public function setElection_Percentage($election_Percentage = null)
     {
@@ -94,7 +94,7 @@ class Employee_Contribution_Percentage_DataType extends AbstractStructBase
     /**
      * Set Contribution_Percentage_Maximum value
      * @param float $contribution_Percentage_Maximum
-     * @return \StructType\Employee_Contribution_Percentage_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType
      */
     public function setContribution_Percentage_Maximum($contribution_Percentage_Maximum = null)
     {
@@ -123,7 +123,7 @@ class Employee_Contribution_Percentage_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Contribution_Percentage_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType
      */
     public static function __set_state(array $array)
     {

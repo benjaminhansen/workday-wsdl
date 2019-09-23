@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
 {
     /**
      * The ID
-     * @var \StructType\IDType
+     * @var \WorkdayWsdl\\StructType\IDType
      */
     public $ID;
     /**
@@ -28,10 +28,10 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
      * Constructor method for External_Integration_ID_Reference_DataType
      * @uses External_Integration_ID_Reference_DataType::setID()
      * @uses External_Integration_ID_Reference_DataType::setDescriptor()
-     * @param \StructType\IDType $iD
+     * @param \WorkdayWsdl\\StructType\IDType $iD
      * @param string $descriptor
      */
-    public function __construct(\StructType\IDType $iD = null, $descriptor = null)
+    public function __construct(\WorkdayWsdl\\StructType\IDType $iD = null, $descriptor = null)
     {
         $this
             ->setID($iD)
@@ -39,7 +39,7 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\IDType|null
+     * @return \WorkdayWsdl\\StructType\IDType|null
      */
     public function getID()
     {
@@ -47,10 +47,10 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
     }
     /**
      * Set ID value
-     * @param \StructType\IDType $iD
-     * @return \StructType\External_Integration_ID_Reference_DataType
+     * @param \WorkdayWsdl\\StructType\IDType $iD
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType
      */
-    public function setID(\StructType\IDType $iD = null)
+    public function setID(\WorkdayWsdl\\StructType\IDType $iD = null)
     {
         $this->ID = $iD;
         return $this;
@@ -66,7 +66,7 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Integration_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -83,7 +83,7 @@ class External_Integration_ID_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Integration_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType
      */
     public static function __set_state(array $array)
     {

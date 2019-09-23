@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_MonthObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
      * Constructor method for Day_of_the_MonthObjectType
      * @uses Day_of_the_MonthObjectType::setID()
      * @uses Day_of_the_MonthObjectType::setDescriptor()
-     * @param \StructType\Day_of_the_MonthObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Day_of_the_MonthObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $day_of_the_MonthObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$day_of_the_MonthObjectTypeIDItem instanceof \StructType\Day_of_the_MonthObjectIDType) {
+            if (!$day_of_the_MonthObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType) {
                 $invalidValues[] = is_object($day_of_the_MonthObjectTypeIDItem) ? get_class($day_of_the_MonthObjectTypeIDItem) : sprintf('%s(%s)', gettype($day_of_the_MonthObjectTypeIDItem), var_export($day_of_the_MonthObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Day_of_the_MonthObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_MonthObjectIDType[] $iD
-     * @return \StructType\Day_of_the_MonthObjectType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_MonthObjectIDType $item
-     * @return \StructType\Day_of_the_MonthObjectType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType
      */
-    public function addToID(\StructType\Day_of_the_MonthObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_MonthObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Day_of_the_MonthObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_MonthObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Day_of_the_MonthObjectType
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Day_of_the_MonthObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Day_of_the_MonthObjectType
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType
      */
     public static function __set_state(array $array)
     {

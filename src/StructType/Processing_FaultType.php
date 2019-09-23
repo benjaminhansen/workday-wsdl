@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Processing_FaultType extends AbstractStructBase
     /**
      * Set Detail_Message value
      * @param string $detail_Message
-     * @return \StructType\Processing_FaultType
+     * @return \WorkdayWsdl\\StructType\Processing_FaultType
      */
     public function setDetail_Message($detail_Message = null)
     {
@@ -56,7 +56,7 @@ class Processing_FaultType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Processing_FaultType
+     * @return \WorkdayWsdl\\StructType\Processing_FaultType
      */
     public static function __set_state(array $array)
     {

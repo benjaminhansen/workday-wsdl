@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_FillObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
      * Constructor method for Difficulty_to_FillObjectType
      * @uses Difficulty_to_FillObjectType::setID()
      * @uses Difficulty_to_FillObjectType::setDescriptor()
-     * @param \StructType\Difficulty_to_FillObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Difficulty_to_FillObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $difficulty_to_FillObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$difficulty_to_FillObjectTypeIDItem instanceof \StructType\Difficulty_to_FillObjectIDType) {
+            if (!$difficulty_to_FillObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType) {
                 $invalidValues[] = is_object($difficulty_to_FillObjectTypeIDItem) ? get_class($difficulty_to_FillObjectTypeIDItem) : sprintf('%s(%s)', gettype($difficulty_to_FillObjectTypeIDItem), var_export($difficulty_to_FillObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Difficulty_to_FillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Difficulty_to_FillObjectIDType[] $iD
-     * @return \StructType\Difficulty_to_FillObjectType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Difficulty_to_FillObjectIDType $item
-     * @return \StructType\Difficulty_to_FillObjectType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
-    public function addToID(\StructType\Difficulty_to_FillObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Difficulty_to_FillObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Difficulty_to_FillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Difficulty_to_FillObjectType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Difficulty_to_FillObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Difficulty_to_FillObjectType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public static function __set_state(array $array)
     {

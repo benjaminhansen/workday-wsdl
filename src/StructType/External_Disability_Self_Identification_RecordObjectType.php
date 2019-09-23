@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Disability_Self_Identification_RecordObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType[]
      */
     public $ID;
     /**
@@ -30,7 +30,7 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
      * Constructor method for External_Disability_Self-Identification_RecordObjectType
      * @uses External_Disability_Self_Identification_RecordObjectType::setID()
      * @uses External_Disability_Self_Identification_RecordObjectType::setDescriptor()
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -41,7 +41,7 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
     }
     /**
      * Get ID value
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType[]|null
      */
     public function getID()
     {
@@ -59,12 +59,12 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
         $invalidValues = [];
         foreach ($values as $external_Disability_Self_Identification_RecordObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Disability_Self_Identification_RecordObjectTypeIDItem instanceof \StructType\External_Disability_Self_Identification_RecordObjectIDType) {
+            if (!$external_Disability_Self_Identification_RecordObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType) {
                 $invalidValues[] = is_object($external_Disability_Self_Identification_RecordObjectTypeIDItem) ? get_class($external_Disability_Self_Identification_RecordObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Disability_Self_Identification_RecordObjectTypeIDItem), var_export($external_Disability_Self_Identification_RecordObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Disability_Self_Identification_RecordObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectIDType[] $iD
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType
      */
     public function setID(array $iD = array())
     {
@@ -87,14 +87,14 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectIDType $item
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType
      */
-    public function addToID(\StructType\External_Disability_Self_Identification_RecordObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Disability_Self_Identification_RecordObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Disability_Self_Identification_RecordObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -127,7 +127,7 @@ class External_Disability_Self_Identification_RecordObjectType extends AbstractS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType
      */
     public static function __set_state(array $array)
     {

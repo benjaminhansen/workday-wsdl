@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Collective Agreement Factor for this Collective Agreement Factor Parameter.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_FactorObjectType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType
      */
     public $Collective_Agreement_Factor_Reference;
     /**
@@ -37,7 +37,7 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
      * - documentation: The Collective Agreement Factor Option for this Collective Agreement Factor Parameter.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_OptionObjectType[]
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType[]
      */
     public $Collective_Agreement_Factor_Option_Reference;
     /**
@@ -46,10 +46,10 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
      * @uses Collective_Agreement_Factor_Parameter_DataType::setCollective_Agreement_Factor_Reference()
      * @uses Collective_Agreement_Factor_Parameter_DataType::setCollective_Agreement_Factor_Option_Reference()
      * @param string $order
-     * @param \StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectType[] $collective_Agreement_Factor_Option_Reference
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType[] $collective_Agreement_Factor_Option_Reference
      */
-    public function __construct($order = null, \StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference = null, array $collective_Agreement_Factor_Option_Reference = array())
+    public function __construct($order = null, \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference = null, array $collective_Agreement_Factor_Option_Reference = array())
     {
         $this
             ->setOrder($order)
@@ -67,7 +67,7 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
     /**
      * Set Order value
      * @param string $order
-     * @return \StructType\Collective_Agreement_Factor_Parameter_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Parameter_DataType
      */
     public function setOrder($order = null)
     {
@@ -84,7 +84,7 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
     }
     /**
      * Get Collective_Agreement_Factor_Reference value
-     * @return \StructType\Collective_Agreement_FactorObjectType|null
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType|null
      */
     public function getCollective_Agreement_Factor_Reference()
     {
@@ -92,17 +92,17 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
     }
     /**
      * Set Collective_Agreement_Factor_Reference value
-     * @param \StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference
-     * @return \StructType\Collective_Agreement_Factor_Parameter_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Parameter_DataType
      */
-    public function setCollective_Agreement_Factor_Reference(\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference = null)
+    public function setCollective_Agreement_Factor_Reference(\WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_Reference = null)
     {
         $this->Collective_Agreement_Factor_Reference = $collective_Agreement_Factor_Reference;
         return $this;
     }
     /**
      * Get Collective_Agreement_Factor_Option_Reference value
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType[]|null
      */
     public function getCollective_Agreement_Factor_Option_Reference()
     {
@@ -120,12 +120,12 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem instanceof \StructType\Collective_Agreement_Factor_OptionObjectType) {
+            if (!$collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType) {
                 $invalidValues[] = is_object($collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem) ? get_class($collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem) : sprintf('%s(%s)', gettype($collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem), var_export($collective_Agreement_Factor_Parameter_DataTypeCollective_Agreement_Factor_Option_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Collective_Agreement_Factor_Option_Reference property can only contain items of type \StructType\Collective_Agreement_Factor_OptionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Collective_Agreement_Factor_Option_Reference property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -133,8 +133,8 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
     /**
      * Set Collective_Agreement_Factor_Option_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectType[] $collective_Agreement_Factor_Option_Reference
-     * @return \StructType\Collective_Agreement_Factor_Parameter_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType[] $collective_Agreement_Factor_Option_Reference
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Parameter_DataType
      */
     public function setCollective_Agreement_Factor_Option_Reference(array $collective_Agreement_Factor_Option_Reference = array())
     {
@@ -148,14 +148,14 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
     /**
      * Add item to Collective_Agreement_Factor_Option_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectType $item
-     * @return \StructType\Collective_Agreement_Factor_Parameter_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType $item
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Parameter_DataType
      */
-    public function addToCollective_Agreement_Factor_Option_Reference(\StructType\Collective_Agreement_Factor_OptionObjectType $item)
+    public function addToCollective_Agreement_Factor_Option_Reference(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Collective_Agreement_Factor_OptionObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Collective_Agreement_Factor_Option_Reference property can only contain items of type \StructType\Collective_Agreement_Factor_OptionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Collective_Agreement_Factor_Option_Reference property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Collective_Agreement_Factor_Option_Reference[] = $item;
         return $this;
@@ -166,7 +166,7 @@ class Collective_Agreement_Factor_Parameter_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Factor_Parameter_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Parameter_DataType
      */
     public static function __set_state(array $array)
     {

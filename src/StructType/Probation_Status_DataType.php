@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Probation_Status_DataType extends AbstractStructBase
     /**
      * Set Probation_Start_Date value
      * @param string $probation_Start_Date
-     * @return \StructType\Probation_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Status_DataType
      */
     public function setProbation_Start_Date($probation_Start_Date = null)
     {
@@ -76,7 +76,7 @@ class Probation_Status_DataType extends AbstractStructBase
     /**
      * Set Probation_End_Date value
      * @param string $probation_End_Date
-     * @return \StructType\Probation_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Status_DataType
      */
     public function setProbation_End_Date($probation_End_Date = null)
     {
@@ -93,7 +93,7 @@ class Probation_Status_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Probation_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Status_DataType
      */
     public static function __set_state(array $array)
     {

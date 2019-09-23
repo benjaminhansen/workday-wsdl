@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Commission plan to update or assign. Does not default for Request Compensation Change.
      * - minOccurs: 0
-     * @var \StructType\Commission_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Commission_PlanObjectType
      */
     public $Compensation_Plan_Reference;
     /**
@@ -25,7 +25,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Compensation Element.
      * - minOccurs: 0
-     * @var \StructType\Compensation_Pay_EarningObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType
      */
     public $Compensation_Element_Reference;
     /**
@@ -45,7 +45,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -53,7 +53,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Frequency.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -74,7 +74,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Frequency for the Draw Amount.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Draw_Frequency_Reference;
     /**
@@ -116,18 +116,18 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * @uses Employee_Commission_Plan_Assignment_DataType::setDraw_Duration()
      * @uses Employee_Commission_Plan_Assignment_DataType::setRecoverable()
      * @uses Employee_Commission_Plan_Assignment_DataType::setAssignment_Effective_Date()
-     * @param \StructType\Commission_PlanObjectType $compensation_Plan_Reference
-     * @param \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
+     * @param \WorkdayWsdl\\StructType\Commission_PlanObjectType $compensation_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
      * @param float $target_Amount
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      * @param float $draw_Amount
-     * @param \StructType\FrequencyObjectType $draw_Frequency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $draw_Frequency_Reference
      * @param string $draw_Duration
      * @param bool $recoverable
      * @param string $assignment_Effective_Date
      */
-    public function __construct(\StructType\Commission_PlanObjectType $compensation_Plan_Reference = null, \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null, $target_Amount = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null, $draw_Amount = null, \StructType\FrequencyObjectType $draw_Frequency_Reference = null, $draw_Duration = null, $recoverable = null, $assignment_Effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Commission_PlanObjectType $compensation_Plan_Reference = null, \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null, $target_Amount = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, $draw_Amount = null, \WorkdayWsdl\\StructType\FrequencyObjectType $draw_Frequency_Reference = null, $draw_Duration = null, $recoverable = null, $assignment_Effective_Date = null)
     {
         $this
             ->setCompensation_Plan_Reference($compensation_Plan_Reference)
@@ -143,7 +143,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Plan_Reference value
-     * @return \StructType\Commission_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectType|null
      */
     public function getCompensation_Plan_Reference()
     {
@@ -151,17 +151,17 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Plan_Reference value
-     * @param \StructType\Commission_PlanObjectType $compensation_Plan_Reference
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Commission_PlanObjectType $compensation_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
-    public function setCompensation_Plan_Reference(\StructType\Commission_PlanObjectType $compensation_Plan_Reference = null)
+    public function setCompensation_Plan_Reference(\WorkdayWsdl\\StructType\Commission_PlanObjectType $compensation_Plan_Reference = null)
     {
         $this->Compensation_Plan_Reference = $compensation_Plan_Reference;
         return $this;
     }
     /**
      * Get Compensation_Element_Reference value
-     * @return \StructType\Compensation_Pay_EarningObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType|null
      */
     public function getCompensation_Element_Reference()
     {
@@ -169,10 +169,10 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Element_Reference value
-     * @param \StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Reference(\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null)
+    public function setCompensation_Element_Reference(\WorkdayWsdl\\StructType\Compensation_Pay_EarningObjectType $compensation_Element_Reference = null)
     {
         $this->Compensation_Element_Reference = $compensation_Element_Reference;
         return $this;
@@ -188,7 +188,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Target_Amount value
      * @param float $target_Amount
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public function setTarget_Amount($target_Amount = null)
     {
@@ -209,7 +209,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -217,17 +217,17 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -235,10 +235,10 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -254,7 +254,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Draw_Amount value
      * @param float $draw_Amount
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public function setDraw_Amount($draw_Amount = null)
     {
@@ -279,7 +279,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Draw_Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getDraw_Frequency_Reference()
     {
@@ -287,10 +287,10 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Draw_Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $draw_Frequency_Reference
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $draw_Frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
-    public function setDraw_Frequency_Reference(\StructType\FrequencyObjectType $draw_Frequency_Reference = null)
+    public function setDraw_Frequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $draw_Frequency_Reference = null)
     {
         $this->Draw_Frequency_Reference = $draw_Frequency_Reference;
         return $this;
@@ -306,7 +306,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Draw_Duration value
      * @param string $draw_Duration
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public function setDraw_Duration($draw_Duration = null)
     {
@@ -328,7 +328,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Recoverable value
      * @param bool $recoverable
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public function setRecoverable($recoverable = null)
     {
@@ -350,7 +350,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Assignment_Effective_Date value
      * @param string $assignment_Effective_Date
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public function setAssignment_Effective_Date($assignment_Effective_Date = null)
     {
@@ -367,7 +367,7 @@ class Employee_Commission_Plan_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Commission_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

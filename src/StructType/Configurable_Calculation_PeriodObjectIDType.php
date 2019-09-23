@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Configurable_Calculation_PeriodObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Configurable_Calculation_PeriodReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Configurable_Calculation_PeriodReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Configurable_Calculation_PeriodReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Configurable_Calculation_PeriodReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Configurable_Calculation_PeriodObjectIDType
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Configurable_Calculation_PeriodReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Configurable_Calculation_PeriodReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Configurable_Calculation_PeriodReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Configurable_Calculation_PeriodReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Configurable_Calculation_PeriodReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Configurable_Calculation_PeriodReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Configurable_Calculation_PeriodObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Configurable_Calculation_PeriodObjectIDType
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Configurable_Calculation_PeriodObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Configurable_Calculation_PeriodObjectIDType
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
 {
     /**
      * The Academic_Appointment_Track_Additional_Data
-     * @var \StructType\Academic_Appointment_Track_Custom_Object_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType
      */
     public $Academic_Appointment_Track_Additional_Data;
     /**
@@ -30,10 +30,10 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
      * Edit_Academic_Appointment_Track_Additional_Data_RequestType
      * @uses Edit_Academic_Appointment_Track_Additional_Data_RequestType::setAcademic_Appointment_Track_Additional_Data()
      * @uses Edit_Academic_Appointment_Track_Additional_Data_RequestType::setVersion()
-     * @param \StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data
      * @param string $version
      */
-    public function __construct(\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data = null, $version = null)
     {
         $this
             ->setAcademic_Appointment_Track_Additional_Data($academic_Appointment_Track_Additional_Data)
@@ -41,7 +41,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
     }
     /**
      * Get Academic_Appointment_Track_Additional_Data value
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType|null
      */
     public function getAcademic_Appointment_Track_Additional_Data()
     {
@@ -49,10 +49,10 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
     }
     /**
      * Set Academic_Appointment_Track_Additional_Data value
-     * @param \StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
      */
-    public function setAcademic_Appointment_Track_Additional_Data(\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data = null)
+    public function setAcademic_Appointment_Track_Additional_Data(\WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $academic_Appointment_Track_Additional_Data = null)
     {
         $this->Academic_Appointment_Track_Additional_Data = $academic_Appointment_Track_Additional_Data;
         return $this;
@@ -68,7 +68,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
      */
     public function setVersion($version = null)
     {
@@ -85,7 +85,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_RequestType extends Abstra
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: Role Reference
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Role_Reference;
     /**
@@ -26,7 +26,7 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: Reference to the source of the skill.
      * - minOccurs: 0
-     * @var \StructType\Person_Skill_Source_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
     public $Source_Reference;
     /**
@@ -34,7 +34,7 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_SkillType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[]
      */
     public $Professional_Affiliation;
     /**
@@ -42,11 +42,11 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
      * @uses Manage_Professional_Affiliation_Data_for_RoleType::setRole_Reference()
      * @uses Manage_Professional_Affiliation_Data_for_RoleType::setSource_Reference()
      * @uses Manage_Professional_Affiliation_Data_for_RoleType::setProfessional_Affiliation()
-     * @param \StructType\RoleObjectType $role_Reference
-     * @param \StructType\Person_Skill_Source_CategoryObjectType $source_Reference
-     * @param \StructType\Professional_Affiliation_SkillType[] $professional_Affiliation
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $role_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[] $professional_Affiliation
      */
-    public function __construct(\StructType\RoleObjectType $role_Reference = null, \StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null, array $professional_Affiliation = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $role_Reference = null, \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null, array $professional_Affiliation = array())
     {
         $this
             ->setRole_Reference($role_Reference)
@@ -55,7 +55,7 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
     }
     /**
      * Get Role_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getRole_Reference()
     {
@@ -63,17 +63,17 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
     }
     /**
      * Set Role_Reference value
-     * @param \StructType\RoleObjectType $role_Reference
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $role_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType
      */
-    public function setRole_Reference(\StructType\RoleObjectType $role_Reference = null)
+    public function setRole_Reference(\WorkdayWsdl\\StructType\RoleObjectType $role_Reference = null)
     {
         $this->Role_Reference = $role_Reference;
         return $this;
     }
     /**
      * Get Source_Reference value
-     * @return \StructType\Person_Skill_Source_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType|null
      */
     public function getSource_Reference()
     {
@@ -81,17 +81,17 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
     }
     /**
      * Set Source_Reference value
-     * @param \StructType\Person_Skill_Source_CategoryObjectType $source_Reference
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType
      */
-    public function setSource_Reference(\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null)
+    public function setSource_Reference(\WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null)
     {
         $this->Source_Reference = $source_Reference;
         return $this;
     }
     /**
      * Get Professional_Affiliation value
-     * @return \StructType\Professional_Affiliation_SkillType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[]|null
      */
     public function getProfessional_Affiliation()
     {
@@ -109,12 +109,12 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
         $invalidValues = [];
         foreach ($values as $manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem) {
             // validation for constraint: itemType
-            if (!$manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem instanceof \StructType\Professional_Affiliation_SkillType) {
+            if (!$manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType) {
                 $invalidValues[] = is_object($manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem) ? get_class($manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem) : sprintf('%s(%s)', gettype($manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem), var_export($manage_Professional_Affiliation_Data_for_RoleTypeProfessional_AffiliationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Professional_Affiliation property can only contain items of type \StructType\Professional_Affiliation_SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Professional_Affiliation property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -122,8 +122,8 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
     /**
      * Set Professional_Affiliation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillType[] $professional_Affiliation
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[] $professional_Affiliation
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType
      */
     public function setProfessional_Affiliation(array $professional_Affiliation = array())
     {
@@ -137,14 +137,14 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
     /**
      * Add item to Professional_Affiliation value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillType $item
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType $item
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType
      */
-    public function addToProfessional_Affiliation(\StructType\Professional_Affiliation_SkillType $item)
+    public function addToProfessional_Affiliation(\WorkdayWsdl\\StructType\Professional_Affiliation_SkillType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Affiliation_SkillType) {
-            throw new \InvalidArgumentException(sprintf('The Professional_Affiliation property can only contain items of type \StructType\Professional_Affiliation_SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType) {
+            throw new \InvalidArgumentException(sprintf('The Professional_Affiliation property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Professional_Affiliation[] = $item;
         return $this;
@@ -155,7 +155,7 @@ class Manage_Professional_Affiliation_Data_for_RoleType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType
      */
     public static function __set_state(array $array)
     {

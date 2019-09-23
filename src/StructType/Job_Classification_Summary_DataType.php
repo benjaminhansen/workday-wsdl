@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the job classification.
      * - minOccurs: 0
-     * @var \StructType\Job_ClassificationObjectType
+     * @var \WorkdayWsdl\\StructType\Job_ClassificationObjectType
      */
     public $Job_Classification_Reference;
     /**
@@ -25,7 +25,7 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the job group.
      * - minOccurs: 0
-     * @var \StructType\Job_Classification_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType
      */
     public $Job_Group_Reference;
     /**
@@ -40,11 +40,11 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
      * @uses Job_Classification_Summary_DataType::setJob_Classification_Reference()
      * @uses Job_Classification_Summary_DataType::setJob_Group_Reference()
      * @uses Job_Classification_Summary_DataType::setAdditional()
-     * @param \StructType\Job_ClassificationObjectType $job_Classification_Reference
-     * @param \StructType\Job_Classification_GroupObjectType $job_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $job_Group_Reference
      * @param bool $additional
      */
-    public function __construct(\StructType\Job_ClassificationObjectType $job_Classification_Reference = null, \StructType\Job_Classification_GroupObjectType $job_Group_Reference = null, $additional = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference = null, \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $job_Group_Reference = null, $additional = null)
     {
         $this
             ->setJob_Classification_Reference($job_Classification_Reference)
@@ -53,7 +53,7 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Classification_Reference value
-     * @return \StructType\Job_ClassificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationObjectType|null
      */
     public function getJob_Classification_Reference()
     {
@@ -61,17 +61,17 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Classification_Reference value
-     * @param \StructType\Job_ClassificationObjectType $job_Classification_Reference
-     * @return \StructType\Job_Classification_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Summary_DataType
      */
-    public function setJob_Classification_Reference(\StructType\Job_ClassificationObjectType $job_Classification_Reference = null)
+    public function setJob_Classification_Reference(\WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference = null)
     {
         $this->Job_Classification_Reference = $job_Classification_Reference;
         return $this;
     }
     /**
      * Get Job_Group_Reference value
-     * @return \StructType\Job_Classification_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType|null
      */
     public function getJob_Group_Reference()
     {
@@ -79,10 +79,10 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Group_Reference value
-     * @param \StructType\Job_Classification_GroupObjectType $job_Group_Reference
-     * @return \StructType\Job_Classification_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $job_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Summary_DataType
      */
-    public function setJob_Group_Reference(\StructType\Job_Classification_GroupObjectType $job_Group_Reference = null)
+    public function setJob_Group_Reference(\WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $job_Group_Reference = null)
     {
         $this->Job_Group_Reference = $job_Group_Reference;
         return $this;
@@ -98,7 +98,7 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
     /**
      * Set Additional value
      * @param bool $additional
-     * @return \StructType\Job_Classification_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Summary_DataType
      */
     public function setAdditional($additional = null)
     {
@@ -115,7 +115,7 @@ class Job_Classification_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Summary_DataType
      */
     public static function __set_state(array $array)
     {

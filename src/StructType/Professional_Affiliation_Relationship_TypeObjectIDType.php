@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Professional_Affiliation_Relationship_TypeObjectIDType extends AbstractStr
     }
     /**
      * Set type value
-     * @uses \EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Professional_Affiliation_Relationship_TypeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Professional_Affiliation_Relationship_TypeObjectIDType extends AbstractStr
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -92,7 +92,7 @@ class Professional_Affiliation_Relationship_TypeObjectIDType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType
      */
     public static function __set_state(array $array)
     {

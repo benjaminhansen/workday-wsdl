@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * The Organization_Assignment_Restrictions_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_Assignment_Restrictions_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
     public $Organization_Assignment_Restrictions_Data;
     /**
@@ -31,10 +31,10 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * Constructor method for Put_Organization_Assignment_Restrictions_RequestType
      * @uses Put_Organization_Assignment_Restrictions_RequestType::setOrganization_Assignment_Restrictions_Data()
      * @uses Put_Organization_Assignment_Restrictions_RequestType::setVersion()
-     * @param \StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data
      * @param string $version
      */
-    public function __construct(\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data = null, $version = null)
     {
         $this
             ->setOrganization_Assignment_Restrictions_Data($organization_Assignment_Restrictions_Data)
@@ -42,7 +42,7 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     }
     /**
      * Get Organization_Assignment_Restrictions_Data value
-     * @return \StructType\Organization_Assignment_Restrictions_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType|null
      */
     public function getOrganization_Assignment_Restrictions_Data()
     {
@@ -50,10 +50,10 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     }
     /**
      * Set Organization_Assignment_Restrictions_Data value
-     * @param \StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data
-     * @return \StructType\Put_Organization_Assignment_Restrictions_RequestType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_RequestType
      */
-    public function setOrganization_Assignment_Restrictions_Data(\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data = null)
+    public function setOrganization_Assignment_Restrictions_Data(\WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType $organization_Assignment_Restrictions_Data = null)
     {
         $this->Organization_Assignment_Restrictions_Data = $organization_Assignment_Restrictions_Data;
         return $this;
@@ -69,7 +69,7 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Organization_Assignment_Restrictions_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_RequestType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Organization_Assignment_Restrictions_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_RequestType
      */
     public static function __set_state(array $array)
     {

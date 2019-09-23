@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * The Reason_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the reason for the academic appointment event.
-     * @var \StructType\General_Event_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public $Reason_Reference;
     /**
@@ -35,7 +35,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointee_EnabledObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType
      */
     public $Academic_Appointee_Reference;
     /**
@@ -46,19 +46,19 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Create_Academic_Affiliate_DataType
+     * @var \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
     public $Create_Academic_Affiliate_Data;
     /**
      * The Academic_Appointment_Data
-     * @var \StructType\Academic_Appointment_Snapshot_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public $Academic_Appointment_Data;
     /**
      * The Create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Create_Workday_Account_Sub_Business_ProcessType
+     * @var \WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType
      */
     public $Create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate;
     /**
@@ -66,7 +66,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[]
+     * @var \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[]
      */
     public $Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate;
     /**
@@ -74,7 +74,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Manage_Education_Sub_Business_Process_DataType[]
+     * @var \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType[]
      */
     public $Manage_Education_Sub_Business_Process_for_Academic_Affiliate;
     /**
@@ -82,7 +82,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[]
+     * @var \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[]
      */
     public $Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate;
     /**
@@ -96,17 +96,17 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * @uses Add_Academic_Appointment_DataType::setManage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate()
      * @uses Add_Academic_Appointment_DataType::setManage_Education_Sub_Business_Process_for_Academic_Affiliate()
      * @uses Add_Academic_Appointment_DataType::setManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate()
-     * @param \StructType\General_Event_SubcategoryObjectType $reason_Reference
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference
      * @param bool $add_Academic_Affiliate_Status
-     * @param \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
-     * @param \StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data
-     * @param \StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data
-     * @param \StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate
-     * @param \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[] $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
-     * @param \StructType\Manage_Education_Sub_Business_Process_DataType[] $manage_Education_Sub_Business_Process_for_Academic_Affiliate
-     * @param \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[] $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
+     * @param \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
+     * @param \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data
+     * @param \WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[] $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
+     * @param \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType[] $manage_Education_Sub_Business_Process_for_Academic_Affiliate
+     * @param \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[] $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
      */
-    public function __construct(\StructType\General_Event_SubcategoryObjectType $reason_Reference = null, $add_Academic_Affiliate_Status = null, \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null, \StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data = null, \StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data = null, \StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate = null, array $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate = array(), array $manage_Education_Sub_Business_Process_for_Academic_Affiliate = array(), array $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate = array())
+    public function __construct(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference = null, $add_Academic_Affiliate_Status = null, \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null, \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data = null, \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data = null, \WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate = null, array $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate = array(), array $manage_Education_Sub_Business_Process_for_Academic_Affiliate = array(), array $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate = array())
     {
         $this
             ->setReason_Reference($reason_Reference)
@@ -121,7 +121,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Get Reason_Reference value
-     * @return \StructType\General_Event_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType|null
      */
     public function getReason_Reference()
     {
@@ -129,10 +129,10 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Set Reason_Reference value
-     * @param \StructType\General_Event_SubcategoryObjectType $reason_Reference
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function setReason_Reference(\StructType\General_Event_SubcategoryObjectType $reason_Reference = null)
+    public function setReason_Reference(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference = null)
     {
         $this->Reason_Reference = $reason_Reference;
         return $this;
@@ -148,7 +148,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     /**
      * Set Add_Academic_Affiliate_Status value
      * @param bool $add_Academic_Affiliate_Status
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
     public function setAdd_Academic_Affiliate_Status($add_Academic_Affiliate_Status = null)
     {
@@ -161,7 +161,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Appointee_Reference value
-     * @return \StructType\Academic_Appointee_EnabledObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType|null
      */
     public function getAcademic_Appointee_Reference()
     {
@@ -200,10 +200,10 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function setAcademic_Appointee_Reference(\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null)
+    public function setAcademic_Appointee_Reference(\WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null)
     {
         // validation for constraint: choice(Academic_Appointee_Reference, Create_Academic_Affiliate_Data)
         if ('' !== ($academic_Appointee_ReferenceChoiceErrorMessage = self::validateAcademic_Appointee_ReferenceForChoiceConstraintsFromSetAcademic_Appointee_Reference($academic_Appointee_Reference))) {
@@ -218,7 +218,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Get Create_Academic_Affiliate_Data value
-     * @return \StructType\Create_Academic_Affiliate_DataType|null
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType|null
      */
     public function getCreate_Academic_Affiliate_Data()
     {
@@ -257,10 +257,10 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function setCreate_Academic_Affiliate_Data(\StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data = null)
+    public function setCreate_Academic_Affiliate_Data(\WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType $create_Academic_Affiliate_Data = null)
     {
         // validation for constraint: choice(Academic_Appointee_Reference, Create_Academic_Affiliate_Data)
         if ('' !== ($create_Academic_Affiliate_DataChoiceErrorMessage = self::validateCreate_Academic_Affiliate_DataForChoiceConstraintsFromSetCreate_Academic_Affiliate_Data($create_Academic_Affiliate_Data))) {
@@ -275,7 +275,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Appointment_Data value
-     * @return \StructType\Academic_Appointment_Snapshot_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType|null
      */
     public function getAcademic_Appointment_Data()
     {
@@ -283,17 +283,17 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Appointment_Data value
-     * @param \StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function setAcademic_Appointment_Data(\StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data = null)
+    public function setAcademic_Appointment_Data(\WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $academic_Appointment_Data = null)
     {
         $this->Academic_Appointment_Data = $academic_Appointment_Data;
         return $this;
     }
     /**
      * Get Create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate value
-     * @return \StructType\Create_Workday_Account_Sub_Business_ProcessType|null
+     * @return \WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType|null
      */
     public function getCreate_Workday_Account_Sub_Business_Process_for_Academic_Affiliate()
     {
@@ -301,10 +301,10 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     }
     /**
      * Set Create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate value
-     * @param \StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function setCreate_Workday_Account_Sub_Business_Process_for_Academic_Affiliate(\StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate = null)
+    public function setCreate_Workday_Account_Sub_Business_Process_for_Academic_Affiliate(\WorkdayWsdl\\StructType\Create_Workday_Account_Sub_Business_ProcessType $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate = null)
     {
         $this->Create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate = $create_Workday_Account_Sub_Business_Process_for_Academic_Affiliate;
         return $this;
@@ -312,7 +312,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     /**
      * Get Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
      * value
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[]|null
      */
     public function getManage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate()
     {
@@ -330,12 +330,12 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem) {
             // validation for constraint: itemType
-            if (!$add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem instanceof \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType) {
+            if (!$add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem instanceof \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType) {
                 $invalidValues[] = is_object($add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem) ? get_class($add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem) : sprintf('%s(%s)', gettype($add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem), var_export($add_Academic_Appointment_DataTypeManage_Professional_Affiliation_Sub_Business_Process_for_Academic_AffiliateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -344,8 +344,8 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Set Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
      * value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[] $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType[] $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
     public function setManage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate(array $manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate = array())
     {
@@ -361,21 +361,21 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate
      * value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $item
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $item
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function addToManage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate(\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $item)
+    public function addToManage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate(\WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Manage_Professional_Affiliation_Sub_Business_Process_for_Academic_Affiliate[] = $item;
         return $this;
     }
     /**
      * Get Manage_Education_Sub_Business_Process_for_Academic_Affiliate value
-     * @return \StructType\Manage_Education_Sub_Business_Process_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType[]|null
      */
     public function getManage_Education_Sub_Business_Process_for_Academic_Affiliate()
     {
@@ -393,12 +393,12 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem) {
             // validation for constraint: itemType
-            if (!$add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem instanceof \StructType\Manage_Education_Sub_Business_Process_DataType) {
+            if (!$add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem instanceof \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType) {
                 $invalidValues[] = is_object($add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem) ? get_class($add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem) : sprintf('%s(%s)', gettype($add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem), var_export($add_Academic_Appointment_DataTypeManage_Education_Sub_Business_Process_for_Academic_AffiliateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Manage_Education_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Education_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Manage_Education_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -406,8 +406,8 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     /**
      * Set Manage_Education_Sub_Business_Process_for_Academic_Affiliate value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Education_Sub_Business_Process_DataType[] $manage_Education_Sub_Business_Process_for_Academic_Affiliate
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType[] $manage_Education_Sub_Business_Process_for_Academic_Affiliate
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
     public function setManage_Education_Sub_Business_Process_for_Academic_Affiliate(array $manage_Education_Sub_Business_Process_for_Academic_Affiliate = array())
     {
@@ -421,14 +421,14 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     /**
      * Add item to Manage_Education_Sub_Business_Process_for_Academic_Affiliate value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Education_Sub_Business_Process_DataType $item
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType $item
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function addToManage_Education_Sub_Business_Process_for_Academic_Affiliate(\StructType\Manage_Education_Sub_Business_Process_DataType $item)
+    public function addToManage_Education_Sub_Business_Process_for_Academic_Affiliate(\WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Manage_Education_Sub_Business_Process_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Manage_Education_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Education_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Manage_Education_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Education_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Manage_Education_Sub_Business_Process_for_Academic_Affiliate[] = $item;
         return $this;
@@ -436,7 +436,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
     /**
      * Get Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
      * value
-     * @return \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[]|null
      */
     public function getManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate()
     {
@@ -454,12 +454,12 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem) {
             // validation for constraint: itemType
-            if (!$add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem instanceof \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType) {
+            if (!$add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem instanceof \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType) {
                 $invalidValues[] = is_object($add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem) ? get_class($add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem) : sprintf('%s(%s)', gettype($add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem), var_export($add_Academic_Appointment_DataTypeManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_AffiliateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -468,8 +468,8 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Set Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
      * value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[] $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType[] $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
     public function setManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate(array $manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate = array())
     {
@@ -484,14 +484,14 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * Add item to
      * Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType $item
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType $item
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
-    public function addToManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate(\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType $item)
+    public function addToManage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate(\WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate property can only contain items of type \WorkdayWsdl\\StructType\Manage_Instructor_Eligibility_Sub_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Manage_Instructor_Eligibility_Sub_Business_Process_for_Academic_Affiliate[] = $item;
         return $this;
@@ -502,7 +502,7 @@ class Add_Academic_Appointment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Add_Academic_Appointment_DataType
+     * @return \WorkdayWsdl\\StructType\Add_Academic_Appointment_DataType
      */
     public static function __set_state(array $array)
     {

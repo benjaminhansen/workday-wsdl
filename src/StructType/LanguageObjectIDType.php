@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class LanguageObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\LanguageReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\LanguageReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\LanguageReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\LanguageReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\LanguageObjectIDType
+     * @return \WorkdayWsdl\\StructType\LanguageObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\LanguageReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\LanguageReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\LanguageReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\LanguageReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\LanguageReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\LanguageReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class LanguageObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\LanguageObjectIDType
+     * @return \WorkdayWsdl\\StructType\LanguageObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class LanguageObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LanguageObjectIDType
+     * @return \WorkdayWsdl\\StructType\LanguageObjectIDType
      */
     public static function __set_state(array $array)
     {

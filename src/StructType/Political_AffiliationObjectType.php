@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Political_AffiliationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Political_AffiliationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Political_AffiliationObjectType extends AbstractStructBase
      * Constructor method for Political_AffiliationObjectType
      * @uses Political_AffiliationObjectType::setID()
      * @uses Political_AffiliationObjectType::setDescriptor()
-     * @param \StructType\Political_AffiliationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Political_AffiliationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Political_AffiliationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Political_AffiliationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $political_AffiliationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$political_AffiliationObjectTypeIDItem instanceof \StructType\Political_AffiliationObjectIDType) {
+            if (!$political_AffiliationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType) {
                 $invalidValues[] = is_object($political_AffiliationObjectTypeIDItem) ? get_class($political_AffiliationObjectTypeIDItem) : sprintf('%s(%s)', gettype($political_AffiliationObjectTypeIDItem), var_export($political_AffiliationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Political_AffiliationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Political_AffiliationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Political_AffiliationObjectIDType[] $iD
-     * @return \StructType\Political_AffiliationObjectType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Political_AffiliationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Political_AffiliationObjectIDType $item
-     * @return \StructType\Political_AffiliationObjectType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
-    public function addToID(\StructType\Political_AffiliationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Political_AffiliationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Political_AffiliationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Political_AffiliationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Political_AffiliationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Political_AffiliationObjectType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Political_AffiliationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Political_AffiliationObjectType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
     public static function __set_state(array $array)
     {

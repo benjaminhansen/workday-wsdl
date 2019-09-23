@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Development_Item_CategoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
      * Constructor method for Development_Item_CategoryObjectType
      * @uses Development_Item_CategoryObjectType::setID()
      * @uses Development_Item_CategoryObjectType::setDescriptor()
-     * @param \StructType\Development_Item_CategoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Development_Item_CategoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $development_Item_CategoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$development_Item_CategoryObjectTypeIDItem instanceof \StructType\Development_Item_CategoryObjectIDType) {
+            if (!$development_Item_CategoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType) {
                 $invalidValues[] = is_object($development_Item_CategoryObjectTypeIDItem) ? get_class($development_Item_CategoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($development_Item_CategoryObjectTypeIDItem), var_export($development_Item_CategoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Development_Item_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Development_Item_CategoryObjectIDType[] $iD
-     * @return \StructType\Development_Item_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Development_Item_CategoryObjectIDType $item
-     * @return \StructType\Development_Item_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType
      */
-    public function addToID(\StructType\Development_Item_CategoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Development_Item_CategoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Development_Item_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Development_Item_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Development_Item_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Development_Item_CategoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Development_Item_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType
      */
     public static function __set_state(array $array)
     {

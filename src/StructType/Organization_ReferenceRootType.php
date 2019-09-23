@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class Organization_ReferenceRootType extends Organization_ReferenceType
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Organization_ReferenceRootType
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceRootType
      */
     public function setVersion($version = null)
     {
@@ -55,7 +55,7 @@ class Organization_ReferenceRootType extends Organization_ReferenceType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_ReferenceRootType
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceRootType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
      * Meta information extracted from the WSDL
      * - documentation: Business process parameters
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
@@ -26,7 +26,7 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
      * Meta information extracted from the WSDL
      * - documentation: Worker, Position, and Effective Date data
      * - minOccurs: 0
-     * @var \StructType\End_Collective_Agreement_Assignment_Event_DataType
+     * @var \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType
      */
     public $End_Collective_Agreement_Assignment_Data;
     /**
@@ -41,11 +41,11 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
      * @uses End_Collective_Agreement_Assignment_Event_RequestType::setBusiness_Process_Parameters()
      * @uses End_Collective_Agreement_Assignment_Event_RequestType::setEnd_Collective_Agreement_Assignment_Data()
      * @uses End_Collective_Agreement_Assignment_Event_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -54,7 +54,7 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -62,17 +62,17 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get End_Collective_Agreement_Assignment_Data value
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_DataType|null
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType|null
      */
     public function getEnd_Collective_Agreement_Assignment_Data()
     {
@@ -80,10 +80,10 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
     }
     /**
      * Set End_Collective_Agreement_Assignment_Data value
-     * @param \StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_RequestType
      */
-    public function setEnd_Collective_Agreement_Assignment_Data(\StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data = null)
+    public function setEnd_Collective_Agreement_Assignment_Data(\WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType $end_Collective_Agreement_Assignment_Data = null)
     {
         $this->End_Collective_Agreement_Assignment_Data = $end_Collective_Agreement_Assignment_Data;
         return $this;
@@ -99,7 +99,7 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_RequestType
      */
     public function setVersion($version = null)
     {
@@ -116,7 +116,7 @@ class End_Collective_Agreement_Assignment_Event_RequestType extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Award and Activity type.
      * - minOccurs: 0
-     * @var \StructType\Award_and_Activity_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType
      */
     public $Award_and_Activity_Type_Reference;
     /**
@@ -98,7 +98,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Related position reference.
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Related_Position_Reference;
     /**
@@ -115,16 +115,16 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
      * @uses Award_and_Activity_Achievement_DataType::setRelated_Position_Reference()
      * @param string $award_and_Activity_ID
      * @param bool $remove_Award_and_Activity
-     * @param \StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference
      * @param string $title
      * @param string $sponsor_Issuer
      * @param string $start_Date
      * @param string $end_Date
      * @param string $description
      * @param string $uRL
-     * @param \StructType\Position_ElementObjectType $related_Position_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $related_Position_Reference
      */
-    public function __construct($award_and_Activity_ID = null, $remove_Award_and_Activity = null, \StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference = null, $title = null, $sponsor_Issuer = null, $start_Date = null, $end_Date = null, $description = null, $uRL = null, \StructType\Position_ElementObjectType $related_Position_Reference = null)
+    public function __construct($award_and_Activity_ID = null, $remove_Award_and_Activity = null, \WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference = null, $title = null, $sponsor_Issuer = null, $start_Date = null, $end_Date = null, $description = null, $uRL = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $related_Position_Reference = null)
     {
         $this
             ->setAward_and_Activity_ID($award_and_Activity_ID)
@@ -149,7 +149,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Award_and_Activity_ID value
      * @param string $award_and_Activity_ID
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setAward_and_Activity_ID($award_and_Activity_ID = null)
     {
@@ -171,7 +171,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Remove_Award_and_Activity value
      * @param bool $remove_Award_and_Activity
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setRemove_Award_and_Activity($remove_Award_and_Activity = null)
     {
@@ -184,7 +184,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Award_and_Activity_Type_Reference value
-     * @return \StructType\Award_and_Activity_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType|null
      */
     public function getAward_and_Activity_Type_Reference()
     {
@@ -192,10 +192,10 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Award_and_Activity_Type_Reference value
-     * @param \StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
-    public function setAward_and_Activity_Type_Reference(\StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference = null)
+    public function setAward_and_Activity_Type_Reference(\WorkdayWsdl\\StructType\Award_and_Activity_TypeObjectType $award_and_Activity_Type_Reference = null)
     {
         $this->Award_and_Activity_Type_Reference = $award_and_Activity_Type_Reference;
         return $this;
@@ -211,7 +211,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setTitle($title = null)
     {
@@ -233,7 +233,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Sponsor_Issuer value
      * @param string $sponsor_Issuer
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setSponsor_Issuer($sponsor_Issuer = null)
     {
@@ -255,7 +255,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -277,7 +277,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -299,7 +299,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setDescription($description = null)
     {
@@ -321,7 +321,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     /**
      * Set URL value
      * @param string $uRL
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public function setURL($uRL = null)
     {
@@ -334,7 +334,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Related_Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getRelated_Position_Reference()
     {
@@ -342,10 +342,10 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Related_Position_Reference value
-     * @param \StructType\Position_ElementObjectType $related_Position_Reference
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $related_Position_Reference
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
-    public function setRelated_Position_Reference(\StructType\Position_ElementObjectType $related_Position_Reference = null)
+    public function setRelated_Position_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $related_Position_Reference = null)
     {
         $this->Related_Position_Reference = $related_Position_Reference;
         return $this;
@@ -356,7 +356,7 @@ class Award_and_Activity_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Award_and_Activity_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

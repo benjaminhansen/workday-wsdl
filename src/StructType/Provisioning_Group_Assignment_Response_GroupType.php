@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,7 +55,7 @@ class Provisioning_Group_Assignment_Response_GroupType extends AbstractStructBas
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Provisioning_Group_Assignment_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -77,7 +77,7 @@ class Provisioning_Group_Assignment_Response_GroupType extends AbstractStructBas
     /**
      * Set Include_Provisioning_Group_Assignment_Data value
      * @param bool $include_Provisioning_Group_Assignment_Data
-     * @return \StructType\Provisioning_Group_Assignment_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_GroupType
      */
     public function setInclude_Provisioning_Group_Assignment_Data($include_Provisioning_Group_Assignment_Data = null)
     {
@@ -94,7 +94,7 @@ class Provisioning_Group_Assignment_Response_GroupType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_Assignment_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_GroupType
      */
     public static function __set_state(array $array)
     {

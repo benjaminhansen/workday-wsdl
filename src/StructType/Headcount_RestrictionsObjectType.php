@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Headcount_RestrictionsObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
      * Constructor method for Headcount_RestrictionsObjectType
      * @uses Headcount_RestrictionsObjectType::setID()
      * @uses Headcount_RestrictionsObjectType::setDescriptor()
-     * @param \StructType\Headcount_RestrictionsObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Headcount_RestrictionsObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $headcount_RestrictionsObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$headcount_RestrictionsObjectTypeIDItem instanceof \StructType\Headcount_RestrictionsObjectIDType) {
+            if (!$headcount_RestrictionsObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType) {
                 $invalidValues[] = is_object($headcount_RestrictionsObjectTypeIDItem) ? get_class($headcount_RestrictionsObjectTypeIDItem) : sprintf('%s(%s)', gettype($headcount_RestrictionsObjectTypeIDItem), var_export($headcount_RestrictionsObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Headcount_RestrictionsObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Headcount_RestrictionsObjectIDType[] $iD
-     * @return \StructType\Headcount_RestrictionsObjectType
+     * @param \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Headcount_RestrictionsObjectIDType $item
-     * @return \StructType\Headcount_RestrictionsObjectType
+     * @param \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectType
      */
-    public function addToID(\StructType\Headcount_RestrictionsObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Headcount_RestrictionsObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Headcount_RestrictionsObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Headcount_RestrictionsObjectType
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Headcount_RestrictionsObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Headcount_RestrictionsObjectType
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectType
      */
     public static function __set_state(array $array)
     {

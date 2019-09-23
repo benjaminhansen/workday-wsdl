@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -65,7 +65,7 @@ class Committee_Membership_Type_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Committee_Membership_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType
      */
     public function setID($iD = null)
     {
@@ -87,7 +87,7 @@ class Committee_Membership_Type_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Committee_Membership_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType
      */
     public function setName($name = null)
     {
@@ -109,7 +109,7 @@ class Committee_Membership_Type_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Committee_Membership_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -126,7 +126,7 @@ class Committee_Membership_Type_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Membership_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType
      */
     public static function __set_state(array $array)
     {

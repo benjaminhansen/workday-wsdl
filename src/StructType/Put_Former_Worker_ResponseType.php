@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to a Former Worker.Reference ID Type: Former_Worker_ID
      * - minOccurs: 0
-     * @var \StructType\Former_WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\Former_WorkerObjectType
      */
     public $Former_Worker_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
      * Constructor method for Put_Former_Worker_ResponseType
      * @uses Put_Former_Worker_ResponseType::setFormer_Worker_Reference()
      * @uses Put_Former_Worker_ResponseType::setVersion()
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Former_WorkerObjectType $former_Worker_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null, $version = null)
     {
         $this
             ->setFormer_Worker_Reference($former_Worker_Reference)
@@ -42,7 +42,7 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
     }
     /**
      * Get Former_Worker_Reference value
-     * @return \StructType\Former_WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Former_WorkerObjectType|null
      */
     public function getFormer_Worker_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
     }
     /**
      * Set Former_Worker_Reference value
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
-     * @return \StructType\Put_Former_Worker_ResponseType
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Former_Worker_ResponseType
      */
-    public function setFormer_Worker_Reference(\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
+    public function setFormer_Worker_Reference(\WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
     {
         $this->Former_Worker_Reference = $former_Worker_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Former_Worker_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Former_Worker_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Former_Worker_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Former_Worker_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Former_Worker_ResponseType
      */
     public static function __set_state(array $array)
     {

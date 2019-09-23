@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ReorganizationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ReorganizationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\ReorganizationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class ReorganizationObjectType extends AbstractStructBase
      * Constructor method for ReorganizationObjectType
      * @uses ReorganizationObjectType::setID()
      * @uses ReorganizationObjectType::setDescriptor()
-     * @param \StructType\ReorganizationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\ReorganizationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class ReorganizationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\ReorganizationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class ReorganizationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $reorganizationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$reorganizationObjectTypeIDItem instanceof \StructType\ReorganizationObjectIDType) {
+            if (!$reorganizationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\ReorganizationObjectIDType) {
                 $invalidValues[] = is_object($reorganizationObjectTypeIDItem) ? get_class($reorganizationObjectTypeIDItem) : sprintf('%s(%s)', gettype($reorganizationObjectTypeIDItem), var_export($reorganizationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\ReorganizationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\ReorganizationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class ReorganizationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\ReorganizationObjectIDType[] $iD
-     * @return \StructType\ReorganizationObjectType
+     * @param \WorkdayWsdl\\StructType\ReorganizationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class ReorganizationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\ReorganizationObjectIDType $item
-     * @return \StructType\ReorganizationObjectType
+     * @param \WorkdayWsdl\\StructType\ReorganizationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectType
      */
-    public function addToID(\StructType\ReorganizationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\ReorganizationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ReorganizationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\ReorganizationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\ReorganizationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\ReorganizationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class ReorganizationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\ReorganizationObjectType
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class ReorganizationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReorganizationObjectType
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectType
      */
     public static function __set_state(array $array)
     {

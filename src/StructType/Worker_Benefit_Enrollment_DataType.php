@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the health care data for an employee.
      * - minOccurs: 0
-     * @var \StructType\Worker_Health_Care_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Health_Care_DataType
      */
     public $Health_Care_Data;
     /**
@@ -25,7 +25,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the health savings account information for an employee.
      * - minOccurs: 0
-     * @var \StructType\Worker_Health_Savings_Account_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType
      */
     public $Health_Savings_Account_Data;
     /**
@@ -33,21 +33,21 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the spending account information for an employee.
      * - minOccurs: 0
-     * @var \StructType\Worker_Spending_Account_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Spending_Account_DataType
      */
     public $Spending_Account_Data;
     /**
      * The Insurance_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Insurance_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Insurance_DataType
      */
     public $Insurance_Data;
     /**
      * The Retirement_Savings_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Retirement_Savings_DataType
+     * @var \WorkdayWsdl\\StructType\Retirement_Savings_DataType
      */
     public $Retirement_Savings_Data;
     /**
@@ -55,7 +55,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the additional benefits data for an employee.
      * - minOccurs: 0
-     * @var \StructType\Worker_Additional_Benefits_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType
      */
     public $Additional_Benefits_Data;
     /**
@@ -64,7 +64,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * - documentation: Contains COBRA Eligibility detail for a participant. If this element is not populated then the participant is assumed to not be COBRA eligible.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\COBRA_Eligibility_DataType[]
+     * @var \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[]
      */
     public $COBRA_Eligibility_Data;
     /**
@@ -76,15 +76,15 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * @uses Worker_Benefit_Enrollment_DataType::setRetirement_Savings_Data()
      * @uses Worker_Benefit_Enrollment_DataType::setAdditional_Benefits_Data()
      * @uses Worker_Benefit_Enrollment_DataType::setCOBRA_Eligibility_Data()
-     * @param \StructType\Worker_Health_Care_DataType $health_Care_Data
-     * @param \StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data
-     * @param \StructType\Worker_Spending_Account_DataType $spending_Account_Data
-     * @param \StructType\Worker_Insurance_DataType $insurance_Data
-     * @param \StructType\Retirement_Savings_DataType $retirement_Savings_Data
-     * @param \StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data
-     * @param \StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Care_DataType $health_Care_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Spending_Account_DataType $spending_Account_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Insurance_DataType $insurance_Data
+     * @param \WorkdayWsdl\\StructType\Retirement_Savings_DataType $retirement_Savings_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
      */
-    public function __construct(\StructType\Worker_Health_Care_DataType $health_Care_Data = null, \StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data = null, \StructType\Worker_Spending_Account_DataType $spending_Account_Data = null, \StructType\Worker_Insurance_DataType $insurance_Data = null, \StructType\Retirement_Savings_DataType $retirement_Savings_Data = null, \StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data = null, array $cOBRA_Eligibility_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Health_Care_DataType $health_Care_Data = null, \WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data = null, \WorkdayWsdl\\StructType\Worker_Spending_Account_DataType $spending_Account_Data = null, \WorkdayWsdl\\StructType\Worker_Insurance_DataType $insurance_Data = null, \WorkdayWsdl\\StructType\Retirement_Savings_DataType $retirement_Savings_Data = null, \WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data = null, array $cOBRA_Eligibility_Data = array())
     {
         $this
             ->setHealth_Care_Data($health_Care_Data)
@@ -97,7 +97,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Get Health_Care_Data value
-     * @return \StructType\Worker_Health_Care_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_DataType|null
      */
     public function getHealth_Care_Data()
     {
@@ -105,17 +105,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Care_Data value
-     * @param \StructType\Worker_Health_Care_DataType $health_Care_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Care_DataType $health_Care_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setHealth_Care_Data(\StructType\Worker_Health_Care_DataType $health_Care_Data = null)
+    public function setHealth_Care_Data(\WorkdayWsdl\\StructType\Worker_Health_Care_DataType $health_Care_Data = null)
     {
         $this->Health_Care_Data = $health_Care_Data;
         return $this;
     }
     /**
      * Get Health_Savings_Account_Data value
-     * @return \StructType\Worker_Health_Savings_Account_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType|null
      */
     public function getHealth_Savings_Account_Data()
     {
@@ -123,17 +123,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Savings_Account_Data value
-     * @param \StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setHealth_Savings_Account_Data(\StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data = null)
+    public function setHealth_Savings_Account_Data(\WorkdayWsdl\\StructType\Worker_Health_Savings_Account_DataType $health_Savings_Account_Data = null)
     {
         $this->Health_Savings_Account_Data = $health_Savings_Account_Data;
         return $this;
     }
     /**
      * Get Spending_Account_Data value
-     * @return \StructType\Worker_Spending_Account_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Spending_Account_DataType|null
      */
     public function getSpending_Account_Data()
     {
@@ -141,17 +141,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Spending_Account_Data value
-     * @param \StructType\Worker_Spending_Account_DataType $spending_Account_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Spending_Account_DataType $spending_Account_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setSpending_Account_Data(\StructType\Worker_Spending_Account_DataType $spending_Account_Data = null)
+    public function setSpending_Account_Data(\WorkdayWsdl\\StructType\Worker_Spending_Account_DataType $spending_Account_Data = null)
     {
         $this->Spending_Account_Data = $spending_Account_Data;
         return $this;
     }
     /**
      * Get Insurance_Data value
-     * @return \StructType\Worker_Insurance_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Insurance_DataType|null
      */
     public function getInsurance_Data()
     {
@@ -159,17 +159,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Insurance_Data value
-     * @param \StructType\Worker_Insurance_DataType $insurance_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Insurance_DataType $insurance_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setInsurance_Data(\StructType\Worker_Insurance_DataType $insurance_Data = null)
+    public function setInsurance_Data(\WorkdayWsdl\\StructType\Worker_Insurance_DataType $insurance_Data = null)
     {
         $this->Insurance_Data = $insurance_Data;
         return $this;
     }
     /**
      * Get Retirement_Savings_Data value
-     * @return \StructType\Retirement_Savings_DataType|null
+     * @return \WorkdayWsdl\\StructType\Retirement_Savings_DataType|null
      */
     public function getRetirement_Savings_Data()
     {
@@ -177,17 +177,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Retirement_Savings_Data value
-     * @param \StructType\Retirement_Savings_DataType $retirement_Savings_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Retirement_Savings_DataType $retirement_Savings_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setRetirement_Savings_Data(\StructType\Retirement_Savings_DataType $retirement_Savings_Data = null)
+    public function setRetirement_Savings_Data(\WorkdayWsdl\\StructType\Retirement_Savings_DataType $retirement_Savings_Data = null)
     {
         $this->Retirement_Savings_Data = $retirement_Savings_Data;
         return $this;
     }
     /**
      * Get Additional_Benefits_Data value
-     * @return \StructType\Worker_Additional_Benefits_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType|null
      */
     public function getAdditional_Benefits_Data()
     {
@@ -195,17 +195,17 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     }
     /**
      * Set Additional_Benefits_Data value
-     * @param \StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function setAdditional_Benefits_Data(\StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data = null)
+    public function setAdditional_Benefits_Data(\WorkdayWsdl\\StructType\Worker_Additional_Benefits_DataType $additional_Benefits_Data = null)
     {
         $this->Additional_Benefits_Data = $additional_Benefits_Data;
         return $this;
     }
     /**
      * Get COBRA_Eligibility_Data value
-     * @return \StructType\COBRA_Eligibility_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[]|null
      */
     public function getCOBRA_Eligibility_Data()
     {
@@ -223,12 +223,12 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem instanceof \StructType\COBRA_Eligibility_DataType) {
+            if (!$worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem instanceof \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType) {
                 $invalidValues[] = is_object($worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem) ? get_class($worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem) : sprintf('%s(%s)', gettype($worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem), var_export($worker_Benefit_Enrollment_DataTypeCOBRA_Eligibility_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The COBRA_Eligibility_Data property can only contain items of type \StructType\COBRA_Eligibility_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The COBRA_Eligibility_Data property can only contain items of type \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -236,8 +236,8 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     /**
      * Set COBRA_Eligibility_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
     public function setCOBRA_Eligibility_Data(array $cOBRA_Eligibility_Data = array())
     {
@@ -251,14 +251,14 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
     /**
      * Add item to COBRA_Eligibility_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\COBRA_Eligibility_DataType $item
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
-    public function addToCOBRA_Eligibility_Data(\StructType\COBRA_Eligibility_DataType $item)
+    public function addToCOBRA_Eligibility_Data(\WorkdayWsdl\\StructType\COBRA_Eligibility_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\COBRA_Eligibility_DataType) {
-            throw new \InvalidArgumentException(sprintf('The COBRA_Eligibility_Data property can only contain items of type \StructType\COBRA_Eligibility_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType) {
+            throw new \InvalidArgumentException(sprintf('The COBRA_Eligibility_Data property can only contain items of type \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->COBRA_Eligibility_Data[] = $item;
         return $this;
@@ -269,7 +269,7 @@ class Worker_Benefit_Enrollment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Benefit_Enrollment_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Enrollment_DataType
      */
     public static function __set_state(array $array)
     {

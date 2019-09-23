@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
      * Meta information extracted from the WSDL
      * - documentation: Academic Appointment Track that was updated with additional data.
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_TrackObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType
      */
     public $Academic_Appointment_Track_Reference;
     /**
@@ -36,7 +36,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
      * - documentation: Effective dated additional data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Effective_Dated_Web_Service_Additional_DataType[]
+     * @var \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType[]
      */
     public $Additional_Data;
     /**
@@ -53,12 +53,12 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
      * @uses Edit_Academic_Appointment_Track_Additional_Data_ResponseType::setEffective_Date()
      * @uses Edit_Academic_Appointment_Track_Additional_Data_ResponseType::setAdditional_Data()
      * @uses Edit_Academic_Appointment_Track_Additional_Data_ResponseType::setVersion()
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
      * @param string $effective_Date
-     * @param \StructType\Effective_Dated_Web_Service_Additional_DataType[] $additional_Data
+     * @param \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType[] $additional_Data
      * @param string $version
      */
-    public function __construct(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $effective_Date = null, array $additional_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $effective_Date = null, array $additional_Data = array(), $version = null)
     {
         $this
             ->setAcademic_Appointment_Track_Reference($academic_Appointment_Track_Reference)
@@ -68,7 +68,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     }
     /**
      * Get Academic_Appointment_Track_Reference value
-     * @return \StructType\Academic_Appointment_TrackObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType|null
      */
     public function getAcademic_Appointment_Track_Reference()
     {
@@ -76,10 +76,10 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     }
     /**
      * Set Academic_Appointment_Track_Reference value
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
-    public function setAcademic_Appointment_Track_Reference(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
+    public function setAcademic_Appointment_Track_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
     {
         $this->Academic_Appointment_Track_Reference = $academic_Appointment_Track_Reference;
         return $this;
@@ -95,7 +95,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -108,7 +108,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     }
     /**
      * Get Additional_Data value
-     * @return \StructType\Effective_Dated_Web_Service_Additional_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType[]|null
      */
     public function getAdditional_Data()
     {
@@ -126,12 +126,12 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
         $invalidValues = [];
         foreach ($values as $edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem) {
             // validation for constraint: itemType
-            if (!$edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem instanceof \StructType\Effective_Dated_Web_Service_Additional_DataType) {
+            if (!$edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem instanceof \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType) {
                 $invalidValues[] = is_object($edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem) ? get_class($edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem) : sprintf('%s(%s)', gettype($edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem), var_export($edit_Academic_Appointment_Track_Additional_Data_ResponseTypeAdditional_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Additional_Data property can only contain items of type \StructType\Effective_Dated_Web_Service_Additional_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Additional_Data property can only contain items of type \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -139,8 +139,8 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     /**
      * Set Additional_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Effective_Dated_Web_Service_Additional_DataType[] $additional_Data
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @param \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType[] $additional_Data
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
     public function setAdditional_Data(array $additional_Data = array())
     {
@@ -154,14 +154,14 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     /**
      * Add item to Additional_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Effective_Dated_Web_Service_Additional_DataType $item
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @param \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $item
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
-    public function addToAdditional_Data(\StructType\Effective_Dated_Web_Service_Additional_DataType $item)
+    public function addToAdditional_Data(\WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Effective_Dated_Web_Service_Additional_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Additional_Data property can only contain items of type \StructType\Effective_Dated_Web_Service_Additional_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Additional_Data property can only contain items of type \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Additional_Data[] = $item;
         return $this;
@@ -177,7 +177,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -194,7 +194,7 @@ class Edit_Academic_Appointment_Track_Additional_Data_ResponseType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
+     * @return \WorkdayWsdl\\StructType\Edit_Academic_Appointment_Track_Additional_Data_ResponseType
      */
     public static function __set_state(array $array)
     {

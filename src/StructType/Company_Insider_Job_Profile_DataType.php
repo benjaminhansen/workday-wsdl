@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
      * The Company_Insider_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to a company insider type.
-     * @var \StructType\Company_Insider_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType
      */
     public $Company_Insider_Type_Reference;
     /**
@@ -30,10 +30,10 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
      * Constructor method for Company_Insider_Job_Profile_DataType
      * @uses Company_Insider_Job_Profile_DataType::setCompany_Insider_Type_Reference()
      * @uses Company_Insider_Job_Profile_DataType::setDelete()
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, $delete = null)
     {
         $this
             ->setCompany_Insider_Type_Reference($company_Insider_Type_Reference)
@@ -41,7 +41,7 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Get Company_Insider_Type_Reference value
-     * @return \StructType\Company_Insider_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType|null
      */
     public function getCompany_Insider_Type_Reference()
     {
@@ -49,10 +49,10 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Company_Insider_Type_Reference value
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
-     * @return \StructType\Company_Insider_Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType
      */
-    public function setCompany_Insider_Type_Reference(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
+    public function setCompany_Insider_Type_Reference(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
     {
         $this->Company_Insider_Type_Reference = $company_Insider_Type_Reference;
         return $this;
@@ -68,7 +68,7 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Company_Insider_Job_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType
      */
     public function setDelete($delete = null)
     {
@@ -85,7 +85,7 @@ class Company_Insider_Job_Profile_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Company_Insider_Job_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType
      */
     public static function __set_state(array $array)
     {

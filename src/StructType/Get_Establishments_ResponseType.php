@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,28 +16,28 @@ class Get_Establishments_ResponseType extends AbstractStructBase
      * The Request_References
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Establishment_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Request_Criteria
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Establishment_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
      * The Response_Results
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_ResultsType
+     * @var \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public $Response_Results;
     /**
@@ -45,7 +45,7 @@ class Get_Establishments_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Response Data
      * - minOccurs: 0
-     * @var \StructType\Establishment_Response_DataType
+     * @var \WorkdayWsdl\\StructType\Establishment_Response_DataType
      */
     public $Response_Data;
     /**
@@ -63,14 +63,14 @@ class Get_Establishments_ResponseType extends AbstractStructBase
      * @uses Get_Establishments_ResponseType::setResponse_Results()
      * @uses Get_Establishments_ResponseType::setResponse_Data()
      * @uses Get_Establishments_ResponseType::setVersion()
-     * @param \StructType\Establishment_Request_ReferencesType $request_References
-     * @param \StructType\Establishment_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Response_ResultsType $response_Results
-     * @param \StructType\Establishment_Response_DataType $response_Data
+     * @param \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @param \WorkdayWsdl\\StructType\Establishment_Response_DataType $response_Data
      * @param string $version
      */
-    public function __construct(\StructType\Establishment_Request_ReferencesType $request_References = null, \StructType\Establishment_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Response_ResultsType $response_Results = null, \StructType\Establishment_Response_DataType $response_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Establishment_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null, \WorkdayWsdl\\StructType\Establishment_Response_DataType $response_Data = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -82,7 +82,7 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Establishment_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -90,17 +90,17 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Establishment_Request_ReferencesType $request_References
-     * @return \StructType\Get_Establishments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
-    public function setRequest_References(\StructType\Establishment_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Establishment_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Establishment_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -108,17 +108,17 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Set Request_Criteria value
-     * @param \StructType\Establishment_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Establishments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
-    public function setRequest_Criteria(\StructType\Establishment_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Establishment_Request_CriteriaType $request_Criteria = null)
     {
         $this->Request_Criteria = $request_Criteria;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -126,17 +126,17 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Establishments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Results value
-     * @return \StructType\Response_ResultsType|null
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType|null
      */
     public function getResponse_Results()
     {
@@ -144,17 +144,17 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Results value
-     * @param \StructType\Response_ResultsType $response_Results
-     * @return \StructType\Get_Establishments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
-    public function setResponse_Results(\StructType\Response_ResultsType $response_Results = null)
+    public function setResponse_Results(\WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null)
     {
         $this->Response_Results = $response_Results;
         return $this;
     }
     /**
      * Get Response_Data value
-     * @return \StructType\Establishment_Response_DataType|null
+     * @return \WorkdayWsdl\\StructType\Establishment_Response_DataType|null
      */
     public function getResponse_Data()
     {
@@ -162,10 +162,10 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Data value
-     * @param \StructType\Establishment_Response_DataType $response_Data
-     * @return \StructType\Get_Establishments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Establishment_Response_DataType $response_Data
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
-    public function setResponse_Data(\StructType\Establishment_Response_DataType $response_Data = null)
+    public function setResponse_Data(\WorkdayWsdl\\StructType\Establishment_Response_DataType $response_Data = null)
     {
         $this->Response_Data = $response_Data;
         return $this;
@@ -181,7 +181,7 @@ class Get_Establishments_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Establishments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -198,7 +198,7 @@ class Get_Establishments_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Establishments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Establishments_ResponseType
      */
     public static function __set_state(array $array)
     {

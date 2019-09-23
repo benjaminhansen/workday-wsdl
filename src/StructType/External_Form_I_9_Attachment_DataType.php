@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Form I-9 Attachment to be assigned to the Worker's Form I-9.
      * - minOccurs: 0
-     * @var \StructType\Form_I_9_AttachmentObjectType
+     * @var \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType
      */
     public $External_Form_I_9_Attachment_Reference;
     /**
@@ -25,17 +25,17 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Attachment_WWS_DataType[]
+     * @var \WorkdayWsdl\\StructType\Attachment_WWS_DataType[]
      */
     public $Attachment_WWS_Data;
     /**
      * Constructor method for External_Form_I-9_Attachment_DataType
      * @uses External_Form_I_9_Attachment_DataType::setExternal_Form_I_9_Attachment_Reference()
      * @uses External_Form_I_9_Attachment_DataType::setAttachment_WWS_Data()
-     * @param \StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference
-     * @param \StructType\Attachment_WWS_DataType[] $attachment_WWS_Data
+     * @param \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType[] $attachment_WWS_Data
      */
-    public function __construct(\StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference = null, array $attachment_WWS_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference = null, array $attachment_WWS_Data = array())
     {
         $this
             ->setExternal_Form_I_9_Attachment_Reference($external_Form_I_9_Attachment_Reference)
@@ -52,16 +52,16 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Attachment_Reference value
      * @param external_Form_I_Attachment_Reference $external_Form_I_Attachment_Reference
-     * @return \StructType\External_Form_I_9_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType
      */
-    public function setExternal_Form_I_9_Attachment_Reference(\StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference = null)
+    public function setExternal_Form_I_9_Attachment_Reference(\WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType $external_Form_I_9_Attachment_Reference = null)
     {
         $this->External_Form_I_9_Attachment_Reference = $this->{'External_Form_I-9_Attachment_Reference'} = $external_Form_I_9_Attachment_Reference;
         return $this;
     }
     /**
      * Get Attachment_WWS_Data value
-     * @return \StructType\Attachment_WWS_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType[]|null
      */
     public function getAttachment_WWS_Data()
     {
@@ -79,12 +79,12 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem) {
             // validation for constraint: itemType
-            if (!$external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem instanceof \StructType\Attachment_WWS_DataType) {
+            if (!$external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem instanceof \WorkdayWsdl\\StructType\Attachment_WWS_DataType) {
                 $invalidValues[] = is_object($external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem) ? get_class($external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem) : sprintf('%s(%s)', gettype($external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem), var_export($external_Form_I_9_Attachment_DataTypeAttachment_WWS_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Attachment_WWS_Data property can only contain items of type \StructType\Attachment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Attachment_WWS_Data property can only contain items of type \WorkdayWsdl\\StructType\Attachment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
     /**
      * Set Attachment_WWS_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attachment_WWS_DataType[] $attachment_WWS_Data
-     * @return \StructType\External_Form_I_9_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType[] $attachment_WWS_Data
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType
      */
     public function setAttachment_WWS_Data(array $attachment_WWS_Data = array())
     {
@@ -107,14 +107,14 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
     /**
      * Add item to Attachment_WWS_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attachment_WWS_DataType $item
-     * @return \StructType\External_Form_I_9_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType $item
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType
      */
-    public function addToAttachment_WWS_Data(\StructType\Attachment_WWS_DataType $item)
+    public function addToAttachment_WWS_Data(\WorkdayWsdl\\StructType\Attachment_WWS_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment_WWS_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Attachment_WWS_Data property can only contain items of type \StructType\Attachment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Attachment_WWS_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Attachment_WWS_Data property can only contain items of type \WorkdayWsdl\\StructType\Attachment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Attachment_WWS_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class External_Form_I_9_Attachment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType
      */
     public static function __set_state(array $array)
     {

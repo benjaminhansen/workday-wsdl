@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -88,7 +88,7 @@ class Response_FilterType extends AbstractStructBase
     /**
      * Set As_Of_Effective_Date value
      * @param string $as_Of_Effective_Date
-     * @return \StructType\Response_FilterType
+     * @return \WorkdayWsdl\\StructType\Response_FilterType
      */
     public function setAs_Of_Effective_Date($as_Of_Effective_Date = null)
     {
@@ -110,7 +110,7 @@ class Response_FilterType extends AbstractStructBase
     /**
      * Set As_Of_Entry_DateTime value
      * @param string $as_Of_Entry_DateTime
-     * @return \StructType\Response_FilterType
+     * @return \WorkdayWsdl\\StructType\Response_FilterType
      */
     public function setAs_Of_Entry_DateTime($as_Of_Entry_DateTime = null)
     {
@@ -132,7 +132,7 @@ class Response_FilterType extends AbstractStructBase
     /**
      * Set Page value
      * @param float $page
-     * @return \StructType\Response_FilterType
+     * @return \WorkdayWsdl\\StructType\Response_FilterType
      */
     public function setPage($page = null)
     {
@@ -166,7 +166,7 @@ class Response_FilterType extends AbstractStructBase
     /**
      * Set Count value
      * @param float $count
-     * @return \StructType\Response_FilterType
+     * @return \WorkdayWsdl\\StructType\Response_FilterType
      */
     public function setCount($count = null)
     {
@@ -195,7 +195,7 @@ class Response_FilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Response_FilterType
+     * @return \WorkdayWsdl\\StructType\Response_FilterType
      */
     public static function __set_state(array $array)
     {

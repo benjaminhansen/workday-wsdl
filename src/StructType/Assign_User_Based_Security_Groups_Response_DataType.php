@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Assign_User_Based_Security_GroupsType[]
+     * @var \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType[]
      */
     public $Assign_User_Based_Security_Groups;
     /**
      * Constructor method for Assign_User-Based_Security_Groups_Response_DataType
      * @uses Assign_User_Based_Security_Groups_Response_DataType::setAssign_User_Based_Security_Groups()
-     * @param \StructType\Assign_User_Based_Security_GroupsType[] $assign_User_Based_Security_Groups
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType[] $assign_User_Based_Security_Groups
      */
     public function __construct(array $assign_User_Based_Security_Groups = array())
     {
@@ -33,7 +33,7 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
     }
     /**
      * Get Assign_User_Based_Security_Groups value
-     * @return \StructType\Assign_User_Based_Security_GroupsType[]|null
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType[]|null
      */
     public function getAssign_User_Based_Security_Groups()
     {
@@ -51,12 +51,12 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
         $invalidValues = [];
         foreach ($values as $assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem) {
             // validation for constraint: itemType
-            if (!$assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem instanceof \StructType\Assign_User_Based_Security_GroupsType) {
+            if (!$assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem instanceof \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType) {
                 $invalidValues[] = is_object($assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem) ? get_class($assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem) : sprintf('%s(%s)', gettype($assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem), var_export($assign_User_Based_Security_Groups_Response_DataTypeAssign_User_Based_Security_GroupsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Assign_User_Based_Security_Groups property can only contain items of type \StructType\Assign_User_Based_Security_GroupsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Assign_User_Based_Security_Groups property can only contain items of type \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
     /**
      * Set Assign_User_Based_Security_Groups value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_User_Based_Security_GroupsType[] $assign_User_Based_Security_Groups
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType[] $assign_User_Based_Security_Groups
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_DataType
      */
     public function setAssign_User_Based_Security_Groups(array $assign_User_Based_Security_Groups = array())
     {
@@ -79,14 +79,14 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
     /**
      * Add item to Assign_User_Based_Security_Groups value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_User_Based_Security_GroupsType $item
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType $item
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_DataType
      */
-    public function addToAssign_User_Based_Security_Groups(\StructType\Assign_User_Based_Security_GroupsType $item)
+    public function addToAssign_User_Based_Security_Groups(\WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Assign_User_Based_Security_GroupsType) {
-            throw new \InvalidArgumentException(sprintf('The Assign_User_Based_Security_Groups property can only contain items of type \StructType\Assign_User_Based_Security_GroupsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType) {
+            throw new \InvalidArgumentException(sprintf('The Assign_User_Based_Security_Groups property can only contain items of type \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Assign_User_Based_Security_Groups[] = $this->{'Assign_User-Based_Security_Groups'}[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Assign_User_Based_Security_Groups_Response_DataType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_DataType
      */
     public static function __set_state(array $array)
     {

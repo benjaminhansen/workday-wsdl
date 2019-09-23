@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,40 +17,40 @@ class Related_Person_DataType extends AbstractStructBase
      * The Related_Person_Descriptor_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Related_Person_Descriptor_DataType
+     * @var \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType
      */
     public $Related_Person_Descriptor_Data;
     /**
      * The Person_Data
-     * @var \StructType\Person_DataType
+     * @var \WorkdayWsdl\\StructType\Person_DataType
      */
     public $Person_Data;
     /**
      * The External_Contact_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Contact_DataType
+     * @var \WorkdayWsdl\\StructType\External_Contact_DataType
      */
     public $External_Contact_Data;
     /**
      * The Emergency_Contact_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Emergency_Contact_Data_WWSType
+     * @var \WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType
      */
     public $Emergency_Contact_Data;
     /**
      * The Beneficiary_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Beneficiary_Data_WWSType
+     * @var \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType
      */
     public $Beneficiary_Data;
     /**
      * The Dependent_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Dependent_Data_WWSType
+     * @var \WorkdayWsdl\\StructType\Dependent_Data_WWSType
      */
     public $Dependent_Data;
     /**
@@ -61,14 +61,14 @@ class Related_Person_DataType extends AbstractStructBase
      * @uses Related_Person_DataType::setEmergency_Contact_Data()
      * @uses Related_Person_DataType::setBeneficiary_Data()
      * @uses Related_Person_DataType::setDependent_Data()
-     * @param \StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data
-     * @param \StructType\Person_DataType $person_Data
-     * @param \StructType\External_Contact_DataType $external_Contact_Data
-     * @param \StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data
-     * @param \StructType\Beneficiary_Data_WWSType $beneficiary_Data
-     * @param \StructType\Dependent_Data_WWSType $dependent_Data
+     * @param \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data
+     * @param \WorkdayWsdl\\StructType\Person_DataType $person_Data
+     * @param \WorkdayWsdl\\StructType\External_Contact_DataType $external_Contact_Data
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data
+     * @param \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType $beneficiary_Data
+     * @param \WorkdayWsdl\\StructType\Dependent_Data_WWSType $dependent_Data
      */
-    public function __construct(\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data = null, \StructType\Person_DataType $person_Data = null, \StructType\External_Contact_DataType $external_Contact_Data = null, \StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data = null, \StructType\Beneficiary_Data_WWSType $beneficiary_Data = null, \StructType\Dependent_Data_WWSType $dependent_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data = null, \WorkdayWsdl\\StructType\Person_DataType $person_Data = null, \WorkdayWsdl\\StructType\External_Contact_DataType $external_Contact_Data = null, \WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data = null, \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType $beneficiary_Data = null, \WorkdayWsdl\\StructType\Dependent_Data_WWSType $dependent_Data = null)
     {
         $this
             ->setRelated_Person_Descriptor_Data($related_Person_Descriptor_Data)
@@ -80,7 +80,7 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Get Related_Person_Descriptor_Data value
-     * @return \StructType\Related_Person_Descriptor_DataType|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType|null
      */
     public function getRelated_Person_Descriptor_Data()
     {
@@ -88,17 +88,17 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set Related_Person_Descriptor_Data value
-     * @param \StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setRelated_Person_Descriptor_Data(\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data = null)
+    public function setRelated_Person_Descriptor_Data(\WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType $related_Person_Descriptor_Data = null)
     {
         $this->Related_Person_Descriptor_Data = $related_Person_Descriptor_Data;
         return $this;
     }
     /**
      * Get Person_Data value
-     * @return \StructType\Person_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_DataType|null
      */
     public function getPerson_Data()
     {
@@ -106,17 +106,17 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Data value
-     * @param \StructType\Person_DataType $person_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\Person_DataType $person_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setPerson_Data(\StructType\Person_DataType $person_Data = null)
+    public function setPerson_Data(\WorkdayWsdl\\StructType\Person_DataType $person_Data = null)
     {
         $this->Person_Data = $person_Data;
         return $this;
     }
     /**
      * Get External_Contact_Data value
-     * @return \StructType\External_Contact_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Contact_DataType|null
      */
     public function getExternal_Contact_Data()
     {
@@ -124,17 +124,17 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set External_Contact_Data value
-     * @param \StructType\External_Contact_DataType $external_Contact_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\External_Contact_DataType $external_Contact_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setExternal_Contact_Data(\StructType\External_Contact_DataType $external_Contact_Data = null)
+    public function setExternal_Contact_Data(\WorkdayWsdl\\StructType\External_Contact_DataType $external_Contact_Data = null)
     {
         $this->External_Contact_Data = $external_Contact_Data;
         return $this;
     }
     /**
      * Get Emergency_Contact_Data value
-     * @return \StructType\Emergency_Contact_Data_WWSType|null
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType|null
      */
     public function getEmergency_Contact_Data()
     {
@@ -142,17 +142,17 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact_Data value
-     * @param \StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setEmergency_Contact_Data(\StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data = null)
+    public function setEmergency_Contact_Data(\WorkdayWsdl\\StructType\Emergency_Contact_Data_WWSType $emergency_Contact_Data = null)
     {
         $this->Emergency_Contact_Data = $emergency_Contact_Data;
         return $this;
     }
     /**
      * Get Beneficiary_Data value
-     * @return \StructType\Beneficiary_Data_WWSType|null
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType|null
      */
     public function getBeneficiary_Data()
     {
@@ -160,17 +160,17 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set Beneficiary_Data value
-     * @param \StructType\Beneficiary_Data_WWSType $beneficiary_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType $beneficiary_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setBeneficiary_Data(\StructType\Beneficiary_Data_WWSType $beneficiary_Data = null)
+    public function setBeneficiary_Data(\WorkdayWsdl\\StructType\Beneficiary_Data_WWSType $beneficiary_Data = null)
     {
         $this->Beneficiary_Data = $beneficiary_Data;
         return $this;
     }
     /**
      * Get Dependent_Data value
-     * @return \StructType\Dependent_Data_WWSType|null
+     * @return \WorkdayWsdl\\StructType\Dependent_Data_WWSType|null
      */
     public function getDependent_Data()
     {
@@ -178,10 +178,10 @@ class Related_Person_DataType extends AbstractStructBase
     }
     /**
      * Set Dependent_Data value
-     * @param \StructType\Dependent_Data_WWSType $dependent_Data
-     * @return \StructType\Related_Person_DataType
+     * @param \WorkdayWsdl\\StructType\Dependent_Data_WWSType $dependent_Data
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
-    public function setDependent_Data(\StructType\Dependent_Data_WWSType $dependent_Data = null)
+    public function setDependent_Data(\WorkdayWsdl\\StructType\Dependent_Data_WWSType $dependent_Data = null)
     {
         $this->Dependent_Data = $dependent_Data;
         return $this;
@@ -192,7 +192,7 @@ class Related_Person_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Related_Person_DataType
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class External_EEO_1_Data_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External EEO-1 Data Request Reference
      * - maxOccurs: unbounded
-     * @var \StructType\External_EEO_1_DataObjectType[]
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType[]
      */
     public $External_EEO_1_Data_Reference;
     /**
      * Constructor method for External_EEO-1_Data_Request_ReferencesType
      * @uses External_EEO_1_Data_Request_ReferencesType::setExternal_EEO_1_Data_Reference()
-     * @param \StructType\External_EEO_1_DataObjectType[] $external_EEO_1_Data_Reference
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType[] $external_EEO_1_Data_Reference
      */
     public function __construct(array $external_EEO_1_Data_Reference = array())
     {
@@ -50,12 +50,12 @@ class External_EEO_1_Data_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem instanceof \StructType\External_EEO_1_DataObjectType) {
+            if (!$external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType) {
                 $invalidValues[] = is_object($external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem) ? get_class($external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem) : sprintf('%s(%s)', gettype($external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem), var_export($external_EEO_1_Data_Request_ReferencesTypeExternal_EEO_1_Data_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_EEO_1_Data_Reference property can only contain items of type \StructType\External_EEO_1_DataObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_EEO_1_Data_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,7 +63,7 @@ class External_EEO_1_Data_Request_ReferencesType extends AbstractStructBase
     /**
      * Set external_EEO_Data_Reference value
      * @param external_EEO_Data_Reference $external_EEO_Data_Reference
-     * @return \StructType\External_EEO_1_Data_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Request_ReferencesType
      */
     public function setExternal_EEO_1_Data_Reference(array $external_EEO_1_Data_Reference = array())
     {
@@ -77,14 +77,14 @@ class External_EEO_1_Data_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to External_EEO_1_Data_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_EEO_1_DataObjectType $item
-     * @return \StructType\External_EEO_1_Data_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $item
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Request_ReferencesType
      */
-    public function addToExternal_EEO_1_Data_Reference(\StructType\External_EEO_1_DataObjectType $item)
+    public function addToExternal_EEO_1_Data_Reference(\WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_EEO_1_DataObjectType) {
-            throw new \InvalidArgumentException(sprintf('The External_EEO_1_Data_Reference property can only contain items of type \StructType\External_EEO_1_DataObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType) {
+            throw new \InvalidArgumentException(sprintf('The External_EEO_1_Data_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_EEO_1_Data_Reference[] = $this->{'External_EEO-1_Data_Reference'}[] = $item;
         return $this;
@@ -95,7 +95,7 @@ class External_EEO_1_Data_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_EEO_1_Data_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

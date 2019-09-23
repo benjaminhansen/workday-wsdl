@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Dependent_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the Dependent being updated. For new Dependents, this reference will not exist.
      * - minOccurs: 0
-     * @var \StructType\DependentObjectType
+     * @var \WorkdayWsdl\\StructType\DependentObjectType
      */
     public $Dependent_Reference;
     /**
      * The Dependent_Data
-     * @var \StructType\Put_Dependent_DataType
+     * @var \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public $Dependent_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Dependent_RequestType extends AbstractStructBase
      * @uses Put_Dependent_RequestType::setDependent_Data()
      * @uses Put_Dependent_RequestType::setAdd_Only()
      * @uses Put_Dependent_RequestType::setVersion()
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @param \StructType\Put_Dependent_DataType $dependent_Data
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @param \WorkdayWsdl\\StructType\Put_Dependent_DataType $dependent_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\DependentObjectType $dependent_Reference = null, \StructType\Put_Dependent_DataType $dependent_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null, \WorkdayWsdl\\StructType\Put_Dependent_DataType $dependent_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setDependent_Reference($dependent_Reference)
@@ -60,7 +60,7 @@ class Put_Dependent_RequestType extends AbstractStructBase
     }
     /**
      * Get Dependent_Reference value
-     * @return \StructType\DependentObjectType|null
+     * @return \WorkdayWsdl\\StructType\DependentObjectType|null
      */
     public function getDependent_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Dependent_RequestType extends AbstractStructBase
     }
     /**
      * Set Dependent_Reference value
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @return \StructType\Put_Dependent_RequestType
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_RequestType
      */
-    public function setDependent_Reference(\StructType\DependentObjectType $dependent_Reference = null)
+    public function setDependent_Reference(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null)
     {
         $this->Dependent_Reference = $dependent_Reference;
         return $this;
     }
     /**
      * Get Dependent_Data value
-     * @return \StructType\Put_Dependent_DataType|null
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType|null
      */
     public function getDependent_Data()
     {
@@ -86,10 +86,10 @@ class Put_Dependent_RequestType extends AbstractStructBase
     }
     /**
      * Set Dependent_Data value
-     * @param \StructType\Put_Dependent_DataType $dependent_Data
-     * @return \StructType\Put_Dependent_RequestType
+     * @param \WorkdayWsdl\\StructType\Put_Dependent_DataType $dependent_Data
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_RequestType
      */
-    public function setDependent_Data(\StructType\Put_Dependent_DataType $dependent_Data = null)
+    public function setDependent_Data(\WorkdayWsdl\\StructType\Put_Dependent_DataType $dependent_Data = null)
     {
         $this->Dependent_Data = $dependent_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Dependent_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Dependent_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Dependent_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Dependent_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Dependent_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Dependent_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_RequestType
      */
     public static function __set_state(array $array)
     {

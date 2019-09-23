@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Global_Setup_Data_MappingObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
      * Constructor method for Global_Setup_Data_MappingObjectType
      * @uses Global_Setup_Data_MappingObjectType::setID()
      * @uses Global_Setup_Data_MappingObjectType::setDescriptor()
-     * @param \StructType\Global_Setup_Data_MappingObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Global_Setup_Data_MappingObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $global_Setup_Data_MappingObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$global_Setup_Data_MappingObjectTypeIDItem instanceof \StructType\Global_Setup_Data_MappingObjectIDType) {
+            if (!$global_Setup_Data_MappingObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType) {
                 $invalidValues[] = is_object($global_Setup_Data_MappingObjectTypeIDItem) ? get_class($global_Setup_Data_MappingObjectTypeIDItem) : sprintf('%s(%s)', gettype($global_Setup_Data_MappingObjectTypeIDItem), var_export($global_Setup_Data_MappingObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Global_Setup_Data_MappingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Global_Setup_Data_MappingObjectIDType[] $iD
-     * @return \StructType\Global_Setup_Data_MappingObjectType
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Global_Setup_Data_MappingObjectIDType $item
-     * @return \StructType\Global_Setup_Data_MappingObjectType
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
-    public function addToID(\StructType\Global_Setup_Data_MappingObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Global_Setup_Data_MappingObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Global_Setup_Data_MappingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Global_Setup_Data_MappingObjectType
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Global_Setup_Data_MappingObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Global_Setup_Data_MappingObjectType
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
     public static function __set_state(array $array)
     {

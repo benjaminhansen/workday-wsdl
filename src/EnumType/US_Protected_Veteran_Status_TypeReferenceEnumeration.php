@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace WorkdayWsdl\\EnumType;
 
 /**
  * This class stands for US_Protected_Veteran_Status_TypeReferenceEnumeration

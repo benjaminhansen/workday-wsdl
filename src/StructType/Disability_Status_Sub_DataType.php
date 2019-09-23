@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * The Disability_Reference
      * Meta information extracted from the WSDL
      * - documentation: The person's Disability.
-     * @var \StructType\DisabilityObjectType
+     * @var \WorkdayWsdl\\StructType\DisabilityObjectType
      */
     public $Disability_Reference;
     /**
@@ -59,7 +59,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A code or number that identifies the level of Disability.
      * - minOccurs: 0
-     * @var \StructType\Disability_GradeObjectType
+     * @var \WorkdayWsdl\\StructType\Disability_GradeObjectType
      */
     public $Disability_Grade_Reference;
     /**
@@ -97,7 +97,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Disability_Certification_AuthorityObjectType
+     * @var \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType
      */
     public $Disability_Certification_Authority_Reference;
     /**
@@ -135,7 +135,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: How the worker qualified for the Disability Certification.
      * - minOccurs: 0
-     * @var \StructType\Disability_Certification_BasisObjectType
+     * @var \WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType
      */
     public $Disability_Certification_Basis_Reference;
     /**
@@ -220,7 +220,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * - documentation: Attach a copy of the certification or other documents related to this instance of Disability.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_DocumentObjectType[]
+     * @var \WorkdayWsdl\\StructType\Worker_DocumentObjectType[]
      */
     public $Worker_Document_Reference;
     /**
@@ -246,18 +246,18 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * @uses Disability_Status_Sub_DataType::setDisability_Rehabilitation_Provided()
      * @uses Disability_Status_Sub_DataType::setNote()
      * @uses Disability_Status_Sub_DataType::setWorker_Document_Reference()
-     * @param \StructType\DisabilityObjectType $disability_Reference
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
      * @param string $disability_Status_Date
      * @param string $disability_Date_Known
      * @param string $disability_End_Date
-     * @param \StructType\Disability_GradeObjectType $disability_Grade_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference
      * @param float $disability_Degree
      * @param float $disability_Remaining_Capacity
-     * @param \StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference
      * @param string $disability_Certification_Authority
      * @param string $disability_Certified_At
      * @param string $disability_Certification_ID
-     * @param \StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference
      * @param string $disability_Severity_Recognition_Date
      * @param float $disability_FTE_Toward_Quota
      * @param string $disability_Work_Restrictions
@@ -266,9 +266,9 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * @param string $disability_Rehabilitation_Requested
      * @param string $disability_Rehabilitation_Provided
      * @param string $note
-     * @param \StructType\Worker_DocumentObjectType[] $worker_Document_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType[] $worker_Document_Reference
      */
-    public function __construct(\StructType\DisabilityObjectType $disability_Reference = null, $disability_Status_Date = null, $disability_Date_Known = null, $disability_End_Date = null, \StructType\Disability_GradeObjectType $disability_Grade_Reference = null, $disability_Degree = null, $disability_Remaining_Capacity = null, \StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference = null, $disability_Certification_Authority = null, $disability_Certified_At = null, $disability_Certification_ID = null, \StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference = null, $disability_Severity_Recognition_Date = null, $disability_FTE_Toward_Quota = null, $disability_Work_Restrictions = null, $disability_Accommodations_Requested = null, $disability_Accommodations_Provided = null, $disability_Rehabilitation_Requested = null, $disability_Rehabilitation_Provided = null, $note = null, array $worker_Document_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null, $disability_Status_Date = null, $disability_Date_Known = null, $disability_End_Date = null, \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference = null, $disability_Degree = null, $disability_Remaining_Capacity = null, \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference = null, $disability_Certification_Authority = null, $disability_Certified_At = null, $disability_Certification_ID = null, \WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference = null, $disability_Severity_Recognition_Date = null, $disability_FTE_Toward_Quota = null, $disability_Work_Restrictions = null, $disability_Accommodations_Requested = null, $disability_Accommodations_Provided = null, $disability_Rehabilitation_Requested = null, $disability_Rehabilitation_Provided = null, $note = null, array $worker_Document_Reference = array())
     {
         $this
             ->setDisability_Reference($disability_Reference)
@@ -295,7 +295,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\DisabilityObjectType|null
+     * @return \WorkdayWsdl\\StructType\DisabilityObjectType|null
      */
     public function getDisability_Reference()
     {
@@ -303,10 +303,10 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Set Disability_Reference value
-     * @param \StructType\DisabilityObjectType $disability_Reference
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
-    public function setDisability_Reference(\StructType\DisabilityObjectType $disability_Reference = null)
+    public function setDisability_Reference(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null)
     {
         $this->Disability_Reference = $disability_Reference;
         return $this;
@@ -322,7 +322,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Status_Date value
      * @param string $disability_Status_Date
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Status_Date($disability_Status_Date = null)
     {
@@ -344,7 +344,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Date_Known value
      * @param string $disability_Date_Known
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Date_Known($disability_Date_Known = null)
     {
@@ -366,7 +366,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_End_Date value
      * @param string $disability_End_Date
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_End_Date($disability_End_Date = null)
     {
@@ -379,7 +379,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Grade_Reference value
-     * @return \StructType\Disability_GradeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disability_GradeObjectType|null
      */
     public function getDisability_Grade_Reference()
     {
@@ -387,10 +387,10 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Set Disability_Grade_Reference value
-     * @param \StructType\Disability_GradeObjectType $disability_Grade_Reference
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
-    public function setDisability_Grade_Reference(\StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
+    public function setDisability_Grade_Reference(\WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
     {
         $this->Disability_Grade_Reference = $disability_Grade_Reference;
         return $this;
@@ -406,7 +406,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Degree value
      * @param float $disability_Degree
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Degree($disability_Degree = null)
     {
@@ -440,7 +440,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Remaining_Capacity value
      * @param float $disability_Remaining_Capacity
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Remaining_Capacity($disability_Remaining_Capacity = null)
     {
@@ -465,7 +465,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Certification_Authority_Reference value
-     * @return \StructType\Disability_Certification_AuthorityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType|null
      */
     public function getDisability_Certification_Authority_Reference()
     {
@@ -504,10 +504,10 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
-    public function setDisability_Certification_Authority_Reference(\StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference = null)
+    public function setDisability_Certification_Authority_Reference(\WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectType $disability_Certification_Authority_Reference = null)
     {
         // validation for constraint: choice(Disability_Certification_Authority_Reference, Disability_Certification_Authority)
         if ('' !== ($disability_Certification_Authority_ReferenceChoiceErrorMessage = self::validateDisability_Certification_Authority_ReferenceForChoiceConstraintsFromSetDisability_Certification_Authority_Reference($disability_Certification_Authority_Reference))) {
@@ -562,7 +562,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param string $disability_Certification_Authority
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Certification_Authority($disability_Certification_Authority = null)
     {
@@ -592,7 +592,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Certified_At value
      * @param string $disability_Certified_At
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Certified_At($disability_Certified_At = null)
     {
@@ -614,7 +614,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Certification_ID value
      * @param string $disability_Certification_ID
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Certification_ID($disability_Certification_ID = null)
     {
@@ -627,7 +627,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Certification_Basis_Reference value
-     * @return \StructType\Disability_Certification_BasisObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType|null
      */
     public function getDisability_Certification_Basis_Reference()
     {
@@ -635,10 +635,10 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Set Disability_Certification_Basis_Reference value
-     * @param \StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
-    public function setDisability_Certification_Basis_Reference(\StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference = null)
+    public function setDisability_Certification_Basis_Reference(\WorkdayWsdl\\StructType\Disability_Certification_BasisObjectType $disability_Certification_Basis_Reference = null)
     {
         $this->Disability_Certification_Basis_Reference = $disability_Certification_Basis_Reference;
         return $this;
@@ -654,7 +654,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Severity_Recognition_Date value
      * @param string $disability_Severity_Recognition_Date
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Severity_Recognition_Date($disability_Severity_Recognition_Date = null)
     {
@@ -676,7 +676,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_FTE_Toward_Quota value
      * @param float $disability_FTE_Toward_Quota
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_FTE_Toward_Quota($disability_FTE_Toward_Quota = null)
     {
@@ -710,7 +710,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Work_Restrictions value
      * @param string $disability_Work_Restrictions
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Work_Restrictions($disability_Work_Restrictions = null)
     {
@@ -732,7 +732,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Accommodations_Requested value
      * @param string $disability_Accommodations_Requested
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Accommodations_Requested($disability_Accommodations_Requested = null)
     {
@@ -754,7 +754,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Accommodations_Provided value
      * @param string $disability_Accommodations_Provided
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Accommodations_Provided($disability_Accommodations_Provided = null)
     {
@@ -776,7 +776,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Rehabilitation_Requested value
      * @param string $disability_Rehabilitation_Requested
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Rehabilitation_Requested($disability_Rehabilitation_Requested = null)
     {
@@ -798,7 +798,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Disability_Rehabilitation_Provided value
      * @param string $disability_Rehabilitation_Provided
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setDisability_Rehabilitation_Provided($disability_Rehabilitation_Provided = null)
     {
@@ -820,7 +820,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Note value
      * @param string $note
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setNote($note = null)
     {
@@ -833,7 +833,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Document_Reference value
-     * @return \StructType\Worker_DocumentObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectType[]|null
      */
     public function getWorker_Document_Reference()
     {
@@ -851,12 +851,12 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disability_Status_Sub_DataTypeWorker_Document_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$disability_Status_Sub_DataTypeWorker_Document_ReferenceItem instanceof \StructType\Worker_DocumentObjectType) {
+            if (!$disability_Status_Sub_DataTypeWorker_Document_ReferenceItem instanceof \WorkdayWsdl\\StructType\Worker_DocumentObjectType) {
                 $invalidValues[] = is_object($disability_Status_Sub_DataTypeWorker_Document_ReferenceItem) ? get_class($disability_Status_Sub_DataTypeWorker_Document_ReferenceItem) : sprintf('%s(%s)', gettype($disability_Status_Sub_DataTypeWorker_Document_ReferenceItem), var_export($disability_Status_Sub_DataTypeWorker_Document_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Document_Reference property can only contain items of type \StructType\Worker_DocumentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Document_Reference property can only contain items of type \WorkdayWsdl\\StructType\Worker_DocumentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -864,8 +864,8 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Set Worker_Document_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_DocumentObjectType[] $worker_Document_Reference
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType[] $worker_Document_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public function setWorker_Document_Reference(array $worker_Document_Reference = array())
     {
@@ -879,14 +879,14 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Document_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_DocumentObjectType $item
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType $item
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
-    public function addToWorker_Document_Reference(\StructType\Worker_DocumentObjectType $item)
+    public function addToWorker_Document_Reference(\WorkdayWsdl\\StructType\Worker_DocumentObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_DocumentObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Document_Reference property can only contain items of type \StructType\Worker_DocumentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_DocumentObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Document_Reference property can only contain items of type \WorkdayWsdl\\StructType\Worker_DocumentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Document_Reference[] = $item;
         return $this;
@@ -897,7 +897,7 @@ class Disability_Status_Sub_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Status_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public static function __set_state(array $array)
     {

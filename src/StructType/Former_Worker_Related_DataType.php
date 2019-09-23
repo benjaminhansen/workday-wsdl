@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Former_Worker_Related_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Returns the applicant used in the Hire or Contract business process.
      * - minOccurs: 0
-     * @var \StructType\ApplicantObjectType
+     * @var \WorkdayWsdl\\StructType\ApplicantObjectType
      */
     public $Applicant_Reference;
     /**
@@ -35,7 +35,7 @@ class Former_Worker_Related_DataType extends AbstractStructBase
      * - documentation: Returns the workers for the former worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Worker_Reference;
     /**
@@ -44,10 +44,10 @@ class Former_Worker_Related_DataType extends AbstractStructBase
      * @uses Former_Worker_Related_DataType::setApplicant_Reference()
      * @uses Former_Worker_Related_DataType::setWorker_Reference()
      * @param bool $rehired
-     * @param \StructType\ApplicantObjectType $applicant_Reference
-     * @param \StructType\WorkerObjectType[] $worker_Reference
+     * @param \WorkdayWsdl\\StructType\ApplicantObjectType $applicant_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
      */
-    public function __construct($rehired = null, \StructType\ApplicantObjectType $applicant_Reference = null, array $worker_Reference = array())
+    public function __construct($rehired = null, \WorkdayWsdl\\StructType\ApplicantObjectType $applicant_Reference = null, array $worker_Reference = array())
     {
         $this
             ->setRehired($rehired)
@@ -65,7 +65,7 @@ class Former_Worker_Related_DataType extends AbstractStructBase
     /**
      * Set Rehired value
      * @param bool $rehired
-     * @return \StructType\Former_Worker_Related_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
     public function setRehired($rehired = null)
     {
@@ -78,7 +78,7 @@ class Former_Worker_Related_DataType extends AbstractStructBase
     }
     /**
      * Get Applicant_Reference value
-     * @return \StructType\ApplicantObjectType|null
+     * @return \WorkdayWsdl\\StructType\ApplicantObjectType|null
      */
     public function getApplicant_Reference()
     {
@@ -86,17 +86,17 @@ class Former_Worker_Related_DataType extends AbstractStructBase
     }
     /**
      * Set Applicant_Reference value
-     * @param \StructType\ApplicantObjectType $applicant_Reference
-     * @return \StructType\Former_Worker_Related_DataType
+     * @param \WorkdayWsdl\\StructType\ApplicantObjectType $applicant_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
-    public function setApplicant_Reference(\StructType\ApplicantObjectType $applicant_Reference = null)
+    public function setApplicant_Reference(\WorkdayWsdl\\StructType\ApplicantObjectType $applicant_Reference = null)
     {
         $this->Applicant_Reference = $applicant_Reference;
         return $this;
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorker_Reference()
     {
@@ -114,12 +114,12 @@ class Former_Worker_Related_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $former_Worker_Related_DataTypeWorker_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Related_DataTypeWorker_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$former_Worker_Related_DataTypeWorker_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($former_Worker_Related_DataTypeWorker_ReferenceItem) ? get_class($former_Worker_Related_DataTypeWorker_ReferenceItem) : sprintf('%s(%s)', gettype($former_Worker_Related_DataTypeWorker_ReferenceItem), var_export($former_Worker_Related_DataTypeWorker_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -127,8 +127,8 @@ class Former_Worker_Related_DataType extends AbstractStructBase
     /**
      * Set Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $worker_Reference
-     * @return \StructType\Former_Worker_Related_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
     public function setWorker_Reference(array $worker_Reference = array())
     {
@@ -142,14 +142,14 @@ class Former_Worker_Related_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Former_Worker_Related_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
-    public function addToWorker_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Reference[] = $item;
         return $this;
@@ -160,7 +160,7 @@ class Former_Worker_Related_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Related_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
     public static function __set_state(array $array)
     {

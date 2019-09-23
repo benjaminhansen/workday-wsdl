@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,28 +16,28 @@ class Employee_Contribution_DataType extends AbstractStructBase
      * The Contribution_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Contribution_DataType
+     * @var \WorkdayWsdl\\StructType\Contribution_DataType
      */
     public $Contribution_Data;
     /**
      * The Payroll_Interface_Contribution_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Payroll_Interface_Contribution_DataType
+     * @var \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType
      */
     public $Payroll_Interface_Contribution_Data;
     /**
      * The Goal_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Goal_DataType
+     * @var \WorkdayWsdl\\StructType\Goal_DataType
      */
     public $Goal_Data;
     /**
      * The Annual_Contribution_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Annual_Contribution_DataType
+     * @var \WorkdayWsdl\\StructType\Annual_Contribution_DataType
      */
     public $Annual_Contribution_Data;
     /**
@@ -45,7 +45,7 @@ class Employee_Contribution_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -55,13 +55,13 @@ class Employee_Contribution_DataType extends AbstractStructBase
      * @uses Employee_Contribution_DataType::setGoal_Data()
      * @uses Employee_Contribution_DataType::setAnnual_Contribution_Data()
      * @uses Employee_Contribution_DataType::setCurrency_Reference()
-     * @param \StructType\Contribution_DataType $contribution_Data
-     * @param \StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data
-     * @param \StructType\Goal_DataType $goal_Data
-     * @param \StructType\Annual_Contribution_DataType $annual_Contribution_Data
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\Contribution_DataType $contribution_Data
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data
+     * @param \WorkdayWsdl\\StructType\Goal_DataType $goal_Data
+     * @param \WorkdayWsdl\\StructType\Annual_Contribution_DataType $annual_Contribution_Data
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct(\StructType\Contribution_DataType $contribution_Data = null, \StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data = null, \StructType\Goal_DataType $goal_Data = null, \StructType\Annual_Contribution_DataType $annual_Contribution_Data = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Contribution_DataType $contribution_Data = null, \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data = null, \WorkdayWsdl\\StructType\Goal_DataType $goal_Data = null, \WorkdayWsdl\\StructType\Annual_Contribution_DataType $annual_Contribution_Data = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setContribution_Data($contribution_Data)
@@ -72,7 +72,7 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Get Contribution_Data value
-     * @return \StructType\Contribution_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contribution_DataType|null
      */
     public function getContribution_Data()
     {
@@ -80,17 +80,17 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Set Contribution_Data value
-     * @param \StructType\Contribution_DataType $contribution_Data
-     * @return \StructType\Employee_Contribution_DataType
+     * @param \WorkdayWsdl\\StructType\Contribution_DataType $contribution_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
-    public function setContribution_Data(\StructType\Contribution_DataType $contribution_Data = null)
+    public function setContribution_Data(\WorkdayWsdl\\StructType\Contribution_DataType $contribution_Data = null)
     {
         $this->Contribution_Data = $contribution_Data;
         return $this;
     }
     /**
      * Get Payroll_Interface_Contribution_Data value
-     * @return \StructType\Payroll_Interface_Contribution_DataType|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType|null
      */
     public function getPayroll_Interface_Contribution_Data()
     {
@@ -98,17 +98,17 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Set Payroll_Interface_Contribution_Data value
-     * @param \StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data
-     * @return \StructType\Employee_Contribution_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
-    public function setPayroll_Interface_Contribution_Data(\StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data = null)
+    public function setPayroll_Interface_Contribution_Data(\WorkdayWsdl\\StructType\Payroll_Interface_Contribution_DataType $payroll_Interface_Contribution_Data = null)
     {
         $this->Payroll_Interface_Contribution_Data = $payroll_Interface_Contribution_Data;
         return $this;
     }
     /**
      * Get Goal_Data value
-     * @return \StructType\Goal_DataType|null
+     * @return \WorkdayWsdl\\StructType\Goal_DataType|null
      */
     public function getGoal_Data()
     {
@@ -116,17 +116,17 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Set Goal_Data value
-     * @param \StructType\Goal_DataType $goal_Data
-     * @return \StructType\Employee_Contribution_DataType
+     * @param \WorkdayWsdl\\StructType\Goal_DataType $goal_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
-    public function setGoal_Data(\StructType\Goal_DataType $goal_Data = null)
+    public function setGoal_Data(\WorkdayWsdl\\StructType\Goal_DataType $goal_Data = null)
     {
         $this->Goal_Data = $goal_Data;
         return $this;
     }
     /**
      * Get Annual_Contribution_Data value
-     * @return \StructType\Annual_Contribution_DataType|null
+     * @return \WorkdayWsdl\\StructType\Annual_Contribution_DataType|null
      */
     public function getAnnual_Contribution_Data()
     {
@@ -134,17 +134,17 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Set Annual_Contribution_Data value
-     * @param \StructType\Annual_Contribution_DataType $annual_Contribution_Data
-     * @return \StructType\Employee_Contribution_DataType
+     * @param \WorkdayWsdl\\StructType\Annual_Contribution_DataType $annual_Contribution_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
-    public function setAnnual_Contribution_Data(\StructType\Annual_Contribution_DataType $annual_Contribution_Data = null)
+    public function setAnnual_Contribution_Data(\WorkdayWsdl\\StructType\Annual_Contribution_DataType $annual_Contribution_Data = null)
     {
         $this->Annual_Contribution_Data = $annual_Contribution_Data;
         return $this;
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -152,10 +152,10 @@ class Employee_Contribution_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Employee_Contribution_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -166,7 +166,7 @@ class Employee_Contribution_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Contribution_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace WorkdayWsdl\\EnumType;
 
 /**
  * This class stands for Local_Termination_ReasonReferenceEnumeration EnumType

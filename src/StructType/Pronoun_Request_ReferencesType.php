@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Pronoun of the person.
      * - maxOccurs: unbounded
-     * @var \StructType\PronounObjectType[]
+     * @var \WorkdayWsdl\\StructType\PronounObjectType[]
      */
     public $Pronoun_Reference;
     /**
      * Constructor method for Pronoun_Request_ReferencesType
      * @uses Pronoun_Request_ReferencesType::setPronoun_Reference()
-     * @param \StructType\PronounObjectType[] $pronoun_Reference
+     * @param \WorkdayWsdl\\StructType\PronounObjectType[] $pronoun_Reference
      */
     public function __construct(array $pronoun_Reference = array())
     {
@@ -32,7 +32,7 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Pronoun_Reference value
-     * @return \StructType\PronounObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\PronounObjectType[]|null
      */
     public function getPronoun_Reference()
     {
@@ -50,12 +50,12 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pronoun_Request_ReferencesTypePronoun_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$pronoun_Request_ReferencesTypePronoun_ReferenceItem instanceof \StructType\PronounObjectType) {
+            if (!$pronoun_Request_ReferencesTypePronoun_ReferenceItem instanceof \WorkdayWsdl\\StructType\PronounObjectType) {
                 $invalidValues[] = is_object($pronoun_Request_ReferencesTypePronoun_ReferenceItem) ? get_class($pronoun_Request_ReferencesTypePronoun_ReferenceItem) : sprintf('%s(%s)', gettype($pronoun_Request_ReferencesTypePronoun_ReferenceItem), var_export($pronoun_Request_ReferencesTypePronoun_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Pronoun_Reference property can only contain items of type \StructType\PronounObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Pronoun_Reference property can only contain items of type \WorkdayWsdl\\StructType\PronounObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Pronoun_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounObjectType[] $pronoun_Reference
-     * @return \StructType\Pronoun_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\PronounObjectType[] $pronoun_Reference
+     * @return \WorkdayWsdl\\StructType\Pronoun_Request_ReferencesType
      */
     public function setPronoun_Reference(array $pronoun_Reference = array())
     {
@@ -78,14 +78,14 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Pronoun_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounObjectType $item
-     * @return \StructType\Pronoun_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $item
+     * @return \WorkdayWsdl\\StructType\Pronoun_Request_ReferencesType
      */
-    public function addToPronoun_Reference(\StructType\PronounObjectType $item)
+    public function addToPronoun_Reference(\WorkdayWsdl\\StructType\PronounObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PronounObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Pronoun_Reference property can only contain items of type \StructType\PronounObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\PronounObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Pronoun_Reference property can only contain items of type \WorkdayWsdl\\StructType\PronounObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Pronoun_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Pronoun_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pronoun_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Pronoun_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

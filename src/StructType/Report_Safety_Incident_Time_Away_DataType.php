@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
      * The Safety_Incident_Time_Away_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: The type of time away that occurred.
-     * @var \StructType\Safety_Incident_Time_Away_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType
      */
     public $Safety_Incident_Time_Away_Type_Reference;
     /**
@@ -51,12 +51,12 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
      * @uses Report_Safety_Incident_Time_Away_DataType::setStart_Date()
      * @uses Report_Safety_Incident_Time_Away_DataType::setProposed_End_Date()
      * @uses Report_Safety_Incident_Time_Away_DataType::setActual_End_Date()
-     * @param \StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference
      * @param string $start_Date
      * @param string $proposed_End_Date
      * @param string $actual_End_Date
      */
-    public function __construct(\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference = null, $start_Date = null, $proposed_End_Date = null, $actual_End_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference = null, $start_Date = null, $proposed_End_Date = null, $actual_End_Date = null)
     {
         $this
             ->setSafety_Incident_Time_Away_Type_Reference($safety_Incident_Time_Away_Type_Reference)
@@ -66,7 +66,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Time_Away_Type_Reference value
-     * @return \StructType\Safety_Incident_Time_Away_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType|null
      */
     public function getSafety_Incident_Time_Away_Type_Reference()
     {
@@ -74,10 +74,10 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_Time_Away_Type_Reference value
-     * @param \StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType
      */
-    public function setSafety_Incident_Time_Away_Type_Reference(\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference = null)
+    public function setSafety_Incident_Time_Away_Type_Reference(\WorkdayWsdl\\StructType\Safety_Incident_Time_Away_TypeObjectType $safety_Incident_Time_Away_Type_Reference = null)
     {
         $this->Safety_Incident_Time_Away_Type_Reference = $safety_Incident_Time_Away_Type_Reference;
         return $this;
@@ -93,7 +93,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -115,7 +115,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
     /**
      * Set Proposed_End_Date value
      * @param string $proposed_End_Date
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType
      */
     public function setProposed_End_Date($proposed_End_Date = null)
     {
@@ -137,7 +137,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
     /**
      * Set Actual_End_Date value
      * @param string $actual_End_Date
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType
      */
     public function setActual_End_Date($actual_End_Date = null)
     {
@@ -154,7 +154,7 @@ class Report_Safety_Incident_Time_Away_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Report_Safety_Incident_Time_Away_DataType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_Time_Away_DataType
      */
     public static function __set_state(array $array)
     {

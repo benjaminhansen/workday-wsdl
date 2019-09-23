@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Disability_Status_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Military Service entry for edits and deletes.
      * - minOccurs: 0
-     * @var \StructType\Disability_Status_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType
      */
     public $Disability_Status_Reference;
     /**
      * The Disability_Status_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Disability_Status_Sub_DataType
+     * @var \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType
      */
     public $Disability_Status_Data;
     /**
@@ -40,11 +40,11 @@ class Disability_Status_Information_DataType extends AbstractStructBase
      * @uses Disability_Status_Information_DataType::setDisability_Status_Reference()
      * @uses Disability_Status_Information_DataType::setDisability_Status_Data()
      * @uses Disability_Status_Information_DataType::setDelete()
-     * @param \StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference
-     * @param \StructType\Disability_Status_Sub_DataType $disability_Status_Data
+     * @param \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType $disability_Status_Data
      * @param bool $delete
      */
-    public function __construct(\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference = null, \StructType\Disability_Status_Sub_DataType $disability_Status_Data = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference = null, \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType $disability_Status_Data = null, $delete = null)
     {
         $this
             ->setDisability_Status_Reference($disability_Status_Reference)
@@ -53,7 +53,7 @@ class Disability_Status_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Status_Reference value
-     * @return \StructType\Disability_Status_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType|null
      */
     public function getDisability_Status_Reference()
     {
@@ -61,17 +61,17 @@ class Disability_Status_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Disability_Status_Reference value
-     * @param \StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference
-     * @return \StructType\Disability_Status_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Information_DataType
      */
-    public function setDisability_Status_Reference(\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference = null)
+    public function setDisability_Status_Reference(\WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType $disability_Status_Reference = null)
     {
         $this->Disability_Status_Reference = $disability_Status_Reference;
         return $this;
     }
     /**
      * Get Disability_Status_Data value
-     * @return \StructType\Disability_Status_Sub_DataType|null
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType|null
      */
     public function getDisability_Status_Data()
     {
@@ -79,10 +79,10 @@ class Disability_Status_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Disability_Status_Data value
-     * @param \StructType\Disability_Status_Sub_DataType $disability_Status_Data
-     * @return \StructType\Disability_Status_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_Sub_DataType $disability_Status_Data
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Information_DataType
      */
-    public function setDisability_Status_Data(\StructType\Disability_Status_Sub_DataType $disability_Status_Data = null)
+    public function setDisability_Status_Data(\WorkdayWsdl\\StructType\Disability_Status_Sub_DataType $disability_Status_Data = null)
     {
         $this->Disability_Status_Data = $disability_Status_Data;
         return $this;
@@ -98,7 +98,7 @@ class Disability_Status_Information_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Disability_Status_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Information_DataType
      */
     public function setDelete($delete = null)
     {
@@ -115,7 +115,7 @@ class Disability_Status_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Status_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Information_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,28 +17,28 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Former Worker Document Request
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_Attachment_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Request_Critieria
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
+     * @var \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
      */
     public $Request_Critieria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
      * The Response_Group
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_Attachment_Response_GroupType
+     * @var \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType
      */
     public $Response_Group;
     /**
@@ -55,13 +55,13 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
      * @uses Get_Former_Worker_Documents_RequestType::setResponse_Filter()
      * @uses Get_Former_Worker_Documents_RequestType::setResponse_Group()
      * @uses Get_Former_Worker_Documents_RequestType::setVersion()
-     * @param \StructType\Former_Worker_Attachment_Request_ReferencesType $request_References
-     * @param \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Former_Worker_Attachment_Response_GroupType $response_Group
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType $response_Group
      * @param string $version
      */
-    public function __construct(\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References = null, \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Former_Worker_Attachment_Response_GroupType $response_Group = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType $response_Group = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -72,7 +72,7 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Former_Worker_Attachment_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -80,17 +80,17 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Former_Worker_Attachment_Request_ReferencesType $request_References
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
-    public function setRequest_References(\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Request_Critieria value
-     * @return \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type|null
      */
     public function getRequest_Critieria()
     {
@@ -98,17 +98,17 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_Critieria value
-     * @param \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
-    public function setRequest_Critieria(\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria = null)
+    public function setRequest_Critieria(\WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type $request_Critieria = null)
     {
         $this->Request_Critieria = $request_Critieria;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -116,17 +116,17 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\Former_Worker_Attachment_Response_GroupType|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType|null
      */
     public function getResponse_Group()
     {
@@ -134,10 +134,10 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Group value
-     * @param \StructType\Former_Worker_Attachment_Response_GroupType $response_Group
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
-    public function setResponse_Group(\StructType\Former_Worker_Attachment_Response_GroupType $response_Group = null)
+    public function setResponse_Group(\WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_GroupType $response_Group = null)
     {
         $this->Response_Group = $response_Group;
         return $this;
@@ -153,7 +153,7 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
     public function setVersion($version = null)
     {
@@ -170,7 +170,7 @@ class Get_Former_Worker_Documents_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Former_Worker_Documents_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Former_Worker_Documents_RequestType
      */
     public static function __set_state(array $array)
     {

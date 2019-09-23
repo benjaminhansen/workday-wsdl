@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a Job Category.
      * - minOccurs: 0
-     * @var \StructType\Job_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Job_CategoryObjectType
      */
     public $Job_Category_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
      * Constructor method for Put_Job_Category_ResponseType
      * @uses Put_Job_Category_ResponseType::setJob_Category_Reference()
      * @uses Put_Job_Category_ResponseType::setVersion()
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Job_CategoryObjectType $job_Category_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null, $version = null)
     {
         $this
             ->setJob_Category_Reference($job_Category_Reference)
@@ -42,7 +42,7 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
     }
     /**
      * Get Job_Category_Reference value
-     * @return \StructType\Job_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryObjectType|null
      */
     public function getJob_Category_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
     }
     /**
      * Set Job_Category_Reference value
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @return \StructType\Put_Job_Category_ResponseType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_ResponseType
      */
-    public function setJob_Category_Reference(\StructType\Job_CategoryObjectType $job_Category_Reference = null)
+    public function setJob_Category_Reference(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null)
     {
         $this->Job_Category_Reference = $job_Category_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Category_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Job_Category_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Category_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_ResponseType
      */
     public static function __set_state(array $array)
     {

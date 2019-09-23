@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker Leave Event
      * - minOccurs: 0
-     * @var \StructType\Leave_Request_EventObjectType
+     * @var \WorkdayWsdl\\StructType\Leave_Request_EventObjectType
      */
     public $Leave_Request_Event_Reference;
     /**
@@ -34,7 +34,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The leave request return event. Contains information to the reference of leave return only when the leave has been returned.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Leave_Return_Event_Reference;
     /**
@@ -96,7 +96,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The type of leave.
      * - minOccurs: 0
-     * @var \StructType\Leave_of_Absence_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType
      */
     public $Leave_of_Absence_Type_Reference;
     /**
@@ -149,7 +149,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Leave Type Reason
      * - minOccurs: 0
-     * @var \StructType\Leave_Type_ReasonObjectType
+     * @var \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType
      */
     public $Leave_Type_Reason_Reference;
     /**
@@ -157,7 +157,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Element to capture all the leave request additional fields
      * - minOccurs: 0
-     * @var \StructType\Leave_Request_Additional_FieldsType
+     * @var \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public $Leave_Request_Additional_Fields;
     /**
@@ -179,25 +179,25 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * @uses Leave_Status_Detail_DataType::setStock_Vesting_Effect()
      * @uses Leave_Status_Detail_DataType::setLeave_Type_Reason_Reference()
      * @uses Leave_Status_Detail_DataType::setLeave_Request_Additional_Fields()
-     * @param \StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference
      * @param string $leave_Request_Description
-     * @param \StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference
      * @param bool $on_Leave
      * @param string $leave_Start_Date
      * @param string $estimated_Leave_End_Date
      * @param string $leave_End_Date
      * @param string $first_Day_Of_Work
      * @param string $leave_Last_Day_of_Work
-     * @param \StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference
      * @param bool $benefits_Effect
      * @param bool $payroll_Effect
      * @param bool $paid_Time_Off_Accrual_Effect
      * @param bool $continuous_Service_Accrual_Effect
      * @param bool $stock_Vesting_Effect
-     * @param \StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference
-     * @param \StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields
+     * @param \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields
      */
-    public function __construct(\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference = null, $leave_Request_Description = null, \StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference = null, $on_Leave = null, $leave_Start_Date = null, $estimated_Leave_End_Date = null, $leave_End_Date = null, $first_Day_Of_Work = null, $leave_Last_Day_of_Work = null, \StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference = null, $benefits_Effect = null, $payroll_Effect = null, $paid_Time_Off_Accrual_Effect = null, $continuous_Service_Accrual_Effect = null, $stock_Vesting_Effect = null, \StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference = null, \StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields = null)
+    public function __construct(\WorkdayWsdl\\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference = null, $leave_Request_Description = null, \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference = null, $on_Leave = null, $leave_Start_Date = null, $estimated_Leave_End_Date = null, $leave_End_Date = null, $first_Day_Of_Work = null, $leave_Last_Day_of_Work = null, \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference = null, $benefits_Effect = null, $payroll_Effect = null, $paid_Time_Off_Accrual_Effect = null, $continuous_Service_Accrual_Effect = null, $stock_Vesting_Effect = null, \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference = null, \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields = null)
     {
         $this
             ->setLeave_Request_Event_Reference($leave_Request_Event_Reference)
@@ -220,7 +220,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_Request_Event_Reference value
-     * @return \StructType\Leave_Request_EventObjectType|null
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectType|null
      */
     public function getLeave_Request_Event_Reference()
     {
@@ -228,10 +228,10 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Leave_Request_Event_Reference value
-     * @param \StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
-    public function setLeave_Request_Event_Reference(\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference = null)
+    public function setLeave_Request_Event_Reference(\WorkdayWsdl\\StructType\Leave_Request_EventObjectType $leave_Request_Event_Reference = null)
     {
         $this->Leave_Request_Event_Reference = $leave_Request_Event_Reference;
         return $this;
@@ -247,7 +247,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_Request_Description value
      * @param string $leave_Request_Description
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setLeave_Request_Description($leave_Request_Description = null)
     {
@@ -260,7 +260,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_Return_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getLeave_Return_Event_Reference()
     {
@@ -268,10 +268,10 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Leave_Return_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
-    public function setLeave_Return_Event_Reference(\StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference = null)
+    public function setLeave_Return_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $leave_Return_Event_Reference = null)
     {
         $this->Leave_Return_Event_Reference = $leave_Return_Event_Reference;
         return $this;
@@ -287,7 +287,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set On_Leave value
      * @param bool $on_Leave
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setOn_Leave($on_Leave = null)
     {
@@ -309,7 +309,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_Start_Date value
      * @param string $leave_Start_Date
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setLeave_Start_Date($leave_Start_Date = null)
     {
@@ -331,7 +331,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Estimated_Leave_End_Date value
      * @param string $estimated_Leave_End_Date
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setEstimated_Leave_End_Date($estimated_Leave_End_Date = null)
     {
@@ -353,7 +353,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_End_Date value
      * @param string $leave_End_Date
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setLeave_End_Date($leave_End_Date = null)
     {
@@ -375,7 +375,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set First_Day_Of_Work value
      * @param string $first_Day_Of_Work
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setFirst_Day_Of_Work($first_Day_Of_Work = null)
     {
@@ -397,7 +397,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_Last_Day_of_Work value
      * @param string $leave_Last_Day_of_Work
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setLeave_Last_Day_of_Work($leave_Last_Day_of_Work = null)
     {
@@ -410,7 +410,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_of_Absence_Type_Reference value
-     * @return \StructType\Leave_of_Absence_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType|null
      */
     public function getLeave_of_Absence_Type_Reference()
     {
@@ -418,10 +418,10 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Leave_of_Absence_Type_Reference value
-     * @param \StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
-    public function setLeave_of_Absence_Type_Reference(\StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference = null)
+    public function setLeave_of_Absence_Type_Reference(\WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType $leave_of_Absence_Type_Reference = null)
     {
         $this->Leave_of_Absence_Type_Reference = $leave_of_Absence_Type_Reference;
         return $this;
@@ -437,7 +437,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Benefits_Effect value
      * @param bool $benefits_Effect
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setBenefits_Effect($benefits_Effect = null)
     {
@@ -459,7 +459,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Payroll_Effect value
      * @param bool $payroll_Effect
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setPayroll_Effect($payroll_Effect = null)
     {
@@ -481,7 +481,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Paid_Time_Off_Accrual_Effect value
      * @param bool $paid_Time_Off_Accrual_Effect
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setPaid_Time_Off_Accrual_Effect($paid_Time_Off_Accrual_Effect = null)
     {
@@ -503,7 +503,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Continuous_Service_Accrual_Effect value
      * @param bool $continuous_Service_Accrual_Effect
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setContinuous_Service_Accrual_Effect($continuous_Service_Accrual_Effect = null)
     {
@@ -525,7 +525,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Stock_Vesting_Effect value
      * @param bool $stock_Vesting_Effect
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public function setStock_Vesting_Effect($stock_Vesting_Effect = null)
     {
@@ -538,7 +538,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_Type_Reason_Reference value
-     * @return \StructType\Leave_Type_ReasonObjectType|null
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType|null
      */
     public function getLeave_Type_Reason_Reference()
     {
@@ -546,17 +546,17 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Leave_Type_Reason_Reference value
-     * @param \StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
-    public function setLeave_Type_Reason_Reference(\StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference = null)
+    public function setLeave_Type_Reason_Reference(\WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType $leave_Type_Reason_Reference = null)
     {
         $this->Leave_Type_Reason_Reference = $leave_Type_Reason_Reference;
         return $this;
     }
     /**
      * Get Leave_Request_Additional_Fields value
-     * @return \StructType\Leave_Request_Additional_FieldsType|null
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType|null
      */
     public function getLeave_Request_Additional_Fields()
     {
@@ -564,10 +564,10 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Leave_Request_Additional_Fields value
-     * @param \StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
-    public function setLeave_Request_Additional_Fields(\StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields = null)
+    public function setLeave_Request_Additional_Fields(\WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType $leave_Request_Additional_Fields = null)
     {
         $this->Leave_Request_Additional_Fields = $leave_Request_Additional_Fields;
         return $this;
@@ -578,7 +578,7 @@ class Leave_Status_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType
      */
     public static function __set_state(array $array)
     {

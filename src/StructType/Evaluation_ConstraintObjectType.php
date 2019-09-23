@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Evaluation_ConstraintObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
      * Constructor method for Evaluation_ConstraintObjectType
      * @uses Evaluation_ConstraintObjectType::setID()
      * @uses Evaluation_ConstraintObjectType::setDescriptor()
-     * @param \StructType\Evaluation_ConstraintObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Evaluation_ConstraintObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $evaluation_ConstraintObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$evaluation_ConstraintObjectTypeIDItem instanceof \StructType\Evaluation_ConstraintObjectIDType) {
+            if (!$evaluation_ConstraintObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType) {
                 $invalidValues[] = is_object($evaluation_ConstraintObjectTypeIDItem) ? get_class($evaluation_ConstraintObjectTypeIDItem) : sprintf('%s(%s)', gettype($evaluation_ConstraintObjectTypeIDItem), var_export($evaluation_ConstraintObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Evaluation_ConstraintObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Evaluation_ConstraintObjectIDType[] $iD
-     * @return \StructType\Evaluation_ConstraintObjectType
+     * @param \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Evaluation_ConstraintObjectIDType $item
-     * @return \StructType\Evaluation_ConstraintObjectType
+     * @param \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType
      */
-    public function addToID(\StructType\Evaluation_ConstraintObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Evaluation_ConstraintObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Evaluation_ConstraintObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Evaluation_ConstraintObjectType
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Evaluation_ConstraintObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Evaluation_ConstraintObjectType
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectType
      */
     public static function __set_state(array $array)
     {

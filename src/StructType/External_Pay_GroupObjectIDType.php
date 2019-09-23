@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class External_Pay_GroupObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\External_Pay_GroupReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\External_Pay_GroupReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\External_Pay_GroupReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\External_Pay_GroupReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\External_Pay_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\External_Pay_GroupReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\External_Pay_GroupReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\External_Pay_GroupReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\External_Pay_GroupReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\External_Pay_GroupReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\External_Pay_GroupReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class External_Pay_GroupObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\External_Pay_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class External_Pay_GroupObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\External_Pay_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class External_Pay_GroupObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\External_Pay_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class External_Pay_GroupObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Pay_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType
      */
     public static function __set_state(array $array)
     {

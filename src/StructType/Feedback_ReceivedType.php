@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Feedback_ReceivedType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The worker who requested the feedback
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Requested_By_Worker_Reference;
     /**
@@ -53,7 +53,7 @@ class Feedback_ReceivedType extends AbstractStructBase
      * - documentation: Element for Feedback Comments and Questions. There can be multiple questions per request, thus multiple comments per feedback given.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Feedback_ResponseType[]
+     * @var \WorkdayWsdl\\StructType\Feedback_ResponseType[]
      */
     public $Feedback_Response_Data;
     /**
@@ -64,12 +64,12 @@ class Feedback_ReceivedType extends AbstractStructBase
      * @uses Feedback_ReceivedType::setDate()
      * @uses Feedback_ReceivedType::setFeedback_Response_Data()
      * @param string $from
-     * @param \StructType\WorkerObjectType $requested_By_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $requested_By_Worker_Reference
      * @param string $feedback_Type
      * @param string $date
-     * @param \StructType\Feedback_ResponseType[] $feedback_Response_Data
+     * @param \WorkdayWsdl\\StructType\Feedback_ResponseType[] $feedback_Response_Data
      */
-    public function __construct($from = null, \StructType\WorkerObjectType $requested_By_Worker_Reference = null, $feedback_Type = null, $date = null, array $feedback_Response_Data = array())
+    public function __construct($from = null, \WorkdayWsdl\\StructType\WorkerObjectType $requested_By_Worker_Reference = null, $feedback_Type = null, $date = null, array $feedback_Response_Data = array())
     {
         $this
             ->setFrom($from)
@@ -89,7 +89,7 @@ class Feedback_ReceivedType extends AbstractStructBase
     /**
      * Set From value
      * @param string $from
-     * @return \StructType\Feedback_ReceivedType
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
     public function setFrom($from = null)
     {
@@ -102,7 +102,7 @@ class Feedback_ReceivedType extends AbstractStructBase
     }
     /**
      * Get Requested_By_Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getRequested_By_Worker_Reference()
     {
@@ -110,10 +110,10 @@ class Feedback_ReceivedType extends AbstractStructBase
     }
     /**
      * Set Requested_By_Worker_Reference value
-     * @param \StructType\WorkerObjectType $requested_By_Worker_Reference
-     * @return \StructType\Feedback_ReceivedType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $requested_By_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
-    public function setRequested_By_Worker_Reference(\StructType\WorkerObjectType $requested_By_Worker_Reference = null)
+    public function setRequested_By_Worker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $requested_By_Worker_Reference = null)
     {
         $this->Requested_By_Worker_Reference = $requested_By_Worker_Reference;
         return $this;
@@ -129,7 +129,7 @@ class Feedback_ReceivedType extends AbstractStructBase
     /**
      * Set Feedback_Type value
      * @param string $feedback_Type
-     * @return \StructType\Feedback_ReceivedType
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
     public function setFeedback_Type($feedback_Type = null)
     {
@@ -151,7 +151,7 @@ class Feedback_ReceivedType extends AbstractStructBase
     /**
      * Set Date value
      * @param string $date
-     * @return \StructType\Feedback_ReceivedType
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
     public function setDate($date = null)
     {
@@ -164,7 +164,7 @@ class Feedback_ReceivedType extends AbstractStructBase
     }
     /**
      * Get Feedback_Response_Data value
-     * @return \StructType\Feedback_ResponseType[]|null
+     * @return \WorkdayWsdl\\StructType\Feedback_ResponseType[]|null
      */
     public function getFeedback_Response_Data()
     {
@@ -182,12 +182,12 @@ class Feedback_ReceivedType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $feedback_ReceivedTypeFeedback_Response_DataItem) {
             // validation for constraint: itemType
-            if (!$feedback_ReceivedTypeFeedback_Response_DataItem instanceof \StructType\Feedback_ResponseType) {
+            if (!$feedback_ReceivedTypeFeedback_Response_DataItem instanceof \WorkdayWsdl\\StructType\Feedback_ResponseType) {
                 $invalidValues[] = is_object($feedback_ReceivedTypeFeedback_Response_DataItem) ? get_class($feedback_ReceivedTypeFeedback_Response_DataItem) : sprintf('%s(%s)', gettype($feedback_ReceivedTypeFeedback_Response_DataItem), var_export($feedback_ReceivedTypeFeedback_Response_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Feedback_Response_Data property can only contain items of type \StructType\Feedback_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Feedback_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Feedback_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -195,8 +195,8 @@ class Feedback_ReceivedType extends AbstractStructBase
     /**
      * Set Feedback_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feedback_ResponseType[] $feedback_Response_Data
-     * @return \StructType\Feedback_ReceivedType
+     * @param \WorkdayWsdl\\StructType\Feedback_ResponseType[] $feedback_Response_Data
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
     public function setFeedback_Response_Data(array $feedback_Response_Data = array())
     {
@@ -210,14 +210,14 @@ class Feedback_ReceivedType extends AbstractStructBase
     /**
      * Add item to Feedback_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feedback_ResponseType $item
-     * @return \StructType\Feedback_ReceivedType
+     * @param \WorkdayWsdl\\StructType\Feedback_ResponseType $item
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
-    public function addToFeedback_Response_Data(\StructType\Feedback_ResponseType $item)
+    public function addToFeedback_Response_Data(\WorkdayWsdl\\StructType\Feedback_ResponseType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Feedback_ResponseType) {
-            throw new \InvalidArgumentException(sprintf('The Feedback_Response_Data property can only contain items of type \StructType\Feedback_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Feedback_ResponseType) {
+            throw new \InvalidArgumentException(sprintf('The Feedback_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Feedback_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Feedback_Response_Data[] = $item;
         return $this;
@@ -228,7 +228,7 @@ class Feedback_ReceivedType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Feedback_ReceivedType
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType
      */
     public static function __set_state(array $array)
     {

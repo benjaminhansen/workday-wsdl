@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference information for the top-level node.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Top_Level_Organization_Reference;
     /**
@@ -25,7 +25,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference information for immediately superior Organization to the current Organization. Will only appear for Hierarchical Organizations.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Superior_Organization_Reference;
     /**
@@ -34,7 +34,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * - documentation: Reference information for all Organizations immediately subordinate to the current Organization. Will only appear for Hierarchical Organizations.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType[]
      */
     public $Subordinate_Organization_Reference;
     /**
@@ -43,7 +43,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * - documentation: Reference information for all included Organizations. Will only appear for Hierarchical Organizations that include other organizations as members.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType[]
      */
     public $Included_Organization_Reference;
     /**
@@ -52,7 +52,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * - documentation: Reference information for Organizations that include this Organization in their Organization hierarchy
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType[]
      */
     public $Included_In_Organization_Reference;
     /**
@@ -62,13 +62,13 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * @uses Organization_Hierarchy_DataType::setSubordinate_Organization_Reference()
      * @uses Organization_Hierarchy_DataType::setIncluded_Organization_Reference()
      * @uses Organization_Hierarchy_DataType::setIncluded_In_Organization_Reference()
-     * @param \StructType\OrganizationObjectType $top_Level_Organization_Reference
-     * @param \StructType\OrganizationObjectType $superior_Organization_Reference
-     * @param \StructType\OrganizationObjectType[] $subordinate_Organization_Reference
-     * @param \StructType\OrganizationObjectType[] $included_Organization_Reference
-     * @param \StructType\OrganizationObjectType[] $included_In_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $top_Level_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $subordinate_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $included_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $included_In_Organization_Reference
      */
-    public function __construct(\StructType\OrganizationObjectType $top_Level_Organization_Reference = null, \StructType\OrganizationObjectType $superior_Organization_Reference = null, array $subordinate_Organization_Reference = array(), array $included_Organization_Reference = array(), array $included_In_Organization_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $top_Level_Organization_Reference = null, \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference = null, array $subordinate_Organization_Reference = array(), array $included_Organization_Reference = array(), array $included_In_Organization_Reference = array())
     {
         $this
             ->setTop_Level_Organization_Reference($top_Level_Organization_Reference)
@@ -79,7 +79,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Get Top_Level_Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getTop_Level_Organization_Reference()
     {
@@ -87,17 +87,17 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Set Top_Level_Organization_Reference value
-     * @param \StructType\OrganizationObjectType $top_Level_Organization_Reference
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $top_Level_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
-    public function setTop_Level_Organization_Reference(\StructType\OrganizationObjectType $top_Level_Organization_Reference = null)
+    public function setTop_Level_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $top_Level_Organization_Reference = null)
     {
         $this->Top_Level_Organization_Reference = $this->{'Top-Level_Organization_Reference'} = $top_Level_Organization_Reference;
         return $this;
     }
     /**
      * Get Superior_Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getSuperior_Organization_Reference()
     {
@@ -105,17 +105,17 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Organization_Reference value
-     * @param \StructType\OrganizationObjectType $superior_Organization_Reference
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
-    public function setSuperior_Organization_Reference(\StructType\OrganizationObjectType $superior_Organization_Reference = null)
+    public function setSuperior_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference = null)
     {
         $this->Superior_Organization_Reference = $superior_Organization_Reference;
         return $this;
     }
     /**
      * Get Subordinate_Organization_Reference value
-     * @return \StructType\OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType[]|null
      */
     public function getSubordinate_Organization_Reference()
     {
@@ -133,12 +133,12 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem instanceof \StructType\OrganizationObjectType) {
+            if (!$organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem) ? get_class($organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem), var_export($organization_Hierarchy_DataTypeSubordinate_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Subordinate_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Subordinate_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -146,8 +146,8 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Subordinate_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType[] $subordinate_Organization_Reference
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $subordinate_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
     public function setSubordinate_Organization_Reference(array $subordinate_Organization_Reference = array())
     {
@@ -161,21 +161,21 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Add item to Subordinate_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType $item
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
-    public function addToSubordinate_Organization_Reference(\StructType\OrganizationObjectType $item)
+    public function addToSubordinate_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Subordinate_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Subordinate_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Subordinate_Organization_Reference[] = $item;
         return $this;
     }
     /**
      * Get Included_Organization_Reference value
-     * @return \StructType\OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType[]|null
      */
     public function getIncluded_Organization_Reference()
     {
@@ -193,12 +193,12 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem instanceof \StructType\OrganizationObjectType) {
+            if (!$organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem) ? get_class($organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem), var_export($organization_Hierarchy_DataTypeIncluded_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Included_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Included_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -206,8 +206,8 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Included_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType[] $included_Organization_Reference
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $included_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
     public function setIncluded_Organization_Reference(array $included_Organization_Reference = array())
     {
@@ -221,21 +221,21 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Add item to Included_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType $item
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
-    public function addToIncluded_Organization_Reference(\StructType\OrganizationObjectType $item)
+    public function addToIncluded_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Included_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Included_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Included_Organization_Reference[] = $item;
         return $this;
     }
     /**
      * Get Included_In_Organization_Reference value
-     * @return \StructType\OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType[]|null
      */
     public function getIncluded_In_Organization_Reference()
     {
@@ -253,12 +253,12 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem instanceof \StructType\OrganizationObjectType) {
+            if (!$organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem) ? get_class($organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem), var_export($organization_Hierarchy_DataTypeIncluded_In_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Included_In_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Included_In_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -266,8 +266,8 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Included_In_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType[] $included_In_Organization_Reference
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $included_In_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
     public function setIncluded_In_Organization_Reference(array $included_In_Organization_Reference = array())
     {
@@ -281,14 +281,14 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
     /**
      * Add item to Included_In_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType $item
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
-    public function addToIncluded_In_Organization_Reference(\StructType\OrganizationObjectType $item)
+    public function addToIncluded_In_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Included_In_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Included_In_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Included_In_Organization_Reference[] = $item;
         return $this;
@@ -299,7 +299,7 @@ class Organization_Hierarchy_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Hierarchy_DataType
      */
     public static function __set_state(array $array)
     {

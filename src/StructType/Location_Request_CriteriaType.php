@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * - documentation: Reference to the usage of the Location. (e.g. Business Site, Work Space, etc.)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_UsageObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_UsageObjectType[]
      */
     public $Location_Usage_Reference;
     /**
@@ -36,7 +36,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * - documentation: The location type associated with the location that ties to the usage that has been setup.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_TypeObjectType[]
      */
     public $Location_Type_Reference;
     /**
@@ -68,7 +68,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Field_And_Parameter_Criteria_DataType[]
+     * @var \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType[]
      */
     public $Field_And_Parameter_Criteria_Data;
     /**
@@ -80,11 +80,11 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * @uses Location_Request_CriteriaType::setExclude_Active_Locations()
      * @uses Location_Request_CriteriaType::setField_And_Parameter_Criteria_Data()
      * @param string $location_Name
-     * @param \StructType\Location_UsageObjectType[] $location_Usage_Reference
-     * @param \StructType\Location_TypeObjectType[] $location_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectType[] $location_Usage_Reference
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType[] $location_Type_Reference
      * @param bool $exclude_Inactive_Locations
      * @param bool $exclude_Active_Locations
-     * @param \StructType\Field_And_Parameter_Criteria_DataType[] $field_And_Parameter_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType[] $field_And_Parameter_Criteria_Data
      */
     public function __construct($location_Name = null, array $location_Usage_Reference = array(), array $location_Type_Reference = array(), $exclude_Inactive_Locations = null, $exclude_Active_Locations = null, array $field_And_Parameter_Criteria_Data = array())
     {
@@ -107,7 +107,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Location_Name value
      * @param string $location_Name
-     * @return \StructType\Location_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setLocation_Name($location_Name = null)
     {
@@ -120,7 +120,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Location_Usage_Reference value
-     * @return \StructType\Location_UsageObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectType[]|null
      */
     public function getLocation_Usage_Reference()
     {
@@ -138,12 +138,12 @@ class Location_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Request_CriteriaTypeLocation_Usage_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Request_CriteriaTypeLocation_Usage_ReferenceItem instanceof \StructType\Location_UsageObjectType) {
+            if (!$location_Request_CriteriaTypeLocation_Usage_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_UsageObjectType) {
                 $invalidValues[] = is_object($location_Request_CriteriaTypeLocation_Usage_ReferenceItem) ? get_class($location_Request_CriteriaTypeLocation_Usage_ReferenceItem) : sprintf('%s(%s)', gettype($location_Request_CriteriaTypeLocation_Usage_ReferenceItem), var_export($location_Request_CriteriaTypeLocation_Usage_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Usage_Reference property can only contain items of type \StructType\Location_UsageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Usage_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_UsageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -151,8 +151,8 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Location_Usage_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_UsageObjectType[] $location_Usage_Reference
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectType[] $location_Usage_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setLocation_Usage_Reference(array $location_Usage_Reference = array())
     {
@@ -166,21 +166,21 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Location_Usage_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_UsageObjectType $item
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
-    public function addToLocation_Usage_Reference(\StructType\Location_UsageObjectType $item)
+    public function addToLocation_Usage_Reference(\WorkdayWsdl\\StructType\Location_UsageObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_UsageObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Usage_Reference property can only contain items of type \StructType\Location_UsageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_UsageObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Usage_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_UsageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Usage_Reference[] = $item;
         return $this;
     }
     /**
      * Get Location_Type_Reference value
-     * @return \StructType\Location_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_TypeObjectType[]|null
      */
     public function getLocation_Type_Reference()
     {
@@ -198,12 +198,12 @@ class Location_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Request_CriteriaTypeLocation_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Request_CriteriaTypeLocation_Type_ReferenceItem instanceof \StructType\Location_TypeObjectType) {
+            if (!$location_Request_CriteriaTypeLocation_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_TypeObjectType) {
                 $invalidValues[] = is_object($location_Request_CriteriaTypeLocation_Type_ReferenceItem) ? get_class($location_Request_CriteriaTypeLocation_Type_ReferenceItem) : sprintf('%s(%s)', gettype($location_Request_CriteriaTypeLocation_Type_ReferenceItem), var_export($location_Request_CriteriaTypeLocation_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -211,8 +211,8 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_TypeObjectType[] $location_Type_Reference
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType[] $location_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setLocation_Type_Reference(array $location_Type_Reference = array())
     {
@@ -226,14 +226,14 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_TypeObjectType $item
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
-    public function addToLocation_Type_Reference(\StructType\Location_TypeObjectType $item)
+    public function addToLocation_Type_Reference(\WorkdayWsdl\\StructType\Location_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Type_Reference[] = $item;
         return $this;
@@ -280,7 +280,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param bool $exclude_Inactive_Locations
-     * @return \StructType\Location_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setExclude_Inactive_Locations($exclude_Inactive_Locations = null)
     {
@@ -341,7 +341,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param bool $exclude_Active_Locations
-     * @return \StructType\Location_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setExclude_Active_Locations($exclude_Active_Locations = null)
     {
@@ -362,7 +362,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Field_And_Parameter_Criteria_Data value
-     * @return \StructType\Field_And_Parameter_Criteria_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType[]|null
      */
     public function getField_And_Parameter_Criteria_Data()
     {
@@ -380,12 +380,12 @@ class Location_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem) {
             // validation for constraint: itemType
-            if (!$location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem instanceof \StructType\Field_And_Parameter_Criteria_DataType) {
+            if (!$location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem instanceof \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType) {
                 $invalidValues[] = is_object($location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem) ? get_class($location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem) : sprintf('%s(%s)', gettype($location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem), var_export($location_Request_CriteriaTypeField_And_Parameter_Criteria_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Field_And_Parameter_Criteria_Data property can only contain items of type \StructType\Field_And_Parameter_Criteria_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Field_And_Parameter_Criteria_Data property can only contain items of type \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -393,8 +393,8 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Field_And_Parameter_Criteria_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Field_And_Parameter_Criteria_DataType[] $field_And_Parameter_Criteria_Data
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType[] $field_And_Parameter_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public function setField_And_Parameter_Criteria_Data(array $field_And_Parameter_Criteria_Data = array())
     {
@@ -408,14 +408,14 @@ class Location_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Field_And_Parameter_Criteria_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Field_And_Parameter_Criteria_DataType $item
-     * @return \StructType\Location_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $item
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
-    public function addToField_And_Parameter_Criteria_Data(\StructType\Field_And_Parameter_Criteria_DataType $item)
+    public function addToField_And_Parameter_Criteria_Data(\WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Field_And_Parameter_Criteria_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Field_And_Parameter_Criteria_Data property can only contain items of type \StructType\Field_And_Parameter_Criteria_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Field_And_Parameter_Criteria_Data property can only contain items of type \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Field_And_Parameter_Criteria_Data[] = $item;
         return $this;
@@ -426,7 +426,7 @@ class Location_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

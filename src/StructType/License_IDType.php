@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class License_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the License Identifier.
      * - minOccurs: 0
-     * @var \StructType\License_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\License_IdentifierObjectType
      */
     public $License_ID_Reference;
     /**
@@ -25,7 +25,7 @@ class License_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for the License Identifier data.
      * - minOccurs: 0
-     * @var \StructType\License_ID_DataType
+     * @var \WorkdayWsdl\\StructType\License_ID_DataType
      */
     public $License_ID_Data;
     /**
@@ -33,7 +33,7 @@ class License_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Shared Reference ID for License Identifiers.
      * - minOccurs: 0
-     * @var \StructType\License_Identifier_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType
      */
     public $License_ID_Shared_Reference;
     /**
@@ -49,12 +49,12 @@ class License_IDType extends AbstractStructBase
      * @uses License_IDType::setLicense_ID_Data()
      * @uses License_IDType::setLicense_ID_Shared_Reference()
      * @uses License_IDType::setDelete()
-     * @param \StructType\License_IdentifierObjectType $license_ID_Reference
-     * @param \StructType\License_ID_DataType $license_ID_Data
-     * @param \StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference
+     * @param \WorkdayWsdl\\StructType\License_IdentifierObjectType $license_ID_Reference
+     * @param \WorkdayWsdl\\StructType\License_ID_DataType $license_ID_Data
+     * @param \WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\License_IdentifierObjectType $license_ID_Reference = null, \StructType\License_ID_DataType $license_ID_Data = null, \StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\License_IdentifierObjectType $license_ID_Reference = null, \WorkdayWsdl\\StructType\License_ID_DataType $license_ID_Data = null, \WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference = null, $delete = null)
     {
         $this
             ->setLicense_ID_Reference($license_ID_Reference)
@@ -64,7 +64,7 @@ class License_IDType extends AbstractStructBase
     }
     /**
      * Get License_ID_Reference value
-     * @return \StructType\License_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\License_IdentifierObjectType|null
      */
     public function getLicense_ID_Reference()
     {
@@ -72,17 +72,17 @@ class License_IDType extends AbstractStructBase
     }
     /**
      * Set License_ID_Reference value
-     * @param \StructType\License_IdentifierObjectType $license_ID_Reference
-     * @return \StructType\License_IDType
+     * @param \WorkdayWsdl\\StructType\License_IdentifierObjectType $license_ID_Reference
+     * @return \WorkdayWsdl\\StructType\License_IDType
      */
-    public function setLicense_ID_Reference(\StructType\License_IdentifierObjectType $license_ID_Reference = null)
+    public function setLicense_ID_Reference(\WorkdayWsdl\\StructType\License_IdentifierObjectType $license_ID_Reference = null)
     {
         $this->License_ID_Reference = $license_ID_Reference;
         return $this;
     }
     /**
      * Get License_ID_Data value
-     * @return \StructType\License_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\License_ID_DataType|null
      */
     public function getLicense_ID_Data()
     {
@@ -90,17 +90,17 @@ class License_IDType extends AbstractStructBase
     }
     /**
      * Set License_ID_Data value
-     * @param \StructType\License_ID_DataType $license_ID_Data
-     * @return \StructType\License_IDType
+     * @param \WorkdayWsdl\\StructType\License_ID_DataType $license_ID_Data
+     * @return \WorkdayWsdl\\StructType\License_IDType
      */
-    public function setLicense_ID_Data(\StructType\License_ID_DataType $license_ID_Data = null)
+    public function setLicense_ID_Data(\WorkdayWsdl\\StructType\License_ID_DataType $license_ID_Data = null)
     {
         $this->License_ID_Data = $license_ID_Data;
         return $this;
     }
     /**
      * Get License_ID_Shared_Reference value
-     * @return \StructType\License_Identifier_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType|null
      */
     public function getLicense_ID_Shared_Reference()
     {
@@ -108,10 +108,10 @@ class License_IDType extends AbstractStructBase
     }
     /**
      * Set License_ID_Shared_Reference value
-     * @param \StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference
-     * @return \StructType\License_IDType
+     * @param \WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference
+     * @return \WorkdayWsdl\\StructType\License_IDType
      */
-    public function setLicense_ID_Shared_Reference(\StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference = null)
+    public function setLicense_ID_Shared_Reference(\WorkdayWsdl\\StructType\License_Identifier_ReferenceObjectType $license_ID_Shared_Reference = null)
     {
         $this->License_ID_Shared_Reference = $license_ID_Shared_Reference;
         return $this;
@@ -127,7 +127,7 @@ class License_IDType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\License_IDType
+     * @return \WorkdayWsdl\\StructType\License_IDType
      */
     public function setDelete($delete = null)
     {
@@ -144,7 +144,7 @@ class License_IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\License_IDType
+     * @return \WorkdayWsdl\\StructType\License_IDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
      * - documentation: A unique identifier to reference a provisioning group.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Provisioning_GroupObjectType[]
+     * @var \WorkdayWsdl\\StructType\Provisioning_GroupObjectType[]
      */
     public $Provisioning_Group_Request_Reference;
     /**
      * Constructor method for Provisioning_Group_Request_ReferencesType
      * @uses Provisioning_Group_Request_ReferencesType::setProvisioning_Group_Request_Reference()
-     * @param \StructType\Provisioning_GroupObjectType[] $provisioning_Group_Request_Reference
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectType[] $provisioning_Group_Request_Reference
      */
     public function __construct(array $provisioning_Group_Request_Reference = array())
     {
@@ -33,7 +33,7 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Provisioning_Group_Request_Reference value
-     * @return \StructType\Provisioning_GroupObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType[]|null
      */
     public function getProvisioning_Group_Request_Reference()
     {
@@ -51,12 +51,12 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem instanceof \StructType\Provisioning_GroupObjectType) {
+            if (!$provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem instanceof \WorkdayWsdl\\StructType\Provisioning_GroupObjectType) {
                 $invalidValues[] = is_object($provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem) ? get_class($provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem) : sprintf('%s(%s)', gettype($provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem), var_export($provisioning_Group_Request_ReferencesTypeProvisioning_Group_Request_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Provisioning_Group_Request_Reference property can only contain items of type \StructType\Provisioning_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Provisioning_Group_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Provisioning_Group_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_GroupObjectType[] $provisioning_Group_Request_Reference
-     * @return \StructType\Provisioning_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectType[] $provisioning_Group_Request_Reference
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Request_ReferencesType
      */
     public function setProvisioning_Group_Request_Reference(array $provisioning_Group_Request_Reference = array())
     {
@@ -79,14 +79,14 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Provisioning_Group_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_GroupObjectType $item
-     * @return \StructType\Provisioning_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectType $item
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Request_ReferencesType
      */
-    public function addToProvisioning_Group_Request_Reference(\StructType\Provisioning_GroupObjectType $item)
+    public function addToProvisioning_Group_Request_Reference(\WorkdayWsdl\\StructType\Provisioning_GroupObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Provisioning_GroupObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Request_Reference property can only contain items of type \StructType\Provisioning_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Provisioning_GroupObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Provisioning_Group_Request_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Provisioning_Group_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

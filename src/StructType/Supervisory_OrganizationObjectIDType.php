@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Supervisory_OrganizationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Supervisory_OrganizationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Supervisory_OrganizationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Supervisory_OrganizationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Supervisory_OrganizationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Supervisory_OrganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Supervisory_OrganizationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Supervisory_OrganizationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Supervisory_OrganizationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Supervisory_OrganizationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Supervisory_OrganizationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Supervisory_OrganizationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Supervisory_OrganizationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Supervisory_OrganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Supervisory_OrganizationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Supervisory_OrganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectIDType
      */
     public static function __set_state(array $array)
     {

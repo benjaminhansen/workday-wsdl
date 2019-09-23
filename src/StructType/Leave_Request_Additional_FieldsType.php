@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -347,7 +347,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Last_Date_for_Which_Paid value
      * @param string $last_Date_for_Which_Paid
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setLast_Date_for_Which_Paid($last_Date_for_Which_Paid = null)
     {
@@ -369,7 +369,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Expected_Due_Date value
      * @param string $expected_Due_Date
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setExpected_Due_Date($expected_Due_Date = null)
     {
@@ -391,7 +391,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Child_s_Birth_Date value
      * @param string $child_s_Birth_Date
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setChild_s_Birth_Date($child_s_Birth_Date = null)
     {
@@ -413,7 +413,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Stillbirth_Baby_Deceased value
      * @param bool $stillbirth_Baby_Deceased
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setStillbirth_Baby_Deceased($stillbirth_Baby_Deceased = null)
     {
@@ -435,7 +435,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Date_Baby_Arrived_Home_From_Hospital value
      * @param string $date_Baby_Arrived_Home_From_Hospital
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setDate_Baby_Arrived_Home_From_Hospital($date_Baby_Arrived_Home_From_Hospital = null)
     {
@@ -457,7 +457,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Adoption_Placement_Date value
      * @param string $adoption_Placement_Date
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setAdoption_Placement_Date($adoption_Placement_Date = null)
     {
@@ -479,7 +479,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Adoption_Notification_Date value
      * @param string $adoption_Notification_Date
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setAdoption_Notification_Date($adoption_Notification_Date = null)
     {
@@ -501,7 +501,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Date_Child_Entered_Country value
      * @param string $date_Child_Entered_Country
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setDate_Child_Entered_Country($date_Child_Entered_Country = null)
     {
@@ -523,7 +523,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Multiple_Child_Indicator value
      * @param bool $multiple_Child_Indicator
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setMultiple_Child_Indicator($multiple_Child_Indicator = null)
     {
@@ -545,7 +545,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Number_of_Babies_Adopted_Children value
      * @param float $number_of_Babies_Adopted_Children
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setNumber_of_Babies_Adopted_Children($number_of_Babies_Adopted_Children = null)
     {
@@ -579,7 +579,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Number_of_Previous_Births value
      * @param float $number_of_Previous_Births
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setNumber_of_Previous_Births($number_of_Previous_Births = null)
     {
@@ -613,7 +613,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Number_of_Previous_Maternity_Leaves value
      * @param float $number_of_Previous_Maternity_Leaves
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setNumber_of_Previous_Maternity_Leaves($number_of_Previous_Maternity_Leaves = null)
     {
@@ -647,7 +647,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Number_of_Child_Dependents value
      * @param float $number_of_Child_Dependents
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setNumber_of_Child_Dependents($number_of_Child_Dependents = null)
     {
@@ -681,7 +681,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Single_Parent_Indicator value
      * @param bool $single_Parent_Indicator
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setSingle_Parent_Indicator($single_Parent_Indicator = null)
     {
@@ -703,7 +703,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Age_of_Dependent value
      * @param float $age_of_Dependent
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setAge_of_Dependent($age_of_Dependent = null)
     {
@@ -737,7 +737,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Work_Related value
      * @param bool $work_Related
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setWork_Related($work_Related = null)
     {
@@ -759,7 +759,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Stop_Payment_Date value
      * @param string $stop_Payment_Date
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setStop_Payment_Date($stop_Payment_Date = null)
     {
@@ -781,7 +781,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Social_Security_Disability_Code value
      * @param string $social_Security_Disability_Code
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setSocial_Security_Disability_Code($social_Security_Disability_Code = null)
     {
@@ -807,7 +807,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Location_During_Leave value
      * @param string $location_During_Leave
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setLocation_During_Leave($location_During_Leave = null)
     {
@@ -829,7 +829,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Caesarean_Section_Birth value
      * @param bool $caesarean_Section_Birth
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setCaesarean_Section_Birth($caesarean_Section_Birth = null)
     {
@@ -851,7 +851,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Leave_Percentage value
      * @param float $leave_Percentage
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setLeave_Percentage($leave_Percentage = null)
     {
@@ -885,7 +885,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Week_of_Confinement value
      * @param string $week_of_Confinement
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setWeek_of_Confinement($week_of_Confinement = null)
     {
@@ -907,7 +907,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Leave_Entitlement_Override value
      * @param float $leave_Entitlement_Override
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setLeave_Entitlement_Override($leave_Entitlement_Override = null)
     {
@@ -937,7 +937,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
     /**
      * Set Date_of_Recall value
      * @param string $date_of_Recall
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public function setDate_of_Recall($date_of_Recall = null)
     {
@@ -954,7 +954,7 @@ class Leave_Request_Additional_FieldsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_Request_Additional_FieldsType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_Additional_FieldsType
      */
     public static function __set_state(array $array)
     {

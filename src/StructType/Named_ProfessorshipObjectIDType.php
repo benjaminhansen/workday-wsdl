@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Named_ProfessorshipObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Named_ProfessorshipReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Named_ProfessorshipReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Named_ProfessorshipReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Named_ProfessorshipReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Named_ProfessorshipObjectIDType
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Named_ProfessorshipReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Named_ProfessorshipReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Named_ProfessorshipReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Named_ProfessorshipReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Named_ProfessorshipReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Named_ProfessorshipReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Named_ProfessorshipObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Named_ProfessorshipObjectIDType
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Named_ProfessorshipObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Named_ProfessorshipObjectIDType
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType
      */
     public static function __set_state(array $array)
     {

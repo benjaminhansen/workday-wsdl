@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Committee_Meeting_Agenda_Item_AttachmentObjectIDType extends AbstractStruc
     }
     /**
      * Set type value
-     * @uses \EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Committee_Meeting_Agenda_Item_AttachmentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Committee_Meeting_Agenda_Item_AttachmentObjectIDType extends AbstractStruc
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -92,7 +92,7 @@ class Committee_Meeting_Agenda_Item_AttachmentObjectIDType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectIDType
      */
     public static function __set_state(array $array)
     {

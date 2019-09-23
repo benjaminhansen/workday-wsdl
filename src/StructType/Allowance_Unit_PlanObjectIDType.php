@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Allowance_Unit_PlanObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Allowance_Unit_PlanReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Allowance_Unit_PlanReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Allowance_Unit_PlanReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Allowance_Unit_PlanReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Allowance_Unit_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Allowance_Unit_PlanObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Allowance_Unit_PlanReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Allowance_Unit_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Allowance_Unit_PlanReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Allowance_Unit_PlanReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Allowance_Unit_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Allowance_Unit_PlanReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Allowance_Unit_PlanObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Allowance_Unit_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Allowance_Unit_PlanObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Allowance_Unit_PlanObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Allowance_Unit_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Allowance_Unit_PlanObjectIDType
      */
     public static function __set_state(array $array)
     {

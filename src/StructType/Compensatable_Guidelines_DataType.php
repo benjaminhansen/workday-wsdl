@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Compensation Package to assign.
      * - minOccurs: 0
-     * @var \StructType\Compensation_PackageObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_PackageObjectType
      */
     public $Compensation_Package_Reference;
     /**
@@ -26,7 +26,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Compensation grade to assign. Required if you select a compensation package. Doesn't default for Request Compensation Change.
      * - minOccurs: 0
-     * @var \StructType\Compensation_GradeObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_GradeObjectType
      */
     public $Compensation_Grade_Reference;
     /**
@@ -34,7 +34,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Profile within the Compensation Grade to assign. Does not default for Request Compensation Change.
      * - minOccurs: 0
-     * @var \StructType\Compensation_Grade_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType
      */
     public $Compensation_Grade_Profile_Reference;
     /**
@@ -42,7 +42,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Compensation Step within the Compensation Grade Profile.
      * - minOccurs: 0
-     * @var \StructType\Compensation_StepObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_StepObjectType
      */
     public $Compensation_Step_Reference;
     /**
@@ -61,13 +61,13 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * @uses Compensatable_Guidelines_DataType::setCompensation_Grade_Profile_Reference()
      * @uses Compensatable_Guidelines_DataType::setCompensation_Step_Reference()
      * @uses Compensatable_Guidelines_DataType::setProgression_Start_Date()
-     * @param \StructType\Compensation_PackageObjectType $compensation_Package_Reference
-     * @param \StructType\Compensation_GradeObjectType $compensation_Grade_Reference
-     * @param \StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference
-     * @param \StructType\Compensation_StepObjectType $compensation_Step_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_PackageObjectType $compensation_Package_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_StepObjectType $compensation_Step_Reference
      * @param string $progression_Start_Date
      */
-    public function __construct(\StructType\Compensation_PackageObjectType $compensation_Package_Reference = null, \StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null, \StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference = null, \StructType\Compensation_StepObjectType $compensation_Step_Reference = null, $progression_Start_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Compensation_PackageObjectType $compensation_Package_Reference = null, \WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null, \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference = null, \WorkdayWsdl\\StructType\Compensation_StepObjectType $compensation_Step_Reference = null, $progression_Start_Date = null)
     {
         $this
             ->setCompensation_Package_Reference($compensation_Package_Reference)
@@ -78,7 +78,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Package_Reference value
-     * @return \StructType\Compensation_PackageObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectType|null
      */
     public function getCompensation_Package_Reference()
     {
@@ -86,17 +86,17 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Package_Reference value
-     * @param \StructType\Compensation_PackageObjectType $compensation_Package_Reference
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_PackageObjectType $compensation_Package_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
-    public function setCompensation_Package_Reference(\StructType\Compensation_PackageObjectType $compensation_Package_Reference = null)
+    public function setCompensation_Package_Reference(\WorkdayWsdl\\StructType\Compensation_PackageObjectType $compensation_Package_Reference = null)
     {
         $this->Compensation_Package_Reference = $compensation_Package_Reference;
         return $this;
     }
     /**
      * Get Compensation_Grade_Reference value
-     * @return \StructType\Compensation_GradeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_GradeObjectType|null
      */
     public function getCompensation_Grade_Reference()
     {
@@ -104,17 +104,17 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Grade_Reference value
-     * @param \StructType\Compensation_GradeObjectType $compensation_Grade_Reference
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
-    public function setCompensation_Grade_Reference(\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null)
+    public function setCompensation_Grade_Reference(\WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null)
     {
         $this->Compensation_Grade_Reference = $compensation_Grade_Reference;
         return $this;
     }
     /**
      * Get Compensation_Grade_Profile_Reference value
-     * @return \StructType\Compensation_Grade_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType|null
      */
     public function getCompensation_Grade_Profile_Reference()
     {
@@ -122,17 +122,17 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Grade_Profile_Reference value
-     * @param \StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
-    public function setCompensation_Grade_Profile_Reference(\StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference = null)
+    public function setCompensation_Grade_Profile_Reference(\WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $compensation_Grade_Profile_Reference = null)
     {
         $this->Compensation_Grade_Profile_Reference = $compensation_Grade_Profile_Reference;
         return $this;
     }
     /**
      * Get Compensation_Step_Reference value
-     * @return \StructType\Compensation_StepObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectType|null
      */
     public function getCompensation_Step_Reference()
     {
@@ -140,10 +140,10 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Step_Reference value
-     * @param \StructType\Compensation_StepObjectType $compensation_Step_Reference
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_StepObjectType $compensation_Step_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
-    public function setCompensation_Step_Reference(\StructType\Compensation_StepObjectType $compensation_Step_Reference = null)
+    public function setCompensation_Step_Reference(\WorkdayWsdl\\StructType\Compensation_StepObjectType $compensation_Step_Reference = null)
     {
         $this->Compensation_Step_Reference = $compensation_Step_Reference;
         return $this;
@@ -159,7 +159,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
     /**
      * Set Progression_Start_Date value
      * @param string $progression_Start_Date
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
     public function setProgression_Start_Date($progression_Start_Date = null)
     {
@@ -176,7 +176,7 @@ class Compensatable_Guidelines_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensatable_Guidelines_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Guidelines_DataType
      */
     public static function __set_state(array $array)
     {

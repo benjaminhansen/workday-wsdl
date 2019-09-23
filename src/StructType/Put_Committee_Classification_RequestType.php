@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Committee Classification . Used to identify the Committee Classification Committee Classification to update. Leave blank on an Add.
      * - minOccurs: 0
-     * @var \StructType\Committee_ClassificationObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_ClassificationObjectType
      */
     public $Committee_Classification_Reference;
     /**
      * The Committee_Classification_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
     public $Committee_Classification_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
      * @uses Put_Committee_Classification_RequestType::setCommittee_Classification_Data()
      * @uses Put_Committee_Classification_RequestType::setAdd_Only()
      * @uses Put_Committee_Classification_RequestType::setVersion()
-     * @param \StructType\Committee_ClassificationObjectType $committee_Classification_Reference
-     * @param \StructType\Committee_Classification_DataType $committee_Classification_Data
+     * @param \WorkdayWsdl\\StructType\Committee_ClassificationObjectType $committee_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_DataType $committee_Classification_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Committee_ClassificationObjectType $committee_Classification_Reference = null, \StructType\Committee_Classification_DataType $committee_Classification_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_ClassificationObjectType $committee_Classification_Reference = null, \WorkdayWsdl\\StructType\Committee_Classification_DataType $committee_Classification_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setCommittee_Classification_Reference($committee_Classification_Reference)
@@ -62,7 +62,7 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
     }
     /**
      * Get Committee_Classification_Reference value
-     * @return \StructType\Committee_ClassificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_ClassificationObjectType|null
      */
     public function getCommittee_Classification_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Reference value
-     * @param \StructType\Committee_ClassificationObjectType $committee_Classification_Reference
-     * @return \StructType\Put_Committee_Classification_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_ClassificationObjectType $committee_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_RequestType
      */
-    public function setCommittee_Classification_Reference(\StructType\Committee_ClassificationObjectType $committee_Classification_Reference = null)
+    public function setCommittee_Classification_Reference(\WorkdayWsdl\\StructType\Committee_ClassificationObjectType $committee_Classification_Reference = null)
     {
         $this->Committee_Classification_Reference = $committee_Classification_Reference;
         return $this;
     }
     /**
      * Get Committee_Classification_Data value
-     * @return \StructType\Committee_Classification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType|null
      */
     public function getCommittee_Classification_Data()
     {
@@ -88,10 +88,10 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Data value
-     * @param \StructType\Committee_Classification_DataType $committee_Classification_Data
-     * @return \StructType\Put_Committee_Classification_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_DataType $committee_Classification_Data
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_RequestType
      */
-    public function setCommittee_Classification_Data(\StructType\Committee_Classification_DataType $committee_Classification_Data = null)
+    public function setCommittee_Classification_Data(\WorkdayWsdl\\StructType\Committee_Classification_DataType $committee_Classification_Data = null)
     {
         $this->Committee_Classification_Data = $committee_Classification_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Committee_Classification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Committee_Classification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Committee_Classification_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Committee_Classification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_RequestType
      */
     public static function __set_state(array $array)
     {

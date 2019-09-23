@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_External_URL_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Instance ID or Reference ID.
      * - minOccurs: 0
-     * @var \StructType\External_URLObjectType
+     * @var \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public $External_URL_Reference;
     /**
      * The External_URL_Data
      * Meta information extracted from the WSDL
      * - documentation: External URL Data
-     * @var \StructType\External_URL_DataType
+     * @var \WorkdayWsdl\\StructType\External_URL_DataType
      */
     public $External_URL_Data;
     /**
@@ -47,12 +47,12 @@ class Put_External_URL_RequestType extends AbstractStructBase
      * @uses Put_External_URL_RequestType::setExternal_URL_Data()
      * @uses Put_External_URL_RequestType::setAdd_Only()
      * @uses Put_External_URL_RequestType::setVersion()
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @param \StructType\External_URL_DataType $external_URL_Data
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @param \WorkdayWsdl\\StructType\External_URL_DataType $external_URL_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\External_URLObjectType $external_URL_Reference = null, \StructType\External_URL_DataType $external_URL_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null, \WorkdayWsdl\\StructType\External_URL_DataType $external_URL_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setExternal_URL_Reference($external_URL_Reference)
@@ -62,7 +62,7 @@ class Put_External_URL_RequestType extends AbstractStructBase
     }
     /**
      * Get External_URL_Reference value
-     * @return \StructType\External_URLObjectType|null
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType|null
      */
     public function getExternal_URL_Reference()
     {
@@ -70,17 +70,17 @@ class Put_External_URL_RequestType extends AbstractStructBase
     }
     /**
      * Set External_URL_Reference value
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @return \StructType\Put_External_URL_RequestType
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @return \WorkdayWsdl\\StructType\Put_External_URL_RequestType
      */
-    public function setExternal_URL_Reference(\StructType\External_URLObjectType $external_URL_Reference = null)
+    public function setExternal_URL_Reference(\WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null)
     {
         $this->External_URL_Reference = $external_URL_Reference;
         return $this;
     }
     /**
      * Get External_URL_Data value
-     * @return \StructType\External_URL_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_URL_DataType|null
      */
     public function getExternal_URL_Data()
     {
@@ -88,10 +88,10 @@ class Put_External_URL_RequestType extends AbstractStructBase
     }
     /**
      * Set External_URL_Data value
-     * @param \StructType\External_URL_DataType $external_URL_Data
-     * @return \StructType\Put_External_URL_RequestType
+     * @param \WorkdayWsdl\\StructType\External_URL_DataType $external_URL_Data
+     * @return \WorkdayWsdl\\StructType\Put_External_URL_RequestType
      */
-    public function setExternal_URL_Data(\StructType\External_URL_DataType $external_URL_Data = null)
+    public function setExternal_URL_Data(\WorkdayWsdl\\StructType\External_URL_DataType $external_URL_Data = null)
     {
         $this->External_URL_Data = $external_URL_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_External_URL_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_External_URL_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_URL_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_External_URL_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_External_URL_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_URL_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_External_URL_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_External_URL_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_URL_RequestType
      */
     public static function __set_state(array $array)
     {

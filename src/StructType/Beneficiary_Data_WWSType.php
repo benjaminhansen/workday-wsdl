@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
      * The Integration_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $Integration_ID_Data;
     /**
@@ -25,17 +25,17 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
      * - documentation: Beneficiary Court Orders
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
      */
     public $Court_Order_Replacement_Data;
     /**
      * Constructor method for Beneficiary_Data_WWSType
      * @uses Beneficiary_Data_WWSType::setIntegration_ID_Data()
      * @uses Beneficiary_Data_WWSType::setCourt_Order_Replacement_Data()
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
      */
-    public function __construct(\StructType\External_Integration_ID_DataType $integration_ID_Data = null, array $court_Order_Replacement_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null, array $court_Order_Replacement_Data = array())
     {
         $this
             ->setIntegration_ID_Data($integration_ID_Data)
@@ -43,7 +43,7 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getIntegration_ID_Data()
     {
@@ -51,17 +51,17 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @return \StructType\Beneficiary_Data_WWSType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType
      */
-    public function setIntegration_ID_Data(\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
+    public function setIntegration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
     {
         $this->Integration_ID_Data = $integration_ID_Data;
         return $this;
     }
     /**
      * Get Court_Order_Replacement_Data value
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
      */
     public function getCourt_Order_Replacement_Data()
     {
@@ -79,12 +79,12 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            if (!$beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
                 $invalidValues[] = is_object($beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem) ? get_class($beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem) : sprintf('%s(%s)', gettype($beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem), var_export($beneficiary_Data_WWSTypeCourt_Order_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Court_Order_Replacement_Data property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Court_Order_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
     /**
      * Set Court_Order_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
-     * @return \StructType\Beneficiary_Data_WWSType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType
      */
     public function setCourt_Order_Replacement_Data(array $court_Order_Replacement_Data = array())
     {
@@ -107,14 +107,14 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
     /**
      * Add item to Court_Order_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
-     * @return \StructType\Beneficiary_Data_WWSType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType
      */
-    public function addToCourt_Order_Replacement_Data(\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
+    public function addToCourt_Order_Replacement_Data(\WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Court_Order_Replacement_Data property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Court_Order_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Court_Order_Replacement_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Beneficiary_Data_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Beneficiary_Data_WWSType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Data_WWSType
      */
     public static function __set_state(array $array)
     {

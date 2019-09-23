@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains a reference to latest completed disciplinary action for the employee.
      * - minOccurs: 0
-     * @var \StructType\Disciplinary_ActionObjectType
+     * @var \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType
      */
     public $Disciplinary_Action_Reference;
     /**
@@ -26,7 +26,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * - documentation: The reason why the disciplinary action was taken.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disciplinary_Action_ReasonObjectType[]
+     * @var \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType[]
      */
     public $Disciplinary_Action_Reason_Reference;
     /**
@@ -35,7 +35,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * - documentation: The prior disciplinary action(s) that this is related to.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disciplinary_ActionObjectType[]
+     * @var \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType[]
      */
     public $Disciplinary_Action_Related_To_Reference;
     /**
@@ -43,7 +43,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the information about the disciplinary action for the employee.
      * - minOccurs: 0
-     * @var \StructType\Employee_Review_Details_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Review_Details_DataType
      */
     public $Review_Data;
     /**
@@ -52,12 +52,12 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * @uses Disciplinary_Action_DataType::setDisciplinary_Action_Reason_Reference()
      * @uses Disciplinary_Action_DataType::setDisciplinary_Action_Related_To_Reference()
      * @uses Disciplinary_Action_DataType::setReview_Data()
-     * @param \StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference
-     * @param \StructType\Disciplinary_Action_ReasonObjectType[] $disciplinary_Action_Reason_Reference
-     * @param \StructType\Disciplinary_ActionObjectType[] $disciplinary_Action_Related_To_Reference
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference
+     * @param \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType[] $disciplinary_Action_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType[] $disciplinary_Action_Related_To_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
      */
-    public function __construct(\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference = null, array $disciplinary_Action_Reason_Reference = array(), array $disciplinary_Action_Related_To_Reference = array(), \StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference = null, array $disciplinary_Action_Reason_Reference = array(), array $disciplinary_Action_Related_To_Reference = array(), \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this
             ->setDisciplinary_Action_Reference($disciplinary_Action_Reference)
@@ -67,7 +67,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     }
     /**
      * Get Disciplinary_Action_Reference value
-     * @return \StructType\Disciplinary_ActionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType|null
      */
     public function getDisciplinary_Action_Reference()
     {
@@ -75,17 +75,17 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     }
     /**
      * Set Disciplinary_Action_Reference value
-     * @param \StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
-    public function setDisciplinary_Action_Reference(\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference = null)
+    public function setDisciplinary_Action_Reference(\WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $disciplinary_Action_Reference = null)
     {
         $this->Disciplinary_Action_Reference = $disciplinary_Action_Reference;
         return $this;
     }
     /**
      * Get Disciplinary_Action_Reason_Reference value
-     * @return \StructType\Disciplinary_Action_ReasonObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType[]|null
      */
     public function getDisciplinary_Action_Reason_Reference()
     {
@@ -103,12 +103,12 @@ class Disciplinary_Action_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem instanceof \StructType\Disciplinary_Action_ReasonObjectType) {
+            if (!$disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem instanceof \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType) {
                 $invalidValues[] = is_object($disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem) ? get_class($disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem) : sprintf('%s(%s)', gettype($disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem), var_export($disciplinary_Action_DataTypeDisciplinary_Action_Reason_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disciplinary_Action_Reason_Reference property can only contain items of type \StructType\Disciplinary_Action_ReasonObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disciplinary_Action_Reason_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -116,8 +116,8 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     /**
      * Set Disciplinary_Action_Reason_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_Action_ReasonObjectType[] $disciplinary_Action_Reason_Reference
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType[] $disciplinary_Action_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
     public function setDisciplinary_Action_Reason_Reference(array $disciplinary_Action_Reason_Reference = array())
     {
@@ -131,21 +131,21 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     /**
      * Add item to Disciplinary_Action_Reason_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_Action_ReasonObjectType $item
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType $item
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
-    public function addToDisciplinary_Action_Reason_Reference(\StructType\Disciplinary_Action_ReasonObjectType $item)
+    public function addToDisciplinary_Action_Reason_Reference(\WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disciplinary_Action_ReasonObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Disciplinary_Action_Reason_Reference property can only contain items of type \StructType\Disciplinary_Action_ReasonObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Disciplinary_Action_Reason_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_Action_ReasonObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disciplinary_Action_Reason_Reference[] = $item;
         return $this;
     }
     /**
      * Get Disciplinary_Action_Related_To_Reference value
-     * @return \StructType\Disciplinary_ActionObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType[]|null
      */
     public function getDisciplinary_Action_Related_To_Reference()
     {
@@ -163,12 +163,12 @@ class Disciplinary_Action_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem instanceof \StructType\Disciplinary_ActionObjectType) {
+            if (!$disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem instanceof \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType) {
                 $invalidValues[] = is_object($disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem) ? get_class($disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem) : sprintf('%s(%s)', gettype($disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem), var_export($disciplinary_Action_DataTypeDisciplinary_Action_Related_To_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disciplinary_Action_Related_To_Reference property can only contain items of type \StructType\Disciplinary_ActionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disciplinary_Action_Related_To_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -176,8 +176,8 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     /**
      * Set Disciplinary_Action_Related_To_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_ActionObjectType[] $disciplinary_Action_Related_To_Reference
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType[] $disciplinary_Action_Related_To_Reference
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
     public function setDisciplinary_Action_Related_To_Reference(array $disciplinary_Action_Related_To_Reference = array())
     {
@@ -191,21 +191,21 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     /**
      * Add item to Disciplinary_Action_Related_To_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_ActionObjectType $item
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $item
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
-    public function addToDisciplinary_Action_Related_To_Reference(\StructType\Disciplinary_ActionObjectType $item)
+    public function addToDisciplinary_Action_Related_To_Reference(\WorkdayWsdl\\StructType\Disciplinary_ActionObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disciplinary_ActionObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Disciplinary_Action_Related_To_Reference property can only contain items of type \StructType\Disciplinary_ActionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Disciplinary_Action_Related_To_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disciplinary_Action_Related_To_Reference[] = $item;
         return $this;
     }
     /**
      * Get Review_Data value
-     * @return \StructType\Employee_Review_Details_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Review_Details_DataType|null
      */
     public function getReview_Data()
     {
@@ -213,10 +213,10 @@ class Disciplinary_Action_DataType extends AbstractStructBase
     }
     /**
      * Set Review_Data value
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
-     * @return \StructType\Disciplinary_Action_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
-    public function setReview_Data(\StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function setReview_Data(\WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this->Review_Data = $review_Data;
         return $this;
@@ -227,7 +227,7 @@ class Disciplinary_Action_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disciplinary_Action_DataType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_Action_DataType
      */
     public static function __set_state(array $array)
     {

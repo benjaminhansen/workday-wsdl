@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Change_Person_Photo_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique person reference for the person whose photo is being updated.
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -25,12 +25,12 @@ class Change_Person_Photo_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique universal identifier reference for the person whose photo is being updated.
      * - minOccurs: 0
-     * @var \StructType\Universal_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Universal_IdentifierObjectType
      */
     public $Universal_ID_Reference;
     /**
      * The Photo_Data
-     * @var \StructType\Person_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Photo_DataType
      */
     public $Photo_Data;
     /**
@@ -38,11 +38,11 @@ class Change_Person_Photo_DataType extends AbstractStructBase
      * @uses Change_Person_Photo_DataType::setPerson_Reference()
      * @uses Change_Person_Photo_DataType::setUniversal_ID_Reference()
      * @uses Change_Person_Photo_DataType::setPhoto_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
-     * @param \StructType\Person_Photo_DataType $photo_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $photo_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, \StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, \StructType\Person_Photo_DataType $photo_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, \WorkdayWsdl\\StructType\Person_Photo_DataType $photo_Data = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -51,7 +51,7 @@ class Change_Person_Photo_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -59,17 +59,17 @@ class Change_Person_Photo_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Change_Person_Photo_DataType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Universal_ID_Reference value
-     * @return \StructType\Universal_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectType|null
      */
     public function getUniversal_ID_Reference()
     {
@@ -77,17 +77,17 @@ class Change_Person_Photo_DataType extends AbstractStructBase
     }
     /**
      * Set Universal_ID_Reference value
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
-     * @return \StructType\Change_Person_Photo_DataType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
-    public function setUniversal_ID_Reference(\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
+    public function setUniversal_ID_Reference(\WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
     {
         $this->Universal_ID_Reference = $universal_ID_Reference;
         return $this;
     }
     /**
      * Get Photo_Data value
-     * @return \StructType\Person_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Photo_DataType|null
      */
     public function getPhoto_Data()
     {
@@ -95,10 +95,10 @@ class Change_Person_Photo_DataType extends AbstractStructBase
     }
     /**
      * Set Photo_Data value
-     * @param \StructType\Person_Photo_DataType $photo_Data
-     * @return \StructType\Change_Person_Photo_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $photo_Data
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
-    public function setPhoto_Data(\StructType\Person_Photo_DataType $photo_Data = null)
+    public function setPhoto_Data(\WorkdayWsdl\\StructType\Person_Photo_DataType $photo_Data = null)
     {
         $this->Photo_Data = $photo_Data;
         return $this;
@@ -109,7 +109,7 @@ class Change_Person_Photo_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Person_Photo_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[]
      */
     public $ID;
     /**
@@ -31,7 +31,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
      * External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      * @uses External_Institution_Grading_Scheme_Grade_Point_ValueObjectType::setID()
      * @uses External_Institution_Grading_Scheme_Grade_Point_ValueObjectType::setDescriptor()
-     * @param \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -42,7 +42,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
     }
     /**
      * Get ID value
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[]|null
      */
     public function getID()
     {
@@ -60,12 +60,12 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
         $invalidValues = [];
         foreach ($values as $external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem instanceof \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType) {
+            if (!$external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType) {
                 $invalidValues[] = is_object($external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem) ? get_class($external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem), var_export($external_Institution_Grading_Scheme_Grade_Point_ValueObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[] $iD
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
+     * @param \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      */
     public function setID(array $iD = array())
     {
@@ -88,14 +88,14 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType $item
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
+     * @param \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      */
-    public function addToID(\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -128,7 +128,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectType extends Ab
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      */
     public static function __set_state(array $array)
     {

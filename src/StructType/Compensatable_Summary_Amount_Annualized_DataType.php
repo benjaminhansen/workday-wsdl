@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -62,7 +62,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Frequency.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -75,10 +75,10 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
      * @param float $total_Base_Pay
      * @param float $total_Salary_and_Allowances
      * @param float $primary_Compensation_Basis
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      */
-    public function __construct($total_Base_Pay = null, $total_Salary_and_Allowances = null, $primary_Compensation_Basis = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null)
+    public function __construct($total_Base_Pay = null, $total_Salary_and_Allowances = null, $primary_Compensation_Basis = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this
             ->setTotal_Base_Pay($total_Base_Pay)
@@ -98,7 +98,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     /**
      * Set Total_Base_Pay value
      * @param float $total_Base_Pay
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
     public function setTotal_Base_Pay($total_Base_Pay = null)
     {
@@ -128,7 +128,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     /**
      * Set Total_Salary_and_Allowances value
      * @param float $total_Salary_and_Allowances
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
     public function setTotal_Salary_and_Allowances($total_Salary_and_Allowances = null)
     {
@@ -158,7 +158,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     /**
      * Set Primary_Compensation_Basis value
      * @param float $primary_Compensation_Basis
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
     public function setPrimary_Compensation_Basis($primary_Compensation_Basis = null)
     {
@@ -179,7 +179,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -187,17 +187,17 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -205,10 +205,10 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -219,7 +219,7 @@ class Compensatable_Summary_Amount_Annualized_DataType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensatable_Summary_Amount_Annualized_DataType
+     * @return \WorkdayWsdl\\StructType\Compensatable_Summary_Amount_Annualized_DataType
      */
     public static function __set_state(array $array)
     {

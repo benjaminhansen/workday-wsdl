@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Role_AssignerObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Role_AssignerReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Role_AssignerReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Role_AssignerReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Role_AssignerReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Role_AssignerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Role_AssignerObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Role_AssignerReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Role_AssignerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Role_AssignerReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Role_AssignerReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Role_AssignerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Role_AssignerReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Role_AssignerObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Role_AssignerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Role_AssignerObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Role_AssignerObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Role_AssignerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Role_AssignerObjectIDType
      */
     public static function __set_state(array $array)
     {

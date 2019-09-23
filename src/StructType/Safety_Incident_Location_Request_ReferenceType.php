@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Safety Incident Location
      * - maxOccurs: unbounded
-     * @var \StructType\Safety_Incident_LocationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType[]
      */
     public $Safety_Incident_Location_Reference;
     /**
      * Constructor method for Safety_Incident_Location_Request_ReferenceType
      * @uses Safety_Incident_Location_Request_ReferenceType::setSafety_Incident_Location_Reference()
-     * @param \StructType\Safety_Incident_LocationObjectType[] $safety_Incident_Location_Reference
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType[] $safety_Incident_Location_Reference
      */
     public function __construct(array $safety_Incident_Location_Reference = array())
     {
@@ -32,7 +32,7 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Location_Reference value
-     * @return \StructType\Safety_Incident_LocationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType[]|null
      */
     public function getSafety_Incident_Location_Reference()
     {
@@ -50,12 +50,12 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem instanceof \StructType\Safety_Incident_LocationObjectType) {
+            if (!$safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem instanceof \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType) {
                 $invalidValues[] = is_object($safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem) ? get_class($safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem) : sprintf('%s(%s)', gettype($safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem), var_export($safety_Incident_Location_Request_ReferenceTypeSafety_Incident_Location_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Safety_Incident_Location_Reference property can only contain items of type \StructType\Safety_Incident_LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Safety_Incident_Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
     /**
      * Set Safety_Incident_Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_LocationObjectType[] $safety_Incident_Location_Reference
-     * @return \StructType\Safety_Incident_Location_Request_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType[] $safety_Incident_Location_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Request_ReferenceType
      */
     public function setSafety_Incident_Location_Reference(array $safety_Incident_Location_Reference = array())
     {
@@ -78,14 +78,14 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
     /**
      * Add item to Safety_Incident_Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_LocationObjectType $item
-     * @return \StructType\Safety_Incident_Location_Request_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Request_ReferenceType
      */
-    public function addToSafety_Incident_Location_Reference(\StructType\Safety_Incident_LocationObjectType $item)
+    public function addToSafety_Incident_Location_Reference(\WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Safety_Incident_LocationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Safety_Incident_Location_Reference property can only contain items of type \StructType\Safety_Incident_LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Safety_Incident_Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Safety_Incident_Location_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Safety_Incident_Location_Request_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Location_Request_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Request_ReferenceType
      */
     public static function __set_state(array $array)
     {

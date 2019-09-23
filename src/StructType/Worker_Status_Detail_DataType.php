@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reason for Hire from the most recent Hire event.
      * - minOccurs: 0
-     * @var \StructType\General_Event_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public $Hire_Reason_Reference;
     /**
@@ -240,7 +240,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The primary reason for the worker's most recent termination.
      * - minOccurs: 0
-     * @var \StructType\Termination_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType
      */
     public $Primary_Termination_Reason_Reference;
     /**
@@ -248,7 +248,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to primary termination reason category.
      * - minOccurs: 0
-     * @var \StructType\Event_Classification_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
     public $Primary_Termination_Category_Reference;
     /**
@@ -266,7 +266,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * - documentation: Secondary Termination Reasons Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Secondary_Termination_DataType[]
+     * @var \WorkdayWsdl\\StructType\Secondary_Termination_DataType[]
      */
     public $Secondary_Termination_Reasons_Data;
     /**
@@ -274,7 +274,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The local reason for the worker's most recent termination.
      * - minOccurs: 0
-     * @var \StructType\Local_Termination_ReasonObjectType
+     * @var \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType
      */
     public $Local_Termination_Reason_Reference;
     /**
@@ -282,7 +282,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The ~pre-hire’s~ hire eligibility status.
      * - minOccurs: 0
-     * @var \StructType\Common_Yes_NoObjectType
+     * @var \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public $Eligible_for_Hire_Reference;
     /**
@@ -299,7 +299,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The ~worker’s~ rehire eligibility status as stated on their most recent termination.
      * - minOccurs: 0
-     * @var \StructType\Common_Yes_NoObjectType
+     * @var \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public $Eligible_for_Rehire_on_Latest_Termination_Reference;
     /**
@@ -389,7 +389,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * - documentation: Encapsulating element containg all Leave Status data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_Status_Detail_DataType[]
+     * @var \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType[]
      */
     public $Leave_Status_Data;
     /**
@@ -398,7 +398,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * - documentation: Encapsulating element containing leave requests that have been corrected.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_Requests_Corrected_Detail_DataType[]
+     * @var \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType[]
      */
     public $Leave_Requests_Corrected_Data;
     /**
@@ -470,7 +470,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * @param string $active_Status_Date
      * @param string $hire_Date
      * @param string $original_Hire_Date
-     * @param \StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference
      * @param string $end_Employment_Date
      * @param string $continuous_Service_Date
      * @param string $first_Day_of_Work
@@ -490,14 +490,14 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * @param bool $terminated
      * @param string $termination_Date
      * @param string $pay_Through_Date
-     * @param \StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference
-     * @param \StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference
      * @param bool $termination_Involuntary
-     * @param \StructType\Secondary_Termination_DataType[] $secondary_Termination_Reasons_Data
-     * @param \StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference
+     * @param \WorkdayWsdl\\StructType\Secondary_Termination_DataType[] $secondary_Termination_Reasons_Data
+     * @param \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference
      * @param bool $regrettable_Termination
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference
      * @param bool $hire_Rescinded
      * @param string $termination_Last_Day_of_Work
      * @param string $resignation_Date
@@ -507,12 +507,12 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * @param bool $return_Unknown
      * @param string $probation_Start_Date
      * @param string $probation_End_Date
-     * @param \StructType\Leave_Status_Detail_DataType[] $leave_Status_Data
-     * @param \StructType\Leave_Requests_Corrected_Detail_DataType[] $leave_Requests_Corrected_Data
+     * @param \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType[] $leave_Status_Data
+     * @param \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType[] $leave_Requests_Corrected_Data
      * @param string $academic_Tenure_Date
      * @param bool $rehire
      */
-    public function __construct($active = null, $active_Status_Date = null, $hire_Date = null, $original_Hire_Date = null, \StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference = null, $end_Employment_Date = null, $continuous_Service_Date = null, $first_Day_of_Work = null, $expected_Retirement_Date = null, $retirement_Eligibility_Date = null, $retired = null, $retirement_Date = null, $seniority_Date = null, $severance_Date = null, $benefits_Service_Date = null, $company_Service_Date = null, $time_Off_Service_Date = null, $vesting_Date = null, $date_Entered_Workforce = null, $days_Unemployed = null, $months_Continuous_Prior_Employment = null, $terminated = null, $termination_Date = null, $pay_Through_Date = null, \StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference = null, \StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference = null, $termination_Involuntary = null, array $secondary_Termination_Reasons_Data = array(), \StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference = null, \StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference = null, $regrettable_Termination = null, \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference = null, $hire_Rescinded = null, $termination_Last_Day_of_Work = null, $resignation_Date = null, $last_Date_for_Which_Paid = null, $expected_Date_of_Return = null, $not_Returning = null, $return_Unknown = null, $probation_Start_Date = null, $probation_End_Date = null, array $leave_Status_Data = array(), array $leave_Requests_Corrected_Data = array(), $academic_Tenure_Date = null, $rehire = null)
+    public function __construct($active = null, $active_Status_Date = null, $hire_Date = null, $original_Hire_Date = null, \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference = null, $end_Employment_Date = null, $continuous_Service_Date = null, $first_Day_of_Work = null, $expected_Retirement_Date = null, $retirement_Eligibility_Date = null, $retired = null, $retirement_Date = null, $seniority_Date = null, $severance_Date = null, $benefits_Service_Date = null, $company_Service_Date = null, $time_Off_Service_Date = null, $vesting_Date = null, $date_Entered_Workforce = null, $days_Unemployed = null, $months_Continuous_Prior_Employment = null, $terminated = null, $termination_Date = null, $pay_Through_Date = null, \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference = null, \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference = null, $termination_Involuntary = null, array $secondary_Termination_Reasons_Data = array(), \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference = null, \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference = null, $regrettable_Termination = null, \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference = null, $hire_Rescinded = null, $termination_Last_Day_of_Work = null, $resignation_Date = null, $last_Date_for_Which_Paid = null, $expected_Date_of_Return = null, $not_Returning = null, $return_Unknown = null, $probation_Start_Date = null, $probation_End_Date = null, array $leave_Status_Data = array(), array $leave_Requests_Corrected_Data = array(), $academic_Tenure_Date = null, $rehire = null)
     {
         $this
             ->setActive($active)
@@ -572,7 +572,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Active value
      * @param bool $active
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setActive($active = null)
     {
@@ -594,7 +594,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Active_Status_Date value
      * @param string $active_Status_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setActive_Status_Date($active_Status_Date = null)
     {
@@ -616,7 +616,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Hire_Date value
      * @param string $hire_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setHire_Date($hire_Date = null)
     {
@@ -638,7 +638,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Original_Hire_Date value
      * @param string $original_Hire_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setOriginal_Hire_Date($original_Hire_Date = null)
     {
@@ -651,7 +651,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Hire_Reason_Reference value
-     * @return \StructType\General_Event_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType|null
      */
     public function getHire_Reason_Reference()
     {
@@ -659,10 +659,10 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Hire_Reason_Reference value
-     * @param \StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setHire_Reason_Reference(\StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference = null)
+    public function setHire_Reason_Reference(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $hire_Reason_Reference = null)
     {
         $this->Hire_Reason_Reference = $hire_Reason_Reference;
         return $this;
@@ -678,7 +678,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set End_Employment_Date value
      * @param string $end_Employment_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setEnd_Employment_Date($end_Employment_Date = null)
     {
@@ -700,7 +700,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Continuous_Service_Date value
      * @param string $continuous_Service_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setContinuous_Service_Date($continuous_Service_Date = null)
     {
@@ -722,7 +722,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set First_Day_of_Work value
      * @param string $first_Day_of_Work
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setFirst_Day_of_Work($first_Day_of_Work = null)
     {
@@ -744,7 +744,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Expected_Retirement_Date value
      * @param string $expected_Retirement_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setExpected_Retirement_Date($expected_Retirement_Date = null)
     {
@@ -766,7 +766,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Retirement_Eligibility_Date value
      * @param string $retirement_Eligibility_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setRetirement_Eligibility_Date($retirement_Eligibility_Date = null)
     {
@@ -788,7 +788,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Retired value
      * @param bool $retired
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setRetired($retired = null)
     {
@@ -810,7 +810,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Retirement_Date value
      * @param string $retirement_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setRetirement_Date($retirement_Date = null)
     {
@@ -832,7 +832,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Seniority_Date value
      * @param string $seniority_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setSeniority_Date($seniority_Date = null)
     {
@@ -854,7 +854,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Severance_Date value
      * @param string $severance_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setSeverance_Date($severance_Date = null)
     {
@@ -876,7 +876,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Benefits_Service_Date value
      * @param string $benefits_Service_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setBenefits_Service_Date($benefits_Service_Date = null)
     {
@@ -898,7 +898,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Company_Service_Date value
      * @param string $company_Service_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setCompany_Service_Date($company_Service_Date = null)
     {
@@ -920,7 +920,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Time_Off_Service_Date value
      * @param string $time_Off_Service_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setTime_Off_Service_Date($time_Off_Service_Date = null)
     {
@@ -942,7 +942,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Vesting_Date value
      * @param string $vesting_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setVesting_Date($vesting_Date = null)
     {
@@ -964,7 +964,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Date_Entered_Workforce value
      * @param string $date_Entered_Workforce
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setDate_Entered_Workforce($date_Entered_Workforce = null)
     {
@@ -986,7 +986,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Days_Unemployed value
      * @param float $days_Unemployed
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setDays_Unemployed($days_Unemployed = null)
     {
@@ -1020,7 +1020,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Months_Continuous_Prior_Employment value
      * @param float $months_Continuous_Prior_Employment
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setMonths_Continuous_Prior_Employment($months_Continuous_Prior_Employment = null)
     {
@@ -1054,7 +1054,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Terminated value
      * @param bool $terminated
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setTerminated($terminated = null)
     {
@@ -1076,7 +1076,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Termination_Date value
      * @param string $termination_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setTermination_Date($termination_Date = null)
     {
@@ -1098,7 +1098,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Pay_Through_Date value
      * @param string $pay_Through_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setPay_Through_Date($pay_Through_Date = null)
     {
@@ -1111,7 +1111,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Primary_Termination_Reason_Reference value
-     * @return \StructType\Termination_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType|null
      */
     public function getPrimary_Termination_Reason_Reference()
     {
@@ -1119,17 +1119,17 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Primary_Termination_Reason_Reference value
-     * @param \StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setPrimary_Termination_Reason_Reference(\StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference = null)
+    public function setPrimary_Termination_Reason_Reference(\WorkdayWsdl\\StructType\Termination_SubcategoryObjectType $primary_Termination_Reason_Reference = null)
     {
         $this->Primary_Termination_Reason_Reference = $primary_Termination_Reason_Reference;
         return $this;
     }
     /**
      * Get Primary_Termination_Category_Reference value
-     * @return \StructType\Event_Classification_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType|null
      */
     public function getPrimary_Termination_Category_Reference()
     {
@@ -1137,10 +1137,10 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Primary_Termination_Category_Reference value
-     * @param \StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setPrimary_Termination_Category_Reference(\StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference = null)
+    public function setPrimary_Termination_Category_Reference(\WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $primary_Termination_Category_Reference = null)
     {
         $this->Primary_Termination_Category_Reference = $primary_Termination_Category_Reference;
         return $this;
@@ -1156,7 +1156,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Termination_Involuntary value
      * @param bool $termination_Involuntary
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setTermination_Involuntary($termination_Involuntary = null)
     {
@@ -1169,7 +1169,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Secondary_Termination_Reasons_Data value
-     * @return \StructType\Secondary_Termination_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Secondary_Termination_DataType[]|null
      */
     public function getSecondary_Termination_Reasons_Data()
     {
@@ -1187,12 +1187,12 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem instanceof \StructType\Secondary_Termination_DataType) {
+            if (!$worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem instanceof \WorkdayWsdl\\StructType\Secondary_Termination_DataType) {
                 $invalidValues[] = is_object($worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem) ? get_class($worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem) : sprintf('%s(%s)', gettype($worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem), var_export($worker_Status_Detail_DataTypeSecondary_Termination_Reasons_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Secondary_Termination_Reasons_Data property can only contain items of type \StructType\Secondary_Termination_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Secondary_Termination_Reasons_Data property can only contain items of type \WorkdayWsdl\\StructType\Secondary_Termination_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1200,8 +1200,8 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Secondary_Termination_Reasons_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Secondary_Termination_DataType[] $secondary_Termination_Reasons_Data
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Secondary_Termination_DataType[] $secondary_Termination_Reasons_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setSecondary_Termination_Reasons_Data(array $secondary_Termination_Reasons_Data = array())
     {
@@ -1215,21 +1215,21 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Add item to Secondary_Termination_Reasons_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Secondary_Termination_DataType $item
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Secondary_Termination_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function addToSecondary_Termination_Reasons_Data(\StructType\Secondary_Termination_DataType $item)
+    public function addToSecondary_Termination_Reasons_Data(\WorkdayWsdl\\StructType\Secondary_Termination_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Secondary_Termination_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Secondary_Termination_Reasons_Data property can only contain items of type \StructType\Secondary_Termination_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Secondary_Termination_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Secondary_Termination_Reasons_Data property can only contain items of type \WorkdayWsdl\\StructType\Secondary_Termination_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Secondary_Termination_Reasons_Data[] = $item;
         return $this;
     }
     /**
      * Get Local_Termination_Reason_Reference value
-     * @return \StructType\Local_Termination_ReasonObjectType|null
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType|null
      */
     public function getLocal_Termination_Reason_Reference()
     {
@@ -1237,17 +1237,17 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Local_Termination_Reason_Reference value
-     * @param \StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setLocal_Termination_Reason_Reference(\StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference = null)
+    public function setLocal_Termination_Reason_Reference(\WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType $local_Termination_Reason_Reference = null)
     {
         $this->Local_Termination_Reason_Reference = $local_Termination_Reason_Reference;
         return $this;
     }
     /**
      * Get Eligible_for_Hire_Reference value
-     * @return \StructType\Common_Yes_NoObjectType|null
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType|null
      */
     public function getEligible_for_Hire_Reference()
     {
@@ -1255,10 +1255,10 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Eligible_for_Hire_Reference value
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setEligible_for_Hire_Reference(\StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference = null)
+    public function setEligible_for_Hire_Reference(\WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Hire_Reference = null)
     {
         $this->Eligible_for_Hire_Reference = $eligible_for_Hire_Reference;
         return $this;
@@ -1274,7 +1274,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Regrettable_Termination value
      * @param bool $regrettable_Termination
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setRegrettable_Termination($regrettable_Termination = null)
     {
@@ -1287,7 +1287,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Eligible_for_Rehire_on_Latest_Termination_Reference value
-     * @return \StructType\Common_Yes_NoObjectType|null
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType|null
      */
     public function getEligible_for_Rehire_on_Latest_Termination_Reference()
     {
@@ -1295,10 +1295,10 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Eligible_for_Rehire_on_Latest_Termination_Reference value
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function setEligible_for_Rehire_on_Latest_Termination_Reference(\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference = null)
+    public function setEligible_for_Rehire_on_Latest_Termination_Reference(\WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_on_Latest_Termination_Reference = null)
     {
         $this->Eligible_for_Rehire_on_Latest_Termination_Reference = $eligible_for_Rehire_on_Latest_Termination_Reference;
         return $this;
@@ -1314,7 +1314,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Hire_Rescinded value
      * @param bool $hire_Rescinded
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setHire_Rescinded($hire_Rescinded = null)
     {
@@ -1336,7 +1336,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Termination_Last_Day_of_Work value
      * @param string $termination_Last_Day_of_Work
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setTermination_Last_Day_of_Work($termination_Last_Day_of_Work = null)
     {
@@ -1358,7 +1358,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Resignation_Date value
      * @param string $resignation_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setResignation_Date($resignation_Date = null)
     {
@@ -1380,7 +1380,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Last_Date_for_Which_Paid value
      * @param string $last_Date_for_Which_Paid
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setLast_Date_for_Which_Paid($last_Date_for_Which_Paid = null)
     {
@@ -1402,7 +1402,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Expected_Date_of_Return value
      * @param string $expected_Date_of_Return
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setExpected_Date_of_Return($expected_Date_of_Return = null)
     {
@@ -1424,7 +1424,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Not_Returning value
      * @param bool $not_Returning
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setNot_Returning($not_Returning = null)
     {
@@ -1446,7 +1446,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Return_Unknown value
      * @param bool $return_Unknown
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setReturn_Unknown($return_Unknown = null)
     {
@@ -1468,7 +1468,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Probation_Start_Date value
      * @param string $probation_Start_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setProbation_Start_Date($probation_Start_Date = null)
     {
@@ -1490,7 +1490,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Probation_End_Date value
      * @param string $probation_End_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setProbation_End_Date($probation_End_Date = null)
     {
@@ -1503,7 +1503,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_Status_Data value
-     * @return \StructType\Leave_Status_Detail_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType[]|null
      */
     public function getLeave_Status_Data()
     {
@@ -1521,12 +1521,12 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_Detail_DataTypeLeave_Status_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_Detail_DataTypeLeave_Status_DataItem instanceof \StructType\Leave_Status_Detail_DataType) {
+            if (!$worker_Status_Detail_DataTypeLeave_Status_DataItem instanceof \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType) {
                 $invalidValues[] = is_object($worker_Status_Detail_DataTypeLeave_Status_DataItem) ? get_class($worker_Status_Detail_DataTypeLeave_Status_DataItem) : sprintf('%s(%s)', gettype($worker_Status_Detail_DataTypeLeave_Status_DataItem), var_export($worker_Status_Detail_DataTypeLeave_Status_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Leave_Status_Data property can only contain items of type \StructType\Leave_Status_Detail_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Leave_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1534,8 +1534,8 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Status_Detail_DataType[] $leave_Status_Data
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType[] $leave_Status_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setLeave_Status_Data(array $leave_Status_Data = array())
     {
@@ -1549,21 +1549,21 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Add item to Leave_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Status_Detail_DataType $item
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function addToLeave_Status_Data(\StructType\Leave_Status_Detail_DataType $item)
+    public function addToLeave_Status_Data(\WorkdayWsdl\\StructType\Leave_Status_Detail_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_Status_Detail_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Leave_Status_Data property can only contain items of type \StructType\Leave_Status_Detail_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Leave_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Status_Detail_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Leave_Status_Data[] = $item;
         return $this;
     }
     /**
      * Get Leave_Requests_Corrected_Data value
-     * @return \StructType\Leave_Requests_Corrected_Detail_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType[]|null
      */
     public function getLeave_Requests_Corrected_Data()
     {
@@ -1581,12 +1581,12 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem instanceof \StructType\Leave_Requests_Corrected_Detail_DataType) {
+            if (!$worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem instanceof \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType) {
                 $invalidValues[] = is_object($worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem) ? get_class($worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem) : sprintf('%s(%s)', gettype($worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem), var_export($worker_Status_Detail_DataTypeLeave_Requests_Corrected_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Leave_Requests_Corrected_Data property can only contain items of type \StructType\Leave_Requests_Corrected_Detail_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Leave_Requests_Corrected_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1594,8 +1594,8 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Leave_Requests_Corrected_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Requests_Corrected_Detail_DataType[] $leave_Requests_Corrected_Data
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType[] $leave_Requests_Corrected_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setLeave_Requests_Corrected_Data(array $leave_Requests_Corrected_Data = array())
     {
@@ -1609,14 +1609,14 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Add item to Leave_Requests_Corrected_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Requests_Corrected_Detail_DataType $item
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
-    public function addToLeave_Requests_Corrected_Data(\StructType\Leave_Requests_Corrected_Detail_DataType $item)
+    public function addToLeave_Requests_Corrected_Data(\WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_Requests_Corrected_Detail_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Leave_Requests_Corrected_Data property can only contain items of type \StructType\Leave_Requests_Corrected_Detail_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Leave_Requests_Corrected_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Requests_Corrected_Detail_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Leave_Requests_Corrected_Data[] = $item;
         return $this;
@@ -1632,7 +1632,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Academic_Tenure_Date value
      * @param string $academic_Tenure_Date
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setAcademic_Tenure_Date($academic_Tenure_Date = null)
     {
@@ -1654,7 +1654,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
     /**
      * Set Rehire value
      * @param bool $rehire
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public function setRehire($rehire = null)
     {
@@ -1671,7 +1671,7 @@ class Worker_Status_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Status_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public static function __set_state(array $array)
     {

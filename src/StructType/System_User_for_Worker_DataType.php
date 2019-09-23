@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The preferred language for the user account.
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $User_Language__Reference;
     /**
@@ -33,7 +33,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Captures the Preferred Communication Language
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $Preferred_Communication_Language_Reference;
     /**
@@ -41,7 +41,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The preferred locale for the user account.
      * - minOccurs: 0
-     * @var \StructType\LocaleObjectType
+     * @var \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public $Locale__Reference;
     /**
@@ -49,7 +49,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The preferred hour clock for the user account.
      * - minOccurs: 0
-     * @var \StructType\Hour_ClockObjectType
+     * @var \WorkdayWsdl\\StructType\Hour_ClockObjectType
      */
     public $Hour_Clock_Reference;
     /**
@@ -57,7 +57,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The preferred currency for the user account.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -65,7 +65,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The preferred time zone for the user account.
      * - minOccurs: 0
-     * @var \StructType\Time_ZoneObjectType
+     * @var \WorkdayWsdl\\StructType\Time_ZoneObjectType
      */
     public $Time_Zone_Reference;
     /**
@@ -73,7 +73,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The default display language is derived by the system from the employee data. It is overridden by the User Language Reference value if it exists.
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $Default_Display_Language_Reference;
     /**
@@ -97,16 +97,16 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * @uses System_User_for_Worker_DataType::setDefault_Display_Language_Reference()
      * @uses System_User_for_Worker_DataType::setSimplified_View()
      * @param string $user_Name
-     * @param \StructType\User_LanguageObjectType $user_Language__Reference
-     * @param \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
-     * @param \StructType\LocaleObjectType $locale__Reference
-     * @param \StructType\Hour_ClockObjectType $hour_Clock_Reference
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\Time_ZoneObjectType $time_Zone_Reference
-     * @param \StructType\User_LanguageObjectType $default_Display_Language_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language__Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale__Reference
+     * @param \WorkdayWsdl\\StructType\Hour_ClockObjectType $hour_Clock_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\Time_ZoneObjectType $time_Zone_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $default_Display_Language_Reference
      * @param bool $simplified_View
      */
-    public function __construct($user_Name = null, \StructType\User_LanguageObjectType $user_Language__Reference = null, \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null, \StructType\LocaleObjectType $locale__Reference = null, \StructType\Hour_ClockObjectType $hour_Clock_Reference = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\Time_ZoneObjectType $time_Zone_Reference = null, \StructType\User_LanguageObjectType $default_Display_Language_Reference = null, $simplified_View = null)
+    public function __construct($user_Name = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language__Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null, \WorkdayWsdl\\StructType\LocaleObjectType $locale__Reference = null, \WorkdayWsdl\\StructType\Hour_ClockObjectType $hour_Clock_Reference = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\Time_ZoneObjectType $time_Zone_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $default_Display_Language_Reference = null, $simplified_View = null)
     {
         $this
             ->setUser_Name($user_Name)
@@ -130,7 +130,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     /**
      * Set User_Name value
      * @param string $user_Name
-     * @return \StructType\System_User_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
     public function setUser_Name($user_Name = null)
     {
@@ -143,7 +143,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get User_Language__Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getUser_Language__Reference()
     {
@@ -151,17 +151,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set User_Language__Reference value
-     * @param \StructType\User_LanguageObjectType $user_Language__Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language__Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setUser_Language__Reference(\StructType\User_LanguageObjectType $user_Language__Reference = null)
+    public function setUser_Language__Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language__Reference = null)
     {
         $this->User_Language__Reference = $user_Language__Reference;
         return $this;
     }
     /**
      * Get Preferred_Communication_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getPreferred_Communication_Language_Reference()
     {
@@ -169,17 +169,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Preferred_Communication_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setPreferred_Communication_Language_Reference(\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null)
+    public function setPreferred_Communication_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null)
     {
         $this->Preferred_Communication_Language_Reference = $preferred_Communication_Language_Reference;
         return $this;
     }
     /**
      * Get Locale__Reference value
-     * @return \StructType\LocaleObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType|null
      */
     public function getLocale__Reference()
     {
@@ -187,17 +187,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Locale__Reference value
-     * @param \StructType\LocaleObjectType $locale__Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale__Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setLocale__Reference(\StructType\LocaleObjectType $locale__Reference = null)
+    public function setLocale__Reference(\WorkdayWsdl\\StructType\LocaleObjectType $locale__Reference = null)
     {
         $this->Locale__Reference = $locale__Reference;
         return $this;
     }
     /**
      * Get Hour_Clock_Reference value
-     * @return \StructType\Hour_ClockObjectType|null
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectType|null
      */
     public function getHour_Clock_Reference()
     {
@@ -205,17 +205,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Hour_Clock_Reference value
-     * @param \StructType\Hour_ClockObjectType $hour_Clock_Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Hour_ClockObjectType $hour_Clock_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setHour_Clock_Reference(\StructType\Hour_ClockObjectType $hour_Clock_Reference = null)
+    public function setHour_Clock_Reference(\WorkdayWsdl\\StructType\Hour_ClockObjectType $hour_Clock_Reference = null)
     {
         $this->Hour_Clock_Reference = $hour_Clock_Reference;
         return $this;
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -223,17 +223,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Time_Zone_Reference value
-     * @return \StructType\Time_ZoneObjectType|null
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectType|null
      */
     public function getTime_Zone_Reference()
     {
@@ -241,17 +241,17 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Time_Zone_Reference value
-     * @param \StructType\Time_ZoneObjectType $time_Zone_Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Time_ZoneObjectType $time_Zone_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setTime_Zone_Reference(\StructType\Time_ZoneObjectType $time_Zone_Reference = null)
+    public function setTime_Zone_Reference(\WorkdayWsdl\\StructType\Time_ZoneObjectType $time_Zone_Reference = null)
     {
         $this->Time_Zone_Reference = $time_Zone_Reference;
         return $this;
     }
     /**
      * Get Default_Display_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getDefault_Display_Language_Reference()
     {
@@ -259,10 +259,10 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Default_Display_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $default_Display_Language_Reference
-     * @return \StructType\System_User_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $default_Display_Language_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
-    public function setDefault_Display_Language_Reference(\StructType\User_LanguageObjectType $default_Display_Language_Reference = null)
+    public function setDefault_Display_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $default_Display_Language_Reference = null)
     {
         $this->Default_Display_Language_Reference = $default_Display_Language_Reference;
         return $this;
@@ -278,7 +278,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Simplified_View value
      * @param bool $simplified_View
-     * @return \StructType\System_User_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
     public function setSimplified_View($simplified_View = null)
     {
@@ -295,7 +295,7 @@ class System_User_for_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\System_User_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_for_Worker_DataType
      */
     public static function __set_state(array $array)
     {

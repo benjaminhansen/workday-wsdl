@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to a specific Frequency based on its unique ID (Frequency ID or Workday ID).
      * - maxOccurs: unbounded
-     * @var \StructType\FrequencyObjectType[]
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType[]
      */
     public $Frequency_Reference;
     /**
      * Constructor method for Frequency_Request_ReferencesType
      * @uses Frequency_Request_ReferencesType::setFrequency_Reference()
-     * @param \StructType\FrequencyObjectType[] $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType[] $frequency_Reference
      */
     public function __construct(array $frequency_Reference = array())
     {
@@ -32,7 +32,7 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType[]|null
      */
     public function getFrequency_Reference()
     {
@@ -50,12 +50,12 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $frequency_Request_ReferencesTypeFrequency_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$frequency_Request_ReferencesTypeFrequency_ReferenceItem instanceof \StructType\FrequencyObjectType) {
+            if (!$frequency_Request_ReferencesTypeFrequency_ReferenceItem instanceof \WorkdayWsdl\\StructType\FrequencyObjectType) {
                 $invalidValues[] = is_object($frequency_Request_ReferencesTypeFrequency_ReferenceItem) ? get_class($frequency_Request_ReferencesTypeFrequency_ReferenceItem) : sprintf('%s(%s)', gettype($frequency_Request_ReferencesTypeFrequency_ReferenceItem), var_export($frequency_Request_ReferencesTypeFrequency_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Frequency_Reference property can only contain items of type \StructType\FrequencyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Frequency_Reference property can only contain items of type \WorkdayWsdl\\StructType\FrequencyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Frequency_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyObjectType[] $frequency_Reference
-     * @return \StructType\Frequency_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType[] $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Frequency_Request_ReferencesType
      */
     public function setFrequency_Reference(array $frequency_Reference = array())
     {
@@ -78,14 +78,14 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Frequency_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyObjectType $item
-     * @return \StructType\Frequency_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $item
+     * @return \WorkdayWsdl\\StructType\Frequency_Request_ReferencesType
      */
-    public function addToFrequency_Reference(\StructType\FrequencyObjectType $item)
+    public function addToFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\FrequencyObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Frequency_Reference property can only contain items of type \StructType\FrequencyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\FrequencyObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Frequency_Reference property can only contain items of type \WorkdayWsdl\\StructType\FrequencyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Frequency_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Frequency_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Frequency_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Frequency_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

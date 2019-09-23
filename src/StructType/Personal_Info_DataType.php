@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,14 +25,14 @@ class Personal_Info_DataType extends AbstractStructBase
      * The Person_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Person_DataType
+     * @var \WorkdayWsdl\\StructType\Person_DataType
      */
     public $Person_Data;
     /**
      * The Qualification_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Qualification_DataType
+     * @var \WorkdayWsdl\\StructType\Qualification_DataType
      */
     public $Qualification_Data;
     /**
@@ -41,10 +41,10 @@ class Personal_Info_DataType extends AbstractStructBase
      * @uses Personal_Info_DataType::setPerson_Data()
      * @uses Personal_Info_DataType::setQualification_Data()
      * @param string $business_Title
-     * @param \StructType\Person_DataType $person_Data
-     * @param \StructType\Qualification_DataType $qualification_Data
+     * @param \WorkdayWsdl\\StructType\Person_DataType $person_Data
+     * @param \WorkdayWsdl\\StructType\Qualification_DataType $qualification_Data
      */
-    public function __construct($business_Title = null, \StructType\Person_DataType $person_Data = null, \StructType\Qualification_DataType $qualification_Data = null)
+    public function __construct($business_Title = null, \WorkdayWsdl\\StructType\Person_DataType $person_Data = null, \WorkdayWsdl\\StructType\Qualification_DataType $qualification_Data = null)
     {
         $this
             ->setBusiness_Title($business_Title)
@@ -62,7 +62,7 @@ class Personal_Info_DataType extends AbstractStructBase
     /**
      * Set Business_Title value
      * @param string $business_Title
-     * @return \StructType\Personal_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Personal_Info_DataType
      */
     public function setBusiness_Title($business_Title = null)
     {
@@ -75,7 +75,7 @@ class Personal_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Data value
-     * @return \StructType\Person_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_DataType|null
      */
     public function getPerson_Data()
     {
@@ -83,17 +83,17 @@ class Personal_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Data value
-     * @param \StructType\Person_DataType $person_Data
-     * @return \StructType\Personal_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Person_DataType $person_Data
+     * @return \WorkdayWsdl\\StructType\Personal_Info_DataType
      */
-    public function setPerson_Data(\StructType\Person_DataType $person_Data = null)
+    public function setPerson_Data(\WorkdayWsdl\\StructType\Person_DataType $person_Data = null)
     {
         $this->Person_Data = $person_Data;
         return $this;
     }
     /**
      * Get Qualification_Data value
-     * @return \StructType\Qualification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType|null
      */
     public function getQualification_Data()
     {
@@ -101,10 +101,10 @@ class Personal_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Qualification_Data value
-     * @param \StructType\Qualification_DataType $qualification_Data
-     * @return \StructType\Personal_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Qualification_DataType $qualification_Data
+     * @return \WorkdayWsdl\\StructType\Personal_Info_DataType
      */
-    public function setQualification_Data(\StructType\Qualification_DataType $qualification_Data = null)
+    public function setQualification_Data(\WorkdayWsdl\\StructType\Qualification_DataType $qualification_Data = null)
     {
         $this->Qualification_Data = $qualification_Data;
         return $this;
@@ -115,7 +115,7 @@ class Personal_Info_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Personal_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Personal_Info_DataType
      */
     public static function __set_state(array $array)
     {

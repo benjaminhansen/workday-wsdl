@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -81,7 +81,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Academic Unit Subtype for this Academic Unit (required)
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_SubtypeObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType
      */
     public $Academic_Organization_Subtype_Reference;
     /**
@@ -109,7 +109,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Provides a reference to the Company associated with the Academic Unit.
      * - minOccurs: 0
-     * @var \StructType\CompanyObjectType
+     * @var \WorkdayWsdl\\StructType\CompanyObjectType
      */
     public $Company_Reference;
     /**
@@ -117,7 +117,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Provides a reference to a CIP code for this Academic Unit.
      * - minOccurs: 0
-     * @var \StructType\CIP_Code__Workday_Owned_ObjectType
+     * @var \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType
      */
     public $CIP_Code_Reference;
     /**
@@ -125,7 +125,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: One or more references to an external URL (e.g. home page for the department or school)
      * - minOccurs: 0
-     * @var \StructType\External_URLObjectType
+     * @var \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public $External_URL_Reference;
     /**
@@ -134,7 +134,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * - documentation: Provides a reference to a Supervisory Organization associated with the Academic Unit.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Supervisory_OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[]
      */
     public $Supervisory_Organization_Reference;
     /**
@@ -143,7 +143,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * - documentation: A list of references to Academic Track Types allowable for this Academic Unit
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Track_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[]
      */
     public $Track_Type_Reference;
     /**
@@ -151,7 +151,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an External Institutional Grading Scheme Grade Point Value which determines if external course will receive transfer credit.
      * - minOccurs: 0
-     * @var \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
+     * @var \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType
      */
     public $Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference;
     /**
@@ -159,7 +159,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Superior Academic Unit Data Element
      * - minOccurs: 0
-     * @var \StructType\Superior_Academic_Unit_DataType
+     * @var \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType
      */
     public $Superior_Academic_Unit_Data;
     /**
@@ -188,18 +188,18 @@ class Academic_Unit_DataType extends AbstractStructBase
      * @param bool $is_Institution
      * @param bool $include_Code_in_Name
      * @param bool $include_Incumbent_Leader_in_Name
-     * @param \StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference
      * @param bool $include_Subtype_in_Name
      * @param bool $inactive
-     * @param \StructType\CompanyObjectType $company_Reference
-     * @param \StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @param \StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
-     * @param \StructType\Academic_Track_TypeObjectType[] $track_Type_Reference
-     * @param \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference
-     * @param \StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data
+     * @param \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference
+     * @param \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[] $track_Type_Reference
+     * @param \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference
+     * @param \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data
      */
-    public function __construct($iD = null, $effective_Date = null, $name = null, $code = null, $is_Institution = null, $include_Code_in_Name = null, $include_Incumbent_Leader_in_Name = null, \StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference = null, $include_Subtype_in_Name = null, $inactive = null, \StructType\CompanyObjectType $company_Reference = null, \StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference = null, \StructType\External_URLObjectType $external_URL_Reference = null, array $supervisory_Organization_Reference = array(), array $track_Type_Reference = array(), \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference = null, \StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data = null)
+    public function __construct($iD = null, $effective_Date = null, $name = null, $code = null, $is_Institution = null, $include_Code_in_Name = null, $include_Incumbent_Leader_in_Name = null, \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference = null, $include_Subtype_in_Name = null, $inactive = null, \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference = null, \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference = null, \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null, array $supervisory_Organization_Reference = array(), array $track_Type_Reference = array(), \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference = null, \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data = null)
     {
         $this
             ->setID($iD)
@@ -231,7 +231,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setID($iD = null)
     {
@@ -253,7 +253,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -275,7 +275,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setName($name = null)
     {
@@ -297,7 +297,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setCode($code = null)
     {
@@ -319,7 +319,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Is_Institution value
      * @param bool $is_Institution
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setIs_Institution($is_Institution = null)
     {
@@ -341,7 +341,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Include_Code_in_Name value
      * @param bool $include_Code_in_Name
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setInclude_Code_in_Name($include_Code_in_Name = null)
     {
@@ -363,7 +363,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Include_Incumbent_Leader_in_Name value
      * @param bool $include_Incumbent_Leader_in_Name
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setInclude_Incumbent_Leader_in_Name($include_Incumbent_Leader_in_Name = null)
     {
@@ -376,7 +376,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Organization_Subtype_Reference value
-     * @return \StructType\Academic_Unit_SubtypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType|null
      */
     public function getAcademic_Organization_Subtype_Reference()
     {
@@ -384,10 +384,10 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Organization_Subtype_Reference value
-     * @param \StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setAcademic_Organization_Subtype_Reference(\StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference = null)
+    public function setAcademic_Organization_Subtype_Reference(\WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $academic_Organization_Subtype_Reference = null)
     {
         $this->Academic_Organization_Subtype_Reference = $academic_Organization_Subtype_Reference;
         return $this;
@@ -403,7 +403,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Include_Subtype_in_Name value
      * @param bool $include_Subtype_in_Name
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setInclude_Subtype_in_Name($include_Subtype_in_Name = null)
     {
@@ -425,7 +425,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -438,7 +438,7 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Get Company_Reference value
-     * @return \StructType\CompanyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CompanyObjectType|null
      */
     public function getCompany_Reference()
     {
@@ -446,17 +446,17 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set Company_Reference value
-     * @param \StructType\CompanyObjectType $company_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setCompany_Reference(\StructType\CompanyObjectType $company_Reference = null)
+    public function setCompany_Reference(\WorkdayWsdl\\StructType\CompanyObjectType $company_Reference = null)
     {
         $this->Company_Reference = $company_Reference;
         return $this;
     }
     /**
      * Get CIP_Code_Reference value
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType|null
      */
     public function getCIP_Code_Reference()
     {
@@ -464,17 +464,17 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set CIP_Code_Reference value
-     * @param \StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setCIP_Code_Reference(\StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference = null)
+    public function setCIP_Code_Reference(\WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType $cIP_Code_Reference = null)
     {
         $this->CIP_Code_Reference = $cIP_Code_Reference;
         return $this;
     }
     /**
      * Get External_URL_Reference value
-     * @return \StructType\External_URLObjectType|null
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType|null
      */
     public function getExternal_URL_Reference()
     {
@@ -482,17 +482,17 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set External_URL_Reference value
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setExternal_URL_Reference(\StructType\External_URLObjectType $external_URL_Reference = null)
+    public function setExternal_URL_Reference(\WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null)
     {
         $this->External_URL_Reference = $external_URL_Reference;
         return $this;
     }
     /**
      * Get Supervisory_Organization_Reference value
-     * @return \StructType\Supervisory_OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[]|null
      */
     public function getSupervisory_Organization_Reference()
     {
@@ -510,12 +510,12 @@ class Academic_Unit_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Unit_DataTypeSupervisory_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Unit_DataTypeSupervisory_Organization_ReferenceItem instanceof \StructType\Supervisory_OrganizationObjectType) {
+            if (!$academic_Unit_DataTypeSupervisory_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType) {
                 $invalidValues[] = is_object($academic_Unit_DataTypeSupervisory_Organization_ReferenceItem) ? get_class($academic_Unit_DataTypeSupervisory_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Unit_DataTypeSupervisory_Organization_ReferenceItem), var_export($academic_Unit_DataTypeSupervisory_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Supervisory_Organization_Reference property can only contain items of type \StructType\Supervisory_OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Supervisory_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -523,8 +523,8 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Supervisory_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setSupervisory_Organization_Reference(array $supervisory_Organization_Reference = array())
     {
@@ -538,21 +538,21 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Add item to Supervisory_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisory_OrganizationObjectType $item
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function addToSupervisory_Organization_Reference(\StructType\Supervisory_OrganizationObjectType $item)
+    public function addToSupervisory_Organization_Reference(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Supervisory_OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Supervisory_Organization_Reference property can only contain items of type \StructType\Supervisory_OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Supervisory_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Supervisory_Organization_Reference[] = $item;
         return $this;
     }
     /**
      * Get Track_Type_Reference value
-     * @return \StructType\Academic_Track_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[]|null
      */
     public function getTrack_Type_Reference()
     {
@@ -570,12 +570,12 @@ class Academic_Unit_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Unit_DataTypeTrack_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Unit_DataTypeTrack_Type_ReferenceItem instanceof \StructType\Academic_Track_TypeObjectType) {
+            if (!$academic_Unit_DataTypeTrack_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType) {
                 $invalidValues[] = is_object($academic_Unit_DataTypeTrack_Type_ReferenceItem) ? get_class($academic_Unit_DataTypeTrack_Type_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Unit_DataTypeTrack_Type_ReferenceItem), var_export($academic_Unit_DataTypeTrack_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Track_Type_Reference property can only contain items of type \StructType\Academic_Track_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Track_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -583,8 +583,8 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Track_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectType[] $track_Type_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType[] $track_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public function setTrack_Type_Reference(array $track_Type_Reference = array())
     {
@@ -598,21 +598,21 @@ class Academic_Unit_DataType extends AbstractStructBase
     /**
      * Add item to Track_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectType $item
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function addToTrack_Type_Reference(\StructType\Academic_Track_TypeObjectType $item)
+    public function addToTrack_Type_Reference(\WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Track_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Track_Type_Reference property can only contain items of type \StructType\Academic_Track_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Track_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Track_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference value
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType|null
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType|null
      */
     public function getAcceptable_External_Institution_Grading_Scheme_Point_Value_Reference()
     {
@@ -620,17 +620,17 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference value
-     * @param \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setAcceptable_External_Institution_Grading_Scheme_Point_Value_Reference(\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference = null)
+    public function setAcceptable_External_Institution_Grading_Scheme_Point_Value_Reference(\WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectType $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference = null)
     {
         $this->Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference = $acceptable_External_Institution_Grading_Scheme_Point_Value_Reference;
         return $this;
     }
     /**
      * Get Superior_Academic_Unit_Data value
-     * @return \StructType\Superior_Academic_Unit_DataType|null
+     * @return \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType|null
      */
     public function getSuperior_Academic_Unit_Data()
     {
@@ -638,10 +638,10 @@ class Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Academic_Unit_Data value
-     * @param \StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data
-     * @return \StructType\Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
-    public function setSuperior_Academic_Unit_Data(\StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data = null)
+    public function setSuperior_Academic_Unit_Data(\WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType $superior_Academic_Unit_Data = null)
     {
         $this->Superior_Academic_Unit_Data = $superior_Academic_Unit_Data;
         return $this;
@@ -652,7 +652,7 @@ class Academic_Unit_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public static function __set_state(array $array)
     {

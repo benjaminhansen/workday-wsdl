@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
      * The Reason_Reference
      * Meta information extracted from the WSDL
      * - documentation: The reference to the reason for the Create Named Professorship business process
-     * @var \StructType\General_Event_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public $Reason_Reference;
     /**
@@ -56,7 +56,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     public $Include_Code_in_Display_Name;
     /**
      * The Named_Professorship_Snapshot_Data
-     * @var \StructType\Named_Professorship_Snapshot_DataType
+     * @var \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public $Named_Professorship_Snapshot_Data;
     /**
@@ -67,14 +67,14 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
      * @uses Create_Named_Professorship_DataType::setInitially_Available_Date()
      * @uses Create_Named_Professorship_DataType::setInclude_Code_in_Display_Name()
      * @uses Create_Named_Professorship_DataType::setNamed_Professorship_Snapshot_Data()
-     * @param \StructType\General_Event_SubcategoryObjectType $reason_Reference
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference
      * @param string $named_Professorship_ID
      * @param string $initially_Established_Date
      * @param string $initially_Available_Date
      * @param bool $include_Code_in_Display_Name
-     * @param \StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data
+     * @param \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data
      */
-    public function __construct(\StructType\General_Event_SubcategoryObjectType $reason_Reference = null, $named_Professorship_ID = null, $initially_Established_Date = null, $initially_Available_Date = null, $include_Code_in_Display_Name = null, \StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference = null, $named_Professorship_ID = null, $initially_Established_Date = null, $initially_Available_Date = null, $include_Code_in_Display_Name = null, \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data = null)
     {
         $this
             ->setReason_Reference($reason_Reference)
@@ -86,7 +86,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     }
     /**
      * Get Reason_Reference value
-     * @return \StructType\General_Event_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType|null
      */
     public function getReason_Reference()
     {
@@ -94,10 +94,10 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     }
     /**
      * Set Reason_Reference value
-     * @param \StructType\General_Event_SubcategoryObjectType $reason_Reference
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
-    public function setReason_Reference(\StructType\General_Event_SubcategoryObjectType $reason_Reference = null)
+    public function setReason_Reference(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType $reason_Reference = null)
     {
         $this->Reason_Reference = $reason_Reference;
         return $this;
@@ -113,7 +113,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     /**
      * Set Named_Professorship_ID value
      * @param string $named_Professorship_ID
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public function setNamed_Professorship_ID($named_Professorship_ID = null)
     {
@@ -135,7 +135,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     /**
      * Set Initially_Established_Date value
      * @param string $initially_Established_Date
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public function setInitially_Established_Date($initially_Established_Date = null)
     {
@@ -157,7 +157,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     /**
      * Set Initially_Available_Date value
      * @param string $initially_Available_Date
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public function setInitially_Available_Date($initially_Available_Date = null)
     {
@@ -179,7 +179,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     /**
      * Set Include_Code_in_Display_Name value
      * @param bool $include_Code_in_Display_Name
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public function setInclude_Code_in_Display_Name($include_Code_in_Display_Name = null)
     {
@@ -192,7 +192,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     }
     /**
      * Get Named_Professorship_Snapshot_Data value
-     * @return \StructType\Named_Professorship_Snapshot_DataType|null
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType|null
      */
     public function getNamed_Professorship_Snapshot_Data()
     {
@@ -200,10 +200,10 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
     }
     /**
      * Set Named_Professorship_Snapshot_Data value
-     * @param \StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @param \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
-    public function setNamed_Professorship_Snapshot_Data(\StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data = null)
+    public function setNamed_Professorship_Snapshot_Data(\WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType $named_Professorship_Snapshot_Data = null)
     {
         $this->Named_Professorship_Snapshot_Data = $named_Professorship_Snapshot_Data;
         return $this;
@@ -214,7 +214,7 @@ class Create_Named_Professorship_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Create_Named_Professorship_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public static function __set_state(array $array)
     {

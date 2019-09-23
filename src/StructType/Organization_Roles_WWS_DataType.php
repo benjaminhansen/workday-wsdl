@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
      * - documentation: Contains information about an Organization Role and incumbent worker(s).
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_Role_Assignment_WWS_DataType[]
+     * @var \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType[]
      */
     public $Organization_Role_Data;
     /**
      * Constructor method for Organization_Roles_WWS_DataType
      * @uses Organization_Roles_WWS_DataType::setOrganization_Role_Data()
-     * @param \StructType\Organization_Role_Assignment_WWS_DataType[] $organization_Role_Data
+     * @param \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType[] $organization_Role_Data
      */
     public function __construct(array $organization_Role_Data = array())
     {
@@ -33,7 +33,7 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
     }
     /**
      * Get Organization_Role_Data value
-     * @return \StructType\Organization_Role_Assignment_WWS_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType[]|null
      */
     public function getOrganization_Role_Data()
     {
@@ -51,12 +51,12 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Roles_WWS_DataTypeOrganization_Role_DataItem) {
             // validation for constraint: itemType
-            if (!$organization_Roles_WWS_DataTypeOrganization_Role_DataItem instanceof \StructType\Organization_Role_Assignment_WWS_DataType) {
+            if (!$organization_Roles_WWS_DataTypeOrganization_Role_DataItem instanceof \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType) {
                 $invalidValues[] = is_object($organization_Roles_WWS_DataTypeOrganization_Role_DataItem) ? get_class($organization_Roles_WWS_DataTypeOrganization_Role_DataItem) : sprintf('%s(%s)', gettype($organization_Roles_WWS_DataTypeOrganization_Role_DataItem), var_export($organization_Roles_WWS_DataTypeOrganization_Role_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Role_Data property can only contain items of type \StructType\Organization_Role_Assignment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Role_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
     /**
      * Set Organization_Role_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Role_Assignment_WWS_DataType[] $organization_Role_Data
-     * @return \StructType\Organization_Roles_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType[] $organization_Role_Data
+     * @return \WorkdayWsdl\\StructType\Organization_Roles_WWS_DataType
      */
     public function setOrganization_Role_Data(array $organization_Role_Data = array())
     {
@@ -79,14 +79,14 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
     /**
      * Add item to Organization_Role_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Role_Assignment_WWS_DataType $item
-     * @return \StructType\Organization_Roles_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Roles_WWS_DataType
      */
-    public function addToOrganization_Role_Data(\StructType\Organization_Role_Assignment_WWS_DataType $item)
+    public function addToOrganization_Role_Data(\WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_Role_Assignment_WWS_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Role_Data property can only contain items of type \StructType\Organization_Role_Assignment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Role_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Role_Data[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Organization_Roles_WWS_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Roles_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Roles_WWS_DataType
      */
     public static function __set_state(array $array)
     {

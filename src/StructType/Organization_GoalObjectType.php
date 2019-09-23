@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Organization_GoalObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_GoalObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Organization_GoalObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Organization_GoalObjectType extends AbstractStructBase
      * Constructor method for Organization_GoalObjectType
      * @uses Organization_GoalObjectType::setID()
      * @uses Organization_GoalObjectType::setDescriptor()
-     * @param \StructType\Organization_GoalObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Organization_GoalObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Organization_GoalObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Organization_GoalObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Organization_GoalObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_GoalObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$organization_GoalObjectTypeIDItem instanceof \StructType\Organization_GoalObjectIDType) {
+            if (!$organization_GoalObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Organization_GoalObjectIDType) {
                 $invalidValues[] = is_object($organization_GoalObjectTypeIDItem) ? get_class($organization_GoalObjectTypeIDItem) : sprintf('%s(%s)', gettype($organization_GoalObjectTypeIDItem), var_export($organization_GoalObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Organization_GoalObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Organization_GoalObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Organization_GoalObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_GoalObjectIDType[] $iD
-     * @return \StructType\Organization_GoalObjectType
+     * @param \WorkdayWsdl\\StructType\Organization_GoalObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Organization_GoalObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_GoalObjectIDType $item
-     * @return \StructType\Organization_GoalObjectType
+     * @param \WorkdayWsdl\\StructType\Organization_GoalObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectType
      */
-    public function addToID(\StructType\Organization_GoalObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Organization_GoalObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_GoalObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Organization_GoalObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_GoalObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Organization_GoalObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Organization_GoalObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Organization_GoalObjectType
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Organization_GoalObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_GoalObjectType
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectType
      */
     public static function __set_state(array $array)
     {

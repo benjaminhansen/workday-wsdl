@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
      * - documentation: Wrapper for Passport Identifier data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Passport_IDType[]
+     * @var \WorkdayWsdl\\StructType\Passport_IDType[]
      */
     public $Passport_ID;
     /**
@@ -27,7 +27,7 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for all Visa Identifier Data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Visa_IDType[]
+     * @var \WorkdayWsdl\\StructType\Visa_IDType[]
      */
     public $Visa_ID;
     /**
@@ -43,8 +43,8 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
      * @uses Passports_and_Visas_Identification_DataType::setPassport_ID()
      * @uses Passports_and_Visas_Identification_DataType::setVisa_ID()
      * @uses Passports_and_Visas_Identification_DataType::setReplace_All()
-     * @param \StructType\Passport_IDType[] $passport_ID
-     * @param \StructType\Visa_IDType[] $visa_ID
+     * @param \WorkdayWsdl\\StructType\Passport_IDType[] $passport_ID
+     * @param \WorkdayWsdl\\StructType\Visa_IDType[] $visa_ID
      * @param bool $replace_All
      */
     public function __construct(array $passport_ID = array(), array $visa_ID = array(), $replace_All = null)
@@ -56,7 +56,7 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     }
     /**
      * Get Passport_ID value
-     * @return \StructType\Passport_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\Passport_IDType[]|null
      */
     public function getPassport_ID()
     {
@@ -74,12 +74,12 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $passports_and_Visas_Identification_DataTypePassport_IDItem) {
             // validation for constraint: itemType
-            if (!$passports_and_Visas_Identification_DataTypePassport_IDItem instanceof \StructType\Passport_IDType) {
+            if (!$passports_and_Visas_Identification_DataTypePassport_IDItem instanceof \WorkdayWsdl\\StructType\Passport_IDType) {
                 $invalidValues[] = is_object($passports_and_Visas_Identification_DataTypePassport_IDItem) ? get_class($passports_and_Visas_Identification_DataTypePassport_IDItem) : sprintf('%s(%s)', gettype($passports_and_Visas_Identification_DataTypePassport_IDItem), var_export($passports_and_Visas_Identification_DataTypePassport_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Passport_ID property can only contain items of type \StructType\Passport_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Passport_ID property can only contain items of type \WorkdayWsdl\\StructType\Passport_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -87,8 +87,8 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     /**
      * Set Passport_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_IDType[] $passport_ID
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Passport_IDType[] $passport_ID
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
     public function setPassport_ID(array $passport_ID = array())
     {
@@ -102,21 +102,21 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     /**
      * Add item to Passport_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_IDType $item
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Passport_IDType $item
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
-    public function addToPassport_ID(\StructType\Passport_IDType $item)
+    public function addToPassport_ID(\WorkdayWsdl\\StructType\Passport_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Passport_IDType) {
-            throw new \InvalidArgumentException(sprintf('The Passport_ID property can only contain items of type \StructType\Passport_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Passport_IDType) {
+            throw new \InvalidArgumentException(sprintf('The Passport_ID property can only contain items of type \WorkdayWsdl\\StructType\Passport_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Passport_ID[] = $item;
         return $this;
     }
     /**
      * Get Visa_ID value
-     * @return \StructType\Visa_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\Visa_IDType[]|null
      */
     public function getVisa_ID()
     {
@@ -134,12 +134,12 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $passports_and_Visas_Identification_DataTypeVisa_IDItem) {
             // validation for constraint: itemType
-            if (!$passports_and_Visas_Identification_DataTypeVisa_IDItem instanceof \StructType\Visa_IDType) {
+            if (!$passports_and_Visas_Identification_DataTypeVisa_IDItem instanceof \WorkdayWsdl\\StructType\Visa_IDType) {
                 $invalidValues[] = is_object($passports_and_Visas_Identification_DataTypeVisa_IDItem) ? get_class($passports_and_Visas_Identification_DataTypeVisa_IDItem) : sprintf('%s(%s)', gettype($passports_and_Visas_Identification_DataTypeVisa_IDItem), var_export($passports_and_Visas_Identification_DataTypeVisa_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Visa_ID property can only contain items of type \StructType\Visa_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Visa_ID property can only contain items of type \WorkdayWsdl\\StructType\Visa_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -147,8 +147,8 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     /**
      * Set Visa_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Visa_IDType[] $visa_ID
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Visa_IDType[] $visa_ID
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
     public function setVisa_ID(array $visa_ID = array())
     {
@@ -162,14 +162,14 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     /**
      * Add item to Visa_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Visa_IDType $item
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Visa_IDType $item
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
-    public function addToVisa_ID(\StructType\Visa_IDType $item)
+    public function addToVisa_ID(\WorkdayWsdl\\StructType\Visa_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Visa_IDType) {
-            throw new \InvalidArgumentException(sprintf('The Visa_ID property can only contain items of type \StructType\Visa_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Visa_IDType) {
+            throw new \InvalidArgumentException(sprintf('The Visa_ID property can only contain items of type \WorkdayWsdl\\StructType\Visa_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Visa_ID[] = $item;
         return $this;
@@ -185,7 +185,7 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -202,7 +202,7 @@ class Passports_and_Visas_Identification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Passports_and_Visas_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Passports_and_Visas_Identification_DataType
      */
     public static function __set_state(array $array)
     {

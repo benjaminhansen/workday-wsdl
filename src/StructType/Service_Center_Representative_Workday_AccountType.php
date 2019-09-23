@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the Service Center Representative.
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeObjectType
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public $Service_Center_Representative_Workday_Account_Reference;
     /**
@@ -27,17 +27,17 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
      * - documentation: Element containing Service Center Representative Workday Account data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Service_Center_Representative_Workday_Account_DataType[]
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType[]
      */
     public $Service_Center_Representative_Workday_Account_Data;
     /**
      * Constructor method for Service_Center_Representative_Workday_AccountType
      * @uses Service_Center_Representative_Workday_AccountType::setService_Center_Representative_Workday_Account_Reference()
      * @uses Service_Center_Representative_Workday_AccountType::setService_Center_Representative_Workday_Account_Data()
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
-     * @param \StructType\Service_Center_Representative_Workday_Account_DataType[] $service_Center_Representative_Workday_Account_Data
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType[] $service_Center_Representative_Workday_Account_Data
      */
-    public function __construct(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null, array $service_Center_Representative_Workday_Account_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null, array $service_Center_Representative_Workday_Account_Data = array())
     {
         $this
             ->setService_Center_Representative_Workday_Account_Reference($service_Center_Representative_Workday_Account_Reference)
@@ -45,7 +45,7 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
     }
     /**
      * Get Service_Center_Representative_Workday_Account_Reference value
-     * @return \StructType\Service_Center_RepresentativeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType|null
      */
     public function getService_Center_Representative_Workday_Account_Reference()
     {
@@ -53,17 +53,17 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
     }
     /**
      * Set Service_Center_Representative_Workday_Account_Reference value
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
-     * @return \StructType\Service_Center_Representative_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_AccountType
      */
-    public function setService_Center_Representative_Workday_Account_Reference(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null)
+    public function setService_Center_Representative_Workday_Account_Reference(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null)
     {
         $this->Service_Center_Representative_Workday_Account_Reference = $service_Center_Representative_Workday_Account_Reference;
         return $this;
     }
     /**
      * Get Service_Center_Representative_Workday_Account_Data value
-     * @return \StructType\Service_Center_Representative_Workday_Account_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType[]|null
      */
     public function getService_Center_Representative_Workday_Account_Data()
     {
@@ -81,12 +81,12 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
         $invalidValues = [];
         foreach ($values as $service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem) {
             // validation for constraint: itemType
-            if (!$service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem instanceof \StructType\Service_Center_Representative_Workday_Account_DataType) {
+            if (!$service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem instanceof \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType) {
                 $invalidValues[] = is_object($service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem) ? get_class($service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem) : sprintf('%s(%s)', gettype($service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem), var_export($service_Center_Representative_Workday_AccountTypeService_Center_Representative_Workday_Account_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Service_Center_Representative_Workday_Account_Data property can only contain items of type \StructType\Service_Center_Representative_Workday_Account_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Service_Center_Representative_Workday_Account_Data property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -94,8 +94,8 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
     /**
      * Set Service_Center_Representative_Workday_Account_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_Representative_Workday_Account_DataType[] $service_Center_Representative_Workday_Account_Data
-     * @return \StructType\Service_Center_Representative_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType[] $service_Center_Representative_Workday_Account_Data
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_AccountType
      */
     public function setService_Center_Representative_Workday_Account_Data(array $service_Center_Representative_Workday_Account_Data = array())
     {
@@ -109,14 +109,14 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
     /**
      * Add item to Service_Center_Representative_Workday_Account_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_Representative_Workday_Account_DataType $item
-     * @return \StructType\Service_Center_Representative_Workday_AccountType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $item
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_AccountType
      */
-    public function addToService_Center_Representative_Workday_Account_Data(\StructType\Service_Center_Representative_Workday_Account_DataType $item)
+    public function addToService_Center_Representative_Workday_Account_Data(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service_Center_Representative_Workday_Account_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative_Workday_Account_Data property can only contain items of type \StructType\Service_Center_Representative_Workday_Account_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative_Workday_Account_Data property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Service_Center_Representative_Workday_Account_Data[] = $item;
         return $this;
@@ -127,7 +127,7 @@ class Service_Center_Representative_Workday_AccountType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_Workday_AccountType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_AccountType
      */
     public static function __set_state(array $array)
     {

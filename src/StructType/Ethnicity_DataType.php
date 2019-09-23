@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Ethnicity_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The country the ethnicity is for.
      * - minOccurs: 0
-     * @var \StructType\Location_ContextObjectType
+     * @var \WorkdayWsdl\\StructType\Location_ContextObjectType
      */
     public $Location_Reference;
     /**
@@ -61,7 +61,7 @@ class Ethnicity_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: This is the Workday Owned Ethnicity mapping for this Ethnicity.
      * - minOccurs: 0
-     * @var \StructType\Global_Setup_Data_MappingObjectType
+     * @var \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
     public $Ethnicity_Mapping_Reference;
     /**
@@ -86,11 +86,11 @@ class Ethnicity_DataType extends AbstractStructBase
      * @param string $name
      * @param string $code
      * @param string $description
-     * @param \StructType\Location_ContextObjectType $location_Reference
-     * @param \StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference
      * @param bool $inactive
      */
-    public function __construct($iD = null, $name = null, $code = null, $description = null, \StructType\Location_ContextObjectType $location_Reference = null, \StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference = null, $inactive = null)
+    public function __construct($iD = null, $name = null, $code = null, $description = null, \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null, \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference = null, $inactive = null)
     {
         $this
             ->setID($iD)
@@ -112,7 +112,7 @@ class Ethnicity_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public function setID($iD = null)
     {
@@ -134,7 +134,7 @@ class Ethnicity_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public function setName($name = null)
     {
@@ -156,7 +156,7 @@ class Ethnicity_DataType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public function setCode($code = null)
     {
@@ -178,7 +178,7 @@ class Ethnicity_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public function setDescription($description = null)
     {
@@ -191,7 +191,7 @@ class Ethnicity_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\Location_ContextObjectType|null
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -199,17 +199,17 @@ class Ethnicity_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\Location_ContextObjectType $location_Reference
-     * @return \StructType\Ethnicity_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
-    public function setLocation_Reference(\StructType\Location_ContextObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Ethnicity_Mapping_Reference value
-     * @return \StructType\Global_Setup_Data_MappingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType|null
      */
     public function getEthnicity_Mapping_Reference()
     {
@@ -217,10 +217,10 @@ class Ethnicity_DataType extends AbstractStructBase
     }
     /**
      * Set Ethnicity_Mapping_Reference value
-     * @param \StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference
-     * @return \StructType\Ethnicity_DataType
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
-    public function setEthnicity_Mapping_Reference(\StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference = null)
+    public function setEthnicity_Mapping_Reference(\WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $ethnicity_Mapping_Reference = null)
     {
         $this->Ethnicity_Mapping_Reference = $ethnicity_Mapping_Reference;
         return $this;
@@ -236,7 +236,7 @@ class Ethnicity_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -253,7 +253,7 @@ class Ethnicity_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Ethnicity_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Frequency_Response_DataType extends AbstractStructBase
      * - documentation: Contains the data for a single frequency
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\FrequencyType[]
+     * @var \WorkdayWsdl\\StructType\FrequencyType[]
      */
     public $Frequency;
     /**
      * Constructor method for Frequency_Response_DataType
      * @uses Frequency_Response_DataType::setFrequency()
-     * @param \StructType\FrequencyType[] $frequency
+     * @param \WorkdayWsdl\\StructType\FrequencyType[] $frequency
      */
     public function __construct(array $frequency = array())
     {
@@ -33,7 +33,7 @@ class Frequency_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Frequency value
-     * @return \StructType\FrequencyType[]|null
+     * @return \WorkdayWsdl\\StructType\FrequencyType[]|null
      */
     public function getFrequency()
     {
@@ -51,12 +51,12 @@ class Frequency_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $frequency_Response_DataTypeFrequencyItem) {
             // validation for constraint: itemType
-            if (!$frequency_Response_DataTypeFrequencyItem instanceof \StructType\FrequencyType) {
+            if (!$frequency_Response_DataTypeFrequencyItem instanceof \WorkdayWsdl\\StructType\FrequencyType) {
                 $invalidValues[] = is_object($frequency_Response_DataTypeFrequencyItem) ? get_class($frequency_Response_DataTypeFrequencyItem) : sprintf('%s(%s)', gettype($frequency_Response_DataTypeFrequencyItem), var_export($frequency_Response_DataTypeFrequencyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Frequency property can only contain items of type \StructType\FrequencyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Frequency property can only contain items of type \WorkdayWsdl\\StructType\FrequencyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Frequency_Response_DataType extends AbstractStructBase
     /**
      * Set Frequency value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyType[] $frequency
-     * @return \StructType\Frequency_Response_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyType[] $frequency
+     * @return \WorkdayWsdl\\StructType\Frequency_Response_DataType
      */
     public function setFrequency(array $frequency = array())
     {
@@ -79,14 +79,14 @@ class Frequency_Response_DataType extends AbstractStructBase
     /**
      * Add item to Frequency value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyType $item
-     * @return \StructType\Frequency_Response_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyType $item
+     * @return \WorkdayWsdl\\StructType\Frequency_Response_DataType
      */
-    public function addToFrequency(\StructType\FrequencyType $item)
+    public function addToFrequency(\WorkdayWsdl\\StructType\FrequencyType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\FrequencyType) {
-            throw new \InvalidArgumentException(sprintf('The Frequency property can only contain items of type \StructType\FrequencyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\FrequencyType) {
+            throw new \InvalidArgumentException(sprintf('The Frequency property can only contain items of type \WorkdayWsdl\\StructType\FrequencyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Frequency[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Frequency_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Frequency_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_Response_DataType
      */
     public static function __set_state(array $array)
     {

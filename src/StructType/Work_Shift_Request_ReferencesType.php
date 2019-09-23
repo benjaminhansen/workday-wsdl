@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
      * - documentation: Reference to a Work Shift.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_ShiftObjectType[]
+     * @var \WorkdayWsdl\\StructType\Work_ShiftObjectType[]
      */
     public $Work_Shift_Reference;
     /**
      * Constructor method for Work_Shift_Request_ReferencesType
      * @uses Work_Shift_Request_ReferencesType::setWork_Shift_Reference()
-     * @param \StructType\Work_ShiftObjectType[] $work_Shift_Reference
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType[] $work_Shift_Reference
      */
     public function __construct(array $work_Shift_Reference = array())
     {
@@ -33,7 +33,7 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Work_Shift_Reference value
-     * @return \StructType\Work_ShiftObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_ShiftObjectType[]|null
      */
     public function getWork_Shift_Reference()
     {
@@ -51,12 +51,12 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem instanceof \StructType\Work_ShiftObjectType) {
+            if (!$work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem instanceof \WorkdayWsdl\\StructType\Work_ShiftObjectType) {
                 $invalidValues[] = is_object($work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem) ? get_class($work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem) : sprintf('%s(%s)', gettype($work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem), var_export($work_Shift_Request_ReferencesTypeWork_Shift_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Shift_Reference property can only contain items of type \StructType\Work_ShiftObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Shift_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_ShiftObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Work_Shift_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_ShiftObjectType[] $work_Shift_Reference
-     * @return \StructType\Work_Shift_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType[] $work_Shift_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Shift_Request_ReferencesType
      */
     public function setWork_Shift_Reference(array $work_Shift_Reference = array())
     {
@@ -79,14 +79,14 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Work_Shift_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_ShiftObjectType $item
-     * @return \StructType\Work_Shift_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType $item
+     * @return \WorkdayWsdl\\StructType\Work_Shift_Request_ReferencesType
      */
-    public function addToWork_Shift_Reference(\StructType\Work_ShiftObjectType $item)
+    public function addToWork_Shift_Reference(\WorkdayWsdl\\StructType\Work_ShiftObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_ShiftObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Shift_Reference property can only contain items of type \StructType\Work_ShiftObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_ShiftObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Shift_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_ShiftObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Shift_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Work_Shift_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Shift_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

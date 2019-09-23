@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Proficiency_Rating_BehaviorObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
      * Constructor method for Proficiency_Rating_BehaviorObjectType
      * @uses Proficiency_Rating_BehaviorObjectType::setID()
      * @uses Proficiency_Rating_BehaviorObjectType::setDescriptor()
-     * @param \StructType\Proficiency_Rating_BehaviorObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Proficiency_Rating_BehaviorObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $proficiency_Rating_BehaviorObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$proficiency_Rating_BehaviorObjectTypeIDItem instanceof \StructType\Proficiency_Rating_BehaviorObjectIDType) {
+            if (!$proficiency_Rating_BehaviorObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType) {
                 $invalidValues[] = is_object($proficiency_Rating_BehaviorObjectTypeIDItem) ? get_class($proficiency_Rating_BehaviorObjectTypeIDItem) : sprintf('%s(%s)', gettype($proficiency_Rating_BehaviorObjectTypeIDItem), var_export($proficiency_Rating_BehaviorObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Proficiency_Rating_BehaviorObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Proficiency_Rating_BehaviorObjectIDType[] $iD
-     * @return \StructType\Proficiency_Rating_BehaviorObjectType
+     * @param \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Proficiency_Rating_BehaviorObjectIDType $item
-     * @return \StructType\Proficiency_Rating_BehaviorObjectType
+     * @param \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType
      */
-    public function addToID(\StructType\Proficiency_Rating_BehaviorObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Proficiency_Rating_BehaviorObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Proficiency_Rating_BehaviorObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Proficiency_Rating_BehaviorObjectType
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Proficiency_Rating_BehaviorObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Proficiency_Rating_BehaviorObjectType
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType
      */
     public static function __set_state(array $array)
     {

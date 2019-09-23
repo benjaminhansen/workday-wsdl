@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Military_Service_ReferenceObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Military_Service_ReferenceReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Military_Service_ReferenceReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Military_Service_ReferenceReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Military_Service_ReferenceReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Military_Service_ReferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Military_Service_ReferenceReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Military_Service_ReferenceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Military_Service_ReferenceReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Military_Service_ReferenceReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Military_Service_ReferenceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Military_Service_ReferenceReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Military_Service_ReferenceObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Military_Service_ReferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Military_Service_ReferenceObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Military_Service_ReferenceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Leave_Request_EventObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_Request_EventObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Leave_Request_EventObjectType extends AbstractStructBase
      * Constructor method for Leave_Request_EventObjectType
      * @uses Leave_Request_EventObjectType::setID()
      * @uses Leave_Request_EventObjectType::setDescriptor()
-     * @param \StructType\Leave_Request_EventObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Leave_Request_EventObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Leave_Request_EventObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Leave_Request_EventObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $leave_Request_EventObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$leave_Request_EventObjectTypeIDItem instanceof \StructType\Leave_Request_EventObjectIDType) {
+            if (!$leave_Request_EventObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType) {
                 $invalidValues[] = is_object($leave_Request_EventObjectTypeIDItem) ? get_class($leave_Request_EventObjectTypeIDItem) : sprintf('%s(%s)', gettype($leave_Request_EventObjectTypeIDItem), var_export($leave_Request_EventObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Leave_Request_EventObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Leave_Request_EventObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Request_EventObjectIDType[] $iD
-     * @return \StructType\Leave_Request_EventObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Leave_Request_EventObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Request_EventObjectIDType $item
-     * @return \StructType\Leave_Request_EventObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectType
      */
-    public function addToID(\StructType\Leave_Request_EventObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_Request_EventObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Leave_Request_EventObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_Request_EventObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Leave_Request_EventObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Leave_Request_EventObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Leave_Request_EventObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_Request_EventObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_Request_EventObjectType
      */
     public static function __set_state(array $array)
     {

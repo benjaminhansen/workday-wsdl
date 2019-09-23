@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Common_Yes_NoObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Common_Yes_NoObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Common_Yes_NoObjectType extends AbstractStructBase
      * Constructor method for Common_Yes_NoObjectType
      * @uses Common_Yes_NoObjectType::setID()
      * @uses Common_Yes_NoObjectType::setDescriptor()
-     * @param \StructType\Common_Yes_NoObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Common_Yes_NoObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Common_Yes_NoObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Common_Yes_NoObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $common_Yes_NoObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$common_Yes_NoObjectTypeIDItem instanceof \StructType\Common_Yes_NoObjectIDType) {
+            if (!$common_Yes_NoObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType) {
                 $invalidValues[] = is_object($common_Yes_NoObjectTypeIDItem) ? get_class($common_Yes_NoObjectTypeIDItem) : sprintf('%s(%s)', gettype($common_Yes_NoObjectTypeIDItem), var_export($common_Yes_NoObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Common_Yes_NoObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Common_Yes_NoObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Common_Yes_NoObjectIDType[] $iD
-     * @return \StructType\Common_Yes_NoObjectType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Common_Yes_NoObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Common_Yes_NoObjectIDType $item
-     * @return \StructType\Common_Yes_NoObjectType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
-    public function addToID(\StructType\Common_Yes_NoObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Common_Yes_NoObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Common_Yes_NoObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Common_Yes_NoObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Common_Yes_NoObjectType
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Common_Yes_NoObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Common_Yes_NoObjectType
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public static function __set_state(array $array)
     {

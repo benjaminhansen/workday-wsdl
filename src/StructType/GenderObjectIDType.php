@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class GenderObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\GenderReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\GenderReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\GenderReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\GenderReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\GenderObjectIDType
+     * @return \WorkdayWsdl\\StructType\GenderObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GenderReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\GenderReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\GenderReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\GenderReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\GenderReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\GenderReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class GenderObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\GenderObjectIDType
+     * @return \WorkdayWsdl\\StructType\GenderObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class GenderObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenderObjectIDType
+     * @return \WorkdayWsdl\\StructType\GenderObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
      * Meta information extracted from the WSDL
      * - documentation: Returns the instance ID of the Collective Agreement event that has been added to the Worker
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Assign_Employee_Collective_Agreement_Event_Reference;
     /**
@@ -32,10 +32,10 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
      * Constructor method for Assign_Employee_Collective_Agreement_Event_ResponseType
      * @uses Assign_Employee_Collective_Agreement_Event_ResponseType::setAssign_Employee_Collective_Agreement_Event_Reference()
      * @uses Assign_Employee_Collective_Agreement_Event_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null, $version = null)
     {
         $this
             ->setAssign_Employee_Collective_Agreement_Event_Reference($assign_Employee_Collective_Agreement_Event_Reference)
@@ -43,7 +43,7 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
     }
     /**
      * Get Assign_Employee_Collective_Agreement_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getAssign_Employee_Collective_Agreement_Event_Reference()
     {
@@ -51,10 +51,10 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
     }
     /**
      * Set Assign_Employee_Collective_Agreement_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
      */
-    public function setAssign_Employee_Collective_Agreement_Event_Reference(\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null)
+    public function setAssign_Employee_Collective_Agreement_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null)
     {
         $this->Assign_Employee_Collective_Agreement_Event_Reference = $assign_Employee_Collective_Agreement_Event_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Assign_Employee_Collective_Agreement_Event_ResponseType extends AbstractSt
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_ResponseType
      */
     public static function __set_state(array $array)
     {

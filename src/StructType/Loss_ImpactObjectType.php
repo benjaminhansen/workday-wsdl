@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Loss_ImpactObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Loss_ImpactObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Loss_ImpactObjectType extends AbstractStructBase
      * Constructor method for Loss_ImpactObjectType
      * @uses Loss_ImpactObjectType::setID()
      * @uses Loss_ImpactObjectType::setDescriptor()
-     * @param \StructType\Loss_ImpactObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Loss_ImpactObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Loss_ImpactObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Loss_ImpactObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $loss_ImpactObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$loss_ImpactObjectTypeIDItem instanceof \StructType\Loss_ImpactObjectIDType) {
+            if (!$loss_ImpactObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType) {
                 $invalidValues[] = is_object($loss_ImpactObjectTypeIDItem) ? get_class($loss_ImpactObjectTypeIDItem) : sprintf('%s(%s)', gettype($loss_ImpactObjectTypeIDItem), var_export($loss_ImpactObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Loss_ImpactObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Loss_ImpactObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Loss_ImpactObjectIDType[] $iD
-     * @return \StructType\Loss_ImpactObjectType
+     * @param \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Loss_ImpactObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Loss_ImpactObjectIDType $item
-     * @return \StructType\Loss_ImpactObjectType
+     * @param \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectType
      */
-    public function addToID(\StructType\Loss_ImpactObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Loss_ImpactObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Loss_ImpactObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Loss_ImpactObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Loss_ImpactObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Loss_ImpactObjectType
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Loss_ImpactObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Loss_ImpactObjectType
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectType
      */
     public static function __set_state(array $array)
     {

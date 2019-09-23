@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Period_Salary_PlanObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Period_Salary_PlanReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Period_Salary_PlanReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Period_Salary_PlanReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Period_Salary_PlanReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Period_Salary_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Period_Salary_PlanReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Period_Salary_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Period_Salary_PlanReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Period_Salary_PlanReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Period_Salary_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Period_Salary_PlanReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Period_Salary_PlanObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Period_Salary_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Period_Salary_PlanObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Period_Salary_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType
      */
     public static function __set_state(array $array)
     {

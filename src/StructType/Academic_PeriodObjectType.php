@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Academic_PeriodObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_PeriodObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Academic_PeriodObjectType extends AbstractStructBase
      * Constructor method for Academic_PeriodObjectType
      * @uses Academic_PeriodObjectType::setID()
      * @uses Academic_PeriodObjectType::setDescriptor()
-     * @param \StructType\Academic_PeriodObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Academic_PeriodObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Academic_PeriodObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Academic_PeriodObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_PeriodObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$academic_PeriodObjectTypeIDItem instanceof \StructType\Academic_PeriodObjectIDType) {
+            if (!$academic_PeriodObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType) {
                 $invalidValues[] = is_object($academic_PeriodObjectTypeIDItem) ? get_class($academic_PeriodObjectTypeIDItem) : sprintf('%s(%s)', gettype($academic_PeriodObjectTypeIDItem), var_export($academic_PeriodObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Academic_PeriodObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Academic_PeriodObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_PeriodObjectIDType[] $iD
-     * @return \StructType\Academic_PeriodObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Academic_PeriodObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_PeriodObjectIDType $item
-     * @return \StructType\Academic_PeriodObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectType
      */
-    public function addToID(\StructType\Academic_PeriodObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Academic_PeriodObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_PeriodObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Academic_PeriodObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_PeriodObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Academic_PeriodObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Academic_PeriodObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Academic_PeriodObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_PeriodObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_PeriodObjectType
      */
     public static function __set_state(array $array)
     {

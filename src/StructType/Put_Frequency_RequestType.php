@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Frequency_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to a specific Frequency based on its unique ID (Frequency ID or Workday ID).
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
      * The Frequency_Data
      * Meta information extracted from the WSDL
      * - documentation: Container for the core frequency data
-     * @var \StructType\Frequency_DataType
+     * @var \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public $Frequency_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Frequency_RequestType extends AbstractStructBase
      * @uses Put_Frequency_RequestType::setFrequency_Data()
      * @uses Put_Frequency_RequestType::setAdd_Only()
      * @uses Put_Frequency_RequestType::setVersion()
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @param \StructType\Frequency_DataType $frequency_Data
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\Frequency_DataType $frequency_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\FrequencyObjectType $frequency_Reference = null, \StructType\Frequency_DataType $frequency_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, \WorkdayWsdl\\StructType\Frequency_DataType $frequency_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setFrequency_Reference($frequency_Reference)
@@ -62,7 +62,7 @@ class Put_Frequency_RequestType extends AbstractStructBase
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Frequency_RequestType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Put_Frequency_RequestType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_RequestType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Data value
-     * @return \StructType\Frequency_DataType|null
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType|null
      */
     public function getFrequency_Data()
     {
@@ -88,10 +88,10 @@ class Put_Frequency_RequestType extends AbstractStructBase
     }
     /**
      * Set Frequency_Data value
-     * @param \StructType\Frequency_DataType $frequency_Data
-     * @return \StructType\Put_Frequency_RequestType
+     * @param \WorkdayWsdl\\StructType\Frequency_DataType $frequency_Data
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_RequestType
      */
-    public function setFrequency_Data(\StructType\Frequency_DataType $frequency_Data = null)
+    public function setFrequency_Data(\WorkdayWsdl\\StructType\Frequency_DataType $frequency_Data = null)
     {
         $this->Frequency_Data = $frequency_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Frequency_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Frequency_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Frequency_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Frequency_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Frequency_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Frequency_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_RequestType
      */
     public static function __set_state(array $array)
     {

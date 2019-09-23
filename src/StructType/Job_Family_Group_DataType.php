@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -63,7 +63,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
      * - documentation: Job Family Data. Contains the references to Job Families contained in the group. Optionally contains other data about the contained families, however this extra data is for information only and cannot be updated here.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Family_Group_Job_FamilyType[]
+     * @var \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType[]
      */
     public $Job_Family_Data;
     /**
@@ -79,7 +79,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
      * @param string $name
      * @param string $summary
      * @param bool $inactive
-     * @param \StructType\Job_Family_Group_Job_FamilyType[] $job_Family_Data
+     * @param \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType[] $job_Family_Data
      */
     public function __construct($iD = null, $effective_Date = null, $name = null, $summary = null, $inactive = null, array $job_Family_Data = array())
     {
@@ -102,7 +102,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setID($iD = null)
     {
@@ -124,7 +124,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -146,7 +146,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setName($name = null)
     {
@@ -168,7 +168,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set Summary value
      * @param string $summary
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setSummary($summary = null)
     {
@@ -190,7 +190,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -203,7 +203,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Data value
-     * @return \StructType\Job_Family_Group_Job_FamilyType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType[]|null
      */
     public function getJob_Family_Data()
     {
@@ -221,12 +221,12 @@ class Job_Family_Group_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Family_Group_DataTypeJob_Family_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Family_Group_DataTypeJob_Family_DataItem instanceof \StructType\Job_Family_Group_Job_FamilyType) {
+            if (!$job_Family_Group_DataTypeJob_Family_DataItem instanceof \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType) {
                 $invalidValues[] = is_object($job_Family_Group_DataTypeJob_Family_DataItem) ? get_class($job_Family_Group_DataTypeJob_Family_DataItem) : sprintf('%s(%s)', gettype($job_Family_Group_DataTypeJob_Family_DataItem), var_export($job_Family_Group_DataTypeJob_Family_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Family_Data property can only contain items of type \StructType\Job_Family_Group_Job_FamilyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Family_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -234,8 +234,8 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Set Job_Family_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_Group_Job_FamilyType[] $job_Family_Data
-     * @return \StructType\Job_Family_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType[] $job_Family_Data
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public function setJob_Family_Data(array $job_Family_Data = array())
     {
@@ -249,14 +249,14 @@ class Job_Family_Group_DataType extends AbstractStructBase
     /**
      * Add item to Job_Family_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_Group_Job_FamilyType $item
-     * @return \StructType\Job_Family_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType $item
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
-    public function addToJob_Family_Data(\StructType\Job_Family_Group_Job_FamilyType $item)
+    public function addToJob_Family_Data(\WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Family_Group_Job_FamilyType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Family_Data property can only contain items of type \StructType\Job_Family_Group_Job_FamilyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Family_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_Group_Job_FamilyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Family_Data[] = $item;
         return $this;
@@ -267,7 +267,7 @@ class Job_Family_Group_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Family_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Compensation_MatrixObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Compensation_MatrixObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Compensation_MatrixObjectType extends AbstractStructBase
      * Constructor method for Compensation_MatrixObjectType
      * @uses Compensation_MatrixObjectType::setID()
      * @uses Compensation_MatrixObjectType::setDescriptor()
-     * @param \StructType\Compensation_MatrixObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Compensation_MatrixObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Compensation_MatrixObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Compensation_MatrixObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $compensation_MatrixObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$compensation_MatrixObjectTypeIDItem instanceof \StructType\Compensation_MatrixObjectIDType) {
+            if (!$compensation_MatrixObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType) {
                 $invalidValues[] = is_object($compensation_MatrixObjectTypeIDItem) ? get_class($compensation_MatrixObjectTypeIDItem) : sprintf('%s(%s)', gettype($compensation_MatrixObjectTypeIDItem), var_export($compensation_MatrixObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Compensation_MatrixObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Compensation_MatrixObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_MatrixObjectIDType[] $iD
-     * @return \StructType\Compensation_MatrixObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Compensation_MatrixObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_MatrixObjectIDType $item
-     * @return \StructType\Compensation_MatrixObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
-    public function addToID(\StructType\Compensation_MatrixObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Compensation_MatrixObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Compensation_MatrixObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Compensation_MatrixObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Compensation_MatrixObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Compensation_MatrixObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_MatrixObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
     public static function __set_state(array $array)
     {

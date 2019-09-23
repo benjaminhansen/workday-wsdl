@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Sort Order Enabled instance reference.
      * - minOccurs: 0
-     * @var \StructType\Sort_Order_EnabledObjectType
+     * @var \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType
      */
     public $Sort_Order_Enabled_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
      * Constructor method for Put_Sort_Order_Enabled_ResponseType
      * @uses Put_Sort_Order_Enabled_ResponseType::setSort_Order_Enabled_Reference()
      * @uses Put_Sort_Order_Enabled_ResponseType::setVersion()
-     * @param \StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference = null, $version = null)
     {
         $this
             ->setSort_Order_Enabled_Reference($sort_Order_Enabled_Reference)
@@ -42,7 +42,7 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
     }
     /**
      * Get Sort_Order_Enabled_Reference value
-     * @return \StructType\Sort_Order_EnabledObjectType|null
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType|null
      */
     public function getSort_Order_Enabled_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
     }
     /**
      * Set Sort_Order_Enabled_Reference value
-     * @param \StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference
-     * @return \StructType\Put_Sort_Order_Enabled_ResponseType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_ResponseType
      */
-    public function setSort_Order_Enabled_Reference(\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference = null)
+    public function setSort_Order_Enabled_Reference(\WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $sort_Order_Enabled_Reference = null)
     {
         $this->Sort_Order_Enabled_Reference = $sort_Order_Enabled_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Sort_Order_Enabled_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Sort_Order_Enabled_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Sort_Order_Enabled_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_ResponseType
      */
     public static function __set_state(array $array)
     {

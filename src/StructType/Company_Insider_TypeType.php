@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Company_Insider_TypeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a company insider type.
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType
      */
     public $Company_Insider_Type_Reference;
     /**
@@ -25,17 +25,17 @@ class Company_Insider_TypeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_Type_DataType[]
+     * @var \WorkdayWsdl\\StructType\Company_Insider_Type_DataType[]
      */
     public $Company_Insider_Type_Data;
     /**
      * Constructor method for Company_Insider_TypeType
      * @uses Company_Insider_TypeType::setCompany_Insider_Type_Reference()
      * @uses Company_Insider_TypeType::setCompany_Insider_Type_Data()
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
-     * @param \StructType\Company_Insider_Type_DataType[] $company_Insider_Type_Data
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_DataType[] $company_Insider_Type_Data
      */
-    public function __construct(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, array $company_Insider_Type_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, array $company_Insider_Type_Data = array())
     {
         $this
             ->setCompany_Insider_Type_Reference($company_Insider_Type_Reference)
@@ -43,7 +43,7 @@ class Company_Insider_TypeType extends AbstractStructBase
     }
     /**
      * Get Company_Insider_Type_Reference value
-     * @return \StructType\Company_Insider_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType|null
      */
     public function getCompany_Insider_Type_Reference()
     {
@@ -51,17 +51,17 @@ class Company_Insider_TypeType extends AbstractStructBase
     }
     /**
      * Set Company_Insider_Type_Reference value
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
-     * @return \StructType\Company_Insider_TypeType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeType
      */
-    public function setCompany_Insider_Type_Reference(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
+    public function setCompany_Insider_Type_Reference(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
     {
         $this->Company_Insider_Type_Reference = $company_Insider_Type_Reference;
         return $this;
     }
     /**
      * Get Company_Insider_Type_Data value
-     * @return \StructType\Company_Insider_Type_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType[]|null
      */
     public function getCompany_Insider_Type_Data()
     {
@@ -79,12 +79,12 @@ class Company_Insider_TypeType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $company_Insider_TypeTypeCompany_Insider_Type_DataItem) {
             // validation for constraint: itemType
-            if (!$company_Insider_TypeTypeCompany_Insider_Type_DataItem instanceof \StructType\Company_Insider_Type_DataType) {
+            if (!$company_Insider_TypeTypeCompany_Insider_Type_DataItem instanceof \WorkdayWsdl\\StructType\Company_Insider_Type_DataType) {
                 $invalidValues[] = is_object($company_Insider_TypeTypeCompany_Insider_Type_DataItem) ? get_class($company_Insider_TypeTypeCompany_Insider_Type_DataItem) : sprintf('%s(%s)', gettype($company_Insider_TypeTypeCompany_Insider_Type_DataItem), var_export($company_Insider_TypeTypeCompany_Insider_Type_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Company_Insider_Type_Data property can only contain items of type \StructType\Company_Insider_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Company_Insider_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Company_Insider_TypeType extends AbstractStructBase
     /**
      * Set Company_Insider_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Type_DataType[] $company_Insider_Type_Data
-     * @return \StructType\Company_Insider_TypeType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_DataType[] $company_Insider_Type_Data
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeType
      */
     public function setCompany_Insider_Type_Data(array $company_Insider_Type_Data = array())
     {
@@ -107,14 +107,14 @@ class Company_Insider_TypeType extends AbstractStructBase
     /**
      * Add item to Company_Insider_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Type_DataType $item
-     * @return \StructType\Company_Insider_TypeType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_DataType $item
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeType
      */
-    public function addToCompany_Insider_Type_Data(\StructType\Company_Insider_Type_DataType $item)
+    public function addToCompany_Insider_Type_Data(\WorkdayWsdl\\StructType\Company_Insider_Type_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Company_Insider_Type_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Company_Insider_Type_Data property can only contain items of type \StructType\Company_Insider_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Company_Insider_Type_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Company_Insider_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Company_Insider_Type_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Company_Insider_TypeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Company_Insider_TypeType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeType
      */
     public static function __set_state(array $array)
     {

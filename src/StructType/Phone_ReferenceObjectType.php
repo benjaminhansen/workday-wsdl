@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Phone_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Phone_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Phone_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Phone_ReferenceObjectType
      * @uses Phone_ReferenceObjectType::setID()
      * @uses Phone_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Phone_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Phone_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Phone_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Phone_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $phone_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$phone_ReferenceObjectTypeIDItem instanceof \StructType\Phone_ReferenceObjectIDType) {
+            if (!$phone_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($phone_ReferenceObjectTypeIDItem) ? get_class($phone_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($phone_ReferenceObjectTypeIDItem), var_export($phone_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Phone_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Phone_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_ReferenceObjectIDType[] $iD
-     * @return \StructType\Phone_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Phone_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_ReferenceObjectIDType $item
-     * @return \StructType\Phone_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
-    public function addToID(\StructType\Phone_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Phone_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Phone_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Phone_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Phone_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Phone_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

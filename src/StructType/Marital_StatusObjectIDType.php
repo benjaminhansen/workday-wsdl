@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Marital_StatusObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Marital_StatusReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Marital_StatusReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Marital_StatusReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Marital_StatusReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Marital_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Marital_StatusReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Marital_StatusReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Marital_StatusReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Marital_StatusReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Marital_StatusReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Marital_StatusReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Marital_StatusObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Marital_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Marital_StatusObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Marital_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Marital_StatusObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Marital_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Marital_StatusObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Marital_StatusObjectIDType
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectIDType
      */
     public static function __set_state(array $array)
     {

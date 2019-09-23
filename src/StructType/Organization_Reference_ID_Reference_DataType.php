@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -67,7 +67,7 @@ class Organization_Reference_ID_Reference_DataType extends AbstractStructBase
     /**
      * Set Organization_Reference_ID value
      * @param string $organization_Reference_ID
-     * @return \StructType\Organization_Reference_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType
      */
     public function setOrganization_Reference_ID($organization_Reference_ID = null)
     {
@@ -89,7 +89,7 @@ class Organization_Reference_ID_Reference_DataType extends AbstractStructBase
     /**
      * Set Organization_Name value
      * @param string $organization_Name
-     * @return \StructType\Organization_Reference_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType
      */
     public function setOrganization_Name($organization_Name = null)
     {
@@ -111,7 +111,7 @@ class Organization_Reference_ID_Reference_DataType extends AbstractStructBase
     /**
      * Set Include_Organization_ID_in_Name value
      * @param bool $include_Organization_ID_in_Name
-     * @return \StructType\Organization_Reference_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType
      */
     public function setInclude_Organization_ID_in_Name($include_Organization_ID_in_Name = null)
     {
@@ -128,7 +128,7 @@ class Organization_Reference_ID_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Reference_ID_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType
      */
     public static function __set_state(array $array)
     {

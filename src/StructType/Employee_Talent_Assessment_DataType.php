@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Potential for this Employee.
      * - minOccurs: 0
-     * @var \StructType\PotentialObjectType
+     * @var \WorkdayWsdl\\StructType\PotentialObjectType
      */
     public $Potential_Reference;
     /**
@@ -25,7 +25,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Achievable Level for this Employee.
      * - minOccurs: 0
-     * @var \StructType\Achievable_LevelObjectType
+     * @var \WorkdayWsdl\\StructType\Achievable_LevelObjectType
      */
     public $Achievable_Level_Reference;
     /**
@@ -33,7 +33,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Retention status for this Employee.
      * - minOccurs: 0
-     * @var \StructType\RetentionObjectType
+     * @var \WorkdayWsdl\\StructType\RetentionObjectType
      */
     public $Retention_Risk_Reference;
     /**
@@ -41,7 +41,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Loss Impact Status for this Employee
      * - minOccurs: 0
-     * @var \StructType\Loss_ImpactObjectType
+     * @var \WorkdayWsdl\\StructType\Loss_ImpactObjectType
      */
     public $Loss_Impact_Risk_Reference;
     /**
@@ -60,13 +60,13 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * @uses Employee_Talent_Assessment_DataType::setRetention_Risk_Reference()
      * @uses Employee_Talent_Assessment_DataType::setLoss_Impact_Risk_Reference()
      * @uses Employee_Talent_Assessment_DataType::setNotes()
-     * @param \StructType\PotentialObjectType $potential_Reference
-     * @param \StructType\Achievable_LevelObjectType $achievable_Level_Reference
-     * @param \StructType\RetentionObjectType $retention_Risk_Reference
-     * @param \StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference
+     * @param \WorkdayWsdl\\StructType\PotentialObjectType $potential_Reference
+     * @param \WorkdayWsdl\\StructType\Achievable_LevelObjectType $achievable_Level_Reference
+     * @param \WorkdayWsdl\\StructType\RetentionObjectType $retention_Risk_Reference
+     * @param \WorkdayWsdl\\StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference
      * @param string $notes
      */
-    public function __construct(\StructType\PotentialObjectType $potential_Reference = null, \StructType\Achievable_LevelObjectType $achievable_Level_Reference = null, \StructType\RetentionObjectType $retention_Risk_Reference = null, \StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference = null, $notes = null)
+    public function __construct(\WorkdayWsdl\\StructType\PotentialObjectType $potential_Reference = null, \WorkdayWsdl\\StructType\Achievable_LevelObjectType $achievable_Level_Reference = null, \WorkdayWsdl\\StructType\RetentionObjectType $retention_Risk_Reference = null, \WorkdayWsdl\\StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference = null, $notes = null)
     {
         $this
             ->setPotential_Reference($potential_Reference)
@@ -77,7 +77,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Get Potential_Reference value
-     * @return \StructType\PotentialObjectType|null
+     * @return \WorkdayWsdl\\StructType\PotentialObjectType|null
      */
     public function getPotential_Reference()
     {
@@ -85,17 +85,17 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Set Potential_Reference value
-     * @param \StructType\PotentialObjectType $potential_Reference
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @param \WorkdayWsdl\\StructType\PotentialObjectType $potential_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
-    public function setPotential_Reference(\StructType\PotentialObjectType $potential_Reference = null)
+    public function setPotential_Reference(\WorkdayWsdl\\StructType\PotentialObjectType $potential_Reference = null)
     {
         $this->Potential_Reference = $potential_Reference;
         return $this;
     }
     /**
      * Get Achievable_Level_Reference value
-     * @return \StructType\Achievable_LevelObjectType|null
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectType|null
      */
     public function getAchievable_Level_Reference()
     {
@@ -103,17 +103,17 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Set Achievable_Level_Reference value
-     * @param \StructType\Achievable_LevelObjectType $achievable_Level_Reference
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @param \WorkdayWsdl\\StructType\Achievable_LevelObjectType $achievable_Level_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
-    public function setAchievable_Level_Reference(\StructType\Achievable_LevelObjectType $achievable_Level_Reference = null)
+    public function setAchievable_Level_Reference(\WorkdayWsdl\\StructType\Achievable_LevelObjectType $achievable_Level_Reference = null)
     {
         $this->Achievable_Level_Reference = $achievable_Level_Reference;
         return $this;
     }
     /**
      * Get Retention_Risk_Reference value
-     * @return \StructType\RetentionObjectType|null
+     * @return \WorkdayWsdl\\StructType\RetentionObjectType|null
      */
     public function getRetention_Risk_Reference()
     {
@@ -121,17 +121,17 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Set Retention_Risk_Reference value
-     * @param \StructType\RetentionObjectType $retention_Risk_Reference
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @param \WorkdayWsdl\\StructType\RetentionObjectType $retention_Risk_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
-    public function setRetention_Risk_Reference(\StructType\RetentionObjectType $retention_Risk_Reference = null)
+    public function setRetention_Risk_Reference(\WorkdayWsdl\\StructType\RetentionObjectType $retention_Risk_Reference = null)
     {
         $this->Retention_Risk_Reference = $retention_Risk_Reference;
         return $this;
     }
     /**
      * Get Loss_Impact_Risk_Reference value
-     * @return \StructType\Loss_ImpactObjectType|null
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectType|null
      */
     public function getLoss_Impact_Risk_Reference()
     {
@@ -139,10 +139,10 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Set Loss_Impact_Risk_Reference value
-     * @param \StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @param \WorkdayWsdl\\StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
-    public function setLoss_Impact_Risk_Reference(\StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference = null)
+    public function setLoss_Impact_Risk_Reference(\WorkdayWsdl\\StructType\Loss_ImpactObjectType $loss_Impact_Risk_Reference = null)
     {
         $this->Loss_Impact_Risk_Reference = $loss_Impact_Risk_Reference;
         return $this;
@@ -158,7 +158,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
     /**
      * Set Notes value
      * @param string $notes
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
     public function setNotes($notes = null)
     {
@@ -175,7 +175,7 @@ class Employee_Talent_Assessment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Talent_Assessment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
     public static function __set_state(array $array)
     {

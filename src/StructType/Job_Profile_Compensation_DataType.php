@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: References an active Compensation Grade which is directly associated with the Job Profile. Workers with this Job Profile will be able to be assigned this Compensation Grade by default.
      * - minOccurs: 0
-     * @var \StructType\Compensation_GradeObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_GradeObjectType
      */
     public $Compensation_Grade_Reference;
     /**
@@ -26,17 +26,17 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
      * - documentation: References active Compensation Grade Profiles which are directly associated with the Job Profile. Workers with this Job Profile will be able to be assigned a Compensation Grade Profile from the associated list based on eligibility.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Compensation_Grade_ProfileObjectType[]
+     * @var \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType[]
      */
     public $Compensation_Grade_Profile_Reference;
     /**
      * Constructor method for Job_Profile_Compensation_DataType
      * @uses Job_Profile_Compensation_DataType::setCompensation_Grade_Reference()
      * @uses Job_Profile_Compensation_DataType::setCompensation_Grade_Profile_Reference()
-     * @param \StructType\Compensation_GradeObjectType $compensation_Grade_Reference
-     * @param \StructType\Compensation_Grade_ProfileObjectType[] $compensation_Grade_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType[] $compensation_Grade_Profile_Reference
      */
-    public function __construct(\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null, array $compensation_Grade_Profile_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null, array $compensation_Grade_Profile_Reference = array())
     {
         $this
             ->setCompensation_Grade_Reference($compensation_Grade_Reference)
@@ -44,7 +44,7 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Grade_Reference value
-     * @return \StructType\Compensation_GradeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_GradeObjectType|null
      */
     public function getCompensation_Grade_Reference()
     {
@@ -52,17 +52,17 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Grade_Reference value
-     * @param \StructType\Compensation_GradeObjectType $compensation_Grade_Reference
-     * @return \StructType\Job_Profile_Compensation_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType
      */
-    public function setCompensation_Grade_Reference(\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null)
+    public function setCompensation_Grade_Reference(\WorkdayWsdl\\StructType\Compensation_GradeObjectType $compensation_Grade_Reference = null)
     {
         $this->Compensation_Grade_Reference = $compensation_Grade_Reference;
         return $this;
     }
     /**
      * Get Compensation_Grade_Profile_Reference value
-     * @return \StructType\Compensation_Grade_ProfileObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType[]|null
      */
     public function getCompensation_Grade_Profile_Reference()
     {
@@ -80,12 +80,12 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem instanceof \StructType\Compensation_Grade_ProfileObjectType) {
+            if (!$job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem instanceof \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType) {
                 $invalidValues[] = is_object($job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem) ? get_class($job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem) : sprintf('%s(%s)', gettype($job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem), var_export($job_Profile_Compensation_DataTypeCompensation_Grade_Profile_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Compensation_Grade_Profile_Reference property can only contain items of type \StructType\Compensation_Grade_ProfileObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Compensation_Grade_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
     /**
      * Set Compensation_Grade_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_Grade_ProfileObjectType[] $compensation_Grade_Profile_Reference
-     * @return \StructType\Job_Profile_Compensation_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType[] $compensation_Grade_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType
      */
     public function setCompensation_Grade_Profile_Reference(array $compensation_Grade_Profile_Reference = array())
     {
@@ -108,14 +108,14 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
     /**
      * Add item to Compensation_Grade_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_Grade_ProfileObjectType $item
-     * @return \StructType\Job_Profile_Compensation_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType
      */
-    public function addToCompensation_Grade_Profile_Reference(\StructType\Compensation_Grade_ProfileObjectType $item)
+    public function addToCompensation_Grade_Profile_Reference(\WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Compensation_Grade_ProfileObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Compensation_Grade_Profile_Reference property can only contain items of type \StructType\Compensation_Grade_ProfileObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Compensation_Grade_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Compensation_Grade_Profile_Reference[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Job_Profile_Compensation_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Compensation_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType
      */
     public static function __set_state(array $array)
     {

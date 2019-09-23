@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Section 2 List B Document Title to be assigned to the Worker's Form I-9.
      * - minOccurs: 0
-     * @var \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType
+     * @var \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType
      */
     public $Document_Title_Reference;
     /**
@@ -43,11 +43,11 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
      * @uses External_Form_I_9_Section_2_List_B_DataType::setDocument_Title_Reference()
      * @uses External_Form_I_9_Section_2_List_B_DataType::setDHS_Document_Title()
      * @uses External_Form_I_9_Section_2_List_B_DataType::setExpiration_Date()
-     * @param \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
      * @param string $dHS_Document_Title
      * @param string $expiration_Date
      */
-    public function __construct(\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null, $dHS_Document_Title = null, $expiration_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null, $dHS_Document_Title = null, $expiration_Date = null)
     {
         $this
             ->setDocument_Title_Reference($document_Title_Reference)
@@ -56,7 +56,7 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
     }
     /**
      * Get Document_Title_Reference value
-     * @return \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType|null
      */
     public function getDocument_Title_Reference()
     {
@@ -64,10 +64,10 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Title_Reference value
-     * @param \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
-     * @return \StructType\External_Form_I_9_Section_2_List_B_DataType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_B_DataType
      */
-    public function setDocument_Title_Reference(\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null)
+    public function setDocument_Title_Reference(\WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null)
     {
         $this->Document_Title_Reference = $document_Title_Reference;
         return $this;
@@ -83,7 +83,7 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
     /**
      * Set DHS_Document_Title value
      * @param string $dHS_Document_Title
-     * @return \StructType\External_Form_I_9_Section_2_List_B_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_B_DataType
      */
     public function setDHS_Document_Title($dHS_Document_Title = null)
     {
@@ -105,7 +105,7 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\External_Form_I_9_Section_2_List_B_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_B_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -122,7 +122,7 @@ class External_Form_I_9_Section_2_List_B_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Section_2_List_B_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_B_DataType
      */
     public static function __set_state(array $array)
     {

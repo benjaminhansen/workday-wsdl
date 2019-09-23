@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
      * The Person_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the person.
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -36,7 +36,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
      * - documentation: Data related to a emergency contact person
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Emergency_Contacts_DataType[]
+     * @var \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType[]
      */
     public $Emergency_Contacts_Reference_Data;
     /**
@@ -44,11 +44,11 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
      * @uses Change_Emergency_Contacts_Business_Process_DataType::setPerson_Reference()
      * @uses Change_Emergency_Contacts_Business_Process_DataType::setReplace_All()
      * @uses Change_Emergency_Contacts_Business_Process_DataType::setEmergency_Contacts_Reference_Data()
-     * @param \StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
      * @param bool $replace_All
-     * @param \StructType\Change_Emergency_Contacts_DataType[] $emergency_Contacts_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType[] $emergency_Contacts_Reference_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, $replace_All = null, array $emergency_Contacts_Reference_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, $replace_All = null, array $emergency_Contacts_Reference_Data = array())
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -57,7 +57,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -65,10 +65,10 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Change_Emergency_Contacts_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_Business_Process_DataType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
@@ -84,7 +84,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Change_Emergency_Contacts_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_Business_Process_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -97,7 +97,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     }
     /**
      * Get Emergency_Contacts_Reference_Data value
-     * @return \StructType\Change_Emergency_Contacts_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType[]|null
      */
     public function getEmergency_Contacts_Reference_Data()
     {
@@ -115,12 +115,12 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
         $invalidValues = [];
         foreach ($values as $change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem) {
             // validation for constraint: itemType
-            if (!$change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem instanceof \StructType\Change_Emergency_Contacts_DataType) {
+            if (!$change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem instanceof \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType) {
                 $invalidValues[] = is_object($change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem) ? get_class($change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem) : sprintf('%s(%s)', gettype($change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem), var_export($change_Emergency_Contacts_Business_Process_DataTypeEmergency_Contacts_Reference_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Emergency_Contacts_Reference_Data property can only contain items of type \StructType\Change_Emergency_Contacts_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Emergency_Contacts_Reference_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -128,8 +128,8 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     /**
      * Set Emergency_Contacts_Reference_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Emergency_Contacts_DataType[] $emergency_Contacts_Reference_Data
-     * @return \StructType\Change_Emergency_Contacts_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType[] $emergency_Contacts_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_Business_Process_DataType
      */
     public function setEmergency_Contacts_Reference_Data(array $emergency_Contacts_Reference_Data = array())
     {
@@ -143,14 +143,14 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
     /**
      * Add item to Emergency_Contacts_Reference_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Emergency_Contacts_DataType $item
-     * @return \StructType\Change_Emergency_Contacts_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_Business_Process_DataType
      */
-    public function addToEmergency_Contacts_Reference_Data(\StructType\Change_Emergency_Contacts_DataType $item)
+    public function addToEmergency_Contacts_Reference_Data(\WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Emergency_Contacts_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Emergency_Contacts_Reference_Data property can only contain items of type \StructType\Change_Emergency_Contacts_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Emergency_Contacts_Reference_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Emergency_Contacts_Reference_Data[] = $item;
         return $this;
@@ -161,7 +161,7 @@ class Change_Emergency_Contacts_Business_Process_DataType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Emergency_Contacts_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

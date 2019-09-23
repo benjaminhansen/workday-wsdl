@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Local_Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Local_Last_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Local_Last_Name_DataType[]
      */
     public $Last_Name;
     /**
@@ -62,7 +62,7 @@ class Local_Name_DataType extends AbstractStructBase
      * @uses Local_Name_DataType::setLocal_Script()
      * @param string $first_Name
      * @param string $middle_Name
-     * @param \StructType\Local_Last_Name_DataType[] $last_Name
+     * @param \WorkdayWsdl\\StructType\Local_Last_Name_DataType[] $last_Name
      * @param string $local_Name
      * @param string $local_Script
      */
@@ -86,7 +86,7 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\Local_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public function setFirst_Name($first_Name = null)
     {
@@ -108,7 +108,7 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Set Middle_Name value
      * @param string $middle_Name
-     * @return \StructType\Local_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public function setMiddle_Name($middle_Name = null)
     {
@@ -121,7 +121,7 @@ class Local_Name_DataType extends AbstractStructBase
     }
     /**
      * Get Last_Name value
-     * @return \StructType\Local_Last_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Local_Last_Name_DataType[]|null
      */
     public function getLast_Name()
     {
@@ -139,12 +139,12 @@ class Local_Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $local_Name_DataTypeLast_NameItem) {
             // validation for constraint: itemType
-            if (!$local_Name_DataTypeLast_NameItem instanceof \StructType\Local_Last_Name_DataType) {
+            if (!$local_Name_DataTypeLast_NameItem instanceof \WorkdayWsdl\\StructType\Local_Last_Name_DataType) {
                 $invalidValues[] = is_object($local_Name_DataTypeLast_NameItem) ? get_class($local_Name_DataTypeLast_NameItem) : sprintf('%s(%s)', gettype($local_Name_DataTypeLast_NameItem), var_export($local_Name_DataTypeLast_NameItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Last_Name property can only contain items of type \StructType\Local_Last_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Last_Name property can only contain items of type \WorkdayWsdl\\StructType\Local_Last_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -152,8 +152,8 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @throws \InvalidArgumentException
-     * @param \StructType\Local_Last_Name_DataType[] $last_Name
-     * @return \StructType\Local_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Local_Last_Name_DataType[] $last_Name
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public function setLast_Name(array $last_Name = array())
     {
@@ -167,14 +167,14 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Add item to Last_Name value
      * @throws \InvalidArgumentException
-     * @param \StructType\Local_Last_Name_DataType $item
-     * @return \StructType\Local_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Local_Last_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
-    public function addToLast_Name(\StructType\Local_Last_Name_DataType $item)
+    public function addToLast_Name(\WorkdayWsdl\\StructType\Local_Last_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Local_Last_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Last_Name property can only contain items of type \StructType\Local_Last_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Local_Last_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Last_Name property can only contain items of type \WorkdayWsdl\\StructType\Local_Last_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Last_Name[] = $item;
         return $this;
@@ -190,7 +190,7 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Set Local_Name value
      * @param string $local_Name
-     * @return \StructType\Local_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public function setLocal_Name($local_Name = null)
     {
@@ -212,7 +212,7 @@ class Local_Name_DataType extends AbstractStructBase
     /**
      * Set Local_Script value
      * @param string $local_Script
-     * @return \StructType\Local_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public function setLocal_Script($local_Script = null)
     {
@@ -229,7 +229,7 @@ class Local_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Local_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public static function __set_state(array $array)
     {

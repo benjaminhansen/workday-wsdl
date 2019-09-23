@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
      * The Sort_Order_Enabled_Data
      * Meta information extracted from the WSDL
      * - documentation: Element containing information about the Orderable Items and their order.
-     * @var \StructType\Sort_Order_Enabled_Order_Data_ContainerType
+     * @var \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType
      */
     public $Sort_Order_Enabled_Data;
     /**
@@ -30,10 +30,10 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
      * Constructor method for Put_Sort_Order_Enabled_RequestType
      * @uses Put_Sort_Order_Enabled_RequestType::setSort_Order_Enabled_Data()
      * @uses Put_Sort_Order_Enabled_RequestType::setVersion()
-     * @param \StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data
+     * @param \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data
      * @param string $version
      */
-    public function __construct(\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data = null, $version = null)
     {
         $this
             ->setSort_Order_Enabled_Data($sort_Order_Enabled_Data)
@@ -41,7 +41,7 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
     }
     /**
      * Get Sort_Order_Enabled_Data value
-     * @return \StructType\Sort_Order_Enabled_Order_Data_ContainerType|null
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType|null
      */
     public function getSort_Order_Enabled_Data()
     {
@@ -49,10 +49,10 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
     }
     /**
      * Set Sort_Order_Enabled_Data value
-     * @param \StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data
-     * @return \StructType\Put_Sort_Order_Enabled_RequestType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_RequestType
      */
-    public function setSort_Order_Enabled_Data(\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data = null)
+    public function setSort_Order_Enabled_Data(\WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $sort_Order_Enabled_Data = null)
     {
         $this->Sort_Order_Enabled_Data = $sort_Order_Enabled_Data;
         return $this;
@@ -68,7 +68,7 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Sort_Order_Enabled_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_RequestType
      */
     public function setVersion($version = null)
     {
@@ -85,7 +85,7 @@ class Put_Sort_Order_Enabled_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Sort_Order_Enabled_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Sort_Order_Enabled_RequestType
      */
     public static function __set_state(array $array)
     {

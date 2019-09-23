@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
      * The Change_Additional_Names_Data
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Worker that the additional name data will be applied to.
-     * @var \StructType\Change_Additional_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
     public $Change_Additional_Names_Data;
     /**
@@ -30,10 +30,10 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
      * Constructor method for Change_Additional_Names_RequestType
      * @uses Change_Additional_Names_RequestType::setChange_Additional_Names_Data()
      * @uses Change_Additional_Names_RequestType::setVersion()
-     * @param \StructType\Change_Additional_Name_DataType $change_Additional_Names_Data
+     * @param \WorkdayWsdl\\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data
      * @param string $version
      */
-    public function __construct(\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data = null, $version = null)
     {
         $this
             ->setChange_Additional_Names_Data($change_Additional_Names_Data)
@@ -41,7 +41,7 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
     }
     /**
      * Get Change_Additional_Names_Data value
-     * @return \StructType\Change_Additional_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType|null
      */
     public function getChange_Additional_Names_Data()
     {
@@ -49,10 +49,10 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
     }
     /**
      * Set Change_Additional_Names_Data value
-     * @param \StructType\Change_Additional_Name_DataType $change_Additional_Names_Data
-     * @return \StructType\Change_Additional_Names_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Names_RequestType
      */
-    public function setChange_Additional_Names_Data(\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data = null)
+    public function setChange_Additional_Names_Data(\WorkdayWsdl\\StructType\Change_Additional_Name_DataType $change_Additional_Names_Data = null)
     {
         $this->Change_Additional_Names_Data = $change_Additional_Names_Data;
         return $this;
@@ -68,7 +68,7 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Additional_Names_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Names_RequestType
      */
     public function setVersion($version = null)
     {
@@ -85,7 +85,7 @@ class Change_Additional_Names_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Additional_Names_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Names_RequestType
      */
     public static function __set_state(array $array)
     {

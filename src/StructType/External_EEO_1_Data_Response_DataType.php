@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class External_EEO_1_Data_Response_DataType extends AbstractStructBase
      * - documentation: External EEO-1 Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_EEO_1_DataType[]
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_DataType[]
      */
     public $External_EEO_1_Data;
     /**
      * Constructor method for External_EEO-1_Data_Response_DataType
      * @uses External_EEO_1_Data_Response_DataType::setExternal_EEO_1_Data()
-     * @param \StructType\External_EEO_1_DataType[] $external_EEO_1_Data
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataType[] $external_EEO_1_Data
      */
     public function __construct(array $external_EEO_1_Data = array())
     {
@@ -51,12 +51,12 @@ class External_EEO_1_Data_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem) {
             // validation for constraint: itemType
-            if (!$external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem instanceof \StructType\External_EEO_1_DataType) {
+            if (!$external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataType) {
                 $invalidValues[] = is_object($external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem) ? get_class($external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem) : sprintf('%s(%s)', gettype($external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem), var_export($external_EEO_1_Data_Response_DataTypeExternal_EEO_1_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_EEO_1_Data property can only contain items of type \StructType\External_EEO_1_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_EEO_1_Data property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,7 +64,7 @@ class External_EEO_1_Data_Response_DataType extends AbstractStructBase
     /**
      * Set external_EEO_Data value
      * @param external_EEO_Data $external_EEO_Data
-     * @return \StructType\External_EEO_1_Data_Response_DataType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Response_DataType
      */
     public function setExternal_EEO_1_Data(array $external_EEO_1_Data = array())
     {
@@ -78,14 +78,14 @@ class External_EEO_1_Data_Response_DataType extends AbstractStructBase
     /**
      * Add item to External_EEO_1_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_EEO_1_DataType $item
-     * @return \StructType\External_EEO_1_Data_Response_DataType
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataType $item
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Response_DataType
      */
-    public function addToExternal_EEO_1_Data(\StructType\External_EEO_1_DataType $item)
+    public function addToExternal_EEO_1_Data(\WorkdayWsdl\\StructType\External_EEO_1_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_EEO_1_DataType) {
-            throw new \InvalidArgumentException(sprintf('The External_EEO_1_Data property can only contain items of type \StructType\External_EEO_1_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataType) {
+            throw new \InvalidArgumentException(sprintf('The External_EEO_1_Data property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_EEO_1_Data[] = $this->{'External_EEO-1_Data'}[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class External_EEO_1_Data_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_EEO_1_Data_Response_DataType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_Response_DataType
      */
     public static function __set_state(array $array)
     {

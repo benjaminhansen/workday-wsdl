@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_Skill_Source_CategoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
      * Constructor method for Person_Skill_Source_CategoryObjectType
      * @uses Person_Skill_Source_CategoryObjectType::setID()
      * @uses Person_Skill_Source_CategoryObjectType::setDescriptor()
-     * @param \StructType\Person_Skill_Source_CategoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Person_Skill_Source_CategoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Skill_Source_CategoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$person_Skill_Source_CategoryObjectTypeIDItem instanceof \StructType\Person_Skill_Source_CategoryObjectIDType) {
+            if (!$person_Skill_Source_CategoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType) {
                 $invalidValues[] = is_object($person_Skill_Source_CategoryObjectTypeIDItem) ? get_class($person_Skill_Source_CategoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($person_Skill_Source_CategoryObjectTypeIDItem), var_export($person_Skill_Source_CategoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Person_Skill_Source_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Skill_Source_CategoryObjectIDType[] $iD
-     * @return \StructType\Person_Skill_Source_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Skill_Source_CategoryObjectIDType $item
-     * @return \StructType\Person_Skill_Source_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
-    public function addToID(\StructType\Person_Skill_Source_CategoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_Skill_Source_CategoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Person_Skill_Source_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Person_Skill_Source_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Person_Skill_Source_CategoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Skill_Source_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
     public static function __set_state(array $array)
     {

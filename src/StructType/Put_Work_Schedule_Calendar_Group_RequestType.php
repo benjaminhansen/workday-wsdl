@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Work Schedule Calendar Group.
      * - minOccurs: 0
-     * @var \StructType\Work_Schedule_Calendar_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType
      */
     public $Work_Schedule_Calendar_Group_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Instance data for Work Schedule Calendar Group.
      * - minOccurs: 0
-     * @var \StructType\Work_Schedule_Calendar_Group_DataType
+     * @var \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType
      */
     public $Work_Schedule_Calendar_Group_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
      * @uses Put_Work_Schedule_Calendar_Group_RequestType::setWork_Schedule_Calendar_Group_Data()
      * @uses Put_Work_Schedule_Calendar_Group_RequestType::setAdd_Only()
      * @uses Put_Work_Schedule_Calendar_Group_RequestType::setVersion()
-     * @param \StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference
-     * @param \StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference = null, \StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference = null, \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setWork_Schedule_Calendar_Group_Reference($work_Schedule_Calendar_Group_Reference)
@@ -63,7 +63,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
     }
     /**
      * Get Work_Schedule_Calendar_Group_Reference value
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType|null
      */
     public function getWork_Schedule_Calendar_Group_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
     }
     /**
      * Set Work_Schedule_Calendar_Group_Reference value
-     * @param \StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference
-     * @return \StructType\Put_Work_Schedule_Calendar_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Work_Schedule_Calendar_Group_RequestType
      */
-    public function setWork_Schedule_Calendar_Group_Reference(\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference = null)
+    public function setWork_Schedule_Calendar_Group_Reference(\WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType $work_Schedule_Calendar_Group_Reference = null)
     {
         $this->Work_Schedule_Calendar_Group_Reference = $work_Schedule_Calendar_Group_Reference;
         return $this;
     }
     /**
      * Get Work_Schedule_Calendar_Group_Data value
-     * @return \StructType\Work_Schedule_Calendar_Group_DataType|null
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType|null
      */
     public function getWork_Schedule_Calendar_Group_Data()
     {
@@ -89,10 +89,10 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
     }
     /**
      * Set Work_Schedule_Calendar_Group_Data value
-     * @param \StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data
-     * @return \StructType\Put_Work_Schedule_Calendar_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data
+     * @return \WorkdayWsdl\\StructType\Put_Work_Schedule_Calendar_Group_RequestType
      */
-    public function setWork_Schedule_Calendar_Group_Data(\StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data = null)
+    public function setWork_Schedule_Calendar_Group_Data(\WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_DataType $work_Schedule_Calendar_Group_Data = null)
     {
         $this->Work_Schedule_Calendar_Group_Data = $work_Schedule_Calendar_Group_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Work_Schedule_Calendar_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Schedule_Calendar_Group_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Work_Schedule_Calendar_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Schedule_Calendar_Group_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Work_Schedule_Calendar_Group_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Work_Schedule_Calendar_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Schedule_Calendar_Group_RequestType
      */
     public static function __set_state(array $array)
     {

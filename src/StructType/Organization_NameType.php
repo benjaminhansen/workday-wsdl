@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Organization_NameType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Organization Reference
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_Reference;
     /**
@@ -26,17 +26,17 @@ class Organization_NameType extends AbstractStructBase
      * - documentation: Organization Name Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Organization_Name_DataType[]
      */
     public $Organization_Name_Data;
     /**
      * Constructor method for Organization_NameType
      * @uses Organization_NameType::setOrganization_Reference()
      * @uses Organization_NameType::setOrganization_Name_Data()
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @param \StructType\Organization_Name_DataType[] $organization_Name_Data
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Name_DataType[] $organization_Name_Data
      */
-    public function __construct(\StructType\OrganizationObjectType $organization_Reference = null, array $organization_Name_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null, array $organization_Name_Data = array())
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -44,7 +44,7 @@ class Organization_NameType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_Reference()
     {
@@ -52,17 +52,17 @@ class Organization_NameType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @return \StructType\Organization_NameType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_NameType
      */
-    public function setOrganization_Reference(\StructType\OrganizationObjectType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Name_Data value
-     * @return \StructType\Organization_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType[]|null
      */
     public function getOrganization_Name_Data()
     {
@@ -80,12 +80,12 @@ class Organization_NameType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_NameTypeOrganization_Name_DataItem) {
             // validation for constraint: itemType
-            if (!$organization_NameTypeOrganization_Name_DataItem instanceof \StructType\Organization_Name_DataType) {
+            if (!$organization_NameTypeOrganization_Name_DataItem instanceof \WorkdayWsdl\\StructType\Organization_Name_DataType) {
                 $invalidValues[] = is_object($organization_NameTypeOrganization_Name_DataItem) ? get_class($organization_NameTypeOrganization_Name_DataItem) : sprintf('%s(%s)', gettype($organization_NameTypeOrganization_Name_DataItem), var_export($organization_NameTypeOrganization_Name_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Name_Data property can only contain items of type \StructType\Organization_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Organization_NameType extends AbstractStructBase
     /**
      * Set Organization_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Name_DataType[] $organization_Name_Data
-     * @return \StructType\Organization_NameType
+     * @param \WorkdayWsdl\\StructType\Organization_Name_DataType[] $organization_Name_Data
+     * @return \WorkdayWsdl\\StructType\Organization_NameType
      */
     public function setOrganization_Name_Data(array $organization_Name_Data = array())
     {
@@ -108,14 +108,14 @@ class Organization_NameType extends AbstractStructBase
     /**
      * Add item to Organization_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Name_DataType $item
-     * @return \StructType\Organization_NameType
+     * @param \WorkdayWsdl\\StructType\Organization_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Organization_NameType
      */
-    public function addToOrganization_Name_Data(\StructType\Organization_Name_DataType $item)
+    public function addToOrganization_Name_Data(\WorkdayWsdl\\StructType\Organization_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Name_Data property can only contain items of type \StructType\Organization_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Name_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Organization_NameType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_NameType
+     * @return \WorkdayWsdl\\StructType\Organization_NameType
      */
     public static function __set_state(array $array)
     {

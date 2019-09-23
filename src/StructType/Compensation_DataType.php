@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Compensation_DataType extends AbstractStructBase
      * The Summary_Compensation_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Compensation_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\Compensation_Summary_DataType
      */
     public $Summary_Compensation_Data;
     /**
@@ -33,9 +33,9 @@ class Compensation_DataType extends AbstractStructBase
      * @uses Compensation_DataType::setEffective_Date()
      * @uses Compensation_DataType::setSummary_Compensation_Data()
      * @param string $effective_Date
-     * @param \StructType\Compensation_Summary_DataType $summary_Compensation_Data
+     * @param \WorkdayWsdl\\StructType\Compensation_Summary_DataType $summary_Compensation_Data
      */
-    public function __construct($effective_Date = null, \StructType\Compensation_Summary_DataType $summary_Compensation_Data = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\Compensation_Summary_DataType $summary_Compensation_Data = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -52,7 +52,7 @@ class Compensation_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Compensation_DataType
+     * @return \WorkdayWsdl\\StructType\Compensation_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -65,7 +65,7 @@ class Compensation_DataType extends AbstractStructBase
     }
     /**
      * Get Summary_Compensation_Data value
-     * @return \StructType\Compensation_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Summary_DataType|null
      */
     public function getSummary_Compensation_Data()
     {
@@ -73,10 +73,10 @@ class Compensation_DataType extends AbstractStructBase
     }
     /**
      * Set Summary_Compensation_Data value
-     * @param \StructType\Compensation_Summary_DataType $summary_Compensation_Data
-     * @return \StructType\Compensation_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_Summary_DataType $summary_Compensation_Data
+     * @return \WorkdayWsdl\\StructType\Compensation_DataType
      */
-    public function setSummary_Compensation_Data(\StructType\Compensation_Summary_DataType $summary_Compensation_Data = null)
+    public function setSummary_Compensation_Data(\WorkdayWsdl\\StructType\Compensation_Summary_DataType $summary_Compensation_Data = null)
     {
         $this->Summary_Compensation_Data = $summary_Compensation_Data;
         return $this;
@@ -87,7 +87,7 @@ class Compensation_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_DataType
+     * @return \WorkdayWsdl\\StructType\Compensation_DataType
      */
     public static function __set_state(array $array)
     {

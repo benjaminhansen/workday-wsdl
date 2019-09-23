@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
 {
     /**
      * The Previous_System_Job_History_Data
-     * @var \StructType\Previous_System_Job_HistoryType
+     * @var \WorkdayWsdl\\StructType\Previous_System_Job_HistoryType
      */
     public $Previous_System_Job_History_Data;
     /**
@@ -28,10 +28,10 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
      * Constructor method for Put_Previous_System_Job_History_RequestType
      * @uses Put_Previous_System_Job_History_RequestType::setPrevious_System_Job_History_Data()
      * @uses Put_Previous_System_Job_History_RequestType::setVersion()
-     * @param \StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data
+     * @param \WorkdayWsdl\\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data
      * @param string $version
      */
-    public function __construct(\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data = null, $version = null)
     {
         $this
             ->setPrevious_System_Job_History_Data($previous_System_Job_History_Data)
@@ -39,7 +39,7 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
     }
     /**
      * Get Previous_System_Job_History_Data value
-     * @return \StructType\Previous_System_Job_HistoryType|null
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_HistoryType|null
      */
     public function getPrevious_System_Job_History_Data()
     {
@@ -47,10 +47,10 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
     }
     /**
      * Set Previous_System_Job_History_Data value
-     * @param \StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data
-     * @return \StructType\Put_Previous_System_Job_History_RequestType
+     * @param \WorkdayWsdl\\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data
+     * @return \WorkdayWsdl\\StructType\Put_Previous_System_Job_History_RequestType
      */
-    public function setPrevious_System_Job_History_Data(\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data = null)
+    public function setPrevious_System_Job_History_Data(\WorkdayWsdl\\StructType\Previous_System_Job_HistoryType $previous_System_Job_History_Data = null)
     {
         $this->Previous_System_Job_History_Data = $previous_System_Job_History_Data;
         return $this;
@@ -66,7 +66,7 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Previous_System_Job_History_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Previous_System_Job_History_RequestType
      */
     public function setVersion($version = null)
     {
@@ -83,7 +83,7 @@ class Put_Previous_System_Job_History_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Previous_System_Job_History_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Previous_System_Job_History_RequestType
      */
     public static function __set_state(array $array)
     {

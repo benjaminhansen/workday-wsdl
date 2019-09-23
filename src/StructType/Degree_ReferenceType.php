@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Degree_ReferenceType extends AbstractStructBase
     /**
      * Set Degree_Name value
      * @param string $degree_Name
-     * @return \StructType\Degree_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Degree_ReferenceType
      */
     public function setDegree_Name($degree_Name = null)
     {
@@ -58,7 +58,7 @@ class Degree_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Degree_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Degree_ReferenceType
      */
     public static function __set_state(array $array)
     {

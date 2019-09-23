@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Training_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Enter the Training Type ID specified in Training Types report.
      * - minOccurs: 0
-     * @var \StructType\Training_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Training_TypeObjectType
      */
     public $Training_Type_Reference;
     /**
@@ -87,11 +87,11 @@ class Training_Achievement_DataType extends AbstractStructBase
      * @param bool $remove_Training
      * @param string $training
      * @param string $description
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
      * @param string $completion_Date
      * @param string $training_Duration
      */
-    public function __construct($training_ID = null, $remove_Training = null, $training = null, $description = null, \StructType\Training_TypeObjectType $training_Type_Reference = null, $completion_Date = null, $training_Duration = null)
+    public function __construct($training_ID = null, $remove_Training = null, $training = null, $description = null, \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null, $completion_Date = null, $training_Duration = null)
     {
         $this
             ->setTraining_ID($training_ID)
@@ -113,7 +113,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Training_ID value
      * @param string $training_ID
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setTraining_ID($training_ID = null)
     {
@@ -135,7 +135,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Remove_Training value
      * @param bool $remove_Training
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setRemove_Training($remove_Training = null)
     {
@@ -157,7 +157,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Training value
      * @param string $training
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setTraining($training = null)
     {
@@ -179,7 +179,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setDescription($description = null)
     {
@@ -192,7 +192,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Training_Type_Reference value
-     * @return \StructType\Training_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Training_TypeObjectType|null
      */
     public function getTraining_Type_Reference()
     {
@@ -200,10 +200,10 @@ class Training_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Training_Type_Reference value
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
-     * @return \StructType\Training_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
-    public function setTraining_Type_Reference(\StructType\Training_TypeObjectType $training_Type_Reference = null)
+    public function setTraining_Type_Reference(\WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null)
     {
         $this->Training_Type_Reference = $training_Type_Reference;
         return $this;
@@ -219,7 +219,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Completion_Date value
      * @param string $completion_Date
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setCompletion_Date($completion_Date = null)
     {
@@ -241,7 +241,7 @@ class Training_Achievement_DataType extends AbstractStructBase
     /**
      * Set Training_Duration value
      * @param string $training_Duration
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public function setTraining_Duration($training_Duration = null)
     {
@@ -258,7 +258,7 @@ class Training_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Training_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Provisioning_Group_AssignmentType[]
+     * @var \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType[]
      */
     public $Provisioning_Group_Assignment;
     /**
      * Constructor method for Provisioning_Group_Assignment_Response_DataType
      * @uses Provisioning_Group_Assignment_Response_DataType::setProvisioning_Group_Assignment()
-     * @param \StructType\Provisioning_Group_AssignmentType[] $provisioning_Group_Assignment
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType[] $provisioning_Group_Assignment
      */
     public function __construct(array $provisioning_Group_Assignment = array())
     {
@@ -32,7 +32,7 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Provisioning_Group_Assignment value
-     * @return \StructType\Provisioning_Group_AssignmentType[]|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType[]|null
      */
     public function getProvisioning_Group_Assignment()
     {
@@ -50,12 +50,12 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem) {
             // validation for constraint: itemType
-            if (!$provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem instanceof \StructType\Provisioning_Group_AssignmentType) {
+            if (!$provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem instanceof \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType) {
                 $invalidValues[] = is_object($provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem) ? get_class($provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem) : sprintf('%s(%s)', gettype($provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem), var_export($provisioning_Group_Assignment_Response_DataTypeProvisioning_Group_AssignmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Provisioning_Group_Assignment property can only contain items of type \StructType\Provisioning_Group_AssignmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Provisioning_Group_Assignment property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
     /**
      * Set Provisioning_Group_Assignment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_Group_AssignmentType[] $provisioning_Group_Assignment
-     * @return \StructType\Provisioning_Group_Assignment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType[] $provisioning_Group_Assignment
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_DataType
      */
     public function setProvisioning_Group_Assignment(array $provisioning_Group_Assignment = array())
     {
@@ -78,14 +78,14 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
     /**
      * Add item to Provisioning_Group_Assignment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_Group_AssignmentType $item
-     * @return \StructType\Provisioning_Group_Assignment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType $item
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_DataType
      */
-    public function addToProvisioning_Group_Assignment(\StructType\Provisioning_Group_AssignmentType $item)
+    public function addToProvisioning_Group_Assignment(\WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Provisioning_Group_AssignmentType) {
-            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Assignment property can only contain items of type \StructType\Provisioning_Group_AssignmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType) {
+            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Assignment property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_Group_AssignmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Provisioning_Group_Assignment[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Provisioning_Group_Assignment_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_Assignment_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_Response_DataType
      */
     public static function __set_state(array $array)
     {

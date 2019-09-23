@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Related_PersonType extends AbstractStructBase
      * - documentation: A reference to the related person relationship.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Related_Person_RelationshipObjectType[]
+     * @var \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[]
      */
     public $Related_Person_Relationship_Reference;
     /**
@@ -26,14 +26,14 @@ class Related_PersonType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Related Person.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Person_Reference;
     /**
      * The Personal_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Personal_Information_DataType
      */
     public $Personal_Data;
     /**
@@ -41,7 +41,7 @@ class Related_PersonType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Dependent data.
      * - minOccurs: 0
-     * @var \StructType\DependentType
+     * @var \WorkdayWsdl\\StructType\DependentType
      */
     public $Dependent;
     /**
@@ -49,7 +49,7 @@ class Related_PersonType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Beneficiary data.
      * - minOccurs: 0
-     * @var \StructType\BeneficiaryType
+     * @var \WorkdayWsdl\\StructType\BeneficiaryType
      */
     public $Beneficiary;
     /**
@@ -57,7 +57,7 @@ class Related_PersonType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Emergency Contact data.
      * - minOccurs: 0
-     * @var \StructType\Old_Emergency_ContactType
+     * @var \WorkdayWsdl\\StructType\Old_Emergency_ContactType
      */
     public $Emergency_Contact;
     /**
@@ -68,14 +68,14 @@ class Related_PersonType extends AbstractStructBase
      * @uses Related_PersonType::setDependent()
      * @uses Related_PersonType::setBeneficiary()
      * @uses Related_PersonType::setEmergency_Contact()
-     * @param \StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
-     * @param \StructType\Unique_IdentifierObjectType $person_Reference
-     * @param \StructType\Personal_Information_DataType $personal_Data
-     * @param \StructType\DependentType $dependent
-     * @param \StructType\BeneficiaryType $beneficiary
-     * @param \StructType\Old_Emergency_ContactType $emergency_Contact
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Personal_Information_DataType $personal_Data
+     * @param \WorkdayWsdl\\StructType\DependentType $dependent
+     * @param \WorkdayWsdl\\StructType\BeneficiaryType $beneficiary
+     * @param \WorkdayWsdl\\StructType\Old_Emergency_ContactType $emergency_Contact
      */
-    public function __construct(array $related_Person_Relationship_Reference = array(), \StructType\Unique_IdentifierObjectType $person_Reference = null, \StructType\Personal_Information_DataType $personal_Data = null, \StructType\DependentType $dependent = null, \StructType\BeneficiaryType $beneficiary = null, \StructType\Old_Emergency_ContactType $emergency_Contact = null)
+    public function __construct(array $related_Person_Relationship_Reference = array(), \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Personal_Information_DataType $personal_Data = null, \WorkdayWsdl\\StructType\DependentType $dependent = null, \WorkdayWsdl\\StructType\BeneficiaryType $beneficiary = null, \WorkdayWsdl\\StructType\Old_Emergency_ContactType $emergency_Contact = null)
     {
         $this
             ->setRelated_Person_Relationship_Reference($related_Person_Relationship_Reference)
@@ -87,7 +87,7 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Get Related_Person_Relationship_Reference value
-     * @return \StructType\Related_Person_RelationshipObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[]|null
      */
     public function getRelated_Person_Relationship_Reference()
     {
@@ -105,12 +105,12 @@ class Related_PersonType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $related_PersonTypeRelated_Person_Relationship_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$related_PersonTypeRelated_Person_Relationship_ReferenceItem instanceof \StructType\Related_Person_RelationshipObjectType) {
+            if (!$related_PersonTypeRelated_Person_Relationship_ReferenceItem instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType) {
                 $invalidValues[] = is_object($related_PersonTypeRelated_Person_Relationship_ReferenceItem) ? get_class($related_PersonTypeRelated_Person_Relationship_ReferenceItem) : sprintf('%s(%s)', gettype($related_PersonTypeRelated_Person_Relationship_ReferenceItem), var_export($related_PersonTypeRelated_Person_Relationship_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Related_Person_Relationship_Reference property can only contain items of type \StructType\Related_Person_RelationshipObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Related_Person_Relationship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -118,8 +118,8 @@ class Related_PersonType extends AbstractStructBase
     /**
      * Set Related_Person_Relationship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
     public function setRelated_Person_Relationship_Reference(array $related_Person_Relationship_Reference = array())
     {
@@ -133,21 +133,21 @@ class Related_PersonType extends AbstractStructBase
     /**
      * Add item to Related_Person_Relationship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectType $item
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $item
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function addToRelated_Person_Relationship_Reference(\StructType\Related_Person_RelationshipObjectType $item)
+    public function addToRelated_Person_Relationship_Reference(\WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Related_Person_RelationshipObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Related_Person_Relationship_Reference property can only contain items of type \StructType\Related_Person_RelationshipObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Related_Person_Relationship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Related_Person_Relationship_Reference[] = $item;
         return $this;
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -155,17 +155,17 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $person_Reference
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function setPerson_Reference(\StructType\Unique_IdentifierObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Personal_Data value
-     * @return \StructType\Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Personal_Information_DataType|null
      */
     public function getPersonal_Data()
     {
@@ -173,17 +173,17 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Set Personal_Data value
-     * @param \StructType\Personal_Information_DataType $personal_Data
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Personal_Information_DataType $personal_Data
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function setPersonal_Data(\StructType\Personal_Information_DataType $personal_Data = null)
+    public function setPersonal_Data(\WorkdayWsdl\\StructType\Personal_Information_DataType $personal_Data = null)
     {
         $this->Personal_Data = $personal_Data;
         return $this;
     }
     /**
      * Get Dependent value
-     * @return \StructType\DependentType|null
+     * @return \WorkdayWsdl\\StructType\DependentType|null
      */
     public function getDependent()
     {
@@ -191,17 +191,17 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Set Dependent value
-     * @param \StructType\DependentType $dependent
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\DependentType $dependent
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function setDependent(\StructType\DependentType $dependent = null)
+    public function setDependent(\WorkdayWsdl\\StructType\DependentType $dependent = null)
     {
         $this->Dependent = $dependent;
         return $this;
     }
     /**
      * Get Beneficiary value
-     * @return \StructType\BeneficiaryType|null
+     * @return \WorkdayWsdl\\StructType\BeneficiaryType|null
      */
     public function getBeneficiary()
     {
@@ -209,17 +209,17 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Set Beneficiary value
-     * @param \StructType\BeneficiaryType $beneficiary
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\BeneficiaryType $beneficiary
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function setBeneficiary(\StructType\BeneficiaryType $beneficiary = null)
+    public function setBeneficiary(\WorkdayWsdl\\StructType\BeneficiaryType $beneficiary = null)
     {
         $this->Beneficiary = $beneficiary;
         return $this;
     }
     /**
      * Get Emergency_Contact value
-     * @return \StructType\Old_Emergency_ContactType|null
+     * @return \WorkdayWsdl\\StructType\Old_Emergency_ContactType|null
      */
     public function getEmergency_Contact()
     {
@@ -227,10 +227,10 @@ class Related_PersonType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact value
-     * @param \StructType\Old_Emergency_ContactType $emergency_Contact
-     * @return \StructType\Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Old_Emergency_ContactType $emergency_Contact
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
-    public function setEmergency_Contact(\StructType\Old_Emergency_ContactType $emergency_Contact = null)
+    public function setEmergency_Contact(\WorkdayWsdl\\StructType\Old_Emergency_ContactType $emergency_Contact = null)
     {
         $this->Emergency_Contact = $emergency_Contact;
         return $this;
@@ -241,7 +241,7 @@ class Related_PersonType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Related_PersonType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class Transaction_Log_DataType extends AbstractStructBase
      * - documentation: References to the transaction log types of the transaction.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Transaction_Log_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType[]
      */
     public $Transaction_Log_Type_Reference;
     /**
@@ -54,7 +54,7 @@ class Transaction_Log_DataType extends AbstractStructBase
      * - documentation: References to the transaction targets of the transaction.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Event_TargetObjectType[]
+     * @var \WorkdayWsdl\\StructType\Event_TargetObjectType[]
      */
     public $Transaction_Target_Reference;
     /**
@@ -87,8 +87,8 @@ class Transaction_Log_DataType extends AbstractStructBase
      * @param string $transaction_Log_Description
      * @param string $transaction_Effective_Moment
      * @param string $transaction_Entry_Moment
-     * @param \StructType\Transaction_Log_TypeObjectType[] $transaction_Log_Type_Reference
-     * @param \StructType\Event_TargetObjectType[] $transaction_Target_Reference
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType[] $transaction_Log_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectType[] $transaction_Target_Reference
      * @param bool $is_Rescind_Or_Rescinded
      * @param bool $is_Correction_Or_Corrected
      */
@@ -114,7 +114,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Transaction_Log_Description value
      * @param string $transaction_Log_Description
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setTransaction_Log_Description($transaction_Log_Description = null)
     {
@@ -136,7 +136,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Transaction_Effective_Moment value
      * @param string $transaction_Effective_Moment
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setTransaction_Effective_Moment($transaction_Effective_Moment = null)
     {
@@ -158,7 +158,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Transaction_Entry_Moment value
      * @param string $transaction_Entry_Moment
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setTransaction_Entry_Moment($transaction_Entry_Moment = null)
     {
@@ -171,7 +171,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     }
     /**
      * Get Transaction_Log_Type_Reference value
-     * @return \StructType\Transaction_Log_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType[]|null
      */
     public function getTransaction_Log_Type_Reference()
     {
@@ -189,12 +189,12 @@ class Transaction_Log_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem instanceof \StructType\Transaction_Log_TypeObjectType) {
+            if (!$transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType) {
                 $invalidValues[] = is_object($transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem) ? get_class($transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem) : sprintf('%s(%s)', gettype($transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem), var_export($transaction_Log_DataTypeTransaction_Log_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Transaction_Log_Type_Reference property can only contain items of type \StructType\Transaction_Log_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Transaction_Log_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -202,8 +202,8 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Transaction_Log_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_TypeObjectType[] $transaction_Log_Type_Reference
-     * @return \StructType\Transaction_Log_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType[] $transaction_Log_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setTransaction_Log_Type_Reference(array $transaction_Log_Type_Reference = array())
     {
@@ -217,21 +217,21 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Add item to Transaction_Log_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_TypeObjectType $item
-     * @return \StructType\Transaction_Log_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
-    public function addToTransaction_Log_Type_Reference(\StructType\Transaction_Log_TypeObjectType $item)
+    public function addToTransaction_Log_Type_Reference(\WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Transaction_Log_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Type_Reference property can only contain items of type \StructType\Transaction_Log_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Transaction_Log_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Transaction_Target_Reference value
-     * @return \StructType\Event_TargetObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectType[]|null
      */
     public function getTransaction_Target_Reference()
     {
@@ -249,12 +249,12 @@ class Transaction_Log_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $transaction_Log_DataTypeTransaction_Target_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$transaction_Log_DataTypeTransaction_Target_ReferenceItem instanceof \StructType\Event_TargetObjectType) {
+            if (!$transaction_Log_DataTypeTransaction_Target_ReferenceItem instanceof \WorkdayWsdl\\StructType\Event_TargetObjectType) {
                 $invalidValues[] = is_object($transaction_Log_DataTypeTransaction_Target_ReferenceItem) ? get_class($transaction_Log_DataTypeTransaction_Target_ReferenceItem) : sprintf('%s(%s)', gettype($transaction_Log_DataTypeTransaction_Target_ReferenceItem), var_export($transaction_Log_DataTypeTransaction_Target_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Transaction_Target_Reference property can only contain items of type \StructType\Event_TargetObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Transaction_Target_Reference property can only contain items of type \WorkdayWsdl\\StructType\Event_TargetObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -262,8 +262,8 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Transaction_Target_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_TargetObjectType[] $transaction_Target_Reference
-     * @return \StructType\Transaction_Log_DataType
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectType[] $transaction_Target_Reference
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setTransaction_Target_Reference(array $transaction_Target_Reference = array())
     {
@@ -277,14 +277,14 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Add item to Transaction_Target_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_TargetObjectType $item
-     * @return \StructType\Transaction_Log_DataType
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectType $item
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
-    public function addToTransaction_Target_Reference(\StructType\Event_TargetObjectType $item)
+    public function addToTransaction_Target_Reference(\WorkdayWsdl\\StructType\Event_TargetObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Event_TargetObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Transaction_Target_Reference property can only contain items of type \StructType\Event_TargetObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Event_TargetObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Transaction_Target_Reference property can only contain items of type \WorkdayWsdl\\StructType\Event_TargetObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Transaction_Target_Reference[] = $item;
         return $this;
@@ -300,7 +300,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Is_Rescind_Or_Rescinded value
      * @param bool $is_Rescind_Or_Rescinded
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setIs_Rescind_Or_Rescinded($is_Rescind_Or_Rescinded = null)
     {
@@ -322,7 +322,7 @@ class Transaction_Log_DataType extends AbstractStructBase
     /**
      * Set Is_Correction_Or_Corrected value
      * @param bool $is_Correction_Or_Corrected
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public function setIs_Correction_Or_Corrected($is_Correction_Or_Corrected = null)
     {
@@ -339,7 +339,7 @@ class Transaction_Log_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transaction_Log_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public static function __set_state(array $array)
     {

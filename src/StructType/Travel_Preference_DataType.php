@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Travel_Preference_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to whether an employee is willing to travel as part of their job. The only values allowed are: Yes, No, and Maybe.
      * - minOccurs: 0
-     * @var \StructType\Mobility_ChoiceObjectType
+     * @var \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType
      */
     public $Willing_to_Travel_Reference;
     /**
@@ -25,7 +25,7 @@ class Travel_Preference_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the amount of time that the employee is willing to travel for as part of their job. This is only applicable when the employee is willing to travel (Willing to Travel = Yes or Maybe).
      * - minOccurs: 0
-     * @var \StructType\Travel_AmountObjectType
+     * @var \WorkdayWsdl\\StructType\Travel_AmountObjectType
      */
     public $Travel_Amount_Reference;
     /**
@@ -42,11 +42,11 @@ class Travel_Preference_DataType extends AbstractStructBase
      * @uses Travel_Preference_DataType::setWilling_to_Travel_Reference()
      * @uses Travel_Preference_DataType::setTravel_Amount_Reference()
      * @uses Travel_Preference_DataType::setTravel_Additional_Information()
-     * @param \StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference
-     * @param \StructType\Travel_AmountObjectType $travel_Amount_Reference
+     * @param \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference
+     * @param \WorkdayWsdl\\StructType\Travel_AmountObjectType $travel_Amount_Reference
      * @param string $travel_Additional_Information
      */
-    public function __construct(\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference = null, \StructType\Travel_AmountObjectType $travel_Amount_Reference = null, $travel_Additional_Information = null)
+    public function __construct(\WorkdayWsdl\\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference = null, \WorkdayWsdl\\StructType\Travel_AmountObjectType $travel_Amount_Reference = null, $travel_Additional_Information = null)
     {
         $this
             ->setWilling_to_Travel_Reference($willing_to_Travel_Reference)
@@ -55,7 +55,7 @@ class Travel_Preference_DataType extends AbstractStructBase
     }
     /**
      * Get Willing_to_Travel_Reference value
-     * @return \StructType\Mobility_ChoiceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType|null
      */
     public function getWilling_to_Travel_Reference()
     {
@@ -63,17 +63,17 @@ class Travel_Preference_DataType extends AbstractStructBase
     }
     /**
      * Set Willing_to_Travel_Reference value
-     * @param \StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference
-     * @return \StructType\Travel_Preference_DataType
+     * @param \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference
+     * @return \WorkdayWsdl\\StructType\Travel_Preference_DataType
      */
-    public function setWilling_to_Travel_Reference(\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference = null)
+    public function setWilling_to_Travel_Reference(\WorkdayWsdl\\StructType\Mobility_ChoiceObjectType $willing_to_Travel_Reference = null)
     {
         $this->Willing_to_Travel_Reference = $willing_to_Travel_Reference;
         return $this;
     }
     /**
      * Get Travel_Amount_Reference value
-     * @return \StructType\Travel_AmountObjectType|null
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectType|null
      */
     public function getTravel_Amount_Reference()
     {
@@ -81,10 +81,10 @@ class Travel_Preference_DataType extends AbstractStructBase
     }
     /**
      * Set Travel_Amount_Reference value
-     * @param \StructType\Travel_AmountObjectType $travel_Amount_Reference
-     * @return \StructType\Travel_Preference_DataType
+     * @param \WorkdayWsdl\\StructType\Travel_AmountObjectType $travel_Amount_Reference
+     * @return \WorkdayWsdl\\StructType\Travel_Preference_DataType
      */
-    public function setTravel_Amount_Reference(\StructType\Travel_AmountObjectType $travel_Amount_Reference = null)
+    public function setTravel_Amount_Reference(\WorkdayWsdl\\StructType\Travel_AmountObjectType $travel_Amount_Reference = null)
     {
         $this->Travel_Amount_Reference = $travel_Amount_Reference;
         return $this;
@@ -100,7 +100,7 @@ class Travel_Preference_DataType extends AbstractStructBase
     /**
      * Set Travel_Additional_Information value
      * @param string $travel_Additional_Information
-     * @return \StructType\Travel_Preference_DataType
+     * @return \WorkdayWsdl\\StructType\Travel_Preference_DataType
      */
     public function setTravel_Additional_Information($travel_Additional_Information = null)
     {
@@ -117,7 +117,7 @@ class Travel_Preference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Travel_Preference_DataType
+     * @return \WorkdayWsdl\\StructType\Travel_Preference_DataType
      */
     public static function __set_state(array $array)
     {

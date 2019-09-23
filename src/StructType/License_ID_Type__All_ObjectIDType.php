@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class License_ID_Type__All_ObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\License_ID_Type__All_ReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\License_ID_Type__All_ReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\License_ID_Type__All_ReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\License_ID_Type__All_ReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\License_ID_Type__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\License_ID_Type__All_ReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\License_ID_Type__All_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\License_ID_Type__All_ReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\License_ID_Type__All_ReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\License_ID_Type__All_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\License_ID_Type__All_ReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class License_ID_Type__All_ObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\License_ID_Type__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class License_ID_Type__All_ObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\License_ID_Type__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\License_ID_Type__All_ObjectIDType
      */
     public static function __set_state(array $array)
     {

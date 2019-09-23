@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class Union_Membership_DataType extends AbstractStructBase
      * The Membership_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the types of membership, such as regular, retired, pending, or dues only.
-     * @var \StructType\Union_Membership_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType
      */
     public $Membership_Type_Reference;
     /**
@@ -41,7 +41,7 @@ class Union_Membership_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the related position for the union membership. Can either be filled with a position or a position group.
      * - minOccurs: 0
-     * @var \StructType\Staffing_InterfaceObjectType
+     * @var \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType
      */
     public $Related_Position_Reference;
     /**
@@ -62,11 +62,11 @@ class Union_Membership_DataType extends AbstractStructBase
      * @uses Union_Membership_DataType::setNotes()
      * @param string $start_Date
      * @param string $end_Date
-     * @param \StructType\Union_Membership_TypeObjectType $membership_Type_Reference
-     * @param \StructType\Staffing_InterfaceObjectType $related_Position_Reference
+     * @param \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType $membership_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType $related_Position_Reference
      * @param string $notes
      */
-    public function __construct($start_Date = null, $end_Date = null, \StructType\Union_Membership_TypeObjectType $membership_Type_Reference = null, \StructType\Staffing_InterfaceObjectType $related_Position_Reference = null, $notes = null)
+    public function __construct($start_Date = null, $end_Date = null, \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType $membership_Type_Reference = null, \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType $related_Position_Reference = null, $notes = null)
     {
         $this
             ->setStart_Date($start_Date)
@@ -86,7 +86,7 @@ class Union_Membership_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Union_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -108,7 +108,7 @@ class Union_Membership_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Union_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -121,7 +121,7 @@ class Union_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Membership_Type_Reference value
-     * @return \StructType\Union_Membership_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType|null
      */
     public function getMembership_Type_Reference()
     {
@@ -129,17 +129,17 @@ class Union_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Membership_Type_Reference value
-     * @param \StructType\Union_Membership_TypeObjectType $membership_Type_Reference
-     * @return \StructType\Union_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType $membership_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
-    public function setMembership_Type_Reference(\StructType\Union_Membership_TypeObjectType $membership_Type_Reference = null)
+    public function setMembership_Type_Reference(\WorkdayWsdl\\StructType\Union_Membership_TypeObjectType $membership_Type_Reference = null)
     {
         $this->Membership_Type_Reference = $membership_Type_Reference;
         return $this;
     }
     /**
      * Get Related_Position_Reference value
-     * @return \StructType\Staffing_InterfaceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType|null
      */
     public function getRelated_Position_Reference()
     {
@@ -147,10 +147,10 @@ class Union_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Related_Position_Reference value
-     * @param \StructType\Staffing_InterfaceObjectType $related_Position_Reference
-     * @return \StructType\Union_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType $related_Position_Reference
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
-    public function setRelated_Position_Reference(\StructType\Staffing_InterfaceObjectType $related_Position_Reference = null)
+    public function setRelated_Position_Reference(\WorkdayWsdl\\StructType\Staffing_InterfaceObjectType $related_Position_Reference = null)
     {
         $this->Related_Position_Reference = $related_Position_Reference;
         return $this;
@@ -166,7 +166,7 @@ class Union_Membership_DataType extends AbstractStructBase
     /**
      * Set Notes value
      * @param string $notes
-     * @return \StructType\Union_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
     public function setNotes($notes = null)
     {
@@ -183,7 +183,7 @@ class Union_Membership_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Union_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType
      */
     public static function __set_state(array $array)
     {

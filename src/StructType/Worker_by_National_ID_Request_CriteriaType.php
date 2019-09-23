@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * - choice: National_ID_Type_Reference | Country_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\National_ID_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
     public $National_ID_Type_Reference;
     /**
@@ -38,7 +38,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * - choice: National_ID_Type_Reference | Country_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -47,10 +47,10 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * @uses Worker_by_National_ID_Request_CriteriaType::setNational_ID_Type_Reference()
      * @uses Worker_by_National_ID_Request_CriteriaType::setCountry_Reference()
      * @param string $identifier_ID
-     * @param \StructType\National_ID_TypeObjectType $national_ID_Type_Reference
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectType $national_ID_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      */
-    public function __construct($identifier_ID = null, \StructType\National_ID_TypeObjectType $national_ID_Type_Reference = null, \StructType\CountryObjectType $country_Reference = null)
+    public function __construct($identifier_ID = null, \WorkdayWsdl\\StructType\National_ID_TypeObjectType $national_ID_Type_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this
             ->setIdentifier_ID($identifier_ID)
@@ -68,7 +68,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Identifier_ID value
      * @param string $identifier_ID
-     * @return \StructType\Worker_by_National_ID_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType
      */
     public function setIdentifier_ID($identifier_ID = null)
     {
@@ -81,7 +81,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get National_ID_Type_Reference value
-     * @return \StructType\National_ID_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType|null
      */
     public function getNational_ID_Type_Reference()
     {
@@ -120,10 +120,10 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\National_ID_TypeObjectType $national_ID_Type_Reference
-     * @return \StructType\Worker_by_National_ID_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectType $national_ID_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType
      */
-    public function setNational_ID_Type_Reference(\StructType\National_ID_TypeObjectType $national_ID_Type_Reference = null)
+    public function setNational_ID_Type_Reference(\WorkdayWsdl\\StructType\National_ID_TypeObjectType $national_ID_Type_Reference = null)
     {
         // validation for constraint: choice(National_ID_Type_Reference, Country_Reference)
         if ('' !== ($national_ID_Type_ReferenceChoiceErrorMessage = self::validateNational_ID_Type_ReferenceForChoiceConstraintsFromSetNational_ID_Type_Reference($national_ID_Type_Reference))) {
@@ -138,7 +138,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -177,10 +177,10 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Worker_by_National_ID_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         // validation for constraint: choice(National_ID_Type_Reference, Country_Reference)
         if ('' !== ($country_ReferenceChoiceErrorMessage = self::validateCountry_ReferenceForChoiceConstraintsFromSetCountry_Reference($country_Reference))) {
@@ -199,7 +199,7 @@ class Worker_by_National_ID_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_by_National_ID_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

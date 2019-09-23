@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Language_ReferenceType extends AbstractStructBase
     /**
      * Set Language_Description value
      * @param string $language_Description
-     * @return \StructType\Language_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Language_ReferenceType
      */
     public function setLanguage_Description($language_Description = null)
     {
@@ -58,7 +58,7 @@ class Language_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Language_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Language_ReferenceType
      */
     public static function __set_state(array $array)
     {

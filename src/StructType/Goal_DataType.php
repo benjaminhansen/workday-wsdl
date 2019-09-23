@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -30,7 +30,7 @@ class Goal_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the frequency.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -38,9 +38,9 @@ class Goal_DataType extends AbstractStructBase
      * @uses Goal_DataType::setGoal_Amount()
      * @uses Goal_DataType::setFrequency_Reference()
      * @param float $goal_Amount
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      */
-    public function __construct($goal_Amount = null, \StructType\FrequencyObjectType $frequency_Reference = null)
+    public function __construct($goal_Amount = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this
             ->setGoal_Amount($goal_Amount)
@@ -57,7 +57,7 @@ class Goal_DataType extends AbstractStructBase
     /**
      * Set Goal_Amount value
      * @param float $goal_Amount
-     * @return \StructType\Goal_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_DataType
      */
     public function setGoal_Amount($goal_Amount = null)
     {
@@ -82,7 +82,7 @@ class Goal_DataType extends AbstractStructBase
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -90,10 +90,10 @@ class Goal_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Goal_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Goal_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -104,7 +104,7 @@ class Goal_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Goal_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_DataType
      */
     public static function __set_state(array $array)
     {

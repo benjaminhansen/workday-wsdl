@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_by_National_ID_Request_CriteriaType[]
+     * @var \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType[]
      */
     public $National_ID_Criteria_Data;
     /**
@@ -67,7 +67,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
      * @param string $update_To_Moment
      * @param string $terminated_From_Date
      * @param string $terminated_To_Date
-     * @param \StructType\Worker_by_National_ID_Request_CriteriaType[] $national_ID_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType[] $national_ID_Criteria_Data
      */
     public function __construct($updated_From_Moment = null, $update_To_Moment = null, $terminated_From_Date = null, $terminated_To_Date = null, array $national_ID_Criteria_Data = array())
     {
@@ -89,7 +89,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Updated_From_Moment value
      * @param string $updated_From_Moment
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public function setUpdated_From_Moment($updated_From_Moment = null)
     {
@@ -111,7 +111,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Update_To_Moment value
      * @param string $update_To_Moment
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public function setUpdate_To_Moment($update_To_Moment = null)
     {
@@ -133,7 +133,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Terminated_From_Date value
      * @param string $terminated_From_Date
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public function setTerminated_From_Date($terminated_From_Date = null)
     {
@@ -155,7 +155,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Terminated_To_Date value
      * @param string $terminated_To_Date
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public function setTerminated_To_Date($terminated_To_Date = null)
     {
@@ -168,7 +168,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get National_ID_Criteria_Data value
-     * @return \StructType\Worker_by_National_ID_Request_CriteriaType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType[]|null
      */
     public function getNational_ID_Criteria_Data()
     {
@@ -186,12 +186,12 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem instanceof \StructType\Worker_by_National_ID_Request_CriteriaType) {
+            if (!$former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem instanceof \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType) {
                 $invalidValues[] = is_object($former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem) ? get_class($former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem) : sprintf('%s(%s)', gettype($former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem), var_export($former_Worker_Request_CriteriaTypeNational_ID_Criteria_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The National_ID_Criteria_Data property can only contain items of type \StructType\Worker_by_National_ID_Request_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The National_ID_Criteria_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -199,8 +199,8 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Set National_ID_Criteria_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_by_National_ID_Request_CriteriaType[] $national_ID_Criteria_Data
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType[] $national_ID_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public function setNational_ID_Criteria_Data(array $national_ID_Criteria_Data = array())
     {
@@ -214,14 +214,14 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to National_ID_Criteria_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_by_National_ID_Request_CriteriaType $item
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
-    public function addToNational_ID_Criteria_Data(\StructType\Worker_by_National_ID_Request_CriteriaType $item)
+    public function addToNational_ID_Criteria_Data(\WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_by_National_ID_Request_CriteriaType) {
-            throw new \InvalidArgumentException(sprintf('The National_ID_Criteria_Data property can only contain items of type \StructType\Worker_by_National_ID_Request_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType) {
+            throw new \InvalidArgumentException(sprintf('The National_ID_Criteria_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_by_National_ID_Request_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->National_ID_Criteria_Data[] = $item;
         return $this;
@@ -232,7 +232,7 @@ class Former_Worker_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace WorkdayWsdl\\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Assign extends AbstractSoapClientBase
     /**
      * Sets the Workday_Common_Header SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\Workday_Common_HeaderType $workday_Common_Header
+     * @param \WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderWorkday_Common_Header(\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderWorkday_Common_Header(\WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'Workday_Common_Header', $workday_Common_Header, $mustUnderstand, $actor);
     }
@@ -29,17 +29,17 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: Creates or Updates Collective Agreement for a Worker. The Collective Agreement includes Applicable Factors and Factor options.
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Assign_Employee_Collective_Agreement_Event_RequestType $body
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_ResponseType|bool
+     * @param \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_RequestType $body
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_ResponseType|bool
      */
-    public function Assign_Employee_Collective_Agreement_Event(\StructType\Assign_Employee_Collective_Agreement_Event_RequestType $body)
+    public function Assign_Employee_Collective_Agreement_Event(\WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_RequestType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Assign_Employee_Collective_Agreement_Event($body));
@@ -54,17 +54,17 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: Manually assign establishments to workers' positions
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Assign_Establishment_RequestType $body
-     * @return \StructType\Assign_Establishment_ResponseType|bool
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_RequestType $body
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_ResponseType|bool
      */
-    public function Assign_Establishment(\StructType\Assign_Establishment_RequestType $body)
+    public function Assign_Establishment(\WorkdayWsdl\\StructType\Assign_Establishment_RequestType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Assign_Establishment($body));
@@ -80,7 +80,7 @@ class Assign extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: Directly assign or unassign worker positions as members to a custom organization. The custom organization type must be configured in 'Maintain Organization Types' as 'Allow Reorganization Tasks (like Move Workers, Assign Workers)' =
      * Y and 'Position Unique' = N. The Reorganization determines the effective date that a position is added as a member. In the UI, the equivalent task is executed via related action off the custom organization: Reorganization > Assign Workers > Select
@@ -89,10 +89,10 @@ class Assign extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Assign_Members_to_Custom_Organization_RequestType $body
-     * @return \StructType\Assign_Members_to_Custom_Organization_ResponseType|bool
+     * @param \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_RequestType $body
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_ResponseType|bool
      */
-    public function Assign_Members_to_Custom_Organization(\StructType\Assign_Members_to_Custom_Organization_RequestType $body)
+    public function Assign_Members_to_Custom_Organization(\WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_RequestType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Assign_Members_to_Custom_Organization($body));
@@ -105,7 +105,7 @@ class Assign extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_ResponseType|\StructType\Assign_Establishment_ResponseType|\StructType\Assign_Members_to_Custom_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_ResponseType|\WorkdayWsdl\\StructType\Assign_Establishment_ResponseType|\WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_ResponseType
      */
     public function getResult()
     {

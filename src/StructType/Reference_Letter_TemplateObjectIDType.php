@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Reference_Letter_TemplateObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Reference_Letter_TemplateReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Reference_Letter_TemplateReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Reference_Letter_TemplateReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Reference_Letter_TemplateReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Reference_Letter_TemplateObjectIDType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Reference_Letter_TemplateReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Reference_Letter_TemplateReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Reference_Letter_TemplateReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Reference_Letter_TemplateReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Reference_Letter_TemplateReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Reference_Letter_TemplateReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Reference_Letter_TemplateObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Reference_Letter_TemplateObjectIDType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Reference_Letter_TemplateObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reference_Letter_TemplateObjectIDType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType
      */
     public static function __set_state(array $array)
     {

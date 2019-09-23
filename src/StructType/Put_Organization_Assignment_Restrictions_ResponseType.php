@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
      * Meta information extracted from the WSDL
      * - documentation: Supervisory Organization Reference
      * - minOccurs: 0
-     * @var \StructType\Supervisory_OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType
      */
     public $Supervisory_Organization_Reference;
     /**
@@ -32,10 +32,10 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
      * Constructor method for Put_Organization_Assignment_Restrictions_ResponseType
      * @uses Put_Organization_Assignment_Restrictions_ResponseType::setSupervisory_Organization_Reference()
      * @uses Put_Organization_Assignment_Restrictions_ResponseType::setVersion()
-     * @param \StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null, $version = null)
     {
         $this
             ->setSupervisory_Organization_Reference($supervisory_Organization_Reference)
@@ -43,7 +43,7 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
     }
     /**
      * Get Supervisory_Organization_Reference value
-     * @return \StructType\Supervisory_OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType|null
      */
     public function getSupervisory_Organization_Reference()
     {
@@ -51,10 +51,10 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
     }
     /**
      * Set Supervisory_Organization_Reference value
-     * @param \StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
-     * @return \StructType\Put_Organization_Assignment_Restrictions_ResponseType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_ResponseType
      */
-    public function setSupervisory_Organization_Reference(\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null)
+    public function setSupervisory_Organization_Reference(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null)
     {
         $this->Supervisory_Organization_Reference = $supervisory_Organization_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Organization_Assignment_Restrictions_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Put_Organization_Assignment_Restrictions_ResponseType extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Organization_Assignment_Restrictions_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Assignment_Restrictions_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
      * The Worker_Status_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Status_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public $Worker_Status_Data;
     /**
      * The Worker_Position_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Position_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public $Worker_Position_Data;
     /**
@@ -39,14 +39,14 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
      * The Vendor_Reference_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Vendor_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Vendor_ReferenceType
      */
     public $Vendor_Reference_Data;
     /**
      * The Contract_Details_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Contract_Details_DataType
+     * @var \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
     public $Contract_Details_Data;
     /**
@@ -62,7 +62,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
      * The Worker_Document_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Document_Data_WWSType
+     * @var \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType
      */
     public $Worker_Document_Data;
     /**
@@ -74,15 +74,15 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
      * @uses Contingent_Worker_Contract_Info_DataType::setContract_Details_Data()
      * @uses Contingent_Worker_Contract_Info_DataType::setContract_End_Date()
      * @uses Contingent_Worker_Contract_Info_DataType::setWorker_Document_Data()
-     * @param \StructType\Worker_Status_DataType $worker_Status_Data
-     * @param \StructType\Worker_Position_DataType $worker_Position_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data
      * @param string $contingent_Worker_Type_Name
-     * @param \StructType\Vendor_ReferenceType $vendor_Reference_Data
-     * @param \StructType\Contract_Details_DataType $contract_Details_Data
+     * @param \WorkdayWsdl\\StructType\Vendor_ReferenceType $vendor_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Contract_Details_DataType $contract_Details_Data
      * @param string $contract_End_Date
-     * @param \StructType\Worker_Document_Data_WWSType $worker_Document_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data
      */
-    public function __construct(\StructType\Worker_Status_DataType $worker_Status_Data = null, \StructType\Worker_Position_DataType $worker_Position_Data = null, $contingent_Worker_Type_Name = null, \StructType\Vendor_ReferenceType $vendor_Reference_Data = null, \StructType\Contract_Details_DataType $contract_Details_Data = null, $contract_End_Date = null, \StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data = null, \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data = null, $contingent_Worker_Type_Name = null, \WorkdayWsdl\\StructType\Vendor_ReferenceType $vendor_Reference_Data = null, \WorkdayWsdl\\StructType\Contract_Details_DataType $contract_Details_Data = null, $contract_End_Date = null, \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
     {
         $this
             ->setWorker_Status_Data($worker_Status_Data)
@@ -95,7 +95,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Status_Data value
-     * @return \StructType\Worker_Status_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType|null
      */
     public function getWorker_Status_Data()
     {
@@ -103,17 +103,17 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Status_Data value
-     * @param \StructType\Worker_Status_DataType $worker_Status_Data
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
-    public function setWorker_Status_Data(\StructType\Worker_Status_DataType $worker_Status_Data = null)
+    public function setWorker_Status_Data(\WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data = null)
     {
         $this->Worker_Status_Data = $worker_Status_Data;
         return $this;
     }
     /**
      * Get Worker_Position_Data value
-     * @return \StructType\Worker_Position_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType|null
      */
     public function getWorker_Position_Data()
     {
@@ -121,10 +121,10 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Position_Data value
-     * @param \StructType\Worker_Position_DataType $worker_Position_Data
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
-    public function setWorker_Position_Data(\StructType\Worker_Position_DataType $worker_Position_Data = null)
+    public function setWorker_Position_Data(\WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data = null)
     {
         $this->Worker_Position_Data = $worker_Position_Data;
         return $this;
@@ -140,7 +140,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     /**
      * Set Contingent_Worker_Type_Name value
      * @param string $contingent_Worker_Type_Name
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
     public function setContingent_Worker_Type_Name($contingent_Worker_Type_Name = null)
     {
@@ -153,7 +153,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Vendor_Reference_Data value
-     * @return \StructType\Vendor_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Vendor_ReferenceType|null
      */
     public function getVendor_Reference_Data()
     {
@@ -161,17 +161,17 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Vendor_Reference_Data value
-     * @param \StructType\Vendor_ReferenceType $vendor_Reference_Data
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Vendor_ReferenceType $vendor_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
-    public function setVendor_Reference_Data(\StructType\Vendor_ReferenceType $vendor_Reference_Data = null)
+    public function setVendor_Reference_Data(\WorkdayWsdl\\StructType\Vendor_ReferenceType $vendor_Reference_Data = null)
     {
         $this->Vendor_Reference_Data = $vendor_Reference_Data;
         return $this;
     }
     /**
      * Get Contract_Details_Data value
-     * @return \StructType\Contract_Details_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType|null
      */
     public function getContract_Details_Data()
     {
@@ -179,10 +179,10 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Contract_Details_Data value
-     * @param \StructType\Contract_Details_DataType $contract_Details_Data
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Contract_Details_DataType $contract_Details_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
-    public function setContract_Details_Data(\StructType\Contract_Details_DataType $contract_Details_Data = null)
+    public function setContract_Details_Data(\WorkdayWsdl\\StructType\Contract_Details_DataType $contract_Details_Data = null)
     {
         $this->Contract_Details_Data = $contract_Details_Data;
         return $this;
@@ -198,7 +198,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     /**
      * Set Contract_End_Date value
      * @param string $contract_End_Date
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
     public function setContract_End_Date($contract_End_Date = null)
     {
@@ -211,7 +211,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Document_Data value
-     * @return \StructType\Worker_Document_Data_WWSType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType|null
      */
     public function getWorker_Document_Data()
     {
@@ -219,10 +219,10 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Document_Data value
-     * @param \StructType\Worker_Document_Data_WWSType $worker_Document_Data
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
-    public function setWorker_Document_Data(\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
+    public function setWorker_Document_Data(\WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
     {
         $this->Worker_Document_Data = $worker_Document_Data;
         return $this;
@@ -233,7 +233,7 @@ class Contingent_Worker_Contract_Info_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType
      */
     public static function __set_state(array $array)
     {

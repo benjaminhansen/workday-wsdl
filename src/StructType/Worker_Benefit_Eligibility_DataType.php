@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
      * - documentation: Benefit plan that the worker is eligible for
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Benefit_PlanObjectType[]
+     * @var \WorkdayWsdl\\StructType\Benefit_PlanObjectType[]
      */
     public $Benefit_Plan_Reference;
     /**
@@ -26,15 +26,15 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Plan_Eligiblity_Dates_DataType[]
+     * @var \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType[]
      */
     public $Plan_Eligibility_Dates_Data;
     /**
      * Constructor method for Worker_Benefit_Eligibility_DataType
      * @uses Worker_Benefit_Eligibility_DataType::setBenefit_Plan_Reference()
      * @uses Worker_Benefit_Eligibility_DataType::setPlan_Eligibility_Dates_Data()
-     * @param \StructType\Benefit_PlanObjectType[] $benefit_Plan_Reference
-     * @param \StructType\Plan_Eligiblity_Dates_DataType[] $plan_Eligibility_Dates_Data
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType[] $benefit_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType[] $plan_Eligibility_Dates_Data
      */
     public function __construct(array $benefit_Plan_Reference = array(), array $plan_Eligibility_Dates_Data = array())
     {
@@ -44,7 +44,7 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Plan_Reference value
-     * @return \StructType\Benefit_PlanObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Benefit_PlanObjectType[]|null
      */
     public function getBenefit_Plan_Reference()
     {
@@ -62,12 +62,12 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem instanceof \StructType\Benefit_PlanObjectType) {
+            if (!$worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem instanceof \WorkdayWsdl\\StructType\Benefit_PlanObjectType) {
                 $invalidValues[] = is_object($worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem) ? get_class($worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem), var_export($worker_Benefit_Eligibility_DataTypeBenefit_Plan_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Benefit_Plan_Reference property can only contain items of type \StructType\Benefit_PlanObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Benefit_Plan_Reference property can only contain items of type \WorkdayWsdl\\StructType\Benefit_PlanObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
     /**
      * Set Benefit_Plan_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Benefit_PlanObjectType[] $benefit_Plan_Reference
-     * @return \StructType\Worker_Benefit_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType[] $benefit_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Eligibility_DataType
      */
     public function setBenefit_Plan_Reference(array $benefit_Plan_Reference = array())
     {
@@ -90,21 +90,21 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
     /**
      * Add item to Benefit_Plan_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Benefit_PlanObjectType $item
-     * @return \StructType\Worker_Benefit_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Eligibility_DataType
      */
-    public function addToBenefit_Plan_Reference(\StructType\Benefit_PlanObjectType $item)
+    public function addToBenefit_Plan_Reference(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Benefit_PlanObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Benefit_Plan_Reference property can only contain items of type \StructType\Benefit_PlanObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Benefit_PlanObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Benefit_Plan_Reference property can only contain items of type \WorkdayWsdl\\StructType\Benefit_PlanObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Benefit_Plan_Reference[] = $item;
         return $this;
     }
     /**
      * Get Plan_Eligibility_Dates_Data value
-     * @return \StructType\Plan_Eligiblity_Dates_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType[]|null
      */
     public function getPlan_Eligibility_Dates_Data()
     {
@@ -122,12 +122,12 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem instanceof \StructType\Plan_Eligiblity_Dates_DataType) {
+            if (!$worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem instanceof \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType) {
                 $invalidValues[] = is_object($worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem) ? get_class($worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem) : sprintf('%s(%s)', gettype($worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem), var_export($worker_Benefit_Eligibility_DataTypePlan_Eligibility_Dates_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Plan_Eligibility_Dates_Data property can only contain items of type \StructType\Plan_Eligiblity_Dates_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Plan_Eligibility_Dates_Data property can only contain items of type \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -135,8 +135,8 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
     /**
      * Set Plan_Eligibility_Dates_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Plan_Eligiblity_Dates_DataType[] $plan_Eligibility_Dates_Data
-     * @return \StructType\Worker_Benefit_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType[] $plan_Eligibility_Dates_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Eligibility_DataType
      */
     public function setPlan_Eligibility_Dates_Data(array $plan_Eligibility_Dates_Data = array())
     {
@@ -150,14 +150,14 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
     /**
      * Add item to Plan_Eligibility_Dates_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Plan_Eligiblity_Dates_DataType $item
-     * @return \StructType\Worker_Benefit_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Eligibility_DataType
      */
-    public function addToPlan_Eligibility_Dates_Data(\StructType\Plan_Eligiblity_Dates_DataType $item)
+    public function addToPlan_Eligibility_Dates_Data(\WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Plan_Eligiblity_Dates_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Plan_Eligibility_Dates_Data property can only contain items of type \StructType\Plan_Eligiblity_Dates_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Plan_Eligibility_Dates_Data property can only contain items of type \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Plan_Eligibility_Dates_Data[] = $item;
         return $this;
@@ -168,7 +168,7 @@ class Worker_Benefit_Eligibility_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Benefit_Eligibility_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Eligibility_DataType
      */
     public static function __set_state(array $array)
     {

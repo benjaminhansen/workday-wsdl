@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Integration_Document_FieldObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Integration_Document_FieldReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Integration_Document_FieldReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Integration_Document_FieldReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Integration_Document_FieldReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Integration_Document_FieldObjectIDType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Integration_Document_FieldReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Integration_Document_FieldReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Integration_Document_FieldReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Integration_Document_FieldReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Integration_Document_FieldReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Integration_Document_FieldReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Integration_Document_FieldObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Integration_Document_FieldObjectIDType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Integration_Document_FieldObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Integration_Document_FieldObjectIDType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Integration_Document_FieldObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Integration_Document_FieldObjectIDType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Integration_Document_FieldObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Integration_Document_FieldObjectIDType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType
      */
     public static function __set_state(array $array)
     {

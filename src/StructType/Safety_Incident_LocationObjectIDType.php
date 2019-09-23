@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Safety_Incident_LocationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Safety_Incident_LocationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Safety_Incident_LocationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Safety_Incident_LocationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Safety_Incident_LocationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Safety_Incident_LocationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Safety_Incident_LocationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Safety_Incident_LocationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Safety_Incident_LocationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Safety_Incident_LocationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Safety_Incident_LocationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Safety_Incident_LocationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Safety_Incident_LocationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Safety_Incident_LocationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Safety_Incident_LocationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_LocationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectIDType
      */
     public static function __set_state(array $array)
     {

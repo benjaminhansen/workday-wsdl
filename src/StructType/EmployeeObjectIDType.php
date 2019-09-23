@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class EmployeeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\EmployeeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\EmployeeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\EmployeeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\EmployeeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\EmployeeObjectIDType
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EmployeeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EmployeeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EmployeeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\EmployeeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\EmployeeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\EmployeeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class EmployeeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\EmployeeObjectIDType
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class EmployeeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EmployeeObjectIDType
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectIDType
      */
     public static function __set_state(array $array)
     {

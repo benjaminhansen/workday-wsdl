@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,12 +31,12 @@ class Instant_Messenger_DataType extends AbstractStructBase
     public $Instant_Messenger_Comment;
     /**
      * The Instant_Messenger_Type_Reference
-     * @var \StructType\Instant_Messenger_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType
      */
     public $Instant_Messenger_Type_Reference;
     /**
      * The Usage_Data
-     * @var \StructType\Communication_Method_Usage_DataType
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public $Usage_Data;
     /**
@@ -47,10 +47,10 @@ class Instant_Messenger_DataType extends AbstractStructBase
      * @uses Instant_Messenger_DataType::setUsage_Data()
      * @param string $instant_Messenger_Address
      * @param string $instant_Messenger_Comment
-     * @param \StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
      */
-    public function __construct($instant_Messenger_Address = null, $instant_Messenger_Comment = null, \StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference = null, \StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function __construct($instant_Messenger_Address = null, $instant_Messenger_Comment = null, \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference = null, \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this
             ->setInstant_Messenger_Address($instant_Messenger_Address)
@@ -69,7 +69,7 @@ class Instant_Messenger_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Address value
      * @param string $instant_Messenger_Address
-     * @return \StructType\Instant_Messenger_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_DataType
      */
     public function setInstant_Messenger_Address($instant_Messenger_Address = null)
     {
@@ -91,7 +91,7 @@ class Instant_Messenger_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Comment value
      * @param string $instant_Messenger_Comment
-     * @return \StructType\Instant_Messenger_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_DataType
      */
     public function setInstant_Messenger_Comment($instant_Messenger_Comment = null)
     {
@@ -104,7 +104,7 @@ class Instant_Messenger_DataType extends AbstractStructBase
     }
     /**
      * Get Instant_Messenger_Type_Reference value
-     * @return \StructType\Instant_Messenger_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType|null
      */
     public function getInstant_Messenger_Type_Reference()
     {
@@ -112,17 +112,17 @@ class Instant_Messenger_DataType extends AbstractStructBase
     }
     /**
      * Set Instant_Messenger_Type_Reference value
-     * @param \StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference
-     * @return \StructType\Instant_Messenger_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_DataType
      */
-    public function setInstant_Messenger_Type_Reference(\StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference = null)
+    public function setInstant_Messenger_Type_Reference(\WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType $instant_Messenger_Type_Reference = null)
     {
         $this->Instant_Messenger_Type_Reference = $instant_Messenger_Type_Reference;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_DataType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType|null
      */
     public function getUsage_Data()
     {
@@ -130,10 +130,10 @@ class Instant_Messenger_DataType extends AbstractStructBase
     }
     /**
      * Set Usage_Data value
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
-     * @return \StructType\Instant_Messenger_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_DataType
      */
-    public function setUsage_Data(\StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function setUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this->Usage_Data = $usage_Data;
         return $this;
@@ -144,7 +144,7 @@ class Instant_Messenger_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instant_Messenger_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_DataType
      */
     public static function __set_state(array $array)
     {

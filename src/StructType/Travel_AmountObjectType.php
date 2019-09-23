@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Travel_AmountObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Travel_AmountObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Travel_AmountObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Travel_AmountObjectType extends AbstractStructBase
      * Constructor method for Travel_AmountObjectType
      * @uses Travel_AmountObjectType::setID()
      * @uses Travel_AmountObjectType::setDescriptor()
-     * @param \StructType\Travel_AmountObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Travel_AmountObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Travel_AmountObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Travel_AmountObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Travel_AmountObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $travel_AmountObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$travel_AmountObjectTypeIDItem instanceof \StructType\Travel_AmountObjectIDType) {
+            if (!$travel_AmountObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Travel_AmountObjectIDType) {
                 $invalidValues[] = is_object($travel_AmountObjectTypeIDItem) ? get_class($travel_AmountObjectTypeIDItem) : sprintf('%s(%s)', gettype($travel_AmountObjectTypeIDItem), var_export($travel_AmountObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Travel_AmountObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Travel_AmountObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Travel_AmountObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Travel_AmountObjectIDType[] $iD
-     * @return \StructType\Travel_AmountObjectType
+     * @param \WorkdayWsdl\\StructType\Travel_AmountObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Travel_AmountObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Travel_AmountObjectIDType $item
-     * @return \StructType\Travel_AmountObjectType
+     * @param \WorkdayWsdl\\StructType\Travel_AmountObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectType
      */
-    public function addToID(\StructType\Travel_AmountObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Travel_AmountObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Travel_AmountObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Travel_AmountObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Travel_AmountObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Travel_AmountObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Travel_AmountObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Travel_AmountObjectType
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Travel_AmountObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Travel_AmountObjectType
+     * @return \WorkdayWsdl\\StructType\Travel_AmountObjectType
      */
     public static function __set_state(array $array)
     {

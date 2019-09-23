@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Military_Service_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Military Service entry for edits and deletes.
      * - minOccurs: 0
-     * @var \StructType\Military_Service_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
     public $Military_Service_Reference;
     /**
      * The Military_Service_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Military_Service_Sub_DataType
+     * @var \WorkdayWsdl\\StructType\Military_Service_Sub_DataType
      */
     public $Military_Service_Data;
     /**
@@ -39,11 +39,11 @@ class Military_Service_Information_DataType extends AbstractStructBase
      * @uses Military_Service_Information_DataType::setMilitary_Service_Reference()
      * @uses Military_Service_Information_DataType::setMilitary_Service_Data()
      * @uses Military_Service_Information_DataType::setDelete()
-     * @param \StructType\Military_Service_ReferenceObjectType $military_Service_Reference
-     * @param \StructType\Military_Service_Sub_DataType $military_Service_Data
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference
+     * @param \WorkdayWsdl\\StructType\Military_Service_Sub_DataType $military_Service_Data
      * @param bool $delete
      */
-    public function __construct(\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null, \StructType\Military_Service_Sub_DataType $military_Service_Data = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null, \WorkdayWsdl\\StructType\Military_Service_Sub_DataType $military_Service_Data = null, $delete = null)
     {
         $this
             ->setMilitary_Service_Reference($military_Service_Reference)
@@ -52,7 +52,7 @@ class Military_Service_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Military_Service_Reference value
-     * @return \StructType\Military_Service_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType|null
      */
     public function getMilitary_Service_Reference()
     {
@@ -60,17 +60,17 @@ class Military_Service_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Military_Service_Reference value
-     * @param \StructType\Military_Service_ReferenceObjectType $military_Service_Reference
-     * @return \StructType\Military_Service_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference
+     * @return \WorkdayWsdl\\StructType\Military_Service_Information_DataType
      */
-    public function setMilitary_Service_Reference(\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
+    public function setMilitary_Service_Reference(\WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
     {
         $this->Military_Service_Reference = $military_Service_Reference;
         return $this;
     }
     /**
      * Get Military_Service_Data value
-     * @return \StructType\Military_Service_Sub_DataType|null
+     * @return \WorkdayWsdl\\StructType\Military_Service_Sub_DataType|null
      */
     public function getMilitary_Service_Data()
     {
@@ -78,10 +78,10 @@ class Military_Service_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Military_Service_Data value
-     * @param \StructType\Military_Service_Sub_DataType $military_Service_Data
-     * @return \StructType\Military_Service_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Military_Service_Sub_DataType $military_Service_Data
+     * @return \WorkdayWsdl\\StructType\Military_Service_Information_DataType
      */
-    public function setMilitary_Service_Data(\StructType\Military_Service_Sub_DataType $military_Service_Data = null)
+    public function setMilitary_Service_Data(\WorkdayWsdl\\StructType\Military_Service_Sub_DataType $military_Service_Data = null)
     {
         $this->Military_Service_Data = $military_Service_Data;
         return $this;
@@ -97,7 +97,7 @@ class Military_Service_Information_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Military_Service_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Military_Service_Information_DataType
      */
     public function setDelete($delete = null)
     {
@@ -114,7 +114,7 @@ class Military_Service_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Military_Service_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Military_Service_Information_DataType
      */
     public static function __set_state(array $array)
     {

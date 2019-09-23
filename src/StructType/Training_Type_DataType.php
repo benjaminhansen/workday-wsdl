@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,7 +66,7 @@ class Training_Type_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Training_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType
      */
     public function setID($iD = null)
     {
@@ -88,7 +88,7 @@ class Training_Type_DataType extends AbstractStructBase
     /**
      * Set Training_Type_Name value
      * @param string $training_Type_Name
-     * @return \StructType\Training_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType
      */
     public function setTraining_Type_Name($training_Type_Name = null)
     {
@@ -110,7 +110,7 @@ class Training_Type_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Training_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -127,7 +127,7 @@ class Training_Type_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Training_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType
      */
     public static function __set_state(array $array)
     {

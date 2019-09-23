@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Worker_Job_DataType extends AbstractStructBase
      * - documentation: Contains the worker's employment information, such as their position and job information.Security Note: This element is secured to the following domains: Self-Service: Current Staffing Information, Worker Data: Current Staffing
      * Information
      * - minOccurs: 0
-     * @var \StructType\Position_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Position_Detail_DataType
      */
     public $Position_Data;
     /**
@@ -26,7 +26,7 @@ class Worker_Job_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the worker's organizations that they are a member of related to the position.
      * - minOccurs: 0
-     * @var \StructType\Position_Organization_DataType
+     * @var \WorkdayWsdl\\StructType\Position_Organization_DataType
      */
     public $Position_Organizations_Data;
     /**
@@ -34,7 +34,7 @@ class Worker_Job_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the worker's management chains related to the position.
      * - minOccurs: 0
-     * @var \StructType\Position_Management_Chains_DataType
+     * @var \WorkdayWsdl\\StructType\Position_Management_Chains_DataType
      */
     public $Position_Management_Chains_Data;
     /**
@@ -50,12 +50,12 @@ class Worker_Job_DataType extends AbstractStructBase
      * @uses Worker_Job_DataType::setPosition_Organizations_Data()
      * @uses Worker_Job_DataType::setPosition_Management_Chains_Data()
      * @uses Worker_Job_DataType::setPrimary_Job()
-     * @param \StructType\Position_Detail_DataType $position_Data
-     * @param \StructType\Position_Organization_DataType $position_Organizations_Data
-     * @param \StructType\Position_Management_Chains_DataType $position_Management_Chains_Data
+     * @param \WorkdayWsdl\\StructType\Position_Detail_DataType $position_Data
+     * @param \WorkdayWsdl\\StructType\Position_Organization_DataType $position_Organizations_Data
+     * @param \WorkdayWsdl\\StructType\Position_Management_Chains_DataType $position_Management_Chains_Data
      * @param bool $primary_Job
      */
-    public function __construct(\StructType\Position_Detail_DataType $position_Data = null, \StructType\Position_Organization_DataType $position_Organizations_Data = null, \StructType\Position_Management_Chains_DataType $position_Management_Chains_Data = null, $primary_Job = null)
+    public function __construct(\WorkdayWsdl\\StructType\Position_Detail_DataType $position_Data = null, \WorkdayWsdl\\StructType\Position_Organization_DataType $position_Organizations_Data = null, \WorkdayWsdl\\StructType\Position_Management_Chains_DataType $position_Management_Chains_Data = null, $primary_Job = null)
     {
         $this
             ->setPosition_Data($position_Data)
@@ -65,7 +65,7 @@ class Worker_Job_DataType extends AbstractStructBase
     }
     /**
      * Get Position_Data value
-     * @return \StructType\Position_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Position_Detail_DataType|null
      */
     public function getPosition_Data()
     {
@@ -73,17 +73,17 @@ class Worker_Job_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Data value
-     * @param \StructType\Position_Detail_DataType $position_Data
-     * @return \StructType\Worker_Job_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Detail_DataType $position_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType
      */
-    public function setPosition_Data(\StructType\Position_Detail_DataType $position_Data = null)
+    public function setPosition_Data(\WorkdayWsdl\\StructType\Position_Detail_DataType $position_Data = null)
     {
         $this->Position_Data = $position_Data;
         return $this;
     }
     /**
      * Get Position_Organizations_Data value
-     * @return \StructType\Position_Organization_DataType|null
+     * @return \WorkdayWsdl\\StructType\Position_Organization_DataType|null
      */
     public function getPosition_Organizations_Data()
     {
@@ -91,17 +91,17 @@ class Worker_Job_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Organizations_Data value
-     * @param \StructType\Position_Organization_DataType $position_Organizations_Data
-     * @return \StructType\Worker_Job_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Organization_DataType $position_Organizations_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType
      */
-    public function setPosition_Organizations_Data(\StructType\Position_Organization_DataType $position_Organizations_Data = null)
+    public function setPosition_Organizations_Data(\WorkdayWsdl\\StructType\Position_Organization_DataType $position_Organizations_Data = null)
     {
         $this->Position_Organizations_Data = $position_Organizations_Data;
         return $this;
     }
     /**
      * Get Position_Management_Chains_Data value
-     * @return \StructType\Position_Management_Chains_DataType|null
+     * @return \WorkdayWsdl\\StructType\Position_Management_Chains_DataType|null
      */
     public function getPosition_Management_Chains_Data()
     {
@@ -109,10 +109,10 @@ class Worker_Job_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Management_Chains_Data value
-     * @param \StructType\Position_Management_Chains_DataType $position_Management_Chains_Data
-     * @return \StructType\Worker_Job_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Management_Chains_DataType $position_Management_Chains_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType
      */
-    public function setPosition_Management_Chains_Data(\StructType\Position_Management_Chains_DataType $position_Management_Chains_Data = null)
+    public function setPosition_Management_Chains_Data(\WorkdayWsdl\\StructType\Position_Management_Chains_DataType $position_Management_Chains_Data = null)
     {
         $this->Position_Management_Chains_Data = $position_Management_Chains_Data;
         return $this;
@@ -128,7 +128,7 @@ class Worker_Job_DataType extends AbstractStructBase
     /**
      * Set Primary_Job value
      * @param bool $primary_Job
-     * @return \StructType\Worker_Job_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType
      */
     public function setPrimary_Job($primary_Job = null)
     {
@@ -145,7 +145,7 @@ class Worker_Job_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Job_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType
      */
     public static function __set_state(array $array)
     {

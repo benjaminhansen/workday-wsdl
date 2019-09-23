@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Manager_Evaluation_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The overall section evaluation information (rating, comments) from the manager.
      * - minOccurs: 0
-     * @var \StructType\Overall_Evaluation_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType
      */
     public $Overall_Data;
     /**
      * Constructor method for Manager_Evaluation_Detail_DataType
      * @uses Manager_Evaluation_Detail_DataType::setOverall_Data()
-     * @param \StructType\Overall_Evaluation_Detail_DataType $overall_Data
+     * @param \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType $overall_Data
      */
-    public function __construct(\StructType\Overall_Evaluation_Detail_DataType $overall_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType $overall_Data = null)
     {
         $this
             ->setOverall_Data($overall_Data);
     }
     /**
      * Get Overall_Data value
-     * @return \StructType\Overall_Evaluation_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType|null
      */
     public function getOverall_Data()
     {
@@ -40,10 +40,10 @@ class Manager_Evaluation_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Overall_Data value
-     * @param \StructType\Overall_Evaluation_Detail_DataType $overall_Data
-     * @return \StructType\Manager_Evaluation_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType $overall_Data
+     * @return \WorkdayWsdl\\StructType\Manager_Evaluation_Detail_DataType
      */
-    public function setOverall_Data(\StructType\Overall_Evaluation_Detail_DataType $overall_Data = null)
+    public function setOverall_Data(\WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType $overall_Data = null)
     {
         $this->Overall_Data = $overall_Data;
         return $this;
@@ -54,7 +54,7 @@ class Manager_Evaluation_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manager_Evaluation_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Manager_Evaluation_Detail_DataType
      */
     public static function __set_state(array $array)
     {

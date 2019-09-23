@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Committee meeting reference
      * - minOccurs: 0
-     * @var \StructType\Committee_MeetingObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_MeetingObjectType
      */
     public $Committee_Meeting_Reference;
     /**
      * The Committee_Meeting_Data
      * Meta information extracted from the WSDL
      * - documentation: Data for committee meeting
-     * @var \StructType\Committee_Meeting_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_DataType
      */
     public $Committee_Meeting_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
      * @uses Put_Committee_Meeting_RequestType::setCommittee_Meeting_Data()
      * @uses Put_Committee_Meeting_RequestType::setAdd_Only()
      * @uses Put_Committee_Meeting_RequestType::setVersion()
-     * @param \StructType\Committee_MeetingObjectType $committee_Meeting_Reference
-     * @param \StructType\Committee_Meeting_DataType $committee_Meeting_Data
+     * @param \WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null, \StructType\Committee_Meeting_DataType $committee_Meeting_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null, \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setCommittee_Meeting_Reference($committee_Meeting_Reference)
@@ -62,7 +62,7 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
     }
     /**
      * Get Committee_Meeting_Reference value
-     * @return \StructType\Committee_MeetingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_MeetingObjectType|null
      */
     public function getCommittee_Meeting_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Meeting_Reference value
-     * @param \StructType\Committee_MeetingObjectType $committee_Meeting_Reference
-     * @return \StructType\Put_Committee_Meeting_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Meeting_RequestType
      */
-    public function setCommittee_Meeting_Reference(\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null)
+    public function setCommittee_Meeting_Reference(\WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null)
     {
         $this->Committee_Meeting_Reference = $committee_Meeting_Reference;
         return $this;
     }
     /**
      * Get Committee_Meeting_Data value
-     * @return \StructType\Committee_Meeting_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_DataType|null
      */
     public function getCommittee_Meeting_Data()
     {
@@ -88,10 +88,10 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Meeting_Data value
-     * @param \StructType\Committee_Meeting_DataType $committee_Meeting_Data
-     * @return \StructType\Put_Committee_Meeting_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Meeting_RequestType
      */
-    public function setCommittee_Meeting_Data(\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
+    public function setCommittee_Meeting_Data(\WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
     {
         $this->Committee_Meeting_Data = $committee_Meeting_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Committee_Meeting_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Meeting_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Committee_Meeting_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Meeting_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Committee_Meeting_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Committee_Meeting_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Meeting_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,28 +16,28 @@ class Worker_Career_DataType extends AbstractStructBase
      * The Relocation_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Relocation_Preference_DataType
+     * @var \WorkdayWsdl\\StructType\Relocation_Preference_DataType
      */
     public $Relocation_Data;
     /**
      * The Travel_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Travel_Preference_DataType
+     * @var \WorkdayWsdl\\StructType\Travel_Preference_DataType
      */
     public $Travel_Data;
     /**
      * The Job_Interests_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Interests_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Interests_DataType
      */
     public $Job_Interests_Data;
     /**
      * The Career_Interests_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Career_Preferences_DataType
+     * @var \WorkdayWsdl\\StructType\Career_Preferences_DataType
      */
     public $Career_Interests_Data;
     /**
@@ -46,12 +46,12 @@ class Worker_Career_DataType extends AbstractStructBase
      * @uses Worker_Career_DataType::setTravel_Data()
      * @uses Worker_Career_DataType::setJob_Interests_Data()
      * @uses Worker_Career_DataType::setCareer_Interests_Data()
-     * @param \StructType\Relocation_Preference_DataType $relocation_Data
-     * @param \StructType\Travel_Preference_DataType $travel_Data
-     * @param \StructType\Job_Interests_DataType $job_Interests_Data
-     * @param \StructType\Career_Preferences_DataType $career_Interests_Data
+     * @param \WorkdayWsdl\\StructType\Relocation_Preference_DataType $relocation_Data
+     * @param \WorkdayWsdl\\StructType\Travel_Preference_DataType $travel_Data
+     * @param \WorkdayWsdl\\StructType\Job_Interests_DataType $job_Interests_Data
+     * @param \WorkdayWsdl\\StructType\Career_Preferences_DataType $career_Interests_Data
      */
-    public function __construct(\StructType\Relocation_Preference_DataType $relocation_Data = null, \StructType\Travel_Preference_DataType $travel_Data = null, \StructType\Job_Interests_DataType $job_Interests_Data = null, \StructType\Career_Preferences_DataType $career_Interests_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Relocation_Preference_DataType $relocation_Data = null, \WorkdayWsdl\\StructType\Travel_Preference_DataType $travel_Data = null, \WorkdayWsdl\\StructType\Job_Interests_DataType $job_Interests_Data = null, \WorkdayWsdl\\StructType\Career_Preferences_DataType $career_Interests_Data = null)
     {
         $this
             ->setRelocation_Data($relocation_Data)
@@ -61,7 +61,7 @@ class Worker_Career_DataType extends AbstractStructBase
     }
     /**
      * Get Relocation_Data value
-     * @return \StructType\Relocation_Preference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Relocation_Preference_DataType|null
      */
     public function getRelocation_Data()
     {
@@ -69,17 +69,17 @@ class Worker_Career_DataType extends AbstractStructBase
     }
     /**
      * Set Relocation_Data value
-     * @param \StructType\Relocation_Preference_DataType $relocation_Data
-     * @return \StructType\Worker_Career_DataType
+     * @param \WorkdayWsdl\\StructType\Relocation_Preference_DataType $relocation_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Career_DataType
      */
-    public function setRelocation_Data(\StructType\Relocation_Preference_DataType $relocation_Data = null)
+    public function setRelocation_Data(\WorkdayWsdl\\StructType\Relocation_Preference_DataType $relocation_Data = null)
     {
         $this->Relocation_Data = $relocation_Data;
         return $this;
     }
     /**
      * Get Travel_Data value
-     * @return \StructType\Travel_Preference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Travel_Preference_DataType|null
      */
     public function getTravel_Data()
     {
@@ -87,17 +87,17 @@ class Worker_Career_DataType extends AbstractStructBase
     }
     /**
      * Set Travel_Data value
-     * @param \StructType\Travel_Preference_DataType $travel_Data
-     * @return \StructType\Worker_Career_DataType
+     * @param \WorkdayWsdl\\StructType\Travel_Preference_DataType $travel_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Career_DataType
      */
-    public function setTravel_Data(\StructType\Travel_Preference_DataType $travel_Data = null)
+    public function setTravel_Data(\WorkdayWsdl\\StructType\Travel_Preference_DataType $travel_Data = null)
     {
         $this->Travel_Data = $travel_Data;
         return $this;
     }
     /**
      * Get Job_Interests_Data value
-     * @return \StructType\Job_Interests_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Interests_DataType|null
      */
     public function getJob_Interests_Data()
     {
@@ -105,17 +105,17 @@ class Worker_Career_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Interests_Data value
-     * @param \StructType\Job_Interests_DataType $job_Interests_Data
-     * @return \StructType\Worker_Career_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Interests_DataType $job_Interests_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Career_DataType
      */
-    public function setJob_Interests_Data(\StructType\Job_Interests_DataType $job_Interests_Data = null)
+    public function setJob_Interests_Data(\WorkdayWsdl\\StructType\Job_Interests_DataType $job_Interests_Data = null)
     {
         $this->Job_Interests_Data = $job_Interests_Data;
         return $this;
     }
     /**
      * Get Career_Interests_Data value
-     * @return \StructType\Career_Preferences_DataType|null
+     * @return \WorkdayWsdl\\StructType\Career_Preferences_DataType|null
      */
     public function getCareer_Interests_Data()
     {
@@ -123,10 +123,10 @@ class Worker_Career_DataType extends AbstractStructBase
     }
     /**
      * Set Career_Interests_Data value
-     * @param \StructType\Career_Preferences_DataType $career_Interests_Data
-     * @return \StructType\Worker_Career_DataType
+     * @param \WorkdayWsdl\\StructType\Career_Preferences_DataType $career_Interests_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Career_DataType
      */
-    public function setCareer_Interests_Data(\StructType\Career_Preferences_DataType $career_Interests_Data = null)
+    public function setCareer_Interests_Data(\WorkdayWsdl\\StructType\Career_Preferences_DataType $career_Interests_Data = null)
     {
         $this->Career_Interests_Data = $career_Interests_Data;
         return $this;
@@ -137,7 +137,7 @@ class Worker_Career_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Career_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Career_DataType
      */
     public static function __set_state(array $array)
     {

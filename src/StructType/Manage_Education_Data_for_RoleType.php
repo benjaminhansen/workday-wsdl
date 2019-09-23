@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a role
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Role_Reference;
     /**
@@ -25,7 +25,7 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the source of the skill.
      * - minOccurs: 0
-     * @var \StructType\Person_Skill_Source_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType
      */
     public $Source_Reference;
     /**
@@ -33,7 +33,7 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EducationType[]
+     * @var \WorkdayWsdl\\StructType\EducationType[]
      */
     public $Education;
     /**
@@ -41,11 +41,11 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
      * @uses Manage_Education_Data_for_RoleType::setRole_Reference()
      * @uses Manage_Education_Data_for_RoleType::setSource_Reference()
      * @uses Manage_Education_Data_for_RoleType::setEducation()
-     * @param \StructType\RoleObjectType $role_Reference
-     * @param \StructType\Person_Skill_Source_CategoryObjectType $source_Reference
-     * @param \StructType\EducationType[] $education
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $role_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference
+     * @param \WorkdayWsdl\\StructType\EducationType[] $education
      */
-    public function __construct(\StructType\RoleObjectType $role_Reference = null, \StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null, array $education = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $role_Reference = null, \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null, array $education = array())
     {
         $this
             ->setRole_Reference($role_Reference)
@@ -54,7 +54,7 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
     }
     /**
      * Get Role_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getRole_Reference()
     {
@@ -62,17 +62,17 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
     }
     /**
      * Set Role_Reference value
-     * @param \StructType\RoleObjectType $role_Reference
-     * @return \StructType\Manage_Education_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $role_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Data_for_RoleType
      */
-    public function setRole_Reference(\StructType\RoleObjectType $role_Reference = null)
+    public function setRole_Reference(\WorkdayWsdl\\StructType\RoleObjectType $role_Reference = null)
     {
         $this->Role_Reference = $role_Reference;
         return $this;
     }
     /**
      * Get Source_Reference value
-     * @return \StructType\Person_Skill_Source_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType|null
      */
     public function getSource_Reference()
     {
@@ -80,17 +80,17 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
     }
     /**
      * Set Source_Reference value
-     * @param \StructType\Person_Skill_Source_CategoryObjectType $source_Reference
-     * @return \StructType\Manage_Education_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Data_for_RoleType
      */
-    public function setSource_Reference(\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null)
+    public function setSource_Reference(\WorkdayWsdl\\StructType\Person_Skill_Source_CategoryObjectType $source_Reference = null)
     {
         $this->Source_Reference = $source_Reference;
         return $this;
     }
     /**
      * Get Education value
-     * @return \StructType\EducationType[]|null
+     * @return \WorkdayWsdl\\StructType\EducationType[]|null
      */
     public function getEducation()
     {
@@ -108,12 +108,12 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $manage_Education_Data_for_RoleTypeEducationItem) {
             // validation for constraint: itemType
-            if (!$manage_Education_Data_for_RoleTypeEducationItem instanceof \StructType\EducationType) {
+            if (!$manage_Education_Data_for_RoleTypeEducationItem instanceof \WorkdayWsdl\\StructType\EducationType) {
                 $invalidValues[] = is_object($manage_Education_Data_for_RoleTypeEducationItem) ? get_class($manage_Education_Data_for_RoleTypeEducationItem) : sprintf('%s(%s)', gettype($manage_Education_Data_for_RoleTypeEducationItem), var_export($manage_Education_Data_for_RoleTypeEducationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Education property can only contain items of type \StructType\EducationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Education property can only contain items of type \WorkdayWsdl\\StructType\EducationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -121,8 +121,8 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
     /**
      * Set Education value
      * @throws \InvalidArgumentException
-     * @param \StructType\EducationType[] $education
-     * @return \StructType\Manage_Education_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\EducationType[] $education
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Data_for_RoleType
      */
     public function setEducation(array $education = array())
     {
@@ -136,14 +136,14 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
     /**
      * Add item to Education value
      * @throws \InvalidArgumentException
-     * @param \StructType\EducationType $item
-     * @return \StructType\Manage_Education_Data_for_RoleType
+     * @param \WorkdayWsdl\\StructType\EducationType $item
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Data_for_RoleType
      */
-    public function addToEducation(\StructType\EducationType $item)
+    public function addToEducation(\WorkdayWsdl\\StructType\EducationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EducationType) {
-            throw new \InvalidArgumentException(sprintf('The Education property can only contain items of type \StructType\EducationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EducationType) {
+            throw new \InvalidArgumentException(sprintf('The Education property can only contain items of type \WorkdayWsdl\\StructType\EducationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Education[] = $item;
         return $this;
@@ -154,7 +154,7 @@ class Manage_Education_Data_for_RoleType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Education_Data_for_RoleType
+     * @return \WorkdayWsdl\\StructType\Manage_Education_Data_for_RoleType
      */
     public static function __set_state(array $array)
     {

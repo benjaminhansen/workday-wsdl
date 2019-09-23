@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Work_Schedule_Calendar_GroupObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Work_Schedule_Calendar_GroupReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Work_Schedule_Calendar_GroupObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Work_Schedule_Calendar_GroupObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectIDType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType
      */
     public static function __set_state(array $array)
     {

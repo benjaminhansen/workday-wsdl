@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to an existing Job History Company. Either this field or Company is required unless the Job History is being removed.
      * - minOccurs: 0
-     * @var \StructType\Job_History_CompanyObjectType
+     * @var \WorkdayWsdl\\StructType\Job_History_CompanyObjectType
      */
     public $Job_History_Company_Reference;
     /**
@@ -127,7 +127,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
      * @param bool $remove_Job_History
      * @param string $job_Title
      * @param string $company
-     * @param \StructType\Job_History_CompanyObjectType $job_History_Company_Reference
+     * @param \WorkdayWsdl\\StructType\Job_History_CompanyObjectType $job_History_Company_Reference
      * @param string $start_Date
      * @param string $end_Date
      * @param string $responsibilities_and_Achievements
@@ -135,7 +135,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
      * @param string $job_Reference
      * @param string $contact
      */
-    public function __construct($job_History_ID = null, $remove_Job_History = null, $job_Title = null, $company = null, \StructType\Job_History_CompanyObjectType $job_History_Company_Reference = null, $start_Date = null, $end_Date = null, $responsibilities_and_Achievements = null, $location = null, $job_Reference = null, $contact = null)
+    public function __construct($job_History_ID = null, $remove_Job_History = null, $job_Title = null, $company = null, \WorkdayWsdl\\StructType\Job_History_CompanyObjectType $job_History_Company_Reference = null, $start_Date = null, $end_Date = null, $responsibilities_and_Achievements = null, $location = null, $job_Reference = null, $contact = null)
     {
         $this
             ->setJob_History_ID($job_History_ID)
@@ -161,7 +161,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Job_History_ID value
      * @param string $job_History_ID
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setJob_History_ID($job_History_ID = null)
     {
@@ -183,7 +183,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Remove_Job_History value
      * @param bool $remove_Job_History
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setRemove_Job_History($remove_Job_History = null)
     {
@@ -205,7 +205,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Job_Title value
      * @param string $job_Title
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setJob_Title($job_Title = null)
     {
@@ -227,7 +227,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Company value
      * @param string $company
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setCompany($company = null)
     {
@@ -240,7 +240,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Job_History_Company_Reference value
-     * @return \StructType\Job_History_CompanyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_History_CompanyObjectType|null
      */
     public function getJob_History_Company_Reference()
     {
@@ -248,10 +248,10 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Job_History_Company_Reference value
-     * @param \StructType\Job_History_CompanyObjectType $job_History_Company_Reference
-     * @return \StructType\Job_History_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Job_History_CompanyObjectType $job_History_Company_Reference
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
-    public function setJob_History_Company_Reference(\StructType\Job_History_CompanyObjectType $job_History_Company_Reference = null)
+    public function setJob_History_Company_Reference(\WorkdayWsdl\\StructType\Job_History_CompanyObjectType $job_History_Company_Reference = null)
     {
         $this->Job_History_Company_Reference = $job_History_Company_Reference;
         return $this;
@@ -267,7 +267,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -289,7 +289,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -311,7 +311,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Responsibilities_and_Achievements value
      * @param string $responsibilities_and_Achievements
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setResponsibilities_and_Achievements($responsibilities_and_Achievements = null)
     {
@@ -333,7 +333,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Location value
      * @param string $location
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setLocation($location = null)
     {
@@ -355,7 +355,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Job_Reference value
      * @param string $job_Reference
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setJob_Reference($job_Reference = null)
     {
@@ -377,7 +377,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
     /**
      * Set Contact value
      * @param string $contact
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public function setContact($contact = null)
     {
@@ -394,7 +394,7 @@ class Job_History_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_History_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

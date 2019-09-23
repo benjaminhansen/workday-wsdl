@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_EEO_Data_Record_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External EEO-1 Data
      * - minOccurs: 0
-     * @var \StructType\External_EEO_1_DataObjectType
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
     public $External_EEO_1_Data_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_EEO_Data_Record_ResponseType extends AbstractStructBase
      * Constructor method for Put_EEO_Data_Record_ResponseType
      * @uses Put_EEO_Data_Record_ResponseType::setExternal_EEO_1_Data_Reference()
      * @uses Put_EEO_Data_Record_ResponseType::setVersion()
-     * @param \StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference
      * @param string $version
      */
-    public function __construct(\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null, $version = null)
     {
         $this
             ->setExternal_EEO_1_Data_Reference($external_EEO_1_Data_Reference)
@@ -51,9 +51,9 @@ class Put_EEO_Data_Record_ResponseType extends AbstractStructBase
     /**
      * Set external_EEO_Data_Reference value
      * @param external_EEO_Data_Reference $external_EEO_Data_Reference
-     * @return \StructType\Put_EEO_Data_Record_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_ResponseType
      */
-    public function setExternal_EEO_1_Data_Reference(\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null)
+    public function setExternal_EEO_1_Data_Reference(\WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null)
     {
         $this->External_EEO_1_Data_Reference = $this->{'External_EEO-1_Data_Reference'} = $external_EEO_1_Data_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_EEO_Data_Record_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_EEO_Data_Record_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_EEO_Data_Record_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_EEO_Data_Record_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_ResponseType
      */
     public static function __set_state(array $array)
     {

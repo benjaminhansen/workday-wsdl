@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class Validation_FaultType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Validation_ErrorType[]
+     * @var \WorkdayWsdl\\StructType\Validation_ErrorType[]
      */
     public $Validation_Error;
     /**
      * Constructor method for Validation_FaultType
      * @uses Validation_FaultType::setValidation_Error()
-     * @param \StructType\Validation_ErrorType[] $validation_Error
+     * @param \WorkdayWsdl\\StructType\Validation_ErrorType[] $validation_Error
      */
     public function __construct(array $validation_Error = array())
     {
@@ -30,7 +30,7 @@ class Validation_FaultType extends AbstractStructBase
     }
     /**
      * Get Validation_Error value
-     * @return \StructType\Validation_ErrorType[]|null
+     * @return \WorkdayWsdl\\StructType\Validation_ErrorType[]|null
      */
     public function getValidation_Error()
     {
@@ -48,12 +48,12 @@ class Validation_FaultType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $validation_FaultTypeValidation_ErrorItem) {
             // validation for constraint: itemType
-            if (!$validation_FaultTypeValidation_ErrorItem instanceof \StructType\Validation_ErrorType) {
+            if (!$validation_FaultTypeValidation_ErrorItem instanceof \WorkdayWsdl\\StructType\Validation_ErrorType) {
                 $invalidValues[] = is_object($validation_FaultTypeValidation_ErrorItem) ? get_class($validation_FaultTypeValidation_ErrorItem) : sprintf('%s(%s)', gettype($validation_FaultTypeValidation_ErrorItem), var_export($validation_FaultTypeValidation_ErrorItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Validation_Error property can only contain items of type \StructType\Validation_ErrorType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Validation_Error property can only contain items of type \WorkdayWsdl\\StructType\Validation_ErrorType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -61,8 +61,8 @@ class Validation_FaultType extends AbstractStructBase
     /**
      * Set Validation_Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\Validation_ErrorType[] $validation_Error
-     * @return \StructType\Validation_FaultType
+     * @param \WorkdayWsdl\\StructType\Validation_ErrorType[] $validation_Error
+     * @return \WorkdayWsdl\\StructType\Validation_FaultType
      */
     public function setValidation_Error(array $validation_Error = array())
     {
@@ -76,14 +76,14 @@ class Validation_FaultType extends AbstractStructBase
     /**
      * Add item to Validation_Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\Validation_ErrorType $item
-     * @return \StructType\Validation_FaultType
+     * @param \WorkdayWsdl\\StructType\Validation_ErrorType $item
+     * @return \WorkdayWsdl\\StructType\Validation_FaultType
      */
-    public function addToValidation_Error(\StructType\Validation_ErrorType $item)
+    public function addToValidation_Error(\WorkdayWsdl\\StructType\Validation_ErrorType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Validation_ErrorType) {
-            throw new \InvalidArgumentException(sprintf('The Validation_Error property can only contain items of type \StructType\Validation_ErrorType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Validation_ErrorType) {
+            throw new \InvalidArgumentException(sprintf('The Validation_Error property can only contain items of type \WorkdayWsdl\\StructType\Validation_ErrorType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Validation_Error[] = $item;
         return $this;
@@ -94,7 +94,7 @@ class Validation_FaultType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Validation_FaultType
+     * @return \WorkdayWsdl\\StructType\Validation_FaultType
      */
     public static function __set_state(array $array)
     {

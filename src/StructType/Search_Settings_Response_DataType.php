@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Settings_Response_DataType extends AbstractStructBase
      * The Search_Settings
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Search_SettingsType
+     * @var \WorkdayWsdl\\StructType\Search_SettingsType
      */
     public $Search_Settings;
     /**
      * Constructor method for Search_Settings_Response_DataType
      * @uses Search_Settings_Response_DataType::setSearch_Settings()
-     * @param \StructType\Search_SettingsType $search_Settings
+     * @param \WorkdayWsdl\\StructType\Search_SettingsType $search_Settings
      */
-    public function __construct(\StructType\Search_SettingsType $search_Settings = null)
+    public function __construct(\WorkdayWsdl\\StructType\Search_SettingsType $search_Settings = null)
     {
         $this
             ->setSearch_Settings($search_Settings);
     }
     /**
      * Get Search_Settings value
-     * @return \StructType\Search_SettingsType|null
+     * @return \WorkdayWsdl\\StructType\Search_SettingsType|null
      */
     public function getSearch_Settings()
     {
@@ -39,10 +39,10 @@ class Search_Settings_Response_DataType extends AbstractStructBase
     }
     /**
      * Set Search_Settings value
-     * @param \StructType\Search_SettingsType $search_Settings
-     * @return \StructType\Search_Settings_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Search_SettingsType $search_Settings
+     * @return \WorkdayWsdl\\StructType\Search_Settings_Response_DataType
      */
-    public function setSearch_Settings(\StructType\Search_SettingsType $search_Settings = null)
+    public function setSearch_Settings(\WorkdayWsdl\\StructType\Search_SettingsType $search_Settings = null)
     {
         $this->Search_Settings = $search_Settings;
         return $this;
@@ -53,7 +53,7 @@ class Search_Settings_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Settings_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Search_Settings_Response_DataType
      */
     public static function __set_state(array $array)
     {

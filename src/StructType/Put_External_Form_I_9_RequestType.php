@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The External_Form_I_9_Data
      * Meta information extracted from the WSDL
      * - documentation: The element containing all necessary information to put/get an External Form I-9 for a Worker.
-     * @var \StructType\External_Form_I_9_DataType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_DataType
      */
     public $External_Form_I_9_Data;
     /**
@@ -38,11 +38,11 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
      * @uses Put_External_Form_I_9_RequestType::setBusiness_Process_Parameters()
      * @uses Put_External_Form_I_9_RequestType::setExternal_Form_I_9_Data()
      * @uses Put_External_Form_I_9_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\External_Form_I_9_DataType $external_Form_I_9_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_DataType $external_Form_I_9_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\External_Form_I_9_DataType $external_Form_I_9_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\External_Form_I_9_DataType $external_Form_I_9_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -51,7 +51,7 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -59,10 +59,10 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Put_External_Form_I_9_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
@@ -78,9 +78,9 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
     /**
      * Set external_Form_I_Data value
      * @param external_Form_I_Data $external_Form_I_Data
-     * @return \StructType\Put_External_Form_I_9_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_RequestType
      */
-    public function setExternal_Form_I_9_Data(\StructType\External_Form_I_9_DataType $external_Form_I_9_Data = null)
+    public function setExternal_Form_I_9_Data(\WorkdayWsdl\\StructType\External_Form_I_9_DataType $external_Form_I_9_Data = null)
     {
         $this->External_Form_I_9_Data = $this->{'External_Form_I-9_Data'} = $external_Form_I_9_Data;
         return $this;
@@ -96,7 +96,7 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_External_Form_I_9_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_RequestType
      */
     public function setVersion($version = null)
     {
@@ -113,7 +113,7 @@ class Put_External_Form_I_9_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_External_Form_I_9_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_RequestType
      */
     public static function __set_state(array $array)
     {

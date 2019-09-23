@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Organization_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Organization_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Organization_TypeObjectType extends AbstractStructBase
      * Constructor method for Organization_TypeObjectType
      * @uses Organization_TypeObjectType::setID()
      * @uses Organization_TypeObjectType::setDescriptor()
-     * @param \StructType\Organization_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Organization_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Organization_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Organization_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$organization_TypeObjectTypeIDItem instanceof \StructType\Organization_TypeObjectIDType) {
+            if (!$organization_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectIDType) {
                 $invalidValues[] = is_object($organization_TypeObjectTypeIDItem) ? get_class($organization_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($organization_TypeObjectTypeIDItem), var_export($organization_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Organization_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Organization_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectIDType[] $iD
-     * @return \StructType\Organization_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Organization_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectIDType $item
-     * @return \StructType\Organization_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType
      */
-    public function addToID(\StructType\Organization_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Organization_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Organization_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Organization_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Organization_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Organization_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_Document_WWSType[]
+     * @var \WorkdayWsdl\\StructType\Worker_Document_WWSType[]
      */
     public $Worker_Document;
     /**
      * Constructor method for Worker_Document_Data_WWSType
      * @uses Worker_Document_Data_WWSType::setWorker_Document()
-     * @param \StructType\Worker_Document_WWSType[] $worker_Document
+     * @param \WorkdayWsdl\\StructType\Worker_Document_WWSType[] $worker_Document
      */
     public function __construct(array $worker_Document = array())
     {
@@ -32,7 +32,7 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
     }
     /**
      * Get Worker_Document value
-     * @return \StructType\Worker_Document_WWSType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_Document_WWSType[]|null
      */
     public function getWorker_Document()
     {
@@ -50,12 +50,12 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Document_Data_WWSTypeWorker_DocumentItem) {
             // validation for constraint: itemType
-            if (!$worker_Document_Data_WWSTypeWorker_DocumentItem instanceof \StructType\Worker_Document_WWSType) {
+            if (!$worker_Document_Data_WWSTypeWorker_DocumentItem instanceof \WorkdayWsdl\\StructType\Worker_Document_WWSType) {
                 $invalidValues[] = is_object($worker_Document_Data_WWSTypeWorker_DocumentItem) ? get_class($worker_Document_Data_WWSTypeWorker_DocumentItem) : sprintf('%s(%s)', gettype($worker_Document_Data_WWSTypeWorker_DocumentItem), var_export($worker_Document_Data_WWSTypeWorker_DocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Document property can only contain items of type \StructType\Worker_Document_WWSType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Document property can only contain items of type \WorkdayWsdl\\StructType\Worker_Document_WWSType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
     /**
      * Set Worker_Document value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Document_WWSType[] $worker_Document
-     * @return \StructType\Worker_Document_Data_WWSType
+     * @param \WorkdayWsdl\\StructType\Worker_Document_WWSType[] $worker_Document
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType
      */
     public function setWorker_Document(array $worker_Document = array())
     {
@@ -78,14 +78,14 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
     /**
      * Add item to Worker_Document value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Document_WWSType $item
-     * @return \StructType\Worker_Document_Data_WWSType
+     * @param \WorkdayWsdl\\StructType\Worker_Document_WWSType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType
      */
-    public function addToWorker_Document(\StructType\Worker_Document_WWSType $item)
+    public function addToWorker_Document(\WorkdayWsdl\\StructType\Worker_Document_WWSType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_Document_WWSType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Document property can only contain items of type \StructType\Worker_Document_WWSType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_Document_WWSType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Document property can only contain items of type \WorkdayWsdl\\StructType\Worker_Document_WWSType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Document[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Worker_Document_Data_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Document_Data_WWSType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType
      */
     public static function __set_state(array $array)
     {

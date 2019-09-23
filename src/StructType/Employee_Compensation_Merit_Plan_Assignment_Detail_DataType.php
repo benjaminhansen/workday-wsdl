@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class Employee_Compensation_Merit_Plan_Assignment_Detail_DataType extends Abstra
     /**
      * Set Individual_Target value
      * @param float $individual_Target
-     * @return \StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
      */
     public function setIndividual_Target($individual_Target = null)
     {
@@ -106,7 +106,7 @@ class Employee_Compensation_Merit_Plan_Assignment_Detail_DataType extends Abstra
     /**
      * Set Guaranteed_Minimum value
      * @param bool $guaranteed_Minimum
-     * @return \StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
      */
     public function setGuaranteed_Minimum($guaranteed_Minimum = null)
     {
@@ -128,7 +128,7 @@ class Employee_Compensation_Merit_Plan_Assignment_Detail_DataType extends Abstra
     /**
      * Set Actual_End_Date value
      * @param string $actual_End_Date
-     * @return \StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
      */
     public function setActual_End_Date($actual_End_Date = null)
     {
@@ -145,7 +145,7 @@ class Employee_Compensation_Merit_Plan_Assignment_Detail_DataType extends Abstra
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Merit_Plan_Assignment_Detail_DataType
      */
     public static function __set_state(array $array)
     {

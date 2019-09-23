@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class Submunicipality_Information_DataType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Submunicipality_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Submunicipality_Information_DataType
      */
     public function set_($_ = null)
     {
@@ -80,7 +80,7 @@ class Submunicipality_Information_DataType extends AbstractStructBase
     /**
      * Set Address_Component_Name value
      * @param string $address_Component_Name
-     * @return \StructType\Submunicipality_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Submunicipality_Information_DataType
      */
     public function setAddress_Component_Name($address_Component_Name = null)
     {
@@ -102,7 +102,7 @@ class Submunicipality_Information_DataType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\Submunicipality_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Submunicipality_Information_DataType
      */
     public function setType($type = null)
     {
@@ -119,7 +119,7 @@ class Submunicipality_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Submunicipality_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Submunicipality_Information_DataType
      */
     public static function __set_state(array $array)
     {

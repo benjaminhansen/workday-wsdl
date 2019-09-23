@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,14 +42,14 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
      * The Location_Reference
      * Meta information extracted from the WSDL
      * - documentation: Location must be of usage Business Site. | Location
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_Reference;
     /**
      * The Government_Reporting_Agency_Reference
      * Meta information extracted from the WSDL
      * - documentation: Government Reporting Agency
-     * @var \StructType\Government_Reporting_AgencyObjectType
+     * @var \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType
      */
     public $Government_Reporting_Agency_Reference;
     /**
@@ -81,12 +81,12 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
      * @param string $safety_Incident_Location_Name
      * @param string $code
      * @param string $safety_Incident_Location_Description
-     * @param \StructType\LocationObjectType $location_Reference
-     * @param \StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference
      * @param string $related_Reporting_Agency_s_Grouping_ID
      * @param bool $inactive
      */
-    public function __construct($safety_Incident_Location_Name = null, $code = null, $safety_Incident_Location_Description = null, \StructType\LocationObjectType $location_Reference = null, \StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference = null, $related_Reporting_Agency_s_Grouping_ID = null, $inactive = null)
+    public function __construct($safety_Incident_Location_Name = null, $code = null, $safety_Incident_Location_Description = null, \WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null, \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference = null, $related_Reporting_Agency_s_Grouping_ID = null, $inactive = null)
     {
         $this
             ->setSafety_Incident_Location_Name($safety_Incident_Location_Name)
@@ -108,7 +108,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     /**
      * Set Safety_Incident_Location_Name value
      * @param string $safety_Incident_Location_Name
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public function setSafety_Incident_Location_Name($safety_Incident_Location_Name = null)
     {
@@ -130,7 +130,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public function setCode($code = null)
     {
@@ -152,7 +152,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     /**
      * Set Safety_Incident_Location_Description value
      * @param string $safety_Incident_Location_Description
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public function setSafety_Incident_Location_Description($safety_Incident_Location_Description = null)
     {
@@ -165,7 +165,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -173,17 +173,17 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\LocationObjectType $location_Reference
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
-    public function setLocation_Reference(\StructType\LocationObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Government_Reporting_Agency_Reference value
-     * @return \StructType\Government_Reporting_AgencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType|null
      */
     public function getGovernment_Reporting_Agency_Reference()
     {
@@ -191,10 +191,10 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     }
     /**
      * Set Government_Reporting_Agency_Reference value
-     * @param \StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @param \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
-    public function setGovernment_Reporting_Agency_Reference(\StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference = null)
+    public function setGovernment_Reporting_Agency_Reference(\WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType $government_Reporting_Agency_Reference = null)
     {
         $this->Government_Reporting_Agency_Reference = $government_Reporting_Agency_Reference;
         return $this;
@@ -210,7 +210,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     /**
      * Set Related_Reporting_Agency_s_Grouping_ID value
      * @param string $related_Reporting_Agency_s_Grouping_ID
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public function setRelated_Reporting_Agency_s_Grouping_ID($related_Reporting_Agency_s_Grouping_ID = null)
     {
@@ -232,7 +232,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -249,7 +249,7 @@ class Safety_Incident_Location_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Location_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_DataType
      */
     public static function __set_state(array $array)
     {

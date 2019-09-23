@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public function setID($iD = null)
     {
@@ -111,7 +111,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
     /**
      * Set Sexual_Orientation_Name value
      * @param string $sexual_Orientation_Name
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public function setSexual_Orientation_Name($sexual_Orientation_Name = null)
     {
@@ -133,7 +133,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
     /**
      * Set Sexual_Orientation_Code value
      * @param string $sexual_Orientation_Code
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public function setSexual_Orientation_Code($sexual_Orientation_Code = null)
     {
@@ -155,7 +155,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
     /**
      * Set Sexual_Orientation_Description value
      * @param string $sexual_Orientation_Description
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public function setSexual_Orientation_Description($sexual_Orientation_Description = null)
     {
@@ -177,7 +177,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
     /**
      * Set Sexual_Orientation_Inactive value
      * @param bool $sexual_Orientation_Inactive
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public function setSexual_Orientation_Inactive($sexual_Orientation_Inactive = null)
     {
@@ -194,7 +194,7 @@ class Sexual_Orientation_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sexual_Orientation_DataType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_DataType
      */
     public static function __set_state(array $array)
     {

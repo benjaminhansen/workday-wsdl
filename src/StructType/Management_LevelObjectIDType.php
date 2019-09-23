@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Management_LevelObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Management_LevelReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Management_LevelReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Management_LevelReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Management_LevelReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Management_LevelObjectIDType
+     * @return \WorkdayWsdl\\StructType\Management_LevelObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Management_LevelReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Management_LevelReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Management_LevelReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Management_LevelReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Management_LevelReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Management_LevelReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Management_LevelObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Management_LevelObjectIDType
+     * @return \WorkdayWsdl\\StructType\Management_LevelObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Management_LevelObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Management_LevelObjectIDType
+     * @return \WorkdayWsdl\\StructType\Management_LevelObjectIDType
      */
     public static function __set_state(array $array)
     {

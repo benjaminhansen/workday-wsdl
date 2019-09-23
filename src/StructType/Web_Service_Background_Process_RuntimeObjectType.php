@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Web_Service_Background_Process_RuntimeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType[]
      */
     public $ID;
     /**
@@ -30,7 +30,7 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
      * Constructor method for Web_Service_Background_Process_RuntimeObjectType
      * @uses Web_Service_Background_Process_RuntimeObjectType::setID()
      * @uses Web_Service_Background_Process_RuntimeObjectType::setDescriptor()
-     * @param \StructType\Web_Service_Background_Process_RuntimeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -41,7 +41,7 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
     }
     /**
      * Get ID value
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType[]|null
      */
     public function getID()
     {
@@ -59,12 +59,12 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $web_Service_Background_Process_RuntimeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$web_Service_Background_Process_RuntimeObjectTypeIDItem instanceof \StructType\Web_Service_Background_Process_RuntimeObjectIDType) {
+            if (!$web_Service_Background_Process_RuntimeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType) {
                 $invalidValues[] = is_object($web_Service_Background_Process_RuntimeObjectTypeIDItem) ? get_class($web_Service_Background_Process_RuntimeObjectTypeIDItem) : sprintf('%s(%s)', gettype($web_Service_Background_Process_RuntimeObjectTypeIDItem), var_export($web_Service_Background_Process_RuntimeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Web_Service_Background_Process_RuntimeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Web_Service_Background_Process_RuntimeObjectIDType[] $iD
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectType
+     * @param \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -87,14 +87,14 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Web_Service_Background_Process_RuntimeObjectIDType $item
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectType
+     * @param \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType
      */
-    public function addToID(\StructType\Web_Service_Background_Process_RuntimeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Web_Service_Background_Process_RuntimeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Web_Service_Background_Process_RuntimeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectType
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -127,7 +127,7 @@ class Web_Service_Background_Process_RuntimeObjectType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectType
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType
      */
     public static function __set_state(array $array)
     {

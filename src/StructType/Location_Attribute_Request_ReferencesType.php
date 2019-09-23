@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Location Attribute(s) to be returned
      * - maxOccurs: unbounded
-     * @var \StructType\Location_AttributeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_AttributeObjectType[]
      */
     public $Location_Attribute_Reference;
     /**
      * Constructor method for Location_Attribute_Request_ReferencesType
      * @uses Location_Attribute_Request_ReferencesType::setLocation_Attribute_Reference()
-     * @param \StructType\Location_AttributeObjectType[] $location_Attribute_Reference
+     * @param \WorkdayWsdl\\StructType\Location_AttributeObjectType[] $location_Attribute_Reference
      */
     public function __construct(array $location_Attribute_Reference = array())
     {
@@ -32,7 +32,7 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Location_Attribute_Reference value
-     * @return \StructType\Location_AttributeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_AttributeObjectType[]|null
      */
     public function getLocation_Attribute_Reference()
     {
@@ -50,12 +50,12 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem instanceof \StructType\Location_AttributeObjectType) {
+            if (!$location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_AttributeObjectType) {
                 $invalidValues[] = is_object($location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem) ? get_class($location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem) : sprintf('%s(%s)', gettype($location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem), var_export($location_Attribute_Request_ReferencesTypeLocation_Attribute_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Attribute_Reference property can only contain items of type \StructType\Location_AttributeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Attribute_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_AttributeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Location_Attribute_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_AttributeObjectType[] $location_Attribute_Reference
-     * @return \StructType\Location_Attribute_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Location_AttributeObjectType[] $location_Attribute_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Attribute_Request_ReferencesType
      */
     public function setLocation_Attribute_Reference(array $location_Attribute_Reference = array())
     {
@@ -78,14 +78,14 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Location_Attribute_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_AttributeObjectType $item
-     * @return \StructType\Location_Attribute_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Location_AttributeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Attribute_Request_ReferencesType
      */
-    public function addToLocation_Attribute_Reference(\StructType\Location_AttributeObjectType $item)
+    public function addToLocation_Attribute_Reference(\WorkdayWsdl\\StructType\Location_AttributeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_AttributeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Attribute_Reference property can only contain items of type \StructType\Location_AttributeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_AttributeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Attribute_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_AttributeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Attribute_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Location_Attribute_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Attribute_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Location_Attribute_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

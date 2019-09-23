@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Report_Safety_IncidentType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The instance of the Safety Incident being returned.
      * - minOccurs: 0
-     * @var \StructType\Safety_IncidentObjectType
+     * @var \WorkdayWsdl\\StructType\Safety_IncidentObjectType
      */
     public $Safety_Incident_Reference;
     /**
@@ -25,17 +25,17 @@ class Report_Safety_IncidentType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Report_Safety_Incident_DataType[]
+     * @var \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType[]
      */
     public $Report_Safety_Incident_Data;
     /**
      * Constructor method for Report_Safety_IncidentType
      * @uses Report_Safety_IncidentType::setSafety_Incident_Reference()
      * @uses Report_Safety_IncidentType::setReport_Safety_Incident_Data()
-     * @param \StructType\Safety_IncidentObjectType $safety_Incident_Reference
-     * @param \StructType\Report_Safety_Incident_DataType[] $report_Safety_Incident_Data
+     * @param \WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType[] $report_Safety_Incident_Data
      */
-    public function __construct(\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null, array $report_Safety_Incident_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null, array $report_Safety_Incident_Data = array())
     {
         $this
             ->setSafety_Incident_Reference($safety_Incident_Reference)
@@ -43,7 +43,7 @@ class Report_Safety_IncidentType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Reference value
-     * @return \StructType\Safety_IncidentObjectType|null
+     * @return \WorkdayWsdl\\StructType\Safety_IncidentObjectType|null
      */
     public function getSafety_Incident_Reference()
     {
@@ -51,17 +51,17 @@ class Report_Safety_IncidentType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_Reference value
-     * @param \StructType\Safety_IncidentObjectType $safety_Incident_Reference
-     * @return \StructType\Report_Safety_IncidentType
+     * @param \WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference
+     * @return \WorkdayWsdl\\StructType\Report_Safety_IncidentType
      */
-    public function setSafety_Incident_Reference(\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null)
+    public function setSafety_Incident_Reference(\WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null)
     {
         $this->Safety_Incident_Reference = $safety_Incident_Reference;
         return $this;
     }
     /**
      * Get Report_Safety_Incident_Data value
-     * @return \StructType\Report_Safety_Incident_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType[]|null
      */
     public function getReport_Safety_Incident_Data()
     {
@@ -79,12 +79,12 @@ class Report_Safety_IncidentType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $report_Safety_IncidentTypeReport_Safety_Incident_DataItem) {
             // validation for constraint: itemType
-            if (!$report_Safety_IncidentTypeReport_Safety_Incident_DataItem instanceof \StructType\Report_Safety_Incident_DataType) {
+            if (!$report_Safety_IncidentTypeReport_Safety_Incident_DataItem instanceof \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType) {
                 $invalidValues[] = is_object($report_Safety_IncidentTypeReport_Safety_Incident_DataItem) ? get_class($report_Safety_IncidentTypeReport_Safety_Incident_DataItem) : sprintf('%s(%s)', gettype($report_Safety_IncidentTypeReport_Safety_Incident_DataItem), var_export($report_Safety_IncidentTypeReport_Safety_Incident_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Report_Safety_Incident_Data property can only contain items of type \StructType\Report_Safety_Incident_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Report_Safety_Incident_Data property can only contain items of type \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Report_Safety_IncidentType extends AbstractStructBase
     /**
      * Set Report_Safety_Incident_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Report_Safety_Incident_DataType[] $report_Safety_Incident_Data
-     * @return \StructType\Report_Safety_IncidentType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType[] $report_Safety_Incident_Data
+     * @return \WorkdayWsdl\\StructType\Report_Safety_IncidentType
      */
     public function setReport_Safety_Incident_Data(array $report_Safety_Incident_Data = array())
     {
@@ -107,14 +107,14 @@ class Report_Safety_IncidentType extends AbstractStructBase
     /**
      * Add item to Report_Safety_Incident_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Report_Safety_Incident_DataType $item
-     * @return \StructType\Report_Safety_IncidentType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $item
+     * @return \WorkdayWsdl\\StructType\Report_Safety_IncidentType
      */
-    public function addToReport_Safety_Incident_Data(\StructType\Report_Safety_Incident_DataType $item)
+    public function addToReport_Safety_Incident_Data(\WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Report_Safety_Incident_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Report_Safety_Incident_Data property can only contain items of type \StructType\Report_Safety_Incident_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Report_Safety_Incident_Data property can only contain items of type \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Report_Safety_Incident_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Report_Safety_IncidentType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Report_Safety_IncidentType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_IncidentType
      */
     public static function __set_state(array $array)
     {

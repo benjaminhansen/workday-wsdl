@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class LocaleObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LocaleObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\LocaleObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class LocaleObjectType extends AbstractStructBase
      * Constructor method for LocaleObjectType
      * @uses LocaleObjectType::setID()
      * @uses LocaleObjectType::setDescriptor()
-     * @param \StructType\LocaleObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\LocaleObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class LocaleObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\LocaleObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\LocaleObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class LocaleObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $localeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$localeObjectTypeIDItem instanceof \StructType\LocaleObjectIDType) {
+            if (!$localeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\LocaleObjectIDType) {
                 $invalidValues[] = is_object($localeObjectTypeIDItem) ? get_class($localeObjectTypeIDItem) : sprintf('%s(%s)', gettype($localeObjectTypeIDItem), var_export($localeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\LocaleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\LocaleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class LocaleObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocaleObjectIDType[] $iD
-     * @return \StructType\LocaleObjectType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class LocaleObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocaleObjectIDType $item
-     * @return \StructType\LocaleObjectType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType
      */
-    public function addToID(\StructType\LocaleObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\LocaleObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocaleObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\LocaleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LocaleObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\LocaleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class LocaleObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\LocaleObjectType
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class LocaleObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LocaleObjectType
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public static function __set_state(array $array)
     {

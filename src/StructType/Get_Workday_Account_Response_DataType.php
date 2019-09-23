@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
      * - documentation: Element containing Workday Account Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Get_Workday_AccountType[]
+     * @var \WorkdayWsdl\\StructType\Get_Workday_AccountType[]
      */
     public $Workday_Account_Response_Data;
     /**
      * Constructor method for Get_Workday_Account_Response_DataType
      * @uses Get_Workday_Account_Response_DataType::setWorkday_Account_Response_Data()
-     * @param \StructType\Get_Workday_AccountType[] $workday_Account_Response_Data
+     * @param \WorkdayWsdl\\StructType\Get_Workday_AccountType[] $workday_Account_Response_Data
      */
     public function __construct(array $workday_Account_Response_Data = array())
     {
@@ -33,7 +33,7 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Workday_Account_Response_Data value
-     * @return \StructType\Get_Workday_AccountType[]|null
+     * @return \WorkdayWsdl\\StructType\Get_Workday_AccountType[]|null
      */
     public function getWorkday_Account_Response_Data()
     {
@@ -51,12 +51,12 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem) {
             // validation for constraint: itemType
-            if (!$get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem instanceof \StructType\Get_Workday_AccountType) {
+            if (!$get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem instanceof \WorkdayWsdl\\StructType\Get_Workday_AccountType) {
                 $invalidValues[] = is_object($get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem) ? get_class($get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem) : sprintf('%s(%s)', gettype($get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem), var_export($get_Workday_Account_Response_DataTypeWorkday_Account_Response_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workday_Account_Response_Data property can only contain items of type \StructType\Get_Workday_AccountType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workday_Account_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Get_Workday_AccountType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
     /**
      * Set Workday_Account_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Get_Workday_AccountType[] $workday_Account_Response_Data
-     * @return \StructType\Get_Workday_Account_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Get_Workday_AccountType[] $workday_Account_Response_Data
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Response_DataType
      */
     public function setWorkday_Account_Response_Data(array $workday_Account_Response_Data = array())
     {
@@ -79,14 +79,14 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
     /**
      * Add item to Workday_Account_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Get_Workday_AccountType $item
-     * @return \StructType\Get_Workday_Account_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Get_Workday_AccountType $item
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Response_DataType
      */
-    public function addToWorkday_Account_Response_Data(\StructType\Get_Workday_AccountType $item)
+    public function addToWorkday_Account_Response_Data(\WorkdayWsdl\\StructType\Get_Workday_AccountType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Get_Workday_AccountType) {
-            throw new \InvalidArgumentException(sprintf('The Workday_Account_Response_Data property can only contain items of type \StructType\Get_Workday_AccountType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Get_Workday_AccountType) {
+            throw new \InvalidArgumentException(sprintf('The Workday_Account_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Get_Workday_AccountType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workday_Account_Response_Data[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Get_Workday_Account_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Workday_Account_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Response_DataType
      */
     public static function __set_state(array $array)
     {

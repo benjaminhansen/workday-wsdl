@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,24 +16,24 @@ class Worker_Management_Chain_DataType extends AbstractStructBase
      * The Worker_Supervisory_Management_Chain_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Supervisory_Management_Chain_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType
      */
     public $Worker_Supervisory_Management_Chain_Data;
     /**
      * The Worker_Matrix_Management_Chain_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Matrix_Management_Chain_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType
      */
     public $Worker_Matrix_Management_Chain_Data;
     /**
      * Constructor method for Worker_Management_Chain_DataType
      * @uses Worker_Management_Chain_DataType::setWorker_Supervisory_Management_Chain_Data()
      * @uses Worker_Management_Chain_DataType::setWorker_Matrix_Management_Chain_Data()
-     * @param \StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data
-     * @param \StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data
      */
-    public function __construct(\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data = null, \StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data = null, \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data = null)
     {
         $this
             ->setWorker_Supervisory_Management_Chain_Data($worker_Supervisory_Management_Chain_Data)
@@ -41,7 +41,7 @@ class Worker_Management_Chain_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Supervisory_Management_Chain_Data value
-     * @return \StructType\Worker_Supervisory_Management_Chain_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType|null
      */
     public function getWorker_Supervisory_Management_Chain_Data()
     {
@@ -49,17 +49,17 @@ class Worker_Management_Chain_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Supervisory_Management_Chain_Data value
-     * @param \StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data
-     * @return \StructType\Worker_Management_Chain_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Management_Chain_DataType
      */
-    public function setWorker_Supervisory_Management_Chain_Data(\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data = null)
+    public function setWorker_Supervisory_Management_Chain_Data(\WorkdayWsdl\\StructType\Worker_Supervisory_Management_Chain_DataType $worker_Supervisory_Management_Chain_Data = null)
     {
         $this->Worker_Supervisory_Management_Chain_Data = $worker_Supervisory_Management_Chain_Data;
         return $this;
     }
     /**
      * Get Worker_Matrix_Management_Chain_Data value
-     * @return \StructType\Worker_Matrix_Management_Chain_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType|null
      */
     public function getWorker_Matrix_Management_Chain_Data()
     {
@@ -67,10 +67,10 @@ class Worker_Management_Chain_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Matrix_Management_Chain_Data value
-     * @param \StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data
-     * @return \StructType\Worker_Management_Chain_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Management_Chain_DataType
      */
-    public function setWorker_Matrix_Management_Chain_Data(\StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data = null)
+    public function setWorker_Matrix_Management_Chain_Data(\WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType $worker_Matrix_Management_Chain_Data = null)
     {
         $this->Worker_Matrix_Management_Chain_Data = $worker_Matrix_Management_Chain_Data;
         return $this;
@@ -81,7 +81,7 @@ class Worker_Management_Chain_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Management_Chain_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Management_Chain_DataType
      */
     public static function __set_state(array $array)
     {

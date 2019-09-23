@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the worker.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -31,7 +31,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     public $Effective_Date;
     /**
      * The Worker_Contact_Information_Data
-     * @var \StructType\Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public $Worker_Contact_Information_Data;
     /**
@@ -39,11 +39,11 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
      * @uses Contact_Information_for_Person_Event_DataType::setWorker_Reference()
      * @uses Contact_Information_for_Person_Event_DataType::setEffective_Date()
      * @uses Contact_Information_for_Person_Event_DataType::setWorker_Contact_Information_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $effective_Date
-     * @param \StructType\Contact_Information_DataType $worker_Contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $worker_Contact_Information_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $effective_Date = null, \StructType\Contact_Information_DataType $worker_Contact_Information_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $effective_Date = null, \WorkdayWsdl\\StructType\Contact_Information_DataType $worker_Contact_Information_Data = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -52,7 +52,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -60,10 +60,10 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Contact_Information_for_Person_Event_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -79,7 +79,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Contact_Information_for_Person_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -92,7 +92,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType|null
      */
     public function getWorker_Contact_Information_Data()
     {
@@ -100,10 +100,10 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Contact_Information_Data value
-     * @param \StructType\Contact_Information_DataType $worker_Contact_Information_Data
-     * @return \StructType\Contact_Information_for_Person_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $worker_Contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType
      */
-    public function setWorker_Contact_Information_Data(\StructType\Contact_Information_DataType $worker_Contact_Information_Data = null)
+    public function setWorker_Contact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $worker_Contact_Information_Data = null)
     {
         $this->Worker_Contact_Information_Data = $worker_Contact_Information_Data;
         return $this;
@@ -114,7 +114,7 @@ class Contact_Information_for_Person_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contact_Information_for_Person_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType
      */
     public static function __set_state(array $array)
     {

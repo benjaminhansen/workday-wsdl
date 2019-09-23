@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_Breaker_DividerObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
      * Constructor method for Day_Breaker_DividerObjectType
      * @uses Day_Breaker_DividerObjectType::setID()
      * @uses Day_Breaker_DividerObjectType::setDescriptor()
-     * @param \StructType\Day_Breaker_DividerObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Day_Breaker_DividerObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $day_Breaker_DividerObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$day_Breaker_DividerObjectTypeIDItem instanceof \StructType\Day_Breaker_DividerObjectIDType) {
+            if (!$day_Breaker_DividerObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType) {
                 $invalidValues[] = is_object($day_Breaker_DividerObjectTypeIDItem) ? get_class($day_Breaker_DividerObjectTypeIDItem) : sprintf('%s(%s)', gettype($day_Breaker_DividerObjectTypeIDItem), var_export($day_Breaker_DividerObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Day_Breaker_DividerObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_Breaker_DividerObjectIDType[] $iD
-     * @return \StructType\Day_Breaker_DividerObjectType
+     * @param \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_Breaker_DividerObjectIDType $item
-     * @return \StructType\Day_Breaker_DividerObjectType
+     * @param \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectType
      */
-    public function addToID(\StructType\Day_Breaker_DividerObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_Breaker_DividerObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Day_Breaker_DividerObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Day_Breaker_DividerObjectType
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Day_Breaker_DividerObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Day_Breaker_DividerObjectType
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectType
      */
     public static function __set_state(array $array)
     {

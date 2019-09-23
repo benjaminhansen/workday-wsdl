@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class External_URL_DataType extends AbstractStructBase
     /**
      * Set URL_Name value
      * @param string $uRL_Name
-     * @return \StructType\External_URL_DataType
+     * @return \WorkdayWsdl\\StructType\External_URL_DataType
      */
     public function setURL_Name($uRL_Name = null)
     {
@@ -76,7 +76,7 @@ class External_URL_DataType extends AbstractStructBase
     /**
      * Set URL value
      * @param string $uRL
-     * @return \StructType\External_URL_DataType
+     * @return \WorkdayWsdl\\StructType\External_URL_DataType
      */
     public function setURL($uRL = null)
     {
@@ -93,7 +93,7 @@ class External_URL_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_URL_DataType
+     * @return \WorkdayWsdl\\StructType\External_URL_DataType
      */
     public static function __set_state(array $array)
     {

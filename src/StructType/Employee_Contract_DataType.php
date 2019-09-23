@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * - documentation: Employee Contract which is being edited. An employee contract may have many versions. The employee contract reference is common for each version.1. Update existing contract if Employee Contract Reference is specified.2. Add new
      * contract if Employee Contract Reference is not specified.
      * - minOccurs: 0
-     * @var \StructType\Employee_ContractObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_ContractObjectType
      */
     public $Employee_Contract_Reference;
     /**
@@ -27,7 +27,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * - documentation: The contract reason defined in the Maintain Employee Contract Reasons task.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_Contract_ReasonObjectType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType[]
      */
     public $Employee_Contract_Reason_Reference;
     /**
@@ -61,7 +61,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The contract types defined in the Maintain Employee Contract Types task. If empty, Workday automatically populates the existing value.
      * - minOccurs: 0
-     * @var \StructType\Employee_Contract_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType
      */
     public $Contract_Type_Reference;
     /**
@@ -88,7 +88,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * - documentation: The collective agreements for this employee contract.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Collective_AgreementObjectType[]
+     * @var \WorkdayWsdl\\StructType\Collective_AgreementObjectType[]
      */
     public $Employee_Contract_Collective_Agreement_Reference;
     /**
@@ -121,7 +121,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * The Contract_Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: The status of the contract, based on the status types defined within your organization. The status values will be those defined for the location of the employee's primary position.
-     * @var \StructType\Employee_Contract_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType
      */
     public $Contract_Status_Reference;
     /**
@@ -129,7 +129,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Position ID associated with the contract. If empty, Workday automatically populates the existing value.
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Reference;
     /**
@@ -165,7 +165,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * - documentation: You can attach scanned contract images, addendums, or other file attachments.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_DocumentObjectType[]
+     * @var \WorkdayWsdl\\StructType\Worker_DocumentObjectType[]
      */
     public $Worker_Document_Reference;
     /**
@@ -187,25 +187,25 @@ class Employee_Contract_DataType extends AbstractStructBase
      * @uses Employee_Contract_DataType::setDate_Employee_Signed()
      * @uses Employee_Contract_DataType::setDate_Employer_Signed()
      * @uses Employee_Contract_DataType::setWorker_Document_Reference()
-     * @param \StructType\Employee_ContractObjectType $employee_Contract_Reference
-     * @param \StructType\Employee_Contract_ReasonObjectType[] $employee_Contract_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_ContractObjectType $employee_Contract_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType[] $employee_Contract_Reason_Reference
      * @param string $employee_Contract_ID
      * @param string $effective_Date
      * @param string $contract_ID
-     * @param \StructType\Employee_Contract_TypeObjectType $contract_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType $contract_Type_Reference
      * @param string $contract_Start_Date
      * @param string $contract_End_Date
-     * @param \StructType\Collective_AgreementObjectType[] $employee_Contract_Collective_Agreement_Reference
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectType[] $employee_Contract_Collective_Agreement_Reference
      * @param float $maximum_Weekly_Hours
      * @param float $minimum_Weekly_Hours
-     * @param \StructType\Employee_Contract_StatusObjectType $contract_Status_Reference
-     * @param \StructType\Position_ElementObjectType $position_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType $contract_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
      * @param string $contract_Description
      * @param string $date_Employee_Signed
      * @param string $date_Employer_Signed
-     * @param \StructType\Worker_DocumentObjectType[] $worker_Document_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType[] $worker_Document_Reference
      */
-    public function __construct(\StructType\Employee_ContractObjectType $employee_Contract_Reference = null, array $employee_Contract_Reason_Reference = array(), $employee_Contract_ID = null, $effective_Date = null, $contract_ID = null, \StructType\Employee_Contract_TypeObjectType $contract_Type_Reference = null, $contract_Start_Date = null, $contract_End_Date = null, array $employee_Contract_Collective_Agreement_Reference = array(), $maximum_Weekly_Hours = null, $minimum_Weekly_Hours = null, \StructType\Employee_Contract_StatusObjectType $contract_Status_Reference = null, \StructType\Position_ElementObjectType $position_Reference = null, $contract_Description = null, $date_Employee_Signed = null, $date_Employer_Signed = null, array $worker_Document_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Employee_ContractObjectType $employee_Contract_Reference = null, array $employee_Contract_Reason_Reference = array(), $employee_Contract_ID = null, $effective_Date = null, $contract_ID = null, \WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType $contract_Type_Reference = null, $contract_Start_Date = null, $contract_End_Date = null, array $employee_Contract_Collective_Agreement_Reference = array(), $maximum_Weekly_Hours = null, $minimum_Weekly_Hours = null, \WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType $contract_Status_Reference = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null, $contract_Description = null, $date_Employee_Signed = null, $date_Employer_Signed = null, array $worker_Document_Reference = array())
     {
         $this
             ->setEmployee_Contract_Reference($employee_Contract_Reference)
@@ -228,7 +228,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Contract_Reference value
-     * @return \StructType\Employee_ContractObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectType|null
      */
     public function getEmployee_Contract_Reference()
     {
@@ -236,17 +236,17 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Contract_Reference value
-     * @param \StructType\Employee_ContractObjectType $employee_Contract_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_ContractObjectType $employee_Contract_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function setEmployee_Contract_Reference(\StructType\Employee_ContractObjectType $employee_Contract_Reference = null)
+    public function setEmployee_Contract_Reference(\WorkdayWsdl\\StructType\Employee_ContractObjectType $employee_Contract_Reference = null)
     {
         $this->Employee_Contract_Reference = $employee_Contract_Reference;
         return $this;
     }
     /**
      * Get Employee_Contract_Reason_Reference value
-     * @return \StructType\Employee_Contract_ReasonObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType[]|null
      */
     public function getEmployee_Contract_Reason_Reference()
     {
@@ -264,12 +264,12 @@ class Employee_Contract_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem instanceof \StructType\Employee_Contract_ReasonObjectType) {
+            if (!$employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem instanceof \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType) {
                 $invalidValues[] = is_object($employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem) ? get_class($employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem) : sprintf('%s(%s)', gettype($employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem), var_export($employee_Contract_DataTypeEmployee_Contract_Reason_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Contract_Reason_Reference property can only contain items of type \StructType\Employee_Contract_ReasonObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Contract_Reason_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -277,8 +277,8 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Employee_Contract_Reason_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contract_ReasonObjectType[] $employee_Contract_Reason_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType[] $employee_Contract_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setEmployee_Contract_Reason_Reference(array $employee_Contract_Reason_Reference = array())
     {
@@ -292,14 +292,14 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Add item to Employee_Contract_Reason_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contract_ReasonObjectType $item
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function addToEmployee_Contract_Reason_Reference(\StructType\Employee_Contract_ReasonObjectType $item)
+    public function addToEmployee_Contract_Reason_Reference(\WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Contract_ReasonObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Reason_Reference property can only contain items of type \StructType\Employee_Contract_ReasonObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Reason_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Contract_Reason_Reference[] = $item;
         return $this;
@@ -315,7 +315,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Employee_Contract_ID value
      * @param string $employee_Contract_ID
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setEmployee_Contract_ID($employee_Contract_ID = null)
     {
@@ -337,7 +337,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -359,7 +359,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Contract_ID value
      * @param string $contract_ID
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setContract_ID($contract_ID = null)
     {
@@ -372,7 +372,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Get Contract_Type_Reference value
-     * @return \StructType\Employee_Contract_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType|null
      */
     public function getContract_Type_Reference()
     {
@@ -380,10 +380,10 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Set Contract_Type_Reference value
-     * @param \StructType\Employee_Contract_TypeObjectType $contract_Type_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType $contract_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function setContract_Type_Reference(\StructType\Employee_Contract_TypeObjectType $contract_Type_Reference = null)
+    public function setContract_Type_Reference(\WorkdayWsdl\\StructType\Employee_Contract_TypeObjectType $contract_Type_Reference = null)
     {
         $this->Contract_Type_Reference = $contract_Type_Reference;
         return $this;
@@ -399,7 +399,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Contract_Start_Date value
      * @param string $contract_Start_Date
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setContract_Start_Date($contract_Start_Date = null)
     {
@@ -421,7 +421,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Contract_End_Date value
      * @param string $contract_End_Date
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setContract_End_Date($contract_End_Date = null)
     {
@@ -434,7 +434,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Contract_Collective_Agreement_Reference value
-     * @return \StructType\Collective_AgreementObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectType[]|null
      */
     public function getEmployee_Contract_Collective_Agreement_Reference()
     {
@@ -452,12 +452,12 @@ class Employee_Contract_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem instanceof \StructType\Collective_AgreementObjectType) {
+            if (!$employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem instanceof \WorkdayWsdl\\StructType\Collective_AgreementObjectType) {
                 $invalidValues[] = is_object($employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem) ? get_class($employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem) : sprintf('%s(%s)', gettype($employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem), var_export($employee_Contract_DataTypeEmployee_Contract_Collective_Agreement_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Contract_Collective_Agreement_Reference property can only contain items of type \StructType\Collective_AgreementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Contract_Collective_Agreement_Reference property can only contain items of type \WorkdayWsdl\\StructType\Collective_AgreementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -465,8 +465,8 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Employee_Contract_Collective_Agreement_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_AgreementObjectType[] $employee_Contract_Collective_Agreement_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectType[] $employee_Contract_Collective_Agreement_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setEmployee_Contract_Collective_Agreement_Reference(array $employee_Contract_Collective_Agreement_Reference = array())
     {
@@ -480,14 +480,14 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Add item to Employee_Contract_Collective_Agreement_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_AgreementObjectType $item
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function addToEmployee_Contract_Collective_Agreement_Reference(\StructType\Collective_AgreementObjectType $item)
+    public function addToEmployee_Contract_Collective_Agreement_Reference(\WorkdayWsdl\\StructType\Collective_AgreementObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Collective_AgreementObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Collective_Agreement_Reference property can only contain items of type \StructType\Collective_AgreementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Collective_AgreementObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Collective_Agreement_Reference property can only contain items of type \WorkdayWsdl\\StructType\Collective_AgreementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Contract_Collective_Agreement_Reference[] = $item;
         return $this;
@@ -503,7 +503,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Maximum_Weekly_Hours value
      * @param float $maximum_Weekly_Hours
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setMaximum_Weekly_Hours($maximum_Weekly_Hours = null)
     {
@@ -537,7 +537,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Minimum_Weekly_Hours value
      * @param float $minimum_Weekly_Hours
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setMinimum_Weekly_Hours($minimum_Weekly_Hours = null)
     {
@@ -562,7 +562,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Get Contract_Status_Reference value
-     * @return \StructType\Employee_Contract_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType|null
      */
     public function getContract_Status_Reference()
     {
@@ -570,17 +570,17 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Set Contract_Status_Reference value
-     * @param \StructType\Employee_Contract_StatusObjectType $contract_Status_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType $contract_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function setContract_Status_Reference(\StructType\Employee_Contract_StatusObjectType $contract_Status_Reference = null)
+    public function setContract_Status_Reference(\WorkdayWsdl\\StructType\Employee_Contract_StatusObjectType $contract_Status_Reference = null)
     {
         $this->Contract_Status_Reference = $contract_Status_Reference;
         return $this;
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Reference()
     {
@@ -588,10 +588,10 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ElementObjectType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
@@ -607,7 +607,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Contract_Description value
      * @param string $contract_Description
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setContract_Description($contract_Description = null)
     {
@@ -629,7 +629,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Date_Employee_Signed value
      * @param string $date_Employee_Signed
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setDate_Employee_Signed($date_Employee_Signed = null)
     {
@@ -651,7 +651,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Date_Employer_Signed value
      * @param string $date_Employer_Signed
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setDate_Employer_Signed($date_Employer_Signed = null)
     {
@@ -664,7 +664,7 @@ class Employee_Contract_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Document_Reference value
-     * @return \StructType\Worker_DocumentObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectType[]|null
      */
     public function getWorker_Document_Reference()
     {
@@ -682,12 +682,12 @@ class Employee_Contract_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Contract_DataTypeWorker_Document_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$employee_Contract_DataTypeWorker_Document_ReferenceItem instanceof \StructType\Worker_DocumentObjectType) {
+            if (!$employee_Contract_DataTypeWorker_Document_ReferenceItem instanceof \WorkdayWsdl\\StructType\Worker_DocumentObjectType) {
                 $invalidValues[] = is_object($employee_Contract_DataTypeWorker_Document_ReferenceItem) ? get_class($employee_Contract_DataTypeWorker_Document_ReferenceItem) : sprintf('%s(%s)', gettype($employee_Contract_DataTypeWorker_Document_ReferenceItem), var_export($employee_Contract_DataTypeWorker_Document_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Document_Reference property can only contain items of type \StructType\Worker_DocumentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Document_Reference property can only contain items of type \WorkdayWsdl\\StructType\Worker_DocumentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -695,8 +695,8 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Set Worker_Document_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_DocumentObjectType[] $worker_Document_Reference
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType[] $worker_Document_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public function setWorker_Document_Reference(array $worker_Document_Reference = array())
     {
@@ -710,14 +710,14 @@ class Employee_Contract_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Document_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_DocumentObjectType $item
-     * @return \StructType\Employee_Contract_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
-    public function addToWorker_Document_Reference(\StructType\Worker_DocumentObjectType $item)
+    public function addToWorker_Document_Reference(\WorkdayWsdl\\StructType\Worker_DocumentObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_DocumentObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Document_Reference property can only contain items of type \StructType\Worker_DocumentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_DocumentObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Document_Reference property can only contain items of type \WorkdayWsdl\\StructType\Worker_DocumentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Document_Reference[] = $item;
         return $this;
@@ -728,7 +728,7 @@ class Employee_Contract_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Contract_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType
      */
     public static function __set_state(array $array)
     {

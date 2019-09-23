@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Passport_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Passport_Type_Name value
      * @param string $passport_Type_Name
-     * @return \StructType\Passport_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Passport_Type_ReferenceType
      */
     public function setPassport_Type_Name($passport_Type_Name = null)
     {
@@ -58,7 +58,7 @@ class Passport_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Passport_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Passport_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The type of the injury Illness.
      * - minOccurs: 0
-     * @var \StructType\XMLNAME__US__Injury_Illness_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType
      */
     public $Injury_Illness_Type_Reference;
     /**
@@ -129,7 +129,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
      * @param bool $government_Reportable
      * @param string $case_Number
      * @param string $claim_Removed_Date
-     * @param \StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference
+     * @param \WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference
      * @param string $specific_Work_Area
      * @param string $investigation_Due_Date
      * @param string $worker_Comp_Legal_Claim_Number
@@ -138,7 +138,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
      * @param string $what_Happened
      * @param string $preventative_Measures
      */
-    public function __construct($government_Reportable = null, $case_Number = null, $claim_Removed_Date = null, \StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference = null, $specific_Work_Area = null, $investigation_Due_Date = null, $worker_Comp_Legal_Claim_Number = null, $claim_Administrator_Code = null, $worker_Prior_Activity = null, $what_Happened = null, $preventative_Measures = null)
+    public function __construct($government_Reportable = null, $case_Number = null, $claim_Removed_Date = null, \WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference = null, $specific_Work_Area = null, $investigation_Due_Date = null, $worker_Comp_Legal_Claim_Number = null, $claim_Administrator_Code = null, $worker_Prior_Activity = null, $what_Happened = null, $preventative_Measures = null)
     {
         $this
             ->setGovernment_Reportable($government_Reportable)
@@ -164,7 +164,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Government_Reportable value
      * @param bool $government_Reportable
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setGovernment_Reportable($government_Reportable = null)
     {
@@ -186,7 +186,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Case_Number value
      * @param string $case_Number
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setCase_Number($case_Number = null)
     {
@@ -208,7 +208,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Claim_Removed_Date value
      * @param string $claim_Removed_Date
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setClaim_Removed_Date($claim_Removed_Date = null)
     {
@@ -221,7 +221,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     }
     /**
      * Get Injury_Illness_Type_Reference value
-     * @return \StructType\XMLNAME__US__Injury_Illness_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType|null
      */
     public function getInjury_Illness_Type_Reference()
     {
@@ -229,10 +229,10 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     }
     /**
      * Set Injury_Illness_Type_Reference value
-     * @param \StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @param \WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
-    public function setInjury_Illness_Type_Reference(\StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference = null)
+    public function setInjury_Illness_Type_Reference(\WorkdayWsdl\\StructType\XMLNAME__US__Injury_Illness_TypeObjectType $injury_Illness_Type_Reference = null)
     {
         $this->Injury_Illness_Type_Reference = $injury_Illness_Type_Reference;
         return $this;
@@ -248,7 +248,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Specific_Work_Area value
      * @param string $specific_Work_Area
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setSpecific_Work_Area($specific_Work_Area = null)
     {
@@ -270,7 +270,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Investigation_Due_Date value
      * @param string $investigation_Due_Date
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setInvestigation_Due_Date($investigation_Due_Date = null)
     {
@@ -292,7 +292,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Worker_Comp_Legal_Claim_Number value
      * @param string $worker_Comp_Legal_Claim_Number
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setWorker_Comp_Legal_Claim_Number($worker_Comp_Legal_Claim_Number = null)
     {
@@ -314,7 +314,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Claim_Administrator_Code value
      * @param string $claim_Administrator_Code
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setClaim_Administrator_Code($claim_Administrator_Code = null)
     {
@@ -336,7 +336,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Worker_Prior_Activity value
      * @param string $worker_Prior_Activity
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setWorker_Prior_Activity($worker_Prior_Activity = null)
     {
@@ -358,7 +358,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set What_Happened value
      * @param string $what_Happened
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setWhat_Happened($what_Happened = null)
     {
@@ -380,7 +380,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
     /**
      * Set Preventative_Measures value
      * @param string $preventative_Measures
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public function setPreventative_Measures($preventative_Measures = null)
     {
@@ -397,7 +397,7 @@ class Safety_Incident_Report_Details_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Report_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Report_Details_DataType
      */
     public static function __set_state(array $array)
     {

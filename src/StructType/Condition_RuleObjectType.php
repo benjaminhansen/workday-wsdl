@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Condition_RuleObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Condition_RuleObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Condition_RuleObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Condition_RuleObjectType extends AbstractStructBase
      * Constructor method for Condition_RuleObjectType
      * @uses Condition_RuleObjectType::setID()
      * @uses Condition_RuleObjectType::setDescriptor()
-     * @param \StructType\Condition_RuleObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Condition_RuleObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Condition_RuleObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Condition_RuleObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Condition_RuleObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $condition_RuleObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$condition_RuleObjectTypeIDItem instanceof \StructType\Condition_RuleObjectIDType) {
+            if (!$condition_RuleObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Condition_RuleObjectIDType) {
                 $invalidValues[] = is_object($condition_RuleObjectTypeIDItem) ? get_class($condition_RuleObjectTypeIDItem) : sprintf('%s(%s)', gettype($condition_RuleObjectTypeIDItem), var_export($condition_RuleObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Condition_RuleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Condition_RuleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Condition_RuleObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Condition_RuleObjectIDType[] $iD
-     * @return \StructType\Condition_RuleObjectType
+     * @param \WorkdayWsdl\\StructType\Condition_RuleObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Condition_RuleObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Condition_RuleObjectIDType $item
-     * @return \StructType\Condition_RuleObjectType
+     * @param \WorkdayWsdl\\StructType\Condition_RuleObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectType
      */
-    public function addToID(\StructType\Condition_RuleObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Condition_RuleObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Condition_RuleObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Condition_RuleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Condition_RuleObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Condition_RuleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Condition_RuleObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Condition_RuleObjectType
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Condition_RuleObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Condition_RuleObjectType
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectType
      */
     public static function __set_state(array $array)
     {

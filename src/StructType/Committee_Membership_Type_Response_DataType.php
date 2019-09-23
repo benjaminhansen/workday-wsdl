@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
      * - documentation: Contains the data for a Committee Member Type
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_TypeType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_TypeType[]
      */
     public $Committee_Membership_Type;
     /**
      * Constructor method for Committee_Membership_Type_Response_DataType
      * @uses Committee_Membership_Type_Response_DataType::setCommittee_Membership_Type()
-     * @param \StructType\Committee_Membership_TypeType[] $committee_Membership_Type
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeType[] $committee_Membership_Type
      */
     public function __construct(array $committee_Membership_Type = array())
     {
@@ -33,7 +33,7 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Committee_Membership_Type value
-     * @return \StructType\Committee_Membership_TypeType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_TypeType[]|null
      */
     public function getCommittee_Membership_Type()
     {
@@ -51,12 +51,12 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem) {
             // validation for constraint: itemType
-            if (!$committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem instanceof \StructType\Committee_Membership_TypeType) {
+            if (!$committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem instanceof \WorkdayWsdl\\StructType\Committee_Membership_TypeType) {
                 $invalidValues[] = is_object($committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem) ? get_class($committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem) : sprintf('%s(%s)', gettype($committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem), var_export($committee_Membership_Type_Response_DataTypeCommittee_Membership_TypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Membership_Type property can only contain items of type \StructType\Committee_Membership_TypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Membership_Type property can only contain items of type \WorkdayWsdl\\StructType\Committee_Membership_TypeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
     /**
      * Set Committee_Membership_Type value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Membership_TypeType[] $committee_Membership_Type
-     * @return \StructType\Committee_Membership_Type_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeType[] $committee_Membership_Type
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_Response_DataType
      */
     public function setCommittee_Membership_Type(array $committee_Membership_Type = array())
     {
@@ -79,14 +79,14 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
     /**
      * Add item to Committee_Membership_Type value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Membership_TypeType $item
-     * @return \StructType\Committee_Membership_Type_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_Response_DataType
      */
-    public function addToCommittee_Membership_Type(\StructType\Committee_Membership_TypeType $item)
+    public function addToCommittee_Membership_Type(\WorkdayWsdl\\StructType\Committee_Membership_TypeType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Membership_TypeType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Membership_Type property can only contain items of type \StructType\Committee_Membership_TypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Membership_TypeType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Membership_Type property can only contain items of type \WorkdayWsdl\\StructType\Committee_Membership_TypeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Membership_Type[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Committee_Membership_Type_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Membership_Type_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_Response_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Service_Center_RepresentativeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Service_Center_RepresentativeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Service_Center_RepresentativeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Service_Center_RepresentativeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Service_Center_RepresentativeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Service_Center_RepresentativeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Service_Center_RepresentativeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Service_Center_RepresentativeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Service_Center_RepresentativeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Service_Center_RepresentativeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Service_Center_RepresentativeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Service_Center_RepresentativeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Service_Center_RepresentativeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Service_Center_RepresentativeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Service_Center_RepresentativeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_RepresentativeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType
      */
     public static function __set_state(array $array)
     {

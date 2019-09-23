@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the collective agreement factor 1 and factor option 1 data.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_1_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_1_DataType
      */
     public $Collective_Agreement_Factor_1_Data;
     /**
@@ -25,7 +25,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the collective agreement factor 2 and factor option 2 data.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_2_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_2_DataType
      */
     public $Collective_Agreement_Factor_2_Data;
     /**
@@ -33,7 +33,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the collective agreement factor 3 and factor option 3 data.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_3_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_3_DataType
      */
     public $Collective_Agreement_Factor_3_Data;
     /**
@@ -41,7 +41,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the collective agreement factor 4 and factor option 4 data.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_4_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_4_DataType
      */
     public $Collective_Agreement_Factor_4_Data;
     /**
@@ -49,7 +49,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the collective agreement factor 5 and factor option 5 data.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_5_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType
      */
     public $Collective_Agreement_Factor_5_Data;
     /**
@@ -59,13 +59,13 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * @uses Collective_Agreement_Factor_Options_DataType::setCollective_Agreement_Factor_3_Data()
      * @uses Collective_Agreement_Factor_Options_DataType::setCollective_Agreement_Factor_4_Data()
      * @uses Collective_Agreement_Factor_Options_DataType::setCollective_Agreement_Factor_5_Data()
-     * @param \StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data
-     * @param \StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data
-     * @param \StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data
-     * @param \StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data
-     * @param \StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data
      */
-    public function __construct(\StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data = null, \StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data = null, \StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data = null, \StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data = null, \StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data = null, \WorkdayWsdl\\StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data = null, \WorkdayWsdl\\StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data = null, \WorkdayWsdl\\StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data = null, \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data = null)
     {
         $this
             ->setCollective_Agreement_Factor_1_Data($collective_Agreement_Factor_1_Data)
@@ -85,9 +85,9 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Data value
      * @param collective_Agreement_Factor_Data $collective_Agreement_Factor_Data
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
-    public function setCollective_Agreement_Factor_1_Data(\StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data = null)
+    public function setCollective_Agreement_Factor_1_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_1_DataType $collective_Agreement_Factor_1_Data = null)
     {
         $this->Collective_Agreement_Factor_1_Data = $collective_Agreement_Factor_1_Data;
         return $this;
@@ -103,9 +103,9 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Data value
      * @param collective_Agreement_Factor_Data $collective_Agreement_Factor_Data
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
-    public function setCollective_Agreement_Factor_2_Data(\StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data = null)
+    public function setCollective_Agreement_Factor_2_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_2_DataType $collective_Agreement_Factor_2_Data = null)
     {
         $this->Collective_Agreement_Factor_2_Data = $collective_Agreement_Factor_2_Data;
         return $this;
@@ -121,9 +121,9 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Data value
      * @param collective_Agreement_Factor_Data $collective_Agreement_Factor_Data
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
-    public function setCollective_Agreement_Factor_3_Data(\StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data = null)
+    public function setCollective_Agreement_Factor_3_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_3_DataType $collective_Agreement_Factor_3_Data = null)
     {
         $this->Collective_Agreement_Factor_3_Data = $collective_Agreement_Factor_3_Data;
         return $this;
@@ -139,9 +139,9 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Data value
      * @param collective_Agreement_Factor_Data $collective_Agreement_Factor_Data
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
-    public function setCollective_Agreement_Factor_4_Data(\StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data = null)
+    public function setCollective_Agreement_Factor_4_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_4_DataType $collective_Agreement_Factor_4_Data = null)
     {
         $this->Collective_Agreement_Factor_4_Data = $collective_Agreement_Factor_4_Data;
         return $this;
@@ -157,9 +157,9 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Data value
      * @param collective_Agreement_Factor_Data $collective_Agreement_Factor_Data
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
-    public function setCollective_Agreement_Factor_5_Data(\StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data = null)
+    public function setCollective_Agreement_Factor_5_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType $collective_Agreement_Factor_5_Data = null)
     {
         $this->Collective_Agreement_Factor_5_Data = $collective_Agreement_Factor_5_Data;
         return $this;
@@ -170,7 +170,7 @@ class Collective_Agreement_Factor_Options_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Factor_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_Options_DataType
      */
     public static function __set_state(array $array)
     {

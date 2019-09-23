@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Performance_ReviewObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Performance_ReviewObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Performance_ReviewObjectType extends AbstractStructBase
      * Constructor method for Performance_ReviewObjectType
      * @uses Performance_ReviewObjectType::setID()
      * @uses Performance_ReviewObjectType::setDescriptor()
-     * @param \StructType\Performance_ReviewObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Performance_ReviewObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Performance_ReviewObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Performance_ReviewObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $performance_ReviewObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$performance_ReviewObjectTypeIDItem instanceof \StructType\Performance_ReviewObjectIDType) {
+            if (!$performance_ReviewObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType) {
                 $invalidValues[] = is_object($performance_ReviewObjectTypeIDItem) ? get_class($performance_ReviewObjectTypeIDItem) : sprintf('%s(%s)', gettype($performance_ReviewObjectTypeIDItem), var_export($performance_ReviewObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Performance_ReviewObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Performance_ReviewObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Performance_ReviewObjectIDType[] $iD
-     * @return \StructType\Performance_ReviewObjectType
+     * @param \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Performance_ReviewObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Performance_ReviewObjectIDType $item
-     * @return \StructType\Performance_ReviewObjectType
+     * @param \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectType
      */
-    public function addToID(\StructType\Performance_ReviewObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Performance_ReviewObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Performance_ReviewObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Performance_ReviewObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Performance_ReviewObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Performance_ReviewObjectType
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Performance_ReviewObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Performance_ReviewObjectType
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectType
      */
     public static function __set_state(array $array)
     {

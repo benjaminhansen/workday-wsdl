@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Additional_Benefits_Coverage_TargetObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Additional_Benefits_Coverage_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Additional_Benefits_Coverage_TargetReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Additional_Benefits_Coverage_TargetObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Additional_Benefits_Coverage_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Additional_Benefits_Coverage_TargetObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Additional_Benefits_Coverage_TargetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectIDType
      */
     public static function __set_state(array $array)
     {

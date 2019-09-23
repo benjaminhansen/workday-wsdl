@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the emergency contact that the data will be applied to
      * - minOccurs: 0
-     * @var \StructType\Emergency_ContactObjectType
+     * @var \WorkdayWsdl\\StructType\Emergency_ContactObjectType
      */
     public $Emergency_Contact_Reference;
     /**
@@ -35,7 +35,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
      * The Emergency_Contact_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Change_Emergency_Contact_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public $Emergency_Contact_Data;
     /**
@@ -43,11 +43,11 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
      * @uses Change_Emergency_Contacts_DataType::setEmergency_Contact_Reference()
      * @uses Change_Emergency_Contacts_DataType::setDelete()
      * @uses Change_Emergency_Contacts_DataType::setEmergency_Contact_Data()
-     * @param \StructType\Emergency_ContactObjectType $emergency_Contact_Reference
+     * @param \WorkdayWsdl\\StructType\Emergency_ContactObjectType $emergency_Contact_Reference
      * @param bool $delete
-     * @param \StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data
+     * @param \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data
      */
-    public function __construct(\StructType\Emergency_ContactObjectType $emergency_Contact_Reference = null, $delete = null, \StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Emergency_ContactObjectType $emergency_Contact_Reference = null, $delete = null, \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data = null)
     {
         $this
             ->setEmergency_Contact_Reference($emergency_Contact_Reference)
@@ -56,7 +56,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
     }
     /**
      * Get Emergency_Contact_Reference value
-     * @return \StructType\Emergency_ContactObjectType|null
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectType|null
      */
     public function getEmergency_Contact_Reference()
     {
@@ -64,10 +64,10 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact_Reference value
-     * @param \StructType\Emergency_ContactObjectType $emergency_Contact_Reference
-     * @return \StructType\Change_Emergency_Contacts_DataType
+     * @param \WorkdayWsdl\\StructType\Emergency_ContactObjectType $emergency_Contact_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType
      */
-    public function setEmergency_Contact_Reference(\StructType\Emergency_ContactObjectType $emergency_Contact_Reference = null)
+    public function setEmergency_Contact_Reference(\WorkdayWsdl\\StructType\Emergency_ContactObjectType $emergency_Contact_Reference = null)
     {
         $this->Emergency_Contact_Reference = $emergency_Contact_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Change_Emergency_Contacts_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType
      */
     public function setDelete($delete = null)
     {
@@ -96,7 +96,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
     }
     /**
      * Get Emergency_Contact_Data value
-     * @return \StructType\Change_Emergency_Contact_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType|null
      */
     public function getEmergency_Contact_Data()
     {
@@ -104,10 +104,10 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact_Data value
-     * @param \StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data
-     * @return \StructType\Change_Emergency_Contacts_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType
      */
-    public function setEmergency_Contact_Data(\StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data = null)
+    public function setEmergency_Contact_Data(\WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType $emergency_Contact_Data = null)
     {
         $this->Emergency_Contact_Data = $emergency_Contact_Data;
         return $this;
@@ -118,7 +118,7 @@ class Change_Emergency_Contacts_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Emergency_Contacts_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contacts_DataType
      */
     public static function __set_state(array $array)
     {

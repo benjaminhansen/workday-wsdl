@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
      * Meta information extracted from the WSDL
      * - documentation: Academic Appointment Track reference.
      * - maxOccurs: unbounded
-     * @var \StructType\Academic_Appointment_TrackObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType[]
      */
     public $Academic_Appointment_Track_Reference;
     /**
      * Constructor method for
      * Academic_Appointment_Track_Additional_Data_Request_ReferencesType
      * @uses Academic_Appointment_Track_Additional_Data_Request_ReferencesType::setAcademic_Appointment_Track_Reference()
-     * @param \StructType\Academic_Appointment_TrackObjectType[] $academic_Appointment_Track_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType[] $academic_Appointment_Track_Reference
      */
     public function __construct(array $academic_Appointment_Track_Reference = array())
     {
@@ -34,7 +34,7 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
     }
     /**
      * Get Academic_Appointment_Track_Reference value
-     * @return \StructType\Academic_Appointment_TrackObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType[]|null
      */
     public function getAcademic_Appointment_Track_Reference()
     {
@@ -52,12 +52,12 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
         $invalidValues = [];
         foreach ($values as $academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem instanceof \StructType\Academic_Appointment_TrackObjectType) {
+            if (!$academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType) {
                 $invalidValues[] = is_object($academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem) ? get_class($academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem), var_export($academic_Appointment_Track_Additional_Data_Request_ReferencesTypeAcademic_Appointment_Track_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Appointment_Track_Reference property can only contain items of type \StructType\Academic_Appointment_TrackObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Appointment_Track_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
     /**
      * Set Academic_Appointment_Track_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_TrackObjectType[] $academic_Appointment_Track_Reference
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType[] $academic_Appointment_Track_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
      */
     public function setAcademic_Appointment_Track_Reference(array $academic_Appointment_Track_Reference = array())
     {
@@ -80,14 +80,14 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
     /**
      * Add item to Academic_Appointment_Track_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_TrackObjectType $item
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
      */
-    public function addToAcademic_Appointment_Track_Reference(\StructType\Academic_Appointment_TrackObjectType $item)
+    public function addToAcademic_Appointment_Track_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Appointment_TrackObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Appointment_Track_Reference property can only contain items of type \StructType\Academic_Appointment_TrackObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Appointment_Track_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Appointment_Track_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Academic_Appointment_Track_Additional_Data_Request_ReferencesType extends 
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

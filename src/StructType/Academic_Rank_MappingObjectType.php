@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Rank_MappingObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
      * Constructor method for Academic_Rank_MappingObjectType
      * @uses Academic_Rank_MappingObjectType::setID()
      * @uses Academic_Rank_MappingObjectType::setDescriptor()
-     * @param \StructType\Academic_Rank_MappingObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Academic_Rank_MappingObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Rank_MappingObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$academic_Rank_MappingObjectTypeIDItem instanceof \StructType\Academic_Rank_MappingObjectIDType) {
+            if (!$academic_Rank_MappingObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType) {
                 $invalidValues[] = is_object($academic_Rank_MappingObjectTypeIDItem) ? get_class($academic_Rank_MappingObjectTypeIDItem) : sprintf('%s(%s)', gettype($academic_Rank_MappingObjectTypeIDItem), var_export($academic_Rank_MappingObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Academic_Rank_MappingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Rank_MappingObjectIDType[] $iD
-     * @return \StructType\Academic_Rank_MappingObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Rank_MappingObjectIDType $item
-     * @return \StructType\Academic_Rank_MappingObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType
      */
-    public function addToID(\StructType\Academic_Rank_MappingObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Rank_MappingObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Academic_Rank_MappingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Academic_Rank_MappingObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Academic_Rank_MappingObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Rank_MappingObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType
      */
     public static function __set_state(array $array)
     {

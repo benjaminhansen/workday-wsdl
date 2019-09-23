@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Benefit Plan for these Dates
      * - minOccurs: 0
-     * @var \StructType\Benefit_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_PlanObjectType
      */
     public $Benefit_Plan_Reference;
     /**
@@ -43,11 +43,11 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
      * @uses Plan_Eligiblity_Dates_DataType::setBenefit_Plan_Reference()
      * @uses Plan_Eligiblity_Dates_DataType::setEarliest_Eligibility_Date()
      * @uses Plan_Eligiblity_Dates_DataType::setEarliest_Contiguous_Eligibility_Date()
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
      * @param string $earliest_Eligibility_Date
      * @param string $earliest_Contiguous_Eligibility_Date
      */
-    public function __construct(\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null, $earliest_Eligibility_Date = null, $earliest_Contiguous_Eligibility_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null, $earliest_Eligibility_Date = null, $earliest_Contiguous_Eligibility_Date = null)
     {
         $this
             ->setBenefit_Plan_Reference($benefit_Plan_Reference)
@@ -56,7 +56,7 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Plan_Reference value
-     * @return \StructType\Benefit_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_PlanObjectType|null
      */
     public function getBenefit_Plan_Reference()
     {
@@ -64,10 +64,10 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Plan_Reference value
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
-     * @return \StructType\Plan_Eligiblity_Dates_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType
      */
-    public function setBenefit_Plan_Reference(\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
+    public function setBenefit_Plan_Reference(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
     {
         $this->Benefit_Plan_Reference = $benefit_Plan_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
     /**
      * Set Earliest_Eligibility_Date value
      * @param string $earliest_Eligibility_Date
-     * @return \StructType\Plan_Eligiblity_Dates_DataType
+     * @return \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType
      */
     public function setEarliest_Eligibility_Date($earliest_Eligibility_Date = null)
     {
@@ -105,7 +105,7 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
     /**
      * Set Earliest_Contiguous_Eligibility_Date value
      * @param string $earliest_Contiguous_Eligibility_Date
-     * @return \StructType\Plan_Eligiblity_Dates_DataType
+     * @return \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType
      */
     public function setEarliest_Contiguous_Eligibility_Date($earliest_Contiguous_Eligibility_Date = null)
     {
@@ -122,7 +122,7 @@ class Plan_Eligiblity_Dates_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Plan_Eligiblity_Dates_DataType
+     * @return \WorkdayWsdl\\StructType\Plan_Eligiblity_Dates_DataType
      */
     public static function __set_state(array $array)
     {

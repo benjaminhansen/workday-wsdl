@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Image_GetType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType[]
      */
     public $Employee_Reference;
     /**
@@ -31,7 +31,7 @@ class Employee_Image_GetType extends AbstractStructBase
      * Constructor method for Employee_Image_GetType
      * @uses Employee_Image_GetType::setEmployee_Reference()
      * @uses Employee_Image_GetType::setVersion()
-     * @param \StructType\Employee_ReferenceType[] $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType[] $employee_Reference
      * @param string $version
      */
     public function __construct(array $employee_Reference = array(), $version = null)
@@ -42,7 +42,7 @@ class Employee_Image_GetType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\Employee_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType[]|null
      */
     public function getEmployee_Reference()
     {
@@ -60,12 +60,12 @@ class Employee_Image_GetType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Image_GetTypeEmployee_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$employee_Image_GetTypeEmployee_ReferenceItem instanceof \StructType\Employee_ReferenceType) {
+            if (!$employee_Image_GetTypeEmployee_ReferenceItem instanceof \WorkdayWsdl\\StructType\Employee_ReferenceType) {
                 $invalidValues[] = is_object($employee_Image_GetTypeEmployee_ReferenceItem) ? get_class($employee_Image_GetTypeEmployee_ReferenceItem) : sprintf('%s(%s)', gettype($employee_Image_GetTypeEmployee_ReferenceItem), var_export($employee_Image_GetTypeEmployee_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Reference property can only contain items of type \StructType\Employee_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class Employee_Image_GetType extends AbstractStructBase
     /**
      * Set Employee_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_ReferenceType[] $employee_Reference
-     * @return \StructType\Employee_Image_GetType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType[] $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Image_GetType
      */
     public function setEmployee_Reference(array $employee_Reference = array())
     {
@@ -88,14 +88,14 @@ class Employee_Image_GetType extends AbstractStructBase
     /**
      * Add item to Employee_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_ReferenceType $item
-     * @return \StructType\Employee_Image_GetType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Image_GetType
      */
-    public function addToEmployee_Reference(\StructType\Employee_ReferenceType $item)
+    public function addToEmployee_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Reference property can only contain items of type \StructType\Employee_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Reference[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class Employee_Image_GetType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Employee_Image_GetType
+     * @return \WorkdayWsdl\\StructType\Employee_Image_GetType
      */
     public function setVersion($version = null)
     {
@@ -128,7 +128,7 @@ class Employee_Image_GetType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Image_GetType
+     * @return \WorkdayWsdl\\StructType\Employee_Image_GetType
      */
     public static function __set_state(array $array)
     {

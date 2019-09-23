@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Organization_Subtype_Reference_DataType extends AbstractStructBase
     /**
      * Set Organization_Subtype_Name value
      * @param string $organization_Subtype_Name
-     * @return \StructType\Organization_Subtype_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType
      */
     public function setOrganization_Subtype_Name($organization_Subtype_Name = null)
     {
@@ -58,7 +58,7 @@ class Organization_Subtype_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Subtype_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType
      */
     public static function __set_state(array $array)
     {

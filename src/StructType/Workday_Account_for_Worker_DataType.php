@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -88,7 +88,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * - documentation: Individual multi-factor authentication.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Multi_factor_Authentication_for_Worker_DataType[]
+     * @var \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType[]
      */
     public $Multi_factor_Authentication;
     /**
@@ -141,7 +141,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The user will be authenticated via an external system.
      * - minOccurs: 0
-     * @var \StructType\Integration_System__Audited_ObjectType
+     * @var \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType
      */
     public $Delegated_Authentication_Integration_System_Reference;
     /**
@@ -189,7 +189,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The local defines the user's language and country which will affect their experience in the Workday system.
      * - minOccurs: 0
-     * @var \StructType\LocaleObjectType
+     * @var \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public $Locale_Reference;
     /**
@@ -197,7 +197,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If set, specifies language for user. If not set, language specification taken from Locale_Reference
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $User_Language_Reference;
     /**
@@ -205,7 +205,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Captures the Preferred Communication Language
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $Preferred_Communication_Language_Reference;
     /**
@@ -213,7 +213,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If set, specifies the initial search category displayed to the user.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Preferred_Search_Scope_Reference;
     /**
@@ -230,7 +230,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Notification_Sub_Category_Configurations_for_UsersType[]
+     * @var \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[]
      */
     public $Notification_Sub_Type_Configurations;
     /**
@@ -276,26 +276,26 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * @param bool $multi_factor_Authentication_Exempt
      * @param bool $multi_factor_Authentication_Grace_Period_Disabled
      * @param float $grace_Period_Logins_Remaining
-     * @param \StructType\Multi_factor_Authentication_for_Worker_DataType[] $multi_factor_Authentication
+     * @param \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType[] $multi_factor_Authentication
      * @param bool $account_Disabled
      * @param string $account_Expiration_Date
      * @param string $openID_Identifier
      * @param string $openID_Internal_Identifier
      * @param string $openID_Connect_Internal_Identifier
-     * @param \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
+     * @param \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
      * @param float $session_Timeout_Minutes
      * @param bool $show_User_Name_in_Browser_Window
      * @param bool $display_XML_Icon_on_Reports
      * @param bool $enable_Workbox
-     * @param \StructType\LocaleObjectType $locale_Reference
-     * @param \StructType\User_LanguageObjectType $user_Language_Reference
-     * @param \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
-     * @param \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
      * @param bool $allow_Mixed_Language_Transactions
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
      * @param bool $exempt_from_Delegated_Authentication
      */
-    public function __construct($user_Name = null, $password = null, $generate_Random_Password = null, $require_New_Password_at_Next_Sign_In = null, $multi_factor_Authentication_Exempt = null, $multi_factor_Authentication_Grace_Period_Disabled = null, $grace_Period_Logins_Remaining = null, array $multi_factor_Authentication = array(), $account_Disabled = null, $account_Expiration_Date = null, $openID_Identifier = null, $openID_Internal_Identifier = null, $openID_Connect_Internal_Identifier = null, \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null, $session_Timeout_Minutes = null, $show_User_Name_in_Browser_Window = null, $display_XML_Icon_on_Reports = null, $enable_Workbox = null, \StructType\LocaleObjectType $locale_Reference = null, \StructType\User_LanguageObjectType $user_Language_Reference = null, \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null, \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null, $allow_Mixed_Language_Transactions = null, array $notification_Sub_Type_Configurations = array(), $exempt_from_Delegated_Authentication = null)
+    public function __construct($user_Name = null, $password = null, $generate_Random_Password = null, $require_New_Password_at_Next_Sign_In = null, $multi_factor_Authentication_Exempt = null, $multi_factor_Authentication_Grace_Period_Disabled = null, $grace_Period_Logins_Remaining = null, array $multi_factor_Authentication = array(), $account_Disabled = null, $account_Expiration_Date = null, $openID_Identifier = null, $openID_Internal_Identifier = null, $openID_Connect_Internal_Identifier = null, \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null, $session_Timeout_Minutes = null, $show_User_Name_in_Browser_Window = null, $display_XML_Icon_on_Reports = null, $enable_Workbox = null, \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null, \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null, $allow_Mixed_Language_Transactions = null, array $notification_Sub_Type_Configurations = array(), $exempt_from_Delegated_Authentication = null)
     {
         $this
             ->setUser_Name($user_Name)
@@ -335,7 +335,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set User_Name value
      * @param string $user_Name
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setUser_Name($user_Name = null)
     {
@@ -357,7 +357,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setPassword($password = null)
     {
@@ -379,7 +379,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Generate_Random_Password value
      * @param bool $generate_Random_Password
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setGenerate_Random_Password($generate_Random_Password = null)
     {
@@ -401,7 +401,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Require_New_Password_at_Next_Sign_In value
      * @param bool $require_New_Password_at_Next_Sign_In
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setRequire_New_Password_at_Next_Sign_In($require_New_Password_at_Next_Sign_In = null)
     {
@@ -423,7 +423,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Multi_factor_Authentication_Exempt value
      * @param bool $multi_factor_Authentication_Exempt
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setMulti_factor_Authentication_Exempt($multi_factor_Authentication_Exempt = null)
     {
@@ -445,7 +445,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Multi_factor_Authentication_Grace_Period_Disabled value
      * @param bool $multi_factor_Authentication_Grace_Period_Disabled
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setMulti_factor_Authentication_Grace_Period_Disabled($multi_factor_Authentication_Grace_Period_Disabled = null)
     {
@@ -467,7 +467,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Grace_Period_Logins_Remaining value
      * @param float $grace_Period_Logins_Remaining
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setGrace_Period_Logins_Remaining($grace_Period_Logins_Remaining = null)
     {
@@ -488,7 +488,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Multi_factor_Authentication value
-     * @return \StructType\Multi_factor_Authentication_for_Worker_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType[]|null
      */
     public function getMulti_factor_Authentication()
     {
@@ -506,12 +506,12 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem) {
             // validation for constraint: itemType
-            if (!$workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem instanceof \StructType\Multi_factor_Authentication_for_Worker_DataType) {
+            if (!$workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem instanceof \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType) {
                 $invalidValues[] = is_object($workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem) ? get_class($workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem) : sprintf('%s(%s)', gettype($workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem), var_export($workday_Account_for_Worker_DataTypeMulti_factor_AuthenticationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Multi_factor_Authentication property can only contain items of type \StructType\Multi_factor_Authentication_for_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Multi_factor_Authentication property can only contain items of type \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -519,8 +519,8 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Multi_factor_Authentication value
      * @throws \InvalidArgumentException
-     * @param \StructType\Multi_factor_Authentication_for_Worker_DataType[] $multi_factor_Authentication
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType[] $multi_factor_Authentication
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setMulti_factor_Authentication(array $multi_factor_Authentication = array())
     {
@@ -534,14 +534,14 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Add item to Multi_factor_Authentication value
      * @throws \InvalidArgumentException
-     * @param \StructType\Multi_factor_Authentication_for_Worker_DataType $item
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType $item
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function addToMulti_factor_Authentication(\StructType\Multi_factor_Authentication_for_Worker_DataType $item)
+    public function addToMulti_factor_Authentication(\WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Multi_factor_Authentication_for_Worker_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Multi_factor_Authentication property can only contain items of type \StructType\Multi_factor_Authentication_for_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Multi_factor_Authentication property can only contain items of type \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Multi_factor_Authentication[] = $this->{'Multi-factor_Authentication'}[] = $item;
         return $this;
@@ -557,7 +557,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Account_Disabled value
      * @param bool $account_Disabled
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setAccount_Disabled($account_Disabled = null)
     {
@@ -579,7 +579,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Account_Expiration_Date value
      * @param string $account_Expiration_Date
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setAccount_Expiration_Date($account_Expiration_Date = null)
     {
@@ -601,7 +601,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set OpenID_Identifier value
      * @param string $openID_Identifier
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setOpenID_Identifier($openID_Identifier = null)
     {
@@ -623,7 +623,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set OpenID_Internal_Identifier value
      * @param string $openID_Internal_Identifier
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setOpenID_Internal_Identifier($openID_Internal_Identifier = null)
     {
@@ -645,7 +645,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set OpenID_Connect_Internal_Identifier value
      * @param string $openID_Connect_Internal_Identifier
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setOpenID_Connect_Internal_Identifier($openID_Connect_Internal_Identifier = null)
     {
@@ -658,7 +658,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Delegated_Authentication_Integration_System_Reference value
-     * @return \StructType\Integration_System__Audited_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType|null
      */
     public function getDelegated_Authentication_Integration_System_Reference()
     {
@@ -666,10 +666,10 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Delegated_Authentication_Integration_System_Reference value
-     * @param \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function setDelegated_Authentication_Integration_System_Reference(\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null)
+    public function setDelegated_Authentication_Integration_System_Reference(\WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null)
     {
         $this->Delegated_Authentication_Integration_System_Reference = $delegated_Authentication_Integration_System_Reference;
         return $this;
@@ -685,7 +685,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Session_Timeout_Minutes value
      * @param float $session_Timeout_Minutes
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setSession_Timeout_Minutes($session_Timeout_Minutes = null)
     {
@@ -719,7 +719,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Show_User_Name_in_Browser_Window value
      * @param bool $show_User_Name_in_Browser_Window
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setShow_User_Name_in_Browser_Window($show_User_Name_in_Browser_Window = null)
     {
@@ -741,7 +741,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Display_XML_Icon_on_Reports value
      * @param bool $display_XML_Icon_on_Reports
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setDisplay_XML_Icon_on_Reports($display_XML_Icon_on_Reports = null)
     {
@@ -763,7 +763,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Enable_Workbox value
      * @param bool $enable_Workbox
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setEnable_Workbox($enable_Workbox = null)
     {
@@ -776,7 +776,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Locale_Reference value
-     * @return \StructType\LocaleObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType|null
      */
     public function getLocale_Reference()
     {
@@ -784,17 +784,17 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Locale_Reference value
-     * @param \StructType\LocaleObjectType $locale_Reference
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function setLocale_Reference(\StructType\LocaleObjectType $locale_Reference = null)
+    public function setLocale_Reference(\WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference = null)
     {
         $this->Locale_Reference = $locale_Reference;
         return $this;
     }
     /**
      * Get User_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getUser_Language_Reference()
     {
@@ -802,17 +802,17 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set User_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $user_Language_Reference
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function setUser_Language_Reference(\StructType\User_LanguageObjectType $user_Language_Reference = null)
+    public function setUser_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference = null)
     {
         $this->User_Language_Reference = $user_Language_Reference;
         return $this;
     }
     /**
      * Get Preferred_Communication_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getPreferred_Communication_Language_Reference()
     {
@@ -820,17 +820,17 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Preferred_Communication_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function setPreferred_Communication_Language_Reference(\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null)
+    public function setPreferred_Communication_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $preferred_Communication_Language_Reference = null)
     {
         $this->Preferred_Communication_Language_Reference = $preferred_Communication_Language_Reference;
         return $this;
     }
     /**
      * Get Preferred_Search_Scope_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPreferred_Search_Scope_Reference()
     {
@@ -838,10 +838,10 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Preferred_Search_Scope_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function setPreferred_Search_Scope_Reference(\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null)
+    public function setPreferred_Search_Scope_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null)
     {
         $this->Preferred_Search_Scope_Reference = $preferred_Search_Scope_Reference;
         return $this;
@@ -857,7 +857,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Allow_Mixed_Language_Transactions value
      * @param bool $allow_Mixed_Language_Transactions
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setAllow_Mixed_Language_Transactions($allow_Mixed_Language_Transactions = null)
     {
@@ -870,7 +870,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Notification_Sub_Type_Configurations value
-     * @return \StructType\Notification_Sub_Category_Configurations_for_UsersType[]|null
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[]|null
      */
     public function getNotification_Sub_Type_Configurations()
     {
@@ -888,12 +888,12 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem) {
             // validation for constraint: itemType
-            if (!$workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem instanceof \StructType\Notification_Sub_Category_Configurations_for_UsersType) {
+            if (!$workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem instanceof \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType) {
                 $invalidValues[] = is_object($workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem) ? get_class($workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem) : sprintf('%s(%s)', gettype($workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem), var_export($workday_Account_for_Worker_DataTypeNotification_Sub_Type_ConfigurationsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -901,8 +901,8 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Notification_Sub_Type_Configurations value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setNotification_Sub_Type_Configurations(array $notification_Sub_Type_Configurations = array())
     {
@@ -916,14 +916,14 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Add item to Notification_Sub_Type_Configurations value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType $item
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType $item
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
-    public function addToNotification_Sub_Type_Configurations(\StructType\Notification_Sub_Category_Configurations_for_UsersType $item)
+    public function addToNotification_Sub_Type_Configurations(\WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Notification_Sub_Category_Configurations_for_UsersType) {
-            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType) {
+            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Notification_Sub_Type_Configurations[] = $item;
         return $this;
@@ -939,7 +939,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Exempt_from_Delegated_Authentication value
      * @param bool $exempt_from_Delegated_Authentication
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public function setExempt_from_Delegated_Authentication($exempt_from_Delegated_Authentication = null)
     {
@@ -956,7 +956,7 @@ class Workday_Account_for_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workday_Account_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public static function __set_state(array $array)
     {

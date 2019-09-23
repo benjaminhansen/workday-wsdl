@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
      * - documentation: Person Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType[]
+     * @var \WorkdayWsdl\\StructType\RoleObjectType[]
      */
     public $Person_Reference;
     /**
      * Constructor method for Universal_Identifier_Request_ReferencesType
      * @uses Universal_Identifier_Request_ReferencesType::setPerson_Reference()
-     * @param \StructType\RoleObjectType[] $person_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
      */
     public function __construct(array $person_Reference = array())
     {
@@ -33,7 +33,7 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType[]|null
      */
     public function getPerson_Reference()
     {
@@ -51,12 +51,12 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $universal_Identifier_Request_ReferencesTypePerson_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$universal_Identifier_Request_ReferencesTypePerson_ReferenceItem instanceof \StructType\RoleObjectType) {
+            if (!$universal_Identifier_Request_ReferencesTypePerson_ReferenceItem instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
                 $invalidValues[] = is_object($universal_Identifier_Request_ReferencesTypePerson_ReferenceItem) ? get_class($universal_Identifier_Request_ReferencesTypePerson_ReferenceItem) : sprintf('%s(%s)', gettype($universal_Identifier_Request_ReferencesTypePerson_ReferenceItem), var_export($universal_Identifier_Request_ReferencesTypePerson_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType[] $person_Reference
-     * @return \StructType\Universal_Identifier_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_Request_ReferencesType
      */
     public function setPerson_Reference(array $person_Reference = array())
     {
@@ -79,14 +79,14 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType $item
-     * @return \StructType\Universal_Identifier_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $item
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_Request_ReferencesType
      */
-    public function addToPerson_Reference(\StructType\RoleObjectType $item)
+    public function addToPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoleObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Universal_Identifier_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Universal_Identifier_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

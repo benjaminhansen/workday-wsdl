@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class Worker_Profile_GetType extends AbstractStructBase
 {
     /**
      * The Worker_Reference
-     * @var \StructType\Worker_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Worker_ReferenceType
      */
     public $Worker_Reference;
     /**
@@ -46,12 +46,12 @@ class Worker_Profile_GetType extends AbstractStructBase
      * @uses Worker_Profile_GetType::setAs_Of_Date()
      * @uses Worker_Profile_GetType::setAs_Of_Moment()
      * @uses Worker_Profile_GetType::setVersion()
-     * @param \StructType\Worker_ReferenceType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Worker_ReferenceType $worker_Reference = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -61,7 +61,7 @@ class Worker_Profile_GetType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\Worker_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Worker_ReferenceType|null
      */
     public function getWorker_Reference()
     {
@@ -69,10 +69,10 @@ class Worker_Profile_GetType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\Worker_ReferenceType $worker_Reference
-     * @return \StructType\Worker_Profile_GetType
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Profile_GetType
      */
-    public function setWorker_Reference(\StructType\Worker_ReferenceType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -88,7 +88,7 @@ class Worker_Profile_GetType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\Worker_Profile_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Profile_GetType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -110,7 +110,7 @@ class Worker_Profile_GetType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\Worker_Profile_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Profile_GetType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -132,7 +132,7 @@ class Worker_Profile_GetType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Worker_Profile_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Profile_GetType
      */
     public function setVersion($version = null)
     {
@@ -149,7 +149,7 @@ class Worker_Profile_GetType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Profile_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Profile_GetType
      */
     public static function __set_state(array $array)
     {

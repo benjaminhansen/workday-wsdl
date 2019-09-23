@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Period_Salary_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
      * Constructor method for Period_Salary_PlanObjectType
      * @uses Period_Salary_PlanObjectType::setID()
      * @uses Period_Salary_PlanObjectType::setDescriptor()
-     * @param \StructType\Period_Salary_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Period_Salary_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $period_Salary_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$period_Salary_PlanObjectTypeIDItem instanceof \StructType\Period_Salary_PlanObjectIDType) {
+            if (!$period_Salary_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType) {
                 $invalidValues[] = is_object($period_Salary_PlanObjectTypeIDItem) ? get_class($period_Salary_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($period_Salary_PlanObjectTypeIDItem), var_export($period_Salary_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Period_Salary_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Salary_PlanObjectIDType[] $iD
-     * @return \StructType\Period_Salary_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Salary_PlanObjectIDType $item
-     * @return \StructType\Period_Salary_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectType
      */
-    public function addToID(\StructType\Period_Salary_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Period_Salary_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Period_Salary_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Period_Salary_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Period_Salary_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Period_Salary_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Period_Salary_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Period_Salary_PlanObjectType
      */
     public static function __set_state(array $array)
     {

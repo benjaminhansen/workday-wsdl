@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Committee_Classification_DataType extends AbstractStructBase
      * The Committee_Classification_Group_Reference
      * Meta information extracted from the WSDL
      * - documentation: Committee Classification Group for Classification
-     * @var \StructType\Committee_Classification_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public $Committee_Classification_Group_Reference;
     /**
@@ -54,9 +54,9 @@ class Committee_Classification_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $name
      * @param bool $inactive
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
      */
-    public function __construct($iD = null, $name = null, $inactive = null, \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
+    public function __construct($iD = null, $name = null, $inactive = null, \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
     {
         $this
             ->setID($iD)
@@ -75,7 +75,7 @@ class Committee_Classification_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Committee_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
     public function setID($iD = null)
     {
@@ -97,7 +97,7 @@ class Committee_Classification_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Committee_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
     public function setName($name = null)
     {
@@ -119,7 +119,7 @@ class Committee_Classification_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Committee_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -132,7 +132,7 @@ class Committee_Classification_DataType extends AbstractStructBase
     }
     /**
      * Get Committee_Classification_Group_Reference value
-     * @return \StructType\Committee_Classification_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType|null
      */
     public function getCommittee_Classification_Group_Reference()
     {
@@ -140,10 +140,10 @@ class Committee_Classification_DataType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Group_Reference value
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
-     * @return \StructType\Committee_Classification_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
-    public function setCommittee_Classification_Group_Reference(\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
+    public function setCommittee_Classification_Group_Reference(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
     {
         $this->Committee_Classification_Group_Reference = $committee_Classification_Group_Reference;
         return $this;
@@ -154,7 +154,7 @@ class Committee_Classification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_DataType
      */
     public static function __set_state(array $array)
     {

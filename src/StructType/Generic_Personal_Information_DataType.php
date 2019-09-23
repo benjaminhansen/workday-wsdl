@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Gender of the person.
      * - minOccurs: 0
-     * @var \StructType\GenderObjectType
+     * @var \WorkdayWsdl\\StructType\GenderObjectType
      */
     public $Gender_Reference;
     /**
@@ -45,7 +45,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The country of birth is not tracked for the specified Location Context. The Location Context is derived from the Country of the Location for the Position | Country where the person was born.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Birth_Country_Reference;
     /**
@@ -54,7 +54,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * - documentation: The country region of birth is not tracked for the specified Location Context. The Location Context is derived from the Country of the Location for the Position. | The Region of Birth entered is not valid for the corresponding
      * Country of Birth. | A Person cannot have a Birth Region without a corresponding Birth Country. | Country Region where the person was born.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Birth_Region_Reference;
     /**
@@ -72,7 +72,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * - documentation: Inactive marital statuses are not allowed in this request. | The marital status does not exist in the specified Location Context. The Location Context is derived from the Country of the Location specified for the Position. |
      * Reference for the person's Marital Status.
      * - minOccurs: 0
-     * @var \StructType\Marital_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Marital_StatusObjectType
      */
     public $Marital_Status_Reference;
     /**
@@ -91,7 +91,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * are allowed. | The ethnicity does not exist in the specified Location Context. The Location Context is derived from the Country of the Location of the Position | Reference for the person's Ethnicities.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EthnicityObjectType[]
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectType[]
      */
     public $Ethnicity_Reference;
     /**
@@ -108,7 +108,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The religion is not valid for the specified Location Context. The Location Context is derived from the Country of the Location for the Position. | Reference for a person's Religions.
      * - minOccurs: 0
-     * @var \StructType\ReligionObjectType
+     * @var \WorkdayWsdl\\StructType\ReligionObjectType
      */
     public $Religion_Reference;
     /**
@@ -118,7 +118,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Location Context is derived from the Country of the Location for the Position. | Reference for the person's Citizenship Status.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Citizenship_StatusObjectType[]
+     * @var \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[]
      */
     public $Citizenship_Reference;
     /**
@@ -126,7 +126,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Nationality type is not tracked for the specified Location Context. The Location Context is derived from the Country of the Location for the Position. | Reference for the person's Country of Nationality
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Nationality_Reference;
     /**
@@ -135,7 +135,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * - documentation: The hukou region is not tracked for the specified Location Context. | Hukou Region must be in China. | Country region on the Hukou of the person. This field is only available for the country China and the person with citizenship
      * status of China.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Hukou_Region_Reference;
     /**
@@ -144,7 +144,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * - documentation: The hukou subregion is not tracked for the specified Location Context. | The Hukou Subregion does not exist within the specified Hukou Region or is inactive. | Country subregion on the Hukou of the person. This field is only
      * available for the country China and the person with citizenship status of China.
      * - minOccurs: 0
-     * @var \StructType\Country_SubregionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_SubregionObjectType
      */
     public $Hukou_Subregion_Reference;
     /**
@@ -170,7 +170,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The hukou type is not tracked for the specified Location Context. | Hukou type on the Hukou of the person. This field is only available for the country China and the person with citizenship status of China.
      * - minOccurs: 0
-     * @var \StructType\Hukou_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Hukou_TypeObjectType
      */
     public $Hukou_Type_Reference;
     /**
@@ -178,7 +178,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The native region is not tracked for the specified Location Context. | Native region on the Hukou of the person. This field is only available for the country China and the person with citizenship status of China.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Native_Region_Reference;
     /**
@@ -195,7 +195,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The political affiliation does not exist in the specified Location Context. | Person's Political Affiliation.
      * - minOccurs: 0
-     * @var \StructType\Political_AffiliationObjectType
+     * @var \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
     public $Political_Affiliation_Reference;
     /**
@@ -205,7 +205,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * for Puts involving applicants since a Social Benefits Locality value is associated with workers and not applicants. | The social benefits locality data has not been activated for this location via the Maintain Localization Settings task. | Person's
      * social benefits locality.
      * - minOccurs: 0
-     * @var \StructType\Social_Benefits_LocalityObjectType
+     * @var \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType
      */
     public $Social_Benefits_Locality_Reference;
     /**
@@ -241,7 +241,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Generic_Disability_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType[]
      */
     public $Disability_Information_Data;
     /**
@@ -249,7 +249,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Generic_Military_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Generic_Military_Information_DataType[]
      */
     public $Military_Information_Data;
     /**
@@ -291,36 +291,36 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * @uses Generic_Personal_Information_DataType::setDisability_Information_Data()
      * @uses Generic_Personal_Information_DataType::setMilitary_Information_Data()
      * @uses Generic_Personal_Information_DataType::setUses_Tobacco()
-     * @param \StructType\GenderObjectType $gender_Reference
+     * @param \WorkdayWsdl\\StructType\GenderObjectType $gender_Reference
      * @param string $date_of_Birth
      * @param string $date_of_Death
-     * @param \StructType\CountryObjectType $birth_Country_Reference
-     * @param \StructType\Country_RegionObjectType $birth_Region_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $birth_Country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $birth_Region_Reference
      * @param string $city_of_Birth
-     * @param \StructType\Marital_StatusObjectType $marital_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Marital_StatusObjectType $marital_Status_Reference
      * @param string $marital_Status_Date
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
      * @param bool $hispanic_or_Latino
-     * @param \StructType\ReligionObjectType $religion_Reference
-     * @param \StructType\Citizenship_StatusObjectType[] $citizenship_Reference
-     * @param \StructType\CountryObjectType $nationality_Reference
-     * @param \StructType\Country_RegionObjectType $hukou_Region_Reference
-     * @param \StructType\Country_SubregionObjectType $hukou_Subregion_Reference
+     * @param \WorkdayWsdl\\StructType\ReligionObjectType $religion_Reference
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[] $citizenship_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $nationality_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $hukou_Region_Reference
+     * @param \WorkdayWsdl\\StructType\Country_SubregionObjectType $hukou_Subregion_Reference
      * @param string $hukou_Locality
      * @param string $hukou_Postal_Code
-     * @param \StructType\Hukou_TypeObjectType $hukou_Type_Reference
-     * @param \StructType\Country_RegionObjectType $native_Region_Reference
+     * @param \WorkdayWsdl\\StructType\Hukou_TypeObjectType $hukou_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $native_Region_Reference
      * @param string $personnel_File_Agency
-     * @param \StructType\Political_AffiliationObjectType $political_Affiliation_Reference
-     * @param \StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
      * @param string $last_Medical_Exam_Date
      * @param string $last_Medical_Exam_Valid_To
      * @param string $medical_Exam_Notes
-     * @param \StructType\Generic_Disability_Information_DataType[] $disability_Information_Data
-     * @param \StructType\Generic_Military_Information_DataType[] $military_Information_Data
+     * @param \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType[] $disability_Information_Data
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Information_DataType[] $military_Information_Data
      * @param bool $uses_Tobacco
      */
-    public function __construct(\StructType\GenderObjectType $gender_Reference = null, $date_of_Birth = null, $date_of_Death = null, \StructType\CountryObjectType $birth_Country_Reference = null, \StructType\Country_RegionObjectType $birth_Region_Reference = null, $city_of_Birth = null, \StructType\Marital_StatusObjectType $marital_Status_Reference = null, $marital_Status_Date = null, array $ethnicity_Reference = array(), $hispanic_or_Latino = null, \StructType\ReligionObjectType $religion_Reference = null, array $citizenship_Reference = array(), \StructType\CountryObjectType $nationality_Reference = null, \StructType\Country_RegionObjectType $hukou_Region_Reference = null, \StructType\Country_SubregionObjectType $hukou_Subregion_Reference = null, $hukou_Locality = null, $hukou_Postal_Code = null, \StructType\Hukou_TypeObjectType $hukou_Type_Reference = null, \StructType\Country_RegionObjectType $native_Region_Reference = null, $personnel_File_Agency = null, \StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null, \StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null, $last_Medical_Exam_Date = null, $last_Medical_Exam_Valid_To = null, $medical_Exam_Notes = null, array $disability_Information_Data = array(), array $military_Information_Data = array(), $uses_Tobacco = null)
+    public function __construct(\WorkdayWsdl\\StructType\GenderObjectType $gender_Reference = null, $date_of_Birth = null, $date_of_Death = null, \WorkdayWsdl\\StructType\CountryObjectType $birth_Country_Reference = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $birth_Region_Reference = null, $city_of_Birth = null, \WorkdayWsdl\\StructType\Marital_StatusObjectType $marital_Status_Reference = null, $marital_Status_Date = null, array $ethnicity_Reference = array(), $hispanic_or_Latino = null, \WorkdayWsdl\\StructType\ReligionObjectType $religion_Reference = null, array $citizenship_Reference = array(), \WorkdayWsdl\\StructType\CountryObjectType $nationality_Reference = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $hukou_Region_Reference = null, \WorkdayWsdl\\StructType\Country_SubregionObjectType $hukou_Subregion_Reference = null, $hukou_Locality = null, $hukou_Postal_Code = null, \WorkdayWsdl\\StructType\Hukou_TypeObjectType $hukou_Type_Reference = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $native_Region_Reference = null, $personnel_File_Agency = null, \WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null, \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null, $last_Medical_Exam_Date = null, $last_Medical_Exam_Valid_To = null, $medical_Exam_Notes = null, array $disability_Information_Data = array(), array $military_Information_Data = array(), $uses_Tobacco = null)
     {
         $this
             ->setGender_Reference($gender_Reference)
@@ -354,7 +354,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Gender_Reference value
-     * @return \StructType\GenderObjectType|null
+     * @return \WorkdayWsdl\\StructType\GenderObjectType|null
      */
     public function getGender_Reference()
     {
@@ -362,10 +362,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Gender_Reference value
-     * @param \StructType\GenderObjectType $gender_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\GenderObjectType $gender_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setGender_Reference(\StructType\GenderObjectType $gender_Reference = null)
+    public function setGender_Reference(\WorkdayWsdl\\StructType\GenderObjectType $gender_Reference = null)
     {
         $this->Gender_Reference = $gender_Reference;
         return $this;
@@ -381,7 +381,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Date_of_Birth value
      * @param string $date_of_Birth
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setDate_of_Birth($date_of_Birth = null)
     {
@@ -403,7 +403,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Date_of_Death value
      * @param string $date_of_Death
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setDate_of_Death($date_of_Death = null)
     {
@@ -416,7 +416,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Birth_Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getBirth_Country_Reference()
     {
@@ -424,17 +424,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Birth_Country_Reference value
-     * @param \StructType\CountryObjectType $birth_Country_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $birth_Country_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setBirth_Country_Reference(\StructType\CountryObjectType $birth_Country_Reference = null)
+    public function setBirth_Country_Reference(\WorkdayWsdl\\StructType\CountryObjectType $birth_Country_Reference = null)
     {
         $this->Birth_Country_Reference = $birth_Country_Reference;
         return $this;
     }
     /**
      * Get Birth_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getBirth_Region_Reference()
     {
@@ -442,10 +442,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Birth_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $birth_Region_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $birth_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setBirth_Region_Reference(\StructType\Country_RegionObjectType $birth_Region_Reference = null)
+    public function setBirth_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $birth_Region_Reference = null)
     {
         $this->Birth_Region_Reference = $birth_Region_Reference;
         return $this;
@@ -461,7 +461,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set City_of_Birth value
      * @param string $city_of_Birth
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setCity_of_Birth($city_of_Birth = null)
     {
@@ -474,7 +474,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Marital_Status_Reference value
-     * @return \StructType\Marital_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Marital_StatusObjectType|null
      */
     public function getMarital_Status_Reference()
     {
@@ -482,10 +482,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Marital_Status_Reference value
-     * @param \StructType\Marital_StatusObjectType $marital_Status_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Marital_StatusObjectType $marital_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setMarital_Status_Reference(\StructType\Marital_StatusObjectType $marital_Status_Reference = null)
+    public function setMarital_Status_Reference(\WorkdayWsdl\\StructType\Marital_StatusObjectType $marital_Status_Reference = null)
     {
         $this->Marital_Status_Reference = $marital_Status_Reference;
         return $this;
@@ -501,7 +501,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Marital_Status_Date value
      * @param string $marital_Status_Date
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setMarital_Status_Date($marital_Status_Date = null)
     {
@@ -514,7 +514,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Ethnicity_Reference value
-     * @return \StructType\EthnicityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType[]|null
      */
     public function getEthnicity_Reference()
     {
@@ -532,12 +532,12 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generic_Personal_Information_DataTypeEthnicity_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$generic_Personal_Information_DataTypeEthnicity_ReferenceItem instanceof \StructType\EthnicityObjectType) {
+            if (!$generic_Personal_Information_DataTypeEthnicity_ReferenceItem instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
                 $invalidValues[] = is_object($generic_Personal_Information_DataTypeEthnicity_ReferenceItem) ? get_class($generic_Personal_Information_DataTypeEthnicity_ReferenceItem) : sprintf('%s(%s)', gettype($generic_Personal_Information_DataTypeEthnicity_ReferenceItem), var_export($generic_Personal_Information_DataTypeEthnicity_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -545,8 +545,8 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setEthnicity_Reference(array $ethnicity_Reference = array())
     {
@@ -560,14 +560,14 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType $item
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function addToEthnicity_Reference(\StructType\EthnicityObjectType $item)
+    public function addToEthnicity_Reference(\WorkdayWsdl\\StructType\EthnicityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EthnicityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Ethnicity_Reference[] = $item;
         return $this;
@@ -583,7 +583,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Hispanic_or_Latino value
      * @param bool $hispanic_or_Latino
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setHispanic_or_Latino($hispanic_or_Latino = null)
     {
@@ -596,7 +596,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Religion_Reference value
-     * @return \StructType\ReligionObjectType|null
+     * @return \WorkdayWsdl\\StructType\ReligionObjectType|null
      */
     public function getReligion_Reference()
     {
@@ -604,17 +604,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Religion_Reference value
-     * @param \StructType\ReligionObjectType $religion_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\ReligionObjectType $religion_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setReligion_Reference(\StructType\ReligionObjectType $religion_Reference = null)
+    public function setReligion_Reference(\WorkdayWsdl\\StructType\ReligionObjectType $religion_Reference = null)
     {
         $this->Religion_Reference = $religion_Reference;
         return $this;
     }
     /**
      * Get Citizenship_Reference value
-     * @return \StructType\Citizenship_StatusObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[]|null
      */
     public function getCitizenship_Reference()
     {
@@ -632,12 +632,12 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generic_Personal_Information_DataTypeCitizenship_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$generic_Personal_Information_DataTypeCitizenship_ReferenceItem instanceof \StructType\Citizenship_StatusObjectType) {
+            if (!$generic_Personal_Information_DataTypeCitizenship_ReferenceItem instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectType) {
                 $invalidValues[] = is_object($generic_Personal_Information_DataTypeCitizenship_ReferenceItem) ? get_class($generic_Personal_Information_DataTypeCitizenship_ReferenceItem) : sprintf('%s(%s)', gettype($generic_Personal_Information_DataTypeCitizenship_ReferenceItem), var_export($generic_Personal_Information_DataTypeCitizenship_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Citizenship_Reference property can only contain items of type \StructType\Citizenship_StatusObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Citizenship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -645,8 +645,8 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Citizenship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectType[] $citizenship_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[] $citizenship_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setCitizenship_Reference(array $citizenship_Reference = array())
     {
@@ -660,21 +660,21 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Citizenship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectType $item
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType $item
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function addToCitizenship_Reference(\StructType\Citizenship_StatusObjectType $item)
+    public function addToCitizenship_Reference(\WorkdayWsdl\\StructType\Citizenship_StatusObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Citizenship_StatusObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Citizenship_Reference property can only contain items of type \StructType\Citizenship_StatusObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Citizenship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Citizenship_Reference[] = $item;
         return $this;
     }
     /**
      * Get Nationality_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getNationality_Reference()
     {
@@ -682,17 +682,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Nationality_Reference value
-     * @param \StructType\CountryObjectType $nationality_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $nationality_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setNationality_Reference(\StructType\CountryObjectType $nationality_Reference = null)
+    public function setNationality_Reference(\WorkdayWsdl\\StructType\CountryObjectType $nationality_Reference = null)
     {
         $this->Nationality_Reference = $nationality_Reference;
         return $this;
     }
     /**
      * Get Hukou_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getHukou_Region_Reference()
     {
@@ -700,17 +700,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Hukou_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $hukou_Region_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $hukou_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setHukou_Region_Reference(\StructType\Country_RegionObjectType $hukou_Region_Reference = null)
+    public function setHukou_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $hukou_Region_Reference = null)
     {
         $this->Hukou_Region_Reference = $hukou_Region_Reference;
         return $this;
     }
     /**
      * Get Hukou_Subregion_Reference value
-     * @return \StructType\Country_SubregionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectType|null
      */
     public function getHukou_Subregion_Reference()
     {
@@ -718,10 +718,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Hukou_Subregion_Reference value
-     * @param \StructType\Country_SubregionObjectType $hukou_Subregion_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_SubregionObjectType $hukou_Subregion_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setHukou_Subregion_Reference(\StructType\Country_SubregionObjectType $hukou_Subregion_Reference = null)
+    public function setHukou_Subregion_Reference(\WorkdayWsdl\\StructType\Country_SubregionObjectType $hukou_Subregion_Reference = null)
     {
         $this->Hukou_Subregion_Reference = $hukou_Subregion_Reference;
         return $this;
@@ -737,7 +737,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Hukou_Locality value
      * @param string $hukou_Locality
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setHukou_Locality($hukou_Locality = null)
     {
@@ -759,7 +759,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Hukou_Postal_Code value
      * @param string $hukou_Postal_Code
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setHukou_Postal_Code($hukou_Postal_Code = null)
     {
@@ -772,7 +772,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Hukou_Type_Reference value
-     * @return \StructType\Hukou_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectType|null
      */
     public function getHukou_Type_Reference()
     {
@@ -780,17 +780,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Hukou_Type_Reference value
-     * @param \StructType\Hukou_TypeObjectType $hukou_Type_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Hukou_TypeObjectType $hukou_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setHukou_Type_Reference(\StructType\Hukou_TypeObjectType $hukou_Type_Reference = null)
+    public function setHukou_Type_Reference(\WorkdayWsdl\\StructType\Hukou_TypeObjectType $hukou_Type_Reference = null)
     {
         $this->Hukou_Type_Reference = $hukou_Type_Reference;
         return $this;
     }
     /**
      * Get Native_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getNative_Region_Reference()
     {
@@ -798,10 +798,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Native_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $native_Region_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $native_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setNative_Region_Reference(\StructType\Country_RegionObjectType $native_Region_Reference = null)
+    public function setNative_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $native_Region_Reference = null)
     {
         $this->Native_Region_Reference = $native_Region_Reference;
         return $this;
@@ -817,7 +817,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Personnel_File_Agency value
      * @param string $personnel_File_Agency
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setPersonnel_File_Agency($personnel_File_Agency = null)
     {
@@ -830,7 +830,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Political_Affiliation_Reference value
-     * @return \StructType\Political_AffiliationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType|null
      */
     public function getPolitical_Affiliation_Reference()
     {
@@ -838,17 +838,17 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Political_Affiliation_Reference value
-     * @param \StructType\Political_AffiliationObjectType $political_Affiliation_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setPolitical_Affiliation_Reference(\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null)
+    public function setPolitical_Affiliation_Reference(\WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null)
     {
         $this->Political_Affiliation_Reference = $political_Affiliation_Reference;
         return $this;
     }
     /**
      * Get Social_Benefits_Locality_Reference value
-     * @return \StructType\Social_Benefits_LocalityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType|null
      */
     public function getSocial_Benefits_Locality_Reference()
     {
@@ -856,10 +856,10 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Social_Benefits_Locality_Reference value
-     * @param \StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function setSocial_Benefits_Locality_Reference(\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null)
+    public function setSocial_Benefits_Locality_Reference(\WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null)
     {
         $this->Social_Benefits_Locality_Reference = $social_Benefits_Locality_Reference;
         return $this;
@@ -875,7 +875,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Last_Medical_Exam_Date value
      * @param string $last_Medical_Exam_Date
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setLast_Medical_Exam_Date($last_Medical_Exam_Date = null)
     {
@@ -897,7 +897,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Last_Medical_Exam_Valid_To value
      * @param string $last_Medical_Exam_Valid_To
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setLast_Medical_Exam_Valid_To($last_Medical_Exam_Valid_To = null)
     {
@@ -919,7 +919,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Medical_Exam_Notes value
      * @param string $medical_Exam_Notes
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setMedical_Exam_Notes($medical_Exam_Notes = null)
     {
@@ -932,7 +932,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Disability_Information_Data value
-     * @return \StructType\Generic_Disability_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType[]|null
      */
     public function getDisability_Information_Data()
     {
@@ -950,12 +950,12 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generic_Personal_Information_DataTypeDisability_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$generic_Personal_Information_DataTypeDisability_Information_DataItem instanceof \StructType\Generic_Disability_Information_DataType) {
+            if (!$generic_Personal_Information_DataTypeDisability_Information_DataItem instanceof \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType) {
                 $invalidValues[] = is_object($generic_Personal_Information_DataTypeDisability_Information_DataItem) ? get_class($generic_Personal_Information_DataTypeDisability_Information_DataItem) : sprintf('%s(%s)', gettype($generic_Personal_Information_DataTypeDisability_Information_DataItem), var_export($generic_Personal_Information_DataTypeDisability_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability_Information_Data property can only contain items of type \StructType\Generic_Disability_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -963,8 +963,8 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Disability_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Disability_Information_DataType[] $disability_Information_Data
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType[] $disability_Information_Data
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setDisability_Information_Data(array $disability_Information_Data = array())
     {
@@ -978,21 +978,21 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Disability_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Disability_Information_DataType $item
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function addToDisability_Information_Data(\StructType\Generic_Disability_Information_DataType $item)
+    public function addToDisability_Information_Data(\WorkdayWsdl\\StructType\Generic_Disability_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Generic_Disability_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Disability_Information_Data property can only contain items of type \StructType\Generic_Disability_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Disability_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Disability_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability_Information_Data[] = $item;
         return $this;
     }
     /**
      * Get Military_Information_Data value
-     * @return \StructType\Generic_Military_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Information_DataType[]|null
      */
     public function getMilitary_Information_Data()
     {
@@ -1010,12 +1010,12 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generic_Personal_Information_DataTypeMilitary_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$generic_Personal_Information_DataTypeMilitary_Information_DataItem instanceof \StructType\Generic_Military_Information_DataType) {
+            if (!$generic_Personal_Information_DataTypeMilitary_Information_DataItem instanceof \WorkdayWsdl\\StructType\Generic_Military_Information_DataType) {
                 $invalidValues[] = is_object($generic_Personal_Information_DataTypeMilitary_Information_DataItem) ? get_class($generic_Personal_Information_DataTypeMilitary_Information_DataItem) : sprintf('%s(%s)', gettype($generic_Personal_Information_DataTypeMilitary_Information_DataItem), var_export($generic_Personal_Information_DataTypeMilitary_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Military_Information_Data property can only contain items of type \StructType\Generic_Military_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Military_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Military_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1023,8 +1023,8 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Military_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Military_Information_DataType[] $military_Information_Data
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Information_DataType[] $military_Information_Data
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setMilitary_Information_Data(array $military_Information_Data = array())
     {
@@ -1038,14 +1038,14 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Military_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Military_Information_DataType $item
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
-    public function addToMilitary_Information_Data(\StructType\Generic_Military_Information_DataType $item)
+    public function addToMilitary_Information_Data(\WorkdayWsdl\\StructType\Generic_Military_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Generic_Military_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Military_Information_Data property can only contain items of type \StructType\Generic_Military_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Generic_Military_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Military_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Military_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Military_Information_Data[] = $item;
         return $this;
@@ -1061,7 +1061,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Uses_Tobacco value
      * @param bool $uses_Tobacco
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public function setUses_Tobacco($uses_Tobacco = null)
     {
@@ -1078,7 +1078,7 @@ class Generic_Personal_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Generic_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public static function __set_state(array $array)
     {

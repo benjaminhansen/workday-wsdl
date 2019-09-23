@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Experience_Qualification_Profile_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType[]
      */
     public $Work_Experience_Qualification_Replacement_Data;
     /**
@@ -32,7 +32,7 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
      * Constructor method for Work_Experience_Qualification_ReplacementType
      * @uses Work_Experience_Qualification_ReplacementType::setWork_Experience_Qualification_Replacement_Data()
      * @uses Work_Experience_Qualification_ReplacementType::setDelete()
-     * @param \StructType\Work_Experience_Qualification_Profile_Replacement_DataType[] $work_Experience_Qualification_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType[] $work_Experience_Qualification_Replacement_Data
      * @param bool $delete
      */
     public function __construct(array $work_Experience_Qualification_Replacement_Data = array(), $delete = null)
@@ -43,7 +43,7 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
     }
     /**
      * Get Work_Experience_Qualification_Replacement_Data value
-     * @return \StructType\Work_Experience_Qualification_Profile_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType[]|null
      */
     public function getWork_Experience_Qualification_Replacement_Data()
     {
@@ -61,12 +61,12 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem instanceof \StructType\Work_Experience_Qualification_Profile_Replacement_DataType) {
+            if (!$work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType) {
                 $invalidValues[] = is_object($work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem) ? get_class($work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem) : sprintf('%s(%s)', gettype($work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem), var_export($work_Experience_Qualification_ReplacementTypeWork_Experience_Qualification_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Experience_Qualification_Replacement_Data property can only contain items of type \StructType\Work_Experience_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Experience_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Work_Experience_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_Qualification_Profile_Replacement_DataType[] $work_Experience_Qualification_Replacement_Data
-     * @return \StructType\Work_Experience_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType[] $work_Experience_Qualification_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Work_Experience_Qualification_ReplacementType
      */
     public function setWork_Experience_Qualification_Replacement_Data(array $work_Experience_Qualification_Replacement_Data = array())
     {
@@ -89,14 +89,14 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Add item to Work_Experience_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_Qualification_Profile_Replacement_DataType $item
-     * @return \StructType\Work_Experience_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Work_Experience_Qualification_ReplacementType
      */
-    public function addToWork_Experience_Qualification_Replacement_Data(\StructType\Work_Experience_Qualification_Profile_Replacement_DataType $item)
+    public function addToWork_Experience_Qualification_Replacement_Data(\WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Experience_Qualification_Profile_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Experience_Qualification_Replacement_Data property can only contain items of type \StructType\Work_Experience_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Experience_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Experience_Qualification_Replacement_Data[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Work_Experience_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_Qualification_ReplacementType
      */
     public function setDelete($delete = null)
     {
@@ -129,7 +129,7 @@ class Work_Experience_Qualification_ReplacementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Experience_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_Qualification_ReplacementType
      */
     public static function __set_state(array $array)
     {

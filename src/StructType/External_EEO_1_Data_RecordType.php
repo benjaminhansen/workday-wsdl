@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Calendar Year Reference
      * - minOccurs: 0
-     * @var \StructType\Calendar_YearObjectType
+     * @var \WorkdayWsdl\\StructType\Calendar_YearObjectType
      */
     public $Calendar_Year_Reference;
     /**
@@ -42,7 +42,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Company Reference
      * - minOccurs: 0
-     * @var \StructType\CompanyObjectType
+     * @var \WorkdayWsdl\\StructType\CompanyObjectType
      */
     public $Company_Reference;
     /**
@@ -81,12 +81,12 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
      * @uses External_EEO_1_Data_RecordType::setEEO_Hours_Worked()
      * @param string $reference_Record
      * @param string $employee_ID
-     * @param \StructType\Calendar_YearObjectType $calendar_Year_Reference
-     * @param \StructType\CompanyObjectType $company_Reference
+     * @param \WorkdayWsdl\\StructType\Calendar_YearObjectType $calendar_Year_Reference
+     * @param \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference
      * @param float $w_2_Box_1
      * @param float $eEO_Hours_Worked
      */
-    public function __construct($reference_Record = null, $employee_ID = null, \StructType\Calendar_YearObjectType $calendar_Year_Reference = null, \StructType\CompanyObjectType $company_Reference = null, $w_2_Box_1 = null, $eEO_Hours_Worked = null)
+    public function __construct($reference_Record = null, $employee_ID = null, \WorkdayWsdl\\StructType\Calendar_YearObjectType $calendar_Year_Reference = null, \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference = null, $w_2_Box_1 = null, $eEO_Hours_Worked = null)
     {
         $this
             ->setReference_Record($reference_Record)
@@ -107,7 +107,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     /**
      * Set Reference_Record value
      * @param string $reference_Record
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public function setReference_Record($reference_Record = null)
     {
@@ -129,7 +129,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     /**
      * Set Employee_ID value
      * @param string $employee_ID
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public function setEmployee_ID($employee_ID = null)
     {
@@ -142,7 +142,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     }
     /**
      * Get Calendar_Year_Reference value
-     * @return \StructType\Calendar_YearObjectType|null
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectType|null
      */
     public function getCalendar_Year_Reference()
     {
@@ -150,17 +150,17 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     }
     /**
      * Set Calendar_Year_Reference value
-     * @param \StructType\Calendar_YearObjectType $calendar_Year_Reference
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @param \WorkdayWsdl\\StructType\Calendar_YearObjectType $calendar_Year_Reference
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
-    public function setCalendar_Year_Reference(\StructType\Calendar_YearObjectType $calendar_Year_Reference = null)
+    public function setCalendar_Year_Reference(\WorkdayWsdl\\StructType\Calendar_YearObjectType $calendar_Year_Reference = null)
     {
         $this->Calendar_Year_Reference = $calendar_Year_Reference;
         return $this;
     }
     /**
      * Get Company_Reference value
-     * @return \StructType\CompanyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CompanyObjectType|null
      */
     public function getCompany_Reference()
     {
@@ -168,10 +168,10 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     }
     /**
      * Set Company_Reference value
-     * @param \StructType\CompanyObjectType $company_Reference
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @param \WorkdayWsdl\\StructType\CompanyObjectType $company_Reference
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
-    public function setCompany_Reference(\StructType\CompanyObjectType $company_Reference = null)
+    public function setCompany_Reference(\WorkdayWsdl\\StructType\CompanyObjectType $company_Reference = null)
     {
         $this->Company_Reference = $company_Reference;
         return $this;
@@ -187,7 +187,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     /**
      * Set w_Box value
      * @param w_Box $w_Box
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public function setW_2_Box_1($w_2_Box_1 = null)
     {
@@ -221,7 +221,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
     /**
      * Set EEO_Hours_Worked value
      * @param float $eEO_Hours_Worked
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public function setEEO_Hours_Worked($eEO_Hours_Worked = null)
     {
@@ -250,7 +250,7 @@ class External_EEO_1_Data_RecordType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_EEO_1_Data_RecordType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the former worker
      * - minOccurs: 0
-     * @var \StructType\Former_WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\Former_WorkerObjectType
      */
     public $Former_Worker_Reference;
     /**
@@ -54,7 +54,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Category of the document.
      * - minOccurs: 0
-     * @var \StructType\Document_Category__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Document_Category__All_ObjectType
      */
     public $Document_Category_Reference;
     /**
@@ -89,12 +89,12 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $file_Name
      * @param string $file
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
      * @param string $comment
      * @param string $content_Type
      */
-    public function __construct($iD = null, $file_Name = null, $file = null, \StructType\Former_WorkerObjectType $former_Worker_Reference = null, \StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $comment = null, $content_Type = null)
+    public function __construct($iD = null, $file_Name = null, $file = null, \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null, \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $comment = null, $content_Type = null)
     {
         $this
             ->setID($iD)
@@ -116,7 +116,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public function setID($iD = null)
     {
@@ -138,7 +138,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     /**
      * Set File_Name value
      * @param string $file_Name
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public function setFile_Name($file_Name = null)
     {
@@ -164,7 +164,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public function setFile($file = null)
     {
@@ -177,7 +177,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Get Former_Worker_Reference value
-     * @return \StructType\Former_WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Former_WorkerObjectType|null
      */
     public function getFormer_Worker_Reference()
     {
@@ -185,17 +185,17 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Set Former_Worker_Reference value
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
-    public function setFormer_Worker_Reference(\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
+    public function setFormer_Worker_Reference(\WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
     {
         $this->Former_Worker_Reference = $former_Worker_Reference;
         return $this;
     }
     /**
      * Get Document_Category_Reference value
-     * @return \StructType\Document_Category__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Document_Category__All_ObjectType|null
      */
     public function getDocument_Category_Reference()
     {
@@ -203,10 +203,10 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Category_Reference value
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
-    public function setDocument_Category_Reference(\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
+    public function setDocument_Category_Reference(\WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
     {
         $this->Document_Category_Reference = $document_Category_Reference;
         return $this;
@@ -222,7 +222,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public function setComment($comment = null)
     {
@@ -244,7 +244,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
     /**
      * Set Content_Type value
      * @param string $content_Type
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public function setContent_Type($content_Type = null)
     {
@@ -265,7 +265,7 @@ class Former_Worker_Attachment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_DataType
      */
     public static function __set_state(array $array)
     {

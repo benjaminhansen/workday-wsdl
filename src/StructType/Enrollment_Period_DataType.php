@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -75,7 +75,7 @@ class Enrollment_Period_DataType extends AbstractStructBase
     /**
      * Set Benefit_Program_Name value
      * @param string $benefit_Program_Name
-     * @return \StructType\Enrollment_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public function setBenefit_Program_Name($benefit_Program_Name = null)
     {
@@ -97,7 +97,7 @@ class Enrollment_Period_DataType extends AbstractStructBase
     /**
      * Set Plan_Year value
      * @param string $plan_Year
-     * @return \StructType\Enrollment_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public function setPlan_Year($plan_Year = null)
     {
@@ -119,7 +119,7 @@ class Enrollment_Period_DataType extends AbstractStructBase
     /**
      * Set Begin_Date value
      * @param string $begin_Date
-     * @return \StructType\Enrollment_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public function setBegin_Date($begin_Date = null)
     {
@@ -141,7 +141,7 @@ class Enrollment_Period_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Enrollment_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -158,7 +158,7 @@ class Enrollment_Period_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Enrollment_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an External Disability Self-Identification Record
      * - maxOccurs: unbounded
-     * @var \StructType\External_Disability_Self_Identification_RecordObjectType[]
+     * @var \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType[]
      */
     public $External_Disability_Self_Identification_Record_Reference;
     /**
      * Constructor method for
      * External_Disability_Self-Identification_Record_Request_ReferencesType
      * @uses External_Disability_Self_Identification_Record_Request_ReferencesType::setExternal_Disability_Self_Identification_Record_Reference()
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectType[] $external_Disability_Self_Identification_Record_Reference
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType[] $external_Disability_Self_Identification_Record_Reference
      */
     public function __construct(array $external_Disability_Self_Identification_Record_Reference = array())
     {
@@ -34,7 +34,7 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
     }
     /**
      * Get External_Disability_Self_Identification_Record_Reference value
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType[]|null
      */
     public function getExternal_Disability_Self_Identification_Record_Reference()
     {
@@ -52,12 +52,12 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
         $invalidValues = [];
         foreach ($values as $external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem instanceof \StructType\External_Disability_Self_Identification_RecordObjectType) {
+            if (!$external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem instanceof \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType) {
                 $invalidValues[] = is_object($external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem) ? get_class($external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem) : sprintf('%s(%s)', gettype($external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem), var_export($external_Disability_Self_Identification_Record_Request_ReferencesTypeExternal_Disability_Self_Identification_Record_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Disability_Self_Identification_Record_Reference property can only contain items of type \StructType\External_Disability_Self_Identification_RecordObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Disability_Self_Identification_Record_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
     /**
      * Set External_Disability_Self_Identification_Record_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectType[] $external_Disability_Self_Identification_Record_Reference
-     * @return \StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType[] $external_Disability_Self_Identification_Record_Reference
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
      */
     public function setExternal_Disability_Self_Identification_Record_Reference(array $external_Disability_Self_Identification_Record_Reference = array())
     {
@@ -80,14 +80,14 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
     /**
      * Add item to External_Disability_Self_Identification_Record_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectType $item
-     * @return \StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $item
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
      */
-    public function addToExternal_Disability_Self_Identification_Record_Reference(\StructType\External_Disability_Self_Identification_RecordObjectType $item)
+    public function addToExternal_Disability_Self_Identification_Record_Reference(\WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Disability_Self_Identification_RecordObjectType) {
-            throw new \InvalidArgumentException(sprintf('The External_Disability_Self_Identification_Record_Reference property can only contain items of type \StructType\External_Disability_Self_Identification_RecordObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType) {
+            throw new \InvalidArgumentException(sprintf('The External_Disability_Self_Identification_Record_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Disability_Self_Identification_Record_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class External_Disability_Self_Identification_Record_Request_ReferencesType exte
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

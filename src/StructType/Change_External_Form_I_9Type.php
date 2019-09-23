@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Change_External_Form_I_9Type extends AbstractStructBase
      * - documentation: The Worker Reference to extract External Form I-9 for Workers.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Worker_Reference;
     /**
@@ -26,15 +26,15 @@ class Change_External_Form_I_9Type extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_DataType[]
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_DataType[]
      */
     public $External_Form_I_9_Data;
     /**
      * Constructor method for Change_External_Form_I-9Type
      * @uses Change_External_Form_I_9Type::setWorker_Reference()
      * @uses Change_External_Form_I_9Type::setExternal_Form_I_9_Data()
-     * @param \StructType\WorkerObjectType[] $worker_Reference
-     * @param \StructType\External_Form_I_9_DataType[] $external_Form_I_9_Data
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_DataType[] $external_Form_I_9_Data
      */
     public function __construct(array $worker_Reference = array(), array $external_Form_I_9_Data = array())
     {
@@ -44,7 +44,7 @@ class Change_External_Form_I_9Type extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorker_Reference()
     {
@@ -62,12 +62,12 @@ class Change_External_Form_I_9Type extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_External_Form_I_9TypeWorker_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$change_External_Form_I_9TypeWorker_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$change_External_Form_I_9TypeWorker_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($change_External_Form_I_9TypeWorker_ReferenceItem) ? get_class($change_External_Form_I_9TypeWorker_ReferenceItem) : sprintf('%s(%s)', gettype($change_External_Form_I_9TypeWorker_ReferenceItem), var_export($change_External_Form_I_9TypeWorker_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Change_External_Form_I_9Type extends AbstractStructBase
     /**
      * Set Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $worker_Reference
-     * @return \StructType\Change_External_Form_I_9Type
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9Type
      */
     public function setWorker_Reference(array $worker_Reference = array())
     {
@@ -90,14 +90,14 @@ class Change_External_Form_I_9Type extends AbstractStructBase
     /**
      * Add item to Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Change_External_Form_I_9Type
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9Type
      */
-    public function addToWorker_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Reference[] = $item;
         return $this;
@@ -122,12 +122,12 @@ class Change_External_Form_I_9Type extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_External_Form_I_9TypeExternal_Form_I_9_DataItem) {
             // validation for constraint: itemType
-            if (!$change_External_Form_I_9TypeExternal_Form_I_9_DataItem instanceof \StructType\External_Form_I_9_DataType) {
+            if (!$change_External_Form_I_9TypeExternal_Form_I_9_DataItem instanceof \WorkdayWsdl\\StructType\External_Form_I_9_DataType) {
                 $invalidValues[] = is_object($change_External_Form_I_9TypeExternal_Form_I_9_DataItem) ? get_class($change_External_Form_I_9TypeExternal_Form_I_9_DataItem) : sprintf('%s(%s)', gettype($change_External_Form_I_9TypeExternal_Form_I_9_DataItem), var_export($change_External_Form_I_9TypeExternal_Form_I_9_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Form_I_9_Data property can only contain items of type \StructType\External_Form_I_9_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Form_I_9_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -135,7 +135,7 @@ class Change_External_Form_I_9Type extends AbstractStructBase
     /**
      * Set external_Form_I_Data value
      * @param external_Form_I_Data $external_Form_I_Data
-     * @return \StructType\Change_External_Form_I_9Type
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9Type
      */
     public function setExternal_Form_I_9_Data(array $external_Form_I_9_Data = array())
     {
@@ -149,14 +149,14 @@ class Change_External_Form_I_9Type extends AbstractStructBase
     /**
      * Add item to External_Form_I_9_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Form_I_9_DataType $item
-     * @return \StructType\Change_External_Form_I_9Type
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9Type
      */
-    public function addToExternal_Form_I_9_Data(\StructType\External_Form_I_9_DataType $item)
+    public function addToExternal_Form_I_9_Data(\WorkdayWsdl\\StructType\External_Form_I_9_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Form_I_9_DataType) {
-            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Data property can only contain items of type \StructType\External_Form_I_9_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Form_I_9_DataType) {
+            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Form_I_9_Data[] = $this->{'External_Form_I-9_Data'}[] = $item;
         return $this;
@@ -167,7 +167,7 @@ class Change_External_Form_I_9Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_External_Form_I_9Type
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9Type
      */
     public static function __set_state(array $array)
     {

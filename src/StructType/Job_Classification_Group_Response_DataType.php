@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
      * - documentation: Encapsulating element containing all Job Classification Group data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Classification_Group_NewType[]
+     * @var \WorkdayWsdl\\StructType\Job_Classification_Group_NewType[]
      */
     public $Job_Classification_Group;
     /**
      * Constructor method for Job_Classification_Group_Response_DataType
      * @uses Job_Classification_Group_Response_DataType::setJob_Classification_Group()
-     * @param \StructType\Job_Classification_Group_NewType[] $job_Classification_Group
+     * @param \WorkdayWsdl\\StructType\Job_Classification_Group_NewType[] $job_Classification_Group
      */
     public function __construct(array $job_Classification_Group = array())
     {
@@ -33,7 +33,7 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Classification_Group value
-     * @return \StructType\Job_Classification_Group_NewType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_NewType[]|null
      */
     public function getJob_Classification_Group()
     {
@@ -51,12 +51,12 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Classification_Group_Response_DataTypeJob_Classification_GroupItem) {
             // validation for constraint: itemType
-            if (!$job_Classification_Group_Response_DataTypeJob_Classification_GroupItem instanceof \StructType\Job_Classification_Group_NewType) {
+            if (!$job_Classification_Group_Response_DataTypeJob_Classification_GroupItem instanceof \WorkdayWsdl\\StructType\Job_Classification_Group_NewType) {
                 $invalidValues[] = is_object($job_Classification_Group_Response_DataTypeJob_Classification_GroupItem) ? get_class($job_Classification_Group_Response_DataTypeJob_Classification_GroupItem) : sprintf('%s(%s)', gettype($job_Classification_Group_Response_DataTypeJob_Classification_GroupItem), var_export($job_Classification_Group_Response_DataTypeJob_Classification_GroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Classification_Group property can only contain items of type \StructType\Job_Classification_Group_NewType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Classification_Group property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_Group_NewType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
     /**
      * Set Job_Classification_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_Group_NewType[] $job_Classification_Group
-     * @return \StructType\Job_Classification_Group_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_Group_NewType[] $job_Classification_Group
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Response_DataType
      */
     public function setJob_Classification_Group(array $job_Classification_Group = array())
     {
@@ -79,14 +79,14 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
     /**
      * Add item to Job_Classification_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_Group_NewType $item
-     * @return \StructType\Job_Classification_Group_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_Group_NewType $item
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Response_DataType
      */
-    public function addToJob_Classification_Group(\StructType\Job_Classification_Group_NewType $item)
+    public function addToJob_Classification_Group(\WorkdayWsdl\\StructType\Job_Classification_Group_NewType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Classification_Group_NewType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Classification_Group property can only contain items of type \StructType\Job_Classification_Group_NewType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Classification_Group_NewType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Classification_Group property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_Group_NewType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Classification_Group[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Job_Classification_Group_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_Group_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Response_DataType
      */
     public static function __set_state(array $array)
     {

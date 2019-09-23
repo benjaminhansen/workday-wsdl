@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Other_IDs_Response_WrapperType[]
+     * @var \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType[]
      */
     public $Change_Other_IDs;
     /**
      * Constructor method for Change_Other_IDs_Response_DataType
      * @uses Change_Other_IDs_Response_DataType::setChange_Other_IDs()
-     * @param \StructType\Change_Other_IDs_Response_WrapperType[] $change_Other_IDs
+     * @param \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType[] $change_Other_IDs
      */
     public function __construct(array $change_Other_IDs = array())
     {
@@ -32,7 +32,7 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Change_Other_IDs value
-     * @return \StructType\Change_Other_IDs_Response_WrapperType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType[]|null
      */
     public function getChange_Other_IDs()
     {
@@ -50,12 +50,12 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Other_IDs_Response_DataTypeChange_Other_IDsItem) {
             // validation for constraint: itemType
-            if (!$change_Other_IDs_Response_DataTypeChange_Other_IDsItem instanceof \StructType\Change_Other_IDs_Response_WrapperType) {
+            if (!$change_Other_IDs_Response_DataTypeChange_Other_IDsItem instanceof \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType) {
                 $invalidValues[] = is_object($change_Other_IDs_Response_DataTypeChange_Other_IDsItem) ? get_class($change_Other_IDs_Response_DataTypeChange_Other_IDsItem) : sprintf('%s(%s)', gettype($change_Other_IDs_Response_DataTypeChange_Other_IDsItem), var_export($change_Other_IDs_Response_DataTypeChange_Other_IDsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Other_IDs property can only contain items of type \StructType\Change_Other_IDs_Response_WrapperType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Other_IDs property can only contain items of type \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
     /**
      * Set Change_Other_IDs value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Other_IDs_Response_WrapperType[] $change_Other_IDs
-     * @return \StructType\Change_Other_IDs_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType[] $change_Other_IDs
+     * @return \WorkdayWsdl\\StructType\Change_Other_IDs_Response_DataType
      */
     public function setChange_Other_IDs(array $change_Other_IDs = array())
     {
@@ -78,14 +78,14 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
     /**
      * Add item to Change_Other_IDs value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Other_IDs_Response_WrapperType $item
-     * @return \StructType\Change_Other_IDs_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType $item
+     * @return \WorkdayWsdl\\StructType\Change_Other_IDs_Response_DataType
      */
-    public function addToChange_Other_IDs(\StructType\Change_Other_IDs_Response_WrapperType $item)
+    public function addToChange_Other_IDs(\WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Other_IDs_Response_WrapperType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Other_IDs property can only contain items of type \StructType\Change_Other_IDs_Response_WrapperType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Other_IDs property can only contain items of type \WorkdayWsdl\\StructType\Change_Other_IDs_Response_WrapperType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Other_IDs[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Change_Other_IDs_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Other_IDs_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Other_IDs_Response_DataType
      */
     public static function __set_state(array $array)
     {

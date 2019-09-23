@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Superior Academic Unit Reference
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Superior_Academic_Unit_Reference;
     /**
@@ -33,9 +33,9 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
      * @uses Superior_Academic_Unit_DataType::setEffective_Date()
      * @uses Superior_Academic_Unit_DataType::setSuperior_Academic_Unit_Reference()
      * @param string $effective_Date
-     * @param \StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference
      */
-    public function __construct($effective_Date = null, \StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -52,7 +52,7 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Superior_Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -65,7 +65,7 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Get Superior_Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getSuperior_Academic_Unit_Reference()
     {
@@ -73,10 +73,10 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference
-     * @return \StructType\Superior_Academic_Unit_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType
      */
-    public function setSuperior_Academic_Unit_Reference(\StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference = null)
+    public function setSuperior_Academic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $superior_Academic_Unit_Reference = null)
     {
         $this->Superior_Academic_Unit_Reference = $superior_Academic_Unit_Reference;
         return $this;
@@ -87,7 +87,7 @@ class Superior_Academic_Unit_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Superior_Academic_Unit_DataType
+     * @return \WorkdayWsdl\\StructType\Superior_Academic_Unit_DataType
      */
     public static function __set_state(array $array)
     {

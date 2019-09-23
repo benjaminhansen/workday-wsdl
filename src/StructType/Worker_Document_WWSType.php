@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,24 +16,24 @@ class Worker_Document_WWSType extends AbstractStructBase
      * The Worker_Document_Reference
      * Meta information extracted from the WSDL
      * - documentation: The reference to the worker document.
-     * @var \StructType\Worker_DocumentObjectType
+     * @var \WorkdayWsdl\\StructType\Worker_DocumentObjectType
      */
     public $Worker_Document_Reference;
     /**
      * The Worker_Document_Detail_Data
      * Meta information extracted from the WSDL
      * - documentation: The information about the worker document, such as the category and file.
-     * @var \StructType\Worker_Document_Details_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
     public $Worker_Document_Detail_Data;
     /**
      * Constructor method for Worker_Document_WWSType
      * @uses Worker_Document_WWSType::setWorker_Document_Reference()
      * @uses Worker_Document_WWSType::setWorker_Document_Detail_Data()
-     * @param \StructType\Worker_DocumentObjectType $worker_Document_Reference
-     * @param \StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType $worker_Document_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data
      */
-    public function __construct(\StructType\Worker_DocumentObjectType $worker_Document_Reference = null, \StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_DocumentObjectType $worker_Document_Reference = null, \WorkdayWsdl\\StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data = null)
     {
         $this
             ->setWorker_Document_Reference($worker_Document_Reference)
@@ -41,7 +41,7 @@ class Worker_Document_WWSType extends AbstractStructBase
     }
     /**
      * Get Worker_Document_Reference value
-     * @return \StructType\Worker_DocumentObjectType|null
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectType|null
      */
     public function getWorker_Document_Reference()
     {
@@ -49,17 +49,17 @@ class Worker_Document_WWSType extends AbstractStructBase
     }
     /**
      * Set Worker_Document_Reference value
-     * @param \StructType\Worker_DocumentObjectType $worker_Document_Reference
-     * @return \StructType\Worker_Document_WWSType
+     * @param \WorkdayWsdl\\StructType\Worker_DocumentObjectType $worker_Document_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Document_WWSType
      */
-    public function setWorker_Document_Reference(\StructType\Worker_DocumentObjectType $worker_Document_Reference = null)
+    public function setWorker_Document_Reference(\WorkdayWsdl\\StructType\Worker_DocumentObjectType $worker_Document_Reference = null)
     {
         $this->Worker_Document_Reference = $worker_Document_Reference;
         return $this;
     }
     /**
      * Get Worker_Document_Detail_Data value
-     * @return \StructType\Worker_Document_Details_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType|null
      */
     public function getWorker_Document_Detail_Data()
     {
@@ -67,10 +67,10 @@ class Worker_Document_WWSType extends AbstractStructBase
     }
     /**
      * Set Worker_Document_Detail_Data value
-     * @param \StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data
-     * @return \StructType\Worker_Document_WWSType
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Document_WWSType
      */
-    public function setWorker_Document_Detail_Data(\StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data = null)
+    public function setWorker_Document_Detail_Data(\WorkdayWsdl\\StructType\Worker_Document_Details_DataType $worker_Document_Detail_Data = null)
     {
         $this->Worker_Document_Detail_Data = $worker_Document_Detail_Data;
         return $this;
@@ -81,7 +81,7 @@ class Worker_Document_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Document_WWSType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_WWSType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Government_Identification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for all National Identifier Data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\National_IDType[]
+     * @var \WorkdayWsdl\\StructType\National_IDType[]
      */
     public $National_ID;
     /**
@@ -27,7 +27,7 @@ class Government_Identification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for all Government Identifier Data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Government_IDType[]
+     * @var \WorkdayWsdl\\StructType\Government_IDType[]
      */
     public $Government_ID;
     /**
@@ -43,8 +43,8 @@ class Government_Identification_DataType extends AbstractStructBase
      * @uses Government_Identification_DataType::setNational_ID()
      * @uses Government_Identification_DataType::setGovernment_ID()
      * @uses Government_Identification_DataType::setReplace_All()
-     * @param \StructType\National_IDType[] $national_ID
-     * @param \StructType\Government_IDType[] $government_ID
+     * @param \WorkdayWsdl\\StructType\National_IDType[] $national_ID
+     * @param \WorkdayWsdl\\StructType\Government_IDType[] $government_ID
      * @param bool $replace_All
      */
     public function __construct(array $national_ID = array(), array $government_ID = array(), $replace_All = null)
@@ -56,7 +56,7 @@ class Government_Identification_DataType extends AbstractStructBase
     }
     /**
      * Get National_ID value
-     * @return \StructType\National_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\National_IDType[]|null
      */
     public function getNational_ID()
     {
@@ -74,12 +74,12 @@ class Government_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $government_Identification_DataTypeNational_IDItem) {
             // validation for constraint: itemType
-            if (!$government_Identification_DataTypeNational_IDItem instanceof \StructType\National_IDType) {
+            if (!$government_Identification_DataTypeNational_IDItem instanceof \WorkdayWsdl\\StructType\National_IDType) {
                 $invalidValues[] = is_object($government_Identification_DataTypeNational_IDItem) ? get_class($government_Identification_DataTypeNational_IDItem) : sprintf('%s(%s)', gettype($government_Identification_DataTypeNational_IDItem), var_export($government_Identification_DataTypeNational_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The National_ID property can only contain items of type \StructType\National_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The National_ID property can only contain items of type \WorkdayWsdl\\StructType\National_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -87,8 +87,8 @@ class Government_Identification_DataType extends AbstractStructBase
     /**
      * Set National_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_IDType[] $national_ID
-     * @return \StructType\Government_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\National_IDType[] $national_ID
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
     public function setNational_ID(array $national_ID = array())
     {
@@ -102,21 +102,21 @@ class Government_Identification_DataType extends AbstractStructBase
     /**
      * Add item to National_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_IDType $item
-     * @return \StructType\Government_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\National_IDType $item
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
-    public function addToNational_ID(\StructType\National_IDType $item)
+    public function addToNational_ID(\WorkdayWsdl\\StructType\National_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\National_IDType) {
-            throw new \InvalidArgumentException(sprintf('The National_ID property can only contain items of type \StructType\National_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\National_IDType) {
+            throw new \InvalidArgumentException(sprintf('The National_ID property can only contain items of type \WorkdayWsdl\\StructType\National_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->National_ID[] = $item;
         return $this;
     }
     /**
      * Get Government_ID value
-     * @return \StructType\Government_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\Government_IDType[]|null
      */
     public function getGovernment_ID()
     {
@@ -134,12 +134,12 @@ class Government_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $government_Identification_DataTypeGovernment_IDItem) {
             // validation for constraint: itemType
-            if (!$government_Identification_DataTypeGovernment_IDItem instanceof \StructType\Government_IDType) {
+            if (!$government_Identification_DataTypeGovernment_IDItem instanceof \WorkdayWsdl\\StructType\Government_IDType) {
                 $invalidValues[] = is_object($government_Identification_DataTypeGovernment_IDItem) ? get_class($government_Identification_DataTypeGovernment_IDItem) : sprintf('%s(%s)', gettype($government_Identification_DataTypeGovernment_IDItem), var_export($government_Identification_DataTypeGovernment_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Government_ID property can only contain items of type \StructType\Government_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Government_ID property can only contain items of type \WorkdayWsdl\\StructType\Government_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -147,8 +147,8 @@ class Government_Identification_DataType extends AbstractStructBase
     /**
      * Set Government_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_IDType[] $government_ID
-     * @return \StructType\Government_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Government_IDType[] $government_ID
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
     public function setGovernment_ID(array $government_ID = array())
     {
@@ -162,14 +162,14 @@ class Government_Identification_DataType extends AbstractStructBase
     /**
      * Add item to Government_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_IDType $item
-     * @return \StructType\Government_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Government_IDType $item
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
-    public function addToGovernment_ID(\StructType\Government_IDType $item)
+    public function addToGovernment_ID(\WorkdayWsdl\\StructType\Government_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Government_IDType) {
-            throw new \InvalidArgumentException(sprintf('The Government_ID property can only contain items of type \StructType\Government_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Government_IDType) {
+            throw new \InvalidArgumentException(sprintf('The Government_ID property can only contain items of type \WorkdayWsdl\\StructType\Government_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Government_ID[] = $item;
         return $this;
@@ -185,7 +185,7 @@ class Government_Identification_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Government_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -202,7 +202,7 @@ class Government_Identification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Government_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identification_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Category of attachment.
      * - minOccurs: 0
-     * @var \StructType\Event_Attachment_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType
      */
     public $Event_Attachment_Category_Reference;
     /**
@@ -68,11 +68,11 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
      * @uses Business_Process_Attachment_DataType::setContent_Type()
      * @param string $file_Name
      * @param string $event_Attachment_Description
-     * @param \StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference
      * @param string $file
      * @param string $content_Type
      */
-    public function __construct($file_Name = null, $event_Attachment_Description = null, \StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference = null, $file = null, $content_Type = null)
+    public function __construct($file_Name = null, $event_Attachment_Description = null, \WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference = null, $file = null, $content_Type = null)
     {
         $this
             ->setFile_Name($file_Name)
@@ -92,7 +92,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     /**
      * Set File_Name value
      * @param string $file_Name
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
     public function setFile_Name($file_Name = null)
     {
@@ -118,7 +118,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     /**
      * Set Event_Attachment_Description value
      * @param string $event_Attachment_Description
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
     public function setEvent_Attachment_Description($event_Attachment_Description = null)
     {
@@ -131,7 +131,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Get Event_Attachment_Category_Reference value
-     * @return \StructType\Event_Attachment_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType|null
      */
     public function getEvent_Attachment_Category_Reference()
     {
@@ -139,10 +139,10 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Set Event_Attachment_Category_Reference value
-     * @param \StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
-    public function setEvent_Attachment_Category_Reference(\StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference = null)
+    public function setEvent_Attachment_Category_Reference(\WorkdayWsdl\\StructType\Event_Attachment_CategoryObjectType $event_Attachment_Category_Reference = null)
     {
         $this->Event_Attachment_Category_Reference = $event_Attachment_Category_Reference;
         return $this;
@@ -158,7 +158,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
     public function setFile($file = null)
     {
@@ -180,7 +180,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
     /**
      * Set Content_Type value
      * @param string $content_Type
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
     public function setContent_Type($content_Type = null)
     {
@@ -201,7 +201,7 @@ class Business_Process_Attachment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Process_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType
      */
     public static function __set_state(array $array)
     {

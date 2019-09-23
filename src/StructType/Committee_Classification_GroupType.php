@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Classification_GroupType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Committee Classification Group.
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public $Committee_Classification_Group_Reference;
     /**
@@ -26,17 +26,17 @@ class Committee_Classification_GroupType extends AbstractStructBase
      * - documentation: Committee Classification Group Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_Group_DataType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType[]
      */
     public $Committee_Classification_Group_Data;
     /**
      * Constructor method for Committee_Classification_GroupType
      * @uses Committee_Classification_GroupType::setCommittee_Classification_Group_Reference()
      * @uses Committee_Classification_GroupType::setCommittee_Classification_Group_Data()
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
-     * @param \StructType\Committee_Classification_Group_DataType[] $committee_Classification_Group_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType[] $committee_Classification_Group_Data
      */
-    public function __construct(\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null, array $committee_Classification_Group_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null, array $committee_Classification_Group_Data = array())
     {
         $this
             ->setCommittee_Classification_Group_Reference($committee_Classification_Group_Reference)
@@ -44,7 +44,7 @@ class Committee_Classification_GroupType extends AbstractStructBase
     }
     /**
      * Get Committee_Classification_Group_Reference value
-     * @return \StructType\Committee_Classification_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType|null
      */
     public function getCommittee_Classification_Group_Reference()
     {
@@ -52,17 +52,17 @@ class Committee_Classification_GroupType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Group_Reference value
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
-     * @return \StructType\Committee_Classification_GroupType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupType
      */
-    public function setCommittee_Classification_Group_Reference(\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
+    public function setCommittee_Classification_Group_Reference(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
     {
         $this->Committee_Classification_Group_Reference = $committee_Classification_Group_Reference;
         return $this;
     }
     /**
      * Get Committee_Classification_Group_Data value
-     * @return \StructType\Committee_Classification_Group_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType[]|null
      */
     public function getCommittee_Classification_Group_Data()
     {
@@ -80,12 +80,12 @@ class Committee_Classification_GroupType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Classification_GroupTypeCommittee_Classification_Group_DataItem) {
             // validation for constraint: itemType
-            if (!$committee_Classification_GroupTypeCommittee_Classification_Group_DataItem instanceof \StructType\Committee_Classification_Group_DataType) {
+            if (!$committee_Classification_GroupTypeCommittee_Classification_Group_DataItem instanceof \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType) {
                 $invalidValues[] = is_object($committee_Classification_GroupTypeCommittee_Classification_Group_DataItem) ? get_class($committee_Classification_GroupTypeCommittee_Classification_Group_DataItem) : sprintf('%s(%s)', gettype($committee_Classification_GroupTypeCommittee_Classification_Group_DataItem), var_export($committee_Classification_GroupTypeCommittee_Classification_Group_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Classification_Group_Data property can only contain items of type \StructType\Committee_Classification_Group_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Classification_Group_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Committee_Classification_GroupType extends AbstractStructBase
     /**
      * Set Committee_Classification_Group_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Classification_Group_DataType[] $committee_Classification_Group_Data
-     * @return \StructType\Committee_Classification_GroupType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType[] $committee_Classification_Group_Data
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupType
      */
     public function setCommittee_Classification_Group_Data(array $committee_Classification_Group_Data = array())
     {
@@ -108,14 +108,14 @@ class Committee_Classification_GroupType extends AbstractStructBase
     /**
      * Add item to Committee_Classification_Group_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Classification_Group_DataType $item
-     * @return \StructType\Committee_Classification_GroupType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupType
      */
-    public function addToCommittee_Classification_Group_Data(\StructType\Committee_Classification_Group_DataType $item)
+    public function addToCommittee_Classification_Group_Data(\WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Classification_Group_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Classification_Group_Data property can only contain items of type \StructType\Committee_Classification_Group_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Classification_Group_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Classification_Group_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Committee_Classification_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Classification_GroupType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Review_RatingObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Review_RatingReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Review_RatingReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Review_RatingReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Review_RatingReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Review_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Review_RatingObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Review_RatingReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Review_RatingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Review_RatingReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Review_RatingReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Review_RatingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Review_RatingReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Review_RatingObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Review_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Review_RatingObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Review_RatingObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Review_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Review_RatingObjectIDType
      */
     public static function __set_state(array $array)
     {

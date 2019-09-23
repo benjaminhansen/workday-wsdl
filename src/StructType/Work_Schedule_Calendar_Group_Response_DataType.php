@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
      * - documentation: Reference for Work Schedule Calendar Group and data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Schedule_Calendar_GroupType[]
+     * @var \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType[]
      */
     public $Work_Schedule_Calendar_Group;
     /**
      * Constructor method for Work_Schedule_Calendar_Group_Response_DataType
      * @uses Work_Schedule_Calendar_Group_Response_DataType::setWork_Schedule_Calendar_Group()
-     * @param \StructType\Work_Schedule_Calendar_GroupType[] $work_Schedule_Calendar_Group
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType[] $work_Schedule_Calendar_Group
      */
     public function __construct(array $work_Schedule_Calendar_Group = array())
     {
@@ -33,7 +33,7 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Work_Schedule_Calendar_Group value
-     * @return \StructType\Work_Schedule_Calendar_GroupType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType[]|null
      */
     public function getWork_Schedule_Calendar_Group()
     {
@@ -51,12 +51,12 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem) {
             // validation for constraint: itemType
-            if (!$work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem instanceof \StructType\Work_Schedule_Calendar_GroupType) {
+            if (!$work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem instanceof \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType) {
                 $invalidValues[] = is_object($work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem) ? get_class($work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem) : sprintf('%s(%s)', gettype($work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem), var_export($work_Schedule_Calendar_Group_Response_DataTypeWork_Schedule_Calendar_GroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Schedule_Calendar_Group property can only contain items of type \StructType\Work_Schedule_Calendar_GroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Schedule_Calendar_Group property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
     /**
      * Set Work_Schedule_Calendar_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_Calendar_GroupType[] $work_Schedule_Calendar_Group
-     * @return \StructType\Work_Schedule_Calendar_Group_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType[] $work_Schedule_Calendar_Group
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_Response_DataType
      */
     public function setWork_Schedule_Calendar_Group(array $work_Schedule_Calendar_Group = array())
     {
@@ -79,14 +79,14 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
     /**
      * Add item to Work_Schedule_Calendar_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_Calendar_GroupType $item
-     * @return \StructType\Work_Schedule_Calendar_Group_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType $item
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_Response_DataType
      */
-    public function addToWork_Schedule_Calendar_Group(\StructType\Work_Schedule_Calendar_GroupType $item)
+    public function addToWork_Schedule_Calendar_Group(\WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Schedule_Calendar_GroupType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Schedule_Calendar_Group property can only contain items of type \StructType\Work_Schedule_Calendar_GroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Schedule_Calendar_Group property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Schedule_Calendar_Group[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Work_Schedule_Calendar_Group_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Schedule_Calendar_Group_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Group_Response_DataType
      */
     public static function __set_state(array $array)
     {

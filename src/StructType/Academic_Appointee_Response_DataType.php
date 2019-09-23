@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_AppointeeType[]
+     * @var \WorkdayWsdl\\StructType\Academic_AppointeeType[]
      */
     public $Academic_Appointee;
     /**
      * Constructor method for Academic_Appointee_Response_DataType
      * @uses Academic_Appointee_Response_DataType::setAcademic_Appointee()
-     * @param \StructType\Academic_AppointeeType[] $academic_Appointee
+     * @param \WorkdayWsdl\\StructType\Academic_AppointeeType[] $academic_Appointee
      */
     public function __construct(array $academic_Appointee = array())
     {
@@ -32,7 +32,7 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Appointee value
-     * @return \StructType\Academic_AppointeeType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_AppointeeType[]|null
      */
     public function getAcademic_Appointee()
     {
@@ -50,12 +50,12 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Appointee_Response_DataTypeAcademic_AppointeeItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointee_Response_DataTypeAcademic_AppointeeItem instanceof \StructType\Academic_AppointeeType) {
+            if (!$academic_Appointee_Response_DataTypeAcademic_AppointeeItem instanceof \WorkdayWsdl\\StructType\Academic_AppointeeType) {
                 $invalidValues[] = is_object($academic_Appointee_Response_DataTypeAcademic_AppointeeItem) ? get_class($academic_Appointee_Response_DataTypeAcademic_AppointeeItem) : sprintf('%s(%s)', gettype($academic_Appointee_Response_DataTypeAcademic_AppointeeItem), var_export($academic_Appointee_Response_DataTypeAcademic_AppointeeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Appointee property can only contain items of type \StructType\Academic_AppointeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Appointee property can only contain items of type \WorkdayWsdl\\StructType\Academic_AppointeeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
     /**
      * Set Academic_Appointee value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_AppointeeType[] $academic_Appointee
-     * @return \StructType\Academic_Appointee_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_AppointeeType[] $academic_Appointee
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_DataType
      */
     public function setAcademic_Appointee(array $academic_Appointee = array())
     {
@@ -78,14 +78,14 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
     /**
      * Add item to Academic_Appointee value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_AppointeeType $item
-     * @return \StructType\Academic_Appointee_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_AppointeeType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_DataType
      */
-    public function addToAcademic_Appointee(\StructType\Academic_AppointeeType $item)
+    public function addToAcademic_Appointee(\WorkdayWsdl\\StructType\Academic_AppointeeType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_AppointeeType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Appointee property can only contain items of type \StructType\Academic_AppointeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_AppointeeType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Appointee property can only contain items of type \WorkdayWsdl\\StructType\Academic_AppointeeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Appointee[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Academic_Appointee_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointee_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Qualification_DataType extends AbstractStructBase
      * - documentation: Encapsulating element containing all Education data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Education_History_DataType[]
+     * @var \WorkdayWsdl\\StructType\Education_History_DataType[]
      */
     public $Education_Data;
     /**
@@ -26,15 +26,15 @@ class Qualification_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Experience_DataType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Experience_DataType[]
      */
     public $Professional_Experience_Data;
     /**
      * Constructor method for Qualification_DataType
      * @uses Qualification_DataType::setEducation_Data()
      * @uses Qualification_DataType::setProfessional_Experience_Data()
-     * @param \StructType\Education_History_DataType[] $education_Data
-     * @param \StructType\Professional_Experience_DataType[] $professional_Experience_Data
+     * @param \WorkdayWsdl\\StructType\Education_History_DataType[] $education_Data
+     * @param \WorkdayWsdl\\StructType\Professional_Experience_DataType[] $professional_Experience_Data
      */
     public function __construct(array $education_Data = array(), array $professional_Experience_Data = array())
     {
@@ -44,7 +44,7 @@ class Qualification_DataType extends AbstractStructBase
     }
     /**
      * Get Education_Data value
-     * @return \StructType\Education_History_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType[]|null
      */
     public function getEducation_Data()
     {
@@ -62,12 +62,12 @@ class Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $qualification_DataTypeEducation_DataItem) {
             // validation for constraint: itemType
-            if (!$qualification_DataTypeEducation_DataItem instanceof \StructType\Education_History_DataType) {
+            if (!$qualification_DataTypeEducation_DataItem instanceof \WorkdayWsdl\\StructType\Education_History_DataType) {
                 $invalidValues[] = is_object($qualification_DataTypeEducation_DataItem) ? get_class($qualification_DataTypeEducation_DataItem) : sprintf('%s(%s)', gettype($qualification_DataTypeEducation_DataItem), var_export($qualification_DataTypeEducation_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Education_Data property can only contain items of type \StructType\Education_History_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Education_Data property can only contain items of type \WorkdayWsdl\\StructType\Education_History_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Qualification_DataType extends AbstractStructBase
     /**
      * Set Education_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Education_History_DataType[] $education_Data
-     * @return \StructType\Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Education_History_DataType[] $education_Data
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType
      */
     public function setEducation_Data(array $education_Data = array())
     {
@@ -90,21 +90,21 @@ class Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Education_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Education_History_DataType $item
-     * @return \StructType\Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Education_History_DataType $item
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType
      */
-    public function addToEducation_Data(\StructType\Education_History_DataType $item)
+    public function addToEducation_Data(\WorkdayWsdl\\StructType\Education_History_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Education_History_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Education_Data property can only contain items of type \StructType\Education_History_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Education_History_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Education_Data property can only contain items of type \WorkdayWsdl\\StructType\Education_History_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Education_Data[] = $item;
         return $this;
     }
     /**
      * Get Professional_Experience_Data value
-     * @return \StructType\Professional_Experience_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_DataType[]|null
      */
     public function getProfessional_Experience_Data()
     {
@@ -122,12 +122,12 @@ class Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $qualification_DataTypeProfessional_Experience_DataItem) {
             // validation for constraint: itemType
-            if (!$qualification_DataTypeProfessional_Experience_DataItem instanceof \StructType\Professional_Experience_DataType) {
+            if (!$qualification_DataTypeProfessional_Experience_DataItem instanceof \WorkdayWsdl\\StructType\Professional_Experience_DataType) {
                 $invalidValues[] = is_object($qualification_DataTypeProfessional_Experience_DataItem) ? get_class($qualification_DataTypeProfessional_Experience_DataItem) : sprintf('%s(%s)', gettype($qualification_DataTypeProfessional_Experience_DataItem), var_export($qualification_DataTypeProfessional_Experience_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Professional_Experience_Data property can only contain items of type \StructType\Professional_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Professional_Experience_Data property can only contain items of type \WorkdayWsdl\\StructType\Professional_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -135,8 +135,8 @@ class Qualification_DataType extends AbstractStructBase
     /**
      * Set Professional_Experience_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Experience_DataType[] $professional_Experience_Data
-     * @return \StructType\Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Experience_DataType[] $professional_Experience_Data
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType
      */
     public function setProfessional_Experience_Data(array $professional_Experience_Data = array())
     {
@@ -150,14 +150,14 @@ class Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Professional_Experience_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Experience_DataType $item
-     * @return \StructType\Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Experience_DataType $item
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType
      */
-    public function addToProfessional_Experience_Data(\StructType\Professional_Experience_DataType $item)
+    public function addToProfessional_Experience_Data(\WorkdayWsdl\\StructType\Professional_Experience_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Experience_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Professional_Experience_Data property can only contain items of type \StructType\Professional_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Experience_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Professional_Experience_Data property can only contain items of type \WorkdayWsdl\\StructType\Professional_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Professional_Experience_Data[] = $item;
         return $this;
@@ -168,7 +168,7 @@ class Qualification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Qualification_DataType
+     * @return \WorkdayWsdl\\StructType\Qualification_DataType
      */
     public static function __set_state(array $array)
     {

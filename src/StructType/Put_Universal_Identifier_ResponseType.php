@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
      * - documentation: Person Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType[]
+     * @var \WorkdayWsdl\\StructType\RoleObjectType[]
      */
     public $Person_Reference;
     /**
@@ -32,7 +32,7 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
      * Constructor method for Put_Universal_Identifier_ResponseType
      * @uses Put_Universal_Identifier_ResponseType::setPerson_Reference()
      * @uses Put_Universal_Identifier_ResponseType::setVersion()
-     * @param \StructType\RoleObjectType[] $person_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
      * @param string $version
      */
     public function __construct(array $person_Reference = array(), $version = null)
@@ -43,7 +43,7 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType[]|null
      */
     public function getPerson_Reference()
     {
@@ -61,12 +61,12 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Universal_Identifier_ResponseTypePerson_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$put_Universal_Identifier_ResponseTypePerson_ReferenceItem instanceof \StructType\RoleObjectType) {
+            if (!$put_Universal_Identifier_ResponseTypePerson_ReferenceItem instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
                 $invalidValues[] = is_object($put_Universal_Identifier_ResponseTypePerson_ReferenceItem) ? get_class($put_Universal_Identifier_ResponseTypePerson_ReferenceItem) : sprintf('%s(%s)', gettype($put_Universal_Identifier_ResponseTypePerson_ReferenceItem), var_export($put_Universal_Identifier_ResponseTypePerson_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
     /**
      * Set Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType[] $person_Reference
-     * @return \StructType\Put_Universal_Identifier_ResponseType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_ResponseType
      */
     public function setPerson_Reference(array $person_Reference = array())
     {
@@ -89,14 +89,14 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
     /**
      * Add item to Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType $item
-     * @return \StructType\Put_Universal_Identifier_ResponseType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $item
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_ResponseType
      */
-    public function addToPerson_Reference(\StructType\RoleObjectType $item)
+    public function addToPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoleObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Reference[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Universal_Identifier_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -129,7 +129,7 @@ class Put_Universal_Identifier_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Universal_Identifier_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_ResponseType
      */
     public static function __set_state(array $array)
     {

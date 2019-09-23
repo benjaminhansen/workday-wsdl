@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
      * Meta information extracted from the WSDL
      * - documentation: Reference to Location Hierarchy for Organization Assignments.
      * - maxOccurs: unbounded
-     * @var \StructType\Location_HierarchyObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_HierarchyObjectType[]
      */
     public $Location_Hierarchy_Reference;
     /**
      * Constructor method for
      * Location_Hierarchy_Organization_Assignments_Request_ReferencesType
      * @uses Location_Hierarchy_Organization_Assignments_Request_ReferencesType::setLocation_Hierarchy_Reference()
-     * @param \StructType\Location_HierarchyObjectType[] $location_Hierarchy_Reference
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectType[] $location_Hierarchy_Reference
      */
     public function __construct(array $location_Hierarchy_Reference = array())
     {
@@ -34,7 +34,7 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
     }
     /**
      * Get Location_Hierarchy_Reference value
-     * @return \StructType\Location_HierarchyObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType[]|null
      */
     public function getLocation_Hierarchy_Reference()
     {
@@ -52,12 +52,12 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
         $invalidValues = [];
         foreach ($values as $location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem instanceof \StructType\Location_HierarchyObjectType) {
+            if (!$location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_HierarchyObjectType) {
                 $invalidValues[] = is_object($location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem) ? get_class($location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem) : sprintf('%s(%s)', gettype($location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem), var_export($location_Hierarchy_Organization_Assignments_Request_ReferencesTypeLocation_Hierarchy_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Hierarchy_Reference property can only contain items of type \StructType\Location_HierarchyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Hierarchy_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_HierarchyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
     /**
      * Set Location_Hierarchy_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_HierarchyObjectType[] $location_Hierarchy_Reference
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectType[] $location_Hierarchy_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
      */
     public function setLocation_Hierarchy_Reference(array $location_Hierarchy_Reference = array())
     {
@@ -80,14 +80,14 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
     /**
      * Add item to Location_Hierarchy_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_HierarchyObjectType $item
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
      */
-    public function addToLocation_Hierarchy_Reference(\StructType\Location_HierarchyObjectType $item)
+    public function addToLocation_Hierarchy_Reference(\WorkdayWsdl\\StructType\Location_HierarchyObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_HierarchyObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Hierarchy_Reference property can only contain items of type \StructType\Location_HierarchyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_HierarchyObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Hierarchy_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_HierarchyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Hierarchy_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Location_Hierarchy_Organization_Assignments_Request_ReferencesType extends
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

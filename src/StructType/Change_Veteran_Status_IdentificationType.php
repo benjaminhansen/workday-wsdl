@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Veteran_Status_Identification_DataType[]
+     * @var \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType[]
      */
     public $Change_Veteran_Status_Identification_Data;
     /**
      * Constructor method for Change_Veteran_Status_IdentificationType
      * @uses Change_Veteran_Status_IdentificationType::setChange_Veteran_Status_Identification_Data()
-     * @param \StructType\Veteran_Status_Identification_DataType[] $change_Veteran_Status_Identification_Data
+     * @param \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType[] $change_Veteran_Status_Identification_Data
      */
     public function __construct(array $change_Veteran_Status_Identification_Data = array())
     {
@@ -32,7 +32,7 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
     }
     /**
      * Get Change_Veteran_Status_Identification_Data value
-     * @return \StructType\Veteran_Status_Identification_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType[]|null
      */
     public function getChange_Veteran_Status_Identification_Data()
     {
@@ -50,12 +50,12 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem) {
             // validation for constraint: itemType
-            if (!$change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem instanceof \StructType\Veteran_Status_Identification_DataType) {
+            if (!$change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem instanceof \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType) {
                 $invalidValues[] = is_object($change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem) ? get_class($change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem) : sprintf('%s(%s)', gettype($change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem), var_export($change_Veteran_Status_IdentificationTypeChange_Veteran_Status_Identification_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Veteran_Status_Identification_Data property can only contain items of type \StructType\Veteran_Status_Identification_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Veteran_Status_Identification_Data property can only contain items of type \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
     /**
      * Set Change_Veteran_Status_Identification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Veteran_Status_Identification_DataType[] $change_Veteran_Status_Identification_Data
-     * @return \StructType\Change_Veteran_Status_IdentificationType
+     * @param \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType[] $change_Veteran_Status_Identification_Data
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType
      */
     public function setChange_Veteran_Status_Identification_Data(array $change_Veteran_Status_Identification_Data = array())
     {
@@ -78,14 +78,14 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
     /**
      * Add item to Change_Veteran_Status_Identification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Veteran_Status_Identification_DataType $item
-     * @return \StructType\Change_Veteran_Status_IdentificationType
+     * @param \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType
      */
-    public function addToChange_Veteran_Status_Identification_Data(\StructType\Veteran_Status_Identification_DataType $item)
+    public function addToChange_Veteran_Status_Identification_Data(\WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Veteran_Status_Identification_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Veteran_Status_Identification_Data property can only contain items of type \StructType\Veteran_Status_Identification_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Veteran_Status_Identification_Data property can only contain items of type \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Veteran_Status_Identification_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Change_Veteran_Status_IdentificationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Veteran_Status_IdentificationType
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Notification_CategorizableObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Notification_CategorizableReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Notification_CategorizableReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Notification_CategorizableReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Notification_CategorizableReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Notification_CategorizableObjectIDType
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Notification_CategorizableReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Notification_CategorizableReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Notification_CategorizableReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Notification_CategorizableReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Notification_CategorizableReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Notification_CategorizableReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Notification_CategorizableObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Notification_CategorizableObjectIDType
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Notification_CategorizableObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Notification_CategorizableObjectIDType
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType
      */
     public static function __set_state(array $array)
     {

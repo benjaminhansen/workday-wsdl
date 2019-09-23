@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
      * Meta information extracted from the WSDL
      * - documentation: Represents a unique instance of Address.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Address_Reference;
     /**
@@ -32,10 +32,10 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
      * Constructor method for Put_Addresses_for_Country_Format_Extension_ResponseType
      * @uses Put_Addresses_for_Country_Format_Extension_ResponseType::setAddress_Reference()
      * @uses Put_Addresses_for_Country_Format_Extension_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $address_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $address_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference = null, $version = null)
     {
         $this
             ->setAddress_Reference($address_Reference)
@@ -43,7 +43,7 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
     }
     /**
      * Get Address_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getAddress_Reference()
     {
@@ -51,10 +51,10 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
     }
     /**
      * Set Address_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $address_Reference
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
      */
-    public function setAddress_Reference(\StructType\Unique_IdentifierObjectType $address_Reference = null)
+    public function setAddress_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference = null)
     {
         $this->Address_Reference = $address_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Put_Addresses_for_Country_Format_Extension_ResponseType extends AbstractSt
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_ResponseType
      */
     public static function __set_state(array $array)
     {

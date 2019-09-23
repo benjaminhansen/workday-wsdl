@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace WorkdayWsdl\\EnumType;
 
 /**
  * This class stands for XMLNAME__US__Injury_Illness_TypeReferenceEnumeration

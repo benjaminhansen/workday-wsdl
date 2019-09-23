@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Identifier to a Previous System Job History entry. Required if you are deleting or updating an existing entry. Leave blank on an Add.
      * - minOccurs: 0
-     * @var \StructType\Job_Previous_System_HistoryObjectType
+     * @var \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType
      */
     public $Previous_System_Job_History_Reference;
     /**
      * The Previous_System_Job_History_Detail_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Previous_System_Job_History_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public $Previous_System_Job_History_Detail_Data;
     /**
@@ -47,12 +47,12 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
      * @uses Previous_System_Job_History_DataType::setPrevious_System_Job_History_Detail_Data()
      * @uses Previous_System_Job_History_DataType::setAdd_Only()
      * @uses Previous_System_Job_History_DataType::setDelete()
-     * @param \StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference
-     * @param \StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data
+     * @param \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference
+     * @param \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data
      * @param bool $add_Only
      * @param bool $delete
      */
-    public function __construct(\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference = null, \StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data = null, $add_Only = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference = null, \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data = null, $add_Only = null, $delete = null)
     {
         $this
             ->setPrevious_System_Job_History_Reference($previous_System_Job_History_Reference)
@@ -62,7 +62,7 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
     }
     /**
      * Get Previous_System_Job_History_Reference value
-     * @return \StructType\Job_Previous_System_HistoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType|null
      */
     public function getPrevious_System_Job_History_Reference()
     {
@@ -70,17 +70,17 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
     }
     /**
      * Set Previous_System_Job_History_Reference value
-     * @param \StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference
-     * @return \StructType\Previous_System_Job_History_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_DataType
      */
-    public function setPrevious_System_Job_History_Reference(\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference = null)
+    public function setPrevious_System_Job_History_Reference(\WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType $previous_System_Job_History_Reference = null)
     {
         $this->Previous_System_Job_History_Reference = $previous_System_Job_History_Reference;
         return $this;
     }
     /**
      * Get Previous_System_Job_History_Detail_Data value
-     * @return \StructType\Previous_System_Job_History_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType|null
      */
     public function getPrevious_System_Job_History_Detail_Data()
     {
@@ -88,10 +88,10 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
     }
     /**
      * Set Previous_System_Job_History_Detail_Data value
-     * @param \StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data
-     * @return \StructType\Previous_System_Job_History_DataType
+     * @param \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_DataType
      */
-    public function setPrevious_System_Job_History_Detail_Data(\StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data = null)
+    public function setPrevious_System_Job_History_Detail_Data(\WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType $previous_System_Job_History_Detail_Data = null)
     {
         $this->Previous_System_Job_History_Detail_Data = $previous_System_Job_History_Detail_Data;
         return $this;
@@ -107,7 +107,7 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Previous_System_Job_History_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_DataType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Previous_System_Job_History_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_DataType
      */
     public function setDelete($delete = null)
     {
@@ -146,7 +146,7 @@ class Previous_System_Job_History_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Previous_System_Job_History_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_DataType
      */
     public static function __set_state(array $array)
     {

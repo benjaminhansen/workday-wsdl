@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class Effective_And_Updated_DateTime_DataType extends AbstractStructBase
     /**
      * Set Updated_From value
      * @param string $updated_From
-     * @return \StructType\Effective_And_Updated_DateTime_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public function setUpdated_From($updated_From = null)
     {
@@ -101,7 +101,7 @@ class Effective_And_Updated_DateTime_DataType extends AbstractStructBase
     /**
      * Set Updated_Through value
      * @param string $updated_Through
-     * @return \StructType\Effective_And_Updated_DateTime_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public function setUpdated_Through($updated_Through = null)
     {
@@ -123,7 +123,7 @@ class Effective_And_Updated_DateTime_DataType extends AbstractStructBase
     /**
      * Set Effective_From value
      * @param string $effective_From
-     * @return \StructType\Effective_And_Updated_DateTime_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public function setEffective_From($effective_From = null)
     {
@@ -145,7 +145,7 @@ class Effective_And_Updated_DateTime_DataType extends AbstractStructBase
     /**
      * Set Effective_Through value
      * @param string $effective_Through
-     * @return \StructType\Effective_And_Updated_DateTime_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public function setEffective_Through($effective_Through = null)
     {
@@ -162,7 +162,7 @@ class Effective_And_Updated_DateTime_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Effective_And_Updated_DateTime_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public static function __set_state(array $array)
     {

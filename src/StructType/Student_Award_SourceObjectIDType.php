@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Student_Award_SourceObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Student_Award_SourceReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Student_Award_SourceReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Student_Award_SourceReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Student_Award_SourceReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Student_Award_SourceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Student_Award_SourceReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Student_Award_SourceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Student_Award_SourceReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Student_Award_SourceReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Student_Award_SourceReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Student_Award_SourceReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Student_Award_SourceObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Student_Award_SourceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Student_Award_SourceObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Student_Award_SourceObjectIDType
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType
      */
     public static function __set_state(array $array)
     {

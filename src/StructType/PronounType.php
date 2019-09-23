@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class PronounType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Pronoun of the person.
      * - minOccurs: 0
-     * @var \StructType\PronounObjectType
+     * @var \WorkdayWsdl\\StructType\PronounObjectType
      */
     public $Pronoun_Reference;
     /**
@@ -26,17 +26,17 @@ class PronounType extends AbstractStructBase
      * - documentation: The pronoun data for a worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Pronoun_DataType[]
+     * @var \WorkdayWsdl\\StructType\Pronoun_DataType[]
      */
     public $Pronoun_Data;
     /**
      * Constructor method for PronounType
      * @uses PronounType::setPronoun_Reference()
      * @uses PronounType::setPronoun_Data()
-     * @param \StructType\PronounObjectType $pronoun_Reference
-     * @param \StructType\Pronoun_DataType[] $pronoun_Data
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
+     * @param \WorkdayWsdl\\StructType\Pronoun_DataType[] $pronoun_Data
      */
-    public function __construct(\StructType\PronounObjectType $pronoun_Reference = null, array $pronoun_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null, array $pronoun_Data = array())
     {
         $this
             ->setPronoun_Reference($pronoun_Reference)
@@ -44,7 +44,7 @@ class PronounType extends AbstractStructBase
     }
     /**
      * Get Pronoun_Reference value
-     * @return \StructType\PronounObjectType|null
+     * @return \WorkdayWsdl\\StructType\PronounObjectType|null
      */
     public function getPronoun_Reference()
     {
@@ -52,17 +52,17 @@ class PronounType extends AbstractStructBase
     }
     /**
      * Set Pronoun_Reference value
-     * @param \StructType\PronounObjectType $pronoun_Reference
-     * @return \StructType\PronounType
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
+     * @return \WorkdayWsdl\\StructType\PronounType
      */
-    public function setPronoun_Reference(\StructType\PronounObjectType $pronoun_Reference = null)
+    public function setPronoun_Reference(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null)
     {
         $this->Pronoun_Reference = $pronoun_Reference;
         return $this;
     }
     /**
      * Get Pronoun_Data value
-     * @return \StructType\Pronoun_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType[]|null
      */
     public function getPronoun_Data()
     {
@@ -80,12 +80,12 @@ class PronounType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pronounTypePronoun_DataItem) {
             // validation for constraint: itemType
-            if (!$pronounTypePronoun_DataItem instanceof \StructType\Pronoun_DataType) {
+            if (!$pronounTypePronoun_DataItem instanceof \WorkdayWsdl\\StructType\Pronoun_DataType) {
                 $invalidValues[] = is_object($pronounTypePronoun_DataItem) ? get_class($pronounTypePronoun_DataItem) : sprintf('%s(%s)', gettype($pronounTypePronoun_DataItem), var_export($pronounTypePronoun_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Pronoun_Data property can only contain items of type \StructType\Pronoun_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Pronoun_Data property can only contain items of type \WorkdayWsdl\\StructType\Pronoun_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class PronounType extends AbstractStructBase
     /**
      * Set Pronoun_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pronoun_DataType[] $pronoun_Data
-     * @return \StructType\PronounType
+     * @param \WorkdayWsdl\\StructType\Pronoun_DataType[] $pronoun_Data
+     * @return \WorkdayWsdl\\StructType\PronounType
      */
     public function setPronoun_Data(array $pronoun_Data = array())
     {
@@ -108,14 +108,14 @@ class PronounType extends AbstractStructBase
     /**
      * Add item to Pronoun_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pronoun_DataType $item
-     * @return \StructType\PronounType
+     * @param \WorkdayWsdl\\StructType\Pronoun_DataType $item
+     * @return \WorkdayWsdl\\StructType\PronounType
      */
-    public function addToPronoun_Data(\StructType\Pronoun_DataType $item)
+    public function addToPronoun_Data(\WorkdayWsdl\\StructType\Pronoun_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Pronoun_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Pronoun_Data property can only contain items of type \StructType\Pronoun_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Pronoun_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Pronoun_Data property can only contain items of type \WorkdayWsdl\\StructType\Pronoun_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Pronoun_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class PronounType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PronounType
+     * @return \WorkdayWsdl\\StructType\PronounType
      */
     public static function __set_state(array $array)
     {

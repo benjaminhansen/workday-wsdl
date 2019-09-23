@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Talent_TagObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Talent_TagObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Talent_TagObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Talent_TagObjectType extends AbstractStructBase
      * Constructor method for Talent_TagObjectType
      * @uses Talent_TagObjectType::setID()
      * @uses Talent_TagObjectType::setDescriptor()
-     * @param \StructType\Talent_TagObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Talent_TagObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Talent_TagObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Talent_TagObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $talent_TagObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$talent_TagObjectTypeIDItem instanceof \StructType\Talent_TagObjectIDType) {
+            if (!$talent_TagObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Talent_TagObjectIDType) {
                 $invalidValues[] = is_object($talent_TagObjectTypeIDItem) ? get_class($talent_TagObjectTypeIDItem) : sprintf('%s(%s)', gettype($talent_TagObjectTypeIDItem), var_export($talent_TagObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Talent_TagObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Talent_TagObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Talent_TagObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Talent_TagObjectIDType[] $iD
-     * @return \StructType\Talent_TagObjectType
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Talent_TagObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Talent_TagObjectIDType $item
-     * @return \StructType\Talent_TagObjectType
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectType
      */
-    public function addToID(\StructType\Talent_TagObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Talent_TagObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Talent_TagObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Talent_TagObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Talent_TagObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Talent_TagObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Talent_TagObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Talent_TagObjectType
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Talent_TagObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Talent_TagObjectType
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectType
      */
     public static function __set_state(array $array)
     {

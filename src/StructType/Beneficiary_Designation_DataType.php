@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
      * The Beneficiary_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the beneficiary.
-     * @var \StructType\BeneficiaryObjectType
+     * @var \WorkdayWsdl\\StructType\BeneficiaryObjectType
      */
     public $Beneficiary_Reference;
     /**
@@ -38,7 +38,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     public $Coverage_End_Date;
     /**
      * The Beneficiary_Allocation_Data
-     * @var \StructType\Beneficiary_Allocation_DataType
+     * @var \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
     public $Beneficiary_Allocation_Data;
     /**
@@ -47,12 +47,12 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
      * @uses Beneficiary_Designation_DataType::setOriginal_Coverage_Begin_Date()
      * @uses Beneficiary_Designation_DataType::setCoverage_End_Date()
      * @uses Beneficiary_Designation_DataType::setBeneficiary_Allocation_Data()
-     * @param \StructType\BeneficiaryObjectType $beneficiary_Reference
+     * @param \WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference
      * @param string $original_Coverage_Begin_Date
      * @param string $coverage_End_Date
-     * @param \StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data
+     * @param \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data
      */
-    public function __construct(\StructType\BeneficiaryObjectType $beneficiary_Reference = null, $original_Coverage_Begin_Date = null, $coverage_End_Date = null, \StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference = null, $original_Coverage_Begin_Date = null, $coverage_End_Date = null, \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data = null)
     {
         $this
             ->setBeneficiary_Reference($beneficiary_Reference)
@@ -62,7 +62,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     }
     /**
      * Get Beneficiary_Reference value
-     * @return \StructType\BeneficiaryObjectType|null
+     * @return \WorkdayWsdl\\StructType\BeneficiaryObjectType|null
      */
     public function getBeneficiary_Reference()
     {
@@ -70,10 +70,10 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     }
     /**
      * Set Beneficiary_Reference value
-     * @param \StructType\BeneficiaryObjectType $beneficiary_Reference
-     * @return \StructType\Beneficiary_Designation_DataType
+     * @param \WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Designation_DataType
      */
-    public function setBeneficiary_Reference(\StructType\BeneficiaryObjectType $beneficiary_Reference = null)
+    public function setBeneficiary_Reference(\WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference = null)
     {
         $this->Beneficiary_Reference = $beneficiary_Reference;
         return $this;
@@ -89,7 +89,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date value
      * @param string $original_Coverage_Begin_Date
-     * @return \StructType\Beneficiary_Designation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Designation_DataType
      */
     public function setOriginal_Coverage_Begin_Date($original_Coverage_Begin_Date = null)
     {
@@ -111,7 +111,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     /**
      * Set Coverage_End_Date value
      * @param string $coverage_End_Date
-     * @return \StructType\Beneficiary_Designation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Designation_DataType
      */
     public function setCoverage_End_Date($coverage_End_Date = null)
     {
@@ -124,7 +124,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     }
     /**
      * Get Beneficiary_Allocation_Data value
-     * @return \StructType\Beneficiary_Allocation_DataType|null
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType|null
      */
     public function getBeneficiary_Allocation_Data()
     {
@@ -132,10 +132,10 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
     }
     /**
      * Set Beneficiary_Allocation_Data value
-     * @param \StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data
-     * @return \StructType\Beneficiary_Designation_DataType
+     * @param \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Designation_DataType
      */
-    public function setBeneficiary_Allocation_Data(\StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data = null)
+    public function setBeneficiary_Allocation_Data(\WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType $beneficiary_Allocation_Data = null)
     {
         $this->Beneficiary_Allocation_Data = $beneficiary_Allocation_Data;
         return $this;
@@ -146,7 +146,7 @@ class Beneficiary_Designation_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Beneficiary_Designation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Designation_DataType
      */
     public static function __set_state(array $array)
     {

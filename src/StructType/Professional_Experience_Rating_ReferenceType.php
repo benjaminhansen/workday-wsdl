@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Professional_Experience_Rating_ReferenceType extends AbstractStructBase
     /**
      * Set Rating_Description value
      * @param string $rating_Description
-     * @return \StructType\Professional_Experience_Rating_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType
      */
     public function setRating_Description($rating_Description = null)
     {
@@ -59,7 +59,7 @@ class Professional_Experience_Rating_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Experience_Rating_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType
      */
     public static function __set_state(array $array)
     {

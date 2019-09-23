@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Holiday_CalendarType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Holiday Calendar.
      * - minOccurs: 0
-     * @var \StructType\Holiday_CalendarObjectType
+     * @var \WorkdayWsdl\\StructType\Holiday_CalendarObjectType
      */
     public $Holiday_Calendar_Reference;
     /**
      * The Holiday_Calendar_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Holiday_Calendar_DataType
+     * @var \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public $Holiday_Calendar_Data;
     /**
      * Constructor method for Holiday_CalendarType
      * @uses Holiday_CalendarType::setHoliday_Calendar_Reference()
      * @uses Holiday_CalendarType::setHoliday_Calendar_Data()
-     * @param \StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
-     * @param \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
      */
-    public function __construct(\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null, \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null, \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
     {
         $this
             ->setHoliday_Calendar_Reference($holiday_Calendar_Reference)
@@ -42,7 +42,7 @@ class Holiday_CalendarType extends AbstractStructBase
     }
     /**
      * Get Holiday_Calendar_Reference value
-     * @return \StructType\Holiday_CalendarObjectType|null
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectType|null
      */
     public function getHoliday_Calendar_Reference()
     {
@@ -50,17 +50,17 @@ class Holiday_CalendarType extends AbstractStructBase
     }
     /**
      * Set Holiday_Calendar_Reference value
-     * @param \StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
-     * @return \StructType\Holiday_CalendarType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarType
      */
-    public function setHoliday_Calendar_Reference(\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null)
+    public function setHoliday_Calendar_Reference(\WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null)
     {
         $this->Holiday_Calendar_Reference = $holiday_Calendar_Reference;
         return $this;
     }
     /**
      * Get Holiday_Calendar_Data value
-     * @return \StructType\Holiday_Calendar_DataType|null
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType|null
      */
     public function getHoliday_Calendar_Data()
     {
@@ -68,10 +68,10 @@ class Holiday_CalendarType extends AbstractStructBase
     }
     /**
      * Set Holiday_Calendar_Data value
-     * @param \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
-     * @return \StructType\Holiday_CalendarType
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarType
      */
-    public function setHoliday_Calendar_Data(\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
+    public function setHoliday_Calendar_Data(\WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
     {
         $this->Holiday_Calendar_Data = $holiday_Calendar_Data;
         return $this;
@@ -82,7 +82,7 @@ class Holiday_CalendarType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_CalendarType
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarType
      */
     public static function __set_state(array $array)
     {

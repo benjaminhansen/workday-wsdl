@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_HierarchyType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType[]
      */
     public $Academic_Unit_Hierarchy;
     /**
      * Constructor method for Academic_Unit_Hierarchy_Response_DataType
      * @uses Academic_Unit_Hierarchy_Response_DataType::setAcademic_Unit_Hierarchy()
-     * @param \StructType\Academic_Unit_HierarchyType[] $academic_Unit_Hierarchy
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType[] $academic_Unit_Hierarchy
      */
     public function __construct(array $academic_Unit_Hierarchy = array())
     {
@@ -32,7 +32,7 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Unit_Hierarchy value
-     * @return \StructType\Academic_Unit_HierarchyType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType[]|null
      */
     public function getAcademic_Unit_Hierarchy()
     {
@@ -50,12 +50,12 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem) {
             // validation for constraint: itemType
-            if (!$academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem instanceof \StructType\Academic_Unit_HierarchyType) {
+            if (!$academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem instanceof \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType) {
                 $invalidValues[] = is_object($academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem) ? get_class($academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem) : sprintf('%s(%s)', gettype($academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem), var_export($academic_Unit_Hierarchy_Response_DataTypeAcademic_Unit_HierarchyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Unit_Hierarchy property can only contain items of type \StructType\Academic_Unit_HierarchyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Unit_Hierarchy property can only contain items of type \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
     /**
      * Set Academic_Unit_Hierarchy value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Unit_HierarchyType[] $academic_Unit_Hierarchy
-     * @return \StructType\Academic_Unit_Hierarchy_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType[] $academic_Unit_Hierarchy
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_Response_DataType
      */
     public function setAcademic_Unit_Hierarchy(array $academic_Unit_Hierarchy = array())
     {
@@ -78,14 +78,14 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
     /**
      * Add item to Academic_Unit_Hierarchy value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Unit_HierarchyType $item
-     * @return \StructType\Academic_Unit_Hierarchy_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_Response_DataType
      */
-    public function addToAcademic_Unit_Hierarchy(\StructType\Academic_Unit_HierarchyType $item)
+    public function addToAcademic_Unit_Hierarchy(\WorkdayWsdl\\StructType\Academic_Unit_HierarchyType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Unit_HierarchyType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Unit_Hierarchy property can only contain items of type \StructType\Academic_Unit_HierarchyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Unit_Hierarchy property can only contain items of type \WorkdayWsdl\\StructType\Academic_Unit_HierarchyType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Unit_Hierarchy[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Academic_Unit_Hierarchy_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Unit_Hierarchy_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_Response_DataType
      */
     public static function __set_state(array $array)
     {

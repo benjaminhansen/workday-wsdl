@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Education_Qualification_Profile_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType[]
      */
     public $Education_Qualification_Replacement_Data;
     /**
@@ -31,7 +31,7 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
      * Constructor method for Education_Qualification_ReplacementType
      * @uses Education_Qualification_ReplacementType::setEducation_Qualification_Replacement_Data()
      * @uses Education_Qualification_ReplacementType::setDelete()
-     * @param \StructType\Education_Qualification_Profile_Replacement_DataType[] $education_Qualification_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType[] $education_Qualification_Replacement_Data
      * @param bool $delete
      */
     public function __construct(array $education_Qualification_Replacement_Data = array(), $delete = null)
@@ -42,7 +42,7 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
     }
     /**
      * Get Education_Qualification_Replacement_Data value
-     * @return \StructType\Education_Qualification_Profile_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType[]|null
      */
     public function getEducation_Qualification_Replacement_Data()
     {
@@ -60,12 +60,12 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem instanceof \StructType\Education_Qualification_Profile_Replacement_DataType) {
+            if (!$education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType) {
                 $invalidValues[] = is_object($education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem) ? get_class($education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem) : sprintf('%s(%s)', gettype($education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem), var_export($education_Qualification_ReplacementTypeEducation_Qualification_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Education_Qualification_Replacement_Data property can only contain items of type \StructType\Education_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Education_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Education_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Education_Qualification_Profile_Replacement_DataType[] $education_Qualification_Replacement_Data
-     * @return \StructType\Education_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType[] $education_Qualification_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_ReplacementType
      */
     public function setEducation_Qualification_Replacement_Data(array $education_Qualification_Replacement_Data = array())
     {
@@ -88,14 +88,14 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Add item to Education_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Education_Qualification_Profile_Replacement_DataType $item
-     * @return \StructType\Education_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_ReplacementType
      */
-    public function addToEducation_Qualification_Replacement_Data(\StructType\Education_Qualification_Profile_Replacement_DataType $item)
+    public function addToEducation_Qualification_Replacement_Data(\WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Education_Qualification_Profile_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Education_Qualification_Replacement_Data property can only contain items of type \StructType\Education_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Education_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Education_Qualification_Replacement_Data[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Education_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_ReplacementType
      */
     public function setDelete($delete = null)
     {
@@ -128,7 +128,7 @@ class Education_Qualification_ReplacementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Education_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_ReplacementType
      */
     public static function __set_state(array $array)
     {

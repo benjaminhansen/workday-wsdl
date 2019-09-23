@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Multi-factor Authentication Type Reference.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Multi_factor_Authentication_Type_Reference;
     /**
@@ -33,10 +33,10 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
      * Constructor method for Multi-factor_Authentication_for_Worker_DataType
      * @uses Multi_factor_Authentication_for_Worker_DataType::setMulti_factor_Authentication_Type_Reference()
      * @uses Multi_factor_Authentication_for_Worker_DataType::setReset()
-     * @param \StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference
      * @param bool $reset
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference = null, $reset = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference = null, $reset = null)
     {
         $this
             ->setMulti_factor_Authentication_Type_Reference($multi_factor_Authentication_Type_Reference)
@@ -44,7 +44,7 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Multi_factor_Authentication_Type_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getMulti_factor_Authentication_Type_Reference()
     {
@@ -52,10 +52,10 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Multi_factor_Authentication_Type_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference
-     * @return \StructType\Multi_factor_Authentication_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType
      */
-    public function setMulti_factor_Authentication_Type_Reference(\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference = null)
+    public function setMulti_factor_Authentication_Type_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $multi_factor_Authentication_Type_Reference = null)
     {
         $this->Multi_factor_Authentication_Type_Reference = $this->{'Multi-factor_Authentication_Type_Reference'} = $multi_factor_Authentication_Type_Reference;
         return $this;
@@ -71,7 +71,7 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
     /**
      * Set Reset value
      * @param bool $reset
-     * @return \StructType\Multi_factor_Authentication_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType
      */
     public function setReset($reset = null)
     {
@@ -88,7 +88,7 @@ class Multi_factor_Authentication_for_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Multi_factor_Authentication_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Multi_factor_Authentication_for_Worker_DataType
      */
     public static function __set_state(array $array)
     {

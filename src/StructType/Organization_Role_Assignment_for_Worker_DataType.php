@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the organization.
      * - minOccurs: 0
-     * @var \StructType\Role_AssignerObjectType
+     * @var \WorkdayWsdl\\StructType\Role_AssignerObjectType
      */
     public $Role_Assigner_Reference;
     /**
@@ -44,11 +44,11 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
      * @uses Organization_Role_Assignment_for_Worker_DataType::setRole_Assigner_Reference()
      * @uses Organization_Role_Assignment_for_Worker_DataType::setEffective_Date()
      * @uses Organization_Role_Assignment_for_Worker_DataType::setAssignment_From()
-     * @param \StructType\Role_AssignerObjectType $role_Assigner_Reference
+     * @param \WorkdayWsdl\\StructType\Role_AssignerObjectType $role_Assigner_Reference
      * @param string $effective_Date
      * @param string $assignment_From
      */
-    public function __construct(\StructType\Role_AssignerObjectType $role_Assigner_Reference = null, $effective_Date = null, $assignment_From = null)
+    public function __construct(\WorkdayWsdl\\StructType\Role_AssignerObjectType $role_Assigner_Reference = null, $effective_Date = null, $assignment_From = null)
     {
         $this
             ->setRole_Assigner_Reference($role_Assigner_Reference)
@@ -57,7 +57,7 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
     }
     /**
      * Get Role_Assigner_Reference value
-     * @return \StructType\Role_AssignerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Role_AssignerObjectType|null
      */
     public function getRole_Assigner_Reference()
     {
@@ -65,10 +65,10 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
     }
     /**
      * Set Role_Assigner_Reference value
-     * @param \StructType\Role_AssignerObjectType $role_Assigner_Reference
-     * @return \StructType\Organization_Role_Assignment_for_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Role_AssignerObjectType $role_Assigner_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_for_Worker_DataType
      */
-    public function setRole_Assigner_Reference(\StructType\Role_AssignerObjectType $role_Assigner_Reference = null)
+    public function setRole_Assigner_Reference(\WorkdayWsdl\\StructType\Role_AssignerObjectType $role_Assigner_Reference = null)
     {
         $this->Role_Assigner_Reference = $role_Assigner_Reference;
         return $this;
@@ -84,7 +84,7 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Organization_Role_Assignment_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_for_Worker_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -106,7 +106,7 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
     /**
      * Set Assignment_From value
      * @param string $assignment_From
-     * @return \StructType\Organization_Role_Assignment_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_for_Worker_DataType
      */
     public function setAssignment_From($assignment_From = null)
     {
@@ -123,7 +123,7 @@ class Organization_Role_Assignment_for_Worker_DataType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Role_Assignment_for_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_for_Worker_DataType
      */
     public static function __set_state(array $array)
     {

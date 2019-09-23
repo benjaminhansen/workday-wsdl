@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: The Worker for End Collective Agreement Assignment
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -26,7 +26,7 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: The Position for End Collective Agreement Assignment
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Reference;
     /**
@@ -42,11 +42,11 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
      * @uses End_Collective_Agreement_Assignment_Event_DataType::setWorker_Reference()
      * @uses End_Collective_Agreement_Assignment_Event_DataType::setPosition_Reference()
      * @uses End_Collective_Agreement_Assignment_Event_DataType::setEffective_Date()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Position_ElementObjectType $position_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
      * @param string $effective_Date
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\Position_ElementObjectType $position_Reference = null, $effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null, $effective_Date = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -55,7 +55,7 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -63,17 +63,17 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Reference()
     {
@@ -81,10 +81,10 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ElementObjectType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
@@ -100,7 +100,7 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_DataType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -117,7 +117,7 @@ class End_Collective_Agreement_Assignment_Event_DataType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_DataType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_DataType
      */
     public static function __set_state(array $array)
     {

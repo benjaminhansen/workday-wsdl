@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Difficulty_to_FillType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the difficulty to fill.
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_FillObjectType
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public $Difficulty_to_Fill_Reference;
     /**
@@ -25,17 +25,17 @@ class Difficulty_to_FillType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for the difficulty to fill data.
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_Fill_DataType
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public $Difficulty_to_Fill_Data;
     /**
      * Constructor method for Difficulty_to_FillType
      * @uses Difficulty_to_FillType::setDifficulty_to_Fill_Reference()
      * @uses Difficulty_to_FillType::setDifficulty_to_Fill_Data()
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
-     * @param \StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data
      */
-    public function __construct(\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null, \StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null, \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data = null)
     {
         $this
             ->setDifficulty_to_Fill_Reference($difficulty_to_Fill_Reference)
@@ -43,7 +43,7 @@ class Difficulty_to_FillType extends AbstractStructBase
     }
     /**
      * Get Difficulty_to_Fill_Reference value
-     * @return \StructType\Difficulty_to_FillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType|null
      */
     public function getDifficulty_to_Fill_Reference()
     {
@@ -51,17 +51,17 @@ class Difficulty_to_FillType extends AbstractStructBase
     }
     /**
      * Set Difficulty_to_Fill_Reference value
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
-     * @return \StructType\Difficulty_to_FillType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillType
      */
-    public function setDifficulty_to_Fill_Reference(\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
+    public function setDifficulty_to_Fill_Reference(\WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
     {
         $this->Difficulty_to_Fill_Reference = $difficulty_to_Fill_Reference;
         return $this;
     }
     /**
      * Get Difficulty_to_Fill_Data value
-     * @return \StructType\Difficulty_to_Fill_DataType|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType|null
      */
     public function getDifficulty_to_Fill_Data()
     {
@@ -69,10 +69,10 @@ class Difficulty_to_FillType extends AbstractStructBase
     }
     /**
      * Set Difficulty_to_Fill_Data value
-     * @param \StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data
-     * @return \StructType\Difficulty_to_FillType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillType
      */
-    public function setDifficulty_to_Fill_Data(\StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data = null)
+    public function setDifficulty_to_Fill_Data(\WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType $difficulty_to_Fill_Data = null)
     {
         $this->Difficulty_to_Fill_Data = $difficulty_to_Fill_Data;
         return $this;
@@ -83,7 +83,7 @@ class Difficulty_to_FillType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Difficulty_to_FillType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillType
      */
     public static function __set_state(array $array)
     {

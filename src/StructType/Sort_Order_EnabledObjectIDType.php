@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Sort_Order_EnabledObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Sort_Order_EnabledReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Sort_Order_EnabledReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Sort_Order_EnabledReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Sort_Order_EnabledReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Sort_Order_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Sort_Order_EnabledReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Sort_Order_EnabledReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Sort_Order_EnabledReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Sort_Order_EnabledReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Sort_Order_EnabledReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Sort_Order_EnabledReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Sort_Order_EnabledObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Sort_Order_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Sort_Order_EnabledObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Sort_Order_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Sort_Order_EnabledObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Sort_Order_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Sort_Order_EnabledObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sort_Order_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class National_ID_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\National_ID_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class National_ID_TypeObjectType extends AbstractStructBase
      * Constructor method for National_ID_TypeObjectType
      * @uses National_ID_TypeObjectType::setID()
      * @uses National_ID_TypeObjectType::setDescriptor()
-     * @param \StructType\National_ID_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class National_ID_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\National_ID_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class National_ID_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $national_ID_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$national_ID_TypeObjectTypeIDItem instanceof \StructType\National_ID_TypeObjectIDType) {
+            if (!$national_ID_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType) {
                 $invalidValues[] = is_object($national_ID_TypeObjectTypeIDItem) ? get_class($national_ID_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($national_ID_TypeObjectTypeIDItem), var_export($national_ID_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\National_ID_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class National_ID_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_ID_TypeObjectIDType[] $iD
-     * @return \StructType\National_ID_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class National_ID_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\National_ID_TypeObjectIDType $item
-     * @return \StructType\National_ID_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
-    public function addToID(\StructType\National_ID_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\National_ID_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\National_ID_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\National_ID_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\National_ID_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class National_ID_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\National_ID_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class National_ID_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\National_ID_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
     public static function __set_state(array $array)
     {

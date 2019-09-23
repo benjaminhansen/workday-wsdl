@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Disability_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Disability.
      * - minOccurs: 0
-     * @var \StructType\DisabilityObjectType
+     * @var \WorkdayWsdl\\StructType\DisabilityObjectType
      */
     public $Disability_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Disability_ResponseType extends AbstractStructBase
      * Constructor method for Put_Disability_ResponseType
      * @uses Put_Disability_ResponseType::setDisability_Reference()
      * @uses Put_Disability_ResponseType::setVersion()
-     * @param \StructType\DisabilityObjectType $disability_Reference
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
      * @param string $version
      */
-    public function __construct(\StructType\DisabilityObjectType $disability_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null, $version = null)
     {
         $this
             ->setDisability_Reference($disability_Reference)
@@ -42,7 +42,7 @@ class Put_Disability_ResponseType extends AbstractStructBase
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\DisabilityObjectType|null
+     * @return \WorkdayWsdl\\StructType\DisabilityObjectType|null
      */
     public function getDisability_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Disability_ResponseType extends AbstractStructBase
     }
     /**
      * Set Disability_Reference value
-     * @param \StructType\DisabilityObjectType $disability_Reference
-     * @return \StructType\Put_Disability_ResponseType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Disability_ResponseType
      */
-    public function setDisability_Reference(\StructType\DisabilityObjectType $disability_Reference = null)
+    public function setDisability_Reference(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null)
     {
         $this->Disability_Reference = $disability_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Disability_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Disability_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Disability_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Disability_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Disability_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Disability_ResponseType
      */
     public static function __set_state(array $array)
     {

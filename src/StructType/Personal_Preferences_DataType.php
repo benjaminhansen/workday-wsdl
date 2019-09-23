@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Personal_Preferences_DataType extends AbstractStructBase
     /**
      * Set Receive_Email_Notifications value
      * @param bool $receive_Email_Notifications
-     * @return \StructType\Personal_Preferences_DataType
+     * @return \WorkdayWsdl\\StructType\Personal_Preferences_DataType
      */
     public function setReceive_Email_Notifications($receive_Email_Notifications = null)
     {
@@ -61,7 +61,7 @@ class Personal_Preferences_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Personal_Preferences_DataType
+     * @return \WorkdayWsdl\\StructType\Personal_Preferences_DataType
      */
     public static function __set_state(array $array)
     {

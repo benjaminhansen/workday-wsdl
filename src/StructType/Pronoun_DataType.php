@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class Pronoun_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public function setID($iD = null)
     {
@@ -111,7 +111,7 @@ class Pronoun_DataType extends AbstractStructBase
     /**
      * Set Pronoun_Name value
      * @param string $pronoun_Name
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public function setPronoun_Name($pronoun_Name = null)
     {
@@ -133,7 +133,7 @@ class Pronoun_DataType extends AbstractStructBase
     /**
      * Set Pronoun_Code value
      * @param string $pronoun_Code
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public function setPronoun_Code($pronoun_Code = null)
     {
@@ -155,7 +155,7 @@ class Pronoun_DataType extends AbstractStructBase
     /**
      * Set Pronoun_Description value
      * @param string $pronoun_Description
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public function setPronoun_Description($pronoun_Description = null)
     {
@@ -177,7 +177,7 @@ class Pronoun_DataType extends AbstractStructBase
     /**
      * Set Pronoun_Inactive value
      * @param bool $pronoun_Inactive
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public function setPronoun_Inactive($pronoun_Inactive = null)
     {
@@ -194,7 +194,7 @@ class Pronoun_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pronoun_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public static function __set_state(array $array)
     {

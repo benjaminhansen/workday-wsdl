@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class School_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Institution_Type_Name value
      * @param string $institution_Type_Name
-     * @return \StructType\School_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\School_Type_ReferenceType
      */
     public function setInstitution_Type_Name($institution_Type_Name = null)
     {
@@ -58,7 +58,7 @@ class School_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\School_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\School_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

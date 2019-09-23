@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Internal_Project_ExperienceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Internal Project Experience.
      * - minOccurs: 0
-     * @var \StructType\Internal_Project_ExperienceObjectType
+     * @var \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType
      */
     public $Internal_Project_Experience_Reference;
     /**
@@ -26,17 +26,17 @@ class Internal_Project_ExperienceType extends AbstractStructBase
      * - documentation: Wrapper element for the Internal Project Experience information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Internal_Project_Experience_DataType[]
+     * @var \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType[]
      */
     public $Internal_Project_Experience_Data;
     /**
      * Constructor method for Internal_Project_ExperienceType
      * @uses Internal_Project_ExperienceType::setInternal_Project_Experience_Reference()
      * @uses Internal_Project_ExperienceType::setInternal_Project_Experience_Data()
-     * @param \StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference
-     * @param \StructType\Internal_Project_Experience_DataType[] $internal_Project_Experience_Data
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference
+     * @param \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType[] $internal_Project_Experience_Data
      */
-    public function __construct(\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference = null, array $internal_Project_Experience_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference = null, array $internal_Project_Experience_Data = array())
     {
         $this
             ->setInternal_Project_Experience_Reference($internal_Project_Experience_Reference)
@@ -44,7 +44,7 @@ class Internal_Project_ExperienceType extends AbstractStructBase
     }
     /**
      * Get Internal_Project_Experience_Reference value
-     * @return \StructType\Internal_Project_ExperienceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType|null
      */
     public function getInternal_Project_Experience_Reference()
     {
@@ -52,17 +52,17 @@ class Internal_Project_ExperienceType extends AbstractStructBase
     }
     /**
      * Set Internal_Project_Experience_Reference value
-     * @param \StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference
-     * @return \StructType\Internal_Project_ExperienceType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceType
      */
-    public function setInternal_Project_Experience_Reference(\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference = null)
+    public function setInternal_Project_Experience_Reference(\WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType $internal_Project_Experience_Reference = null)
     {
         $this->Internal_Project_Experience_Reference = $internal_Project_Experience_Reference;
         return $this;
     }
     /**
      * Get Internal_Project_Experience_Data value
-     * @return \StructType\Internal_Project_Experience_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType[]|null
      */
     public function getInternal_Project_Experience_Data()
     {
@@ -80,12 +80,12 @@ class Internal_Project_ExperienceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $internal_Project_ExperienceTypeInternal_Project_Experience_DataItem) {
             // validation for constraint: itemType
-            if (!$internal_Project_ExperienceTypeInternal_Project_Experience_DataItem instanceof \StructType\Internal_Project_Experience_DataType) {
+            if (!$internal_Project_ExperienceTypeInternal_Project_Experience_DataItem instanceof \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType) {
                 $invalidValues[] = is_object($internal_Project_ExperienceTypeInternal_Project_Experience_DataItem) ? get_class($internal_Project_ExperienceTypeInternal_Project_Experience_DataItem) : sprintf('%s(%s)', gettype($internal_Project_ExperienceTypeInternal_Project_Experience_DataItem), var_export($internal_Project_ExperienceTypeInternal_Project_Experience_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Internal_Project_Experience_Data property can only contain items of type \StructType\Internal_Project_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Internal_Project_Experience_Data property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Internal_Project_ExperienceType extends AbstractStructBase
     /**
      * Set Internal_Project_Experience_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_Experience_DataType[] $internal_Project_Experience_Data
-     * @return \StructType\Internal_Project_ExperienceType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType[] $internal_Project_Experience_Data
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceType
      */
     public function setInternal_Project_Experience_Data(array $internal_Project_Experience_Data = array())
     {
@@ -108,14 +108,14 @@ class Internal_Project_ExperienceType extends AbstractStructBase
     /**
      * Add item to Internal_Project_Experience_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_Experience_DataType $item
-     * @return \StructType\Internal_Project_ExperienceType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType $item
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceType
      */
-    public function addToInternal_Project_Experience_Data(\StructType\Internal_Project_Experience_DataType $item)
+    public function addToInternal_Project_Experience_Data(\WorkdayWsdl\\StructType\Internal_Project_Experience_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Internal_Project_Experience_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Internal_Project_Experience_Data property can only contain items of type \StructType\Internal_Project_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Internal_Project_Experience_Data property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Internal_Project_Experience_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Internal_Project_ExperienceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Internal_Project_ExperienceType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceType
      */
     public static function __set_state(array $array)
     {

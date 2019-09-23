@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Health_Care_Coverage_TargetObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
      * Constructor method for Health_Care_Coverage_TargetObjectType
      * @uses Health_Care_Coverage_TargetObjectType::setID()
      * @uses Health_Care_Coverage_TargetObjectType::setDescriptor()
-     * @param \StructType\Health_Care_Coverage_TargetObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Health_Care_Coverage_TargetObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $health_Care_Coverage_TargetObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$health_Care_Coverage_TargetObjectTypeIDItem instanceof \StructType\Health_Care_Coverage_TargetObjectIDType) {
+            if (!$health_Care_Coverage_TargetObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType) {
                 $invalidValues[] = is_object($health_Care_Coverage_TargetObjectTypeIDItem) ? get_class($health_Care_Coverage_TargetObjectTypeIDItem) : sprintf('%s(%s)', gettype($health_Care_Coverage_TargetObjectTypeIDItem), var_export($health_Care_Coverage_TargetObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Health_Care_Coverage_TargetObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Health_Care_Coverage_TargetObjectIDType[] $iD
-     * @return \StructType\Health_Care_Coverage_TargetObjectType
+     * @param \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Health_Care_Coverage_TargetObjectIDType $item
-     * @return \StructType\Health_Care_Coverage_TargetObjectType
+     * @param \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType
      */
-    public function addToID(\StructType\Health_Care_Coverage_TargetObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Health_Care_Coverage_TargetObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Health_Care_Coverage_TargetObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Health_Care_Coverage_TargetObjectType
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Health_Care_Coverage_TargetObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Health_Care_Coverage_TargetObjectType
+     * @return \WorkdayWsdl\\StructType\Health_Care_Coverage_TargetObjectType
      */
     public static function __set_state(array $array)
     {

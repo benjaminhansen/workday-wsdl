@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Annual_Income_DataType extends AbstractStructBase
      * The Currency_Reference
      * Meta information extracted from the WSDL
      * - documentation: Currency of dependent's income
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -47,10 +47,10 @@ class Annual_Income_DataType extends AbstractStructBase
      * @uses Annual_Income_DataType::setCurrency_Reference()
      * @uses Annual_Income_DataType::setAnnual_Income()
      * @param string $effective_Date
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      * @param float $annual_Income
      */
-    public function __construct($effective_Date = null, \StructType\CurrencyObjectType $currency_Reference = null, $annual_Income = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, $annual_Income = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -68,7 +68,7 @@ class Annual_Income_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Annual_Income_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Income_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -81,7 +81,7 @@ class Annual_Income_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -89,10 +89,10 @@ class Annual_Income_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Annual_Income_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Annual_Income_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -108,7 +108,7 @@ class Annual_Income_DataType extends AbstractStructBase
     /**
      * Set Annual_Income value
      * @param float $annual_Income
-     * @return \StructType\Annual_Income_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Income_DataType
      */
     public function setAnnual_Income($annual_Income = null)
     {
@@ -137,7 +137,7 @@ class Annual_Income_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Annual_Income_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Income_DataType
      */
     public static function __set_state(array $array)
     {

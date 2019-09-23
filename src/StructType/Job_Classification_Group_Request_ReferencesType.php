@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Job Classification Group.
      * - maxOccurs: unbounded
-     * @var \StructType\Job_Classification_GroupObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType[]
      */
     public $Job_Classification_Group_Reference;
     /**
      * Constructor method for Job_Classification_Group_Request_ReferencesType
      * @uses Job_Classification_Group_Request_ReferencesType::setJob_Classification_Group_Reference()
-     * @param \StructType\Job_Classification_GroupObjectType[] $job_Classification_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType[] $job_Classification_Group_Reference
      */
     public function __construct(array $job_Classification_Group_Reference = array())
     {
@@ -32,7 +32,7 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Job_Classification_Group_Reference value
-     * @return \StructType\Job_Classification_GroupObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType[]|null
      */
     public function getJob_Classification_Group_Reference()
     {
@@ -50,12 +50,12 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem instanceof \StructType\Job_Classification_GroupObjectType) {
+            if (!$job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType) {
                 $invalidValues[] = is_object($job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem) ? get_class($job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem) : sprintf('%s(%s)', gettype($job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem), var_export($job_Classification_Group_Request_ReferencesTypeJob_Classification_Group_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Classification_Group_Reference property can only contain items of type \StructType\Job_Classification_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Classification_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Job_Classification_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_GroupObjectType[] $job_Classification_Group_Reference
-     * @return \StructType\Job_Classification_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType[] $job_Classification_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Request_ReferencesType
      */
     public function setJob_Classification_Group_Reference(array $job_Classification_Group_Reference = array())
     {
@@ -78,14 +78,14 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Job_Classification_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_GroupObjectType $item
-     * @return \StructType\Job_Classification_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Request_ReferencesType
      */
-    public function addToJob_Classification_Group_Reference(\StructType\Job_Classification_GroupObjectType $item)
+    public function addToJob_Classification_Group_Reference(\WorkdayWsdl\\StructType\Job_Classification_GroupObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Classification_GroupObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Classification_Group_Reference property can only contain items of type \StructType\Job_Classification_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Classification_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Classification_Group_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Job_Classification_Group_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_Group_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

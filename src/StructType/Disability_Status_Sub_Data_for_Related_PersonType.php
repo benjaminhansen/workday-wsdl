@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
      * The Disability_Reference
      * Meta information extracted from the WSDL
      * - documentation: The person's disability
-     * @var \StructType\DisabilityObjectType
+     * @var \WorkdayWsdl\\StructType\DisabilityObjectType
      */
     public $Disability_Reference;
     /**
@@ -53,7 +53,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: A code or number that identifies the level of disability.
      * - minOccurs: 0
-     * @var \StructType\Disability_GradeObjectType
+     * @var \WorkdayWsdl\\StructType\Disability_GradeObjectType
      */
     public $Disability_Grade_Reference;
     /**
@@ -63,13 +63,13 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
      * @uses Disability_Status_Sub_Data_for_Related_PersonType::setDate_Known()
      * @uses Disability_Status_Sub_Data_for_Related_PersonType::setDisability_End_Date()
      * @uses Disability_Status_Sub_Data_for_Related_PersonType::setDisability_Grade_Reference()
-     * @param \StructType\DisabilityObjectType $disability_Reference
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
      * @param string $disability_Status_Date
      * @param string $date_Known
      * @param string $disability_End_Date
-     * @param \StructType\Disability_GradeObjectType $disability_Grade_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference
      */
-    public function __construct(\StructType\DisabilityObjectType $disability_Reference = null, $disability_Status_Date = null, $date_Known = null, $disability_End_Date = null, \StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null, $disability_Status_Date = null, $date_Known = null, $disability_End_Date = null, \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
     {
         $this
             ->setDisability_Reference($disability_Reference)
@@ -80,7 +80,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\DisabilityObjectType|null
+     * @return \WorkdayWsdl\\StructType\DisabilityObjectType|null
      */
     public function getDisability_Reference()
     {
@@ -88,10 +88,10 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     }
     /**
      * Set Disability_Reference value
-     * @param \StructType\DisabilityObjectType $disability_Reference
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
-    public function setDisability_Reference(\StructType\DisabilityObjectType $disability_Reference = null)
+    public function setDisability_Reference(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null)
     {
         $this->Disability_Reference = $disability_Reference;
         return $this;
@@ -107,7 +107,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     /**
      * Set Disability_Status_Date value
      * @param string $disability_Status_Date
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
     public function setDisability_Status_Date($disability_Status_Date = null)
     {
@@ -129,7 +129,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     /**
      * Set Date_Known value
      * @param string $date_Known
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
     public function setDate_Known($date_Known = null)
     {
@@ -151,7 +151,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     /**
      * Set Disability_End_Date value
      * @param string $disability_End_Date
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
     public function setDisability_End_Date($disability_End_Date = null)
     {
@@ -164,7 +164,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     }
     /**
      * Get Disability_Grade_Reference value
-     * @return \StructType\Disability_GradeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Disability_GradeObjectType|null
      */
     public function getDisability_Grade_Reference()
     {
@@ -172,10 +172,10 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
     }
     /**
      * Set Disability_Grade_Reference value
-     * @param \StructType\Disability_GradeObjectType $disability_Grade_Reference
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
-    public function setDisability_Grade_Reference(\StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
+    public function setDisability_Grade_Reference(\WorkdayWsdl\\StructType\Disability_GradeObjectType $disability_Grade_Reference = null)
     {
         $this->Disability_Grade_Reference = $disability_Grade_Reference;
         return $this;
@@ -186,7 +186,7 @@ class Disability_Status_Sub_Data_for_Related_PersonType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Status_Sub_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Sub_Data_for_Related_PersonType
      */
     public static function __set_state(array $array)
     {

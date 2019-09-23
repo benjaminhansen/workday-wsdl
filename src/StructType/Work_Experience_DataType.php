@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Work_Experience_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the work experience.
      * - minOccurs: 0
-     * @var \StructType\Work_Experience_SkillObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Experience_SkillObjectType
      */
     public $Experience_Reference;
     /**
@@ -34,7 +34,7 @@ class Work_Experience_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the work experience rating.
      * - minOccurs: 0
-     * @var \StructType\Work_Experience_RatingObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType
      */
     public $Experience_Rating_Reference;
     /**
@@ -52,12 +52,12 @@ class Work_Experience_DataType extends AbstractStructBase
      * @uses Work_Experience_DataType::setRemove_Experience()
      * @uses Work_Experience_DataType::setExperience_Rating_Reference()
      * @uses Work_Experience_DataType::setExperience_Comment()
-     * @param \StructType\Work_Experience_SkillObjectType $experience_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Experience_SkillObjectType $experience_Reference
      * @param bool $remove_Experience
-     * @param \StructType\Work_Experience_RatingObjectType $experience_Rating_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType $experience_Rating_Reference
      * @param string $experience_Comment
      */
-    public function __construct(\StructType\Work_Experience_SkillObjectType $experience_Reference = null, $remove_Experience = null, \StructType\Work_Experience_RatingObjectType $experience_Rating_Reference = null, $experience_Comment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Work_Experience_SkillObjectType $experience_Reference = null, $remove_Experience = null, \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType $experience_Rating_Reference = null, $experience_Comment = null)
     {
         $this
             ->setExperience_Reference($experience_Reference)
@@ -67,7 +67,7 @@ class Work_Experience_DataType extends AbstractStructBase
     }
     /**
      * Get Experience_Reference value
-     * @return \StructType\Work_Experience_SkillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Experience_SkillObjectType|null
      */
     public function getExperience_Reference()
     {
@@ -75,10 +75,10 @@ class Work_Experience_DataType extends AbstractStructBase
     }
     /**
      * Set Experience_Reference value
-     * @param \StructType\Work_Experience_SkillObjectType $experience_Reference
-     * @return \StructType\Work_Experience_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_SkillObjectType $experience_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType
      */
-    public function setExperience_Reference(\StructType\Work_Experience_SkillObjectType $experience_Reference = null)
+    public function setExperience_Reference(\WorkdayWsdl\\StructType\Work_Experience_SkillObjectType $experience_Reference = null)
     {
         $this->Experience_Reference = $experience_Reference;
         return $this;
@@ -94,7 +94,7 @@ class Work_Experience_DataType extends AbstractStructBase
     /**
      * Set Remove_Experience value
      * @param bool $remove_Experience
-     * @return \StructType\Work_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType
      */
     public function setRemove_Experience($remove_Experience = null)
     {
@@ -107,7 +107,7 @@ class Work_Experience_DataType extends AbstractStructBase
     }
     /**
      * Get Experience_Rating_Reference value
-     * @return \StructType\Work_Experience_RatingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType|null
      */
     public function getExperience_Rating_Reference()
     {
@@ -115,10 +115,10 @@ class Work_Experience_DataType extends AbstractStructBase
     }
     /**
      * Set Experience_Rating_Reference value
-     * @param \StructType\Work_Experience_RatingObjectType $experience_Rating_Reference
-     * @return \StructType\Work_Experience_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType $experience_Rating_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType
      */
-    public function setExperience_Rating_Reference(\StructType\Work_Experience_RatingObjectType $experience_Rating_Reference = null)
+    public function setExperience_Rating_Reference(\WorkdayWsdl\\StructType\Work_Experience_RatingObjectType $experience_Rating_Reference = null)
     {
         $this->Experience_Rating_Reference = $experience_Rating_Reference;
         return $this;
@@ -134,7 +134,7 @@ class Work_Experience_DataType extends AbstractStructBase
     /**
      * Set Experience_Comment value
      * @param string $experience_Comment
-     * @return \StructType\Work_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType
      */
     public function setExperience_Comment($experience_Comment = null)
     {
@@ -151,7 +151,7 @@ class Work_Experience_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType
      */
     public static function __set_state(array $array)
     {

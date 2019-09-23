@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,24 +16,24 @@ class DependentType extends AbstractStructBase
      * The Dependent_Reference
      * Meta information extracted from the WSDL
      * - documentation: A reference to the dependent.
-     * @var \StructType\DependentObjectType
+     * @var \WorkdayWsdl\\StructType\DependentObjectType
      */
     public $Dependent_Reference;
     /**
      * The Dependent_Data
      * Meta information extracted from the WSDL
      * - documentation: Contains the detailed information for a dependent.
-     * @var \StructType\Dependent_DataType
+     * @var \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public $Dependent_Data;
     /**
      * Constructor method for DependentType
      * @uses DependentType::setDependent_Reference()
      * @uses DependentType::setDependent_Data()
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @param \StructType\Dependent_DataType $dependent_Data
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @param \WorkdayWsdl\\StructType\Dependent_DataType $dependent_Data
      */
-    public function __construct(\StructType\DependentObjectType $dependent_Reference = null, \StructType\Dependent_DataType $dependent_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null, \WorkdayWsdl\\StructType\Dependent_DataType $dependent_Data = null)
     {
         $this
             ->setDependent_Reference($dependent_Reference)
@@ -41,7 +41,7 @@ class DependentType extends AbstractStructBase
     }
     /**
      * Get Dependent_Reference value
-     * @return \StructType\DependentObjectType|null
+     * @return \WorkdayWsdl\\StructType\DependentObjectType|null
      */
     public function getDependent_Reference()
     {
@@ -49,17 +49,17 @@ class DependentType extends AbstractStructBase
     }
     /**
      * Set Dependent_Reference value
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @return \StructType\DependentType
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @return \WorkdayWsdl\\StructType\DependentType
      */
-    public function setDependent_Reference(\StructType\DependentObjectType $dependent_Reference = null)
+    public function setDependent_Reference(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null)
     {
         $this->Dependent_Reference = $dependent_Reference;
         return $this;
     }
     /**
      * Get Dependent_Data value
-     * @return \StructType\Dependent_DataType|null
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType|null
      */
     public function getDependent_Data()
     {
@@ -67,10 +67,10 @@ class DependentType extends AbstractStructBase
     }
     /**
      * Set Dependent_Data value
-     * @param \StructType\Dependent_DataType $dependent_Data
-     * @return \StructType\DependentType
+     * @param \WorkdayWsdl\\StructType\Dependent_DataType $dependent_Data
+     * @return \WorkdayWsdl\\StructType\DependentType
      */
-    public function setDependent_Data(\StructType\Dependent_DataType $dependent_Data = null)
+    public function setDependent_Data(\WorkdayWsdl\\StructType\Dependent_DataType $dependent_Data = null)
     {
         $this->Dependent_Data = $dependent_Data;
         return $this;
@@ -81,7 +81,7 @@ class DependentType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DependentType
+     * @return \WorkdayWsdl\\StructType\DependentType
      */
     public static function __set_state(array $array)
     {

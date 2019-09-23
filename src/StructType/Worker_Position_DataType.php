@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * The Position_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Position_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Position_ReferenceType
      */
     public $Position_Reference;
     /**
@@ -51,7 +51,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Type_ReferenceType[]
      */
     public $Employee_Type_Reference;
     /**
@@ -59,7 +59,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Position_Time_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType[]
      */
     public $Position_Time_Type_Reference;
     /**
@@ -157,7 +157,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Pay_Rate_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType[]
      */
     public $Pay_Rate_Type_Reference;
     /**
@@ -165,7 +165,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Classification_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Job_Classification_ReferenceType[]
      */
     public $Job_Classification_Reference;
     /**
@@ -173,7 +173,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType[]
      */
     public $Company_Insider_Reference;
     /**
@@ -181,7 +181,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_in_Position_Summary_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType[]
      */
     public $Job_Profile_Summary_Data;
     /**
@@ -189,7 +189,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_Content_DataType[]
+     * @var \WorkdayWsdl\\StructType\Organization_Content_DataType[]
      */
     public $Organization_Content_Data;
     /**
@@ -197,7 +197,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_Content_DataType[]
+     * @var \WorkdayWsdl\\StructType\Location_Content_DataType[]
      */
     public $Business_Site_Content_Data;
     /**
@@ -205,7 +205,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Payroll_Interface_Processing_DataType[]
+     * @var \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType[]
      */
     public $Payroll_Processing_Data;
     /**
@@ -214,7 +214,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * - documentation: Contains the reference to the manager of the worker. This will contain only one manager - even if there are actually multiple managers for the worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Supervisor_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Supervisor_ReferenceType[]
      */
     public $Supervisor_Reference;
     /**
@@ -222,7 +222,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The work hour profile(s) for the position.
      * - minOccurs: 0
-     * @var \StructType\Work_ShiftObjectType
+     * @var \WorkdayWsdl\\StructType\Work_ShiftObjectType
      */
     public $Work_Shift_Reference;
     /**
@@ -230,7 +230,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The work hour profile(s) for the position.
      * - minOccurs: 0
-     * @var \StructType\Work_Hours_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType
      */
     public $Work_Hours_Profile_Reference;
     /**
@@ -267,12 +267,12 @@ class Worker_Position_DataType extends AbstractStructBase
      * @uses Worker_Position_DataType::setWork_Shift_Reference()
      * @uses Worker_Position_DataType::setWork_Hours_Profile_Reference()
      * @uses Worker_Position_DataType::setEffective_Date()
-     * @param \StructType\Position_ReferenceType $position_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ReferenceType $position_Reference
      * @param string $position_ID
      * @param string $position_Title
      * @param string $business_Title
-     * @param \StructType\Employee_Type_ReferenceType[] $employee_Type_Reference
-     * @param \StructType\Position_Time_Type_ReferenceType[] $position_Time_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Type_ReferenceType[] $employee_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType[] $position_Time_Type_Reference
      * @param bool $job_Exempt
      * @param float $scheduled_Weekly_Hours
      * @param float $default_Weekly_Hours
@@ -281,19 +281,19 @@ class Worker_Position_DataType extends AbstractStructBase
      * @param float $paid_FTE
      * @param bool $specify_Working_FTE
      * @param float $working_FTE
-     * @param \StructType\Pay_Rate_Type_ReferenceType[] $pay_Rate_Type_Reference
-     * @param \StructType\Job_Classification_ReferenceType[] $job_Classification_Reference
-     * @param \StructType\Company_Insider_Type_ReferenceType[] $company_Insider_Reference
-     * @param \StructType\Job_Profile_in_Position_Summary_DataType[] $job_Profile_Summary_Data
-     * @param \StructType\Organization_Content_DataType[] $organization_Content_Data
-     * @param \StructType\Location_Content_DataType[] $business_Site_Content_Data
-     * @param \StructType\Payroll_Interface_Processing_DataType[] $payroll_Processing_Data
-     * @param \StructType\Supervisor_ReferenceType[] $supervisor_Reference
-     * @param \StructType\Work_ShiftObjectType $work_Shift_Reference
-     * @param \StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType[] $pay_Rate_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Classification_ReferenceType[] $job_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType[] $company_Insider_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType[] $job_Profile_Summary_Data
+     * @param \WorkdayWsdl\\StructType\Organization_Content_DataType[] $organization_Content_Data
+     * @param \WorkdayWsdl\\StructType\Location_Content_DataType[] $business_Site_Content_Data
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType[] $payroll_Processing_Data
+     * @param \WorkdayWsdl\\StructType\Supervisor_ReferenceType[] $supervisor_Reference
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference
      * @param string $effective_Date
      */
-    public function __construct(\StructType\Position_ReferenceType $position_Reference = null, $position_ID = null, $position_Title = null, $business_Title = null, array $employee_Type_Reference = array(), array $position_Time_Type_Reference = array(), $job_Exempt = null, $scheduled_Weekly_Hours = null, $default_Weekly_Hours = null, $full_Time_Equivalent_Percentage = null, $specify_Paid_FTE = null, $paid_FTE = null, $specify_Working_FTE = null, $working_FTE = null, array $pay_Rate_Type_Reference = array(), array $job_Classification_Reference = array(), array $company_Insider_Reference = array(), array $job_Profile_Summary_Data = array(), array $organization_Content_Data = array(), array $business_Site_Content_Data = array(), array $payroll_Processing_Data = array(), array $supervisor_Reference = array(), \StructType\Work_ShiftObjectType $work_Shift_Reference = null, \StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference = null, $effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Position_ReferenceType $position_Reference = null, $position_ID = null, $position_Title = null, $business_Title = null, array $employee_Type_Reference = array(), array $position_Time_Type_Reference = array(), $job_Exempt = null, $scheduled_Weekly_Hours = null, $default_Weekly_Hours = null, $full_Time_Equivalent_Percentage = null, $specify_Paid_FTE = null, $paid_FTE = null, $specify_Working_FTE = null, $working_FTE = null, array $pay_Rate_Type_Reference = array(), array $job_Classification_Reference = array(), array $company_Insider_Reference = array(), array $job_Profile_Summary_Data = array(), array $organization_Content_Data = array(), array $business_Site_Content_Data = array(), array $payroll_Processing_Data = array(), array $supervisor_Reference = array(), \WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference = null, \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference = null, $effective_Date = null)
     {
         $this
             ->setPosition_Reference($position_Reference)
@@ -324,7 +324,7 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Position_ReferenceType|null
      */
     public function getPosition_Reference()
     {
@@ -332,10 +332,10 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ReferenceType $position_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ReferenceType $position_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ReferenceType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ReferenceType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
@@ -351,7 +351,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Position_ID value
      * @param string $position_ID
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPosition_ID($position_ID = null)
     {
@@ -373,7 +373,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Position_Title value
      * @param string $position_Title
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPosition_Title($position_Title = null)
     {
@@ -395,7 +395,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Business_Title value
      * @param string $business_Title
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setBusiness_Title($business_Title = null)
     {
@@ -408,7 +408,7 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Type_Reference value
-     * @return \StructType\Employee_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Type_ReferenceType[]|null
      */
     public function getEmployee_Type_Reference()
     {
@@ -426,12 +426,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeEmployee_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeEmployee_Type_ReferenceItem instanceof \StructType\Employee_Type_ReferenceType) {
+            if (!$worker_Position_DataTypeEmployee_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Employee_Type_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeEmployee_Type_ReferenceItem) ? get_class($worker_Position_DataTypeEmployee_Type_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeEmployee_Type_ReferenceItem), var_export($worker_Position_DataTypeEmployee_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Type_Reference property can only contain items of type \StructType\Employee_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -439,8 +439,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Employee_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Type_ReferenceType[] $employee_Type_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Type_ReferenceType[] $employee_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setEmployee_Type_Reference(array $employee_Type_Reference = array())
     {
@@ -454,21 +454,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Employee_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Type_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToEmployee_Type_Reference(\StructType\Employee_Type_ReferenceType $item)
+    public function addToEmployee_Type_Reference(\WorkdayWsdl\\StructType\Employee_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Type_Reference property can only contain items of type \StructType\Employee_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Employee_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Position_Time_Type_Reference value
-     * @return \StructType\Position_Time_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType[]|null
      */
     public function getPosition_Time_Type_Reference()
     {
@@ -486,12 +486,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypePosition_Time_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypePosition_Time_Type_ReferenceItem instanceof \StructType\Position_Time_Type_ReferenceType) {
+            if (!$worker_Position_DataTypePosition_Time_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypePosition_Time_Type_ReferenceItem) ? get_class($worker_Position_DataTypePosition_Time_Type_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypePosition_Time_Type_ReferenceItem), var_export($worker_Position_DataTypePosition_Time_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Position_Time_Type_Reference property can only contain items of type \StructType\Position_Time_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Position_Time_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -499,8 +499,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Position_Time_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_Time_Type_ReferenceType[] $position_Time_Type_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType[] $position_Time_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPosition_Time_Type_Reference(array $position_Time_Type_Reference = array())
     {
@@ -514,14 +514,14 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Position_Time_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_Time_Type_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToPosition_Time_Type_Reference(\StructType\Position_Time_Type_ReferenceType $item)
+    public function addToPosition_Time_Type_Reference(\WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Position_Time_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Position_Time_Type_Reference property can only contain items of type \StructType\Position_Time_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Position_Time_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_Time_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Position_Time_Type_Reference[] = $item;
         return $this;
@@ -537,7 +537,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Job_Exempt value
      * @param bool $job_Exempt
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setJob_Exempt($job_Exempt = null)
     {
@@ -559,7 +559,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Scheduled_Weekly_Hours value
      * @param float $scheduled_Weekly_Hours
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setScheduled_Weekly_Hours($scheduled_Weekly_Hours = null)
     {
@@ -589,7 +589,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Default_Weekly_Hours value
      * @param float $default_Weekly_Hours
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setDefault_Weekly_Hours($default_Weekly_Hours = null)
     {
@@ -623,7 +623,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Full_Time_Equivalent_Percentage value
      * @param float $full_Time_Equivalent_Percentage
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setFull_Time_Equivalent_Percentage($full_Time_Equivalent_Percentage = null)
     {
@@ -653,7 +653,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Specify_Paid_FTE value
      * @param bool $specify_Paid_FTE
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setSpecify_Paid_FTE($specify_Paid_FTE = null)
     {
@@ -675,7 +675,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Paid_FTE value
      * @param float $paid_FTE
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPaid_FTE($paid_FTE = null)
     {
@@ -709,7 +709,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Specify_Working_FTE value
      * @param bool $specify_Working_FTE
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setSpecify_Working_FTE($specify_Working_FTE = null)
     {
@@ -731,7 +731,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Working_FTE value
      * @param float $working_FTE
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setWorking_FTE($working_FTE = null)
     {
@@ -756,7 +756,7 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Get Pay_Rate_Type_Reference value
-     * @return \StructType\Pay_Rate_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType[]|null
      */
     public function getPay_Rate_Type_Reference()
     {
@@ -774,12 +774,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypePay_Rate_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypePay_Rate_Type_ReferenceItem instanceof \StructType\Pay_Rate_Type_ReferenceType) {
+            if (!$worker_Position_DataTypePay_Rate_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypePay_Rate_Type_ReferenceItem) ? get_class($worker_Position_DataTypePay_Rate_Type_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypePay_Rate_Type_ReferenceItem), var_export($worker_Position_DataTypePay_Rate_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Pay_Rate_Type_Reference property can only contain items of type \StructType\Pay_Rate_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Pay_Rate_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -787,8 +787,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Pay_Rate_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_Rate_Type_ReferenceType[] $pay_Rate_Type_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType[] $pay_Rate_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPay_Rate_Type_Reference(array $pay_Rate_Type_Reference = array())
     {
@@ -802,21 +802,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Pay_Rate_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_Rate_Type_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToPay_Rate_Type_Reference(\StructType\Pay_Rate_Type_ReferenceType $item)
+    public function addToPay_Rate_Type_Reference(\WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Pay_Rate_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Pay_Rate_Type_Reference property can only contain items of type \StructType\Pay_Rate_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Pay_Rate_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Pay_Rate_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Job_Classification_Reference value
-     * @return \StructType\Job_Classification_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_ReferenceType[]|null
      */
     public function getJob_Classification_Reference()
     {
@@ -834,12 +834,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeJob_Classification_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeJob_Classification_ReferenceItem instanceof \StructType\Job_Classification_ReferenceType) {
+            if (!$worker_Position_DataTypeJob_Classification_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_Classification_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeJob_Classification_ReferenceItem) ? get_class($worker_Position_DataTypeJob_Classification_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeJob_Classification_ReferenceItem), var_export($worker_Position_DataTypeJob_Classification_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Classification_Reference property can only contain items of type \StructType\Job_Classification_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Classification_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -847,8 +847,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Job_Classification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_ReferenceType[] $job_Classification_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_ReferenceType[] $job_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setJob_Classification_Reference(array $job_Classification_Reference = array())
     {
@@ -862,21 +862,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Job_Classification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToJob_Classification_Reference(\StructType\Job_Classification_ReferenceType $item)
+    public function addToJob_Classification_Reference(\WorkdayWsdl\\StructType\Job_Classification_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Classification_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Classification_Reference property can only contain items of type \StructType\Job_Classification_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Classification_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Classification_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Classification_Reference[] = $item;
         return $this;
     }
     /**
      * Get Company_Insider_Reference value
-     * @return \StructType\Company_Insider_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType[]|null
      */
     public function getCompany_Insider_Reference()
     {
@@ -894,12 +894,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeCompany_Insider_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeCompany_Insider_ReferenceItem instanceof \StructType\Company_Insider_Type_ReferenceType) {
+            if (!$worker_Position_DataTypeCompany_Insider_ReferenceItem instanceof \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeCompany_Insider_ReferenceItem) ? get_class($worker_Position_DataTypeCompany_Insider_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeCompany_Insider_ReferenceItem), var_export($worker_Position_DataTypeCompany_Insider_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Company_Insider_Reference property can only contain items of type \StructType\Company_Insider_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Company_Insider_Reference property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -907,8 +907,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Company_Insider_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Type_ReferenceType[] $company_Insider_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType[] $company_Insider_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setCompany_Insider_Reference(array $company_Insider_Reference = array())
     {
@@ -922,21 +922,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Company_Insider_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Type_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToCompany_Insider_Reference(\StructType\Company_Insider_Type_ReferenceType $item)
+    public function addToCompany_Insider_Reference(\WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Company_Insider_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Company_Insider_Reference property can only contain items of type \StructType\Company_Insider_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Company_Insider_Reference property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Company_Insider_Reference[] = $item;
         return $this;
     }
     /**
      * Get Job_Profile_Summary_Data value
-     * @return \StructType\Job_Profile_in_Position_Summary_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType[]|null
      */
     public function getJob_Profile_Summary_Data()
     {
@@ -954,12 +954,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeJob_Profile_Summary_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeJob_Profile_Summary_DataItem instanceof \StructType\Job_Profile_in_Position_Summary_DataType) {
+            if (!$worker_Position_DataTypeJob_Profile_Summary_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeJob_Profile_Summary_DataItem) ? get_class($worker_Position_DataTypeJob_Profile_Summary_DataItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeJob_Profile_Summary_DataItem), var_export($worker_Position_DataTypeJob_Profile_Summary_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile_Summary_Data property can only contain items of type \StructType\Job_Profile_in_Position_Summary_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile_Summary_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -967,8 +967,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Summary_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_in_Position_Summary_DataType[] $job_Profile_Summary_Data
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType[] $job_Profile_Summary_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setJob_Profile_Summary_Data(array $job_Profile_Summary_Data = array())
     {
@@ -982,21 +982,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile_Summary_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_in_Position_Summary_DataType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToJob_Profile_Summary_Data(\StructType\Job_Profile_in_Position_Summary_DataType $item)
+    public function addToJob_Profile_Summary_Data(\WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_in_Position_Summary_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile_Summary_Data property can only contain items of type \StructType\Job_Profile_in_Position_Summary_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile_Summary_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_in_Position_Summary_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile_Summary_Data[] = $item;
         return $this;
     }
     /**
      * Get Organization_Content_Data value
-     * @return \StructType\Organization_Content_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_Content_DataType[]|null
      */
     public function getOrganization_Content_Data()
     {
@@ -1014,12 +1014,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeOrganization_Content_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeOrganization_Content_DataItem instanceof \StructType\Organization_Content_DataType) {
+            if (!$worker_Position_DataTypeOrganization_Content_DataItem instanceof \WorkdayWsdl\\StructType\Organization_Content_DataType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeOrganization_Content_DataItem) ? get_class($worker_Position_DataTypeOrganization_Content_DataItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeOrganization_Content_DataItem), var_export($worker_Position_DataTypeOrganization_Content_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Content_Data property can only contain items of type \StructType\Organization_Content_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Content_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Content_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1027,8 +1027,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Organization_Content_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Content_DataType[] $organization_Content_Data
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Content_DataType[] $organization_Content_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setOrganization_Content_Data(array $organization_Content_Data = array())
     {
@@ -1042,21 +1042,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Organization_Content_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Content_DataType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Content_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToOrganization_Content_Data(\StructType\Organization_Content_DataType $item)
+    public function addToOrganization_Content_Data(\WorkdayWsdl\\StructType\Organization_Content_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_Content_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Content_Data property can only contain items of type \StructType\Organization_Content_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_Content_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Content_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Content_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Content_Data[] = $item;
         return $this;
     }
     /**
      * Get Business_Site_Content_Data value
-     * @return \StructType\Location_Content_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType[]|null
      */
     public function getBusiness_Site_Content_Data()
     {
@@ -1074,12 +1074,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeBusiness_Site_Content_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeBusiness_Site_Content_DataItem instanceof \StructType\Location_Content_DataType) {
+            if (!$worker_Position_DataTypeBusiness_Site_Content_DataItem instanceof \WorkdayWsdl\\StructType\Location_Content_DataType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeBusiness_Site_Content_DataItem) ? get_class($worker_Position_DataTypeBusiness_Site_Content_DataItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeBusiness_Site_Content_DataItem), var_export($worker_Position_DataTypeBusiness_Site_Content_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Business_Site_Content_Data property can only contain items of type \StructType\Location_Content_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Business_Site_Content_Data property can only contain items of type \WorkdayWsdl\\StructType\Location_Content_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1087,8 +1087,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Business_Site_Content_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Content_DataType[] $business_Site_Content_Data
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Content_DataType[] $business_Site_Content_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setBusiness_Site_Content_Data(array $business_Site_Content_Data = array())
     {
@@ -1102,21 +1102,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Business_Site_Content_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Content_DataType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Content_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToBusiness_Site_Content_Data(\StructType\Location_Content_DataType $item)
+    public function addToBusiness_Site_Content_Data(\WorkdayWsdl\\StructType\Location_Content_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_Content_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Business_Site_Content_Data property can only contain items of type \StructType\Location_Content_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_Content_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Business_Site_Content_Data property can only contain items of type \WorkdayWsdl\\StructType\Location_Content_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Business_Site_Content_Data[] = $item;
         return $this;
     }
     /**
      * Get Payroll_Processing_Data value
-     * @return \StructType\Payroll_Interface_Processing_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType[]|null
      */
     public function getPayroll_Processing_Data()
     {
@@ -1134,12 +1134,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypePayroll_Processing_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypePayroll_Processing_DataItem instanceof \StructType\Payroll_Interface_Processing_DataType) {
+            if (!$worker_Position_DataTypePayroll_Processing_DataItem instanceof \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType) {
                 $invalidValues[] = is_object($worker_Position_DataTypePayroll_Processing_DataItem) ? get_class($worker_Position_DataTypePayroll_Processing_DataItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypePayroll_Processing_DataItem), var_export($worker_Position_DataTypePayroll_Processing_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Payroll_Processing_Data property can only contain items of type \StructType\Payroll_Interface_Processing_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Payroll_Processing_Data property can only contain items of type \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1147,8 +1147,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Payroll_Processing_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Payroll_Interface_Processing_DataType[] $payroll_Processing_Data
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType[] $payroll_Processing_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setPayroll_Processing_Data(array $payroll_Processing_Data = array())
     {
@@ -1162,21 +1162,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Payroll_Processing_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Payroll_Interface_Processing_DataType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToPayroll_Processing_Data(\StructType\Payroll_Interface_Processing_DataType $item)
+    public function addToPayroll_Processing_Data(\WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Payroll_Interface_Processing_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Payroll_Processing_Data property can only contain items of type \StructType\Payroll_Interface_Processing_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Payroll_Processing_Data property can only contain items of type \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Payroll_Processing_Data[] = $item;
         return $this;
     }
     /**
      * Get Supervisor_Reference value
-     * @return \StructType\Supervisor_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Supervisor_ReferenceType[]|null
      */
     public function getSupervisor_Reference()
     {
@@ -1194,12 +1194,12 @@ class Worker_Position_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Position_DataTypeSupervisor_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$worker_Position_DataTypeSupervisor_ReferenceItem instanceof \StructType\Supervisor_ReferenceType) {
+            if (!$worker_Position_DataTypeSupervisor_ReferenceItem instanceof \WorkdayWsdl\\StructType\Supervisor_ReferenceType) {
                 $invalidValues[] = is_object($worker_Position_DataTypeSupervisor_ReferenceItem) ? get_class($worker_Position_DataTypeSupervisor_ReferenceItem) : sprintf('%s(%s)', gettype($worker_Position_DataTypeSupervisor_ReferenceItem), var_export($worker_Position_DataTypeSupervisor_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Supervisor_Reference property can only contain items of type \StructType\Supervisor_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Supervisor_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisor_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -1207,8 +1207,8 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Supervisor_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisor_ReferenceType[] $supervisor_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Supervisor_ReferenceType[] $supervisor_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setSupervisor_Reference(array $supervisor_Reference = array())
     {
@@ -1222,21 +1222,21 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Add item to Supervisor_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisor_ReferenceType $item
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Supervisor_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function addToSupervisor_Reference(\StructType\Supervisor_ReferenceType $item)
+    public function addToSupervisor_Reference(\WorkdayWsdl\\StructType\Supervisor_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Supervisor_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Supervisor_Reference property can only contain items of type \StructType\Supervisor_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Supervisor_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Supervisor_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisor_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Supervisor_Reference[] = $item;
         return $this;
     }
     /**
      * Get Work_Shift_Reference value
-     * @return \StructType\Work_ShiftObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_ShiftObjectType|null
      */
     public function getWork_Shift_Reference()
     {
@@ -1244,17 +1244,17 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Set Work_Shift_Reference value
-     * @param \StructType\Work_ShiftObjectType $work_Shift_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function setWork_Shift_Reference(\StructType\Work_ShiftObjectType $work_Shift_Reference = null)
+    public function setWork_Shift_Reference(\WorkdayWsdl\\StructType\Work_ShiftObjectType $work_Shift_Reference = null)
     {
         $this->Work_Shift_Reference = $work_Shift_Reference;
         return $this;
     }
     /**
      * Get Work_Hours_Profile_Reference value
-     * @return \StructType\Work_Hours_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType|null
      */
     public function getWork_Hours_Profile_Reference()
     {
@@ -1262,10 +1262,10 @@ class Worker_Position_DataType extends AbstractStructBase
     }
     /**
      * Set Work_Hours_Profile_Reference value
-     * @param \StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference
-     * @return \StructType\Worker_Position_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
-    public function setWork_Hours_Profile_Reference(\StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference = null)
+    public function setWork_Hours_Profile_Reference(\WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType $work_Hours_Profile_Reference = null)
     {
         $this->Work_Hours_Profile_Reference = $work_Hours_Profile_Reference;
         return $this;
@@ -1281,7 +1281,7 @@ class Worker_Position_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -1298,7 +1298,7 @@ class Worker_Position_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Position_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public static function __set_state(array $array)
     {

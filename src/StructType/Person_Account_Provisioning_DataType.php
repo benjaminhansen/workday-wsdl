@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Provisioning_Group_Assignment_for_Person_DataType[]
+     * @var \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType[]
      */
     public $Provisioning_Group_Assignment_Data;
     /**
      * Constructor method for Person_Account_Provisioning_DataType
      * @uses Person_Account_Provisioning_DataType::setProvisioning_Group_Assignment_Data()
-     * @param \StructType\Provisioning_Group_Assignment_for_Person_DataType[] $provisioning_Group_Assignment_Data
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType[] $provisioning_Group_Assignment_Data
      */
     public function __construct(array $provisioning_Group_Assignment_Data = array())
     {
@@ -32,7 +32,7 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
     }
     /**
      * Get Provisioning_Group_Assignment_Data value
-     * @return \StructType\Provisioning_Group_Assignment_for_Person_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType[]|null
      */
     public function getProvisioning_Group_Assignment_Data()
     {
@@ -50,12 +50,12 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem instanceof \StructType\Provisioning_Group_Assignment_for_Person_DataType) {
+            if (!$person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem instanceof \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType) {
                 $invalidValues[] = is_object($person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem) ? get_class($person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem) : sprintf('%s(%s)', gettype($person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem), var_export($person_Account_Provisioning_DataTypeProvisioning_Group_Assignment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Provisioning_Group_Assignment_Data property can only contain items of type \StructType\Provisioning_Group_Assignment_for_Person_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Provisioning_Group_Assignment_Data property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
     /**
      * Set Provisioning_Group_Assignment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_Group_Assignment_for_Person_DataType[] $provisioning_Group_Assignment_Data
-     * @return \StructType\Person_Account_Provisioning_DataType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType[] $provisioning_Group_Assignment_Data
+     * @return \WorkdayWsdl\\StructType\Person_Account_Provisioning_DataType
      */
     public function setProvisioning_Group_Assignment_Data(array $provisioning_Group_Assignment_Data = array())
     {
@@ -78,14 +78,14 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
     /**
      * Add item to Provisioning_Group_Assignment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_Group_Assignment_for_Person_DataType $item
-     * @return \StructType\Person_Account_Provisioning_DataType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Account_Provisioning_DataType
      */
-    public function addToProvisioning_Group_Assignment_Data(\StructType\Provisioning_Group_Assignment_for_Person_DataType $item)
+    public function addToProvisioning_Group_Assignment_Data(\WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Provisioning_Group_Assignment_for_Person_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Assignment_Data property can only contain items of type \StructType\Provisioning_Group_Assignment_for_Person_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Provisioning_Group_Assignment_Data property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Provisioning_Group_Assignment_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Person_Account_Provisioning_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Account_Provisioning_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Account_Provisioning_DataType
      */
     public static function __set_state(array $array)
     {

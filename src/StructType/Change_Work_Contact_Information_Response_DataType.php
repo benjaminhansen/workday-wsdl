@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
      * - documentation: Wrapper element for the Change Work Contact Information Business Process Data element.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Work_Contact_Information_Response_WrapperType[]
+     * @var \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType[]
      */
     public $Change_Work_Contact_Information;
     /**
      * Constructor method for Change_Work_Contact_Information_Response_DataType
      * @uses Change_Work_Contact_Information_Response_DataType::setChange_Work_Contact_Information()
-     * @param \StructType\Change_Work_Contact_Information_Response_WrapperType[] $change_Work_Contact_Information
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType[] $change_Work_Contact_Information
      */
     public function __construct(array $change_Work_Contact_Information = array())
     {
@@ -34,7 +34,7 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
     }
     /**
      * Get Change_Work_Contact_Information value
-     * @return \StructType\Change_Work_Contact_Information_Response_WrapperType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType[]|null
      */
     public function getChange_Work_Contact_Information()
     {
@@ -52,12 +52,12 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
         $invalidValues = [];
         foreach ($values as $change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem) {
             // validation for constraint: itemType
-            if (!$change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem instanceof \StructType\Change_Work_Contact_Information_Response_WrapperType) {
+            if (!$change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem instanceof \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType) {
                 $invalidValues[] = is_object($change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem) ? get_class($change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem) : sprintf('%s(%s)', gettype($change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem), var_export($change_Work_Contact_Information_Response_DataTypeChange_Work_Contact_InformationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Work_Contact_Information property can only contain items of type \StructType\Change_Work_Contact_Information_Response_WrapperType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Work_Contact_Information property can only contain items of type \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
     /**
      * Set Change_Work_Contact_Information value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Work_Contact_Information_Response_WrapperType[] $change_Work_Contact_Information
-     * @return \StructType\Change_Work_Contact_Information_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType[] $change_Work_Contact_Information
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_DataType
      */
     public function setChange_Work_Contact_Information(array $change_Work_Contact_Information = array())
     {
@@ -80,14 +80,14 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
     /**
      * Add item to Change_Work_Contact_Information value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Work_Contact_Information_Response_WrapperType $item
-     * @return \StructType\Change_Work_Contact_Information_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType $item
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_DataType
      */
-    public function addToChange_Work_Contact_Information(\StructType\Change_Work_Contact_Information_Response_WrapperType $item)
+    public function addToChange_Work_Contact_Information(\WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Work_Contact_Information_Response_WrapperType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Work_Contact_Information property can only contain items of type \StructType\Change_Work_Contact_Information_Response_WrapperType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Work_Contact_Information property can only contain items of type \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_WrapperType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Work_Contact_Information[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Change_Work_Contact_Information_Response_DataType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Work_Contact_Information_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Response_DataType
      */
     public static function __set_state(array $array)
     {

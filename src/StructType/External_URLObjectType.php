@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class External_URLObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_URLObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_URLObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class External_URLObjectType extends AbstractStructBase
      * Constructor method for External_URLObjectType
      * @uses External_URLObjectType::setID()
      * @uses External_URLObjectType::setDescriptor()
-     * @param \StructType\External_URLObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_URLObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class External_URLObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\External_URLObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_URLObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class External_URLObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_URLObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_URLObjectTypeIDItem instanceof \StructType\External_URLObjectIDType) {
+            if (!$external_URLObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_URLObjectIDType) {
                 $invalidValues[] = is_object($external_URLObjectTypeIDItem) ? get_class($external_URLObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_URLObjectTypeIDItem), var_export($external_URLObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_URLObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_URLObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class External_URLObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_URLObjectIDType[] $iD
-     * @return \StructType\External_URLObjectType
+     * @param \WorkdayWsdl\\StructType\External_URLObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class External_URLObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_URLObjectIDType $item
-     * @return \StructType\External_URLObjectType
+     * @param \WorkdayWsdl\\StructType\External_URLObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType
      */
-    public function addToID(\StructType\External_URLObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_URLObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_URLObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_URLObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_URLObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_URLObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class External_URLObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_URLObjectType
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class External_URLObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_URLObjectType
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public static function __set_state(array $array)
     {

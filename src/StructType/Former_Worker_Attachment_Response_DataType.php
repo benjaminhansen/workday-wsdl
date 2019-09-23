@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
      * - documentation: Contains the retrieved Former Worker Document information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_AttachmentType[]
+     * @var \WorkdayWsdl\\StructType\Former_Worker_AttachmentType[]
      */
     public $Former_Worker_Document;
     /**
      * Constructor method for Former_Worker_Attachment_Response_DataType
      * @uses Former_Worker_Attachment_Response_DataType::setFormer_Worker_Document()
-     * @param \StructType\Former_Worker_AttachmentType[] $former_Worker_Document
+     * @param \WorkdayWsdl\\StructType\Former_Worker_AttachmentType[] $former_Worker_Document
      */
     public function __construct(array $former_Worker_Document = array())
     {
@@ -33,7 +33,7 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Former_Worker_Document value
-     * @return \StructType\Former_Worker_AttachmentType[]|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_AttachmentType[]|null
      */
     public function getFormer_Worker_Document()
     {
@@ -51,12 +51,12 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem instanceof \StructType\Former_Worker_AttachmentType) {
+            if (!$former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem instanceof \WorkdayWsdl\\StructType\Former_Worker_AttachmentType) {
                 $invalidValues[] = is_object($former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem) ? get_class($former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem) : sprintf('%s(%s)', gettype($former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem), var_export($former_Worker_Attachment_Response_DataTypeFormer_Worker_DocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Former_Worker_Document property can only contain items of type \StructType\Former_Worker_AttachmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Former_Worker_Document property can only contain items of type \WorkdayWsdl\\StructType\Former_Worker_AttachmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
     /**
      * Set Former_Worker_Document value
      * @throws \InvalidArgumentException
-     * @param \StructType\Former_Worker_AttachmentType[] $former_Worker_Document
-     * @return \StructType\Former_Worker_Attachment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_AttachmentType[] $former_Worker_Document
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_DataType
      */
     public function setFormer_Worker_Document(array $former_Worker_Document = array())
     {
@@ -79,14 +79,14 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
     /**
      * Add item to Former_Worker_Document value
      * @throws \InvalidArgumentException
-     * @param \StructType\Former_Worker_AttachmentType $item
-     * @return \StructType\Former_Worker_Attachment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_AttachmentType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_DataType
      */
-    public function addToFormer_Worker_Document(\StructType\Former_Worker_AttachmentType $item)
+    public function addToFormer_Worker_Document(\WorkdayWsdl\\StructType\Former_Worker_AttachmentType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Former_Worker_AttachmentType) {
-            throw new \InvalidArgumentException(sprintf('The Former_Worker_Document property can only contain items of type \StructType\Former_Worker_AttachmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Former_Worker_AttachmentType) {
+            throw new \InvalidArgumentException(sprintf('The Former_Worker_Document property can only contain items of type \WorkdayWsdl\\StructType\Former_Worker_AttachmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Former_Worker_Document[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Former_Worker_Attachment_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Attachment_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Response_DataType
      */
     public static function __set_state(array $array)
     {

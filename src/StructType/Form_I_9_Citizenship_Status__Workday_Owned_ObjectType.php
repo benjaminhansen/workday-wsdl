@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[]
      */
     public $ID;
     /**
@@ -30,7 +30,7 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
      * Constructor method for Form_I-9_Citizenship_Status__Workday_Owned_ObjectType
      * @uses Form_I_9_Citizenship_Status__Workday_Owned_ObjectType::setID()
      * @uses Form_I_9_Citizenship_Status__Workday_Owned_ObjectType::setDescriptor()
-     * @param \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -41,7 +41,7 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
     }
     /**
      * Get ID value
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[]|null
      */
     public function getID()
     {
@@ -59,12 +59,12 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
         $invalidValues = [];
         foreach ($values as $form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem instanceof \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType) {
+            if (!$form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType) {
                 $invalidValues[] = is_object($form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem) ? get_class($form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem) : sprintf('%s(%s)', gettype($form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem), var_export($form_I_9_Citizenship_Status_Workday_Owned_ObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[] $iD
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
      */
     public function setID(array $iD = array())
     {
@@ -87,14 +87,14 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType $item
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
      */
-    public function addToID(\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -127,7 +127,7 @@ class Form_I_9_Citizenship_Status__Workday_Owned_ObjectType extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
      */
     public static function __set_state(array $array)
     {

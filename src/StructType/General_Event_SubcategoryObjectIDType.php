@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class General_Event_SubcategoryObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\General_Event_SubcategoryReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\General_Event_SubcategoryReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\General_Event_SubcategoryReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\General_Event_SubcategoryReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\General_Event_SubcategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\General_Event_SubcategoryReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\General_Event_SubcategoryReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\General_Event_SubcategoryReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\General_Event_SubcategoryReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\General_Event_SubcategoryReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\General_Event_SubcategoryReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class General_Event_SubcategoryObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\General_Event_SubcategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class General_Event_SubcategoryObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\General_Event_SubcategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType
      */
     public static function __set_state(array $array)
     {

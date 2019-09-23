@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -78,7 +78,7 @@ class Job_Category_DataType extends AbstractStructBase
     /**
      * Set Job_Category_ID value
      * @param string $job_Category_ID
-     * @return \StructType\Job_Category_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public function setJob_Category_ID($job_Category_ID = null)
     {
@@ -100,7 +100,7 @@ class Job_Category_DataType extends AbstractStructBase
     /**
      * Set Job_Category_Name value
      * @param string $job_Category_Name
-     * @return \StructType\Job_Category_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public function setJob_Category_Name($job_Category_Name = null)
     {
@@ -122,7 +122,7 @@ class Job_Category_DataType extends AbstractStructBase
     /**
      * Set Job_Category_Description value
      * @param string $job_Category_Description
-     * @return \StructType\Job_Category_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public function setJob_Category_Description($job_Category_Description = null)
     {
@@ -144,7 +144,7 @@ class Job_Category_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Category_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -161,7 +161,7 @@ class Job_Category_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Category_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public static function __set_state(array $array)
     {

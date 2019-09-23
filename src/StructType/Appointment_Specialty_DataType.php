@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
      * The Specialty_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to Specialty
-     * @var \StructType\SpecialtyObjectType
+     * @var \WorkdayWsdl\\StructType\SpecialtyObjectType
      */
     public $Specialty_Reference;
     /**
@@ -33,7 +33,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Academic Unit or Academic Unit Hierarchy Reference
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_SetObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType
      */
     public $Academic_Unit_or_Academic_Unit_Hierarchy_Reference;
     /**
@@ -52,11 +52,11 @@ class Appointment_Specialty_DataType extends AbstractStructBase
      * @uses Appointment_Specialty_DataType::setAcademic_Unit_or_Academic_Unit_Hierarchy_Reference()
      * @uses Appointment_Specialty_DataType::setInactive()
      * @param string $iD
-     * @param \StructType\SpecialtyObjectType $specialty_Reference
-     * @param \StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference
+     * @param \WorkdayWsdl\\StructType\SpecialtyObjectType $specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference
      * @param bool $inactive
      */
-    public function __construct($iD = null, \StructType\SpecialtyObjectType $specialty_Reference = null, \StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference = null, $inactive = null)
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\SpecialtyObjectType $specialty_Reference = null, \WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference = null, $inactive = null)
     {
         $this
             ->setID($iD)
@@ -75,7 +75,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Appointment_Specialty_DataType
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
     public function setID($iD = null)
     {
@@ -88,7 +88,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
     }
     /**
      * Get Specialty_Reference value
-     * @return \StructType\SpecialtyObjectType|null
+     * @return \WorkdayWsdl\\StructType\SpecialtyObjectType|null
      */
     public function getSpecialty_Reference()
     {
@@ -96,17 +96,17 @@ class Appointment_Specialty_DataType extends AbstractStructBase
     }
     /**
      * Set Specialty_Reference value
-     * @param \StructType\SpecialtyObjectType $specialty_Reference
-     * @return \StructType\Appointment_Specialty_DataType
+     * @param \WorkdayWsdl\\StructType\SpecialtyObjectType $specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
-    public function setSpecialty_Reference(\StructType\SpecialtyObjectType $specialty_Reference = null)
+    public function setSpecialty_Reference(\WorkdayWsdl\\StructType\SpecialtyObjectType $specialty_Reference = null)
     {
         $this->Specialty_Reference = $specialty_Reference;
         return $this;
     }
     /**
      * Get Academic_Unit_or_Academic_Unit_Hierarchy_Reference value
-     * @return \StructType\Academic_Appointment_SetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType|null
      */
     public function getAcademic_Unit_or_Academic_Unit_Hierarchy_Reference()
     {
@@ -114,10 +114,10 @@ class Appointment_Specialty_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_or_Academic_Unit_Hierarchy_Reference value
-     * @param \StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference
-     * @return \StructType\Appointment_Specialty_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
-    public function setAcademic_Unit_or_Academic_Unit_Hierarchy_Reference(\StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference = null)
+    public function setAcademic_Unit_or_Academic_Unit_Hierarchy_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_SetObjectType $academic_Unit_or_Academic_Unit_Hierarchy_Reference = null)
     {
         $this->Academic_Unit_or_Academic_Unit_Hierarchy_Reference = $academic_Unit_or_Academic_Unit_Hierarchy_Reference;
         return $this;
@@ -133,7 +133,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Appointment_Specialty_DataType
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -150,7 +150,7 @@ class Appointment_Specialty_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Appointment_Specialty_DataType
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType
      */
     public static function __set_state(array $array)
     {

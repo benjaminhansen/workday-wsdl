@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Web_Service_Background_Process_RuntimeObjectIDType extends AbstractStructB
     }
     /**
      * Set type value
-     * @uses \EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Web_Service_Background_Process_RuntimeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Web_Service_Background_Process_RuntimeObjectIDType extends AbstractStructB
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -92,7 +92,7 @@ class Web_Service_Background_Process_RuntimeObjectIDType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectIDType
      */
     public static function __set_state(array $array)
     {

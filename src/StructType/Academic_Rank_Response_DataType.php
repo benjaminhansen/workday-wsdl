@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
      * - documentation: Academic Rank Element
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_RankType[]
+     * @var \WorkdayWsdl\\StructType\Academic_RankType[]
      */
     public $Academic_Rank;
     /**
      * Constructor method for Academic_Rank_Response_DataType
      * @uses Academic_Rank_Response_DataType::setAcademic_Rank()
-     * @param \StructType\Academic_RankType[] $academic_Rank
+     * @param \WorkdayWsdl\\StructType\Academic_RankType[] $academic_Rank
      */
     public function __construct(array $academic_Rank = array())
     {
@@ -33,7 +33,7 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Rank value
-     * @return \StructType\Academic_RankType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_RankType[]|null
      */
     public function getAcademic_Rank()
     {
@@ -51,12 +51,12 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Rank_Response_DataTypeAcademic_RankItem) {
             // validation for constraint: itemType
-            if (!$academic_Rank_Response_DataTypeAcademic_RankItem instanceof \StructType\Academic_RankType) {
+            if (!$academic_Rank_Response_DataTypeAcademic_RankItem instanceof \WorkdayWsdl\\StructType\Academic_RankType) {
                 $invalidValues[] = is_object($academic_Rank_Response_DataTypeAcademic_RankItem) ? get_class($academic_Rank_Response_DataTypeAcademic_RankItem) : sprintf('%s(%s)', gettype($academic_Rank_Response_DataTypeAcademic_RankItem), var_export($academic_Rank_Response_DataTypeAcademic_RankItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Rank property can only contain items of type \StructType\Academic_RankType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Rank property can only contain items of type \WorkdayWsdl\\StructType\Academic_RankType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
     /**
      * Set Academic_Rank value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_RankType[] $academic_Rank
-     * @return \StructType\Academic_Rank_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_RankType[] $academic_Rank
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Response_DataType
      */
     public function setAcademic_Rank(array $academic_Rank = array())
     {
@@ -79,14 +79,14 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
     /**
      * Add item to Academic_Rank value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_RankType $item
-     * @return \StructType\Academic_Rank_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_RankType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Response_DataType
      */
-    public function addToAcademic_Rank(\StructType\Academic_RankType $item)
+    public function addToAcademic_Rank(\WorkdayWsdl\\StructType\Academic_RankType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_RankType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Rank property can only contain items of type \StructType\Academic_RankType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_RankType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Rank property can only contain items of type \WorkdayWsdl\\StructType\Academic_RankType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Rank[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Academic_Rank_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Rank_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Response_DataType
      */
     public static function __set_state(array $array)
     {

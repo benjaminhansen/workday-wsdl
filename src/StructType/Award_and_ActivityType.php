@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Award_and_ActivityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Award and Activity Profile.
      * - minOccurs: 0
-     * @var \StructType\AwardObjectType
+     * @var \WorkdayWsdl\\StructType\AwardObjectType
      */
     public $Award_and_Activity_Reference;
     /**
@@ -25,17 +25,17 @@ class Award_and_ActivityType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Award and Activity information.
      * - minOccurs: 0
-     * @var \StructType\Award_and_Activity_Achievement_DataType
+     * @var \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType
      */
     public $Award_and_Activity_Data;
     /**
      * Constructor method for Award_and_ActivityType
      * @uses Award_and_ActivityType::setAward_and_Activity_Reference()
      * @uses Award_and_ActivityType::setAward_and_Activity_Data()
-     * @param \StructType\AwardObjectType $award_and_Activity_Reference
-     * @param \StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data
+     * @param \WorkdayWsdl\\StructType\AwardObjectType $award_and_Activity_Reference
+     * @param \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data
      */
-    public function __construct(\StructType\AwardObjectType $award_and_Activity_Reference = null, \StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\AwardObjectType $award_and_Activity_Reference = null, \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data = null)
     {
         $this
             ->setAward_and_Activity_Reference($award_and_Activity_Reference)
@@ -43,7 +43,7 @@ class Award_and_ActivityType extends AbstractStructBase
     }
     /**
      * Get Award_and_Activity_Reference value
-     * @return \StructType\AwardObjectType|null
+     * @return \WorkdayWsdl\\StructType\AwardObjectType|null
      */
     public function getAward_and_Activity_Reference()
     {
@@ -51,17 +51,17 @@ class Award_and_ActivityType extends AbstractStructBase
     }
     /**
      * Set Award_and_Activity_Reference value
-     * @param \StructType\AwardObjectType $award_and_Activity_Reference
-     * @return \StructType\Award_and_ActivityType
+     * @param \WorkdayWsdl\\StructType\AwardObjectType $award_and_Activity_Reference
+     * @return \WorkdayWsdl\\StructType\Award_and_ActivityType
      */
-    public function setAward_and_Activity_Reference(\StructType\AwardObjectType $award_and_Activity_Reference = null)
+    public function setAward_and_Activity_Reference(\WorkdayWsdl\\StructType\AwardObjectType $award_and_Activity_Reference = null)
     {
         $this->Award_and_Activity_Reference = $award_and_Activity_Reference;
         return $this;
     }
     /**
      * Get Award_and_Activity_Data value
-     * @return \StructType\Award_and_Activity_Achievement_DataType|null
+     * @return \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType|null
      */
     public function getAward_and_Activity_Data()
     {
@@ -69,10 +69,10 @@ class Award_and_ActivityType extends AbstractStructBase
     }
     /**
      * Set Award_and_Activity_Data value
-     * @param \StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data
-     * @return \StructType\Award_and_ActivityType
+     * @param \WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data
+     * @return \WorkdayWsdl\\StructType\Award_and_ActivityType
      */
-    public function setAward_and_Activity_Data(\StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data = null)
+    public function setAward_and_Activity_Data(\WorkdayWsdl\\StructType\Award_and_Activity_Achievement_DataType $award_and_Activity_Data = null)
     {
         $this->Award_and_Activity_Data = $award_and_Activity_Data;
         return $this;
@@ -83,7 +83,7 @@ class Award_and_ActivityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Award_and_ActivityType
+     * @return \WorkdayWsdl\\StructType\Award_and_ActivityType
      */
     public static function __set_state(array $array)
     {

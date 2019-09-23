@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
      * - documentation: Reference to the former worker
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Former_WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\Former_WorkerObjectType[]
      */
     public $Former_Worker_Reference;
     /**
      * Constructor method for Former_Worker_Attachment_Request_Criteria__EL_Type
      * @uses Former_Worker_Attachment_Request_Criteria__EL_Type::setFormer_Worker_Reference()
-     * @param \StructType\Former_WorkerObjectType[] $former_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType[] $former_Worker_Reference
      */
     public function __construct(array $former_Worker_Reference = array())
     {
@@ -34,7 +34,7 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
     }
     /**
      * Get Former_Worker_Reference value
-     * @return \StructType\Former_WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Former_WorkerObjectType[]|null
      */
     public function getFormer_Worker_Reference()
     {
@@ -52,12 +52,12 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
         $invalidValues = [];
         foreach ($values as $former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem instanceof \StructType\Former_WorkerObjectType) {
+            if (!$former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem instanceof \WorkdayWsdl\\StructType\Former_WorkerObjectType) {
                 $invalidValues[] = is_object($former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem) ? get_class($former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem) : sprintf('%s(%s)', gettype($former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem), var_export($former_Worker_Attachment_Request_Criteria_EL_TypeFormer_Worker_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Former_Worker_Reference property can only contain items of type \StructType\Former_WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Former_Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\Former_WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
     /**
      * Set Former_Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Former_WorkerObjectType[] $former_Worker_Reference
-     * @return \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType[] $former_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
      */
     public function setFormer_Worker_Reference(array $former_Worker_Reference = array())
     {
@@ -80,14 +80,14 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
     /**
      * Add item to Former_Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Former_WorkerObjectType $item
-     * @return \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
      */
-    public function addToFormer_Worker_Reference(\StructType\Former_WorkerObjectType $item)
+    public function addToFormer_Worker_Reference(\WorkdayWsdl\\StructType\Former_WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Former_WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Former_Worker_Reference property can only contain items of type \StructType\Former_WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Former_WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Former_Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\Former_WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Former_Worker_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Former_Worker_Attachment_Request_Criteria__EL_Type extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Attachment_Request_Criteria__EL_Type
      */
     public static function __set_state(array $array)
     {

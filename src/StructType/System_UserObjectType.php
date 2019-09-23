@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class System_UserObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\System_UserObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\System_UserObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class System_UserObjectType extends AbstractStructBase
      * Constructor method for System_UserObjectType
      * @uses System_UserObjectType::setID()
      * @uses System_UserObjectType::setDescriptor()
-     * @param \StructType\System_UserObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\System_UserObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class System_UserObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\System_UserObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\System_UserObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class System_UserObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $system_UserObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$system_UserObjectTypeIDItem instanceof \StructType\System_UserObjectIDType) {
+            if (!$system_UserObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\System_UserObjectIDType) {
                 $invalidValues[] = is_object($system_UserObjectTypeIDItem) ? get_class($system_UserObjectTypeIDItem) : sprintf('%s(%s)', gettype($system_UserObjectTypeIDItem), var_export($system_UserObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\System_UserObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\System_UserObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class System_UserObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\System_UserObjectIDType[] $iD
-     * @return \StructType\System_UserObjectType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class System_UserObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\System_UserObjectIDType $item
-     * @return \StructType\System_UserObjectType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType
      */
-    public function addToID(\StructType\System_UserObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\System_UserObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\System_UserObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\System_UserObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\System_UserObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\System_UserObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class System_UserObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\System_UserObjectType
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class System_UserObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\System_UserObjectType
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Headcount_RestrictionsObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Headcount_RestrictionsReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Headcount_RestrictionsReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Headcount_RestrictionsReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Headcount_RestrictionsReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Headcount_RestrictionsObjectIDType
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Headcount_RestrictionsReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Headcount_RestrictionsReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Headcount_RestrictionsReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Headcount_RestrictionsReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Headcount_RestrictionsReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Headcount_RestrictionsReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Headcount_RestrictionsObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Headcount_RestrictionsObjectIDType
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Headcount_RestrictionsObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Headcount_RestrictionsObjectIDType
+     * @return \WorkdayWsdl\\StructType\Headcount_RestrictionsObjectIDType
      */
     public static function __set_state(array $array)
     {

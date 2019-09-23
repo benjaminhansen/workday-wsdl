@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Day(s) of the Week for Pattern Schedule Event.
      * - maxOccurs: unbounded
-     * @var \StructType\Day_of_the_WeekObjectType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]
      */
     public $Day_of_the_Week_Reference;
     /**
@@ -64,7 +64,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Scheduling_Non_Work_Time_DataType[]
+     * @var \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[]
      */
     public $Meal_Data;
     /**
@@ -84,11 +84,11 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
      * @uses Pattern_Schedule_Event_DataType::setMeal_Data()
      * @uses Pattern_Schedule_Event_DataType::setID()
      * @param float $week_Number
-     * @param \StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
      * @param string $start_Time
      * @param string $end_Time
      * @param bool $_24_Hour_Shift
-     * @param \StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
      * @param string $iD
      */
     public function __construct($week_Number = null, array $day_of_the_Week_Reference = array(), $start_Time = null, $end_Time = null, $_24_Hour_Shift = null, array $meal_Data = array(), $iD = null)
@@ -113,7 +113,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set Week_Number value
      * @param float $week_Number
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setWeek_Number($week_Number = null)
     {
@@ -138,7 +138,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Day_of_the_Week_Reference value
-     * @return \StructType\Day_of_the_WeekObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]|null
      */
     public function getDay_of_the_Week_Reference()
     {
@@ -156,12 +156,12 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem instanceof \StructType\Day_of_the_WeekObjectType) {
+            if (!$pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
                 $invalidValues[] = is_object($pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem) ? get_class($pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem) : sprintf('%s(%s)', gettype($pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem), var_export($pattern_Schedule_Event_DataTypeDay_of_the_Week_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Day_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Day_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -169,8 +169,8 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set Day_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setDay_of_the_Week_Reference(array $day_of_the_Week_Reference = array())
     {
@@ -184,14 +184,14 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Add item to Day_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType $item
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
-    public function addToDay_of_the_Week_Reference(\StructType\Day_of_the_WeekObjectType $item)
+    public function addToDay_of_the_Week_Reference(\WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_WeekObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Day_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Day_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Day_of_the_Week_Reference[] = $item;
         return $this;
@@ -207,7 +207,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set Start_Time value
      * @param string $start_Time
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setStart_Time($start_Time = null)
     {
@@ -229,7 +229,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set End_Time value
      * @param string $end_Time
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setEnd_Time($end_Time = null)
     {
@@ -251,7 +251,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set _Hour_Shift value
      * @param _Hour_Shift $_Hour_Shift
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function set_24_Hour_Shift($_24_Hour_Shift = null)
     {
@@ -264,7 +264,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Meal_Data value
-     * @return \StructType\Scheduling_Non_Work_Time_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[]|null
      */
     public function getMeal_Data()
     {
@@ -282,12 +282,12 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pattern_Schedule_Event_DataTypeMeal_DataItem) {
             // validation for constraint: itemType
-            if (!$pattern_Schedule_Event_DataTypeMeal_DataItem instanceof \StructType\Scheduling_Non_Work_Time_DataType) {
+            if (!$pattern_Schedule_Event_DataTypeMeal_DataItem instanceof \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType) {
                 $invalidValues[] = is_object($pattern_Schedule_Event_DataTypeMeal_DataItem) ? get_class($pattern_Schedule_Event_DataTypeMeal_DataItem) : sprintf('%s(%s)', gettype($pattern_Schedule_Event_DataTypeMeal_DataItem), var_export($pattern_Schedule_Event_DataTypeMeal_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Meal_Data property can only contain items of type \StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Meal_Data property can only contain items of type \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -295,8 +295,8 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set Meal_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setMeal_Data(array $meal_Data = array())
     {
@@ -310,14 +310,14 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Add item to Meal_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Scheduling_Non_Work_Time_DataType $item
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType $item
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
-    public function addToMeal_Data(\StructType\Scheduling_Non_Work_Time_DataType $item)
+    public function addToMeal_Data(\WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Scheduling_Non_Work_Time_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Meal_Data property can only contain items of type \StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Meal_Data property can only contain items of type \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Meal_Data[] = $item;
         return $this;
@@ -333,7 +333,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public function setID($iD = null)
     {
@@ -350,7 +350,7 @@ class Pattern_Schedule_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pattern_Schedule_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Pattern_Schedule_Event_DataType
      */
     public static function __set_state(array $array)
     {

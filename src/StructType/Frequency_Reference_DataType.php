@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Frequency_Reference_DataType extends AbstractStructBase
     /**
      * Set Frequency_Name value
      * @param string $frequency_Name
-     * @return \StructType\Frequency_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_Reference_DataType
      */
     public function setFrequency_Name($frequency_Name = null)
     {
@@ -58,7 +58,7 @@ class Frequency_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Frequency_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_Reference_DataType
      */
     public static function __set_state(array $array)
     {

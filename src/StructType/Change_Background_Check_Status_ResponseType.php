@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: This element contains information on Background Check Event
      * - minOccurs: 0
-     * @var \StructType\Background_Check_EventObjectType
+     * @var \WorkdayWsdl\\StructType\Background_Check_EventObjectType
      */
     public $Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
      * Constructor method for Change_Background_Check_Status_ResponseType
      * @uses Change_Background_Check_Status_ResponseType::setEvent_Reference()
      * @uses Change_Background_Check_Status_ResponseType::setVersion()
-     * @param \StructType\Background_Check_EventObjectType $event_Reference
+     * @param \WorkdayWsdl\\StructType\Background_Check_EventObjectType $event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Background_Check_EventObjectType $event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Background_Check_EventObjectType $event_Reference = null, $version = null)
     {
         $this
             ->setEvent_Reference($event_Reference)
@@ -42,7 +42,7 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
     }
     /**
      * Get Event_Reference value
-     * @return \StructType\Background_Check_EventObjectType|null
+     * @return \WorkdayWsdl\\StructType\Background_Check_EventObjectType|null
      */
     public function getEvent_Reference()
     {
@@ -50,10 +50,10 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
     }
     /**
      * Set Event_Reference value
-     * @param \StructType\Background_Check_EventObjectType $event_Reference
-     * @return \StructType\Change_Background_Check_Status_ResponseType
+     * @param \WorkdayWsdl\\StructType\Background_Check_EventObjectType $event_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Background_Check_Status_ResponseType
      */
-    public function setEvent_Reference(\StructType\Background_Check_EventObjectType $event_Reference = null)
+    public function setEvent_Reference(\WorkdayWsdl\\StructType\Background_Check_EventObjectType $event_Reference = null)
     {
         $this->Event_Reference = $event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Background_Check_Status_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Background_Check_Status_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Change_Background_Check_Status_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Background_Check_Status_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Background_Check_Status_ResponseType
      */
     public static function __set_state(array $array)
     {

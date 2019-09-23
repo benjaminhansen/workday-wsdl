@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
 {
     /**
      * The Search_Settings_Data
-     * @var \StructType\Search_Settings_DataType
+     * @var \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
     public $Search_Settings_Data;
     /**
@@ -36,11 +36,11 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
      * @uses Put_Search_Settings_RequestType::setSearch_Settings_Data()
      * @uses Put_Search_Settings_RequestType::setAdd_Only()
      * @uses Put_Search_Settings_RequestType::setVersion()
-     * @param \StructType\Search_Settings_DataType $search_Settings_Data
+     * @param \WorkdayWsdl\\StructType\Search_Settings_DataType $search_Settings_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Search_Settings_DataType $search_Settings_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Search_Settings_DataType $search_Settings_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setSearch_Settings_Data($search_Settings_Data)
@@ -49,7 +49,7 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
     }
     /**
      * Get Search_Settings_Data value
-     * @return \StructType\Search_Settings_DataType|null
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType|null
      */
     public function getSearch_Settings_Data()
     {
@@ -57,10 +57,10 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
     }
     /**
      * Set Search_Settings_Data value
-     * @param \StructType\Search_Settings_DataType $search_Settings_Data
-     * @return \StructType\Put_Search_Settings_RequestType
+     * @param \WorkdayWsdl\\StructType\Search_Settings_DataType $search_Settings_Data
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_RequestType
      */
-    public function setSearch_Settings_Data(\StructType\Search_Settings_DataType $search_Settings_Data = null)
+    public function setSearch_Settings_Data(\WorkdayWsdl\\StructType\Search_Settings_DataType $search_Settings_Data = null)
     {
         $this->Search_Settings_Data = $search_Settings_Data;
         return $this;
@@ -76,7 +76,7 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Search_Settings_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -98,7 +98,7 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Search_Settings_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_RequestType
      */
     public function setVersion($version = null)
     {
@@ -115,7 +115,7 @@ class Put_Search_Settings_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Search_Settings_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Search_Settings_RequestType
      */
     public static function __set_state(array $array)
     {

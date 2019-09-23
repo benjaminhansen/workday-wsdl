@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Specialty_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Enter the Speciality associated with the certification achievement.
      * - minOccurs: 0
-     * @var \StructType\Specialty_ParentObjectType
+     * @var \WorkdayWsdl\\StructType\Specialty_ParentObjectType
      */
     public $Specialty_Reference;
     /**
@@ -26,17 +26,17 @@ class Specialty_Achievement_DataType extends AbstractStructBase
      * - documentation: Enter the subspecialty ID associated with the specialty.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Specialty_ChildObjectType[]
+     * @var \WorkdayWsdl\\StructType\Specialty_ChildObjectType[]
      */
     public $Subspecialty_Reference;
     /**
      * Constructor method for Specialty_Achievement_DataType
      * @uses Specialty_Achievement_DataType::setSpecialty_Reference()
      * @uses Specialty_Achievement_DataType::setSubspecialty_Reference()
-     * @param \StructType\Specialty_ParentObjectType $specialty_Reference
-     * @param \StructType\Specialty_ChildObjectType[] $subspecialty_Reference
+     * @param \WorkdayWsdl\\StructType\Specialty_ParentObjectType $specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Specialty_ChildObjectType[] $subspecialty_Reference
      */
-    public function __construct(\StructType\Specialty_ParentObjectType $specialty_Reference = null, array $subspecialty_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Specialty_ParentObjectType $specialty_Reference = null, array $subspecialty_Reference = array())
     {
         $this
             ->setSpecialty_Reference($specialty_Reference)
@@ -44,7 +44,7 @@ class Specialty_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Specialty_Reference value
-     * @return \StructType\Specialty_ParentObjectType|null
+     * @return \WorkdayWsdl\\StructType\Specialty_ParentObjectType|null
      */
     public function getSpecialty_Reference()
     {
@@ -52,17 +52,17 @@ class Specialty_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Specialty_Reference value
-     * @param \StructType\Specialty_ParentObjectType $specialty_Reference
-     * @return \StructType\Specialty_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Specialty_ParentObjectType $specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Specialty_Achievement_DataType
      */
-    public function setSpecialty_Reference(\StructType\Specialty_ParentObjectType $specialty_Reference = null)
+    public function setSpecialty_Reference(\WorkdayWsdl\\StructType\Specialty_ParentObjectType $specialty_Reference = null)
     {
         $this->Specialty_Reference = $specialty_Reference;
         return $this;
     }
     /**
      * Get Subspecialty_Reference value
-     * @return \StructType\Specialty_ChildObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Specialty_ChildObjectType[]|null
      */
     public function getSubspecialty_Reference()
     {
@@ -80,12 +80,12 @@ class Specialty_Achievement_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $specialty_Achievement_DataTypeSubspecialty_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$specialty_Achievement_DataTypeSubspecialty_ReferenceItem instanceof \StructType\Specialty_ChildObjectType) {
+            if (!$specialty_Achievement_DataTypeSubspecialty_ReferenceItem instanceof \WorkdayWsdl\\StructType\Specialty_ChildObjectType) {
                 $invalidValues[] = is_object($specialty_Achievement_DataTypeSubspecialty_ReferenceItem) ? get_class($specialty_Achievement_DataTypeSubspecialty_ReferenceItem) : sprintf('%s(%s)', gettype($specialty_Achievement_DataTypeSubspecialty_ReferenceItem), var_export($specialty_Achievement_DataTypeSubspecialty_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Subspecialty_Reference property can only contain items of type \StructType\Specialty_ChildObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Subspecialty_Reference property can only contain items of type \WorkdayWsdl\\StructType\Specialty_ChildObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Specialty_Achievement_DataType extends AbstractStructBase
     /**
      * Set Subspecialty_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Specialty_ChildObjectType[] $subspecialty_Reference
-     * @return \StructType\Specialty_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Specialty_ChildObjectType[] $subspecialty_Reference
+     * @return \WorkdayWsdl\\StructType\Specialty_Achievement_DataType
      */
     public function setSubspecialty_Reference(array $subspecialty_Reference = array())
     {
@@ -108,14 +108,14 @@ class Specialty_Achievement_DataType extends AbstractStructBase
     /**
      * Add item to Subspecialty_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Specialty_ChildObjectType $item
-     * @return \StructType\Specialty_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Specialty_ChildObjectType $item
+     * @return \WorkdayWsdl\\StructType\Specialty_Achievement_DataType
      */
-    public function addToSubspecialty_Reference(\StructType\Specialty_ChildObjectType $item)
+    public function addToSubspecialty_Reference(\WorkdayWsdl\\StructType\Specialty_ChildObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Specialty_ChildObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Subspecialty_Reference property can only contain items of type \StructType\Specialty_ChildObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Specialty_ChildObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Subspecialty_Reference property can only contain items of type \WorkdayWsdl\\StructType\Specialty_ChildObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Subspecialty_Reference[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Specialty_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Specialty_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Specialty_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

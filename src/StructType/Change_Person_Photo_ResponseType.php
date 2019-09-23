@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Photo Change Event created by the corresponding request.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Photo_Change_Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
      * Constructor method for Change_Person_Photo_ResponseType
      * @uses Change_Person_Photo_ResponseType::setPhoto_Change_Event_Reference()
      * @uses Change_Person_Photo_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference = null, $version = null)
     {
         $this
             ->setPhoto_Change_Event_Reference($photo_Change_Event_Reference)
@@ -42,7 +42,7 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
     }
     /**
      * Get Photo_Change_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPhoto_Change_Event_Reference()
     {
@@ -50,10 +50,10 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
     }
     /**
      * Set Photo_Change_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference
-     * @return \StructType\Change_Person_Photo_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_ResponseType
      */
-    public function setPhoto_Change_Event_Reference(\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference = null)
+    public function setPhoto_Change_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $photo_Change_Event_Reference = null)
     {
         $this->Photo_Change_Event_Reference = $photo_Change_Event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Person_Photo_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Change_Person_Photo_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Person_Photo_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_ResponseType
      */
     public static function __set_state(array $array)
     {

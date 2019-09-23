@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class Volume_DataType extends AbstractStructBase
      * The Currency_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the currency.
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -36,9 +36,9 @@ class Volume_DataType extends AbstractStructBase
      * @uses Volume_DataType::setVolume()
      * @uses Volume_DataType::setCurrency_Reference()
      * @param float $volume
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct($volume = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct($volume = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setVolume($volume)
@@ -55,7 +55,7 @@ class Volume_DataType extends AbstractStructBase
     /**
      * Set Volume value
      * @param float $volume
-     * @return \StructType\Volume_DataType
+     * @return \WorkdayWsdl\\StructType\Volume_DataType
      */
     public function setVolume($volume = null)
     {
@@ -80,7 +80,7 @@ class Volume_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -88,10 +88,10 @@ class Volume_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Volume_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Volume_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -102,7 +102,7 @@ class Volume_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Volume_DataType
+     * @return \WorkdayWsdl\\StructType\Volume_DataType
      */
     public static function __set_state(array $array)
     {

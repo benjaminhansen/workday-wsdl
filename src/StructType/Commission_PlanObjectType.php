@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Commission_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Commission_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Commission_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Commission_PlanObjectType extends AbstractStructBase
      * Constructor method for Commission_PlanObjectType
      * @uses Commission_PlanObjectType::setID()
      * @uses Commission_PlanObjectType::setDescriptor()
-     * @param \StructType\Commission_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Commission_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Commission_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Commission_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Commission_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $commission_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$commission_PlanObjectTypeIDItem instanceof \StructType\Commission_PlanObjectIDType) {
+            if (!$commission_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Commission_PlanObjectIDType) {
                 $invalidValues[] = is_object($commission_PlanObjectTypeIDItem) ? get_class($commission_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($commission_PlanObjectTypeIDItem), var_export($commission_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Commission_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Commission_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Commission_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Commission_PlanObjectIDType[] $iD
-     * @return \StructType\Commission_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Commission_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Commission_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Commission_PlanObjectIDType $item
-     * @return \StructType\Commission_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Commission_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectType
      */
-    public function addToID(\StructType\Commission_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Commission_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Commission_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Commission_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Commission_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Commission_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Commission_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Commission_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Commission_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Commission_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Commission_PlanObjectType
      */
     public static function __set_state(array $array)
     {

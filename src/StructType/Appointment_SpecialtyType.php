@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Appointment_SpecialtyType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Appointment Specialty Reference
      * - minOccurs: 0
-     * @var \StructType\Appointment_SpecialtyObjectType
+     * @var \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType
      */
     public $Appointment_Specialty_Reference;
     /**
@@ -25,17 +25,17 @@ class Appointment_SpecialtyType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Appointment_Specialty_DataType[]
+     * @var \WorkdayWsdl\\StructType\Appointment_Specialty_DataType[]
      */
     public $Appointment_Specialty_Data;
     /**
      * Constructor method for Appointment_SpecialtyType
      * @uses Appointment_SpecialtyType::setAppointment_Specialty_Reference()
      * @uses Appointment_SpecialtyType::setAppointment_Specialty_Data()
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @param \StructType\Appointment_Specialty_DataType[] $appointment_Specialty_Data
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Appointment_Specialty_DataType[] $appointment_Specialty_Data
      */
-    public function __construct(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, array $appointment_Specialty_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, array $appointment_Specialty_Data = array())
     {
         $this
             ->setAppointment_Specialty_Reference($appointment_Specialty_Reference)
@@ -43,7 +43,7 @@ class Appointment_SpecialtyType extends AbstractStructBase
     }
     /**
      * Get Appointment_Specialty_Reference value
-     * @return \StructType\Appointment_SpecialtyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType|null
      */
     public function getAppointment_Specialty_Reference()
     {
@@ -51,17 +51,17 @@ class Appointment_SpecialtyType extends AbstractStructBase
     }
     /**
      * Set Appointment_Specialty_Reference value
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @return \StructType\Appointment_SpecialtyType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyType
      */
-    public function setAppointment_Specialty_Reference(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
+    public function setAppointment_Specialty_Reference(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
     {
         $this->Appointment_Specialty_Reference = $appointment_Specialty_Reference;
         return $this;
     }
     /**
      * Get Appointment_Specialty_Data value
-     * @return \StructType\Appointment_Specialty_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_DataType[]|null
      */
     public function getAppointment_Specialty_Data()
     {
@@ -79,12 +79,12 @@ class Appointment_SpecialtyType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $appointment_SpecialtyTypeAppointment_Specialty_DataItem) {
             // validation for constraint: itemType
-            if (!$appointment_SpecialtyTypeAppointment_Specialty_DataItem instanceof \StructType\Appointment_Specialty_DataType) {
+            if (!$appointment_SpecialtyTypeAppointment_Specialty_DataItem instanceof \WorkdayWsdl\\StructType\Appointment_Specialty_DataType) {
                 $invalidValues[] = is_object($appointment_SpecialtyTypeAppointment_Specialty_DataItem) ? get_class($appointment_SpecialtyTypeAppointment_Specialty_DataItem) : sprintf('%s(%s)', gettype($appointment_SpecialtyTypeAppointment_Specialty_DataItem), var_export($appointment_SpecialtyTypeAppointment_Specialty_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Appointment_Specialty_Data property can only contain items of type \StructType\Appointment_Specialty_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Appointment_Specialty_Data property can only contain items of type \WorkdayWsdl\\StructType\Appointment_Specialty_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Appointment_SpecialtyType extends AbstractStructBase
     /**
      * Set Appointment_Specialty_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Appointment_Specialty_DataType[] $appointment_Specialty_Data
-     * @return \StructType\Appointment_SpecialtyType
+     * @param \WorkdayWsdl\\StructType\Appointment_Specialty_DataType[] $appointment_Specialty_Data
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyType
      */
     public function setAppointment_Specialty_Data(array $appointment_Specialty_Data = array())
     {
@@ -107,14 +107,14 @@ class Appointment_SpecialtyType extends AbstractStructBase
     /**
      * Add item to Appointment_Specialty_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Appointment_Specialty_DataType $item
-     * @return \StructType\Appointment_SpecialtyType
+     * @param \WorkdayWsdl\\StructType\Appointment_Specialty_DataType $item
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyType
      */
-    public function addToAppointment_Specialty_Data(\StructType\Appointment_Specialty_DataType $item)
+    public function addToAppointment_Specialty_Data(\WorkdayWsdl\\StructType\Appointment_Specialty_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Appointment_Specialty_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Appointment_Specialty_Data property can only contain items of type \StructType\Appointment_Specialty_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Appointment_Specialty_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Appointment_Specialty_Data property can only contain items of type \WorkdayWsdl\\StructType\Appointment_Specialty_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Appointment_Specialty_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Appointment_SpecialtyType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Appointment_SpecialtyType
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class Effective_Dated_Web_Service_Additional_DataType extends AbstractStructBase
      * @uses \DOMDocument::saveXML()
      * @uses \DOMNode::item()
      * @param \DOMDocument $any
-     * @return \StructType\Effective_Dated_Web_Service_Additional_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType
      */
     public function setAny(\DOMDocument $any = null)
     {
@@ -61,7 +61,7 @@ class Effective_Dated_Web_Service_Additional_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Effective_Dated_Web_Service_Additional_DataType
+     * @return \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType
      */
     public static function __set_state(array $array)
     {

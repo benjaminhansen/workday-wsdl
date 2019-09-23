@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Period_Reporting_CalendarObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
      * Constructor method for Period_Reporting_CalendarObjectType
      * @uses Period_Reporting_CalendarObjectType::setID()
      * @uses Period_Reporting_CalendarObjectType::setDescriptor()
-     * @param \StructType\Period_Reporting_CalendarObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Period_Reporting_CalendarObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $period_Reporting_CalendarObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$period_Reporting_CalendarObjectTypeIDItem instanceof \StructType\Period_Reporting_CalendarObjectIDType) {
+            if (!$period_Reporting_CalendarObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType) {
                 $invalidValues[] = is_object($period_Reporting_CalendarObjectTypeIDItem) ? get_class($period_Reporting_CalendarObjectTypeIDItem) : sprintf('%s(%s)', gettype($period_Reporting_CalendarObjectTypeIDItem), var_export($period_Reporting_CalendarObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Period_Reporting_CalendarObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Reporting_CalendarObjectIDType[] $iD
-     * @return \StructType\Period_Reporting_CalendarObjectType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Reporting_CalendarObjectIDType $item
-     * @return \StructType\Period_Reporting_CalendarObjectType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType
      */
-    public function addToID(\StructType\Period_Reporting_CalendarObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Period_Reporting_CalendarObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Period_Reporting_CalendarObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Period_Reporting_CalendarObjectType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Period_Reporting_CalendarObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Period_Reporting_CalendarObjectType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType
      */
     public static function __set_state(array $array)
     {

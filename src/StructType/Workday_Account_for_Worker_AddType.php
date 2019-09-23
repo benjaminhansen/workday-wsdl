@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Worker_ReferenceType
      */
     public $Worker_Reference;
     /**
@@ -25,12 +25,12 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the person (non employee or contingent worker) for whom you are updating the account
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Non_Worker_Reference;
     /**
      * The Workday_Account_for_Worker_Data
-     * @var \StructType\Workday_Account_for_Worker_DataType
+     * @var \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType
      */
     public $Workday_Account_for_Worker_Data;
     /**
@@ -46,12 +46,12 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
      * @uses Workday_Account_for_Worker_AddType::setNon_Worker_Reference()
      * @uses Workday_Account_for_Worker_AddType::setWorkday_Account_for_Worker_Data()
      * @uses Workday_Account_for_Worker_AddType::setVersion()
-     * @param \StructType\Worker_ReferenceType $worker_Reference
-     * @param \StructType\RoleObjectType $non_Worker_Reference
-     * @param \StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $non_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data
      * @param string $version
      */
-    public function __construct(\StructType\Worker_ReferenceType $worker_Reference = null, \StructType\RoleObjectType $non_Worker_Reference = null, \StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null, \WorkdayWsdl\\StructType\RoleObjectType $non_Worker_Reference = null, \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data = null, $version = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -61,7 +61,7 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\Worker_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Worker_ReferenceType|null
      */
     public function getWorker_Reference()
     {
@@ -69,17 +69,17 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\Worker_ReferenceType $worker_Reference
-     * @return \StructType\Workday_Account_for_Worker_AddType
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_AddType
      */
-    public function setWorker_Reference(\StructType\Worker_ReferenceType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Non_Worker_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getNon_Worker_Reference()
     {
@@ -87,17 +87,17 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
     }
     /**
      * Set Non_Worker_Reference value
-     * @param \StructType\RoleObjectType $non_Worker_Reference
-     * @return \StructType\Workday_Account_for_Worker_AddType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $non_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_AddType
      */
-    public function setNon_Worker_Reference(\StructType\RoleObjectType $non_Worker_Reference = null)
+    public function setNon_Worker_Reference(\WorkdayWsdl\\StructType\RoleObjectType $non_Worker_Reference = null)
     {
         $this->Non_Worker_Reference = $non_Worker_Reference;
         return $this;
     }
     /**
      * Get Workday_Account_for_Worker_Data value
-     * @return \StructType\Workday_Account_for_Worker_DataType|null
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType|null
      */
     public function getWorkday_Account_for_Worker_Data()
     {
@@ -105,10 +105,10 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
     }
     /**
      * Set Workday_Account_for_Worker_Data value
-     * @param \StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data
-     * @return \StructType\Workday_Account_for_Worker_AddType
+     * @param \WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_AddType
      */
-    public function setWorkday_Account_for_Worker_Data(\StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data = null)
+    public function setWorkday_Account_for_Worker_Data(\WorkdayWsdl\\StructType\Workday_Account_for_Worker_DataType $workday_Account_for_Worker_Data = null)
     {
         $this->Workday_Account_for_Worker_Data = $workday_Account_for_Worker_Data;
         return $this;
@@ -124,7 +124,7 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Workday_Account_for_Worker_AddType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_AddType
      */
     public function setVersion($version = null)
     {
@@ -141,7 +141,7 @@ class Workday_Account_for_Worker_AddType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workday_Account_for_Worker_AddType
+     * @return \WorkdayWsdl\\StructType\Workday_Account_for_Worker_AddType
      */
     public static function __set_state(array $array)
     {

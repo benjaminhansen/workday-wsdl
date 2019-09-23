@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -37,7 +37,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Frequency.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -63,7 +63,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Supplier for the Contingent Worker.
      * - minOccurs: 0
-     * @var \StructType\SupplierObjectType
+     * @var \WorkdayWsdl\\StructType\SupplierObjectType
      */
     public $Supplier_Reference;
     /**
@@ -75,13 +75,13 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
      * @uses Worker_Contract_Detail_DataType::setContract_End_Date()
      * @uses Worker_Contract_Detail_DataType::setSupplier_Reference()
      * @param float $contract_Pay_Rate
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      * @param string $contract_Assignment_Details
      * @param string $contract_End_Date
-     * @param \StructType\SupplierObjectType $supplier_Reference
+     * @param \WorkdayWsdl\\StructType\SupplierObjectType $supplier_Reference
      */
-    public function __construct($contract_Pay_Rate = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null, $contract_Assignment_Details = null, $contract_End_Date = null, \StructType\SupplierObjectType $supplier_Reference = null)
+    public function __construct($contract_Pay_Rate = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, $contract_Assignment_Details = null, $contract_End_Date = null, \WorkdayWsdl\\StructType\SupplierObjectType $supplier_Reference = null)
     {
         $this
             ->setContract_Pay_Rate($contract_Pay_Rate)
@@ -102,7 +102,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     /**
      * Set Contract_Pay_Rate value
      * @param float $contract_Pay_Rate
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
     public function setContract_Pay_Rate($contract_Pay_Rate = null)
     {
@@ -123,7 +123,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -131,17 +131,17 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -149,10 +149,10 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -168,7 +168,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     /**
      * Set Contract_Assignment_Details value
      * @param string $contract_Assignment_Details
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
     public function setContract_Assignment_Details($contract_Assignment_Details = null)
     {
@@ -190,7 +190,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     /**
      * Set Contract_End_Date value
      * @param string $contract_End_Date
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
     public function setContract_End_Date($contract_End_Date = null)
     {
@@ -203,7 +203,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Supplier_Reference value
-     * @return \StructType\SupplierObjectType|null
+     * @return \WorkdayWsdl\\StructType\SupplierObjectType|null
      */
     public function getSupplier_Reference()
     {
@@ -211,10 +211,10 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Supplier_Reference value
-     * @param \StructType\SupplierObjectType $supplier_Reference
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\SupplierObjectType $supplier_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
-    public function setSupplier_Reference(\StructType\SupplierObjectType $supplier_Reference = null)
+    public function setSupplier_Reference(\WorkdayWsdl\\StructType\SupplierObjectType $supplier_Reference = null)
     {
         $this->Supplier_Reference = $supplier_Reference;
         return $this;
@@ -225,7 +225,7 @@ class Worker_Contract_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Contract_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Related_Persons_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Related_Person_DataType[]
+     * @var \WorkdayWsdl\\StructType\Related_Person_DataType[]
      */
     public $Related_Person_Data;
     /**
      * Constructor method for Related_Persons_DataType
      * @uses Related_Persons_DataType::setRelated_Person_Data()
-     * @param \StructType\Related_Person_DataType[] $related_Person_Data
+     * @param \WorkdayWsdl\\StructType\Related_Person_DataType[] $related_Person_Data
      */
     public function __construct(array $related_Person_Data = array())
     {
@@ -32,7 +32,7 @@ class Related_Persons_DataType extends AbstractStructBase
     }
     /**
      * Get Related_Person_Data value
-     * @return \StructType\Related_Person_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_DataType[]|null
      */
     public function getRelated_Person_Data()
     {
@@ -50,12 +50,12 @@ class Related_Persons_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $related_Persons_DataTypeRelated_Person_DataItem) {
             // validation for constraint: itemType
-            if (!$related_Persons_DataTypeRelated_Person_DataItem instanceof \StructType\Related_Person_DataType) {
+            if (!$related_Persons_DataTypeRelated_Person_DataItem instanceof \WorkdayWsdl\\StructType\Related_Person_DataType) {
                 $invalidValues[] = is_object($related_Persons_DataTypeRelated_Person_DataItem) ? get_class($related_Persons_DataTypeRelated_Person_DataItem) : sprintf('%s(%s)', gettype($related_Persons_DataTypeRelated_Person_DataItem), var_export($related_Persons_DataTypeRelated_Person_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Related_Person_Data property can only contain items of type \StructType\Related_Person_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Related_Person_Data property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Related_Persons_DataType extends AbstractStructBase
     /**
      * Set Related_Person_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_DataType[] $related_Person_Data
-     * @return \StructType\Related_Persons_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_DataType[] $related_Person_Data
+     * @return \WorkdayWsdl\\StructType\Related_Persons_DataType
      */
     public function setRelated_Person_Data(array $related_Person_Data = array())
     {
@@ -78,14 +78,14 @@ class Related_Persons_DataType extends AbstractStructBase
     /**
      * Add item to Related_Person_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_DataType $item
-     * @return \StructType\Related_Persons_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_DataType $item
+     * @return \WorkdayWsdl\\StructType\Related_Persons_DataType
      */
-    public function addToRelated_Person_Data(\StructType\Related_Person_DataType $item)
+    public function addToRelated_Person_Data(\WorkdayWsdl\\StructType\Related_Person_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Related_Person_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Related_Person_Data property can only contain items of type \StructType\Related_Person_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Related_Person_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Related_Person_Data property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Related_Person_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Related_Persons_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Related_Persons_DataType
+     * @return \WorkdayWsdl\\StructType\Related_Persons_DataType
      */
     public static function __set_state(array $array)
     {

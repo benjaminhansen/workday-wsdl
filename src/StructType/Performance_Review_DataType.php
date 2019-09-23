@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Performance_Review_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains a reference to latest completed performance review for the employee.
      * - minOccurs: 0
-     * @var \StructType\Performance_ReviewObjectType
+     * @var \WorkdayWsdl\\StructType\Performance_ReviewObjectType
      */
     public $Performance_Review_Reference;
     /**
@@ -25,17 +25,17 @@ class Performance_Review_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the information about the performance review for the employee.
      * - minOccurs: 0
-     * @var \StructType\Employee_Review_Details_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Review_Details_DataType
      */
     public $Review_Data;
     /**
      * Constructor method for Performance_Review_DataType
      * @uses Performance_Review_DataType::setPerformance_Review_Reference()
      * @uses Performance_Review_DataType::setReview_Data()
-     * @param \StructType\Performance_ReviewObjectType $performance_Review_Reference
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
+     * @param \WorkdayWsdl\\StructType\Performance_ReviewObjectType $performance_Review_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
      */
-    public function __construct(\StructType\Performance_ReviewObjectType $performance_Review_Reference = null, \StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Performance_ReviewObjectType $performance_Review_Reference = null, \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this
             ->setPerformance_Review_Reference($performance_Review_Reference)
@@ -43,7 +43,7 @@ class Performance_Review_DataType extends AbstractStructBase
     }
     /**
      * Get Performance_Review_Reference value
-     * @return \StructType\Performance_ReviewObjectType|null
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectType|null
      */
     public function getPerformance_Review_Reference()
     {
@@ -51,17 +51,17 @@ class Performance_Review_DataType extends AbstractStructBase
     }
     /**
      * Set Performance_Review_Reference value
-     * @param \StructType\Performance_ReviewObjectType $performance_Review_Reference
-     * @return \StructType\Performance_Review_DataType
+     * @param \WorkdayWsdl\\StructType\Performance_ReviewObjectType $performance_Review_Reference
+     * @return \WorkdayWsdl\\StructType\Performance_Review_DataType
      */
-    public function setPerformance_Review_Reference(\StructType\Performance_ReviewObjectType $performance_Review_Reference = null)
+    public function setPerformance_Review_Reference(\WorkdayWsdl\\StructType\Performance_ReviewObjectType $performance_Review_Reference = null)
     {
         $this->Performance_Review_Reference = $performance_Review_Reference;
         return $this;
     }
     /**
      * Get Review_Data value
-     * @return \StructType\Employee_Review_Details_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Review_Details_DataType|null
      */
     public function getReview_Data()
     {
@@ -69,10 +69,10 @@ class Performance_Review_DataType extends AbstractStructBase
     }
     /**
      * Set Review_Data value
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
-     * @return \StructType\Performance_Review_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
+     * @return \WorkdayWsdl\\StructType\Performance_Review_DataType
      */
-    public function setReview_Data(\StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function setReview_Data(\WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this->Review_Data = $review_Data;
         return $this;
@@ -83,7 +83,7 @@ class Performance_Review_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Performance_Review_DataType
+     * @return \WorkdayWsdl\\StructType\Performance_Review_DataType
      */
     public static function __set_state(array $array)
     {

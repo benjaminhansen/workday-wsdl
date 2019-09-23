@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Manage_Committee_Membership_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper Element for the Manage Committee Membership business process web service.
-     * @var \StructType\Manage_Committee_Membership_DataType
+     * @var \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
     public $Manage_Committee_Membership_Data;
     /**
@@ -38,11 +38,11 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
      * @uses Manage_Committee_Membership_RequestType::setBusiness_Process_Parameters()
      * @uses Manage_Committee_Membership_RequestType::setManage_Committee_Membership_Data()
      * @uses Manage_Committee_Membership_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -51,7 +51,7 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -59,17 +59,17 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Manage_Committee_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Manage_Committee_Membership_Data value
-     * @return \StructType\Manage_Committee_Membership_DataType|null
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType|null
      */
     public function getManage_Committee_Membership_Data()
     {
@@ -77,10 +77,10 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Set Manage_Committee_Membership_Data value
-     * @param \StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data
-     * @return \StructType\Manage_Committee_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_RequestType
      */
-    public function setManage_Committee_Membership_Data(\StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data = null)
+    public function setManage_Committee_Membership_Data(\WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType $manage_Committee_Membership_Data = null)
     {
         $this->Manage_Committee_Membership_Data = $manage_Committee_Membership_Data;
         return $this;
@@ -96,7 +96,7 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Manage_Committee_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_RequestType
      */
     public function setVersion($version = null)
     {
@@ -113,7 +113,7 @@ class Manage_Committee_Membership_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Committee_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_RequestType
      */
     public static function __set_state(array $array)
     {

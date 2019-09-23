@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Visa_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the Visa Identifier.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Visa_ID_Reference;
     /**
@@ -25,7 +25,7 @@ class Visa_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for the Visa Identifier Data
      * - minOccurs: 0
-     * @var \StructType\Visa_ID_DataType
+     * @var \WorkdayWsdl\\StructType\Visa_ID_DataType
      */
     public $Visa_ID_Data;
     /**
@@ -33,7 +33,7 @@ class Visa_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Shared Reference ID for Visa Identifiers.
      * - minOccurs: 0
-     * @var \StructType\Visa_Identifier_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType
      */
     public $Visa_ID_Shared_Reference;
     /**
@@ -49,12 +49,12 @@ class Visa_IDType extends AbstractStructBase
      * @uses Visa_IDType::setVisa_ID_Data()
      * @uses Visa_IDType::setVisa_ID_Shared_Reference()
      * @uses Visa_IDType::setDelete()
-     * @param \StructType\Unique_IdentifierObjectType $visa_ID_Reference
-     * @param \StructType\Visa_ID_DataType $visa_ID_Data
-     * @param \StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $visa_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Visa_ID_DataType $visa_ID_Data
+     * @param \WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $visa_ID_Reference = null, \StructType\Visa_ID_DataType $visa_ID_Data = null, \StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $visa_ID_Reference = null, \WorkdayWsdl\\StructType\Visa_ID_DataType $visa_ID_Data = null, \WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference = null, $delete = null)
     {
         $this
             ->setVisa_ID_Reference($visa_ID_Reference)
@@ -64,7 +64,7 @@ class Visa_IDType extends AbstractStructBase
     }
     /**
      * Get Visa_ID_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getVisa_ID_Reference()
     {
@@ -72,17 +72,17 @@ class Visa_IDType extends AbstractStructBase
     }
     /**
      * Set Visa_ID_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $visa_ID_Reference
-     * @return \StructType\Visa_IDType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $visa_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Visa_IDType
      */
-    public function setVisa_ID_Reference(\StructType\Unique_IdentifierObjectType $visa_ID_Reference = null)
+    public function setVisa_ID_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $visa_ID_Reference = null)
     {
         $this->Visa_ID_Reference = $visa_ID_Reference;
         return $this;
     }
     /**
      * Get Visa_ID_Data value
-     * @return \StructType\Visa_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\Visa_ID_DataType|null
      */
     public function getVisa_ID_Data()
     {
@@ -90,17 +90,17 @@ class Visa_IDType extends AbstractStructBase
     }
     /**
      * Set Visa_ID_Data value
-     * @param \StructType\Visa_ID_DataType $visa_ID_Data
-     * @return \StructType\Visa_IDType
+     * @param \WorkdayWsdl\\StructType\Visa_ID_DataType $visa_ID_Data
+     * @return \WorkdayWsdl\\StructType\Visa_IDType
      */
-    public function setVisa_ID_Data(\StructType\Visa_ID_DataType $visa_ID_Data = null)
+    public function setVisa_ID_Data(\WorkdayWsdl\\StructType\Visa_ID_DataType $visa_ID_Data = null)
     {
         $this->Visa_ID_Data = $visa_ID_Data;
         return $this;
     }
     /**
      * Get Visa_ID_Shared_Reference value
-     * @return \StructType\Visa_Identifier_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType|null
      */
     public function getVisa_ID_Shared_Reference()
     {
@@ -108,10 +108,10 @@ class Visa_IDType extends AbstractStructBase
     }
     /**
      * Set Visa_ID_Shared_Reference value
-     * @param \StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference
-     * @return \StructType\Visa_IDType
+     * @param \WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference
+     * @return \WorkdayWsdl\\StructType\Visa_IDType
      */
-    public function setVisa_ID_Shared_Reference(\StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference = null)
+    public function setVisa_ID_Shared_Reference(\WorkdayWsdl\\StructType\Visa_Identifier_ReferenceObjectType $visa_ID_Shared_Reference = null)
     {
         $this->Visa_ID_Shared_Reference = $visa_ID_Shared_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Visa_IDType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Visa_IDType
+     * @return \WorkdayWsdl\\StructType\Visa_IDType
      */
     public function setDelete($delete = null)
     {
@@ -144,7 +144,7 @@ class Visa_IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Visa_IDType
+     * @return \WorkdayWsdl\\StructType\Visa_IDType
      */
     public static function __set_state(array $array)
     {

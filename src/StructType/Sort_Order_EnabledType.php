@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Sort_Order_EnabledType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Sort_Order_Enabled_Order_Data_ContainerType[]
+     * @var \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType[]
      */
     public $Sort_Order_Enabled_Data;
     /**
      * Constructor method for Sort_Order_EnabledType
      * @uses Sort_Order_EnabledType::setSort_Order_Enabled_Data()
-     * @param \StructType\Sort_Order_Enabled_Order_Data_ContainerType[] $sort_Order_Enabled_Data
+     * @param \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType[] $sort_Order_Enabled_Data
      */
     public function __construct(array $sort_Order_Enabled_Data = array())
     {
@@ -32,7 +32,7 @@ class Sort_Order_EnabledType extends AbstractStructBase
     }
     /**
      * Get Sort_Order_Enabled_Data value
-     * @return \StructType\Sort_Order_Enabled_Order_Data_ContainerType[]|null
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType[]|null
      */
     public function getSort_Order_Enabled_Data()
     {
@@ -50,12 +50,12 @@ class Sort_Order_EnabledType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sort_Order_EnabledTypeSort_Order_Enabled_DataItem) {
             // validation for constraint: itemType
-            if (!$sort_Order_EnabledTypeSort_Order_Enabled_DataItem instanceof \StructType\Sort_Order_Enabled_Order_Data_ContainerType) {
+            if (!$sort_Order_EnabledTypeSort_Order_Enabled_DataItem instanceof \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType) {
                 $invalidValues[] = is_object($sort_Order_EnabledTypeSort_Order_Enabled_DataItem) ? get_class($sort_Order_EnabledTypeSort_Order_Enabled_DataItem) : sprintf('%s(%s)', gettype($sort_Order_EnabledTypeSort_Order_Enabled_DataItem), var_export($sort_Order_EnabledTypeSort_Order_Enabled_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Sort_Order_Enabled_Data property can only contain items of type \StructType\Sort_Order_Enabled_Order_Data_ContainerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Sort_Order_Enabled_Data property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Sort_Order_EnabledType extends AbstractStructBase
     /**
      * Set Sort_Order_Enabled_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_Enabled_Order_Data_ContainerType[] $sort_Order_Enabled_Data
-     * @return \StructType\Sort_Order_EnabledType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType[] $sort_Order_Enabled_Data
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledType
      */
     public function setSort_Order_Enabled_Data(array $sort_Order_Enabled_Data = array())
     {
@@ -78,14 +78,14 @@ class Sort_Order_EnabledType extends AbstractStructBase
     /**
      * Add item to Sort_Order_Enabled_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_Enabled_Order_Data_ContainerType $item
-     * @return \StructType\Sort_Order_EnabledType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $item
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledType
      */
-    public function addToSort_Order_Enabled_Data(\StructType\Sort_Order_Enabled_Order_Data_ContainerType $item)
+    public function addToSort_Order_Enabled_Data(\WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Sort_Order_Enabled_Order_Data_ContainerType) {
-            throw new \InvalidArgumentException(sprintf('The Sort_Order_Enabled_Data property can only contain items of type \StructType\Sort_Order_Enabled_Order_Data_ContainerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType) {
+            throw new \InvalidArgumentException(sprintf('The Sort_Order_Enabled_Data property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_Data_ContainerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Sort_Order_Enabled_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Sort_Order_EnabledType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sort_Order_EnabledType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledType
      */
     public static function __set_state(array $array)
     {

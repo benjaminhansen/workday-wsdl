@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Tenure_StatusObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
      * Constructor method for Academic_Tenure_StatusObjectType
      * @uses Academic_Tenure_StatusObjectType::setID()
      * @uses Academic_Tenure_StatusObjectType::setDescriptor()
-     * @param \StructType\Academic_Tenure_StatusObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Academic_Tenure_StatusObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Tenure_StatusObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$academic_Tenure_StatusObjectTypeIDItem instanceof \StructType\Academic_Tenure_StatusObjectIDType) {
+            if (!$academic_Tenure_StatusObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType) {
                 $invalidValues[] = is_object($academic_Tenure_StatusObjectTypeIDItem) ? get_class($academic_Tenure_StatusObjectTypeIDItem) : sprintf('%s(%s)', gettype($academic_Tenure_StatusObjectTypeIDItem), var_export($academic_Tenure_StatusObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Academic_Tenure_StatusObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Tenure_StatusObjectIDType[] $iD
-     * @return \StructType\Academic_Tenure_StatusObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Tenure_StatusObjectIDType $item
-     * @return \StructType\Academic_Tenure_StatusObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType
      */
-    public function addToID(\StructType\Academic_Tenure_StatusObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Tenure_StatusObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Academic_Tenure_StatusObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Academic_Tenure_StatusObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Academic_Tenure_StatusObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Tenure_StatusObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType
      */
     public static function __set_state(array $array)
     {

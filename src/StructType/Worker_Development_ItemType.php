@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Worker_Development_ItemType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the Development Item
      * - minOccurs: 0
-     * @var \StructType\Development_ItemObjectType
+     * @var \WorkdayWsdl\\StructType\Development_ItemObjectType
      */
     public $Development_Item_Reference;
     /**
      * The Development_Item_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Development_Item_Version_DataType
+     * @var \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public $Development_Item_Data;
     /**
      * Constructor method for Worker_Development_ItemType
      * @uses Worker_Development_ItemType::setDevelopment_Item_Reference()
      * @uses Worker_Development_ItemType::setDevelopment_Item_Data()
-     * @param \StructType\Development_ItemObjectType $development_Item_Reference
-     * @param \StructType\Development_Item_Version_DataType $development_Item_Data
+     * @param \WorkdayWsdl\\StructType\Development_ItemObjectType $development_Item_Reference
+     * @param \WorkdayWsdl\\StructType\Development_Item_Version_DataType $development_Item_Data
      */
-    public function __construct(\StructType\Development_ItemObjectType $development_Item_Reference = null, \StructType\Development_Item_Version_DataType $development_Item_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Development_ItemObjectType $development_Item_Reference = null, \WorkdayWsdl\\StructType\Development_Item_Version_DataType $development_Item_Data = null)
     {
         $this
             ->setDevelopment_Item_Reference($development_Item_Reference)
@@ -42,7 +42,7 @@ class Worker_Development_ItemType extends AbstractStructBase
     }
     /**
      * Get Development_Item_Reference value
-     * @return \StructType\Development_ItemObjectType|null
+     * @return \WorkdayWsdl\\StructType\Development_ItemObjectType|null
      */
     public function getDevelopment_Item_Reference()
     {
@@ -50,17 +50,17 @@ class Worker_Development_ItemType extends AbstractStructBase
     }
     /**
      * Set Development_Item_Reference value
-     * @param \StructType\Development_ItemObjectType $development_Item_Reference
-     * @return \StructType\Worker_Development_ItemType
+     * @param \WorkdayWsdl\\StructType\Development_ItemObjectType $development_Item_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Development_ItemType
      */
-    public function setDevelopment_Item_Reference(\StructType\Development_ItemObjectType $development_Item_Reference = null)
+    public function setDevelopment_Item_Reference(\WorkdayWsdl\\StructType\Development_ItemObjectType $development_Item_Reference = null)
     {
         $this->Development_Item_Reference = $development_Item_Reference;
         return $this;
     }
     /**
      * Get Development_Item_Data value
-     * @return \StructType\Development_Item_Version_DataType|null
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType|null
      */
     public function getDevelopment_Item_Data()
     {
@@ -68,10 +68,10 @@ class Worker_Development_ItemType extends AbstractStructBase
     }
     /**
      * Set Development_Item_Data value
-     * @param \StructType\Development_Item_Version_DataType $development_Item_Data
-     * @return \StructType\Worker_Development_ItemType
+     * @param \WorkdayWsdl\\StructType\Development_Item_Version_DataType $development_Item_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Development_ItemType
      */
-    public function setDevelopment_Item_Data(\StructType\Development_Item_Version_DataType $development_Item_Data = null)
+    public function setDevelopment_Item_Data(\WorkdayWsdl\\StructType\Development_Item_Version_DataType $development_Item_Data = null)
     {
         $this->Development_Item_Data = $development_Item_Data;
         return $this;
@@ -82,7 +82,7 @@ class Worker_Development_ItemType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Development_ItemType
+     * @return \WorkdayWsdl\\StructType\Worker_Development_ItemType
      */
     public static function __set_state(array $array)
     {

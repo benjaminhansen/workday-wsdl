@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,13 +16,13 @@ class External_Integration_ID_DataType extends AbstractStructBase
      * The ID
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\IDType[]
+     * @var \WorkdayWsdl\\StructType\IDType[]
      */
     public $ID;
     /**
      * Constructor method for External_Integration_ID_DataType
      * @uses External_Integration_ID_DataType::setID()
-     * @param \StructType\IDType[] $iD
+     * @param \WorkdayWsdl\\StructType\IDType[] $iD
      */
     public function __construct(array $iD = array())
     {
@@ -31,7 +31,7 @@ class External_Integration_ID_DataType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\IDType[]|null
+     * @return \WorkdayWsdl\\StructType\IDType[]|null
      */
     public function getID()
     {
@@ -49,12 +49,12 @@ class External_Integration_ID_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Integration_ID_DataTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Integration_ID_DataTypeIDItem instanceof \StructType\IDType) {
+            if (!$external_Integration_ID_DataTypeIDItem instanceof \WorkdayWsdl\\StructType\IDType) {
                 $invalidValues[] = is_object($external_Integration_ID_DataTypeIDItem) ? get_class($external_Integration_ID_DataTypeIDItem) : sprintf('%s(%s)', gettype($external_Integration_ID_DataTypeIDItem), var_export($external_Integration_ID_DataTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -62,8 +62,8 @@ class External_Integration_ID_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\IDType[] $iD
-     * @return \StructType\External_Integration_ID_DataType
+     * @param \WorkdayWsdl\\StructType\IDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public function setID(array $iD = array())
     {
@@ -77,14 +77,14 @@ class External_Integration_ID_DataType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\IDType $item
-     * @return \StructType\External_Integration_ID_DataType
+     * @param \WorkdayWsdl\\StructType\IDType $item
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
-    public function addToID(\StructType\IDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\IDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\IDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -95,7 +95,7 @@ class External_Integration_ID_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Integration_ID_DataType
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public static function __set_state(array $array)
     {

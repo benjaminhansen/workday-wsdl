@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Pay_Rate_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Pay_Type_Name value
      * @param string $pay_Type_Name
-     * @return \StructType\Pay_Rate_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType
      */
     public function setPay_Type_Name($pay_Type_Name = null)
     {
@@ -59,7 +59,7 @@ class Pay_Rate_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pay_Rate_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

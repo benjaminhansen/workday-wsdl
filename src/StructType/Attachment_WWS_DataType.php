@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Mime Type Reference
      * - minOccurs: 0
-     * @var \StructType\Mime_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Mime_TypeObjectType
      */
     public $Mime_Type_Reference;
     /**
@@ -66,10 +66,10 @@ class Attachment_WWS_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $filename
      * @param string $file_Content
-     * @param \StructType\Mime_TypeObjectType $mime_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Mime_TypeObjectType $mime_Type_Reference
      * @param string $comment
      */
-    public function __construct($iD = null, $filename = null, $file_Content = null, \StructType\Mime_TypeObjectType $mime_Type_Reference = null, $comment = null)
+    public function __construct($iD = null, $filename = null, $file_Content = null, \WorkdayWsdl\\StructType\Mime_TypeObjectType $mime_Type_Reference = null, $comment = null)
     {
         $this
             ->setID($iD)
@@ -89,7 +89,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Attachment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
     public function setID($iD = null)
     {
@@ -111,7 +111,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
     /**
      * Set Filename value
      * @param string $filename
-     * @return \StructType\Attachment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
     public function setFilename($filename = null)
     {
@@ -137,7 +137,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
     /**
      * Set File_Content value
      * @param string $file_Content
-     * @return \StructType\Attachment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
     public function setFile_Content($file_Content = null)
     {
@@ -150,7 +150,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
     }
     /**
      * Get Mime_Type_Reference value
-     * @return \StructType\Mime_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectType|null
      */
     public function getMime_Type_Reference()
     {
@@ -158,10 +158,10 @@ class Attachment_WWS_DataType extends AbstractStructBase
     }
     /**
      * Set Mime_Type_Reference value
-     * @param \StructType\Mime_TypeObjectType $mime_Type_Reference
-     * @return \StructType\Attachment_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\Mime_TypeObjectType $mime_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
-    public function setMime_Type_Reference(\StructType\Mime_TypeObjectType $mime_Type_Reference = null)
+    public function setMime_Type_Reference(\WorkdayWsdl\\StructType\Mime_TypeObjectType $mime_Type_Reference = null)
     {
         $this->Mime_Type_Reference = $mime_Type_Reference;
         return $this;
@@ -177,7 +177,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Attachment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
     public function setComment($comment = null)
     {
@@ -194,7 +194,7 @@ class Attachment_WWS_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Attachment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType
      */
     public static function __set_state(array $array)
     {

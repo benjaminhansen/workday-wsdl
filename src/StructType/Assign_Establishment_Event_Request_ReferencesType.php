@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: Workers Secured by Transaction Reference
      * - maxOccurs: unbounded
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Workers_Secured_by_Transaction_Reference;
     /**
      * Constructor method for Assign_Establishment_Event_Request_ReferencesType
      * @uses Assign_Establishment_Event_Request_ReferencesType::setWorkers_Secured_by_Transaction_Reference()
-     * @param \StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
      */
     public function __construct(array $workers_Secured_by_Transaction_Reference = array())
     {
@@ -33,7 +33,7 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
     }
     /**
      * Get Workers_Secured_by_Transaction_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorkers_Secured_by_Transaction_Reference()
     {
@@ -51,12 +51,12 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
         $invalidValues = [];
         foreach ($values as $assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem) ? get_class($assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem) : sprintf('%s(%s)', gettype($assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem), var_export($assign_Establishment_Event_Request_ReferencesTypeWorkers_Secured_by_Transaction_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
     /**
      * Set Workers_Secured_by_Transaction_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
-     * @return \StructType\Assign_Establishment_Event_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $workers_Secured_by_Transaction_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Request_ReferencesType
      */
     public function setWorkers_Secured_by_Transaction_Reference(array $workers_Secured_by_Transaction_Reference = array())
     {
@@ -79,14 +79,14 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
     /**
      * Add item to Workers_Secured_by_Transaction_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Assign_Establishment_Event_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Request_ReferencesType
      */
-    public function addToWorkers_Secured_by_Transaction_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorkers_Secured_by_Transaction_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workers_Secured_by_Transaction_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workers_Secured_by_Transaction_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Assign_Establishment_Event_Request_ReferencesType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Establishment_Event_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

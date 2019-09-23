@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Component_CompletionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Component_CompletionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Component_CompletionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Component_CompletionObjectType extends AbstractStructBase
      * Constructor method for Component_CompletionObjectType
      * @uses Component_CompletionObjectType::setID()
      * @uses Component_CompletionObjectType::setDescriptor()
-     * @param \StructType\Component_CompletionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Component_CompletionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Component_CompletionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Component_CompletionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Component_CompletionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $component_CompletionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$component_CompletionObjectTypeIDItem instanceof \StructType\Component_CompletionObjectIDType) {
+            if (!$component_CompletionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Component_CompletionObjectIDType) {
                 $invalidValues[] = is_object($component_CompletionObjectTypeIDItem) ? get_class($component_CompletionObjectTypeIDItem) : sprintf('%s(%s)', gettype($component_CompletionObjectTypeIDItem), var_export($component_CompletionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Component_CompletionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Component_CompletionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Component_CompletionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Component_CompletionObjectIDType[] $iD
-     * @return \StructType\Component_CompletionObjectType
+     * @param \WorkdayWsdl\\StructType\Component_CompletionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Component_CompletionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Component_CompletionObjectIDType $item
-     * @return \StructType\Component_CompletionObjectType
+     * @param \WorkdayWsdl\\StructType\Component_CompletionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectType
      */
-    public function addToID(\StructType\Component_CompletionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Component_CompletionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Component_CompletionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Component_CompletionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Component_CompletionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Component_CompletionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Component_CompletionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Component_CompletionObjectType
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Component_CompletionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Component_CompletionObjectType
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectType
      */
     public static function __set_state(array $array)
     {

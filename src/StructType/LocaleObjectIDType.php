@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class LocaleObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\LocaleReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\LocaleReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\LocaleReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\LocaleReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\LocaleObjectIDType
+     * @return \WorkdayWsdl\\StructType\LocaleObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\LocaleReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\LocaleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\LocaleReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\LocaleReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\LocaleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\LocaleReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class LocaleObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\LocaleObjectIDType
+     * @return \WorkdayWsdl\\StructType\LocaleObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class LocaleObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LocaleObjectIDType
+     * @return \WorkdayWsdl\\StructType\LocaleObjectIDType
      */
     public static function __set_state(array $array)
     {

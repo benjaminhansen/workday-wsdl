@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Period_Reporting_CalendarType[]
+     * @var \WorkdayWsdl\\StructType\Period_Reporting_CalendarType[]
      */
     public $Period_Reporting_Calendar;
     /**
      * Constructor method for Period_Reporting_Calendar_Response_DataType
      * @uses Period_Reporting_Calendar_Response_DataType::setPeriod_Reporting_Calendar()
-     * @param \StructType\Period_Reporting_CalendarType[] $period_Reporting_Calendar
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarType[] $period_Reporting_Calendar
      */
     public function __construct(array $period_Reporting_Calendar = array())
     {
@@ -32,7 +32,7 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Period_Reporting_Calendar value
-     * @return \StructType\Period_Reporting_CalendarType[]|null
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarType[]|null
      */
     public function getPeriod_Reporting_Calendar()
     {
@@ -50,12 +50,12 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem) {
             // validation for constraint: itemType
-            if (!$period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem instanceof \StructType\Period_Reporting_CalendarType) {
+            if (!$period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem instanceof \WorkdayWsdl\\StructType\Period_Reporting_CalendarType) {
                 $invalidValues[] = is_object($period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem) ? get_class($period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem) : sprintf('%s(%s)', gettype($period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem), var_export($period_Reporting_Calendar_Response_DataTypePeriod_Reporting_CalendarItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Period_Reporting_Calendar property can only contain items of type \StructType\Period_Reporting_CalendarType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Period_Reporting_Calendar property can only contain items of type \WorkdayWsdl\\StructType\Period_Reporting_CalendarType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
     /**
      * Set Period_Reporting_Calendar value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Reporting_CalendarType[] $period_Reporting_Calendar
-     * @return \StructType\Period_Reporting_Calendar_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarType[] $period_Reporting_Calendar
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Response_DataType
      */
     public function setPeriod_Reporting_Calendar(array $period_Reporting_Calendar = array())
     {
@@ -78,14 +78,14 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
     /**
      * Add item to Period_Reporting_Calendar value
      * @throws \InvalidArgumentException
-     * @param \StructType\Period_Reporting_CalendarType $item
-     * @return \StructType\Period_Reporting_Calendar_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarType $item
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Response_DataType
      */
-    public function addToPeriod_Reporting_Calendar(\StructType\Period_Reporting_CalendarType $item)
+    public function addToPeriod_Reporting_Calendar(\WorkdayWsdl\\StructType\Period_Reporting_CalendarType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Period_Reporting_CalendarType) {
-            throw new \InvalidArgumentException(sprintf('The Period_Reporting_Calendar property can only contain items of type \StructType\Period_Reporting_CalendarType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Period_Reporting_CalendarType) {
+            throw new \InvalidArgumentException(sprintf('The Period_Reporting_Calendar property can only contain items of type \WorkdayWsdl\\StructType\Period_Reporting_CalendarType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Period_Reporting_Calendar[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Period_Reporting_Calendar_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Period_Reporting_Calendar_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_Response_DataType
      */
     public static function __set_state(array $array)
     {

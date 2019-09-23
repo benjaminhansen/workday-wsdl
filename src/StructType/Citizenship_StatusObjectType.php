@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Citizenship_StatusObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Citizenship_StatusObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Citizenship_StatusObjectType extends AbstractStructBase
      * Constructor method for Citizenship_StatusObjectType
      * @uses Citizenship_StatusObjectType::setID()
      * @uses Citizenship_StatusObjectType::setDescriptor()
-     * @param \StructType\Citizenship_StatusObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Citizenship_StatusObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Citizenship_StatusObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Citizenship_StatusObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $citizenship_StatusObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$citizenship_StatusObjectTypeIDItem instanceof \StructType\Citizenship_StatusObjectIDType) {
+            if (!$citizenship_StatusObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType) {
                 $invalidValues[] = is_object($citizenship_StatusObjectTypeIDItem) ? get_class($citizenship_StatusObjectTypeIDItem) : sprintf('%s(%s)', gettype($citizenship_StatusObjectTypeIDItem), var_export($citizenship_StatusObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Citizenship_StatusObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Citizenship_StatusObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectIDType[] $iD
-     * @return \StructType\Citizenship_StatusObjectType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Citizenship_StatusObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectIDType $item
-     * @return \StructType\Citizenship_StatusObjectType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType
      */
-    public function addToID(\StructType\Citizenship_StatusObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Citizenship_StatusObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Citizenship_StatusObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Citizenship_StatusObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Citizenship_StatusObjectType
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Citizenship_StatusObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Citizenship_StatusObjectType
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType
      */
     public static function __set_state(array $array)
     {

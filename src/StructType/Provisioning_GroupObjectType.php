@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Provisioning_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Provisioning_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Provisioning_GroupObjectType extends AbstractStructBase
      * Constructor method for Provisioning_GroupObjectType
      * @uses Provisioning_GroupObjectType::setID()
      * @uses Provisioning_GroupObjectType::setDescriptor()
-     * @param \StructType\Provisioning_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Provisioning_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Provisioning_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Provisioning_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $provisioning_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$provisioning_GroupObjectTypeIDItem instanceof \StructType\Provisioning_GroupObjectIDType) {
+            if (!$provisioning_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType) {
                 $invalidValues[] = is_object($provisioning_GroupObjectTypeIDItem) ? get_class($provisioning_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($provisioning_GroupObjectTypeIDItem), var_export($provisioning_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Provisioning_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Provisioning_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_GroupObjectIDType[] $iD
-     * @return \StructType\Provisioning_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Provisioning_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Provisioning_GroupObjectIDType $item
-     * @return \StructType\Provisioning_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType
      */
-    public function addToID(\StructType\Provisioning_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Provisioning_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Provisioning_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Provisioning_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Provisioning_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Provisioning_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Provisioning_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Provisioning_GroupObjectType
      */
     public static function __set_state(array $array)
     {

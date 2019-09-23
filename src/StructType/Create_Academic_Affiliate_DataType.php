@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the components of a name, such as the First Name and Last Name.
      * - minOccurs: 0
-     * @var \StructType\Person_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public $Person_Name_Data;
     /**
@@ -34,7 +34,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: All of the person's contact data (address, phone, email, instant messenger, web address).
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public $Contact_Information_Data;
     /**
@@ -42,7 +42,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Personal Information for a new Academic Affiliate.
      * - minOccurs: 0
-     * @var \StructType\Generic_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public $Personal_Information_Data;
     /**
@@ -50,14 +50,14 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper for Person Identification Data. Includes National Identifiers, Government Identifiers, Visa Identifiers, Passport Identifiers, License Identifiers and Custom Identifiers.
      * - minOccurs: 0
-     * @var \StructType\Person_Identification_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Identification_DataType
      */
     public $Person_Identification_Data;
     /**
      * The Person_Photo_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Person_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Photo_DataType
      */
     public $Person_Photo_Data;
     /**
@@ -66,7 +66,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * - documentation: Reference to the location context for the Affiliate. Auto-populated from the country from the person's legal name.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_ContextObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_ContextObjectType[]
      */
     public $Location_Contexts_Reference;
     /**
@@ -79,14 +79,14 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * @uses Create_Academic_Affiliate_DataType::setPerson_Photo_Data()
      * @uses Create_Academic_Affiliate_DataType::setLocation_Contexts_Reference()
      * @param string $iD
-     * @param \StructType\Person_Name_DataType $person_Name_Data
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @param \StructType\Generic_Personal_Information_DataType $personal_Information_Data
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
-     * @param \StructType\Person_Photo_DataType $person_Photo_Data
-     * @param \StructType\Location_ContextObjectType[] $location_Contexts_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType[] $location_Contexts_Reference
      */
-    public function __construct($iD = null, \StructType\Person_Name_DataType $person_Name_Data = null, \StructType\Contact_Information_DataType $contact_Information_Data = null, \StructType\Generic_Personal_Information_DataType $personal_Information_Data = null, \StructType\Person_Identification_DataType $person_Identification_Data = null, \StructType\Person_Photo_DataType $person_Photo_Data = null, array $location_Contexts_Reference = array())
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data = null, \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null, \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null, \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null, \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data = null, array $location_Contexts_Reference = array())
     {
         $this
             ->setID($iD)
@@ -108,7 +108,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
     public function setID($iD = null)
     {
@@ -121,7 +121,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Name_Data value
-     * @return \StructType\Person_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType|null
      */
     public function getPerson_Name_Data()
     {
@@ -129,17 +129,17 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Name_Data value
-     * @param \StructType\Person_Name_DataType $person_Name_Data
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function setPerson_Name_Data(\StructType\Person_Name_DataType $person_Name_Data = null)
+    public function setPerson_Name_Data(\WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data = null)
     {
         $this->Person_Name_Data = $person_Name_Data;
         return $this;
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType|null
      */
     public function getContact_Information_Data()
     {
@@ -147,17 +147,17 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Set Contact_Information_Data value
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function setContact_Information_Data(\StructType\Contact_Information_DataType $contact_Information_Data = null)
+    public function setContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null)
     {
         $this->Contact_Information_Data = $contact_Information_Data;
         return $this;
     }
     /**
      * Get Personal_Information_Data value
-     * @return \StructType\Generic_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType|null
      */
     public function getPersonal_Information_Data()
     {
@@ -165,17 +165,17 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Set Personal_Information_Data value
-     * @param \StructType\Generic_Personal_Information_DataType $personal_Information_Data
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function setPersonal_Information_Data(\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null)
+    public function setPersonal_Information_Data(\WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this->Personal_Information_Data = $personal_Information_Data;
         return $this;
     }
     /**
      * Get Person_Identification_Data value
-     * @return \StructType\Person_Identification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Identification_DataType|null
      */
     public function getPerson_Identification_Data()
     {
@@ -183,17 +183,17 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Identification_Data value
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function setPerson_Identification_Data(\StructType\Person_Identification_DataType $person_Identification_Data = null)
+    public function setPerson_Identification_Data(\WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null)
     {
         $this->Person_Identification_Data = $person_Identification_Data;
         return $this;
     }
     /**
      * Get Person_Photo_Data value
-     * @return \StructType\Person_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Photo_DataType|null
      */
     public function getPerson_Photo_Data()
     {
@@ -201,17 +201,17 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Photo_Data value
-     * @param \StructType\Person_Photo_DataType $person_Photo_Data
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function setPerson_Photo_Data(\StructType\Person_Photo_DataType $person_Photo_Data = null)
+    public function setPerson_Photo_Data(\WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data = null)
     {
         $this->Person_Photo_Data = $person_Photo_Data;
         return $this;
     }
     /**
      * Get Location_Contexts_Reference value
-     * @return \StructType\Location_ContextObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectType[]|null
      */
     public function getLocation_Contexts_Reference()
     {
@@ -229,12 +229,12 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem instanceof \StructType\Location_ContextObjectType) {
+            if (!$create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_ContextObjectType) {
                 $invalidValues[] = is_object($create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem) ? get_class($create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem) : sprintf('%s(%s)', gettype($create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem), var_export($create_Academic_Affiliate_DataTypeLocation_Contexts_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Contexts_Reference property can only contain items of type \StructType\Location_ContextObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Contexts_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_ContextObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -242,8 +242,8 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     /**
      * Set Location_Contexts_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_ContextObjectType[] $location_Contexts_Reference
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType[] $location_Contexts_Reference
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
     public function setLocation_Contexts_Reference(array $location_Contexts_Reference = array())
     {
@@ -257,14 +257,14 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
     /**
      * Add item to Location_Contexts_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_ContextObjectType $item
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $item
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
-    public function addToLocation_Contexts_Reference(\StructType\Location_ContextObjectType $item)
+    public function addToLocation_Contexts_Reference(\WorkdayWsdl\\StructType\Location_ContextObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_ContextObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Contexts_Reference property can only contain items of type \StructType\Location_ContextObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_ContextObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Contexts_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_ContextObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Contexts_Reference[] = $item;
         return $this;
@@ -275,7 +275,7 @@ class Create_Academic_Affiliate_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Create_Academic_Affiliate_DataType
+     * @return \WorkdayWsdl\\StructType\Create_Academic_Affiliate_DataType
      */
     public static function __set_state(array $array)
     {

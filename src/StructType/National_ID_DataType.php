@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class National_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: National Identifier Type.
      * - minOccurs: 0
-     * @var \StructType\National_ID_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\National_ID_TypeObjectType
      */
     public $ID_Type_Reference;
     /**
@@ -35,7 +35,7 @@ class National_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country issuing National Identifier.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -88,7 +88,7 @@ class National_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker who verified the ID.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Verified_By_Reference;
     /**
@@ -103,16 +103,16 @@ class National_ID_DataType extends AbstractStructBase
      * @uses National_ID_DataType::setIssuing_Agency()
      * @uses National_ID_DataType::setVerified_By_Reference()
      * @param string $iD
-     * @param \StructType\National_ID_TypeObjectType $iD_Type_Reference
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectType $iD_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
      * @param string $series
      * @param string $issuing_Agency
-     * @param \StructType\WorkerObjectType $verified_By_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference
      */
-    public function __construct($iD = null, \StructType\National_ID_TypeObjectType $iD_Type_Reference = null, \StructType\CountryObjectType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, $series = null, $issuing_Agency = null, \StructType\WorkerObjectType $verified_By_Reference = null)
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\National_ID_TypeObjectType $iD_Type_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, $series = null, $issuing_Agency = null, \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference = null)
     {
         $this
             ->setID($iD)
@@ -136,7 +136,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setID($iD = null)
     {
@@ -149,7 +149,7 @@ class National_ID_DataType extends AbstractStructBase
     }
     /**
      * Get ID_Type_Reference value
-     * @return \StructType\National_ID_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\National_ID_TypeObjectType|null
      */
     public function getID_Type_Reference()
     {
@@ -157,17 +157,17 @@ class National_ID_DataType extends AbstractStructBase
     }
     /**
      * Set ID_Type_Reference value
-     * @param \StructType\National_ID_TypeObjectType $iD_Type_Reference
-     * @return \StructType\National_ID_DataType
+     * @param \WorkdayWsdl\\StructType\National_ID_TypeObjectType $iD_Type_Reference
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
-    public function setID_Type_Reference(\StructType\National_ID_TypeObjectType $iD_Type_Reference = null)
+    public function setID_Type_Reference(\WorkdayWsdl\\StructType\National_ID_TypeObjectType $iD_Type_Reference = null)
     {
         $this->ID_Type_Reference = $iD_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -175,10 +175,10 @@ class National_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\National_ID_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -194,7 +194,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -216,7 +216,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -238,7 +238,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -260,7 +260,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set Series value
      * @param string $series
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setSeries($series = null)
     {
@@ -282,7 +282,7 @@ class National_ID_DataType extends AbstractStructBase
     /**
      * Set Issuing_Agency value
      * @param string $issuing_Agency
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public function setIssuing_Agency($issuing_Agency = null)
     {
@@ -295,7 +295,7 @@ class National_ID_DataType extends AbstractStructBase
     }
     /**
      * Get Verified_By_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getVerified_By_Reference()
     {
@@ -303,10 +303,10 @@ class National_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Verified_By_Reference value
-     * @param \StructType\WorkerObjectType $verified_By_Reference
-     * @return \StructType\National_ID_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
-    public function setVerified_By_Reference(\StructType\WorkerObjectType $verified_By_Reference = null)
+    public function setVerified_By_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $verified_By_Reference = null)
     {
         $this->Verified_By_Reference = $verified_By_Reference;
         return $this;
@@ -317,7 +317,7 @@ class National_ID_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\National_ID_DataType
+     * @return \WorkdayWsdl\\StructType\National_ID_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -97,7 +97,7 @@ class Response_ResultsType extends AbstractStructBase
     /**
      * Set Total_Results value
      * @param float $total_Results
-     * @return \StructType\Response_ResultsType
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public function setTotal_Results($total_Results = null)
     {
@@ -131,7 +131,7 @@ class Response_ResultsType extends AbstractStructBase
     /**
      * Set Total_Pages value
      * @param float $total_Pages
-     * @return \StructType\Response_ResultsType
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public function setTotal_Pages($total_Pages = null)
     {
@@ -165,7 +165,7 @@ class Response_ResultsType extends AbstractStructBase
     /**
      * Set Page_Results value
      * @param float $page_Results
-     * @return \StructType\Response_ResultsType
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public function setPage_Results($page_Results = null)
     {
@@ -199,7 +199,7 @@ class Response_ResultsType extends AbstractStructBase
     /**
      * Set Page value
      * @param float $page
-     * @return \StructType\Response_ResultsType
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public function setPage($page = null)
     {
@@ -228,7 +228,7 @@ class Response_ResultsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Response_ResultsType
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public static function __set_state(array $array)
     {

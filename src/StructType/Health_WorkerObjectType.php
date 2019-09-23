@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Health_WorkerObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Health_WorkerObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Health_WorkerObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Health_WorkerObjectType extends AbstractStructBase
      * Constructor method for Health_WorkerObjectType
      * @uses Health_WorkerObjectType::setID()
      * @uses Health_WorkerObjectType::setDescriptor()
-     * @param \StructType\Health_WorkerObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Health_WorkerObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Health_WorkerObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Health_WorkerObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Health_WorkerObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $health_WorkerObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$health_WorkerObjectTypeIDItem instanceof \StructType\Health_WorkerObjectIDType) {
+            if (!$health_WorkerObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Health_WorkerObjectIDType) {
                 $invalidValues[] = is_object($health_WorkerObjectTypeIDItem) ? get_class($health_WorkerObjectTypeIDItem) : sprintf('%s(%s)', gettype($health_WorkerObjectTypeIDItem), var_export($health_WorkerObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Health_WorkerObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Health_WorkerObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Health_WorkerObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Health_WorkerObjectIDType[] $iD
-     * @return \StructType\Health_WorkerObjectType
+     * @param \WorkdayWsdl\\StructType\Health_WorkerObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Health_WorkerObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Health_WorkerObjectIDType $item
-     * @return \StructType\Health_WorkerObjectType
+     * @param \WorkdayWsdl\\StructType\Health_WorkerObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectType
      */
-    public function addToID(\StructType\Health_WorkerObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Health_WorkerObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Health_WorkerObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Health_WorkerObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Health_WorkerObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Health_WorkerObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Health_WorkerObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Health_WorkerObjectType
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Health_WorkerObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Health_WorkerObjectType
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectType
      */
     public static function __set_state(array $array)
     {

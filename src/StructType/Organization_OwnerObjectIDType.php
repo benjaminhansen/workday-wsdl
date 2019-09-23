@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Organization_OwnerObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Organization_OwnerReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Organization_OwnerReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Organization_OwnerReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Organization_OwnerReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Organization_OwnerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Organization_OwnerObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Organization_OwnerReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Organization_OwnerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Organization_OwnerReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Organization_OwnerReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Organization_OwnerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Organization_OwnerReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Organization_OwnerObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Organization_OwnerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Organization_OwnerObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Organization_OwnerObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_OwnerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Organization_OwnerObjectIDType
      */
     public static function __set_state(array $array)
     {

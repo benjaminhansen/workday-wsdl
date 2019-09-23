@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Workteam membership reference.
      * - minOccurs: 0
-     * @var \StructType\WorkteamObjectType
+     * @var \WorkdayWsdl\\StructType\WorkteamObjectType
      */
     public $Workteam_Membership_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
      * Constructor method for Put_Workteam_Membership_ResponseType
      * @uses Put_Workteam_Membership_ResponseType::setWorkteam_Membership_Reference()
      * @uses Put_Workteam_Membership_ResponseType::setVersion()
-     * @param \StructType\WorkteamObjectType $workteam_Membership_Reference
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Membership_Reference
      * @param string $version
      */
-    public function __construct(\StructType\WorkteamObjectType $workteam_Membership_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Membership_Reference = null, $version = null)
     {
         $this
             ->setWorkteam_Membership_Reference($workteam_Membership_Reference)
@@ -42,7 +42,7 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
     }
     /**
      * Get Workteam_Membership_Reference value
-     * @return \StructType\WorkteamObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkteamObjectType|null
      */
     public function getWorkteam_Membership_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
     }
     /**
      * Set Workteam_Membership_Reference value
-     * @param \StructType\WorkteamObjectType $workteam_Membership_Reference
-     * @return \StructType\Put_Workteam_Membership_ResponseType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Membership_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_ResponseType
      */
-    public function setWorkteam_Membership_Reference(\StructType\WorkteamObjectType $workteam_Membership_Reference = null)
+    public function setWorkteam_Membership_Reference(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Membership_Reference = null)
     {
         $this->Workteam_Membership_Reference = $workteam_Membership_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Workteam_Membership_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Workteam_Membership_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Workteam_Membership_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_ResponseType
      */
     public static function __set_state(array $array)
     {

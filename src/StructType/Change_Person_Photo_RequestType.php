@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Person_Photo_Data
-     * @var \StructType\Change_Person_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
     public $Person_Photo_Data;
     /**
@@ -36,11 +36,11 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
      * @uses Change_Person_Photo_RequestType::setBusiness_Process_Parameters()
      * @uses Change_Person_Photo_RequestType::setPerson_Photo_Data()
      * @uses Change_Person_Photo_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Change_Person_Photo_DataType $person_Photo_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Change_Person_Photo_DataType $person_Photo_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -49,7 +49,7 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -57,17 +57,17 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Change_Person_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Person_Photo_Data value
-     * @return \StructType\Change_Person_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType|null
      */
     public function getPerson_Photo_Data()
     {
@@ -75,10 +75,10 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Set Person_Photo_Data value
-     * @param \StructType\Change_Person_Photo_DataType $person_Photo_Data
-     * @return \StructType\Change_Person_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_RequestType
      */
-    public function setPerson_Photo_Data(\StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
+    public function setPerson_Photo_Data(\WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
     {
         $this->Person_Photo_Data = $person_Photo_Data;
         return $this;
@@ -94,7 +94,7 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Person_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Change_Person_Photo_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Person_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_RequestType
      */
     public static function __set_state(array $array)
     {

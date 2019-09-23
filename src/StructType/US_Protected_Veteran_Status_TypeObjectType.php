@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\US_Protected_Veteran_Status_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
      * Constructor method for US_Protected_Veteran_Status_TypeObjectType
      * @uses US_Protected_Veteran_Status_TypeObjectType::setID()
      * @uses US_Protected_Veteran_Status_TypeObjectType::setDescriptor()
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $uS_Protected_Veteran_Status_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$uS_Protected_Veteran_Status_TypeObjectTypeIDItem instanceof \StructType\US_Protected_Veteran_Status_TypeObjectIDType) {
+            if (!$uS_Protected_Veteran_Status_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType) {
                 $invalidValues[] = is_object($uS_Protected_Veteran_Status_TypeObjectTypeIDItem) ? get_class($uS_Protected_Veteran_Status_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($uS_Protected_Veteran_Status_TypeObjectTypeIDItem), var_export($uS_Protected_Veteran_Status_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\US_Protected_Veteran_Status_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectIDType[] $iD
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectIDType $item
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType
      */
-    public function addToID(\StructType\US_Protected_Veteran_Status_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\US_Protected_Veteran_Status_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\US_Protected_Veteran_Status_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class US_Protected_Veteran_Status_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType
      */
     public static function __set_state(array $array)
     {

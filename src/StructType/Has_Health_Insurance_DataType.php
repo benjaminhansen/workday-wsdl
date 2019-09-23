@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Has_Health_Insurance_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Has_Health_Insurance_DataType
+     * @return \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -76,7 +76,7 @@ class Has_Health_Insurance_DataType extends AbstractStructBase
     /**
      * Set Has_Health_Insurance value
      * @param bool $has_Health_Insurance
-     * @return \StructType\Has_Health_Insurance_DataType
+     * @return \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType
      */
     public function setHas_Health_Insurance($has_Health_Insurance = null)
     {
@@ -93,7 +93,7 @@ class Has_Health_Insurance_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Has_Health_Insurance_DataType
+     * @return \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType
      */
     public static function __set_state(array $array)
     {

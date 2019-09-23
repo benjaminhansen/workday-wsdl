@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Pay_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Pay_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Pay_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Pay_GroupObjectType extends AbstractStructBase
      * Constructor method for Pay_GroupObjectType
      * @uses Pay_GroupObjectType::setID()
      * @uses Pay_GroupObjectType::setDescriptor()
-     * @param \StructType\Pay_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Pay_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Pay_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Pay_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pay_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$pay_GroupObjectTypeIDItem instanceof \StructType\Pay_GroupObjectIDType) {
+            if (!$pay_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Pay_GroupObjectIDType) {
                 $invalidValues[] = is_object($pay_GroupObjectTypeIDItem) ? get_class($pay_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($pay_GroupObjectTypeIDItem), var_export($pay_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Pay_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Pay_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Pay_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_GroupObjectIDType[] $iD
-     * @return \StructType\Pay_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Pay_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_GroupObjectIDType $item
-     * @return \StructType\Pay_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
-    public function addToID(\StructType\Pay_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Pay_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Pay_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Pay_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Pay_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Pay_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Pay_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Pay_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Pay_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pay_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
     public static function __set_state(array $array)
     {

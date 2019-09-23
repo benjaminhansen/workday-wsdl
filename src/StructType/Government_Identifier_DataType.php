@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,12 +22,12 @@ class Government_Identifier_DataType extends AbstractStructBase
     public $Government_ID;
     /**
      * The Government_ID_Type_Reference
-     * @var \StructType\Government_ID_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType
      */
     public $Government_ID_Type_Reference;
     /**
      * The Country_Reference
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -66,13 +66,13 @@ class Government_Identifier_DataType extends AbstractStructBase
      * @uses Government_Identifier_DataType::setExpiration_Date()
      * @uses Government_Identifier_DataType::setVerification_Date()
      * @param string $government_ID
-     * @param \StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference
-     * @param \StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
      */
-    public function __construct($government_ID = null, \StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference = null, \StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
+    public function __construct($government_ID = null, \WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference = null, \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
     {
         $this
             ->setGovernment_ID($government_ID)
@@ -93,7 +93,7 @@ class Government_Identifier_DataType extends AbstractStructBase
     /**
      * Set Government_ID value
      * @param string $government_ID
-     * @return \StructType\Government_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
     public function setGovernment_ID($government_ID = null)
     {
@@ -106,7 +106,7 @@ class Government_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Government_ID_Type_Reference value
-     * @return \StructType\Government_ID_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType|null
      */
     public function getGovernment_ID_Type_Reference()
     {
@@ -114,17 +114,17 @@ class Government_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Government_ID_Type_Reference value
-     * @param \StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference
-     * @return \StructType\Government_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
-    public function setGovernment_ID_Type_Reference(\StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference = null)
+    public function setGovernment_ID_Type_Reference(\WorkdayWsdl\\StructType\Government_ID_Type_ReferenceType $government_ID_Type_Reference = null)
     {
         $this->Government_ID_Type_Reference = $government_ID_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -132,10 +132,10 @@ class Government_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\Government_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -151,7 +151,7 @@ class Government_Identifier_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\Government_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -173,7 +173,7 @@ class Government_Identifier_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\Government_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -195,7 +195,7 @@ class Government_Identifier_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\Government_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -212,7 +212,7 @@ class Government_Identifier_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Government_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType
      */
     public static function __set_state(array $array)
     {

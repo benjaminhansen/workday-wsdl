@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
      * - documentation: Assign Establishment Event
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Assign_Establishment_EventType[]
+     * @var \WorkdayWsdl\\StructType\Assign_Establishment_EventType[]
      */
     public $Assign_Establishment;
     /**
      * Constructor method for Assign_Establishment_Event_Response_DataType
      * @uses Assign_Establishment_Event_Response_DataType::setAssign_Establishment()
-     * @param \StructType\Assign_Establishment_EventType[] $assign_Establishment
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_EventType[] $assign_Establishment
      */
     public function __construct(array $assign_Establishment = array())
     {
@@ -33,7 +33,7 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Assign_Establishment value
-     * @return \StructType\Assign_Establishment_EventType[]|null
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_EventType[]|null
      */
     public function getAssign_Establishment()
     {
@@ -51,12 +51,12 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem) {
             // validation for constraint: itemType
-            if (!$assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem instanceof \StructType\Assign_Establishment_EventType) {
+            if (!$assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem instanceof \WorkdayWsdl\\StructType\Assign_Establishment_EventType) {
                 $invalidValues[] = is_object($assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem) ? get_class($assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem) : sprintf('%s(%s)', gettype($assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem), var_export($assign_Establishment_Event_Response_DataTypeAssign_EstablishmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Assign_Establishment property can only contain items of type \StructType\Assign_Establishment_EventType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Assign_Establishment property can only contain items of type \WorkdayWsdl\\StructType\Assign_Establishment_EventType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
     /**
      * Set Assign_Establishment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_Establishment_EventType[] $assign_Establishment
-     * @return \StructType\Assign_Establishment_Event_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_EventType[] $assign_Establishment
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Response_DataType
      */
     public function setAssign_Establishment(array $assign_Establishment = array())
     {
@@ -79,14 +79,14 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
     /**
      * Add item to Assign_Establishment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Assign_Establishment_EventType $item
-     * @return \StructType\Assign_Establishment_Event_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Assign_Establishment_EventType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Response_DataType
      */
-    public function addToAssign_Establishment(\StructType\Assign_Establishment_EventType $item)
+    public function addToAssign_Establishment(\WorkdayWsdl\\StructType\Assign_Establishment_EventType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Assign_Establishment_EventType) {
-            throw new \InvalidArgumentException(sprintf('The Assign_Establishment property can only contain items of type \StructType\Assign_Establishment_EventType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Assign_Establishment_EventType) {
+            throw new \InvalidArgumentException(sprintf('The Assign_Establishment property can only contain items of type \WorkdayWsdl\\StructType\Assign_Establishment_EventType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Assign_Establishment[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Assign_Establishment_Event_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Establishment_Event_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_Event_Response_DataType
      */
     public static function __set_state(array $array)
     {

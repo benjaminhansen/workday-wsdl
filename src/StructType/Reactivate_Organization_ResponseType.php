@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Response with the Reactivated Organization reference
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_Reference;
     /**
@@ -31,10 +31,10 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
      * Constructor method for Reactivate_Organization_ResponseType
      * @uses Reactivate_Organization_ResponseType::setOrganization_Reference()
      * @uses Reactivate_Organization_ResponseType::setVersion()
-     * @param \StructType\OrganizationObjectType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
      * @param string $version
      */
-    public function __construct(\StructType\OrganizationObjectType $organization_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null, $version = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -42,7 +42,7 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_Reference()
     {
@@ -50,10 +50,10 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @return \StructType\Reactivate_Organization_ResponseType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Reactivate_Organization_ResponseType
      */
-    public function setOrganization_Reference(\StructType\OrganizationObjectType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Reactivate_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Reactivate_Organization_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Reactivate_Organization_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reactivate_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Reactivate_Organization_ResponseType
      */
     public static function __set_state(array $array)
     {

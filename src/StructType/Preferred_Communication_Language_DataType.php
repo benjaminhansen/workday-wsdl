@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: User Language Reference
      * - maxOccurs: unbounded
-     * @var \StructType\User_LanguageObjectType[]
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType[]
      */
     public $User_Language_Reference;
     /**
@@ -33,7 +33,7 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
      * Constructor method for Preferred_Communication_Language_DataType
      * @uses Preferred_Communication_Language_DataType::setUser_Language_Reference()
      * @uses Preferred_Communication_Language_DataType::setInactive()
-     * @param \StructType\User_LanguageObjectType[] $user_Language_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType[] $user_Language_Reference
      * @param bool $inactive
      */
     public function __construct(array $user_Language_Reference = array(), $inactive = null)
@@ -44,7 +44,7 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
     }
     /**
      * Get User_Language_Reference value
-     * @return \StructType\User_LanguageObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType[]|null
      */
     public function getUser_Language_Reference()
     {
@@ -62,12 +62,12 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $preferred_Communication_Language_DataTypeUser_Language_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$preferred_Communication_Language_DataTypeUser_Language_ReferenceItem instanceof \StructType\User_LanguageObjectType) {
+            if (!$preferred_Communication_Language_DataTypeUser_Language_ReferenceItem instanceof \WorkdayWsdl\\StructType\User_LanguageObjectType) {
                 $invalidValues[] = is_object($preferred_Communication_Language_DataTypeUser_Language_ReferenceItem) ? get_class($preferred_Communication_Language_DataTypeUser_Language_ReferenceItem) : sprintf('%s(%s)', gettype($preferred_Communication_Language_DataTypeUser_Language_ReferenceItem), var_export($preferred_Communication_Language_DataTypeUser_Language_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The User_Language_Reference property can only contain items of type \StructType\User_LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The User_Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\User_LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
     /**
      * Set User_Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_LanguageObjectType[] $user_Language_Reference
-     * @return \StructType\Preferred_Communication_Language_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType[] $user_Language_Reference
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType
      */
     public function setUser_Language_Reference(array $user_Language_Reference = array())
     {
@@ -90,14 +90,14 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
     /**
      * Add item to User_Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_LanguageObjectType $item
-     * @return \StructType\Preferred_Communication_Language_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $item
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType
      */
-    public function addToUser_Language_Reference(\StructType\User_LanguageObjectType $item)
+    public function addToUser_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_LanguageObjectType) {
-            throw new \InvalidArgumentException(sprintf('The User_Language_Reference property can only contain items of type \StructType\User_LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_LanguageObjectType) {
+            throw new \InvalidArgumentException(sprintf('The User_Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\User_LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->User_Language_Reference[] = $item;
         return $this;
@@ -113,7 +113,7 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Preferred_Communication_Language_DataType
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -130,7 +130,7 @@ class Preferred_Communication_Language_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Preferred_Communication_Language_DataType
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType
      */
     public static function __set_state(array $array)
     {

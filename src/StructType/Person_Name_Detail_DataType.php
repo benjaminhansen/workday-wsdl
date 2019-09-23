@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Country that the name is in reference to.
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -32,7 +32,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the prefixes for a name.
      * - minOccurs: 0
-     * @var \StructType\Person_Name_Prefix_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType
      */
     public $Prefix_Data;
     /**
@@ -85,7 +85,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the name components in local script for supporting countries.
      * - minOccurs: 0
-     * @var \StructType\Local_Person_Name_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public $Local_Name_Detail_Data;
     /**
@@ -93,7 +93,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the suffixes for a name.
      * - minOccurs: 0
-     * @var \StructType\Person_Name_Suffix_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_Suffix_DataType
      */
     public $Suffix_Data;
     /**
@@ -134,20 +134,20 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * @uses Person_Name_Detail_DataType::setFull_Name_for_Singapore_and_Malaysia()
      * @uses Person_Name_Detail_DataType::setFormatted_Name()
      * @uses Person_Name_Detail_DataType::setReporting_Name()
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\Person_Name_Prefix_DataType $prefix_Data
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType $prefix_Data
      * @param string $first_Name
      * @param string $middle_Name
      * @param string $last_Name
      * @param string $secondary_Last_Name
      * @param string $tertiary_Last_Name
-     * @param \StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data
-     * @param \StructType\Person_Name_Suffix_DataType $suffix_Data
+     * @param \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_Suffix_DataType $suffix_Data
      * @param string $full_Name_for_Singapore_and_Malaysia
      * @param string $formatted_Name
      * @param string $reporting_Name
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null, \StructType\Person_Name_Prefix_DataType $prefix_Data = null, $first_Name = null, $middle_Name = null, $last_Name = null, $secondary_Last_Name = null, $tertiary_Last_Name = null, \StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data = null, \StructType\Person_Name_Suffix_DataType $suffix_Data = null, $full_Name_for_Singapore_and_Malaysia = null, $formatted_Name = null, $reporting_Name = null)
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType $prefix_Data = null, $first_Name = null, $middle_Name = null, $last_Name = null, $secondary_Last_Name = null, $tertiary_Last_Name = null, \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data = null, \WorkdayWsdl\\StructType\Person_Name_Suffix_DataType $suffix_Data = null, $full_Name_for_Singapore_and_Malaysia = null, $formatted_Name = null, $reporting_Name = null)
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -165,7 +165,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -173,17 +173,17 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Person_Name_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Prefix_Data value
-     * @return \StructType\Person_Name_Prefix_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType|null
      */
     public function getPrefix_Data()
     {
@@ -191,10 +191,10 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Prefix_Data value
-     * @param \StructType\Person_Name_Prefix_DataType $prefix_Data
-     * @return \StructType\Person_Name_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType $prefix_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
-    public function setPrefix_Data(\StructType\Person_Name_Prefix_DataType $prefix_Data = null)
+    public function setPrefix_Data(\WorkdayWsdl\\StructType\Person_Name_Prefix_DataType $prefix_Data = null)
     {
         $this->Prefix_Data = $prefix_Data;
         return $this;
@@ -210,7 +210,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setFirst_Name($first_Name = null)
     {
@@ -232,7 +232,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Middle_Name value
      * @param string $middle_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setMiddle_Name($middle_Name = null)
     {
@@ -254,7 +254,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @param string $last_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setLast_Name($last_Name = null)
     {
@@ -276,7 +276,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Secondary_Last_Name value
      * @param string $secondary_Last_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setSecondary_Last_Name($secondary_Last_Name = null)
     {
@@ -298,7 +298,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Tertiary_Last_Name value
      * @param string $tertiary_Last_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setTertiary_Last_Name($tertiary_Last_Name = null)
     {
@@ -311,7 +311,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Local_Name_Detail_Data value
-     * @return \StructType\Local_Person_Name_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType|null
      */
     public function getLocal_Name_Detail_Data()
     {
@@ -319,17 +319,17 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Local_Name_Detail_Data value
-     * @param \StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data
-     * @return \StructType\Person_Name_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
-    public function setLocal_Name_Detail_Data(\StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data = null)
+    public function setLocal_Name_Detail_Data(\WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType $local_Name_Detail_Data = null)
     {
         $this->Local_Name_Detail_Data = $local_Name_Detail_Data;
         return $this;
     }
     /**
      * Get Suffix_Data value
-     * @return \StructType\Person_Name_Suffix_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_Suffix_DataType|null
      */
     public function getSuffix_Data()
     {
@@ -337,10 +337,10 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Suffix_Data value
-     * @param \StructType\Person_Name_Suffix_DataType $suffix_Data
-     * @return \StructType\Person_Name_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_Suffix_DataType $suffix_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
-    public function setSuffix_Data(\StructType\Person_Name_Suffix_DataType $suffix_Data = null)
+    public function setSuffix_Data(\WorkdayWsdl\\StructType\Person_Name_Suffix_DataType $suffix_Data = null)
     {
         $this->Suffix_Data = $suffix_Data;
         return $this;
@@ -356,7 +356,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Full_Name_for_Singapore_and_Malaysia value
      * @param string $full_Name_for_Singapore_and_Malaysia
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setFull_Name_for_Singapore_and_Malaysia($full_Name_for_Singapore_and_Malaysia = null)
     {
@@ -378,7 +378,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Formatted_Name value
      * @param string $formatted_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setFormatted_Name($formatted_Name = null)
     {
@@ -400,7 +400,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Reporting_Name value
      * @param string $reporting_Name
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public function setReporting_Name($reporting_Name = null)
     {
@@ -417,7 +417,7 @@ class Person_Name_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public static function __set_state(array $array)
     {

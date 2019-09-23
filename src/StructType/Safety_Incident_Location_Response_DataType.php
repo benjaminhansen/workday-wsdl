@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
      * - documentation: Safety Incident Location
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Safety_Incident_LocationType[]
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_LocationType[]
      */
     public $Safety_Incident_Location;
     /**
      * Constructor method for Safety_Incident_Location_Response_DataType
      * @uses Safety_Incident_Location_Response_DataType::setSafety_Incident_Location()
-     * @param \StructType\Safety_Incident_LocationType[] $safety_Incident_Location
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationType[] $safety_Incident_Location
      */
     public function __construct(array $safety_Incident_Location = array())
     {
@@ -33,7 +33,7 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Location value
-     * @return \StructType\Safety_Incident_LocationType[]|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationType[]|null
      */
     public function getSafety_Incident_Location()
     {
@@ -51,12 +51,12 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem instanceof \StructType\Safety_Incident_LocationType) {
+            if (!$safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem instanceof \WorkdayWsdl\\StructType\Safety_Incident_LocationType) {
                 $invalidValues[] = is_object($safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem) ? get_class($safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem) : sprintf('%s(%s)', gettype($safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem), var_export($safety_Incident_Location_Response_DataTypeSafety_Incident_LocationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Safety_Incident_Location property can only contain items of type \StructType\Safety_Incident_LocationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Safety_Incident_Location property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_LocationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
     /**
      * Set Safety_Incident_Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_LocationType[] $safety_Incident_Location
-     * @return \StructType\Safety_Incident_Location_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationType[] $safety_Incident_Location
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Response_DataType
      */
     public function setSafety_Incident_Location(array $safety_Incident_Location = array())
     {
@@ -79,14 +79,14 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
     /**
      * Add item to Safety_Incident_Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_LocationType $item
-     * @return \StructType\Safety_Incident_Location_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Response_DataType
      */
-    public function addToSafety_Incident_Location(\StructType\Safety_Incident_LocationType $item)
+    public function addToSafety_Incident_Location(\WorkdayWsdl\\StructType\Safety_Incident_LocationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Safety_Incident_LocationType) {
-            throw new \InvalidArgumentException(sprintf('The Safety_Incident_Location property can only contain items of type \StructType\Safety_Incident_LocationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Safety_Incident_LocationType) {
+            throw new \InvalidArgumentException(sprintf('The Safety_Incident_Location property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_LocationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Safety_Incident_Location[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Safety_Incident_Location_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Location_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Location_Response_DataType
      */
     public static function __set_state(array $array)
     {

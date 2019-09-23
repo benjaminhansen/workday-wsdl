@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Internal_Project_ExperienceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
      * Constructor method for Internal_Project_ExperienceObjectType
      * @uses Internal_Project_ExperienceObjectType::setID()
      * @uses Internal_Project_ExperienceObjectType::setDescriptor()
-     * @param \StructType\Internal_Project_ExperienceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Internal_Project_ExperienceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $internal_Project_ExperienceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$internal_Project_ExperienceObjectTypeIDItem instanceof \StructType\Internal_Project_ExperienceObjectIDType) {
+            if (!$internal_Project_ExperienceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType) {
                 $invalidValues[] = is_object($internal_Project_ExperienceObjectTypeIDItem) ? get_class($internal_Project_ExperienceObjectTypeIDItem) : sprintf('%s(%s)', gettype($internal_Project_ExperienceObjectTypeIDItem), var_export($internal_Project_ExperienceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Internal_Project_ExperienceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_ExperienceObjectIDType[] $iD
-     * @return \StructType\Internal_Project_ExperienceObjectType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_ExperienceObjectIDType $item
-     * @return \StructType\Internal_Project_ExperienceObjectType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType
      */
-    public function addToID(\StructType\Internal_Project_ExperienceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Internal_Project_ExperienceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Internal_Project_ExperienceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Internal_Project_ExperienceObjectType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Internal_Project_ExperienceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Internal_Project_ExperienceObjectType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceObjectType
      */
     public static function __set_state(array $array)
     {

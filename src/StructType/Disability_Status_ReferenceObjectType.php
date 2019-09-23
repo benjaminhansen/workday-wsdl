@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disability_Status_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Disability_Status_ReferenceObjectType
      * @uses Disability_Status_ReferenceObjectType::setID()
      * @uses Disability_Status_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Disability_Status_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Disability_Status_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disability_Status_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$disability_Status_ReferenceObjectTypeIDItem instanceof \StructType\Disability_Status_ReferenceObjectIDType) {
+            if (!$disability_Status_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($disability_Status_ReferenceObjectTypeIDItem) ? get_class($disability_Status_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($disability_Status_ReferenceObjectTypeIDItem), var_export($disability_Status_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Disability_Status_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Status_ReferenceObjectIDType[] $iD
-     * @return \StructType\Disability_Status_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Status_ReferenceObjectIDType $item
-     * @return \StructType\Disability_Status_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType
      */
-    public function addToID(\StructType\Disability_Status_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disability_Status_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Disability_Status_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Disability_Status_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Disability_Status_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Status_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Disability_Status_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

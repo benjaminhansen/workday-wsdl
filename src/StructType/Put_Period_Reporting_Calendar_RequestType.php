@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Existing Period Reporting Calendar to Update
      * - minOccurs: 0
-     * @var \StructType\Period_Reporting_CalendarObjectType
+     * @var \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType
      */
     public $Period_Reporting_Calendar_Reference;
     /**
      * The Period_Reporting_Calendar_Data
-     * @var \StructType\Period_Reporting_Calendar_DataType
+     * @var \WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType
      */
     public $Period_Reporting_Calendar_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
      * @uses Put_Period_Reporting_Calendar_RequestType::setPeriod_Reporting_Calendar_Data()
      * @uses Put_Period_Reporting_Calendar_RequestType::setAdd_Only()
      * @uses Put_Period_Reporting_Calendar_RequestType::setVersion()
-     * @param \StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference
-     * @param \StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference = null, \StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference = null, \WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setPeriod_Reporting_Calendar_Reference($period_Reporting_Calendar_Reference)
@@ -60,7 +60,7 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Get Period_Reporting_Calendar_Reference value
-     * @return \StructType\Period_Reporting_CalendarObjectType|null
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType|null
      */
     public function getPeriod_Reporting_Calendar_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Set Period_Reporting_Calendar_Reference value
-     * @param \StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference
-     * @return \StructType\Put_Period_Reporting_Calendar_RequestType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Period_Reporting_Calendar_RequestType
      */
-    public function setPeriod_Reporting_Calendar_Reference(\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference = null)
+    public function setPeriod_Reporting_Calendar_Reference(\WorkdayWsdl\\StructType\Period_Reporting_CalendarObjectType $period_Reporting_Calendar_Reference = null)
     {
         $this->Period_Reporting_Calendar_Reference = $period_Reporting_Calendar_Reference;
         return $this;
     }
     /**
      * Get Period_Reporting_Calendar_Data value
-     * @return \StructType\Period_Reporting_Calendar_DataType|null
+     * @return \WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType|null
      */
     public function getPeriod_Reporting_Calendar_Data()
     {
@@ -86,10 +86,10 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Set Period_Reporting_Calendar_Data value
-     * @param \StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data
-     * @return \StructType\Put_Period_Reporting_Calendar_RequestType
+     * @param \WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data
+     * @return \WorkdayWsdl\\StructType\Put_Period_Reporting_Calendar_RequestType
      */
-    public function setPeriod_Reporting_Calendar_Data(\StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data = null)
+    public function setPeriod_Reporting_Calendar_Data(\WorkdayWsdl\\StructType\Period_Reporting_Calendar_DataType $period_Reporting_Calendar_Data = null)
     {
         $this->Period_Reporting_Calendar_Data = $period_Reporting_Calendar_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Period_Reporting_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Period_Reporting_Calendar_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Period_Reporting_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Period_Reporting_Calendar_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Period_Reporting_Calendar_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Period_Reporting_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Period_Reporting_Calendar_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Integration ID Data
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $Integration_ID_Data;
     /**
@@ -125,7 +125,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Superior Organization Reference
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Superior_Organization_Reference;
     /**
@@ -133,7 +133,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Organization Type Reference
      * - minOccurs: 0
-     * @var \StructType\Organization_Type_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Type_Reference_DataType
      */
     public $Organization_Type_Reference;
     /**
@@ -141,7 +141,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Organization Subtype Reference
      * - minOccurs: 0
-     * @var \StructType\Organization_Subtype_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType
      */
     public $Organization_Subtype_Reference;
     /**
@@ -149,7 +149,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Organization Visibility Reference
      * - minOccurs: 0
-     * @var \StructType\Organization_Visibility_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType
      */
     public $Organization_Visibility_Reference;
     /**
@@ -157,7 +157,7 @@ class Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Primary location (for supervisory organizations) is effective dated.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Primary_Business_Site_Reference;
     /**
@@ -166,7 +166,7 @@ class Organization_DataType extends AbstractStructBase
      * - documentation: Container Organization Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType[]
      */
     public $Container_Organization_Reference;
     /**
@@ -199,7 +199,7 @@ class Organization_DataType extends AbstractStructBase
      * @uses Organization_DataType::setEffective_Date()
      * @param string $organization_Reference_ID
      * @param bool $include_Organization_ID_in_Name
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
      * @param string $organization_Name
      * @param string $availability_Date
      * @param bool $include_Organization_Code_In_Name
@@ -208,15 +208,15 @@ class Organization_DataType extends AbstractStructBase
      * @param bool $frozen_Status
      * @param bool $job_Management_Enabled
      * @param bool $position_Management_Enabled
-     * @param \StructType\OrganizationObjectType $superior_Organization_Reference
-     * @param \StructType\Organization_Type_Reference_DataType $organization_Type_Reference
-     * @param \StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference
-     * @param \StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference
-     * @param \StructType\LocationObjectType $primary_Business_Site_Reference
-     * @param \StructType\OrganizationObjectType[] $container_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Type_Reference_DataType $organization_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $primary_Business_Site_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $container_Organization_Reference
      * @param string $effective_Date
      */
-    public function __construct($organization_Reference_ID = null, $include_Organization_ID_in_Name = null, \StructType\External_Integration_ID_DataType $integration_ID_Data = null, $organization_Name = null, $availability_Date = null, $include_Organization_Code_In_Name = null, $organization_Code = null, $include_Leader_In_Name = null, $frozen_Status = null, $job_Management_Enabled = null, $position_Management_Enabled = null, \StructType\OrganizationObjectType $superior_Organization_Reference = null, \StructType\Organization_Type_Reference_DataType $organization_Type_Reference = null, \StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference = null, \StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference = null, \StructType\LocationObjectType $primary_Business_Site_Reference = null, array $container_Organization_Reference = array(), $effective_Date = null)
+    public function __construct($organization_Reference_ID = null, $include_Organization_ID_in_Name = null, \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null, $organization_Name = null, $availability_Date = null, $include_Organization_Code_In_Name = null, $organization_Code = null, $include_Leader_In_Name = null, $frozen_Status = null, $job_Management_Enabled = null, $position_Management_Enabled = null, \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference = null, \WorkdayWsdl\\StructType\Organization_Type_Reference_DataType $organization_Type_Reference = null, \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference = null, \WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference = null, \WorkdayWsdl\\StructType\LocationObjectType $primary_Business_Site_Reference = null, array $container_Organization_Reference = array(), $effective_Date = null)
     {
         $this
             ->setOrganization_Reference_ID($organization_Reference_ID)
@@ -249,7 +249,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Organization_Reference_ID value
      * @param string $organization_Reference_ID
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setOrganization_Reference_ID($organization_Reference_ID = null)
     {
@@ -271,7 +271,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Include_Organization_ID_in_Name value
      * @param bool $include_Organization_ID_in_Name
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setInclude_Organization_ID_in_Name($include_Organization_ID_in_Name = null)
     {
@@ -284,7 +284,7 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getIntegration_ID_Data()
     {
@@ -292,10 +292,10 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setIntegration_ID_Data(\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
+    public function setIntegration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
     {
         $this->Integration_ID_Data = $integration_ID_Data;
         return $this;
@@ -311,7 +311,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Organization_Name value
      * @param string $organization_Name
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setOrganization_Name($organization_Name = null)
     {
@@ -333,7 +333,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Availability_Date value
      * @param string $availability_Date
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setAvailability_Date($availability_Date = null)
     {
@@ -355,7 +355,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Include_Organization_Code_In_Name value
      * @param bool $include_Organization_Code_In_Name
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setInclude_Organization_Code_In_Name($include_Organization_Code_In_Name = null)
     {
@@ -377,7 +377,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Organization_Code value
      * @param string $organization_Code
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setOrganization_Code($organization_Code = null)
     {
@@ -399,7 +399,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Include_Leader_In_Name value
      * @param bool $include_Leader_In_Name
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setInclude_Leader_In_Name($include_Leader_In_Name = null)
     {
@@ -421,7 +421,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Frozen_Status value
      * @param bool $frozen_Status
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setFrozen_Status($frozen_Status = null)
     {
@@ -443,7 +443,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Job_Management_Enabled value
      * @param bool $job_Management_Enabled
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setJob_Management_Enabled($job_Management_Enabled = null)
     {
@@ -465,7 +465,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Position_Management_Enabled value
      * @param bool $position_Management_Enabled
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setPosition_Management_Enabled($position_Management_Enabled = null)
     {
@@ -478,7 +478,7 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Superior_Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getSuperior_Organization_Reference()
     {
@@ -486,17 +486,17 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Organization_Reference value
-     * @param \StructType\OrganizationObjectType $superior_Organization_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setSuperior_Organization_Reference(\StructType\OrganizationObjectType $superior_Organization_Reference = null)
+    public function setSuperior_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $superior_Organization_Reference = null)
     {
         $this->Superior_Organization_Reference = $superior_Organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Type_Reference value
-     * @return \StructType\Organization_Type_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Type_Reference_DataType|null
      */
     public function getOrganization_Type_Reference()
     {
@@ -504,17 +504,17 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Type_Reference value
-     * @param \StructType\Organization_Type_Reference_DataType $organization_Type_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Type_Reference_DataType $organization_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setOrganization_Type_Reference(\StructType\Organization_Type_Reference_DataType $organization_Type_Reference = null)
+    public function setOrganization_Type_Reference(\WorkdayWsdl\\StructType\Organization_Type_Reference_DataType $organization_Type_Reference = null)
     {
         $this->Organization_Type_Reference = $organization_Type_Reference;
         return $this;
     }
     /**
      * Get Organization_Subtype_Reference value
-     * @return \StructType\Organization_Subtype_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType|null
      */
     public function getOrganization_Subtype_Reference()
     {
@@ -522,17 +522,17 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Subtype_Reference value
-     * @param \StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setOrganization_Subtype_Reference(\StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference = null)
+    public function setOrganization_Subtype_Reference(\WorkdayWsdl\\StructType\Organization_Subtype_Reference_DataType $organization_Subtype_Reference = null)
     {
         $this->Organization_Subtype_Reference = $organization_Subtype_Reference;
         return $this;
     }
     /**
      * Get Organization_Visibility_Reference value
-     * @return \StructType\Organization_Visibility_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType|null
      */
     public function getOrganization_Visibility_Reference()
     {
@@ -540,17 +540,17 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Visibility_Reference value
-     * @param \StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setOrganization_Visibility_Reference(\StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference = null)
+    public function setOrganization_Visibility_Reference(\WorkdayWsdl\\StructType\Organization_Visibility_Reference_DataType $organization_Visibility_Reference = null)
     {
         $this->Organization_Visibility_Reference = $organization_Visibility_Reference;
         return $this;
     }
     /**
      * Get Primary_Business_Site_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getPrimary_Business_Site_Reference()
     {
@@ -558,17 +558,17 @@ class Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Primary_Business_Site_Reference value
-     * @param \StructType\LocationObjectType $primary_Business_Site_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $primary_Business_Site_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function setPrimary_Business_Site_Reference(\StructType\LocationObjectType $primary_Business_Site_Reference = null)
+    public function setPrimary_Business_Site_Reference(\WorkdayWsdl\\StructType\LocationObjectType $primary_Business_Site_Reference = null)
     {
         $this->Primary_Business_Site_Reference = $primary_Business_Site_Reference;
         return $this;
     }
     /**
      * Get Container_Organization_Reference value
-     * @return \StructType\OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType[]|null
      */
     public function getContainer_Organization_Reference()
     {
@@ -586,12 +586,12 @@ class Organization_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_DataTypeContainer_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_DataTypeContainer_Organization_ReferenceItem instanceof \StructType\OrganizationObjectType) {
+            if (!$organization_DataTypeContainer_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_DataTypeContainer_Organization_ReferenceItem) ? get_class($organization_DataTypeContainer_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($organization_DataTypeContainer_Organization_ReferenceItem), var_export($organization_DataTypeContainer_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Container_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Container_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -599,8 +599,8 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Container_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType[] $container_Organization_Reference
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $container_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setContainer_Organization_Reference(array $container_Organization_Reference = array())
     {
@@ -614,14 +614,14 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Add item to Container_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType $item
-     * @return \StructType\Organization_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
-    public function addToContainer_Organization_Reference(\StructType\OrganizationObjectType $item)
+    public function addToContainer_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Container_Organization_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Container_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Container_Organization_Reference[] = $item;
         return $this;
@@ -637,7 +637,7 @@ class Organization_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -654,7 +654,7 @@ class Organization_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_DataType
      */
     public static function __set_state(array $array)
     {

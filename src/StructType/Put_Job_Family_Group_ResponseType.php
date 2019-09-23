@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Job Family Group.
      * - minOccurs: 0
-     * @var \StructType\Job_FamilyObjectType
+     * @var \WorkdayWsdl\\StructType\Job_FamilyObjectType
      */
     public $Job_Family_Groups_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
      * Constructor method for Put_Job_Family_Group_ResponseType
      * @uses Put_Job_Family_Group_ResponseType::setJob_Family_Groups_Reference()
      * @uses Put_Job_Family_Group_ResponseType::setVersion()
-     * @param \StructType\Job_FamilyObjectType $job_Family_Groups_Reference
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Groups_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Job_FamilyObjectType $job_Family_Groups_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Groups_Reference = null, $version = null)
     {
         $this
             ->setJob_Family_Groups_Reference($job_Family_Groups_Reference)
@@ -42,7 +42,7 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Groups_Reference value
-     * @return \StructType\Job_FamilyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_FamilyObjectType|null
      */
     public function getJob_Family_Groups_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Groups_Reference value
-     * @param \StructType\Job_FamilyObjectType $job_Family_Groups_Reference
-     * @return \StructType\Put_Job_Family_Group_ResponseType
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Groups_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_Group_ResponseType
      */
-    public function setJob_Family_Groups_Reference(\StructType\Job_FamilyObjectType $job_Family_Groups_Reference = null)
+    public function setJob_Family_Groups_Reference(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Groups_Reference = null)
     {
         $this->Job_Family_Groups_Reference = $job_Family_Groups_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Family_Group_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_Group_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Job_Family_Group_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Family_Group_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_Group_ResponseType
      */
     public static function __set_state(array $array)
     {

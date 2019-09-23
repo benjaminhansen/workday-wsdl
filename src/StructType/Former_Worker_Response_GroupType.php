@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class Former_Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Former_Worker_Attachments value
      * @param bool $include_Former_Worker_Attachments
-     * @return \StructType\Former_Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Response_GroupType
      */
     public function setInclude_Former_Worker_Attachments($include_Former_Worker_Attachments = null)
     {
@@ -60,7 +60,7 @@ class Former_Worker_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Response_GroupType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: References provided to obtain attributes and relationship information
      * - maxOccurs: unbounded
-     * @var \StructType\Work_Status_Rule_SetObjectType[]
+     * @var \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType[]
      */
     public $Work_Status_Rule_Set_Reference;
     /**
      * Constructor method for Work_Status_Rule_Set_Request_ReferencesType
      * @uses Work_Status_Rule_Set_Request_ReferencesType::setWork_Status_Rule_Set_Reference()
-     * @param \StructType\Work_Status_Rule_SetObjectType[] $work_Status_Rule_Set_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType[] $work_Status_Rule_Set_Reference
      */
     public function __construct(array $work_Status_Rule_Set_Reference = array())
     {
@@ -32,7 +32,7 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Work_Status_Rule_Set_Reference value
-     * @return \StructType\Work_Status_Rule_SetObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType[]|null
      */
     public function getWork_Status_Rule_Set_Reference()
     {
@@ -50,12 +50,12 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem instanceof \StructType\Work_Status_Rule_SetObjectType) {
+            if (!$work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem instanceof \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType) {
                 $invalidValues[] = is_object($work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem) ? get_class($work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem) : sprintf('%s(%s)', gettype($work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem), var_export($work_Status_Rule_Set_Request_ReferencesTypeWork_Status_Rule_Set_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Status_Rule_Set_Reference property can only contain items of type \StructType\Work_Status_Rule_SetObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Status_Rule_Set_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Work_Status_Rule_Set_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Status_Rule_SetObjectType[] $work_Status_Rule_Set_Reference
-     * @return \StructType\Work_Status_Rule_Set_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType[] $work_Status_Rule_Set_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Set_Request_ReferencesType
      */
     public function setWork_Status_Rule_Set_Reference(array $work_Status_Rule_Set_Reference = array())
     {
@@ -78,14 +78,14 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Work_Status_Rule_Set_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Status_Rule_SetObjectType $item
-     * @return \StructType\Work_Status_Rule_Set_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $item
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Set_Request_ReferencesType
      */
-    public function addToWork_Status_Rule_Set_Reference(\StructType\Work_Status_Rule_SetObjectType $item)
+    public function addToWork_Status_Rule_Set_Reference(\WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Status_Rule_SetObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Status_Rule_Set_Reference property can only contain items of type \StructType\Work_Status_Rule_SetObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Status_Rule_Set_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Status_Rule_Set_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Work_Status_Rule_Set_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Status_Rule_Set_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Set_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

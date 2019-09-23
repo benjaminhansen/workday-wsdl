@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_SkillObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
      * Constructor method for Professional_Affiliation_SkillObjectType
      * @uses Professional_Affiliation_SkillObjectType::setID()
      * @uses Professional_Affiliation_SkillObjectType::setDescriptor()
-     * @param \StructType\Professional_Affiliation_SkillObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Professional_Affiliation_SkillObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $professional_Affiliation_SkillObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$professional_Affiliation_SkillObjectTypeIDItem instanceof \StructType\Professional_Affiliation_SkillObjectIDType) {
+            if (!$professional_Affiliation_SkillObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType) {
                 $invalidValues[] = is_object($professional_Affiliation_SkillObjectTypeIDItem) ? get_class($professional_Affiliation_SkillObjectTypeIDItem) : sprintf('%s(%s)', gettype($professional_Affiliation_SkillObjectTypeIDItem), var_export($professional_Affiliation_SkillObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_SkillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillObjectIDType[] $iD
-     * @return \StructType\Professional_Affiliation_SkillObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillObjectIDType $item
-     * @return \StructType\Professional_Affiliation_SkillObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectType
      */
-    public function addToID(\StructType\Professional_Affiliation_SkillObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Affiliation_SkillObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_SkillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Professional_Affiliation_SkillObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Professional_Affiliation_SkillObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Affiliation_SkillObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillObjectType
      */
     public static function __set_state(array $array)
     {

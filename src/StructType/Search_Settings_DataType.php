@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Search_Settings_DataType extends AbstractStructBase
      * - documentation: Specify the object types that are suppressed by default in search results. Suppressions are not applied to domain searches and can be turned off by using the "all:" domain.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType[]
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType[]
      */
     public $Object_Type_to_Suppress_from_Search_Reference;
     /**
@@ -29,15 +29,15 @@ class Search_Settings_DataType extends AbstractStructBase
      * Translation task to create translations in other languages.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Synonym_Webservice_DataType[]
+     * @var \WorkdayWsdl\\StructType\Synonym_Webservice_DataType[]
      */
     public $Synonyms;
     /**
      * Constructor method for Search_Settings_DataType
      * @uses Search_Settings_DataType::setObject_Type_to_Suppress_from_Search_Reference()
      * @uses Search_Settings_DataType::setSynonyms()
-     * @param \StructType\Unique_IdentifierObjectType[] $object_Type_to_Suppress_from_Search_Reference
-     * @param \StructType\Synonym_Webservice_DataType[] $synonyms
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType[] $object_Type_to_Suppress_from_Search_Reference
+     * @param \WorkdayWsdl\\StructType\Synonym_Webservice_DataType[] $synonyms
      */
     public function __construct(array $object_Type_to_Suppress_from_Search_Reference = array(), array $synonyms = array())
     {
@@ -47,7 +47,7 @@ class Search_Settings_DataType extends AbstractStructBase
     }
     /**
      * Get Object_Type_to_Suppress_from_Search_Reference value
-     * @return \StructType\Unique_IdentifierObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType[]|null
      */
     public function getObject_Type_to_Suppress_from_Search_Reference()
     {
@@ -65,12 +65,12 @@ class Search_Settings_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem instanceof \StructType\Unique_IdentifierObjectType) {
+            if (!$search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem instanceof \WorkdayWsdl\\StructType\Unique_IdentifierObjectType) {
                 $invalidValues[] = is_object($search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem) ? get_class($search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem) : sprintf('%s(%s)', gettype($search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem), var_export($search_Settings_DataTypeObject_Type_to_Suppress_from_Search_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Object_Type_to_Suppress_from_Search_Reference property can only contain items of type \StructType\Unique_IdentifierObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Object_Type_to_Suppress_from_Search_Reference property can only contain items of type \WorkdayWsdl\\StructType\Unique_IdentifierObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -78,8 +78,8 @@ class Search_Settings_DataType extends AbstractStructBase
     /**
      * Set Object_Type_to_Suppress_from_Search_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Unique_IdentifierObjectType[] $object_Type_to_Suppress_from_Search_Reference
-     * @return \StructType\Search_Settings_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType[] $object_Type_to_Suppress_from_Search_Reference
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
     public function setObject_Type_to_Suppress_from_Search_Reference(array $object_Type_to_Suppress_from_Search_Reference = array())
     {
@@ -93,21 +93,21 @@ class Search_Settings_DataType extends AbstractStructBase
     /**
      * Add item to Object_Type_to_Suppress_from_Search_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Unique_IdentifierObjectType $item
-     * @return \StructType\Search_Settings_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $item
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
-    public function addToObject_Type_to_Suppress_from_Search_Reference(\StructType\Unique_IdentifierObjectType $item)
+    public function addToObject_Type_to_Suppress_from_Search_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Unique_IdentifierObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Object_Type_to_Suppress_from_Search_Reference property can only contain items of type \StructType\Unique_IdentifierObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Unique_IdentifierObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Object_Type_to_Suppress_from_Search_Reference property can only contain items of type \WorkdayWsdl\\StructType\Unique_IdentifierObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Object_Type_to_Suppress_from_Search_Reference[] = $item;
         return $this;
     }
     /**
      * Get Synonyms value
-     * @return \StructType\Synonym_Webservice_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Synonym_Webservice_DataType[]|null
      */
     public function getSynonyms()
     {
@@ -125,12 +125,12 @@ class Search_Settings_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $search_Settings_DataTypeSynonymsItem) {
             // validation for constraint: itemType
-            if (!$search_Settings_DataTypeSynonymsItem instanceof \StructType\Synonym_Webservice_DataType) {
+            if (!$search_Settings_DataTypeSynonymsItem instanceof \WorkdayWsdl\\StructType\Synonym_Webservice_DataType) {
                 $invalidValues[] = is_object($search_Settings_DataTypeSynonymsItem) ? get_class($search_Settings_DataTypeSynonymsItem) : sprintf('%s(%s)', gettype($search_Settings_DataTypeSynonymsItem), var_export($search_Settings_DataTypeSynonymsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Synonyms property can only contain items of type \StructType\Synonym_Webservice_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Synonyms property can only contain items of type \WorkdayWsdl\\StructType\Synonym_Webservice_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -138,8 +138,8 @@ class Search_Settings_DataType extends AbstractStructBase
     /**
      * Set Synonyms value
      * @throws \InvalidArgumentException
-     * @param \StructType\Synonym_Webservice_DataType[] $synonyms
-     * @return \StructType\Search_Settings_DataType
+     * @param \WorkdayWsdl\\StructType\Synonym_Webservice_DataType[] $synonyms
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
     public function setSynonyms(array $synonyms = array())
     {
@@ -153,14 +153,14 @@ class Search_Settings_DataType extends AbstractStructBase
     /**
      * Add item to Synonyms value
      * @throws \InvalidArgumentException
-     * @param \StructType\Synonym_Webservice_DataType $item
-     * @return \StructType\Search_Settings_DataType
+     * @param \WorkdayWsdl\\StructType\Synonym_Webservice_DataType $item
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
-    public function addToSynonyms(\StructType\Synonym_Webservice_DataType $item)
+    public function addToSynonyms(\WorkdayWsdl\\StructType\Synonym_Webservice_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Synonym_Webservice_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Synonyms property can only contain items of type \StructType\Synonym_Webservice_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Synonym_Webservice_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Synonyms property can only contain items of type \WorkdayWsdl\\StructType\Synonym_Webservice_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Synonyms[] = $item;
         return $this;
@@ -171,7 +171,7 @@ class Search_Settings_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Settings_DataType
+     * @return \WorkdayWsdl\\StructType\Search_Settings_DataType
      */
     public static function __set_state(array $array)
     {

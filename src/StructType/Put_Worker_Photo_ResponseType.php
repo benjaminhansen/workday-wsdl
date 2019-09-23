@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker Reference
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
      * Constructor method for Put_Worker_Photo_ResponseType
      * @uses Put_Worker_Photo_ResponseType::setWorker_Reference()
      * @uses Put_Worker_Photo_ResponseType::setVersion()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $version
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $version = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -42,7 +42,7 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Put_Worker_Photo_ResponseType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_ResponseType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Worker_Photo_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Worker_Photo_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Worker_Photo_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Job_History_SkillObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_History_SkillObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Job_History_SkillObjectType extends AbstractStructBase
      * Constructor method for Job_History_SkillObjectType
      * @uses Job_History_SkillObjectType::setID()
      * @uses Job_History_SkillObjectType::setDescriptor()
-     * @param \StructType\Job_History_SkillObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Job_History_SkillObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Job_History_SkillObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Job_History_SkillObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_History_SkillObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$job_History_SkillObjectTypeIDItem instanceof \StructType\Job_History_SkillObjectIDType) {
+            if (!$job_History_SkillObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType) {
                 $invalidValues[] = is_object($job_History_SkillObjectTypeIDItem) ? get_class($job_History_SkillObjectTypeIDItem) : sprintf('%s(%s)', gettype($job_History_SkillObjectTypeIDItem), var_export($job_History_SkillObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Job_History_SkillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_History_SkillObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_History_SkillObjectIDType[] $iD
-     * @return \StructType\Job_History_SkillObjectType
+     * @param \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Job_History_SkillObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_History_SkillObjectIDType $item
-     * @return \StructType\Job_History_SkillObjectType
+     * @param \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectType
      */
-    public function addToID(\StructType\Job_History_SkillObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Job_History_SkillObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_History_SkillObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Job_History_SkillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_History_SkillObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Job_History_SkillObjectType
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Job_History_SkillObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_History_SkillObjectType
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Country for the workers' compensation code.
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -50,7 +50,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
      * - documentation: Reference to the country region for the workers' compensation code.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType[]
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType[]
      */
     public $Country_Region_Reference;
     /**
@@ -59,7 +59,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
      * - documentation: Reference to the location for the workers' compensation code.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType[]
+     * @var \WorkdayWsdl\\StructType\LocationObjectType[]
      */
     public $Location_Reference;
     /**
@@ -83,12 +83,12 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
      * @param string $workers_Compensation_ID
      * @param string $workers_Compensation_Code
      * @param string $workers_Compensation_Name
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\Country_RegionObjectType[] $country_Region_Reference
-     * @param \StructType\LocationObjectType[] $location_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType[] $country_Region_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
      * @param bool $inactive
      */
-    public function __construct($workers_Compensation_ID = null, $workers_Compensation_Code = null, $workers_Compensation_Name = null, \StructType\CountryObjectType $country_Reference = null, array $country_Region_Reference = array(), array $location_Reference = array(), $inactive = null)
+    public function __construct($workers_Compensation_ID = null, $workers_Compensation_Code = null, $workers_Compensation_Name = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, array $country_Region_Reference = array(), array $location_Reference = array(), $inactive = null)
     {
         $this
             ->setWorkers_Compensation_ID($workers_Compensation_ID)
@@ -110,7 +110,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Workers_Compensation_ID value
      * @param string $workers_Compensation_ID
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setWorkers_Compensation_ID($workers_Compensation_ID = null)
     {
@@ -132,7 +132,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Workers_Compensation_Code value
      * @param string $workers_Compensation_Code
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setWorkers_Compensation_Code($workers_Compensation_Code = null)
     {
@@ -154,7 +154,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Workers_Compensation_Name value
      * @param string $workers_Compensation_Name
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setWorkers_Compensation_Name($workers_Compensation_Name = null)
     {
@@ -167,7 +167,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -175,17 +175,17 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Country_Region_Reference value
-     * @return \StructType\Country_RegionObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType[]|null
      */
     public function getCountry_Region_Reference()
     {
@@ -203,12 +203,12 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem instanceof \StructType\Country_RegionObjectType) {
+            if (!$workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem instanceof \WorkdayWsdl\\StructType\Country_RegionObjectType) {
                 $invalidValues[] = is_object($workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem) ? get_class($workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem) : sprintf('%s(%s)', gettype($workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem), var_export($workers_Compensation_Code_DataTypeCountry_Region_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Country_Region_Reference property can only contain items of type \StructType\Country_RegionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Country_Region_Reference property can only contain items of type \WorkdayWsdl\\StructType\Country_RegionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -216,8 +216,8 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Country_Region_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_RegionObjectType[] $country_Region_Reference
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType[] $country_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setCountry_Region_Reference(array $country_Region_Reference = array())
     {
@@ -231,21 +231,21 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Add item to Country_Region_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_RegionObjectType $item
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $item
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
-    public function addToCountry_Region_Reference(\StructType\Country_RegionObjectType $item)
+    public function addToCountry_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Country_RegionObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Country_Region_Reference property can only contain items of type \StructType\Country_RegionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Country_RegionObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Country_Region_Reference property can only contain items of type \WorkdayWsdl\\StructType\Country_RegionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Country_Region_Reference[] = $item;
         return $this;
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType[]|null
      */
     public function getLocation_Reference()
     {
@@ -263,12 +263,12 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workers_Compensation_Code_DataTypeLocation_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$workers_Compensation_Code_DataTypeLocation_ReferenceItem instanceof \StructType\LocationObjectType) {
+            if (!$workers_Compensation_Code_DataTypeLocation_ReferenceItem instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
                 $invalidValues[] = is_object($workers_Compensation_Code_DataTypeLocation_ReferenceItem) ? get_class($workers_Compensation_Code_DataTypeLocation_ReferenceItem) : sprintf('%s(%s)', gettype($workers_Compensation_Code_DataTypeLocation_ReferenceItem), var_export($workers_Compensation_Code_DataTypeLocation_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -276,8 +276,8 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType[] $location_Reference
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setLocation_Reference(array $location_Reference = array())
     {
@@ -291,14 +291,14 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Add item to Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType $item
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
-    public function addToLocation_Reference(\StructType\LocationObjectType $item)
+    public function addToLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Reference[] = $item;
         return $this;
@@ -314,7 +314,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -331,7 +331,7 @@ class Workers_Compensation_Code_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workers_Compensation_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public static function __set_state(array $array)
     {

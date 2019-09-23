@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The overall rating assigned to the review.
      * - minOccurs: 0
-     * @var \StructType\Review_RatingObjectType
+     * @var \WorkdayWsdl\\StructType\Review_RatingObjectType
      */
     public $Rating_Reference;
     /**
@@ -34,10 +34,10 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
      * Constructor method for Overall_Evaluation_Detail_DataType
      * @uses Overall_Evaluation_Detail_DataType::setRating_Reference()
      * @uses Overall_Evaluation_Detail_DataType::setComment()
-     * @param \StructType\Review_RatingObjectType $rating_Reference
+     * @param \WorkdayWsdl\\StructType\Review_RatingObjectType $rating_Reference
      * @param string $comment
      */
-    public function __construct(\StructType\Review_RatingObjectType $rating_Reference = null, $comment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Review_RatingObjectType $rating_Reference = null, $comment = null)
     {
         $this
             ->setRating_Reference($rating_Reference)
@@ -45,7 +45,7 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Rating_Reference value
-     * @return \StructType\Review_RatingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Review_RatingObjectType|null
      */
     public function getRating_Reference()
     {
@@ -53,10 +53,10 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Rating_Reference value
-     * @param \StructType\Review_RatingObjectType $rating_Reference
-     * @return \StructType\Overall_Evaluation_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Review_RatingObjectType $rating_Reference
+     * @return \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType
      */
-    public function setRating_Reference(\StructType\Review_RatingObjectType $rating_Reference = null)
+    public function setRating_Reference(\WorkdayWsdl\\StructType\Review_RatingObjectType $rating_Reference = null)
     {
         $this->Rating_Reference = $rating_Reference;
         return $this;
@@ -72,7 +72,7 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Overall_Evaluation_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType
      */
     public function setComment($comment = null)
     {
@@ -89,7 +89,7 @@ class Overall_Evaluation_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Overall_Evaluation_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Overall_Evaluation_Detail_DataType
      */
     public static function __set_state(array $array)
     {

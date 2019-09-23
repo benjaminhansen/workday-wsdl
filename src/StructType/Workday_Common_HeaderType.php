@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Workday_Common_HeaderType extends AbstractStructBase
     /**
      * Set Include_Reference_Descriptors_In_Response value
      * @param bool $include_Reference_Descriptors_In_Response
-     * @return \StructType\Workday_Common_HeaderType
+     * @return \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      */
     public function setInclude_Reference_Descriptors_In_Response($include_Reference_Descriptors_In_Response = null)
     {
@@ -56,7 +56,7 @@ class Workday_Common_HeaderType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workday_Common_HeaderType
+     * @return \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      */
     public static function __set_state(array $array)
     {

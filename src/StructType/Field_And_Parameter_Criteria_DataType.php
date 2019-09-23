@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Field And Parameter Initialization Provider Reference
      * - maxOccurs: unbounded
-     * @var \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[]
+     * @var \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[]
      */
     public $Provider_Reference;
     /**
      * Constructor method for Field_And_Parameter_Criteria_DataType
      * @uses Field_And_Parameter_Criteria_DataType::setProvider_Reference()
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[] $provider_Reference
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[] $provider_Reference
      */
     public function __construct(array $provider_Reference = array())
     {
@@ -32,7 +32,7 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
     }
     /**
      * Get Provider_Reference value
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[]|null
      */
     public function getProvider_Reference()
     {
@@ -50,12 +50,12 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem instanceof \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType) {
+            if (!$field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem instanceof \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType) {
                 $invalidValues[] = is_object($field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem) ? get_class($field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem) : sprintf('%s(%s)', gettype($field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem), var_export($field_And_Parameter_Criteria_DataTypeProvider_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Provider_Reference property can only contain items of type \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Provider_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
     /**
      * Set Provider_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[] $provider_Reference
-     * @return \StructType\Field_And_Parameter_Criteria_DataType
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType[] $provider_Reference
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType
      */
     public function setProvider_Reference(array $provider_Reference = array())
     {
@@ -78,14 +78,14 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
     /**
      * Add item to Provider_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType $item
-     * @return \StructType\Field_And_Parameter_Criteria_DataType
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType $item
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType
      */
-    public function addToProvider_Reference(\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType $item)
+    public function addToProvider_Reference(\WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Provider_Reference property can only contain items of type \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Provider_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Provider_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Field_And_Parameter_Criteria_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Field_And_Parameter_Criteria_DataType
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType
      */
     public static function __set_state(array $array)
     {

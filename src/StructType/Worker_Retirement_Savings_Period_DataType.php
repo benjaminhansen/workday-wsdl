@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
      * The Enrollment_Period_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Enrollment_Period_DataType
+     * @var \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public $Enrollment_Period_Data;
     /**
@@ -24,17 +24,17 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_Retirement_Savings_DataType[]
+     * @var \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType[]
      */
     public $Retirement_Savings_Coverage_Data;
     /**
      * Constructor method for Worker_Retirement_Savings_Period_DataType
      * @uses Worker_Retirement_Savings_Period_DataType::setEnrollment_Period_Data()
      * @uses Worker_Retirement_Savings_Period_DataType::setRetirement_Savings_Coverage_Data()
-     * @param \StructType\Enrollment_Period_DataType $enrollment_Period_Data
-     * @param \StructType\Worker_Retirement_Savings_DataType[] $retirement_Savings_Coverage_Data
+     * @param \WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType[] $retirement_Savings_Coverage_Data
      */
-    public function __construct(\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null, array $retirement_Savings_Coverage_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null, array $retirement_Savings_Coverage_Data = array())
     {
         $this
             ->setEnrollment_Period_Data($enrollment_Period_Data)
@@ -42,7 +42,7 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
     }
     /**
      * Get Enrollment_Period_Data value
-     * @return \StructType\Enrollment_Period_DataType|null
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType|null
      */
     public function getEnrollment_Period_Data()
     {
@@ -50,17 +50,17 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
     }
     /**
      * Set Enrollment_Period_Data value
-     * @param \StructType\Enrollment_Period_DataType $enrollment_Period_Data
-     * @return \StructType\Worker_Retirement_Savings_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Retirement_Savings_Period_DataType
      */
-    public function setEnrollment_Period_Data(\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null)
+    public function setEnrollment_Period_Data(\WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null)
     {
         $this->Enrollment_Period_Data = $enrollment_Period_Data;
         return $this;
     }
     /**
      * Get Retirement_Savings_Coverage_Data value
-     * @return \StructType\Worker_Retirement_Savings_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType[]|null
      */
     public function getRetirement_Savings_Coverage_Data()
     {
@@ -78,12 +78,12 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem instanceof \StructType\Worker_Retirement_Savings_DataType) {
+            if (!$worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem instanceof \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType) {
                 $invalidValues[] = is_object($worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem) ? get_class($worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem) : sprintf('%s(%s)', gettype($worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem), var_export($worker_Retirement_Savings_Period_DataTypeRetirement_Savings_Coverage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Retirement_Savings_Coverage_Data property can only contain items of type \StructType\Worker_Retirement_Savings_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Retirement_Savings_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -91,8 +91,8 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
     /**
      * Set Retirement_Savings_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Retirement_Savings_DataType[] $retirement_Savings_Coverage_Data
-     * @return \StructType\Worker_Retirement_Savings_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType[] $retirement_Savings_Coverage_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Retirement_Savings_Period_DataType
      */
     public function setRetirement_Savings_Coverage_Data(array $retirement_Savings_Coverage_Data = array())
     {
@@ -106,14 +106,14 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
     /**
      * Add item to Retirement_Savings_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Retirement_Savings_DataType $item
-     * @return \StructType\Worker_Retirement_Savings_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Retirement_Savings_Period_DataType
      */
-    public function addToRetirement_Savings_Coverage_Data(\StructType\Worker_Retirement_Savings_DataType $item)
+    public function addToRetirement_Savings_Coverage_Data(\WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_Retirement_Savings_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Retirement_Savings_Coverage_Data property can only contain items of type \StructType\Worker_Retirement_Savings_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Retirement_Savings_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Retirement_Savings_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Retirement_Savings_Coverage_Data[] = $item;
         return $this;
@@ -124,7 +124,7 @@ class Worker_Retirement_Savings_Period_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Retirement_Savings_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Retirement_Savings_Period_DataType
      */
     public static function __set_state(array $array)
     {

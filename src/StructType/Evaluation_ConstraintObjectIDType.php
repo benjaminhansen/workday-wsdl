@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Evaluation_ConstraintObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Evaluation_ConstraintReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Evaluation_ConstraintReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Evaluation_ConstraintReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Evaluation_ConstraintReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Evaluation_ConstraintObjectIDType
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Evaluation_ConstraintReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Evaluation_ConstraintReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Evaluation_ConstraintReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Evaluation_ConstraintReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Evaluation_ConstraintReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Evaluation_ConstraintReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Evaluation_ConstraintObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Evaluation_ConstraintObjectIDType
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Evaluation_ConstraintObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Evaluation_ConstraintObjectIDType
+     * @return \WorkdayWsdl\\StructType\Evaluation_ConstraintObjectIDType
      */
     public static function __set_state(array $array)
     {

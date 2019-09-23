@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country for the address.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -56,7 +56,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address_Line_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Address_Line_Information_DataType[]
      */
     public $Address_Line_Data;
     /**
@@ -73,7 +73,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country city for the address.
      * - minOccurs: 0
-     * @var \StructType\Country_CityObjectType
+     * @var \WorkdayWsdl\\StructType\Country_CityObjectType
      */
     public $Country_City_Reference;
     /**
@@ -81,7 +81,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Submunicipality_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Submunicipality_Information_DataType[]
      */
     public $Submunicipality_Data;
     /**
@@ -89,7 +89,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The region part of the address. Typically this contains the state/province information.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Country_Region_Reference;
     /**
@@ -106,7 +106,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Subregion_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Subregion_Information_DataType[]
      */
     public $Subregion_Data;
     /**
@@ -124,7 +124,7 @@ class Address_Information_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -154,7 +154,7 @@ class Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The address Reference ID.
      * - minOccurs: 0
-     * @var \StructType\Address_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Address_ReferenceObjectType
      */
     public $Address_Reference;
     /**
@@ -233,20 +233,20 @@ class Address_Information_DataType extends AbstractStructBase
      * @uses Address_Information_DataType::setDelete()
      * @uses Address_Information_DataType::setDo_Not_Replace_All()
      * @uses Address_Information_DataType::setEffective_Date()
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      * @param string $last_Modified
-     * @param \StructType\Address_Line_Information_DataType[] $address_Line_Data
+     * @param \WorkdayWsdl\\StructType\Address_Line_Information_DataType[] $address_Line_Data
      * @param string $municipality
-     * @param \StructType\Country_CityObjectType $country_City_Reference
-     * @param \StructType\Submunicipality_Information_DataType[] $submunicipality_Data
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
+     * @param \WorkdayWsdl\\StructType\Country_CityObjectType $country_City_Reference
+     * @param \WorkdayWsdl\\StructType\Submunicipality_Information_DataType[] $submunicipality_Data
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
      * @param string $country_Region_Descriptor
-     * @param \StructType\Subregion_Information_DataType[] $subregion_Data
+     * @param \WorkdayWsdl\\StructType\Subregion_Information_DataType[] $subregion_Data
      * @param string $postal_Code
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
      * @param float $number_of_Days
      * @param string $municipality_Local
-     * @param \StructType\Address_ReferenceObjectType $address_Reference
+     * @param \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference
      * @param string $address_ID
      * @param string $formatted_Address
      * @param string $address_Format_Type
@@ -255,7 +255,7 @@ class Address_Information_DataType extends AbstractStructBase
      * @param bool $do_Not_Replace_All
      * @param string $effective_Date
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null, $last_Modified = null, array $address_Line_Data = array(), $municipality = null, \StructType\Country_CityObjectType $country_City_Reference = null, array $submunicipality_Data = array(), \StructType\Country_RegionObjectType $country_Region_Reference = null, $country_Region_Descriptor = null, array $subregion_Data = array(), $postal_Code = null, array $usage_Data = array(), $number_of_Days = null, $municipality_Local = null, \StructType\Address_ReferenceObjectType $address_Reference = null, $address_ID = null, $formatted_Address = null, $address_Format_Type = null, $defaulted_Business_Site_Address = null, $delete = null, $do_Not_Replace_All = null, $effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, $last_Modified = null, array $address_Line_Data = array(), $municipality = null, \WorkdayWsdl\\StructType\Country_CityObjectType $country_City_Reference = null, array $submunicipality_Data = array(), \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null, $country_Region_Descriptor = null, array $subregion_Data = array(), $postal_Code = null, array $usage_Data = array(), $number_of_Days = null, $municipality_Local = null, \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference = null, $address_ID = null, $formatted_Address = null, $address_Format_Type = null, $defaulted_Business_Site_Address = null, $delete = null, $do_Not_Replace_All = null, $effective_Date = null)
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -282,7 +282,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -290,10 +290,10 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -309,7 +309,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Last_Modified value
      * @param string $last_Modified
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setLast_Modified($last_Modified = null)
     {
@@ -322,7 +322,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Address_Line_Data value
-     * @return \StructType\Address_Line_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Address_Line_Information_DataType[]|null
      */
     public function getAddress_Line_Data()
     {
@@ -340,12 +340,12 @@ class Address_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $address_Information_DataTypeAddress_Line_DataItem) {
             // validation for constraint: itemType
-            if (!$address_Information_DataTypeAddress_Line_DataItem instanceof \StructType\Address_Line_Information_DataType) {
+            if (!$address_Information_DataTypeAddress_Line_DataItem instanceof \WorkdayWsdl\\StructType\Address_Line_Information_DataType) {
                 $invalidValues[] = is_object($address_Information_DataTypeAddress_Line_DataItem) ? get_class($address_Information_DataTypeAddress_Line_DataItem) : sprintf('%s(%s)', gettype($address_Information_DataTypeAddress_Line_DataItem), var_export($address_Information_DataTypeAddress_Line_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Address_Line_Data property can only contain items of type \StructType\Address_Line_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Address_Line_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Line_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -353,8 +353,8 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Address_Line_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Line_Information_DataType[] $address_Line_Data
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Line_Information_DataType[] $address_Line_Data
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setAddress_Line_Data(array $address_Line_Data = array())
     {
@@ -368,14 +368,14 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Add item to Address_Line_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Line_Information_DataType $item
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Line_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function addToAddress_Line_Data(\StructType\Address_Line_Information_DataType $item)
+    public function addToAddress_Line_Data(\WorkdayWsdl\\StructType\Address_Line_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address_Line_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Address_Line_Data property can only contain items of type \StructType\Address_Line_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Address_Line_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Address_Line_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Line_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Address_Line_Data[] = $item;
         return $this;
@@ -391,7 +391,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Municipality value
      * @param string $municipality
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setMunicipality($municipality = null)
     {
@@ -404,7 +404,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Country_City_Reference value
-     * @return \StructType\Country_CityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectType|null
      */
     public function getCountry_City_Reference()
     {
@@ -412,17 +412,17 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Country_City_Reference value
-     * @param \StructType\Country_CityObjectType $country_City_Reference
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_CityObjectType $country_City_Reference
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function setCountry_City_Reference(\StructType\Country_CityObjectType $country_City_Reference = null)
+    public function setCountry_City_Reference(\WorkdayWsdl\\StructType\Country_CityObjectType $country_City_Reference = null)
     {
         $this->Country_City_Reference = $country_City_Reference;
         return $this;
     }
     /**
      * Get Submunicipality_Data value
-     * @return \StructType\Submunicipality_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Submunicipality_Information_DataType[]|null
      */
     public function getSubmunicipality_Data()
     {
@@ -440,12 +440,12 @@ class Address_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $address_Information_DataTypeSubmunicipality_DataItem) {
             // validation for constraint: itemType
-            if (!$address_Information_DataTypeSubmunicipality_DataItem instanceof \StructType\Submunicipality_Information_DataType) {
+            if (!$address_Information_DataTypeSubmunicipality_DataItem instanceof \WorkdayWsdl\\StructType\Submunicipality_Information_DataType) {
                 $invalidValues[] = is_object($address_Information_DataTypeSubmunicipality_DataItem) ? get_class($address_Information_DataTypeSubmunicipality_DataItem) : sprintf('%s(%s)', gettype($address_Information_DataTypeSubmunicipality_DataItem), var_export($address_Information_DataTypeSubmunicipality_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Submunicipality_Data property can only contain items of type \StructType\Submunicipality_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Submunicipality_Data property can only contain items of type \WorkdayWsdl\\StructType\Submunicipality_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -453,8 +453,8 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Submunicipality_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Submunicipality_Information_DataType[] $submunicipality_Data
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Submunicipality_Information_DataType[] $submunicipality_Data
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setSubmunicipality_Data(array $submunicipality_Data = array())
     {
@@ -468,21 +468,21 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Add item to Submunicipality_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Submunicipality_Information_DataType $item
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Submunicipality_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function addToSubmunicipality_Data(\StructType\Submunicipality_Information_DataType $item)
+    public function addToSubmunicipality_Data(\WorkdayWsdl\\StructType\Submunicipality_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Submunicipality_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Submunicipality_Data property can only contain items of type \StructType\Submunicipality_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Submunicipality_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Submunicipality_Data property can only contain items of type \WorkdayWsdl\\StructType\Submunicipality_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Submunicipality_Data[] = $item;
         return $this;
     }
     /**
      * Get Country_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getCountry_Region_Reference()
     {
@@ -490,10 +490,10 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function setCountry_Region_Reference(\StructType\Country_RegionObjectType $country_Region_Reference = null)
+    public function setCountry_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null)
     {
         $this->Country_Region_Reference = $country_Region_Reference;
         return $this;
@@ -509,7 +509,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Country_Region_Descriptor value
      * @param string $country_Region_Descriptor
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setCountry_Region_Descriptor($country_Region_Descriptor = null)
     {
@@ -522,7 +522,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Subregion_Data value
-     * @return \StructType\Subregion_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Subregion_Information_DataType[]|null
      */
     public function getSubregion_Data()
     {
@@ -540,12 +540,12 @@ class Address_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $address_Information_DataTypeSubregion_DataItem) {
             // validation for constraint: itemType
-            if (!$address_Information_DataTypeSubregion_DataItem instanceof \StructType\Subregion_Information_DataType) {
+            if (!$address_Information_DataTypeSubregion_DataItem instanceof \WorkdayWsdl\\StructType\Subregion_Information_DataType) {
                 $invalidValues[] = is_object($address_Information_DataTypeSubregion_DataItem) ? get_class($address_Information_DataTypeSubregion_DataItem) : sprintf('%s(%s)', gettype($address_Information_DataTypeSubregion_DataItem), var_export($address_Information_DataTypeSubregion_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Subregion_Data property can only contain items of type \StructType\Subregion_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Subregion_Data property can only contain items of type \WorkdayWsdl\\StructType\Subregion_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -553,8 +553,8 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Subregion_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Subregion_Information_DataType[] $subregion_Data
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Subregion_Information_DataType[] $subregion_Data
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setSubregion_Data(array $subregion_Data = array())
     {
@@ -568,14 +568,14 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Add item to Subregion_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Subregion_Information_DataType $item
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Subregion_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function addToSubregion_Data(\StructType\Subregion_Information_DataType $item)
+    public function addToSubregion_Data(\WorkdayWsdl\\StructType\Subregion_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Subregion_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Subregion_Data property can only contain items of type \StructType\Subregion_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Subregion_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Subregion_Data property can only contain items of type \WorkdayWsdl\\StructType\Subregion_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Subregion_Data[] = $item;
         return $this;
@@ -591,7 +591,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Postal_Code value
      * @param string $postal_Code
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setPostal_Code($postal_Code = null)
     {
@@ -604,7 +604,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -622,12 +622,12 @@ class Address_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $address_Information_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$address_Information_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$address_Information_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($address_Information_DataTypeUsage_DataItem) ? get_class($address_Information_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($address_Information_DataTypeUsage_DataItem), var_export($address_Information_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -635,8 +635,8 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -650,14 +650,14 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
@@ -673,7 +673,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Number_of_Days value
      * @param float $number_of_Days
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setNumber_of_Days($number_of_Days = null)
     {
@@ -707,7 +707,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Municipality_Local value
      * @param string $municipality_Local
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setMunicipality_Local($municipality_Local = null)
     {
@@ -720,7 +720,7 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Address_Reference value
-     * @return \StructType\Address_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Address_ReferenceObjectType|null
      */
     public function getAddress_Reference()
     {
@@ -728,10 +728,10 @@ class Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Address_Reference value
-     * @param \StructType\Address_ReferenceObjectType $address_Reference
-     * @return \StructType\Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
-    public function setAddress_Reference(\StructType\Address_ReferenceObjectType $address_Reference = null)
+    public function setAddress_Reference(\WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference = null)
     {
         $this->Address_Reference = $address_Reference;
         return $this;
@@ -747,7 +747,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Address_ID value
      * @param string $address_ID
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setAddress_ID($address_ID = null)
     {
@@ -769,7 +769,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Formatted_Address value
      * @param string $formatted_Address
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setFormatted_Address($formatted_Address = null)
     {
@@ -791,7 +791,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Address_Format_Type value
      * @param string $address_Format_Type
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setAddress_Format_Type($address_Format_Type = null)
     {
@@ -813,7 +813,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Defaulted_Business_Site_Address value
      * @param bool $defaulted_Business_Site_Address
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setDefaulted_Business_Site_Address($defaulted_Business_Site_Address = null)
     {
@@ -835,7 +835,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setDelete($delete = null)
     {
@@ -857,7 +857,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Do_Not_Replace_All value
      * @param bool $do_Not_Replace_All
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setDo_Not_Replace_All($do_Not_Replace_All = null)
     {
@@ -879,7 +879,7 @@ class Address_Information_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -896,7 +896,7 @@ class Address_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType
      */
     public static function __set_state(array $array)
     {

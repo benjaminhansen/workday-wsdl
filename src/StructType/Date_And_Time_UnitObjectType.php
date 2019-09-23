@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Date_And_Time_UnitObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
      * Constructor method for Date_And_Time_UnitObjectType
      * @uses Date_And_Time_UnitObjectType::setID()
      * @uses Date_And_Time_UnitObjectType::setDescriptor()
-     * @param \StructType\Date_And_Time_UnitObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Date_And_Time_UnitObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $date_And_Time_UnitObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$date_And_Time_UnitObjectTypeIDItem instanceof \StructType\Date_And_Time_UnitObjectIDType) {
+            if (!$date_And_Time_UnitObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType) {
                 $invalidValues[] = is_object($date_And_Time_UnitObjectTypeIDItem) ? get_class($date_And_Time_UnitObjectTypeIDItem) : sprintf('%s(%s)', gettype($date_And_Time_UnitObjectTypeIDItem), var_export($date_And_Time_UnitObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Date_And_Time_UnitObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Date_And_Time_UnitObjectIDType[] $iD
-     * @return \StructType\Date_And_Time_UnitObjectType
+     * @param \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Date_And_Time_UnitObjectIDType $item
-     * @return \StructType\Date_And_Time_UnitObjectType
+     * @param \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType
      */
-    public function addToID(\StructType\Date_And_Time_UnitObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Date_And_Time_UnitObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Date_And_Time_UnitObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Date_And_Time_UnitObjectType
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Date_And_Time_UnitObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Date_And_Time_UnitObjectType
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType
      */
     public static function __set_state(array $array)
     {

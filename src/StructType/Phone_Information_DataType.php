@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Phone_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for Phone Device Type.
      * - minOccurs: 0
-     * @var \StructType\Phone_Device_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
     public $Phone_Device_Type_Reference;
     /**
@@ -69,7 +69,7 @@ class Phone_Information_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -77,7 +77,7 @@ class Phone_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Phone Reference ID.
      * - minOccurs: 0
-     * @var \StructType\Phone_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
     public $Phone_Reference;
     /**
@@ -177,9 +177,9 @@ class Phone_Information_DataType extends AbstractStructBase
      * @param string $international_Phone_Code
      * @param string $phone_Number
      * @param string $phone_Extension
-     * @param \StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @param \StructType\Phone_ReferenceObjectType $phone_Reference
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference
      * @param string $iD
      * @param string $area_Code
      * @param string $tenant_Formatted_Phone
@@ -191,7 +191,7 @@ class Phone_Information_DataType extends AbstractStructBase
      * @param bool $delete
      * @param bool $do_Not_Replace_All
      */
-    public function __construct($country_ISO_Code = null, $international_Phone_Code = null, $phone_Number = null, $phone_Extension = null, \StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference = null, array $usage_Data = array(), \StructType\Phone_ReferenceObjectType $phone_Reference = null, $iD = null, $area_Code = null, $tenant_Formatted_Phone = null, $international_Formatted_Phone = null, $phone_Number_Without_Area_Code = null, $national_Formatted_Phone = null, $e164_Formatted_Phone = null, $workday_Traditional_Formatted_Phone = null, $delete = null, $do_Not_Replace_All = null)
+    public function __construct($country_ISO_Code = null, $international_Phone_Code = null, $phone_Number = null, $phone_Extension = null, \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference = null, array $usage_Data = array(), \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference = null, $iD = null, $area_Code = null, $tenant_Formatted_Phone = null, $international_Formatted_Phone = null, $phone_Number_Without_Area_Code = null, $national_Formatted_Phone = null, $e164_Formatted_Phone = null, $workday_Traditional_Formatted_Phone = null, $delete = null, $do_Not_Replace_All = null)
     {
         $this
             ->setCountry_ISO_Code($country_ISO_Code)
@@ -223,7 +223,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Country_ISO_Code value
      * @param string $country_ISO_Code
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setCountry_ISO_Code($country_ISO_Code = null)
     {
@@ -249,7 +249,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set International_Phone_Code value
      * @param string $international_Phone_Code
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setInternational_Phone_Code($international_Phone_Code = null)
     {
@@ -271,7 +271,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Phone_Number value
      * @param string $phone_Number
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setPhone_Number($phone_Number = null)
     {
@@ -293,7 +293,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Phone_Extension value
      * @param string $phone_Extension
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setPhone_Extension($phone_Extension = null)
     {
@@ -306,7 +306,7 @@ class Phone_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Phone_Device_Type_Reference value
-     * @return \StructType\Phone_Device_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType|null
      */
     public function getPhone_Device_Type_Reference()
     {
@@ -314,17 +314,17 @@ class Phone_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Phone_Device_Type_Reference value
-     * @param \StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference
-     * @return \StructType\Phone_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
-    public function setPhone_Device_Type_Reference(\StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference = null)
+    public function setPhone_Device_Type_Reference(\WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $phone_Device_Type_Reference = null)
     {
         $this->Phone_Device_Type_Reference = $phone_Device_Type_Reference;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -342,12 +342,12 @@ class Phone_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $phone_Information_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$phone_Information_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$phone_Information_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($phone_Information_DataTypeUsage_DataItem) ? get_class($phone_Information_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($phone_Information_DataTypeUsage_DataItem), var_export($phone_Information_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -355,8 +355,8 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Phone_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -370,21 +370,21 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Phone_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
     }
     /**
      * Get Phone_Reference value
-     * @return \StructType\Phone_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType|null
      */
     public function getPhone_Reference()
     {
@@ -392,10 +392,10 @@ class Phone_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Phone_Reference value
-     * @param \StructType\Phone_ReferenceObjectType $phone_Reference
-     * @return \StructType\Phone_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
-    public function setPhone_Reference(\StructType\Phone_ReferenceObjectType $phone_Reference = null)
+    public function setPhone_Reference(\WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference = null)
     {
         $this->Phone_Reference = $phone_Reference;
         return $this;
@@ -411,7 +411,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setID($iD = null)
     {
@@ -433,7 +433,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Area_Code value
      * @param string $area_Code
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setArea_Code($area_Code = null)
     {
@@ -455,7 +455,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Tenant_Formatted_Phone value
      * @param string $tenant_Formatted_Phone
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setTenant_Formatted_Phone($tenant_Formatted_Phone = null)
     {
@@ -477,7 +477,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set International_Formatted_Phone value
      * @param string $international_Formatted_Phone
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setInternational_Formatted_Phone($international_Formatted_Phone = null)
     {
@@ -499,7 +499,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Phone_Number_Without_Area_Code value
      * @param string $phone_Number_Without_Area_Code
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setPhone_Number_Without_Area_Code($phone_Number_Without_Area_Code = null)
     {
@@ -521,7 +521,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set National_Formatted_Phone value
      * @param string $national_Formatted_Phone
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setNational_Formatted_Phone($national_Formatted_Phone = null)
     {
@@ -543,7 +543,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set E164_Formatted_Phone value
      * @param string $e164_Formatted_Phone
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setE164_Formatted_Phone($e164_Formatted_Phone = null)
     {
@@ -565,7 +565,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Workday_Traditional_Formatted_Phone value
      * @param string $workday_Traditional_Formatted_Phone
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setWorkday_Traditional_Formatted_Phone($workday_Traditional_Formatted_Phone = null)
     {
@@ -587,7 +587,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setDelete($delete = null)
     {
@@ -609,7 +609,7 @@ class Phone_Information_DataType extends AbstractStructBase
     /**
      * Set Do_Not_Replace_All value
      * @param bool $do_Not_Replace_All
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public function setDo_Not_Replace_All($do_Not_Replace_All = null)
     {
@@ -626,7 +626,7 @@ class Phone_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType
      */
     public static function __set_state(array $array)
     {

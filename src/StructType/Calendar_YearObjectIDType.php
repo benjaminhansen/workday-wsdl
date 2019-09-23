@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Calendar_YearObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Calendar_YearReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Calendar_YearReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Calendar_YearReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Calendar_YearReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Calendar_YearObjectIDType
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Calendar_YearReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Calendar_YearReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Calendar_YearReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Calendar_YearReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Calendar_YearReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Calendar_YearReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Calendar_YearObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Calendar_YearObjectIDType
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Calendar_YearObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Calendar_YearObjectIDType
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectIDType
      */
     public static function __set_state(array $array)
     {

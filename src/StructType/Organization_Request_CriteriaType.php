@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Organization_Request_CriteriaType extends AbstractStructBase
      * - documentation: This element allows you to subset the Organizations returned by type.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Organization_TypeObjectType[]
      */
     public $Organization_Type_Reference;
     /**
@@ -35,14 +35,14 @@ class Organization_Request_CriteriaType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Transaction_Log_CriteriaType[]
+     * @var \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType[]
      */
     public $Transaction_Log_Criteria;
     /**
      * The Field_And_Parameter_Criteria_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Field_And_Parameter_Criteria_DataType
+     * @var \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType
      */
     public $Field_And_Parameter_Criteria_Data;
     /**
@@ -51,12 +51,12 @@ class Organization_Request_CriteriaType extends AbstractStructBase
      * @uses Organization_Request_CriteriaType::setInclude_Inactive()
      * @uses Organization_Request_CriteriaType::setTransaction_Log_Criteria()
      * @uses Organization_Request_CriteriaType::setField_And_Parameter_Criteria_Data()
-     * @param \StructType\Organization_TypeObjectType[] $organization_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType[] $organization_Type_Reference
      * @param bool $include_Inactive
-     * @param \StructType\Transaction_Log_CriteriaType[] $transaction_Log_Criteria
-     * @param \StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType[] $transaction_Log_Criteria
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
      */
-    public function __construct(array $organization_Type_Reference = array(), $include_Inactive = null, array $transaction_Log_Criteria = array(), \StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
+    public function __construct(array $organization_Type_Reference = array(), $include_Inactive = null, array $transaction_Log_Criteria = array(), \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
     {
         $this
             ->setOrganization_Type_Reference($organization_Type_Reference)
@@ -66,7 +66,7 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Organization_Type_Reference value
-     * @return \StructType\Organization_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType[]|null
      */
     public function getOrganization_Type_Reference()
     {
@@ -84,12 +84,12 @@ class Organization_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Request_CriteriaTypeOrganization_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Request_CriteriaTypeOrganization_Type_ReferenceItem instanceof \StructType\Organization_TypeObjectType) {
+            if (!$organization_Request_CriteriaTypeOrganization_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectType) {
                 $invalidValues[] = is_object($organization_Request_CriteriaTypeOrganization_Type_ReferenceItem) ? get_class($organization_Request_CriteriaTypeOrganization_Type_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Request_CriteriaTypeOrganization_Type_ReferenceItem), var_export($organization_Request_CriteriaTypeOrganization_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Type_Reference property can only contain items of type \StructType\Organization_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -97,8 +97,8 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Organization_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectType[] $organization_Type_Reference
-     * @return \StructType\Organization_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType[] $organization_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
     public function setOrganization_Type_Reference(array $organization_Type_Reference = array())
     {
@@ -112,14 +112,14 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Organization_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectType $item
-     * @return \StructType\Organization_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
-    public function addToOrganization_Type_Reference(\StructType\Organization_TypeObjectType $item)
+    public function addToOrganization_Type_Reference(\WorkdayWsdl\\StructType\Organization_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Type_Reference property can only contain items of type \StructType\Organization_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Type_Reference[] = $item;
         return $this;
@@ -135,7 +135,7 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Inactive value
      * @param bool $include_Inactive
-     * @return \StructType\Organization_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
     public function setInclude_Inactive($include_Inactive = null)
     {
@@ -148,7 +148,7 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Transaction_Log_Criteria value
-     * @return \StructType\Transaction_Log_CriteriaType[]|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType[]|null
      */
     public function getTransaction_Log_Criteria()
     {
@@ -166,12 +166,12 @@ class Organization_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Request_CriteriaTypeTransaction_Log_CriteriaItem) {
             // validation for constraint: itemType
-            if (!$organization_Request_CriteriaTypeTransaction_Log_CriteriaItem instanceof \StructType\Transaction_Log_CriteriaType) {
+            if (!$organization_Request_CriteriaTypeTransaction_Log_CriteriaItem instanceof \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType) {
                 $invalidValues[] = is_object($organization_Request_CriteriaTypeTransaction_Log_CriteriaItem) ? get_class($organization_Request_CriteriaTypeTransaction_Log_CriteriaItem) : sprintf('%s(%s)', gettype($organization_Request_CriteriaTypeTransaction_Log_CriteriaItem), var_export($organization_Request_CriteriaTypeTransaction_Log_CriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Transaction_Log_Criteria property can only contain items of type \StructType\Transaction_Log_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Transaction_Log_Criteria property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -179,8 +179,8 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Transaction_Log_Criteria value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_CriteriaType[] $transaction_Log_Criteria
-     * @return \StructType\Organization_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType[] $transaction_Log_Criteria
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
     public function setTransaction_Log_Criteria(array $transaction_Log_Criteria = array())
     {
@@ -194,21 +194,21 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Transaction_Log_Criteria value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_CriteriaType $item
-     * @return \StructType\Organization_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
-    public function addToTransaction_Log_Criteria(\StructType\Transaction_Log_CriteriaType $item)
+    public function addToTransaction_Log_Criteria(\WorkdayWsdl\\StructType\Transaction_Log_CriteriaType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Transaction_Log_CriteriaType) {
-            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Criteria property can only contain items of type \StructType\Transaction_Log_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType) {
+            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Criteria property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Transaction_Log_Criteria[] = $item;
         return $this;
     }
     /**
      * Get Field_And_Parameter_Criteria_Data value
-     * @return \StructType\Field_And_Parameter_Criteria_DataType|null
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType|null
      */
     public function getField_And_Parameter_Criteria_Data()
     {
@@ -216,10 +216,10 @@ class Organization_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Set Field_And_Parameter_Criteria_Data value
-     * @param \StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
-     * @return \StructType\Organization_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
-    public function setField_And_Parameter_Criteria_Data(\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
+    public function setField_And_Parameter_Criteria_Data(\WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
     {
         $this->Field_And_Parameter_Criteria_Data = $field_And_Parameter_Criteria_Data;
         return $this;
@@ -230,7 +230,7 @@ class Organization_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

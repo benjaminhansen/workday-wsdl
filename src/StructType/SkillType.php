@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class SkillType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to a Skill Item.
      * - minOccurs: 0
-     * @var \StructType\Skill_Item__Tenanted_ObjectType
+     * @var \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
     public $Skill_Reference;
     /**
@@ -25,17 +25,17 @@ class SkillType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: An element containing information about a Skill Item.
      * - minOccurs: 0
-     * @var \StructType\Skill_Item_DataType
+     * @var \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public $Skill_Data;
     /**
      * Constructor method for SkillType
      * @uses SkillType::setSkill_Reference()
      * @uses SkillType::setSkill_Data()
-     * @param \StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
-     * @param \StructType\Skill_Item_DataType $skill_Data
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
+     * @param \WorkdayWsdl\\StructType\Skill_Item_DataType $skill_Data
      */
-    public function __construct(\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null, \StructType\Skill_Item_DataType $skill_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null, \WorkdayWsdl\\StructType\Skill_Item_DataType $skill_Data = null)
     {
         $this
             ->setSkill_Reference($skill_Reference)
@@ -43,7 +43,7 @@ class SkillType extends AbstractStructBase
     }
     /**
      * Get Skill_Reference value
-     * @return \StructType\Skill_Item__Tenanted_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType|null
      */
     public function getSkill_Reference()
     {
@@ -51,17 +51,17 @@ class SkillType extends AbstractStructBase
     }
     /**
      * Set Skill_Reference value
-     * @param \StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
-     * @return \StructType\SkillType
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
+     * @return \WorkdayWsdl\\StructType\SkillType
      */
-    public function setSkill_Reference(\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null)
+    public function setSkill_Reference(\WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null)
     {
         $this->Skill_Reference = $skill_Reference;
         return $this;
     }
     /**
      * Get Skill_Data value
-     * @return \StructType\Skill_Item_DataType|null
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType|null
      */
     public function getSkill_Data()
     {
@@ -69,10 +69,10 @@ class SkillType extends AbstractStructBase
     }
     /**
      * Set Skill_Data value
-     * @param \StructType\Skill_Item_DataType $skill_Data
-     * @return \StructType\SkillType
+     * @param \WorkdayWsdl\\StructType\Skill_Item_DataType $skill_Data
+     * @return \WorkdayWsdl\\StructType\SkillType
      */
-    public function setSkill_Data(\StructType\Skill_Item_DataType $skill_Data = null)
+    public function setSkill_Data(\WorkdayWsdl\\StructType\Skill_Item_DataType $skill_Data = null)
     {
         $this->Skill_Data = $skill_Data;
         return $this;
@@ -83,7 +83,7 @@ class SkillType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SkillType
+     * @return \WorkdayWsdl\\StructType\SkillType
      */
     public static function __set_state(array $array)
     {

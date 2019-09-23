@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
      * The Payroll_Reporting_Code_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the payroll reporting code.
-     * @var \StructType\Payroll_Reporting_Code__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType
      */
     public $Payroll_Reporting_Code_Reference;
     /**
@@ -48,7 +48,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
      * The Payroll_Reporting_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the payroll reporting type for the payroll reporting code.
-     * @var \StructType\Payroll_Reporting_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType
      */
     public $Payroll_Reporting_Type_Reference;
     /**
@@ -58,13 +58,13 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
      * @uses Position_Payroll_Reporting_Code_DataType::setFormatted_Code()
      * @uses Position_Payroll_Reporting_Code_DataType::setName()
      * @uses Position_Payroll_Reporting_Code_DataType::setPayroll_Reporting_Type_Reference()
-     * @param \StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference
      * @param string $code
      * @param string $formatted_Code
      * @param string $name
-     * @param \StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference
      */
-    public function __construct(\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference = null, $code = null, $formatted_Code = null, $name = null, \StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference = null, $code = null, $formatted_Code = null, $name = null, \WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference = null)
     {
         $this
             ->setPayroll_Reporting_Code_Reference($payroll_Reporting_Code_Reference)
@@ -75,7 +75,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     }
     /**
      * Get Payroll_Reporting_Code_Reference value
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType|null
      */
     public function getPayroll_Reporting_Code_Reference()
     {
@@ -83,10 +83,10 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     }
     /**
      * Set Payroll_Reporting_Code_Reference value
-     * @param \StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
-    public function setPayroll_Reporting_Code_Reference(\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference = null)
+    public function setPayroll_Reporting_Code_Reference(\WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectType $payroll_Reporting_Code_Reference = null)
     {
         $this->Payroll_Reporting_Code_Reference = $payroll_Reporting_Code_Reference;
         return $this;
@@ -102,7 +102,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
     public function setCode($code = null)
     {
@@ -124,7 +124,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     /**
      * Set Formatted_Code value
      * @param string $formatted_Code
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
     public function setFormatted_Code($formatted_Code = null)
     {
@@ -146,7 +146,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
     public function setName($name = null)
     {
@@ -159,7 +159,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     }
     /**
      * Get Payroll_Reporting_Type_Reference value
-     * @return \StructType\Payroll_Reporting_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType|null
      */
     public function getPayroll_Reporting_Type_Reference()
     {
@@ -167,10 +167,10 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
     }
     /**
      * Set Payroll_Reporting_Type_Reference value
-     * @param \StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
-    public function setPayroll_Reporting_Type_Reference(\StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference = null)
+    public function setPayroll_Reporting_Type_Reference(\WorkdayWsdl\\StructType\Payroll_Reporting_TypeObjectType $payroll_Reporting_Type_Reference = null)
     {
         $this->Payroll_Reporting_Type_Reference = $payroll_Reporting_Type_Reference;
         return $this;
@@ -181,7 +181,7 @@ class Position_Payroll_Reporting_Code_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Position_Payroll_Reporting_Code_DataType
+     * @return \WorkdayWsdl\\StructType\Position_Payroll_Reporting_Code_DataType
      */
     public static function __set_state(array $array)
     {

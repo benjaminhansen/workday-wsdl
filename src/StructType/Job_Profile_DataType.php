@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * The Job_Profile_Basic_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Basic_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public $Job_Profile_Basic_Data;
     /**
@@ -43,7 +43,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Job_Classification_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType[]
      */
     public $Job_Classification_Data;
     /**
@@ -51,7 +51,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Pay_Rate_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType[]
      */
     public $Job_Profile_Pay_Rate_Data;
     /**
@@ -59,7 +59,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Exempt_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType[]
      */
     public $Job_Profile_Exempt_Data;
     /**
@@ -69,14 +69,14 @@ class Job_Profile_DataType extends AbstractStructBase
      * touched).
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType[]
      */
     public $Workers_Compensation_Code_Replacement_Data;
     /**
      * The Qualification_Replacement_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType
+     * @var \WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType
      */
     public $Qualification_Replacement_Data;
     /**
@@ -84,14 +84,14 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Document_Field_Result_DataType[]
+     * @var \WorkdayWsdl\\StructType\Document_Field_Result_DataType[]
      */
     public $Integration_Field_Override_Data;
     /**
      * The Job_Profile_Compensation_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Compensation_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType
      */
     public $Job_Profile_Compensation_Data;
     /**
@@ -99,7 +99,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container For Union Membership Data
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Union_Membership_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType
      */
     public $Unions_Data;
     /**
@@ -107,7 +107,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Container for Work-Study Data.
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Work_Study_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType
      */
     public $Work_Study_Data;
     /**
@@ -126,18 +126,18 @@ class Job_Profile_DataType extends AbstractStructBase
      * @uses Job_Profile_DataType::setWork_Study_Data()
      * @param string $job_Code
      * @param string $effective_Date
-     * @param \StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data
-     * @param \StructType\Job_Profile_Job_Classification_DataType[] $job_Classification_Data
-     * @param \StructType\Job_Profile_Pay_Rate_DataType[] $job_Profile_Pay_Rate_Data
-     * @param \StructType\Job_Profile_Exempt_DataType[] $job_Profile_Exempt_Data
-     * @param \StructType\Workers_Compensation_Replacement_DataType[] $workers_Compensation_Code_Replacement_Data
-     * @param \StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data
-     * @param \StructType\Document_Field_Result_DataType[] $integration_Field_Override_Data
-     * @param \StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data
-     * @param \StructType\Job_Profile_Union_Membership_DataType $unions_Data
-     * @param \StructType\Job_Profile_Work_Study_DataType $work_Study_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType[] $job_Classification_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType[] $job_Profile_Pay_Rate_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType[] $job_Profile_Exempt_Data
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType[] $workers_Compensation_Code_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Document_Field_Result_DataType[] $integration_Field_Override_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType $unions_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType $work_Study_Data
      */
-    public function __construct($job_Code = null, $effective_Date = null, \StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data = null, array $job_Classification_Data = array(), array $job_Profile_Pay_Rate_Data = array(), array $job_Profile_Exempt_Data = array(), array $workers_Compensation_Code_Replacement_Data = array(), \StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data = null, array $integration_Field_Override_Data = array(), \StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data = null, \StructType\Job_Profile_Union_Membership_DataType $unions_Data = null, \StructType\Job_Profile_Work_Study_DataType $work_Study_Data = null)
+    public function __construct($job_Code = null, $effective_Date = null, \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data = null, array $job_Classification_Data = array(), array $job_Profile_Pay_Rate_Data = array(), array $job_Profile_Exempt_Data = array(), array $workers_Compensation_Code_Replacement_Data = array(), \WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data = null, array $integration_Field_Override_Data = array(), \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data = null, \WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType $unions_Data = null, \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType $work_Study_Data = null)
     {
         $this
             ->setJob_Code($job_Code)
@@ -164,7 +164,7 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Job_Code value
      * @param string $job_Code
-     * @return \StructType\Job_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setJob_Code($job_Code = null)
     {
@@ -186,7 +186,7 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Job_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -199,7 +199,7 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Basic_Data value
-     * @return \StructType\Job_Profile_Basic_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType|null
      */
     public function getJob_Profile_Basic_Data()
     {
@@ -207,17 +207,17 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Basic_Data value
-     * @param \StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function setJob_Profile_Basic_Data(\StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data = null)
+    public function setJob_Profile_Basic_Data(\WorkdayWsdl\\StructType\Job_Profile_Basic_DataType $job_Profile_Basic_Data = null)
     {
         $this->Job_Profile_Basic_Data = $job_Profile_Basic_Data;
         return $this;
     }
     /**
      * Get Job_Classification_Data value
-     * @return \StructType\Job_Profile_Job_Classification_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType[]|null
      */
     public function getJob_Classification_Data()
     {
@@ -235,12 +235,12 @@ class Job_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_DataTypeJob_Classification_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_DataTypeJob_Classification_DataItem instanceof \StructType\Job_Profile_Job_Classification_DataType) {
+            if (!$job_Profile_DataTypeJob_Classification_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType) {
                 $invalidValues[] = is_object($job_Profile_DataTypeJob_Classification_DataItem) ? get_class($job_Profile_DataTypeJob_Classification_DataItem) : sprintf('%s(%s)', gettype($job_Profile_DataTypeJob_Classification_DataItem), var_export($job_Profile_DataTypeJob_Classification_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Classification_Data property can only contain items of type \StructType\Job_Profile_Job_Classification_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Classification_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -248,8 +248,8 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Job_Classification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Job_Classification_DataType[] $job_Classification_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType[] $job_Classification_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setJob_Classification_Data(array $job_Classification_Data = array())
     {
@@ -263,21 +263,21 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Job_Classification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Job_Classification_DataType $item
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function addToJob_Classification_Data(\StructType\Job_Profile_Job_Classification_DataType $item)
+    public function addToJob_Classification_Data(\WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Job_Classification_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Classification_Data property can only contain items of type \StructType\Job_Profile_Job_Classification_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Classification_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Job_Classification_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Classification_Data[] = $item;
         return $this;
     }
     /**
      * Get Job_Profile_Pay_Rate_Data value
-     * @return \StructType\Job_Profile_Pay_Rate_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType[]|null
      */
     public function getJob_Profile_Pay_Rate_Data()
     {
@@ -295,12 +295,12 @@ class Job_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem instanceof \StructType\Job_Profile_Pay_Rate_DataType) {
+            if (!$job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType) {
                 $invalidValues[] = is_object($job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem) ? get_class($job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem) : sprintf('%s(%s)', gettype($job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem), var_export($job_Profile_DataTypeJob_Profile_Pay_Rate_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile_Pay_Rate_Data property can only contain items of type \StructType\Job_Profile_Pay_Rate_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile_Pay_Rate_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -308,8 +308,8 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Pay_Rate_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Pay_Rate_DataType[] $job_Profile_Pay_Rate_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType[] $job_Profile_Pay_Rate_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setJob_Profile_Pay_Rate_Data(array $job_Profile_Pay_Rate_Data = array())
     {
@@ -323,21 +323,21 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile_Pay_Rate_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Pay_Rate_DataType $item
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function addToJob_Profile_Pay_Rate_Data(\StructType\Job_Profile_Pay_Rate_DataType $item)
+    public function addToJob_Profile_Pay_Rate_Data(\WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Pay_Rate_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile_Pay_Rate_Data property can only contain items of type \StructType\Job_Profile_Pay_Rate_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile_Pay_Rate_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile_Pay_Rate_Data[] = $item;
         return $this;
     }
     /**
      * Get Job_Profile_Exempt_Data value
-     * @return \StructType\Job_Profile_Exempt_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType[]|null
      */
     public function getJob_Profile_Exempt_Data()
     {
@@ -355,12 +355,12 @@ class Job_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_DataTypeJob_Profile_Exempt_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_DataTypeJob_Profile_Exempt_DataItem instanceof \StructType\Job_Profile_Exempt_DataType) {
+            if (!$job_Profile_DataTypeJob_Profile_Exempt_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType) {
                 $invalidValues[] = is_object($job_Profile_DataTypeJob_Profile_Exempt_DataItem) ? get_class($job_Profile_DataTypeJob_Profile_Exempt_DataItem) : sprintf('%s(%s)', gettype($job_Profile_DataTypeJob_Profile_Exempt_DataItem), var_export($job_Profile_DataTypeJob_Profile_Exempt_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile_Exempt_Data property can only contain items of type \StructType\Job_Profile_Exempt_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile_Exempt_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -368,8 +368,8 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Exempt_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Exempt_DataType[] $job_Profile_Exempt_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType[] $job_Profile_Exempt_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setJob_Profile_Exempt_Data(array $job_Profile_Exempt_Data = array())
     {
@@ -383,21 +383,21 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile_Exempt_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Exempt_DataType $item
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function addToJob_Profile_Exempt_Data(\StructType\Job_Profile_Exempt_DataType $item)
+    public function addToJob_Profile_Exempt_Data(\WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Exempt_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile_Exempt_Data property can only contain items of type \StructType\Job_Profile_Exempt_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile_Exempt_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Exempt_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile_Exempt_Data[] = $item;
         return $this;
     }
     /**
      * Get Workers_Compensation_Code_Replacement_Data value
-     * @return \StructType\Workers_Compensation_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType[]|null
      */
     public function getWorkers_Compensation_Code_Replacement_Data()
     {
@@ -415,12 +415,12 @@ class Job_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem instanceof \StructType\Workers_Compensation_Replacement_DataType) {
+            if (!$job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType) {
                 $invalidValues[] = is_object($job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem) ? get_class($job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem) : sprintf('%s(%s)', gettype($job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem), var_export($job_Profile_DataTypeWorkers_Compensation_Code_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workers_Compensation_Code_Replacement_Data property can only contain items of type \StructType\Workers_Compensation_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workers_Compensation_Code_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -428,8 +428,8 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Workers_Compensation_Code_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_Replacement_DataType[] $workers_Compensation_Code_Replacement_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType[] $workers_Compensation_Code_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setWorkers_Compensation_Code_Replacement_Data(array $workers_Compensation_Code_Replacement_Data = array())
     {
@@ -443,21 +443,21 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Workers_Compensation_Code_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_Replacement_DataType $item
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function addToWorkers_Compensation_Code_Replacement_Data(\StructType\Workers_Compensation_Replacement_DataType $item)
+    public function addToWorkers_Compensation_Code_Replacement_Data(\WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workers_Compensation_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Workers_Compensation_Code_Replacement_Data property can only contain items of type \StructType\Workers_Compensation_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Workers_Compensation_Code_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workers_Compensation_Code_Replacement_Data[] = $item;
         return $this;
     }
     /**
      * Get Qualification_Replacement_Data value
-     * @return \StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType|null
+     * @return \WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType|null
      */
     public function getQualification_Replacement_Data()
     {
@@ -465,17 +465,17 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Qualification_Replacement_Data value
-     * @param \StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function setQualification_Replacement_Data(\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data = null)
+    public function setQualification_Replacement_Data(\WorkdayWsdl\\StructType\Qualification_Data_for_Position_Restriction_or_Job_ProfileType $qualification_Replacement_Data = null)
     {
         $this->Qualification_Replacement_Data = $qualification_Replacement_Data;
         return $this;
     }
     /**
      * Get Integration_Field_Override_Data value
-     * @return \StructType\Document_Field_Result_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Document_Field_Result_DataType[]|null
      */
     public function getIntegration_Field_Override_Data()
     {
@@ -493,12 +493,12 @@ class Job_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_DataTypeIntegration_Field_Override_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_DataTypeIntegration_Field_Override_DataItem instanceof \StructType\Document_Field_Result_DataType) {
+            if (!$job_Profile_DataTypeIntegration_Field_Override_DataItem instanceof \WorkdayWsdl\\StructType\Document_Field_Result_DataType) {
                 $invalidValues[] = is_object($job_Profile_DataTypeIntegration_Field_Override_DataItem) ? get_class($job_Profile_DataTypeIntegration_Field_Override_DataItem) : sprintf('%s(%s)', gettype($job_Profile_DataTypeIntegration_Field_Override_DataItem), var_export($job_Profile_DataTypeIntegration_Field_Override_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Integration_Field_Override_Data property can only contain items of type \StructType\Document_Field_Result_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Integration_Field_Override_Data property can only contain items of type \WorkdayWsdl\\StructType\Document_Field_Result_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -506,8 +506,8 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Set Integration_Field_Override_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Document_Field_Result_DataType[] $integration_Field_Override_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Document_Field_Result_DataType[] $integration_Field_Override_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public function setIntegration_Field_Override_Data(array $integration_Field_Override_Data = array())
     {
@@ -521,21 +521,21 @@ class Job_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Integration_Field_Override_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Document_Field_Result_DataType $item
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Document_Field_Result_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function addToIntegration_Field_Override_Data(\StructType\Document_Field_Result_DataType $item)
+    public function addToIntegration_Field_Override_Data(\WorkdayWsdl\\StructType\Document_Field_Result_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Document_Field_Result_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Integration_Field_Override_Data property can only contain items of type \StructType\Document_Field_Result_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Document_Field_Result_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Integration_Field_Override_Data property can only contain items of type \WorkdayWsdl\\StructType\Document_Field_Result_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Integration_Field_Override_Data[] = $item;
         return $this;
     }
     /**
      * Get Job_Profile_Compensation_Data value
-     * @return \StructType\Job_Profile_Compensation_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType|null
      */
     public function getJob_Profile_Compensation_Data()
     {
@@ -543,17 +543,17 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Compensation_Data value
-     * @param \StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function setJob_Profile_Compensation_Data(\StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data = null)
+    public function setJob_Profile_Compensation_Data(\WorkdayWsdl\\StructType\Job_Profile_Compensation_DataType $job_Profile_Compensation_Data = null)
     {
         $this->Job_Profile_Compensation_Data = $job_Profile_Compensation_Data;
         return $this;
     }
     /**
      * Get Unions_Data value
-     * @return \StructType\Job_Profile_Union_Membership_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType|null
      */
     public function getUnions_Data()
     {
@@ -561,17 +561,17 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Unions_Data value
-     * @param \StructType\Job_Profile_Union_Membership_DataType $unions_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType $unions_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function setUnions_Data(\StructType\Job_Profile_Union_Membership_DataType $unions_Data = null)
+    public function setUnions_Data(\WorkdayWsdl\\StructType\Job_Profile_Union_Membership_DataType $unions_Data = null)
     {
         $this->Unions_Data = $unions_Data;
         return $this;
     }
     /**
      * Get Work_Study_Data value
-     * @return \StructType\Job_Profile_Work_Study_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType|null
      */
     public function getWork_Study_Data()
     {
@@ -579,10 +579,10 @@ class Job_Profile_DataType extends AbstractStructBase
     }
     /**
      * Set Work_Study_Data value
-     * @param \StructType\Job_Profile_Work_Study_DataType $work_Study_Data
-     * @return \StructType\Job_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType $work_Study_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
-    public function setWork_Study_Data(\StructType\Job_Profile_Work_Study_DataType $work_Study_Data = null)
+    public function setWork_Study_Data(\WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType $work_Study_Data = null)
     {
         $this->Work_Study_Data = $this->{'Work-Study_Data'} = $work_Study_Data;
         return $this;
@@ -593,7 +593,7 @@ class Job_Profile_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public static function __set_state(array $array)
     {

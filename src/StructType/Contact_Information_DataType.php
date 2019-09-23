@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * - documentation: Address information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Address_Information_DataType[]
      */
     public $Address_Data;
     /**
@@ -48,7 +48,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * - documentation: Phone Information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Phone_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Phone_Information_DataType[]
      */
     public $Phone_Data;
     /**
@@ -57,7 +57,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * - documentation: Email Address Information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Email_Address_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Email_Address_Information_DataType[]
      */
     public $Email_Address_Data;
     /**
@@ -66,7 +66,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * - documentation: Instant Messenger Information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Instant_Messenger_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType[]
      */
     public $Instant_Messenger_Data;
     /**
@@ -75,7 +75,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * - documentation: Web Address Information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Web_Address_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Web_Address_Information_DataType[]
      */
     public $Web_Address_Data;
     /**
@@ -85,11 +85,11 @@ class Contact_Information_DataType extends AbstractStructBase
      * @uses Contact_Information_DataType::setEmail_Address_Data()
      * @uses Contact_Information_DataType::setInstant_Messenger_Data()
      * @uses Contact_Information_DataType::setWeb_Address_Data()
-     * @param \StructType\Address_Information_DataType[] $address_Data
-     * @param \StructType\Phone_Information_DataType[] $phone_Data
-     * @param \StructType\Email_Address_Information_DataType[] $email_Address_Data
-     * @param \StructType\Instant_Messenger_Information_DataType[] $instant_Messenger_Data
-     * @param \StructType\Web_Address_Information_DataType[] $web_Address_Data
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType[] $address_Data
+     * @param \WorkdayWsdl\\StructType\Phone_Information_DataType[] $phone_Data
+     * @param \WorkdayWsdl\\StructType\Email_Address_Information_DataType[] $email_Address_Data
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType[] $instant_Messenger_Data
+     * @param \WorkdayWsdl\\StructType\Web_Address_Information_DataType[] $web_Address_Data
      */
     public function __construct(array $address_Data = array(), array $phone_Data = array(), array $email_Address_Data = array(), array $instant_Messenger_Data = array(), array $web_Address_Data = array())
     {
@@ -102,7 +102,7 @@ class Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Address_Data value
-     * @return \StructType\Address_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType[]|null
      */
     public function getAddress_Data()
     {
@@ -120,12 +120,12 @@ class Contact_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contact_Information_DataTypeAddress_DataItem) {
             // validation for constraint: itemType
-            if (!$contact_Information_DataTypeAddress_DataItem instanceof \StructType\Address_Information_DataType) {
+            if (!$contact_Information_DataTypeAddress_DataItem instanceof \WorkdayWsdl\\StructType\Address_Information_DataType) {
                 $invalidValues[] = is_object($contact_Information_DataTypeAddress_DataItem) ? get_class($contact_Information_DataTypeAddress_DataItem) : sprintf('%s(%s)', gettype($contact_Information_DataTypeAddress_DataItem), var_export($contact_Information_DataTypeAddress_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Address_Data property can only contain items of type \StructType\Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -133,8 +133,8 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Set Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Information_DataType[] $address_Data
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType[] $address_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public function setAddress_Data(array $address_Data = array())
     {
@@ -148,21 +148,21 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Add item to Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Information_DataType $item
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
-    public function addToAddress_Data(\StructType\Address_Information_DataType $item)
+    public function addToAddress_Data(\WorkdayWsdl\\StructType\Address_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \StructType\Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Address_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Address_Data[] = $item;
         return $this;
     }
     /**
      * Get Phone_Data value
-     * @return \StructType\Phone_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Phone_Information_DataType[]|null
      */
     public function getPhone_Data()
     {
@@ -180,12 +180,12 @@ class Contact_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contact_Information_DataTypePhone_DataItem) {
             // validation for constraint: itemType
-            if (!$contact_Information_DataTypePhone_DataItem instanceof \StructType\Phone_Information_DataType) {
+            if (!$contact_Information_DataTypePhone_DataItem instanceof \WorkdayWsdl\\StructType\Phone_Information_DataType) {
                 $invalidValues[] = is_object($contact_Information_DataTypePhone_DataItem) ? get_class($contact_Information_DataTypePhone_DataItem) : sprintf('%s(%s)', gettype($contact_Information_DataTypePhone_DataItem), var_export($contact_Information_DataTypePhone_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Phone_Data property can only contain items of type \StructType\Phone_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Phone_Data property can only contain items of type \WorkdayWsdl\\StructType\Phone_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -193,8 +193,8 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Set Phone_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Information_DataType[] $phone_Data
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Information_DataType[] $phone_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public function setPhone_Data(array $phone_Data = array())
     {
@@ -208,21 +208,21 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Add item to Phone_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Information_DataType $item
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
-    public function addToPhone_Data(\StructType\Phone_Information_DataType $item)
+    public function addToPhone_Data(\WorkdayWsdl\\StructType\Phone_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Phone_Data property can only contain items of type \StructType\Phone_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Phone_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Phone_Data property can only contain items of type \WorkdayWsdl\\StructType\Phone_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Phone_Data[] = $item;
         return $this;
     }
     /**
      * Get Email_Address_Data value
-     * @return \StructType\Email_Address_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Email_Address_Information_DataType[]|null
      */
     public function getEmail_Address_Data()
     {
@@ -240,12 +240,12 @@ class Contact_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contact_Information_DataTypeEmail_Address_DataItem) {
             // validation for constraint: itemType
-            if (!$contact_Information_DataTypeEmail_Address_DataItem instanceof \StructType\Email_Address_Information_DataType) {
+            if (!$contact_Information_DataTypeEmail_Address_DataItem instanceof \WorkdayWsdl\\StructType\Email_Address_Information_DataType) {
                 $invalidValues[] = is_object($contact_Information_DataTypeEmail_Address_DataItem) ? get_class($contact_Information_DataTypeEmail_Address_DataItem) : sprintf('%s(%s)', gettype($contact_Information_DataTypeEmail_Address_DataItem), var_export($contact_Information_DataTypeEmail_Address_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Email_Address_Data property can only contain items of type \StructType\Email_Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Email_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Email_Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -253,8 +253,8 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Set Email_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email_Address_Information_DataType[] $email_Address_Data
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Email_Address_Information_DataType[] $email_Address_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public function setEmail_Address_Data(array $email_Address_Data = array())
     {
@@ -268,21 +268,21 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Add item to Email_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email_Address_Information_DataType $item
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Email_Address_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
-    public function addToEmail_Address_Data(\StructType\Email_Address_Information_DataType $item)
+    public function addToEmail_Address_Data(\WorkdayWsdl\\StructType\Email_Address_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Email_Address_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Email_Address_Data property can only contain items of type \StructType\Email_Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Email_Address_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Email_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Email_Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Email_Address_Data[] = $item;
         return $this;
     }
     /**
      * Get Instant_Messenger_Data value
-     * @return \StructType\Instant_Messenger_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType[]|null
      */
     public function getInstant_Messenger_Data()
     {
@@ -300,12 +300,12 @@ class Contact_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contact_Information_DataTypeInstant_Messenger_DataItem) {
             // validation for constraint: itemType
-            if (!$contact_Information_DataTypeInstant_Messenger_DataItem instanceof \StructType\Instant_Messenger_Information_DataType) {
+            if (!$contact_Information_DataTypeInstant_Messenger_DataItem instanceof \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType) {
                 $invalidValues[] = is_object($contact_Information_DataTypeInstant_Messenger_DataItem) ? get_class($contact_Information_DataTypeInstant_Messenger_DataItem) : sprintf('%s(%s)', gettype($contact_Information_DataTypeInstant_Messenger_DataItem), var_export($contact_Information_DataTypeInstant_Messenger_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Instant_Messenger_Data property can only contain items of type \StructType\Instant_Messenger_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Instant_Messenger_Data property can only contain items of type \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -313,8 +313,8 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Instant_Messenger_Information_DataType[] $instant_Messenger_Data
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType[] $instant_Messenger_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public function setInstant_Messenger_Data(array $instant_Messenger_Data = array())
     {
@@ -328,21 +328,21 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Add item to Instant_Messenger_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Instant_Messenger_Information_DataType $item
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
-    public function addToInstant_Messenger_Data(\StructType\Instant_Messenger_Information_DataType $item)
+    public function addToInstant_Messenger_Data(\WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Instant_Messenger_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Instant_Messenger_Data property can only contain items of type \StructType\Instant_Messenger_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Instant_Messenger_Data property can only contain items of type \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Instant_Messenger_Data[] = $item;
         return $this;
     }
     /**
      * Get Web_Address_Data value
-     * @return \StructType\Web_Address_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Web_Address_Information_DataType[]|null
      */
     public function getWeb_Address_Data()
     {
@@ -360,12 +360,12 @@ class Contact_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contact_Information_DataTypeWeb_Address_DataItem) {
             // validation for constraint: itemType
-            if (!$contact_Information_DataTypeWeb_Address_DataItem instanceof \StructType\Web_Address_Information_DataType) {
+            if (!$contact_Information_DataTypeWeb_Address_DataItem instanceof \WorkdayWsdl\\StructType\Web_Address_Information_DataType) {
                 $invalidValues[] = is_object($contact_Information_DataTypeWeb_Address_DataItem) ? get_class($contact_Information_DataTypeWeb_Address_DataItem) : sprintf('%s(%s)', gettype($contact_Information_DataTypeWeb_Address_DataItem), var_export($contact_Information_DataTypeWeb_Address_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Web_Address_Data property can only contain items of type \StructType\Web_Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Web_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Web_Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -373,8 +373,8 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Set Web_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Web_Address_Information_DataType[] $web_Address_Data
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Web_Address_Information_DataType[] $web_Address_Data
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public function setWeb_Address_Data(array $web_Address_Data = array())
     {
@@ -388,14 +388,14 @@ class Contact_Information_DataType extends AbstractStructBase
     /**
      * Add item to Web_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Web_Address_Information_DataType $item
-     * @return \StructType\Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Web_Address_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
-    public function addToWeb_Address_Data(\StructType\Web_Address_Information_DataType $item)
+    public function addToWeb_Address_Data(\WorkdayWsdl\\StructType\Web_Address_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Web_Address_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Web_Address_Data property can only contain items of type \StructType\Web_Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Web_Address_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Web_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Web_Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Web_Address_Data[] = $item;
         return $this;
@@ -406,7 +406,7 @@ class Contact_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contact_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public static function __set_state(array $array)
     {

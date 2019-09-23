@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The health treatment type for the injury illness.
      * - minOccurs: 0
-     * @var \StructType\Health_Treatment_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType
      */
     public $Health_Treatment_Type_Reference;
     /**
@@ -34,7 +34,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The health facility for the treatment.
      * - minOccurs: 0
-     * @var \StructType\Health_FacilityObjectType
+     * @var \WorkdayWsdl\\StructType\Health_FacilityObjectType
      */
     public $Health_Facility_Reference;
     /**
@@ -42,7 +42,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The health worker for the treatment.
      * - minOccurs: 0
-     * @var \StructType\Health_WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\Health_WorkerObjectType
      */
     public $Health_Worker_Reference;
     /**
@@ -51,12 +51,12 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
      * @uses Safety_Incident_Treatment_Disposition_DataType::setHealth_Treatment_Date()
      * @uses Safety_Incident_Treatment_Disposition_DataType::setHealth_Facility_Reference()
      * @uses Safety_Incident_Treatment_Disposition_DataType::setHealth_Worker_Reference()
-     * @param \StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference
      * @param string $health_Treatment_Date
-     * @param \StructType\Health_FacilityObjectType $health_Facility_Reference
-     * @param \StructType\Health_WorkerObjectType $health_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Health_FacilityObjectType $health_Facility_Reference
+     * @param \WorkdayWsdl\\StructType\Health_WorkerObjectType $health_Worker_Reference
      */
-    public function __construct(\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference = null, $health_Treatment_Date = null, \StructType\Health_FacilityObjectType $health_Facility_Reference = null, \StructType\Health_WorkerObjectType $health_Worker_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference = null, $health_Treatment_Date = null, \WorkdayWsdl\\StructType\Health_FacilityObjectType $health_Facility_Reference = null, \WorkdayWsdl\\StructType\Health_WorkerObjectType $health_Worker_Reference = null)
     {
         $this
             ->setHealth_Treatment_Type_Reference($health_Treatment_Type_Reference)
@@ -66,7 +66,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     }
     /**
      * Get Health_Treatment_Type_Reference value
-     * @return \StructType\Health_Treatment_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType|null
      */
     public function getHealth_Treatment_Type_Reference()
     {
@@ -74,10 +74,10 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Treatment_Type_Reference value
-     * @param \StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType
+     * @param \WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType
      */
-    public function setHealth_Treatment_Type_Reference(\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference = null)
+    public function setHealth_Treatment_Type_Reference(\WorkdayWsdl\\StructType\Health_Treatment_TypeObjectType $health_Treatment_Type_Reference = null)
     {
         $this->Health_Treatment_Type_Reference = $health_Treatment_Type_Reference;
         return $this;
@@ -93,7 +93,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     /**
      * Set Health_Treatment_Date value
      * @param string $health_Treatment_Date
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType
      */
     public function setHealth_Treatment_Date($health_Treatment_Date = null)
     {
@@ -106,7 +106,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     }
     /**
      * Get Health_Facility_Reference value
-     * @return \StructType\Health_FacilityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Health_FacilityObjectType|null
      */
     public function getHealth_Facility_Reference()
     {
@@ -114,17 +114,17 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Facility_Reference value
-     * @param \StructType\Health_FacilityObjectType $health_Facility_Reference
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType
+     * @param \WorkdayWsdl\\StructType\Health_FacilityObjectType $health_Facility_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType
      */
-    public function setHealth_Facility_Reference(\StructType\Health_FacilityObjectType $health_Facility_Reference = null)
+    public function setHealth_Facility_Reference(\WorkdayWsdl\\StructType\Health_FacilityObjectType $health_Facility_Reference = null)
     {
         $this->Health_Facility_Reference = $health_Facility_Reference;
         return $this;
     }
     /**
      * Get Health_Worker_Reference value
-     * @return \StructType\Health_WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Health_WorkerObjectType|null
      */
     public function getHealth_Worker_Reference()
     {
@@ -132,10 +132,10 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Worker_Reference value
-     * @param \StructType\Health_WorkerObjectType $health_Worker_Reference
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType
+     * @param \WorkdayWsdl\\StructType\Health_WorkerObjectType $health_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType
      */
-    public function setHealth_Worker_Reference(\StructType\Health_WorkerObjectType $health_Worker_Reference = null)
+    public function setHealth_Worker_Reference(\WorkdayWsdl\\StructType\Health_WorkerObjectType $health_Worker_Reference = null)
     {
         $this->Health_Worker_Reference = $health_Worker_Reference;
         return $this;
@@ -146,7 +146,7 @@ class Safety_Incident_Treatment_Disposition_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType
      */
     public static function __set_state(array $array)
     {

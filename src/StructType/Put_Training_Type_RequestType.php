@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Training Type.
      * - minOccurs: 0
-     * @var \StructType\Training_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Training_TypeObjectType
      */
     public $Training_Type_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the detailed information about a Training Type.
      * - minOccurs: 0
-     * @var \StructType\Training_Type_DataType
+     * @var \WorkdayWsdl\\StructType\Training_Type_DataType
      */
     public $Training_Type_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Training_Type_RequestType extends AbstractStructBase
      * @uses Put_Training_Type_RequestType::setTraining_Type_Data()
      * @uses Put_Training_Type_RequestType::setAdd_Only()
      * @uses Put_Training_Type_RequestType::setVersion()
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
-     * @param \StructType\Training_Type_DataType $training_Type_Data
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Training_Type_DataType $training_Type_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Training_TypeObjectType $training_Type_Reference = null, \StructType\Training_Type_DataType $training_Type_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null, \WorkdayWsdl\\StructType\Training_Type_DataType $training_Type_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setTraining_Type_Reference($training_Type_Reference)
@@ -63,7 +63,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
     }
     /**
      * Get Training_Type_Reference value
-     * @return \StructType\Training_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Training_TypeObjectType|null
      */
     public function getTraining_Type_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Training_Type_RequestType extends AbstractStructBase
     }
     /**
      * Set Training_Type_Reference value
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
-     * @return \StructType\Put_Training_Type_RequestType
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Training_Type_RequestType
      */
-    public function setTraining_Type_Reference(\StructType\Training_TypeObjectType $training_Type_Reference = null)
+    public function setTraining_Type_Reference(\WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null)
     {
         $this->Training_Type_Reference = $training_Type_Reference;
         return $this;
     }
     /**
      * Get Training_Type_Data value
-     * @return \StructType\Training_Type_DataType|null
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType|null
      */
     public function getTraining_Type_Data()
     {
@@ -89,10 +89,10 @@ class Put_Training_Type_RequestType extends AbstractStructBase
     }
     /**
      * Set Training_Type_Data value
-     * @param \StructType\Training_Type_DataType $training_Type_Data
-     * @return \StructType\Put_Training_Type_RequestType
+     * @param \WorkdayWsdl\\StructType\Training_Type_DataType $training_Type_Data
+     * @return \WorkdayWsdl\\StructType\Put_Training_Type_RequestType
      */
-    public function setTraining_Type_Data(\StructType\Training_Type_DataType $training_Type_Data = null)
+    public function setTraining_Type_Data(\WorkdayWsdl\\StructType\Training_Type_DataType $training_Type_Data = null)
     {
         $this->Training_Type_Data = $training_Type_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Training_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Training_Type_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Training_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Training_Type_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Training_Type_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Training_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Training_Type_RequestType
      */
     public static function __set_state(array $array)
     {

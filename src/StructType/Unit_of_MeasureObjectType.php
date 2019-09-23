@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Unit_of_MeasureObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
      * Constructor method for Unit_of_MeasureObjectType
      * @uses Unit_of_MeasureObjectType::setID()
      * @uses Unit_of_MeasureObjectType::setDescriptor()
-     * @param \StructType\Unit_of_MeasureObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Unit_of_MeasureObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $unit_of_MeasureObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$unit_of_MeasureObjectTypeIDItem instanceof \StructType\Unit_of_MeasureObjectIDType) {
+            if (!$unit_of_MeasureObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType) {
                 $invalidValues[] = is_object($unit_of_MeasureObjectTypeIDItem) ? get_class($unit_of_MeasureObjectTypeIDItem) : sprintf('%s(%s)', gettype($unit_of_MeasureObjectTypeIDItem), var_export($unit_of_MeasureObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Unit_of_MeasureObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Unit_of_MeasureObjectIDType[] $iD
-     * @return \StructType\Unit_of_MeasureObjectType
+     * @param \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Unit_of_MeasureObjectIDType $item
-     * @return \StructType\Unit_of_MeasureObjectType
+     * @param \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectType
      */
-    public function addToID(\StructType\Unit_of_MeasureObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Unit_of_MeasureObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Unit_of_MeasureObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Unit_of_MeasureObjectType
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Unit_of_MeasureObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Unit_of_MeasureObjectType
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectType
      */
     public static function __set_state(array $array)
     {

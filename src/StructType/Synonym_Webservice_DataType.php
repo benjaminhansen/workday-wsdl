@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class Synonym_Webservice_DataType extends AbstractStructBase
     /**
      * Set Workday_Term value
      * @param string $workday_Term
-     * @return \StructType\Synonym_Webservice_DataType
+     * @return \WorkdayWsdl\\StructType\Synonym_Webservice_DataType
      */
     public function setWorkday_Term($workday_Term = null)
     {
@@ -74,7 +74,7 @@ class Synonym_Webservice_DataType extends AbstractStructBase
     /**
      * Set Custom_Terms value
      * @param string $custom_Terms
-     * @return \StructType\Synonym_Webservice_DataType
+     * @return \WorkdayWsdl\\StructType\Synonym_Webservice_DataType
      */
     public function setCustom_Terms($custom_Terms = null)
     {
@@ -91,7 +91,7 @@ class Synonym_Webservice_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Synonym_Webservice_DataType
+     * @return \WorkdayWsdl\\StructType\Synonym_Webservice_DataType
      */
     public static function __set_state(array $array)
     {

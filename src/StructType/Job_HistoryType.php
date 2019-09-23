@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_HistoryType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Job History profile.
      * - minOccurs: 0
-     * @var \StructType\Job_History_SkillObjectType
+     * @var \WorkdayWsdl\\StructType\Job_History_SkillObjectType
      */
     public $Job_History_Reference;
     /**
@@ -25,17 +25,17 @@ class Job_HistoryType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Job History Data.
      * - maxOccurs: unbounded
-     * @var \StructType\Job_History_Achievement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_History_Achievement_DataType[]
      */
     public $Job_History_Data;
     /**
      * Constructor method for Job_HistoryType
      * @uses Job_HistoryType::setJob_History_Reference()
      * @uses Job_HistoryType::setJob_History_Data()
-     * @param \StructType\Job_History_SkillObjectType $job_History_Reference
-     * @param \StructType\Job_History_Achievement_DataType[] $job_History_Data
+     * @param \WorkdayWsdl\\StructType\Job_History_SkillObjectType $job_History_Reference
+     * @param \WorkdayWsdl\\StructType\Job_History_Achievement_DataType[] $job_History_Data
      */
-    public function __construct(\StructType\Job_History_SkillObjectType $job_History_Reference = null, array $job_History_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Job_History_SkillObjectType $job_History_Reference = null, array $job_History_Data = array())
     {
         $this
             ->setJob_History_Reference($job_History_Reference)
@@ -43,7 +43,7 @@ class Job_HistoryType extends AbstractStructBase
     }
     /**
      * Get Job_History_Reference value
-     * @return \StructType\Job_History_SkillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectType|null
      */
     public function getJob_History_Reference()
     {
@@ -51,17 +51,17 @@ class Job_HistoryType extends AbstractStructBase
     }
     /**
      * Set Job_History_Reference value
-     * @param \StructType\Job_History_SkillObjectType $job_History_Reference
-     * @return \StructType\Job_HistoryType
+     * @param \WorkdayWsdl\\StructType\Job_History_SkillObjectType $job_History_Reference
+     * @return \WorkdayWsdl\\StructType\Job_HistoryType
      */
-    public function setJob_History_Reference(\StructType\Job_History_SkillObjectType $job_History_Reference = null)
+    public function setJob_History_Reference(\WorkdayWsdl\\StructType\Job_History_SkillObjectType $job_History_Reference = null)
     {
         $this->Job_History_Reference = $job_History_Reference;
         return $this;
     }
     /**
      * Get Job_History_Data value
-     * @return \StructType\Job_History_Achievement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_History_Achievement_DataType[]|null
      */
     public function getJob_History_Data()
     {
@@ -79,12 +79,12 @@ class Job_HistoryType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_HistoryTypeJob_History_DataItem) {
             // validation for constraint: itemType
-            if (!$job_HistoryTypeJob_History_DataItem instanceof \StructType\Job_History_Achievement_DataType) {
+            if (!$job_HistoryTypeJob_History_DataItem instanceof \WorkdayWsdl\\StructType\Job_History_Achievement_DataType) {
                 $invalidValues[] = is_object($job_HistoryTypeJob_History_DataItem) ? get_class($job_HistoryTypeJob_History_DataItem) : sprintf('%s(%s)', gettype($job_HistoryTypeJob_History_DataItem), var_export($job_HistoryTypeJob_History_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_History_Data property can only contain items of type \StructType\Job_History_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_History_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_History_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Job_HistoryType extends AbstractStructBase
     /**
      * Set Job_History_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_History_Achievement_DataType[] $job_History_Data
-     * @return \StructType\Job_HistoryType
+     * @param \WorkdayWsdl\\StructType\Job_History_Achievement_DataType[] $job_History_Data
+     * @return \WorkdayWsdl\\StructType\Job_HistoryType
      */
     public function setJob_History_Data(array $job_History_Data = array())
     {
@@ -107,14 +107,14 @@ class Job_HistoryType extends AbstractStructBase
     /**
      * Add item to Job_History_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_History_Achievement_DataType $item
-     * @return \StructType\Job_HistoryType
+     * @param \WorkdayWsdl\\StructType\Job_History_Achievement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_HistoryType
      */
-    public function addToJob_History_Data(\StructType\Job_History_Achievement_DataType $item)
+    public function addToJob_History_Data(\WorkdayWsdl\\StructType\Job_History_Achievement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_History_Achievement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_History_Data property can only contain items of type \StructType\Job_History_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_History_Achievement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_History_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_History_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_History_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Job_HistoryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_HistoryType
+     * @return \WorkdayWsdl\\StructType\Job_HistoryType
      */
     public static function __set_state(array $array)
     {

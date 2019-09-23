@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -65,7 +65,7 @@ class External_Form_I_9_Source_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Name value
      * @param external_Form_I_Source_Name $external_Form_I_Source_Name
-     * @return \StructType\External_Form_I_9_Source_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType
      */
     public function setExternal_Form_I_9_Source_Name($external_Form_I_9_Source_Name = null)
     {
@@ -87,7 +87,7 @@ class External_Form_I_9_Source_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\External_Form_I_9_Source_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -109,7 +109,7 @@ class External_Form_I_9_Source_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_ID value
      * @param external_Form_I_Source_ID $external_Form_I_Source_ID
-     * @return \StructType\External_Form_I_9_Source_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType
      */
     public function setExternal_Form_I_9_Source_ID($external_Form_I_9_Source_ID = null)
     {
@@ -126,7 +126,7 @@ class External_Form_I_9_Source_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Source_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType
      */
     public static function __set_state(array $array)
     {

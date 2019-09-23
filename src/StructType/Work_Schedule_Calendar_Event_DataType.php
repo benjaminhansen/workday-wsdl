@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -33,7 +33,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
      * The Start_End_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element containing date and times for the Calendar Event.
-     * @var \StructType\Start_End_Minute_Support_DataType
+     * @var \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public $Start_End_Data;
     /**
@@ -42,7 +42,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
      * - documentation: Wrapper element containing meal times for the Work Schedule Calendar Event.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Scheduling_Non_Work_Time_DataType[]
+     * @var \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[]
      */
     public $Meal_Data;
     /**
@@ -50,7 +50,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element containing recurrence data for the Calendar Event.
      * - minOccurs: 0
-     * @var \StructType\Recurrence_DataType
+     * @var \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public $Recurrence_Data;
     /**
@@ -70,12 +70,12 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
      * @uses Work_Schedule_Calendar_Event_DataType::setID()
      * @param string $name
      * @param string $display_Name
-     * @param \StructType\Start_End_Minute_Support_DataType $start_End_Data
-     * @param \StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
-     * @param \StructType\Recurrence_DataType $recurrence_Data
+     * @param \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType $start_End_Data
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
+     * @param \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data
      * @param string $iD
      */
-    public function __construct($name = null, $display_Name = null, \StructType\Start_End_Minute_Support_DataType $start_End_Data = null, array $meal_Data = array(), \StructType\Recurrence_DataType $recurrence_Data = null, $iD = null)
+    public function __construct($name = null, $display_Name = null, \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType $start_End_Data = null, array $meal_Data = array(), \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data = null, $iD = null)
     {
         $this
             ->setName($name)
@@ -96,7 +96,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
     public function setName($name = null)
     {
@@ -118,7 +118,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set Display_Name value
      * @param string $display_Name
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
     public function setDisplay_Name($display_Name = null)
     {
@@ -131,7 +131,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Start_End_Data value
-     * @return \StructType\Start_End_Minute_Support_DataType|null
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType|null
      */
     public function getStart_End_Data()
     {
@@ -139,17 +139,17 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Start_End_Data value
-     * @param \StructType\Start_End_Minute_Support_DataType $start_End_Data
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType $start_End_Data
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
-    public function setStart_End_Data(\StructType\Start_End_Minute_Support_DataType $start_End_Data = null)
+    public function setStart_End_Data(\WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType $start_End_Data = null)
     {
         $this->Start_End_Data = $start_End_Data;
         return $this;
     }
     /**
      * Get Meal_Data value
-     * @return \StructType\Scheduling_Non_Work_Time_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[]|null
      */
     public function getMeal_Data()
     {
@@ -167,12 +167,12 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Schedule_Calendar_Event_DataTypeMeal_DataItem) {
             // validation for constraint: itemType
-            if (!$work_Schedule_Calendar_Event_DataTypeMeal_DataItem instanceof \StructType\Scheduling_Non_Work_Time_DataType) {
+            if (!$work_Schedule_Calendar_Event_DataTypeMeal_DataItem instanceof \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType) {
                 $invalidValues[] = is_object($work_Schedule_Calendar_Event_DataTypeMeal_DataItem) ? get_class($work_Schedule_Calendar_Event_DataTypeMeal_DataItem) : sprintf('%s(%s)', gettype($work_Schedule_Calendar_Event_DataTypeMeal_DataItem), var_export($work_Schedule_Calendar_Event_DataTypeMeal_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Meal_Data property can only contain items of type \StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Meal_Data property can only contain items of type \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -180,8 +180,8 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set Meal_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType[] $meal_Data
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
     public function setMeal_Data(array $meal_Data = array())
     {
@@ -195,21 +195,21 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Add item to Meal_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Scheduling_Non_Work_Time_DataType $item
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType $item
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
-    public function addToMeal_Data(\StructType\Scheduling_Non_Work_Time_DataType $item)
+    public function addToMeal_Data(\WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Scheduling_Non_Work_Time_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Meal_Data property can only contain items of type \StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Meal_Data property can only contain items of type \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Meal_Data[] = $item;
         return $this;
     }
     /**
      * Get Recurrence_Data value
-     * @return \StructType\Recurrence_DataType|null
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType|null
      */
     public function getRecurrence_Data()
     {
@@ -217,10 +217,10 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Recurrence_Data value
-     * @param \StructType\Recurrence_DataType $recurrence_Data
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
-    public function setRecurrence_Data(\StructType\Recurrence_DataType $recurrence_Data = null)
+    public function setRecurrence_Data(\WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data = null)
     {
         $this->Recurrence_Data = $recurrence_Data;
         return $this;
@@ -236,7 +236,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
     public function setID($iD = null)
     {
@@ -253,7 +253,7 @@ class Work_Schedule_Calendar_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Schedule_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Event_DataType
      */
     public static function __set_state(array $array)
     {

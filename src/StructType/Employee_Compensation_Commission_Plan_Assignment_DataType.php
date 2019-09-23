@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
     public $Commission_Plan_Name;
     /**
      * The Compensation_Element_Values_for_Commission_Plan_Data
-     * @var \StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType
      */
     public $Compensation_Element_Values_for_Commission_Plan_Data;
     /**
@@ -31,9 +31,9 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
      * @uses Employee_Compensation_Commission_Plan_Assignment_DataType::setCommission_Plan_Name()
      * @uses Employee_Compensation_Commission_Plan_Assignment_DataType::setCompensation_Element_Values_for_Commission_Plan_Data()
      * @param string $commission_Plan_Name
-     * @param \StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data
      */
-    public function __construct($commission_Plan_Name = null, \StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data = null)
+    public function __construct($commission_Plan_Name = null, \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data = null)
     {
         $this
             ->setCommission_Plan_Name($commission_Plan_Name)
@@ -50,7 +50,7 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
     /**
      * Set Commission_Plan_Name value
      * @param string $commission_Plan_Name
-     * @return \StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
      */
     public function setCommission_Plan_Name($commission_Plan_Name = null)
     {
@@ -63,7 +63,7 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
     }
     /**
      * Get Compensation_Element_Values_for_Commission_Plan_Data value
-     * @return \StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType|null
      */
     public function getCompensation_Element_Values_for_Commission_Plan_Data()
     {
@@ -71,10 +71,10 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
     }
     /**
      * Set Compensation_Element_Values_for_Commission_Plan_Data value
-     * @param \StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data
-     * @return \StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Values_for_Commission_Plan_Data(\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data = null)
+    public function setCompensation_Element_Values_for_Commission_Plan_Data(\WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Commission_Plan_Data = null)
     {
         $this->Compensation_Element_Values_for_Commission_Plan_Data = $compensation_Element_Values_for_Commission_Plan_Data;
         return $this;
@@ -85,7 +85,7 @@ class Employee_Compensation_Commission_Plan_Assignment_DataType extends Abstract
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Commission_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

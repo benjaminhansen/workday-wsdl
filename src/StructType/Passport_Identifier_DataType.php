@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,14 +22,14 @@ class Passport_Identifier_DataType extends AbstractStructBase
     public $Passport_Number;
     /**
      * The Passport_Type_Reference
-     * @var \StructType\Passport_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Passport_Type_ReferenceType
      */
     public $Passport_Type_Reference;
     /**
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing the country.
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -68,13 +68,13 @@ class Passport_Identifier_DataType extends AbstractStructBase
      * @uses Passport_Identifier_DataType::setExpiration_Date()
      * @uses Passport_Identifier_DataType::setVerification_Date()
      * @param string $passport_Number
-     * @param \StructType\Passport_Type_ReferenceType $passport_Type_Reference
-     * @param \StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Passport_Type_ReferenceType $passport_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
      */
-    public function __construct($passport_Number = null, \StructType\Passport_Type_ReferenceType $passport_Type_Reference = null, \StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
+    public function __construct($passport_Number = null, \WorkdayWsdl\\StructType\Passport_Type_ReferenceType $passport_Type_Reference = null, \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
     {
         $this
             ->setPassport_Number($passport_Number)
@@ -95,7 +95,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
     /**
      * Set Passport_Number value
      * @param string $passport_Number
-     * @return \StructType\Passport_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
     public function setPassport_Number($passport_Number = null)
     {
@@ -108,7 +108,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Passport_Type_Reference value
-     * @return \StructType\Passport_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Passport_Type_ReferenceType|null
      */
     public function getPassport_Type_Reference()
     {
@@ -116,17 +116,17 @@ class Passport_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Passport_Type_Reference value
-     * @param \StructType\Passport_Type_ReferenceType $passport_Type_Reference
-     * @return \StructType\Passport_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Passport_Type_ReferenceType $passport_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
-    public function setPassport_Type_Reference(\StructType\Passport_Type_ReferenceType $passport_Type_Reference = null)
+    public function setPassport_Type_Reference(\WorkdayWsdl\\StructType\Passport_Type_ReferenceType $passport_Type_Reference = null)
     {
         $this->Passport_Type_Reference = $passport_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -134,10 +134,10 @@ class Passport_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\Passport_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -153,7 +153,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\Passport_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -175,7 +175,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\Passport_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -197,7 +197,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\Passport_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -214,7 +214,7 @@ class Passport_Identifier_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Passport_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType
      */
     public static function __set_state(array $array)
     {

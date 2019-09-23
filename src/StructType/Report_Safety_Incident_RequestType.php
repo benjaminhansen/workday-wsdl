@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Report_Safety_Incident_Data
-     * @var \StructType\Report_Safety_Incident_DataType
+     * @var \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType
      */
     public $Report_Safety_Incident_Data;
     /**
@@ -36,11 +36,11 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
      * @uses Report_Safety_Incident_RequestType::setBusiness_Process_Parameters()
      * @uses Report_Safety_Incident_RequestType::setReport_Safety_Incident_Data()
      * @uses Report_Safety_Incident_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -49,7 +49,7 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -57,17 +57,17 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Report_Safety_Incident_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Report_Safety_Incident_Data value
-     * @return \StructType\Report_Safety_Incident_DataType|null
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType|null
      */
     public function getReport_Safety_Incident_Data()
     {
@@ -75,10 +75,10 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
     }
     /**
      * Set Report_Safety_Incident_Data value
-     * @param \StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data
-     * @return \StructType\Report_Safety_Incident_RequestType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_RequestType
      */
-    public function setReport_Safety_Incident_Data(\StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data = null)
+    public function setReport_Safety_Incident_Data(\WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $report_Safety_Incident_Data = null)
     {
         $this->Report_Safety_Incident_Data = $report_Safety_Incident_Data;
         return $this;
@@ -94,7 +94,7 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Report_Safety_Incident_RequestType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Report_Safety_Incident_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Report_Safety_Incident_RequestType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_RequestType
      */
     public static function __set_state(array $array)
     {

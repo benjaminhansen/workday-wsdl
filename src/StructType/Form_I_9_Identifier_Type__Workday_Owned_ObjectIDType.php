@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType extends AbstractStruc
     }
     /**
      * Set type value
-     * @uses \EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Form_I_9_Identifier_Type__Workday_Owned_ReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType extends AbstractStruc
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
      */
     public function set_($_ = null)
     {
@@ -92,7 +92,7 @@ class Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectIDType
      */
     public static function __set_state(array $array)
     {

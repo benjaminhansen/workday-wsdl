@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -10,7 +10,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Invalid Communication Usage Type | Reference element representing a unique instance of Communication Usage Type.
  * @subpackage Structs
  */
-class Communication_Usage_Type_ReferenceType extends \EnumType\Communication_Usage_TypeEnumeration
+class Communication_Usage_Type_ReferenceType extends \WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration
 {
     /**
      * The _
@@ -47,17 +47,17 @@ class Communication_Usage_Type_ReferenceType extends \EnumType\Communication_Usa
     }
     /**
      * Set _ value
-     * @uses \EnumType\Communication_Usage_TypeEnumeration::valueIsValid()
-     * @uses \EnumType\Communication_Usage_TypeEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\Communication_Usage_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Communication_Usage_TypeEnumeration::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Communication_Usage_TypeEnumeration', is_array($_) ? implode(', ', $_) : var_export($_, true), implode(', ', \EnumType\Communication_Usage_TypeEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration', is_array($_) ? implode(', ', $_) : var_export($_, true), implode(', ', \WorkdayWsdl\\EnumType\Communication_Usage_TypeEnumeration::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -73,7 +73,7 @@ class Communication_Usage_Type_ReferenceType extends \EnumType\Communication_Usa
     /**
      * Set Primary value
      * @param bool $primary
-     * @return \StructType\Communication_Usage_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType
      */
     public function setPrimary($primary = null)
     {
@@ -90,7 +90,7 @@ class Communication_Usage_Type_ReferenceType extends \EnumType\Communication_Usa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Communication_Usage_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class Invalid_Reference_ID_DataType extends AbstractStructBase
     /**
      * Set Invalid_Reference_ID value
      * @param string $invalid_Reference_ID
-     * @return \StructType\Invalid_Reference_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType
      */
     public function setInvalid_Reference_ID($invalid_Reference_ID = null)
     {
@@ -78,7 +78,7 @@ class Invalid_Reference_ID_DataType extends AbstractStructBase
     /**
      * Set Invalid_Reference_ID_Type value
      * @param string $invalid_Reference_ID_Type
-     * @return \StructType\Invalid_Reference_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType
      */
     public function setInvalid_Reference_ID_Type($invalid_Reference_ID_Type = null)
     {
@@ -99,7 +99,7 @@ class Invalid_Reference_ID_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Invalid_Reference_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType
      */
     public static function __set_state(array $array)
     {

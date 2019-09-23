@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_WeekObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
      * Constructor method for Day_of_the_WeekObjectType
      * @uses Day_of_the_WeekObjectType::setID()
      * @uses Day_of_the_WeekObjectType::setDescriptor()
-     * @param \StructType\Day_of_the_WeekObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Day_of_the_WeekObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $day_of_the_WeekObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$day_of_the_WeekObjectTypeIDItem instanceof \StructType\Day_of_the_WeekObjectIDType) {
+            if (!$day_of_the_WeekObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType) {
                 $invalidValues[] = is_object($day_of_the_WeekObjectTypeIDItem) ? get_class($day_of_the_WeekObjectTypeIDItem) : sprintf('%s(%s)', gettype($day_of_the_WeekObjectTypeIDItem), var_export($day_of_the_WeekObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Day_of_the_WeekObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectIDType[] $iD
-     * @return \StructType\Day_of_the_WeekObjectType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectIDType $item
-     * @return \StructType\Day_of_the_WeekObjectType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType
      */
-    public function addToID(\StructType\Day_of_the_WeekObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_WeekObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Day_of_the_WeekObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Day_of_the_WeekObjectType
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Day_of_the_WeekObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Day_of_the_WeekObjectType
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType
      */
     public static function __set_state(array $array)
     {

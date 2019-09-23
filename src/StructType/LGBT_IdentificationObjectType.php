@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LGBT_IdentificationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
      * Constructor method for LGBT_IdentificationObjectType
      * @uses LGBT_IdentificationObjectType::setID()
      * @uses LGBT_IdentificationObjectType::setDescriptor()
-     * @param \StructType\LGBT_IdentificationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\LGBT_IdentificationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $lGBT_IdentificationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$lGBT_IdentificationObjectTypeIDItem instanceof \StructType\LGBT_IdentificationObjectIDType) {
+            if (!$lGBT_IdentificationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType) {
                 $invalidValues[] = is_object($lGBT_IdentificationObjectTypeIDItem) ? get_class($lGBT_IdentificationObjectTypeIDItem) : sprintf('%s(%s)', gettype($lGBT_IdentificationObjectTypeIDItem), var_export($lGBT_IdentificationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\LGBT_IdentificationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationObjectIDType[] $iD
-     * @return \StructType\LGBT_IdentificationObjectType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationObjectIDType $item
-     * @return \StructType\LGBT_IdentificationObjectType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType
      */
-    public function addToID(\StructType\LGBT_IdentificationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LGBT_IdentificationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\LGBT_IdentificationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\LGBT_IdentificationObjectType
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class LGBT_IdentificationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LGBT_IdentificationObjectType
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType
      */
     public static function __set_state(array $array)
     {

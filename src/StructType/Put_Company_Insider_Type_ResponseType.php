@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a company insider type.
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType
      */
     public $Company_Insider_Type_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
      * Constructor method for Put_Company_Insider_Type_ResponseType
      * @uses Put_Company_Insider_Type_ResponseType::setCompany_Insider_Type_Reference()
      * @uses Put_Company_Insider_Type_ResponseType::setVersion()
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null, $version = null)
     {
         $this
             ->setCompany_Insider_Type_Reference($company_Insider_Type_Reference)
@@ -42,7 +42,7 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
     }
     /**
      * Get Company_Insider_Type_Reference value
-     * @return \StructType\Company_Insider_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType|null
      */
     public function getCompany_Insider_Type_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
     }
     /**
      * Set Company_Insider_Type_Reference value
-     * @param \StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
-     * @return \StructType\Put_Company_Insider_Type_ResponseType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Company_Insider_Type_ResponseType
      */
-    public function setCompany_Insider_Type_Reference(\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
+    public function setCompany_Insider_Type_Reference(\WorkdayWsdl\\StructType\Company_Insider_TypeObjectType $company_Insider_Type_Reference = null)
     {
         $this->Company_Insider_Type_Reference = $company_Insider_Type_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Company_Insider_Type_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Company_Insider_Type_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Company_Insider_Type_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Company_Insider_Type_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Company_Insider_Type_ResponseType
      */
     public static function __set_state(array $array)
     {

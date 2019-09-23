@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,14 +26,14 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External EEO-1 Data Reference
      * - minOccurs: 0
-     * @var \StructType\External_EEO_1_DataObjectType
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
     public $External_EEO_1_Data_Reference;
     /**
      * The External_EEO_1_Data_Data
      * Meta information extracted from the WSDL
      * - documentation: External EEO-1 Data Record
-     * @var \StructType\External_EEO_1_Data_RecordType
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType
      */
     public $External_EEO_1_Data_Data;
     /**
@@ -50,11 +50,11 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
      * @uses Put_EEO_Data_Record_RequestType::setExternal_EEO_1_Data_Data()
      * @uses Put_EEO_Data_Record_RequestType::setVersion()
      * @param bool $delete
-     * @param \StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference
-     * @param \StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data
      * @param string $version
      */
-    public function __construct($delete = null, \StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null, \StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data = null, $version = null)
+    public function __construct($delete = null, \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null, \WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data = null, $version = null)
     {
         $this
             ->setDelete($delete)
@@ -73,7 +73,7 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Put_EEO_Data_Record_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_RequestType
      */
     public function setDelete($delete = null)
     {
@@ -95,9 +95,9 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
     /**
      * Set external_EEO_Data_Reference value
      * @param external_EEO_Data_Reference $external_EEO_Data_Reference
-     * @return \StructType\Put_EEO_Data_Record_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_RequestType
      */
-    public function setExternal_EEO_1_Data_Reference(\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null)
+    public function setExternal_EEO_1_Data_Reference(\WorkdayWsdl\\StructType\External_EEO_1_DataObjectType $external_EEO_1_Data_Reference = null)
     {
         $this->External_EEO_1_Data_Reference = $this->{'External_EEO-1_Data_Reference'} = $external_EEO_1_Data_Reference;
         return $this;
@@ -113,9 +113,9 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
     /**
      * Set external_EEO_Data_Data value
      * @param external_EEO_Data_Data $external_EEO_Data_Data
-     * @return \StructType\Put_EEO_Data_Record_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_RequestType
      */
-    public function setExternal_EEO_1_Data_Data(\StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data = null)
+    public function setExternal_EEO_1_Data_Data(\WorkdayWsdl\\StructType\External_EEO_1_Data_RecordType $external_EEO_1_Data_Data = null)
     {
         $this->External_EEO_1_Data_Data = $this->{'External_EEO-1_Data_Data'} = $external_EEO_1_Data_Data;
         return $this;
@@ -131,7 +131,7 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_EEO_Data_Record_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_RequestType
      */
     public function setVersion($version = null)
     {
@@ -148,7 +148,7 @@ class Put_EEO_Data_Record_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_EEO_Data_Record_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_EEO_Data_Record_RequestType
      */
     public static function __set_state(array $array)
     {

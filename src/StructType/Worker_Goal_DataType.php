@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Worker_Goal_DataType extends AbstractStructBase
      * - documentation: Contains a single Goal Detail (either Review Goal or Worker Goal Detail) and its Notes and History.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_GoalType[]
+     * @var \WorkdayWsdl\\StructType\Worker_GoalType[]
      */
     public $Goal;
     /**
      * Constructor method for Worker_Goal_DataType
      * @uses Worker_Goal_DataType::setGoal()
-     * @param \StructType\Worker_GoalType[] $goal
+     * @param \WorkdayWsdl\\StructType\Worker_GoalType[] $goal
      */
     public function __construct(array $goal = array())
     {
@@ -33,7 +33,7 @@ class Worker_Goal_DataType extends AbstractStructBase
     }
     /**
      * Get Goal value
-     * @return \StructType\Worker_GoalType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_GoalType[]|null
      */
     public function getGoal()
     {
@@ -51,12 +51,12 @@ class Worker_Goal_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Goal_DataTypeGoalItem) {
             // validation for constraint: itemType
-            if (!$worker_Goal_DataTypeGoalItem instanceof \StructType\Worker_GoalType) {
+            if (!$worker_Goal_DataTypeGoalItem instanceof \WorkdayWsdl\\StructType\Worker_GoalType) {
                 $invalidValues[] = is_object($worker_Goal_DataTypeGoalItem) ? get_class($worker_Goal_DataTypeGoalItem) : sprintf('%s(%s)', gettype($worker_Goal_DataTypeGoalItem), var_export($worker_Goal_DataTypeGoalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Goal property can only contain items of type \StructType\Worker_GoalType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Goal property can only contain items of type \WorkdayWsdl\\StructType\Worker_GoalType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Worker_Goal_DataType extends AbstractStructBase
     /**
      * Set Goal value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_GoalType[] $goal
-     * @return \StructType\Worker_Goal_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_GoalType[] $goal
+     * @return \WorkdayWsdl\\StructType\Worker_Goal_DataType
      */
     public function setGoal(array $goal = array())
     {
@@ -79,14 +79,14 @@ class Worker_Goal_DataType extends AbstractStructBase
     /**
      * Add item to Goal value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_GoalType $item
-     * @return \StructType\Worker_Goal_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_GoalType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Goal_DataType
      */
-    public function addToGoal(\StructType\Worker_GoalType $item)
+    public function addToGoal(\WorkdayWsdl\\StructType\Worker_GoalType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_GoalType) {
-            throw new \InvalidArgumentException(sprintf('The Goal property can only contain items of type \StructType\Worker_GoalType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_GoalType) {
+            throw new \InvalidArgumentException(sprintf('The Goal property can only contain items of type \WorkdayWsdl\\StructType\Worker_GoalType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Goal[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Worker_Goal_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Goal_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Goal_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Employee_Contract_ReasonObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Employee_Contract_ReasonReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Employee_Contract_ReasonReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Employee_Contract_ReasonReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Employee_Contract_ReasonReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Employee_Contract_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Employee_Contract_ReasonReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Employee_Contract_ReasonReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Employee_Contract_ReasonReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Employee_Contract_ReasonReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Employee_Contract_ReasonReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Employee_Contract_ReasonReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Employee_Contract_ReasonObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Employee_Contract_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Employee_Contract_ReasonObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Contract_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_ReasonObjectIDType
      */
     public static function __set_state(array $array)
     {

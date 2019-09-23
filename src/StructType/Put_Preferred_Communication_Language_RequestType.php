@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
      * - documentation: Preferred Communication Languages
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Preferred_Communication_LanguagesType[]
+     * @var \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType[]
      */
     public $Preferred_Communication_Languages;
     /**
@@ -33,7 +33,7 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
      * Constructor method for Put_Preferred_Communication_Language_RequestType
      * @uses Put_Preferred_Communication_Language_RequestType::setPreferred_Communication_Languages()
      * @uses Put_Preferred_Communication_Language_RequestType::setVersion()
-     * @param \StructType\Preferred_Communication_LanguagesType[] $preferred_Communication_Languages
+     * @param \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType[] $preferred_Communication_Languages
      * @param string $version
      */
     public function __construct(array $preferred_Communication_Languages = array(), $version = null)
@@ -44,7 +44,7 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
     }
     /**
      * Get Preferred_Communication_Languages value
-     * @return \StructType\Preferred_Communication_LanguagesType[]|null
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType[]|null
      */
     public function getPreferred_Communication_Languages()
     {
@@ -62,12 +62,12 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem) {
             // validation for constraint: itemType
-            if (!$put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem instanceof \StructType\Preferred_Communication_LanguagesType) {
+            if (!$put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem instanceof \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType) {
                 $invalidValues[] = is_object($put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem) ? get_class($put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem) : sprintf('%s(%s)', gettype($put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem), var_export($put_Preferred_Communication_Language_RequestTypePreferred_Communication_LanguagesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Preferred_Communication_Languages property can only contain items of type \StructType\Preferred_Communication_LanguagesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Preferred_Communication_Languages property can only contain items of type \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
     /**
      * Set Preferred_Communication_Languages value
      * @throws \InvalidArgumentException
-     * @param \StructType\Preferred_Communication_LanguagesType[] $preferred_Communication_Languages
-     * @return \StructType\Put_Preferred_Communication_Language_RequestType
+     * @param \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType[] $preferred_Communication_Languages
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_RequestType
      */
     public function setPreferred_Communication_Languages(array $preferred_Communication_Languages = array())
     {
@@ -90,14 +90,14 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
     /**
      * Add item to Preferred_Communication_Languages value
      * @throws \InvalidArgumentException
-     * @param \StructType\Preferred_Communication_LanguagesType $item
-     * @return \StructType\Put_Preferred_Communication_Language_RequestType
+     * @param \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType $item
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_RequestType
      */
-    public function addToPreferred_Communication_Languages(\StructType\Preferred_Communication_LanguagesType $item)
+    public function addToPreferred_Communication_Languages(\WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Preferred_Communication_LanguagesType) {
-            throw new \InvalidArgumentException(sprintf('The Preferred_Communication_Languages property can only contain items of type \StructType\Preferred_Communication_LanguagesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType) {
+            throw new \InvalidArgumentException(sprintf('The Preferred_Communication_Languages property can only contain items of type \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Preferred_Communication_Languages[] = $item;
         return $this;
@@ -113,7 +113,7 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Preferred_Communication_Language_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_RequestType
      */
     public function setVersion($version = null)
     {
@@ -130,7 +130,7 @@ class Put_Preferred_Communication_Language_RequestType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Preferred_Communication_Language_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_RequestType
      */
     public static function __set_state(array $array)
     {

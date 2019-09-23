@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
      * The Organization_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Organization Type for Allowed Organizations
-     * @var \StructType\Organization_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Organization_TypeObjectType
      */
     public $Organization_Type_Reference;
     /**
@@ -26,7 +26,7 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
      * - documentation: Allowed Organizations
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\StaffObjectType[]
+     * @var \WorkdayWsdl\\StructType\StaffObjectType[]
      */
     public $Allowed_Organization_Reference;
     /**
@@ -42,11 +42,11 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
      * @uses Location_Hierarchy_Organization_Assignments_by_Type_DataType::setOrganization_Type_Reference()
      * @uses Location_Hierarchy_Organization_Assignments_by_Type_DataType::setAllowed_Organization_Reference()
      * @uses Location_Hierarchy_Organization_Assignments_by_Type_DataType::setDelete()
-     * @param \StructType\Organization_TypeObjectType $organization_Type_Reference
-     * @param \StructType\StaffObjectType[] $allowed_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType $organization_Type_Reference
+     * @param \WorkdayWsdl\\StructType\StaffObjectType[] $allowed_Organization_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Organization_TypeObjectType $organization_Type_Reference = null, array $allowed_Organization_Reference = array(), $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_TypeObjectType $organization_Type_Reference = null, array $allowed_Organization_Reference = array(), $delete = null)
     {
         $this
             ->setOrganization_Type_Reference($organization_Type_Reference)
@@ -55,7 +55,7 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
     }
     /**
      * Get Organization_Type_Reference value
-     * @return \StructType\Organization_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType|null
      */
     public function getOrganization_Type_Reference()
     {
@@ -63,17 +63,17 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
     }
     /**
      * Set Organization_Type_Reference value
-     * @param \StructType\Organization_TypeObjectType $organization_Type_Reference
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType $organization_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
      */
-    public function setOrganization_Type_Reference(\StructType\Organization_TypeObjectType $organization_Type_Reference = null)
+    public function setOrganization_Type_Reference(\WorkdayWsdl\\StructType\Organization_TypeObjectType $organization_Type_Reference = null)
     {
         $this->Organization_Type_Reference = $organization_Type_Reference;
         return $this;
     }
     /**
      * Get Allowed_Organization_Reference value
-     * @return \StructType\StaffObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\StaffObjectType[]|null
      */
     public function getAllowed_Organization_Reference()
     {
@@ -91,12 +91,12 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
         $invalidValues = [];
         foreach ($values as $location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem instanceof \StructType\StaffObjectType) {
+            if (!$location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\StaffObjectType) {
                 $invalidValues[] = is_object($location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem) ? get_class($location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem), var_export($location_Hierarchy_Organization_Assignments_by_Type_DataTypeAllowed_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Allowed_Organization_Reference property can only contain items of type \StructType\StaffObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Allowed_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\StaffObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -104,8 +104,8 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
     /**
      * Set Allowed_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\StaffObjectType[] $allowed_Organization_Reference
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
+     * @param \WorkdayWsdl\\StructType\StaffObjectType[] $allowed_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
      */
     public function setAllowed_Organization_Reference(array $allowed_Organization_Reference = array())
     {
@@ -119,14 +119,14 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
     /**
      * Add item to Allowed_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\StaffObjectType $item
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
+     * @param \WorkdayWsdl\\StructType\StaffObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
      */
-    public function addToAllowed_Organization_Reference(\StructType\StaffObjectType $item)
+    public function addToAllowed_Organization_Reference(\WorkdayWsdl\\StructType\StaffObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\StaffObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Allowed_Organization_Reference property can only contain items of type \StructType\StaffObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\StaffObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Allowed_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\StaffObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Allowed_Organization_Reference[] = $item;
         return $this;
@@ -142,7 +142,7 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
      */
     public function setDelete($delete = null)
     {
@@ -159,7 +159,7 @@ class Location_Hierarchy_Organization_Assignments_by_Type_DataType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_by_Type_DataType
      */
     public static function __set_state(array $array)
     {

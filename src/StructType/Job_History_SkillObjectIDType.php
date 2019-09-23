@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Job_History_SkillObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Job_History_SkillReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Job_History_SkillReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Job_History_SkillReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Job_History_SkillReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Job_History_SkillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Job_History_SkillReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Job_History_SkillReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Job_History_SkillReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Job_History_SkillReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Job_History_SkillReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Job_History_SkillReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Job_History_SkillObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Job_History_SkillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Job_History_SkillObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_History_SkillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Job_History_SkillObjectIDType
      */
     public static function __set_state(array $array)
     {

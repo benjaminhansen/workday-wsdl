@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Assign_User_Based_Security_GroupsType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique identifier for a System User reference
      * - minOccurs: 0
-     * @var \StructType\System_UserObjectType
+     * @var \WorkdayWsdl\\StructType\System_UserObjectType
      */
     public $Workday_Account_Reference;
     /**
      * The Assign_User_Based_Security_Groups_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Assign_User_Based_Security_Groups_DataType
+     * @var \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType
      */
     public $Assign_User_Based_Security_Groups_Data;
     /**
      * Constructor method for Assign_User-Based_Security_GroupsType
      * @uses Assign_User_Based_Security_GroupsType::setWorkday_Account_Reference()
      * @uses Assign_User_Based_Security_GroupsType::setAssign_User_Based_Security_Groups_Data()
-     * @param \StructType\System_UserObjectType $workday_Account_Reference
-     * @param \StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data
      */
-    public function __construct(\StructType\System_UserObjectType $workday_Account_Reference = null, \StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference = null, \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data = null)
     {
         $this
             ->setWorkday_Account_Reference($workday_Account_Reference)
@@ -42,7 +42,7 @@ class Assign_User_Based_Security_GroupsType extends AbstractStructBase
     }
     /**
      * Get Workday_Account_Reference value
-     * @return \StructType\System_UserObjectType|null
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType|null
      */
     public function getWorkday_Account_Reference()
     {
@@ -50,17 +50,17 @@ class Assign_User_Based_Security_GroupsType extends AbstractStructBase
     }
     /**
      * Set Workday_Account_Reference value
-     * @param \StructType\System_UserObjectType $workday_Account_Reference
-     * @return \StructType\Assign_User_Based_Security_GroupsType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType
      */
-    public function setWorkday_Account_Reference(\StructType\System_UserObjectType $workday_Account_Reference = null)
+    public function setWorkday_Account_Reference(\WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference = null)
     {
         $this->Workday_Account_Reference = $workday_Account_Reference;
         return $this;
     }
     /**
      * Get Assign_User_Based_Security_Groups_Data value
-     * @return \StructType\Assign_User_Based_Security_Groups_DataType|null
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType|null
      */
     public function getAssign_User_Based_Security_Groups_Data()
     {
@@ -68,10 +68,10 @@ class Assign_User_Based_Security_GroupsType extends AbstractStructBase
     }
     /**
      * Set Assign_User_Based_Security_Groups_Data value
-     * @param \StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data
-     * @return \StructType\Assign_User_Based_Security_GroupsType
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType
      */
-    public function setAssign_User_Based_Security_Groups_Data(\StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data = null)
+    public function setAssign_User_Based_Security_Groups_Data(\WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_DataType $assign_User_Based_Security_Groups_Data = null)
     {
         $this->Assign_User_Based_Security_Groups_Data = $this->{'Assign_User-Based_Security_Groups_Data'} = $assign_User_Based_Security_Groups_Data;
         return $this;
@@ -82,7 +82,7 @@ class Assign_User_Based_Security_GroupsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_User_Based_Security_GroupsType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_GroupsType
      */
     public static function __set_state(array $array)
     {

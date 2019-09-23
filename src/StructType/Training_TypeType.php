@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Training_TypeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Training Type.
      * - minOccurs: 0
-     * @var \StructType\Training_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Training_TypeObjectType
      */
     public $Training_Type_Reference;
     /**
@@ -26,17 +26,17 @@ class Training_TypeType extends AbstractStructBase
      * - documentation: Contains the detailed information about a Training Type.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Training_Type_DataType[]
+     * @var \WorkdayWsdl\\StructType\Training_Type_DataType[]
      */
     public $Training_Type_Data;
     /**
      * Constructor method for Training_TypeType
      * @uses Training_TypeType::setTraining_Type_Reference()
      * @uses Training_TypeType::setTraining_Type_Data()
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
-     * @param \StructType\Training_Type_DataType[] $training_Type_Data
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Training_Type_DataType[] $training_Type_Data
      */
-    public function __construct(\StructType\Training_TypeObjectType $training_Type_Reference = null, array $training_Type_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null, array $training_Type_Data = array())
     {
         $this
             ->setTraining_Type_Reference($training_Type_Reference)
@@ -44,7 +44,7 @@ class Training_TypeType extends AbstractStructBase
     }
     /**
      * Get Training_Type_Reference value
-     * @return \StructType\Training_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Training_TypeObjectType|null
      */
     public function getTraining_Type_Reference()
     {
@@ -52,17 +52,17 @@ class Training_TypeType extends AbstractStructBase
     }
     /**
      * Set Training_Type_Reference value
-     * @param \StructType\Training_TypeObjectType $training_Type_Reference
-     * @return \StructType\Training_TypeType
+     * @param \WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Training_TypeType
      */
-    public function setTraining_Type_Reference(\StructType\Training_TypeObjectType $training_Type_Reference = null)
+    public function setTraining_Type_Reference(\WorkdayWsdl\\StructType\Training_TypeObjectType $training_Type_Reference = null)
     {
         $this->Training_Type_Reference = $training_Type_Reference;
         return $this;
     }
     /**
      * Get Training_Type_Data value
-     * @return \StructType\Training_Type_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Training_Type_DataType[]|null
      */
     public function getTraining_Type_Data()
     {
@@ -80,12 +80,12 @@ class Training_TypeType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $training_TypeTypeTraining_Type_DataItem) {
             // validation for constraint: itemType
-            if (!$training_TypeTypeTraining_Type_DataItem instanceof \StructType\Training_Type_DataType) {
+            if (!$training_TypeTypeTraining_Type_DataItem instanceof \WorkdayWsdl\\StructType\Training_Type_DataType) {
                 $invalidValues[] = is_object($training_TypeTypeTraining_Type_DataItem) ? get_class($training_TypeTypeTraining_Type_DataItem) : sprintf('%s(%s)', gettype($training_TypeTypeTraining_Type_DataItem), var_export($training_TypeTypeTraining_Type_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Training_Type_Data property can only contain items of type \StructType\Training_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Training_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Training_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Training_TypeType extends AbstractStructBase
     /**
      * Set Training_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Training_Type_DataType[] $training_Type_Data
-     * @return \StructType\Training_TypeType
+     * @param \WorkdayWsdl\\StructType\Training_Type_DataType[] $training_Type_Data
+     * @return \WorkdayWsdl\\StructType\Training_TypeType
      */
     public function setTraining_Type_Data(array $training_Type_Data = array())
     {
@@ -108,14 +108,14 @@ class Training_TypeType extends AbstractStructBase
     /**
      * Add item to Training_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Training_Type_DataType $item
-     * @return \StructType\Training_TypeType
+     * @param \WorkdayWsdl\\StructType\Training_Type_DataType $item
+     * @return \WorkdayWsdl\\StructType\Training_TypeType
      */
-    public function addToTraining_Type_Data(\StructType\Training_Type_DataType $item)
+    public function addToTraining_Type_Data(\WorkdayWsdl\\StructType\Training_Type_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Training_Type_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Training_Type_Data property can only contain items of type \StructType\Training_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Training_Type_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Training_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Training_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Training_Type_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Training_TypeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Training_TypeType
+     * @return \WorkdayWsdl\\StructType\Training_TypeType
      */
     public static function __set_state(array $array)
     {

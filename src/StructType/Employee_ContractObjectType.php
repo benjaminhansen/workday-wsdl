@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Employee_ContractObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_ContractObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Employee_ContractObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Employee_ContractObjectType extends AbstractStructBase
      * Constructor method for Employee_ContractObjectType
      * @uses Employee_ContractObjectType::setID()
      * @uses Employee_ContractObjectType::setDescriptor()
-     * @param \StructType\Employee_ContractObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Employee_ContractObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Employee_ContractObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Employee_ContractObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Employee_ContractObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_ContractObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$employee_ContractObjectTypeIDItem instanceof \StructType\Employee_ContractObjectIDType) {
+            if (!$employee_ContractObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Employee_ContractObjectIDType) {
                 $invalidValues[] = is_object($employee_ContractObjectTypeIDItem) ? get_class($employee_ContractObjectTypeIDItem) : sprintf('%s(%s)', gettype($employee_ContractObjectTypeIDItem), var_export($employee_ContractObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Employee_ContractObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Employee_ContractObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Employee_ContractObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_ContractObjectIDType[] $iD
-     * @return \StructType\Employee_ContractObjectType
+     * @param \WorkdayWsdl\\StructType\Employee_ContractObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Employee_ContractObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_ContractObjectIDType $item
-     * @return \StructType\Employee_ContractObjectType
+     * @param \WorkdayWsdl\\StructType\Employee_ContractObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectType
      */
-    public function addToID(\StructType\Employee_ContractObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Employee_ContractObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_ContractObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Employee_ContractObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_ContractObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Employee_ContractObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Employee_ContractObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Employee_ContractObjectType
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Employee_ContractObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_ContractObjectType
+     * @return \WorkdayWsdl\\StructType\Employee_ContractObjectType
      */
     public static function __set_state(array $array)
     {

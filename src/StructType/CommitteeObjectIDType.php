@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class CommitteeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\CommitteeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\CommitteeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\CommitteeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\CommitteeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\CommitteeObjectIDType
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CommitteeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CommitteeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\CommitteeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\CommitteeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\CommitteeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\CommitteeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class CommitteeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CommitteeObjectIDType
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class CommitteeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommitteeObjectIDType
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectIDType
      */
     public static function __set_state(array $array)
     {

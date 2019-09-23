@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Future_Payment_PlanObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Future_Payment_PlanReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Future_Payment_PlanReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Future_Payment_PlanReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Future_Payment_PlanReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Future_Payment_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_PlanObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Future_Payment_PlanReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Future_Payment_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Future_Payment_PlanReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Future_Payment_PlanReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Future_Payment_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Future_Payment_PlanReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Future_Payment_PlanObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Future_Payment_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_PlanObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Future_Payment_PlanObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Future_Payment_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_PlanObjectIDType
      */
     public static function __set_state(array $array)
     {

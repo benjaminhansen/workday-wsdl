@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class Professional_Experience_DataType extends AbstractStructBase
      * The Professional_Experience_Rating_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Professional_Experience_Rating_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType
      */
     public $Professional_Experience_Rating_Reference;
     /**
@@ -42,10 +42,10 @@ class Professional_Experience_DataType extends AbstractStructBase
      * @uses Professional_Experience_DataType::setProfessional_Experience_Rating_Reference()
      * @uses Professional_Experience_DataType::setProfessional_Experience_Comment()
      * @param string $professional_Experience
-     * @param \StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference
+     * @param \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference
      * @param string $professional_Experience_Comment
      */
-    public function __construct($professional_Experience = null, \StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference = null, $professional_Experience_Comment = null)
+    public function __construct($professional_Experience = null, \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference = null, $professional_Experience_Comment = null)
     {
         $this
             ->setProfessional_Experience($professional_Experience)
@@ -63,7 +63,7 @@ class Professional_Experience_DataType extends AbstractStructBase
     /**
      * Set Professional_Experience value
      * @param string $professional_Experience
-     * @return \StructType\Professional_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_DataType
      */
     public function setProfessional_Experience($professional_Experience = null)
     {
@@ -76,7 +76,7 @@ class Professional_Experience_DataType extends AbstractStructBase
     }
     /**
      * Get Professional_Experience_Rating_Reference value
-     * @return \StructType\Professional_Experience_Rating_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType|null
      */
     public function getProfessional_Experience_Rating_Reference()
     {
@@ -84,10 +84,10 @@ class Professional_Experience_DataType extends AbstractStructBase
     }
     /**
      * Set Professional_Experience_Rating_Reference value
-     * @param \StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference
-     * @return \StructType\Professional_Experience_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_DataType
      */
-    public function setProfessional_Experience_Rating_Reference(\StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference = null)
+    public function setProfessional_Experience_Rating_Reference(\WorkdayWsdl\\StructType\Professional_Experience_Rating_ReferenceType $professional_Experience_Rating_Reference = null)
     {
         $this->Professional_Experience_Rating_Reference = $professional_Experience_Rating_Reference;
         return $this;
@@ -103,7 +103,7 @@ class Professional_Experience_DataType extends AbstractStructBase
     /**
      * Set Professional_Experience_Comment value
      * @param string $professional_Experience_Comment
-     * @return \StructType\Professional_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_DataType
      */
     public function setProfessional_Experience_Comment($professional_Experience_Comment = null)
     {
@@ -120,7 +120,7 @@ class Professional_Experience_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Experience_DataType
      */
     public static function __set_state(array $array)
     {

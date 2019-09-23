@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Organization_Name_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Name_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Response_GroupType
      */
     public static function __set_state(array $array)
     {

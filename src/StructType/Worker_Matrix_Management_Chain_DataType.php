@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Management_Chain_DataType[]
+     * @var \WorkdayWsdl\\StructType\Management_Chain_DataType[]
      */
     public $Management_Chain_Data;
     /**
      * Constructor method for Worker_Matrix_Management_Chain_DataType
      * @uses Worker_Matrix_Management_Chain_DataType::setManagement_Chain_Data()
-     * @param \StructType\Management_Chain_DataType[] $management_Chain_Data
+     * @param \WorkdayWsdl\\StructType\Management_Chain_DataType[] $management_Chain_Data
      */
     public function __construct(array $management_Chain_Data = array())
     {
@@ -32,7 +32,7 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
     }
     /**
      * Get Management_Chain_Data value
-     * @return \StructType\Management_Chain_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Management_Chain_DataType[]|null
      */
     public function getManagement_Chain_Data()
     {
@@ -50,12 +50,12 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem instanceof \StructType\Management_Chain_DataType) {
+            if (!$worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem instanceof \WorkdayWsdl\\StructType\Management_Chain_DataType) {
                 $invalidValues[] = is_object($worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem) ? get_class($worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem) : sprintf('%s(%s)', gettype($worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem), var_export($worker_Matrix_Management_Chain_DataTypeManagement_Chain_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Management_Chain_Data property can only contain items of type \StructType\Management_Chain_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Management_Chain_Data property can only contain items of type \WorkdayWsdl\\StructType\Management_Chain_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
     /**
      * Set Management_Chain_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Management_Chain_DataType[] $management_Chain_Data
-     * @return \StructType\Worker_Matrix_Management_Chain_DataType
+     * @param \WorkdayWsdl\\StructType\Management_Chain_DataType[] $management_Chain_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType
      */
     public function setManagement_Chain_Data(array $management_Chain_Data = array())
     {
@@ -78,14 +78,14 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
     /**
      * Add item to Management_Chain_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Management_Chain_DataType $item
-     * @return \StructType\Worker_Matrix_Management_Chain_DataType
+     * @param \WorkdayWsdl\\StructType\Management_Chain_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType
      */
-    public function addToManagement_Chain_Data(\StructType\Management_Chain_DataType $item)
+    public function addToManagement_Chain_Data(\WorkdayWsdl\\StructType\Management_Chain_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Management_Chain_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Management_Chain_Data property can only contain items of type \StructType\Management_Chain_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Management_Chain_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Management_Chain_Data property can only contain items of type \WorkdayWsdl\\StructType\Management_Chain_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Management_Chain_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Worker_Matrix_Management_Chain_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Matrix_Management_Chain_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Matrix_Management_Chain_DataType
      */
     public static function __set_state(array $array)
     {

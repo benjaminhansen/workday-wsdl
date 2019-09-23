@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Pronoun_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Pronoun of the person.
      * - minOccurs: 0
-     * @var \StructType\PronounObjectType
+     * @var \WorkdayWsdl\\StructType\PronounObjectType
      */
     public $Pronoun_Reference;
     /**
      * The Pronoun_Data
-     * @var \StructType\Pronoun_DataType
+     * @var \WorkdayWsdl\\StructType\Pronoun_DataType
      */
     public $Pronoun_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Pronoun_RequestType extends AbstractStructBase
      * @uses Put_Pronoun_RequestType::setPronoun_Data()
      * @uses Put_Pronoun_RequestType::setAdd_Only()
      * @uses Put_Pronoun_RequestType::setVersion()
-     * @param \StructType\PronounObjectType $pronoun_Reference
-     * @param \StructType\Pronoun_DataType $pronoun_Data
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
+     * @param \WorkdayWsdl\\StructType\Pronoun_DataType $pronoun_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\PronounObjectType $pronoun_Reference = null, \StructType\Pronoun_DataType $pronoun_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null, \WorkdayWsdl\\StructType\Pronoun_DataType $pronoun_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setPronoun_Reference($pronoun_Reference)
@@ -60,7 +60,7 @@ class Put_Pronoun_RequestType extends AbstractStructBase
     }
     /**
      * Get Pronoun_Reference value
-     * @return \StructType\PronounObjectType|null
+     * @return \WorkdayWsdl\\StructType\PronounObjectType|null
      */
     public function getPronoun_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Pronoun_RequestType extends AbstractStructBase
     }
     /**
      * Set Pronoun_Reference value
-     * @param \StructType\PronounObjectType $pronoun_Reference
-     * @return \StructType\Put_Pronoun_RequestType
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_RequestType
      */
-    public function setPronoun_Reference(\StructType\PronounObjectType $pronoun_Reference = null)
+    public function setPronoun_Reference(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null)
     {
         $this->Pronoun_Reference = $pronoun_Reference;
         return $this;
     }
     /**
      * Get Pronoun_Data value
-     * @return \StructType\Pronoun_DataType|null
+     * @return \WorkdayWsdl\\StructType\Pronoun_DataType|null
      */
     public function getPronoun_Data()
     {
@@ -86,10 +86,10 @@ class Put_Pronoun_RequestType extends AbstractStructBase
     }
     /**
      * Set Pronoun_Data value
-     * @param \StructType\Pronoun_DataType $pronoun_Data
-     * @return \StructType\Put_Pronoun_RequestType
+     * @param \WorkdayWsdl\\StructType\Pronoun_DataType $pronoun_Data
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_RequestType
      */
-    public function setPronoun_Data(\StructType\Pronoun_DataType $pronoun_Data = null)
+    public function setPronoun_Data(\WorkdayWsdl\\StructType\Pronoun_DataType $pronoun_Data = null)
     {
         $this->Pronoun_Data = $pronoun_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Pronoun_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Pronoun_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Pronoun_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Pronoun_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Pronoun_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Pronoun_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_RequestType
      */
     public static function __set_state(array $array)
     {

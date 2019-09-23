@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Political_AffiliationType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Political Affiliation
      * - minOccurs: 0
-     * @var \StructType\Political_AffiliationObjectType
+     * @var \WorkdayWsdl\\StructType\Political_AffiliationObjectType
      */
     public $Political_Affiliation_Reference;
     /**
      * The Political_Affiliation_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Political_Affiliation_DataType
+     * @var \WorkdayWsdl\\StructType\Political_Affiliation_DataType
      */
     public $Political_Affiliation_Data;
     /**
      * Constructor method for Political_AffiliationType
      * @uses Political_AffiliationType::setPolitical_Affiliation_Reference()
      * @uses Political_AffiliationType::setPolitical_Affiliation_Data()
-     * @param \StructType\Political_AffiliationObjectType $political_Affiliation_Reference
-     * @param \StructType\Political_Affiliation_DataType $political_Affiliation_Data
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference
+     * @param \WorkdayWsdl\\StructType\Political_Affiliation_DataType $political_Affiliation_Data
      */
-    public function __construct(\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null, \StructType\Political_Affiliation_DataType $political_Affiliation_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null, \WorkdayWsdl\\StructType\Political_Affiliation_DataType $political_Affiliation_Data = null)
     {
         $this
             ->setPolitical_Affiliation_Reference($political_Affiliation_Reference)
@@ -42,7 +42,7 @@ class Political_AffiliationType extends AbstractStructBase
     }
     /**
      * Get Political_Affiliation_Reference value
-     * @return \StructType\Political_AffiliationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType|null
      */
     public function getPolitical_Affiliation_Reference()
     {
@@ -50,17 +50,17 @@ class Political_AffiliationType extends AbstractStructBase
     }
     /**
      * Set Political_Affiliation_Reference value
-     * @param \StructType\Political_AffiliationObjectType $political_Affiliation_Reference
-     * @return \StructType\Political_AffiliationType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationType
      */
-    public function setPolitical_Affiliation_Reference(\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null)
+    public function setPolitical_Affiliation_Reference(\WorkdayWsdl\\StructType\Political_AffiliationObjectType $political_Affiliation_Reference = null)
     {
         $this->Political_Affiliation_Reference = $political_Affiliation_Reference;
         return $this;
     }
     /**
      * Get Political_Affiliation_Data value
-     * @return \StructType\Political_Affiliation_DataType|null
+     * @return \WorkdayWsdl\\StructType\Political_Affiliation_DataType|null
      */
     public function getPolitical_Affiliation_Data()
     {
@@ -68,10 +68,10 @@ class Political_AffiliationType extends AbstractStructBase
     }
     /**
      * Set Political_Affiliation_Data value
-     * @param \StructType\Political_Affiliation_DataType $political_Affiliation_Data
-     * @return \StructType\Political_AffiliationType
+     * @param \WorkdayWsdl\\StructType\Political_Affiliation_DataType $political_Affiliation_Data
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationType
      */
-    public function setPolitical_Affiliation_Data(\StructType\Political_Affiliation_DataType $political_Affiliation_Data = null)
+    public function setPolitical_Affiliation_Data(\WorkdayWsdl\\StructType\Political_Affiliation_DataType $political_Affiliation_Data = null)
     {
         $this->Political_Affiliation_Data = $political_Affiliation_Data;
         return $this;
@@ -82,7 +82,7 @@ class Political_AffiliationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Political_AffiliationType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationType
      */
     public static function __set_state(array $array)
     {

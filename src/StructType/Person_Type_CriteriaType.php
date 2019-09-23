@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -102,7 +102,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Academic_Affiliates value
      * @param bool $include_Academic_Affiliates
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_Academic_Affiliates($include_Academic_Affiliates = null)
     {
@@ -124,7 +124,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_External_Committee_Members value
      * @param bool $include_External_Committee_Members
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_External_Committee_Members($include_External_Committee_Members = null)
     {
@@ -146,7 +146,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_External_Student_Records value
      * @param bool $include_External_Student_Records
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_External_Student_Records($include_External_Student_Records = null)
     {
@@ -168,7 +168,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Student_Prospect_Records value
      * @param bool $include_Student_Prospect_Records
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_Student_Prospect_Records($include_Student_Prospect_Records = null)
     {
@@ -190,7 +190,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Student_Records value
      * @param bool $include_Student_Records
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_Student_Records($include_Student_Records = null)
     {
@@ -212,7 +212,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Workers value
      * @param bool $include_Workers
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public function setInclude_Workers($include_Workers = null)
     {
@@ -229,7 +229,7 @@ class Person_Type_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Type_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public static function __set_state(array $array)
     {

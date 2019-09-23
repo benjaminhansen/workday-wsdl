@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_EEO_1_DataObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
      * Constructor method for External_EEO-1_DataObjectType
      * @uses External_EEO_1_DataObjectType::setID()
      * @uses External_EEO_1_DataObjectType::setDescriptor()
-     * @param \StructType\External_EEO_1_DataObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\External_EEO_1_DataObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_EEO_1_DataObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_EEO_1_DataObjectTypeIDItem instanceof \StructType\External_EEO_1_DataObjectIDType) {
+            if (!$external_EEO_1_DataObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType) {
                 $invalidValues[] = is_object($external_EEO_1_DataObjectTypeIDItem) ? get_class($external_EEO_1_DataObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_EEO_1_DataObjectTypeIDItem), var_export($external_EEO_1_DataObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_EEO_1_DataObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_EEO_1_DataObjectIDType[] $iD
-     * @return \StructType\External_EEO_1_DataObjectType
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_EEO_1_DataObjectIDType $item
-     * @return \StructType\External_EEO_1_DataObjectType
+     * @param \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
-    public function addToID(\StructType\External_EEO_1_DataObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_EEO_1_DataObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_EEO_1_DataObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_EEO_1_DataObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_EEO_1_DataObjectType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class External_EEO_1_DataObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_EEO_1_DataObjectType
+     * @return \WorkdayWsdl\\StructType\External_EEO_1_DataObjectType
      */
     public static function __set_state(array $array)
     {

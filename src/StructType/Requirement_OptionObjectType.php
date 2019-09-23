@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Requirement_OptionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Requirement_OptionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Requirement_OptionObjectType extends AbstractStructBase
      * Constructor method for Requirement_OptionObjectType
      * @uses Requirement_OptionObjectType::setID()
      * @uses Requirement_OptionObjectType::setDescriptor()
-     * @param \StructType\Requirement_OptionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Requirement_OptionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Requirement_OptionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Requirement_OptionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $requirement_OptionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$requirement_OptionObjectTypeIDItem instanceof \StructType\Requirement_OptionObjectIDType) {
+            if (!$requirement_OptionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType) {
                 $invalidValues[] = is_object($requirement_OptionObjectTypeIDItem) ? get_class($requirement_OptionObjectTypeIDItem) : sprintf('%s(%s)', gettype($requirement_OptionObjectTypeIDItem), var_export($requirement_OptionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Requirement_OptionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Requirement_OptionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Requirement_OptionObjectIDType[] $iD
-     * @return \StructType\Requirement_OptionObjectType
+     * @param \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Requirement_OptionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Requirement_OptionObjectIDType $item
-     * @return \StructType\Requirement_OptionObjectType
+     * @param \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectType
      */
-    public function addToID(\StructType\Requirement_OptionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Requirement_OptionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Requirement_OptionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Requirement_OptionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Requirement_OptionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Requirement_OptionObjectType
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Requirement_OptionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Requirement_OptionObjectType
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectType
      */
     public static function __set_state(array $array)
     {

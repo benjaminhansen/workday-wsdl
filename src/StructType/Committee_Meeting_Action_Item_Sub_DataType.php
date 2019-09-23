@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Action Item instance
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Action_ItemObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType
      */
     public $Action_Item_Reference;
     /**
@@ -43,7 +43,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
      * - documentation: Assignee for the action item
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Member_EnabledObjectType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType[]
      */
     public $Assignee_Reference;
     /**
@@ -89,16 +89,16 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
      * @uses Committee_Meeting_Action_Item_Sub_DataType::setComplete()
      * @uses Committee_Meeting_Action_Item_Sub_DataType::setDelete()
      * @uses Committee_Meeting_Action_Item_Sub_DataType::setAdd_Only()
-     * @param \StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference
      * @param string $action_Item_ID
      * @param string $item
-     * @param \StructType\Committee_Member_EnabledObjectType[] $assignee_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType[] $assignee_Reference
      * @param string $details
      * @param bool $complete
      * @param bool $delete
      * @param bool $add_Only
      */
-    public function __construct(\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference = null, $action_Item_ID = null, $item = null, array $assignee_Reference = array(), $details = null, $complete = null, $delete = null, $add_Only = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference = null, $action_Item_ID = null, $item = null, array $assignee_Reference = array(), $details = null, $complete = null, $delete = null, $add_Only = null)
     {
         $this
             ->setAction_Item_Reference($action_Item_Reference)
@@ -112,7 +112,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Action_Item_Reference value
-     * @return \StructType\Committee_Meeting_Action_ItemObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType|null
      */
     public function getAction_Item_Reference()
     {
@@ -120,10 +120,10 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     }
     /**
      * Set Action_Item_Reference value
-     * @param \StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
-    public function setAction_Item_Reference(\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference = null)
+    public function setAction_Item_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Action_ItemObjectType $action_Item_Reference = null)
     {
         $this->Action_Item_Reference = $action_Item_Reference;
         return $this;
@@ -139,7 +139,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Action_Item_ID value
      * @param string $action_Item_ID
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setAction_Item_ID($action_Item_ID = null)
     {
@@ -161,7 +161,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Item value
      * @param string $item
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setItem($item = null)
     {
@@ -174,7 +174,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     }
     /**
      * Get Assignee_Reference value
-     * @return \StructType\Committee_Member_EnabledObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType[]|null
      */
     public function getAssignee_Reference()
     {
@@ -192,12 +192,12 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem instanceof \StructType\Committee_Member_EnabledObjectType) {
+            if (!$committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem instanceof \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType) {
                 $invalidValues[] = is_object($committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem) ? get_class($committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem) : sprintf('%s(%s)', gettype($committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem), var_export($committee_Meeting_Action_Item_Sub_DataTypeAssignee_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Assignee_Reference property can only contain items of type \StructType\Committee_Member_EnabledObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Assignee_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -205,8 +205,8 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Assignee_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Member_EnabledObjectType[] $assignee_Reference
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType[] $assignee_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setAssignee_Reference(array $assignee_Reference = array())
     {
@@ -220,14 +220,14 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Add item to Assignee_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Member_EnabledObjectType $item
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
-    public function addToAssignee_Reference(\StructType\Committee_Member_EnabledObjectType $item)
+    public function addToAssignee_Reference(\WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Member_EnabledObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Assignee_Reference property can only contain items of type \StructType\Committee_Member_EnabledObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Assignee_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Assignee_Reference[] = $item;
         return $this;
@@ -243,7 +243,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Details value
      * @param string $details
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setDetails($details = null)
     {
@@ -265,7 +265,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Complete value
      * @param bool $complete
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setComplete($complete = null)
     {
@@ -287,7 +287,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setDelete($delete = null)
     {
@@ -309,7 +309,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -326,7 +326,7 @@ class Committee_Meeting_Action_Item_Sub_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType
      */
     public static function __set_state(array $array)
     {

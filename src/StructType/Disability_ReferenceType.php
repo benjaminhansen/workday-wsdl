@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Disability_ReferenceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType[]
      */
     public $Regulatory_Region_Organization_Reference;
     /**
@@ -34,7 +34,7 @@ class Disability_ReferenceType extends AbstractStructBase
      * @uses Disability_ReferenceType::setDisability_Name()
      * @uses Disability_ReferenceType::setRegulatory_Region_Organization_Reference()
      * @param string $disability_Name
-     * @param \StructType\Organization_ReferenceType[] $regulatory_Region_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType[] $regulatory_Region_Organization_Reference
      */
     public function __construct($disability_Name = null, array $regulatory_Region_Organization_Reference = array())
     {
@@ -53,7 +53,7 @@ class Disability_ReferenceType extends AbstractStructBase
     /**
      * Set Disability_Name value
      * @param string $disability_Name
-     * @return \StructType\Disability_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Disability_ReferenceType
      */
     public function setDisability_Name($disability_Name = null)
     {
@@ -66,7 +66,7 @@ class Disability_ReferenceType extends AbstractStructBase
     }
     /**
      * Get Regulatory_Region_Organization_Reference value
-     * @return \StructType\Organization_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType[]|null
      */
     public function getRegulatory_Region_Organization_Reference()
     {
@@ -84,12 +84,12 @@ class Disability_ReferenceType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem instanceof \StructType\Organization_ReferenceType) {
+            if (!$disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\Organization_ReferenceType) {
                 $invalidValues[] = is_object($disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem) ? get_class($disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem), var_export($disability_ReferenceTypeRegulatory_Region_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Regulatory_Region_Organization_Reference property can only contain items of type \StructType\Organization_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Regulatory_Region_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -97,8 +97,8 @@ class Disability_ReferenceType extends AbstractStructBase
     /**
      * Set Regulatory_Region_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_ReferenceType[] $regulatory_Region_Organization_Reference
-     * @return \StructType\Disability_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType[] $regulatory_Region_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_ReferenceType
      */
     public function setRegulatory_Region_Organization_Reference(array $regulatory_Region_Organization_Reference = array())
     {
@@ -112,14 +112,14 @@ class Disability_ReferenceType extends AbstractStructBase
     /**
      * Add item to Regulatory_Region_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_ReferenceType $item
-     * @return \StructType\Disability_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Disability_ReferenceType
      */
-    public function addToRegulatory_Region_Organization_Reference(\StructType\Organization_ReferenceType $item)
+    public function addToRegulatory_Region_Organization_Reference(\WorkdayWsdl\\StructType\Organization_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Regulatory_Region_Organization_Reference property can only contain items of type \StructType\Organization_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Regulatory_Region_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Regulatory_Region_Organization_Reference[] = $item;
         return $this;
@@ -130,7 +130,7 @@ class Disability_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Disability_ReferenceType
      */
     public static function __set_state(array $array)
     {

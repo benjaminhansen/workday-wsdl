@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Name_DataType extends AbstractStructBase
 {
     /**
      * The Country_Reference
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -36,7 +36,7 @@ class Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Prefix_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Prefix_Name_DataType[]
      */
     public $Prefix;
     /**
@@ -62,14 +62,14 @@ class Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Last_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Last_Name_DataType[]
      */
     public $Last_Name;
     /**
      * The Local_Name_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Local_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Local_Name_DataType
      */
     public $Local_Name_Data;
     /**
@@ -77,7 +77,7 @@ class Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Suffix_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Suffix_Name_DataType[]
      */
     public $Suffix;
     /**
@@ -122,20 +122,20 @@ class Name_DataType extends AbstractStructBase
      * @uses Name_DataType::setIs_Preferred()
      * @uses Name_DataType::setEffective_Date()
      * @uses Name_DataType::setLast_Modified()
-     * @param \StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
      * @param string $additional_Name_Type
-     * @param \StructType\Prefix_Name_DataType[] $prefix
+     * @param \WorkdayWsdl\\StructType\Prefix_Name_DataType[] $prefix
      * @param string $first_Name
      * @param string $middle_Name
-     * @param \StructType\Last_Name_DataType[] $last_Name
-     * @param \StructType\Local_Name_DataType $local_Name_Data
-     * @param \StructType\Suffix_Name_DataType[] $suffix
+     * @param \WorkdayWsdl\\StructType\Last_Name_DataType[] $last_Name
+     * @param \WorkdayWsdl\\StructType\Local_Name_DataType $local_Name_Data
+     * @param \WorkdayWsdl\\StructType\Suffix_Name_DataType[] $suffix
      * @param bool $is_Legal
      * @param bool $is_Preferred
      * @param string $effective_Date
      * @param string $last_Modified
      */
-    public function __construct(\StructType\Country_ReferenceType $country_Reference = null, $additional_Name_Type = null, array $prefix = array(), $first_Name = null, $middle_Name = null, array $last_Name = array(), \StructType\Local_Name_DataType $local_Name_Data = null, array $suffix = array(), $is_Legal = null, $is_Preferred = null, $effective_Date = null, $last_Modified = null)
+    public function __construct(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null, $additional_Name_Type = null, array $prefix = array(), $first_Name = null, $middle_Name = null, array $last_Name = array(), \WorkdayWsdl\\StructType\Local_Name_DataType $local_Name_Data = null, array $suffix = array(), $is_Legal = null, $is_Preferred = null, $effective_Date = null, $last_Modified = null)
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -153,7 +153,7 @@ class Name_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -161,10 +161,10 @@ class Name_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -180,7 +180,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Additional_Name_Type value
      * @param string $additional_Name_Type
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setAdditional_Name_Type($additional_Name_Type = null)
     {
@@ -193,7 +193,7 @@ class Name_DataType extends AbstractStructBase
     }
     /**
      * Get Prefix value
-     * @return \StructType\Prefix_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Prefix_Name_DataType[]|null
      */
     public function getPrefix()
     {
@@ -211,12 +211,12 @@ class Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $name_DataTypePrefixItem) {
             // validation for constraint: itemType
-            if (!$name_DataTypePrefixItem instanceof \StructType\Prefix_Name_DataType) {
+            if (!$name_DataTypePrefixItem instanceof \WorkdayWsdl\\StructType\Prefix_Name_DataType) {
                 $invalidValues[] = is_object($name_DataTypePrefixItem) ? get_class($name_DataTypePrefixItem) : sprintf('%s(%s)', gettype($name_DataTypePrefixItem), var_export($name_DataTypePrefixItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Prefix property can only contain items of type \StructType\Prefix_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Prefix property can only contain items of type \WorkdayWsdl\\StructType\Prefix_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -224,8 +224,8 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Prefix value
      * @throws \InvalidArgumentException
-     * @param \StructType\Prefix_Name_DataType[] $prefix
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Prefix_Name_DataType[] $prefix
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setPrefix(array $prefix = array())
     {
@@ -239,14 +239,14 @@ class Name_DataType extends AbstractStructBase
     /**
      * Add item to Prefix value
      * @throws \InvalidArgumentException
-     * @param \StructType\Prefix_Name_DataType $item
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Prefix_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
-    public function addToPrefix(\StructType\Prefix_Name_DataType $item)
+    public function addToPrefix(\WorkdayWsdl\\StructType\Prefix_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Prefix_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Prefix property can only contain items of type \StructType\Prefix_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Prefix_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Prefix property can only contain items of type \WorkdayWsdl\\StructType\Prefix_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Prefix[] = $item;
         return $this;
@@ -262,7 +262,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setFirst_Name($first_Name = null)
     {
@@ -284,7 +284,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Middle_Name value
      * @param string $middle_Name
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setMiddle_Name($middle_Name = null)
     {
@@ -297,7 +297,7 @@ class Name_DataType extends AbstractStructBase
     }
     /**
      * Get Last_Name value
-     * @return \StructType\Last_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Last_Name_DataType[]|null
      */
     public function getLast_Name()
     {
@@ -315,12 +315,12 @@ class Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $name_DataTypeLast_NameItem) {
             // validation for constraint: itemType
-            if (!$name_DataTypeLast_NameItem instanceof \StructType\Last_Name_DataType) {
+            if (!$name_DataTypeLast_NameItem instanceof \WorkdayWsdl\\StructType\Last_Name_DataType) {
                 $invalidValues[] = is_object($name_DataTypeLast_NameItem) ? get_class($name_DataTypeLast_NameItem) : sprintf('%s(%s)', gettype($name_DataTypeLast_NameItem), var_export($name_DataTypeLast_NameItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Last_Name property can only contain items of type \StructType\Last_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Last_Name property can only contain items of type \WorkdayWsdl\\StructType\Last_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -328,8 +328,8 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @throws \InvalidArgumentException
-     * @param \StructType\Last_Name_DataType[] $last_Name
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Last_Name_DataType[] $last_Name
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setLast_Name(array $last_Name = array())
     {
@@ -343,21 +343,21 @@ class Name_DataType extends AbstractStructBase
     /**
      * Add item to Last_Name value
      * @throws \InvalidArgumentException
-     * @param \StructType\Last_Name_DataType $item
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Last_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
-    public function addToLast_Name(\StructType\Last_Name_DataType $item)
+    public function addToLast_Name(\WorkdayWsdl\\StructType\Last_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Last_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Last_Name property can only contain items of type \StructType\Last_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Last_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Last_Name property can only contain items of type \WorkdayWsdl\\StructType\Last_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Last_Name[] = $item;
         return $this;
     }
     /**
      * Get Local_Name_Data value
-     * @return \StructType\Local_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Local_Name_DataType|null
      */
     public function getLocal_Name_Data()
     {
@@ -365,17 +365,17 @@ class Name_DataType extends AbstractStructBase
     }
     /**
      * Set Local_Name_Data value
-     * @param \StructType\Local_Name_DataType $local_Name_Data
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Local_Name_DataType $local_Name_Data
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
-    public function setLocal_Name_Data(\StructType\Local_Name_DataType $local_Name_Data = null)
+    public function setLocal_Name_Data(\WorkdayWsdl\\StructType\Local_Name_DataType $local_Name_Data = null)
     {
         $this->Local_Name_Data = $local_Name_Data;
         return $this;
     }
     /**
      * Get Suffix value
-     * @return \StructType\Suffix_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Suffix_Name_DataType[]|null
      */
     public function getSuffix()
     {
@@ -393,12 +393,12 @@ class Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $name_DataTypeSuffixItem) {
             // validation for constraint: itemType
-            if (!$name_DataTypeSuffixItem instanceof \StructType\Suffix_Name_DataType) {
+            if (!$name_DataTypeSuffixItem instanceof \WorkdayWsdl\\StructType\Suffix_Name_DataType) {
                 $invalidValues[] = is_object($name_DataTypeSuffixItem) ? get_class($name_DataTypeSuffixItem) : sprintf('%s(%s)', gettype($name_DataTypeSuffixItem), var_export($name_DataTypeSuffixItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Suffix property can only contain items of type \StructType\Suffix_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Suffix property can only contain items of type \WorkdayWsdl\\StructType\Suffix_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -406,8 +406,8 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Suffix value
      * @throws \InvalidArgumentException
-     * @param \StructType\Suffix_Name_DataType[] $suffix
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Suffix_Name_DataType[] $suffix
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setSuffix(array $suffix = array())
     {
@@ -421,14 +421,14 @@ class Name_DataType extends AbstractStructBase
     /**
      * Add item to Suffix value
      * @throws \InvalidArgumentException
-     * @param \StructType\Suffix_Name_DataType $item
-     * @return \StructType\Name_DataType
+     * @param \WorkdayWsdl\\StructType\Suffix_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
-    public function addToSuffix(\StructType\Suffix_Name_DataType $item)
+    public function addToSuffix(\WorkdayWsdl\\StructType\Suffix_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Suffix_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Suffix property can only contain items of type \StructType\Suffix_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Suffix_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Suffix property can only contain items of type \WorkdayWsdl\\StructType\Suffix_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Suffix[] = $item;
         return $this;
@@ -444,7 +444,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Is_Legal value
      * @param bool $is_Legal
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setIs_Legal($is_Legal = null)
     {
@@ -466,7 +466,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Is_Preferred value
      * @param bool $is_Preferred
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setIs_Preferred($is_Preferred = null)
     {
@@ -488,7 +488,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -510,7 +510,7 @@ class Name_DataType extends AbstractStructBase
     /**
      * Set Last_Modified value
      * @param string $last_Modified
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public function setLast_Modified($last_Modified = null)
     {
@@ -527,7 +527,7 @@ class Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Name_DataType
+     * @return \WorkdayWsdl\\StructType\Name_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class Responsibility_Qualification_Profile_Replacement_DataType extends Abstract
     /**
      * Set Responsibility_Description value
      * @param string $responsibility_Description
-     * @return \StructType\Responsibility_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Responsibility_Qualification_Profile_Replacement_DataType
      */
     public function setResponsibility_Description($responsibility_Description = null)
     {
@@ -78,7 +78,7 @@ class Responsibility_Qualification_Profile_Replacement_DataType extends Abstract
     /**
      * Set Required value
      * @param bool $required
-     * @return \StructType\Responsibility_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Responsibility_Qualification_Profile_Replacement_DataType
      */
     public function setRequired($required = null)
     {
@@ -95,7 +95,7 @@ class Responsibility_Qualification_Profile_Replacement_DataType extends Abstract
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Responsibility_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Responsibility_Qualification_Profile_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

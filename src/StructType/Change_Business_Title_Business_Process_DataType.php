@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: The worker you want to specify for the Change Business Title Web Service.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -24,14 +24,14 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The position of the worker you are changing the Business Title for. Required if the worker has more than one position.
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Job_Reference;
     /**
      * The Change_Business_Title_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Change_Business_Title_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Business_Title_DataType
      */
     public $Change_Business_Title_Data;
     /**
@@ -39,11 +39,11 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
      * @uses Change_Business_Title_Business_Process_DataType::setWorker_Reference()
      * @uses Change_Business_Title_Business_Process_DataType::setJob_Reference()
      * @uses Change_Business_Title_Business_Process_DataType::setChange_Business_Title_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Position_ElementObjectType $job_Reference
-     * @param \StructType\Change_Business_Title_DataType $change_Business_Title_Data
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $job_Reference
+     * @param \WorkdayWsdl\\StructType\Change_Business_Title_DataType $change_Business_Title_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\Position_ElementObjectType $job_Reference = null, \StructType\Change_Business_Title_DataType $change_Business_Title_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $job_Reference = null, \WorkdayWsdl\\StructType\Change_Business_Title_DataType $change_Business_Title_Data = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -52,7 +52,7 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -60,17 +60,17 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Change_Business_Title_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_Business_Process_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Job_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getJob_Reference()
     {
@@ -78,17 +78,17 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Reference value
-     * @param \StructType\Position_ElementObjectType $job_Reference
-     * @return \StructType\Change_Business_Title_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $job_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_Business_Process_DataType
      */
-    public function setJob_Reference(\StructType\Position_ElementObjectType $job_Reference = null)
+    public function setJob_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $job_Reference = null)
     {
         $this->Job_Reference = $job_Reference;
         return $this;
     }
     /**
      * Get Change_Business_Title_Data value
-     * @return \StructType\Change_Business_Title_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_DataType|null
      */
     public function getChange_Business_Title_Data()
     {
@@ -96,10 +96,10 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Change_Business_Title_Data value
-     * @param \StructType\Change_Business_Title_DataType $change_Business_Title_Data
-     * @return \StructType\Change_Business_Title_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Business_Title_DataType $change_Business_Title_Data
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_Business_Process_DataType
      */
-    public function setChange_Business_Title_Data(\StructType\Change_Business_Title_DataType $change_Business_Title_Data = null)
+    public function setChange_Business_Title_Data(\WorkdayWsdl\\StructType\Change_Business_Title_DataType $change_Business_Title_Data = null)
     {
         $this->Change_Business_Title_Data = $change_Business_Title_Data;
         return $this;
@@ -110,7 +110,7 @@ class Change_Business_Title_Business_Process_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Business_Title_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

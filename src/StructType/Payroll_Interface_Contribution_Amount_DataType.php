@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
      * The Frequency_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the frequency.
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -36,9 +36,9 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
      * @uses Payroll_Interface_Contribution_Amount_DataType::setContribution_Amount()
      * @uses Payroll_Interface_Contribution_Amount_DataType::setFrequency_Reference()
      * @param float $contribution_Amount
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      */
-    public function __construct($contribution_Amount = null, \StructType\FrequencyObjectType $frequency_Reference = null)
+    public function __construct($contribution_Amount = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this
             ->setContribution_Amount($contribution_Amount)
@@ -55,7 +55,7 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
     /**
      * Set Contribution_Amount value
      * @param float $contribution_Amount
-     * @return \StructType\Payroll_Interface_Contribution_Amount_DataType
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType
      */
     public function setContribution_Amount($contribution_Amount = null)
     {
@@ -80,7 +80,7 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -88,10 +88,10 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Payroll_Interface_Contribution_Amount_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -102,7 +102,7 @@ class Payroll_Interface_Contribution_Amount_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Payroll_Interface_Contribution_Amount_DataType
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType
      */
     public static function __set_state(array $array)
     {

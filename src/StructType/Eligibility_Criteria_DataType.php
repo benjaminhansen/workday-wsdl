@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
      * The Field_Reference
      * Meta information extracted from the WSDL
      * - documentation: Integration Document Field Reference. Eligibility Criteria element is used in conjunction with Workday delivered integrations.
-     * @var \StructType\Integration_Document_FieldObjectType
+     * @var \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
     public $Field_Reference;
     /**
@@ -43,11 +43,11 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
      * @uses Eligibility_Criteria_DataType::setField_Reference()
      * @uses Eligibility_Criteria_DataType::setAs_Of_Effective_Date()
      * @uses Eligibility_Criteria_DataType::setAs_Of_Entry_DateTime()
-     * @param \StructType\Integration_Document_FieldObjectType $field_Reference
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference
      * @param string $as_Of_Effective_Date
      * @param string $as_Of_Entry_DateTime
      */
-    public function __construct(\StructType\Integration_Document_FieldObjectType $field_Reference = null, $as_Of_Effective_Date = null, $as_Of_Entry_DateTime = null)
+    public function __construct(\WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference = null, $as_Of_Effective_Date = null, $as_Of_Entry_DateTime = null)
     {
         $this
             ->setField_Reference($field_Reference)
@@ -56,7 +56,7 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
     }
     /**
      * Get Field_Reference value
-     * @return \StructType\Integration_Document_FieldObjectType|null
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType|null
      */
     public function getField_Reference()
     {
@@ -64,10 +64,10 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
     }
     /**
      * Set Field_Reference value
-     * @param \StructType\Integration_Document_FieldObjectType $field_Reference
-     * @return \StructType\Eligibility_Criteria_DataType
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference
+     * @return \WorkdayWsdl\\StructType\Eligibility_Criteria_DataType
      */
-    public function setField_Reference(\StructType\Integration_Document_FieldObjectType $field_Reference = null)
+    public function setField_Reference(\WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference = null)
     {
         $this->Field_Reference = $field_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
     /**
      * Set As_Of_Effective_Date value
      * @param string $as_Of_Effective_Date
-     * @return \StructType\Eligibility_Criteria_DataType
+     * @return \WorkdayWsdl\\StructType\Eligibility_Criteria_DataType
      */
     public function setAs_Of_Effective_Date($as_Of_Effective_Date = null)
     {
@@ -105,7 +105,7 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
     /**
      * Set As_Of_Entry_DateTime value
      * @param string $as_Of_Entry_DateTime
-     * @return \StructType\Eligibility_Criteria_DataType
+     * @return \WorkdayWsdl\\StructType\Eligibility_Criteria_DataType
      */
     public function setAs_Of_Entry_DateTime($as_Of_Entry_DateTime = null)
     {
@@ -122,7 +122,7 @@ class Eligibility_Criteria_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Eligibility_Criteria_DataType
+     * @return \WorkdayWsdl\\StructType\Eligibility_Criteria_DataType
      */
     public static function __set_state(array $array)
     {

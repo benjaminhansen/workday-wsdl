@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Worker_Development_Item_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_Development_ItemType[]
+     * @var \WorkdayWsdl\\StructType\Worker_Development_ItemType[]
      */
     public $Worker_Development_Item;
     /**
      * Constructor method for Worker_Development_Item_DataType
      * @uses Worker_Development_Item_DataType::setWorker_Development_Item()
-     * @param \StructType\Worker_Development_ItemType[] $worker_Development_Item
+     * @param \WorkdayWsdl\\StructType\Worker_Development_ItemType[] $worker_Development_Item
      */
     public function __construct(array $worker_Development_Item = array())
     {
@@ -32,7 +32,7 @@ class Worker_Development_Item_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Development_Item value
-     * @return \StructType\Worker_Development_ItemType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_Development_ItemType[]|null
      */
     public function getWorker_Development_Item()
     {
@@ -50,12 +50,12 @@ class Worker_Development_Item_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Development_Item_DataTypeWorker_Development_ItemItem) {
             // validation for constraint: itemType
-            if (!$worker_Development_Item_DataTypeWorker_Development_ItemItem instanceof \StructType\Worker_Development_ItemType) {
+            if (!$worker_Development_Item_DataTypeWorker_Development_ItemItem instanceof \WorkdayWsdl\\StructType\Worker_Development_ItemType) {
                 $invalidValues[] = is_object($worker_Development_Item_DataTypeWorker_Development_ItemItem) ? get_class($worker_Development_Item_DataTypeWorker_Development_ItemItem) : sprintf('%s(%s)', gettype($worker_Development_Item_DataTypeWorker_Development_ItemItem), var_export($worker_Development_Item_DataTypeWorker_Development_ItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Development_Item property can only contain items of type \StructType\Worker_Development_ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Development_Item property can only contain items of type \WorkdayWsdl\\StructType\Worker_Development_ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Worker_Development_Item_DataType extends AbstractStructBase
     /**
      * Set Worker_Development_Item value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Development_ItemType[] $worker_Development_Item
-     * @return \StructType\Worker_Development_Item_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Development_ItemType[] $worker_Development_Item
+     * @return \WorkdayWsdl\\StructType\Worker_Development_Item_DataType
      */
     public function setWorker_Development_Item(array $worker_Development_Item = array())
     {
@@ -78,14 +78,14 @@ class Worker_Development_Item_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Development_Item value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Development_ItemType $item
-     * @return \StructType\Worker_Development_Item_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Development_ItemType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Development_Item_DataType
      */
-    public function addToWorker_Development_Item(\StructType\Worker_Development_ItemType $item)
+    public function addToWorker_Development_Item(\WorkdayWsdl\\StructType\Worker_Development_ItemType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_Development_ItemType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Development_Item property can only contain items of type \StructType\Worker_Development_ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_Development_ItemType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Development_Item property can only contain items of type \WorkdayWsdl\\StructType\Worker_Development_ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Development_Item[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Worker_Development_Item_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Development_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Development_Item_DataType
      */
     public static function __set_state(array $array)
     {

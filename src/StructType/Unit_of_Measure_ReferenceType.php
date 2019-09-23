@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Unit_of_Measure_ReferenceType extends AbstractStructBase
     /**
      * Set Unit_of_Measure_Name value
      * @param string $unit_of_Measure_Name
-     * @return \StructType\Unit_of_Measure_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Unit_of_Measure_ReferenceType
      */
     public function setUnit_of_Measure_Name($unit_of_Measure_Name = null)
     {
@@ -59,7 +59,7 @@ class Unit_of_Measure_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Unit_of_Measure_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Unit_of_Measure_ReferenceType
      */
     public static function __set_state(array $array)
     {

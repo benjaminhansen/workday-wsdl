@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Workers' Compensation Code
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_CodeObjectType
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public $Workers_Compensation_Code_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
      * Constructor method for Put_Workers_Compensation_Code_ResponseType
      * @uses Put_Workers_Compensation_Code_ResponseType::setWorkers_Compensation_Code_Reference()
      * @uses Put_Workers_Compensation_Code_ResponseType::setVersion()
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null, $version = null)
     {
         $this
             ->setWorkers_Compensation_Code_Reference($workers_Compensation_Code_Reference)
@@ -42,7 +42,7 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
     }
     /**
      * Get Workers_Compensation_Code_Reference value
-     * @return \StructType\Workers_Compensation_CodeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType|null
      */
     public function getWorkers_Compensation_Code_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
     }
     /**
      * Set Workers_Compensation_Code_Reference value
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
-     * @return \StructType\Put_Workers_Compensation_Code_ResponseType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_ResponseType
      */
-    public function setWorkers_Compensation_Code_Reference(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
+    public function setWorkers_Compensation_Code_Reference(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
     {
         $this->Workers_Compensation_Code_Reference = $workers_Compensation_Code_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Workers_Compensation_Code_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Workers_Compensation_Code_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Workers_Compensation_Code_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_ResponseType
      */
     public static function __set_state(array $array)
     {

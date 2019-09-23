@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,12 +61,12 @@ class Phone_Number_DataType extends AbstractStructBase
     public $Phone_Extension;
     /**
      * The Phone_Device_Type_Reference
-     * @var \StructType\Phone_Device_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType
      */
     public $Phone_Device_Type_Reference;
     /**
      * The Usage_Data
-     * @var \StructType\Communication_Method_Usage_DataType
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public $Usage_Data;
     /**
@@ -83,10 +83,10 @@ class Phone_Number_DataType extends AbstractStructBase
      * @param string $area_Code
      * @param string $phone_Number
      * @param string $phone_Extension
-     * @param \StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
+     * @param \WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
      */
-    public function __construct($country_ISO_Code = null, $international_Phone_Code = null, $area_Code = null, $phone_Number = null, $phone_Extension = null, \StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference = null, \StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function __construct($country_ISO_Code = null, $international_Phone_Code = null, $area_Code = null, $phone_Number = null, $phone_Extension = null, \WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference = null, \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this
             ->setCountry_ISO_Code($country_ISO_Code)
@@ -108,7 +108,7 @@ class Phone_Number_DataType extends AbstractStructBase
     /**
      * Set Country_ISO_Code value
      * @param string $country_ISO_Code
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public function setCountry_ISO_Code($country_ISO_Code = null)
     {
@@ -134,7 +134,7 @@ class Phone_Number_DataType extends AbstractStructBase
     /**
      * Set International_Phone_Code value
      * @param string $international_Phone_Code
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public function setInternational_Phone_Code($international_Phone_Code = null)
     {
@@ -156,7 +156,7 @@ class Phone_Number_DataType extends AbstractStructBase
     /**
      * Set Area_Code value
      * @param string $area_Code
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public function setArea_Code($area_Code = null)
     {
@@ -178,7 +178,7 @@ class Phone_Number_DataType extends AbstractStructBase
     /**
      * Set Phone_Number value
      * @param string $phone_Number
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public function setPhone_Number($phone_Number = null)
     {
@@ -200,7 +200,7 @@ class Phone_Number_DataType extends AbstractStructBase
     /**
      * Set Phone_Extension value
      * @param string $phone_Extension
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public function setPhone_Extension($phone_Extension = null)
     {
@@ -213,7 +213,7 @@ class Phone_Number_DataType extends AbstractStructBase
     }
     /**
      * Get Phone_Device_Type_Reference value
-     * @return \StructType\Phone_Device_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType|null
      */
     public function getPhone_Device_Type_Reference()
     {
@@ -221,17 +221,17 @@ class Phone_Number_DataType extends AbstractStructBase
     }
     /**
      * Set Phone_Device_Type_Reference value
-     * @param \StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference
-     * @return \StructType\Phone_Number_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
-    public function setPhone_Device_Type_Reference(\StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference = null)
+    public function setPhone_Device_Type_Reference(\WorkdayWsdl\\StructType\Phone_Device_Type_ReferenceType $phone_Device_Type_Reference = null)
     {
         $this->Phone_Device_Type_Reference = $phone_Device_Type_Reference;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_DataType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType|null
      */
     public function getUsage_Data()
     {
@@ -239,10 +239,10 @@ class Phone_Number_DataType extends AbstractStructBase
     }
     /**
      * Set Usage_Data value
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
-     * @return \StructType\Phone_Number_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
-    public function setUsage_Data(\StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function setUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this->Usage_Data = $usage_Data;
         return $this;
@@ -253,7 +253,7 @@ class Phone_Number_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone_Number_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Number_DataType
      */
     public static function __set_state(array $array)
     {

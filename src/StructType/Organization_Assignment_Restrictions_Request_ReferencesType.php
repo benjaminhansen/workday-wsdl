@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
      * Meta information extracted from the WSDL
      * - documentation: Supervisory Organization Reference
      * - maxOccurs: unbounded
-     * @var \StructType\Supervisory_OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[]
      */
     public $Supervisory_Organization_Reference;
     /**
      * Constructor method for
      * Organization_Assignment_Restrictions_Request_ReferencesType
      * @uses Organization_Assignment_Restrictions_Request_ReferencesType::setSupervisory_Organization_Reference()
-     * @param \StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
      */
     public function __construct(array $supervisory_Organization_Reference = array())
     {
@@ -34,7 +34,7 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
     }
     /**
      * Get Supervisory_Organization_Reference value
-     * @return \StructType\Supervisory_OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[]|null
      */
     public function getSupervisory_Organization_Reference()
     {
@@ -52,12 +52,12 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
         $invalidValues = [];
         foreach ($values as $organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem instanceof \StructType\Supervisory_OrganizationObjectType) {
+            if (!$organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem) ? get_class($organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem), var_export($organization_Assignment_Restrictions_Request_ReferencesTypeSupervisory_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Supervisory_Organization_Reference property can only contain items of type \StructType\Supervisory_OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Supervisory_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
     /**
      * Set Supervisory_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
-     * @return \StructType\Organization_Assignment_Restrictions_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType[] $supervisory_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType
      */
     public function setSupervisory_Organization_Reference(array $supervisory_Organization_Reference = array())
     {
@@ -80,14 +80,14 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
     /**
      * Add item to Supervisory_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Supervisory_OrganizationObjectType $item
-     * @return \StructType\Organization_Assignment_Restrictions_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType
      */
-    public function addToSupervisory_Organization_Reference(\StructType\Supervisory_OrganizationObjectType $item)
+    public function addToSupervisory_Organization_Reference(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Supervisory_OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Supervisory_Organization_Reference property can only contain items of type \StructType\Supervisory_OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Supervisory_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Supervisory_Organization_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Organization_Assignment_Restrictions_Request_ReferencesType extends Abstra
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Assignment_Restrictions_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

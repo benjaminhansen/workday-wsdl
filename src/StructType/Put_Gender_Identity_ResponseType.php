@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the gender identity of the person.
      * - minOccurs: 0
-     * @var \StructType\Gender_IdentityObjectType
+     * @var \WorkdayWsdl\\StructType\Gender_IdentityObjectType
      */
     public $Gender_Identity_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
      * Constructor method for Put_Gender_Identity_ResponseType
      * @uses Put_Gender_Identity_ResponseType::setGender_Identity_Reference()
      * @uses Put_Gender_Identity_ResponseType::setVersion()
-     * @param \StructType\Gender_IdentityObjectType $gender_Identity_Reference
+     * @param \WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null, $version = null)
     {
         $this
             ->setGender_Identity_Reference($gender_Identity_Reference)
@@ -42,7 +42,7 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
     }
     /**
      * Get Gender_Identity_Reference value
-     * @return \StructType\Gender_IdentityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityObjectType|null
      */
     public function getGender_Identity_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
     }
     /**
      * Set Gender_Identity_Reference value
-     * @param \StructType\Gender_IdentityObjectType $gender_Identity_Reference
-     * @return \StructType\Put_Gender_Identity_ResponseType
+     * @param \WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Gender_Identity_ResponseType
      */
-    public function setGender_Identity_Reference(\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null)
+    public function setGender_Identity_Reference(\WorkdayWsdl\\StructType\Gender_IdentityObjectType $gender_Identity_Reference = null)
     {
         $this->Gender_Identity_Reference = $gender_Identity_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Gender_Identity_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Gender_Identity_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Gender_Identity_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Gender_Identity_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Gender_Identity_ResponseType
      */
     public static function __set_state(array $array)
     {

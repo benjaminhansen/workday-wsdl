@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class Gender_Identity_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public function setID($iD = null)
     {
@@ -111,7 +111,7 @@ class Gender_Identity_DataType extends AbstractStructBase
     /**
      * Set Gender_Identity_Name value
      * @param string $gender_Identity_Name
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public function setGender_Identity_Name($gender_Identity_Name = null)
     {
@@ -133,7 +133,7 @@ class Gender_Identity_DataType extends AbstractStructBase
     /**
      * Set Gender_Identity_Code value
      * @param string $gender_Identity_Code
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public function setGender_Identity_Code($gender_Identity_Code = null)
     {
@@ -155,7 +155,7 @@ class Gender_Identity_DataType extends AbstractStructBase
     /**
      * Set Gender_Identity_Description value
      * @param string $gender_Identity_Description
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public function setGender_Identity_Description($gender_Identity_Description = null)
     {
@@ -177,7 +177,7 @@ class Gender_Identity_DataType extends AbstractStructBase
     /**
      * Set Gender_Identity_Inactive value
      * @param bool $gender_Identity_Inactive
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public function setGender_Identity_Inactive($gender_Identity_Inactive = null)
     {
@@ -194,7 +194,7 @@ class Gender_Identity_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Gender_Identity_DataType
+     * @return \WorkdayWsdl\\StructType\Gender_Identity_DataType
      */
     public static function __set_state(array $array)
     {

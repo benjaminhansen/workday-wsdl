@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Person_Photo_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_PhotoType[]
+     * @var \WorkdayWsdl\\StructType\Person_PhotoType[]
      */
     public $Person_Photo;
     /**
      * Constructor method for Person_Photo_Response_DataType
      * @uses Person_Photo_Response_DataType::setPerson_Photo()
-     * @param \StructType\Person_PhotoType[] $person_Photo
+     * @param \WorkdayWsdl\\StructType\Person_PhotoType[] $person_Photo
      */
     public function __construct(array $person_Photo = array())
     {
@@ -32,7 +32,7 @@ class Person_Photo_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Photo value
-     * @return \StructType\Person_PhotoType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_PhotoType[]|null
      */
     public function getPerson_Photo()
     {
@@ -50,12 +50,12 @@ class Person_Photo_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Photo_Response_DataTypePerson_PhotoItem) {
             // validation for constraint: itemType
-            if (!$person_Photo_Response_DataTypePerson_PhotoItem instanceof \StructType\Person_PhotoType) {
+            if (!$person_Photo_Response_DataTypePerson_PhotoItem instanceof \WorkdayWsdl\\StructType\Person_PhotoType) {
                 $invalidValues[] = is_object($person_Photo_Response_DataTypePerson_PhotoItem) ? get_class($person_Photo_Response_DataTypePerson_PhotoItem) : sprintf('%s(%s)', gettype($person_Photo_Response_DataTypePerson_PhotoItem), var_export($person_Photo_Response_DataTypePerson_PhotoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Photo property can only contain items of type \StructType\Person_PhotoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Photo property can only contain items of type \WorkdayWsdl\\StructType\Person_PhotoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Person_Photo_Response_DataType extends AbstractStructBase
     /**
      * Set Person_Photo value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_PhotoType[] $person_Photo
-     * @return \StructType\Person_Photo_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Person_PhotoType[] $person_Photo
+     * @return \WorkdayWsdl\\StructType\Person_Photo_Response_DataType
      */
     public function setPerson_Photo(array $person_Photo = array())
     {
@@ -78,14 +78,14 @@ class Person_Photo_Response_DataType extends AbstractStructBase
     /**
      * Add item to Person_Photo value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_PhotoType $item
-     * @return \StructType\Person_Photo_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Person_PhotoType $item
+     * @return \WorkdayWsdl\\StructType\Person_Photo_Response_DataType
      */
-    public function addToPerson_Photo(\StructType\Person_PhotoType $item)
+    public function addToPerson_Photo(\WorkdayWsdl\\StructType\Person_PhotoType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_PhotoType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Photo property can only contain items of type \StructType\Person_PhotoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_PhotoType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Photo property can only contain items of type \WorkdayWsdl\\StructType\Person_PhotoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Photo[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Person_Photo_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Photo_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Photo_Response_DataType
      */
     public static function __set_state(array $array)
     {

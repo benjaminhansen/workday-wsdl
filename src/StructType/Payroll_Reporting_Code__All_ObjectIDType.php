@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Payroll_Reporting_Code__All_ObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Payroll_Reporting_Code__All_ReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Payroll_Reporting_Code__All_ObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Payroll_Reporting_Code__All_ObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Payroll_Reporting_Code__All_ObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Payroll_Reporting_Code__All_ObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Payroll_Reporting_Code__All_ObjectIDType
+     * @return \WorkdayWsdl\\StructType\Payroll_Reporting_Code__All_ObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - documentation: The identifier of a skill.
      * - minOccurs: 0
-     * @var \StructType\Skill_Item__Tenanted_ObjectType
+     * @var \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
     public $Skill_Reference;
     /**
@@ -45,11 +45,11 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
      * @uses Skill_Qualification_Profile_Replacement_DataType::setSkill_Reference()
      * @uses Skill_Qualification_Profile_Replacement_DataType::setName()
      * @uses Skill_Qualification_Profile_Replacement_DataType::setRequired()
-     * @param \StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
      * @param string $name
      * @param bool $required
      */
-    public function __construct(\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null, $name = null, $required = null)
+    public function __construct(\WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null, $name = null, $required = null)
     {
         $this
             ->setSkill_Reference($skill_Reference)
@@ -58,7 +58,7 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
     }
     /**
      * Get Skill_Reference value
-     * @return \StructType\Skill_Item__Tenanted_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType|null
      */
     public function getSkill_Reference()
     {
@@ -66,10 +66,10 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
     }
     /**
      * Set Skill_Reference value
-     * @param \StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
-     * @return \StructType\Skill_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference
+     * @return \WorkdayWsdl\\StructType\Skill_Qualification_Profile_Replacement_DataType
      */
-    public function setSkill_Reference(\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null)
+    public function setSkill_Reference(\WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType $skill_Reference = null)
     {
         $this->Skill_Reference = $skill_Reference;
         return $this;
@@ -85,7 +85,7 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Skill_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Qualification_Profile_Replacement_DataType
      */
     public function setName($name = null)
     {
@@ -107,7 +107,7 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
     /**
      * Set Required value
      * @param bool $required
-     * @return \StructType\Skill_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Qualification_Profile_Replacement_DataType
      */
     public function setRequired($required = null)
     {
@@ -124,7 +124,7 @@ class Skill_Qualification_Profile_Replacement_DataType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Skill_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Qualification_Profile_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

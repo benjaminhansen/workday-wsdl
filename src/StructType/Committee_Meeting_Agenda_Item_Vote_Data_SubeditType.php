@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
      * Meta information extracted from the WSDL
      * - documentation: Reference to agenda item votes
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_VoteObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType
      */
     public $Agenda_Item_Vote_Reference;
     /**
@@ -36,7 +36,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
      * - documentation: Vote record data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Vote_Record_Data_SubeditType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType[]
      */
     public $Committee_Meeting_Vote_Record_Data_Subedit;
     /**
@@ -52,12 +52,12 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
      * @uses Committee_Meeting_Agenda_Item_Vote_Data_SubeditType::setPassing_Vote()
      * @uses Committee_Meeting_Agenda_Item_Vote_Data_SubeditType::setCommittee_Meeting_Vote_Record_Data_Subedit()
      * @uses Committee_Meeting_Agenda_Item_Vote_Data_SubeditType::setAdd_Only()
-     * @param \StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference
      * @param bool $passing_Vote
-     * @param \StructType\Committee_Meeting_Vote_Record_Data_SubeditType[] $committee_Meeting_Vote_Record_Data_Subedit
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType[] $committee_Meeting_Vote_Record_Data_Subedit
      * @param bool $add_Only
      */
-    public function __construct(\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference = null, $passing_Vote = null, array $committee_Meeting_Vote_Record_Data_Subedit = array(), $add_Only = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference = null, $passing_Vote = null, array $committee_Meeting_Vote_Record_Data_Subedit = array(), $add_Only = null)
     {
         $this
             ->setAgenda_Item_Vote_Reference($agenda_Item_Vote_Reference)
@@ -67,7 +67,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     }
     /**
      * Get Agenda_Item_Vote_Reference value
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType|null
      */
     public function getAgenda_Item_Vote_Reference()
     {
@@ -75,10 +75,10 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     }
     /**
      * Set Agenda_Item_Vote_Reference value
-     * @param \StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
-    public function setAgenda_Item_Vote_Reference(\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference = null)
+    public function setAgenda_Item_Vote_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType $agenda_Item_Vote_Reference = null)
     {
         $this->Agenda_Item_Vote_Reference = $agenda_Item_Vote_Reference;
         return $this;
@@ -94,7 +94,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     /**
      * Set Passing_Vote value
      * @param bool $passing_Vote
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
     public function setPassing_Vote($passing_Vote = null)
     {
@@ -107,7 +107,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     }
     /**
      * Get Committee_Meeting_Vote_Record_Data_Subedit value
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType[]|null
      */
     public function getCommittee_Meeting_Vote_Record_Data_Subedit()
     {
@@ -125,12 +125,12 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem instanceof \StructType\Committee_Meeting_Vote_Record_Data_SubeditType) {
+            if (!$committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType) {
                 $invalidValues[] = is_object($committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem) ? get_class($committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem) : sprintf('%s(%s)', gettype($committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem), var_export($committee_Meeting_Agenda_Item_Vote_Data_SubeditTypeCommittee_Meeting_Vote_Record_Data_SubeditItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Meeting_Vote_Record_Data_Subedit property can only contain items of type \StructType\Committee_Meeting_Vote_Record_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Meeting_Vote_Record_Data_Subedit property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -138,8 +138,8 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     /**
      * Set Committee_Meeting_Vote_Record_Data_Subedit value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Vote_Record_Data_SubeditType[] $committee_Meeting_Vote_Record_Data_Subedit
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType[] $committee_Meeting_Vote_Record_Data_Subedit
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
     public function setCommittee_Meeting_Vote_Record_Data_Subedit(array $committee_Meeting_Vote_Record_Data_Subedit = array())
     {
@@ -153,14 +153,14 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     /**
      * Add item to Committee_Meeting_Vote_Record_Data_Subedit value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Vote_Record_Data_SubeditType $item
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
-    public function addToCommittee_Meeting_Vote_Record_Data_Subedit(\StructType\Committee_Meeting_Vote_Record_Data_SubeditType $item)
+    public function addToCommittee_Meeting_Vote_Record_Data_Subedit(\WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Meeting_Vote_Record_Data_SubeditType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Vote_Record_Data_Subedit property can only contain items of type \StructType\Committee_Meeting_Vote_Record_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Vote_Record_Data_Subedit property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Meeting_Vote_Record_Data_Subedit[] = $item;
         return $this;
@@ -176,7 +176,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -193,7 +193,7 @@ class Committee_Meeting_Agenda_Item_Vote_Data_SubeditType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Tax_Authority_Form_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
      * Constructor method for Tax_Authority_Form_TypeObjectType
      * @uses Tax_Authority_Form_TypeObjectType::setID()
      * @uses Tax_Authority_Form_TypeObjectType::setDescriptor()
-     * @param \StructType\Tax_Authority_Form_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Tax_Authority_Form_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $tax_Authority_Form_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$tax_Authority_Form_TypeObjectTypeIDItem instanceof \StructType\Tax_Authority_Form_TypeObjectIDType) {
+            if (!$tax_Authority_Form_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType) {
                 $invalidValues[] = is_object($tax_Authority_Form_TypeObjectTypeIDItem) ? get_class($tax_Authority_Form_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($tax_Authority_Form_TypeObjectTypeIDItem), var_export($tax_Authority_Form_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Tax_Authority_Form_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Tax_Authority_Form_TypeObjectIDType[] $iD
-     * @return \StructType\Tax_Authority_Form_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Tax_Authority_Form_TypeObjectIDType $item
-     * @return \StructType\Tax_Authority_Form_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType
      */
-    public function addToID(\StructType\Tax_Authority_Form_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Tax_Authority_Form_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Tax_Authority_Form_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Tax_Authority_Form_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Tax_Authority_Form_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Tax_Authority_Form_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType
      */
     public static function __set_state(array $array)
     {

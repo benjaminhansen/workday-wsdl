@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Location_Request_ReferencesType extends AbstractStructBase
      * - documentation: Reference to a specific Location to return.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType[]
+     * @var \WorkdayWsdl\\StructType\LocationObjectType[]
      */
     public $Location_Reference;
     /**
@@ -30,7 +30,7 @@ class Location_Request_ReferencesType extends AbstractStructBase
      * Constructor method for Location_Request_ReferencesType
      * @uses Location_Request_ReferencesType::setLocation_Reference()
      * @uses Location_Request_ReferencesType::setSkip_Non_Existing_Instances()
-     * @param \StructType\LocationObjectType[] $location_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
      * @param bool $skip_Non_Existing_Instances
      */
     public function __construct(array $location_Reference = array(), $skip_Non_Existing_Instances = null)
@@ -41,7 +41,7 @@ class Location_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType[]|null
      */
     public function getLocation_Reference()
     {
@@ -59,12 +59,12 @@ class Location_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Request_ReferencesTypeLocation_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Request_ReferencesTypeLocation_ReferenceItem instanceof \StructType\LocationObjectType) {
+            if (!$location_Request_ReferencesTypeLocation_ReferenceItem instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
                 $invalidValues[] = is_object($location_Request_ReferencesTypeLocation_ReferenceItem) ? get_class($location_Request_ReferencesTypeLocation_ReferenceItem) : sprintf('%s(%s)', gettype($location_Request_ReferencesTypeLocation_ReferenceItem), var_export($location_Request_ReferencesTypeLocation_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class Location_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType[] $location_Reference
-     * @return \StructType\Location_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType[] $location_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Request_ReferencesType
      */
     public function setLocation_Reference(array $location_Reference = array())
     {
@@ -87,14 +87,14 @@ class Location_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Location_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LocationObjectType $item
-     * @return \StructType\Location_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Request_ReferencesType
      */
-    public function addToLocation_Reference(\StructType\LocationObjectType $item)
+    public function addToLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LocationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LocationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Reference property can only contain items of type \WorkdayWsdl\\StructType\LocationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Reference[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class Location_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Skip_Non_Existing_Instances value
      * @param bool $skip_Non_Existing_Instances
-     * @return \StructType\Location_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Location_Request_ReferencesType
      */
     public function setSkip_Non_Existing_Instances($skip_Non_Existing_Instances = null)
     {
@@ -127,7 +127,7 @@ class Location_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Location_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

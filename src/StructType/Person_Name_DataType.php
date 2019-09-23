@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Person_Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the legal name for a person. A person must name one and only one legal name.
      * - minOccurs: 0
-     * @var \StructType\Legal_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Legal_Name_DataType
      */
     public $Legal_Name_Data;
     /**
@@ -26,7 +26,7 @@ class Person_Name_DataType extends AbstractStructBase
      * - documentation: Contains the preferred name for a person. If no preferred name is returned then the legal name is assumed to be the preferred name. If a preferred name is not provided in a request then the legal name is assumed to be the preferred
      * name.
      * - minOccurs: 0
-     * @var \StructType\Preferred_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Preferred_Name_DataType
      */
     public $Preferred_Name_Data;
     /**
@@ -35,7 +35,7 @@ class Person_Name_DataType extends AbstractStructBase
      * - documentation: Contains the additional names for a person, other than their legal and preferred names. Additional names are not valid for applicants.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Additional_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Additional_Name_DataType[]
      */
     public $Additional_Name_Data;
     /**
@@ -43,11 +43,11 @@ class Person_Name_DataType extends AbstractStructBase
      * @uses Person_Name_DataType::setLegal_Name_Data()
      * @uses Person_Name_DataType::setPreferred_Name_Data()
      * @uses Person_Name_DataType::setAdditional_Name_Data()
-     * @param \StructType\Legal_Name_DataType $legal_Name_Data
-     * @param \StructType\Preferred_Name_DataType $preferred_Name_Data
-     * @param \StructType\Additional_Name_DataType[] $additional_Name_Data
+     * @param \WorkdayWsdl\\StructType\Legal_Name_DataType $legal_Name_Data
+     * @param \WorkdayWsdl\\StructType\Preferred_Name_DataType $preferred_Name_Data
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType[] $additional_Name_Data
      */
-    public function __construct(\StructType\Legal_Name_DataType $legal_Name_Data = null, \StructType\Preferred_Name_DataType $preferred_Name_Data = null, array $additional_Name_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Legal_Name_DataType $legal_Name_Data = null, \WorkdayWsdl\\StructType\Preferred_Name_DataType $preferred_Name_Data = null, array $additional_Name_Data = array())
     {
         $this
             ->setLegal_Name_Data($legal_Name_Data)
@@ -56,7 +56,7 @@ class Person_Name_DataType extends AbstractStructBase
     }
     /**
      * Get Legal_Name_Data value
-     * @return \StructType\Legal_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Legal_Name_DataType|null
      */
     public function getLegal_Name_Data()
     {
@@ -64,17 +64,17 @@ class Person_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Legal_Name_Data value
-     * @param \StructType\Legal_Name_DataType $legal_Name_Data
-     * @return \StructType\Person_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Legal_Name_DataType $legal_Name_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType
      */
-    public function setLegal_Name_Data(\StructType\Legal_Name_DataType $legal_Name_Data = null)
+    public function setLegal_Name_Data(\WorkdayWsdl\\StructType\Legal_Name_DataType $legal_Name_Data = null)
     {
         $this->Legal_Name_Data = $legal_Name_Data;
         return $this;
     }
     /**
      * Get Preferred_Name_Data value
-     * @return \StructType\Preferred_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Preferred_Name_DataType|null
      */
     public function getPreferred_Name_Data()
     {
@@ -82,17 +82,17 @@ class Person_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Preferred_Name_Data value
-     * @param \StructType\Preferred_Name_DataType $preferred_Name_Data
-     * @return \StructType\Person_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Preferred_Name_DataType $preferred_Name_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType
      */
-    public function setPreferred_Name_Data(\StructType\Preferred_Name_DataType $preferred_Name_Data = null)
+    public function setPreferred_Name_Data(\WorkdayWsdl\\StructType\Preferred_Name_DataType $preferred_Name_Data = null)
     {
         $this->Preferred_Name_Data = $preferred_Name_Data;
         return $this;
     }
     /**
      * Get Additional_Name_Data value
-     * @return \StructType\Additional_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Additional_Name_DataType[]|null
      */
     public function getAdditional_Name_Data()
     {
@@ -110,12 +110,12 @@ class Person_Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Name_DataTypeAdditional_Name_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Name_DataTypeAdditional_Name_DataItem instanceof \StructType\Additional_Name_DataType) {
+            if (!$person_Name_DataTypeAdditional_Name_DataItem instanceof \WorkdayWsdl\\StructType\Additional_Name_DataType) {
                 $invalidValues[] = is_object($person_Name_DataTypeAdditional_Name_DataItem) ? get_class($person_Name_DataTypeAdditional_Name_DataItem) : sprintf('%s(%s)', gettype($person_Name_DataTypeAdditional_Name_DataItem), var_export($person_Name_DataTypeAdditional_Name_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Additional_Name_Data property can only contain items of type \StructType\Additional_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Additional_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Additional_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -123,8 +123,8 @@ class Person_Name_DataType extends AbstractStructBase
     /**
      * Set Additional_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Additional_Name_DataType[] $additional_Name_Data
-     * @return \StructType\Person_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType[] $additional_Name_Data
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public function setAdditional_Name_Data(array $additional_Name_Data = array())
     {
@@ -138,14 +138,14 @@ class Person_Name_DataType extends AbstractStructBase
     /**
      * Add item to Additional_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Additional_Name_DataType $item
-     * @return \StructType\Person_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType
      */
-    public function addToAdditional_Name_Data(\StructType\Additional_Name_DataType $item)
+    public function addToAdditional_Name_Data(\WorkdayWsdl\\StructType\Additional_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Additional_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Additional_Name_Data property can only contain items of type \StructType\Additional_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Additional_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Additional_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Additional_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Additional_Name_Data[] = $item;
         return $this;
@@ -156,7 +156,7 @@ class Person_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public static function __set_state(array $array)
     {

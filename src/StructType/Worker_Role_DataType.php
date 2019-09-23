@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Worker_Role_DataType extends AbstractStructBase
      * The Organization_Role_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Organization_Role_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Organization_Role_DataType
      */
     public $Organization_Role_Data;
     /**
      * Constructor method for Worker_Role_DataType
      * @uses Worker_Role_DataType::setOrganization_Role_Data()
-     * @param \StructType\Worker_Organization_Role_DataType $organization_Role_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Organization_Role_DataType $organization_Role_Data
      */
-    public function __construct(\StructType\Worker_Organization_Role_DataType $organization_Role_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Organization_Role_DataType $organization_Role_Data = null)
     {
         $this
             ->setOrganization_Role_Data($organization_Role_Data);
     }
     /**
      * Get Organization_Role_Data value
-     * @return \StructType\Worker_Organization_Role_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Role_DataType|null
      */
     public function getOrganization_Role_Data()
     {
@@ -39,10 +39,10 @@ class Worker_Role_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Role_Data value
-     * @param \StructType\Worker_Organization_Role_DataType $organization_Role_Data
-     * @return \StructType\Worker_Role_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Organization_Role_DataType $organization_Role_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Role_DataType
      */
-    public function setOrganization_Role_Data(\StructType\Worker_Organization_Role_DataType $organization_Role_Data = null)
+    public function setOrganization_Role_Data(\WorkdayWsdl\\StructType\Worker_Organization_Role_DataType $organization_Role_Data = null)
     {
         $this->Organization_Role_Data = $organization_Role_Data;
         return $this;
@@ -53,7 +53,7 @@ class Worker_Role_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Role_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Role_DataType
      */
     public static function __set_state(array $array)
     {

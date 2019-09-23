@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,17 +50,17 @@ class External_Disability_Self_Identification_RecordObjectIDType extends Abstrac
     }
     /**
      * Set type value
-     * @uses \EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\External_Disability_Self_Identification_RecordReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -76,7 +76,7 @@ class External_Disability_Self_Identification_RecordObjectIDType extends Abstrac
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType
      */
     public function set_($_ = null)
     {
@@ -93,7 +93,7 @@ class External_Disability_Self_Identification_RecordObjectIDType extends Abstrac
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectIDType
      */
     public static function __set_state(array $array)
     {

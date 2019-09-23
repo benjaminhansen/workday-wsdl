@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Injury_Illness_SeverityObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Injury_Illness_SeverityReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Injury_Illness_SeverityReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Injury_Illness_SeverityReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Injury_Illness_SeverityReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Injury_Illness_SeverityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Injury_Illness_SeverityReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Injury_Illness_SeverityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Injury_Illness_SeverityReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Injury_Illness_SeverityReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Injury_Illness_SeverityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Injury_Illness_SeverityReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Injury_Illness_SeverityObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Injury_Illness_SeverityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Injury_Illness_SeverityObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Injury_Illness_SeverityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectIDType
      */
     public static function __set_state(array $array)
     {

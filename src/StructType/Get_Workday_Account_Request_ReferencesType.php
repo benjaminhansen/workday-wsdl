@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Workday Account Reference
      * - maxOccurs: unbounded
-     * @var \StructType\RoleObjectType[]
+     * @var \WorkdayWsdl\\StructType\RoleObjectType[]
      */
     public $Workday_Account_Reference;
     /**
      * Constructor method for Get_Workday_Account_Request_ReferencesType
      * @uses Get_Workday_Account_Request_ReferencesType::setWorkday_Account_Reference()
-     * @param \StructType\RoleObjectType[] $workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $workday_Account_Reference
      */
     public function __construct(array $workday_Account_Reference = array())
     {
@@ -32,7 +32,7 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Workday_Account_Reference value
-     * @return \StructType\RoleObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType[]|null
      */
     public function getWorkday_Account_Reference()
     {
@@ -50,12 +50,12 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem instanceof \StructType\RoleObjectType) {
+            if (!$get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
                 $invalidValues[] = is_object($get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem) ? get_class($get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem) : sprintf('%s(%s)', gettype($get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem), var_export($get_Workday_Account_Request_ReferencesTypeWorkday_Account_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workday_Account_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType[] $workday_Account_Reference
-     * @return \StructType\Get_Workday_Account_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Request_ReferencesType
      */
     public function setWorkday_Account_Reference(array $workday_Account_Reference = array())
     {
@@ -78,14 +78,14 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType $item
-     * @return \StructType\Get_Workday_Account_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $item
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Request_ReferencesType
      */
-    public function addToWorkday_Account_Reference(\StructType\RoleObjectType $item)
+    public function addToWorkday_Account_Reference(\WorkdayWsdl\\StructType\RoleObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoleObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workday_Account_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workday_Account_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Get_Workday_Account_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Workday_Account_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Get_Workday_Account_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

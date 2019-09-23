@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Disability_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Disability.
      * - minOccurs: 0
-     * @var \StructType\DisabilityObjectType
+     * @var \WorkdayWsdl\\StructType\DisabilityObjectType
      */
     public $Disability_Reference;
     /**
      * The Disability_Data
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Disability data.
-     * @var \StructType\Disability_DataType
+     * @var \WorkdayWsdl\\StructType\Disability_DataType
      */
     public $Disability_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Disability_RequestType extends AbstractStructBase
      * @uses Put_Disability_RequestType::setDisability_Data()
      * @uses Put_Disability_RequestType::setAdd_Only()
      * @uses Put_Disability_RequestType::setVersion()
-     * @param \StructType\DisabilityObjectType $disability_Reference
-     * @param \StructType\Disability_DataType $disability_Data
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_DataType $disability_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\DisabilityObjectType $disability_Reference = null, \StructType\Disability_DataType $disability_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null, \WorkdayWsdl\\StructType\Disability_DataType $disability_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setDisability_Reference($disability_Reference)
@@ -62,7 +62,7 @@ class Put_Disability_RequestType extends AbstractStructBase
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\DisabilityObjectType|null
+     * @return \WorkdayWsdl\\StructType\DisabilityObjectType|null
      */
     public function getDisability_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Disability_RequestType extends AbstractStructBase
     }
     /**
      * Set Disability_Reference value
-     * @param \StructType\DisabilityObjectType $disability_Reference
-     * @return \StructType\Put_Disability_RequestType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Disability_RequestType
      */
-    public function setDisability_Reference(\StructType\DisabilityObjectType $disability_Reference = null)
+    public function setDisability_Reference(\WorkdayWsdl\\StructType\DisabilityObjectType $disability_Reference = null)
     {
         $this->Disability_Reference = $disability_Reference;
         return $this;
     }
     /**
      * Get Disability_Data value
-     * @return \StructType\Disability_DataType|null
+     * @return \WorkdayWsdl\\StructType\Disability_DataType|null
      */
     public function getDisability_Data()
     {
@@ -88,10 +88,10 @@ class Put_Disability_RequestType extends AbstractStructBase
     }
     /**
      * Set Disability_Data value
-     * @param \StructType\Disability_DataType $disability_Data
-     * @return \StructType\Put_Disability_RequestType
+     * @param \WorkdayWsdl\\StructType\Disability_DataType $disability_Data
+     * @return \WorkdayWsdl\\StructType\Put_Disability_RequestType
      */
-    public function setDisability_Data(\StructType\Disability_DataType $disability_Data = null)
+    public function setDisability_Data(\WorkdayWsdl\\StructType\Disability_DataType $disability_Data = null)
     {
         $this->Disability_Data = $disability_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Disability_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Disability_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Disability_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Disability_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Disability_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Disability_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Disability_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Disability_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Disability_RequestType
      */
     public static function __set_state(array $array)
     {

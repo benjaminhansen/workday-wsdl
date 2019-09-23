@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
      * The Reorganization_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reorganization determines the effective date that positions are added as a member
-     * @var \StructType\ReorganizationObjectType
+     * @var \WorkdayWsdl\\StructType\ReorganizationObjectType
      */
     public $Reorganization_Reference;
     /**
@@ -26,7 +26,7 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
      * the reorganization effective date, Workday assigns membership to the principal and overlap positions. If the position is unavailable or unfilled as of the date you view the custom organization it's assigned to, Workday doesn't display it.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType[]
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType[]
      */
     public $Positions_to_Add_Reference;
     /**
@@ -35,7 +35,7 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
      * - documentation: Positions to be removed from the custom organization.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType[]
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType[]
      */
     public $Positions_to_Remove_Reference;
     /**
@@ -43,11 +43,11 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
      * @uses Assign_Members_to_Custom_Organization_DataType::setReorganization_Reference()
      * @uses Assign_Members_to_Custom_Organization_DataType::setPositions_to_Add_Reference()
      * @uses Assign_Members_to_Custom_Organization_DataType::setPositions_to_Remove_Reference()
-     * @param \StructType\ReorganizationObjectType $reorganization_Reference
-     * @param \StructType\Position_ElementObjectType[] $positions_to_Add_Reference
-     * @param \StructType\Position_ElementObjectType[] $positions_to_Remove_Reference
+     * @param \WorkdayWsdl\\StructType\ReorganizationObjectType $reorganization_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType[] $positions_to_Add_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType[] $positions_to_Remove_Reference
      */
-    public function __construct(\StructType\ReorganizationObjectType $reorganization_Reference = null, array $positions_to_Add_Reference = array(), array $positions_to_Remove_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\ReorganizationObjectType $reorganization_Reference = null, array $positions_to_Add_Reference = array(), array $positions_to_Remove_Reference = array())
     {
         $this
             ->setReorganization_Reference($reorganization_Reference)
@@ -56,7 +56,7 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Reorganization_Reference value
-     * @return \StructType\ReorganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectType|null
      */
     public function getReorganization_Reference()
     {
@@ -64,17 +64,17 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Reorganization_Reference value
-     * @param \StructType\ReorganizationObjectType $reorganization_Reference
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\ReorganizationObjectType $reorganization_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
-    public function setReorganization_Reference(\StructType\ReorganizationObjectType $reorganization_Reference = null)
+    public function setReorganization_Reference(\WorkdayWsdl\\StructType\ReorganizationObjectType $reorganization_Reference = null)
     {
         $this->Reorganization_Reference = $reorganization_Reference;
         return $this;
     }
     /**
      * Get Positions_to_Add_Reference value
-     * @return \StructType\Position_ElementObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType[]|null
      */
     public function getPositions_to_Add_Reference()
     {
@@ -92,12 +92,12 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem instanceof \StructType\Position_ElementObjectType) {
+            if (!$assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem instanceof \WorkdayWsdl\\StructType\Position_ElementObjectType) {
                 $invalidValues[] = is_object($assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem) ? get_class($assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem) : sprintf('%s(%s)', gettype($assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem), var_export($assign_Members_to_Custom_Organization_DataTypePositions_to_Add_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Positions_to_Add_Reference property can only contain items of type \StructType\Position_ElementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Positions_to_Add_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_ElementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -105,8 +105,8 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     /**
      * Set Positions_to_Add_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_ElementObjectType[] $positions_to_Add_Reference
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType[] $positions_to_Add_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
     public function setPositions_to_Add_Reference(array $positions_to_Add_Reference = array())
     {
@@ -120,21 +120,21 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     /**
      * Add item to Positions_to_Add_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_ElementObjectType $item
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
-    public function addToPositions_to_Add_Reference(\StructType\Position_ElementObjectType $item)
+    public function addToPositions_to_Add_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Position_ElementObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Positions_to_Add_Reference property can only contain items of type \StructType\Position_ElementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Position_ElementObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Positions_to_Add_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_ElementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Positions_to_Add_Reference[] = $item;
         return $this;
     }
     /**
      * Get Positions_to_Remove_Reference value
-     * @return \StructType\Position_ElementObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType[]|null
      */
     public function getPositions_to_Remove_Reference()
     {
@@ -152,12 +152,12 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem instanceof \StructType\Position_ElementObjectType) {
+            if (!$assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem instanceof \WorkdayWsdl\\StructType\Position_ElementObjectType) {
                 $invalidValues[] = is_object($assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem) ? get_class($assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem) : sprintf('%s(%s)', gettype($assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem), var_export($assign_Members_to_Custom_Organization_DataTypePositions_to_Remove_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Positions_to_Remove_Reference property can only contain items of type \StructType\Position_ElementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Positions_to_Remove_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_ElementObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -165,8 +165,8 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     /**
      * Set Positions_to_Remove_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_ElementObjectType[] $positions_to_Remove_Reference
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType[] $positions_to_Remove_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
     public function setPositions_to_Remove_Reference(array $positions_to_Remove_Reference = array())
     {
@@ -180,14 +180,14 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
     /**
      * Add item to Positions_to_Remove_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Position_ElementObjectType $item
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $item
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
-    public function addToPositions_to_Remove_Reference(\StructType\Position_ElementObjectType $item)
+    public function addToPositions_to_Remove_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Position_ElementObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Positions_to_Remove_Reference property can only contain items of type \StructType\Position_ElementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Position_ElementObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Positions_to_Remove_Reference property can only contain items of type \WorkdayWsdl\\StructType\Position_ElementObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Positions_to_Remove_Reference[] = $item;
         return $this;
@@ -198,7 +198,7 @@ class Assign_Members_to_Custom_Organization_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Members_to_Custom_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_DataType
      */
     public static function __set_state(array $array)
     {

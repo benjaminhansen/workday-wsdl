@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
      * - documentation: Manage Professional Affiliation Sub Business Process Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Business_Sub_Process_ParametersType[]
+     * @var \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType[]
      */
     public $Business_Sub_Process_Parameters;
     /**
@@ -28,7 +28,7 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
      * - documentation: Manage Professional Affiliation Sub Business Process Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Manage_Professional_Affiliation_Data_for_RoleType[]
+     * @var \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType[]
      */
     public $Manage_Professional_Affiliation_Data;
     /**
@@ -36,8 +36,8 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
      * Manage_Professional_Affiliation_Sub_Business_Process_DataType
      * @uses Manage_Professional_Affiliation_Sub_Business_Process_DataType::setBusiness_Sub_Process_Parameters()
      * @uses Manage_Professional_Affiliation_Sub_Business_Process_DataType::setManage_Professional_Affiliation_Data()
-     * @param \StructType\Business_Sub_Process_ParametersType[] $business_Sub_Process_Parameters
-     * @param \StructType\Manage_Professional_Affiliation_Data_for_RoleType[] $manage_Professional_Affiliation_Data
+     * @param \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType[] $business_Sub_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType[] $manage_Professional_Affiliation_Data
      */
     public function __construct(array $business_Sub_Process_Parameters = array(), array $manage_Professional_Affiliation_Data = array())
     {
@@ -47,7 +47,7 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
     }
     /**
      * Get Business_Sub_Process_Parameters value
-     * @return \StructType\Business_Sub_Process_ParametersType[]|null
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType[]|null
      */
     public function getBusiness_Sub_Process_Parameters()
     {
@@ -65,12 +65,12 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
         $invalidValues = [];
         foreach ($values as $manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem) {
             // validation for constraint: itemType
-            if (!$manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem instanceof \StructType\Business_Sub_Process_ParametersType) {
+            if (!$manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem instanceof \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType) {
                 $invalidValues[] = is_object($manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem) ? get_class($manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem) : sprintf('%s(%s)', gettype($manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem), var_export($manage_Professional_Affiliation_Sub_Business_Process_DataTypeBusiness_Sub_Process_ParametersItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Business_Sub_Process_Parameters property can only contain items of type \StructType\Business_Sub_Process_ParametersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Business_Sub_Process_Parameters property can only contain items of type \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -78,8 +78,8 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
     /**
      * Set Business_Sub_Process_Parameters value
      * @throws \InvalidArgumentException
-     * @param \StructType\Business_Sub_Process_ParametersType[] $business_Sub_Process_Parameters
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType[] $business_Sub_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
     public function setBusiness_Sub_Process_Parameters(array $business_Sub_Process_Parameters = array())
     {
@@ -93,21 +93,21 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
     /**
      * Add item to Business_Sub_Process_Parameters value
      * @throws \InvalidArgumentException
-     * @param \StructType\Business_Sub_Process_ParametersType $item
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType $item
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
-    public function addToBusiness_Sub_Process_Parameters(\StructType\Business_Sub_Process_ParametersType $item)
+    public function addToBusiness_Sub_Process_Parameters(\WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Business_Sub_Process_ParametersType) {
-            throw new \InvalidArgumentException(sprintf('The Business_Sub_Process_Parameters property can only contain items of type \StructType\Business_Sub_Process_ParametersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType) {
+            throw new \InvalidArgumentException(sprintf('The Business_Sub_Process_Parameters property can only contain items of type \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Business_Sub_Process_Parameters[] = $item;
         return $this;
     }
     /**
      * Get Manage_Professional_Affiliation_Data value
-     * @return \StructType\Manage_Professional_Affiliation_Data_for_RoleType[]|null
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType[]|null
      */
     public function getManage_Professional_Affiliation_Data()
     {
@@ -125,12 +125,12 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
         $invalidValues = [];
         foreach ($values as $manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem) {
             // validation for constraint: itemType
-            if (!$manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem instanceof \StructType\Manage_Professional_Affiliation_Data_for_RoleType) {
+            if (!$manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem instanceof \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType) {
                 $invalidValues[] = is_object($manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem) ? get_class($manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem) : sprintf('%s(%s)', gettype($manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem), var_export($manage_Professional_Affiliation_Sub_Business_Process_DataTypeManage_Professional_Affiliation_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Manage_Professional_Affiliation_Data property can only contain items of type \StructType\Manage_Professional_Affiliation_Data_for_RoleType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Manage_Professional_Affiliation_Data property can only contain items of type \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -138,8 +138,8 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
     /**
      * Set Manage_Professional_Affiliation_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Professional_Affiliation_Data_for_RoleType[] $manage_Professional_Affiliation_Data
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType[] $manage_Professional_Affiliation_Data
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
     public function setManage_Professional_Affiliation_Data(array $manage_Professional_Affiliation_Data = array())
     {
@@ -153,14 +153,14 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
     /**
      * Add item to Manage_Professional_Affiliation_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Professional_Affiliation_Data_for_RoleType $item
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType $item
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
-    public function addToManage_Professional_Affiliation_Data(\StructType\Manage_Professional_Affiliation_Data_for_RoleType $item)
+    public function addToManage_Professional_Affiliation_Data(\WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Manage_Professional_Affiliation_Data_for_RoleType) {
-            throw new \InvalidArgumentException(sprintf('The Manage_Professional_Affiliation_Data property can only contain items of type \StructType\Manage_Professional_Affiliation_Data_for_RoleType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType) {
+            throw new \InvalidArgumentException(sprintf('The Manage_Professional_Affiliation_Data property can only contain items of type \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Data_for_RoleType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Manage_Professional_Affiliation_Data[] = $item;
         return $this;
@@ -171,7 +171,7 @@ class Manage_Professional_Affiliation_Sub_Business_Process_DataType extends Abst
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Payroll_EntityObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
      * Constructor method for External_Payroll_EntityObjectType
      * @uses External_Payroll_EntityObjectType::setID()
      * @uses External_Payroll_EntityObjectType::setDescriptor()
-     * @param \StructType\External_Payroll_EntityObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\External_Payroll_EntityObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Payroll_EntityObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Payroll_EntityObjectTypeIDItem instanceof \StructType\External_Payroll_EntityObjectIDType) {
+            if (!$external_Payroll_EntityObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType) {
                 $invalidValues[] = is_object($external_Payroll_EntityObjectTypeIDItem) ? get_class($external_Payroll_EntityObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Payroll_EntityObjectTypeIDItem), var_export($external_Payroll_EntityObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Payroll_EntityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Payroll_EntityObjectIDType[] $iD
-     * @return \StructType\External_Payroll_EntityObjectType
+     * @param \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Payroll_EntityObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Payroll_EntityObjectIDType $item
-     * @return \StructType\External_Payroll_EntityObjectType
+     * @param \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Payroll_EntityObjectType
      */
-    public function addToID(\StructType\External_Payroll_EntityObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Payroll_EntityObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Payroll_EntityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Payroll_EntityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Payroll_EntityObjectType
+     * @return \WorkdayWsdl\\StructType\External_Payroll_EntityObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class External_Payroll_EntityObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Payroll_EntityObjectType
+     * @return \WorkdayWsdl\\StructType\External_Payroll_EntityObjectType
      */
     public static function __set_state(array $array)
     {

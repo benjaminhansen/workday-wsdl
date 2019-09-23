@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -102,7 +102,7 @@ class System_User_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The local defines the user's language and country which will affect their experience in the Workday system.
      * - minOccurs: 0
-     * @var \StructType\LocaleObjectType
+     * @var \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public $Locale_Reference;
     /**
@@ -110,7 +110,7 @@ class System_User_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If set, specifies language for user. If not set, language specification taken from Locale_Reference parameter.
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $User_Language_Reference;
     /**
@@ -118,7 +118,7 @@ class System_User_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If set, specifies the initial search category displayed to the user.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Preferred_Search_Scope_Reference;
     /**
@@ -126,7 +126,7 @@ class System_User_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The user will be authenticated via an external system.
      * - minOccurs: 0
-     * @var \StructType\Integration_System__Audited_ObjectType
+     * @var \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType
      */
     public $Delegated_Authentication_Integration_System_Reference;
     /**
@@ -144,7 +144,7 @@ class System_User_DataType extends AbstractStructBase
      * - documentation: Notification Type Configurations for a particular user
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Notification_Sub_Category_Configurations_for_UsersType[]
+     * @var \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[]
      */
     public $Notification_Sub_Type_Configurations;
     /**
@@ -282,12 +282,12 @@ class System_User_DataType extends AbstractStructBase
      * @param bool $show_User_Name_in_Browser_Window
      * @param bool $display_XML_Icon_on_Reports
      * @param bool $enable_Workbox
-     * @param \StructType\LocaleObjectType $locale_Reference
-     * @param \StructType\User_LanguageObjectType $user_Language_Reference
-     * @param \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
-     * @param \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
+     * @param \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
      * @param bool $allow_Mixed_Language_Transactions
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
      * @param string $password
      * @param bool $generate_Random_Password
      * @param bool $exempt_from_Delegated_Authentication
@@ -299,7 +299,7 @@ class System_User_DataType extends AbstractStructBase
      * @param string $openID_Connect_Internal_Identifier
      * @param bool $simplified_View
      */
-    public function __construct($user_Name = null, $session_Timeout_Minutes = null, $account_Disabled = null, $account_Expiration_Date = null, $account_Locked = null, $required_New_Password_At_Next_Login = null, $show_User_Name_in_Browser_Window = null, $display_XML_Icon_on_Reports = null, $enable_Workbox = null, \StructType\LocaleObjectType $locale_Reference = null, \StructType\User_LanguageObjectType $user_Language_Reference = null, \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null, \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null, $allow_Mixed_Language_Transactions = null, array $notification_Sub_Type_Configurations = array(), $password = null, $generate_Random_Password = null, $exempt_from_Delegated_Authentication = null, $passcode_Exempt = null, $passcode_Grace_Period_Enabled = null, $passcode_Grace_Period_Login_Remaining_Count = null, $openID_Identifier = null, $openID_Internal_Identifier = null, $openID_Connect_Internal_Identifier = null, $simplified_View = null)
+    public function __construct($user_Name = null, $session_Timeout_Minutes = null, $account_Disabled = null, $account_Expiration_Date = null, $account_Locked = null, $required_New_Password_At_Next_Login = null, $show_User_Name_in_Browser_Window = null, $display_XML_Icon_on_Reports = null, $enable_Workbox = null, \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference = null, \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null, \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null, $allow_Mixed_Language_Transactions = null, array $notification_Sub_Type_Configurations = array(), $password = null, $generate_Random_Password = null, $exempt_from_Delegated_Authentication = null, $passcode_Exempt = null, $passcode_Grace_Period_Enabled = null, $passcode_Grace_Period_Login_Remaining_Count = null, $openID_Identifier = null, $openID_Internal_Identifier = null, $openID_Connect_Internal_Identifier = null, $simplified_View = null)
     {
         $this
             ->setUser_Name($user_Name)
@@ -339,7 +339,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set User_Name value
      * @param string $user_Name
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setUser_Name($user_Name = null)
     {
@@ -361,7 +361,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Session_Timeout_Minutes value
      * @param float $session_Timeout_Minutes
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setSession_Timeout_Minutes($session_Timeout_Minutes = null)
     {
@@ -395,7 +395,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Account_Disabled value
      * @param bool $account_Disabled
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setAccount_Disabled($account_Disabled = null)
     {
@@ -417,7 +417,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Account_Expiration_Date value
      * @param string $account_Expiration_Date
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setAccount_Expiration_Date($account_Expiration_Date = null)
     {
@@ -439,7 +439,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Account_Locked value
      * @param bool $account_Locked
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setAccount_Locked($account_Locked = null)
     {
@@ -461,7 +461,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Required_New_Password_At_Next_Login value
      * @param bool $required_New_Password_At_Next_Login
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setRequired_New_Password_At_Next_Login($required_New_Password_At_Next_Login = null)
     {
@@ -483,7 +483,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Show_User_Name_in_Browser_Window value
      * @param bool $show_User_Name_in_Browser_Window
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setShow_User_Name_in_Browser_Window($show_User_Name_in_Browser_Window = null)
     {
@@ -505,7 +505,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Display_XML_Icon_on_Reports value
      * @param bool $display_XML_Icon_on_Reports
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setDisplay_XML_Icon_on_Reports($display_XML_Icon_on_Reports = null)
     {
@@ -527,7 +527,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Enable_Workbox value
      * @param bool $enable_Workbox
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setEnable_Workbox($enable_Workbox = null)
     {
@@ -540,7 +540,7 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Get Locale_Reference value
-     * @return \StructType\LocaleObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType|null
      */
     public function getLocale_Reference()
     {
@@ -548,17 +548,17 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Set Locale_Reference value
-     * @param \StructType\LocaleObjectType $locale_Reference
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
-    public function setLocale_Reference(\StructType\LocaleObjectType $locale_Reference = null)
+    public function setLocale_Reference(\WorkdayWsdl\\StructType\LocaleObjectType $locale_Reference = null)
     {
         $this->Locale_Reference = $locale_Reference;
         return $this;
     }
     /**
      * Get User_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getUser_Language_Reference()
     {
@@ -566,17 +566,17 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Set User_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $user_Language_Reference
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
-    public function setUser_Language_Reference(\StructType\User_LanguageObjectType $user_Language_Reference = null)
+    public function setUser_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $user_Language_Reference = null)
     {
         $this->User_Language_Reference = $user_Language_Reference;
         return $this;
     }
     /**
      * Get Preferred_Search_Scope_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPreferred_Search_Scope_Reference()
     {
@@ -584,17 +584,17 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Set Preferred_Search_Scope_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
-    public function setPreferred_Search_Scope_Reference(\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null)
+    public function setPreferred_Search_Scope_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $preferred_Search_Scope_Reference = null)
     {
         $this->Preferred_Search_Scope_Reference = $preferred_Search_Scope_Reference;
         return $this;
     }
     /**
      * Get Delegated_Authentication_Integration_System_Reference value
-     * @return \StructType\Integration_System__Audited_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType|null
      */
     public function getDelegated_Authentication_Integration_System_Reference()
     {
@@ -602,10 +602,10 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Set Delegated_Authentication_Integration_System_Reference value
-     * @param \StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
-    public function setDelegated_Authentication_Integration_System_Reference(\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null)
+    public function setDelegated_Authentication_Integration_System_Reference(\WorkdayWsdl\\StructType\Integration_System__Audited_ObjectType $delegated_Authentication_Integration_System_Reference = null)
     {
         $this->Delegated_Authentication_Integration_System_Reference = $delegated_Authentication_Integration_System_Reference;
         return $this;
@@ -621,7 +621,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Allow_Mixed_Language_Transactions value
      * @param bool $allow_Mixed_Language_Transactions
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setAllow_Mixed_Language_Transactions($allow_Mixed_Language_Transactions = null)
     {
@@ -634,7 +634,7 @@ class System_User_DataType extends AbstractStructBase
     }
     /**
      * Get Notification_Sub_Type_Configurations value
-     * @return \StructType\Notification_Sub_Category_Configurations_for_UsersType[]|null
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[]|null
      */
     public function getNotification_Sub_Type_Configurations()
     {
@@ -652,12 +652,12 @@ class System_User_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $system_User_DataTypeNotification_Sub_Type_ConfigurationsItem) {
             // validation for constraint: itemType
-            if (!$system_User_DataTypeNotification_Sub_Type_ConfigurationsItem instanceof \StructType\Notification_Sub_Category_Configurations_for_UsersType) {
+            if (!$system_User_DataTypeNotification_Sub_Type_ConfigurationsItem instanceof \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType) {
                 $invalidValues[] = is_object($system_User_DataTypeNotification_Sub_Type_ConfigurationsItem) ? get_class($system_User_DataTypeNotification_Sub_Type_ConfigurationsItem) : sprintf('%s(%s)', gettype($system_User_DataTypeNotification_Sub_Type_ConfigurationsItem), var_export($system_User_DataTypeNotification_Sub_Type_ConfigurationsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -665,8 +665,8 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Notification_Sub_Type_Configurations value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType[] $notification_Sub_Type_Configurations
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setNotification_Sub_Type_Configurations(array $notification_Sub_Type_Configurations = array())
     {
@@ -680,14 +680,14 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Add item to Notification_Sub_Type_Configurations value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Category_Configurations_for_UsersType $item
-     * @return \StructType\System_User_DataType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType $item
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
-    public function addToNotification_Sub_Type_Configurations(\StructType\Notification_Sub_Category_Configurations_for_UsersType $item)
+    public function addToNotification_Sub_Type_Configurations(\WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Notification_Sub_Category_Configurations_for_UsersType) {
-            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType) {
+            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configurations property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Notification_Sub_Type_Configurations[] = $item;
         return $this;
@@ -734,7 +734,7 @@ class System_User_DataType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param string $password
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setPassword($password = null)
     {
@@ -795,7 +795,7 @@ class System_User_DataType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param bool $generate_Random_Password
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setGenerate_Random_Password($generate_Random_Password = null)
     {
@@ -825,7 +825,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Exempt_from_Delegated_Authentication value
      * @param bool $exempt_from_Delegated_Authentication
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setExempt_from_Delegated_Authentication($exempt_from_Delegated_Authentication = null)
     {
@@ -847,7 +847,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Passcode_Exempt value
      * @param bool $passcode_Exempt
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setPasscode_Exempt($passcode_Exempt = null)
     {
@@ -869,7 +869,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Passcode_Grace_Period_Enabled value
      * @param bool $passcode_Grace_Period_Enabled
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setPasscode_Grace_Period_Enabled($passcode_Grace_Period_Enabled = null)
     {
@@ -891,7 +891,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Passcode_Grace_Period_Login_Remaining_Count value
      * @param float $passcode_Grace_Period_Login_Remaining_Count
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setPasscode_Grace_Period_Login_Remaining_Count($passcode_Grace_Period_Login_Remaining_Count = null)
     {
@@ -921,7 +921,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set OpenID_Identifier value
      * @param string $openID_Identifier
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setOpenID_Identifier($openID_Identifier = null)
     {
@@ -943,7 +943,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set OpenID_Internal_Identifier value
      * @param string $openID_Internal_Identifier
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setOpenID_Internal_Identifier($openID_Internal_Identifier = null)
     {
@@ -965,7 +965,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set OpenID_Connect_Internal_Identifier value
      * @param string $openID_Connect_Internal_Identifier
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setOpenID_Connect_Internal_Identifier($openID_Connect_Internal_Identifier = null)
     {
@@ -987,7 +987,7 @@ class System_User_DataType extends AbstractStructBase
     /**
      * Set Simplified_View value
      * @param bool $simplified_View
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public function setSimplified_View($simplified_View = null)
     {
@@ -1004,7 +1004,7 @@ class System_User_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\System_User_DataType
+     * @return \WorkdayWsdl\\StructType\System_User_DataType
      */
     public static function __set_state(array $array)
     {

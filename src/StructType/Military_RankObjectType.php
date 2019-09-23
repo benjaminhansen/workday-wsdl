@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Military_RankObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Military_RankObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Military_RankObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Military_RankObjectType extends AbstractStructBase
      * Constructor method for Military_RankObjectType
      * @uses Military_RankObjectType::setID()
      * @uses Military_RankObjectType::setDescriptor()
-     * @param \StructType\Military_RankObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Military_RankObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Military_RankObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Military_RankObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Military_RankObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $military_RankObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$military_RankObjectTypeIDItem instanceof \StructType\Military_RankObjectIDType) {
+            if (!$military_RankObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Military_RankObjectIDType) {
                 $invalidValues[] = is_object($military_RankObjectTypeIDItem) ? get_class($military_RankObjectTypeIDItem) : sprintf('%s(%s)', gettype($military_RankObjectTypeIDItem), var_export($military_RankObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Military_RankObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Military_RankObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Military_RankObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Military_RankObjectIDType[] $iD
-     * @return \StructType\Military_RankObjectType
+     * @param \WorkdayWsdl\\StructType\Military_RankObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Military_RankObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Military_RankObjectIDType $item
-     * @return \StructType\Military_RankObjectType
+     * @param \WorkdayWsdl\\StructType\Military_RankObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectType
      */
-    public function addToID(\StructType\Military_RankObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Military_RankObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Military_RankObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Military_RankObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Military_RankObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Military_RankObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Military_RankObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Military_RankObjectType
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Military_RankObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Military_RankObjectType
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectType
      */
     public static function __set_state(array $array)
     {

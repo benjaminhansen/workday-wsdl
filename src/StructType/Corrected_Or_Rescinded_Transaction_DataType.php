@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Main_Transaction_Log_Entry_DataType[]
+     * @var \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType[]
      */
     public $Main_Transaction_Data;
     /**
@@ -25,15 +25,15 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[]
+     * @var \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[]
      */
     public $Correction_Or_Rescind_Data;
     /**
      * Constructor method for Corrected_Or_Rescinded_Transaction_DataType
      * @uses Corrected_Or_Rescinded_Transaction_DataType::setMain_Transaction_Data()
      * @uses Corrected_Or_Rescinded_Transaction_DataType::setCorrection_Or_Rescind_Data()
-     * @param \StructType\Main_Transaction_Log_Entry_DataType[] $main_Transaction_Data
-     * @param \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[] $correction_Or_Rescind_Data
+     * @param \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType[] $main_Transaction_Data
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[] $correction_Or_Rescind_Data
      */
     public function __construct(array $main_Transaction_Data = array(), array $correction_Or_Rescind_Data = array())
     {
@@ -43,7 +43,7 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
     }
     /**
      * Get Main_Transaction_Data value
-     * @return \StructType\Main_Transaction_Log_Entry_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType[]|null
      */
     public function getMain_Transaction_Data()
     {
@@ -61,12 +61,12 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem) {
             // validation for constraint: itemType
-            if (!$corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem instanceof \StructType\Main_Transaction_Log_Entry_DataType) {
+            if (!$corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem instanceof \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType) {
                 $invalidValues[] = is_object($corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem) ? get_class($corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem) : sprintf('%s(%s)', gettype($corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem), var_export($corrected_Or_Rescinded_Transaction_DataTypeMain_Transaction_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Main_Transaction_Data property can only contain items of type \StructType\Main_Transaction_Log_Entry_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Main_Transaction_Data property can only contain items of type \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
     /**
      * Set Main_Transaction_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Main_Transaction_Log_Entry_DataType[] $main_Transaction_Data
-     * @return \StructType\Corrected_Or_Rescinded_Transaction_DataType
+     * @param \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType[] $main_Transaction_Data
+     * @return \WorkdayWsdl\\StructType\Corrected_Or_Rescinded_Transaction_DataType
      */
     public function setMain_Transaction_Data(array $main_Transaction_Data = array())
     {
@@ -89,21 +89,21 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
     /**
      * Add item to Main_Transaction_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Main_Transaction_Log_Entry_DataType $item
-     * @return \StructType\Corrected_Or_Rescinded_Transaction_DataType
+     * @param \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType $item
+     * @return \WorkdayWsdl\\StructType\Corrected_Or_Rescinded_Transaction_DataType
      */
-    public function addToMain_Transaction_Data(\StructType\Main_Transaction_Log_Entry_DataType $item)
+    public function addToMain_Transaction_Data(\WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Main_Transaction_Log_Entry_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Main_Transaction_Data property can only contain items of type \StructType\Main_Transaction_Log_Entry_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Main_Transaction_Data property can only contain items of type \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Main_Transaction_Data[] = $item;
         return $this;
     }
     /**
      * Get Correction_Or_Rescind_Data value
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[]|null
      */
     public function getCorrection_Or_Rescind_Data()
     {
@@ -121,12 +121,12 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem) {
             // validation for constraint: itemType
-            if (!$corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem instanceof \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType) {
+            if (!$corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem instanceof \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType) {
                 $invalidValues[] = is_object($corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem) ? get_class($corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem) : sprintf('%s(%s)', gettype($corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem), var_export($corrected_Or_Rescinded_Transaction_DataTypeCorrection_Or_Rescind_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Correction_Or_Rescind_Data property can only contain items of type \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Correction_Or_Rescind_Data property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -134,8 +134,8 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
     /**
      * Set Correction_Or_Rescind_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[] $correction_Or_Rescind_Data
-     * @return \StructType\Corrected_Or_Rescinded_Transaction_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType[] $correction_Or_Rescind_Data
+     * @return \WorkdayWsdl\\StructType\Corrected_Or_Rescinded_Transaction_DataType
      */
     public function setCorrection_Or_Rescind_Data(array $correction_Or_Rescind_Data = array())
     {
@@ -149,14 +149,14 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
     /**
      * Add item to Correction_Or_Rescind_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType $item
-     * @return \StructType\Corrected_Or_Rescinded_Transaction_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType $item
+     * @return \WorkdayWsdl\\StructType\Corrected_Or_Rescinded_Transaction_DataType
      */
-    public function addToCorrection_Or_Rescind_Data(\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType $item)
+    public function addToCorrection_Or_Rescind_Data(\WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Correction_Or_Rescind_Data property can only contain items of type \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Correction_Or_Rescind_Data property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Correction_Or_Rescind_Data[] = $item;
         return $this;
@@ -167,7 +167,7 @@ class Corrected_Or_Rescinded_Transaction_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Corrected_Or_Rescinded_Transaction_DataType
+     * @return \WorkdayWsdl\\StructType\Corrected_Or_Rescinded_Transaction_DataType
      */
     public static function __set_state(array $array)
     {

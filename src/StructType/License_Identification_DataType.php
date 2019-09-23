@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class License_Identification_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\License_IDType[]
+     * @var \WorkdayWsdl\\StructType\License_IDType[]
      */
     public $License_ID;
     /**
@@ -32,7 +32,7 @@ class License_Identification_DataType extends AbstractStructBase
      * Constructor method for License_Identification_DataType
      * @uses License_Identification_DataType::setLicense_ID()
      * @uses License_Identification_DataType::setReplace_All()
-     * @param \StructType\License_IDType[] $license_ID
+     * @param \WorkdayWsdl\\StructType\License_IDType[] $license_ID
      * @param bool $replace_All
      */
     public function __construct(array $license_ID = array(), $replace_All = null)
@@ -43,7 +43,7 @@ class License_Identification_DataType extends AbstractStructBase
     }
     /**
      * Get License_ID value
-     * @return \StructType\License_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\License_IDType[]|null
      */
     public function getLicense_ID()
     {
@@ -61,12 +61,12 @@ class License_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $license_Identification_DataTypeLicense_IDItem) {
             // validation for constraint: itemType
-            if (!$license_Identification_DataTypeLicense_IDItem instanceof \StructType\License_IDType) {
+            if (!$license_Identification_DataTypeLicense_IDItem instanceof \WorkdayWsdl\\StructType\License_IDType) {
                 $invalidValues[] = is_object($license_Identification_DataTypeLicense_IDItem) ? get_class($license_Identification_DataTypeLicense_IDItem) : sprintf('%s(%s)', gettype($license_Identification_DataTypeLicense_IDItem), var_export($license_Identification_DataTypeLicense_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The License_ID property can only contain items of type \StructType\License_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The License_ID property can only contain items of type \WorkdayWsdl\\StructType\License_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class License_Identification_DataType extends AbstractStructBase
     /**
      * Set License_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\License_IDType[] $license_ID
-     * @return \StructType\License_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\License_IDType[] $license_ID
+     * @return \WorkdayWsdl\\StructType\License_Identification_DataType
      */
     public function setLicense_ID(array $license_ID = array())
     {
@@ -89,14 +89,14 @@ class License_Identification_DataType extends AbstractStructBase
     /**
      * Add item to License_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\License_IDType $item
-     * @return \StructType\License_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\License_IDType $item
+     * @return \WorkdayWsdl\\StructType\License_Identification_DataType
      */
-    public function addToLicense_ID(\StructType\License_IDType $item)
+    public function addToLicense_ID(\WorkdayWsdl\\StructType\License_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\License_IDType) {
-            throw new \InvalidArgumentException(sprintf('The License_ID property can only contain items of type \StructType\License_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\License_IDType) {
+            throw new \InvalidArgumentException(sprintf('The License_ID property can only contain items of type \WorkdayWsdl\\StructType\License_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->License_ID[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class License_Identification_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\License_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identification_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -129,7 +129,7 @@ class License_Identification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\License_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identification_DataType
      */
     public static function __set_state(array $array)
     {

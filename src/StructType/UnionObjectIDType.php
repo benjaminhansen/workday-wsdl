@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class UnionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\UnionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\UnionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\UnionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\UnionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\UnionObjectIDType
+     * @return \WorkdayWsdl\\StructType\UnionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\UnionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\UnionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\UnionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\UnionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\UnionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\UnionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class UnionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\UnionObjectIDType
+     * @return \WorkdayWsdl\\StructType\UnionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class UnionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UnionObjectIDType
+     * @return \WorkdayWsdl\\StructType\UnionObjectIDType
      */
     public static function __set_state(array $array)
     {

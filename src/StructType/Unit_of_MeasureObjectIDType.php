@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Unit_of_MeasureObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Unit_of_MeasureReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Unit_of_MeasureReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Unit_of_MeasureReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Unit_of_MeasureReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Unit_of_MeasureObjectIDType
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Unit_of_MeasureReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Unit_of_MeasureReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Unit_of_MeasureReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Unit_of_MeasureReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Unit_of_MeasureReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Unit_of_MeasureReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Unit_of_MeasureObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Unit_of_MeasureObjectIDType
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Unit_of_MeasureObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Unit_of_MeasureObjectIDType
+     * @return \WorkdayWsdl\\StructType\Unit_of_MeasureObjectIDType
      */
     public static function __set_state(array $array)
     {

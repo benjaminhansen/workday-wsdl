@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Educational_Taxonomy_CodeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
      * Constructor method for Educational_Taxonomy_CodeObjectType
      * @uses Educational_Taxonomy_CodeObjectType::setID()
      * @uses Educational_Taxonomy_CodeObjectType::setDescriptor()
-     * @param \StructType\Educational_Taxonomy_CodeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Educational_Taxonomy_CodeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $educational_Taxonomy_CodeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$educational_Taxonomy_CodeObjectTypeIDItem instanceof \StructType\Educational_Taxonomy_CodeObjectIDType) {
+            if (!$educational_Taxonomy_CodeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType) {
                 $invalidValues[] = is_object($educational_Taxonomy_CodeObjectTypeIDItem) ? get_class($educational_Taxonomy_CodeObjectTypeIDItem) : sprintf('%s(%s)', gettype($educational_Taxonomy_CodeObjectTypeIDItem), var_export($educational_Taxonomy_CodeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Educational_Taxonomy_CodeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Educational_Taxonomy_CodeObjectIDType[] $iD
-     * @return \StructType\Educational_Taxonomy_CodeObjectType
+     * @param \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Educational_Taxonomy_CodeObjectIDType $item
-     * @return \StructType\Educational_Taxonomy_CodeObjectType
+     * @param \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectType
      */
-    public function addToID(\StructType\Educational_Taxonomy_CodeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Educational_Taxonomy_CodeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Educational_Taxonomy_CodeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Educational_Taxonomy_CodeObjectType
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Educational_Taxonomy_CodeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Educational_Taxonomy_CodeObjectType
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectType
      */
     public static function __set_state(array $array)
     {

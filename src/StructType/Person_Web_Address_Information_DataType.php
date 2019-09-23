@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_Web_Address_DataType[]
+     * @var \WorkdayWsdl\\StructType\Person_Web_Address_DataType[]
      */
     public $Person_Web_Address_Data;
     /**
@@ -34,7 +34,7 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
      * Constructor method for Person_Web_Address_Information_DataType
      * @uses Person_Web_Address_Information_DataType::setPerson_Web_Address_Data()
      * @uses Person_Web_Address_Information_DataType::setReplace_All()
-     * @param \StructType\Person_Web_Address_DataType[] $person_Web_Address_Data
+     * @param \WorkdayWsdl\\StructType\Person_Web_Address_DataType[] $person_Web_Address_Data
      * @param bool $replace_All
      */
     public function __construct(array $person_Web_Address_Data = array(), $replace_All = null)
@@ -45,7 +45,7 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Web_Address_Data value
-     * @return \StructType\Person_Web_Address_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType[]|null
      */
     public function getPerson_Web_Address_Data()
     {
@@ -63,12 +63,12 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Web_Address_Information_DataTypePerson_Web_Address_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Web_Address_Information_DataTypePerson_Web_Address_DataItem instanceof \StructType\Person_Web_Address_DataType) {
+            if (!$person_Web_Address_Information_DataTypePerson_Web_Address_DataItem instanceof \WorkdayWsdl\\StructType\Person_Web_Address_DataType) {
                 $invalidValues[] = is_object($person_Web_Address_Information_DataTypePerson_Web_Address_DataItem) ? get_class($person_Web_Address_Information_DataTypePerson_Web_Address_DataItem) : sprintf('%s(%s)', gettype($person_Web_Address_Information_DataTypePerson_Web_Address_DataItem), var_export($person_Web_Address_Information_DataTypePerson_Web_Address_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Web_Address_Data property can only contain items of type \StructType\Person_Web_Address_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Web_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Web_Address_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -76,8 +76,8 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
     /**
      * Set Person_Web_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Web_Address_DataType[] $person_Web_Address_Data
-     * @return \StructType\Person_Web_Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Web_Address_DataType[] $person_Web_Address_Data
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType
      */
     public function setPerson_Web_Address_Data(array $person_Web_Address_Data = array())
     {
@@ -91,14 +91,14 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
     /**
      * Add item to Person_Web_Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Web_Address_DataType $item
-     * @return \StructType\Person_Web_Address_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Web_Address_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType
      */
-    public function addToPerson_Web_Address_Data(\StructType\Person_Web_Address_DataType $item)
+    public function addToPerson_Web_Address_Data(\WorkdayWsdl\\StructType\Person_Web_Address_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_Web_Address_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Web_Address_Data property can only contain items of type \StructType\Person_Web_Address_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_Web_Address_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Web_Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Web_Address_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Web_Address_Data[] = $item;
         return $this;
@@ -114,7 +114,7 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Person_Web_Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -131,7 +131,7 @@ class Person_Web_Address_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Web_Address_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType
      */
     public static function __set_state(array $array)
     {

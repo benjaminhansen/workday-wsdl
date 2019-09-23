@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Academic_Appointee_EnabledObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Academic_Appointee_EnabledReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Academic_Appointee_EnabledReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Academic_Appointee_EnabledReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Academic_Appointee_EnabledReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Academic_Appointee_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Academic_Appointee_EnabledReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Academic_Appointee_EnabledReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Academic_Appointee_EnabledReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Academic_Appointee_EnabledReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Academic_Appointee_EnabledReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Academic_Appointee_EnabledReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Academic_Appointee_EnabledObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Academic_Appointee_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Academic_Appointee_EnabledObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointee_EnabledObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectIDType
      */
     public static function __set_state(array $array)
     {

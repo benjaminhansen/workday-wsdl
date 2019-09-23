@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Benefit_Provider_Identifier_TypeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Benefit_Provider_Identifier_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Benefit_Provider_Identifier_TypeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Benefit_Provider_Identifier_TypeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Benefit_Provider_Identifier_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Benefit_Provider_Identifier_TypeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Benefit_Provider_Identifier_TypeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectIDType
      */
     public static function __set_state(array $array)
     {

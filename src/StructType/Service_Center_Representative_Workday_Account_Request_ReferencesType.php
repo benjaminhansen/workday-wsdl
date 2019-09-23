@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
      * Meta information extracted from the WSDL
      * - documentation: Service Center Representative Reference
      * - maxOccurs: unbounded
-     * @var \StructType\Service_Center_RepresentativeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType[]
      */
     public $Service_Center_Representative_Workday_Account_Reference;
     /**
      * Constructor method for
      * Service_Center_Representative_Workday_Account_Request_ReferencesType
      * @uses Service_Center_Representative_Workday_Account_Request_ReferencesType::setService_Center_Representative_Workday_Account_Reference()
-     * @param \StructType\Service_Center_RepresentativeObjectType[] $service_Center_Representative_Workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType[] $service_Center_Representative_Workday_Account_Reference
      */
     public function __construct(array $service_Center_Representative_Workday_Account_Reference = array())
     {
@@ -34,7 +34,7 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
     }
     /**
      * Get Service_Center_Representative_Workday_Account_Reference value
-     * @return \StructType\Service_Center_RepresentativeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType[]|null
      */
     public function getService_Center_Representative_Workday_Account_Reference()
     {
@@ -52,12 +52,12 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
         $invalidValues = [];
         foreach ($values as $service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem instanceof \StructType\Service_Center_RepresentativeObjectType) {
+            if (!$service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType) {
                 $invalidValues[] = is_object($service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem) ? get_class($service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem) : sprintf('%s(%s)', gettype($service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem), var_export($service_Center_Representative_Workday_Account_Request_ReferencesTypeService_Center_Representative_Workday_Account_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Service_Center_Representative_Workday_Account_Reference property can only contain items of type \StructType\Service_Center_RepresentativeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Service_Center_Representative_Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
     /**
      * Set Service_Center_Representative_Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeObjectType[] $service_Center_Representative_Workday_Account_Reference
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType[] $service_Center_Representative_Workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
      */
     public function setService_Center_Representative_Workday_Account_Reference(array $service_Center_Representative_Workday_Account_Reference = array())
     {
@@ -80,14 +80,14 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
     /**
      * Add item to Service_Center_Representative_Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeObjectType $item
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
      */
-    public function addToService_Center_Representative_Workday_Account_Reference(\StructType\Service_Center_RepresentativeObjectType $item)
+    public function addToService_Center_Representative_Workday_Account_Reference(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service_Center_RepresentativeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative_Workday_Account_Reference property can only contain items of type \StructType\Service_Center_RepresentativeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Service_Center_Representative_Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Service_Center_Representative_Workday_Account_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Service_Center_Representative_Workday_Account_Request_ReferencesType exten
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

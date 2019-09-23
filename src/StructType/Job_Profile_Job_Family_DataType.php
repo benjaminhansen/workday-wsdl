@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
      * The Job_Family_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Job Family.
-     * @var \StructType\Job_Family_BaseObjectType
+     * @var \WorkdayWsdl\\StructType\Job_Family_BaseObjectType
      */
     public $Job_Family_Reference;
     /**
@@ -30,10 +30,10 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
      * Constructor method for Job_Profile_Job_Family_DataType
      * @uses Job_Profile_Job_Family_DataType::setJob_Family_Reference()
      * @uses Job_Profile_Job_Family_DataType::setDelete()
-     * @param \StructType\Job_Family_BaseObjectType $job_Family_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectType $job_Family_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Job_Family_BaseObjectType $job_Family_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_Family_BaseObjectType $job_Family_Reference = null, $delete = null)
     {
         $this
             ->setJob_Family_Reference($job_Family_Reference)
@@ -41,7 +41,7 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Reference value
-     * @return \StructType\Job_Family_BaseObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType|null
      */
     public function getJob_Family_Reference()
     {
@@ -49,10 +49,10 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Reference value
-     * @param \StructType\Job_Family_BaseObjectType $job_Family_Reference
-     * @return \StructType\Job_Profile_Job_Family_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectType $job_Family_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType
      */
-    public function setJob_Family_Reference(\StructType\Job_Family_BaseObjectType $job_Family_Reference = null)
+    public function setJob_Family_Reference(\WorkdayWsdl\\StructType\Job_Family_BaseObjectType $job_Family_Reference = null)
     {
         $this->Job_Family_Reference = $job_Family_Reference;
         return $this;
@@ -68,7 +68,7 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Job_Profile_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType
      */
     public function setDelete($delete = null)
     {
@@ -85,7 +85,7 @@ class Job_Profile_Job_Family_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType
      */
     public static function __set_state(array $array)
     {

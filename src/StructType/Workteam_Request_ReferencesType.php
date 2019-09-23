@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Workteam Request References
      * - maxOccurs: unbounded
-     * @var \StructType\WorkteamObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkteamObjectType[]
      */
     public $Workteam_Reference;
     /**
      * Constructor method for Workteam_Request_ReferencesType
      * @uses Workteam_Request_ReferencesType::setWorkteam_Reference()
-     * @param \StructType\WorkteamObjectType[] $workteam_Reference
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType[] $workteam_Reference
      */
     public function __construct(array $workteam_Reference = array())
     {
@@ -32,7 +32,7 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Workteam_Reference value
-     * @return \StructType\WorkteamObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkteamObjectType[]|null
      */
     public function getWorkteam_Reference()
     {
@@ -50,12 +50,12 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workteam_Request_ReferencesTypeWorkteam_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$workteam_Request_ReferencesTypeWorkteam_ReferenceItem instanceof \StructType\WorkteamObjectType) {
+            if (!$workteam_Request_ReferencesTypeWorkteam_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkteamObjectType) {
                 $invalidValues[] = is_object($workteam_Request_ReferencesTypeWorkteam_ReferenceItem) ? get_class($workteam_Request_ReferencesTypeWorkteam_ReferenceItem) : sprintf('%s(%s)', gettype($workteam_Request_ReferencesTypeWorkteam_ReferenceItem), var_export($workteam_Request_ReferencesTypeWorkteam_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workteam_Reference property can only contain items of type \StructType\WorkteamObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workteam_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkteamObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Workteam_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkteamObjectType[] $workteam_Reference
-     * @return \StructType\Workteam_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType[] $workteam_Reference
+     * @return \WorkdayWsdl\\StructType\Workteam_Request_ReferencesType
      */
     public function setWorkteam_Reference(array $workteam_Reference = array())
     {
@@ -78,14 +78,14 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Workteam_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkteamObjectType $item
-     * @return \StructType\Workteam_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $item
+     * @return \WorkdayWsdl\\StructType\Workteam_Request_ReferencesType
      */
-    public function addToWorkteam_Reference(\StructType\WorkteamObjectType $item)
+    public function addToWorkteam_Reference(\WorkdayWsdl\\StructType\WorkteamObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkteamObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workteam_Reference property can only contain items of type \StructType\WorkteamObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkteamObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workteam_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkteamObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workteam_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Workteam_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workteam_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Workteam_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

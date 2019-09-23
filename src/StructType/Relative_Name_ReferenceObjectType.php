@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Relative_Name_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Relative_Name_ReferenceObjectType
      * @uses Relative_Name_ReferenceObjectType::setID()
      * @uses Relative_Name_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Relative_Name_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Relative_Name_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $relative_Name_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$relative_Name_ReferenceObjectTypeIDItem instanceof \StructType\Relative_Name_ReferenceObjectIDType) {
+            if (!$relative_Name_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($relative_Name_ReferenceObjectTypeIDItem) ? get_class($relative_Name_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($relative_Name_ReferenceObjectTypeIDItem), var_export($relative_Name_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Relative_Name_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relative_Name_ReferenceObjectIDType[] $iD
-     * @return \StructType\Relative_Name_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relative_Name_ReferenceObjectIDType $item
-     * @return \StructType\Relative_Name_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType
      */
-    public function addToID(\StructType\Relative_Name_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Relative_Name_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Relative_Name_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Relative_Name_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Relative_Name_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Relative_Name_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
      * - documentation: The preferred language for the emergency contact.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LanguageObjectType[]
+     * @var \WorkdayWsdl\\StructType\LanguageObjectType[]
      */
     public $Language_Reference;
     /**
@@ -35,7 +35,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The order of priority for the emergency contact.
      * - minOccurs: 0
-     * @var \StructType\Emergency_Contact_PriorityObjectType
+     * @var \WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType
      */
     public $Emergency_Contact_Priority_Reference;
     /**
@@ -62,12 +62,12 @@ class Emergency_Contact_DataType extends AbstractStructBase
      * @uses Emergency_Contact_DataType::setPrimary()
      * @uses Emergency_Contact_DataType::setPriority()
      * @param string $emergency_Contact_ID
-     * @param \StructType\LanguageObjectType[] $language_Reference
-     * @param \StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType[] $language_Reference
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference
      * @param bool $primary
      * @param float $priority
      */
-    public function __construct($emergency_Contact_ID = null, array $language_Reference = array(), \StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference = null, $primary = null, $priority = null)
+    public function __construct($emergency_Contact_ID = null, array $language_Reference = array(), \WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference = null, $primary = null, $priority = null)
     {
         $this
             ->setEmergency_Contact_ID($emergency_Contact_ID)
@@ -87,7 +87,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Emergency_Contact_ID value
      * @param string $emergency_Contact_ID
-     * @return \StructType\Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
     public function setEmergency_Contact_ID($emergency_Contact_ID = null)
     {
@@ -100,7 +100,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
     }
     /**
      * Get Language_Reference value
-     * @return \StructType\LanguageObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LanguageObjectType[]|null
      */
     public function getLanguage_Reference()
     {
@@ -118,12 +118,12 @@ class Emergency_Contact_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $emergency_Contact_DataTypeLanguage_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$emergency_Contact_DataTypeLanguage_ReferenceItem instanceof \StructType\LanguageObjectType) {
+            if (!$emergency_Contact_DataTypeLanguage_ReferenceItem instanceof \WorkdayWsdl\\StructType\LanguageObjectType) {
                 $invalidValues[] = is_object($emergency_Contact_DataTypeLanguage_ReferenceItem) ? get_class($emergency_Contact_DataTypeLanguage_ReferenceItem) : sprintf('%s(%s)', gettype($emergency_Contact_DataTypeLanguage_ReferenceItem), var_export($emergency_Contact_DataTypeLanguage_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language_Reference property can only contain items of type \StructType\LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -131,8 +131,8 @@ class Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LanguageObjectType[] $language_Reference
-     * @return \StructType\Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType[] $language_Reference
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
     public function setLanguage_Reference(array $language_Reference = array())
     {
@@ -146,21 +146,21 @@ class Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Add item to Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LanguageObjectType $item
-     * @return \StructType\Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType $item
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
-    public function addToLanguage_Reference(\StructType\LanguageObjectType $item)
+    public function addToLanguage_Reference(\WorkdayWsdl\\StructType\LanguageObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LanguageObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Language_Reference property can only contain items of type \StructType\LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LanguageObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language_Reference[] = $item;
         return $this;
     }
     /**
      * Get Emergency_Contact_Priority_Reference value
-     * @return \StructType\Emergency_Contact_PriorityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType|null
      */
     public function getEmergency_Contact_Priority_Reference()
     {
@@ -168,10 +168,10 @@ class Emergency_Contact_DataType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact_Priority_Reference value
-     * @param \StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference
-     * @return \StructType\Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
-    public function setEmergency_Contact_Priority_Reference(\StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference = null)
+    public function setEmergency_Contact_Priority_Reference(\WorkdayWsdl\\StructType\Emergency_Contact_PriorityObjectType $emergency_Contact_Priority_Reference = null)
     {
         $this->Emergency_Contact_Priority_Reference = $emergency_Contact_Priority_Reference;
         return $this;
@@ -187,7 +187,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Primary value
      * @param bool $primary
-     * @return \StructType\Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
     public function setPrimary($primary = null)
     {
@@ -209,7 +209,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Priority value
      * @param float $priority
-     * @return \StructType\Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
     public function setPriority($priority = null)
     {
@@ -234,7 +234,7 @@ class Emergency_Contact_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_DataType
      */
     public static function __set_state(array $array)
     {

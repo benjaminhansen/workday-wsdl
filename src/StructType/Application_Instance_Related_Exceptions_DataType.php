@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
      * - documentation: Exceptions Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Application_Instance_Exceptions_DataType[]
+     * @var \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType[]
      */
     public $Exceptions_Data;
     /**
      * Constructor method for Application_Instance_Related_Exceptions_DataType
      * @uses Application_Instance_Related_Exceptions_DataType::setExceptions_Data()
-     * @param \StructType\Application_Instance_Exceptions_DataType[] $exceptions_Data
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType[] $exceptions_Data
      */
     public function __construct(array $exceptions_Data = array())
     {
@@ -34,7 +34,7 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
     }
     /**
      * Get Exceptions_Data value
-     * @return \StructType\Application_Instance_Exceptions_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType[]|null
      */
     public function getExceptions_Data()
     {
@@ -52,12 +52,12 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $application_Instance_Related_Exceptions_DataTypeExceptions_DataItem) {
             // validation for constraint: itemType
-            if (!$application_Instance_Related_Exceptions_DataTypeExceptions_DataItem instanceof \StructType\Application_Instance_Exceptions_DataType) {
+            if (!$application_Instance_Related_Exceptions_DataTypeExceptions_DataItem instanceof \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType) {
                 $invalidValues[] = is_object($application_Instance_Related_Exceptions_DataTypeExceptions_DataItem) ? get_class($application_Instance_Related_Exceptions_DataTypeExceptions_DataItem) : sprintf('%s(%s)', gettype($application_Instance_Related_Exceptions_DataTypeExceptions_DataItem), var_export($application_Instance_Related_Exceptions_DataTypeExceptions_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Exceptions_Data property can only contain items of type \StructType\Application_Instance_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Exceptions_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
     /**
      * Set Exceptions_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Exceptions_DataType[] $exceptions_Data
-     * @return \StructType\Application_Instance_Related_Exceptions_DataType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType[] $exceptions_Data
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType
      */
     public function setExceptions_Data(array $exceptions_Data = array())
     {
@@ -80,14 +80,14 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
     /**
      * Add item to Exceptions_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Exceptions_DataType $item
-     * @return \StructType\Application_Instance_Related_Exceptions_DataType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType $item
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType
      */
-    public function addToExceptions_Data(\StructType\Application_Instance_Exceptions_DataType $item)
+    public function addToExceptions_Data(\WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Application_Instance_Exceptions_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Exceptions_Data property can only contain items of type \StructType\Application_Instance_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Exceptions_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Exceptions_Data[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Application_Instance_Related_Exceptions_DataType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Application_Instance_Related_Exceptions_DataType
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType
      */
     public static function __set_state(array $array)
     {

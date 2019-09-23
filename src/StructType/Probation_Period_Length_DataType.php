@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class Probation_Period_Length_DataType extends AbstractStructBase
      * The Unit_Reference
      * Meta information extracted from the WSDL
      * - documentation: Unit
-     * @var \StructType\Date_And_Time_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType
      */
     public $Unit_Reference;
     /**
@@ -36,9 +36,9 @@ class Probation_Period_Length_DataType extends AbstractStructBase
      * @uses Probation_Period_Length_DataType::setDuration()
      * @uses Probation_Period_Length_DataType::setUnit_Reference()
      * @param float $duration
-     * @param \StructType\Date_And_Time_UnitObjectType $unit_Reference
+     * @param \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType $unit_Reference
      */
-    public function __construct($duration = null, \StructType\Date_And_Time_UnitObjectType $unit_Reference = null)
+    public function __construct($duration = null, \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType $unit_Reference = null)
     {
         $this
             ->setDuration($duration)
@@ -55,7 +55,7 @@ class Probation_Period_Length_DataType extends AbstractStructBase
     /**
      * Set Duration value
      * @param float $duration
-     * @return \StructType\Probation_Period_Length_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Period_Length_DataType
      */
     public function setDuration($duration = null)
     {
@@ -80,7 +80,7 @@ class Probation_Period_Length_DataType extends AbstractStructBase
     }
     /**
      * Get Unit_Reference value
-     * @return \StructType\Date_And_Time_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType|null
      */
     public function getUnit_Reference()
     {
@@ -88,10 +88,10 @@ class Probation_Period_Length_DataType extends AbstractStructBase
     }
     /**
      * Set Unit_Reference value
-     * @param \StructType\Date_And_Time_UnitObjectType $unit_Reference
-     * @return \StructType\Probation_Period_Length_DataType
+     * @param \WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType $unit_Reference
+     * @return \WorkdayWsdl\\StructType\Probation_Period_Length_DataType
      */
-    public function setUnit_Reference(\StructType\Date_And_Time_UnitObjectType $unit_Reference = null)
+    public function setUnit_Reference(\WorkdayWsdl\\StructType\Date_And_Time_UnitObjectType $unit_Reference = null)
     {
         $this->Unit_Reference = $unit_Reference;
         return $this;
@@ -102,7 +102,7 @@ class Probation_Period_Length_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Probation_Period_Length_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Period_Length_DataType
      */
     public static function __set_state(array $array)
     {

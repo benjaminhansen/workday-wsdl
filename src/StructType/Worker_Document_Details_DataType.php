@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
      * The Document_Category_Reference
      * Meta information extracted from the WSDL
      * - documentation: The category that the worker document is for.
-     * @var \StructType\Document_Category__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Document_Category__All_ObjectType
      */
     public $Document_Category_Reference;
     /**
@@ -53,12 +53,12 @@ class Worker_Document_Details_DataType extends AbstractStructBase
      * @uses Worker_Document_Details_DataType::setFilename()
      * @uses Worker_Document_Details_DataType::setComment()
      * @uses Worker_Document_Details_DataType::setFile()
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
      * @param string $filename
      * @param string $comment
      * @param string $file
      */
-    public function __construct(\StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $filename = null, $comment = null, $file = null)
+    public function __construct(\WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $filename = null, $comment = null, $file = null)
     {
         $this
             ->setDocument_Category_Reference($document_Category_Reference)
@@ -68,7 +68,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
     }
     /**
      * Get Document_Category_Reference value
-     * @return \StructType\Document_Category__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Document_Category__All_ObjectType|null
      */
     public function getDocument_Category_Reference()
     {
@@ -76,10 +76,10 @@ class Worker_Document_Details_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Category_Reference value
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
-     * @return \StructType\Worker_Document_Details_DataType
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
-    public function setDocument_Category_Reference(\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
+    public function setDocument_Category_Reference(\WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
     {
         $this->Document_Category_Reference = $document_Category_Reference;
         return $this;
@@ -95,7 +95,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
     /**
      * Set Filename value
      * @param string $filename
-     * @return \StructType\Worker_Document_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
     public function setFilename($filename = null)
     {
@@ -121,7 +121,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Worker_Document_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
     public function setComment($comment = null)
     {
@@ -143,7 +143,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Worker_Document_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
     public function setFile($file = null)
     {
@@ -160,7 +160,7 @@ class Worker_Document_Details_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Document_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Details_DataType
      */
     public static function __set_state(array $array)
     {

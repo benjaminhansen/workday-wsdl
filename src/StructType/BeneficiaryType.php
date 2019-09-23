@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,24 +16,24 @@ class BeneficiaryType extends AbstractStructBase
      * The Beneficiary_Reference
      * Meta information extracted from the WSDL
      * - documentation: A reference to the beneficiary.
-     * @var \StructType\BeneficiaryObjectType
+     * @var \WorkdayWsdl\\StructType\BeneficiaryObjectType
      */
     public $Beneficiary_Reference;
     /**
      * The Beneficiary_Data
      * Meta information extracted from the WSDL
      * - documentation: Contains the details about the beneficiary.
-     * @var \StructType\Beneficiary_DataType
+     * @var \WorkdayWsdl\\StructType\Beneficiary_DataType
      */
     public $Beneficiary_Data;
     /**
      * Constructor method for BeneficiaryType
      * @uses BeneficiaryType::setBeneficiary_Reference()
      * @uses BeneficiaryType::setBeneficiary_Data()
-     * @param \StructType\BeneficiaryObjectType $beneficiary_Reference
-     * @param \StructType\Beneficiary_DataType $beneficiary_Data
+     * @param \WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference
+     * @param \WorkdayWsdl\\StructType\Beneficiary_DataType $beneficiary_Data
      */
-    public function __construct(\StructType\BeneficiaryObjectType $beneficiary_Reference = null, \StructType\Beneficiary_DataType $beneficiary_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference = null, \WorkdayWsdl\\StructType\Beneficiary_DataType $beneficiary_Data = null)
     {
         $this
             ->setBeneficiary_Reference($beneficiary_Reference)
@@ -41,7 +41,7 @@ class BeneficiaryType extends AbstractStructBase
     }
     /**
      * Get Beneficiary_Reference value
-     * @return \StructType\BeneficiaryObjectType|null
+     * @return \WorkdayWsdl\\StructType\BeneficiaryObjectType|null
      */
     public function getBeneficiary_Reference()
     {
@@ -49,17 +49,17 @@ class BeneficiaryType extends AbstractStructBase
     }
     /**
      * Set Beneficiary_Reference value
-     * @param \StructType\BeneficiaryObjectType $beneficiary_Reference
-     * @return \StructType\BeneficiaryType
+     * @param \WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference
+     * @return \WorkdayWsdl\\StructType\BeneficiaryType
      */
-    public function setBeneficiary_Reference(\StructType\BeneficiaryObjectType $beneficiary_Reference = null)
+    public function setBeneficiary_Reference(\WorkdayWsdl\\StructType\BeneficiaryObjectType $beneficiary_Reference = null)
     {
         $this->Beneficiary_Reference = $beneficiary_Reference;
         return $this;
     }
     /**
      * Get Beneficiary_Data value
-     * @return \StructType\Beneficiary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Beneficiary_DataType|null
      */
     public function getBeneficiary_Data()
     {
@@ -67,10 +67,10 @@ class BeneficiaryType extends AbstractStructBase
     }
     /**
      * Set Beneficiary_Data value
-     * @param \StructType\Beneficiary_DataType $beneficiary_Data
-     * @return \StructType\BeneficiaryType
+     * @param \WorkdayWsdl\\StructType\Beneficiary_DataType $beneficiary_Data
+     * @return \WorkdayWsdl\\StructType\BeneficiaryType
      */
-    public function setBeneficiary_Data(\StructType\Beneficiary_DataType $beneficiary_Data = null)
+    public function setBeneficiary_Data(\WorkdayWsdl\\StructType\Beneficiary_DataType $beneficiary_Data = null)
     {
         $this->Beneficiary_Data = $beneficiary_Data;
         return $this;
@@ -81,7 +81,7 @@ class BeneficiaryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BeneficiaryType
+     * @return \WorkdayWsdl\\StructType\BeneficiaryType
      */
     public static function __set_state(array $array)
     {

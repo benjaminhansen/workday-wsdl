@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Job_Profile_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Get_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Get_DataType[]
      */
     public $Job_Profile;
     /**
      * Constructor method for Job_Profile_Response_DataType
      * @uses Job_Profile_Response_DataType::setJob_Profile()
-     * @param \StructType\Job_Profile_Get_DataType[] $job_Profile
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Get_DataType[] $job_Profile
      */
     public function __construct(array $job_Profile = array())
     {
@@ -33,7 +33,7 @@ class Job_Profile_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Profile value
-     * @return \StructType\Job_Profile_Get_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Get_DataType[]|null
      */
     public function getJob_Profile()
     {
@@ -51,12 +51,12 @@ class Job_Profile_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Response_DataTypeJob_ProfileItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Response_DataTypeJob_ProfileItem instanceof \StructType\Job_Profile_Get_DataType) {
+            if (!$job_Profile_Response_DataTypeJob_ProfileItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Get_DataType) {
                 $invalidValues[] = is_object($job_Profile_Response_DataTypeJob_ProfileItem) ? get_class($job_Profile_Response_DataTypeJob_ProfileItem) : sprintf('%s(%s)', gettype($job_Profile_Response_DataTypeJob_ProfileItem), var_export($job_Profile_Response_DataTypeJob_ProfileItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile property can only contain items of type \StructType\Job_Profile_Get_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Get_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Job_Profile_Response_DataType extends AbstractStructBase
     /**
      * Set Job_Profile value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Get_DataType[] $job_Profile
-     * @return \StructType\Job_Profile_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Get_DataType[] $job_Profile
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_DataType
      */
     public function setJob_Profile(array $job_Profile = array())
     {
@@ -79,14 +79,14 @@ class Job_Profile_Response_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Get_DataType $item
-     * @return \StructType\Job_Profile_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Get_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_DataType
      */
-    public function addToJob_Profile(\StructType\Job_Profile_Get_DataType $item)
+    public function addToJob_Profile(\WorkdayWsdl\\StructType\Job_Profile_Get_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Get_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile property can only contain items of type \StructType\Job_Profile_Get_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Get_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Get_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Job_Profile_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Response_DataType
      */
     public static function __set_state(array $array)
     {

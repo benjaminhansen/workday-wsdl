@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
      * Constructor method for Committee_Meeting_Agenda_Item_VoteObjectType
      * @uses Committee_Meeting_Agenda_Item_VoteObjectType::setID()
      * @uses Committee_Meeting_Agenda_Item_VoteObjectType::setDescriptor()
-     * @param \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Agenda_Item_VoteObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Agenda_Item_VoteObjectTypeIDItem instanceof \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType) {
+            if (!$committee_Meeting_Agenda_Item_VoteObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType) {
                 $invalidValues[] = is_object($committee_Meeting_Agenda_Item_VoteObjectTypeIDItem) ? get_class($committee_Meeting_Agenda_Item_VoteObjectTypeIDItem) : sprintf('%s(%s)', gettype($committee_Meeting_Agenda_Item_VoteObjectTypeIDItem), var_export($committee_Meeting_Agenda_Item_VoteObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[] $iD
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType $item
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType
      */
-    public function addToID(\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Committee_Meeting_Agenda_Item_VoteObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_VoteObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_VoteObjectType
      */
     public static function __set_state(array $array)
     {

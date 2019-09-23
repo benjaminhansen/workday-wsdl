@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_Track_Custom_Object_DataType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType[]
      */
     public $Academic_Appointment_Track_Additional_Data;
     /**
      * Constructor method for
      * Academic_Appointment_Track_Additional_Data_Response_DataType
      * @uses Academic_Appointment_Track_Additional_Data_Response_DataType::setAcademic_Appointment_Track_Additional_Data()
-     * @param \StructType\Academic_Appointment_Track_Custom_Object_DataType[] $academic_Appointment_Track_Additional_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType[] $academic_Appointment_Track_Additional_Data
      */
     public function __construct(array $academic_Appointment_Track_Additional_Data = array())
     {
@@ -34,7 +34,7 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
     }
     /**
      * Get Academic_Appointment_Track_Additional_Data value
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType[]|null
      */
     public function getAcademic_Appointment_Track_Additional_Data()
     {
@@ -52,12 +52,12 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
         $invalidValues = [];
         foreach ($values as $academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem instanceof \StructType\Academic_Appointment_Track_Custom_Object_DataType) {
+            if (!$academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem instanceof \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType) {
                 $invalidValues[] = is_object($academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem) ? get_class($academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem) : sprintf('%s(%s)', gettype($academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem), var_export($academic_Appointment_Track_Additional_Data_Response_DataTypeAcademic_Appointment_Track_Additional_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Appointment_Track_Additional_Data property can only contain items of type \StructType\Academic_Appointment_Track_Custom_Object_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Appointment_Track_Additional_Data property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
     /**
      * Set Academic_Appointment_Track_Additional_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_Track_Custom_Object_DataType[] $academic_Appointment_Track_Additional_Data
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType[] $academic_Appointment_Track_Additional_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
      */
     public function setAcademic_Appointment_Track_Additional_Data(array $academic_Appointment_Track_Additional_Data = array())
     {
@@ -80,14 +80,14 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
     /**
      * Add item to Academic_Appointment_Track_Additional_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_Track_Custom_Object_DataType $item
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
      */
-    public function addToAcademic_Appointment_Track_Additional_Data(\StructType\Academic_Appointment_Track_Custom_Object_DataType $item)
+    public function addToAcademic_Appointment_Track_Additional_Data(\WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Appointment_Track_Custom_Object_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Appointment_Track_Additional_Data property can only contain items of type \StructType\Academic_Appointment_Track_Custom_Object_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Appointment_Track_Additional_Data property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Appointment_Track_Additional_Data[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Academic_Appointment_Track_Additional_Data_Response_DataType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Additional_Data_Response_DataType
      */
     public static function __set_state(array $array)
     {

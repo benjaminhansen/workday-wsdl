@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
      * The Workteam_Reference
      * Meta information extracted from the WSDL
      * - documentation: The workteam to which a new member should be added.
-     * @var \StructType\WorkteamObjectType
+     * @var \WorkdayWsdl\\StructType\WorkteamObjectType
      */
     public $Workteam_Reference;
     /**
@@ -24,7 +24,7 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Information required for the workteam membership.
      * - maxOccurs: unbounded
-     * @var \StructType\Workteam_Membership_DataType[]
+     * @var \WorkdayWsdl\\StructType\Workteam_Membership_DataType[]
      */
     public $Workteam_Membership_Data;
     /**
@@ -39,11 +39,11 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
      * @uses Put_Workteam_Membership_RequestType::setWorkteam_Reference()
      * @uses Put_Workteam_Membership_RequestType::setWorkteam_Membership_Data()
      * @uses Put_Workteam_Membership_RequestType::setVersion()
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @param \StructType\Workteam_Membership_DataType[] $workteam_Membership_Data
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @param \WorkdayWsdl\\StructType\Workteam_Membership_DataType[] $workteam_Membership_Data
      * @param string $version
      */
-    public function __construct(\StructType\WorkteamObjectType $workteam_Reference = null, array $workteam_Membership_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null, array $workteam_Membership_Data = array(), $version = null)
     {
         $this
             ->setWorkteam_Reference($workteam_Reference)
@@ -52,7 +52,7 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Get Workteam_Reference value
-     * @return \StructType\WorkteamObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkteamObjectType|null
      */
     public function getWorkteam_Reference()
     {
@@ -60,17 +60,17 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Set Workteam_Reference value
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @return \StructType\Put_Workteam_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_RequestType
      */
-    public function setWorkteam_Reference(\StructType\WorkteamObjectType $workteam_Reference = null)
+    public function setWorkteam_Reference(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null)
     {
         $this->Workteam_Reference = $workteam_Reference;
         return $this;
     }
     /**
      * Get Workteam_Membership_Data value
-     * @return \StructType\Workteam_Membership_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType[]|null
      */
     public function getWorkteam_Membership_Data()
     {
@@ -88,12 +88,12 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem instanceof \StructType\Workteam_Membership_DataType) {
+            if (!$put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem instanceof \WorkdayWsdl\\StructType\Workteam_Membership_DataType) {
                 $invalidValues[] = is_object($put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem) ? get_class($put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem) : sprintf('%s(%s)', gettype($put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem), var_export($put_Workteam_Membership_RequestTypeWorkteam_Membership_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workteam_Membership_Data property can only contain items of type \StructType\Workteam_Membership_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workteam_Membership_Data property can only contain items of type \WorkdayWsdl\\StructType\Workteam_Membership_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -101,8 +101,8 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
     /**
      * Set Workteam_Membership_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workteam_Membership_DataType[] $workteam_Membership_Data
-     * @return \StructType\Put_Workteam_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Workteam_Membership_DataType[] $workteam_Membership_Data
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_RequestType
      */
     public function setWorkteam_Membership_Data(array $workteam_Membership_Data = array())
     {
@@ -116,14 +116,14 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
     /**
      * Add item to Workteam_Membership_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workteam_Membership_DataType $item
-     * @return \StructType\Put_Workteam_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Workteam_Membership_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_RequestType
      */
-    public function addToWorkteam_Membership_Data(\StructType\Workteam_Membership_DataType $item)
+    public function addToWorkteam_Membership_Data(\WorkdayWsdl\\StructType\Workteam_Membership_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workteam_Membership_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Workteam_Membership_Data property can only contain items of type \StructType\Workteam_Membership_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workteam_Membership_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Workteam_Membership_Data property can only contain items of type \WorkdayWsdl\\StructType\Workteam_Membership_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workteam_Membership_Data[] = $item;
         return $this;
@@ -139,7 +139,7 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Workteam_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_RequestType
      */
     public function setVersion($version = null)
     {
@@ -156,7 +156,7 @@ class Put_Workteam_Membership_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Workteam_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_Membership_RequestType
      */
     public static function __set_state(array $array)
     {

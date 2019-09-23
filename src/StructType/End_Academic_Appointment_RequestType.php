@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The End_Academic_Appointment_Data
-     * @var \StructType\End_Academic_Appointment_DataType
+     * @var \WorkdayWsdl\\StructType\End_Academic_Appointment_DataType
      */
     public $End_Academic_Appointment_Data;
     /**
@@ -36,11 +36,11 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
      * @uses End_Academic_Appointment_RequestType::setBusiness_Process_Parameters()
      * @uses End_Academic_Appointment_RequestType::setEnd_Academic_Appointment_Data()
      * @uses End_Academic_Appointment_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -49,7 +49,7 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -57,17 +57,17 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\End_Academic_Appointment_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\End_Academic_Appointment_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get End_Academic_Appointment_Data value
-     * @return \StructType\End_Academic_Appointment_DataType|null
+     * @return \WorkdayWsdl\\StructType\End_Academic_Appointment_DataType|null
      */
     public function getEnd_Academic_Appointment_Data()
     {
@@ -75,10 +75,10 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
     }
     /**
      * Set End_Academic_Appointment_Data value
-     * @param \StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data
-     * @return \StructType\End_Academic_Appointment_RequestType
+     * @param \WorkdayWsdl\\StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data
+     * @return \WorkdayWsdl\\StructType\End_Academic_Appointment_RequestType
      */
-    public function setEnd_Academic_Appointment_Data(\StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data = null)
+    public function setEnd_Academic_Appointment_Data(\WorkdayWsdl\\StructType\End_Academic_Appointment_DataType $end_Academic_Appointment_Data = null)
     {
         $this->End_Academic_Appointment_Data = $end_Academic_Appointment_Data;
         return $this;
@@ -94,7 +94,7 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\End_Academic_Appointment_RequestType
+     * @return \WorkdayWsdl\\StructType\End_Academic_Appointment_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class End_Academic_Appointment_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\End_Academic_Appointment_RequestType
+     * @return \WorkdayWsdl\\StructType\End_Academic_Appointment_RequestType
      */
     public static function __set_state(array $array)
     {

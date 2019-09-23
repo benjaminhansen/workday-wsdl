@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Academic Appointment business process.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Event_Reference;
     /**
@@ -25,7 +25,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Academic Appointee Reference relating to Appointment Business Process
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointee_EnabledObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType
      */
     public $Academic_Appointee_Reference;
     /**
@@ -33,7 +33,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Academic Appointment Track that the business process applies to.
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_TrackObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType
      */
     public $Academic_Appointment_Track_Reference;
     /**
@@ -49,12 +49,12 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
      * @uses Academic_Appointment_ResponseType::setAcademic_Appointee_Reference()
      * @uses Academic_Appointment_ResponseType::setAcademic_Appointment_Track_Reference()
      * @uses Academic_Appointment_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @param \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $event_Reference = null, \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null, \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null, \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null, \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $version = null)
     {
         $this
             ->setEvent_Reference($event_Reference)
@@ -64,7 +64,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
     }
     /**
      * Get Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEvent_Reference()
     {
@@ -72,17 +72,17 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
     }
     /**
      * Set Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @return \StructType\Academic_Appointment_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_ResponseType
      */
-    public function setEvent_Reference(\StructType\Unique_IdentifierObjectType $event_Reference = null)
+    public function setEvent_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null)
     {
         $this->Event_Reference = $event_Reference;
         return $this;
     }
     /**
      * Get Academic_Appointee_Reference value
-     * @return \StructType\Academic_Appointee_EnabledObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType|null
      */
     public function getAcademic_Appointee_Reference()
     {
@@ -90,17 +90,17 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
     }
     /**
      * Set Academic_Appointee_Reference value
-     * @param \StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
-     * @return \StructType\Academic_Appointment_ResponseType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_ResponseType
      */
-    public function setAcademic_Appointee_Reference(\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null)
+    public function setAcademic_Appointee_Reference(\WorkdayWsdl\\StructType\Academic_Appointee_EnabledObjectType $academic_Appointee_Reference = null)
     {
         $this->Academic_Appointee_Reference = $academic_Appointee_Reference;
         return $this;
     }
     /**
      * Get Academic_Appointment_Track_Reference value
-     * @return \StructType\Academic_Appointment_TrackObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType|null
      */
     public function getAcademic_Appointment_Track_Reference()
     {
@@ -108,10 +108,10 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
     }
     /**
      * Set Academic_Appointment_Track_Reference value
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
-     * @return \StructType\Academic_Appointment_ResponseType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_ResponseType
      */
-    public function setAcademic_Appointment_Track_Reference(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
+    public function setAcademic_Appointment_Track_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
     {
         $this->Academic_Appointment_Track_Reference = $academic_Appointment_Track_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Academic_Appointment_ResponseType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Academic_Appointment_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_ResponseType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
      * The User_Based_Security_Group_Reference
      * Meta information extracted from the WSDL
      * - documentation: User-Based Security Group Reference Id and Workday ID
-     * @var \StructType\User_Based_Security_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType
      */
     public $User_Based_Security_Group_Reference;
     /**
@@ -25,17 +25,17 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
      * - documentation: Workday Accounts that are members of the User-Based Security Group
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\System_UserObjectType[]
+     * @var \WorkdayWsdl\\StructType\System_UserObjectType[]
      */
     public $Workday_Account_Reference;
     /**
      * Constructor method for Assign_User-Based_Security_Group_DataType
      * @uses Assign_User_Based_Security_Group_DataType::setUser_Based_Security_Group_Reference()
      * @uses Assign_User_Based_Security_Group_DataType::setWorkday_Account_Reference()
-     * @param \StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
-     * @param \StructType\System_UserObjectType[] $workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType[] $workday_Account_Reference
      */
-    public function __construct(\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null, array $workday_Account_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null, array $workday_Account_Reference = array())
     {
         $this
             ->setUser_Based_Security_Group_Reference($user_Based_Security_Group_Reference)
@@ -43,7 +43,7 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
     }
     /**
      * Get User_Based_Security_Group_Reference value
-     * @return \StructType\User_Based_Security_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType|null
      */
     public function getUser_Based_Security_Group_Reference()
     {
@@ -51,17 +51,17 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
     }
     /**
      * Set User_Based_Security_Group_Reference value
-     * @param \StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
-     * @return \StructType\Assign_User_Based_Security_Group_DataType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType
      */
-    public function setUser_Based_Security_Group_Reference(\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null)
+    public function setUser_Based_Security_Group_Reference(\WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null)
     {
         $this->User_Based_Security_Group_Reference = $this->{'User-Based_Security_Group_Reference'} = $user_Based_Security_Group_Reference;
         return $this;
     }
     /**
      * Get Workday_Account_Reference value
-     * @return \StructType\System_UserObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType[]|null
      */
     public function getWorkday_Account_Reference()
     {
@@ -79,12 +79,12 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem instanceof \StructType\System_UserObjectType) {
+            if (!$assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem instanceof \WorkdayWsdl\\StructType\System_UserObjectType) {
                 $invalidValues[] = is_object($assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem) ? get_class($assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem) : sprintf('%s(%s)', gettype($assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem), var_export($assign_User_Based_Security_Group_DataTypeWorkday_Account_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workday_Account_Reference property can only contain items of type \StructType\System_UserObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\System_UserObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
     /**
      * Set Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\System_UserObjectType[] $workday_Account_Reference
-     * @return \StructType\Assign_User_Based_Security_Group_DataType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType[] $workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType
      */
     public function setWorkday_Account_Reference(array $workday_Account_Reference = array())
     {
@@ -107,14 +107,14 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
     /**
      * Add item to Workday_Account_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\System_UserObjectType $item
-     * @return \StructType\Assign_User_Based_Security_Group_DataType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType $item
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType
      */
-    public function addToWorkday_Account_Reference(\StructType\System_UserObjectType $item)
+    public function addToWorkday_Account_Reference(\WorkdayWsdl\\StructType\System_UserObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\System_UserObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workday_Account_Reference property can only contain items of type \StructType\System_UserObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\System_UserObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workday_Account_Reference property can only contain items of type \WorkdayWsdl\\StructType\System_UserObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workday_Account_Reference[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Assign_User_Based_Security_Group_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_User_Based_Security_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType
      */
     public static function __set_state(array $array)
     {

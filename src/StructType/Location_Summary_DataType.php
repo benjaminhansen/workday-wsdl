@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to a location.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_Reference;
     /**
@@ -35,7 +35,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * - documentation: The type(s) of a location.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Location_TypeObjectType[]
      */
     public $Location_Type_Reference;
     /**
@@ -43,7 +43,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The locale for the location.
      * - minOccurs: 0
-     * @var \StructType\LocaleObjectType
+     * @var \WorkdayWsdl\\StructType\LocaleObjectType
      */
     public $Local_Reference;
     /**
@@ -51,7 +51,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The default user language for this location.
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $Display_Language_Reference;
     /**
@@ -59,7 +59,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The time profile for the location.
      * - minOccurs: 0
-     * @var \StructType\Time_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Time_ProfileObjectType
      */
     public $Time_Profile_Reference;
     /**
@@ -80,7 +80,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * - documentation: Address information
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Address_Information_DataType[]
      */
     public $Address_Data;
     /**
@@ -93,16 +93,16 @@ class Location_Summary_DataType extends AbstractStructBase
      * @uses Location_Summary_DataType::setTime_Profile_Reference()
      * @uses Location_Summary_DataType::setScheduled_Weekly_Hours()
      * @uses Location_Summary_DataType::setAddress_Data()
-     * @param \StructType\LocationObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
      * @param string $name
-     * @param \StructType\Location_TypeObjectType[] $location_Type_Reference
-     * @param \StructType\LocaleObjectType $local_Reference
-     * @param \StructType\User_LanguageObjectType $display_Language_Reference
-     * @param \StructType\Time_ProfileObjectType $time_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType[] $location_Type_Reference
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $local_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $display_Language_Reference
+     * @param \WorkdayWsdl\\StructType\Time_ProfileObjectType $time_Profile_Reference
      * @param float $scheduled_Weekly_Hours
-     * @param \StructType\Address_Information_DataType[] $address_Data
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType[] $address_Data
      */
-    public function __construct(\StructType\LocationObjectType $location_Reference = null, $name = null, array $location_Type_Reference = array(), \StructType\LocaleObjectType $local_Reference = null, \StructType\User_LanguageObjectType $display_Language_Reference = null, \StructType\Time_ProfileObjectType $time_Profile_Reference = null, $scheduled_Weekly_Hours = null, array $address_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null, $name = null, array $location_Type_Reference = array(), \WorkdayWsdl\\StructType\LocaleObjectType $local_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $display_Language_Reference = null, \WorkdayWsdl\\StructType\Time_ProfileObjectType $time_Profile_Reference = null, $scheduled_Weekly_Hours = null, array $address_Data = array())
     {
         $this
             ->setLocation_Reference($location_Reference)
@@ -116,7 +116,7 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -124,10 +124,10 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\LocationObjectType $location_Reference
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function setLocation_Reference(\StructType\LocationObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
@@ -143,7 +143,7 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Location_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
     public function setName($name = null)
     {
@@ -156,7 +156,7 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Type_Reference value
-     * @return \StructType\Location_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_TypeObjectType[]|null
      */
     public function getLocation_Type_Reference()
     {
@@ -174,12 +174,12 @@ class Location_Summary_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Summary_DataTypeLocation_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Summary_DataTypeLocation_Type_ReferenceItem instanceof \StructType\Location_TypeObjectType) {
+            if (!$location_Summary_DataTypeLocation_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_TypeObjectType) {
                 $invalidValues[] = is_object($location_Summary_DataTypeLocation_Type_ReferenceItem) ? get_class($location_Summary_DataTypeLocation_Type_ReferenceItem) : sprintf('%s(%s)', gettype($location_Summary_DataTypeLocation_Type_ReferenceItem), var_export($location_Summary_DataTypeLocation_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -187,8 +187,8 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Set Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_TypeObjectType[] $location_Type_Reference
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType[] $location_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
     public function setLocation_Type_Reference(array $location_Type_Reference = array())
     {
@@ -202,21 +202,21 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Add item to Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_TypeObjectType $item
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Location_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function addToLocation_Type_Reference(\StructType\Location_TypeObjectType $item)
+    public function addToLocation_Type_Reference(\WorkdayWsdl\\StructType\Location_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Local_Reference value
-     * @return \StructType\LocaleObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocaleObjectType|null
      */
     public function getLocal_Reference()
     {
@@ -224,17 +224,17 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Local_Reference value
-     * @param \StructType\LocaleObjectType $local_Reference
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\LocaleObjectType $local_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function setLocal_Reference(\StructType\LocaleObjectType $local_Reference = null)
+    public function setLocal_Reference(\WorkdayWsdl\\StructType\LocaleObjectType $local_Reference = null)
     {
         $this->Local_Reference = $local_Reference;
         return $this;
     }
     /**
      * Get Display_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getDisplay_Language_Reference()
     {
@@ -242,17 +242,17 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Display_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $display_Language_Reference
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $display_Language_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function setDisplay_Language_Reference(\StructType\User_LanguageObjectType $display_Language_Reference = null)
+    public function setDisplay_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $display_Language_Reference = null)
     {
         $this->Display_Language_Reference = $display_Language_Reference;
         return $this;
     }
     /**
      * Get Time_Profile_Reference value
-     * @return \StructType\Time_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Time_ProfileObjectType|null
      */
     public function getTime_Profile_Reference()
     {
@@ -260,10 +260,10 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Time_Profile_Reference value
-     * @param \StructType\Time_ProfileObjectType $time_Profile_Reference
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Time_ProfileObjectType $time_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function setTime_Profile_Reference(\StructType\Time_ProfileObjectType $time_Profile_Reference = null)
+    public function setTime_Profile_Reference(\WorkdayWsdl\\StructType\Time_ProfileObjectType $time_Profile_Reference = null)
     {
         $this->Time_Profile_Reference = $time_Profile_Reference;
         return $this;
@@ -279,7 +279,7 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Set Scheduled_Weekly_Hours value
      * @param float $scheduled_Weekly_Hours
-     * @return \StructType\Location_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
     public function setScheduled_Weekly_Hours($scheduled_Weekly_Hours = null)
     {
@@ -300,7 +300,7 @@ class Location_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Address_Data value
-     * @return \StructType\Address_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Address_Information_DataType[]|null
      */
     public function getAddress_Data()
     {
@@ -318,12 +318,12 @@ class Location_Summary_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Summary_DataTypeAddress_DataItem) {
             // validation for constraint: itemType
-            if (!$location_Summary_DataTypeAddress_DataItem instanceof \StructType\Address_Information_DataType) {
+            if (!$location_Summary_DataTypeAddress_DataItem instanceof \WorkdayWsdl\\StructType\Address_Information_DataType) {
                 $invalidValues[] = is_object($location_Summary_DataTypeAddress_DataItem) ? get_class($location_Summary_DataTypeAddress_DataItem) : sprintf('%s(%s)', gettype($location_Summary_DataTypeAddress_DataItem), var_export($location_Summary_DataTypeAddress_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Address_Data property can only contain items of type \StructType\Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -331,8 +331,8 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Set Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Information_DataType[] $address_Data
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType[] $address_Data
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
     public function setAddress_Data(array $address_Data = array())
     {
@@ -346,14 +346,14 @@ class Location_Summary_DataType extends AbstractStructBase
     /**
      * Add item to Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Information_DataType $item
-     * @return \StructType\Location_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
-    public function addToAddress_Data(\StructType\Address_Information_DataType $item)
+    public function addToAddress_Data(\WorkdayWsdl\\StructType\Address_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \StructType\Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Address_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Address_Data[] = $item;
         return $this;
@@ -364,7 +364,7 @@ class Location_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Summary_DataType
      */
     public static function __set_state(array $array)
     {

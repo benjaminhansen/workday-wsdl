@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Form_I_9_AttachmentObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
      * Constructor method for Form_I-9_AttachmentObjectType
      * @uses Form_I_9_AttachmentObjectType::setID()
      * @uses Form_I_9_AttachmentObjectType::setDescriptor()
-     * @param \StructType\Form_I_9_AttachmentObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Form_I_9_AttachmentObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $form_I_9_AttachmentObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$form_I_9_AttachmentObjectTypeIDItem instanceof \StructType\Form_I_9_AttachmentObjectIDType) {
+            if (!$form_I_9_AttachmentObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType) {
                 $invalidValues[] = is_object($form_I_9_AttachmentObjectTypeIDItem) ? get_class($form_I_9_AttachmentObjectTypeIDItem) : sprintf('%s(%s)', gettype($form_I_9_AttachmentObjectTypeIDItem), var_export($form_I_9_AttachmentObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Form_I_9_AttachmentObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Form_I_9_AttachmentObjectIDType[] $iD
-     * @return \StructType\Form_I_9_AttachmentObjectType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Form_I_9_AttachmentObjectIDType $item
-     * @return \StructType\Form_I_9_AttachmentObjectType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType
      */
-    public function addToID(\StructType\Form_I_9_AttachmentObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Form_I_9_AttachmentObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Form_I_9_AttachmentObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Form_I_9_AttachmentObjectType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Form_I_9_AttachmentObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Form_I_9_AttachmentObjectType
+     * @return \WorkdayWsdl\\StructType\Form_I_9_AttachmentObjectType
      */
     public static function __set_state(array $array)
     {

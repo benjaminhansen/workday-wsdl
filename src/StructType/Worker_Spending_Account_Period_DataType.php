@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
      * The Enrollment_Period_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Enrollment_Period_DataType
+     * @var \WorkdayWsdl\\StructType\Enrollment_Period_DataType
      */
     public $Enrollment_Period_Data;
     /**
@@ -25,17 +25,17 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
      * - documentation: Contains the spending account coverage information (elections) for an employee.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Spending_Account_Coverage_DataType[]
+     * @var \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType[]
      */
     public $Spending_Account_Coverage_Data;
     /**
      * Constructor method for Worker_Spending_Account_Period_DataType
      * @uses Worker_Spending_Account_Period_DataType::setEnrollment_Period_Data()
      * @uses Worker_Spending_Account_Period_DataType::setSpending_Account_Coverage_Data()
-     * @param \StructType\Enrollment_Period_DataType $enrollment_Period_Data
-     * @param \StructType\Spending_Account_Coverage_DataType[] $spending_Account_Coverage_Data
+     * @param \WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data
+     * @param \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType[] $spending_Account_Coverage_Data
      */
-    public function __construct(\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null, array $spending_Account_Coverage_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null, array $spending_Account_Coverage_Data = array())
     {
         $this
             ->setEnrollment_Period_Data($enrollment_Period_Data)
@@ -43,7 +43,7 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
     }
     /**
      * Get Enrollment_Period_Data value
-     * @return \StructType\Enrollment_Period_DataType|null
+     * @return \WorkdayWsdl\\StructType\Enrollment_Period_DataType|null
      */
     public function getEnrollment_Period_Data()
     {
@@ -51,17 +51,17 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
     }
     /**
      * Set Enrollment_Period_Data value
-     * @param \StructType\Enrollment_Period_DataType $enrollment_Period_Data
-     * @return \StructType\Worker_Spending_Account_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Spending_Account_Period_DataType
      */
-    public function setEnrollment_Period_Data(\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null)
+    public function setEnrollment_Period_Data(\WorkdayWsdl\\StructType\Enrollment_Period_DataType $enrollment_Period_Data = null)
     {
         $this->Enrollment_Period_Data = $enrollment_Period_Data;
         return $this;
     }
     /**
      * Get Spending_Account_Coverage_Data value
-     * @return \StructType\Spending_Account_Coverage_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType[]|null
      */
     public function getSpending_Account_Coverage_Data()
     {
@@ -79,12 +79,12 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem instanceof \StructType\Spending_Account_Coverage_DataType) {
+            if (!$worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem instanceof \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType) {
                 $invalidValues[] = is_object($worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem) ? get_class($worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem) : sprintf('%s(%s)', gettype($worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem), var_export($worker_Spending_Account_Period_DataTypeSpending_Account_Coverage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Spending_Account_Coverage_Data property can only contain items of type \StructType\Spending_Account_Coverage_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Spending_Account_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
     /**
      * Set Spending_Account_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Spending_Account_Coverage_DataType[] $spending_Account_Coverage_Data
-     * @return \StructType\Worker_Spending_Account_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType[] $spending_Account_Coverage_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Spending_Account_Period_DataType
      */
     public function setSpending_Account_Coverage_Data(array $spending_Account_Coverage_Data = array())
     {
@@ -107,14 +107,14 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
     /**
      * Add item to Spending_Account_Coverage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Spending_Account_Coverage_DataType $item
-     * @return \StructType\Worker_Spending_Account_Period_DataType
+     * @param \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Spending_Account_Period_DataType
      */
-    public function addToSpending_Account_Coverage_Data(\StructType\Spending_Account_Coverage_DataType $item)
+    public function addToSpending_Account_Coverage_Data(\WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Spending_Account_Coverage_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Spending_Account_Coverage_Data property can only contain items of type \StructType\Spending_Account_Coverage_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Spending_Account_Coverage_Data property can only contain items of type \WorkdayWsdl\\StructType\Spending_Account_Coverage_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Spending_Account_Coverage_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Worker_Spending_Account_Period_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Spending_Account_Period_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Spending_Account_Period_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Person_Email_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all core Email Address data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Email_Core_DataType[]
+     * @var \WorkdayWsdl\\StructType\Email_Core_DataType[]
      */
     public $Email_Data;
     /**
@@ -29,7 +29,7 @@ class Person_Email_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -37,7 +37,7 @@ class Person_Email_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Email Address Reference ID.
      * - minOccurs: 0
-     * @var \StructType\Email_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Email_ReferenceObjectType
      */
     public $Email_Reference;
     /**
@@ -64,13 +64,13 @@ class Person_Email_DataType extends AbstractStructBase
      * @uses Person_Email_DataType::setEmail_Reference()
      * @uses Person_Email_DataType::setEmail_ID()
      * @uses Person_Email_DataType::setDelete()
-     * @param \StructType\Email_Core_DataType[] $email_Data
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @param \StructType\Email_ReferenceObjectType $email_Reference
+     * @param \WorkdayWsdl\\StructType\Email_Core_DataType[] $email_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Email_ReferenceObjectType $email_Reference
      * @param string $email_ID
      * @param bool $delete
      */
-    public function __construct(array $email_Data = array(), array $usage_Data = array(), \StructType\Email_ReferenceObjectType $email_Reference = null, $email_ID = null, $delete = null)
+    public function __construct(array $email_Data = array(), array $usage_Data = array(), \WorkdayWsdl\\StructType\Email_ReferenceObjectType $email_Reference = null, $email_ID = null, $delete = null)
     {
         $this
             ->setEmail_Data($email_Data)
@@ -81,7 +81,7 @@ class Person_Email_DataType extends AbstractStructBase
     }
     /**
      * Get Email_Data value
-     * @return \StructType\Email_Core_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Email_Core_DataType[]|null
      */
     public function getEmail_Data()
     {
@@ -99,12 +99,12 @@ class Person_Email_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Email_DataTypeEmail_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Email_DataTypeEmail_DataItem instanceof \StructType\Email_Core_DataType) {
+            if (!$person_Email_DataTypeEmail_DataItem instanceof \WorkdayWsdl\\StructType\Email_Core_DataType) {
                 $invalidValues[] = is_object($person_Email_DataTypeEmail_DataItem) ? get_class($person_Email_DataTypeEmail_DataItem) : sprintf('%s(%s)', gettype($person_Email_DataTypeEmail_DataItem), var_export($person_Email_DataTypeEmail_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Email_Data property can only contain items of type \StructType\Email_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Email_Data property can only contain items of type \WorkdayWsdl\\StructType\Email_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -112,8 +112,8 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Set Email_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email_Core_DataType[] $email_Data
-     * @return \StructType\Person_Email_DataType
+     * @param \WorkdayWsdl\\StructType\Email_Core_DataType[] $email_Data
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
     public function setEmail_Data(array $email_Data = array())
     {
@@ -127,21 +127,21 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Add item to Email_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Email_Core_DataType $item
-     * @return \StructType\Person_Email_DataType
+     * @param \WorkdayWsdl\\StructType\Email_Core_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
-    public function addToEmail_Data(\StructType\Email_Core_DataType $item)
+    public function addToEmail_Data(\WorkdayWsdl\\StructType\Email_Core_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Email_Core_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Email_Data property can only contain items of type \StructType\Email_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Email_Core_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Email_Data property can only contain items of type \WorkdayWsdl\\StructType\Email_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Email_Data[] = $item;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -159,12 +159,12 @@ class Person_Email_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Email_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Email_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$person_Email_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($person_Email_DataTypeUsage_DataItem) ? get_class($person_Email_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($person_Email_DataTypeUsage_DataItem), var_export($person_Email_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -172,8 +172,8 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Person_Email_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -187,21 +187,21 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Person_Email_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
     }
     /**
      * Get Email_Reference value
-     * @return \StructType\Email_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Email_ReferenceObjectType|null
      */
     public function getEmail_Reference()
     {
@@ -209,10 +209,10 @@ class Person_Email_DataType extends AbstractStructBase
     }
     /**
      * Set Email_Reference value
-     * @param \StructType\Email_ReferenceObjectType $email_Reference
-     * @return \StructType\Person_Email_DataType
+     * @param \WorkdayWsdl\\StructType\Email_ReferenceObjectType $email_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
-    public function setEmail_Reference(\StructType\Email_ReferenceObjectType $email_Reference = null)
+    public function setEmail_Reference(\WorkdayWsdl\\StructType\Email_ReferenceObjectType $email_Reference = null)
     {
         $this->Email_Reference = $email_Reference;
         return $this;
@@ -228,7 +228,7 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Set Email_ID value
      * @param string $email_ID
-     * @return \StructType\Person_Email_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
     public function setEmail_ID($email_ID = null)
     {
@@ -250,7 +250,7 @@ class Person_Email_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Person_Email_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
     public function setDelete($delete = null)
     {
@@ -267,7 +267,7 @@ class Person_Email_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Email_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Track_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
      * Constructor method for Academic_Track_TypeObjectType
      * @uses Academic_Track_TypeObjectType::setID()
      * @uses Academic_Track_TypeObjectType::setDescriptor()
-     * @param \StructType\Academic_Track_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Academic_Track_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Track_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$academic_Track_TypeObjectTypeIDItem instanceof \StructType\Academic_Track_TypeObjectIDType) {
+            if (!$academic_Track_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType) {
                 $invalidValues[] = is_object($academic_Track_TypeObjectTypeIDItem) ? get_class($academic_Track_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($academic_Track_TypeObjectTypeIDItem), var_export($academic_Track_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Academic_Track_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectIDType[] $iD
-     * @return \StructType\Academic_Track_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Track_TypeObjectIDType $item
-     * @return \StructType\Academic_Track_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType
      */
-    public function addToID(\StructType\Academic_Track_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Track_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Academic_Track_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Track_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Academic_Track_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Academic_Track_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Track_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType
      */
     public static function __set_state(array $array)
     {

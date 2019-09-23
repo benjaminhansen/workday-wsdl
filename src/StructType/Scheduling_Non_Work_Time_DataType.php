@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class Scheduling_Non_Work_Time_DataType extends AbstractStructBase
     /**
      * Set Meal_In value
      * @param string $meal_In
-     * @return \StructType\Scheduling_Non_Work_Time_DataType
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType
      */
     public function setMeal_In($meal_In = null)
     {
@@ -84,7 +84,7 @@ class Scheduling_Non_Work_Time_DataType extends AbstractStructBase
     /**
      * Set Meal_Out value
      * @param string $meal_Out
-     * @return \StructType\Scheduling_Non_Work_Time_DataType
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType
      */
     public function setMeal_Out($meal_Out = null)
     {
@@ -106,7 +106,7 @@ class Scheduling_Non_Work_Time_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Scheduling_Non_Work_Time_DataType
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType
      */
     public function setID($iD = null)
     {
@@ -123,7 +123,7 @@ class Scheduling_Non_Work_Time_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Scheduling_Non_Work_Time_DataType
+     * @return \WorkdayWsdl\\StructType\Scheduling_Non_Work_Time_DataType
      */
     public static function __set_state(array $array)
     {

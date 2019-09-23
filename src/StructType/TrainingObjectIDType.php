@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class TrainingObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\TrainingReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\TrainingReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\TrainingReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\TrainingReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\TrainingObjectIDType
+     * @return \WorkdayWsdl\\StructType\TrainingObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TrainingReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\TrainingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\TrainingReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\TrainingReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\TrainingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\TrainingReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class TrainingObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\TrainingObjectIDType
+     * @return \WorkdayWsdl\\StructType\TrainingObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class TrainingObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TrainingObjectIDType
+     * @return \WorkdayWsdl\\StructType\TrainingObjectIDType
      */
     public static function __set_state(array $array)
     {

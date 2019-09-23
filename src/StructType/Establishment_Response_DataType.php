@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Establishment_Response_DataType extends AbstractStructBase
      * - documentation: Establishment Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EstablishmentType[]
+     * @var \WorkdayWsdl\\StructType\EstablishmentType[]
      */
     public $Establishment;
     /**
      * Constructor method for Establishment_Response_DataType
      * @uses Establishment_Response_DataType::setEstablishment()
-     * @param \StructType\EstablishmentType[] $establishment
+     * @param \WorkdayWsdl\\StructType\EstablishmentType[] $establishment
      */
     public function __construct(array $establishment = array())
     {
@@ -33,7 +33,7 @@ class Establishment_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Establishment value
-     * @return \StructType\EstablishmentType[]|null
+     * @return \WorkdayWsdl\\StructType\EstablishmentType[]|null
      */
     public function getEstablishment()
     {
@@ -51,12 +51,12 @@ class Establishment_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $establishment_Response_DataTypeEstablishmentItem) {
             // validation for constraint: itemType
-            if (!$establishment_Response_DataTypeEstablishmentItem instanceof \StructType\EstablishmentType) {
+            if (!$establishment_Response_DataTypeEstablishmentItem instanceof \WorkdayWsdl\\StructType\EstablishmentType) {
                 $invalidValues[] = is_object($establishment_Response_DataTypeEstablishmentItem) ? get_class($establishment_Response_DataTypeEstablishmentItem) : sprintf('%s(%s)', gettype($establishment_Response_DataTypeEstablishmentItem), var_export($establishment_Response_DataTypeEstablishmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Establishment property can only contain items of type \StructType\EstablishmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Establishment property can only contain items of type \WorkdayWsdl\\StructType\EstablishmentType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Establishment_Response_DataType extends AbstractStructBase
     /**
      * Set Establishment value
      * @throws \InvalidArgumentException
-     * @param \StructType\EstablishmentType[] $establishment
-     * @return \StructType\Establishment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\EstablishmentType[] $establishment
+     * @return \WorkdayWsdl\\StructType\Establishment_Response_DataType
      */
     public function setEstablishment(array $establishment = array())
     {
@@ -79,14 +79,14 @@ class Establishment_Response_DataType extends AbstractStructBase
     /**
      * Add item to Establishment value
      * @throws \InvalidArgumentException
-     * @param \StructType\EstablishmentType $item
-     * @return \StructType\Establishment_Response_DataType
+     * @param \WorkdayWsdl\\StructType\EstablishmentType $item
+     * @return \WorkdayWsdl\\StructType\Establishment_Response_DataType
      */
-    public function addToEstablishment(\StructType\EstablishmentType $item)
+    public function addToEstablishment(\WorkdayWsdl\\StructType\EstablishmentType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EstablishmentType) {
-            throw new \InvalidArgumentException(sprintf('The Establishment property can only contain items of type \StructType\EstablishmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EstablishmentType) {
+            throw new \InvalidArgumentException(sprintf('The Establishment property can only contain items of type \WorkdayWsdl\\StructType\EstablishmentType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Establishment[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Establishment_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Establishment_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Establishment_Response_DataType
      */
     public static function __set_state(array $array)
     {

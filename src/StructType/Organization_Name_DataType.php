@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -126,7 +126,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -148,7 +148,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Organization_ID value
      * @param string $organization_ID
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setOrganization_ID($organization_ID = null)
     {
@@ -170,7 +170,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Organization_Name value
      * @param string $organization_Name
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setOrganization_Name($organization_Name = null)
     {
@@ -192,7 +192,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Phonetic_Name value
      * @param string $phonetic_Name
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setPhonetic_Name($phonetic_Name = null)
     {
@@ -214,7 +214,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Include_Organization_ID_in_Name value
      * @param bool $include_Organization_ID_in_Name
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setInclude_Organization_ID_in_Name($include_Organization_ID_in_Name = null)
     {
@@ -236,7 +236,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Organization_Code value
      * @param string $organization_Code
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setOrganization_Code($organization_Code = null)
     {
@@ -258,7 +258,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Include_Organization_Code_in_Name value
      * @param bool $include_Organization_Code_in_Name
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setInclude_Organization_Code_in_Name($include_Organization_Code_in_Name = null)
     {
@@ -280,7 +280,7 @@ class Organization_Name_DataType extends AbstractStructBase
     /**
      * Set Include_Manager_Leader_in_Name value
      * @param bool $include_Manager_Leader_in_Name
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public function setInclude_Manager_Leader_in_Name($include_Manager_Leader_in_Name = null)
     {
@@ -297,7 +297,7 @@ class Organization_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_DataType
      */
     public static function __set_state(array $array)
     {

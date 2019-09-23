@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Person_Phone_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all core Phone data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Phone_Core_DataType[]
+     * @var \WorkdayWsdl\\StructType\Phone_Core_DataType[]
      */
     public $Phone_Data;
     /**
@@ -29,7 +29,7 @@ class Person_Phone_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -37,7 +37,7 @@ class Person_Phone_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Phone Reference ID.
      * - minOccurs: 0
-     * @var \StructType\Phone_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Phone_ReferenceObjectType
      */
     public $Phone_Reference;
     /**
@@ -64,13 +64,13 @@ class Person_Phone_DataType extends AbstractStructBase
      * @uses Person_Phone_DataType::setPhone_Reference()
      * @uses Person_Phone_DataType::setPhone_ID()
      * @uses Person_Phone_DataType::setDelete()
-     * @param \StructType\Phone_Core_DataType[] $phone_Data
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @param \StructType\Phone_ReferenceObjectType $phone_Reference
+     * @param \WorkdayWsdl\\StructType\Phone_Core_DataType[] $phone_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference
      * @param string $phone_ID
      * @param bool $delete
      */
-    public function __construct(array $phone_Data = array(), array $usage_Data = array(), \StructType\Phone_ReferenceObjectType $phone_Reference = null, $phone_ID = null, $delete = null)
+    public function __construct(array $phone_Data = array(), array $usage_Data = array(), \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference = null, $phone_ID = null, $delete = null)
     {
         $this
             ->setPhone_Data($phone_Data)
@@ -81,7 +81,7 @@ class Person_Phone_DataType extends AbstractStructBase
     }
     /**
      * Get Phone_Data value
-     * @return \StructType\Phone_Core_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType[]|null
      */
     public function getPhone_Data()
     {
@@ -99,12 +99,12 @@ class Person_Phone_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Phone_DataTypePhone_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Phone_DataTypePhone_DataItem instanceof \StructType\Phone_Core_DataType) {
+            if (!$person_Phone_DataTypePhone_DataItem instanceof \WorkdayWsdl\\StructType\Phone_Core_DataType) {
                 $invalidValues[] = is_object($person_Phone_DataTypePhone_DataItem) ? get_class($person_Phone_DataTypePhone_DataItem) : sprintf('%s(%s)', gettype($person_Phone_DataTypePhone_DataItem), var_export($person_Phone_DataTypePhone_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Phone_Data property can only contain items of type \StructType\Phone_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Phone_Data property can only contain items of type \WorkdayWsdl\\StructType\Phone_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -112,8 +112,8 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Set Phone_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Core_DataType[] $phone_Data
-     * @return \StructType\Person_Phone_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Core_DataType[] $phone_Data
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
     public function setPhone_Data(array $phone_Data = array())
     {
@@ -127,21 +127,21 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Add item to Phone_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Core_DataType $item
-     * @return \StructType\Person_Phone_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Core_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
-    public function addToPhone_Data(\StructType\Phone_Core_DataType $item)
+    public function addToPhone_Data(\WorkdayWsdl\\StructType\Phone_Core_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone_Core_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Phone_Data property can only contain items of type \StructType\Phone_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Phone_Core_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Phone_Data property can only contain items of type \WorkdayWsdl\\StructType\Phone_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Phone_Data[] = $item;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -159,12 +159,12 @@ class Person_Phone_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Phone_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Phone_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$person_Phone_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($person_Phone_DataTypeUsage_DataItem) ? get_class($person_Phone_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($person_Phone_DataTypeUsage_DataItem), var_export($person_Phone_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -172,8 +172,8 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Person_Phone_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -187,21 +187,21 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Person_Phone_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
     }
     /**
      * Get Phone_Reference value
-     * @return \StructType\Phone_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Phone_ReferenceObjectType|null
      */
     public function getPhone_Reference()
     {
@@ -209,10 +209,10 @@ class Person_Phone_DataType extends AbstractStructBase
     }
     /**
      * Set Phone_Reference value
-     * @param \StructType\Phone_ReferenceObjectType $phone_Reference
-     * @return \StructType\Person_Phone_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
-    public function setPhone_Reference(\StructType\Phone_ReferenceObjectType $phone_Reference = null)
+    public function setPhone_Reference(\WorkdayWsdl\\StructType\Phone_ReferenceObjectType $phone_Reference = null)
     {
         $this->Phone_Reference = $phone_Reference;
         return $this;
@@ -228,7 +228,7 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Set Phone_ID value
      * @param string $phone_ID
-     * @return \StructType\Person_Phone_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
     public function setPhone_ID($phone_ID = null)
     {
@@ -250,7 +250,7 @@ class Person_Phone_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Person_Phone_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
     public function setDelete($delete = null)
     {
@@ -267,7 +267,7 @@ class Person_Phone_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Phone_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Phone_DataType
      */
     public static function __set_state(array $array)
     {

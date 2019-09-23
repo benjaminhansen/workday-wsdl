@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Safety_Incident_FileObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
      * Constructor method for Safety_Incident_FileObjectType
      * @uses Safety_Incident_FileObjectType::setID()
      * @uses Safety_Incident_FileObjectType::setDescriptor()
-     * @param \StructType\Safety_Incident_FileObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Safety_Incident_FileObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $safety_Incident_FileObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_FileObjectTypeIDItem instanceof \StructType\Safety_Incident_FileObjectIDType) {
+            if (!$safety_Incident_FileObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType) {
                 $invalidValues[] = is_object($safety_Incident_FileObjectTypeIDItem) ? get_class($safety_Incident_FileObjectTypeIDItem) : sprintf('%s(%s)', gettype($safety_Incident_FileObjectTypeIDItem), var_export($safety_Incident_FileObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Safety_Incident_FileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_FileObjectIDType[] $iD
-     * @return \StructType\Safety_Incident_FileObjectType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_FileObjectIDType $item
-     * @return \StructType\Safety_Incident_FileObjectType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType
      */
-    public function addToID(\StructType\Safety_Incident_FileObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Safety_Incident_FileObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Safety_Incident_FileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_FileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Safety_Incident_FileObjectType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Safety_Incident_FileObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_FileObjectType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType
      */
     public static function __set_state(array $array)
     {

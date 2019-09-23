@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,12 +22,12 @@ class Visa_Identifier_DataType extends AbstractStructBase
     public $Visa_ID;
     /**
      * The Visa_Type_Reference
-     * @var \StructType\Visa_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Visa_Type_ReferenceType
      */
     public $Visa_Type_Reference;
     /**
      * The Country_Reference
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -66,13 +66,13 @@ class Visa_Identifier_DataType extends AbstractStructBase
      * @uses Visa_Identifier_DataType::setExpiration_Date()
      * @uses Visa_Identifier_DataType::setVerification_Date()
      * @param string $visa_ID
-     * @param \StructType\Visa_Type_ReferenceType $visa_Type_Reference
-     * @param \StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Visa_Type_ReferenceType $visa_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
      */
-    public function __construct($visa_ID = null, \StructType\Visa_Type_ReferenceType $visa_Type_Reference = null, \StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
+    public function __construct($visa_ID = null, \WorkdayWsdl\\StructType\Visa_Type_ReferenceType $visa_Type_Reference = null, \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null)
     {
         $this
             ->setVisa_ID($visa_ID)
@@ -93,7 +93,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
     /**
      * Set Visa_ID value
      * @param string $visa_ID
-     * @return \StructType\Visa_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
     public function setVisa_ID($visa_ID = null)
     {
@@ -106,7 +106,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Visa_Type_Reference value
-     * @return \StructType\Visa_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Visa_Type_ReferenceType|null
      */
     public function getVisa_Type_Reference()
     {
@@ -114,17 +114,17 @@ class Visa_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Visa_Type_Reference value
-     * @param \StructType\Visa_Type_ReferenceType $visa_Type_Reference
-     * @return \StructType\Visa_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Visa_Type_ReferenceType $visa_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
-    public function setVisa_Type_Reference(\StructType\Visa_Type_ReferenceType $visa_Type_Reference = null)
+    public function setVisa_Type_Reference(\WorkdayWsdl\\StructType\Visa_Type_ReferenceType $visa_Type_Reference = null)
     {
         $this->Visa_Type_Reference = $visa_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -132,10 +132,10 @@ class Visa_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\Visa_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -151,7 +151,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\Visa_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -173,7 +173,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\Visa_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -195,7 +195,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\Visa_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -212,7 +212,7 @@ class Visa_Identifier_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Visa_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType
      */
     public static function __set_state(array $array)
     {

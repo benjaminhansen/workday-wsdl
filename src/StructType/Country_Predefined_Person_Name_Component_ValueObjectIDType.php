@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,17 +50,17 @@ class Country_Predefined_Person_Name_Component_ValueObjectIDType extends Abstrac
     }
     /**
      * Set type value
-     * @uses \EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Country_Predefined_Person_Name_Component_ValueReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -76,7 +76,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectIDType extends Abstrac
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
      */
     public function set_($_ = null)
     {
@@ -93,7 +93,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectIDType extends Abstrac
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType
      */
     public static function __set_state(array $array)
     {

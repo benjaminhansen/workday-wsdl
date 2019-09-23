@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[]
      */
     public $ID;
     /**
@@ -30,7 +30,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
      * Constructor method for Country_Predefined_Person_Name_Component_ValueObjectType
      * @uses Country_Predefined_Person_Name_Component_ValueObjectType::setID()
      * @uses Country_Predefined_Person_Name_Component_ValueObjectType::setDescriptor()
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -41,7 +41,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
     }
     /**
      * Get ID value
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[]|null
      */
     public function getID()
     {
@@ -59,12 +59,12 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
         $invalidValues = [];
         foreach ($values as $country_Predefined_Person_Name_Component_ValueObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$country_Predefined_Person_Name_Component_ValueObjectTypeIDItem instanceof \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType) {
+            if (!$country_Predefined_Person_Name_Component_ValueObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType) {
                 $invalidValues[] = is_object($country_Predefined_Person_Name_Component_ValueObjectTypeIDItem) ? get_class($country_Predefined_Person_Name_Component_ValueObjectTypeIDItem) : sprintf('%s(%s)', gettype($country_Predefined_Person_Name_Component_ValueObjectTypeIDItem), var_export($country_Predefined_Person_Name_Component_ValueObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[] $iD
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
     public function setID(array $iD = array())
     {
@@ -87,14 +87,14 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType $item
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
-    public function addToID(\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -127,7 +127,7 @@ class Country_Predefined_Person_Name_Component_ValueObjectType extends AbstractS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
     public static function __set_state(array $array)
     {

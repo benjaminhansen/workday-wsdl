@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Minutes Reference for Committee Meeting or Agenda Item based on context
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_MinutesObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType
      */
     public $Minutes_Reference;
     /**
@@ -44,11 +44,11 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
      * @uses Committee_Meeting_Minutes_SubDataType::setMinutes_Reference()
      * @uses Committee_Meeting_Minutes_SubDataType::setDetails()
      * @uses Committee_Meeting_Minutes_SubDataType::setCommittee_Meeting_Minutes_ID()
-     * @param \StructType\Committee_Meeting_MinutesObjectType $minutes_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference
      * @param string $details
      * @param string $committee_Meeting_Minutes_ID
      */
-    public function __construct(\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference = null, $details = null, $committee_Meeting_Minutes_ID = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference = null, $details = null, $committee_Meeting_Minutes_ID = null)
     {
         $this
             ->setMinutes_Reference($minutes_Reference)
@@ -57,7 +57,7 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
     }
     /**
      * Get Minutes_Reference value
-     * @return \StructType\Committee_Meeting_MinutesObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType|null
      */
     public function getMinutes_Reference()
     {
@@ -65,10 +65,10 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
     }
     /**
      * Set Minutes_Reference value
-     * @param \StructType\Committee_Meeting_MinutesObjectType $minutes_Reference
-     * @return \StructType\Committee_Meeting_Minutes_SubDataType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType
      */
-    public function setMinutes_Reference(\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference = null)
+    public function setMinutes_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_MinutesObjectType $minutes_Reference = null)
     {
         $this->Minutes_Reference = $minutes_Reference;
         return $this;
@@ -84,7 +84,7 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
     /**
      * Set Details value
      * @param string $details
-     * @return \StructType\Committee_Meeting_Minutes_SubDataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType
      */
     public function setDetails($details = null)
     {
@@ -106,7 +106,7 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
     /**
      * Set Committee_Meeting_Minutes_ID value
      * @param string $committee_Meeting_Minutes_ID
-     * @return \StructType\Committee_Meeting_Minutes_SubDataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType
      */
     public function setCommittee_Meeting_Minutes_ID($committee_Meeting_Minutes_ID = null)
     {
@@ -123,7 +123,7 @@ class Committee_Meeting_Minutes_SubDataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Minutes_SubDataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType
      */
     public static function __set_state(array $array)
     {

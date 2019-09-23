@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_Review_TemplateObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
      * Constructor method for Employee_Review_TemplateObjectType
      * @uses Employee_Review_TemplateObjectType::setID()
      * @uses Employee_Review_TemplateObjectType::setDescriptor()
-     * @param \StructType\Employee_Review_TemplateObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Employee_Review_TemplateObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Review_TemplateObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$employee_Review_TemplateObjectTypeIDItem instanceof \StructType\Employee_Review_TemplateObjectIDType) {
+            if (!$employee_Review_TemplateObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType) {
                 $invalidValues[] = is_object($employee_Review_TemplateObjectTypeIDItem) ? get_class($employee_Review_TemplateObjectTypeIDItem) : sprintf('%s(%s)', gettype($employee_Review_TemplateObjectTypeIDItem), var_export($employee_Review_TemplateObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Employee_Review_TemplateObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Review_TemplateObjectIDType[] $iD
-     * @return \StructType\Employee_Review_TemplateObjectType
+     * @param \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Review_TemplateObjectIDType $item
-     * @return \StructType\Employee_Review_TemplateObjectType
+     * @param \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectType
      */
-    public function addToID(\StructType\Employee_Review_TemplateObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Review_TemplateObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Employee_Review_TemplateObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Employee_Review_TemplateObjectType
+     * @return \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Employee_Review_TemplateObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Review_TemplateObjectType
+     * @return \WorkdayWsdl\\StructType\Employee_Review_TemplateObjectType
      */
     public static function __set_state(array $array)
     {

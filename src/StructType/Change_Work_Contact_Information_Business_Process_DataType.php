@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
      * Meta information extracted from the WSDL
      * - documentation: A unique person reference for the person whose contact information is being updated.
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -27,7 +27,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
      * Meta information extracted from the WSDL
      * - documentation: A unique universal identifier reference for the person whose contact information is being updated.
      * - minOccurs: 0
-     * @var \StructType\Universal_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Universal_IdentifierObjectType
      */
     public $Universal_ID_Reference;
     /**
@@ -41,7 +41,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     public $Event_Effective_Date;
     /**
      * The Person_Contact_Information_Data
-     * @var \StructType\Person_Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
     public $Person_Contact_Information_Data;
     /**
@@ -50,12 +50,12 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
      * @uses Change_Work_Contact_Information_Business_Process_DataType::setUniversal_ID_Reference()
      * @uses Change_Work_Contact_Information_Business_Process_DataType::setEvent_Effective_Date()
      * @uses Change_Work_Contact_Information_Business_Process_DataType::setPerson_Contact_Information_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
      * @param string $event_Effective_Date
-     * @param \StructType\Person_Contact_Information_DataType $person_Contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Contact_Information_DataType $person_Contact_Information_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, \StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, $event_Effective_Date = null, \StructType\Person_Contact_Information_DataType $person_Contact_Information_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, $event_Effective_Date = null, \WorkdayWsdl\\StructType\Person_Contact_Information_DataType $person_Contact_Information_Data = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -65,7 +65,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -73,17 +73,17 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Change_Work_Contact_Information_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Business_Process_DataType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Universal_ID_Reference value
-     * @return \StructType\Universal_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectType|null
      */
     public function getUniversal_ID_Reference()
     {
@@ -91,10 +91,10 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     }
     /**
      * Set Universal_ID_Reference value
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
-     * @return \StructType\Change_Work_Contact_Information_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Business_Process_DataType
      */
-    public function setUniversal_ID_Reference(\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
+    public function setUniversal_ID_Reference(\WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
     {
         $this->Universal_ID_Reference = $universal_ID_Reference;
         return $this;
@@ -110,7 +110,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     /**
      * Set Event_Effective_Date value
      * @param string $event_Effective_Date
-     * @return \StructType\Change_Work_Contact_Information_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Business_Process_DataType
      */
     public function setEvent_Effective_Date($event_Effective_Date = null)
     {
@@ -123,7 +123,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     }
     /**
      * Get Person_Contact_Information_Data value
-     * @return \StructType\Person_Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType|null
      */
     public function getPerson_Contact_Information_Data()
     {
@@ -131,10 +131,10 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
     }
     /**
      * Set Person_Contact_Information_Data value
-     * @param \StructType\Person_Contact_Information_DataType $person_Contact_Information_Data
-     * @return \StructType\Change_Work_Contact_Information_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Contact_Information_DataType $person_Contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Business_Process_DataType
      */
-    public function setPerson_Contact_Information_Data(\StructType\Person_Contact_Information_DataType $person_Contact_Information_Data = null)
+    public function setPerson_Contact_Information_Data(\WorkdayWsdl\\StructType\Person_Contact_Information_DataType $person_Contact_Information_Data = null)
     {
         $this->Person_Contact_Information_Data = $person_Contact_Information_Data;
         return $this;
@@ -145,7 +145,7 @@ class Change_Work_Contact_Information_Business_Process_DataType extends Abstract
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Work_Contact_Information_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

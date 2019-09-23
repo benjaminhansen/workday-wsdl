@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Create_Named_Professorship_Data
      * Meta information extracted from the WSDL
      * - documentation: Create Named Professorship Data
-     * @var \StructType\Create_Named_Professorship_DataType
+     * @var \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType
      */
     public $Create_Named_Professorship_Data;
     /**
@@ -38,11 +38,11 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
      * @uses Create_Named_Professorship_RequestType::setBusiness_Process_Parameters()
      * @uses Create_Named_Professorship_RequestType::setCreate_Named_Professorship_Data()
      * @uses Create_Named_Professorship_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -51,7 +51,7 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -59,17 +59,17 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Create_Named_Professorship_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Create_Named_Professorship_Data value
-     * @return \StructType\Create_Named_Professorship_DataType|null
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType|null
      */
     public function getCreate_Named_Professorship_Data()
     {
@@ -77,10 +77,10 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
     }
     /**
      * Set Create_Named_Professorship_Data value
-     * @param \StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data
-     * @return \StructType\Create_Named_Professorship_RequestType
+     * @param \WorkdayWsdl\\StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_RequestType
      */
-    public function setCreate_Named_Professorship_Data(\StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data = null)
+    public function setCreate_Named_Professorship_Data(\WorkdayWsdl\\StructType\Create_Named_Professorship_DataType $create_Named_Professorship_Data = null)
     {
         $this->Create_Named_Professorship_Data = $create_Named_Professorship_Data;
         return $this;
@@ -96,7 +96,7 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Create_Named_Professorship_RequestType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_RequestType
      */
     public function setVersion($version = null)
     {
@@ -113,7 +113,7 @@ class Create_Named_Professorship_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Create_Named_Professorship_RequestType
+     * @return \WorkdayWsdl\\StructType\Create_Named_Professorship_RequestType
      */
     public static function __set_state(array $array)
     {

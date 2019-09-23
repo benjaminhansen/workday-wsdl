@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -30,7 +30,7 @@ class Contract_Details_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Currency Rate Type.
      * - minOccurs: 0
-     * @var \StructType\Currency_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Currency_Reference_DataType
      */
     public $Currency_Reference_Data;
     /**
@@ -39,7 +39,7 @@ class Contract_Details_DataType extends AbstractStructBase
      * - documentation: Reference element representing a unique instance of Frequency.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Frequency_Reference_DataType[]
+     * @var \WorkdayWsdl\\StructType\Frequency_Reference_DataType[]
      */
     public $Frequency_Reference_Data;
     /**
@@ -58,11 +58,11 @@ class Contract_Details_DataType extends AbstractStructBase
      * @uses Contract_Details_DataType::setFrequency_Reference_Data()
      * @uses Contract_Details_DataType::setContract_Assignment_Details()
      * @param float $contract_Pay_Rate
-     * @param \StructType\Currency_Reference_DataType $currency_Reference_Data
-     * @param \StructType\Frequency_Reference_DataType[] $frequency_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Currency_Reference_DataType $currency_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Frequency_Reference_DataType[] $frequency_Reference_Data
      * @param string $contract_Assignment_Details
      */
-    public function __construct($contract_Pay_Rate = null, \StructType\Currency_Reference_DataType $currency_Reference_Data = null, array $frequency_Reference_Data = array(), $contract_Assignment_Details = null)
+    public function __construct($contract_Pay_Rate = null, \WorkdayWsdl\\StructType\Currency_Reference_DataType $currency_Reference_Data = null, array $frequency_Reference_Data = array(), $contract_Assignment_Details = null)
     {
         $this
             ->setContract_Pay_Rate($contract_Pay_Rate)
@@ -81,7 +81,7 @@ class Contract_Details_DataType extends AbstractStructBase
     /**
      * Set Contract_Pay_Rate value
      * @param float $contract_Pay_Rate
-     * @return \StructType\Contract_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
     public function setContract_Pay_Rate($contract_Pay_Rate = null)
     {
@@ -106,7 +106,7 @@ class Contract_Details_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference_Data value
-     * @return \StructType\Currency_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Currency_Reference_DataType|null
      */
     public function getCurrency_Reference_Data()
     {
@@ -114,17 +114,17 @@ class Contract_Details_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference_Data value
-     * @param \StructType\Currency_Reference_DataType $currency_Reference_Data
-     * @return \StructType\Contract_Details_DataType
+     * @param \WorkdayWsdl\\StructType\Currency_Reference_DataType $currency_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
-    public function setCurrency_Reference_Data(\StructType\Currency_Reference_DataType $currency_Reference_Data = null)
+    public function setCurrency_Reference_Data(\WorkdayWsdl\\StructType\Currency_Reference_DataType $currency_Reference_Data = null)
     {
         $this->Currency_Reference_Data = $currency_Reference_Data;
         return $this;
     }
     /**
      * Get Frequency_Reference_Data value
-     * @return \StructType\Frequency_Reference_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Frequency_Reference_DataType[]|null
      */
     public function getFrequency_Reference_Data()
     {
@@ -142,12 +142,12 @@ class Contract_Details_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contract_Details_DataTypeFrequency_Reference_DataItem) {
             // validation for constraint: itemType
-            if (!$contract_Details_DataTypeFrequency_Reference_DataItem instanceof \StructType\Frequency_Reference_DataType) {
+            if (!$contract_Details_DataTypeFrequency_Reference_DataItem instanceof \WorkdayWsdl\\StructType\Frequency_Reference_DataType) {
                 $invalidValues[] = is_object($contract_Details_DataTypeFrequency_Reference_DataItem) ? get_class($contract_Details_DataTypeFrequency_Reference_DataItem) : sprintf('%s(%s)', gettype($contract_Details_DataTypeFrequency_Reference_DataItem), var_export($contract_Details_DataTypeFrequency_Reference_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Frequency_Reference_Data property can only contain items of type \StructType\Frequency_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Frequency_Reference_Data property can only contain items of type \WorkdayWsdl\\StructType\Frequency_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -155,8 +155,8 @@ class Contract_Details_DataType extends AbstractStructBase
     /**
      * Set Frequency_Reference_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Frequency_Reference_DataType[] $frequency_Reference_Data
-     * @return \StructType\Contract_Details_DataType
+     * @param \WorkdayWsdl\\StructType\Frequency_Reference_DataType[] $frequency_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
     public function setFrequency_Reference_Data(array $frequency_Reference_Data = array())
     {
@@ -170,14 +170,14 @@ class Contract_Details_DataType extends AbstractStructBase
     /**
      * Add item to Frequency_Reference_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Frequency_Reference_DataType $item
-     * @return \StructType\Contract_Details_DataType
+     * @param \WorkdayWsdl\\StructType\Frequency_Reference_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
-    public function addToFrequency_Reference_Data(\StructType\Frequency_Reference_DataType $item)
+    public function addToFrequency_Reference_Data(\WorkdayWsdl\\StructType\Frequency_Reference_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Frequency_Reference_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Frequency_Reference_Data property can only contain items of type \StructType\Frequency_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Frequency_Reference_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Frequency_Reference_Data property can only contain items of type \WorkdayWsdl\\StructType\Frequency_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Frequency_Reference_Data[] = $item;
         return $this;
@@ -193,7 +193,7 @@ class Contract_Details_DataType extends AbstractStructBase
     /**
      * Set Contract_Assignment_Details value
      * @param string $contract_Assignment_Details
-     * @return \StructType\Contract_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
     public function setContract_Assignment_Details($contract_Assignment_Details = null)
     {
@@ -210,7 +210,7 @@ class Contract_Details_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contract_Details_DataType
+     * @return \WorkdayWsdl\\StructType\Contract_Details_DataType
      */
     public static function __set_state(array $array)
     {

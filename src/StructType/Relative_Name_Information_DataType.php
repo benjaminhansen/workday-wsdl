@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Relative_Name_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Relative_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Relative_Name_DataType[]
      */
     public $Relative_Name_Data;
     /**
@@ -32,7 +32,7 @@ class Relative_Name_Information_DataType extends AbstractStructBase
      * Constructor method for Relative_Name_Information_DataType
      * @uses Relative_Name_Information_DataType::setRelative_Name_Data()
      * @uses Relative_Name_Information_DataType::setReplace_All()
-     * @param \StructType\Relative_Name_DataType[] $relative_Name_Data
+     * @param \WorkdayWsdl\\StructType\Relative_Name_DataType[] $relative_Name_Data
      * @param bool $replace_All
      */
     public function __construct(array $relative_Name_Data = array(), $replace_All = null)
@@ -43,7 +43,7 @@ class Relative_Name_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Relative_Name_Data value
-     * @return \StructType\Relative_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Relative_Name_DataType[]|null
      */
     public function getRelative_Name_Data()
     {
@@ -61,12 +61,12 @@ class Relative_Name_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $relative_Name_Information_DataTypeRelative_Name_DataItem) {
             // validation for constraint: itemType
-            if (!$relative_Name_Information_DataTypeRelative_Name_DataItem instanceof \StructType\Relative_Name_DataType) {
+            if (!$relative_Name_Information_DataTypeRelative_Name_DataItem instanceof \WorkdayWsdl\\StructType\Relative_Name_DataType) {
                 $invalidValues[] = is_object($relative_Name_Information_DataTypeRelative_Name_DataItem) ? get_class($relative_Name_Information_DataTypeRelative_Name_DataItem) : sprintf('%s(%s)', gettype($relative_Name_Information_DataTypeRelative_Name_DataItem), var_export($relative_Name_Information_DataTypeRelative_Name_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Relative_Name_Data property can only contain items of type \StructType\Relative_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Relative_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Relative_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Relative_Name_Information_DataType extends AbstractStructBase
     /**
      * Set Relative_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relative_Name_DataType[] $relative_Name_Data
-     * @return \StructType\Relative_Name_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Relative_Name_DataType[] $relative_Name_Data
+     * @return \WorkdayWsdl\\StructType\Relative_Name_Information_DataType
      */
     public function setRelative_Name_Data(array $relative_Name_Data = array())
     {
@@ -89,14 +89,14 @@ class Relative_Name_Information_DataType extends AbstractStructBase
     /**
      * Add item to Relative_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relative_Name_DataType $item
-     * @return \StructType\Relative_Name_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Relative_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Relative_Name_Information_DataType
      */
-    public function addToRelative_Name_Data(\StructType\Relative_Name_DataType $item)
+    public function addToRelative_Name_Data(\WorkdayWsdl\\StructType\Relative_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Relative_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Relative_Name_Data property can only contain items of type \StructType\Relative_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Relative_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Relative_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Relative_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Relative_Name_Data[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class Relative_Name_Information_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Relative_Name_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_Information_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -129,7 +129,7 @@ class Relative_Name_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Relative_Name_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Relative_Name_Information_DataType
      */
     public static function __set_state(array $array)
     {

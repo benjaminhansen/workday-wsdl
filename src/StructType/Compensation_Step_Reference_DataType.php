@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Compensation_Step_Reference_DataType extends AbstractStructBase
     /**
      * Set Compensation_Step_Name value
      * @param string $compensation_Step_Name
-     * @return \StructType\Compensation_Step_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Compensation_Step_Reference_DataType
      */
     public function setCompensation_Step_Name($compensation_Step_Name = null)
     {
@@ -75,7 +75,7 @@ class Compensation_Step_Reference_DataType extends AbstractStructBase
     /**
      * Set Progression_Start_Date value
      * @param string $progression_Start_Date
-     * @return \StructType\Compensation_Step_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Compensation_Step_Reference_DataType
      */
     public function setProgression_Start_Date($progression_Start_Date = null)
     {
@@ -92,7 +92,7 @@ class Compensation_Step_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_Step_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Compensation_Step_Reference_DataType
      */
     public static function __set_state(array $array)
     {

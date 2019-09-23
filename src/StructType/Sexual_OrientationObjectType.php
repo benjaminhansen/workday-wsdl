@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Sexual_OrientationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Sexual_OrientationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Sexual_OrientationObjectType extends AbstractStructBase
      * Constructor method for Sexual_OrientationObjectType
      * @uses Sexual_OrientationObjectType::setID()
      * @uses Sexual_OrientationObjectType::setDescriptor()
-     * @param \StructType\Sexual_OrientationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Sexual_OrientationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Sexual_OrientationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Sexual_OrientationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sexual_OrientationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$sexual_OrientationObjectTypeIDItem instanceof \StructType\Sexual_OrientationObjectIDType) {
+            if (!$sexual_OrientationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType) {
                 $invalidValues[] = is_object($sexual_OrientationObjectTypeIDItem) ? get_class($sexual_OrientationObjectTypeIDItem) : sprintf('%s(%s)', gettype($sexual_OrientationObjectTypeIDItem), var_export($sexual_OrientationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Sexual_OrientationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Sexual_OrientationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sexual_OrientationObjectIDType[] $iD
-     * @return \StructType\Sexual_OrientationObjectType
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Sexual_OrientationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sexual_OrientationObjectIDType $item
-     * @return \StructType\Sexual_OrientationObjectType
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType
      */
-    public function addToID(\StructType\Sexual_OrientationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Sexual_OrientationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Sexual_OrientationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Sexual_OrientationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Sexual_OrientationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Sexual_OrientationObjectType
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Sexual_OrientationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sexual_OrientationObjectType
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType
      */
     public static function __set_state(array $array)
     {

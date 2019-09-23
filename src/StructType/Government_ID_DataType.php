@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Government_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Government ID Type.
      * - minOccurs: 0
-     * @var \StructType\Government_ID_Type__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType
      */
     public $ID_Type_Reference;
     /**
@@ -34,7 +34,7 @@ class Government_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Country issuing the Government Identifier.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -69,7 +69,7 @@ class Government_ID_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker who verified the ID.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Verified_by_Reference;
     /**
@@ -82,14 +82,14 @@ class Government_ID_DataType extends AbstractStructBase
      * @uses Government_ID_DataType::setVerification_Date()
      * @uses Government_ID_DataType::setVerified_by_Reference()
      * @param string $iD
-     * @param \StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
-     * @param \StructType\WorkerObjectType $verified_by_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_by_Reference
      */
-    public function __construct($iD = null, \StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference = null, \StructType\CountryObjectType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \StructType\WorkerObjectType $verified_by_Reference = null)
+    public function __construct($iD = null, \WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \WorkdayWsdl\\StructType\WorkerObjectType $verified_by_Reference = null)
     {
         $this
             ->setID($iD)
@@ -111,7 +111,7 @@ class Government_ID_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Government_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public function setID($iD = null)
     {
@@ -124,7 +124,7 @@ class Government_ID_DataType extends AbstractStructBase
     }
     /**
      * Get ID_Type_Reference value
-     * @return \StructType\Government_ID_Type__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType|null
      */
     public function getID_Type_Reference()
     {
@@ -132,17 +132,17 @@ class Government_ID_DataType extends AbstractStructBase
     }
     /**
      * Set ID_Type_Reference value
-     * @param \StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference
-     * @return \StructType\Government_ID_DataType
+     * @param \WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
-    public function setID_Type_Reference(\StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference = null)
+    public function setID_Type_Reference(\WorkdayWsdl\\StructType\Government_ID_Type__All_ObjectType $iD_Type_Reference = null)
     {
         $this->ID_Type_Reference = $iD_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -150,10 +150,10 @@ class Government_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Government_ID_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -169,7 +169,7 @@ class Government_ID_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\Government_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -191,7 +191,7 @@ class Government_ID_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\Government_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -213,7 +213,7 @@ class Government_ID_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\Government_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -226,7 +226,7 @@ class Government_ID_DataType extends AbstractStructBase
     }
     /**
      * Get Verified_by_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getVerified_by_Reference()
     {
@@ -234,10 +234,10 @@ class Government_ID_DataType extends AbstractStructBase
     }
     /**
      * Set Verified_by_Reference value
-     * @param \StructType\WorkerObjectType $verified_by_Reference
-     * @return \StructType\Government_ID_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $verified_by_Reference
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
-    public function setVerified_by_Reference(\StructType\WorkerObjectType $verified_by_Reference = null)
+    public function setVerified_by_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $verified_by_Reference = null)
     {
         $this->Verified_by_Reference = $verified_by_Reference;
         return $this;
@@ -248,7 +248,7 @@ class Government_ID_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Government_ID_DataType
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public static function __set_state(array $array)
     {

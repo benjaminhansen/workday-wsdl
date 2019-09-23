@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Location_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Location. Only needed when updating the Reference ID for the Location.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_Reference;
     /**
      * The Location_Data
      * Meta information extracted from the WSDL
      * - documentation: Element containing all Location data.
-     * @var \StructType\Location_iDataType
+     * @var \WorkdayWsdl\\StructType\Location_iDataType
      */
     public $Location_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Location_RequestType extends AbstractStructBase
      * @uses Put_Location_RequestType::setLocation_Data()
      * @uses Put_Location_RequestType::setAdd_Only()
      * @uses Put_Location_RequestType::setVersion()
-     * @param \StructType\LocationObjectType $location_Reference
-     * @param \StructType\Location_iDataType $location_Data
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Location_iDataType $location_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\LocationObjectType $location_Reference = null, \StructType\Location_iDataType $location_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null, \WorkdayWsdl\\StructType\Location_iDataType $location_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setLocation_Reference($location_Reference)
@@ -62,7 +62,7 @@ class Put_Location_RequestType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Location_RequestType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\LocationObjectType $location_Reference
-     * @return \StructType\Put_Location_RequestType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Location_RequestType
      */
-    public function setLocation_Reference(\StructType\LocationObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Location_Data value
-     * @return \StructType\Location_iDataType|null
+     * @return \WorkdayWsdl\\StructType\Location_iDataType|null
      */
     public function getLocation_Data()
     {
@@ -88,10 +88,10 @@ class Put_Location_RequestType extends AbstractStructBase
     }
     /**
      * Set Location_Data value
-     * @param \StructType\Location_iDataType $location_Data
-     * @return \StructType\Put_Location_RequestType
+     * @param \WorkdayWsdl\\StructType\Location_iDataType $location_Data
+     * @return \WorkdayWsdl\\StructType\Put_Location_RequestType
      */
-    public function setLocation_Data(\StructType\Location_iDataType $location_Data = null)
+    public function setLocation_Data(\WorkdayWsdl\\StructType\Location_iDataType $location_Data = null)
     {
         $this->Location_Data = $location_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Location_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Location_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Location_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Location_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Location_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Location_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Location_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Location_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Location_RequestType
      */
     public static function __set_state(array $array)
     {

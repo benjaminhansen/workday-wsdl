@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Workteam_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkteamType[]
+     * @var \WorkdayWsdl\\StructType\WorkteamType[]
      */
     public $Workteam;
     /**
      * Constructor method for Workteam_Response_DataType
      * @uses Workteam_Response_DataType::setWorkteam()
-     * @param \StructType\WorkteamType[] $workteam
+     * @param \WorkdayWsdl\\StructType\WorkteamType[] $workteam
      */
     public function __construct(array $workteam = array())
     {
@@ -32,7 +32,7 @@ class Workteam_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Workteam value
-     * @return \StructType\WorkteamType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkteamType[]|null
      */
     public function getWorkteam()
     {
@@ -50,12 +50,12 @@ class Workteam_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workteam_Response_DataTypeWorkteamItem) {
             // validation for constraint: itemType
-            if (!$workteam_Response_DataTypeWorkteamItem instanceof \StructType\WorkteamType) {
+            if (!$workteam_Response_DataTypeWorkteamItem instanceof \WorkdayWsdl\\StructType\WorkteamType) {
                 $invalidValues[] = is_object($workteam_Response_DataTypeWorkteamItem) ? get_class($workteam_Response_DataTypeWorkteamItem) : sprintf('%s(%s)', gettype($workteam_Response_DataTypeWorkteamItem), var_export($workteam_Response_DataTypeWorkteamItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workteam property can only contain items of type \StructType\WorkteamType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workteam property can only contain items of type \WorkdayWsdl\\StructType\WorkteamType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Workteam_Response_DataType extends AbstractStructBase
     /**
      * Set Workteam value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkteamType[] $workteam
-     * @return \StructType\Workteam_Response_DataType
+     * @param \WorkdayWsdl\\StructType\WorkteamType[] $workteam
+     * @return \WorkdayWsdl\\StructType\Workteam_Response_DataType
      */
     public function setWorkteam(array $workteam = array())
     {
@@ -78,14 +78,14 @@ class Workteam_Response_DataType extends AbstractStructBase
     /**
      * Add item to Workteam value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkteamType $item
-     * @return \StructType\Workteam_Response_DataType
+     * @param \WorkdayWsdl\\StructType\WorkteamType $item
+     * @return \WorkdayWsdl\\StructType\Workteam_Response_DataType
      */
-    public function addToWorkteam(\StructType\WorkteamType $item)
+    public function addToWorkteam(\WorkdayWsdl\\StructType\WorkteamType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkteamType) {
-            throw new \InvalidArgumentException(sprintf('The Workteam property can only contain items of type \StructType\WorkteamType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkteamType) {
+            throw new \InvalidArgumentException(sprintf('The Workteam property can only contain items of type \WorkdayWsdl\\StructType\WorkteamType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workteam[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Workteam_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workteam_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Workteam_Response_DataType
      */
     public static function __set_state(array $array)
     {

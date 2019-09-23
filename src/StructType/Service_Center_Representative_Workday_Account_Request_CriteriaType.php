@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Service_Center_Representative_Workday_Account_Request_CriteriaType extends
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

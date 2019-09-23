@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Requirement_OptionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Requirement_OptionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Requirement_OptionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Requirement_OptionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Requirement_OptionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Requirement_OptionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Requirement_OptionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Requirement_OptionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Requirement_OptionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Requirement_OptionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Requirement_OptionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Requirement_OptionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Requirement_OptionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Requirement_OptionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Requirement_OptionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Requirement_OptionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,28 +16,28 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
      * The Worker_Status_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Status_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public $Worker_Status_Data;
     /**
      * The Worker_Position_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Position_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Position_DataType
      */
     public $Worker_Position_Data;
     /**
      * The Compensation_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Compensation_DataType
+     * @var \WorkdayWsdl\\StructType\Compensation_DataType
      */
     public $Compensation_Data;
     /**
      * The Worker_Document_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Document_Data_WWSType
+     * @var \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType
      */
     public $Worker_Document_Data;
     /**
@@ -46,12 +46,12 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
      * @uses Employee_Employment_Info_DataType::setWorker_Position_Data()
      * @uses Employee_Employment_Info_DataType::setCompensation_Data()
      * @uses Employee_Employment_Info_DataType::setWorker_Document_Data()
-     * @param \StructType\Worker_Status_DataType $worker_Status_Data
-     * @param \StructType\Worker_Position_DataType $worker_Position_Data
-     * @param \StructType\Compensation_DataType $compensation_Data
-     * @param \StructType\Worker_Document_Data_WWSType $worker_Document_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data
+     * @param \WorkdayWsdl\\StructType\Compensation_DataType $compensation_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data
      */
-    public function __construct(\StructType\Worker_Status_DataType $worker_Status_Data = null, \StructType\Worker_Position_DataType $worker_Position_Data = null, \StructType\Compensation_DataType $compensation_Data = null, \StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data = null, \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data = null, \WorkdayWsdl\\StructType\Compensation_DataType $compensation_Data = null, \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
     {
         $this
             ->setWorker_Status_Data($worker_Status_Data)
@@ -61,7 +61,7 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Status_Data value
-     * @return \StructType\Worker_Status_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType|null
      */
     public function getWorker_Status_Data()
     {
@@ -69,17 +69,17 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Status_Data value
-     * @param \StructType\Worker_Status_DataType $worker_Status_Data
-     * @return \StructType\Employee_Employment_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
-    public function setWorker_Status_Data(\StructType\Worker_Status_DataType $worker_Status_Data = null)
+    public function setWorker_Status_Data(\WorkdayWsdl\\StructType\Worker_Status_DataType $worker_Status_Data = null)
     {
         $this->Worker_Status_Data = $worker_Status_Data;
         return $this;
     }
     /**
      * Get Worker_Position_Data value
-     * @return \StructType\Worker_Position_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Position_DataType|null
      */
     public function getWorker_Position_Data()
     {
@@ -87,17 +87,17 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Position_Data value
-     * @param \StructType\Worker_Position_DataType $worker_Position_Data
-     * @return \StructType\Employee_Employment_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
-    public function setWorker_Position_Data(\StructType\Worker_Position_DataType $worker_Position_Data = null)
+    public function setWorker_Position_Data(\WorkdayWsdl\\StructType\Worker_Position_DataType $worker_Position_Data = null)
     {
         $this->Worker_Position_Data = $worker_Position_Data;
         return $this;
     }
     /**
      * Get Compensation_Data value
-     * @return \StructType\Compensation_DataType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_DataType|null
      */
     public function getCompensation_Data()
     {
@@ -105,17 +105,17 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Data value
-     * @param \StructType\Compensation_DataType $compensation_Data
-     * @return \StructType\Employee_Employment_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_DataType $compensation_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
-    public function setCompensation_Data(\StructType\Compensation_DataType $compensation_Data = null)
+    public function setCompensation_Data(\WorkdayWsdl\\StructType\Compensation_DataType $compensation_Data = null)
     {
         $this->Compensation_Data = $compensation_Data;
         return $this;
     }
     /**
      * Get Worker_Document_Data value
-     * @return \StructType\Worker_Document_Data_WWSType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType|null
      */
     public function getWorker_Document_Data()
     {
@@ -123,10 +123,10 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Document_Data value
-     * @param \StructType\Worker_Document_Data_WWSType $worker_Document_Data
-     * @return \StructType\Employee_Employment_Info_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
-    public function setWorker_Document_Data(\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
+    public function setWorker_Document_Data(\WorkdayWsdl\\StructType\Worker_Document_Data_WWSType $worker_Document_Data = null)
     {
         $this->Worker_Document_Data = $worker_Document_Data;
         return $this;
@@ -137,7 +137,7 @@ class Employee_Employment_Info_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Employment_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
     public static function __set_state(array $array)
     {

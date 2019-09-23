@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Certification_Qualification_Profile_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType[]
      */
     public $Certification_Qualification_Replacement_Data;
     /**
@@ -32,7 +32,7 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
      * Constructor method for Certification_Qualification_ReplacementType
      * @uses Certification_Qualification_ReplacementType::setCertification_Qualification_Replacement_Data()
      * @uses Certification_Qualification_ReplacementType::setDelete()
-     * @param \StructType\Certification_Qualification_Profile_Replacement_DataType[] $certification_Qualification_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType[] $certification_Qualification_Replacement_Data
      * @param bool $delete
      */
     public function __construct(array $certification_Qualification_Replacement_Data = array(), $delete = null)
@@ -43,7 +43,7 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
     }
     /**
      * Get Certification_Qualification_Replacement_Data value
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType[]|null
      */
     public function getCertification_Qualification_Replacement_Data()
     {
@@ -61,12 +61,12 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem instanceof \StructType\Certification_Qualification_Profile_Replacement_DataType) {
+            if (!$certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType) {
                 $invalidValues[] = is_object($certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem) ? get_class($certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem) : sprintf('%s(%s)', gettype($certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem), var_export($certification_Qualification_ReplacementTypeCertification_Qualification_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Certification_Qualification_Replacement_Data property can only contain items of type \StructType\Certification_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Certification_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Certification_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_Qualification_Profile_Replacement_DataType[] $certification_Qualification_Replacement_Data
-     * @return \StructType\Certification_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType[] $certification_Qualification_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_ReplacementType
      */
     public function setCertification_Qualification_Replacement_Data(array $certification_Qualification_Replacement_Data = array())
     {
@@ -89,14 +89,14 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Add item to Certification_Qualification_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_Qualification_Profile_Replacement_DataType $item
-     * @return \StructType\Certification_Qualification_ReplacementType
+     * @param \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_ReplacementType
      */
-    public function addToCertification_Qualification_Replacement_Data(\StructType\Certification_Qualification_Profile_Replacement_DataType $item)
+    public function addToCertification_Qualification_Replacement_Data(\WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Certification_Qualification_Profile_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Certification_Qualification_Replacement_Data property can only contain items of type \StructType\Certification_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Certification_Qualification_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Certification_Qualification_Replacement_Data[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Certification_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_ReplacementType
      */
     public function setDelete($delete = null)
     {
@@ -129,7 +129,7 @@ class Certification_Qualification_ReplacementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Certification_Qualification_ReplacementType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_ReplacementType
      */
     public static function __set_state(array $array)
     {

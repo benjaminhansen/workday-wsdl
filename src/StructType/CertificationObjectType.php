@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CertificationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CertificationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\CertificationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class CertificationObjectType extends AbstractStructBase
      * Constructor method for CertificationObjectType
      * @uses CertificationObjectType::setID()
      * @uses CertificationObjectType::setDescriptor()
-     * @param \StructType\CertificationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\CertificationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class CertificationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\CertificationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\CertificationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class CertificationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $certificationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$certificationObjectTypeIDItem instanceof \StructType\CertificationObjectIDType) {
+            if (!$certificationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\CertificationObjectIDType) {
                 $invalidValues[] = is_object($certificationObjectTypeIDItem) ? get_class($certificationObjectTypeIDItem) : sprintf('%s(%s)', gettype($certificationObjectTypeIDItem), var_export($certificationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\CertificationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CertificationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class CertificationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CertificationObjectIDType[] $iD
-     * @return \StructType\CertificationObjectType
+     * @param \WorkdayWsdl\\StructType\CertificationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\CertificationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class CertificationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CertificationObjectIDType $item
-     * @return \StructType\CertificationObjectType
+     * @param \WorkdayWsdl\\StructType\CertificationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\CertificationObjectType
      */
-    public function addToID(\StructType\CertificationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\CertificationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CertificationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\CertificationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CertificationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CertificationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class CertificationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\CertificationObjectType
+     * @return \WorkdayWsdl\\StructType\CertificationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class CertificationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CertificationObjectType
+     * @return \WorkdayWsdl\\StructType\CertificationObjectType
      */
     public static function __set_state(array $array)
     {

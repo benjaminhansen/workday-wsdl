@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
      * The External_Form_I_9_Reference
      * Meta information extracted from the WSDL
      * - documentation: The External Form I-9 Reference assigned to the Worker.
-     * @var \StructType\Form_I_9ObjectType
+     * @var \WorkdayWsdl\\StructType\Form_I_9ObjectType
      */
     public $External_Form_I_9_Reference;
     /**
@@ -53,7 +53,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Document Title to be assigned to the Form I-9 Section 3. Must be one of any of the Form I-9 documents that Workday currently supports, from Section 2 List A, B, or C or from Section 3.
      * - minOccurs: 0
-     * @var \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType
+     * @var \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType
      */
     public $Document_Title_Reference;
     /**
@@ -97,7 +97,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
      * - documentation: The request element containing all necessary information for Form I-9 Attachment to assign to the Worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_Attachment_DataType[]
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType[]
      */
     public $External_Form_I_9_Attachment_Data;
     /**
@@ -112,18 +112,18 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
      * @uses External_Form_I_9_Section_3_DataType::setDate_of_Rehire()
      * @uses External_Form_I_9_Section_3_DataType::setDate_of_Employer_Signature()
      * @uses External_Form_I_9_Section_3_DataType::setExternal_Form_I_9_Attachment_Data()
-     * @param \StructType\Form_I_9ObjectType $external_Form_I_9_Reference
+     * @param \WorkdayWsdl\\StructType\Form_I_9ObjectType $external_Form_I_9_Reference
      * @param string $last_Name
      * @param string $first_Name
      * @param string $middle_Initial
-     * @param \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
      * @param string $dHS_Document_Title
      * @param string $expiration_Date
      * @param string $date_of_Rehire
      * @param string $date_of_Employer_Signature
-     * @param \StructType\External_Form_I_9_Attachment_DataType[] $external_Form_I_9_Attachment_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType[] $external_Form_I_9_Attachment_Data
      */
-    public function __construct(\StructType\Form_I_9ObjectType $external_Form_I_9_Reference = null, $last_Name = null, $first_Name = null, $middle_Initial = null, \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null, $dHS_Document_Title = null, $expiration_Date = null, $date_of_Rehire = null, $date_of_Employer_Signature = null, array $external_Form_I_9_Attachment_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Form_I_9ObjectType $external_Form_I_9_Reference = null, $last_Name = null, $first_Name = null, $middle_Initial = null, \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null, $dHS_Document_Title = null, $expiration_Date = null, $date_of_Rehire = null, $date_of_Employer_Signature = null, array $external_Form_I_9_Attachment_Data = array())
     {
         $this
             ->setExternal_Form_I_9_Reference($external_Form_I_9_Reference)
@@ -148,9 +148,9 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Reference value
      * @param external_Form_I_Reference $external_Form_I_Reference
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
-    public function setExternal_Form_I_9_Reference(\StructType\Form_I_9ObjectType $external_Form_I_9_Reference = null)
+    public function setExternal_Form_I_9_Reference(\WorkdayWsdl\\StructType\Form_I_9ObjectType $external_Form_I_9_Reference = null)
     {
         $this->External_Form_I_9_Reference = $this->{'External_Form_I-9_Reference'} = $external_Form_I_9_Reference;
         return $this;
@@ -166,7 +166,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @param string $last_Name
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setLast_Name($last_Name = null)
     {
@@ -188,7 +188,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setFirst_Name($first_Name = null)
     {
@@ -210,7 +210,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set Middle_Initial value
      * @param string $middle_Initial
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setMiddle_Initial($middle_Initial = null)
     {
@@ -227,7 +227,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     }
     /**
      * Get Document_Title_Reference value
-     * @return \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType|null
      */
     public function getDocument_Title_Reference()
     {
@@ -235,10 +235,10 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Title_Reference value
-     * @param \StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
-    public function setDocument_Title_Reference(\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null)
+    public function setDocument_Title_Reference(\WorkdayWsdl\\StructType\Form_I_9_Identifier_Type__Workday_Owned_ObjectType $document_Title_Reference = null)
     {
         $this->Document_Title_Reference = $document_Title_Reference;
         return $this;
@@ -254,7 +254,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set DHS_Document_Title value
      * @param string $dHS_Document_Title
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setDHS_Document_Title($dHS_Document_Title = null)
     {
@@ -276,7 +276,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -298,7 +298,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set Date_of_Rehire value
      * @param string $date_of_Rehire
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setDate_of_Rehire($date_of_Rehire = null)
     {
@@ -320,7 +320,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set Date_of_Employer_Signature value
      * @param string $date_of_Employer_Signature
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setDate_of_Employer_Signature($date_of_Employer_Signature = null)
     {
@@ -351,12 +351,12 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem) {
             // validation for constraint: itemType
-            if (!$external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem instanceof \StructType\External_Form_I_9_Attachment_DataType) {
+            if (!$external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem instanceof \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType) {
                 $invalidValues[] = is_object($external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem) ? get_class($external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem) : sprintf('%s(%s)', gettype($external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem), var_export($external_Form_I_9_Section_3_DataTypeExternal_Form_I_9_Attachment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Form_I_9_Attachment_Data property can only contain items of type \StructType\External_Form_I_9_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Form_I_9_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -364,7 +364,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Attachment_Data value
      * @param external_Form_I_Attachment_Data $external_Form_I_Attachment_Data
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public function setExternal_Form_I_9_Attachment_Data(array $external_Form_I_9_Attachment_Data = array())
     {
@@ -378,14 +378,14 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
     /**
      * Add item to External_Form_I_9_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Form_I_9_Attachment_DataType $item
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType $item
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
-    public function addToExternal_Form_I_9_Attachment_Data(\StructType\External_Form_I_9_Attachment_DataType $item)
+    public function addToExternal_Form_I_9_Attachment_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Form_I_9_Attachment_DataType) {
-            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Attachment_Data property can only contain items of type \StructType\External_Form_I_9_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType) {
+            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Form_I_9_Attachment_Data[] = $this->{'External_Form_I-9_Attachment_Data'}[] = $item;
         return $this;
@@ -396,7 +396,7 @@ class External_Form_I_9_Section_3_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Section_3_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_3_DataType
      */
     public static function __set_state(array $array)
     {

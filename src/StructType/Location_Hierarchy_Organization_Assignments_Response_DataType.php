@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_Hierarchy_Organization_AssignmentsType[]
+     * @var \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType[]
      */
     public $Location_Hierarchy_Organization_Assignments;
     /**
      * Constructor method for
      * Location_Hierarchy_Organization_Assignments_Response_DataType
      * @uses Location_Hierarchy_Organization_Assignments_Response_DataType::setLocation_Hierarchy_Organization_Assignments()
-     * @param \StructType\Location_Hierarchy_Organization_AssignmentsType[] $location_Hierarchy_Organization_Assignments
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType[] $location_Hierarchy_Organization_Assignments
      */
     public function __construct(array $location_Hierarchy_Organization_Assignments = array())
     {
@@ -34,7 +34,7 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
     }
     /**
      * Get Location_Hierarchy_Organization_Assignments value
-     * @return \StructType\Location_Hierarchy_Organization_AssignmentsType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType[]|null
      */
     public function getLocation_Hierarchy_Organization_Assignments()
     {
@@ -52,12 +52,12 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
         $invalidValues = [];
         foreach ($values as $location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem) {
             // validation for constraint: itemType
-            if (!$location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem instanceof \StructType\Location_Hierarchy_Organization_AssignmentsType) {
+            if (!$location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem instanceof \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType) {
                 $invalidValues[] = is_object($location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem) ? get_class($location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem) : sprintf('%s(%s)', gettype($location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem), var_export($location_Hierarchy_Organization_Assignments_Response_DataTypeLocation_Hierarchy_Organization_AssignmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Hierarchy_Organization_Assignments property can only contain items of type \StructType\Location_Hierarchy_Organization_AssignmentsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Hierarchy_Organization_Assignments property can only contain items of type \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
     /**
      * Set Location_Hierarchy_Organization_Assignments value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Hierarchy_Organization_AssignmentsType[] $location_Hierarchy_Organization_Assignments
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType[] $location_Hierarchy_Organization_Assignments
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
      */
     public function setLocation_Hierarchy_Organization_Assignments(array $location_Hierarchy_Organization_Assignments = array())
     {
@@ -80,14 +80,14 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
     /**
      * Add item to Location_Hierarchy_Organization_Assignments value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Hierarchy_Organization_AssignmentsType $item
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType $item
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
      */
-    public function addToLocation_Hierarchy_Organization_Assignments(\StructType\Location_Hierarchy_Organization_AssignmentsType $item)
+    public function addToLocation_Hierarchy_Organization_Assignments(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_Hierarchy_Organization_AssignmentsType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Hierarchy_Organization_Assignments property can only contain items of type \StructType\Location_Hierarchy_Organization_AssignmentsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Hierarchy_Organization_Assignments property can only contain items of type \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_AssignmentsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Hierarchy_Organization_Assignments[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Location_Hierarchy_Organization_Assignments_Response_DataType extends Abst
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
      */
     public static function __set_state(array $array)
     {

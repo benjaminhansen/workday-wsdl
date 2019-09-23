@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
      * - documentation: Difficulty to Fill
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_FillType[]
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_FillType[]
      */
     public $Difficulty_to_Fill;
     /**
      * Constructor method for Difficulty_to_Fill_Response_DataType
      * @uses Difficulty_to_Fill_Response_DataType::setDifficulty_to_Fill()
-     * @param \StructType\Difficulty_to_FillType[] $difficulty_to_Fill
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillType[] $difficulty_to_Fill
      */
     public function __construct(array $difficulty_to_Fill = array())
     {
@@ -33,7 +33,7 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Difficulty_to_Fill value
-     * @return \StructType\Difficulty_to_FillType[]|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillType[]|null
      */
     public function getDifficulty_to_Fill()
     {
@@ -51,12 +51,12 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem) {
             // validation for constraint: itemType
-            if (!$difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem instanceof \StructType\Difficulty_to_FillType) {
+            if (!$difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem instanceof \WorkdayWsdl\\StructType\Difficulty_to_FillType) {
                 $invalidValues[] = is_object($difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem) ? get_class($difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem) : sprintf('%s(%s)', gettype($difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem), var_export($difficulty_to_Fill_Response_DataTypeDifficulty_to_FillItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Difficulty_to_Fill property can only contain items of type \StructType\Difficulty_to_FillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Difficulty_to_Fill property can only contain items of type \WorkdayWsdl\\StructType\Difficulty_to_FillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill value
      * @throws \InvalidArgumentException
-     * @param \StructType\Difficulty_to_FillType[] $difficulty_to_Fill
-     * @return \StructType\Difficulty_to_Fill_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillType[] $difficulty_to_Fill
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_Response_DataType
      */
     public function setDifficulty_to_Fill(array $difficulty_to_Fill = array())
     {
@@ -79,14 +79,14 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
     /**
      * Add item to Difficulty_to_Fill value
      * @throws \InvalidArgumentException
-     * @param \StructType\Difficulty_to_FillType $item
-     * @return \StructType\Difficulty_to_Fill_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillType $item
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_Response_DataType
      */
-    public function addToDifficulty_to_Fill(\StructType\Difficulty_to_FillType $item)
+    public function addToDifficulty_to_Fill(\WorkdayWsdl\\StructType\Difficulty_to_FillType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Difficulty_to_FillType) {
-            throw new \InvalidArgumentException(sprintf('The Difficulty_to_Fill property can only contain items of type \StructType\Difficulty_to_FillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Difficulty_to_FillType) {
+            throw new \InvalidArgumentException(sprintf('The Difficulty_to_Fill property can only contain items of type \WorkdayWsdl\\StructType\Difficulty_to_FillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Difficulty_to_Fill[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Difficulty_to_Fill_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Difficulty_to_Fill_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_Response_DataType
      */
     public static function __set_state(array $array)
     {

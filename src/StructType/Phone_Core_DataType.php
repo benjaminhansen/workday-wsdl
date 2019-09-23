@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Phone_Core_DataType extends AbstractStructBase
      * The Device_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for Phone Device Type.
-     * @var \StructType\Phone_Device_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
     public $Device_Type_Reference;
     /**
@@ -24,7 +24,7 @@ class Phone_Core_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: International phone code number.
      * - minOccurs: 0
-     * @var \StructType\Country_Phone_CodeObjectType
+     * @var \WorkdayWsdl\\StructType\Country_Phone_CodeObjectType
      */
     public $Country_Code_Reference;
     /**
@@ -58,13 +58,13 @@ class Phone_Core_DataType extends AbstractStructBase
      * @uses Phone_Core_DataType::setComplete_Phone_Number()
      * @uses Phone_Core_DataType::setExtension()
      * @uses Phone_Core_DataType::setFormatted_Phone()
-     * @param \StructType\Phone_Device_TypeObjectType $device_Type_Reference
-     * @param \StructType\Country_Phone_CodeObjectType $country_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $device_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Country_Phone_CodeObjectType $country_Code_Reference
      * @param string $complete_Phone_Number
      * @param string $extension
      * @param string $formatted_Phone
      */
-    public function __construct(\StructType\Phone_Device_TypeObjectType $device_Type_Reference = null, \StructType\Country_Phone_CodeObjectType $country_Code_Reference = null, $complete_Phone_Number = null, $extension = null, $formatted_Phone = null)
+    public function __construct(\WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $device_Type_Reference = null, \WorkdayWsdl\\StructType\Country_Phone_CodeObjectType $country_Code_Reference = null, $complete_Phone_Number = null, $extension = null, $formatted_Phone = null)
     {
         $this
             ->setDevice_Type_Reference($device_Type_Reference)
@@ -75,7 +75,7 @@ class Phone_Core_DataType extends AbstractStructBase
     }
     /**
      * Get Device_Type_Reference value
-     * @return \StructType\Phone_Device_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType|null
      */
     public function getDevice_Type_Reference()
     {
@@ -83,17 +83,17 @@ class Phone_Core_DataType extends AbstractStructBase
     }
     /**
      * Set Device_Type_Reference value
-     * @param \StructType\Phone_Device_TypeObjectType $device_Type_Reference
-     * @return \StructType\Phone_Core_DataType
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $device_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
-    public function setDevice_Type_Reference(\StructType\Phone_Device_TypeObjectType $device_Type_Reference = null)
+    public function setDevice_Type_Reference(\WorkdayWsdl\\StructType\Phone_Device_TypeObjectType $device_Type_Reference = null)
     {
         $this->Device_Type_Reference = $device_Type_Reference;
         return $this;
     }
     /**
      * Get Country_Code_Reference value
-     * @return \StructType\Country_Phone_CodeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_Phone_CodeObjectType|null
      */
     public function getCountry_Code_Reference()
     {
@@ -101,10 +101,10 @@ class Phone_Core_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Code_Reference value
-     * @param \StructType\Country_Phone_CodeObjectType $country_Code_Reference
-     * @return \StructType\Phone_Core_DataType
+     * @param \WorkdayWsdl\\StructType\Country_Phone_CodeObjectType $country_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
-    public function setCountry_Code_Reference(\StructType\Country_Phone_CodeObjectType $country_Code_Reference = null)
+    public function setCountry_Code_Reference(\WorkdayWsdl\\StructType\Country_Phone_CodeObjectType $country_Code_Reference = null)
     {
         $this->Country_Code_Reference = $country_Code_Reference;
         return $this;
@@ -120,7 +120,7 @@ class Phone_Core_DataType extends AbstractStructBase
     /**
      * Set Complete_Phone_Number value
      * @param string $complete_Phone_Number
-     * @return \StructType\Phone_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
     public function setComplete_Phone_Number($complete_Phone_Number = null)
     {
@@ -142,7 +142,7 @@ class Phone_Core_DataType extends AbstractStructBase
     /**
      * Set Extension value
      * @param string $extension
-     * @return \StructType\Phone_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
     public function setExtension($extension = null)
     {
@@ -164,7 +164,7 @@ class Phone_Core_DataType extends AbstractStructBase
     /**
      * Set Formatted_Phone value
      * @param string $formatted_Phone
-     * @return \StructType\Phone_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
     public function setFormatted_Phone($formatted_Phone = null)
     {
@@ -181,7 +181,7 @@ class Phone_Core_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Phone_Core_DataType
      */
     public static function __set_state(array $array)
     {

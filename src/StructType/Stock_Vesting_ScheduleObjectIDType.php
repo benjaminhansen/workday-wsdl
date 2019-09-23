@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Stock_Vesting_ScheduleObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Stock_Vesting_ScheduleReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Stock_Vesting_ScheduleReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Stock_Vesting_ScheduleReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Stock_Vesting_ScheduleReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Stock_Vesting_ScheduleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Stock_Vesting_ScheduleReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Stock_Vesting_ScheduleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Stock_Vesting_ScheduleReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Stock_Vesting_ScheduleReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Stock_Vesting_ScheduleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Stock_Vesting_ScheduleReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Stock_Vesting_ScheduleObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Stock_Vesting_ScheduleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Stock_Vesting_ScheduleObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Stock_Vesting_ScheduleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType
      */
     public static function __set_state(array $array)
     {

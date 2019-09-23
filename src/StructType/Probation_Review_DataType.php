@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Probation_Review_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Probation Period Review Length
      * - minOccurs: 0
-     * @var \StructType\Probation_Period_Review_LengthType
+     * @var \WorkdayWsdl\\StructType\Probation_Period_Review_LengthType
      */
     public $Probation_Period_Review_Length;
     /**
@@ -45,9 +45,9 @@ class Probation_Review_DataType extends AbstractStructBase
      * @uses Probation_Review_DataType::setProbation_Period_Review_Length()
      * @param bool $derive_Probation_Period_Review_from_Rule
      * @param string $probation_Review_Date
-     * @param \StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length
+     * @param \WorkdayWsdl\\StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length
      */
-    public function __construct($derive_Probation_Period_Review_from_Rule = null, $probation_Review_Date = null, \StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length = null)
+    public function __construct($derive_Probation_Period_Review_from_Rule = null, $probation_Review_Date = null, \WorkdayWsdl\\StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length = null)
     {
         $this
             ->setDerive_Probation_Period_Review_from_Rule($derive_Probation_Period_Review_from_Rule)
@@ -65,7 +65,7 @@ class Probation_Review_DataType extends AbstractStructBase
     /**
      * Set Derive_Probation_Period_Review_from_Rule value
      * @param bool $derive_Probation_Period_Review_from_Rule
-     * @return \StructType\Probation_Review_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Review_DataType
      */
     public function setDerive_Probation_Period_Review_from_Rule($derive_Probation_Period_Review_from_Rule = null)
     {
@@ -87,7 +87,7 @@ class Probation_Review_DataType extends AbstractStructBase
     /**
      * Set Probation_Review_Date value
      * @param string $probation_Review_Date
-     * @return \StructType\Probation_Review_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Review_DataType
      */
     public function setProbation_Review_Date($probation_Review_Date = null)
     {
@@ -100,7 +100,7 @@ class Probation_Review_DataType extends AbstractStructBase
     }
     /**
      * Get Probation_Period_Review_Length value
-     * @return \StructType\Probation_Period_Review_LengthType|null
+     * @return \WorkdayWsdl\\StructType\Probation_Period_Review_LengthType|null
      */
     public function getProbation_Period_Review_Length()
     {
@@ -108,10 +108,10 @@ class Probation_Review_DataType extends AbstractStructBase
     }
     /**
      * Set Probation_Period_Review_Length value
-     * @param \StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length
-     * @return \StructType\Probation_Review_DataType
+     * @param \WorkdayWsdl\\StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length
+     * @return \WorkdayWsdl\\StructType\Probation_Review_DataType
      */
-    public function setProbation_Period_Review_Length(\StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length = null)
+    public function setProbation_Period_Review_Length(\WorkdayWsdl\\StructType\Probation_Period_Review_LengthType $probation_Period_Review_Length = null)
     {
         $this->Probation_Period_Review_Length = $probation_Period_Review_Length;
         return $this;
@@ -122,7 +122,7 @@ class Probation_Review_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Probation_Review_DataType
+     * @return \WorkdayWsdl\\StructType\Probation_Review_DataType
      */
     public static function __set_state(array $array)
     {

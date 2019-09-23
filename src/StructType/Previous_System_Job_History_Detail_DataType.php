@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -91,7 +91,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public function setID($iD = null)
     {
@@ -113,7 +113,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
     /**
      * Set Worker_History_Name value
      * @param string $worker_History_Name
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public function setWorker_History_Name($worker_History_Name = null)
     {
@@ -135,7 +135,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
     /**
      * Set Action_Date value
      * @param string $action_Date
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public function setAction_Date($action_Date = null)
     {
@@ -157,7 +157,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
     /**
      * Set Reason value
      * @param string $reason
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public function setReason($reason = null)
     {
@@ -179,7 +179,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public function setDescription($description = null)
     {
@@ -196,7 +196,7 @@ class Previous_System_Job_History_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Previous_System_Job_History_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Previous_System_Job_History_Detail_DataType
      */
     public static function __set_state(array $array)
     {

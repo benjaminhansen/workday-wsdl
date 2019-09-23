@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,24 +18,24 @@ class External_Disability_Self_Identification_RecordType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an External Disability Self-Identification Record
      * - minOccurs: 0
-     * @var \StructType\External_Disability_Self_Identification_RecordObjectType
+     * @var \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType
      */
     public $External_Disability_Self_Identification_Record_Reference;
     /**
      * The External_Disability_Self_Identification_Record_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Disability_Self_Identification_Record_DataType
+     * @var \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType
      */
     public $External_Disability_Self_Identification_Record_Data;
     /**
      * Constructor method for External_Disability_Self-Identification_RecordType
      * @uses External_Disability_Self_Identification_RecordType::setExternal_Disability_Self_Identification_Record_Reference()
      * @uses External_Disability_Self_Identification_RecordType::setExternal_Disability_Self_Identification_Record_Data()
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference
-     * @param \StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data
      */
-    public function __construct(\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference = null, \StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference = null, \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data = null)
     {
         $this
             ->setExternal_Disability_Self_Identification_Record_Reference($external_Disability_Self_Identification_Record_Reference)
@@ -43,7 +43,7 @@ class External_Disability_Self_Identification_RecordType extends AbstractStructB
     }
     /**
      * Get External_Disability_Self_Identification_Record_Reference value
-     * @return \StructType\External_Disability_Self_Identification_RecordObjectType|null
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType|null
      */
     public function getExternal_Disability_Self_Identification_Record_Reference()
     {
@@ -51,17 +51,17 @@ class External_Disability_Self_Identification_RecordType extends AbstractStructB
     }
     /**
      * Set External_Disability_Self_Identification_Record_Reference value
-     * @param \StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference
-     * @return \StructType\External_Disability_Self_Identification_RecordType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordType
      */
-    public function setExternal_Disability_Self_Identification_Record_Reference(\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference = null)
+    public function setExternal_Disability_Self_Identification_Record_Reference(\WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordObjectType $external_Disability_Self_Identification_Record_Reference = null)
     {
         $this->External_Disability_Self_Identification_Record_Reference = $external_Disability_Self_Identification_Record_Reference;
         return $this;
     }
     /**
      * Get External_Disability_Self_Identification_Record_Data value
-     * @return \StructType\External_Disability_Self_Identification_Record_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType|null
      */
     public function getExternal_Disability_Self_Identification_Record_Data()
     {
@@ -69,10 +69,10 @@ class External_Disability_Self_Identification_RecordType extends AbstractStructB
     }
     /**
      * Set External_Disability_Self_Identification_Record_Data value
-     * @param \StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data
-     * @return \StructType\External_Disability_Self_Identification_RecordType
+     * @param \WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordType
      */
-    public function setExternal_Disability_Self_Identification_Record_Data(\StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data = null)
+    public function setExternal_Disability_Self_Identification_Record_Data(\WorkdayWsdl\\StructType\External_Disability_Self_Identification_Record_DataType $external_Disability_Self_Identification_Record_Data = null)
     {
         $this->External_Disability_Self_Identification_Record_Data = $external_Disability_Self_Identification_Record_Data;
         return $this;
@@ -83,7 +83,7 @@ class External_Disability_Self_Identification_RecordType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Disability_Self_Identification_RecordType
+     * @return \WorkdayWsdl\\StructType\External_Disability_Self_Identification_RecordType
      */
     public static function __set_state(array $array)
     {

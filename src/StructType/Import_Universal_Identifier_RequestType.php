@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
      * - documentation: Universal Identifier High Volume
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Universal_Identifier_Data_HVType[]
+     * @var \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType[]
      */
     public $Universal_Identifier_Data_HV;
     /**
@@ -43,7 +43,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
      * @uses Import_Universal_Identifier_RequestType::setUniversal_Identifier_Data_HV()
      * @uses Import_Universal_Identifier_RequestType::setVersion()
      * @param string $iD
-     * @param \StructType\Universal_Identifier_Data_HVType[] $universal_Identifier_Data_HV
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType[] $universal_Identifier_Data_HV
      * @param string $version
      */
     public function __construct($iD = null, array $universal_Identifier_Data_HV = array(), $version = null)
@@ -64,7 +64,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Import_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Universal_Identifier_RequestType
      */
     public function setID($iD = null)
     {
@@ -77,7 +77,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
     }
     /**
      * Get Universal_Identifier_Data_HV value
-     * @return \StructType\Universal_Identifier_Data_HVType[]|null
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType[]|null
      */
     public function getUniversal_Identifier_Data_HV()
     {
@@ -95,12 +95,12 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem) {
             // validation for constraint: itemType
-            if (!$import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem instanceof \StructType\Universal_Identifier_Data_HVType) {
+            if (!$import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem instanceof \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType) {
                 $invalidValues[] = is_object($import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem) ? get_class($import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem) : sprintf('%s(%s)', gettype($import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem), var_export($import_Universal_Identifier_RequestTypeUniversal_Identifier_Data_HVItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Universal_Identifier_Data_HV property can only contain items of type \StructType\Universal_Identifier_Data_HVType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Universal_Identifier_Data_HV property can only contain items of type \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -108,8 +108,8 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Set Universal_Identifier_Data_HV value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_Identifier_Data_HVType[] $universal_Identifier_Data_HV
-     * @return \StructType\Import_Universal_Identifier_RequestType
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType[] $universal_Identifier_Data_HV
+     * @return \WorkdayWsdl\\StructType\Import_Universal_Identifier_RequestType
      */
     public function setUniversal_Identifier_Data_HV(array $universal_Identifier_Data_HV = array())
     {
@@ -123,14 +123,14 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Add item to Universal_Identifier_Data_HV value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_Identifier_Data_HVType $item
-     * @return \StructType\Import_Universal_Identifier_RequestType
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType $item
+     * @return \WorkdayWsdl\\StructType\Import_Universal_Identifier_RequestType
      */
-    public function addToUniversal_Identifier_Data_HV(\StructType\Universal_Identifier_Data_HVType $item)
+    public function addToUniversal_Identifier_Data_HV(\WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Universal_Identifier_Data_HVType) {
-            throw new \InvalidArgumentException(sprintf('The Universal_Identifier_Data_HV property can only contain items of type \StructType\Universal_Identifier_Data_HVType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType) {
+            throw new \InvalidArgumentException(sprintf('The Universal_Identifier_Data_HV property can only contain items of type \WorkdayWsdl\\StructType\Universal_Identifier_Data_HVType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Universal_Identifier_Data_HV[] = $item;
         return $this;
@@ -146,7 +146,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Import_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Universal_Identifier_RequestType
      */
     public function setVersion($version = null)
     {
@@ -163,7 +163,7 @@ class Import_Universal_Identifier_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Import_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Universal_Identifier_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class PronounObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\PronounReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\PronounReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\PronounReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\PronounReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\PronounObjectIDType
+     * @return \WorkdayWsdl\\StructType\PronounObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PronounReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\PronounReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\PronounReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\PronounReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\PronounReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\PronounReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class PronounObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\PronounObjectIDType
+     * @return \WorkdayWsdl\\StructType\PronounObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class PronounObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PronounObjectIDType
+     * @return \WorkdayWsdl\\StructType\PronounObjectIDType
      */
     public static function __set_state(array $array)
     {

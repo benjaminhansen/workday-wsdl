@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Appointment Specialty Reference
      * - minOccurs: 0
-     * @var \StructType\Appointment_SpecialtyObjectType
+     * @var \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType
      */
     public $Appointment_Specialty_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
      * Constructor method for Put_Appointment_Specialty_ResponseType
      * @uses Put_Appointment_Specialty_ResponseType::setAppointment_Specialty_Reference()
      * @uses Put_Appointment_Specialty_ResponseType::setVersion()
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, $version = null)
     {
         $this
             ->setAppointment_Specialty_Reference($appointment_Specialty_Reference)
@@ -42,7 +42,7 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
     }
     /**
      * Get Appointment_Specialty_Reference value
-     * @return \StructType\Appointment_SpecialtyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType|null
      */
     public function getAppointment_Specialty_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
     }
     /**
      * Set Appointment_Specialty_Reference value
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @return \StructType\Put_Appointment_Specialty_ResponseType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_ResponseType
      */
-    public function setAppointment_Specialty_Reference(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
+    public function setAppointment_Specialty_Reference(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
     {
         $this->Appointment_Specialty_Reference = $appointment_Specialty_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Appointment_Specialty_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Appointment_Specialty_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Appointment_Specialty_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Appointment_Specialty_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Biographic_DataType extends AbstractStructBase
      * - documentation: ISO Code identifying the country where the naming rules for this name are defined. Workday enables you to specify an ISO Code at the country level. Each customer can also define various rules around names, required fields for names,
      * and labels for name fields at the Country level. http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
      * - minOccurs: 0
-     * @var \StructType\Country_Of_Birth_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType
      */
     public $Country_Of_Birth_Reference;
     /**
@@ -44,7 +44,7 @@ class Biographic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique attribute name and description that identifies a valid instance of gender.
      * - minOccurs: 0
-     * @var \StructType\Gender_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Gender_ReferenceType
      */
     public $Gender_Reference;
     /**
@@ -52,7 +52,7 @@ class Biographic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disability_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Disability_ReferenceType[]
      */
     public $Disability_Reference;
     /**
@@ -72,14 +72,14 @@ class Biographic_DataType extends AbstractStructBase
      * @uses Biographic_DataType::setGender_Reference()
      * @uses Biographic_DataType::setDisability_Reference()
      * @uses Biographic_DataType::setUses_Tobacco()
-     * @param \StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference
+     * @param \WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference
      * @param string $place_Of_Birth
      * @param string $date_Of_Birth
-     * @param \StructType\Gender_ReferenceType $gender_Reference
-     * @param \StructType\Disability_ReferenceType[] $disability_Reference
+     * @param \WorkdayWsdl\\StructType\Gender_ReferenceType $gender_Reference
+     * @param \WorkdayWsdl\\StructType\Disability_ReferenceType[] $disability_Reference
      * @param bool $uses_Tobacco
      */
-    public function __construct(\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference = null, $place_Of_Birth = null, $date_Of_Birth = null, \StructType\Gender_ReferenceType $gender_Reference = null, array $disability_Reference = array(), $uses_Tobacco = null)
+    public function __construct(\WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference = null, $place_Of_Birth = null, $date_Of_Birth = null, \WorkdayWsdl\\StructType\Gender_ReferenceType $gender_Reference = null, array $disability_Reference = array(), $uses_Tobacco = null)
     {
         $this
             ->setCountry_Of_Birth_Reference($country_Of_Birth_Reference)
@@ -91,7 +91,7 @@ class Biographic_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Of_Birth_Reference value
-     * @return \StructType\Country_Of_Birth_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType|null
      */
     public function getCountry_Of_Birth_Reference()
     {
@@ -99,10 +99,10 @@ class Biographic_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Of_Birth_Reference value
-     * @param \StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference
-     * @return \StructType\Biographic_DataType
+     * @param \WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
-    public function setCountry_Of_Birth_Reference(\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference = null)
+    public function setCountry_Of_Birth_Reference(\WorkdayWsdl\\StructType\Country_Of_Birth_ReferenceType $country_Of_Birth_Reference = null)
     {
         $this->Country_Of_Birth_Reference = $country_Of_Birth_Reference;
         return $this;
@@ -118,7 +118,7 @@ class Biographic_DataType extends AbstractStructBase
     /**
      * Set Place_Of_Birth value
      * @param string $place_Of_Birth
-     * @return \StructType\Biographic_DataType
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public function setPlace_Of_Birth($place_Of_Birth = null)
     {
@@ -140,7 +140,7 @@ class Biographic_DataType extends AbstractStructBase
     /**
      * Set Date_Of_Birth value
      * @param string $date_Of_Birth
-     * @return \StructType\Biographic_DataType
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public function setDate_Of_Birth($date_Of_Birth = null)
     {
@@ -153,7 +153,7 @@ class Biographic_DataType extends AbstractStructBase
     }
     /**
      * Get Gender_Reference value
-     * @return \StructType\Gender_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Gender_ReferenceType|null
      */
     public function getGender_Reference()
     {
@@ -161,17 +161,17 @@ class Biographic_DataType extends AbstractStructBase
     }
     /**
      * Set Gender_Reference value
-     * @param \StructType\Gender_ReferenceType $gender_Reference
-     * @return \StructType\Biographic_DataType
+     * @param \WorkdayWsdl\\StructType\Gender_ReferenceType $gender_Reference
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
-    public function setGender_Reference(\StructType\Gender_ReferenceType $gender_Reference = null)
+    public function setGender_Reference(\WorkdayWsdl\\StructType\Gender_ReferenceType $gender_Reference = null)
     {
         $this->Gender_Reference = $gender_Reference;
         return $this;
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\Disability_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Disability_ReferenceType[]|null
      */
     public function getDisability_Reference()
     {
@@ -189,12 +189,12 @@ class Biographic_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $biographic_DataTypeDisability_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$biographic_DataTypeDisability_ReferenceItem instanceof \StructType\Disability_ReferenceType) {
+            if (!$biographic_DataTypeDisability_ReferenceItem instanceof \WorkdayWsdl\\StructType\Disability_ReferenceType) {
                 $invalidValues[] = is_object($biographic_DataTypeDisability_ReferenceItem) ? get_class($biographic_DataTypeDisability_ReferenceItem) : sprintf('%s(%s)', gettype($biographic_DataTypeDisability_ReferenceItem), var_export($biographic_DataTypeDisability_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability_Reference property can only contain items of type \StructType\Disability_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disability_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -202,8 +202,8 @@ class Biographic_DataType extends AbstractStructBase
     /**
      * Set Disability_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_ReferenceType[] $disability_Reference
-     * @return \StructType\Biographic_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_ReferenceType[] $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public function setDisability_Reference(array $disability_Reference = array())
     {
@@ -217,14 +217,14 @@ class Biographic_DataType extends AbstractStructBase
     /**
      * Add item to Disability_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_ReferenceType $item
-     * @return \StructType\Biographic_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
-    public function addToDisability_Reference(\StructType\Disability_ReferenceType $item)
+    public function addToDisability_Reference(\WorkdayWsdl\\StructType\Disability_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disability_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Disability_Reference property can only contain items of type \StructType\Disability_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disability_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Disability_Reference property can only contain items of type \WorkdayWsdl\\StructType\Disability_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability_Reference[] = $item;
         return $this;
@@ -240,7 +240,7 @@ class Biographic_DataType extends AbstractStructBase
     /**
      * Set Uses_Tobacco value
      * @param bool $uses_Tobacco
-     * @return \StructType\Biographic_DataType
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public function setUses_Tobacco($uses_Tobacco = null)
     {
@@ -257,7 +257,7 @@ class Biographic_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Biographic_DataType
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public static function __set_state(array $array)
     {

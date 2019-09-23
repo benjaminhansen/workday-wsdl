@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Relocation_AreaObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Relocation_AreaObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Relocation_AreaObjectType extends AbstractStructBase
      * Constructor method for Relocation_AreaObjectType
      * @uses Relocation_AreaObjectType::setID()
      * @uses Relocation_AreaObjectType::setDescriptor()
-     * @param \StructType\Relocation_AreaObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Relocation_AreaObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Relocation_AreaObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Relocation_AreaObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $relocation_AreaObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$relocation_AreaObjectTypeIDItem instanceof \StructType\Relocation_AreaObjectIDType) {
+            if (!$relocation_AreaObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType) {
                 $invalidValues[] = is_object($relocation_AreaObjectTypeIDItem) ? get_class($relocation_AreaObjectTypeIDItem) : sprintf('%s(%s)', gettype($relocation_AreaObjectTypeIDItem), var_export($relocation_AreaObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Relocation_AreaObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Relocation_AreaObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relocation_AreaObjectIDType[] $iD
-     * @return \StructType\Relocation_AreaObjectType
+     * @param \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Relocation_AreaObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Relocation_AreaObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Relocation_AreaObjectIDType $item
-     * @return \StructType\Relocation_AreaObjectType
+     * @param \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Relocation_AreaObjectType
      */
-    public function addToID(\StructType\Relocation_AreaObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Relocation_AreaObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Relocation_AreaObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Relocation_AreaObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Relocation_AreaObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Relocation_AreaObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Relocation_AreaObjectType
+     * @return \WorkdayWsdl\\StructType\Relocation_AreaObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Relocation_AreaObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Relocation_AreaObjectType
+     * @return \WorkdayWsdl\\StructType\Relocation_AreaObjectType
      */
     public static function __set_state(array $array)
     {

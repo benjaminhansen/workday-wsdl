@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Update_Safety_Incident_DataType extends AbstractStructBase
      * The Safety_Incident_Reference
      * Meta information extracted from the WSDL
      * - documentation: Safety Incident that will be updated.
-     * @var \StructType\Safety_IncidentObjectType
+     * @var \WorkdayWsdl\\StructType\Safety_IncidentObjectType
      */
     public $Safety_Incident_Reference;
     /**
      * The Safety_Incident_Data
-     * @var \StructType\Report_Safety_Incident_DataType
+     * @var \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType
      */
     public $Safety_Incident_Data;
     /**
      * Constructor method for Update_Safety_Incident_DataType
      * @uses Update_Safety_Incident_DataType::setSafety_Incident_Reference()
      * @uses Update_Safety_Incident_DataType::setSafety_Incident_Data()
-     * @param \StructType\Safety_IncidentObjectType $safety_Incident_Reference
-     * @param \StructType\Report_Safety_Incident_DataType $safety_Incident_Data
+     * @param \WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $safety_Incident_Data
      */
-    public function __construct(\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null, \StructType\Report_Safety_Incident_DataType $safety_Incident_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null, \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $safety_Incident_Data = null)
     {
         $this
             ->setSafety_Incident_Reference($safety_Incident_Reference)
@@ -39,7 +39,7 @@ class Update_Safety_Incident_DataType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Reference value
-     * @return \StructType\Safety_IncidentObjectType|null
+     * @return \WorkdayWsdl\\StructType\Safety_IncidentObjectType|null
      */
     public function getSafety_Incident_Reference()
     {
@@ -47,17 +47,17 @@ class Update_Safety_Incident_DataType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_Reference value
-     * @param \StructType\Safety_IncidentObjectType $safety_Incident_Reference
-     * @return \StructType\Update_Safety_Incident_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference
+     * @return \WorkdayWsdl\\StructType\Update_Safety_Incident_DataType
      */
-    public function setSafety_Incident_Reference(\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null)
+    public function setSafety_Incident_Reference(\WorkdayWsdl\\StructType\Safety_IncidentObjectType $safety_Incident_Reference = null)
     {
         $this->Safety_Incident_Reference = $safety_Incident_Reference;
         return $this;
     }
     /**
      * Get Safety_Incident_Data value
-     * @return \StructType\Report_Safety_Incident_DataType|null
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType|null
      */
     public function getSafety_Incident_Data()
     {
@@ -65,10 +65,10 @@ class Update_Safety_Incident_DataType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_Data value
-     * @param \StructType\Report_Safety_Incident_DataType $safety_Incident_Data
-     * @return \StructType\Update_Safety_Incident_DataType
+     * @param \WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $safety_Incident_Data
+     * @return \WorkdayWsdl\\StructType\Update_Safety_Incident_DataType
      */
-    public function setSafety_Incident_Data(\StructType\Report_Safety_Incident_DataType $safety_Incident_Data = null)
+    public function setSafety_Incident_Data(\WorkdayWsdl\\StructType\Report_Safety_Incident_DataType $safety_Incident_Data = null)
     {
         $this->Safety_Incident_Data = $safety_Incident_Data;
         return $this;
@@ -79,7 +79,7 @@ class Update_Safety_Incident_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Update_Safety_Incident_DataType
+     * @return \WorkdayWsdl\\StructType\Update_Safety_Incident_DataType
      */
     public static function __set_state(array $array)
     {

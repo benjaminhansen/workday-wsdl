@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Education_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The country in which the school is located or in which studies took place.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -25,7 +25,7 @@ class Education_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The School in which studies took place.
      * - minOccurs: 0
-     * @var \StructType\SchoolObjectType
+     * @var \WorkdayWsdl\\StructType\SchoolObjectType
      */
     public $School_Reference;
     /**
@@ -42,14 +42,14 @@ class Education_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The type of school.
      * - minOccurs: 0
-     * @var \StructType\School_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\School_Type_ReferenceType
      */
     public $Educational_Institution_Type_Reference;
     /**
      * The Degree_Reference
      * Meta information extracted from the WSDL
      * - documentation: The degree program in which studies took place.
-     * @var \StructType\Degree_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Degree_ReferenceType
      */
     public $Degree_Reference;
     /**
@@ -57,7 +57,7 @@ class Education_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Indicates whether the degree was received. Possible values are 'Yes', 'No', and blank.
      * - minOccurs: 0
-     * @var \StructType\Degree_CompletedObjectType
+     * @var \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
     public $Degree_Completed_Reference;
     /**
@@ -65,7 +65,7 @@ class Education_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Lookup representing a Field of Study.
      * - minOccurs: 0
-     * @var \StructType\Field_Of_Study_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType
      */
     public $Field_Of_Study_Reference;
     /**
@@ -117,19 +117,19 @@ class Education_History_DataType extends AbstractStructBase
      * @uses Education_History_DataType::setEducation_Grade_Average()
      * @uses Education_History_DataType::setFirst_Year_Attended()
      * @uses Education_History_DataType::setLast_Year_Attended()
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\SchoolObjectType $school_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference
      * @param string $education_Institution
-     * @param \StructType\School_Type_ReferenceType $educational_Institution_Type_Reference
-     * @param \StructType\Degree_ReferenceType $degree_Reference
-     * @param \StructType\Degree_CompletedObjectType $degree_Completed_Reference
-     * @param \StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference
+     * @param \WorkdayWsdl\\StructType\School_Type_ReferenceType $educational_Institution_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Degree_ReferenceType $degree_Reference
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference
+     * @param \WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference
      * @param string $education_Institution_Location
      * @param string $education_Grade_Average
      * @param string $first_Year_Attended
      * @param string $last_Year_Attended
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null, \StructType\SchoolObjectType $school_Reference = null, $education_Institution = null, \StructType\School_Type_ReferenceType $educational_Institution_Type_Reference = null, \StructType\Degree_ReferenceType $degree_Reference = null, \StructType\Degree_CompletedObjectType $degree_Completed_Reference = null, \StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference = null, $education_Institution_Location = null, $education_Grade_Average = null, $first_Year_Attended = null, $last_Year_Attended = null)
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference = null, $education_Institution = null, \WorkdayWsdl\\StructType\School_Type_ReferenceType $educational_Institution_Type_Reference = null, \WorkdayWsdl\\StructType\Degree_ReferenceType $degree_Reference = null, \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null, \WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference = null, $education_Institution_Location = null, $education_Grade_Average = null, $first_Year_Attended = null, $last_Year_Attended = null)
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -146,7 +146,7 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -154,17 +154,17 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get School_Reference value
-     * @return \StructType\SchoolObjectType|null
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType|null
      */
     public function getSchool_Reference()
     {
@@ -172,10 +172,10 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set School_Reference value
-     * @param \StructType\SchoolObjectType $school_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setSchool_Reference(\StructType\SchoolObjectType $school_Reference = null)
+    public function setSchool_Reference(\WorkdayWsdl\\StructType\SchoolObjectType $school_Reference = null)
     {
         $this->School_Reference = $school_Reference;
         return $this;
@@ -191,7 +191,7 @@ class Education_History_DataType extends AbstractStructBase
     /**
      * Set Education_Institution value
      * @param string $education_Institution
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public function setEducation_Institution($education_Institution = null)
     {
@@ -204,7 +204,7 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Get Educational_Institution_Type_Reference value
-     * @return \StructType\School_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\School_Type_ReferenceType|null
      */
     public function getEducational_Institution_Type_Reference()
     {
@@ -212,17 +212,17 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set Educational_Institution_Type_Reference value
-     * @param \StructType\School_Type_ReferenceType $educational_Institution_Type_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\School_Type_ReferenceType $educational_Institution_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setEducational_Institution_Type_Reference(\StructType\School_Type_ReferenceType $educational_Institution_Type_Reference = null)
+    public function setEducational_Institution_Type_Reference(\WorkdayWsdl\\StructType\School_Type_ReferenceType $educational_Institution_Type_Reference = null)
     {
         $this->Educational_Institution_Type_Reference = $educational_Institution_Type_Reference;
         return $this;
     }
     /**
      * Get Degree_Reference value
-     * @return \StructType\Degree_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Degree_ReferenceType|null
      */
     public function getDegree_Reference()
     {
@@ -230,17 +230,17 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set Degree_Reference value
-     * @param \StructType\Degree_ReferenceType $degree_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\Degree_ReferenceType $degree_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setDegree_Reference(\StructType\Degree_ReferenceType $degree_Reference = null)
+    public function setDegree_Reference(\WorkdayWsdl\\StructType\Degree_ReferenceType $degree_Reference = null)
     {
         $this->Degree_Reference = $degree_Reference;
         return $this;
     }
     /**
      * Get Degree_Completed_Reference value
-     * @return \StructType\Degree_CompletedObjectType|null
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType|null
      */
     public function getDegree_Completed_Reference()
     {
@@ -248,17 +248,17 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set Degree_Completed_Reference value
-     * @param \StructType\Degree_CompletedObjectType $degree_Completed_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setDegree_Completed_Reference(\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null)
+    public function setDegree_Completed_Reference(\WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null)
     {
         $this->Degree_Completed_Reference = $degree_Completed_Reference;
         return $this;
     }
     /**
      * Get Field_Of_Study_Reference value
-     * @return \StructType\Field_Of_Study_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType|null
      */
     public function getField_Of_Study_Reference()
     {
@@ -266,10 +266,10 @@ class Education_History_DataType extends AbstractStructBase
     }
     /**
      * Set Field_Of_Study_Reference value
-     * @param \StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference
-     * @return \StructType\Education_History_DataType
+     * @param \WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
-    public function setField_Of_Study_Reference(\StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference = null)
+    public function setField_Of_Study_Reference(\WorkdayWsdl\\StructType\Field_Of_Study_ReferenceType $field_Of_Study_Reference = null)
     {
         $this->Field_Of_Study_Reference = $field_Of_Study_Reference;
         return $this;
@@ -285,7 +285,7 @@ class Education_History_DataType extends AbstractStructBase
     /**
      * Set Education_Institution_Location value
      * @param string $education_Institution_Location
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public function setEducation_Institution_Location($education_Institution_Location = null)
     {
@@ -307,7 +307,7 @@ class Education_History_DataType extends AbstractStructBase
     /**
      * Set Education_Grade_Average value
      * @param string $education_Grade_Average
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public function setEducation_Grade_Average($education_Grade_Average = null)
     {
@@ -329,7 +329,7 @@ class Education_History_DataType extends AbstractStructBase
     /**
      * Set First_Year_Attended value
      * @param string $first_Year_Attended
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public function setFirst_Year_Attended($first_Year_Attended = null)
     {
@@ -351,7 +351,7 @@ class Education_History_DataType extends AbstractStructBase
     /**
      * Set Last_Year_Attended value
      * @param string $last_Year_Attended
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public function setLast_Year_Attended($last_Year_Attended = null)
     {
@@ -368,7 +368,7 @@ class Education_History_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Education_History_DataType
+     * @return \WorkdayWsdl\\StructType\Education_History_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class EstablishmentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\EstablishmentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\EstablishmentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\EstablishmentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\EstablishmentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\EstablishmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EstablishmentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EstablishmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EstablishmentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\EstablishmentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\EstablishmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\EstablishmentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class EstablishmentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\EstablishmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class EstablishmentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EstablishmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Proficiency_RatingObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Proficiency_RatingReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Proficiency_RatingReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Proficiency_RatingReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Proficiency_RatingReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Proficiency_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_RatingObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Proficiency_RatingReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Proficiency_RatingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Proficiency_RatingReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Proficiency_RatingReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Proficiency_RatingReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Proficiency_RatingReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Proficiency_RatingObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Proficiency_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_RatingObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Proficiency_RatingObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Proficiency_RatingObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_RatingObjectIDType
      */
     public static function __set_state(array $array)
     {

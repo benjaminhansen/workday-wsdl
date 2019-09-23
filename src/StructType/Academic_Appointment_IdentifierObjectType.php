@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_IdentifierObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
      * Constructor method for Academic_Appointment_IdentifierObjectType
      * @uses Academic_Appointment_IdentifierObjectType::setID()
      * @uses Academic_Appointment_IdentifierObjectType::setDescriptor()
-     * @param \StructType\Academic_Appointment_IdentifierObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Academic_Appointment_IdentifierObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Appointment_IdentifierObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointment_IdentifierObjectTypeIDItem instanceof \StructType\Academic_Appointment_IdentifierObjectIDType) {
+            if (!$academic_Appointment_IdentifierObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType) {
                 $invalidValues[] = is_object($academic_Appointment_IdentifierObjectTypeIDItem) ? get_class($academic_Appointment_IdentifierObjectTypeIDItem) : sprintf('%s(%s)', gettype($academic_Appointment_IdentifierObjectTypeIDItem), var_export($academic_Appointment_IdentifierObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Academic_Appointment_IdentifierObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_IdentifierObjectIDType[] $iD
-     * @return \StructType\Academic_Appointment_IdentifierObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_IdentifierObjectIDType $item
-     * @return \StructType\Academic_Appointment_IdentifierObjectType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType
      */
-    public function addToID(\StructType\Academic_Appointment_IdentifierObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Appointment_IdentifierObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Academic_Appointment_IdentifierObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Academic_Appointment_IdentifierObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Academic_Appointment_IdentifierObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_IdentifierObjectType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class User_Language_Setting_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\User_Language_Setting_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\User_Language_Setting_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

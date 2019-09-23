@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Workers_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkerType[]
+     * @var \WorkdayWsdl\\StructType\WorkerType[]
      */
     public $Worker;
     /**
      * Constructor method for Workers_Response_DataType
      * @uses Workers_Response_DataType::setWorker()
-     * @param \StructType\WorkerType[] $worker
+     * @param \WorkdayWsdl\\StructType\WorkerType[] $worker
      */
     public function __construct(array $worker = array())
     {
@@ -32,7 +32,7 @@ class Workers_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Worker value
-     * @return \StructType\WorkerType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerType[]|null
      */
     public function getWorker()
     {
@@ -50,12 +50,12 @@ class Workers_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workers_Response_DataTypeWorkerItem) {
             // validation for constraint: itemType
-            if (!$workers_Response_DataTypeWorkerItem instanceof \StructType\WorkerType) {
+            if (!$workers_Response_DataTypeWorkerItem instanceof \WorkdayWsdl\\StructType\WorkerType) {
                 $invalidValues[] = is_object($workers_Response_DataTypeWorkerItem) ? get_class($workers_Response_DataTypeWorkerItem) : sprintf('%s(%s)', gettype($workers_Response_DataTypeWorkerItem), var_export($workers_Response_DataTypeWorkerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker property can only contain items of type \StructType\WorkerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker property can only contain items of type \WorkdayWsdl\\StructType\WorkerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Workers_Response_DataType extends AbstractStructBase
     /**
      * Set Worker value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerType[] $worker
-     * @return \StructType\Workers_Response_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerType[] $worker
+     * @return \WorkdayWsdl\\StructType\Workers_Response_DataType
      */
     public function setWorker(array $worker = array())
     {
@@ -78,14 +78,14 @@ class Workers_Response_DataType extends AbstractStructBase
     /**
      * Add item to Worker value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerType $item
-     * @return \StructType\Workers_Response_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerType $item
+     * @return \WorkdayWsdl\\StructType\Workers_Response_DataType
      */
-    public function addToWorker(\StructType\WorkerType $item)
+    public function addToWorker(\WorkdayWsdl\\StructType\WorkerType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerType) {
-            throw new \InvalidArgumentException(sprintf('The Worker property can only contain items of type \StructType\WorkerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerType) {
+            throw new \InvalidArgumentException(sprintf('The Worker property can only contain items of type \WorkdayWsdl\\StructType\WorkerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Workers_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workers_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Response_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Benefit_ProviderObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Benefit_ProviderObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Benefit_ProviderObjectType extends AbstractStructBase
      * Constructor method for Benefit_ProviderObjectType
      * @uses Benefit_ProviderObjectType::setID()
      * @uses Benefit_ProviderObjectType::setDescriptor()
-     * @param \StructType\Benefit_ProviderObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Benefit_ProviderObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Benefit_ProviderObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Benefit_ProviderObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $benefit_ProviderObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$benefit_ProviderObjectTypeIDItem instanceof \StructType\Benefit_ProviderObjectIDType) {
+            if (!$benefit_ProviderObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType) {
                 $invalidValues[] = is_object($benefit_ProviderObjectTypeIDItem) ? get_class($benefit_ProviderObjectTypeIDItem) : sprintf('%s(%s)', gettype($benefit_ProviderObjectTypeIDItem), var_export($benefit_ProviderObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Benefit_ProviderObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Benefit_ProviderObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Benefit_ProviderObjectIDType[] $iD
-     * @return \StructType\Benefit_ProviderObjectType
+     * @param \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Benefit_ProviderObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Benefit_ProviderObjectIDType $item
-     * @return \StructType\Benefit_ProviderObjectType
+     * @param \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectType
      */
-    public function addToID(\StructType\Benefit_ProviderObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Benefit_ProviderObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Benefit_ProviderObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Benefit_ProviderObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Benefit_ProviderObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Benefit_ProviderObjectType
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Benefit_ProviderObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Benefit_ProviderObjectType
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectType
      */
     public static function __set_state(array $array)
     {

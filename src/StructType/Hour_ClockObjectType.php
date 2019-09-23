@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Hour_ClockObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Hour_ClockObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Hour_ClockObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Hour_ClockObjectType extends AbstractStructBase
      * Constructor method for Hour_ClockObjectType
      * @uses Hour_ClockObjectType::setID()
      * @uses Hour_ClockObjectType::setDescriptor()
-     * @param \StructType\Hour_ClockObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Hour_ClockObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Hour_ClockObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Hour_ClockObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Hour_ClockObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hour_ClockObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$hour_ClockObjectTypeIDItem instanceof \StructType\Hour_ClockObjectIDType) {
+            if (!$hour_ClockObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Hour_ClockObjectIDType) {
                 $invalidValues[] = is_object($hour_ClockObjectTypeIDItem) ? get_class($hour_ClockObjectTypeIDItem) : sprintf('%s(%s)', gettype($hour_ClockObjectTypeIDItem), var_export($hour_ClockObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Hour_ClockObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Hour_ClockObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Hour_ClockObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Hour_ClockObjectIDType[] $iD
-     * @return \StructType\Hour_ClockObjectType
+     * @param \WorkdayWsdl\\StructType\Hour_ClockObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Hour_ClockObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Hour_ClockObjectIDType $item
-     * @return \StructType\Hour_ClockObjectType
+     * @param \WorkdayWsdl\\StructType\Hour_ClockObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectType
      */
-    public function addToID(\StructType\Hour_ClockObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Hour_ClockObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Hour_ClockObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Hour_ClockObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Hour_ClockObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Hour_ClockObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Hour_ClockObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Hour_ClockObjectType
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Hour_ClockObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Hour_ClockObjectType
+     * @return \WorkdayWsdl\\StructType\Hour_ClockObjectType
      */
     public static function __set_state(array $array)
     {

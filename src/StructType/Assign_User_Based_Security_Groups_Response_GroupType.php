@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,7 +55,7 @@ class Assign_User_Based_Security_Groups_Response_GroupType extends AbstractStruc
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -77,7 +77,7 @@ class Assign_User_Based_Security_Groups_Response_GroupType extends AbstractStruc
     /**
      * Set Include_User_Based_Security_Group_Assignment_Data value
      * @param bool $include_User_Based_Security_Group_Assignment_Data
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_GroupType
      */
     public function setInclude_User_Based_Security_Group_Assignment_Data($include_User_Based_Security_Group_Assignment_Data = null)
     {
@@ -94,7 +94,7 @@ class Assign_User_Based_Security_Groups_Response_GroupType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_User_Based_Security_Groups_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Groups_Response_GroupType
      */
     public static function __set_state(array $array)
     {

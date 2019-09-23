@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
      * Meta information extracted from the WSDL
      * - documentation: The original Pay Group that the Employee belonged to prior the Pay Group Assignment.
      * - minOccurs: 0
-     * @var \StructType\Pay_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
     public $Original_Pay_Group_Reference;
     /**
@@ -62,7 +62,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
      * Meta information extracted from the WSDL
      * - documentation: The Pay Group to which the Employee was to be assigned.
      * - minOccurs: 0
-     * @var \StructType\Pay_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Pay_GroupObjectType
      */
     public $Proposed_Pay_Group_Reference;
     /**
@@ -78,10 +78,10 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
      * @param string $completed_On
      * @param bool $event_Corrected
      * @param bool $event_Rescinded
-     * @param \StructType\Pay_GroupObjectType $original_Pay_Group_Reference
-     * @param \StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectType $original_Pay_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference
      */
-    public function __construct($effective_Date = null, $completed_On = null, $event_Corrected = null, $event_Rescinded = null, \StructType\Pay_GroupObjectType $original_Pay_Group_Reference = null, \StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference = null)
+    public function __construct($effective_Date = null, $completed_On = null, $event_Corrected = null, $event_Rescinded = null, \WorkdayWsdl\\StructType\Pay_GroupObjectType $original_Pay_Group_Reference = null, \WorkdayWsdl\\StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -102,7 +102,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -124,7 +124,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     /**
      * Set Completed_On value
      * @param string $completed_On
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
     public function setCompleted_On($completed_On = null)
     {
@@ -146,7 +146,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     /**
      * Set Event_Corrected value
      * @param bool $event_Corrected
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
     public function setEvent_Corrected($event_Corrected = null)
     {
@@ -168,7 +168,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     /**
      * Set Event_Rescinded value
      * @param bool $event_Rescinded
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
     public function setEvent_Rescinded($event_Rescinded = null)
     {
@@ -181,7 +181,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     }
     /**
      * Get Original_Pay_Group_Reference value
-     * @return \StructType\Pay_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType|null
      */
     public function getOriginal_Pay_Group_Reference()
     {
@@ -189,17 +189,17 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     }
     /**
      * Set Original_Pay_Group_Reference value
-     * @param \StructType\Pay_GroupObjectType $original_Pay_Group_Reference
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectType $original_Pay_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
-    public function setOriginal_Pay_Group_Reference(\StructType\Pay_GroupObjectType $original_Pay_Group_Reference = null)
+    public function setOriginal_Pay_Group_Reference(\WorkdayWsdl\\StructType\Pay_GroupObjectType $original_Pay_Group_Reference = null)
     {
         $this->Original_Pay_Group_Reference = $original_Pay_Group_Reference;
         return $this;
     }
     /**
      * Get Proposed_Pay_Group_Reference value
-     * @return \StructType\Pay_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Pay_GroupObjectType|null
      */
     public function getProposed_Pay_Group_Reference()
     {
@@ -207,10 +207,10 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
     }
     /**
      * Set Proposed_Pay_Group_Reference value
-     * @param \StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
-    public function setProposed_Pay_Group_Reference(\StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference = null)
+    public function setProposed_Pay_Group_Reference(\WorkdayWsdl\\StructType\Pay_GroupObjectType $proposed_Pay_Group_Reference = null)
     {
         $this->Proposed_Pay_Group_Reference = $proposed_Pay_Group_Reference;
         return $this;
@@ -221,7 +221,7 @@ class Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType extends Ab
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Pay_Group_Assignment_Correct_or_Rescinded_Organization_DataType
      */
     public static function __set_state(array $array)
     {

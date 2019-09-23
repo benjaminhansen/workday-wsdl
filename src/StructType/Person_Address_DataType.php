@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class Person_Address_DataType extends AbstractStructBase
      * - documentation: Element encapsulating the core address information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Address_Core_DataType[]
+     * @var \WorkdayWsdl\\StructType\Address_Core_DataType[]
      */
     public $Address_Data;
     /**
@@ -30,7 +30,7 @@ class Person_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -52,7 +52,7 @@ class Person_Address_DataType extends AbstractStructBase
      * - documentation: The days of the week this address will be used as a Work from Home address
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_WeekObjectType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]
      */
     public $Days_of_the_Week_Reference;
     /**
@@ -60,7 +60,7 @@ class Person_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The address Reference ID.
      * - minOccurs: 0
-     * @var \StructType\Address_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Address_ReferenceObjectType
      */
     public $Address_Reference;
     /**
@@ -104,17 +104,17 @@ class Person_Address_DataType extends AbstractStructBase
      * @uses Person_Address_DataType::setAddress_Format_Type()
      * @uses Person_Address_DataType::setDelete()
      * @uses Person_Address_DataType::setEffective_Date()
-     * @param \StructType\Address_Core_DataType[] $address_Data
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Address_Core_DataType[] $address_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
      * @param float $number_of_Days
-     * @param \StructType\Day_of_the_WeekObjectType[] $days_of_the_Week_Reference
-     * @param \StructType\Address_ReferenceObjectType $address_Reference
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $days_of_the_Week_Reference
+     * @param \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference
      * @param string $address_ID
      * @param string $address_Format_Type
      * @param bool $delete
      * @param string $effective_Date
      */
-    public function __construct(array $address_Data = array(), array $usage_Data = array(), $number_of_Days = null, array $days_of_the_Week_Reference = array(), \StructType\Address_ReferenceObjectType $address_Reference = null, $address_ID = null, $address_Format_Type = null, $delete = null, $effective_Date = null)
+    public function __construct(array $address_Data = array(), array $usage_Data = array(), $number_of_Days = null, array $days_of_the_Week_Reference = array(), \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference = null, $address_ID = null, $address_Format_Type = null, $delete = null, $effective_Date = null)
     {
         $this
             ->setAddress_Data($address_Data)
@@ -129,7 +129,7 @@ class Person_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Address_Data value
-     * @return \StructType\Address_Core_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Address_Core_DataType[]|null
      */
     public function getAddress_Data()
     {
@@ -147,12 +147,12 @@ class Person_Address_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Address_DataTypeAddress_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Address_DataTypeAddress_DataItem instanceof \StructType\Address_Core_DataType) {
+            if (!$person_Address_DataTypeAddress_DataItem instanceof \WorkdayWsdl\\StructType\Address_Core_DataType) {
                 $invalidValues[] = is_object($person_Address_DataTypeAddress_DataItem) ? get_class($person_Address_DataTypeAddress_DataItem) : sprintf('%s(%s)', gettype($person_Address_DataTypeAddress_DataItem), var_export($person_Address_DataTypeAddress_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Address_Data property can only contain items of type \StructType\Address_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Core_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -160,8 +160,8 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Core_DataType[] $address_Data
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Core_DataType[] $address_Data
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setAddress_Data(array $address_Data = array())
     {
@@ -175,21 +175,21 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Add item to Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Address_Core_DataType $item
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Address_Core_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
-    public function addToAddress_Data(\StructType\Address_Core_DataType $item)
+    public function addToAddress_Data(\WorkdayWsdl\\StructType\Address_Core_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Address_Core_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \StructType\Address_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Address_Core_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Address_Core_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Address_Data[] = $item;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -207,12 +207,12 @@ class Person_Address_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Address_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Address_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$person_Address_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($person_Address_DataTypeUsage_DataItem) ? get_class($person_Address_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($person_Address_DataTypeUsage_DataItem), var_export($person_Address_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -220,8 +220,8 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -235,14 +235,14 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
@@ -258,7 +258,7 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Number_of_Days value
      * @param float $number_of_Days
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setNumber_of_Days($number_of_Days = null)
     {
@@ -283,7 +283,7 @@ class Person_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Days_of_the_Week_Reference value
-     * @return \StructType\Day_of_the_WeekObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]|null
      */
     public function getDays_of_the_Week_Reference()
     {
@@ -301,12 +301,12 @@ class Person_Address_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Address_DataTypeDays_of_the_Week_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$person_Address_DataTypeDays_of_the_Week_ReferenceItem instanceof \StructType\Day_of_the_WeekObjectType) {
+            if (!$person_Address_DataTypeDays_of_the_Week_ReferenceItem instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
                 $invalidValues[] = is_object($person_Address_DataTypeDays_of_the_Week_ReferenceItem) ? get_class($person_Address_DataTypeDays_of_the_Week_ReferenceItem) : sprintf('%s(%s)', gettype($person_Address_DataTypeDays_of_the_Week_ReferenceItem), var_export($person_Address_DataTypeDays_of_the_Week_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Days_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Days_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -314,8 +314,8 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Days_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType[] $days_of_the_Week_Reference
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $days_of_the_Week_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setDays_of_the_Week_Reference(array $days_of_the_Week_Reference = array())
     {
@@ -329,21 +329,21 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Add item to Days_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType $item
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
-    public function addToDays_of_the_Week_Reference(\StructType\Day_of_the_WeekObjectType $item)
+    public function addToDays_of_the_Week_Reference(\WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_WeekObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Days_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Days_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Days_of_the_Week_Reference[] = $item;
         return $this;
     }
     /**
      * Get Address_Reference value
-     * @return \StructType\Address_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Address_ReferenceObjectType|null
      */
     public function getAddress_Reference()
     {
@@ -351,10 +351,10 @@ class Person_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Address_Reference value
-     * @param \StructType\Address_ReferenceObjectType $address_Reference
-     * @return \StructType\Person_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
-    public function setAddress_Reference(\StructType\Address_ReferenceObjectType $address_Reference = null)
+    public function setAddress_Reference(\WorkdayWsdl\\StructType\Address_ReferenceObjectType $address_Reference = null)
     {
         $this->Address_Reference = $address_Reference;
         return $this;
@@ -370,7 +370,7 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Address_ID value
      * @param string $address_ID
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setAddress_ID($address_ID = null)
     {
@@ -392,7 +392,7 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Address_Format_Type value
      * @param string $address_Format_Type
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setAddress_Format_Type($address_Format_Type = null)
     {
@@ -414,7 +414,7 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setDelete($delete = null)
     {
@@ -436,7 +436,7 @@ class Person_Address_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -453,7 +453,7 @@ class Person_Address_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Address_DataType
      */
     public static function __set_state(array $array)
     {

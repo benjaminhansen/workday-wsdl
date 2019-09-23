@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Sort_Order_EnabledObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
      * Constructor method for Sort_Order_EnabledObjectType
      * @uses Sort_Order_EnabledObjectType::setID()
      * @uses Sort_Order_EnabledObjectType::setDescriptor()
-     * @param \StructType\Sort_Order_EnabledObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Sort_Order_EnabledObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sort_Order_EnabledObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$sort_Order_EnabledObjectTypeIDItem instanceof \StructType\Sort_Order_EnabledObjectIDType) {
+            if (!$sort_Order_EnabledObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType) {
                 $invalidValues[] = is_object($sort_Order_EnabledObjectTypeIDItem) ? get_class($sort_Order_EnabledObjectTypeIDItem) : sprintf('%s(%s)', gettype($sort_Order_EnabledObjectTypeIDItem), var_export($sort_Order_EnabledObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Sort_Order_EnabledObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_EnabledObjectIDType[] $iD
-     * @return \StructType\Sort_Order_EnabledObjectType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_EnabledObjectIDType $item
-     * @return \StructType\Sort_Order_EnabledObjectType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType
      */
-    public function addToID(\StructType\Sort_Order_EnabledObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Sort_Order_EnabledObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Sort_Order_EnabledObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Sort_Order_EnabledObjectType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Sort_Order_EnabledObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sort_Order_EnabledObjectType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Organization_Reference_WWSType extends AbstractStructBase
      * The Integration_ID_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType
      */
     public $Integration_ID_Reference;
     /**
@@ -25,17 +25,17 @@ class Organization_Reference_WWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains a reference to the organization.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_ID_Reference;
     /**
      * Constructor method for Organization_Reference_WWSType
      * @uses Organization_Reference_WWSType::setIntegration_ID_Reference()
      * @uses Organization_Reference_WWSType::setOrganization_ID_Reference()
-     * @param \StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
-     * @param \StructType\OrganizationObjectType $organization_ID_Reference
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_ID_Reference
      */
-    public function __construct(\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null, \StructType\OrganizationObjectType $organization_ID_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null, \WorkdayWsdl\\StructType\OrganizationObjectType $organization_ID_Reference = null)
     {
         $this
             ->setIntegration_ID_Reference($integration_ID_Reference)
@@ -43,7 +43,7 @@ class Organization_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Reference value
-     * @return \StructType\External_Integration_ID_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType|null
      */
     public function getIntegration_ID_Reference()
     {
@@ -51,17 +51,17 @@ class Organization_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Reference value
-     * @param \StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
-     * @return \StructType\Organization_Reference_WWSType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_WWSType
      */
-    public function setIntegration_ID_Reference(\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null)
+    public function setIntegration_ID_Reference(\WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null)
     {
         $this->Integration_ID_Reference = $integration_ID_Reference;
         return $this;
     }
     /**
      * Get Organization_ID_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_ID_Reference()
     {
@@ -69,10 +69,10 @@ class Organization_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Set Organization_ID_Reference value
-     * @param \StructType\OrganizationObjectType $organization_ID_Reference
-     * @return \StructType\Organization_Reference_WWSType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_WWSType
      */
-    public function setOrganization_ID_Reference(\StructType\OrganizationObjectType $organization_ID_Reference = null)
+    public function setOrganization_ID_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_ID_Reference = null)
     {
         $this->Organization_ID_Reference = $organization_ID_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Organization_Reference_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Reference_WWSType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_WWSType
      */
     public static function __set_state(array $array)
     {

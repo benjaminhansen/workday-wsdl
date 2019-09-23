@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Gender_ReferenceType extends AbstractStructBase
     /**
      * Set Gender_Description value
      * @param string $gender_Description
-     * @return \StructType\Gender_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Gender_ReferenceType
      */
     public function setGender_Description($gender_Description = null)
     {
@@ -58,7 +58,7 @@ class Gender_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Gender_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Gender_ReferenceType
      */
     public static function __set_state(array $array)
     {

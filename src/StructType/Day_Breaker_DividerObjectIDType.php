@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Day_Breaker_DividerObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Day_Breaker_DividerReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Day_Breaker_DividerReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Day_Breaker_DividerReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Day_Breaker_DividerReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Day_Breaker_DividerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Day_Breaker_DividerReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Day_Breaker_DividerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Day_Breaker_DividerReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Day_Breaker_DividerReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Day_Breaker_DividerReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Day_Breaker_DividerReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Day_Breaker_DividerObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Day_Breaker_DividerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Day_Breaker_DividerObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Day_Breaker_DividerObjectIDType
+     * @return \WorkdayWsdl\\StructType\Day_Breaker_DividerObjectIDType
      */
     public static function __set_state(array $array)
     {

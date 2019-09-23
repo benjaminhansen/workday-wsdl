@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Worker_DocumentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Worker_DocumentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Worker_DocumentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Worker_DocumentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Worker_DocumentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Worker_DocumentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Worker_DocumentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Worker_DocumentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Worker_DocumentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Worker_DocumentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Worker_DocumentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Worker_DocumentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Worker_DocumentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Worker_DocumentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Worker_DocumentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_DocumentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Worker_DocumentObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\EstablishmentObjectType
+     * @var \WorkdayWsdl\\StructType\EstablishmentObjectType
      */
     public $Establishment_Reference;
     /**
@@ -28,7 +28,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Establishment Data wrapper
      * - minOccurs: 0
-     * @var \StructType\Establishment_DataType
+     * @var \WorkdayWsdl\\StructType\Establishment_DataType
      */
     public $Establishment_Data;
     /**
@@ -43,11 +43,11 @@ class Put_Establishment_RequestType extends AbstractStructBase
      * @uses Put_Establishment_RequestType::setEstablishment_Reference()
      * @uses Put_Establishment_RequestType::setEstablishment_Data()
      * @uses Put_Establishment_RequestType::setVersion()
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
-     * @param \StructType\Establishment_DataType $establishment_Data
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
+     * @param \WorkdayWsdl\\StructType\Establishment_DataType $establishment_Data
      * @param string $version
      */
-    public function __construct(\StructType\EstablishmentObjectType $establishment_Reference = null, \StructType\Establishment_DataType $establishment_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null, \WorkdayWsdl\\StructType\Establishment_DataType $establishment_Data = null, $version = null)
     {
         $this
             ->setEstablishment_Reference($establishment_Reference)
@@ -56,7 +56,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
     }
     /**
      * Get Establishment_Reference value
-     * @return \StructType\EstablishmentObjectType|null
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectType|null
      */
     public function getEstablishment_Reference()
     {
@@ -94,10 +94,10 @@ class Put_Establishment_RequestType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
-     * @return \StructType\Put_Establishment_RequestType
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_RequestType
      */
-    public function setEstablishment_Reference(\StructType\EstablishmentObjectType $establishment_Reference = null)
+    public function setEstablishment_Reference(\WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null)
     {
         // validation for constraint: choice(Establishment_Reference)
         if ('' !== ($establishment_ReferenceChoiceErrorMessage = self::validateEstablishment_ReferenceForChoiceConstraintsFromSetEstablishment_Reference($establishment_Reference))) {
@@ -112,7 +112,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
     }
     /**
      * Get Establishment_Data value
-     * @return \StructType\Establishment_DataType|null
+     * @return \WorkdayWsdl\\StructType\Establishment_DataType|null
      */
     public function getEstablishment_Data()
     {
@@ -120,10 +120,10 @@ class Put_Establishment_RequestType extends AbstractStructBase
     }
     /**
      * Set Establishment_Data value
-     * @param \StructType\Establishment_DataType $establishment_Data
-     * @return \StructType\Put_Establishment_RequestType
+     * @param \WorkdayWsdl\\StructType\Establishment_DataType $establishment_Data
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_RequestType
      */
-    public function setEstablishment_Data(\StructType\Establishment_DataType $establishment_Data = null)
+    public function setEstablishment_Data(\WorkdayWsdl\\StructType\Establishment_DataType $establishment_Data = null)
     {
         $this->Establishment_Data = $establishment_Data;
         return $this;
@@ -139,7 +139,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Establishment_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_RequestType
      */
     public function setVersion($version = null)
     {
@@ -156,7 +156,7 @@ class Put_Establishment_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Establishment_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Event_History_DataType extends AbstractStructBase
      * The Event_Type_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_Type_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType
      */
     public $Event_Type_Reference;
     /**
@@ -63,12 +63,12 @@ class Event_History_DataType extends AbstractStructBase
      * @uses Event_History_DataType::setCompleted_DateTime()
      * @uses Event_History_DataType::setEffective_Date()
      * @param string $event_ID
-     * @param \StructType\Business_Process_Type_Reference_DataType $event_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType $event_Type_Reference
      * @param string $description
      * @param string $completed_DateTime
      * @param string $effective_Date
      */
-    public function __construct($event_ID = null, \StructType\Business_Process_Type_Reference_DataType $event_Type_Reference = null, $description = null, $completed_DateTime = null, $effective_Date = null)
+    public function __construct($event_ID = null, \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType $event_Type_Reference = null, $description = null, $completed_DateTime = null, $effective_Date = null)
     {
         $this
             ->setEvent_ID($event_ID)
@@ -88,7 +88,7 @@ class Event_History_DataType extends AbstractStructBase
     /**
      * Set Event_ID value
      * @param string $event_ID
-     * @return \StructType\Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
     public function setEvent_ID($event_ID = null)
     {
@@ -101,7 +101,7 @@ class Event_History_DataType extends AbstractStructBase
     }
     /**
      * Get Event_Type_Reference value
-     * @return \StructType\Business_Process_Type_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType|null
      */
     public function getEvent_Type_Reference()
     {
@@ -109,10 +109,10 @@ class Event_History_DataType extends AbstractStructBase
     }
     /**
      * Set Event_Type_Reference value
-     * @param \StructType\Business_Process_Type_Reference_DataType $event_Type_Reference
-     * @return \StructType\Event_History_DataType
+     * @param \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType $event_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
-    public function setEvent_Type_Reference(\StructType\Business_Process_Type_Reference_DataType $event_Type_Reference = null)
+    public function setEvent_Type_Reference(\WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType $event_Type_Reference = null)
     {
         $this->Event_Type_Reference = $event_Type_Reference;
         return $this;
@@ -128,7 +128,7 @@ class Event_History_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
     public function setDescription($description = null)
     {
@@ -150,7 +150,7 @@ class Event_History_DataType extends AbstractStructBase
     /**
      * Set Completed_DateTime value
      * @param string $completed_DateTime
-     * @return \StructType\Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
     public function setCompleted_DateTime($completed_DateTime = null)
     {
@@ -172,7 +172,7 @@ class Event_History_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -189,7 +189,7 @@ class Event_History_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType
      */
     public static function __set_state(array $array)
     {

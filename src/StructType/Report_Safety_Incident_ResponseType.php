@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Report Safety Incident Event created from the request.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Report_Safety_Incident_Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
      * Constructor method for Report_Safety_Incident_ResponseType
      * @uses Report_Safety_Incident_ResponseType::setReport_Safety_Incident_Event_Reference()
      * @uses Report_Safety_Incident_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference = null, $version = null)
     {
         $this
             ->setReport_Safety_Incident_Event_Reference($report_Safety_Incident_Event_Reference)
@@ -42,7 +42,7 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
     }
     /**
      * Get Report_Safety_Incident_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getReport_Safety_Incident_Event_Reference()
     {
@@ -50,10 +50,10 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
     }
     /**
      * Set Report_Safety_Incident_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference
-     * @return \StructType\Report_Safety_Incident_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_ResponseType
      */
-    public function setReport_Safety_Incident_Event_Reference(\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference = null)
+    public function setReport_Safety_Incident_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $report_Safety_Incident_Event_Reference = null)
     {
         $this->Report_Safety_Incident_Event_Reference = $report_Safety_Incident_Event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Report_Safety_Incident_ResponseType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Report_Safety_Incident_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Report_Safety_Incident_ResponseType
+     * @return \WorkdayWsdl\\StructType\Report_Safety_Incident_ResponseType
      */
     public static function __set_state(array $array)
     {

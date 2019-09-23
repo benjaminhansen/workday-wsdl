@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
      * Meta information extracted from the WSDL
      * - documentation: Responds with the Event ID for the Assign Superior Event.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Event_Reference;
     /**
@@ -32,10 +32,10 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
      * Constructor method for Reassign_Superior_to_Inactive_Organization_ResponseType
      * @uses Reassign_Superior_to_Inactive_Organization_ResponseType::setEvent_Reference()
      * @uses Reassign_Superior_to_Inactive_Organization_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null, $version = null)
     {
         $this
             ->setEvent_Reference($event_Reference)
@@ -43,7 +43,7 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
     }
     /**
      * Get Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEvent_Reference()
     {
@@ -51,10 +51,10 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
     }
     /**
      * Set Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
      */
-    public function setEvent_Reference(\StructType\Unique_IdentifierObjectType $event_Reference = null)
+    public function setEvent_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null)
     {
         $this->Event_Reference = $event_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Reassign_Superior_to_Inactive_Organization_ResponseType extends AbstractSt
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_ResponseType
      */
     public static function __set_state(array $array)
     {

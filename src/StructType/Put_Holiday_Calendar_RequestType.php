@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Holiday Calendar.
      * - minOccurs: 0
-     * @var \StructType\Holiday_CalendarObjectType
+     * @var \WorkdayWsdl\\StructType\Holiday_CalendarObjectType
      */
     public $Holiday_Calendar_Reference;
     /**
      * The Holiday_Calendar_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper containing data for Condition Rule.
-     * @var \StructType\Holiday_Calendar_DataType
+     * @var \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public $Holiday_Calendar_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
      * @uses Put_Holiday_Calendar_RequestType::setHoliday_Calendar_Data()
      * @uses Put_Holiday_Calendar_RequestType::setAdd_Only()
      * @uses Put_Holiday_Calendar_RequestType::setVersion()
-     * @param \StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
-     * @param \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null, \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null, \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setHoliday_Calendar_Reference($holiday_Calendar_Reference)
@@ -62,7 +62,7 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Get Holiday_Calendar_Reference value
-     * @return \StructType\Holiday_CalendarObjectType|null
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectType|null
      */
     public function getHoliday_Calendar_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Set Holiday_Calendar_Reference value
-     * @param \StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
-     * @return \StructType\Put_Holiday_Calendar_RequestType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Holiday_Calendar_RequestType
      */
-    public function setHoliday_Calendar_Reference(\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null)
+    public function setHoliday_Calendar_Reference(\WorkdayWsdl\\StructType\Holiday_CalendarObjectType $holiday_Calendar_Reference = null)
     {
         $this->Holiday_Calendar_Reference = $holiday_Calendar_Reference;
         return $this;
     }
     /**
      * Get Holiday_Calendar_Data value
-     * @return \StructType\Holiday_Calendar_DataType|null
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType|null
      */
     public function getHoliday_Calendar_Data()
     {
@@ -88,10 +88,10 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
     }
     /**
      * Set Holiday_Calendar_Data value
-     * @param \StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
-     * @return \StructType\Put_Holiday_Calendar_RequestType
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data
+     * @return \WorkdayWsdl\\StructType\Put_Holiday_Calendar_RequestType
      */
-    public function setHoliday_Calendar_Data(\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
+    public function setHoliday_Calendar_Data(\WorkdayWsdl\\StructType\Holiday_Calendar_DataType $holiday_Calendar_Data = null)
     {
         $this->Holiday_Calendar_Data = $holiday_Calendar_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Holiday_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Holiday_Calendar_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Holiday_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Holiday_Calendar_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Holiday_Calendar_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Holiday_Calendar_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Holiday_Calendar_RequestType
      */
     public static function __set_state(array $array)
     {

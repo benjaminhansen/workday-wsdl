@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Social Benefits Locality
      * - minOccurs: 0
-     * @var \StructType\Social_Benefits_LocalityObjectType
+     * @var \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType
      */
     public $Social_Benefits_Locality_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
      * Constructor method for Put_Social_Benefits_Locality_ResponseType
      * @uses Put_Social_Benefits_Locality_ResponseType::setSocial_Benefits_Locality_Reference()
      * @uses Put_Social_Benefits_Locality_ResponseType::setVersion()
-     * @param \StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null, $version = null)
     {
         $this
             ->setSocial_Benefits_Locality_Reference($social_Benefits_Locality_Reference)
@@ -42,7 +42,7 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
     }
     /**
      * Get Social_Benefits_Locality_Reference value
-     * @return \StructType\Social_Benefits_LocalityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType|null
      */
     public function getSocial_Benefits_Locality_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
     }
     /**
      * Set Social_Benefits_Locality_Reference value
-     * @param \StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
-     * @return \StructType\Put_Social_Benefits_Locality_ResponseType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Social_Benefits_Locality_ResponseType
      */
-    public function setSocial_Benefits_Locality_Reference(\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null)
+    public function setSocial_Benefits_Locality_Reference(\WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $social_Benefits_Locality_Reference = null)
     {
         $this->Social_Benefits_Locality_Reference = $social_Benefits_Locality_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Social_Benefits_Locality_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Social_Benefits_Locality_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Social_Benefits_Locality_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Social_Benefits_Locality_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Social_Benefits_Locality_ResponseType
      */
     public static function __set_state(array $array)
     {

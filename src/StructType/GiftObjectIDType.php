@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class GiftObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\GiftReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\GiftReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\GiftReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\GiftReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\GiftObjectIDType
+     * @return \WorkdayWsdl\\StructType\GiftObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GiftReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\GiftReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\GiftReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\GiftReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\GiftReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\GiftReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class GiftObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\GiftObjectIDType
+     * @return \WorkdayWsdl\\StructType\GiftObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class GiftObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GiftObjectIDType
+     * @return \WorkdayWsdl\\StructType\GiftObjectIDType
      */
     public static function __set_state(array $array)
     {

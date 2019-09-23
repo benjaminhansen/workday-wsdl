@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Location_ContextObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Location_ContextReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Location_ContextReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Location_ContextReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Location_ContextReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Location_ContextObjectIDType
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Location_ContextReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Location_ContextReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Location_ContextReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Location_ContextReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Location_ContextReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Location_ContextReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Location_ContextObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Location_ContextObjectIDType
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Location_ContextObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Location_ContextObjectIDType
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Location_ContextObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Location_ContextObjectIDType
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Location_ContextObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_ContextObjectIDType
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectIDType
      */
     public static function __set_state(array $array)
     {

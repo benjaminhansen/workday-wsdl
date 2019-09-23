@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Location_Type_Reference_DataType extends AbstractStructBase
     /**
      * Set Location_Type_Description value
      * @param string $location_Type_Description
-     * @return \StructType\Location_Type_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Type_Reference_DataType
      */
     public function setLocation_Type_Description($location_Type_Description = null)
     {
@@ -58,7 +58,7 @@ class Location_Type_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Type_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Type_Reference_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class Frequency_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A mapping to the internal Workday frequencies functionality. The values for this reference can be found using the "Integration IDs" task within the Workday application (Business Object = Frequency Behavior)
      * - minOccurs: 0
-     * @var \StructType\Frequency_BehaviorObjectType
+     * @var \WorkdayWsdl\\StructType\Frequency_BehaviorObjectType
      */
     public $Frequency_Behavior_Reference;
     /**
@@ -78,11 +78,11 @@ class Frequency_DataType extends AbstractStructBase
      * @param string $frequency_ID
      * @param string $name
      * @param float $annualization_Factor
-     * @param \StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference
+     * @param \WorkdayWsdl\\StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference
      * @param bool $use_Weekly_Hours
      * @param bool $used_in_Payroll_Interface
      */
-    public function __construct($frequency_ID = null, $name = null, $annualization_Factor = null, \StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference = null, $use_Weekly_Hours = null, $used_in_Payroll_Interface = null)
+    public function __construct($frequency_ID = null, $name = null, $annualization_Factor = null, \WorkdayWsdl\\StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference = null, $use_Weekly_Hours = null, $used_in_Payroll_Interface = null)
     {
         $this
             ->setFrequency_ID($frequency_ID)
@@ -103,7 +103,7 @@ class Frequency_DataType extends AbstractStructBase
     /**
      * Set Frequency_ID value
      * @param string $frequency_ID
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public function setFrequency_ID($frequency_ID = null)
     {
@@ -125,7 +125,7 @@ class Frequency_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public function setName($name = null)
     {
@@ -147,7 +147,7 @@ class Frequency_DataType extends AbstractStructBase
     /**
      * Set Annualization_Factor value
      * @param float $annualization_Factor
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public function setAnnualization_Factor($annualization_Factor = null)
     {
@@ -172,7 +172,7 @@ class Frequency_DataType extends AbstractStructBase
     }
     /**
      * Get Frequency_Behavior_Reference value
-     * @return \StructType\Frequency_BehaviorObjectType|null
+     * @return \WorkdayWsdl\\StructType\Frequency_BehaviorObjectType|null
      */
     public function getFrequency_Behavior_Reference()
     {
@@ -180,10 +180,10 @@ class Frequency_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Behavior_Reference value
-     * @param \StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference
-     * @return \StructType\Frequency_DataType
+     * @param \WorkdayWsdl\\StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
-    public function setFrequency_Behavior_Reference(\StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference = null)
+    public function setFrequency_Behavior_Reference(\WorkdayWsdl\\StructType\Frequency_BehaviorObjectType $frequency_Behavior_Reference = null)
     {
         $this->Frequency_Behavior_Reference = $frequency_Behavior_Reference;
         return $this;
@@ -199,7 +199,7 @@ class Frequency_DataType extends AbstractStructBase
     /**
      * Set Use_Weekly_Hours value
      * @param bool $use_Weekly_Hours
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public function setUse_Weekly_Hours($use_Weekly_Hours = null)
     {
@@ -221,7 +221,7 @@ class Frequency_DataType extends AbstractStructBase
     /**
      * Set Used_in_Payroll_Interface value
      * @param bool $used_in_Payroll_Interface
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public function setUsed_in_Payroll_Interface($used_in_Payroll_Interface = null)
     {
@@ -238,7 +238,7 @@ class Frequency_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Frequency_DataType
+     * @return \WorkdayWsdl\\StructType\Frequency_DataType
      */
     public static function __set_state(array $array)
     {

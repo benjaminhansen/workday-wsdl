@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Statement about the Competency.
      * - minOccurs: 0
-     * @var \StructType\Proficiency_Rating_BehaviorObjectType
+     * @var \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType
      */
     public $Competency_Level_Behavior_Reference;
     /**
@@ -52,7 +52,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker carrying out the competency assessment.
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Assessed_By_Person_Reference;
     /**
@@ -68,7 +68,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
      * The Competency_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference for the Competency.
-     * @var \StructType\CompetencyObjectType
+     * @var \WorkdayWsdl\\StructType\CompetencyObjectType
      */
     public $Competency_Reference;
     /**
@@ -90,16 +90,16 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
      * @uses Competency_Achievement_Data__v10_Type::setAssessed_By_Worker_Descriptor()
      * @uses Competency_Achievement_Data__v10_Type::setCompetency_Reference()
      * @uses Competency_Achievement_Data__v10_Type::setCompetency_Descriptor()
-     * @param \StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference
+     * @param \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference
      * @param string $competency_Level_Behavior_Descriptor
      * @param string $assessment_Comment
      * @param string $assessed_On
-     * @param \StructType\RoleObjectType $assessed_By_Person_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $assessed_By_Person_Reference
      * @param string $assessed_By_Worker_Descriptor
-     * @param \StructType\CompetencyObjectType $competency_Reference
+     * @param \WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference
      * @param string $competency_Descriptor
      */
-    public function __construct(\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference = null, $competency_Level_Behavior_Descriptor = null, $assessment_Comment = null, $assessed_On = null, \StructType\RoleObjectType $assessed_By_Person_Reference = null, $assessed_By_Worker_Descriptor = null, \StructType\CompetencyObjectType $competency_Reference = null, $competency_Descriptor = null)
+    public function __construct(\WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference = null, $competency_Level_Behavior_Descriptor = null, $assessment_Comment = null, $assessed_On = null, \WorkdayWsdl\\StructType\RoleObjectType $assessed_By_Person_Reference = null, $assessed_By_Worker_Descriptor = null, \WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference = null, $competency_Descriptor = null)
     {
         $this
             ->setCompetency_Level_Behavior_Reference($competency_Level_Behavior_Reference)
@@ -113,7 +113,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Get Competency_Level_Behavior_Reference value
-     * @return \StructType\Proficiency_Rating_BehaviorObjectType|null
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType|null
      */
     public function getCompetency_Level_Behavior_Reference()
     {
@@ -121,10 +121,10 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Set Competency_Level_Behavior_Reference value
-     * @param \StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @param \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
-    public function setCompetency_Level_Behavior_Reference(\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference = null)
+    public function setCompetency_Level_Behavior_Reference(\WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectType $competency_Level_Behavior_Reference = null)
     {
         $this->Competency_Level_Behavior_Reference = $competency_Level_Behavior_Reference;
         return $this;
@@ -140,7 +140,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     /**
      * Set Competency_Level_Behavior_Descriptor value
      * @param string $competency_Level_Behavior_Descriptor
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public function setCompetency_Level_Behavior_Descriptor($competency_Level_Behavior_Descriptor = null)
     {
@@ -162,7 +162,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     /**
      * Set Assessment_Comment value
      * @param string $assessment_Comment
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public function setAssessment_Comment($assessment_Comment = null)
     {
@@ -184,7 +184,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     /**
      * Set Assessed_On value
      * @param string $assessed_On
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public function setAssessed_On($assessed_On = null)
     {
@@ -197,7 +197,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Get Assessed_By_Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getAssessed_By_Person_Reference()
     {
@@ -205,10 +205,10 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Set Assessed_By_Person_Reference value
-     * @param \StructType\RoleObjectType $assessed_By_Person_Reference
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $assessed_By_Person_Reference
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
-    public function setAssessed_By_Person_Reference(\StructType\RoleObjectType $assessed_By_Person_Reference = null)
+    public function setAssessed_By_Person_Reference(\WorkdayWsdl\\StructType\RoleObjectType $assessed_By_Person_Reference = null)
     {
         $this->Assessed_By_Person_Reference = $assessed_By_Person_Reference;
         return $this;
@@ -224,7 +224,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     /**
      * Set Assessed_By_Worker_Descriptor value
      * @param string $assessed_By_Worker_Descriptor
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public function setAssessed_By_Worker_Descriptor($assessed_By_Worker_Descriptor = null)
     {
@@ -237,7 +237,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Get Competency_Reference value
-     * @return \StructType\CompetencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CompetencyObjectType|null
      */
     public function getCompetency_Reference()
     {
@@ -245,10 +245,10 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     }
     /**
      * Set Competency_Reference value
-     * @param \StructType\CompetencyObjectType $competency_Reference
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @param \WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
-    public function setCompetency_Reference(\StructType\CompetencyObjectType $competency_Reference = null)
+    public function setCompetency_Reference(\WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference = null)
     {
         $this->Competency_Reference = $competency_Reference;
         return $this;
@@ -264,7 +264,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
     /**
      * Set Competency_Descriptor value
      * @param string $competency_Descriptor
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public function setCompetency_Descriptor($competency_Descriptor = null)
     {
@@ -281,7 +281,7 @@ class Competency_Achievement_Data__v10_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Competency_Achievement_Data__v10_Type
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type
      */
     public static function __set_state(array $array)
     {

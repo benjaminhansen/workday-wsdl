@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Week_of_the_MonthObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Week_of_the_MonthReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Week_of_the_MonthReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Week_of_the_MonthReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Week_of_the_MonthReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Week_of_the_MonthObjectIDType
+     * @return \WorkdayWsdl\\StructType\Week_of_the_MonthObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Week_of_the_MonthReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Week_of_the_MonthReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Week_of_the_MonthReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Week_of_the_MonthReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Week_of_the_MonthReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Week_of_the_MonthReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Week_of_the_MonthObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Week_of_the_MonthObjectIDType
+     * @return \WorkdayWsdl\\StructType\Week_of_the_MonthObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Week_of_the_MonthObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Week_of_the_MonthObjectIDType
+     * @return \WorkdayWsdl\\StructType\Week_of_the_MonthObjectIDType
      */
     public static function __set_state(array $array)
     {

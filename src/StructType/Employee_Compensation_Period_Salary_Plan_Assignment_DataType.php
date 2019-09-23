@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
      * The Compensation_Element_Values_for_Period_Salary_Plan_Data
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Period Salary Plan Compensation data.
-     * @var \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType
      */
     public $Compensation_Element_Values_for_Period_Salary_Plan_Data;
     /**
@@ -34,9 +34,9 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
      * @uses Employee_Compensation_Period_Salary_Plan_Assignment_DataType::setPeriod_Salary_Plan_Name()
      * @uses Employee_Compensation_Period_Salary_Plan_Assignment_DataType::setCompensation_Element_Values_for_Period_Salary_Plan_Data()
      * @param string $period_Salary_Plan_Name
-     * @param \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data
      */
-    public function __construct($period_Salary_Plan_Name = null, \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data = null)
+    public function __construct($period_Salary_Plan_Name = null, \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data = null)
     {
         $this
             ->setPeriod_Salary_Plan_Name($period_Salary_Plan_Name)
@@ -53,7 +53,7 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
     /**
      * Set Period_Salary_Plan_Name value
      * @param string $period_Salary_Plan_Name
-     * @return \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
      */
     public function setPeriod_Salary_Plan_Name($period_Salary_Plan_Name = null)
     {
@@ -66,7 +66,7 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
     }
     /**
      * Get Compensation_Element_Values_for_Period_Salary_Plan_Data value
-     * @return \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType|null
      */
     public function getCompensation_Element_Values_for_Period_Salary_Plan_Data()
     {
@@ -74,10 +74,10 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
     }
     /**
      * Set Compensation_Element_Values_for_Period_Salary_Plan_Data value
-     * @param \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data
-     * @return \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Values_for_Period_Salary_Plan_Data(\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data = null)
+    public function setCompensation_Element_Values_for_Period_Salary_Plan_Data(\WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Period_Salary_Plan_Data = null)
     {
         $this->Compensation_Element_Values_for_Period_Salary_Plan_Data = $compensation_Element_Values_for_Period_Salary_Plan_Data;
         return $this;
@@ -88,7 +88,7 @@ class Employee_Compensation_Period_Salary_Plan_Assignment_DataType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Period_Salary_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

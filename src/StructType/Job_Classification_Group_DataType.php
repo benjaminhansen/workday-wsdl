@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Metadata value the job classification group maps to.
      * - minOccurs: 0
-     * @var \StructType\Global_Setup_Data_MappingObjectType
+     * @var \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType
      */
     public $Global_Setup_Data_Mapping_Reference;
     /**
@@ -53,7 +53,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Location Reference. Reference to a Country or Country Region.
      * - minOccurs: 0
-     * @var \StructType\Location_ContextObjectType
+     * @var \WorkdayWsdl\\StructType\Location_ContextObjectType
      */
     public $Location_Reference;
     /**
@@ -71,7 +71,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
      * - documentation: Job Classification Element
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_ClassificationType[]
+     * @var \WorkdayWsdl\\StructType\Job_ClassificationType[]
      */
     public $Job_Classification;
     /**
@@ -86,12 +86,12 @@ class Job_Classification_Group_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $effective_Date
      * @param string $job_Classification_Group_Name
-     * @param \StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference
-     * @param \StructType\Location_ContextObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
      * @param bool $inactive
-     * @param \StructType\Job_ClassificationType[] $job_Classification
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationType[] $job_Classification
      */
-    public function __construct($iD = null, $effective_Date = null, $job_Classification_Group_Name = null, \StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference = null, \StructType\Location_ContextObjectType $location_Reference = null, $inactive = null, array $job_Classification = array())
+    public function __construct($iD = null, $effective_Date = null, $job_Classification_Group_Name = null, \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference = null, \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null, $inactive = null, array $job_Classification = array())
     {
         $this
             ->setID($iD)
@@ -113,7 +113,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Job_Classification_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public function setID($iD = null)
     {
@@ -135,7 +135,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Job_Classification_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -157,7 +157,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Set Job_Classification_Group_Name value
      * @param string $job_Classification_Group_Name
-     * @return \StructType\Job_Classification_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public function setJob_Classification_Group_Name($job_Classification_Group_Name = null)
     {
@@ -170,7 +170,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     }
     /**
      * Get Global_Setup_Data_Mapping_Reference value
-     * @return \StructType\Global_Setup_Data_MappingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType|null
      */
     public function getGlobal_Setup_Data_Mapping_Reference()
     {
@@ -178,17 +178,17 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     }
     /**
      * Set Global_Setup_Data_Mapping_Reference value
-     * @param \StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference
-     * @return \StructType\Job_Classification_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
-    public function setGlobal_Setup_Data_Mapping_Reference(\StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference = null)
+    public function setGlobal_Setup_Data_Mapping_Reference(\WorkdayWsdl\\StructType\Global_Setup_Data_MappingObjectType $global_Setup_Data_Mapping_Reference = null)
     {
         $this->Global_Setup_Data_Mapping_Reference = $global_Setup_Data_Mapping_Reference;
         return $this;
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\Location_ContextObjectType|null
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -196,10 +196,10 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\Location_ContextObjectType $location_Reference
-     * @return \StructType\Job_Classification_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
-    public function setLocation_Reference(\StructType\Location_ContextObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
@@ -215,7 +215,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Classification_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -228,7 +228,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Classification value
-     * @return \StructType\Job_ClassificationType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationType[]|null
      */
     public function getJob_Classification()
     {
@@ -246,12 +246,12 @@ class Job_Classification_Group_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Classification_Group_DataTypeJob_ClassificationItem) {
             // validation for constraint: itemType
-            if (!$job_Classification_Group_DataTypeJob_ClassificationItem instanceof \StructType\Job_ClassificationType) {
+            if (!$job_Classification_Group_DataTypeJob_ClassificationItem instanceof \WorkdayWsdl\\StructType\Job_ClassificationType) {
                 $invalidValues[] = is_object($job_Classification_Group_DataTypeJob_ClassificationItem) ? get_class($job_Classification_Group_DataTypeJob_ClassificationItem) : sprintf('%s(%s)', gettype($job_Classification_Group_DataTypeJob_ClassificationItem), var_export($job_Classification_Group_DataTypeJob_ClassificationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Classification property can only contain items of type \StructType\Job_ClassificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Classification property can only contain items of type \WorkdayWsdl\\StructType\Job_ClassificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -259,8 +259,8 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Set Job_Classification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ClassificationType[] $job_Classification
-     * @return \StructType\Job_Classification_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationType[] $job_Classification
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public function setJob_Classification(array $job_Classification = array())
     {
@@ -274,14 +274,14 @@ class Job_Classification_Group_DataType extends AbstractStructBase
     /**
      * Add item to Job_Classification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ClassificationType $item
-     * @return \StructType\Job_Classification_Group_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationType $item
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
-    public function addToJob_Classification(\StructType\Job_ClassificationType $item)
+    public function addToJob_Classification(\WorkdayWsdl\\StructType\Job_ClassificationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_ClassificationType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Classification property can only contain items of type \StructType\Job_ClassificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_ClassificationType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Classification property can only contain items of type \WorkdayWsdl\\StructType\Job_ClassificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Classification[] = $item;
         return $this;
@@ -292,7 +292,7 @@ class Job_Classification_Group_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_Group_DataType
      */
     public static function __set_state(array $array)
     {

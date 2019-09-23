@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Preferred_Name_DataType extends AbstractStructBase
      * The Name_Detail_Data
      * Meta information extracted from the WSDL
      * - documentation: Contains the components of a name, such as the First Name and Last Name.
-     * @var \StructType\Person_Name_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public $Name_Detail_Data;
     /**
      * Constructor method for Preferred_Name_DataType
      * @uses Preferred_Name_DataType::setName_Detail_Data()
-     * @param \StructType\Person_Name_Detail_DataType $name_Detail_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data
      */
-    public function __construct(\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
     {
         $this
             ->setName_Detail_Data($name_Detail_Data);
     }
     /**
      * Get Name_Detail_Data value
-     * @return \StructType\Person_Name_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType|null
      */
     public function getName_Detail_Data()
     {
@@ -40,10 +40,10 @@ class Preferred_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Name_Detail_Data value
-     * @param \StructType\Person_Name_Detail_DataType $name_Detail_Data
-     * @return \StructType\Preferred_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data
+     * @return \WorkdayWsdl\\StructType\Preferred_Name_DataType
      */
-    public function setName_Detail_Data(\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
+    public function setName_Detail_Data(\WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Detail_Data = null)
     {
         $this->Name_Detail_Data = $name_Detail_Data;
         return $this;
@@ -54,7 +54,7 @@ class Preferred_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Preferred_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Preferred_Name_DataType
      */
     public static function __set_state(array $array)
     {

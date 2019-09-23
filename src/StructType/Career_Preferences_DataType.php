@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Career_Preferences_DataType extends AbstractStructBase
      * - documentation: Indicates if an employee has career preference.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Career_PreferenceObjectType[]
+     * @var \WorkdayWsdl\\StructType\Career_PreferenceObjectType[]
      */
     public $Career_Interest_Reference;
     /**
@@ -35,7 +35,7 @@ class Career_Preferences_DataType extends AbstractStructBase
      * Constructor method for Career_Preferences_DataType
      * @uses Career_Preferences_DataType::setCareer_Interest_Reference()
      * @uses Career_Preferences_DataType::setCareer_Interests()
-     * @param \StructType\Career_PreferenceObjectType[] $career_Interest_Reference
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectType[] $career_Interest_Reference
      * @param string $career_Interests
      */
     public function __construct(array $career_Interest_Reference = array(), $career_Interests = null)
@@ -46,7 +46,7 @@ class Career_Preferences_DataType extends AbstractStructBase
     }
     /**
      * Get Career_Interest_Reference value
-     * @return \StructType\Career_PreferenceObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectType[]|null
      */
     public function getCareer_Interest_Reference()
     {
@@ -64,12 +64,12 @@ class Career_Preferences_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $career_Preferences_DataTypeCareer_Interest_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$career_Preferences_DataTypeCareer_Interest_ReferenceItem instanceof \StructType\Career_PreferenceObjectType) {
+            if (!$career_Preferences_DataTypeCareer_Interest_ReferenceItem instanceof \WorkdayWsdl\\StructType\Career_PreferenceObjectType) {
                 $invalidValues[] = is_object($career_Preferences_DataTypeCareer_Interest_ReferenceItem) ? get_class($career_Preferences_DataTypeCareer_Interest_ReferenceItem) : sprintf('%s(%s)', gettype($career_Preferences_DataTypeCareer_Interest_ReferenceItem), var_export($career_Preferences_DataTypeCareer_Interest_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Career_Interest_Reference property can only contain items of type \StructType\Career_PreferenceObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Career_Interest_Reference property can only contain items of type \WorkdayWsdl\\StructType\Career_PreferenceObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -77,8 +77,8 @@ class Career_Preferences_DataType extends AbstractStructBase
     /**
      * Set Career_Interest_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Career_PreferenceObjectType[] $career_Interest_Reference
-     * @return \StructType\Career_Preferences_DataType
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectType[] $career_Interest_Reference
+     * @return \WorkdayWsdl\\StructType\Career_Preferences_DataType
      */
     public function setCareer_Interest_Reference(array $career_Interest_Reference = array())
     {
@@ -92,14 +92,14 @@ class Career_Preferences_DataType extends AbstractStructBase
     /**
      * Add item to Career_Interest_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Career_PreferenceObjectType $item
-     * @return \StructType\Career_Preferences_DataType
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectType $item
+     * @return \WorkdayWsdl\\StructType\Career_Preferences_DataType
      */
-    public function addToCareer_Interest_Reference(\StructType\Career_PreferenceObjectType $item)
+    public function addToCareer_Interest_Reference(\WorkdayWsdl\\StructType\Career_PreferenceObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Career_PreferenceObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Career_Interest_Reference property can only contain items of type \StructType\Career_PreferenceObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Career_PreferenceObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Career_Interest_Reference property can only contain items of type \WorkdayWsdl\\StructType\Career_PreferenceObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Career_Interest_Reference[] = $item;
         return $this;
@@ -115,7 +115,7 @@ class Career_Preferences_DataType extends AbstractStructBase
     /**
      * Set Career_Interests value
      * @param string $career_Interests
-     * @return \StructType\Career_Preferences_DataType
+     * @return \WorkdayWsdl\\StructType\Career_Preferences_DataType
      */
     public function setCareer_Interests($career_Interests = null)
     {
@@ -132,7 +132,7 @@ class Career_Preferences_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Career_Preferences_DataType
+     * @return \WorkdayWsdl\\StructType\Career_Preferences_DataType
      */
     public static function __set_state(array $array)
     {

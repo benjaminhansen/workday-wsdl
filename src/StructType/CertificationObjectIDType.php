@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class CertificationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\CertificationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\CertificationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\CertificationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\CertificationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\CertificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\CertificationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CertificationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CertificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\CertificationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\CertificationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\CertificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\CertificationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class CertificationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CertificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\CertificationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class CertificationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CertificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\CertificationObjectIDType
      */
     public static function __set_state(array $array)
     {

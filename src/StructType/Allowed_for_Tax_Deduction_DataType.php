@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Allowed_for_Tax_Deduction_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Allowed_for_Tax_Deduction_DataType
+     * @return \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -76,7 +76,7 @@ class Allowed_for_Tax_Deduction_DataType extends AbstractStructBase
     /**
      * Set Allowed_for_Tax_Deduction value
      * @param bool $allowed_for_Tax_Deduction
-     * @return \StructType\Allowed_for_Tax_Deduction_DataType
+     * @return \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType
      */
     public function setAllowed_for_Tax_Deduction($allowed_for_Tax_Deduction = null)
     {
@@ -93,7 +93,7 @@ class Allowed_for_Tax_Deduction_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Allowed_for_Tax_Deduction_DataType
+     * @return \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType
      */
     public static function __set_state(array $array)
     {

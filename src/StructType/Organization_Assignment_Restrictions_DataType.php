@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
      * The Supervisory_Organization_Reference
      * Meta information extracted from the WSDL
      * - documentation: Supervisory Organization Reference holds the Superviosry Organization for which the allowed/default organization(s) will be changed.
-     * @var \StructType\Supervisory_OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType
      */
     public $Supervisory_Organization_Reference;
     /**
@@ -26,7 +26,7 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
      * - documentation: Organization Assignment Restrictions Data for an Organization Type
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_Assignment_Restrictions_by_Type_DataType[]
+     * @var \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType[]
      */
     public $Organization_Assignment_Restrictions_by_Type_Data;
     /**
@@ -42,11 +42,11 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
      * @uses Organization_Assignment_Restrictions_DataType::setSupervisory_Organization_Reference()
      * @uses Organization_Assignment_Restrictions_DataType::setOrganization_Assignment_Restrictions_by_Type_Data()
      * @uses Organization_Assignment_Restrictions_DataType::setReplace_All()
-     * @param \StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
-     * @param \StructType\Organization_Assignment_Restrictions_by_Type_DataType[] $organization_Assignment_Restrictions_by_Type_Data
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType[] $organization_Assignment_Restrictions_by_Type_Data
      * @param bool $replace_All
      */
-    public function __construct(\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null, array $organization_Assignment_Restrictions_by_Type_Data = array(), $replace_All = null)
+    public function __construct(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null, array $organization_Assignment_Restrictions_by_Type_Data = array(), $replace_All = null)
     {
         $this
             ->setSupervisory_Organization_Reference($supervisory_Organization_Reference)
@@ -55,7 +55,7 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
     }
     /**
      * Get Supervisory_Organization_Reference value
-     * @return \StructType\Supervisory_OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType|null
      */
     public function getSupervisory_Organization_Reference()
     {
@@ -63,17 +63,17 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
     }
     /**
      * Set Supervisory_Organization_Reference value
-     * @param \StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
-     * @return \StructType\Organization_Assignment_Restrictions_DataType
+     * @param \WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
-    public function setSupervisory_Organization_Reference(\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null)
+    public function setSupervisory_Organization_Reference(\WorkdayWsdl\\StructType\Supervisory_OrganizationObjectType $supervisory_Organization_Reference = null)
     {
         $this->Supervisory_Organization_Reference = $supervisory_Organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Assignment_Restrictions_by_Type_Data value
-     * @return \StructType\Organization_Assignment_Restrictions_by_Type_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType[]|null
      */
     public function getOrganization_Assignment_Restrictions_by_Type_Data()
     {
@@ -91,12 +91,12 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem) {
             // validation for constraint: itemType
-            if (!$organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem instanceof \StructType\Organization_Assignment_Restrictions_by_Type_DataType) {
+            if (!$organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem instanceof \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType) {
                 $invalidValues[] = is_object($organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem) ? get_class($organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem) : sprintf('%s(%s)', gettype($organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem), var_export($organization_Assignment_Restrictions_DataTypeOrganization_Assignment_Restrictions_by_Type_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Assignment_Restrictions_by_Type_Data property can only contain items of type \StructType\Organization_Assignment_Restrictions_by_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Assignment_Restrictions_by_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -104,8 +104,8 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
     /**
      * Set Organization_Assignment_Restrictions_by_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Assignment_Restrictions_by_Type_DataType[] $organization_Assignment_Restrictions_by_Type_Data
-     * @return \StructType\Organization_Assignment_Restrictions_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType[] $organization_Assignment_Restrictions_by_Type_Data
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
     public function setOrganization_Assignment_Restrictions_by_Type_Data(array $organization_Assignment_Restrictions_by_Type_Data = array())
     {
@@ -119,14 +119,14 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
     /**
      * Add item to Organization_Assignment_Restrictions_by_Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Assignment_Restrictions_by_Type_DataType $item
-     * @return \StructType\Organization_Assignment_Restrictions_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
-    public function addToOrganization_Assignment_Restrictions_by_Type_Data(\StructType\Organization_Assignment_Restrictions_by_Type_DataType $item)
+    public function addToOrganization_Assignment_Restrictions_by_Type_Data(\WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_Assignment_Restrictions_by_Type_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Assignment_Restrictions_by_Type_Data property can only contain items of type \StructType\Organization_Assignment_Restrictions_by_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Assignment_Restrictions_by_Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_by_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Assignment_Restrictions_by_Type_Data[] = $item;
         return $this;
@@ -142,7 +142,7 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Organization_Assignment_Restrictions_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -159,7 +159,7 @@ class Organization_Assignment_Restrictions_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Assignment_Restrictions_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class PronounObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\PronounObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\PronounObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class PronounObjectType extends AbstractStructBase
      * Constructor method for PronounObjectType
      * @uses PronounObjectType::setID()
      * @uses PronounObjectType::setDescriptor()
-     * @param \StructType\PronounObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\PronounObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class PronounObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\PronounObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\PronounObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class PronounObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pronounObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$pronounObjectTypeIDItem instanceof \StructType\PronounObjectIDType) {
+            if (!$pronounObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\PronounObjectIDType) {
                 $invalidValues[] = is_object($pronounObjectTypeIDItem) ? get_class($pronounObjectTypeIDItem) : sprintf('%s(%s)', gettype($pronounObjectTypeIDItem), var_export($pronounObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\PronounObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\PronounObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class PronounObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounObjectIDType[] $iD
-     * @return \StructType\PronounObjectType
+     * @param \WorkdayWsdl\\StructType\PronounObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\PronounObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class PronounObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounObjectIDType $item
-     * @return \StructType\PronounObjectType
+     * @param \WorkdayWsdl\\StructType\PronounObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\PronounObjectType
      */
-    public function addToID(\StructType\PronounObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\PronounObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PronounObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\PronounObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\PronounObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\PronounObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class PronounObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\PronounObjectType
+     * @return \WorkdayWsdl\\StructType\PronounObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class PronounObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PronounObjectType
+     * @return \WorkdayWsdl\\StructType\PronounObjectType
      */
     public static function __set_state(array $array)
     {

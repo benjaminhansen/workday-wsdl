@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Compensation_StepObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Compensation_StepObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Compensation_StepObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Compensation_StepObjectType extends AbstractStructBase
      * Constructor method for Compensation_StepObjectType
      * @uses Compensation_StepObjectType::setID()
      * @uses Compensation_StepObjectType::setDescriptor()
-     * @param \StructType\Compensation_StepObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Compensation_StepObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Compensation_StepObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Compensation_StepObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Compensation_StepObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $compensation_StepObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$compensation_StepObjectTypeIDItem instanceof \StructType\Compensation_StepObjectIDType) {
+            if (!$compensation_StepObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Compensation_StepObjectIDType) {
                 $invalidValues[] = is_object($compensation_StepObjectTypeIDItem) ? get_class($compensation_StepObjectTypeIDItem) : sprintf('%s(%s)', gettype($compensation_StepObjectTypeIDItem), var_export($compensation_StepObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Compensation_StepObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_StepObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Compensation_StepObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_StepObjectIDType[] $iD
-     * @return \StructType\Compensation_StepObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_StepObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Compensation_StepObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_StepObjectIDType $item
-     * @return \StructType\Compensation_StepObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_StepObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectType
      */
-    public function addToID(\StructType\Compensation_StepObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Compensation_StepObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Compensation_StepObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Compensation_StepObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Compensation_StepObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_StepObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Compensation_StepObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Compensation_StepObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Compensation_StepObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_StepObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_StepObjectType
      */
     public static function __set_state(array $array)
     {

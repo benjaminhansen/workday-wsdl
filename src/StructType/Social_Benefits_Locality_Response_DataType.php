@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
      * - documentation: Reference element representing a unique instance of Social Benefits Locality
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Social_Benefits_LocalityType[]
+     * @var \WorkdayWsdl\\StructType\Social_Benefits_LocalityType[]
      */
     public $Social_Benefits_Locality;
     /**
      * Constructor method for Social_Benefits_Locality_Response_DataType
      * @uses Social_Benefits_Locality_Response_DataType::setSocial_Benefits_Locality()
-     * @param \StructType\Social_Benefits_LocalityType[] $social_Benefits_Locality
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityType[] $social_Benefits_Locality
      */
     public function __construct(array $social_Benefits_Locality = array())
     {
@@ -33,7 +33,7 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Social_Benefits_Locality value
-     * @return \StructType\Social_Benefits_LocalityType[]|null
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_LocalityType[]|null
      */
     public function getSocial_Benefits_Locality()
     {
@@ -51,12 +51,12 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem) {
             // validation for constraint: itemType
-            if (!$social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem instanceof \StructType\Social_Benefits_LocalityType) {
+            if (!$social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem instanceof \WorkdayWsdl\\StructType\Social_Benefits_LocalityType) {
                 $invalidValues[] = is_object($social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem) ? get_class($social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem) : sprintf('%s(%s)', gettype($social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem), var_export($social_Benefits_Locality_Response_DataTypeSocial_Benefits_LocalityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Social_Benefits_Locality property can only contain items of type \StructType\Social_Benefits_LocalityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Social_Benefits_Locality property can only contain items of type \WorkdayWsdl\\StructType\Social_Benefits_LocalityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
     /**
      * Set Social_Benefits_Locality value
      * @throws \InvalidArgumentException
-     * @param \StructType\Social_Benefits_LocalityType[] $social_Benefits_Locality
-     * @return \StructType\Social_Benefits_Locality_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityType[] $social_Benefits_Locality
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Response_DataType
      */
     public function setSocial_Benefits_Locality(array $social_Benefits_Locality = array())
     {
@@ -79,14 +79,14 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
     /**
      * Add item to Social_Benefits_Locality value
      * @throws \InvalidArgumentException
-     * @param \StructType\Social_Benefits_LocalityType $item
-     * @return \StructType\Social_Benefits_Locality_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityType $item
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Response_DataType
      */
-    public function addToSocial_Benefits_Locality(\StructType\Social_Benefits_LocalityType $item)
+    public function addToSocial_Benefits_Locality(\WorkdayWsdl\\StructType\Social_Benefits_LocalityType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Social_Benefits_LocalityType) {
-            throw new \InvalidArgumentException(sprintf('The Social_Benefits_Locality property can only contain items of type \StructType\Social_Benefits_LocalityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Social_Benefits_LocalityType) {
+            throw new \InvalidArgumentException(sprintf('The Social_Benefits_Locality property can only contain items of type \WorkdayWsdl\\StructType\Social_Benefits_LocalityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Social_Benefits_Locality[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Social_Benefits_Locality_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Social_Benefits_Locality_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Response_DataType
      */
     public static function __set_state(array $array)
     {

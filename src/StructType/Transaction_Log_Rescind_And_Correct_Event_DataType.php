@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: A reference to a transaction log entry.
      * - minOccurs: 0
-     * @var \StructType\Transaction_LogObjectType
+     * @var \WorkdayWsdl\\StructType\Transaction_LogObjectType
      */
     public $Transaction_Log_Reference;
     /**
@@ -74,14 +74,14 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
      * @uses Transaction_Log_Rescind_And_Correct_Event_DataType::setIs_Rescind()
      * @uses Transaction_Log_Rescind_And_Correct_Event_DataType::setPrior_Effective_Moment()
      * @uses Transaction_Log_Rescind_And_Correct_Event_DataType::setTransaction_Entry_Moment()
-     * @param \StructType\Transaction_LogObjectType $transaction_Log_Reference
+     * @param \WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference
      * @param string $transaction_Log_Description
      * @param bool $is_Correction
      * @param bool $is_Rescind
      * @param string $prior_Effective_Moment
      * @param string $transaction_Entry_Moment
      */
-    public function __construct(\StructType\Transaction_LogObjectType $transaction_Log_Reference = null, $transaction_Log_Description = null, $is_Correction = null, $is_Rescind = null, $prior_Effective_Moment = null, $transaction_Entry_Moment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference = null, $transaction_Log_Description = null, $is_Correction = null, $is_Rescind = null, $prior_Effective_Moment = null, $transaction_Entry_Moment = null)
     {
         $this
             ->setTransaction_Log_Reference($transaction_Log_Reference)
@@ -93,7 +93,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     }
     /**
      * Get Transaction_Log_Reference value
-     * @return \StructType\Transaction_LogObjectType|null
+     * @return \WorkdayWsdl\\StructType\Transaction_LogObjectType|null
      */
     public function getTransaction_Log_Reference()
     {
@@ -101,10 +101,10 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     }
     /**
      * Set Transaction_Log_Reference value
-     * @param \StructType\Transaction_LogObjectType $transaction_Log_Reference
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
-    public function setTransaction_Log_Reference(\StructType\Transaction_LogObjectType $transaction_Log_Reference = null)
+    public function setTransaction_Log_Reference(\WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference = null)
     {
         $this->Transaction_Log_Reference = $transaction_Log_Reference;
         return $this;
@@ -120,7 +120,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     /**
      * Set Transaction_Log_Description value
      * @param string $transaction_Log_Description
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public function setTransaction_Log_Description($transaction_Log_Description = null)
     {
@@ -142,7 +142,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     /**
      * Set Is_Correction value
      * @param bool $is_Correction
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public function setIs_Correction($is_Correction = null)
     {
@@ -164,7 +164,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     /**
      * Set Is_Rescind value
      * @param bool $is_Rescind
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public function setIs_Rescind($is_Rescind = null)
     {
@@ -186,7 +186,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     /**
      * Set Prior_Effective_Moment value
      * @param string $prior_Effective_Moment
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public function setPrior_Effective_Moment($prior_Effective_Moment = null)
     {
@@ -208,7 +208,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
     /**
      * Set Transaction_Entry_Moment value
      * @param string $transaction_Entry_Moment
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public function setTransaction_Entry_Moment($transaction_Entry_Moment = null)
     {
@@ -225,7 +225,7 @@ class Transaction_Log_Rescind_And_Correct_Event_DataType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_Rescind_And_Correct_Event_DataType
      */
     public static function __set_state(array $array)
     {

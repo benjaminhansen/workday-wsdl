@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the person that is assigned to the provisioning group.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Person_Reference;
     /**
@@ -25,7 +25,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the worker corresponding to the person that is assigned to the provisioning group.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -61,13 +61,13 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
      * @uses Provisioning_Group_Assignment_DataType::setProvisioning_Group()
      * @uses Provisioning_Group_Assignment_DataType::setStatus()
      * @uses Provisioning_Group_Assignment_DataType::setLast_Changed()
-     * @param \StructType\Unique_IdentifierObjectType $person_Reference
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $provisioning_Group
      * @param string $status
      * @param string $last_Changed
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $person_Reference = null, \StructType\WorkerObjectType $worker_Reference = null, $provisioning_Group = null, $status = null, $last_Changed = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference = null, \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $provisioning_Group = null, $status = null, $last_Changed = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -78,7 +78,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -86,17 +86,17 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $person_Reference
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
-    public function setPerson_Reference(\StructType\Unique_IdentifierObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -104,10 +104,10 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -123,7 +123,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     /**
      * Set Provisioning_Group value
      * @param string $provisioning_Group
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
     public function setProvisioning_Group($provisioning_Group = null)
     {
@@ -145,7 +145,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     /**
      * Set Status value
      * @param string $status
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
     public function setStatus($status = null)
     {
@@ -167,7 +167,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
     /**
      * Set Last_Changed value
      * @param string $last_Changed
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
     public function setLast_Changed($last_Changed = null)
     {
@@ -184,7 +184,7 @@ class Provisioning_Group_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

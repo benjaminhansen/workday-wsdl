@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Workers_Compensation_Replacement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Workers' Compensation Code
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_CodeObjectType
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public $Workers_Compensation_Code_Reference;
     /**
      * Constructor method for Workers_Compensation_Replacement_DataType
      * @uses Workers_Compensation_Replacement_DataType::setWorkers_Compensation_Code_Reference()
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
      */
-    public function __construct(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
     {
         $this
             ->setWorkers_Compensation_Code_Reference($workers_Compensation_Code_Reference);
     }
     /**
      * Get Workers_Compensation_Code_Reference value
-     * @return \StructType\Workers_Compensation_CodeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType|null
      */
     public function getWorkers_Compensation_Code_Reference()
     {
@@ -40,10 +40,10 @@ class Workers_Compensation_Replacement_DataType extends AbstractStructBase
     }
     /**
      * Set Workers_Compensation_Code_Reference value
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
-     * @return \StructType\Workers_Compensation_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType
      */
-    public function setWorkers_Compensation_Code_Reference(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
+    public function setWorkers_Compensation_Code_Reference(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
     {
         $this->Workers_Compensation_Code_Reference = $workers_Compensation_Code_Reference;
         return $this;
@@ -54,7 +54,7 @@ class Workers_Compensation_Replacement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workers_Compensation_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

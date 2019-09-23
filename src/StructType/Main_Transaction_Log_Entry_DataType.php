@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to a transaction log entry.
      * - minOccurs: 0
-     * @var \StructType\Transaction_LogObjectType
+     * @var \WorkdayWsdl\\StructType\Transaction_LogObjectType
      */
     public $Transaction_Log_Reference;
     /**
@@ -25,17 +25,17 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing the rescind and correction data of the transaction log entry.
      * - minOccurs: 0
-     * @var \StructType\Transaction_Log_DataType
+     * @var \WorkdayWsdl\\StructType\Transaction_Log_DataType
      */
     public $Transaction_Log_Data;
     /**
      * Constructor method for Main_Transaction_Log_Entry_DataType
      * @uses Main_Transaction_Log_Entry_DataType::setTransaction_Log_Reference()
      * @uses Main_Transaction_Log_Entry_DataType::setTransaction_Log_Data()
-     * @param \StructType\Transaction_LogObjectType $transaction_Log_Reference
-     * @param \StructType\Transaction_Log_DataType $transaction_Log_Data
+     * @param \WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_DataType $transaction_Log_Data
      */
-    public function __construct(\StructType\Transaction_LogObjectType $transaction_Log_Reference = null, \StructType\Transaction_Log_DataType $transaction_Log_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference = null, \WorkdayWsdl\\StructType\Transaction_Log_DataType $transaction_Log_Data = null)
     {
         $this
             ->setTransaction_Log_Reference($transaction_Log_Reference)
@@ -43,7 +43,7 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
     }
     /**
      * Get Transaction_Log_Reference value
-     * @return \StructType\Transaction_LogObjectType|null
+     * @return \WorkdayWsdl\\StructType\Transaction_LogObjectType|null
      */
     public function getTransaction_Log_Reference()
     {
@@ -51,17 +51,17 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
     }
     /**
      * Set Transaction_Log_Reference value
-     * @param \StructType\Transaction_LogObjectType $transaction_Log_Reference
-     * @return \StructType\Main_Transaction_Log_Entry_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference
+     * @return \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType
      */
-    public function setTransaction_Log_Reference(\StructType\Transaction_LogObjectType $transaction_Log_Reference = null)
+    public function setTransaction_Log_Reference(\WorkdayWsdl\\StructType\Transaction_LogObjectType $transaction_Log_Reference = null)
     {
         $this->Transaction_Log_Reference = $transaction_Log_Reference;
         return $this;
     }
     /**
      * Get Transaction_Log_Data value
-     * @return \StructType\Transaction_Log_DataType|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_DataType|null
      */
     public function getTransaction_Log_Data()
     {
@@ -69,10 +69,10 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
     }
     /**
      * Set Transaction_Log_Data value
-     * @param \StructType\Transaction_Log_DataType $transaction_Log_Data
-     * @return \StructType\Main_Transaction_Log_Entry_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_DataType $transaction_Log_Data
+     * @return \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType
      */
-    public function setTransaction_Log_Data(\StructType\Transaction_Log_DataType $transaction_Log_Data = null)
+    public function setTransaction_Log_Data(\WorkdayWsdl\\StructType\Transaction_Log_DataType $transaction_Log_Data = null)
     {
         $this->Transaction_Log_Data = $transaction_Log_Data;
         return $this;
@@ -83,7 +83,7 @@ class Main_Transaction_Log_Entry_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Main_Transaction_Log_Entry_DataType
+     * @return \WorkdayWsdl\\StructType\Main_Transaction_Log_Entry_DataType
      */
     public static function __set_state(array $array)
     {

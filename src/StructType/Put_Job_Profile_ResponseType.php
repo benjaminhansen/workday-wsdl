@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Identifier for a Job Profile. Also known as Job Profile ID.
      * - minOccurs: 0
-     * @var \StructType\Job_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public $Job_Profile_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Application_Instance_Related_Exceptions_DataType[]
+     * @var \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[]
      */
     public $Exceptions_Response_Data;
     /**
@@ -40,11 +40,11 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
      * @uses Put_Job_Profile_ResponseType::setJob_Profile_Reference()
      * @uses Put_Job_Profile_ResponseType::setExceptions_Response_Data()
      * @uses Put_Job_Profile_ResponseType::setVersion()
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
      * @param string $version
      */
-    public function __construct(\StructType\Job_ProfileObjectType $job_Profile_Reference = null, array $exceptions_Response_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null, array $exceptions_Response_Data = array(), $version = null)
     {
         $this
             ->setJob_Profile_Reference($job_Profile_Reference)
@@ -53,7 +53,7 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Reference value
-     * @return \StructType\Job_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType|null
      */
     public function getJob_Profile_Reference()
     {
@@ -61,17 +61,17 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Reference value
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
-     * @return \StructType\Put_Job_Profile_ResponseType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_ResponseType
      */
-    public function setJob_Profile_Reference(\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
+    public function setJob_Profile_Reference(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
     {
         $this->Job_Profile_Reference = $job_Profile_Reference;
         return $this;
     }
     /**
      * Get Exceptions_Response_Data value
-     * @return \StructType\Application_Instance_Related_Exceptions_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[]|null
      */
     public function getExceptions_Response_Data()
     {
@@ -89,12 +89,12 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Job_Profile_ResponseTypeExceptions_Response_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Job_Profile_ResponseTypeExceptions_Response_DataItem instanceof \StructType\Application_Instance_Related_Exceptions_DataType) {
+            if (!$put_Job_Profile_ResponseTypeExceptions_Response_DataItem instanceof \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType) {
                 $invalidValues[] = is_object($put_Job_Profile_ResponseTypeExceptions_Response_DataItem) ? get_class($put_Job_Profile_ResponseTypeExceptions_Response_DataItem) : sprintf('%s(%s)', gettype($put_Job_Profile_ResponseTypeExceptions_Response_DataItem), var_export($put_Job_Profile_ResponseTypeExceptions_Response_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Exceptions_Response_Data property can only contain items of type \StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Exceptions_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -102,8 +102,8 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
     /**
      * Set Exceptions_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
-     * @return \StructType\Put_Job_Profile_ResponseType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_ResponseType
      */
     public function setExceptions_Response_Data(array $exceptions_Response_Data = array())
     {
@@ -117,14 +117,14 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
     /**
      * Add item to Exceptions_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType $item
-     * @return \StructType\Put_Job_Profile_ResponseType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_ResponseType
      */
-    public function addToExceptions_Response_Data(\StructType\Application_Instance_Related_Exceptions_DataType $item)
+    public function addToExceptions_Response_Data(\WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Application_Instance_Related_Exceptions_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Exceptions_Response_Data property can only contain items of type \StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Exceptions_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Exceptions_Response_Data[] = $item;
         return $this;
@@ -140,7 +140,7 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Profile_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -157,7 +157,7 @@ class Put_Job_Profile_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Profile_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Social Benefits Locality
      * - maxOccurs: unbounded
-     * @var \StructType\Social_Benefits_LocalityObjectType[]
+     * @var \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType[]
      */
     public $Social_Benefits_Locality_Reference;
     /**
      * Constructor method for Social_Benefits_Locality_Request_ReferencesType
      * @uses Social_Benefits_Locality_Request_ReferencesType::setSocial_Benefits_Locality_Reference()
-     * @param \StructType\Social_Benefits_LocalityObjectType[] $social_Benefits_Locality_Reference
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType[] $social_Benefits_Locality_Reference
      */
     public function __construct(array $social_Benefits_Locality_Reference = array())
     {
@@ -32,7 +32,7 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Social_Benefits_Locality_Reference value
-     * @return \StructType\Social_Benefits_LocalityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType[]|null
      */
     public function getSocial_Benefits_Locality_Reference()
     {
@@ -50,12 +50,12 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem instanceof \StructType\Social_Benefits_LocalityObjectType) {
+            if (!$social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem instanceof \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType) {
                 $invalidValues[] = is_object($social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem) ? get_class($social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem) : sprintf('%s(%s)', gettype($social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem), var_export($social_Benefits_Locality_Request_ReferencesTypeSocial_Benefits_Locality_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Social_Benefits_Locality_Reference property can only contain items of type \StructType\Social_Benefits_LocalityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Social_Benefits_Locality_Reference property can only contain items of type \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Social_Benefits_Locality_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Social_Benefits_LocalityObjectType[] $social_Benefits_Locality_Reference
-     * @return \StructType\Social_Benefits_Locality_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType[] $social_Benefits_Locality_Reference
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Request_ReferencesType
      */
     public function setSocial_Benefits_Locality_Reference(array $social_Benefits_Locality_Reference = array())
     {
@@ -78,14 +78,14 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Social_Benefits_Locality_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Social_Benefits_LocalityObjectType $item
-     * @return \StructType\Social_Benefits_Locality_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Request_ReferencesType
      */
-    public function addToSocial_Benefits_Locality_Reference(\StructType\Social_Benefits_LocalityObjectType $item)
+    public function addToSocial_Benefits_Locality_Reference(\WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Social_Benefits_LocalityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Social_Benefits_Locality_Reference property can only contain items of type \StructType\Social_Benefits_LocalityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Social_Benefits_Locality_Reference property can only contain items of type \WorkdayWsdl\\StructType\Social_Benefits_LocalityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Social_Benefits_Locality_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Social_Benefits_Locality_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Social_Benefits_Locality_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Social_Benefits_Locality_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

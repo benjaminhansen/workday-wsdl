@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Ethnicity.
      * - minOccurs: 0
-     * @var \StructType\EthnicityObjectType
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectType
      */
     public $Ethnicity_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the detailed information about an Ethnicity.
      * - minOccurs: 0
-     * @var \StructType\Ethnicity_DataType
+     * @var \WorkdayWsdl\\StructType\Ethnicity_DataType
      */
     public $Ethnicity_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
      * @uses Put_Ethnicity_RequestType::setEthnicity_Data()
      * @uses Put_Ethnicity_RequestType::setAdd_Only()
      * @uses Put_Ethnicity_RequestType::setVersion()
-     * @param \StructType\EthnicityObjectType $ethnicity_Reference
-     * @param \StructType\Ethnicity_DataType $ethnicity_Data
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference
+     * @param \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\EthnicityObjectType $ethnicity_Reference = null, \StructType\Ethnicity_DataType $ethnicity_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference = null, \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setEthnicity_Reference($ethnicity_Reference)
@@ -63,7 +63,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
     }
     /**
      * Get Ethnicity_Reference value
-     * @return \StructType\EthnicityObjectType|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType|null
      */
     public function getEthnicity_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
     }
     /**
      * Set Ethnicity_Reference value
-     * @param \StructType\EthnicityObjectType $ethnicity_Reference
-     * @return \StructType\Put_Ethnicity_RequestType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Ethnicity_RequestType
      */
-    public function setEthnicity_Reference(\StructType\EthnicityObjectType $ethnicity_Reference = null)
+    public function setEthnicity_Reference(\WorkdayWsdl\\StructType\EthnicityObjectType $ethnicity_Reference = null)
     {
         $this->Ethnicity_Reference = $ethnicity_Reference;
         return $this;
     }
     /**
      * Get Ethnicity_Data value
-     * @return \StructType\Ethnicity_DataType|null
+     * @return \WorkdayWsdl\\StructType\Ethnicity_DataType|null
      */
     public function getEthnicity_Data()
     {
@@ -89,10 +89,10 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
     }
     /**
      * Set Ethnicity_Data value
-     * @param \StructType\Ethnicity_DataType $ethnicity_Data
-     * @return \StructType\Put_Ethnicity_RequestType
+     * @param \WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data
+     * @return \WorkdayWsdl\\StructType\Put_Ethnicity_RequestType
      */
-    public function setEthnicity_Data(\StructType\Ethnicity_DataType $ethnicity_Data = null)
+    public function setEthnicity_Data(\WorkdayWsdl\\StructType\Ethnicity_DataType $ethnicity_Data = null)
     {
         $this->Ethnicity_Data = $ethnicity_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Ethnicity_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Ethnicity_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Ethnicity_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Ethnicity_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Ethnicity_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Ethnicity_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Ethnicity_RequestType
      */
     public static function __set_state(array $array)
     {

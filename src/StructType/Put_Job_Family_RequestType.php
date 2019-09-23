@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Job Family.
      * - minOccurs: 0
-     * @var \StructType\Job_FamilyObjectType
+     * @var \WorkdayWsdl\\StructType\Job_FamilyObjectType
      */
     public $Job_Family_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data to be used for adding a new Job Family or updating an existing Job Family.
      * - minOccurs: 0
-     * @var \StructType\Job_Family_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Family_DataType
      */
     public $Job_Family_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Job_Family_RequestType extends AbstractStructBase
      * @uses Put_Job_Family_RequestType::setJob_Family_Data()
      * @uses Put_Job_Family_RequestType::setAdd_Only()
      * @uses Put_Job_Family_RequestType::setVersion()
-     * @param \StructType\Job_FamilyObjectType $job_Family_Reference
-     * @param \StructType\Job_Family_DataType $job_Family_Data
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Family_DataType $job_Family_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Job_FamilyObjectType $job_Family_Reference = null, \StructType\Job_Family_DataType $job_Family_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Reference = null, \WorkdayWsdl\\StructType\Job_Family_DataType $job_Family_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setJob_Family_Reference($job_Family_Reference)
@@ -63,7 +63,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Reference value
-     * @return \StructType\Job_FamilyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_FamilyObjectType|null
      */
     public function getJob_Family_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Job_Family_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Reference value
-     * @param \StructType\Job_FamilyObjectType $job_Family_Reference
-     * @return \StructType\Put_Job_Family_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_RequestType
      */
-    public function setJob_Family_Reference(\StructType\Job_FamilyObjectType $job_Family_Reference = null)
+    public function setJob_Family_Reference(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Reference = null)
     {
         $this->Job_Family_Reference = $job_Family_Reference;
         return $this;
     }
     /**
      * Get Job_Family_Data value
-     * @return \StructType\Job_Family_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_DataType|null
      */
     public function getJob_Family_Data()
     {
@@ -89,10 +89,10 @@ class Put_Job_Family_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Data value
-     * @param \StructType\Job_Family_DataType $job_Family_Data
-     * @return \StructType\Put_Job_Family_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Family_DataType $job_Family_Data
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_RequestType
      */
-    public function setJob_Family_Data(\StructType\Job_Family_DataType $job_Family_Data = null)
+    public function setJob_Family_Data(\WorkdayWsdl\\StructType\Job_Family_DataType $job_Family_Data = null)
     {
         $this->Job_Family_Data = $job_Family_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Job_Family_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Family_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Job_Family_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Family_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Family_RequestType
      */
     public static function __set_state(array $array)
     {

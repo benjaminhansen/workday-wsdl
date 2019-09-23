@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Position_SetObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Position_SetReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Position_SetReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Position_SetReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Position_SetReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Position_SetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Position_SetObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Position_SetReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Position_SetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Position_SetReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Position_SetReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Position_SetReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Position_SetReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Position_SetObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Position_SetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Position_SetObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Position_SetObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Position_SetObjectIDType
+     * @return \WorkdayWsdl\\StructType\Position_SetObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Worker that the additional name data will be applied to.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -33,7 +33,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Additional_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Additional_Name_DataType[]
      */
     public $Name_Data;
     /**
@@ -41,11 +41,11 @@ class Change_Additional_Name_DataType extends AbstractStructBase
      * @uses Change_Additional_Name_DataType::setWorker_Reference()
      * @uses Change_Additional_Name_DataType::setReplace_All()
      * @uses Change_Additional_Name_DataType::setName_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param bool $replace_All
-     * @param \StructType\Additional_Name_DataType[] $name_Data
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType[] $name_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $replace_All = null, array $name_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $replace_All = null, array $name_Data = array())
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -54,7 +54,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -62,10 +62,10 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Change_Additional_Name_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -81,7 +81,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Change_Additional_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -94,7 +94,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     }
     /**
      * Get Name_Data value
-     * @return \StructType\Additional_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Additional_Name_DataType[]|null
      */
     public function getName_Data()
     {
@@ -112,12 +112,12 @@ class Change_Additional_Name_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Additional_Name_DataTypeName_DataItem) {
             // validation for constraint: itemType
-            if (!$change_Additional_Name_DataTypeName_DataItem instanceof \StructType\Additional_Name_DataType) {
+            if (!$change_Additional_Name_DataTypeName_DataItem instanceof \WorkdayWsdl\\StructType\Additional_Name_DataType) {
                 $invalidValues[] = is_object($change_Additional_Name_DataTypeName_DataItem) ? get_class($change_Additional_Name_DataTypeName_DataItem) : sprintf('%s(%s)', gettype($change_Additional_Name_DataTypeName_DataItem), var_export($change_Additional_Name_DataTypeName_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Name_Data property can only contain items of type \StructType\Additional_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Additional_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -125,8 +125,8 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     /**
      * Set Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Additional_Name_DataType[] $name_Data
-     * @return \StructType\Change_Additional_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType[] $name_Data
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
     public function setName_Data(array $name_Data = array())
     {
@@ -140,14 +140,14 @@ class Change_Additional_Name_DataType extends AbstractStructBase
     /**
      * Add item to Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Additional_Name_DataType $item
-     * @return \StructType\Change_Additional_Name_DataType
+     * @param \WorkdayWsdl\\StructType\Additional_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
-    public function addToName_Data(\StructType\Additional_Name_DataType $item)
+    public function addToName_Data(\WorkdayWsdl\\StructType\Additional_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Additional_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Name_Data property can only contain items of type \StructType\Additional_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Additional_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Additional_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Name_Data[] = $item;
         return $this;
@@ -158,7 +158,7 @@ class Change_Additional_Name_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Additional_Name_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Additional_Name_DataType
      */
     public static function __set_state(array $array)
     {

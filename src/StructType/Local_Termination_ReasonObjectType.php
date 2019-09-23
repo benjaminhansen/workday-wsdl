@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Local_Termination_ReasonObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
      * Constructor method for Local_Termination_ReasonObjectType
      * @uses Local_Termination_ReasonObjectType::setID()
      * @uses Local_Termination_ReasonObjectType::setDescriptor()
-     * @param \StructType\Local_Termination_ReasonObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Local_Termination_ReasonObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $local_Termination_ReasonObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$local_Termination_ReasonObjectTypeIDItem instanceof \StructType\Local_Termination_ReasonObjectIDType) {
+            if (!$local_Termination_ReasonObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType) {
                 $invalidValues[] = is_object($local_Termination_ReasonObjectTypeIDItem) ? get_class($local_Termination_ReasonObjectTypeIDItem) : sprintf('%s(%s)', gettype($local_Termination_ReasonObjectTypeIDItem), var_export($local_Termination_ReasonObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Local_Termination_ReasonObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Local_Termination_ReasonObjectIDType[] $iD
-     * @return \StructType\Local_Termination_ReasonObjectType
+     * @param \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Local_Termination_ReasonObjectIDType $item
-     * @return \StructType\Local_Termination_ReasonObjectType
+     * @param \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType
      */
-    public function addToID(\StructType\Local_Termination_ReasonObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Local_Termination_ReasonObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Local_Termination_ReasonObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Local_Termination_ReasonObjectType
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Local_Termination_ReasonObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Local_Termination_ReasonObjectType
+     * @return \WorkdayWsdl\\StructType\Local_Termination_ReasonObjectType
      */
     public static function __set_state(array $array)
     {

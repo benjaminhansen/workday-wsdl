@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_Type_ReasonObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
      * Constructor method for Leave_Type_ReasonObjectType
      * @uses Leave_Type_ReasonObjectType::setID()
      * @uses Leave_Type_ReasonObjectType::setDescriptor()
-     * @param \StructType\Leave_Type_ReasonObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Leave_Type_ReasonObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $leave_Type_ReasonObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$leave_Type_ReasonObjectTypeIDItem instanceof \StructType\Leave_Type_ReasonObjectIDType) {
+            if (!$leave_Type_ReasonObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType) {
                 $invalidValues[] = is_object($leave_Type_ReasonObjectTypeIDItem) ? get_class($leave_Type_ReasonObjectTypeIDItem) : sprintf('%s(%s)', gettype($leave_Type_ReasonObjectTypeIDItem), var_export($leave_Type_ReasonObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Leave_Type_ReasonObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Type_ReasonObjectIDType[] $iD
-     * @return \StructType\Leave_Type_ReasonObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Type_ReasonObjectIDType $item
-     * @return \StructType\Leave_Type_ReasonObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType
      */
-    public function addToID(\StructType\Leave_Type_ReasonObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_Type_ReasonObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Leave_Type_ReasonObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Leave_Type_ReasonObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Leave_Type_ReasonObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_Type_ReasonObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_Type_ReasonObjectType
      */
     public static function __set_state(array $array)
     {

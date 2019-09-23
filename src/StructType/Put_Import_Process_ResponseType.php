@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Web Service Background Process Runtime element
      * - minOccurs: 0
-     * @var \StructType\Web_Service_Background_Process_RuntimeObjectType
+     * @var \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType
      */
     public $Import_Process_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Header Instance element
      * - minOccurs: 0
-     * @var \StructType\InstanceObjectType
+     * @var \WorkdayWsdl\\StructType\InstanceObjectType
      */
     public $Header_Instance_Reference;
     /**
@@ -40,11 +40,11 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
      * @uses Put_Import_Process_ResponseType::setImport_Process_Reference()
      * @uses Put_Import_Process_ResponseType::setHeader_Instance_Reference()
      * @uses Put_Import_Process_ResponseType::setVersion()
-     * @param \StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference
-     * @param \StructType\InstanceObjectType $header_Instance_Reference
+     * @param \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference
+     * @param \WorkdayWsdl\\StructType\InstanceObjectType $header_Instance_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference = null, \StructType\InstanceObjectType $header_Instance_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference = null, \WorkdayWsdl\\StructType\InstanceObjectType $header_Instance_Reference = null, $version = null)
     {
         $this
             ->setImport_Process_Reference($import_Process_Reference)
@@ -53,7 +53,7 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
     }
     /**
      * Get Import_Process_Reference value
-     * @return \StructType\Web_Service_Background_Process_RuntimeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType|null
      */
     public function getImport_Process_Reference()
     {
@@ -61,17 +61,17 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
     }
     /**
      * Set Import_Process_Reference value
-     * @param \StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference
-     * @return \StructType\Put_Import_Process_ResponseType
+     * @param \WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Import_Process_ResponseType
      */
-    public function setImport_Process_Reference(\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference = null)
+    public function setImport_Process_Reference(\WorkdayWsdl\\StructType\Web_Service_Background_Process_RuntimeObjectType $import_Process_Reference = null)
     {
         $this->Import_Process_Reference = $import_Process_Reference;
         return $this;
     }
     /**
      * Get Header_Instance_Reference value
-     * @return \StructType\InstanceObjectType|null
+     * @return \WorkdayWsdl\\StructType\InstanceObjectType|null
      */
     public function getHeader_Instance_Reference()
     {
@@ -79,10 +79,10 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
     }
     /**
      * Set Header_Instance_Reference value
-     * @param \StructType\InstanceObjectType $header_Instance_Reference
-     * @return \StructType\Put_Import_Process_ResponseType
+     * @param \WorkdayWsdl\\StructType\InstanceObjectType $header_Instance_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Import_Process_ResponseType
      */
-    public function setHeader_Instance_Reference(\StructType\InstanceObjectType $header_Instance_Reference = null)
+    public function setHeader_Instance_Reference(\WorkdayWsdl\\StructType\InstanceObjectType $header_Instance_Reference = null)
     {
         $this->Header_Instance_Reference = $header_Instance_Reference;
         return $this;
@@ -98,7 +98,7 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Import_Process_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Import_Process_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -115,7 +115,7 @@ class Put_Import_Process_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Import_Process_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Import_Process_ResponseType
      */
     public static function __set_state(array $array)
     {

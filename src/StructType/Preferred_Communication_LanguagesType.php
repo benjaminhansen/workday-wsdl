@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,14 +25,14 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: Country Reference
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
      * The Preferred_Communication_Language_Data
      * Meta information extracted from the WSDL
      * - documentation: Preferred Communication Language Data
-     * @var \StructType\Preferred_Communication_Language_DataType
+     * @var \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType
      */
     public $Preferred_Communication_Language_Data;
     /**
@@ -41,10 +41,10 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
      * @uses Preferred_Communication_LanguagesType::setCountry_Reference()
      * @uses Preferred_Communication_LanguagesType::setPreferred_Communication_Language_Data()
      * @param bool $delete
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data
      */
-    public function __construct($delete = null, \StructType\CountryObjectType $country_Reference = null, \StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data = null)
+    public function __construct($delete = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data = null)
     {
         $this
             ->setDelete($delete)
@@ -62,7 +62,7 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Preferred_Communication_LanguagesType
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType
      */
     public function setDelete($delete = null)
     {
@@ -75,7 +75,7 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -83,17 +83,17 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Preferred_Communication_LanguagesType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Preferred_Communication_Language_Data value
-     * @return \StructType\Preferred_Communication_Language_DataType|null
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType|null
      */
     public function getPreferred_Communication_Language_Data()
     {
@@ -101,10 +101,10 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
     }
     /**
      * Set Preferred_Communication_Language_Data value
-     * @param \StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data
-     * @return \StructType\Preferred_Communication_LanguagesType
+     * @param \WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType
      */
-    public function setPreferred_Communication_Language_Data(\StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data = null)
+    public function setPreferred_Communication_Language_Data(\WorkdayWsdl\\StructType\Preferred_Communication_Language_DataType $preferred_Communication_Language_Data = null)
     {
         $this->Preferred_Communication_Language_Data = $preferred_Communication_Language_Data;
         return $this;
@@ -115,7 +115,7 @@ class Preferred_Communication_LanguagesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Preferred_Communication_LanguagesType
+     * @return \WorkdayWsdl\\StructType\Preferred_Communication_LanguagesType
      */
     public static function __set_state(array $array)
     {

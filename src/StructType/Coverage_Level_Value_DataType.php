@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -74,7 +74,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
      * The Currency_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the currency.
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -90,9 +90,9 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
      * @param float $guarantee_Issue_Amount
      * @param float $coverage_Level_Multiplier
      * @param string $coverage_Level_Type
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct($coverage_Level_Value = null, $buy_Up_Amount = null, $guarantee_Issue_Amount = null, $coverage_Level_Multiplier = null, $coverage_Level_Type = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct($coverage_Level_Value = null, $buy_Up_Amount = null, $guarantee_Issue_Amount = null, $coverage_Level_Multiplier = null, $coverage_Level_Type = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setCoverage_Level_Value($coverage_Level_Value)
@@ -113,7 +113,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     /**
      * Set Coverage_Level_Value value
      * @param float $coverage_Level_Value
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public function setCoverage_Level_Value($coverage_Level_Value = null)
     {
@@ -147,7 +147,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     /**
      * Set Buy_Up_Amount value
      * @param float $buy_Up_Amount
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public function setBuy_Up_Amount($buy_Up_Amount = null)
     {
@@ -181,7 +181,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     /**
      * Set Guarantee_Issue_Amount value
      * @param float $guarantee_Issue_Amount
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public function setGuarantee_Issue_Amount($guarantee_Issue_Amount = null)
     {
@@ -215,7 +215,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     /**
      * Set Coverage_Level_Multiplier value
      * @param float $coverage_Level_Multiplier
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public function setCoverage_Level_Multiplier($coverage_Level_Multiplier = null)
     {
@@ -249,7 +249,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     /**
      * Set Coverage_Level_Type value
      * @param string $coverage_Level_Type
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public function setCoverage_Level_Type($coverage_Level_Type = null)
     {
@@ -262,7 +262,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -270,10 +270,10 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -284,7 +284,7 @@ class Coverage_Level_Value_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Coverage_Level_Value_DataType
+     * @return \WorkdayWsdl\\StructType\Coverage_Level_Value_DataType
      */
     public static function __set_state(array $array)
     {

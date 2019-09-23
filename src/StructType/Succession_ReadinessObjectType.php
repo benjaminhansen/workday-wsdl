@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Succession_ReadinessObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Succession_ReadinessObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Succession_ReadinessObjectType extends AbstractStructBase
      * Constructor method for Succession_ReadinessObjectType
      * @uses Succession_ReadinessObjectType::setID()
      * @uses Succession_ReadinessObjectType::setDescriptor()
-     * @param \StructType\Succession_ReadinessObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Succession_ReadinessObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Succession_ReadinessObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Succession_ReadinessObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $succession_ReadinessObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$succession_ReadinessObjectTypeIDItem instanceof \StructType\Succession_ReadinessObjectIDType) {
+            if (!$succession_ReadinessObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType) {
                 $invalidValues[] = is_object($succession_ReadinessObjectTypeIDItem) ? get_class($succession_ReadinessObjectTypeIDItem) : sprintf('%s(%s)', gettype($succession_ReadinessObjectTypeIDItem), var_export($succession_ReadinessObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Succession_ReadinessObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Succession_ReadinessObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Succession_ReadinessObjectIDType[] $iD
-     * @return \StructType\Succession_ReadinessObjectType
+     * @param \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Succession_ReadinessObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Succession_ReadinessObjectIDType $item
-     * @return \StructType\Succession_ReadinessObjectType
+     * @param \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectType
      */
-    public function addToID(\StructType\Succession_ReadinessObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Succession_ReadinessObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Succession_ReadinessObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Succession_ReadinessObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Succession_ReadinessObjectType
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Succession_ReadinessObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Succession_ReadinessObjectType
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectType
      */
     public static function __set_state(array $array)
     {

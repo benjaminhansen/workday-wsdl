@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class Person_Email_Information_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for updating a single email address.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_Email_DataType[]
+     * @var \WorkdayWsdl\\StructType\Person_Email_DataType[]
      */
     public $Email_Information_Data;
     /**
@@ -36,7 +36,7 @@ class Person_Email_Information_DataType extends AbstractStructBase
      * Constructor method for Person_Email_Information_DataType
      * @uses Person_Email_Information_DataType::setEmail_Information_Data()
      * @uses Person_Email_Information_DataType::setReplace_All()
-     * @param \StructType\Person_Email_DataType[] $email_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Email_DataType[] $email_Information_Data
      * @param bool $replace_All
      */
     public function __construct(array $email_Information_Data = array(), $replace_All = null)
@@ -47,7 +47,7 @@ class Person_Email_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Email_Information_Data value
-     * @return \StructType\Person_Email_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_Email_DataType[]|null
      */
     public function getEmail_Information_Data()
     {
@@ -65,12 +65,12 @@ class Person_Email_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Email_Information_DataTypeEmail_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Email_Information_DataTypeEmail_Information_DataItem instanceof \StructType\Person_Email_DataType) {
+            if (!$person_Email_Information_DataTypeEmail_Information_DataItem instanceof \WorkdayWsdl\\StructType\Person_Email_DataType) {
                 $invalidValues[] = is_object($person_Email_Information_DataTypeEmail_Information_DataItem) ? get_class($person_Email_Information_DataTypeEmail_Information_DataItem) : sprintf('%s(%s)', gettype($person_Email_Information_DataTypeEmail_Information_DataItem), var_export($person_Email_Information_DataTypeEmail_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Email_Information_Data property can only contain items of type \StructType\Person_Email_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Email_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Email_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -78,8 +78,8 @@ class Person_Email_Information_DataType extends AbstractStructBase
     /**
      * Set Email_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Email_DataType[] $email_Information_Data
-     * @return \StructType\Person_Email_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Email_DataType[] $email_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Email_Information_DataType
      */
     public function setEmail_Information_Data(array $email_Information_Data = array())
     {
@@ -93,14 +93,14 @@ class Person_Email_Information_DataType extends AbstractStructBase
     /**
      * Add item to Email_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Email_DataType $item
-     * @return \StructType\Person_Email_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Email_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Email_Information_DataType
      */
-    public function addToEmail_Information_Data(\StructType\Person_Email_DataType $item)
+    public function addToEmail_Information_Data(\WorkdayWsdl\\StructType\Person_Email_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_Email_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Email_Information_Data property can only contain items of type \StructType\Person_Email_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_Email_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Email_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Email_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Email_Information_Data[] = $item;
         return $this;
@@ -116,7 +116,7 @@ class Person_Email_Information_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Person_Email_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Email_Information_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -133,7 +133,7 @@ class Person_Email_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Email_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Email_Information_DataType
      */
     public static function __set_state(array $array)
     {

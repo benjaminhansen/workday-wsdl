@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class Leave_Status_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_of_Absence_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType[]
      */
     public $Leave_of_Absence_Type_Reference;
     /**
@@ -128,7 +128,7 @@ class Leave_Status_DataType extends AbstractStructBase
      * @param string $estimated_Leave_End_Date
      * @param string $leave_End_Date
      * @param string $first_Day_Of_Work
-     * @param \StructType\Leave_of_Absence_Type_ReferenceType[] $leave_of_Absence_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType[] $leave_of_Absence_Type_Reference
      * @param bool $benefits_Effect
      * @param bool $payroll_Effect
      * @param bool $paid_Time_Off_Accrual_Effect
@@ -161,7 +161,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set On_Leave value
      * @param bool $on_Leave
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setOn_Leave($on_Leave = null)
     {
@@ -183,7 +183,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Leave_Start_Date value
      * @param string $leave_Start_Date
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setLeave_Start_Date($leave_Start_Date = null)
     {
@@ -205,7 +205,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Estimated_Leave_End_Date value
      * @param string $estimated_Leave_End_Date
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setEstimated_Leave_End_Date($estimated_Leave_End_Date = null)
     {
@@ -227,7 +227,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Leave_End_Date value
      * @param string $leave_End_Date
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setLeave_End_Date($leave_End_Date = null)
     {
@@ -249,7 +249,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set First_Day_Of_Work value
      * @param string $first_Day_Of_Work
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setFirst_Day_Of_Work($first_Day_Of_Work = null)
     {
@@ -262,7 +262,7 @@ class Leave_Status_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_of_Absence_Type_Reference value
-     * @return \StructType\Leave_of_Absence_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType[]|null
      */
     public function getLeave_of_Absence_Type_Reference()
     {
@@ -280,12 +280,12 @@ class Leave_Status_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem instanceof \StructType\Leave_of_Absence_Type_ReferenceType) {
+            if (!$leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType) {
                 $invalidValues[] = is_object($leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem) ? get_class($leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem) : sprintf('%s(%s)', gettype($leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem), var_export($leave_Status_DataTypeLeave_of_Absence_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Leave_of_Absence_Type_Reference property can only contain items of type \StructType\Leave_of_Absence_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Leave_of_Absence_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -293,8 +293,8 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Leave_of_Absence_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_of_Absence_Type_ReferenceType[] $leave_of_Absence_Type_Reference
-     * @return \StructType\Leave_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType[] $leave_of_Absence_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setLeave_of_Absence_Type_Reference(array $leave_of_Absence_Type_Reference = array())
     {
@@ -308,14 +308,14 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Add item to Leave_of_Absence_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_of_Absence_Type_ReferenceType $item
-     * @return \StructType\Leave_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
-    public function addToLeave_of_Absence_Type_Reference(\StructType\Leave_of_Absence_Type_ReferenceType $item)
+    public function addToLeave_of_Absence_Type_Reference(\WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_of_Absence_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Leave_of_Absence_Type_Reference property can only contain items of type \StructType\Leave_of_Absence_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Leave_of_Absence_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Leave_of_Absence_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Leave_of_Absence_Type_Reference[] = $item;
         return $this;
@@ -331,7 +331,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Benefits_Effect value
      * @param bool $benefits_Effect
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setBenefits_Effect($benefits_Effect = null)
     {
@@ -353,7 +353,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Payroll_Effect value
      * @param bool $payroll_Effect
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setPayroll_Effect($payroll_Effect = null)
     {
@@ -375,7 +375,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Paid_Time_Off_Accrual_Effect value
      * @param bool $paid_Time_Off_Accrual_Effect
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setPaid_Time_Off_Accrual_Effect($paid_Time_Off_Accrual_Effect = null)
     {
@@ -397,7 +397,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Continuous_Service_Accrual_Effect value
      * @param bool $continuous_Service_Accrual_Effect
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setContinuous_Service_Accrual_Effect($continuous_Service_Accrual_Effect = null)
     {
@@ -419,7 +419,7 @@ class Leave_Status_DataType extends AbstractStructBase
     /**
      * Set Stock_Vesting_Effect value
      * @param bool $stock_Vesting_Effect
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public function setStock_Vesting_Effect($stock_Vesting_Effect = null)
     {
@@ -436,7 +436,7 @@ class Leave_Status_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType
      */
     public static function __set_state(array $array)
     {

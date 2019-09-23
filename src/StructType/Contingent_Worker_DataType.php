@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
      * The Integration_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $Integration_ID_Data;
     /**
@@ -33,7 +33,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Personal_Info_DataType[]
+     * @var \WorkdayWsdl\\StructType\Personal_Info_DataType[]
      */
     public $Personal_Info_Data;
     /**
@@ -41,7 +41,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Contingent_Worker_Contract_Info_DataType[]
+     * @var \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType[]
      */
     public $Contingent_Worker_Contract_Info_Data;
     /**
@@ -51,11 +51,11 @@ class Contingent_Worker_DataType extends AbstractStructBase
      * @uses Contingent_Worker_DataType::setPersonal_Info_Data()
      * @uses Contingent_Worker_DataType::setContingent_Worker_Contract_Info_Data()
      * @param string $user_ID
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @param \StructType\Personal_Info_DataType[] $personal_Info_Data
-     * @param \StructType\Contingent_Worker_Contract_Info_DataType[] $contingent_Worker_Contract_Info_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\Personal_Info_DataType[] $personal_Info_Data
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType[] $contingent_Worker_Contract_Info_Data
      */
-    public function __construct($user_ID = null, \StructType\External_Integration_ID_DataType $integration_ID_Data = null, array $personal_Info_Data = array(), array $contingent_Worker_Contract_Info_Data = array())
+    public function __construct($user_ID = null, \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null, array $personal_Info_Data = array(), array $contingent_Worker_Contract_Info_Data = array())
     {
         $this
             ->setUser_ID($user_ID)
@@ -74,7 +74,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
     /**
      * Set User_ID value
      * @param string $user_ID
-     * @return \StructType\Contingent_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
     public function setUser_ID($user_ID = null)
     {
@@ -87,7 +87,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getIntegration_ID_Data()
     {
@@ -95,17 +95,17 @@ class Contingent_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @return \StructType\Contingent_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
-    public function setIntegration_ID_Data(\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
+    public function setIntegration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
     {
         $this->Integration_ID_Data = $integration_ID_Data;
         return $this;
     }
     /**
      * Get Personal_Info_Data value
-     * @return \StructType\Personal_Info_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Personal_Info_DataType[]|null
      */
     public function getPersonal_Info_Data()
     {
@@ -123,12 +123,12 @@ class Contingent_Worker_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contingent_Worker_DataTypePersonal_Info_DataItem) {
             // validation for constraint: itemType
-            if (!$contingent_Worker_DataTypePersonal_Info_DataItem instanceof \StructType\Personal_Info_DataType) {
+            if (!$contingent_Worker_DataTypePersonal_Info_DataItem instanceof \WorkdayWsdl\\StructType\Personal_Info_DataType) {
                 $invalidValues[] = is_object($contingent_Worker_DataTypePersonal_Info_DataItem) ? get_class($contingent_Worker_DataTypePersonal_Info_DataItem) : sprintf('%s(%s)', gettype($contingent_Worker_DataTypePersonal_Info_DataItem), var_export($contingent_Worker_DataTypePersonal_Info_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Personal_Info_Data property can only contain items of type \StructType\Personal_Info_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Personal_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Personal_Info_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -136,8 +136,8 @@ class Contingent_Worker_DataType extends AbstractStructBase
     /**
      * Set Personal_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Personal_Info_DataType[] $personal_Info_Data
-     * @return \StructType\Contingent_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Personal_Info_DataType[] $personal_Info_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
     public function setPersonal_Info_Data(array $personal_Info_Data = array())
     {
@@ -151,21 +151,21 @@ class Contingent_Worker_DataType extends AbstractStructBase
     /**
      * Add item to Personal_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Personal_Info_DataType $item
-     * @return \StructType\Contingent_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Personal_Info_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
-    public function addToPersonal_Info_Data(\StructType\Personal_Info_DataType $item)
+    public function addToPersonal_Info_Data(\WorkdayWsdl\\StructType\Personal_Info_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Personal_Info_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Personal_Info_Data property can only contain items of type \StructType\Personal_Info_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Personal_Info_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Personal_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Personal_Info_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Personal_Info_Data[] = $item;
         return $this;
     }
     /**
      * Get Contingent_Worker_Contract_Info_Data value
-     * @return \StructType\Contingent_Worker_Contract_Info_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType[]|null
      */
     public function getContingent_Worker_Contract_Info_Data()
     {
@@ -183,12 +183,12 @@ class Contingent_Worker_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem) {
             // validation for constraint: itemType
-            if (!$contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem instanceof \StructType\Contingent_Worker_Contract_Info_DataType) {
+            if (!$contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem instanceof \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType) {
                 $invalidValues[] = is_object($contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem) ? get_class($contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem) : sprintf('%s(%s)', gettype($contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem), var_export($contingent_Worker_DataTypeContingent_Worker_Contract_Info_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Contingent_Worker_Contract_Info_Data property can only contain items of type \StructType\Contingent_Worker_Contract_Info_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Contingent_Worker_Contract_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -196,8 +196,8 @@ class Contingent_Worker_DataType extends AbstractStructBase
     /**
      * Set Contingent_Worker_Contract_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contingent_Worker_Contract_Info_DataType[] $contingent_Worker_Contract_Info_Data
-     * @return \StructType\Contingent_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType[] $contingent_Worker_Contract_Info_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
     public function setContingent_Worker_Contract_Info_Data(array $contingent_Worker_Contract_Info_Data = array())
     {
@@ -211,14 +211,14 @@ class Contingent_Worker_DataType extends AbstractStructBase
     /**
      * Add item to Contingent_Worker_Contract_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contingent_Worker_Contract_Info_DataType $item
-     * @return \StructType\Contingent_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType $item
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
-    public function addToContingent_Worker_Contract_Info_Data(\StructType\Contingent_Worker_Contract_Info_DataType $item)
+    public function addToContingent_Worker_Contract_Info_Data(\WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Contingent_Worker_Contract_Info_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Contingent_Worker_Contract_Info_Data property can only contain items of type \StructType\Contingent_Worker_Contract_Info_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Contingent_Worker_Contract_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Contingent_Worker_Contract_Info_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Contingent_Worker_Contract_Info_Data[] = $item;
         return $this;
@@ -229,7 +229,7 @@ class Contingent_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contingent_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_DataType
      */
     public static function __set_state(array $array)
     {

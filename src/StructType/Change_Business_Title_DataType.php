@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class Change_Business_Title_DataType extends AbstractStructBase
     /**
      * Set Event_Effective_Date value
      * @param string $event_Effective_Date
-     * @return \StructType\Change_Business_Title_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_DataType
      */
     public function setEvent_Effective_Date($event_Effective_Date = null)
     {
@@ -74,7 +74,7 @@ class Change_Business_Title_DataType extends AbstractStructBase
     /**
      * Set Proposed_Business_Title value
      * @param string $proposed_Business_Title
-     * @return \StructType\Change_Business_Title_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_DataType
      */
     public function setProposed_Business_Title($proposed_Business_Title = null)
     {
@@ -91,7 +91,7 @@ class Change_Business_Title_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Business_Title_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Business_Title_DataType
      */
     public static function __set_state(array $array)
     {

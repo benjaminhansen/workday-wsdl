@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
      * The Citizenship_Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Form I-9 Citizenship Status to be assigned to the Worker.
-     * @var \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
+     * @var \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType
      */
     public $Citizenship_Status_Reference;
     /**
@@ -66,9 +66,9 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
      * @param string $employee_First_Name
      * @param string $employee_Middle_Initial
      * @param string $employee_Other_Names_Used
-     * @param \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference
      */
-    public function __construct($employee_Last_Name = null, $employee_First_Name = null, $employee_Middle_Initial = null, $employee_Other_Names_Used = null, \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference = null)
+    public function __construct($employee_Last_Name = null, $employee_First_Name = null, $employee_Middle_Initial = null, $employee_Other_Names_Used = null, \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference = null)
     {
         $this
             ->setEmployee_Last_Name($employee_Last_Name)
@@ -88,7 +88,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     /**
      * Set Employee_Last_Name value
      * @param string $employee_Last_Name
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
     public function setEmployee_Last_Name($employee_Last_Name = null)
     {
@@ -110,7 +110,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     /**
      * Set Employee_First_Name value
      * @param string $employee_First_Name
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
     public function setEmployee_First_Name($employee_First_Name = null)
     {
@@ -132,7 +132,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     /**
      * Set Employee_Middle_Initial value
      * @param string $employee_Middle_Initial
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
     public function setEmployee_Middle_Initial($employee_Middle_Initial = null)
     {
@@ -158,7 +158,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     /**
      * Set Employee_Other_Names_Used value
      * @param string $employee_Other_Names_Used
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
     public function setEmployee_Other_Names_Used($employee_Other_Names_Used = null)
     {
@@ -171,7 +171,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     }
     /**
      * Get Citizenship_Status_Reference value
-     * @return \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType|null
      */
     public function getCitizenship_Status_Reference()
     {
@@ -179,10 +179,10 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
     }
     /**
      * Set Citizenship_Status_Reference value
-     * @param \StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @param \WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
-    public function setCitizenship_Status_Reference(\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference = null)
+    public function setCitizenship_Status_Reference(\WorkdayWsdl\\StructType\Form_I_9_Citizenship_Status__Workday_Owned_ObjectType $citizenship_Status_Reference = null)
     {
         $this->Citizenship_Status_Reference = $citizenship_Status_Reference;
         return $this;
@@ -193,7 +193,7 @@ class External_Form_I_9_Section_1_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Section_1_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_1_DataType
      */
     public static function __set_state(array $array)
     {

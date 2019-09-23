@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Union_Membership_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
      * Constructor method for Union_Membership_TypeObjectType
      * @uses Union_Membership_TypeObjectType::setID()
      * @uses Union_Membership_TypeObjectType::setDescriptor()
-     * @param \StructType\Union_Membership_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Union_Membership_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $union_Membership_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$union_Membership_TypeObjectTypeIDItem instanceof \StructType\Union_Membership_TypeObjectIDType) {
+            if (!$union_Membership_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType) {
                 $invalidValues[] = is_object($union_Membership_TypeObjectTypeIDItem) ? get_class($union_Membership_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($union_Membership_TypeObjectTypeIDItem), var_export($union_Membership_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Union_Membership_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Union_Membership_TypeObjectIDType[] $iD
-     * @return \StructType\Union_Membership_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Union_Membership_TypeObjectIDType $item
-     * @return \StructType\Union_Membership_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType
      */
-    public function addToID(\StructType\Union_Membership_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Union_Membership_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Union_Membership_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Union_Membership_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Union_Membership_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Union_Membership_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Union_Membership_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Union_Membership_TypeObjectType
      */
     public static function __set_state(array $array)
     {

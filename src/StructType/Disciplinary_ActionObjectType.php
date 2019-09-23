@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disciplinary_ActionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
      * Constructor method for Disciplinary_ActionObjectType
      * @uses Disciplinary_ActionObjectType::setID()
      * @uses Disciplinary_ActionObjectType::setDescriptor()
-     * @param \StructType\Disciplinary_ActionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Disciplinary_ActionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disciplinary_ActionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$disciplinary_ActionObjectTypeIDItem instanceof \StructType\Disciplinary_ActionObjectIDType) {
+            if (!$disciplinary_ActionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType) {
                 $invalidValues[] = is_object($disciplinary_ActionObjectTypeIDItem) ? get_class($disciplinary_ActionObjectTypeIDItem) : sprintf('%s(%s)', gettype($disciplinary_ActionObjectTypeIDItem), var_export($disciplinary_ActionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Disciplinary_ActionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_ActionObjectIDType[] $iD
-     * @return \StructType\Disciplinary_ActionObjectType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disciplinary_ActionObjectIDType $item
-     * @return \StructType\Disciplinary_ActionObjectType
+     * @param \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType
      */
-    public function addToID(\StructType\Disciplinary_ActionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disciplinary_ActionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Disciplinary_ActionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Disciplinary_ActionObjectType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Disciplinary_ActionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disciplinary_ActionObjectType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectType
      */
     public static function __set_state(array $array)
     {

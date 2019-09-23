@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Committee Definition Reference
      * - minOccurs: 0
-     * @var \StructType\CommitteeObjectType
+     * @var \WorkdayWsdl\\StructType\CommitteeObjectType
      */
     public $Committee_Definition_Reference;
     /**
@@ -31,10 +31,10 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
      * Constructor method for Maintain_Committee_Definition_ResponseType
      * @uses Maintain_Committee_Definition_ResponseType::setCommittee_Definition_Reference()
      * @uses Maintain_Committee_Definition_ResponseType::setVersion()
-     * @param \StructType\CommitteeObjectType $committee_Definition_Reference
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference
      * @param string $version
      */
-    public function __construct(\StructType\CommitteeObjectType $committee_Definition_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference = null, $version = null)
     {
         $this
             ->setCommittee_Definition_Reference($committee_Definition_Reference)
@@ -42,7 +42,7 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
     }
     /**
      * Get Committee_Definition_Reference value
-     * @return \StructType\CommitteeObjectType|null
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectType|null
      */
     public function getCommittee_Definition_Reference()
     {
@@ -50,10 +50,10 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
     }
     /**
      * Set Committee_Definition_Reference value
-     * @param \StructType\CommitteeObjectType $committee_Definition_Reference
-     * @return \StructType\Maintain_Committee_Definition_ResponseType
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference
+     * @return \WorkdayWsdl\\StructType\Maintain_Committee_Definition_ResponseType
      */
-    public function setCommittee_Definition_Reference(\StructType\CommitteeObjectType $committee_Definition_Reference = null)
+    public function setCommittee_Definition_Reference(\WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference = null)
     {
         $this->Committee_Definition_Reference = $committee_Definition_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Maintain_Committee_Definition_ResponseType
+     * @return \WorkdayWsdl\\StructType\Maintain_Committee_Definition_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Maintain_Committee_Definition_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Maintain_Committee_Definition_ResponseType
+     * @return \WorkdayWsdl\\StructType\Maintain_Committee_Definition_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class Termination_Status_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The ~worker’s~ rehire eligibility status specified on their most recent exit interview.
      * - minOccurs: 0
-     * @var \StructType\Common_Yes_NoObjectType
+     * @var \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public $Eligible_For_Rehire_Reference;
     /**
@@ -78,9 +78,9 @@ class Termination_Status_DataType extends AbstractStructBase
      * @param string $termination_Category
      * @param string $termination_Reason
      * @param bool $involuntary_Termination
-     * @param \StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference
      */
-    public function __construct($terminated = null, $termination_Date = null, $termination_Category = null, $termination_Reason = null, $involuntary_Termination = null, \StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference = null)
+    public function __construct($terminated = null, $termination_Date = null, $termination_Category = null, $termination_Reason = null, $involuntary_Termination = null, \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference = null)
     {
         $this
             ->setTerminated($terminated)
@@ -101,7 +101,7 @@ class Termination_Status_DataType extends AbstractStructBase
     /**
      * Set Terminated value
      * @param bool $terminated
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public function setTerminated($terminated = null)
     {
@@ -123,7 +123,7 @@ class Termination_Status_DataType extends AbstractStructBase
     /**
      * Set Termination_Date value
      * @param string $termination_Date
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public function setTermination_Date($termination_Date = null)
     {
@@ -145,7 +145,7 @@ class Termination_Status_DataType extends AbstractStructBase
     /**
      * Set Termination_Category value
      * @param string $termination_Category
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public function setTermination_Category($termination_Category = null)
     {
@@ -167,7 +167,7 @@ class Termination_Status_DataType extends AbstractStructBase
     /**
      * Set Termination_Reason value
      * @param string $termination_Reason
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public function setTermination_Reason($termination_Reason = null)
     {
@@ -189,7 +189,7 @@ class Termination_Status_DataType extends AbstractStructBase
     /**
      * Set Involuntary_Termination value
      * @param bool $involuntary_Termination
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public function setInvoluntary_Termination($involuntary_Termination = null)
     {
@@ -202,7 +202,7 @@ class Termination_Status_DataType extends AbstractStructBase
     }
     /**
      * Get Eligible_For_Rehire_Reference value
-     * @return \StructType\Common_Yes_NoObjectType|null
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType|null
      */
     public function getEligible_For_Rehire_Reference()
     {
@@ -210,10 +210,10 @@ class Termination_Status_DataType extends AbstractStructBase
     }
     /**
      * Set Eligible_For_Rehire_Reference value
-     * @param \StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference
-     * @return \StructType\Termination_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
-    public function setEligible_For_Rehire_Reference(\StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference = null)
+    public function setEligible_For_Rehire_Reference(\WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_For_Rehire_Reference = null)
     {
         $this->Eligible_For_Rehire_Reference = $eligible_For_Rehire_Reference;
         return $this;
@@ -224,7 +224,7 @@ class Termination_Status_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Termination_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType
      */
     public static function __set_state(array $array)
     {

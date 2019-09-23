@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Career_PreferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Career_PreferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Career_PreferenceObjectType extends AbstractStructBase
      * Constructor method for Career_PreferenceObjectType
      * @uses Career_PreferenceObjectType::setID()
      * @uses Career_PreferenceObjectType::setDescriptor()
-     * @param \StructType\Career_PreferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Career_PreferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Career_PreferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Career_PreferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $career_PreferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$career_PreferenceObjectTypeIDItem instanceof \StructType\Career_PreferenceObjectIDType) {
+            if (!$career_PreferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType) {
                 $invalidValues[] = is_object($career_PreferenceObjectTypeIDItem) ? get_class($career_PreferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($career_PreferenceObjectTypeIDItem), var_export($career_PreferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Career_PreferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Career_PreferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Career_PreferenceObjectIDType[] $iD
-     * @return \StructType\Career_PreferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Career_PreferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Career_PreferenceObjectIDType $item
-     * @return \StructType\Career_PreferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectType
      */
-    public function addToID(\StructType\Career_PreferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Career_PreferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Career_PreferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Career_PreferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Career_PreferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Career_PreferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Career_PreferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Career_PreferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Career_PreferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Career_PreferenceObjectType
      */
     public static function __set_state(array $array)
     {

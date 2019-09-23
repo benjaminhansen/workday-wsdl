@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the coverage target elected.
      * - minOccurs: 0
-     * @var \StructType\Additional_Benefits_Coverage_TargetObjectType
+     * @var \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType
      */
     public $Additional_Benefits_Coverage_Target_Reference;
     /**
@@ -34,14 +34,14 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The election information for the coverage.
      * - minOccurs: 0
-     * @var \StructType\Worker_Benefit_Election_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public $Benefit_Election_Data;
     /**
      * The Percent_Contribution_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Employee_Contribution_Percentage_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType
      */
     public $Percent_Contribution_Data;
     /**
@@ -49,7 +49,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_Contribution_Amount_DataType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType[]
      */
     public $Amount_Contribution_Data;
     /**
@@ -59,13 +59,13 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
      * @uses Worker_Additional_Benefits_Coverage_DataType::setBenefit_Election_Data()
      * @uses Worker_Additional_Benefits_Coverage_DataType::setPercent_Contribution_Data()
      * @uses Worker_Additional_Benefits_Coverage_DataType::setAmount_Contribution_Data()
-     * @param \StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference
+     * @param \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference
      * @param string $original_Coverage_Begin_Date_for_Coverage_Target
-     * @param \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
-     * @param \StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data
-     * @param \StructType\Employee_Contribution_Amount_DataType[] $amount_Contribution_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType[] $amount_Contribution_Data
      */
-    public function __construct(\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference = null, $original_Coverage_Begin_Date_for_Coverage_Target = null, \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null, \StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data = null, array $amount_Contribution_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference = null, $original_Coverage_Begin_Date_for_Coverage_Target = null, \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null, \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data = null, array $amount_Contribution_Data = array())
     {
         $this
             ->setAdditional_Benefits_Coverage_Target_Reference($additional_Benefits_Coverage_Target_Reference)
@@ -76,7 +76,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get Additional_Benefits_Coverage_Target_Reference value
-     * @return \StructType\Additional_Benefits_Coverage_TargetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType|null
      */
     public function getAdditional_Benefits_Coverage_Target_Reference()
     {
@@ -84,10 +84,10 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Additional_Benefits_Coverage_Target_Reference value
-     * @param \StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
-    public function setAdditional_Benefits_Coverage_Target_Reference(\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference = null)
+    public function setAdditional_Benefits_Coverage_Target_Reference(\WorkdayWsdl\\StructType\Additional_Benefits_Coverage_TargetObjectType $additional_Benefits_Coverage_Target_Reference = null)
     {
         $this->Additional_Benefits_Coverage_Target_Reference = $additional_Benefits_Coverage_Target_Reference;
         return $this;
@@ -103,7 +103,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date_for_Coverage_Target value
      * @param string $original_Coverage_Begin_Date_for_Coverage_Target
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
     public function setOriginal_Coverage_Begin_Date_for_Coverage_Target($original_Coverage_Begin_Date_for_Coverage_Target = null)
     {
@@ -116,7 +116,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Election_Data value
-     * @return \StructType\Worker_Benefit_Election_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType|null
      */
     public function getBenefit_Election_Data()
     {
@@ -124,17 +124,17 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Election_Data value
-     * @param \StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
-    public function setBenefit_Election_Data(\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null)
+    public function setBenefit_Election_Data(\WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType $benefit_Election_Data = null)
     {
         $this->Benefit_Election_Data = $benefit_Election_Data;
         return $this;
     }
     /**
      * Get Percent_Contribution_Data value
-     * @return \StructType\Employee_Contribution_Percentage_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType|null
      */
     public function getPercent_Contribution_Data()
     {
@@ -142,17 +142,17 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Percent_Contribution_Data value
-     * @param \StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
-    public function setPercent_Contribution_Data(\StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data = null)
+    public function setPercent_Contribution_Data(\WorkdayWsdl\\StructType\Employee_Contribution_Percentage_DataType $percent_Contribution_Data = null)
     {
         $this->Percent_Contribution_Data = $percent_Contribution_Data;
         return $this;
     }
     /**
      * Get Amount_Contribution_Data value
-     * @return \StructType\Employee_Contribution_Amount_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType[]|null
      */
     public function getAmount_Contribution_Data()
     {
@@ -170,12 +170,12 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem instanceof \StructType\Employee_Contribution_Amount_DataType) {
+            if (!$worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem instanceof \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType) {
                 $invalidValues[] = is_object($worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem) ? get_class($worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem) : sprintf('%s(%s)', gettype($worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem), var_export($worker_Additional_Benefits_Coverage_DataTypeAmount_Contribution_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Amount_Contribution_Data property can only contain items of type \StructType\Employee_Contribution_Amount_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Amount_Contribution_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -183,8 +183,8 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     /**
      * Set Amount_Contribution_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contribution_Amount_DataType[] $amount_Contribution_Data
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType[] $amount_Contribution_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
     public function setAmount_Contribution_Data(array $amount_Contribution_Data = array())
     {
@@ -198,14 +198,14 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
     /**
      * Add item to Amount_Contribution_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contribution_Amount_DataType $item
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
-    public function addToAmount_Contribution_Data(\StructType\Employee_Contribution_Amount_DataType $item)
+    public function addToAmount_Contribution_Data(\WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Contribution_Amount_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Amount_Contribution_Data property can only contain items of type \StructType\Employee_Contribution_Amount_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Amount_Contribution_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contribution_Amount_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Amount_Contribution_Data[] = $item;
         return $this;
@@ -216,7 +216,7 @@ class Worker_Additional_Benefits_Coverage_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Additional_Benefits_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Additional_Benefits_Coverage_DataType
      */
     public static function __set_state(array $array)
     {

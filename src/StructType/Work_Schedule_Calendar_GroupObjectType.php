@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Schedule_Calendar_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
      * Constructor method for Work_Schedule_Calendar_GroupObjectType
      * @uses Work_Schedule_Calendar_GroupObjectType::setID()
      * @uses Work_Schedule_Calendar_GroupObjectType::setDescriptor()
-     * @param \StructType\Work_Schedule_Calendar_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Schedule_Calendar_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$work_Schedule_Calendar_GroupObjectTypeIDItem instanceof \StructType\Work_Schedule_Calendar_GroupObjectIDType) {
+            if (!$work_Schedule_Calendar_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType) {
                 $invalidValues[] = is_object($work_Schedule_Calendar_GroupObjectTypeIDItem) ? get_class($work_Schedule_Calendar_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($work_Schedule_Calendar_GroupObjectTypeIDItem), var_export($work_Schedule_Calendar_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Work_Schedule_Calendar_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_Calendar_GroupObjectIDType[] $iD
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_Calendar_GroupObjectIDType $item
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType
      */
-    public function addToID(\StructType\Work_Schedule_Calendar_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Schedule_Calendar_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Work_Schedule_Calendar_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Work_Schedule_Calendar_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Schedule_Calendar_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_GroupObjectType
      */
     public static function __set_state(array $array)
     {

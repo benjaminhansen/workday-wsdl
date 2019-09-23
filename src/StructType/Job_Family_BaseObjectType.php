@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Job_Family_BaseObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Family_BaseObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Job_Family_BaseObjectType extends AbstractStructBase
      * Constructor method for Job_Family_BaseObjectType
      * @uses Job_Family_BaseObjectType::setID()
      * @uses Job_Family_BaseObjectType::setDescriptor()
-     * @param \StructType\Job_Family_BaseObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Job_Family_BaseObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Job_Family_BaseObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Job_Family_BaseObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Family_BaseObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$job_Family_BaseObjectTypeIDItem instanceof \StructType\Job_Family_BaseObjectIDType) {
+            if (!$job_Family_BaseObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType) {
                 $invalidValues[] = is_object($job_Family_BaseObjectTypeIDItem) ? get_class($job_Family_BaseObjectTypeIDItem) : sprintf('%s(%s)', gettype($job_Family_BaseObjectTypeIDItem), var_export($job_Family_BaseObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Job_Family_BaseObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_Family_BaseObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_BaseObjectIDType[] $iD
-     * @return \StructType\Job_Family_BaseObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Job_Family_BaseObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Family_BaseObjectIDType $item
-     * @return \StructType\Job_Family_BaseObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType
      */
-    public function addToID(\StructType\Job_Family_BaseObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Family_BaseObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Job_Family_BaseObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Family_BaseObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_Family_BaseObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Job_Family_BaseObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Job_Family_BaseObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Family_BaseObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Family_BaseObjectType
      */
     public static function __set_state(array $array)
     {

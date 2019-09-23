@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Utilize the Request References element to retrieve a specific instance(s) of an Appointment Specialty and its associated data.
      * - maxOccurs: unbounded
-     * @var \StructType\Appointment_SpecialtyObjectType[]
+     * @var \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType[]
      */
     public $Appointment_Specialty_Reference;
     /**
      * Constructor method for Appointment_Specialty_Request_ReferencesType
      * @uses Appointment_Specialty_Request_ReferencesType::setAppointment_Specialty_Reference()
-     * @param \StructType\Appointment_SpecialtyObjectType[] $appointment_Specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType[] $appointment_Specialty_Reference
      */
     public function __construct(array $appointment_Specialty_Reference = array())
     {
@@ -32,7 +32,7 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Appointment_Specialty_Reference value
-     * @return \StructType\Appointment_SpecialtyObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType[]|null
      */
     public function getAppointment_Specialty_Reference()
     {
@@ -50,12 +50,12 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem instanceof \StructType\Appointment_SpecialtyObjectType) {
+            if (!$appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem instanceof \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType) {
                 $invalidValues[] = is_object($appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem) ? get_class($appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem) : sprintf('%s(%s)', gettype($appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem), var_export($appointment_Specialty_Request_ReferencesTypeAppointment_Specialty_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Appointment_Specialty_Reference property can only contain items of type \StructType\Appointment_SpecialtyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Appointment_Specialty_Reference property can only contain items of type \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Appointment_Specialty_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Appointment_SpecialtyObjectType[] $appointment_Specialty_Reference
-     * @return \StructType\Appointment_Specialty_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType[] $appointment_Specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_Request_ReferencesType
      */
     public function setAppointment_Specialty_Reference(array $appointment_Specialty_Reference = array())
     {
@@ -78,14 +78,14 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Appointment_Specialty_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Appointment_SpecialtyObjectType $item
-     * @return \StructType\Appointment_Specialty_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $item
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_Request_ReferencesType
      */
-    public function addToAppointment_Specialty_Reference(\StructType\Appointment_SpecialtyObjectType $item)
+    public function addToAppointment_Specialty_Reference(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Appointment_SpecialtyObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Appointment_Specialty_Reference property can only contain items of type \StructType\Appointment_SpecialtyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Appointment_Specialty_Reference property can only contain items of type \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Appointment_Specialty_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Appointment_Specialty_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Appointment_Specialty_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Appointment_Specialty_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

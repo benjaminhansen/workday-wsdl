@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Collective_Agreement_Summary_DataType extends AbstractStructBase
      * The Collective_Agreement_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
     public $Collective_Agreement_Data;
     /**
      * Constructor method for Collective_Agreement_Summary_DataType
      * @uses Collective_Agreement_Summary_DataType::setCollective_Agreement_Data()
-     * @param \StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data
      */
-    public function __construct(\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data = null)
     {
         $this
             ->setCollective_Agreement_Data($collective_Agreement_Data);
     }
     /**
      * Get Collective_Agreement_Data value
-     * @return \StructType\Collective_Agreement_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType|null
      */
     public function getCollective_Agreement_Data()
     {
@@ -39,10 +39,10 @@ class Collective_Agreement_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Collective_Agreement_Data value
-     * @param \StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data
-     * @return \StructType\Collective_Agreement_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Summary_DataType
      */
-    public function setCollective_Agreement_Data(\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data = null)
+    public function setCollective_Agreement_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType $collective_Agreement_Data = null)
     {
         $this->Collective_Agreement_Data = $collective_Agreement_Data;
         return $this;
@@ -53,7 +53,7 @@ class Collective_Agreement_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Summary_DataType
      */
     public static function __set_state(array $array)
     {

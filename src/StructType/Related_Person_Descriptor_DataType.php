@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Related_Person_Descriptor_DataType extends AbstractStructBase
     /**
      * Set Related_Person_Relationship_Name value
      * @param string $related_Person_Relationship_Name
-     * @return \StructType\Related_Person_Descriptor_DataType
+     * @return \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType
      */
     public function setRelated_Person_Relationship_Name($related_Person_Relationship_Name = null)
     {
@@ -59,7 +59,7 @@ class Related_Person_Descriptor_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Related_Person_Descriptor_DataType
+     * @return \WorkdayWsdl\\StructType\Related_Person_Descriptor_DataType
      */
     public static function __set_state(array $array)
     {

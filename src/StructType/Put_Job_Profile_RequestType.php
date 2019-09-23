@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Job Profile. Only needed when updating the reference id (Job Profile ID or Job Code) for the Job Profile.
      * - minOccurs: 0
-     * @var \StructType\Job_ProfileObjectType
+     * @var \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public $Job_Profile_Reference;
     /**
      * The Job_Profile_Data
-     * @var \StructType\Job_Profile_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Profile_DataType
      */
     public $Job_Profile_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
      * @uses Put_Job_Profile_RequestType::setJob_Profile_Data()
      * @uses Put_Job_Profile_RequestType::setAdd_Only()
      * @uses Put_Job_Profile_RequestType::setVersion()
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
-     * @param \StructType\Job_Profile_DataType $job_Profile_Data
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Profile_DataType $job_Profile_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Job_ProfileObjectType $job_Profile_Reference = null, \StructType\Job_Profile_DataType $job_Profile_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null, \WorkdayWsdl\\StructType\Job_Profile_DataType $job_Profile_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setJob_Profile_Reference($job_Profile_Reference)
@@ -60,7 +60,7 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Reference value
-     * @return \StructType\Job_ProfileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType|null
      */
     public function getJob_Profile_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Reference value
-     * @param \StructType\Job_ProfileObjectType $job_Profile_Reference
-     * @return \StructType\Put_Job_Profile_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_RequestType
      */
-    public function setJob_Profile_Reference(\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
+    public function setJob_Profile_Reference(\WorkdayWsdl\\StructType\Job_ProfileObjectType $job_Profile_Reference = null)
     {
         $this->Job_Profile_Reference = $job_Profile_Reference;
         return $this;
     }
     /**
      * Get Job_Profile_Data value
-     * @return \StructType\Job_Profile_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_DataType|null
      */
     public function getJob_Profile_Data()
     {
@@ -86,10 +86,10 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Profile_Data value
-     * @param \StructType\Job_Profile_DataType $job_Profile_Data
-     * @return \StructType\Put_Job_Profile_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_DataType $job_Profile_Data
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_RequestType
      */
-    public function setJob_Profile_Data(\StructType\Job_Profile_DataType $job_Profile_Data = null)
+    public function setJob_Profile_Data(\WorkdayWsdl\\StructType\Job_Profile_DataType $job_Profile_Data = null)
     {
         $this->Job_Profile_Data = $job_Profile_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Job_Profile_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Profile_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Job_Profile_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Profile_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Profile_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,7 +55,7 @@ class Job_Classification_ReferenceType extends AbstractStructBase
     /**
      * Set Job_Classification_Group_Name value
      * @param string $job_Classification_Group_Name
-     * @return \StructType\Job_Classification_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_ReferenceType
      */
     public function setJob_Classification_Group_Name($job_Classification_Group_Name = null)
     {
@@ -77,7 +77,7 @@ class Job_Classification_ReferenceType extends AbstractStructBase
     /**
      * Set Job_Classification_Name value
      * @param string $job_Classification_Name
-     * @return \StructType\Job_Classification_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_ReferenceType
      */
     public function setJob_Classification_Name($job_Classification_Name = null)
     {
@@ -94,7 +94,7 @@ class Job_Classification_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_ReferenceType
      */
     public static function __set_state(array $array)
     {

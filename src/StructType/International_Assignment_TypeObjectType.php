@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\International_Assignment_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
      * Constructor method for International_Assignment_TypeObjectType
      * @uses International_Assignment_TypeObjectType::setID()
      * @uses International_Assignment_TypeObjectType::setDescriptor()
-     * @param \StructType\International_Assignment_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\International_Assignment_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $international_Assignment_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$international_Assignment_TypeObjectTypeIDItem instanceof \StructType\International_Assignment_TypeObjectIDType) {
+            if (!$international_Assignment_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType) {
                 $invalidValues[] = is_object($international_Assignment_TypeObjectTypeIDItem) ? get_class($international_Assignment_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($international_Assignment_TypeObjectTypeIDItem), var_export($international_Assignment_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\International_Assignment_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\International_Assignment_TypeObjectIDType[] $iD
-     * @return \StructType\International_Assignment_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\International_Assignment_TypeObjectIDType $item
-     * @return \StructType\International_Assignment_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType
      */
-    public function addToID(\StructType\International_Assignment_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\International_Assignment_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\International_Assignment_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\International_Assignment_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\International_Assignment_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class International_Assignment_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\International_Assignment_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType
      */
     public static function __set_state(array $array)
     {

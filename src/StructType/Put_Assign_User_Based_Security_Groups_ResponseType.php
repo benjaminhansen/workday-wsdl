@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: Unique identifier for a System User reference
      * - minOccurs: 0
-     * @var \StructType\System_UserObjectType
+     * @var \WorkdayWsdl\\StructType\System_UserObjectType
      */
     public $Workday_Account_Reference;
     /**
@@ -32,10 +32,10 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
      * Constructor method for Put_Assign_User-Based_Security_Groups_ResponseType
      * @uses Put_Assign_User_Based_Security_Groups_ResponseType::setWorkday_Account_Reference()
      * @uses Put_Assign_User_Based_Security_Groups_ResponseType::setVersion()
-     * @param \StructType\System_UserObjectType $workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference
      * @param string $version
      */
-    public function __construct(\StructType\System_UserObjectType $workday_Account_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference = null, $version = null)
     {
         $this
             ->setWorkday_Account_Reference($workday_Account_Reference)
@@ -43,7 +43,7 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
     }
     /**
      * Get Workday_Account_Reference value
-     * @return \StructType\System_UserObjectType|null
+     * @return \WorkdayWsdl\\StructType\System_UserObjectType|null
      */
     public function getWorkday_Account_Reference()
     {
@@ -51,10 +51,10 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
     }
     /**
      * Set Workday_Account_Reference value
-     * @param \StructType\System_UserObjectType $workday_Account_Reference
-     * @return \StructType\Put_Assign_User_Based_Security_Groups_ResponseType
+     * @param \WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Groups_ResponseType
      */
-    public function setWorkday_Account_Reference(\StructType\System_UserObjectType $workday_Account_Reference = null)
+    public function setWorkday_Account_Reference(\WorkdayWsdl\\StructType\System_UserObjectType $workday_Account_Reference = null)
     {
         $this->Workday_Account_Reference = $workday_Account_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Assign_User_Based_Security_Groups_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Groups_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Put_Assign_User_Based_Security_Groups_ResponseType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Assign_User_Based_Security_Groups_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Groups_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,7 +66,7 @@ class Academic_Rank_DataType extends AbstractStructBase
      * - documentation: Validation Error: Occurs when Job Profile that is selected is inactive | Job Profiles to be associated with the Academic Rank
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_ProfileObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_ProfileObjectType[]
      */
     public $Job_Profile_Reference;
     /**
@@ -74,7 +74,7 @@ class Academic_Rank_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Metadata Academic Rank Reference
      * - minOccurs: 0
-     * @var \StructType\Academic_Rank_MappingObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType
      */
     public $Metadata_Academic_Rank_Reference;
     /**
@@ -101,11 +101,11 @@ class Academic_Rank_DataType extends AbstractStructBase
      * @param string $description
      * @param bool $emeritus
      * @param float $rank_Order
-     * @param \StructType\Job_ProfileObjectType[] $job_Profile_Reference
-     * @param \StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType[] $job_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference
      * @param bool $inactive
      */
-    public function __construct($iD = null, $academic_Rank_Title_Name = null, $description = null, $emeritus = null, $rank_Order = null, array $job_Profile_Reference = array(), \StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference = null, $inactive = null)
+    public function __construct($iD = null, $academic_Rank_Title_Name = null, $description = null, $emeritus = null, $rank_Order = null, array $job_Profile_Reference = array(), \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference = null, $inactive = null)
     {
         $this
             ->setID($iD)
@@ -128,7 +128,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setID($iD = null)
     {
@@ -150,7 +150,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Academic_Rank_Title_Name value
      * @param string $academic_Rank_Title_Name
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setAcademic_Rank_Title_Name($academic_Rank_Title_Name = null)
     {
@@ -172,7 +172,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setDescription($description = null)
     {
@@ -194,7 +194,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Emeritus value
      * @param bool $emeritus
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setEmeritus($emeritus = null)
     {
@@ -216,7 +216,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Rank_Order value
      * @param float $rank_Order
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setRank_Order($rank_Order = null)
     {
@@ -241,7 +241,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Reference value
-     * @return \StructType\Job_ProfileObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType[]|null
      */
     public function getJob_Profile_Reference()
     {
@@ -259,12 +259,12 @@ class Academic_Rank_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Rank_DataTypeJob_Profile_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Rank_DataTypeJob_Profile_ReferenceItem instanceof \StructType\Job_ProfileObjectType) {
+            if (!$academic_Rank_DataTypeJob_Profile_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_ProfileObjectType) {
                 $invalidValues[] = is_object($academic_Rank_DataTypeJob_Profile_ReferenceItem) ? get_class($academic_Rank_DataTypeJob_Profile_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Rank_DataTypeJob_Profile_ReferenceItem), var_export($academic_Rank_DataTypeJob_Profile_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile_Reference property can only contain items of type \StructType\Job_ProfileObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_ProfileObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -272,8 +272,8 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ProfileObjectType[] $job_Profile_Reference
-     * @return \StructType\Academic_Rank_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType[] $job_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setJob_Profile_Reference(array $job_Profile_Reference = array())
     {
@@ -287,21 +287,21 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ProfileObjectType $item
-     * @return \StructType\Academic_Rank_DataType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
-    public function addToJob_Profile_Reference(\StructType\Job_ProfileObjectType $item)
+    public function addToJob_Profile_Reference(\WorkdayWsdl\\StructType\Job_ProfileObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_ProfileObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile_Reference property can only contain items of type \StructType\Job_ProfileObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_ProfileObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_ProfileObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile_Reference[] = $item;
         return $this;
     }
     /**
      * Get Metadata_Academic_Rank_Reference value
-     * @return \StructType\Academic_Rank_MappingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType|null
      */
     public function getMetadata_Academic_Rank_Reference()
     {
@@ -309,10 +309,10 @@ class Academic_Rank_DataType extends AbstractStructBase
     }
     /**
      * Set Metadata_Academic_Rank_Reference value
-     * @param \StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference
-     * @return \StructType\Academic_Rank_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
-    public function setMetadata_Academic_Rank_Reference(\StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference = null)
+    public function setMetadata_Academic_Rank_Reference(\WorkdayWsdl\\StructType\Academic_Rank_MappingObjectType $metadata_Academic_Rank_Reference = null)
     {
         $this->Metadata_Academic_Rank_Reference = $metadata_Academic_Rank_Reference;
         return $this;
@@ -328,7 +328,7 @@ class Academic_Rank_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -345,7 +345,7 @@ class Academic_Rank_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Rank_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public static function __set_state(array $array)
     {

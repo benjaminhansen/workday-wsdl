@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Change_External_Form_I_9_Section_3_Response_DataType extends AbstractStruc
      * - documentation: The element containing all necessary information to put/get an External Form I-9 Section 3 for a Worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_External_Form_I_9_Section_3Type[]
+     * @var \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type[]
      */
     public $External_Form_I_9_Section_3;
     /**
      * Constructor method for Change_External_Form_I-9_Section_3_Response_DataType
      * @uses Change_External_Form_I_9_Section_3_Response_DataType::setExternal_Form_I_9_Section_3()
-     * @param \StructType\Change_External_Form_I_9_Section_3Type[] $external_Form_I_9_Section_3
+     * @param \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type[] $external_Form_I_9_Section_3
      */
     public function __construct(array $external_Form_I_9_Section_3 = array())
     {
@@ -52,12 +52,12 @@ class Change_External_Form_I_9_Section_3_Response_DataType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item) {
             // validation for constraint: itemType
-            if (!$change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item instanceof \StructType\Change_External_Form_I_9_Section_3Type) {
+            if (!$change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item instanceof \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type) {
                 $invalidValues[] = is_object($change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item) ? get_class($change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item) : sprintf('%s(%s)', gettype($change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item), var_export($change_External_Form_I_9_Section_3_Response_DataTypeExternal_Form_I_9_Section_3Item, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Form_I_9_Section_3 property can only contain items of type \StructType\Change_External_Form_I_9_Section_3Type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Form_I_9_Section_3 property can only contain items of type \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,7 +65,7 @@ class Change_External_Form_I_9_Section_3_Response_DataType extends AbstractStruc
     /**
      * Set external_Form_I_Section value
      * @param external_Form_I_Section $external_Form_I_Section
-     * @return \StructType\Change_External_Form_I_9_Section_3_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3_Response_DataType
      */
     public function setExternal_Form_I_9_Section_3(array $external_Form_I_9_Section_3 = array())
     {
@@ -79,14 +79,14 @@ class Change_External_Form_I_9_Section_3_Response_DataType extends AbstractStruc
     /**
      * Add item to External_Form_I_9_Section_3 value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_External_Form_I_9_Section_3Type $item
-     * @return \StructType\Change_External_Form_I_9_Section_3_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type $item
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3_Response_DataType
      */
-    public function addToExternal_Form_I_9_Section_3(\StructType\Change_External_Form_I_9_Section_3Type $item)
+    public function addToExternal_Form_I_9_Section_3(\WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_External_Form_I_9_Section_3Type) {
-            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Section_3 property can only contain items of type \StructType\Change_External_Form_I_9_Section_3Type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type) {
+            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Section_3 property can only contain items of type \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3Type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Form_I_9_Section_3[] = $this->{'External_Form_I-9_Section_3'}[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Change_External_Form_I_9_Section_3_Response_DataType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_External_Form_I_9_Section_3_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Change_External_Form_I_9_Section_3_Response_DataType
      */
     public static function __set_state(array $array)
     {

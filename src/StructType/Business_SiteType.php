@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Business_SiteType extends AbstractStructBase
      * The Location_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Site_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Business_Site_Reference_DataType
      */
     public $Location_Reference;
     /**
      * The Location_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Location_DataType
+     * @var \WorkdayWsdl\\StructType\Location_DataType
      */
     public $Location_Data;
     /**
@@ -47,12 +47,12 @@ class Business_SiteType extends AbstractStructBase
      * @uses Business_SiteType::setLocation_Data()
      * @uses Business_SiteType::setAs_Of_Moment()
      * @uses Business_SiteType::setVersion()
-     * @param \StructType\Business_Site_Reference_DataType $location_Reference
-     * @param \StructType\Location_DataType $location_Data
+     * @param \WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Location_DataType $location_Data
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Business_Site_Reference_DataType $location_Reference = null, \StructType\Location_DataType $location_Data = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference = null, \WorkdayWsdl\\StructType\Location_DataType $location_Data = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setLocation_Reference($location_Reference)
@@ -62,7 +62,7 @@ class Business_SiteType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\Business_Site_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Business_Site_Reference_DataType|null
      */
     public function getLocation_Reference()
     {
@@ -70,17 +70,17 @@ class Business_SiteType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\Business_Site_Reference_DataType $location_Reference
-     * @return \StructType\Business_SiteType
+     * @param \WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Business_SiteType
      */
-    public function setLocation_Reference(\StructType\Business_Site_Reference_DataType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Location_Data value
-     * @return \StructType\Location_DataType|null
+     * @return \WorkdayWsdl\\StructType\Location_DataType|null
      */
     public function getLocation_Data()
     {
@@ -88,10 +88,10 @@ class Business_SiteType extends AbstractStructBase
     }
     /**
      * Set Location_Data value
-     * @param \StructType\Location_DataType $location_Data
-     * @return \StructType\Business_SiteType
+     * @param \WorkdayWsdl\\StructType\Location_DataType $location_Data
+     * @return \WorkdayWsdl\\StructType\Business_SiteType
      */
-    public function setLocation_Data(\StructType\Location_DataType $location_Data = null)
+    public function setLocation_Data(\WorkdayWsdl\\StructType\Location_DataType $location_Data = null)
     {
         $this->Location_Data = $location_Data;
         return $this;
@@ -107,7 +107,7 @@ class Business_SiteType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\Business_SiteType
+     * @return \WorkdayWsdl\\StructType\Business_SiteType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -129,7 +129,7 @@ class Business_SiteType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Business_SiteType
+     * @return \WorkdayWsdl\\StructType\Business_SiteType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Business_SiteType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_SiteType
+     * @return \WorkdayWsdl\\StructType\Business_SiteType
      */
     public static function __set_state(array $array)
     {

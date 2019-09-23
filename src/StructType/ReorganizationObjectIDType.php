@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class ReorganizationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ReorganizationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\ReorganizationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\ReorganizationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\ReorganizationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ReorganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ReorganizationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ReorganizationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ReorganizationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\ReorganizationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\ReorganizationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\ReorganizationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class ReorganizationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ReorganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class ReorganizationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReorganizationObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReorganizationObjectIDType
      */
     public static function __set_state(array $array)
     {

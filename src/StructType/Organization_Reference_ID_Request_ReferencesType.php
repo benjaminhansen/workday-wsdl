@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - documentation: Holds Organizations for which IDs are to be retrieved.
      * - maxOccurs: unbounded
-     * @var \StructType\OrganizationObjectType[]
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType[]
      */
     public $Organization_Reference_ID_Reference;
     /**
      * Constructor method for Organization_Reference_ID_Request_ReferencesType
      * @uses Organization_Reference_ID_Request_ReferencesType::setOrganization_Reference_ID_Reference()
-     * @param \StructType\OrganizationObjectType[] $organization_Reference_ID_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $organization_Reference_ID_Reference
      */
     public function __construct(array $organization_Reference_ID_Reference = array())
     {
@@ -33,7 +33,7 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
     }
     /**
      * Get Organization_Reference_ID_Reference value
-     * @return \StructType\OrganizationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType[]|null
      */
     public function getOrganization_Reference_ID_Reference()
     {
@@ -51,12 +51,12 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem instanceof \StructType\OrganizationObjectType) {
+            if (!$organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
                 $invalidValues[] = is_object($organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem) ? get_class($organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem), var_export($organization_Reference_ID_Request_ReferencesTypeOrganization_Reference_ID_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Reference_ID_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Reference_ID_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
     /**
      * Set Organization_Reference_ID_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType[] $organization_Reference_ID_Reference
-     * @return \StructType\Organization_Reference_ID_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType[] $organization_Reference_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Request_ReferencesType
      */
     public function setOrganization_Reference_ID_Reference(array $organization_Reference_ID_Reference = array())
     {
@@ -79,14 +79,14 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
     /**
      * Add item to Organization_Reference_ID_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrganizationObjectType $item
-     * @return \StructType\Organization_Reference_ID_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Request_ReferencesType
      */
-    public function addToOrganization_Reference_ID_Reference(\StructType\OrganizationObjectType $item)
+    public function addToOrganization_Reference_ID_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrganizationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Reference_ID_Reference property can only contain items of type \StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\OrganizationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Reference_ID_Reference property can only contain items of type \WorkdayWsdl\\StructType\OrganizationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Reference_ID_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Organization_Reference_ID_Request_ReferencesType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Reference_ID_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

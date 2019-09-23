@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class Internet_Email_Address_DataType extends AbstractStructBase
     public $Email_Comment;
     /**
      * The Usage_Data
-     * @var \StructType\Communication_Method_Usage_DataType
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public $Usage_Data;
     /**
@@ -41,9 +41,9 @@ class Internet_Email_Address_DataType extends AbstractStructBase
      * @uses Internet_Email_Address_DataType::setUsage_Data()
      * @param string $email_Address
      * @param string $email_Comment
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
      */
-    public function __construct($email_Address = null, $email_Comment = null, \StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function __construct($email_Address = null, $email_Comment = null, \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this
             ->setEmail_Address($email_Address)
@@ -61,7 +61,7 @@ class Internet_Email_Address_DataType extends AbstractStructBase
     /**
      * Set Email_Address value
      * @param string $email_Address
-     * @return \StructType\Internet_Email_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Internet_Email_Address_DataType
      */
     public function setEmail_Address($email_Address = null)
     {
@@ -83,7 +83,7 @@ class Internet_Email_Address_DataType extends AbstractStructBase
     /**
      * Set Email_Comment value
      * @param string $email_Comment
-     * @return \StructType\Internet_Email_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Internet_Email_Address_DataType
      */
     public function setEmail_Comment($email_Comment = null)
     {
@@ -96,7 +96,7 @@ class Internet_Email_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_DataType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType|null
      */
     public function getUsage_Data()
     {
@@ -104,10 +104,10 @@ class Internet_Email_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Usage_Data value
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
-     * @return \StructType\Internet_Email_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
+     * @return \WorkdayWsdl\\StructType\Internet_Email_Address_DataType
      */
-    public function setUsage_Data(\StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function setUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this->Usage_Data = $usage_Data;
         return $this;
@@ -118,7 +118,7 @@ class Internet_Email_Address_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Internet_Email_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Internet_Email_Address_DataType
      */
     public static function __set_state(array $array)
     {

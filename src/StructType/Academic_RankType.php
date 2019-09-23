@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Academic_RankType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Academic Rank Reference
      * - minOccurs: 0
-     * @var \StructType\Academic_RankObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_RankObjectType
      */
     public $Academic_Rank_Reference;
     /**
      * The Academic_Rank_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Academic_Rank_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Rank_DataType
      */
     public $Academic_Rank_Data;
     /**
      * Constructor method for Academic_RankType
      * @uses Academic_RankType::setAcademic_Rank_Reference()
      * @uses Academic_RankType::setAcademic_Rank_Data()
-     * @param \StructType\Academic_RankObjectType $academic_Rank_Reference
-     * @param \StructType\Academic_Rank_DataType $academic_Rank_Data
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType $academic_Rank_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_DataType $academic_Rank_Data
      */
-    public function __construct(\StructType\Academic_RankObjectType $academic_Rank_Reference = null, \StructType\Academic_Rank_DataType $academic_Rank_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_RankObjectType $academic_Rank_Reference = null, \WorkdayWsdl\\StructType\Academic_Rank_DataType $academic_Rank_Data = null)
     {
         $this
             ->setAcademic_Rank_Reference($academic_Rank_Reference)
@@ -42,7 +42,7 @@ class Academic_RankType extends AbstractStructBase
     }
     /**
      * Get Academic_Rank_Reference value
-     * @return \StructType\Academic_RankObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectType|null
      */
     public function getAcademic_Rank_Reference()
     {
@@ -50,17 +50,17 @@ class Academic_RankType extends AbstractStructBase
     }
     /**
      * Set Academic_Rank_Reference value
-     * @param \StructType\Academic_RankObjectType $academic_Rank_Reference
-     * @return \StructType\Academic_RankType
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType $academic_Rank_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_RankType
      */
-    public function setAcademic_Rank_Reference(\StructType\Academic_RankObjectType $academic_Rank_Reference = null)
+    public function setAcademic_Rank_Reference(\WorkdayWsdl\\StructType\Academic_RankObjectType $academic_Rank_Reference = null)
     {
         $this->Academic_Rank_Reference = $academic_Rank_Reference;
         return $this;
     }
     /**
      * Get Academic_Rank_Data value
-     * @return \StructType\Academic_Rank_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_DataType|null
      */
     public function getAcademic_Rank_Data()
     {
@@ -68,10 +68,10 @@ class Academic_RankType extends AbstractStructBase
     }
     /**
      * Set Academic_Rank_Data value
-     * @param \StructType\Academic_Rank_DataType $academic_Rank_Data
-     * @return \StructType\Academic_RankType
+     * @param \WorkdayWsdl\\StructType\Academic_Rank_DataType $academic_Rank_Data
+     * @return \WorkdayWsdl\\StructType\Academic_RankType
      */
-    public function setAcademic_Rank_Data(\StructType\Academic_Rank_DataType $academic_Rank_Data = null)
+    public function setAcademic_Rank_Data(\WorkdayWsdl\\StructType\Academic_Rank_DataType $academic_Rank_Data = null)
     {
         $this->Academic_Rank_Data = $academic_Rank_Data;
         return $this;
@@ -82,7 +82,7 @@ class Academic_RankType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_RankType
+     * @return \WorkdayWsdl\\StructType\Academic_RankType
      */
     public static function __set_state(array $array)
     {

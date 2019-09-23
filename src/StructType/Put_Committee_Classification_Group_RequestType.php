@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Committee Classification Group. Used to identify the Committee Classification Group to update. Leave blank on an Add.
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public $Committee_Classification_Group_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data Committee Classification Group
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_Group_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType
      */
     public $Committee_Classification_Group_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
      * @uses Put_Committee_Classification_Group_RequestType::setCommittee_Classification_Group_Data()
      * @uses Put_Committee_Classification_Group_RequestType::setAdd_Only()
      * @uses Put_Committee_Classification_Group_RequestType::setVersion()
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
-     * @param \StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null, \StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null, \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setCommittee_Classification_Group_Reference($committee_Classification_Group_Reference)
@@ -63,7 +63,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
     }
     /**
      * Get Committee_Classification_Group_Reference value
-     * @return \StructType\Committee_Classification_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType|null
      */
     public function getCommittee_Classification_Group_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Group_Reference value
-     * @param \StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
-     * @return \StructType\Put_Committee_Classification_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_Group_RequestType
      */
-    public function setCommittee_Classification_Group_Reference(\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
+    public function setCommittee_Classification_Group_Reference(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType $committee_Classification_Group_Reference = null)
     {
         $this->Committee_Classification_Group_Reference = $committee_Classification_Group_Reference;
         return $this;
     }
     /**
      * Get Committee_Classification_Group_Data value
-     * @return \StructType\Committee_Classification_Group_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType|null
      */
     public function getCommittee_Classification_Group_Data()
     {
@@ -89,10 +89,10 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Classification_Group_Data value
-     * @param \StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data
-     * @return \StructType\Put_Committee_Classification_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_Group_RequestType
      */
-    public function setCommittee_Classification_Group_Data(\StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data = null)
+    public function setCommittee_Classification_Group_Data(\WorkdayWsdl\\StructType\Committee_Classification_Group_DataType $committee_Classification_Group_Data = null)
     {
         $this->Committee_Classification_Group_Data = $committee_Classification_Group_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Committee_Classification_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_Group_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Committee_Classification_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_Group_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Committee_Classification_Group_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Committee_Classification_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Classification_Group_RequestType
      */
     public static function __set_state(array $array)
     {

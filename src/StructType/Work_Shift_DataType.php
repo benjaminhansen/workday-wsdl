@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Work_Shift_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Location Reference. Reference to a Country or Country Region.
      * - minOccurs: 0
-     * @var \StructType\Location_ContextObjectType
+     * @var \WorkdayWsdl\\StructType\Location_ContextObjectType
      */
     public $Location_Reference;
     /**
@@ -66,10 +66,10 @@ class Work_Shift_DataType extends AbstractStructBase
      * @param string $work_Shift_ID
      * @param string $work_Shift_Name
      * @param string $work_Shift_Description
-     * @param \StructType\Location_ContextObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
      * @param bool $inactive
      */
-    public function __construct($work_Shift_ID = null, $work_Shift_Name = null, $work_Shift_Description = null, \StructType\Location_ContextObjectType $location_Reference = null, $inactive = null)
+    public function __construct($work_Shift_ID = null, $work_Shift_Name = null, $work_Shift_Description = null, \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null, $inactive = null)
     {
         $this
             ->setWork_Shift_ID($work_Shift_ID)
@@ -89,7 +89,7 @@ class Work_Shift_DataType extends AbstractStructBase
     /**
      * Set Work_Shift_ID value
      * @param string $work_Shift_ID
-     * @return \StructType\Work_Shift_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public function setWork_Shift_ID($work_Shift_ID = null)
     {
@@ -111,7 +111,7 @@ class Work_Shift_DataType extends AbstractStructBase
     /**
      * Set Work_Shift_Name value
      * @param string $work_Shift_Name
-     * @return \StructType\Work_Shift_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public function setWork_Shift_Name($work_Shift_Name = null)
     {
@@ -133,7 +133,7 @@ class Work_Shift_DataType extends AbstractStructBase
     /**
      * Set Work_Shift_Description value
      * @param string $work_Shift_Description
-     * @return \StructType\Work_Shift_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public function setWork_Shift_Description($work_Shift_Description = null)
     {
@@ -146,7 +146,7 @@ class Work_Shift_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\Location_ContextObjectType|null
+     * @return \WorkdayWsdl\\StructType\Location_ContextObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -154,10 +154,10 @@ class Work_Shift_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\Location_ContextObjectType $location_Reference
-     * @return \StructType\Work_Shift_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
-    public function setLocation_Reference(\StructType\Location_ContextObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\Location_ContextObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
@@ -173,7 +173,7 @@ class Work_Shift_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Work_Shift_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -190,7 +190,7 @@ class Work_Shift_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Shift_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Shift_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Universal_IdentifierType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Person Reference
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -25,17 +25,17 @@ class Universal_IdentifierType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Universal_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\Universal_Identifier_DataType[]
      */
     public $Universal_Identifier_Data;
     /**
      * Constructor method for Universal_IdentifierType
      * @uses Universal_IdentifierType::setPerson_Reference()
      * @uses Universal_IdentifierType::setUniversal_Identifier_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Universal_Identifier_DataType[] $universal_Identifier_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_DataType[] $universal_Identifier_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, array $universal_Identifier_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, array $universal_Identifier_Data = array())
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -43,7 +43,7 @@ class Universal_IdentifierType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -51,17 +51,17 @@ class Universal_IdentifierType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Universal_IdentifierType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Universal_Identifier_Data value
-     * @return \StructType\Universal_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_DataType[]|null
      */
     public function getUniversal_Identifier_Data()
     {
@@ -79,12 +79,12 @@ class Universal_IdentifierType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $universal_IdentifierTypeUniversal_Identifier_DataItem) {
             // validation for constraint: itemType
-            if (!$universal_IdentifierTypeUniversal_Identifier_DataItem instanceof \StructType\Universal_Identifier_DataType) {
+            if (!$universal_IdentifierTypeUniversal_Identifier_DataItem instanceof \WorkdayWsdl\\StructType\Universal_Identifier_DataType) {
                 $invalidValues[] = is_object($universal_IdentifierTypeUniversal_Identifier_DataItem) ? get_class($universal_IdentifierTypeUniversal_Identifier_DataItem) : sprintf('%s(%s)', gettype($universal_IdentifierTypeUniversal_Identifier_DataItem), var_export($universal_IdentifierTypeUniversal_Identifier_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Universal_Identifier_Data property can only contain items of type \StructType\Universal_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Universal_Identifier_Data property can only contain items of type \WorkdayWsdl\\StructType\Universal_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Universal_IdentifierType extends AbstractStructBase
     /**
      * Set Universal_Identifier_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_Identifier_DataType[] $universal_Identifier_Data
-     * @return \StructType\Universal_IdentifierType
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_DataType[] $universal_Identifier_Data
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierType
      */
     public function setUniversal_Identifier_Data(array $universal_Identifier_Data = array())
     {
@@ -107,14 +107,14 @@ class Universal_IdentifierType extends AbstractStructBase
     /**
      * Add item to Universal_Identifier_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_Identifier_DataType $item
-     * @return \StructType\Universal_IdentifierType
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierType
      */
-    public function addToUniversal_Identifier_Data(\StructType\Universal_Identifier_DataType $item)
+    public function addToUniversal_Identifier_Data(\WorkdayWsdl\\StructType\Universal_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Universal_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Universal_Identifier_Data property can only contain items of type \StructType\Universal_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Universal_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Universal_Identifier_Data property can only contain items of type \WorkdayWsdl\\StructType\Universal_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Universal_Identifier_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Universal_IdentifierType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Universal_IdentifierType
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierType
      */
     public static function __set_state(array $array)
     {

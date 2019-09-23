@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Specialty_ChildObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Specialty_ChildReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Specialty_ChildReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Specialty_ChildReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Specialty_ChildReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Specialty_ChildObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ChildObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Specialty_ChildReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Specialty_ChildReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Specialty_ChildReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Specialty_ChildReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Specialty_ChildReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Specialty_ChildReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Specialty_ChildObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Specialty_ChildObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ChildObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Specialty_ChildObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Specialty_ChildObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ChildObjectIDType
      */
     public static function __set_state(array $array)
     {

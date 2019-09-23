@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Holiday Calendar.
      * - maxOccurs: unbounded
-     * @var \StructType\Holiday_CalendarObjectType[]
+     * @var \WorkdayWsdl\\StructType\Holiday_CalendarObjectType[]
      */
     public $Holiday_Calendar_Request_Reference;
     /**
      * Constructor method for Holiday_Calendar_Request_ReferencesType
      * @uses Holiday_Calendar_Request_ReferencesType::setHoliday_Calendar_Request_Reference()
-     * @param \StructType\Holiday_CalendarObjectType[] $holiday_Calendar_Request_Reference
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType[] $holiday_Calendar_Request_Reference
      */
     public function __construct(array $holiday_Calendar_Request_Reference = array())
     {
@@ -32,7 +32,7 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Holiday_Calendar_Request_Reference value
-     * @return \StructType\Holiday_CalendarObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectType[]|null
      */
     public function getHoliday_Calendar_Request_Reference()
     {
@@ -50,12 +50,12 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem instanceof \StructType\Holiday_CalendarObjectType) {
+            if (!$holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem instanceof \WorkdayWsdl\\StructType\Holiday_CalendarObjectType) {
                 $invalidValues[] = is_object($holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem) ? get_class($holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem) : sprintf('%s(%s)', gettype($holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem), var_export($holiday_Calendar_Request_ReferencesTypeHoliday_Calendar_Request_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Holiday_Calendar_Request_Reference property can only contain items of type \StructType\Holiday_CalendarObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Holiday_Calendar_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Holiday_CalendarObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Holiday_Calendar_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_CalendarObjectType[] $holiday_Calendar_Request_Reference
-     * @return \StructType\Holiday_Calendar_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType[] $holiday_Calendar_Request_Reference
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Request_ReferencesType
      */
     public function setHoliday_Calendar_Request_Reference(array $holiday_Calendar_Request_Reference = array())
     {
@@ -78,14 +78,14 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Holiday_Calendar_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_CalendarObjectType $item
-     * @return \StructType\Holiday_Calendar_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarObjectType $item
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Request_ReferencesType
      */
-    public function addToHoliday_Calendar_Request_Reference(\StructType\Holiday_CalendarObjectType $item)
+    public function addToHoliday_Calendar_Request_Reference(\WorkdayWsdl\\StructType\Holiday_CalendarObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Holiday_CalendarObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar_Request_Reference property can only contain items of type \StructType\Holiday_CalendarObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Holiday_CalendarObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Holiday_CalendarObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Holiday_Calendar_Request_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Holiday_Calendar_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_Calendar_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

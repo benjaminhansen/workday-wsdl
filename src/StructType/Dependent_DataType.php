@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -81,7 +81,7 @@ class Dependent_DataType extends AbstractStructBase
      * - documentation: Reference to the legal status of the dependent.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Citizenship_StatusObjectType[]
+     * @var \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[]
      */
     public $Citizenship_Status_Reference;
     /**
@@ -89,7 +89,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the primary country of which the dependent is a national.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_of_Nationality_Reference;
     /**
@@ -97,7 +97,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the dependent's country of birth.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_of_Birth_Reference;
     /**
@@ -105,7 +105,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the dependent's country region of birth.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Region_of_Birth_Reference;
     /**
@@ -122,7 +122,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
      */
     public $Court_Order;
     /**
@@ -130,7 +130,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Lives_With_Worker_DataType[]
+     * @var \WorkdayWsdl\\StructType\Lives_With_Worker_DataType[]
      */
     public $Lives_With_Worker_Data;
     /**
@@ -138,7 +138,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Has_Health_Insurance_DataType[]
+     * @var \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType[]
      */
     public $Has_Health_Insurance_Data;
     /**
@@ -146,7 +146,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Allowed_for_Tax_Deduction_DataType[]
+     * @var \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType[]
      */
     public $Allowed_for_Tax_Deduction_Data;
     /**
@@ -154,7 +154,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Annual_Income_DataType[]
+     * @var \WorkdayWsdl\\StructType\Annual_Income_DataType[]
      */
     public $Annual_Income_Data;
     /**
@@ -162,7 +162,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Occupation_DataType[]
+     * @var \WorkdayWsdl\\StructType\Occupation_DataType[]
      */
     public $Occupation_Data;
     /**
@@ -170,7 +170,7 @@ class Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disability_Information_Data_for_Related_PersonType[]
+     * @var \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType[]
      */
     public $Disability_Data;
     /**
@@ -201,20 +201,20 @@ class Dependent_DataType extends AbstractStructBase
      * @param bool $disabled
      * @param string $inactive_Date
      * @param bool $dependent_for_Payroll_Purposes
-     * @param \StructType\Citizenship_StatusObjectType[] $citizenship_Status_Reference
-     * @param \StructType\CountryObjectType $country_of_Nationality_Reference
-     * @param \StructType\CountryObjectType $country_of_Birth_Reference
-     * @param \StructType\Country_RegionObjectType $region_of_Birth_Reference
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[] $citizenship_Status_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_of_Nationality_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_of_Birth_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $region_of_Birth_Reference
      * @param string $city_of_Birth
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order
-     * @param \StructType\Lives_With_Worker_DataType[] $lives_With_Worker_Data
-     * @param \StructType\Has_Health_Insurance_DataType[] $has_Health_Insurance_Data
-     * @param \StructType\Allowed_for_Tax_Deduction_DataType[] $allowed_for_Tax_Deduction_Data
-     * @param \StructType\Annual_Income_DataType[] $annual_Income_Data
-     * @param \StructType\Occupation_DataType[] $occupation_Data
-     * @param \StructType\Disability_Information_Data_for_Related_PersonType[] $disability_Data
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order
+     * @param \WorkdayWsdl\\StructType\Lives_With_Worker_DataType[] $lives_With_Worker_Data
+     * @param \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType[] $has_Health_Insurance_Data
+     * @param \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType[] $allowed_for_Tax_Deduction_Data
+     * @param \WorkdayWsdl\\StructType\Annual_Income_DataType[] $annual_Income_Data
+     * @param \WorkdayWsdl\\StructType\Occupation_DataType[] $occupation_Data
+     * @param \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType[] $disability_Data
      */
-    public function __construct($dependent_ID = null, $full_time_Student = null, $student_Status_Start_Date = null, $student_Status_End_Date = null, $disabled = null, $inactive_Date = null, $dependent_for_Payroll_Purposes = null, array $citizenship_Status_Reference = array(), \StructType\CountryObjectType $country_of_Nationality_Reference = null, \StructType\CountryObjectType $country_of_Birth_Reference = null, \StructType\Country_RegionObjectType $region_of_Birth_Reference = null, $city_of_Birth = null, array $court_Order = array(), array $lives_With_Worker_Data = array(), array $has_Health_Insurance_Data = array(), array $allowed_for_Tax_Deduction_Data = array(), array $annual_Income_Data = array(), array $occupation_Data = array(), array $disability_Data = array())
+    public function __construct($dependent_ID = null, $full_time_Student = null, $student_Status_Start_Date = null, $student_Status_End_Date = null, $disabled = null, $inactive_Date = null, $dependent_for_Payroll_Purposes = null, array $citizenship_Status_Reference = array(), \WorkdayWsdl\\StructType\CountryObjectType $country_of_Nationality_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $country_of_Birth_Reference = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $region_of_Birth_Reference = null, $city_of_Birth = null, array $court_Order = array(), array $lives_With_Worker_Data = array(), array $has_Health_Insurance_Data = array(), array $allowed_for_Tax_Deduction_Data = array(), array $annual_Income_Data = array(), array $occupation_Data = array(), array $disability_Data = array())
     {
         $this
             ->setDependent_ID($dependent_ID)
@@ -248,7 +248,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Dependent_ID value
      * @param string $dependent_ID
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setDependent_ID($dependent_ID = null)
     {
@@ -270,7 +270,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Full_time_Student value
      * @param bool $full_time_Student
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setFull_time_Student($full_time_Student = null)
     {
@@ -292,7 +292,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Student_Status_Start_Date value
      * @param string $student_Status_Start_Date
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setStudent_Status_Start_Date($student_Status_Start_Date = null)
     {
@@ -314,7 +314,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Student_Status_End_Date value
      * @param string $student_Status_End_Date
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setStudent_Status_End_Date($student_Status_End_Date = null)
     {
@@ -336,7 +336,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Disabled value
      * @param bool $disabled
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setDisabled($disabled = null)
     {
@@ -358,7 +358,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Inactive_Date value
      * @param string $inactive_Date
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setInactive_Date($inactive_Date = null)
     {
@@ -380,7 +380,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Dependent_for_Payroll_Purposes value
      * @param bool $dependent_for_Payroll_Purposes
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setDependent_for_Payroll_Purposes($dependent_for_Payroll_Purposes = null)
     {
@@ -393,7 +393,7 @@ class Dependent_DataType extends AbstractStructBase
     }
     /**
      * Get Citizenship_Status_Reference value
-     * @return \StructType\Citizenship_StatusObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[]|null
      */
     public function getCitizenship_Status_Reference()
     {
@@ -411,12 +411,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeCitizenship_Status_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeCitizenship_Status_ReferenceItem instanceof \StructType\Citizenship_StatusObjectType) {
+            if (!$dependent_DataTypeCitizenship_Status_ReferenceItem instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectType) {
                 $invalidValues[] = is_object($dependent_DataTypeCitizenship_Status_ReferenceItem) ? get_class($dependent_DataTypeCitizenship_Status_ReferenceItem) : sprintf('%s(%s)', gettype($dependent_DataTypeCitizenship_Status_ReferenceItem), var_export($dependent_DataTypeCitizenship_Status_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Citizenship_Status_Reference property can only contain items of type \StructType\Citizenship_StatusObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Citizenship_Status_Reference property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -424,8 +424,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Citizenship_Status_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectType[] $citizenship_Status_Reference
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType[] $citizenship_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setCitizenship_Status_Reference(array $citizenship_Status_Reference = array())
     {
@@ -439,21 +439,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Citizenship_Status_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Citizenship_StatusObjectType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Citizenship_StatusObjectType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToCitizenship_Status_Reference(\StructType\Citizenship_StatusObjectType $item)
+    public function addToCitizenship_Status_Reference(\WorkdayWsdl\\StructType\Citizenship_StatusObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Citizenship_StatusObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Citizenship_Status_Reference property can only contain items of type \StructType\Citizenship_StatusObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Citizenship_StatusObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Citizenship_Status_Reference property can only contain items of type \WorkdayWsdl\\StructType\Citizenship_StatusObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Citizenship_Status_Reference[] = $item;
         return $this;
     }
     /**
      * Get Country_of_Nationality_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_of_Nationality_Reference()
     {
@@ -461,17 +461,17 @@ class Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Country_of_Nationality_Reference value
-     * @param \StructType\CountryObjectType $country_of_Nationality_Reference
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_of_Nationality_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function setCountry_of_Nationality_Reference(\StructType\CountryObjectType $country_of_Nationality_Reference = null)
+    public function setCountry_of_Nationality_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_of_Nationality_Reference = null)
     {
         $this->Country_of_Nationality_Reference = $country_of_Nationality_Reference;
         return $this;
     }
     /**
      * Get Country_of_Birth_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_of_Birth_Reference()
     {
@@ -479,17 +479,17 @@ class Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Country_of_Birth_Reference value
-     * @param \StructType\CountryObjectType $country_of_Birth_Reference
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_of_Birth_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function setCountry_of_Birth_Reference(\StructType\CountryObjectType $country_of_Birth_Reference = null)
+    public function setCountry_of_Birth_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_of_Birth_Reference = null)
     {
         $this->Country_of_Birth_Reference = $country_of_Birth_Reference;
         return $this;
     }
     /**
      * Get Region_of_Birth_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getRegion_of_Birth_Reference()
     {
@@ -497,10 +497,10 @@ class Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Region_of_Birth_Reference value
-     * @param \StructType\Country_RegionObjectType $region_of_Birth_Reference
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $region_of_Birth_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function setRegion_of_Birth_Reference(\StructType\Country_RegionObjectType $region_of_Birth_Reference = null)
+    public function setRegion_of_Birth_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $region_of_Birth_Reference = null)
     {
         $this->Region_of_Birth_Reference = $region_of_Birth_Reference;
         return $this;
@@ -516,7 +516,7 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set City_of_Birth value
      * @param string $city_of_Birth
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setCity_of_Birth($city_of_Birth = null)
     {
@@ -529,7 +529,7 @@ class Dependent_DataType extends AbstractStructBase
     }
     /**
      * Get Court_Order value
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
      */
     public function getCourt_Order()
     {
@@ -547,12 +547,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeCourt_OrderItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeCourt_OrderItem instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            if (!$dependent_DataTypeCourt_OrderItem instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeCourt_OrderItem) ? get_class($dependent_DataTypeCourt_OrderItem) : sprintf('%s(%s)', gettype($dependent_DataTypeCourt_OrderItem), var_export($dependent_DataTypeCourt_OrderItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Court_Order property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Court_Order property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -560,8 +560,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Court_Order value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setCourt_Order(array $court_Order = array())
     {
@@ -575,21 +575,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Court_Order value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToCourt_Order(\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
+    public function addToCourt_Order(\WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Court_Order property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Court_Order property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Court_Order[] = $item;
         return $this;
     }
     /**
      * Get Lives_With_Worker_Data value
-     * @return \StructType\Lives_With_Worker_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Lives_With_Worker_DataType[]|null
      */
     public function getLives_With_Worker_Data()
     {
@@ -607,12 +607,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeLives_With_Worker_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeLives_With_Worker_DataItem instanceof \StructType\Lives_With_Worker_DataType) {
+            if (!$dependent_DataTypeLives_With_Worker_DataItem instanceof \WorkdayWsdl\\StructType\Lives_With_Worker_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeLives_With_Worker_DataItem) ? get_class($dependent_DataTypeLives_With_Worker_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeLives_With_Worker_DataItem), var_export($dependent_DataTypeLives_With_Worker_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Lives_With_Worker_Data property can only contain items of type \StructType\Lives_With_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Lives_With_Worker_Data property can only contain items of type \WorkdayWsdl\\StructType\Lives_With_Worker_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -620,8 +620,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Lives_With_Worker_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Lives_With_Worker_DataType[] $lives_With_Worker_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Lives_With_Worker_DataType[] $lives_With_Worker_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setLives_With_Worker_Data(array $lives_With_Worker_Data = array())
     {
@@ -635,21 +635,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Lives_With_Worker_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Lives_With_Worker_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Lives_With_Worker_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToLives_With_Worker_Data(\StructType\Lives_With_Worker_DataType $item)
+    public function addToLives_With_Worker_Data(\WorkdayWsdl\\StructType\Lives_With_Worker_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Lives_With_Worker_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Lives_With_Worker_Data property can only contain items of type \StructType\Lives_With_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Lives_With_Worker_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Lives_With_Worker_Data property can only contain items of type \WorkdayWsdl\\StructType\Lives_With_Worker_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Lives_With_Worker_Data[] = $item;
         return $this;
     }
     /**
      * Get Has_Health_Insurance_Data value
-     * @return \StructType\Has_Health_Insurance_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType[]|null
      */
     public function getHas_Health_Insurance_Data()
     {
@@ -667,12 +667,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeHas_Health_Insurance_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeHas_Health_Insurance_DataItem instanceof \StructType\Has_Health_Insurance_DataType) {
+            if (!$dependent_DataTypeHas_Health_Insurance_DataItem instanceof \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeHas_Health_Insurance_DataItem) ? get_class($dependent_DataTypeHas_Health_Insurance_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeHas_Health_Insurance_DataItem), var_export($dependent_DataTypeHas_Health_Insurance_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Has_Health_Insurance_Data property can only contain items of type \StructType\Has_Health_Insurance_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Has_Health_Insurance_Data property can only contain items of type \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -680,8 +680,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Has_Health_Insurance_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Has_Health_Insurance_DataType[] $has_Health_Insurance_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType[] $has_Health_Insurance_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setHas_Health_Insurance_Data(array $has_Health_Insurance_Data = array())
     {
@@ -695,21 +695,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Has_Health_Insurance_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Has_Health_Insurance_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToHas_Health_Insurance_Data(\StructType\Has_Health_Insurance_DataType $item)
+    public function addToHas_Health_Insurance_Data(\WorkdayWsdl\\StructType\Has_Health_Insurance_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Has_Health_Insurance_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Has_Health_Insurance_Data property can only contain items of type \StructType\Has_Health_Insurance_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Has_Health_Insurance_Data property can only contain items of type \WorkdayWsdl\\StructType\Has_Health_Insurance_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Has_Health_Insurance_Data[] = $item;
         return $this;
     }
     /**
      * Get Allowed_for_Tax_Deduction_Data value
-     * @return \StructType\Allowed_for_Tax_Deduction_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType[]|null
      */
     public function getAllowed_for_Tax_Deduction_Data()
     {
@@ -727,12 +727,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeAllowed_for_Tax_Deduction_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeAllowed_for_Tax_Deduction_DataItem instanceof \StructType\Allowed_for_Tax_Deduction_DataType) {
+            if (!$dependent_DataTypeAllowed_for_Tax_Deduction_DataItem instanceof \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeAllowed_for_Tax_Deduction_DataItem) ? get_class($dependent_DataTypeAllowed_for_Tax_Deduction_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeAllowed_for_Tax_Deduction_DataItem), var_export($dependent_DataTypeAllowed_for_Tax_Deduction_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Allowed_for_Tax_Deduction_Data property can only contain items of type \StructType\Allowed_for_Tax_Deduction_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Allowed_for_Tax_Deduction_Data property can only contain items of type \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -740,8 +740,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Allowed_for_Tax_Deduction_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Allowed_for_Tax_Deduction_DataType[] $allowed_for_Tax_Deduction_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType[] $allowed_for_Tax_Deduction_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setAllowed_for_Tax_Deduction_Data(array $allowed_for_Tax_Deduction_Data = array())
     {
@@ -755,21 +755,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Allowed_for_Tax_Deduction_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Allowed_for_Tax_Deduction_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToAllowed_for_Tax_Deduction_Data(\StructType\Allowed_for_Tax_Deduction_DataType $item)
+    public function addToAllowed_for_Tax_Deduction_Data(\WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Allowed_for_Tax_Deduction_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Allowed_for_Tax_Deduction_Data property can only contain items of type \StructType\Allowed_for_Tax_Deduction_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Allowed_for_Tax_Deduction_Data property can only contain items of type \WorkdayWsdl\\StructType\Allowed_for_Tax_Deduction_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Allowed_for_Tax_Deduction_Data[] = $item;
         return $this;
     }
     /**
      * Get Annual_Income_Data value
-     * @return \StructType\Annual_Income_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Annual_Income_DataType[]|null
      */
     public function getAnnual_Income_Data()
     {
@@ -787,12 +787,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeAnnual_Income_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeAnnual_Income_DataItem instanceof \StructType\Annual_Income_DataType) {
+            if (!$dependent_DataTypeAnnual_Income_DataItem instanceof \WorkdayWsdl\\StructType\Annual_Income_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeAnnual_Income_DataItem) ? get_class($dependent_DataTypeAnnual_Income_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeAnnual_Income_DataItem), var_export($dependent_DataTypeAnnual_Income_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Annual_Income_Data property can only contain items of type \StructType\Annual_Income_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Annual_Income_Data property can only contain items of type \WorkdayWsdl\\StructType\Annual_Income_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -800,8 +800,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Annual_Income_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Annual_Income_DataType[] $annual_Income_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Annual_Income_DataType[] $annual_Income_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setAnnual_Income_Data(array $annual_Income_Data = array())
     {
@@ -815,21 +815,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Annual_Income_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Annual_Income_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Annual_Income_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToAnnual_Income_Data(\StructType\Annual_Income_DataType $item)
+    public function addToAnnual_Income_Data(\WorkdayWsdl\\StructType\Annual_Income_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Annual_Income_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Annual_Income_Data property can only contain items of type \StructType\Annual_Income_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Annual_Income_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Annual_Income_Data property can only contain items of type \WorkdayWsdl\\StructType\Annual_Income_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Annual_Income_Data[] = $item;
         return $this;
     }
     /**
      * Get Occupation_Data value
-     * @return \StructType\Occupation_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Occupation_DataType[]|null
      */
     public function getOccupation_Data()
     {
@@ -847,12 +847,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeOccupation_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeOccupation_DataItem instanceof \StructType\Occupation_DataType) {
+            if (!$dependent_DataTypeOccupation_DataItem instanceof \WorkdayWsdl\\StructType\Occupation_DataType) {
                 $invalidValues[] = is_object($dependent_DataTypeOccupation_DataItem) ? get_class($dependent_DataTypeOccupation_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeOccupation_DataItem), var_export($dependent_DataTypeOccupation_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Occupation_Data property can only contain items of type \StructType\Occupation_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Occupation_Data property can only contain items of type \WorkdayWsdl\\StructType\Occupation_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -860,8 +860,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Occupation_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Occupation_DataType[] $occupation_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Occupation_DataType[] $occupation_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setOccupation_Data(array $occupation_Data = array())
     {
@@ -875,21 +875,21 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Occupation_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Occupation_DataType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Occupation_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToOccupation_Data(\StructType\Occupation_DataType $item)
+    public function addToOccupation_Data(\WorkdayWsdl\\StructType\Occupation_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Occupation_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Occupation_Data property can only contain items of type \StructType\Occupation_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Occupation_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Occupation_Data property can only contain items of type \WorkdayWsdl\\StructType\Occupation_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Occupation_Data[] = $item;
         return $this;
     }
     /**
      * Get Disability_Data value
-     * @return \StructType\Disability_Information_Data_for_Related_PersonType[]|null
+     * @return \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType[]|null
      */
     public function getDisability_Data()
     {
@@ -907,12 +907,12 @@ class Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_DataTypeDisability_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_DataTypeDisability_DataItem instanceof \StructType\Disability_Information_Data_for_Related_PersonType) {
+            if (!$dependent_DataTypeDisability_DataItem instanceof \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType) {
                 $invalidValues[] = is_object($dependent_DataTypeDisability_DataItem) ? get_class($dependent_DataTypeDisability_DataItem) : sprintf('%s(%s)', gettype($dependent_DataTypeDisability_DataItem), var_export($dependent_DataTypeDisability_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability_Data property can only contain items of type \StructType\Disability_Information_Data_for_Related_PersonType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability_Data property can only contain items of type \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -920,8 +920,8 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Set Disability_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Information_Data_for_Related_PersonType[] $disability_Data
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType[] $disability_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public function setDisability_Data(array $disability_Data = array())
     {
@@ -935,14 +935,14 @@ class Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Disability_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Information_Data_for_Related_PersonType $item
-     * @return \StructType\Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
-    public function addToDisability_Data(\StructType\Disability_Information_Data_for_Related_PersonType $item)
+    public function addToDisability_Data(\WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disability_Information_Data_for_Related_PersonType) {
-            throw new \InvalidArgumentException(sprintf('The Disability_Data property can only contain items of type \StructType\Disability_Information_Data_for_Related_PersonType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType) {
+            throw new \InvalidArgumentException(sprintf('The Disability_Data property can only contain items of type \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability_Data[] = $item;
         return $this;
@@ -953,7 +953,7 @@ class Dependent_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_DataType
      */
     public static function __set_state(array $array)
     {

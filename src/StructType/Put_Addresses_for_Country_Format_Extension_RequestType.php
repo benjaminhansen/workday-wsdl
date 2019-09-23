@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
      * The Address_Reference
      * Meta information extracted from the WSDL
      * - documentation: Identifies instance of Address.
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Address_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
      * Meta information extracted from the WSDL
      * - documentation: Wrapper for Address Update Data.
      * - maxOccurs: unbounded
-     * @var \StructType\Global_Address_DataType[]
+     * @var \WorkdayWsdl\\StructType\Global_Address_DataType[]
      */
     public $Address_Data;
     /**
@@ -40,11 +40,11 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
      * @uses Put_Addresses_for_Country_Format_Extension_RequestType::setAddress_Reference()
      * @uses Put_Addresses_for_Country_Format_Extension_RequestType::setAddress_Data()
      * @uses Put_Addresses_for_Country_Format_Extension_RequestType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $address_Reference
-     * @param \StructType\Global_Address_DataType[] $address_Data
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference
+     * @param \WorkdayWsdl\\StructType\Global_Address_DataType[] $address_Data
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $address_Reference = null, array $address_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference = null, array $address_Data = array(), $version = null)
     {
         $this
             ->setAddress_Reference($address_Reference)
@@ -53,7 +53,7 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
     }
     /**
      * Get Address_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getAddress_Reference()
     {
@@ -61,17 +61,17 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
     }
     /**
      * Set Address_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $address_Reference
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_RequestType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_RequestType
      */
-    public function setAddress_Reference(\StructType\Unique_IdentifierObjectType $address_Reference = null)
+    public function setAddress_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $address_Reference = null)
     {
         $this->Address_Reference = $address_Reference;
         return $this;
     }
     /**
      * Get Address_Data value
-     * @return \StructType\Global_Address_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType[]|null
      */
     public function getAddress_Data()
     {
@@ -89,12 +89,12 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
         $invalidValues = [];
         foreach ($values as $put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem instanceof \StructType\Global_Address_DataType) {
+            if (!$put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem instanceof \WorkdayWsdl\\StructType\Global_Address_DataType) {
                 $invalidValues[] = is_object($put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem) ? get_class($put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem) : sprintf('%s(%s)', gettype($put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem), var_export($put_Addresses_for_Country_Format_Extension_RequestTypeAddress_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Address_Data property can only contain items of type \StructType\Global_Address_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Global_Address_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -102,8 +102,8 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
     /**
      * Set Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Global_Address_DataType[] $address_Data
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_RequestType
+     * @param \WorkdayWsdl\\StructType\Global_Address_DataType[] $address_Data
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_RequestType
      */
     public function setAddress_Data(array $address_Data = array())
     {
@@ -117,14 +117,14 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
     /**
      * Add item to Address_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Global_Address_DataType $item
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_RequestType
+     * @param \WorkdayWsdl\\StructType\Global_Address_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_RequestType
      */
-    public function addToAddress_Data(\StructType\Global_Address_DataType $item)
+    public function addToAddress_Data(\WorkdayWsdl\\StructType\Global_Address_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Global_Address_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \StructType\Global_Address_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Global_Address_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Address_Data property can only contain items of type \WorkdayWsdl\\StructType\Global_Address_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Address_Data[] = $item;
         return $this;
@@ -140,7 +140,7 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_RequestType
      */
     public function setVersion($version = null)
     {
@@ -157,7 +157,7 @@ class Put_Addresses_for_Country_Format_Extension_RequestType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Addresses_for_Country_Format_Extension_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Addresses_for_Country_Format_Extension_RequestType
      */
     public static function __set_state(array $array)
     {

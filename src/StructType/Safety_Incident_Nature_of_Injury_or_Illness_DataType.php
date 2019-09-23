@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: The nature of the injury illness of the involved party.
      * - minOccurs: 0
-     * @var \StructType\Injury_Illness_NatureObjectType
+     * @var \WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType
      */
     public $Injury_Illness_Nature_Reference;
     /**
@@ -36,7 +36,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * - documentation: The body part where the injury of the involved party occurred.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Injury_Illness_Body_PartObjectType[]
+     * @var \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType[]
      */
     public $Injury_Illness_Body_Part_Reference;
     /**
@@ -44,7 +44,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: The source of the injury illness for the involved party.
      * - minOccurs: 0
-     * @var \StructType\Injury_Illness_SourceObjectType
+     * @var \WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType
      */
     public $Injury_Illness_Source_Reference;
     /**
@@ -88,7 +88,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: The severity of the injury illness.
      * - minOccurs: 0
-     * @var \StructType\Injury_Illness_SeverityObjectType
+     * @var \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType
      */
     public $Injury_Illness_Severity_Reference;
     /**
@@ -133,7 +133,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Safety_Incident_Treatment_Disposition_DataType[]
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType[]
      */
     public $Treatment_Disposition_Data;
     /**
@@ -153,21 +153,21 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * @uses Safety_Incident_Nature_of_Injury_or_Illness_DataType::setDate_of_Death()
      * @uses Safety_Incident_Nature_of_Injury_or_Illness_DataType::setTreatment_Disposition_Data()
      * @param string $time_Arrived_at_Work
-     * @param \StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference
-     * @param \StructType\Injury_Illness_Body_PartObjectType[] $injury_Illness_Body_Part_Reference
-     * @param \StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType[] $injury_Illness_Body_Part_Reference
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference
      * @param string $object_or_Substance
      * @param bool $injury_Illness_Work_Related
      * @param bool $injury_Illness_Privacy_Case
      * @param bool $injury_Illness_Sent_Home
-     * @param \StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference
      * @param bool $injury_Illness_Treatment_Required
      * @param string $treatment_Description
      * @param bool $injury_Illness_Affected_Party_Died
      * @param string $date_of_Death
-     * @param \StructType\Safety_Incident_Treatment_Disposition_DataType[] $treatment_Disposition_Data
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType[] $treatment_Disposition_Data
      */
-    public function __construct($time_Arrived_at_Work = null, \StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference = null, array $injury_Illness_Body_Part_Reference = array(), \StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference = null, $object_or_Substance = null, $injury_Illness_Work_Related = null, $injury_Illness_Privacy_Case = null, $injury_Illness_Sent_Home = null, \StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference = null, $injury_Illness_Treatment_Required = null, $treatment_Description = null, $injury_Illness_Affected_Party_Died = null, $date_of_Death = null, array $treatment_Disposition_Data = array())
+    public function __construct($time_Arrived_at_Work = null, \WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference = null, array $injury_Illness_Body_Part_Reference = array(), \WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference = null, $object_or_Substance = null, $injury_Illness_Work_Related = null, $injury_Illness_Privacy_Case = null, $injury_Illness_Sent_Home = null, \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference = null, $injury_Illness_Treatment_Required = null, $treatment_Description = null, $injury_Illness_Affected_Party_Died = null, $date_of_Death = null, array $treatment_Disposition_Data = array())
     {
         $this
             ->setTime_Arrived_at_Work($time_Arrived_at_Work)
@@ -196,7 +196,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Time_Arrived_at_Work value
      * @param string $time_Arrived_at_Work
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setTime_Arrived_at_Work($time_Arrived_at_Work = null)
     {
@@ -209,7 +209,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Get Injury_Illness_Nature_Reference value
-     * @return \StructType\Injury_Illness_NatureObjectType|null
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType|null
      */
     public function getInjury_Illness_Nature_Reference()
     {
@@ -217,17 +217,17 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Set Injury_Illness_Nature_Reference value
-     * @param \StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
-    public function setInjury_Illness_Nature_Reference(\StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference = null)
+    public function setInjury_Illness_Nature_Reference(\WorkdayWsdl\\StructType\Injury_Illness_NatureObjectType $injury_Illness_Nature_Reference = null)
     {
         $this->Injury_Illness_Nature_Reference = $injury_Illness_Nature_Reference;
         return $this;
     }
     /**
      * Get Injury_Illness_Body_Part_Reference value
-     * @return \StructType\Injury_Illness_Body_PartObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType[]|null
      */
     public function getInjury_Illness_Body_Part_Reference()
     {
@@ -245,12 +245,12 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem instanceof \StructType\Injury_Illness_Body_PartObjectType) {
+            if (!$safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem instanceof \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType) {
                 $invalidValues[] = is_object($safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem) ? get_class($safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem) : sprintf('%s(%s)', gettype($safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem), var_export($safety_Incident_Nature_of_Injury_or_Illness_DataTypeInjury_Illness_Body_Part_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Injury_Illness_Body_Part_Reference property can only contain items of type \StructType\Injury_Illness_Body_PartObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Injury_Illness_Body_Part_Reference property can only contain items of type \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -258,8 +258,8 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Body_Part_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Injury_Illness_Body_PartObjectType[] $injury_Illness_Body_Part_Reference
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType[] $injury_Illness_Body_Part_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Body_Part_Reference(array $injury_Illness_Body_Part_Reference = array())
     {
@@ -273,21 +273,21 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Add item to Injury_Illness_Body_Part_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Injury_Illness_Body_PartObjectType $item
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
-    public function addToInjury_Illness_Body_Part_Reference(\StructType\Injury_Illness_Body_PartObjectType $item)
+    public function addToInjury_Illness_Body_Part_Reference(\WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Injury_Illness_Body_PartObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Injury_Illness_Body_Part_Reference property can only contain items of type \StructType\Injury_Illness_Body_PartObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Injury_Illness_Body_Part_Reference property can only contain items of type \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Injury_Illness_Body_Part_Reference[] = $item;
         return $this;
     }
     /**
      * Get Injury_Illness_Source_Reference value
-     * @return \StructType\Injury_Illness_SourceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType|null
      */
     public function getInjury_Illness_Source_Reference()
     {
@@ -295,10 +295,10 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Set Injury_Illness_Source_Reference value
-     * @param \StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
-    public function setInjury_Illness_Source_Reference(\StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference = null)
+    public function setInjury_Illness_Source_Reference(\WorkdayWsdl\\StructType\Injury_Illness_SourceObjectType $injury_Illness_Source_Reference = null)
     {
         $this->Injury_Illness_Source_Reference = $injury_Illness_Source_Reference;
         return $this;
@@ -314,7 +314,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Object_or_Substance value
      * @param string $object_or_Substance
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setObject_or_Substance($object_or_Substance = null)
     {
@@ -336,7 +336,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Work_Related value
      * @param bool $injury_Illness_Work_Related
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Work_Related($injury_Illness_Work_Related = null)
     {
@@ -358,7 +358,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Privacy_Case value
      * @param bool $injury_Illness_Privacy_Case
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Privacy_Case($injury_Illness_Privacy_Case = null)
     {
@@ -380,7 +380,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Sent_Home value
      * @param bool $injury_Illness_Sent_Home
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Sent_Home($injury_Illness_Sent_Home = null)
     {
@@ -393,7 +393,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Get Injury_Illness_Severity_Reference value
-     * @return \StructType\Injury_Illness_SeverityObjectType|null
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType|null
      */
     public function getInjury_Illness_Severity_Reference()
     {
@@ -401,10 +401,10 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Set Injury_Illness_Severity_Reference value
-     * @param \StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
-    public function setInjury_Illness_Severity_Reference(\StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference = null)
+    public function setInjury_Illness_Severity_Reference(\WorkdayWsdl\\StructType\Injury_Illness_SeverityObjectType $injury_Illness_Severity_Reference = null)
     {
         $this->Injury_Illness_Severity_Reference = $injury_Illness_Severity_Reference;
         return $this;
@@ -420,7 +420,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Treatment_Required value
      * @param bool $injury_Illness_Treatment_Required
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Treatment_Required($injury_Illness_Treatment_Required = null)
     {
@@ -442,7 +442,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Treatment_Description value
      * @param string $treatment_Description
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setTreatment_Description($treatment_Description = null)
     {
@@ -464,7 +464,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Injury_Illness_Affected_Party_Died value
      * @param bool $injury_Illness_Affected_Party_Died
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setInjury_Illness_Affected_Party_Died($injury_Illness_Affected_Party_Died = null)
     {
@@ -486,7 +486,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Date_of_Death value
      * @param string $date_of_Death
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setDate_of_Death($date_of_Death = null)
     {
@@ -499,7 +499,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     }
     /**
      * Get Treatment_Disposition_Data value
-     * @return \StructType\Safety_Incident_Treatment_Disposition_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType[]|null
      */
     public function getTreatment_Disposition_Data()
     {
@@ -517,12 +517,12 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem instanceof \StructType\Safety_Incident_Treatment_Disposition_DataType) {
+            if (!$safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem instanceof \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType) {
                 $invalidValues[] = is_object($safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem) ? get_class($safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem) : sprintf('%s(%s)', gettype($safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem), var_export($safety_Incident_Nature_of_Injury_or_Illness_DataTypeTreatment_Disposition_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Treatment_Disposition_Data property can only contain items of type \StructType\Safety_Incident_Treatment_Disposition_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Treatment_Disposition_Data property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -530,8 +530,8 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Set Treatment_Disposition_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_Treatment_Disposition_DataType[] $treatment_Disposition_Data
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType[] $treatment_Disposition_Data
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public function setTreatment_Disposition_Data(array $treatment_Disposition_Data = array())
     {
@@ -545,14 +545,14 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
     /**
      * Add item to Treatment_Disposition_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Safety_Incident_Treatment_Disposition_DataType $item
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
-    public function addToTreatment_Disposition_Data(\StructType\Safety_Incident_Treatment_Disposition_DataType $item)
+    public function addToTreatment_Disposition_Data(\WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Safety_Incident_Treatment_Disposition_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Treatment_Disposition_Data property can only contain items of type \StructType\Safety_Incident_Treatment_Disposition_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Treatment_Disposition_Data property can only contain items of type \WorkdayWsdl\\StructType\Safety_Incident_Treatment_Disposition_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Treatment_Disposition_Data[] = $item;
         return $this;
@@ -563,7 +563,7 @@ class Safety_Incident_Nature_of_Injury_or_Illness_DataType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_Nature_of_Injury_or_Illness_DataType
      */
     public static function __set_state(array $array)
     {

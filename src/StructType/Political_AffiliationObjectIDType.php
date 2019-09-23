@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Political_AffiliationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Political_AffiliationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Political_AffiliationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Political_AffiliationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Political_AffiliationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Political_AffiliationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Political_AffiliationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Political_AffiliationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Political_AffiliationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Political_AffiliationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Political_AffiliationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Political_AffiliationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Political_AffiliationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Political_AffiliationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Political_AffiliationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Political_AffiliationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectIDType
      */
     public static function __set_state(array $array)
     {

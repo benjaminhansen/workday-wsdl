@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Country
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -24,7 +24,7 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Enter an active Pay Rate Type. | Reference element representing a unique instance of Pay Rate Type.
      * - minOccurs: 0
-     * @var \StructType\Pay_Rate_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType
      */
     public $Pay_Rate_Type_Reference;
     /**
@@ -39,11 +39,11 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
      * @uses Job_Profile_Pay_Rate_DataType::setCountry_Reference()
      * @uses Job_Profile_Pay_Rate_DataType::setPay_Rate_Type_Reference()
      * @uses Job_Profile_Pay_Rate_DataType::setDelete()
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null, \StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference = null, $delete = null)
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -52,7 +52,7 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -60,17 +60,17 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Job_Profile_Pay_Rate_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Pay_Rate_Type_Reference value
-     * @return \StructType\Pay_Rate_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType|null
      */
     public function getPay_Rate_Type_Reference()
     {
@@ -78,10 +78,10 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
     }
     /**
      * Set Pay_Rate_Type_Reference value
-     * @param \StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference
-     * @return \StructType\Job_Profile_Pay_Rate_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType
      */
-    public function setPay_Rate_Type_Reference(\StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference = null)
+    public function setPay_Rate_Type_Reference(\WorkdayWsdl\\StructType\Pay_Rate_TypeObjectType $pay_Rate_Type_Reference = null)
     {
         $this->Pay_Rate_Type_Reference = $pay_Rate_Type_Reference;
         return $this;
@@ -97,7 +97,7 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Job_Profile_Pay_Rate_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType
      */
     public function setDelete($delete = null)
     {
@@ -114,7 +114,7 @@ class Job_Profile_Pay_Rate_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Pay_Rate_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Pay_Rate_DataType
      */
     public static function __set_state(array $array)
     {

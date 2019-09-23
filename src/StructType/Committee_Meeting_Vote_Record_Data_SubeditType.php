@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Committee Meeting Vote Reference
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Vote_RecordObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType
      */
     public $Agenda_Item_Vote_Record_Reference;
     /**
@@ -25,7 +25,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Committee Meeting Vote Status Reference
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Vote_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType
      */
     public $Vote_Status_Reference;
     /**
@@ -62,13 +62,13 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
      * @uses Committee_Meeting_Vote_Record_Data_SubeditType::setVote_Count()
      * @uses Committee_Meeting_Vote_Record_Data_SubeditType::setAdd_Only()
      * @uses Committee_Meeting_Vote_Record_Data_SubeditType::setDelete()
-     * @param \StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference
-     * @param \StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference
      * @param float $vote_Count
      * @param bool $add_Only
      * @param bool $delete
      */
-    public function __construct(\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference = null, \StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference = null, $vote_Count = null, $add_Only = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference = null, \WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference = null, $vote_Count = null, $add_Only = null, $delete = null)
     {
         $this
             ->setAgenda_Item_Vote_Record_Reference($agenda_Item_Vote_Record_Reference)
@@ -79,7 +79,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Get Agenda_Item_Vote_Record_Reference value
-     * @return \StructType\Committee_Meeting_Vote_RecordObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType|null
      */
     public function getAgenda_Item_Vote_Record_Reference()
     {
@@ -87,17 +87,17 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Agenda_Item_Vote_Record_Reference value
-     * @param \StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
-    public function setAgenda_Item_Vote_Record_Reference(\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference = null)
+    public function setAgenda_Item_Vote_Record_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Vote_RecordObjectType $agenda_Item_Vote_Record_Reference = null)
     {
         $this->Agenda_Item_Vote_Record_Reference = $agenda_Item_Vote_Record_Reference;
         return $this;
     }
     /**
      * Get Vote_Status_Reference value
-     * @return \StructType\Committee_Meeting_Vote_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType|null
      */
     public function getVote_Status_Reference()
     {
@@ -105,10 +105,10 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Vote_Status_Reference value
-     * @param \StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
-    public function setVote_Status_Reference(\StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference = null)
+    public function setVote_Status_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Vote_StatusObjectType $vote_Status_Reference = null)
     {
         $this->Vote_Status_Reference = $vote_Status_Reference;
         return $this;
@@ -124,7 +124,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     /**
      * Set Vote_Count value
      * @param float $vote_Count
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
     public function setVote_Count($vote_Count = null)
     {
@@ -158,7 +158,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -180,7 +180,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
     public function setDelete($delete = null)
     {
@@ -197,7 +197,7 @@ class Committee_Meeting_Vote_Record_Data_SubeditType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Vote_Record_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Vote_Record_Data_SubeditType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
     /**
      * Set Annual_Work_Period_Work_Percent_of_Year value
      * @param float $annual_Work_Period_Work_Percent_of_Year
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public function setAnnual_Work_Period_Work_Percent_of_Year($annual_Work_Period_Work_Percent_of_Year = null)
     {
@@ -128,7 +128,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
     /**
      * Set Annual_Work_Period_Start_Date value
      * @param string $annual_Work_Period_Start_Date
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public function setAnnual_Work_Period_Start_Date($annual_Work_Period_Start_Date = null)
     {
@@ -150,7 +150,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
     /**
      * Set Annual_Work_Period_End_Date value
      * @param string $annual_Work_Period_End_Date
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public function setAnnual_Work_Period_End_Date($annual_Work_Period_End_Date = null)
     {
@@ -172,7 +172,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
     /**
      * Set Disbursement_Plan_Period_Start_Date value
      * @param string $disbursement_Plan_Period_Start_Date
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public function setDisbursement_Plan_Period_Start_Date($disbursement_Plan_Period_Start_Date = null)
     {
@@ -194,7 +194,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
     /**
      * Set Disbursement_Plan_Period_End_Date value
      * @param string $disbursement_Plan_Period_End_Date
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public function setDisbursement_Plan_Period_End_Date($disbursement_Plan_Period_End_Date = null)
     {
@@ -211,7 +211,7 @@ class Academic_Pay_Setup_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Pay_Setup_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Pay_Setup_DataType
      */
     public static function __set_state(array $array)
     {

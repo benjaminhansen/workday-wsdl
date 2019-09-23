@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\One_Time_Payment_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
      * Constructor method for One-Time_Payment_PlanObjectType
      * @uses One_Time_Payment_PlanObjectType::setID()
      * @uses One_Time_Payment_PlanObjectType::setDescriptor()
-     * @param \StructType\One_Time_Payment_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\One_Time_Payment_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $one_Time_Payment_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$one_Time_Payment_PlanObjectTypeIDItem instanceof \StructType\One_Time_Payment_PlanObjectIDType) {
+            if (!$one_Time_Payment_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType) {
                 $invalidValues[] = is_object($one_Time_Payment_PlanObjectTypeIDItem) ? get_class($one_Time_Payment_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($one_Time_Payment_PlanObjectTypeIDItem), var_export($one_Time_Payment_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\One_Time_Payment_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\One_Time_Payment_PlanObjectIDType[] $iD
-     * @return \StructType\One_Time_Payment_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\One_Time_Payment_PlanObjectIDType $item
-     * @return \StructType\One_Time_Payment_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType
      */
-    public function addToID(\StructType\One_Time_Payment_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\One_Time_Payment_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\One_Time_Payment_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\One_Time_Payment_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class One_Time_Payment_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\One_Time_Payment_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType
      */
     public static function __set_state(array $array)
     {

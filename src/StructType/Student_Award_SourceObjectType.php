@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Student_Award_SourceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Student_Award_SourceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Student_Award_SourceObjectType extends AbstractStructBase
      * Constructor method for Student_Award_SourceObjectType
      * @uses Student_Award_SourceObjectType::setID()
      * @uses Student_Award_SourceObjectType::setDescriptor()
-     * @param \StructType\Student_Award_SourceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Student_Award_SourceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Student_Award_SourceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Student_Award_SourceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $student_Award_SourceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$student_Award_SourceObjectTypeIDItem instanceof \StructType\Student_Award_SourceObjectIDType) {
+            if (!$student_Award_SourceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType) {
                 $invalidValues[] = is_object($student_Award_SourceObjectTypeIDItem) ? get_class($student_Award_SourceObjectTypeIDItem) : sprintf('%s(%s)', gettype($student_Award_SourceObjectTypeIDItem), var_export($student_Award_SourceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Student_Award_SourceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Student_Award_SourceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Student_Award_SourceObjectIDType[] $iD
-     * @return \StructType\Student_Award_SourceObjectType
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Student_Award_SourceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Student_Award_SourceObjectIDType $item
-     * @return \StructType\Student_Award_SourceObjectType
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectType
      */
-    public function addToID(\StructType\Student_Award_SourceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Student_Award_SourceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Student_Award_SourceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Student_Award_SourceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Student_Award_SourceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Student_Award_SourceObjectType
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Student_Award_SourceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Student_Award_SourceObjectType
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectType
      */
     public static function __set_state(array $array)
     {

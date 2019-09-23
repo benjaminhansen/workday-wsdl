@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing Effective and Updated DateTime data.
      * - minOccurs: 0
-     * @var \StructType\Effective_And_Updated_DateTime_DataType
+     * @var \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public $Transaction_Date_Range_Data;
     /**
@@ -28,7 +28,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Transaction_Type_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Transaction_Type_ReferencesType
      */
     public $Transaction_Type_References;
     /**
@@ -39,7 +39,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SubscriberObjectType
+     * @var \WorkdayWsdl\\StructType\SubscriberObjectType
      */
     public $Subscriber_Reference;
     /**
@@ -47,11 +47,11 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * @uses Transaction_Log_CriteriaType::setTransaction_Date_Range_Data()
      * @uses Transaction_Log_CriteriaType::setTransaction_Type_References()
      * @uses Transaction_Log_CriteriaType::setSubscriber_Reference()
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data
-     * @param \StructType\Transaction_Type_ReferencesType $transaction_Type_References
-     * @param \StructType\SubscriberObjectType $subscriber_Reference
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data
+     * @param \WorkdayWsdl\\StructType\Transaction_Type_ReferencesType $transaction_Type_References
+     * @param \WorkdayWsdl\\StructType\SubscriberObjectType $subscriber_Reference
      */
-    public function __construct(\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data = null, \StructType\Transaction_Type_ReferencesType $transaction_Type_References = null, \StructType\SubscriberObjectType $subscriber_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data = null, \WorkdayWsdl\\StructType\Transaction_Type_ReferencesType $transaction_Type_References = null, \WorkdayWsdl\\StructType\SubscriberObjectType $subscriber_Reference = null)
     {
         $this
             ->setTransaction_Date_Range_Data($transaction_Date_Range_Data)
@@ -60,7 +60,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Transaction_Date_Range_Data value
-     * @return \StructType\Effective_And_Updated_DateTime_DataType|null
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType|null
      */
     public function getTransaction_Date_Range_Data()
     {
@@ -68,17 +68,17 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
     }
     /**
      * Set Transaction_Date_Range_Data value
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data
-     * @return \StructType\Transaction_Log_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType
      */
-    public function setTransaction_Date_Range_Data(\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data = null)
+    public function setTransaction_Date_Range_Data(\WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $transaction_Date_Range_Data = null)
     {
         $this->Transaction_Date_Range_Data = $transaction_Date_Range_Data;
         return $this;
     }
     /**
      * Get Transaction_Type_References value
-     * @return \StructType\Transaction_Type_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Type_ReferencesType|null
      */
     public function getTransaction_Type_References()
     {
@@ -117,10 +117,10 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Type_ReferencesType $transaction_Type_References
-     * @return \StructType\Transaction_Log_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Transaction_Type_ReferencesType $transaction_Type_References
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType
      */
-    public function setTransaction_Type_References(\StructType\Transaction_Type_ReferencesType $transaction_Type_References = null)
+    public function setTransaction_Type_References(\WorkdayWsdl\\StructType\Transaction_Type_ReferencesType $transaction_Type_References = null)
     {
         // validation for constraint: choice(Transaction_Type_References, Subscriber_Reference)
         if ('' !== ($transaction_Type_ReferencesChoiceErrorMessage = self::validateTransaction_Type_ReferencesForChoiceConstraintsFromSetTransaction_Type_References($transaction_Type_References))) {
@@ -135,7 +135,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Subscriber_Reference value
-     * @return \StructType\SubscriberObjectType|null
+     * @return \WorkdayWsdl\\StructType\SubscriberObjectType|null
      */
     public function getSubscriber_Reference()
     {
@@ -174,10 +174,10 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\SubscriberObjectType $subscriber_Reference
-     * @return \StructType\Transaction_Log_CriteriaType
+     * @param \WorkdayWsdl\\StructType\SubscriberObjectType $subscriber_Reference
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType
      */
-    public function setSubscriber_Reference(\StructType\SubscriberObjectType $subscriber_Reference = null)
+    public function setSubscriber_Reference(\WorkdayWsdl\\StructType\SubscriberObjectType $subscriber_Reference = null)
     {
         // validation for constraint: choice(Transaction_Type_References, Subscriber_Reference)
         if ('' !== ($subscriber_ReferenceChoiceErrorMessage = self::validateSubscriber_ReferenceForChoiceConstraintsFromSetSubscriber_Reference($subscriber_Reference))) {
@@ -196,7 +196,7 @@ class Transaction_Log_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transaction_Log_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_CriteriaType
      */
     public static function __set_state(array $array)
     {

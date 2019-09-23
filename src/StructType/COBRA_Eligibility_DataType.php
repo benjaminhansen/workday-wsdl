@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reason why the participant is eligible for COBRA. The reason is required if the participant is eligible for COBRA..
      * - minOccurs: 0
-     * @var \StructType\COBRA_Eligibility_ReasonObjectType
+     * @var \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType
      */
     public $COBRA_Eligibility_Reason_Reference;
     /**
@@ -54,7 +54,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Benefit Plan whose coverage was lost.
      * - minOccurs: 0
-     * @var \StructType\Benefit_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_PlanObjectType
      */
     public $Benefit_Plan_Reference;
     /**
@@ -64,13 +64,13 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
      * @uses COBRA_Eligibility_DataType::setLoss_of_Coverage_Date()
      * @uses COBRA_Eligibility_DataType::setCoverage_End_Date()
      * @uses COBRA_Eligibility_DataType::setBenefit_Plan_Reference()
-     * @param \StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference
      * @param string $eligible_Date
      * @param string $loss_of_Coverage_Date
      * @param string $coverage_End_Date
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
      */
-    public function __construct(\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference = null, $eligible_Date = null, $loss_of_Coverage_Date = null, $coverage_End_Date = null, \StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference = null, $eligible_Date = null, $loss_of_Coverage_Date = null, $coverage_End_Date = null, \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
     {
         $this
             ->setCOBRA_Eligibility_Reason_Reference($cOBRA_Eligibility_Reason_Reference)
@@ -81,7 +81,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     }
     /**
      * Get COBRA_Eligibility_Reason_Reference value
-     * @return \StructType\COBRA_Eligibility_ReasonObjectType|null
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType|null
      */
     public function getCOBRA_Eligibility_Reason_Reference()
     {
@@ -89,10 +89,10 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     }
     /**
      * Set COBRA_Eligibility_Reason_Reference value
-     * @param \StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
-    public function setCOBRA_Eligibility_Reason_Reference(\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference = null)
+    public function setCOBRA_Eligibility_Reason_Reference(\WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectType $cOBRA_Eligibility_Reason_Reference = null)
     {
         $this->COBRA_Eligibility_Reason_Reference = $cOBRA_Eligibility_Reason_Reference;
         return $this;
@@ -108,7 +108,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     /**
      * Set Eligible_Date value
      * @param string $eligible_Date
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
     public function setEligible_Date($eligible_Date = null)
     {
@@ -130,7 +130,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     /**
      * Set Loss_of_Coverage_Date value
      * @param string $loss_of_Coverage_Date
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
     public function setLoss_of_Coverage_Date($loss_of_Coverage_Date = null)
     {
@@ -152,7 +152,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     /**
      * Set Coverage_End_Date value
      * @param string $coverage_End_Date
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
     public function setCoverage_End_Date($coverage_End_Date = null)
     {
@@ -165,7 +165,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Plan_Reference value
-     * @return \StructType\Benefit_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_PlanObjectType|null
      */
     public function getBenefit_Plan_Reference()
     {
@@ -173,10 +173,10 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Plan_Reference value
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
-    public function setBenefit_Plan_Reference(\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
+    public function setBenefit_Plan_Reference(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
     {
         $this->Benefit_Plan_Reference = $benefit_Plan_Reference;
         return $this;
@@ -187,7 +187,7 @@ class COBRA_Eligibility_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\COBRA_Eligibility_DataType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType
      */
     public static function __set_state(array $array)
     {

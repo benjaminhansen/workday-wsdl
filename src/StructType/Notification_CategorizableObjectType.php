@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Notification_CategorizableObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Notification_CategorizableObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Notification_CategorizableObjectType extends AbstractStructBase
      * Constructor method for Notification_CategorizableObjectType
      * @uses Notification_CategorizableObjectType::setID()
      * @uses Notification_CategorizableObjectType::setDescriptor()
-     * @param \StructType\Notification_CategorizableObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Notification_CategorizableObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Notification_CategorizableObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Notification_CategorizableObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $notification_CategorizableObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$notification_CategorizableObjectTypeIDItem instanceof \StructType\Notification_CategorizableObjectIDType) {
+            if (!$notification_CategorizableObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType) {
                 $invalidValues[] = is_object($notification_CategorizableObjectTypeIDItem) ? get_class($notification_CategorizableObjectTypeIDItem) : sprintf('%s(%s)', gettype($notification_CategorizableObjectTypeIDItem), var_export($notification_CategorizableObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Notification_CategorizableObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Notification_CategorizableObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_CategorizableObjectIDType[] $iD
-     * @return \StructType\Notification_CategorizableObjectType
+     * @param \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Notification_CategorizableObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_CategorizableObjectIDType $item
-     * @return \StructType\Notification_CategorizableObjectType
+     * @param \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectType
      */
-    public function addToID(\StructType\Notification_CategorizableObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Notification_CategorizableObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Notification_CategorizableObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Notification_CategorizableObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Notification_CategorizableObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Notification_CategorizableObjectType
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Notification_CategorizableObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Notification_CategorizableObjectType
+     * @return \WorkdayWsdl\\StructType\Notification_CategorizableObjectType
      */
     public static function __set_state(array $array)
     {

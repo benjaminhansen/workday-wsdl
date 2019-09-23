@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a LGBT Identification
      * - maxOccurs: unbounded
-     * @var \StructType\LGBT_IdentificationObjectType[]
+     * @var \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType[]
      */
     public $LGBT_Identification_Reference;
     /**
      * Constructor method for LGBT_Identification_Request_ReferencesType
      * @uses LGBT_Identification_Request_ReferencesType::setLGBT_Identification_Reference()
-     * @param \StructType\LGBT_IdentificationObjectType[] $lGBT_Identification_Reference
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType[] $lGBT_Identification_Reference
      */
     public function __construct(array $lGBT_Identification_Reference = array())
     {
@@ -32,7 +32,7 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get LGBT_Identification_Reference value
-     * @return \StructType\LGBT_IdentificationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType[]|null
      */
     public function getLGBT_Identification_Reference()
     {
@@ -50,12 +50,12 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem instanceof \StructType\LGBT_IdentificationObjectType) {
+            if (!$lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType) {
                 $invalidValues[] = is_object($lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem) ? get_class($lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem) : sprintf('%s(%s)', gettype($lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem), var_export($lGBT_Identification_Request_ReferencesTypeLGBT_Identification_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The LGBT_Identification_Reference property can only contain items of type \StructType\LGBT_IdentificationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The LGBT_Identification_Reference property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
     /**
      * Set LGBT_Identification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationObjectType[] $lGBT_Identification_Reference
-     * @return \StructType\LGBT_Identification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType[] $lGBT_Identification_Reference
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Request_ReferencesType
      */
     public function setLGBT_Identification_Reference(array $lGBT_Identification_Reference = array())
     {
@@ -78,14 +78,14 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to LGBT_Identification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LGBT_IdentificationObjectType $item
-     * @return \StructType\LGBT_Identification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $item
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Request_ReferencesType
      */
-    public function addToLGBT_Identification_Reference(\StructType\LGBT_IdentificationObjectType $item)
+    public function addToLGBT_Identification_Reference(\WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LGBT_IdentificationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The LGBT_Identification_Reference property can only contain items of type \StructType\LGBT_IdentificationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The LGBT_Identification_Reference property can only contain items of type \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->LGBT_Identification_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class LGBT_Identification_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LGBT_Identification_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

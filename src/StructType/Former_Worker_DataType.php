@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker Type (Employee or Contingent Worker) for the former worker. Required for an add.
      * - minOccurs: 0
-     * @var \StructType\Worker_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Worker_TypeObjectType
      */
     public $Worker_Type_Reference;
     /**
@@ -78,7 +78,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * The Personal_Information_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType
      */
     public $Personal_Information_Data;
     /**
@@ -180,7 +180,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Currency Reference for the Base Pay.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -188,7 +188,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Frequency Reference for the Base Pay.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -208,7 +208,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Enter Yes if the former worker is eligible for rehire. Enter No if the former worker isn’t eligible for rehire. If empty, Workday uses the existing rehire eligibility status.
      * - minOccurs: 0
-     * @var \StructType\Common_Yes_NoObjectType
+     * @var \WorkdayWsdl\\StructType\Common_Yes_NoObjectType
      */
     public $Eligible_for_Rehire_Reference;
     /**
@@ -224,7 +224,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * The Former_Worker_Related_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_Related_DataType
+     * @var \WorkdayWsdl\\StructType\Former_Worker_Related_DataType
      */
     public $Former_Worker_Related_Data;
     /**
@@ -255,12 +255,12 @@ class Former_Worker_DataType extends AbstractStructBase
      * @uses Former_Worker_DataType::setFormer_Worker_Related_Data()
      * @param string $iD
      * @param string $former_Worker_ID
-     * @param \StructType\Worker_TypeObjectType $worker_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_TypeObjectType $worker_Type_Reference
      * @param string $last_Termination_Date
      * @param string $most_Recent_Hire_Date
      * @param string $original_Hire_Date
      * @param string $continuous_Service_Date
-     * @param \StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data
      * @param string $last_Termination_Reason
      * @param string $manager
      * @param string $cost_Center
@@ -271,14 +271,14 @@ class Former_Worker_DataType extends AbstractStructBase
      * @param string $time_Type
      * @param string $location
      * @param float $base_Pay
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      * @param float $scheduled_Weekly_Hours
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference
      * @param string $performance_Rating
-     * @param \StructType\Former_Worker_Related_DataType $former_Worker_Related_Data
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Related_DataType $former_Worker_Related_Data
      */
-    public function __construct($iD = null, $former_Worker_ID = null, \StructType\Worker_TypeObjectType $worker_Type_Reference = null, $last_Termination_Date = null, $most_Recent_Hire_Date = null, $original_Hire_Date = null, $continuous_Service_Date = null, \StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data = null, $last_Termination_Reason = null, $manager = null, $cost_Center = null, $job_Title = null, $job_Code = null, $job_Profile_Text = null, $job_Level = null, $time_Type = null, $location = null, $base_Pay = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null, $scheduled_Weekly_Hours = null, \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference = null, $performance_Rating = null, \StructType\Former_Worker_Related_DataType $former_Worker_Related_Data = null)
+    public function __construct($iD = null, $former_Worker_ID = null, \WorkdayWsdl\\StructType\Worker_TypeObjectType $worker_Type_Reference = null, $last_Termination_Date = null, $most_Recent_Hire_Date = null, $original_Hire_Date = null, $continuous_Service_Date = null, \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data = null, $last_Termination_Reason = null, $manager = null, $cost_Center = null, $job_Title = null, $job_Code = null, $job_Profile_Text = null, $job_Level = null, $time_Type = null, $location = null, $base_Pay = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, $scheduled_Weekly_Hours = null, \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference = null, $performance_Rating = null, \WorkdayWsdl\\StructType\Former_Worker_Related_DataType $former_Worker_Related_Data = null)
     {
         $this
             ->setID($iD)
@@ -317,7 +317,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setID($iD = null)
     {
@@ -339,7 +339,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Former_Worker_ID value
      * @param string $former_Worker_ID
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setFormer_Worker_ID($former_Worker_ID = null)
     {
@@ -352,7 +352,7 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Type_Reference value
-     * @return \StructType\Worker_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Worker_TypeObjectType|null
      */
     public function getWorker_Type_Reference()
     {
@@ -360,10 +360,10 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Type_Reference value
-     * @param \StructType\Worker_TypeObjectType $worker_Type_Reference
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_TypeObjectType $worker_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setWorker_Type_Reference(\StructType\Worker_TypeObjectType $worker_Type_Reference = null)
+    public function setWorker_Type_Reference(\WorkdayWsdl\\StructType\Worker_TypeObjectType $worker_Type_Reference = null)
     {
         $this->Worker_Type_Reference = $worker_Type_Reference;
         return $this;
@@ -379,7 +379,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Last_Termination_Date value
      * @param string $last_Termination_Date
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setLast_Termination_Date($last_Termination_Date = null)
     {
@@ -401,7 +401,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Most_Recent_Hire_Date value
      * @param string $most_Recent_Hire_Date
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setMost_Recent_Hire_Date($most_Recent_Hire_Date = null)
     {
@@ -423,7 +423,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Original_Hire_Date value
      * @param string $original_Hire_Date
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setOriginal_Hire_Date($original_Hire_Date = null)
     {
@@ -445,7 +445,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Continuous_Service_Date value
      * @param string $continuous_Service_Date
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setContinuous_Service_Date($continuous_Service_Date = null)
     {
@@ -458,7 +458,7 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Personal_Information_Data value
-     * @return \StructType\Former_Worker_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType|null
      */
     public function getPersonal_Information_Data()
     {
@@ -466,10 +466,10 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Personal_Information_Data value
-     * @param \StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setPersonal_Information_Data(\StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data = null)
+    public function setPersonal_Information_Data(\WorkdayWsdl\\StructType\Former_Worker_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this->Personal_Information_Data = $personal_Information_Data;
         return $this;
@@ -485,7 +485,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Last_Termination_Reason value
      * @param string $last_Termination_Reason
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setLast_Termination_Reason($last_Termination_Reason = null)
     {
@@ -507,7 +507,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Manager value
      * @param string $manager
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setManager($manager = null)
     {
@@ -529,7 +529,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Cost_Center value
      * @param string $cost_Center
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setCost_Center($cost_Center = null)
     {
@@ -551,7 +551,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Job_Title value
      * @param string $job_Title
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setJob_Title($job_Title = null)
     {
@@ -573,7 +573,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Job_Code value
      * @param string $job_Code
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setJob_Code($job_Code = null)
     {
@@ -595,7 +595,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Text value
      * @param string $job_Profile_Text
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setJob_Profile_Text($job_Profile_Text = null)
     {
@@ -617,7 +617,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Job_Level value
      * @param string $job_Level
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setJob_Level($job_Level = null)
     {
@@ -639,7 +639,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Time_Type value
      * @param string $time_Type
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setTime_Type($time_Type = null)
     {
@@ -661,7 +661,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Location value
      * @param string $location
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setLocation($location = null)
     {
@@ -683,7 +683,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Base_Pay value
      * @param float $base_Pay
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setBase_Pay($base_Pay = null)
     {
@@ -708,7 +708,7 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -716,17 +716,17 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -734,10 +734,10 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -753,7 +753,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Scheduled_Weekly_Hours value
      * @param float $scheduled_Weekly_Hours
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setScheduled_Weekly_Hours($scheduled_Weekly_Hours = null)
     {
@@ -774,7 +774,7 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Eligible_for_Rehire_Reference value
-     * @return \StructType\Common_Yes_NoObjectType|null
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectType|null
      */
     public function getEligible_for_Rehire_Reference()
     {
@@ -782,10 +782,10 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Eligible_for_Rehire_Reference value
-     * @param \StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setEligible_for_Rehire_Reference(\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference = null)
+    public function setEligible_for_Rehire_Reference(\WorkdayWsdl\\StructType\Common_Yes_NoObjectType $eligible_for_Rehire_Reference = null)
     {
         $this->Eligible_for_Rehire_Reference = $eligible_for_Rehire_Reference;
         return $this;
@@ -801,7 +801,7 @@ class Former_Worker_DataType extends AbstractStructBase
     /**
      * Set Performance_Rating value
      * @param string $performance_Rating
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public function setPerformance_Rating($performance_Rating = null)
     {
@@ -814,7 +814,7 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Get Former_Worker_Related_Data value
-     * @return \StructType\Former_Worker_Related_DataType|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_Related_DataType|null
      */
     public function getFormer_Worker_Related_Data()
     {
@@ -822,10 +822,10 @@ class Former_Worker_DataType extends AbstractStructBase
     }
     /**
      * Set Former_Worker_Related_Data value
-     * @param \StructType\Former_Worker_Related_DataType $former_Worker_Related_Data
-     * @return \StructType\Former_Worker_DataType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_Related_DataType $former_Worker_Related_Data
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
-    public function setFormer_Worker_Related_Data(\StructType\Former_Worker_Related_DataType $former_Worker_Related_Data = null)
+    public function setFormer_Worker_Related_Data(\WorkdayWsdl\\StructType\Former_Worker_Related_DataType $former_Worker_Related_Data = null)
     {
         $this->Former_Worker_Related_Data = $former_Worker_Related_Data;
         return $this;
@@ -836,7 +836,7 @@ class Former_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public static function __set_state(array $array)
     {

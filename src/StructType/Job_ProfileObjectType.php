@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Job_ProfileObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_ProfileObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Job_ProfileObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Job_ProfileObjectType extends AbstractStructBase
      * Constructor method for Job_ProfileObjectType
      * @uses Job_ProfileObjectType::setID()
      * @uses Job_ProfileObjectType::setDescriptor()
-     * @param \StructType\Job_ProfileObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Job_ProfileObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Job_ProfileObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Job_ProfileObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_ProfileObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$job_ProfileObjectTypeIDItem instanceof \StructType\Job_ProfileObjectIDType) {
+            if (!$job_ProfileObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Job_ProfileObjectIDType) {
                 $invalidValues[] = is_object($job_ProfileObjectTypeIDItem) ? get_class($job_ProfileObjectTypeIDItem) : sprintf('%s(%s)', gettype($job_ProfileObjectTypeIDItem), var_export($job_ProfileObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Job_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_ProfileObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ProfileObjectIDType[] $iD
-     * @return \StructType\Job_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Job_ProfileObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_ProfileObjectIDType $item
-     * @return \StructType\Job_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Job_ProfileObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
-    public function addToID(\StructType\Job_ProfileObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Job_ProfileObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_ProfileObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Job_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_ProfileObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_ProfileObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Job_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Job_ProfileObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Job_ProfileObjectType
      */
     public static function __set_state(array $array)
     {

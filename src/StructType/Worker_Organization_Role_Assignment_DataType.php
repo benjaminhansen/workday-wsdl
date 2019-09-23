@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier that can be used to reference a worker(s) that fills the organization role.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -33,10 +33,10 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
      * Constructor method for Worker_Organization_Role_Assignment_DataType
      * @uses Worker_Organization_Role_Assignment_DataType::setWorker_Reference()
      * @uses Worker_Organization_Role_Assignment_DataType::setAssignment_From()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $assignment_From
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $assignment_From = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $assignment_From = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -44,7 +44,7 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -52,10 +52,10 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Worker_Organization_Role_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Role_Assignment_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -71,7 +71,7 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
     /**
      * Set Assignment_From value
      * @param string $assignment_From
-     * @return \StructType\Worker_Organization_Role_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Role_Assignment_DataType
      */
     public function setAssignment_From($assignment_From = null)
     {
@@ -88,7 +88,7 @@ class Worker_Organization_Role_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Organization_Role_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Role_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

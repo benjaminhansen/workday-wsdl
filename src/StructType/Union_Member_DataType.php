@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Union_Member_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the worker who's enrolled, or enrolling, in the union.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
      * The Union_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the union in which the worker is member.
-     * @var \StructType\UnionObjectType
+     * @var \WorkdayWsdl\\StructType\UnionObjectType
      */
     public $Union_Reference;
     /**
@@ -40,7 +40,7 @@ class Union_Member_DataType extends AbstractStructBase
      * The Union_Membership_Data
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Union_Membership_DataType[]
+     * @var \WorkdayWsdl\\StructType\Union_Membership_DataType[]
      */
     public $Union_Membership_Data;
     /**
@@ -49,12 +49,12 @@ class Union_Member_DataType extends AbstractStructBase
      * @uses Union_Member_DataType::setUnion_Reference()
      * @uses Union_Member_DataType::setSeniority_Date()
      * @uses Union_Member_DataType::setUnion_Membership_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\UnionObjectType $union_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\UnionObjectType $union_Reference
      * @param string $seniority_Date
-     * @param \StructType\Union_Membership_DataType[] $union_Membership_Data
+     * @param \WorkdayWsdl\\StructType\Union_Membership_DataType[] $union_Membership_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\UnionObjectType $union_Reference = null, $seniority_Date = null, array $union_Membership_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\UnionObjectType $union_Reference = null, $seniority_Date = null, array $union_Membership_Data = array())
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -64,7 +64,7 @@ class Union_Member_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -72,17 +72,17 @@ class Union_Member_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Union_Member_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Union_Reference value
-     * @return \StructType\UnionObjectType|null
+     * @return \WorkdayWsdl\\StructType\UnionObjectType|null
      */
     public function getUnion_Reference()
     {
@@ -90,10 +90,10 @@ class Union_Member_DataType extends AbstractStructBase
     }
     /**
      * Set Union_Reference value
-     * @param \StructType\UnionObjectType $union_Reference
-     * @return \StructType\Union_Member_DataType
+     * @param \WorkdayWsdl\\StructType\UnionObjectType $union_Reference
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
-    public function setUnion_Reference(\StructType\UnionObjectType $union_Reference = null)
+    public function setUnion_Reference(\WorkdayWsdl\\StructType\UnionObjectType $union_Reference = null)
     {
         $this->Union_Reference = $union_Reference;
         return $this;
@@ -109,7 +109,7 @@ class Union_Member_DataType extends AbstractStructBase
     /**
      * Set Seniority_Date value
      * @param string $seniority_Date
-     * @return \StructType\Union_Member_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
     public function setSeniority_Date($seniority_Date = null)
     {
@@ -122,7 +122,7 @@ class Union_Member_DataType extends AbstractStructBase
     }
     /**
      * Get Union_Membership_Data value
-     * @return \StructType\Union_Membership_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Union_Membership_DataType[]|null
      */
     public function getUnion_Membership_Data()
     {
@@ -140,12 +140,12 @@ class Union_Member_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $union_Member_DataTypeUnion_Membership_DataItem) {
             // validation for constraint: itemType
-            if (!$union_Member_DataTypeUnion_Membership_DataItem instanceof \StructType\Union_Membership_DataType) {
+            if (!$union_Member_DataTypeUnion_Membership_DataItem instanceof \WorkdayWsdl\\StructType\Union_Membership_DataType) {
                 $invalidValues[] = is_object($union_Member_DataTypeUnion_Membership_DataItem) ? get_class($union_Member_DataTypeUnion_Membership_DataItem) : sprintf('%s(%s)', gettype($union_Member_DataTypeUnion_Membership_DataItem), var_export($union_Member_DataTypeUnion_Membership_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Union_Membership_Data property can only contain items of type \StructType\Union_Membership_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Union_Membership_Data property can only contain items of type \WorkdayWsdl\\StructType\Union_Membership_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -153,8 +153,8 @@ class Union_Member_DataType extends AbstractStructBase
     /**
      * Set Union_Membership_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Union_Membership_DataType[] $union_Membership_Data
-     * @return \StructType\Union_Member_DataType
+     * @param \WorkdayWsdl\\StructType\Union_Membership_DataType[] $union_Membership_Data
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
     public function setUnion_Membership_Data(array $union_Membership_Data = array())
     {
@@ -168,14 +168,14 @@ class Union_Member_DataType extends AbstractStructBase
     /**
      * Add item to Union_Membership_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Union_Membership_DataType $item
-     * @return \StructType\Union_Member_DataType
+     * @param \WorkdayWsdl\\StructType\Union_Membership_DataType $item
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
-    public function addToUnion_Membership_Data(\StructType\Union_Membership_DataType $item)
+    public function addToUnion_Membership_Data(\WorkdayWsdl\\StructType\Union_Membership_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Union_Membership_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Union_Membership_Data property can only contain items of type \StructType\Union_Membership_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Union_Membership_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Union_Membership_Data property can only contain items of type \WorkdayWsdl\\StructType\Union_Membership_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Union_Membership_Data[] = $item;
         return $this;
@@ -186,7 +186,7 @@ class Union_Member_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Union_Member_DataType
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType
      */
     public static function __set_state(array $array)
     {

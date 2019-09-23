@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Business_Site_FindType extends AbstractStructBase
     /**
      * Set Location_Name value
      * @param string $location_Name
-     * @return \StructType\Business_Site_FindType
+     * @return \WorkdayWsdl\\StructType\Business_Site_FindType
      */
     public function setLocation_Name($location_Name = null)
     {
@@ -75,7 +75,7 @@ class Business_Site_FindType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Business_Site_FindType
+     * @return \WorkdayWsdl\\StructType\Business_Site_FindType
      */
     public function setVersion($version = null)
     {
@@ -92,7 +92,7 @@ class Business_Site_FindType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Site_FindType
+     * @return \WorkdayWsdl\\StructType\Business_Site_FindType
      */
     public static function __set_state(array $array)
     {

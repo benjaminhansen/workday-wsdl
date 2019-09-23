@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the dependent which was added or updated.
      * - minOccurs: 0
-     * @var \StructType\DependentObjectType
+     * @var \WorkdayWsdl\\StructType\DependentObjectType
      */
     public $Dependent_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the employee for the dependent.
      * - minOccurs: 0
-     * @var \StructType\EmployeeObjectType
+     * @var \WorkdayWsdl\\StructType\EmployeeObjectType
      */
     public $Employee_Reference;
     /**
@@ -33,7 +33,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Application_Instance_Related_Exceptions_DataType[]
+     * @var \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[]
      */
     public $Exceptions_Response_Data;
     /**
@@ -49,12 +49,12 @@ class Put_Dependent_ResponseType extends AbstractStructBase
      * @uses Put_Dependent_ResponseType::setEmployee_Reference()
      * @uses Put_Dependent_ResponseType::setExceptions_Response_Data()
      * @uses Put_Dependent_ResponseType::setVersion()
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
      * @param string $version
      */
-    public function __construct(\StructType\DependentObjectType $dependent_Reference = null, \StructType\EmployeeObjectType $employee_Reference = null, array $exceptions_Response_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null, \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null, array $exceptions_Response_Data = array(), $version = null)
     {
         $this
             ->setDependent_Reference($dependent_Reference)
@@ -64,7 +64,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     }
     /**
      * Get Dependent_Reference value
-     * @return \StructType\DependentObjectType|null
+     * @return \WorkdayWsdl\\StructType\DependentObjectType|null
      */
     public function getDependent_Reference()
     {
@@ -72,17 +72,17 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     }
     /**
      * Set Dependent_Reference value
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @return \StructType\Put_Dependent_ResponseType
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
-    public function setDependent_Reference(\StructType\DependentObjectType $dependent_Reference = null)
+    public function setDependent_Reference(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null)
     {
         $this->Dependent_Reference = $dependent_Reference;
         return $this;
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\EmployeeObjectType|null
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectType|null
      */
     public function getEmployee_Reference()
     {
@@ -90,17 +90,17 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @return \StructType\Put_Dependent_ResponseType
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
-    public function setEmployee_Reference(\StructType\EmployeeObjectType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Exceptions_Response_Data value
-     * @return \StructType\Application_Instance_Related_Exceptions_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[]|null
      */
     public function getExceptions_Response_Data()
     {
@@ -118,12 +118,12 @@ class Put_Dependent_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Dependent_ResponseTypeExceptions_Response_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Dependent_ResponseTypeExceptions_Response_DataItem instanceof \StructType\Application_Instance_Related_Exceptions_DataType) {
+            if (!$put_Dependent_ResponseTypeExceptions_Response_DataItem instanceof \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType) {
                 $invalidValues[] = is_object($put_Dependent_ResponseTypeExceptions_Response_DataItem) ? get_class($put_Dependent_ResponseTypeExceptions_Response_DataItem) : sprintf('%s(%s)', gettype($put_Dependent_ResponseTypeExceptions_Response_DataItem), var_export($put_Dependent_ResponseTypeExceptions_Response_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Exceptions_Response_Data property can only contain items of type \StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Exceptions_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -131,8 +131,8 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     /**
      * Set Exceptions_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
-     * @return \StructType\Put_Dependent_ResponseType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType[] $exceptions_Response_Data
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
     public function setExceptions_Response_Data(array $exceptions_Response_Data = array())
     {
@@ -146,14 +146,14 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     /**
      * Add item to Exceptions_Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Application_Instance_Related_Exceptions_DataType $item
-     * @return \StructType\Put_Dependent_ResponseType
+     * @param \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
-    public function addToExceptions_Response_Data(\StructType\Application_Instance_Related_Exceptions_DataType $item)
+    public function addToExceptions_Response_Data(\WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Application_Instance_Related_Exceptions_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Exceptions_Response_Data property can only contain items of type \StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Exceptions_Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Application_Instance_Related_Exceptions_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Exceptions_Response_Data[] = $item;
         return $this;
@@ -169,7 +169,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Dependent_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -186,7 +186,7 @@ class Put_Dependent_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Dependent_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_ResponseType
      */
     public static function __set_state(array $array)
     {

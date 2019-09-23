@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class DependentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\DependentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\DependentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\DependentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\DependentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\DependentObjectIDType
+     * @return \WorkdayWsdl\\StructType\DependentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DependentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\DependentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\DependentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\DependentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\DependentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\DependentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class DependentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\DependentObjectIDType
+     * @return \WorkdayWsdl\\StructType\DependentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class DependentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DependentObjectIDType
+     * @return \WorkdayWsdl\\StructType\DependentObjectIDType
      */
     public static function __set_state(array $array)
     {

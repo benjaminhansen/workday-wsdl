@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class RetentionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\RetentionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\RetentionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\RetentionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\RetentionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\RetentionObjectIDType
+     * @return \WorkdayWsdl\\StructType\RetentionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\RetentionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\RetentionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\RetentionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\RetentionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\RetentionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\RetentionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class RetentionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\RetentionObjectIDType
+     * @return \WorkdayWsdl\\StructType\RetentionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class RetentionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RetentionObjectIDType
+     * @return \WorkdayWsdl\\StructType\RetentionObjectIDType
      */
     public static function __set_state(array $array)
     {

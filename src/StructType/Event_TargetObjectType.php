@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Event_TargetObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Event_TargetObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Event_TargetObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Event_TargetObjectType extends AbstractStructBase
      * Constructor method for Event_TargetObjectType
      * @uses Event_TargetObjectType::setID()
      * @uses Event_TargetObjectType::setDescriptor()
-     * @param \StructType\Event_TargetObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Event_TargetObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Event_TargetObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Event_TargetObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $event_TargetObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$event_TargetObjectTypeIDItem instanceof \StructType\Event_TargetObjectIDType) {
+            if (!$event_TargetObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Event_TargetObjectIDType) {
                 $invalidValues[] = is_object($event_TargetObjectTypeIDItem) ? get_class($event_TargetObjectTypeIDItem) : sprintf('%s(%s)', gettype($event_TargetObjectTypeIDItem), var_export($event_TargetObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Event_TargetObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Event_TargetObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Event_TargetObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_TargetObjectIDType[] $iD
-     * @return \StructType\Event_TargetObjectType
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Event_TargetObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_TargetObjectIDType $item
-     * @return \StructType\Event_TargetObjectType
+     * @param \WorkdayWsdl\\StructType\Event_TargetObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectType
      */
-    public function addToID(\StructType\Event_TargetObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Event_TargetObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Event_TargetObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Event_TargetObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Event_TargetObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Event_TargetObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Event_TargetObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Event_TargetObjectType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Event_TargetObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Event_TargetObjectType
+     * @return \WorkdayWsdl\\StructType\Event_TargetObjectType
      */
     public static function __set_state(array $array)
     {

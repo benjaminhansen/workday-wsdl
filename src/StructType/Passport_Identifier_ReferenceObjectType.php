@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Passport_Identifier_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Passport_Identifier_ReferenceObjectType
      * @uses Passport_Identifier_ReferenceObjectType::setID()
      * @uses Passport_Identifier_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Passport_Identifier_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Passport_Identifier_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $passport_Identifier_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$passport_Identifier_ReferenceObjectTypeIDItem instanceof \StructType\Passport_Identifier_ReferenceObjectIDType) {
+            if (!$passport_Identifier_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($passport_Identifier_ReferenceObjectTypeIDItem) ? get_class($passport_Identifier_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($passport_Identifier_ReferenceObjectTypeIDItem), var_export($passport_Identifier_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Passport_Identifier_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_Identifier_ReferenceObjectIDType[] $iD
-     * @return \StructType\Passport_Identifier_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_Identifier_ReferenceObjectIDType $item
-     * @return \StructType\Passport_Identifier_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectType
      */
-    public function addToID(\StructType\Passport_Identifier_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Passport_Identifier_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Passport_Identifier_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Passport_Identifier_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Passport_Identifier_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Passport_Identifier_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

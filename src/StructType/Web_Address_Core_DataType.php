@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Web_Address_Core_DataType extends AbstractStructBase
     /**
      * Set Web_Address value
      * @param string $web_Address
-     * @return \StructType\Web_Address_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_Core_DataType
      */
     public function setWeb_Address($web_Address = null)
     {
@@ -75,7 +75,7 @@ class Web_Address_Core_DataType extends AbstractStructBase
     /**
      * Set Web_Address_Comment value
      * @param string $web_Address_Comment
-     * @return \StructType\Web_Address_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_Core_DataType
      */
     public function setWeb_Address_Comment($web_Address_Comment = null)
     {
@@ -92,7 +92,7 @@ class Web_Address_Core_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Web_Address_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_Core_DataType
      */
     public static function __set_state(array $array)
     {

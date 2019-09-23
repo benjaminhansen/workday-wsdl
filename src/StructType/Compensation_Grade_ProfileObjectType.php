@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Compensation_Grade_ProfileObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
      * Constructor method for Compensation_Grade_ProfileObjectType
      * @uses Compensation_Grade_ProfileObjectType::setID()
      * @uses Compensation_Grade_ProfileObjectType::setDescriptor()
-     * @param \StructType\Compensation_Grade_ProfileObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Compensation_Grade_ProfileObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $compensation_Grade_ProfileObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$compensation_Grade_ProfileObjectTypeIDItem instanceof \StructType\Compensation_Grade_ProfileObjectIDType) {
+            if (!$compensation_Grade_ProfileObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType) {
                 $invalidValues[] = is_object($compensation_Grade_ProfileObjectTypeIDItem) ? get_class($compensation_Grade_ProfileObjectTypeIDItem) : sprintf('%s(%s)', gettype($compensation_Grade_ProfileObjectTypeIDItem), var_export($compensation_Grade_ProfileObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Compensation_Grade_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_Grade_ProfileObjectIDType[] $iD
-     * @return \StructType\Compensation_Grade_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_Grade_ProfileObjectIDType $item
-     * @return \StructType\Compensation_Grade_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType
      */
-    public function addToID(\StructType\Compensation_Grade_ProfileObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Compensation_Grade_ProfileObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Compensation_Grade_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Compensation_Grade_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Compensation_Grade_ProfileObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_Grade_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ProfileObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Disability_Status_Information_Data_for_Related_PersonType[]
+     * @var \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType[]
      */
     public $Disability_Status_Information_Data;
     /**
@@ -35,7 +35,7 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
      * @uses Disability_Information_Data_for_Related_PersonType::setReplace_All()
      * @uses Disability_Information_Data_for_Related_PersonType::setDisability_Status_Information_Data()
      * @param bool $replace_All
-     * @param \StructType\Disability_Status_Information_Data_for_Related_PersonType[] $disability_Status_Information_Data
+     * @param \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType[] $disability_Status_Information_Data
      */
     public function __construct($replace_All = null, array $disability_Status_Information_Data = array())
     {
@@ -54,7 +54,7 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Disability_Information_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -67,7 +67,7 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
     }
     /**
      * Get Disability_Status_Information_Data value
-     * @return \StructType\Disability_Status_Information_Data_for_Related_PersonType[]|null
+     * @return \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType[]|null
      */
     public function getDisability_Status_Information_Data()
     {
@@ -85,12 +85,12 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
         $invalidValues = [];
         foreach ($values as $disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem instanceof \StructType\Disability_Status_Information_Data_for_Related_PersonType) {
+            if (!$disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem instanceof \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType) {
                 $invalidValues[] = is_object($disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem) ? get_class($disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem) : sprintf('%s(%s)', gettype($disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem), var_export($disability_Information_Data_for_Related_PersonTypeDisability_Status_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability_Status_Information_Data property can only contain items of type \StructType\Disability_Status_Information_Data_for_Related_PersonType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability_Status_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -98,8 +98,8 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
     /**
      * Set Disability_Status_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Status_Information_Data_for_Related_PersonType[] $disability_Status_Information_Data
-     * @return \StructType\Disability_Information_Data_for_Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType[] $disability_Status_Information_Data
+     * @return \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType
      */
     public function setDisability_Status_Information_Data(array $disability_Status_Information_Data = array())
     {
@@ -113,14 +113,14 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
     /**
      * Add item to Disability_Status_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Disability_Status_Information_Data_for_Related_PersonType $item
-     * @return \StructType\Disability_Information_Data_for_Related_PersonType
+     * @param \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType $item
+     * @return \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType
      */
-    public function addToDisability_Status_Information_Data(\StructType\Disability_Status_Information_Data_for_Related_PersonType $item)
+    public function addToDisability_Status_Information_Data(\WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Disability_Status_Information_Data_for_Related_PersonType) {
-            throw new \InvalidArgumentException(sprintf('The Disability_Status_Information_Data property can only contain items of type \StructType\Disability_Status_Information_Data_for_Related_PersonType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType) {
+            throw new \InvalidArgumentException(sprintf('The Disability_Status_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Disability_Status_Information_Data_for_Related_PersonType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability_Status_Information_Data[] = $item;
         return $this;
@@ -131,7 +131,7 @@ class Disability_Information_Data_for_Related_PersonType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Information_Data_for_Related_PersonType
+     * @return \WorkdayWsdl\\StructType\Disability_Information_Data_for_Related_PersonType
      */
     public static function __set_state(array $array)
     {

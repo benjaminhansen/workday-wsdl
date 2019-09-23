@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class Instance_IDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Instance_IDType
+     * @return \WorkdayWsdl\\StructType\Instance_IDType
      */
     public function set_($_ = null)
     {
@@ -82,7 +82,7 @@ class Instance_IDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Instance_IDType
+     * @return \WorkdayWsdl\\StructType\Instance_IDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -104,7 +104,7 @@ class Instance_IDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Instance_IDType
+     * @return \WorkdayWsdl\\StructType\Instance_IDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -126,7 +126,7 @@ class Instance_IDType extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\Instance_IDType
+     * @return \WorkdayWsdl\\StructType\Instance_IDType
      */
     public function setType($type = null)
     {
@@ -143,7 +143,7 @@ class Instance_IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instance_IDType
+     * @return \WorkdayWsdl\\StructType\Instance_IDType
      */
     public static function __set_state(array $array)
     {

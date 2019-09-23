@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: Country Reference
      * - maxOccurs: unbounded
-     * @var \StructType\CountryObjectType[]
+     * @var \WorkdayWsdl\\StructType\CountryObjectType[]
      */
     public $Country_Reference;
     /**
      * Constructor method for User_Preferred_Communication_Language_ReferencesType
      * @uses User_Preferred_Communication_Language_ReferencesType::setCountry_Reference()
-     * @param \StructType\CountryObjectType[] $country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $country_Reference
      */
     public function __construct(array $country_Reference = array())
     {
@@ -33,7 +33,7 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType[]|null
      */
     public function getCountry_Reference()
     {
@@ -51,12 +51,12 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem instanceof \StructType\CountryObjectType) {
+            if (!$user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
                 $invalidValues[] = is_object($user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem) ? get_class($user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem) : sprintf('%s(%s)', gettype($user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem), var_export($user_Preferred_Communication_Language_ReferencesTypeCountry_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Country_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Country_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
     /**
      * Set Country_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType[] $country_Reference
-     * @return \StructType\User_Preferred_Communication_Language_ReferencesType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $country_Reference
+     * @return \WorkdayWsdl\\StructType\User_Preferred_Communication_Language_ReferencesType
      */
     public function setCountry_Reference(array $country_Reference = array())
     {
@@ -79,14 +79,14 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
     /**
      * Add item to Country_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType $item
-     * @return \StructType\User_Preferred_Communication_Language_ReferencesType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $item
+     * @return \WorkdayWsdl\\StructType\User_Preferred_Communication_Language_ReferencesType
      */
-    public function addToCountry_Reference(\StructType\CountryObjectType $item)
+    public function addToCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CountryObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Country_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Country_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Country_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class User_Preferred_Communication_Language_ReferencesType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\User_Preferred_Communication_Language_ReferencesType
+     * @return \WorkdayWsdl\\StructType\User_Preferred_Communication_Language_ReferencesType
      */
     public static function __set_state(array $array)
     {

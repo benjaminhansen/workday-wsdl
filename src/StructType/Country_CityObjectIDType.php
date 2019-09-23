@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,17 +66,17 @@ class Country_CityObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Country_CityReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Country_CityReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Country_CityReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Country_CityReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Country_CityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Country_CityReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Country_CityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Country_CityReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Country_CityReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Country_CityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Country_CityReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -92,7 +92,7 @@ class Country_CityObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Country_CityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectIDType
      */
     public function set_($_ = null)
     {
@@ -114,7 +114,7 @@ class Country_CityObjectIDType extends AbstractStructBase
     /**
      * Set parent_id value
      * @param string $parent_id
-     * @return \StructType\Country_CityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectIDType
      */
     public function setParent_id($parent_id = null)
     {
@@ -136,7 +136,7 @@ class Country_CityObjectIDType extends AbstractStructBase
     /**
      * Set parent_type value
      * @param string $parent_type
-     * @return \StructType\Country_CityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectIDType
      */
     public function setParent_type($parent_type = null)
     {
@@ -153,7 +153,7 @@ class Country_CityObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Country_CityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Country_CityObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Time_ZoneObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Time_ZoneReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Time_ZoneReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Time_ZoneReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Time_ZoneReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Time_ZoneObjectIDType
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Time_ZoneReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Time_ZoneReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Time_ZoneReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Time_ZoneReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Time_ZoneReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Time_ZoneReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Time_ZoneObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Time_ZoneObjectIDType
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Time_ZoneObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Time_ZoneObjectIDType
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -67,7 +67,7 @@ class Provisioning_Group_Assignment_for_Person_DataType extends AbstractStructBa
     /**
      * Set Provisioning_Group value
      * @param string $provisioning_Group
-     * @return \StructType\Provisioning_Group_Assignment_for_Person_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType
      */
     public function setProvisioning_Group($provisioning_Group = null)
     {
@@ -89,7 +89,7 @@ class Provisioning_Group_Assignment_for_Person_DataType extends AbstractStructBa
     /**
      * Set Status value
      * @param string $status
-     * @return \StructType\Provisioning_Group_Assignment_for_Person_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType
      */
     public function setStatus($status = null)
     {
@@ -111,7 +111,7 @@ class Provisioning_Group_Assignment_for_Person_DataType extends AbstractStructBa
     /**
      * Set Last_Changed value
      * @param string $last_Changed
-     * @return \StructType\Provisioning_Group_Assignment_for_Person_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType
      */
     public function setLast_Changed($last_Changed = null)
     {
@@ -128,7 +128,7 @@ class Provisioning_Group_Assignment_for_Person_DataType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_Assignment_for_Person_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_for_Person_DataType
      */
     public static function __set_state(array $array)
     {

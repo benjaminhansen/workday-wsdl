@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Reference_Letter_Event_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Reference_Letter_Event_DataType
+     * @var \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType
      */
     public $Reference_Letter_Event_Data;
     /**
@@ -38,11 +38,11 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
      * @uses Create_Reference_Letter_for_Worker_RequestType::setBusiness_Process_Parameters()
      * @uses Create_Reference_Letter_for_Worker_RequestType::setReference_Letter_Event_Data()
      * @uses Create_Reference_Letter_for_Worker_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -51,7 +51,7 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -59,17 +59,17 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Create_Reference_Letter_for_Worker_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Create_Reference_Letter_for_Worker_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Reference_Letter_Event_Data value
-     * @return \StructType\Reference_Letter_Event_DataType|null
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType|null
      */
     public function getReference_Letter_Event_Data()
     {
@@ -77,10 +77,10 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
     }
     /**
      * Set Reference_Letter_Event_Data value
-     * @param \StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data
-     * @return \StructType\Create_Reference_Letter_for_Worker_RequestType
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data
+     * @return \WorkdayWsdl\\StructType\Create_Reference_Letter_for_Worker_RequestType
      */
-    public function setReference_Letter_Event_Data(\StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data = null)
+    public function setReference_Letter_Event_Data(\WorkdayWsdl\\StructType\Reference_Letter_Event_DataType $reference_Letter_Event_Data = null)
     {
         $this->Reference_Letter_Event_Data = $reference_Letter_Event_Data;
         return $this;
@@ -96,7 +96,7 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Create_Reference_Letter_for_Worker_RequestType
+     * @return \WorkdayWsdl\\StructType\Create_Reference_Letter_for_Worker_RequestType
      */
     public function setVersion($version = null)
     {
@@ -113,7 +113,7 @@ class Create_Reference_Letter_for_Worker_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Create_Reference_Letter_for_Worker_RequestType
+     * @return \WorkdayWsdl\\StructType\Create_Reference_Letter_for_Worker_RequestType
      */
     public static function __set_state(array $array)
     {

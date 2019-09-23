@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Military_Service_ReferenceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
      * Constructor method for Military_Service_ReferenceObjectType
      * @uses Military_Service_ReferenceObjectType::setID()
      * @uses Military_Service_ReferenceObjectType::setDescriptor()
-     * @param \StructType\Military_Service_ReferenceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Military_Service_ReferenceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $military_Service_ReferenceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$military_Service_ReferenceObjectTypeIDItem instanceof \StructType\Military_Service_ReferenceObjectIDType) {
+            if (!$military_Service_ReferenceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType) {
                 $invalidValues[] = is_object($military_Service_ReferenceObjectTypeIDItem) ? get_class($military_Service_ReferenceObjectTypeIDItem) : sprintf('%s(%s)', gettype($military_Service_ReferenceObjectTypeIDItem), var_export($military_Service_ReferenceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Military_Service_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Military_Service_ReferenceObjectIDType[] $iD
-     * @return \StructType\Military_Service_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Military_Service_ReferenceObjectIDType $item
-     * @return \StructType\Military_Service_ReferenceObjectType
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
-    public function addToID(\StructType\Military_Service_ReferenceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Military_Service_ReferenceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Military_Service_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Military_Service_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Military_Service_ReferenceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Military_Service_ReferenceObjectType
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
     public static function __set_state(array $array)
     {

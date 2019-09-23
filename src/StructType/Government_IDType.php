@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Government_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Reference ID for the Government Identifier.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Government_ID_Reference;
     /**
@@ -25,7 +25,7 @@ class Government_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Government Identifier Data
      * - minOccurs: 0
-     * @var \StructType\Government_ID_DataType
+     * @var \WorkdayWsdl\\StructType\Government_ID_DataType
      */
     public $Government_ID_Data;
     /**
@@ -33,7 +33,7 @@ class Government_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Shared Reference ID for Government Identifiers.
      * - minOccurs: 0
-     * @var \StructType\Government_Identifier_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType
      */
     public $Government_ID_Shared_Reference;
     /**
@@ -49,12 +49,12 @@ class Government_IDType extends AbstractStructBase
      * @uses Government_IDType::setGovernment_ID_Data()
      * @uses Government_IDType::setGovernment_ID_Shared_Reference()
      * @uses Government_IDType::setDelete()
-     * @param \StructType\Unique_IdentifierObjectType $government_ID_Reference
-     * @param \StructType\Government_ID_DataType $government_ID_Data
-     * @param \StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $government_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Government_ID_DataType $government_ID_Data
+     * @param \WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $government_ID_Reference = null, \StructType\Government_ID_DataType $government_ID_Data = null, \StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $government_ID_Reference = null, \WorkdayWsdl\\StructType\Government_ID_DataType $government_ID_Data = null, \WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference = null, $delete = null)
     {
         $this
             ->setGovernment_ID_Reference($government_ID_Reference)
@@ -64,7 +64,7 @@ class Government_IDType extends AbstractStructBase
     }
     /**
      * Get Government_ID_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getGovernment_ID_Reference()
     {
@@ -72,17 +72,17 @@ class Government_IDType extends AbstractStructBase
     }
     /**
      * Set Government_ID_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $government_ID_Reference
-     * @return \StructType\Government_IDType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $government_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Government_IDType
      */
-    public function setGovernment_ID_Reference(\StructType\Unique_IdentifierObjectType $government_ID_Reference = null)
+    public function setGovernment_ID_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $government_ID_Reference = null)
     {
         $this->Government_ID_Reference = $government_ID_Reference;
         return $this;
     }
     /**
      * Get Government_ID_Data value
-     * @return \StructType\Government_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\Government_ID_DataType|null
      */
     public function getGovernment_ID_Data()
     {
@@ -90,17 +90,17 @@ class Government_IDType extends AbstractStructBase
     }
     /**
      * Set Government_ID_Data value
-     * @param \StructType\Government_ID_DataType $government_ID_Data
-     * @return \StructType\Government_IDType
+     * @param \WorkdayWsdl\\StructType\Government_ID_DataType $government_ID_Data
+     * @return \WorkdayWsdl\\StructType\Government_IDType
      */
-    public function setGovernment_ID_Data(\StructType\Government_ID_DataType $government_ID_Data = null)
+    public function setGovernment_ID_Data(\WorkdayWsdl\\StructType\Government_ID_DataType $government_ID_Data = null)
     {
         $this->Government_ID_Data = $government_ID_Data;
         return $this;
     }
     /**
      * Get Government_ID_Shared_Reference value
-     * @return \StructType\Government_Identifier_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType|null
      */
     public function getGovernment_ID_Shared_Reference()
     {
@@ -108,10 +108,10 @@ class Government_IDType extends AbstractStructBase
     }
     /**
      * Set Government_ID_Shared_Reference value
-     * @param \StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference
-     * @return \StructType\Government_IDType
+     * @param \WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference
+     * @return \WorkdayWsdl\\StructType\Government_IDType
      */
-    public function setGovernment_ID_Shared_Reference(\StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference = null)
+    public function setGovernment_ID_Shared_Reference(\WorkdayWsdl\\StructType\Government_Identifier_ReferenceObjectType $government_ID_Shared_Reference = null)
     {
         $this->Government_ID_Shared_Reference = $government_ID_Shared_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Government_IDType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Government_IDType
+     * @return \WorkdayWsdl\\StructType\Government_IDType
      */
     public function setDelete($delete = null)
     {
@@ -144,7 +144,7 @@ class Government_IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Government_IDType
+     * @return \WorkdayWsdl\\StructType\Government_IDType
      */
     public static function __set_state(array $array)
     {

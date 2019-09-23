@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Worker_Organization_Membership_DataType extends AbstractStructBase
      * The Organization_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the organization.
-     * @var \StructType\Position_SetObjectType
+     * @var \WorkdayWsdl\\StructType\Position_SetObjectType
      */
     public $Organization_Reference;
     /**
      * The Organization_Data
-     * @var \StructType\Organization_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Summary_DataType
      */
     public $Organization_Data;
     /**
      * Constructor method for Worker_Organization_Membership_DataType
      * @uses Worker_Organization_Membership_DataType::setOrganization_Reference()
      * @uses Worker_Organization_Membership_DataType::setOrganization_Data()
-     * @param \StructType\Position_SetObjectType $organization_Reference
-     * @param \StructType\Organization_Summary_DataType $organization_Data
+     * @param \WorkdayWsdl\\StructType\Position_SetObjectType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Summary_DataType $organization_Data
      */
-    public function __construct(\StructType\Position_SetObjectType $organization_Reference = null, \StructType\Organization_Summary_DataType $organization_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Position_SetObjectType $organization_Reference = null, \WorkdayWsdl\\StructType\Organization_Summary_DataType $organization_Data = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -39,7 +39,7 @@ class Worker_Organization_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\Position_SetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_SetObjectType|null
      */
     public function getOrganization_Reference()
     {
@@ -47,17 +47,17 @@ class Worker_Organization_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\Position_SetObjectType $organization_Reference
-     * @return \StructType\Worker_Organization_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Position_SetObjectType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Membership_DataType
      */
-    public function setOrganization_Reference(\StructType\Position_SetObjectType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\Position_SetObjectType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Data value
-     * @return \StructType\Organization_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Summary_DataType|null
      */
     public function getOrganization_Data()
     {
@@ -65,10 +65,10 @@ class Worker_Organization_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Data value
-     * @param \StructType\Organization_Summary_DataType $organization_Data
-     * @return \StructType\Worker_Organization_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Summary_DataType $organization_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Membership_DataType
      */
-    public function setOrganization_Data(\StructType\Organization_Summary_DataType $organization_Data = null)
+    public function setOrganization_Data(\WorkdayWsdl\\StructType\Organization_Summary_DataType $organization_Data = null)
     {
         $this->Organization_Data = $organization_Data;
         return $this;
@@ -79,7 +79,7 @@ class Worker_Organization_Membership_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Organization_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Organization_Membership_DataType
      */
     public static function __set_state(array $array)
     {

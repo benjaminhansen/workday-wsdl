@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class External_Source_SystemObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Source_SystemObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class External_Source_SystemObjectType extends AbstractStructBase
      * Constructor method for External_Source_SystemObjectType
      * @uses External_Source_SystemObjectType::setID()
      * @uses External_Source_SystemObjectType::setDescriptor()
-     * @param \StructType\External_Source_SystemObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class External_Source_SystemObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\External_Source_SystemObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class External_Source_SystemObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Source_SystemObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Source_SystemObjectTypeIDItem instanceof \StructType\External_Source_SystemObjectIDType) {
+            if (!$external_Source_SystemObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType) {
                 $invalidValues[] = is_object($external_Source_SystemObjectTypeIDItem) ? get_class($external_Source_SystemObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Source_SystemObjectTypeIDItem), var_export($external_Source_SystemObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Source_SystemObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class External_Source_SystemObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Source_SystemObjectIDType[] $iD
-     * @return \StructType\External_Source_SystemObjectType
+     * @param \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class External_Source_SystemObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Source_SystemObjectIDType $item
-     * @return \StructType\External_Source_SystemObjectType
+     * @param \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectType
      */
-    public function addToID(\StructType\External_Source_SystemObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Source_SystemObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Source_SystemObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Source_SystemObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class External_Source_SystemObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Source_SystemObjectType
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class External_Source_SystemObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Source_SystemObjectType
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectType
      */
     public static function __set_state(array $array)
     {

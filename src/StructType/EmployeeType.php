@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class EmployeeType extends AbstractStructBase
 {
     /**
      * The Employee_Reference
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_Reference;
     /**
@@ -22,7 +22,7 @@ class EmployeeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_DataType[]
+     * @var \WorkdayWsdl\\StructType\Employee_DataType[]
      */
     public $Employee_Data;
     /**
@@ -55,13 +55,13 @@ class EmployeeType extends AbstractStructBase
      * @uses EmployeeType::setAs_Of_Date()
      * @uses EmployeeType::setAs_Of_Moment()
      * @uses EmployeeType::setVersion()
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @param \StructType\Employee_DataType[] $employee_Data
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_DataType[] $employee_Data
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Employee_ReferenceType $employee_Reference = null, array $employee_Data = array(), $as_Of_Date = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null, array $employee_Data = array(), $as_Of_Date = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -72,7 +72,7 @@ class EmployeeType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_Reference()
     {
@@ -80,17 +80,17 @@ class EmployeeType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @return \StructType\EmployeeType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
-    public function setEmployee_Reference(\StructType\Employee_ReferenceType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Employee_Data value
-     * @return \StructType\Employee_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_DataType[]|null
      */
     public function getEmployee_Data()
     {
@@ -108,12 +108,12 @@ class EmployeeType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employeeTypeEmployee_DataItem) {
             // validation for constraint: itemType
-            if (!$employeeTypeEmployee_DataItem instanceof \StructType\Employee_DataType) {
+            if (!$employeeTypeEmployee_DataItem instanceof \WorkdayWsdl\\StructType\Employee_DataType) {
                 $invalidValues[] = is_object($employeeTypeEmployee_DataItem) ? get_class($employeeTypeEmployee_DataItem) : sprintf('%s(%s)', gettype($employeeTypeEmployee_DataItem), var_export($employeeTypeEmployee_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Data property can only contain items of type \StructType\Employee_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -121,8 +121,8 @@ class EmployeeType extends AbstractStructBase
     /**
      * Set Employee_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_DataType[] $employee_Data
-     * @return \StructType\EmployeeType
+     * @param \WorkdayWsdl\\StructType\Employee_DataType[] $employee_Data
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
     public function setEmployee_Data(array $employee_Data = array())
     {
@@ -136,14 +136,14 @@ class EmployeeType extends AbstractStructBase
     /**
      * Add item to Employee_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_DataType $item
-     * @return \StructType\EmployeeType
+     * @param \WorkdayWsdl\\StructType\Employee_DataType $item
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
-    public function addToEmployee_Data(\StructType\Employee_DataType $item)
+    public function addToEmployee_Data(\WorkdayWsdl\\StructType\Employee_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Data property can only contain items of type \StructType\Employee_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Data[] = $item;
         return $this;
@@ -159,7 +159,7 @@ class EmployeeType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\EmployeeType
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -181,7 +181,7 @@ class EmployeeType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\EmployeeType
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -203,7 +203,7 @@ class EmployeeType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\EmployeeType
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
     public function setVersion($version = null)
     {
@@ -220,7 +220,7 @@ class EmployeeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EmployeeType
+     * @return \WorkdayWsdl\\StructType\EmployeeType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Staff_Allowed_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Allowed Organization References
      * - maxOccurs: unbounded
-     * @var \StructType\StaffObjectType[]
+     * @var \WorkdayWsdl\\StructType\StaffObjectType[]
      */
     public $Allowed_Organization_Reference;
     /**
@@ -31,7 +31,7 @@ class Staff_Allowed_DataType extends AbstractStructBase
      * Constructor method for Staff_Allowed_DataType
      * @uses Staff_Allowed_DataType::setAllowed_Organization_Reference()
      * @uses Staff_Allowed_DataType::setDelete()
-     * @param \StructType\StaffObjectType[] $allowed_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\StaffObjectType[] $allowed_Organization_Reference
      * @param bool $delete
      */
     public function __construct(array $allowed_Organization_Reference = array(), $delete = null)
@@ -42,7 +42,7 @@ class Staff_Allowed_DataType extends AbstractStructBase
     }
     /**
      * Get Allowed_Organization_Reference value
-     * @return \StructType\StaffObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\StaffObjectType[]|null
      */
     public function getAllowed_Organization_Reference()
     {
@@ -60,12 +60,12 @@ class Staff_Allowed_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $staff_Allowed_DataTypeAllowed_Organization_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$staff_Allowed_DataTypeAllowed_Organization_ReferenceItem instanceof \StructType\StaffObjectType) {
+            if (!$staff_Allowed_DataTypeAllowed_Organization_ReferenceItem instanceof \WorkdayWsdl\\StructType\StaffObjectType) {
                 $invalidValues[] = is_object($staff_Allowed_DataTypeAllowed_Organization_ReferenceItem) ? get_class($staff_Allowed_DataTypeAllowed_Organization_ReferenceItem) : sprintf('%s(%s)', gettype($staff_Allowed_DataTypeAllowed_Organization_ReferenceItem), var_export($staff_Allowed_DataTypeAllowed_Organization_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Allowed_Organization_Reference property can only contain items of type \StructType\StaffObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Allowed_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\StaffObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class Staff_Allowed_DataType extends AbstractStructBase
     /**
      * Set Allowed_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\StaffObjectType[] $allowed_Organization_Reference
-     * @return \StructType\Staff_Allowed_DataType
+     * @param \WorkdayWsdl\\StructType\StaffObjectType[] $allowed_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Staff_Allowed_DataType
      */
     public function setAllowed_Organization_Reference(array $allowed_Organization_Reference = array())
     {
@@ -88,14 +88,14 @@ class Staff_Allowed_DataType extends AbstractStructBase
     /**
      * Add item to Allowed_Organization_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\StaffObjectType $item
-     * @return \StructType\Staff_Allowed_DataType
+     * @param \WorkdayWsdl\\StructType\StaffObjectType $item
+     * @return \WorkdayWsdl\\StructType\Staff_Allowed_DataType
      */
-    public function addToAllowed_Organization_Reference(\StructType\StaffObjectType $item)
+    public function addToAllowed_Organization_Reference(\WorkdayWsdl\\StructType\StaffObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\StaffObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Allowed_Organization_Reference property can only contain items of type \StructType\StaffObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\StaffObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Allowed_Organization_Reference property can only contain items of type \WorkdayWsdl\\StructType\StaffObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Allowed_Organization_Reference[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class Staff_Allowed_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Staff_Allowed_DataType
+     * @return \WorkdayWsdl\\StructType\Staff_Allowed_DataType
      */
     public function setDelete($delete = null)
     {
@@ -128,7 +128,7 @@ class Staff_Allowed_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Staff_Allowed_DataType
+     * @return \WorkdayWsdl\\StructType\Staff_Allowed_DataType
      */
     public static function __set_state(array $array)
     {

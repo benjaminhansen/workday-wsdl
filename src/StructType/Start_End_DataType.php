@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class Start_End_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Time reference for the start time for Calendar Event.
      * - minOccurs: 0
-     * @var \StructType\Twenty_Four_Hour_TimeObjectType
+     * @var \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
     public $Start_Time_Reference;
     /**
@@ -51,7 +51,7 @@ class Start_End_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Time reference for the end time for Calendar Event.
      * - minOccurs: 0
-     * @var \StructType\Twenty_Four_Hour_TimeObjectType
+     * @var \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType
      */
     public $End_Time_Reference;
     /**
@@ -63,11 +63,11 @@ class Start_End_DataType extends AbstractStructBase
      * @uses Start_End_DataType::setEnd_Time_Reference()
      * @param bool $all_Day_Event
      * @param string $start_Date
-     * @param \StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference
      * @param string $end_Date
-     * @param \StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference
      */
-    public function __construct($all_Day_Event = null, $start_Date = null, \StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference = null, $end_Date = null, \StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference = null)
+    public function __construct($all_Day_Event = null, $start_Date = null, \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference = null, $end_Date = null, \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference = null)
     {
         $this
             ->setAll_Day_Event($all_Day_Event)
@@ -87,7 +87,7 @@ class Start_End_DataType extends AbstractStructBase
     /**
      * Set All_Day_Event value
      * @param bool $all_Day_Event
-     * @return \StructType\Start_End_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
     public function setAll_Day_Event($all_Day_Event = null)
     {
@@ -109,7 +109,7 @@ class Start_End_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Start_End_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -122,7 +122,7 @@ class Start_End_DataType extends AbstractStructBase
     }
     /**
      * Get Start_Time_Reference value
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType|null
      */
     public function getStart_Time_Reference()
     {
@@ -130,10 +130,10 @@ class Start_End_DataType extends AbstractStructBase
     }
     /**
      * Set Start_Time_Reference value
-     * @param \StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference
-     * @return \StructType\Start_End_DataType
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
-    public function setStart_Time_Reference(\StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference = null)
+    public function setStart_Time_Reference(\WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $start_Time_Reference = null)
     {
         $this->Start_Time_Reference = $start_Time_Reference;
         return $this;
@@ -149,7 +149,7 @@ class Start_End_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Start_End_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -162,7 +162,7 @@ class Start_End_DataType extends AbstractStructBase
     }
     /**
      * Get End_Time_Reference value
-     * @return \StructType\Twenty_Four_Hour_TimeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType|null
      */
     public function getEnd_Time_Reference()
     {
@@ -170,10 +170,10 @@ class Start_End_DataType extends AbstractStructBase
     }
     /**
      * Set End_Time_Reference value
-     * @param \StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference
-     * @return \StructType\Start_End_DataType
+     * @param \WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
-    public function setEnd_Time_Reference(\StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference = null)
+    public function setEnd_Time_Reference(\WorkdayWsdl\\StructType\Twenty_Four_Hour_TimeObjectType $end_Time_Reference = null)
     {
         $this->End_Time_Reference = $end_Time_Reference;
         return $this;
@@ -184,7 +184,7 @@ class Start_End_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Start_End_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType
      */
     public static function __set_state(array $array)
     {

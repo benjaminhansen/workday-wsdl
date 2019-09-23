@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The position or position restriction for which this employee is a succession plan candidate.
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Element_Reference;
     /**
@@ -25,7 +25,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The readiness of the candidate to fill this position.
      * - minOccurs: 0
-     * @var \StructType\Succession_ReadinessObjectType
+     * @var \WorkdayWsdl\\StructType\Succession_ReadinessObjectType
      */
     public $Succession_Readiness_Reference;
     /**
@@ -63,13 +63,13 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
      * @uses Succession_Plan_Candidate_DataType::setTop_Candidate()
      * @uses Succession_Plan_Candidate_DataType::setNotes()
      * @uses Succession_Plan_Candidate_DataType::setLast_Updated()
-     * @param \StructType\Position_ElementObjectType $position_Element_Reference
-     * @param \StructType\Succession_ReadinessObjectType $succession_Readiness_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Element_Reference
+     * @param \WorkdayWsdl\\StructType\Succession_ReadinessObjectType $succession_Readiness_Reference
      * @param bool $top_Candidate
      * @param string $notes
      * @param string $last_Updated
      */
-    public function __construct(\StructType\Position_ElementObjectType $position_Element_Reference = null, \StructType\Succession_ReadinessObjectType $succession_Readiness_Reference = null, $top_Candidate = null, $notes = null, $last_Updated = null)
+    public function __construct(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Element_Reference = null, \WorkdayWsdl\\StructType\Succession_ReadinessObjectType $succession_Readiness_Reference = null, $top_Candidate = null, $notes = null, $last_Updated = null)
     {
         $this
             ->setPosition_Element_Reference($position_Element_Reference)
@@ -80,7 +80,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     }
     /**
      * Get Position_Element_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Element_Reference()
     {
@@ -88,17 +88,17 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Element_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Element_Reference
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Element_Reference
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
-    public function setPosition_Element_Reference(\StructType\Position_ElementObjectType $position_Element_Reference = null)
+    public function setPosition_Element_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Element_Reference = null)
     {
         $this->Position_Element_Reference = $position_Element_Reference;
         return $this;
     }
     /**
      * Get Succession_Readiness_Reference value
-     * @return \StructType\Succession_ReadinessObjectType|null
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectType|null
      */
     public function getSuccession_Readiness_Reference()
     {
@@ -106,10 +106,10 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     }
     /**
      * Set Succession_Readiness_Reference value
-     * @param \StructType\Succession_ReadinessObjectType $succession_Readiness_Reference
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @param \WorkdayWsdl\\StructType\Succession_ReadinessObjectType $succession_Readiness_Reference
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
-    public function setSuccession_Readiness_Reference(\StructType\Succession_ReadinessObjectType $succession_Readiness_Reference = null)
+    public function setSuccession_Readiness_Reference(\WorkdayWsdl\\StructType\Succession_ReadinessObjectType $succession_Readiness_Reference = null)
     {
         $this->Succession_Readiness_Reference = $succession_Readiness_Reference;
         return $this;
@@ -125,7 +125,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     /**
      * Set Top_Candidate value
      * @param bool $top_Candidate
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
     public function setTop_Candidate($top_Candidate = null)
     {
@@ -147,7 +147,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     /**
      * Set Notes value
      * @param string $notes
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
     public function setNotes($notes = null)
     {
@@ -169,7 +169,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
     /**
      * Set Last_Updated value
      * @param string $last_Updated
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
     public function setLast_Updated($last_Updated = null)
     {
@@ -186,7 +186,7 @@ class Succession_Plan_Candidate_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Succession_Plan_Candidate_DataType
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Safety Incident Location
      * - minOccurs: 0
-     * @var \StructType\Safety_Incident_LocationObjectType
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType
      */
     public $Safety_Incident_Location_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
      * Constructor method for Put_Safety_Incident_Location_ResponseType
      * @uses Put_Safety_Incident_Location_ResponseType::setSafety_Incident_Location_Reference()
      * @uses Put_Safety_Incident_Location_ResponseType::setVersion()
-     * @param \StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference = null, $version = null)
     {
         $this
             ->setSafety_Incident_Location_Reference($safety_Incident_Location_Reference)
@@ -42,7 +42,7 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_Location_Reference value
-     * @return \StructType\Safety_Incident_LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType|null
      */
     public function getSafety_Incident_Location_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_Location_Reference value
-     * @param \StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference
-     * @return \StructType\Put_Safety_Incident_Location_ResponseType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Safety_Incident_Location_ResponseType
      */
-    public function setSafety_Incident_Location_Reference(\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference = null)
+    public function setSafety_Incident_Location_Reference(\WorkdayWsdl\\StructType\Safety_Incident_LocationObjectType $safety_Incident_Location_Reference = null)
     {
         $this->Safety_Incident_Location_Reference = $safety_Incident_Location_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Safety_Incident_Location_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Safety_Incident_Location_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Safety_Incident_Location_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Safety_Incident_Location_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Safety_Incident_Location_ResponseType
      */
     public static function __set_state(array $array)
     {

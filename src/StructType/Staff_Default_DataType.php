@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Staff_Default_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Default Organization Reference
      * - minOccurs: 0
-     * @var \StructType\StaffObjectType
+     * @var \WorkdayWsdl\\StructType\StaffObjectType
      */
     public $Default_Organization_Reference;
     /**
@@ -32,10 +32,10 @@ class Staff_Default_DataType extends AbstractStructBase
      * Constructor method for Staff_Default_DataType
      * @uses Staff_Default_DataType::setDefault_Organization_Reference()
      * @uses Staff_Default_DataType::setDelete()
-     * @param \StructType\StaffObjectType $default_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\StaffObjectType $default_Organization_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\StaffObjectType $default_Organization_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\StaffObjectType $default_Organization_Reference = null, $delete = null)
     {
         $this
             ->setDefault_Organization_Reference($default_Organization_Reference)
@@ -43,7 +43,7 @@ class Staff_Default_DataType extends AbstractStructBase
     }
     /**
      * Get Default_Organization_Reference value
-     * @return \StructType\StaffObjectType|null
+     * @return \WorkdayWsdl\\StructType\StaffObjectType|null
      */
     public function getDefault_Organization_Reference()
     {
@@ -51,10 +51,10 @@ class Staff_Default_DataType extends AbstractStructBase
     }
     /**
      * Set Default_Organization_Reference value
-     * @param \StructType\StaffObjectType $default_Organization_Reference
-     * @return \StructType\Staff_Default_DataType
+     * @param \WorkdayWsdl\\StructType\StaffObjectType $default_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Staff_Default_DataType
      */
-    public function setDefault_Organization_Reference(\StructType\StaffObjectType $default_Organization_Reference = null)
+    public function setDefault_Organization_Reference(\WorkdayWsdl\\StructType\StaffObjectType $default_Organization_Reference = null)
     {
         $this->Default_Organization_Reference = $default_Organization_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Staff_Default_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Staff_Default_DataType
+     * @return \WorkdayWsdl\\StructType\Staff_Default_DataType
      */
     public function setDelete($delete = null)
     {
@@ -87,7 +87,7 @@ class Staff_Default_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Staff_Default_DataType
+     * @return \WorkdayWsdl\\StructType\Staff_Default_DataType
      */
     public static function __set_state(array $array)
     {

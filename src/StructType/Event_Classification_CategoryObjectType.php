@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Event_Classification_CategoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
      * Constructor method for Event_Classification_CategoryObjectType
      * @uses Event_Classification_CategoryObjectType::setID()
      * @uses Event_Classification_CategoryObjectType::setDescriptor()
-     * @param \StructType\Event_Classification_CategoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Event_Classification_CategoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $event_Classification_CategoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$event_Classification_CategoryObjectTypeIDItem instanceof \StructType\Event_Classification_CategoryObjectIDType) {
+            if (!$event_Classification_CategoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType) {
                 $invalidValues[] = is_object($event_Classification_CategoryObjectTypeIDItem) ? get_class($event_Classification_CategoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($event_Classification_CategoryObjectTypeIDItem), var_export($event_Classification_CategoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Event_Classification_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_Classification_CategoryObjectIDType[] $iD
-     * @return \StructType\Event_Classification_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_Classification_CategoryObjectIDType $item
-     * @return \StructType\Event_Classification_CategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
-    public function addToID(\StructType\Event_Classification_CategoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Event_Classification_CategoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Event_Classification_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Event_Classification_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Event_Classification_CategoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Event_Classification_CategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
     public static function __set_state(array $array)
     {

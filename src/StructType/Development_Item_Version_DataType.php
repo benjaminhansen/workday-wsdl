@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * - documentation: Category field for the referenced Development Item
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Development_Item_CategoryObjectType[]
+     * @var \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType[]
      */
     public $Category_Reference;
     /**
@@ -72,7 +72,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * The Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: The status of the Development Item. The status is required and must be an active Development Item Status.
-     * @var \StructType\Development_Item_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Development_Item_StatusObjectType
      */
     public $Status_Reference;
     /**
@@ -89,7 +89,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Updated by Worker Reference is the worker updating the Development Item. If left empty, the processing worker will be used.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Updated_by_Worker_Reference;
     /**
@@ -98,7 +98,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * - documentation: Tag Reference for Development Items based on Competency, Job Profile, and Work Experience Skill.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Talent_TagObjectType[]
+     * @var \WorkdayWsdl\\StructType\Talent_TagObjectType[]
      */
     public $Relates_To_Reference;
     /**
@@ -116,15 +116,15 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $development_Item
      * @param string $additional_Information
-     * @param \StructType\Development_Item_CategoryObjectType[] $category_Reference
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType[] $category_Reference
      * @param string $development_Item_Start_Date
      * @param string $development_Item_Completion_Date
-     * @param \StructType\Development_Item_StatusObjectType $status_Reference
+     * @param \WorkdayWsdl\\StructType\Development_Item_StatusObjectType $status_Reference
      * @param string $status_Note
-     * @param \StructType\WorkerObjectType $updated_by_Worker_Reference
-     * @param \StructType\Talent_TagObjectType[] $relates_To_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $updated_by_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectType[] $relates_To_Reference
      */
-    public function __construct($iD = null, $development_Item = null, $additional_Information = null, array $category_Reference = array(), $development_Item_Start_Date = null, $development_Item_Completion_Date = null, \StructType\Development_Item_StatusObjectType $status_Reference = null, $status_Note = null, \StructType\WorkerObjectType $updated_by_Worker_Reference = null, array $relates_To_Reference = array())
+    public function __construct($iD = null, $development_Item = null, $additional_Information = null, array $category_Reference = array(), $development_Item_Start_Date = null, $development_Item_Completion_Date = null, \WorkdayWsdl\\StructType\Development_Item_StatusObjectType $status_Reference = null, $status_Note = null, \WorkdayWsdl\\StructType\WorkerObjectType $updated_by_Worker_Reference = null, array $relates_To_Reference = array())
     {
         $this
             ->setID($iD)
@@ -149,7 +149,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setID($iD = null)
     {
@@ -171,7 +171,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Development_Item value
      * @param string $development_Item
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setDevelopment_Item($development_Item = null)
     {
@@ -197,7 +197,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Additional_Information value
      * @param string $additional_Information
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setAdditional_Information($additional_Information = null)
     {
@@ -210,7 +210,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     }
     /**
      * Get Category_Reference value
-     * @return \StructType\Development_Item_CategoryObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType[]|null
      */
     public function getCategory_Reference()
     {
@@ -228,12 +228,12 @@ class Development_Item_Version_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $development_Item_Version_DataTypeCategory_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$development_Item_Version_DataTypeCategory_ReferenceItem instanceof \StructType\Development_Item_CategoryObjectType) {
+            if (!$development_Item_Version_DataTypeCategory_ReferenceItem instanceof \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType) {
                 $invalidValues[] = is_object($development_Item_Version_DataTypeCategory_ReferenceItem) ? get_class($development_Item_Version_DataTypeCategory_ReferenceItem) : sprintf('%s(%s)', gettype($development_Item_Version_DataTypeCategory_ReferenceItem), var_export($development_Item_Version_DataTypeCategory_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Category_Reference property can only contain items of type \StructType\Development_Item_CategoryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Category_Reference property can only contain items of type \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -241,8 +241,8 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Category_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Development_Item_CategoryObjectType[] $category_Reference
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType[] $category_Reference
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setCategory_Reference(array $category_Reference = array())
     {
@@ -256,14 +256,14 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Add item to Category_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Development_Item_CategoryObjectType $item
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType $item
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
-    public function addToCategory_Reference(\StructType\Development_Item_CategoryObjectType $item)
+    public function addToCategory_Reference(\WorkdayWsdl\\StructType\Development_Item_CategoryObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Development_Item_CategoryObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Category_Reference property can only contain items of type \StructType\Development_Item_CategoryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Category_Reference property can only contain items of type \WorkdayWsdl\\StructType\Development_Item_CategoryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Category_Reference[] = $item;
         return $this;
@@ -279,7 +279,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Development_Item_Start_Date value
      * @param string $development_Item_Start_Date
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setDevelopment_Item_Start_Date($development_Item_Start_Date = null)
     {
@@ -301,7 +301,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Development_Item_Completion_Date value
      * @param string $development_Item_Completion_Date
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setDevelopment_Item_Completion_Date($development_Item_Completion_Date = null)
     {
@@ -314,7 +314,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     }
     /**
      * Get Status_Reference value
-     * @return \StructType\Development_Item_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Development_Item_StatusObjectType|null
      */
     public function getStatus_Reference()
     {
@@ -322,10 +322,10 @@ class Development_Item_Version_DataType extends AbstractStructBase
     }
     /**
      * Set Status_Reference value
-     * @param \StructType\Development_Item_StatusObjectType $status_Reference
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\Development_Item_StatusObjectType $status_Reference
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
-    public function setStatus_Reference(\StructType\Development_Item_StatusObjectType $status_Reference = null)
+    public function setStatus_Reference(\WorkdayWsdl\\StructType\Development_Item_StatusObjectType $status_Reference = null)
     {
         $this->Status_Reference = $status_Reference;
         return $this;
@@ -341,7 +341,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Status_Note value
      * @param string $status_Note
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setStatus_Note($status_Note = null)
     {
@@ -354,7 +354,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
     }
     /**
      * Get Updated_by_Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getUpdated_by_Worker_Reference()
     {
@@ -362,17 +362,17 @@ class Development_Item_Version_DataType extends AbstractStructBase
     }
     /**
      * Set Updated_by_Worker_Reference value
-     * @param \StructType\WorkerObjectType $updated_by_Worker_Reference
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $updated_by_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
-    public function setUpdated_by_Worker_Reference(\StructType\WorkerObjectType $updated_by_Worker_Reference = null)
+    public function setUpdated_by_Worker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $updated_by_Worker_Reference = null)
     {
         $this->Updated_by_Worker_Reference = $updated_by_Worker_Reference;
         return $this;
     }
     /**
      * Get Relates_To_Reference value
-     * @return \StructType\Talent_TagObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Talent_TagObjectType[]|null
      */
     public function getRelates_To_Reference()
     {
@@ -390,12 +390,12 @@ class Development_Item_Version_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $development_Item_Version_DataTypeRelates_To_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$development_Item_Version_DataTypeRelates_To_ReferenceItem instanceof \StructType\Talent_TagObjectType) {
+            if (!$development_Item_Version_DataTypeRelates_To_ReferenceItem instanceof \WorkdayWsdl\\StructType\Talent_TagObjectType) {
                 $invalidValues[] = is_object($development_Item_Version_DataTypeRelates_To_ReferenceItem) ? get_class($development_Item_Version_DataTypeRelates_To_ReferenceItem) : sprintf('%s(%s)', gettype($development_Item_Version_DataTypeRelates_To_ReferenceItem), var_export($development_Item_Version_DataTypeRelates_To_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Relates_To_Reference property can only contain items of type \StructType\Talent_TagObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Relates_To_Reference property can only contain items of type \WorkdayWsdl\\StructType\Talent_TagObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -403,8 +403,8 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Set Relates_To_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Talent_TagObjectType[] $relates_To_Reference
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectType[] $relates_To_Reference
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public function setRelates_To_Reference(array $relates_To_Reference = array())
     {
@@ -418,14 +418,14 @@ class Development_Item_Version_DataType extends AbstractStructBase
     /**
      * Add item to Relates_To_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Talent_TagObjectType $item
-     * @return \StructType\Development_Item_Version_DataType
+     * @param \WorkdayWsdl\\StructType\Talent_TagObjectType $item
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
-    public function addToRelates_To_Reference(\StructType\Talent_TagObjectType $item)
+    public function addToRelates_To_Reference(\WorkdayWsdl\\StructType\Talent_TagObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Talent_TagObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Relates_To_Reference property can only contain items of type \StructType\Talent_TagObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Talent_TagObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Relates_To_Reference property can only contain items of type \WorkdayWsdl\\StructType\Talent_TagObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Relates_To_Reference[] = $item;
         return $this;
@@ -436,7 +436,7 @@ class Development_Item_Version_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Development_Item_Version_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Item_Version_DataType
      */
     public static function __set_state(array $array)
     {

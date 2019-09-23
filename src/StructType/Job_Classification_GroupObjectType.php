@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Classification_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
      * Constructor method for Job_Classification_GroupObjectType
      * @uses Job_Classification_GroupObjectType::setID()
      * @uses Job_Classification_GroupObjectType::setDescriptor()
-     * @param \StructType\Job_Classification_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Job_Classification_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Classification_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$job_Classification_GroupObjectTypeIDItem instanceof \StructType\Job_Classification_GroupObjectIDType) {
+            if (!$job_Classification_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType) {
                 $invalidValues[] = is_object($job_Classification_GroupObjectTypeIDItem) ? get_class($job_Classification_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($job_Classification_GroupObjectTypeIDItem), var_export($job_Classification_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Job_Classification_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_GroupObjectIDType[] $iD
-     * @return \StructType\Job_Classification_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Classification_GroupObjectIDType $item
-     * @return \StructType\Job_Classification_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType
      */
-    public function addToID(\StructType\Job_Classification_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Classification_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Job_Classification_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Classification_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Job_Classification_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Job_Classification_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_GroupObjectType
      */
     public static function __set_state(array $array)
     {

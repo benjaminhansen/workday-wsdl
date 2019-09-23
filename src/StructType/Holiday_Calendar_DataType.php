@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Calendar Rule for the Holiday Calendar.
      * - minOccurs: 0
-     * @var \StructType\Condition_RuleObjectType
+     * @var \WorkdayWsdl\\StructType\Condition_RuleObjectType
      */
     public $Condition_Rule_Reference;
     /**
@@ -52,7 +52,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
      * - documentation: Event Data for the Holiday Calendar.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Holiday_Calendar_Event_DataType[]
+     * @var \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType[]
      */
     public $Holiday_Calendar_Event_Data;
     /**
@@ -72,12 +72,12 @@ class Holiday_Calendar_DataType extends AbstractStructBase
      * @uses Holiday_Calendar_DataType::setID()
      * @param string $name
      * @param string $description
-     * @param \StructType\Condition_RuleObjectType $condition_Rule_Reference
+     * @param \WorkdayWsdl\\StructType\Condition_RuleObjectType $condition_Rule_Reference
      * @param bool $display_on_Time_Off_and_Leave_Calendar
-     * @param \StructType\Holiday_Calendar_Event_DataType[] $holiday_Calendar_Event_Data
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType[] $holiday_Calendar_Event_Data
      * @param string $iD
      */
-    public function __construct($name = null, $description = null, \StructType\Condition_RuleObjectType $condition_Rule_Reference = null, $display_on_Time_Off_and_Leave_Calendar = null, array $holiday_Calendar_Event_Data = array(), $iD = null)
+    public function __construct($name = null, $description = null, \WorkdayWsdl\\StructType\Condition_RuleObjectType $condition_Rule_Reference = null, $display_on_Time_Off_and_Leave_Calendar = null, array $holiday_Calendar_Event_Data = array(), $iD = null)
     {
         $this
             ->setName($name)
@@ -98,7 +98,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Holiday_Calendar_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public function setName($name = null)
     {
@@ -120,7 +120,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Holiday_Calendar_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public function setDescription($description = null)
     {
@@ -133,7 +133,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     }
     /**
      * Get Condition_Rule_Reference value
-     * @return \StructType\Condition_RuleObjectType|null
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectType|null
      */
     public function getCondition_Rule_Reference()
     {
@@ -141,10 +141,10 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     }
     /**
      * Set Condition_Rule_Reference value
-     * @param \StructType\Condition_RuleObjectType $condition_Rule_Reference
-     * @return \StructType\Holiday_Calendar_DataType
+     * @param \WorkdayWsdl\\StructType\Condition_RuleObjectType $condition_Rule_Reference
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
-    public function setCondition_Rule_Reference(\StructType\Condition_RuleObjectType $condition_Rule_Reference = null)
+    public function setCondition_Rule_Reference(\WorkdayWsdl\\StructType\Condition_RuleObjectType $condition_Rule_Reference = null)
     {
         $this->Condition_Rule_Reference = $condition_Rule_Reference;
         return $this;
@@ -160,7 +160,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Set Display_on_Time_Off_and_Leave_Calendar value
      * @param bool $display_on_Time_Off_and_Leave_Calendar
-     * @return \StructType\Holiday_Calendar_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public function setDisplay_on_Time_Off_and_Leave_Calendar($display_on_Time_Off_and_Leave_Calendar = null)
     {
@@ -173,7 +173,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     }
     /**
      * Get Holiday_Calendar_Event_Data value
-     * @return \StructType\Holiday_Calendar_Event_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType[]|null
      */
     public function getHoliday_Calendar_Event_Data()
     {
@@ -191,12 +191,12 @@ class Holiday_Calendar_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem) {
             // validation for constraint: itemType
-            if (!$holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem instanceof \StructType\Holiday_Calendar_Event_DataType) {
+            if (!$holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem instanceof \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType) {
                 $invalidValues[] = is_object($holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem) ? get_class($holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem) : sprintf('%s(%s)', gettype($holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem), var_export($holiday_Calendar_DataTypeHoliday_Calendar_Event_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Holiday_Calendar_Event_Data property can only contain items of type \StructType\Holiday_Calendar_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Holiday_Calendar_Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -204,8 +204,8 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Set Holiday_Calendar_Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_Calendar_Event_DataType[] $holiday_Calendar_Event_Data
-     * @return \StructType\Holiday_Calendar_DataType
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType[] $holiday_Calendar_Event_Data
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public function setHoliday_Calendar_Event_Data(array $holiday_Calendar_Event_Data = array())
     {
@@ -219,14 +219,14 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Add item to Holiday_Calendar_Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_Calendar_Event_DataType $item
-     * @return \StructType\Holiday_Calendar_DataType
+     * @param \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType $item
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
-    public function addToHoliday_Calendar_Event_Data(\StructType\Holiday_Calendar_Event_DataType $item)
+    public function addToHoliday_Calendar_Event_Data(\WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Holiday_Calendar_Event_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar_Event_Data property can only contain items of type \StructType\Holiday_Calendar_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar_Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Holiday_Calendar_Event_Data[] = $item;
         return $this;
@@ -242,7 +242,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Holiday_Calendar_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public function setID($iD = null)
     {
@@ -259,7 +259,7 @@ class Holiday_Calendar_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_Calendar_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class FrequencyObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class FrequencyObjectType extends AbstractStructBase
      * Constructor method for FrequencyObjectType
      * @uses FrequencyObjectType::setID()
      * @uses FrequencyObjectType::setDescriptor()
-     * @param \StructType\FrequencyObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class FrequencyObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\FrequencyObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class FrequencyObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $frequencyObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$frequencyObjectTypeIDItem instanceof \StructType\FrequencyObjectIDType) {
+            if (!$frequencyObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\FrequencyObjectIDType) {
                 $invalidValues[] = is_object($frequencyObjectTypeIDItem) ? get_class($frequencyObjectTypeIDItem) : sprintf('%s(%s)', gettype($frequencyObjectTypeIDItem), var_export($frequencyObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\FrequencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\FrequencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class FrequencyObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyObjectIDType[] $iD
-     * @return \StructType\FrequencyObjectType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class FrequencyObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\FrequencyObjectIDType $item
-     * @return \StructType\FrequencyObjectType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType
      */
-    public function addToID(\StructType\FrequencyObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\FrequencyObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\FrequencyObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\FrequencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\FrequencyObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\FrequencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class FrequencyObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\FrequencyObjectType
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class FrequencyObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FrequencyObjectType
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public static function __set_state(array $array)
     {

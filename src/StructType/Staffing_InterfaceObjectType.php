@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Staffing_InterfaceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
      * Constructor method for Staffing_InterfaceObjectType
      * @uses Staffing_InterfaceObjectType::setID()
      * @uses Staffing_InterfaceObjectType::setDescriptor()
-     * @param \StructType\Staffing_InterfaceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Staffing_InterfaceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $staffing_InterfaceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$staffing_InterfaceObjectTypeIDItem instanceof \StructType\Staffing_InterfaceObjectIDType) {
+            if (!$staffing_InterfaceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType) {
                 $invalidValues[] = is_object($staffing_InterfaceObjectTypeIDItem) ? get_class($staffing_InterfaceObjectTypeIDItem) : sprintf('%s(%s)', gettype($staffing_InterfaceObjectTypeIDItem), var_export($staffing_InterfaceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Staffing_InterfaceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Staffing_InterfaceObjectIDType[] $iD
-     * @return \StructType\Staffing_InterfaceObjectType
+     * @param \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Staffing_InterfaceObjectIDType $item
-     * @return \StructType\Staffing_InterfaceObjectType
+     * @param \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType
      */
-    public function addToID(\StructType\Staffing_InterfaceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Staffing_InterfaceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Staffing_InterfaceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Staffing_InterfaceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Staffing_InterfaceObjectType
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Staffing_InterfaceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Staffing_InterfaceObjectType
+     * @return \WorkdayWsdl\\StructType\Staffing_InterfaceObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
      * Constructor method for Service_Center_RepresentativeObjectType
      * @uses Service_Center_RepresentativeObjectType::setID()
      * @uses Service_Center_RepresentativeObjectType::setDescriptor()
-     * @param \StructType\Service_Center_RepresentativeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Service_Center_RepresentativeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $service_Center_RepresentativeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$service_Center_RepresentativeObjectTypeIDItem instanceof \StructType\Service_Center_RepresentativeObjectIDType) {
+            if (!$service_Center_RepresentativeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType) {
                 $invalidValues[] = is_object($service_Center_RepresentativeObjectTypeIDItem) ? get_class($service_Center_RepresentativeObjectTypeIDItem) : sprintf('%s(%s)', gettype($service_Center_RepresentativeObjectTypeIDItem), var_export($service_Center_RepresentativeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Service_Center_RepresentativeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeObjectIDType[] $iD
-     * @return \StructType\Service_Center_RepresentativeObjectType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_RepresentativeObjectIDType $item
-     * @return \StructType\Service_Center_RepresentativeObjectType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
-    public function addToID(\StructType\Service_Center_RepresentativeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service_Center_RepresentativeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Service_Center_RepresentativeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Service_Center_RepresentativeObjectType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Service_Center_RepresentativeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_RepresentativeObjectType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public static function __set_state(array $array)
     {

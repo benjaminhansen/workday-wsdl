@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for job history.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_HistoryType[]
+     * @var \WorkdayWsdl\\StructType\Job_HistoryType[]
      */
     public $External_Job_History;
     /**
@@ -27,7 +27,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Competency information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Competency_Achievement_Data__v10_Type[]
+     * @var \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type[]
      */
     public $Competency;
     /**
@@ -36,7 +36,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Certification information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Certification_AchievementType[]
+     * @var \WorkdayWsdl\\StructType\Certification_AchievementType[]
      */
     public $Certification;
     /**
@@ -45,7 +45,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Training information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\TrainingType[]
+     * @var \WorkdayWsdl\\StructType\TrainingType[]
      */
     public $Training;
     /**
@@ -53,7 +53,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Award_and_ActivityType[]
+     * @var \WorkdayWsdl\\StructType\Award_and_ActivityType[]
      */
     public $Award_and_Activity;
     /**
@@ -62,7 +62,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Organization Membership information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_SkillType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[]
      */
     public $Organization_Membership;
     /**
@@ -71,7 +71,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Education information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EducationType[]
+     * @var \WorkdayWsdl\\StructType\EducationType[]
      */
     public $Education;
     /**
@@ -80,7 +80,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for work experience.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Experience_DataType[]
+     * @var \WorkdayWsdl\\StructType\Work_Experience_DataType[]
      */
     public $Work_Experience;
     /**
@@ -89,7 +89,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Language information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Language_Achievement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Language_Achievement_DataType[]
      */
     public $Language;
     /**
@@ -98,7 +98,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for Internal Project Experience information.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Internal_Project_ExperienceType[]
+     * @var \WorkdayWsdl\\StructType\Internal_Project_ExperienceType[]
      */
     public $Internal_Project_Experience;
     /**
@@ -113,16 +113,16 @@ class Person_Qualification_DataType extends AbstractStructBase
      * @uses Person_Qualification_DataType::setWork_Experience()
      * @uses Person_Qualification_DataType::setLanguage()
      * @uses Person_Qualification_DataType::setInternal_Project_Experience()
-     * @param \StructType\Job_HistoryType[] $external_Job_History
-     * @param \StructType\Competency_Achievement_Data__v10_Type[] $competency
-     * @param \StructType\Certification_AchievementType[] $certification
-     * @param \StructType\TrainingType[] $training
-     * @param \StructType\Award_and_ActivityType[] $award_and_Activity
-     * @param \StructType\Professional_Affiliation_SkillType[] $organization_Membership
-     * @param \StructType\EducationType[] $education
-     * @param \StructType\Work_Experience_DataType[] $work_Experience
-     * @param \StructType\Language_Achievement_DataType[] $language
-     * @param \StructType\Internal_Project_ExperienceType[] $internal_Project_Experience
+     * @param \WorkdayWsdl\\StructType\Job_HistoryType[] $external_Job_History
+     * @param \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type[] $competency
+     * @param \WorkdayWsdl\\StructType\Certification_AchievementType[] $certification
+     * @param \WorkdayWsdl\\StructType\TrainingType[] $training
+     * @param \WorkdayWsdl\\StructType\Award_and_ActivityType[] $award_and_Activity
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[] $organization_Membership
+     * @param \WorkdayWsdl\\StructType\EducationType[] $education
+     * @param \WorkdayWsdl\\StructType\Work_Experience_DataType[] $work_Experience
+     * @param \WorkdayWsdl\\StructType\Language_Achievement_DataType[] $language
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceType[] $internal_Project_Experience
      */
     public function __construct(array $external_Job_History = array(), array $competency = array(), array $certification = array(), array $training = array(), array $award_and_Activity = array(), array $organization_Membership = array(), array $education = array(), array $work_Experience = array(), array $language = array(), array $internal_Project_Experience = array())
     {
@@ -140,7 +140,7 @@ class Person_Qualification_DataType extends AbstractStructBase
     }
     /**
      * Get External_Job_History value
-     * @return \StructType\Job_HistoryType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_HistoryType[]|null
      */
     public function getExternal_Job_History()
     {
@@ -158,12 +158,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeExternal_Job_HistoryItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeExternal_Job_HistoryItem instanceof \StructType\Job_HistoryType) {
+            if (!$person_Qualification_DataTypeExternal_Job_HistoryItem instanceof \WorkdayWsdl\\StructType\Job_HistoryType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeExternal_Job_HistoryItem) ? get_class($person_Qualification_DataTypeExternal_Job_HistoryItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeExternal_Job_HistoryItem), var_export($person_Qualification_DataTypeExternal_Job_HistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Job_History property can only contain items of type \StructType\Job_HistoryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Job_History property can only contain items of type \WorkdayWsdl\\StructType\Job_HistoryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -171,8 +171,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set External_Job_History value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_HistoryType[] $external_Job_History
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Job_HistoryType[] $external_Job_History
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setExternal_Job_History(array $external_Job_History = array())
     {
@@ -186,21 +186,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to External_Job_History value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_HistoryType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Job_HistoryType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToExternal_Job_History(\StructType\Job_HistoryType $item)
+    public function addToExternal_Job_History(\WorkdayWsdl\\StructType\Job_HistoryType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_HistoryType) {
-            throw new \InvalidArgumentException(sprintf('The External_Job_History property can only contain items of type \StructType\Job_HistoryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_HistoryType) {
+            throw new \InvalidArgumentException(sprintf('The External_Job_History property can only contain items of type \WorkdayWsdl\\StructType\Job_HistoryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Job_History[] = $item;
         return $this;
     }
     /**
      * Get Competency value
-     * @return \StructType\Competency_Achievement_Data__v10_Type[]|null
+     * @return \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type[]|null
      */
     public function getCompetency()
     {
@@ -218,12 +218,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeCompetencyItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeCompetencyItem instanceof \StructType\Competency_Achievement_Data__v10_Type) {
+            if (!$person_Qualification_DataTypeCompetencyItem instanceof \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeCompetencyItem) ? get_class($person_Qualification_DataTypeCompetencyItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeCompetencyItem), var_export($person_Qualification_DataTypeCompetencyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Competency property can only contain items of type \StructType\Competency_Achievement_Data__v10_Type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Competency property can only contain items of type \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -231,8 +231,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Competency value
      * @throws \InvalidArgumentException
-     * @param \StructType\Competency_Achievement_Data__v10_Type[] $competency
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type[] $competency
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setCompetency(array $competency = array())
     {
@@ -246,21 +246,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Competency value
      * @throws \InvalidArgumentException
-     * @param \StructType\Competency_Achievement_Data__v10_Type $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToCompetency(\StructType\Competency_Achievement_Data__v10_Type $item)
+    public function addToCompetency(\WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Competency_Achievement_Data__v10_Type) {
-            throw new \InvalidArgumentException(sprintf('The Competency property can only contain items of type \StructType\Competency_Achievement_Data__v10_Type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type) {
+            throw new \InvalidArgumentException(sprintf('The Competency property can only contain items of type \WorkdayWsdl\\StructType\Competency_Achievement_Data__v10_Type, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Competency[] = $item;
         return $this;
     }
     /**
      * Get Certification value
-     * @return \StructType\Certification_AchievementType[]|null
+     * @return \WorkdayWsdl\\StructType\Certification_AchievementType[]|null
      */
     public function getCertification()
     {
@@ -278,12 +278,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeCertificationItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeCertificationItem instanceof \StructType\Certification_AchievementType) {
+            if (!$person_Qualification_DataTypeCertificationItem instanceof \WorkdayWsdl\\StructType\Certification_AchievementType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeCertificationItem) ? get_class($person_Qualification_DataTypeCertificationItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeCertificationItem), var_export($person_Qualification_DataTypeCertificationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Certification property can only contain items of type \StructType\Certification_AchievementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Certification property can only contain items of type \WorkdayWsdl\\StructType\Certification_AchievementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -291,8 +291,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Certification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_AchievementType[] $certification
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Certification_AchievementType[] $certification
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setCertification(array $certification = array())
     {
@@ -306,21 +306,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Certification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_AchievementType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Certification_AchievementType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToCertification(\StructType\Certification_AchievementType $item)
+    public function addToCertification(\WorkdayWsdl\\StructType\Certification_AchievementType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Certification_AchievementType) {
-            throw new \InvalidArgumentException(sprintf('The Certification property can only contain items of type \StructType\Certification_AchievementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Certification_AchievementType) {
+            throw new \InvalidArgumentException(sprintf('The Certification property can only contain items of type \WorkdayWsdl\\StructType\Certification_AchievementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Certification[] = $item;
         return $this;
     }
     /**
      * Get Training value
-     * @return \StructType\TrainingType[]|null
+     * @return \WorkdayWsdl\\StructType\TrainingType[]|null
      */
     public function getTraining()
     {
@@ -338,12 +338,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeTrainingItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeTrainingItem instanceof \StructType\TrainingType) {
+            if (!$person_Qualification_DataTypeTrainingItem instanceof \WorkdayWsdl\\StructType\TrainingType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeTrainingItem) ? get_class($person_Qualification_DataTypeTrainingItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeTrainingItem), var_export($person_Qualification_DataTypeTrainingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Training property can only contain items of type \StructType\TrainingType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Training property can only contain items of type \WorkdayWsdl\\StructType\TrainingType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -351,8 +351,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Training value
      * @throws \InvalidArgumentException
-     * @param \StructType\TrainingType[] $training
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\TrainingType[] $training
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setTraining(array $training = array())
     {
@@ -366,21 +366,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Training value
      * @throws \InvalidArgumentException
-     * @param \StructType\TrainingType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\TrainingType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToTraining(\StructType\TrainingType $item)
+    public function addToTraining(\WorkdayWsdl\\StructType\TrainingType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TrainingType) {
-            throw new \InvalidArgumentException(sprintf('The Training property can only contain items of type \StructType\TrainingType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\TrainingType) {
+            throw new \InvalidArgumentException(sprintf('The Training property can only contain items of type \WorkdayWsdl\\StructType\TrainingType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Training[] = $item;
         return $this;
     }
     /**
      * Get Award_and_Activity value
-     * @return \StructType\Award_and_ActivityType[]|null
+     * @return \WorkdayWsdl\\StructType\Award_and_ActivityType[]|null
      */
     public function getAward_and_Activity()
     {
@@ -398,12 +398,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeAward_and_ActivityItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeAward_and_ActivityItem instanceof \StructType\Award_and_ActivityType) {
+            if (!$person_Qualification_DataTypeAward_and_ActivityItem instanceof \WorkdayWsdl\\StructType\Award_and_ActivityType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeAward_and_ActivityItem) ? get_class($person_Qualification_DataTypeAward_and_ActivityItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeAward_and_ActivityItem), var_export($person_Qualification_DataTypeAward_and_ActivityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Award_and_Activity property can only contain items of type \StructType\Award_and_ActivityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Award_and_Activity property can only contain items of type \WorkdayWsdl\\StructType\Award_and_ActivityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -411,8 +411,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Award_and_Activity value
      * @throws \InvalidArgumentException
-     * @param \StructType\Award_and_ActivityType[] $award_and_Activity
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Award_and_ActivityType[] $award_and_Activity
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setAward_and_Activity(array $award_and_Activity = array())
     {
@@ -426,21 +426,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Award_and_Activity value
      * @throws \InvalidArgumentException
-     * @param \StructType\Award_and_ActivityType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Award_and_ActivityType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToAward_and_Activity(\StructType\Award_and_ActivityType $item)
+    public function addToAward_and_Activity(\WorkdayWsdl\\StructType\Award_and_ActivityType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Award_and_ActivityType) {
-            throw new \InvalidArgumentException(sprintf('The Award_and_Activity property can only contain items of type \StructType\Award_and_ActivityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Award_and_ActivityType) {
+            throw new \InvalidArgumentException(sprintf('The Award_and_Activity property can only contain items of type \WorkdayWsdl\\StructType\Award_and_ActivityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Award_and_Activity[] = $item;
         return $this;
     }
     /**
      * Get Organization_Membership value
-     * @return \StructType\Professional_Affiliation_SkillType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[]|null
      */
     public function getOrganization_Membership()
     {
@@ -458,12 +458,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeOrganization_MembershipItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeOrganization_MembershipItem instanceof \StructType\Professional_Affiliation_SkillType) {
+            if (!$person_Qualification_DataTypeOrganization_MembershipItem instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeOrganization_MembershipItem) ? get_class($person_Qualification_DataTypeOrganization_MembershipItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeOrganization_MembershipItem), var_export($person_Qualification_DataTypeOrganization_MembershipItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Membership property can only contain items of type \StructType\Professional_Affiliation_SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Membership property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -471,8 +471,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Organization_Membership value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillType[] $organization_Membership
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType[] $organization_Membership
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setOrganization_Membership(array $organization_Membership = array())
     {
@@ -486,21 +486,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Organization_Membership value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_SkillType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToOrganization_Membership(\StructType\Professional_Affiliation_SkillType $item)
+    public function addToOrganization_Membership(\WorkdayWsdl\\StructType\Professional_Affiliation_SkillType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Affiliation_SkillType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Membership property can only contain items of type \StructType\Professional_Affiliation_SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Membership property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Membership[] = $item;
         return $this;
     }
     /**
      * Get Education value
-     * @return \StructType\EducationType[]|null
+     * @return \WorkdayWsdl\\StructType\EducationType[]|null
      */
     public function getEducation()
     {
@@ -518,12 +518,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeEducationItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeEducationItem instanceof \StructType\EducationType) {
+            if (!$person_Qualification_DataTypeEducationItem instanceof \WorkdayWsdl\\StructType\EducationType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeEducationItem) ? get_class($person_Qualification_DataTypeEducationItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeEducationItem), var_export($person_Qualification_DataTypeEducationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Education property can only contain items of type \StructType\EducationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Education property can only contain items of type \WorkdayWsdl\\StructType\EducationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -531,8 +531,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Education value
      * @throws \InvalidArgumentException
-     * @param \StructType\EducationType[] $education
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\EducationType[] $education
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setEducation(array $education = array())
     {
@@ -546,21 +546,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Education value
      * @throws \InvalidArgumentException
-     * @param \StructType\EducationType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\EducationType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToEducation(\StructType\EducationType $item)
+    public function addToEducation(\WorkdayWsdl\\StructType\EducationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EducationType) {
-            throw new \InvalidArgumentException(sprintf('The Education property can only contain items of type \StructType\EducationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EducationType) {
+            throw new \InvalidArgumentException(sprintf('The Education property can only contain items of type \WorkdayWsdl\\StructType\EducationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Education[] = $item;
         return $this;
     }
     /**
      * Get Work_Experience value
-     * @return \StructType\Work_Experience_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Experience_DataType[]|null
      */
     public function getWork_Experience()
     {
@@ -578,12 +578,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeWork_ExperienceItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeWork_ExperienceItem instanceof \StructType\Work_Experience_DataType) {
+            if (!$person_Qualification_DataTypeWork_ExperienceItem instanceof \WorkdayWsdl\\StructType\Work_Experience_DataType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeWork_ExperienceItem) ? get_class($person_Qualification_DataTypeWork_ExperienceItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeWork_ExperienceItem), var_export($person_Qualification_DataTypeWork_ExperienceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Experience property can only contain items of type \StructType\Work_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Experience property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -591,8 +591,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Work_Experience value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_DataType[] $work_Experience
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_DataType[] $work_Experience
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setWork_Experience(array $work_Experience = array())
     {
@@ -606,21 +606,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Work_Experience value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_DataType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToWork_Experience(\StructType\Work_Experience_DataType $item)
+    public function addToWork_Experience(\WorkdayWsdl\\StructType\Work_Experience_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Experience_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Experience property can only contain items of type \StructType\Work_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Experience_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Experience property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Experience[] = $item;
         return $this;
     }
     /**
      * Get Language value
-     * @return \StructType\Language_Achievement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType[]|null
      */
     public function getLanguage()
     {
@@ -638,12 +638,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeLanguageItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeLanguageItem instanceof \StructType\Language_Achievement_DataType) {
+            if (!$person_Qualification_DataTypeLanguageItem instanceof \WorkdayWsdl\\StructType\Language_Achievement_DataType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeLanguageItem) ? get_class($person_Qualification_DataTypeLanguageItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeLanguageItem), var_export($person_Qualification_DataTypeLanguageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language property can only contain items of type \StructType\Language_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language property can only contain items of type \WorkdayWsdl\\StructType\Language_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -651,8 +651,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Language value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Achievement_DataType[] $language
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Language_Achievement_DataType[] $language
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setLanguage(array $language = array())
     {
@@ -666,21 +666,21 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Language value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Achievement_DataType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Language_Achievement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToLanguage(\StructType\Language_Achievement_DataType $item)
+    public function addToLanguage(\WorkdayWsdl\\StructType\Language_Achievement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Language_Achievement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Language property can only contain items of type \StructType\Language_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Language_Achievement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Language property can only contain items of type \WorkdayWsdl\\StructType\Language_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language[] = $item;
         return $this;
     }
     /**
      * Get Internal_Project_Experience value
-     * @return \StructType\Internal_Project_ExperienceType[]|null
+     * @return \WorkdayWsdl\\StructType\Internal_Project_ExperienceType[]|null
      */
     public function getInternal_Project_Experience()
     {
@@ -698,12 +698,12 @@ class Person_Qualification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Qualification_DataTypeInternal_Project_ExperienceItem) {
             // validation for constraint: itemType
-            if (!$person_Qualification_DataTypeInternal_Project_ExperienceItem instanceof \StructType\Internal_Project_ExperienceType) {
+            if (!$person_Qualification_DataTypeInternal_Project_ExperienceItem instanceof \WorkdayWsdl\\StructType\Internal_Project_ExperienceType) {
                 $invalidValues[] = is_object($person_Qualification_DataTypeInternal_Project_ExperienceItem) ? get_class($person_Qualification_DataTypeInternal_Project_ExperienceItem) : sprintf('%s(%s)', gettype($person_Qualification_DataTypeInternal_Project_ExperienceItem), var_export($person_Qualification_DataTypeInternal_Project_ExperienceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Internal_Project_Experience property can only contain items of type \StructType\Internal_Project_ExperienceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Internal_Project_Experience property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_ExperienceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -711,8 +711,8 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Set Internal_Project_Experience value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_ExperienceType[] $internal_Project_Experience
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceType[] $internal_Project_Experience
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public function setInternal_Project_Experience(array $internal_Project_Experience = array())
     {
@@ -726,14 +726,14 @@ class Person_Qualification_DataType extends AbstractStructBase
     /**
      * Add item to Internal_Project_Experience value
      * @throws \InvalidArgumentException
-     * @param \StructType\Internal_Project_ExperienceType $item
-     * @return \StructType\Person_Qualification_DataType
+     * @param \WorkdayWsdl\\StructType\Internal_Project_ExperienceType $item
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
-    public function addToInternal_Project_Experience(\StructType\Internal_Project_ExperienceType $item)
+    public function addToInternal_Project_Experience(\WorkdayWsdl\\StructType\Internal_Project_ExperienceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Internal_Project_ExperienceType) {
-            throw new \InvalidArgumentException(sprintf('The Internal_Project_Experience property can only contain items of type \StructType\Internal_Project_ExperienceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Internal_Project_ExperienceType) {
+            throw new \InvalidArgumentException(sprintf('The Internal_Project_Experience property can only contain items of type \WorkdayWsdl\\StructType\Internal_Project_ExperienceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Internal_Project_Experience[] = $item;
         return $this;
@@ -744,7 +744,7 @@ class Person_Qualification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Qualification_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Qualification_DataType
      */
     public static function __set_state(array $array)
     {

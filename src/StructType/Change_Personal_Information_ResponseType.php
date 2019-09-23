@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Event ID of the Personal Information Change Event.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Personal_Information_Change_Event_Reference;
     /**
      * The Personal_Information_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Change_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Personal_Information_DataType
      */
     public $Personal_Information_Data;
     /**
@@ -39,11 +39,11 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
      * @uses Change_Personal_Information_ResponseType::setPersonal_Information_Change_Event_Reference()
      * @uses Change_Personal_Information_ResponseType::setPersonal_Information_Data()
      * @uses Change_Personal_Information_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference
-     * @param \StructType\Change_Personal_Information_DataType $personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference = null, \StructType\Change_Personal_Information_DataType $personal_Information_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference = null, \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data = null, $version = null)
     {
         $this
             ->setPersonal_Information_Change_Event_Reference($personal_Information_Change_Event_Reference)
@@ -52,7 +52,7 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
     }
     /**
      * Get Personal_Information_Change_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getPersonal_Information_Change_Event_Reference()
     {
@@ -60,17 +60,17 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
     }
     /**
      * Set Personal_Information_Change_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference
-     * @return \StructType\Change_Personal_Information_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_ResponseType
      */
-    public function setPersonal_Information_Change_Event_Reference(\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference = null)
+    public function setPersonal_Information_Change_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $personal_Information_Change_Event_Reference = null)
     {
         $this->Personal_Information_Change_Event_Reference = $personal_Information_Change_Event_Reference;
         return $this;
     }
     /**
      * Get Personal_Information_Data value
-     * @return \StructType\Change_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_DataType|null
      */
     public function getPersonal_Information_Data()
     {
@@ -78,10 +78,10 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
     }
     /**
      * Set Personal_Information_Data value
-     * @param \StructType\Change_Personal_Information_DataType $personal_Information_Data
-     * @return \StructType\Change_Personal_Information_ResponseType
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_ResponseType
      */
-    public function setPersonal_Information_Data(\StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
+    public function setPersonal_Information_Data(\WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this->Personal_Information_Data = $personal_Information_Data;
         return $this;
@@ -97,7 +97,7 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Personal_Information_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -114,7 +114,7 @@ class Change_Personal_Information_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Personal_Information_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_ResponseType
      */
     public static function __set_state(array $array)
     {

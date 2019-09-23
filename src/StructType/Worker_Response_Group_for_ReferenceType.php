@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class Worker_Response_Group_for_ReferenceType extends AbstractStructBase
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Worker_Response_Group_for_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_Group_for_ReferenceType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -60,7 +60,7 @@ class Worker_Response_Group_for_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Response_Group_for_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_Group_for_ReferenceType
      */
     public static function __set_state(array $array)
     {

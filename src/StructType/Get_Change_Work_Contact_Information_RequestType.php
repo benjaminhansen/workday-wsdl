@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Utilize the Request References element to retrieve a specific instance or instances of Person and their associated work contact information.
      * - minOccurs: 0
-     * @var \StructType\Get_Change_Work_Contact_Information_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType
      */
     public $Request_References;
     /**
@@ -25,7 +25,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Parameters that let you filter the data returned in the response. You can filter returned data by dates and page attributes.
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -33,7 +33,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Allows retrieving work contact information based on request criteria. Request Criteria is only used when Request References is not provided.
      * - minOccurs: 0
-     * @var \StructType\Get_Change_Work_Contact_Information_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType
      */
     public $Request_Criteria_Data;
     /**
@@ -49,12 +49,12 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
      * @uses Get_Change_Work_Contact_Information_RequestType::setResponse_Filter()
      * @uses Get_Change_Work_Contact_Information_RequestType::setRequest_Criteria_Data()
      * @uses Get_Change_Work_Contact_Information_RequestType::setVersion()
-     * @param \StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data
      * @param string $version
      */
-    public function __construct(\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -64,7 +64,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Get_Change_Work_Contact_Information_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -72,17 +72,17 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References
-     * @return \StructType\Get_Change_Work_Contact_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_RequestType
      */
-    public function setRequest_References(\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -90,17 +90,17 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Change_Work_Contact_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Request_Criteria_Data value
-     * @return \StructType\Get_Change_Work_Contact_Information_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType|null
      */
     public function getRequest_Criteria_Data()
     {
@@ -108,10 +108,10 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_Criteria_Data value
-     * @param \StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data
-     * @return \StructType\Get_Change_Work_Contact_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_RequestType
      */
-    public function setRequest_Criteria_Data(\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data = null)
+    public function setRequest_Criteria_Data(\WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_Request_CriteriaType $request_Criteria_Data = null)
     {
         $this->Request_Criteria_Data = $request_Criteria_Data;
         return $this;
@@ -127,7 +127,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Change_Work_Contact_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Get_Change_Work_Contact_Information_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Change_Work_Contact_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Work_Contact_Information_RequestType
      */
     public static function __set_state(array $array)
     {

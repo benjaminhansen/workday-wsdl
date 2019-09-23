@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,7 +45,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
      * - documentation: Optional, Information only, Job Profile data. This data is optionally included here and cannot be updated.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Summary_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType[]
      */
     public $Job_Profile_Info_Data;
     /**
@@ -57,7 +57,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
      * @param string $job_Family_Name
      * @param string $job_Family_Summary
      * @param bool $inactive
-     * @param \StructType\Job_Profile_Summary_DataType[] $job_Profile_Info_Data
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType[] $job_Profile_Info_Data
      */
     public function __construct($job_Family_Name = null, $job_Family_Summary = null, $inactive = null, array $job_Profile_Info_Data = array())
     {
@@ -78,7 +78,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     /**
      * Set Job_Family_Name value
      * @param string $job_Family_Name
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
     public function setJob_Family_Name($job_Family_Name = null)
     {
@@ -100,7 +100,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     /**
      * Set Job_Family_Summary value
      * @param string $job_Family_Summary
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
     public function setJob_Family_Summary($job_Family_Summary = null)
     {
@@ -122,7 +122,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -135,7 +135,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Profile_Info_Data value
-     * @return \StructType\Job_Profile_Summary_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType[]|null
      */
     public function getJob_Profile_Info_Data()
     {
@@ -153,12 +153,12 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem instanceof \StructType\Job_Profile_Summary_DataType) {
+            if (!$job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType) {
                 $invalidValues[] = is_object($job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem) ? get_class($job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem) : sprintf('%s(%s)', gettype($job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem), var_export($job_Family_Group_Job_Family_DataTypeJob_Profile_Info_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Profile_Info_Data property can only contain items of type \StructType\Job_Profile_Summary_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Profile_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -166,8 +166,8 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Summary_DataType[] $job_Profile_Info_Data
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType[] $job_Profile_Info_Data
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
     public function setJob_Profile_Info_Data(array $job_Profile_Info_Data = array())
     {
@@ -181,14 +181,14 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
     /**
      * Add item to Job_Profile_Info_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Summary_DataType $item
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
-    public function addToJob_Profile_Info_Data(\StructType\Job_Profile_Summary_DataType $item)
+    public function addToJob_Profile_Info_Data(\WorkdayWsdl\\StructType\Job_Profile_Summary_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Summary_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Profile_Info_Data property can only contain items of type \StructType\Job_Profile_Summary_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Profile_Info_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Summary_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Profile_Info_Data[] = $item;
         return $this;
@@ -199,7 +199,7 @@ class Job_Family_Group_Job_Family_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Family_Group_Job_Family_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Job_Family_DataType
      */
     public static function __set_state(array $array)
     {

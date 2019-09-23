@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Disability_Response_DataType extends AbstractStructBase
      * - documentation: Reference element representing a unique instance of Disability. Does not support the update of Disability Status. Use Put Applicant web service to update the Disability Status for a Person.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\DisabilityType[]
+     * @var \WorkdayWsdl\\StructType\DisabilityType[]
      */
     public $Disability;
     /**
      * Constructor method for Disability_Response_DataType
      * @uses Disability_Response_DataType::setDisability()
-     * @param \StructType\DisabilityType[] $disability
+     * @param \WorkdayWsdl\\StructType\DisabilityType[] $disability
      */
     public function __construct(array $disability = array())
     {
@@ -33,7 +33,7 @@ class Disability_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Disability value
-     * @return \StructType\DisabilityType[]|null
+     * @return \WorkdayWsdl\\StructType\DisabilityType[]|null
      */
     public function getDisability()
     {
@@ -51,12 +51,12 @@ class Disability_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disability_Response_DataTypeDisabilityItem) {
             // validation for constraint: itemType
-            if (!$disability_Response_DataTypeDisabilityItem instanceof \StructType\DisabilityType) {
+            if (!$disability_Response_DataTypeDisabilityItem instanceof \WorkdayWsdl\\StructType\DisabilityType) {
                 $invalidValues[] = is_object($disability_Response_DataTypeDisabilityItem) ? get_class($disability_Response_DataTypeDisabilityItem) : sprintf('%s(%s)', gettype($disability_Response_DataTypeDisabilityItem), var_export($disability_Response_DataTypeDisabilityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability property can only contain items of type \StructType\DisabilityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability property can only contain items of type \WorkdayWsdl\\StructType\DisabilityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Disability_Response_DataType extends AbstractStructBase
     /**
      * Set Disability value
      * @throws \InvalidArgumentException
-     * @param \StructType\DisabilityType[] $disability
-     * @return \StructType\Disability_Response_DataType
+     * @param \WorkdayWsdl\\StructType\DisabilityType[] $disability
+     * @return \WorkdayWsdl\\StructType\Disability_Response_DataType
      */
     public function setDisability(array $disability = array())
     {
@@ -79,14 +79,14 @@ class Disability_Response_DataType extends AbstractStructBase
     /**
      * Add item to Disability value
      * @throws \InvalidArgumentException
-     * @param \StructType\DisabilityType $item
-     * @return \StructType\Disability_Response_DataType
+     * @param \WorkdayWsdl\\StructType\DisabilityType $item
+     * @return \WorkdayWsdl\\StructType\Disability_Response_DataType
      */
-    public function addToDisability(\StructType\DisabilityType $item)
+    public function addToDisability(\WorkdayWsdl\\StructType\DisabilityType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DisabilityType) {
-            throw new \InvalidArgumentException(sprintf('The Disability property can only contain items of type \StructType\DisabilityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\DisabilityType) {
+            throw new \InvalidArgumentException(sprintf('The Disability property can only contain items of type \WorkdayWsdl\\StructType\DisabilityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Disability_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Disability_Response_DataType
      */
     public static function __set_state(array $array)
     {

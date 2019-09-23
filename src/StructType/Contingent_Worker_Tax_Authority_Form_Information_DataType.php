@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,22 +18,22 @@ class Contingent_Worker_Tax_Authority_Form_Information_DataType extends Abstract
      * Meta information extracted from the WSDL
      * - documentation: This is the Tax Authority Form Type for the Contingent Worker
      * - minOccurs: 0
-     * @var \StructType\Tax_Authority_Form_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType
      */
     public $Tax_Authority_Form_Type_Reference;
     /**
      * Constructor method for Contingent_Worker_Tax_Authority_Form_Information_DataType
      * @uses Contingent_Worker_Tax_Authority_Form_Information_DataType::setTax_Authority_Form_Type_Reference()
-     * @param \StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference
      */
-    public function __construct(\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference = null)
     {
         $this
             ->setTax_Authority_Form_Type_Reference($tax_Authority_Form_Type_Reference);
     }
     /**
      * Get Tax_Authority_Form_Type_Reference value
-     * @return \StructType\Tax_Authority_Form_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType|null
      */
     public function getTax_Authority_Form_Type_Reference()
     {
@@ -41,10 +41,10 @@ class Contingent_Worker_Tax_Authority_Form_Information_DataType extends Abstract
     }
     /**
      * Set Tax_Authority_Form_Type_Reference value
-     * @param \StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference
-     * @return \StructType\Contingent_Worker_Tax_Authority_Form_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Tax_Authority_Form_Information_DataType
      */
-    public function setTax_Authority_Form_Type_Reference(\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference = null)
+    public function setTax_Authority_Form_Type_Reference(\WorkdayWsdl\\StructType\Tax_Authority_Form_TypeObjectType $tax_Authority_Form_Type_Reference = null)
     {
         $this->Tax_Authority_Form_Type_Reference = $tax_Authority_Form_Type_Reference;
         return $this;
@@ -55,7 +55,7 @@ class Contingent_Worker_Tax_Authority_Form_Information_DataType extends Abstract
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contingent_Worker_Tax_Authority_Form_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Tax_Authority_Form_Information_DataType
      */
     public static function __set_state(array $array)
     {

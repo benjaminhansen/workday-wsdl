@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_External_Form_I_9_Source_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External Form I-9 Source Reference
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_SourceObjectType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType
      */
     public $External_Form_I_9_Source_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_External_Form_I_9_Source_ResponseType extends AbstractStructBase
      * Constructor method for Put_External_Form_I-9_Source_ResponseType
      * @uses Put_External_Form_I_9_Source_ResponseType::setExternal_Form_I_9_Source_Reference()
      * @uses Put_External_Form_I_9_Source_ResponseType::setVersion()
-     * @param \StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
      * @param string $version
      */
-    public function __construct(\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, $version = null)
     {
         $this
             ->setExternal_Form_I_9_Source_Reference($external_Form_I_9_Source_Reference)
@@ -51,9 +51,9 @@ class Put_External_Form_I_9_Source_ResponseType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Reference value
      * @param external_Form_I_Source_Reference $external_Form_I_Source_Reference
-     * @return \StructType\Put_External_Form_I_9_Source_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_ResponseType
      */
-    public function setExternal_Form_I_9_Source_Reference(\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
+    public function setExternal_Form_I_9_Source_Reference(\WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
     {
         $this->External_Form_I_9_Source_Reference = $this->{'External_Form_I-9_Source_Reference'} = $external_Form_I_9_Source_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_External_Form_I_9_Source_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_External_Form_I_9_Source_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_External_Form_I_9_Source_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_External_Form_I_9_Source_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_ResponseType
      */
     public static function __set_state(array $array)
     {

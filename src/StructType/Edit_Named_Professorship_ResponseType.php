@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Event Reference
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Event_Reference;
     /**
@@ -25,7 +25,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Gift Reference
      * - minOccurs: 0
-     * @var \StructType\GiftObjectType
+     * @var \WorkdayWsdl\\StructType\GiftObjectType
      */
     public $Gift_Reference;
     /**
@@ -33,7 +33,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Named Professorship Reference
      * - minOccurs: 0
-     * @var \StructType\Named_ProfessorshipObjectType
+     * @var \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
     public $Named_Professorship_Reference;
     /**
@@ -49,12 +49,12 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
      * @uses Edit_Named_Professorship_ResponseType::setGift_Reference()
      * @uses Edit_Named_Professorship_ResponseType::setNamed_Professorship_Reference()
      * @uses Edit_Named_Professorship_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @param \StructType\GiftObjectType $gift_Reference
-     * @param \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @param \WorkdayWsdl\\StructType\GiftObjectType $gift_Reference
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $event_Reference = null, \StructType\GiftObjectType $gift_Reference = null, \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null, \WorkdayWsdl\\StructType\GiftObjectType $gift_Reference = null, \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null, $version = null)
     {
         $this
             ->setEvent_Reference($event_Reference)
@@ -64,7 +64,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
     }
     /**
      * Get Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEvent_Reference()
     {
@@ -72,17 +72,17 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
     }
     /**
      * Set Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @return \StructType\Edit_Named_Professorship_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @return \WorkdayWsdl\\StructType\Edit_Named_Professorship_ResponseType
      */
-    public function setEvent_Reference(\StructType\Unique_IdentifierObjectType $event_Reference = null)
+    public function setEvent_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null)
     {
         $this->Event_Reference = $event_Reference;
         return $this;
     }
     /**
      * Get Gift_Reference value
-     * @return \StructType\GiftObjectType|null
+     * @return \WorkdayWsdl\\StructType\GiftObjectType|null
      */
     public function getGift_Reference()
     {
@@ -90,17 +90,17 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
     }
     /**
      * Set Gift_Reference value
-     * @param \StructType\GiftObjectType $gift_Reference
-     * @return \StructType\Edit_Named_Professorship_ResponseType
+     * @param \WorkdayWsdl\\StructType\GiftObjectType $gift_Reference
+     * @return \WorkdayWsdl\\StructType\Edit_Named_Professorship_ResponseType
      */
-    public function setGift_Reference(\StructType\GiftObjectType $gift_Reference = null)
+    public function setGift_Reference(\WorkdayWsdl\\StructType\GiftObjectType $gift_Reference = null)
     {
         $this->Gift_Reference = $gift_Reference;
         return $this;
     }
     /**
      * Get Named_Professorship_Reference value
-     * @return \StructType\Named_ProfessorshipObjectType|null
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType|null
      */
     public function getNamed_Professorship_Reference()
     {
@@ -108,10 +108,10 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
     }
     /**
      * Set Named_Professorship_Reference value
-     * @param \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
-     * @return \StructType\Edit_Named_Professorship_ResponseType
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
+     * @return \WorkdayWsdl\\StructType\Edit_Named_Professorship_ResponseType
      */
-    public function setNamed_Professorship_Reference(\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null)
+    public function setNamed_Professorship_Reference(\WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null)
     {
         $this->Named_Professorship_Reference = $named_Professorship_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Edit_Named_Professorship_ResponseType
+     * @return \WorkdayWsdl\\StructType\Edit_Named_Professorship_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Edit_Named_Professorship_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Edit_Named_Professorship_ResponseType
+     * @return \WorkdayWsdl\\StructType\Edit_Named_Professorship_ResponseType
      */
     public static function __set_state(array $array)
     {

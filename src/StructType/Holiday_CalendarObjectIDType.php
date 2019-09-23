@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Holiday_CalendarObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Holiday_CalendarReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Holiday_CalendarReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Holiday_CalendarReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Holiday_CalendarReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Holiday_CalendarObjectIDType
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Holiday_CalendarReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Holiday_CalendarReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Holiday_CalendarReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Holiday_CalendarReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Holiday_CalendarReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Holiday_CalendarReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Holiday_CalendarObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Holiday_CalendarObjectIDType
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Holiday_CalendarObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_CalendarObjectIDType
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarObjectIDType
      */
     public static function __set_state(array $array)
     {

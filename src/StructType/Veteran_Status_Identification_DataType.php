@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Worker for this business process.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
      * The US_Veteran_Tenanted_Reference
      * Meta information extracted from the WSDL
      * - documentation: The US Veteran Status to be assigned to the Worker.
-     * @var \StructType\US_Veteran_Status__Tenanted_ObjectType
+     * @var \WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType
      */
     public $US_Veteran_Tenanted_Reference;
     /**
@@ -32,7 +32,7 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
      * - documentation: The US Protected Veteran Status Types for this Worker's Veteran Status.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\US_Protected_Veteran_Status_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType[]
      */
     public $US_Protected_Veteran_Status_Type_Reference;
     /**
@@ -50,12 +50,12 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
      * @uses Veteran_Status_Identification_DataType::setUS_Veteran_Tenanted_Reference()
      * @uses Veteran_Status_Identification_DataType::setUS_Protected_Veteran_Status_Type_Reference()
      * @uses Veteran_Status_Identification_DataType::setDischarge_Date()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectType[] $uS_Protected_Veteran_Status_Type_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType[] $uS_Protected_Veteran_Status_Type_Reference
      * @param string $discharge_Date
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference = null, array $uS_Protected_Veteran_Status_Type_Reference = array(), $discharge_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference = null, array $uS_Protected_Veteran_Status_Type_Reference = array(), $discharge_Date = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -65,7 +65,7 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -73,17 +73,17 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get US_Veteran_Tenanted_Reference value
-     * @return \StructType\US_Veteran_Status__Tenanted_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType|null
      */
     public function getUS_Veteran_Tenanted_Reference()
     {
@@ -91,17 +91,17 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     }
     /**
      * Set US_Veteran_Tenanted_Reference value
-     * @param \StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
-    public function setUS_Veteran_Tenanted_Reference(\StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference = null)
+    public function setUS_Veteran_Tenanted_Reference(\WorkdayWsdl\\StructType\US_Veteran_Status__Tenanted_ObjectType $uS_Veteran_Tenanted_Reference = null)
     {
         $this->US_Veteran_Tenanted_Reference = $uS_Veteran_Tenanted_Reference;
         return $this;
     }
     /**
      * Get US_Protected_Veteran_Status_Type_Reference value
-     * @return \StructType\US_Protected_Veteran_Status_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType[]|null
      */
     public function getUS_Protected_Veteran_Status_Type_Reference()
     {
@@ -119,12 +119,12 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem instanceof \StructType\US_Protected_Veteran_Status_TypeObjectType) {
+            if (!$veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType) {
                 $invalidValues[] = is_object($veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem) ? get_class($veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem) : sprintf('%s(%s)', gettype($veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem), var_export($veteran_Status_Identification_DataTypeUS_Protected_Veteran_Status_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The US_Protected_Veteran_Status_Type_Reference property can only contain items of type \StructType\US_Protected_Veteran_Status_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The US_Protected_Veteran_Status_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -132,8 +132,8 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     /**
      * Set US_Protected_Veteran_Status_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectType[] $uS_Protected_Veteran_Status_Type_Reference
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType[] $uS_Protected_Veteran_Status_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
     public function setUS_Protected_Veteran_Status_Type_Reference(array $uS_Protected_Veteran_Status_Type_Reference = array())
     {
@@ -147,14 +147,14 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     /**
      * Add item to US_Protected_Veteran_Status_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\US_Protected_Veteran_Status_TypeObjectType $item
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
-    public function addToUS_Protected_Veteran_Status_Type_Reference(\StructType\US_Protected_Veteran_Status_TypeObjectType $item)
+    public function addToUS_Protected_Veteran_Status_Type_Reference(\WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\US_Protected_Veteran_Status_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The US_Protected_Veteran_Status_Type_Reference property can only contain items of type \StructType\US_Protected_Veteran_Status_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The US_Protected_Veteran_Status_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\US_Protected_Veteran_Status_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->US_Protected_Veteran_Status_Type_Reference[] = $item;
         return $this;
@@ -170,7 +170,7 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
     /**
      * Set Discharge_Date value
      * @param string $discharge_Date
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
     public function setDischarge_Date($discharge_Date = null)
     {
@@ -187,7 +187,7 @@ class Veteran_Status_Identification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Veteran_Status_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Veteran_Status_Identification_DataType
      */
     public static function __set_state(array $array)
     {

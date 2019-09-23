@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Membership Target Class that is created/updated
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_TargetObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType
      */
     public $Committee_Membership_Target_Reference;
     /**
@@ -25,7 +25,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Member type for Target
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType
      */
     public $Committee_Membership_Type_Reference;
     /**
@@ -72,14 +72,14 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
      * @uses Committee_Membership_Targets_Data_SubeditType::setUnlimited_Quantity()
      * @uses Committee_Membership_Targets_Data_SubeditType::setDelete_Only()
      * @uses Committee_Membership_Targets_Data_SubeditType::setAdd_Only()
-     * @param \StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
      * @param float $target_Quantity
      * @param bool $unlimited_Quantity
      * @param bool $delete_Only
      * @param bool $add_Only
      */
-    public function __construct(\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference = null, \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, $target_Quantity = null, $unlimited_Quantity = null, $delete_Only = null, $add_Only = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference = null, \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, $target_Quantity = null, $unlimited_Quantity = null, $delete_Only = null, $add_Only = null)
     {
         $this
             ->setCommittee_Membership_Target_Reference($committee_Membership_Target_Reference)
@@ -91,7 +91,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Get Committee_Membership_Target_Reference value
-     * @return \StructType\Committee_Membership_TargetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType|null
      */
     public function getCommittee_Membership_Target_Reference()
     {
@@ -99,17 +99,17 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Committee_Membership_Target_Reference value
-     * @param \StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
-    public function setCommittee_Membership_Target_Reference(\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference = null)
+    public function setCommittee_Membership_Target_Reference(\WorkdayWsdl\\StructType\Committee_Membership_TargetObjectType $committee_Membership_Target_Reference = null)
     {
         $this->Committee_Membership_Target_Reference = $committee_Membership_Target_Reference;
         return $this;
     }
     /**
      * Get Committee_Membership_Type_Reference value
-     * @return \StructType\Committee_Membership_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType|null
      */
     public function getCommittee_Membership_Type_Reference()
     {
@@ -117,10 +117,10 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Committee_Membership_Type_Reference value
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
-    public function setCommittee_Membership_Type_Reference(\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
+    public function setCommittee_Membership_Type_Reference(\WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
     {
         $this->Committee_Membership_Type_Reference = $committee_Membership_Type_Reference;
         return $this;
@@ -136,7 +136,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     /**
      * Set Target_Quantity value
      * @param float $target_Quantity
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
     public function setTarget_Quantity($target_Quantity = null)
     {
@@ -170,7 +170,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     /**
      * Set Unlimited_Quantity value
      * @param bool $unlimited_Quantity
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
     public function setUnlimited_Quantity($unlimited_Quantity = null)
     {
@@ -192,7 +192,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     /**
      * Set Delete_Only value
      * @param bool $delete_Only
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
     public function setDelete_Only($delete_Only = null)
     {
@@ -214,7 +214,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -231,7 +231,7 @@ class Committee_Membership_Targets_Data_SubeditType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType
      */
     public static function __set_state(array $array)
     {

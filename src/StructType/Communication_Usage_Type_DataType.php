@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
      * The Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the communication usage type.
-     * @var \StructType\Communication_Usage_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType
      */
     public $Type_Reference;
     /**
@@ -30,10 +30,10 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
      * Constructor method for Communication_Usage_Type_DataType
      * @uses Communication_Usage_Type_DataType::setType_Reference()
      * @uses Communication_Usage_Type_DataType::setPrimary()
-     * @param \StructType\Communication_Usage_TypeObjectType $type_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType $type_Reference
      * @param bool $primary
      */
-    public function __construct(\StructType\Communication_Usage_TypeObjectType $type_Reference = null, $primary = null)
+    public function __construct(\WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType $type_Reference = null, $primary = null)
     {
         $this
             ->setType_Reference($type_Reference)
@@ -41,7 +41,7 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
     }
     /**
      * Get Type_Reference value
-     * @return \StructType\Communication_Usage_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType|null
      */
     public function getType_Reference()
     {
@@ -49,10 +49,10 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
     }
     /**
      * Set Type_Reference value
-     * @param \StructType\Communication_Usage_TypeObjectType $type_Reference
-     * @return \StructType\Communication_Usage_Type_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType $type_Reference
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType
      */
-    public function setType_Reference(\StructType\Communication_Usage_TypeObjectType $type_Reference = null)
+    public function setType_Reference(\WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType $type_Reference = null)
     {
         $this->Type_Reference = $type_Reference;
         return $this;
@@ -68,7 +68,7 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
     /**
      * Set Primary value
      * @param bool $primary
-     * @return \StructType\Communication_Usage_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType
      */
     public function setPrimary($primary = null)
     {
@@ -85,7 +85,7 @@ class Communication_Usage_Type_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Communication_Usage_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType
      */
     public static function __set_state(array $array)
     {

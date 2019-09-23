@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,14 +14,14 @@ class Employee_Employment_InfoType extends AbstractStructBase
 {
     /**
      * The Employee_Reference
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_Reference;
     /**
      * The Employee_Employment_Info_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Employee_Employment_Info_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType
      */
     public $Employee_Employment_Info_Data;
     /**
@@ -54,13 +54,13 @@ class Employee_Employment_InfoType extends AbstractStructBase
      * @uses Employee_Employment_InfoType::setAs_Of_Date()
      * @uses Employee_Employment_InfoType::setAs_Of_Moment()
      * @uses Employee_Employment_InfoType::setVersion()
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @param \StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Employee_ReferenceType $employee_Reference = null, \StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null, \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -71,7 +71,7 @@ class Employee_Employment_InfoType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_Reference()
     {
@@ -79,17 +79,17 @@ class Employee_Employment_InfoType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @return \StructType\Employee_Employment_InfoType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
-    public function setEmployee_Reference(\StructType\Employee_ReferenceType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Employee_Employment_Info_Data value
-     * @return \StructType\Employee_Employment_Info_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType|null
      */
     public function getEmployee_Employment_Info_Data()
     {
@@ -97,10 +97,10 @@ class Employee_Employment_InfoType extends AbstractStructBase
     }
     /**
      * Set Employee_Employment_Info_Data value
-     * @param \StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data
-     * @return \StructType\Employee_Employment_InfoType
+     * @param \WorkdayWsdl\\StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
-    public function setEmployee_Employment_Info_Data(\StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data = null)
+    public function setEmployee_Employment_Info_Data(\WorkdayWsdl\\StructType\Employee_Employment_Info_DataType $employee_Employment_Info_Data = null)
     {
         $this->Employee_Employment_Info_Data = $employee_Employment_Info_Data;
         return $this;
@@ -116,7 +116,7 @@ class Employee_Employment_InfoType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\Employee_Employment_InfoType
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -138,7 +138,7 @@ class Employee_Employment_InfoType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\Employee_Employment_InfoType
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -160,7 +160,7 @@ class Employee_Employment_InfoType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Employee_Employment_InfoType
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
     public function setVersion($version = null)
     {
@@ -177,7 +177,7 @@ class Employee_Employment_InfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Employment_InfoType
+     * @return \WorkdayWsdl\\StructType\Employee_Employment_InfoType
      */
     public static function __set_state(array $array)
     {

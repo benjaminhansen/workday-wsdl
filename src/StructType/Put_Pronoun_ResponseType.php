@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Pronoun of the person.
      * - minOccurs: 0
-     * @var \StructType\PronounObjectType
+     * @var \WorkdayWsdl\\StructType\PronounObjectType
      */
     public $Pronoun_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
      * Constructor method for Put_Pronoun_ResponseType
      * @uses Put_Pronoun_ResponseType::setPronoun_Reference()
      * @uses Put_Pronoun_ResponseType::setVersion()
-     * @param \StructType\PronounObjectType $pronoun_Reference
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
      * @param string $version
      */
-    public function __construct(\StructType\PronounObjectType $pronoun_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null, $version = null)
     {
         $this
             ->setPronoun_Reference($pronoun_Reference)
@@ -42,7 +42,7 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
     }
     /**
      * Get Pronoun_Reference value
-     * @return \StructType\PronounObjectType|null
+     * @return \WorkdayWsdl\\StructType\PronounObjectType|null
      */
     public function getPronoun_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
     }
     /**
      * Set Pronoun_Reference value
-     * @param \StructType\PronounObjectType $pronoun_Reference
-     * @return \StructType\Put_Pronoun_ResponseType
+     * @param \WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_ResponseType
      */
-    public function setPronoun_Reference(\StructType\PronounObjectType $pronoun_Reference = null)
+    public function setPronoun_Reference(\WorkdayWsdl\\StructType\PronounObjectType $pronoun_Reference = null)
     {
         $this->Pronoun_Reference = $pronoun_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Pronoun_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Pronoun_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Pronoun_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Pronoun_ResponseType
      */
     public static function __set_state(array $array)
     {

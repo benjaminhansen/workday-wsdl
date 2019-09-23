@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Manage Committee Membership business process.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
      * Constructor method for Manage_Committee_Membership_ResponseType
      * @uses Manage_Committee_Membership_ResponseType::setEvent_Reference()
      * @uses Manage_Committee_Membership_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null, $version = null)
     {
         $this
             ->setEvent_Reference($event_Reference)
@@ -42,7 +42,7 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
     }
     /**
      * Get Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEvent_Reference()
     {
@@ -50,10 +50,10 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
     }
     /**
      * Set Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $event_Reference
-     * @return \StructType\Manage_Committee_Membership_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_ResponseType
      */
-    public function setEvent_Reference(\StructType\Unique_IdentifierObjectType $event_Reference = null)
+    public function setEvent_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $event_Reference = null)
     {
         $this->Event_Reference = $event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Manage_Committee_Membership_ResponseType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Manage_Committee_Membership_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Committee_Membership_ResponseType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_ResponseType
      */
     public static function __set_state(array $array)
     {

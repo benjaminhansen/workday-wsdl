@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Talent_Assessment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the information about the employee's potential.
      * - minOccurs: 0
-     * @var \StructType\Employee_Talent_Assessment_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType
      */
     public $Employee_Potential_Data;
     /**
      * Constructor method for Talent_Assessment_DataType
      * @uses Talent_Assessment_DataType::setEmployee_Potential_Data()
-     * @param \StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data
      */
-    public function __construct(\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data = null)
     {
         $this
             ->setEmployee_Potential_Data($employee_Potential_Data);
     }
     /**
      * Get Employee_Potential_Data value
-     * @return \StructType\Employee_Talent_Assessment_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType|null
      */
     public function getEmployee_Potential_Data()
     {
@@ -40,10 +40,10 @@ class Talent_Assessment_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Potential_Data value
-     * @param \StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data
-     * @return \StructType\Talent_Assessment_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data
+     * @return \WorkdayWsdl\\StructType\Talent_Assessment_DataType
      */
-    public function setEmployee_Potential_Data(\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data = null)
+    public function setEmployee_Potential_Data(\WorkdayWsdl\\StructType\Employee_Talent_Assessment_DataType $employee_Potential_Data = null)
     {
         $this->Employee_Potential_Data = $employee_Potential_Data;
         return $this;
@@ -54,7 +54,7 @@ class Talent_Assessment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Talent_Assessment_DataType
+     * @return \WorkdayWsdl\\StructType\Talent_Assessment_DataType
      */
     public static function __set_state(array $array)
     {

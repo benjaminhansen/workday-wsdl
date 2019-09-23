@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Location_Content_DataType extends AbstractStructBase
      * The Integration_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $Integration_ID_Data;
     /**
@@ -33,7 +33,7 @@ class Location_Content_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_Type_Reference_DataType[]
+     * @var \WorkdayWsdl\\StructType\Location_Type_Reference_DataType[]
      */
     public $Location_Type_Reference;
     /**
@@ -41,7 +41,7 @@ class Location_Content_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Time_Profile_Reference_DataType[]
+     * @var \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType[]
      */
     public $Time_Profile_Reference;
     /**
@@ -50,12 +50,12 @@ class Location_Content_DataType extends AbstractStructBase
      * @uses Location_Content_DataType::setLocation_Name()
      * @uses Location_Content_DataType::setLocation_Type_Reference()
      * @uses Location_Content_DataType::setTime_Profile_Reference()
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
      * @param string $location_Name
-     * @param \StructType\Location_Type_Reference_DataType[] $location_Type_Reference
-     * @param \StructType\Time_Profile_Reference_DataType[] $time_Profile_Reference
+     * @param \WorkdayWsdl\\StructType\Location_Type_Reference_DataType[] $location_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType[] $time_Profile_Reference
      */
-    public function __construct(\StructType\External_Integration_ID_DataType $integration_ID_Data = null, $location_Name = null, array $location_Type_Reference = array(), array $time_Profile_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null, $location_Name = null, array $location_Type_Reference = array(), array $time_Profile_Reference = array())
     {
         $this
             ->setIntegration_ID_Data($integration_ID_Data)
@@ -65,7 +65,7 @@ class Location_Content_DataType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getIntegration_ID_Data()
     {
@@ -73,10 +73,10 @@ class Location_Content_DataType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @return \StructType\Location_Content_DataType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
-    public function setIntegration_ID_Data(\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
+    public function setIntegration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
     {
         $this->Integration_ID_Data = $integration_ID_Data;
         return $this;
@@ -92,7 +92,7 @@ class Location_Content_DataType extends AbstractStructBase
     /**
      * Set Location_Name value
      * @param string $location_Name
-     * @return \StructType\Location_Content_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
     public function setLocation_Name($location_Name = null)
     {
@@ -105,7 +105,7 @@ class Location_Content_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Type_Reference value
-     * @return \StructType\Location_Type_Reference_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_Type_Reference_DataType[]|null
      */
     public function getLocation_Type_Reference()
     {
@@ -123,12 +123,12 @@ class Location_Content_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Content_DataTypeLocation_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Content_DataTypeLocation_Type_ReferenceItem instanceof \StructType\Location_Type_Reference_DataType) {
+            if (!$location_Content_DataTypeLocation_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Location_Type_Reference_DataType) {
                 $invalidValues[] = is_object($location_Content_DataTypeLocation_Type_ReferenceItem) ? get_class($location_Content_DataTypeLocation_Type_ReferenceItem) : sprintf('%s(%s)', gettype($location_Content_DataTypeLocation_Type_ReferenceItem), var_export($location_Content_DataTypeLocation_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_Type_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_Type_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -136,8 +136,8 @@ class Location_Content_DataType extends AbstractStructBase
     /**
      * Set Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Type_Reference_DataType[] $location_Type_Reference
-     * @return \StructType\Location_Content_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Type_Reference_DataType[] $location_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
     public function setLocation_Type_Reference(array $location_Type_Reference = array())
     {
@@ -151,21 +151,21 @@ class Location_Content_DataType extends AbstractStructBase
     /**
      * Add item to Location_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_Type_Reference_DataType $item
-     * @return \StructType\Location_Content_DataType
+     * @param \WorkdayWsdl\\StructType\Location_Type_Reference_DataType $item
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
-    public function addToLocation_Type_Reference(\StructType\Location_Type_Reference_DataType $item)
+    public function addToLocation_Type_Reference(\WorkdayWsdl\\StructType\Location_Type_Reference_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_Type_Reference_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \StructType\Location_Type_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_Type_Reference_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Location_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Location_Type_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location_Type_Reference[] = $item;
         return $this;
     }
     /**
      * Get Time_Profile_Reference value
-     * @return \StructType\Time_Profile_Reference_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType[]|null
      */
     public function getTime_Profile_Reference()
     {
@@ -183,12 +183,12 @@ class Location_Content_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Content_DataTypeTime_Profile_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$location_Content_DataTypeTime_Profile_ReferenceItem instanceof \StructType\Time_Profile_Reference_DataType) {
+            if (!$location_Content_DataTypeTime_Profile_ReferenceItem instanceof \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType) {
                 $invalidValues[] = is_object($location_Content_DataTypeTime_Profile_ReferenceItem) ? get_class($location_Content_DataTypeTime_Profile_ReferenceItem) : sprintf('%s(%s)', gettype($location_Content_DataTypeTime_Profile_ReferenceItem), var_export($location_Content_DataTypeTime_Profile_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Time_Profile_Reference property can only contain items of type \StructType\Time_Profile_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Time_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -196,8 +196,8 @@ class Location_Content_DataType extends AbstractStructBase
     /**
      * Set Time_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Time_Profile_Reference_DataType[] $time_Profile_Reference
-     * @return \StructType\Location_Content_DataType
+     * @param \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType[] $time_Profile_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
     public function setTime_Profile_Reference(array $time_Profile_Reference = array())
     {
@@ -211,14 +211,14 @@ class Location_Content_DataType extends AbstractStructBase
     /**
      * Add item to Time_Profile_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Time_Profile_Reference_DataType $item
-     * @return \StructType\Location_Content_DataType
+     * @param \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType $item
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
-    public function addToTime_Profile_Reference(\StructType\Time_Profile_Reference_DataType $item)
+    public function addToTime_Profile_Reference(\WorkdayWsdl\\StructType\Time_Profile_Reference_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Time_Profile_Reference_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Time_Profile_Reference property can only contain items of type \StructType\Time_Profile_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Time_Profile_Reference property can only contain items of type \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Time_Profile_Reference[] = $item;
         return $this;
@@ -229,7 +229,7 @@ class Location_Content_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Content_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Content_DataType
      */
     public static function __set_state(array $array)
     {

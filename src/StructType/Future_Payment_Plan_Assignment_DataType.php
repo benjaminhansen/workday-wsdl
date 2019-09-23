@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Compensation Plan Reference
      * - minOccurs: 0
-     * @var \StructType\Future_Payment_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Future_Payment_PlanObjectType
      */
     public $Compensation_Plan_Reference;
     /**
@@ -38,7 +38,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Individual Target Currency Reference
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Individual_Target_Currency_Reference;
     /**
@@ -66,13 +66,13 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
      * @uses Future_Payment_Plan_Assignment_DataType::setIndividual_Target_Currency_Reference()
      * @uses Future_Payment_Plan_Assignment_DataType::setIndividual_Target_Payment_Date()
      * @uses Future_Payment_Plan_Assignment_DataType::setComment()
-     * @param \StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference
      * @param float $individual_Target_Amount
-     * @param \StructType\CurrencyObjectType $individual_Target_Currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $individual_Target_Currency_Reference
      * @param string $individual_Target_Payment_Date
      * @param string $comment
      */
-    public function __construct(\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference = null, $individual_Target_Amount = null, \StructType\CurrencyObjectType $individual_Target_Currency_Reference = null, $individual_Target_Payment_Date = null, $comment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference = null, $individual_Target_Amount = null, \WorkdayWsdl\\StructType\CurrencyObjectType $individual_Target_Currency_Reference = null, $individual_Target_Payment_Date = null, $comment = null)
     {
         $this
             ->setCompensation_Plan_Reference($compensation_Plan_Reference)
@@ -83,7 +83,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Plan_Reference value
-     * @return \StructType\Future_Payment_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Future_Payment_PlanObjectType|null
      */
     public function getCompensation_Plan_Reference()
     {
@@ -91,10 +91,10 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Plan_Reference value
-     * @param \StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
-    public function setCompensation_Plan_Reference(\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference = null)
+    public function setCompensation_Plan_Reference(\WorkdayWsdl\\StructType\Future_Payment_PlanObjectType $compensation_Plan_Reference = null)
     {
         $this->Compensation_Plan_Reference = $compensation_Plan_Reference;
         return $this;
@@ -110,7 +110,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Amount value
      * @param float $individual_Target_Amount
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Amount($individual_Target_Amount = null)
     {
@@ -131,7 +131,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Individual_Target_Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getIndividual_Target_Currency_Reference()
     {
@@ -139,10 +139,10 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Individual_Target_Currency_Reference value
-     * @param \StructType\CurrencyObjectType $individual_Target_Currency_Reference
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $individual_Target_Currency_Reference
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
-    public function setIndividual_Target_Currency_Reference(\StructType\CurrencyObjectType $individual_Target_Currency_Reference = null)
+    public function setIndividual_Target_Currency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $individual_Target_Currency_Reference = null)
     {
         $this->Individual_Target_Currency_Reference = $individual_Target_Currency_Reference;
         return $this;
@@ -158,7 +158,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Payment_Date value
      * @param string $individual_Target_Payment_Date
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Payment_Date($individual_Target_Payment_Date = null)
     {
@@ -180,7 +180,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
     public function setComment($comment = null)
     {
@@ -197,7 +197,7 @@ class Future_Payment_Plan_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Future_Payment_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Future_Payment_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

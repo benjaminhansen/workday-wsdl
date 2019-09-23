@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class SchoolObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SchoolObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\SchoolObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class SchoolObjectType extends AbstractStructBase
      * Constructor method for SchoolObjectType
      * @uses SchoolObjectType::setID()
      * @uses SchoolObjectType::setDescriptor()
-     * @param \StructType\SchoolObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\SchoolObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class SchoolObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\SchoolObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\SchoolObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class SchoolObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $schoolObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$schoolObjectTypeIDItem instanceof \StructType\SchoolObjectIDType) {
+            if (!$schoolObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\SchoolObjectIDType) {
                 $invalidValues[] = is_object($schoolObjectTypeIDItem) ? get_class($schoolObjectTypeIDItem) : sprintf('%s(%s)', gettype($schoolObjectTypeIDItem), var_export($schoolObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\SchoolObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\SchoolObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class SchoolObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\SchoolObjectIDType[] $iD
-     * @return \StructType\SchoolObjectType
+     * @param \WorkdayWsdl\\StructType\SchoolObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class SchoolObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\SchoolObjectIDType $item
-     * @return \StructType\SchoolObjectType
+     * @param \WorkdayWsdl\\StructType\SchoolObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType
      */
-    public function addToID(\StructType\SchoolObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\SchoolObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SchoolObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\SchoolObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\SchoolObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\SchoolObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class SchoolObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\SchoolObjectType
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class SchoolObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SchoolObjectType
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType
      */
     public static function __set_state(array $array)
     {

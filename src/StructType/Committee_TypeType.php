@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_TypeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to a Committee Type
      * - minOccurs: 0
-     * @var \StructType\Committee_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_TypeObjectType
      */
     public $Committee_Type_Reference;
     /**
@@ -25,17 +25,17 @@ class Committee_TypeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data for Committee Type
      * - minOccurs: 0
-     * @var \StructType\Committee_Type_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Type_DataType
      */
     public $Committee_Type_Data;
     /**
      * Constructor method for Committee_TypeType
      * @uses Committee_TypeType::setCommittee_Type_Reference()
      * @uses Committee_TypeType::setCommittee_Type_Data()
-     * @param \StructType\Committee_TypeObjectType $committee_Type_Reference
-     * @param \StructType\Committee_Type_DataType $committee_Type_Data
+     * @param \WorkdayWsdl\\StructType\Committee_TypeObjectType $committee_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Type_DataType $committee_Type_Data
      */
-    public function __construct(\StructType\Committee_TypeObjectType $committee_Type_Reference = null, \StructType\Committee_Type_DataType $committee_Type_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_TypeObjectType $committee_Type_Reference = null, \WorkdayWsdl\\StructType\Committee_Type_DataType $committee_Type_Data = null)
     {
         $this
             ->setCommittee_Type_Reference($committee_Type_Reference)
@@ -43,7 +43,7 @@ class Committee_TypeType extends AbstractStructBase
     }
     /**
      * Get Committee_Type_Reference value
-     * @return \StructType\Committee_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_TypeObjectType|null
      */
     public function getCommittee_Type_Reference()
     {
@@ -51,17 +51,17 @@ class Committee_TypeType extends AbstractStructBase
     }
     /**
      * Set Committee_Type_Reference value
-     * @param \StructType\Committee_TypeObjectType $committee_Type_Reference
-     * @return \StructType\Committee_TypeType
+     * @param \WorkdayWsdl\\StructType\Committee_TypeObjectType $committee_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_TypeType
      */
-    public function setCommittee_Type_Reference(\StructType\Committee_TypeObjectType $committee_Type_Reference = null)
+    public function setCommittee_Type_Reference(\WorkdayWsdl\\StructType\Committee_TypeObjectType $committee_Type_Reference = null)
     {
         $this->Committee_Type_Reference = $committee_Type_Reference;
         return $this;
     }
     /**
      * Get Committee_Type_Data value
-     * @return \StructType\Committee_Type_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Type_DataType|null
      */
     public function getCommittee_Type_Data()
     {
@@ -69,10 +69,10 @@ class Committee_TypeType extends AbstractStructBase
     }
     /**
      * Set Committee_Type_Data value
-     * @param \StructType\Committee_Type_DataType $committee_Type_Data
-     * @return \StructType\Committee_TypeType
+     * @param \WorkdayWsdl\\StructType\Committee_Type_DataType $committee_Type_Data
+     * @return \WorkdayWsdl\\StructType\Committee_TypeType
      */
-    public function setCommittee_Type_Data(\StructType\Committee_Type_DataType $committee_Type_Data = null)
+    public function setCommittee_Type_Data(\WorkdayWsdl\\StructType\Committee_Type_DataType $committee_Type_Data = null)
     {
         $this->Committee_Type_Data = $committee_Type_Data;
         return $this;
@@ -83,7 +83,7 @@ class Committee_TypeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_TypeType
+     * @return \WorkdayWsdl\\StructType\Committee_TypeType
      */
     public static function __set_state(array $array)
     {

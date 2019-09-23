@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Agenda reference for meeting
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_ItemObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType
      */
     public $Agenda_Item_Reference;
     /**
@@ -49,7 +49,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * The Committee_Meeting_Agenda_Item_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Agenda type
-     * @var \StructType\Committee_Meeting_Agenda_Item_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType
      */
     public $Committee_Meeting_Agenda_Item_Type_Reference;
     /**
@@ -77,7 +77,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * - documentation: This error indicates that the appointment selected is currently not available to be linked to an agenda. | This error indicates that the user has not enabled Education Institution Features. | Academic appointments related to this
      * agenda
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Related_Academic_Appointment_Event_Reference;
     /**
@@ -85,7 +85,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data for committee meeting minutes
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Minutes_SubDataType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType
      */
     public $Agenda_Item_Minutes_Data;
     /**
@@ -94,7 +94,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * - documentation: Data for committee meeting action items
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Action_Item_Sub_DataType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType[]
      */
     public $Agenda_Item_Action_Item_Data;
     /**
@@ -102,7 +102,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data for committee meeting attachments
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_AttachmentsType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType
      */
     public $Attachments;
     /**
@@ -111,7 +111,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * - documentation: Data for votes on the agenda item
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[]
      */
     public $Committee_Meeting_Agenda_Item_Vote;
     /**
@@ -144,22 +144,22 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * @uses Committee_Meeting_Agenda_Item_Data_SubeditType::setCommittee_Meeting_Agenda_Item_Vote()
      * @uses Committee_Meeting_Agenda_Item_Data_SubeditType::setDelete_Only()
      * @uses Committee_Meeting_Agenda_Item_Data_SubeditType::setAdd_Only()
-     * @param \StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference
      * @param string $agenda_Item_ID
      * @param string $agenda_Item_Number
      * @param string $agenda_Item_Description
-     * @param \StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference
      * @param string $agenda_Item_Presenter
      * @param string $agenda_Item_Details
-     * @param \StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference
-     * @param \StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data
-     * @param \StructType\Committee_Meeting_Action_Item_Sub_DataType[] $agenda_Item_Action_Item_Data
-     * @param \StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments
-     * @param \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[] $committee_Meeting_Agenda_Item_Vote
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType[] $agenda_Item_Action_Item_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[] $committee_Meeting_Agenda_Item_Vote
      * @param bool $delete_Only
      * @param bool $add_Only
      */
-    public function __construct(\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference = null, $agenda_Item_ID = null, $agenda_Item_Number = null, $agenda_Item_Description = null, \StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference = null, $agenda_Item_Presenter = null, $agenda_Item_Details = null, \StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference = null, \StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data = null, array $agenda_Item_Action_Item_Data = array(), \StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments = null, array $committee_Meeting_Agenda_Item_Vote = array(), $delete_Only = null, $add_Only = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference = null, $agenda_Item_ID = null, $agenda_Item_Number = null, $agenda_Item_Description = null, \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference = null, $agenda_Item_Presenter = null, $agenda_Item_Details = null, \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference = null, \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data = null, array $agenda_Item_Action_Item_Data = array(), \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments = null, array $committee_Meeting_Agenda_Item_Vote = array(), $delete_Only = null, $add_Only = null)
     {
         $this
             ->setAgenda_Item_Reference($agenda_Item_Reference)
@@ -179,7 +179,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Get Agenda_Item_Reference value
-     * @return \StructType\Committee_Meeting_Agenda_ItemObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType|null
      */
     public function getAgenda_Item_Reference()
     {
@@ -187,10 +187,10 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Agenda_Item_Reference value
-     * @param \StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function setAgenda_Item_Reference(\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference = null)
+    public function setAgenda_Item_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_ItemObjectType $agenda_Item_Reference = null)
     {
         $this->Agenda_Item_Reference = $agenda_Item_Reference;
         return $this;
@@ -206,7 +206,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_ID value
      * @param string $agenda_Item_ID
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_ID($agenda_Item_ID = null)
     {
@@ -228,7 +228,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_Number value
      * @param string $agenda_Item_Number
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_Number($agenda_Item_Number = null)
     {
@@ -250,7 +250,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_Description value
      * @param string $agenda_Item_Description
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_Description($agenda_Item_Description = null)
     {
@@ -263,7 +263,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Get Committee_Meeting_Agenda_Item_Type_Reference value
-     * @return \StructType\Committee_Meeting_Agenda_Item_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType|null
      */
     public function getCommittee_Meeting_Agenda_Item_Type_Reference()
     {
@@ -271,10 +271,10 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Committee_Meeting_Agenda_Item_Type_Reference value
-     * @param \StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function setCommittee_Meeting_Agenda_Item_Type_Reference(\StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference = null)
+    public function setCommittee_Meeting_Agenda_Item_Type_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_TypeObjectType $committee_Meeting_Agenda_Item_Type_Reference = null)
     {
         $this->Committee_Meeting_Agenda_Item_Type_Reference = $committee_Meeting_Agenda_Item_Type_Reference;
         return $this;
@@ -290,7 +290,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_Presenter value
      * @param string $agenda_Item_Presenter
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_Presenter($agenda_Item_Presenter = null)
     {
@@ -312,7 +312,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_Details value
      * @param string $agenda_Item_Details
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_Details($agenda_Item_Details = null)
     {
@@ -325,7 +325,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Get Related_Academic_Appointment_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getRelated_Academic_Appointment_Event_Reference()
     {
@@ -333,17 +333,17 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Related_Academic_Appointment_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function setRelated_Academic_Appointment_Event_Reference(\StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference = null)
+    public function setRelated_Academic_Appointment_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $related_Academic_Appointment_Event_Reference = null)
     {
         $this->Related_Academic_Appointment_Event_Reference = $related_Academic_Appointment_Event_Reference;
         return $this;
     }
     /**
      * Get Agenda_Item_Minutes_Data value
-     * @return \StructType\Committee_Meeting_Minutes_SubDataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType|null
      */
     public function getAgenda_Item_Minutes_Data()
     {
@@ -351,17 +351,17 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Agenda_Item_Minutes_Data value
-     * @param \StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function setAgenda_Item_Minutes_Data(\StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data = null)
+    public function setAgenda_Item_Minutes_Data(\WorkdayWsdl\\StructType\Committee_Meeting_Minutes_SubDataType $agenda_Item_Minutes_Data = null)
     {
         $this->Agenda_Item_Minutes_Data = $agenda_Item_Minutes_Data;
         return $this;
     }
     /**
      * Get Agenda_Item_Action_Item_Data value
-     * @return \StructType\Committee_Meeting_Action_Item_Sub_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType[]|null
      */
     public function getAgenda_Item_Action_Item_Data()
     {
@@ -379,12 +379,12 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem instanceof \StructType\Committee_Meeting_Action_Item_Sub_DataType) {
+            if (!$committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType) {
                 $invalidValues[] = is_object($committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem) ? get_class($committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem) : sprintf('%s(%s)', gettype($committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem), var_export($committee_Meeting_Agenda_Item_Data_SubeditTypeAgenda_Item_Action_Item_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Agenda_Item_Action_Item_Data property can only contain items of type \StructType\Committee_Meeting_Action_Item_Sub_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Agenda_Item_Action_Item_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -392,8 +392,8 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Agenda_Item_Action_Item_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Action_Item_Sub_DataType[] $agenda_Item_Action_Item_Data
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType[] $agenda_Item_Action_Item_Data
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAgenda_Item_Action_Item_Data(array $agenda_Item_Action_Item_Data = array())
     {
@@ -407,21 +407,21 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Add item to Agenda_Item_Action_Item_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Action_Item_Sub_DataType $item
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function addToAgenda_Item_Action_Item_Data(\StructType\Committee_Meeting_Action_Item_Sub_DataType $item)
+    public function addToAgenda_Item_Action_Item_Data(\WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Meeting_Action_Item_Sub_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Agenda_Item_Action_Item_Data property can only contain items of type \StructType\Committee_Meeting_Action_Item_Sub_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Agenda_Item_Action_Item_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Action_Item_Sub_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Agenda_Item_Action_Item_Data[] = $item;
         return $this;
     }
     /**
      * Get Attachments value
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentsType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType|null
      */
     public function getAttachments()
     {
@@ -429,17 +429,17 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     }
     /**
      * Set Attachments value
-     * @param \StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function setAttachments(\StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments = null)
+    public function setAttachments(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentsType $attachments = null)
     {
         $this->Attachments = $attachments;
         return $this;
     }
     /**
      * Get Committee_Meeting_Agenda_Item_Vote value
-     * @return \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[]|null
      */
     public function getCommittee_Meeting_Agenda_Item_Vote()
     {
@@ -457,12 +457,12 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem) {
             // validation for constraint: itemType
-            if (!$committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem instanceof \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType) {
+            if (!$committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType) {
                 $invalidValues[] = is_object($committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem) ? get_class($committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem) : sprintf('%s(%s)', gettype($committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem), var_export($committee_Meeting_Agenda_Item_Data_SubeditTypeCommittee_Meeting_Agenda_Item_VoteItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Meeting_Agenda_Item_Vote property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Meeting_Agenda_Item_Vote property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -470,8 +470,8 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Committee_Meeting_Agenda_Item_Vote value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[] $committee_Meeting_Agenda_Item_Vote
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType[] $committee_Meeting_Agenda_Item_Vote
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setCommittee_Meeting_Agenda_Item_Vote(array $committee_Meeting_Agenda_Item_Vote = array())
     {
@@ -485,14 +485,14 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Add item to Committee_Meeting_Agenda_Item_Vote value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType $item
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
-    public function addToCommittee_Meeting_Agenda_Item_Vote(\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType $item)
+    public function addToCommittee_Meeting_Agenda_Item_Vote(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Agenda_Item_Vote property can only contain items of type \StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Meeting_Agenda_Item_Vote property can only contain items of type \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Vote_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Meeting_Agenda_Item_Vote[] = $item;
         return $this;
@@ -508,7 +508,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Delete_Only value
      * @param bool $delete_Only
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setDelete_Only($delete_Only = null)
     {
@@ -530,7 +530,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -547,7 +547,7 @@ class Committee_Meeting_Agenda_Item_Data_SubeditType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Data_SubeditType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Previous_System_HistoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
      * Constructor method for Job_Previous_System_HistoryObjectType
      * @uses Job_Previous_System_HistoryObjectType::setID()
      * @uses Job_Previous_System_HistoryObjectType::setDescriptor()
-     * @param \StructType\Job_Previous_System_HistoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Job_Previous_System_HistoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Previous_System_HistoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$job_Previous_System_HistoryObjectTypeIDItem instanceof \StructType\Job_Previous_System_HistoryObjectIDType) {
+            if (!$job_Previous_System_HistoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType) {
                 $invalidValues[] = is_object($job_Previous_System_HistoryObjectTypeIDItem) ? get_class($job_Previous_System_HistoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($job_Previous_System_HistoryObjectTypeIDItem), var_export($job_Previous_System_HistoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Job_Previous_System_HistoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Previous_System_HistoryObjectIDType[] $iD
-     * @return \StructType\Job_Previous_System_HistoryObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Previous_System_HistoryObjectIDType $item
-     * @return \StructType\Job_Previous_System_HistoryObjectType
+     * @param \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType
      */
-    public function addToID(\StructType\Job_Previous_System_HistoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Previous_System_HistoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Job_Previous_System_HistoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Job_Previous_System_HistoryObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Job_Previous_System_HistoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Previous_System_HistoryObjectType
+     * @return \WorkdayWsdl\\StructType\Job_Previous_System_HistoryObjectType
      */
     public static function __set_state(array $array)
     {

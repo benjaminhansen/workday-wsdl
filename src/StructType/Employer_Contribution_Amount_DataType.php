@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,21 +14,21 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
 {
     /**
      * The Contribution_Amount_Data
-     * @var \StructType\Contribution_Amount_DataType
+     * @var \WorkdayWsdl\\StructType\Contribution_Amount_DataType
      */
     public $Contribution_Amount_Data;
     /**
      * The Payroll_Interface_Contribution_Amount_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Payroll_Interface_Contribution_Amount_DataType
+     * @var \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType
      */
     public $Payroll_Interface_Contribution_Amount_Data;
     /**
      * The Currency_Reference
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the currency.
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -36,11 +36,11 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
      * @uses Employer_Contribution_Amount_DataType::setContribution_Amount_Data()
      * @uses Employer_Contribution_Amount_DataType::setPayroll_Interface_Contribution_Amount_Data()
      * @uses Employer_Contribution_Amount_DataType::setCurrency_Reference()
-     * @param \StructType\Contribution_Amount_DataType $contribution_Amount_Data
-     * @param \StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\Contribution_Amount_DataType $contribution_Amount_Data
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct(\StructType\Contribution_Amount_DataType $contribution_Amount_Data = null, \StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Contribution_Amount_DataType $contribution_Amount_Data = null, \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setContribution_Amount_Data($contribution_Amount_Data)
@@ -49,7 +49,7 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Get Contribution_Amount_Data value
-     * @return \StructType\Contribution_Amount_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contribution_Amount_DataType|null
      */
     public function getContribution_Amount_Data()
     {
@@ -57,17 +57,17 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Set Contribution_Amount_Data value
-     * @param \StructType\Contribution_Amount_DataType $contribution_Amount_Data
-     * @return \StructType\Employer_Contribution_Amount_DataType
+     * @param \WorkdayWsdl\\StructType\Contribution_Amount_DataType $contribution_Amount_Data
+     * @return \WorkdayWsdl\\StructType\Employer_Contribution_Amount_DataType
      */
-    public function setContribution_Amount_Data(\StructType\Contribution_Amount_DataType $contribution_Amount_Data = null)
+    public function setContribution_Amount_Data(\WorkdayWsdl\\StructType\Contribution_Amount_DataType $contribution_Amount_Data = null)
     {
         $this->Contribution_Amount_Data = $contribution_Amount_Data;
         return $this;
     }
     /**
      * Get Payroll_Interface_Contribution_Amount_Data value
-     * @return \StructType\Payroll_Interface_Contribution_Amount_DataType|null
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType|null
      */
     public function getPayroll_Interface_Contribution_Amount_Data()
     {
@@ -75,17 +75,17 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Set Payroll_Interface_Contribution_Amount_Data value
-     * @param \StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data
-     * @return \StructType\Employer_Contribution_Amount_DataType
+     * @param \WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data
+     * @return \WorkdayWsdl\\StructType\Employer_Contribution_Amount_DataType
      */
-    public function setPayroll_Interface_Contribution_Amount_Data(\StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data = null)
+    public function setPayroll_Interface_Contribution_Amount_Data(\WorkdayWsdl\\StructType\Payroll_Interface_Contribution_Amount_DataType $payroll_Interface_Contribution_Amount_Data = null)
     {
         $this->Payroll_Interface_Contribution_Amount_Data = $payroll_Interface_Contribution_Amount_Data;
         return $this;
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -93,10 +93,10 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Employer_Contribution_Amount_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Employer_Contribution_Amount_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -107,7 +107,7 @@ class Employer_Contribution_Amount_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employer_Contribution_Amount_DataType
+     * @return \WorkdayWsdl\\StructType\Employer_Contribution_Amount_DataType
      */
     public static function __set_state(array $array)
     {

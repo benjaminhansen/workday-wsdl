@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Person_Photo_HV_DataType[]
+     * @var \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType[]
      */
     public $Person_Photo_HV_Data;
     /**
@@ -42,7 +42,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
      * @uses Import_Person_Photo_RequestType::setPerson_Photo_HV_Data()
      * @uses Import_Person_Photo_RequestType::setVersion()
      * @param string $iD
-     * @param \StructType\Change_Person_Photo_HV_DataType[] $person_Photo_HV_Data
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType[] $person_Photo_HV_Data
      * @param string $version
      */
     public function __construct($iD = null, array $person_Photo_HV_Data = array(), $version = null)
@@ -63,7 +63,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Import_Person_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Person_Photo_RequestType
      */
     public function setID($iD = null)
     {
@@ -76,7 +76,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Get Person_Photo_HV_Data value
-     * @return \StructType\Change_Person_Photo_HV_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType[]|null
      */
     public function getPerson_Photo_HV_Data()
     {
@@ -94,12 +94,12 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $import_Person_Photo_RequestTypePerson_Photo_HV_DataItem) {
             // validation for constraint: itemType
-            if (!$import_Person_Photo_RequestTypePerson_Photo_HV_DataItem instanceof \StructType\Change_Person_Photo_HV_DataType) {
+            if (!$import_Person_Photo_RequestTypePerson_Photo_HV_DataItem instanceof \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType) {
                 $invalidValues[] = is_object($import_Person_Photo_RequestTypePerson_Photo_HV_DataItem) ? get_class($import_Person_Photo_RequestTypePerson_Photo_HV_DataItem) : sprintf('%s(%s)', gettype($import_Person_Photo_RequestTypePerson_Photo_HV_DataItem), var_export($import_Person_Photo_RequestTypePerson_Photo_HV_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Photo_HV_Data property can only contain items of type \StructType\Change_Person_Photo_HV_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Photo_HV_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -107,8 +107,8 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
     /**
      * Set Person_Photo_HV_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Person_Photo_HV_DataType[] $person_Photo_HV_Data
-     * @return \StructType\Import_Person_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType[] $person_Photo_HV_Data
+     * @return \WorkdayWsdl\\StructType\Import_Person_Photo_RequestType
      */
     public function setPerson_Photo_HV_Data(array $person_Photo_HV_Data = array())
     {
@@ -122,14 +122,14 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
     /**
      * Add item to Person_Photo_HV_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Person_Photo_HV_DataType $item
-     * @return \StructType\Import_Person_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType $item
+     * @return \WorkdayWsdl\\StructType\Import_Person_Photo_RequestType
      */
-    public function addToPerson_Photo_HV_Data(\StructType\Change_Person_Photo_HV_DataType $item)
+    public function addToPerson_Photo_HV_Data(\WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Person_Photo_HV_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Photo_HV_Data property can only contain items of type \StructType\Change_Person_Photo_HV_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Photo_HV_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Person_Photo_HV_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Photo_HV_Data[] = $item;
         return $this;
@@ -145,7 +145,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Import_Person_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Person_Photo_RequestType
      */
     public function setVersion($version = null)
     {
@@ -162,7 +162,7 @@ class Import_Person_Photo_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Import_Person_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Person_Photo_RequestType
      */
     public static function __set_state(array $array)
     {

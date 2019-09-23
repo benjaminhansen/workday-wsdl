@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * The Sponsoring_Organization_Reference
      * Meta information extracted from the WSDL
      * - documentation: Sponsoring Organization
-     * @var \StructType\Committee_Sponsoring_OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType
      */
     public $Sponsoring_Organization_Reference;
     /**
@@ -50,7 +50,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * - documentation: Job Requisition
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_RequisitionObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_RequisitionObjectType[]
      */
     public $Job_Requisition_Reference;
     /**
@@ -58,7 +58,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Superior Committee
      * - minOccurs: 0
-     * @var \StructType\CommitteeObjectType
+     * @var \WorkdayWsdl\\StructType\CommitteeObjectType
      */
     public $Superior_Committee_Reference;
     /**
@@ -95,7 +95,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_Targets_Data_SubeditType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType[]
      */
     public $Committee_Membership_Target_Data_Reference;
     /**
@@ -113,15 +113,15 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * @param string $effective_Date
      * @param string $committee_Name
      * @param string $committee_Code
-     * @param \StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference
-     * @param \StructType\Job_RequisitionObjectType[] $job_Requisition_Reference
-     * @param \StructType\CommitteeObjectType $superior_Committee_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Job_RequisitionObjectType[] $job_Requisition_Reference
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $superior_Committee_Reference
      * @param string $committee_Summary
      * @param string $committee_Purpose___Detailed
      * @param bool $inactive
-     * @param \StructType\Committee_Membership_Targets_Data_SubeditType[] $committee_Membership_Target_Data_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType[] $committee_Membership_Target_Data_Reference
      */
-    public function __construct($effective_Date = null, $committee_Name = null, $committee_Code = null, \StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference = null, array $job_Requisition_Reference = array(), \StructType\CommitteeObjectType $superior_Committee_Reference = null, $committee_Summary = null, $committee_Purpose___Detailed = null, $inactive = null, array $committee_Membership_Target_Data_Reference = array())
+    public function __construct($effective_Date = null, $committee_Name = null, $committee_Code = null, \WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference = null, array $job_Requisition_Reference = array(), \WorkdayWsdl\\StructType\CommitteeObjectType $superior_Committee_Reference = null, $committee_Summary = null, $committee_Purpose___Detailed = null, $inactive = null, array $committee_Membership_Target_Data_Reference = array())
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -146,7 +146,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -168,7 +168,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Committee_Name value
      * @param string $committee_Name
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setCommittee_Name($committee_Name = null)
     {
@@ -190,7 +190,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Committee_Code value
      * @param string $committee_Code
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setCommittee_Code($committee_Code = null)
     {
@@ -203,7 +203,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Sponsoring_Organization_Reference value
-     * @return \StructType\Committee_Sponsoring_OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType|null
      */
     public function getSponsoring_Organization_Reference()
     {
@@ -211,17 +211,17 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Sponsoring_Organization_Reference value
-     * @param \StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
-    public function setSponsoring_Organization_Reference(\StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference = null)
+    public function setSponsoring_Organization_Reference(\WorkdayWsdl\\StructType\Committee_Sponsoring_OrganizationObjectType $sponsoring_Organization_Reference = null)
     {
         $this->Sponsoring_Organization_Reference = $sponsoring_Organization_Reference;
         return $this;
     }
     /**
      * Get Job_Requisition_Reference value
-     * @return \StructType\Job_RequisitionObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_RequisitionObjectType[]|null
      */
     public function getJob_Requisition_Reference()
     {
@@ -239,12 +239,12 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem instanceof \StructType\Job_RequisitionObjectType) {
+            if (!$committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_RequisitionObjectType) {
                 $invalidValues[] = is_object($committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem) ? get_class($committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem) : sprintf('%s(%s)', gettype($committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem), var_export($committee_Definition_Snapshot_DataTypeJob_Requisition_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Requisition_Reference property can only contain items of type \StructType\Job_RequisitionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Requisition_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_RequisitionObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -252,8 +252,8 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Job_Requisition_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_RequisitionObjectType[] $job_Requisition_Reference
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Job_RequisitionObjectType[] $job_Requisition_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setJob_Requisition_Reference(array $job_Requisition_Reference = array())
     {
@@ -267,21 +267,21 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Add item to Job_Requisition_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_RequisitionObjectType $item
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Job_RequisitionObjectType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
-    public function addToJob_Requisition_Reference(\StructType\Job_RequisitionObjectType $item)
+    public function addToJob_Requisition_Reference(\WorkdayWsdl\\StructType\Job_RequisitionObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_RequisitionObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Requisition_Reference property can only contain items of type \StructType\Job_RequisitionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_RequisitionObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Requisition_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_RequisitionObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Requisition_Reference[] = $item;
         return $this;
     }
     /**
      * Get Superior_Committee_Reference value
-     * @return \StructType\CommitteeObjectType|null
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectType|null
      */
     public function getSuperior_Committee_Reference()
     {
@@ -289,10 +289,10 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Committee_Reference value
-     * @param \StructType\CommitteeObjectType $superior_Committee_Reference
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $superior_Committee_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
-    public function setSuperior_Committee_Reference(\StructType\CommitteeObjectType $superior_Committee_Reference = null)
+    public function setSuperior_Committee_Reference(\WorkdayWsdl\\StructType\CommitteeObjectType $superior_Committee_Reference = null)
     {
         $this->Superior_Committee_Reference = $superior_Committee_Reference;
         return $this;
@@ -308,7 +308,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Committee_Summary value
      * @param string $committee_Summary
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setCommittee_Summary($committee_Summary = null)
     {
@@ -330,7 +330,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Committee_Purpose___Detailed value
      * @param string $committee_Purpose___Detailed
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setCommittee_Purpose___Detailed($committee_Purpose___Detailed = null)
     {
@@ -352,7 +352,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -365,7 +365,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Committee_Membership_Target_Data_Reference value
-     * @return \StructType\Committee_Membership_Targets_Data_SubeditType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType[]|null
      */
     public function getCommittee_Membership_Target_Data_Reference()
     {
@@ -383,12 +383,12 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem instanceof \StructType\Committee_Membership_Targets_Data_SubeditType) {
+            if (!$committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem instanceof \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType) {
                 $invalidValues[] = is_object($committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem) ? get_class($committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem) : sprintf('%s(%s)', gettype($committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem), var_export($committee_Definition_Snapshot_DataTypeCommittee_Membership_Target_Data_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Membership_Target_Data_Reference property can only contain items of type \StructType\Committee_Membership_Targets_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Membership_Target_Data_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -396,8 +396,8 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Committee_Membership_Target_Data_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Membership_Targets_Data_SubeditType[] $committee_Membership_Target_Data_Reference
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType[] $committee_Membership_Target_Data_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public function setCommittee_Membership_Target_Data_Reference(array $committee_Membership_Target_Data_Reference = array())
     {
@@ -411,14 +411,14 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
     /**
      * Add item to Committee_Membership_Target_Data_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Membership_Targets_Data_SubeditType $item
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
-    public function addToCommittee_Membership_Target_Data_Reference(\StructType\Committee_Membership_Targets_Data_SubeditType $item)
+    public function addToCommittee_Membership_Target_Data_Reference(\WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Membership_Targets_Data_SubeditType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Membership_Target_Data_Reference property can only contain items of type \StructType\Committee_Membership_Targets_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Membership_Target_Data_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_Membership_Targets_Data_SubeditType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Membership_Target_Data_Reference[] = $item;
         return $this;
@@ -429,7 +429,7 @@ class Committee_Definition_Snapshot_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Definition_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_Snapshot_DataType
      */
     public static function __set_state(array $array)
     {

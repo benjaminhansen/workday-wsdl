@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Location must be of usage Business Site. | Unique identifier for the primary Location for the organization.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_Reference;
     /**
@@ -35,7 +35,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
      * - documentation: Contain information for Staffing related Organizations; minimally for Company, Cost Center and Region.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_Assignments_DataType[]
+     * @var \WorkdayWsdl\\StructType\Organization_Assignments_DataType[]
      */
     public $Organization_Assignments_Data;
     /**
@@ -43,7 +43,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: For Supervisory Organizations, contain staffing restrictions.
      * - minOccurs: 0
-     * @var \StructType\Position_Group_Restriction_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType
      */
     public $Staffing_Restrictions_Data;
     /**
@@ -73,13 +73,13 @@ class Supervisory_Org_DataType extends AbstractStructBase
      * @uses Supervisory_Org_DataType::setAvailable_For_Hire()
      * @uses Supervisory_Org_DataType::setHiring_Freeze()
      * @param string $staffing_Model
-     * @param \StructType\LocationObjectType $location_Reference
-     * @param \StructType\Organization_Assignments_DataType[] $organization_Assignments_Data
-     * @param \StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Assignments_DataType[] $organization_Assignments_Data
+     * @param \WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data
      * @param bool $available_For_Hire
      * @param bool $hiring_Freeze
      */
-    public function __construct($staffing_Model = null, \StructType\LocationObjectType $location_Reference = null, array $organization_Assignments_Data = array(), \StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data = null, $available_For_Hire = null, $hiring_Freeze = null)
+    public function __construct($staffing_Model = null, \WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null, array $organization_Assignments_Data = array(), \WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data = null, $available_For_Hire = null, $hiring_Freeze = null)
     {
         $this
             ->setStaffing_Model($staffing_Model)
@@ -100,7 +100,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
     /**
      * Set Staffing_Model value
      * @param string $staffing_Model
-     * @return \StructType\Supervisory_Org_DataType
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
     public function setStaffing_Model($staffing_Model = null)
     {
@@ -113,7 +113,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -121,17 +121,17 @@ class Supervisory_Org_DataType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\LocationObjectType $location_Reference
-     * @return \StructType\Supervisory_Org_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
-    public function setLocation_Reference(\StructType\LocationObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Organization_Assignments_Data value
-     * @return \StructType\Organization_Assignments_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_Assignments_DataType[]|null
      */
     public function getOrganization_Assignments_Data()
     {
@@ -149,12 +149,12 @@ class Supervisory_Org_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $supervisory_Org_DataTypeOrganization_Assignments_DataItem) {
             // validation for constraint: itemType
-            if (!$supervisory_Org_DataTypeOrganization_Assignments_DataItem instanceof \StructType\Organization_Assignments_DataType) {
+            if (!$supervisory_Org_DataTypeOrganization_Assignments_DataItem instanceof \WorkdayWsdl\\StructType\Organization_Assignments_DataType) {
                 $invalidValues[] = is_object($supervisory_Org_DataTypeOrganization_Assignments_DataItem) ? get_class($supervisory_Org_DataTypeOrganization_Assignments_DataItem) : sprintf('%s(%s)', gettype($supervisory_Org_DataTypeOrganization_Assignments_DataItem), var_export($supervisory_Org_DataTypeOrganization_Assignments_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Assignments_Data property can only contain items of type \StructType\Organization_Assignments_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Assignments_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Assignments_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -162,8 +162,8 @@ class Supervisory_Org_DataType extends AbstractStructBase
     /**
      * Set Organization_Assignments_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Assignments_DataType[] $organization_Assignments_Data
-     * @return \StructType\Supervisory_Org_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignments_DataType[] $organization_Assignments_Data
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
     public function setOrganization_Assignments_Data(array $organization_Assignments_Data = array())
     {
@@ -177,21 +177,21 @@ class Supervisory_Org_DataType extends AbstractStructBase
     /**
      * Add item to Organization_Assignments_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_Assignments_DataType $item
-     * @return \StructType\Supervisory_Org_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignments_DataType $item
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
-    public function addToOrganization_Assignments_Data(\StructType\Organization_Assignments_DataType $item)
+    public function addToOrganization_Assignments_Data(\WorkdayWsdl\\StructType\Organization_Assignments_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_Assignments_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Assignments_Data property can only contain items of type \StructType\Organization_Assignments_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_Assignments_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Assignments_Data property can only contain items of type \WorkdayWsdl\\StructType\Organization_Assignments_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Assignments_Data[] = $item;
         return $this;
     }
     /**
      * Get Staffing_Restrictions_Data value
-     * @return \StructType\Position_Group_Restriction_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType|null
      */
     public function getStaffing_Restrictions_Data()
     {
@@ -199,10 +199,10 @@ class Supervisory_Org_DataType extends AbstractStructBase
     }
     /**
      * Set Staffing_Restrictions_Data value
-     * @param \StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data
-     * @return \StructType\Supervisory_Org_DataType
+     * @param \WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
-    public function setStaffing_Restrictions_Data(\StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data = null)
+    public function setStaffing_Restrictions_Data(\WorkdayWsdl\\StructType\Position_Group_Restriction_Summary_DataType $staffing_Restrictions_Data = null)
     {
         $this->Staffing_Restrictions_Data = $staffing_Restrictions_Data;
         return $this;
@@ -218,7 +218,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
     /**
      * Set Available_For_Hire value
      * @param bool $available_For_Hire
-     * @return \StructType\Supervisory_Org_DataType
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
     public function setAvailable_For_Hire($available_For_Hire = null)
     {
@@ -240,7 +240,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
     /**
      * Set Hiring_Freeze value
      * @param bool $hiring_Freeze
-     * @return \StructType\Supervisory_Org_DataType
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
     public function setHiring_Freeze($hiring_Freeze = null)
     {
@@ -257,7 +257,7 @@ class Supervisory_Org_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Supervisory_Org_DataType
+     * @return \WorkdayWsdl\\StructType\Supervisory_Org_DataType
      */
     public static function __set_state(array $array)
     {

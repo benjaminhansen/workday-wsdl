@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Classification_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
      * Constructor method for Committee_Classification_GroupObjectType
      * @uses Committee_Classification_GroupObjectType::setID()
      * @uses Committee_Classification_GroupObjectType::setDescriptor()
-     * @param \StructType\Committee_Classification_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Committee_Classification_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Classification_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$committee_Classification_GroupObjectTypeIDItem instanceof \StructType\Committee_Classification_GroupObjectIDType) {
+            if (!$committee_Classification_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType) {
                 $invalidValues[] = is_object($committee_Classification_GroupObjectTypeIDItem) ? get_class($committee_Classification_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($committee_Classification_GroupObjectTypeIDItem), var_export($committee_Classification_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Committee_Classification_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Classification_GroupObjectIDType[] $iD
-     * @return \StructType\Committee_Classification_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Classification_GroupObjectIDType $item
-     * @return \StructType\Committee_Classification_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
-    public function addToID(\StructType\Committee_Classification_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Classification_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Committee_Classification_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Committee_Classification_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Committee_Classification_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Classification_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_GroupObjectType
      */
     public static function __set_state(array $array)
     {

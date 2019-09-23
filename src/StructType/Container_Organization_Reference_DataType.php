@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class Container_Organization_Reference_DataType extends AbstractStructBase
 {
     /**
      * The Organization_Reference
-     * @var \StructType\Organization_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType
      */
     public $Organization_Reference;
     /**
      * Constructor method for Container_Organization_Reference_DataType
      * @uses Container_Organization_Reference_DataType::setOrganization_Reference()
-     * @param \StructType\Organization_ReferenceType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
      */
-    public function __construct(\StructType\Organization_ReferenceType $organization_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference);
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\Organization_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType|null
      */
     public function getOrganization_Reference()
     {
@@ -38,10 +38,10 @@ class Container_Organization_Reference_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\Organization_ReferenceType $organization_Reference
-     * @return \StructType\Container_Organization_Reference_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Container_Organization_Reference_DataType
      */
-    public function setOrganization_Reference(\StructType\Organization_ReferenceType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
@@ -52,7 +52,7 @@ class Container_Organization_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Container_Organization_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Container_Organization_Reference_DataType
      */
     public static function __set_state(array $array)
     {

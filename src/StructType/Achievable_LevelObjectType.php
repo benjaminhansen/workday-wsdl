@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Achievable_LevelObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Achievable_LevelObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Achievable_LevelObjectType extends AbstractStructBase
      * Constructor method for Achievable_LevelObjectType
      * @uses Achievable_LevelObjectType::setID()
      * @uses Achievable_LevelObjectType::setDescriptor()
-     * @param \StructType\Achievable_LevelObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Achievable_LevelObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Achievable_LevelObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Achievable_LevelObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $achievable_LevelObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$achievable_LevelObjectTypeIDItem instanceof \StructType\Achievable_LevelObjectIDType) {
+            if (!$achievable_LevelObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType) {
                 $invalidValues[] = is_object($achievable_LevelObjectTypeIDItem) ? get_class($achievable_LevelObjectTypeIDItem) : sprintf('%s(%s)', gettype($achievable_LevelObjectTypeIDItem), var_export($achievable_LevelObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Achievable_LevelObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Achievable_LevelObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Achievable_LevelObjectIDType[] $iD
-     * @return \StructType\Achievable_LevelObjectType
+     * @param \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Achievable_LevelObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Achievable_LevelObjectIDType $item
-     * @return \StructType\Achievable_LevelObjectType
+     * @param \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectType
      */
-    public function addToID(\StructType\Achievable_LevelObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Achievable_LevelObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Achievable_LevelObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Achievable_LevelObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Achievable_LevelObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Achievable_LevelObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Achievable_LevelObjectType
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Achievable_LevelObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Achievable_LevelObjectType
+     * @return \WorkdayWsdl\\StructType\Achievable_LevelObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,21 +16,21 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
      * The External_Form_I_9_Section_2_List_A_Doc_1_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType
      */
     public $External_Form_I_9_Section_2_List_A_Doc_1_Data;
     /**
      * The External_Form_I_9_Section_2_List_A_Doc_2_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType
      */
     public $External_Form_I_9_Section_2_List_A_Doc_2_Data;
     /**
      * The External_Form_I_9_Section_2_List_A_Doc_3_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType
      */
     public $External_Form_I_9_Section_2_List_A_Doc_3_Data;
     /**
@@ -38,11 +38,11 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
      * @uses External_Form_I_9_Section_2_List_A_DataType::setExternal_Form_I_9_Section_2_List_A_Doc_1_Data()
      * @uses External_Form_I_9_Section_2_List_A_DataType::setExternal_Form_I_9_Section_2_List_A_Doc_2_Data()
      * @uses External_Form_I_9_Section_2_List_A_DataType::setExternal_Form_I_9_Section_2_List_A_Doc_3_Data()
-     * @param \StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data
-     * @param \StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data
-     * @param \StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data
      */
-    public function __construct(\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data = null, \StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data = null, \StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data = null, \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data = null, \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data = null)
     {
         $this
             ->setExternal_Form_I_9_Section_2_List_A_Doc_1_Data($external_Form_I_9_Section_2_List_A_Doc_1_Data)
@@ -60,9 +60,9 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Section_List_A_Doc_Data value
      * @param external_Form_I_Section_List_A_Doc_Data $external_Form_I_Section_List_A_Doc_Data
-     * @return \StructType\External_Form_I_9_Section_2_List_A_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_DataType
      */
-    public function setExternal_Form_I_9_Section_2_List_A_Doc_1_Data(\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data = null)
+    public function setExternal_Form_I_9_Section_2_List_A_Doc_1_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_1_DataType $external_Form_I_9_Section_2_List_A_Doc_1_Data = null)
     {
         $this->External_Form_I_9_Section_2_List_A_Doc_1_Data = $this->{'External_Form_I-9_Section_2_List_A_Doc_1_Data'} = $external_Form_I_9_Section_2_List_A_Doc_1_Data;
         return $this;
@@ -78,9 +78,9 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Section_List_A_Doc_Data value
      * @param external_Form_I_Section_List_A_Doc_Data $external_Form_I_Section_List_A_Doc_Data
-     * @return \StructType\External_Form_I_9_Section_2_List_A_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_DataType
      */
-    public function setExternal_Form_I_9_Section_2_List_A_Doc_2_Data(\StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data = null)
+    public function setExternal_Form_I_9_Section_2_List_A_Doc_2_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_2_DataType $external_Form_I_9_Section_2_List_A_Doc_2_Data = null)
     {
         $this->External_Form_I_9_Section_2_List_A_Doc_2_Data = $this->{'External_Form_I-9_Section_2_List_A_Doc_2_Data'} = $external_Form_I_9_Section_2_List_A_Doc_2_Data;
         return $this;
@@ -96,9 +96,9 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
     /**
      * Set external_Form_I_Section_List_A_Doc_Data value
      * @param external_Form_I_Section_List_A_Doc_Data $external_Form_I_Section_List_A_Doc_Data
-     * @return \StructType\External_Form_I_9_Section_2_List_A_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_DataType
      */
-    public function setExternal_Form_I_9_Section_2_List_A_Doc_3_Data(\StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data = null)
+    public function setExternal_Form_I_9_Section_2_List_A_Doc_3_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_Doc_3_DataType $external_Form_I_9_Section_2_List_A_Doc_3_Data = null)
     {
         $this->External_Form_I_9_Section_2_List_A_Doc_3_Data = $this->{'External_Form_I-9_Section_2_List_A_Doc_3_Data'} = $external_Form_I_9_Section_2_List_A_Doc_3_Data;
         return $this;
@@ -109,7 +109,7 @@ class External_Form_I_9_Section_2_List_A_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_Section_2_List_A_DataType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_Section_2_List_A_DataType
      */
     public static function __set_state(array $array)
     {

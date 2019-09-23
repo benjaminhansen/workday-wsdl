@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Succession_ReadinessObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Succession_ReadinessReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Succession_ReadinessReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Succession_ReadinessReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Succession_ReadinessReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Succession_ReadinessObjectIDType
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Succession_ReadinessReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Succession_ReadinessReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Succession_ReadinessReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Succession_ReadinessReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Succession_ReadinessReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Succession_ReadinessReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Succession_ReadinessObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Succession_ReadinessObjectIDType
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Succession_ReadinessObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Succession_ReadinessObjectIDType
+     * @return \WorkdayWsdl\\StructType\Succession_ReadinessObjectIDType
      */
     public static function __set_state(array $array)
     {

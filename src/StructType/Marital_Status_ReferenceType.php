@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Marital_Status_ReferenceType extends AbstractStructBase
     /**
      * Set Marital_Status_Description value
      * @param string $marital_Status_Description
-     * @return \StructType\Marital_Status_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Marital_Status_ReferenceType
      */
     public function setMarital_Status_Description($marital_Status_Description = null)
     {
@@ -59,7 +59,7 @@ class Marital_Status_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Marital_Status_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Marital_Status_ReferenceType
      */
     public static function __set_state(array $array)
     {

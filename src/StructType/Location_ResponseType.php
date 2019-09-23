@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Location_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the Location.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_Reference;
     /**
      * The Location_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Location_iDataType
+     * @var \WorkdayWsdl\\StructType\Location_iDataType
      */
     public $Location_Data;
     /**
      * Constructor method for Location_ResponseType
      * @uses Location_ResponseType::setLocation_Reference()
      * @uses Location_ResponseType::setLocation_Data()
-     * @param \StructType\LocationObjectType $location_Reference
-     * @param \StructType\Location_iDataType $location_Data
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @param \WorkdayWsdl\\StructType\Location_iDataType $location_Data
      */
-    public function __construct(\StructType\LocationObjectType $location_Reference = null, \StructType\Location_iDataType $location_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null, \WorkdayWsdl\\StructType\Location_iDataType $location_Data = null)
     {
         $this
             ->setLocation_Reference($location_Reference)
@@ -42,7 +42,7 @@ class Location_ResponseType extends AbstractStructBase
     }
     /**
      * Get Location_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_Reference()
     {
@@ -50,17 +50,17 @@ class Location_ResponseType extends AbstractStructBase
     }
     /**
      * Set Location_Reference value
-     * @param \StructType\LocationObjectType $location_Reference
-     * @return \StructType\Location_ResponseType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_Reference
+     * @return \WorkdayWsdl\\StructType\Location_ResponseType
      */
-    public function setLocation_Reference(\StructType\LocationObjectType $location_Reference = null)
+    public function setLocation_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_Reference = null)
     {
         $this->Location_Reference = $location_Reference;
         return $this;
     }
     /**
      * Get Location_Data value
-     * @return \StructType\Location_iDataType|null
+     * @return \WorkdayWsdl\\StructType\Location_iDataType|null
      */
     public function getLocation_Data()
     {
@@ -68,10 +68,10 @@ class Location_ResponseType extends AbstractStructBase
     }
     /**
      * Set Location_Data value
-     * @param \StructType\Location_iDataType $location_Data
-     * @return \StructType\Location_ResponseType
+     * @param \WorkdayWsdl\\StructType\Location_iDataType $location_Data
+     * @return \WorkdayWsdl\\StructType\Location_ResponseType
      */
-    public function setLocation_Data(\StructType\Location_iDataType $location_Data = null)
+    public function setLocation_Data(\WorkdayWsdl\\StructType\Location_iDataType $location_Data = null)
     {
         $this->Location_Data = $location_Data;
         return $this;
@@ -82,7 +82,7 @@ class Location_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_ResponseType
+     * @return \WorkdayWsdl\\StructType\Location_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Instant_Messenger_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
      * Constructor method for Instant_Messenger_TypeObjectType
      * @uses Instant_Messenger_TypeObjectType::setID()
      * @uses Instant_Messenger_TypeObjectType::setDescriptor()
-     * @param \StructType\Instant_Messenger_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Instant_Messenger_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $instant_Messenger_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$instant_Messenger_TypeObjectTypeIDItem instanceof \StructType\Instant_Messenger_TypeObjectIDType) {
+            if (!$instant_Messenger_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType) {
                 $invalidValues[] = is_object($instant_Messenger_TypeObjectTypeIDItem) ? get_class($instant_Messenger_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($instant_Messenger_TypeObjectTypeIDItem), var_export($instant_Messenger_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Instant_Messenger_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Instant_Messenger_TypeObjectIDType[] $iD
-     * @return \StructType\Instant_Messenger_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Instant_Messenger_TypeObjectIDType $item
-     * @return \StructType\Instant_Messenger_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
-    public function addToID(\StructType\Instant_Messenger_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Instant_Messenger_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Instant_Messenger_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Instant_Messenger_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Instant_Messenger_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instant_Messenger_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
     public static function __set_state(array $array)
     {

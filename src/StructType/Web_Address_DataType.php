@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class Web_Address_DataType extends AbstractStructBase
     public $Web_Address_Comment;
     /**
      * The Usage_Data
-     * @var \StructType\Communication_Method_Usage_DataType
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public $Usage_Data;
     /**
@@ -41,9 +41,9 @@ class Web_Address_DataType extends AbstractStructBase
      * @uses Web_Address_DataType::setUsage_Data()
      * @param string $web_Address
      * @param string $web_Address_Comment
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
      */
-    public function __construct($web_Address = null, $web_Address_Comment = null, \StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function __construct($web_Address = null, $web_Address_Comment = null, \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this
             ->setWeb_Address($web_Address)
@@ -61,7 +61,7 @@ class Web_Address_DataType extends AbstractStructBase
     /**
      * Set Web_Address value
      * @param string $web_Address
-     * @return \StructType\Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_DataType
      */
     public function setWeb_Address($web_Address = null)
     {
@@ -83,7 +83,7 @@ class Web_Address_DataType extends AbstractStructBase
     /**
      * Set Web_Address_Comment value
      * @param string $web_Address_Comment
-     * @return \StructType\Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_DataType
      */
     public function setWeb_Address_Comment($web_Address_Comment = null)
     {
@@ -96,7 +96,7 @@ class Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_DataType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType|null
      */
     public function getUsage_Data()
     {
@@ -104,10 +104,10 @@ class Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Usage_Data value
-     * @param \StructType\Communication_Method_Usage_DataType $usage_Data
-     * @return \StructType\Web_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data
+     * @return \WorkdayWsdl\\StructType\Web_Address_DataType
      */
-    public function setUsage_Data(\StructType\Communication_Method_Usage_DataType $usage_Data = null)
+    public function setUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_DataType $usage_Data = null)
     {
         $this->Usage_Data = $usage_Data;
         return $this;
@@ -118,7 +118,7 @@ class Web_Address_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Web_Address_DataType
      */
     public static function __set_state(array $array)
     {

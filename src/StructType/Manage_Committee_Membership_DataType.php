@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * - choice: Create_External_Committee_Member_Data | Committee_Member_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\Create_External_Committee_Member_DataType
+     * @var \WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType
      */
     public $Create_External_Committee_Member_Data;
     /**
@@ -29,7 +29,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * - choice: Create_External_Committee_Member_Data | Committee_Member_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\Committee_Member_EnabledObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType
      */
     public $Committee_Member_Reference;
     /**
@@ -44,21 +44,21 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * The Reason_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reason Reference for the Manage Committee Membership Service
-     * @var \StructType\Event_Classification_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType
      */
     public $Reason_Reference;
     /**
      * The Committee__Reference
      * Meta information extracted from the WSDL
      * - documentation: Committee Reference for the Manage Committee Membership Service
-     * @var \StructType\CommitteeObjectType
+     * @var \WorkdayWsdl\\StructType\CommitteeObjectType
      */
     public $Committee__Reference;
     /**
      * The Committee_Membership_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Committee Membership Type Reference for the Manage Committee Membership Service
-     * @var \StructType\Committee_Membership_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType
      */
     public $Committee_Membership_Type_Reference;
     /**
@@ -76,7 +76,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * er
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
+     * @var \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType
      */
     public $Manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member;
     /**
@@ -97,17 +97,17 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * @uses Manage_Committee_Membership_DataType::setEnd_Date()
      * @uses Manage_Committee_Membership_DataType::setManage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member()
      * @uses Manage_Committee_Membership_DataType::setAdd_Only()
-     * @param \StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data
-     * @param \StructType\Committee_Member_EnabledObjectType $committee_Member_Reference
+     * @param \WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $committee_Member_Reference
      * @param string $effective_Date
-     * @param \StructType\Event_Classification_SubcategoryObjectType $reason_Reference
-     * @param \StructType\CommitteeObjectType $committee__Reference
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $reason_Reference
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee__Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
      * @param string $end_Date
-     * @param \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member
      * @param bool $add_Only
      */
-    public function __construct(\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data = null, \StructType\Committee_Member_EnabledObjectType $committee_Member_Reference = null, $effective_Date = null, \StructType\Event_Classification_SubcategoryObjectType $reason_Reference = null, \StructType\CommitteeObjectType $committee__Reference = null, \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, $end_Date = null, \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member = null, $add_Only = null)
+    public function __construct(\WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data = null, \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $committee_Member_Reference = null, $effective_Date = null, \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $reason_Reference = null, \WorkdayWsdl\\StructType\CommitteeObjectType $committee__Reference = null, \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, $end_Date = null, \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member = null, $add_Only = null)
     {
         $this
             ->setCreate_External_Committee_Member_Data($create_External_Committee_Member_Data)
@@ -122,7 +122,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Create_External_Committee_Member_Data value
-     * @return \StructType\Create_External_Committee_Member_DataType|null
+     * @return \WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType|null
      */
     public function getCreate_External_Committee_Member_Data()
     {
@@ -161,10 +161,10 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setCreate_External_Committee_Member_Data(\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data = null)
+    public function setCreate_External_Committee_Member_Data(\WorkdayWsdl\\StructType\Create_External_Committee_Member_DataType $create_External_Committee_Member_Data = null)
     {
         // validation for constraint: choice(Create_External_Committee_Member_Data, Committee_Member_Reference)
         if ('' !== ($create_External_Committee_Member_DataChoiceErrorMessage = self::validateCreate_External_Committee_Member_DataForChoiceConstraintsFromSetCreate_External_Committee_Member_Data($create_External_Committee_Member_Data))) {
@@ -179,7 +179,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Committee_Member_Reference value
-     * @return \StructType\Committee_Member_EnabledObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType|null
      */
     public function getCommittee_Member_Reference()
     {
@@ -218,10 +218,10 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Member_EnabledObjectType $committee_Member_Reference
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $committee_Member_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setCommittee_Member_Reference(\StructType\Committee_Member_EnabledObjectType $committee_Member_Reference = null)
+    public function setCommittee_Member_Reference(\WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType $committee_Member_Reference = null)
     {
         // validation for constraint: choice(Create_External_Committee_Member_Data, Committee_Member_Reference)
         if ('' !== ($committee_Member_ReferenceChoiceErrorMessage = self::validateCommittee_Member_ReferenceForChoiceConstraintsFromSetCommittee_Member_Reference($committee_Member_Reference))) {
@@ -245,7 +245,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -258,7 +258,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Reason_Reference value
-     * @return \StructType\Event_Classification_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType|null
      */
     public function getReason_Reference()
     {
@@ -266,17 +266,17 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Reason_Reference value
-     * @param \StructType\Event_Classification_SubcategoryObjectType $reason_Reference
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $reason_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setReason_Reference(\StructType\Event_Classification_SubcategoryObjectType $reason_Reference = null)
+    public function setReason_Reference(\WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $reason_Reference = null)
     {
         $this->Reason_Reference = $reason_Reference;
         return $this;
     }
     /**
      * Get Committee__Reference value
-     * @return \StructType\CommitteeObjectType|null
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectType|null
      */
     public function getCommittee__Reference()
     {
@@ -284,17 +284,17 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Committee__Reference value
-     * @param \StructType\CommitteeObjectType $committee__Reference
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee__Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setCommittee__Reference(\StructType\CommitteeObjectType $committee__Reference = null)
+    public function setCommittee__Reference(\WorkdayWsdl\\StructType\CommitteeObjectType $committee__Reference = null)
     {
         $this->Committee__Reference = $committee__Reference;
         return $this;
     }
     /**
      * Get Committee_Membership_Type_Reference value
-     * @return \StructType\Committee_Membership_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType|null
      */
     public function getCommittee_Membership_Type_Reference()
     {
@@ -302,10 +302,10 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Committee_Membership_Type_Reference value
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setCommittee_Membership_Type_Reference(\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
+    public function setCommittee_Membership_Type_Reference(\WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
     {
         $this->Committee_Membership_Type_Reference = $committee_Membership_Type_Reference;
         return $this;
@@ -321,7 +321,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -336,7 +336,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * Get
      * Manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Memb
      * er value
-     * @return \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType|null
+     * @return \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType|null
      */
     public function getManage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member()
     {
@@ -346,10 +346,10 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * Set
      * Manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Memb
      * er value
-     * @param \StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
-    public function setManage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member(\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member = null)
+    public function setManage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member(\WorkdayWsdl\\StructType\Manage_Professional_Affiliation_Sub_Business_Process_DataType $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member = null)
     {
         $this->Manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member = $manage_Professional_Affiliation_Sub_Business_Process_for_External_Committee_Member;
         return $this;
@@ -365,7 +365,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -382,7 +382,7 @@ class Manage_Committee_Membership_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Committee_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Manage_Committee_Membership_DataType
      */
     public static function __set_state(array $array)
     {

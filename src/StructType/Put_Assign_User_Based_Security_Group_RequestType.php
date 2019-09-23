@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * The Assign_User_Based_Security_Group_Data
      * Meta information extracted from the WSDL
      * - documentation: Element contains One User-Based Security Group and Zero or more System Users.
-     * @var \StructType\Assign_User_Based_Security_Group_DataType
+     * @var \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType
      */
     public $Assign_User_Based_Security_Group_Data;
     /**
@@ -31,10 +31,10 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * Constructor method for Put_Assign_User-Based_Security_Group_RequestType
      * @uses Put_Assign_User_Based_Security_Group_RequestType::setAssign_User_Based_Security_Group_Data()
      * @uses Put_Assign_User_Based_Security_Group_RequestType::setVersion()
-     * @param \StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data
      * @param string $version
      */
-    public function __construct(\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data = null, $version = null)
     {
         $this
             ->setAssign_User_Based_Security_Group_Data($assign_User_Based_Security_Group_Data)
@@ -42,7 +42,7 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     }
     /**
      * Get Assign_User_Based_Security_Group_Data value
-     * @return \StructType\Assign_User_Based_Security_Group_DataType|null
+     * @return \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType|null
      */
     public function getAssign_User_Based_Security_Group_Data()
     {
@@ -50,10 +50,10 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     }
     /**
      * Set Assign_User_Based_Security_Group_Data value
-     * @param \StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data
-     * @return \StructType\Put_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_RequestType
      */
-    public function setAssign_User_Based_Security_Group_Data(\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data = null)
+    public function setAssign_User_Based_Security_Group_Data(\WorkdayWsdl\\StructType\Assign_User_Based_Security_Group_DataType $assign_User_Based_Security_Group_Data = null)
     {
         $this->Assign_User_Based_Security_Group_Data = $this->{'Assign_User-Based_Security_Group_Data'} = $assign_User_Based_Security_Group_Data;
         return $this;
@@ -69,7 +69,7 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Assign_User_Based_Security_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_RequestType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Assign_User_Based_Security_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_RequestType
      */
     public static function __set_state(array $array)
     {

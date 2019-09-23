@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Provisioning_Group_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Provisioning_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_DataType
      */
     public function setName($name = null)
     {
@@ -75,7 +75,7 @@ class Provisioning_Group_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Provisioning_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_DataType
      */
     public function setDescription($description = null)
     {
@@ -92,7 +92,7 @@ class Provisioning_Group_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Provisioning_Group_DataType
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_DataType
      */
     public static function __set_state(array $array)
     {

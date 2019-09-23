@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -89,7 +89,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
     /**
      * Set All_Day_Event value
      * @param bool $all_Day_Event
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public function setAll_Day_Event($all_Day_Event = null)
     {
@@ -111,7 +111,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -133,7 +133,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
     /**
      * Set Start_Time value
      * @param string $start_Time
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public function setStart_Time($start_Time = null)
     {
@@ -155,7 +155,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -177,7 +177,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
     /**
      * Set End_Time value
      * @param string $end_Time
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public function setEnd_Time($end_Time = null)
     {
@@ -194,7 +194,7 @@ class Start_End_Minute_Support_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Start_End_Minute_Support_DataType
+     * @return \WorkdayWsdl\\StructType\Start_End_Minute_Support_DataType
      */
     public static function __set_state(array $array)
     {

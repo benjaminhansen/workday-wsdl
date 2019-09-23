@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the dependent.
      * - minOccurs: 0
-     * @var \StructType\DependentObjectType
+     * @var \WorkdayWsdl\\StructType\DependentObjectType
      */
     public $Dependent_Reference;
     /**
@@ -80,7 +80,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
      * - documentation: Contains COBRA Eligibility detail for a participant. If this element is not populated then the participant is assumed to not be COBRA eligible.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\COBRA_Eligibility_DataType[]
+     * @var \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[]
      */
     public $COBRA_Eligibility_Data;
     /**
@@ -93,16 +93,16 @@ class Dependent_Coverage_DataType extends AbstractStructBase
      * @uses Dependent_Coverage_DataType::setFirst_Date_Covered_by_Benefit_Provider()
      * @uses Dependent_Coverage_DataType::setProvider_ID()
      * @uses Dependent_Coverage_DataType::setCOBRA_Eligibility_Data()
-     * @param \StructType\DependentObjectType $dependent_Reference
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
      * @param string $original_Coverage_Begin_Date
      * @param string $coverage_End_Date
      * @param string $original_Coverage_Begin_Date_for_Benefit_Coverage_Type
      * @param string $first_Date_Covered_by_Benefit_Plan
      * @param string $first_Date_Covered_by_Benefit_Provider
      * @param string $provider_ID
-     * @param \StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
      */
-    public function __construct(\StructType\DependentObjectType $dependent_Reference = null, $original_Coverage_Begin_Date = null, $coverage_End_Date = null, $original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null, $first_Date_Covered_by_Benefit_Plan = null, $first_Date_Covered_by_Benefit_Provider = null, $provider_ID = null, array $cOBRA_Eligibility_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null, $original_Coverage_Begin_Date = null, $coverage_End_Date = null, $original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null, $first_Date_Covered_by_Benefit_Plan = null, $first_Date_Covered_by_Benefit_Provider = null, $provider_ID = null, array $cOBRA_Eligibility_Data = array())
     {
         $this
             ->setDependent_Reference($dependent_Reference)
@@ -116,7 +116,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get Dependent_Reference value
-     * @return \StructType\DependentObjectType|null
+     * @return \WorkdayWsdl\\StructType\DependentObjectType|null
      */
     public function getDependent_Reference()
     {
@@ -124,10 +124,10 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Set Dependent_Reference value
-     * @param \StructType\DependentObjectType $dependent_Reference
-     * @return \StructType\Dependent_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
-    public function setDependent_Reference(\StructType\DependentObjectType $dependent_Reference = null)
+    public function setDependent_Reference(\WorkdayWsdl\\StructType\DependentObjectType $dependent_Reference = null)
     {
         $this->Dependent_Reference = $dependent_Reference;
         return $this;
@@ -143,7 +143,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date value
      * @param string $original_Coverage_Begin_Date
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setOriginal_Coverage_Begin_Date($original_Coverage_Begin_Date = null)
     {
@@ -165,7 +165,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set Coverage_End_Date value
      * @param string $coverage_End_Date
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setCoverage_End_Date($coverage_End_Date = null)
     {
@@ -187,7 +187,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date_for_Benefit_Coverage_Type value
      * @param string $original_Coverage_Begin_Date_for_Benefit_Coverage_Type
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setOriginal_Coverage_Begin_Date_for_Benefit_Coverage_Type($original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null)
     {
@@ -209,7 +209,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set First_Date_Covered_by_Benefit_Plan value
      * @param string $first_Date_Covered_by_Benefit_Plan
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setFirst_Date_Covered_by_Benefit_Plan($first_Date_Covered_by_Benefit_Plan = null)
     {
@@ -231,7 +231,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set First_Date_Covered_by_Benefit_Provider value
      * @param string $first_Date_Covered_by_Benefit_Provider
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setFirst_Date_Covered_by_Benefit_Provider($first_Date_Covered_by_Benefit_Provider = null)
     {
@@ -253,7 +253,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set Provider_ID value
      * @param string $provider_ID
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setProvider_ID($provider_ID = null)
     {
@@ -266,7 +266,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     }
     /**
      * Get COBRA_Eligibility_Data value
-     * @return \StructType\COBRA_Eligibility_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[]|null
      */
     public function getCOBRA_Eligibility_Data()
     {
@@ -284,12 +284,12 @@ class Dependent_Coverage_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem) {
             // validation for constraint: itemType
-            if (!$dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem instanceof \StructType\COBRA_Eligibility_DataType) {
+            if (!$dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem instanceof \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType) {
                 $invalidValues[] = is_object($dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem) ? get_class($dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem) : sprintf('%s(%s)', gettype($dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem), var_export($dependent_Coverage_DataTypeCOBRA_Eligibility_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The COBRA_Eligibility_Data property can only contain items of type \StructType\COBRA_Eligibility_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The COBRA_Eligibility_Data property can only contain items of type \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -297,8 +297,8 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Set COBRA_Eligibility_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
-     * @return \StructType\Dependent_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType[] $cOBRA_Eligibility_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public function setCOBRA_Eligibility_Data(array $cOBRA_Eligibility_Data = array())
     {
@@ -312,14 +312,14 @@ class Dependent_Coverage_DataType extends AbstractStructBase
     /**
      * Add item to COBRA_Eligibility_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\COBRA_Eligibility_DataType $item
-     * @return \StructType\Dependent_Coverage_DataType
+     * @param \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType $item
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
-    public function addToCOBRA_Eligibility_Data(\StructType\COBRA_Eligibility_DataType $item)
+    public function addToCOBRA_Eligibility_Data(\WorkdayWsdl\\StructType\COBRA_Eligibility_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\COBRA_Eligibility_DataType) {
-            throw new \InvalidArgumentException(sprintf('The COBRA_Eligibility_Data property can only contain items of type \StructType\COBRA_Eligibility_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType) {
+            throw new \InvalidArgumentException(sprintf('The COBRA_Eligibility_Data property can only contain items of type \WorkdayWsdl\\StructType\COBRA_Eligibility_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->COBRA_Eligibility_Data[] = $item;
         return $this;
@@ -330,7 +330,7 @@ class Dependent_Coverage_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Dependent_Coverage_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Coverage_DataType
      */
     public static function __set_state(array $array)
     {

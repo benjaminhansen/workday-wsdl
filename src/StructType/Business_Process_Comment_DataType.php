@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Business_Process_Comment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Default the Person making the comment to the processing person if not submitted via the web service.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -34,9 +34,9 @@ class Business_Process_Comment_DataType extends AbstractStructBase
      * @uses Business_Process_Comment_DataType::setComment()
      * @uses Business_Process_Comment_DataType::setWorker_Reference()
      * @param string $comment
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      */
-    public function __construct($comment = null, \StructType\WorkerObjectType $worker_Reference = null)
+    public function __construct($comment = null, \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this
             ->setComment($comment)
@@ -53,7 +53,7 @@ class Business_Process_Comment_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Business_Process_Comment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Comment_DataType
      */
     public function setComment($comment = null)
     {
@@ -66,7 +66,7 @@ class Business_Process_Comment_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -74,10 +74,10 @@ class Business_Process_Comment_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Business_Process_Comment_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Business_Process_Comment_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -88,7 +88,7 @@ class Business_Process_Comment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Process_Comment_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Comment_DataType
      */
     public static function __set_state(array $array)
     {

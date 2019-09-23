@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Location_UsageObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_UsageObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Location_UsageObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Location_UsageObjectType extends AbstractStructBase
      * Constructor method for Location_UsageObjectType
      * @uses Location_UsageObjectType::setID()
      * @uses Location_UsageObjectType::setDescriptor()
-     * @param \StructType\Location_UsageObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Location_UsageObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Location_UsageObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Location_UsageObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_UsageObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$location_UsageObjectTypeIDItem instanceof \StructType\Location_UsageObjectIDType) {
+            if (!$location_UsageObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Location_UsageObjectIDType) {
                 $invalidValues[] = is_object($location_UsageObjectTypeIDItem) ? get_class($location_UsageObjectTypeIDItem) : sprintf('%s(%s)', gettype($location_UsageObjectTypeIDItem), var_export($location_UsageObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Location_UsageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Location_UsageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Location_UsageObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_UsageObjectIDType[] $iD
-     * @return \StructType\Location_UsageObjectType
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Location_UsageObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_UsageObjectIDType $item
-     * @return \StructType\Location_UsageObjectType
+     * @param \WorkdayWsdl\\StructType\Location_UsageObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectType
      */
-    public function addToID(\StructType\Location_UsageObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Location_UsageObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_UsageObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Location_UsageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_UsageObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Location_UsageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Location_UsageObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Location_UsageObjectType
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Location_UsageObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_UsageObjectType
+     * @return \WorkdayWsdl\\StructType\Location_UsageObjectType
      */
     public static function __set_state(array $array)
     {

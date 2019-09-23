@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Workers' Compensation Code. Only needed when updating the Reference ID for the Workers' Compensation Code.
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_CodeObjectType
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public $Workers_Compensation_Code_Reference;
     /**
      * The Workers_Compensation_Code_Data
      * Meta information extracted from the WSDL
      * - documentation: Contains data for a Worker's Compensation Code.
-     * @var \StructType\Workers_Compensation_Code_DataType
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType
      */
     public $Workers_Compensation_Code_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
      * @uses Put_Workers_Compensation_Code_RequestType::setWorkers_Compensation_Code_Data()
      * @uses Put_Workers_Compensation_Code_RequestType::setAdd_Only()
      * @uses Put_Workers_Compensation_Code_RequestType::setVersion()
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
-     * @param \StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null, \StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null, \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setWorkers_Compensation_Code_Reference($workers_Compensation_Code_Reference)
@@ -62,7 +62,7 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
     }
     /**
      * Get Workers_Compensation_Code_Reference value
-     * @return \StructType\Workers_Compensation_CodeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType|null
      */
     public function getWorkers_Compensation_Code_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
     }
     /**
      * Set Workers_Compensation_Code_Reference value
-     * @param \StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
-     * @return \StructType\Put_Workers_Compensation_Code_RequestType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_RequestType
      */
-    public function setWorkers_Compensation_Code_Reference(\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
+    public function setWorkers_Compensation_Code_Reference(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $workers_Compensation_Code_Reference = null)
     {
         $this->Workers_Compensation_Code_Reference = $workers_Compensation_Code_Reference;
         return $this;
     }
     /**
      * Get Workers_Compensation_Code_Data value
-     * @return \StructType\Workers_Compensation_Code_DataType|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType|null
      */
     public function getWorkers_Compensation_Code_Data()
     {
@@ -88,10 +88,10 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
     }
     /**
      * Set Workers_Compensation_Code_Data value
-     * @param \StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data
-     * @return \StructType\Put_Workers_Compensation_Code_RequestType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_RequestType
      */
-    public function setWorkers_Compensation_Code_Data(\StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data = null)
+    public function setWorkers_Compensation_Code_Data(\WorkdayWsdl\\StructType\Workers_Compensation_Code_DataType $workers_Compensation_Code_Data = null)
     {
         $this->Workers_Compensation_Code_Data = $workers_Compensation_Code_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Workers_Compensation_Code_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Workers_Compensation_Code_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Workers_Compensation_Code_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Workers_Compensation_Code_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workers_Compensation_Code_RequestType
      */
     public static function __set_state(array $array)
     {

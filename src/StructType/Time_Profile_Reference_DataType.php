@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Time_Profile_Reference_DataType extends AbstractStructBase
     /**
      * Set Time_Profile_Description value
      * @param string $time_Profile_Description
-     * @return \StructType\Time_Profile_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType
      */
     public function setTime_Profile_Description($time_Profile_Description = null)
     {
@@ -58,7 +58,7 @@ class Time_Profile_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Time_Profile_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Time_Profile_Reference_DataType
      */
     public static function __set_state(array $array)
     {

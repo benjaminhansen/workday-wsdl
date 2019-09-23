@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Universal_IdentifierObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Universal_IdentifierReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Universal_IdentifierReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Universal_IdentifierReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Universal_IdentifierReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Universal_IdentifierObjectIDType
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Universal_IdentifierReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Universal_IdentifierReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Universal_IdentifierReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Universal_IdentifierReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Universal_IdentifierReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Universal_IdentifierReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Universal_IdentifierObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Universal_IdentifierObjectIDType
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Universal_IdentifierObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Universal_IdentifierObjectIDType
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectIDType
      */
     public static function __set_state(array $array)
     {

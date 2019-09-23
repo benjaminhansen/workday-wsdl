@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class Validation_ErrorType extends AbstractStructBase
     /**
      * Set Message value
      * @param string $message
-     * @return \StructType\Validation_ErrorType
+     * @return \WorkdayWsdl\\StructType\Validation_ErrorType
      */
     public function setMessage($message = null)
     {
@@ -83,7 +83,7 @@ class Validation_ErrorType extends AbstractStructBase
     /**
      * Set Detail_Message value
      * @param string $detail_Message
-     * @return \StructType\Validation_ErrorType
+     * @return \WorkdayWsdl\\StructType\Validation_ErrorType
      */
     public function setDetail_Message($detail_Message = null)
     {
@@ -105,7 +105,7 @@ class Validation_ErrorType extends AbstractStructBase
     /**
      * Set Xpath value
      * @param string $xpath
-     * @return \StructType\Validation_ErrorType
+     * @return \WorkdayWsdl\\StructType\Validation_ErrorType
      */
     public function setXpath($xpath = null)
     {
@@ -122,7 +122,7 @@ class Validation_ErrorType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Validation_ErrorType
+     * @return \WorkdayWsdl\\StructType\Validation_ErrorType
      */
     public static function __set_state(array $array)
     {

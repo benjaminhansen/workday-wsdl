@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Get_Change_Home_Contact_Information_Request_CriteriaType extends AbstractS
      * The Person_Type_Criteria_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Person_Type_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Person_Type_CriteriaType
      */
     public $Person_Type_Criteria_Data;
     /**
      * Constructor method for Get_Change_Home_Contact_Information_Request_CriteriaType
      * @uses Get_Change_Home_Contact_Information_Request_CriteriaType::setPerson_Type_Criteria_Data()
-     * @param \StructType\Person_Type_CriteriaType $person_Type_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data
      */
-    public function __construct(\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data = null)
     {
         $this
             ->setPerson_Type_Criteria_Data($person_Type_Criteria_Data);
     }
     /**
      * Get Person_Type_Criteria_Data value
-     * @return \StructType\Person_Type_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Person_Type_CriteriaType|null
      */
     public function getPerson_Type_Criteria_Data()
     {
@@ -40,10 +40,10 @@ class Get_Change_Home_Contact_Information_Request_CriteriaType extends AbstractS
     }
     /**
      * Set Person_Type_Criteria_Data value
-     * @param \StructType\Person_Type_CriteriaType $person_Type_Criteria_Data
-     * @return \StructType\Get_Change_Home_Contact_Information_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Get_Change_Home_Contact_Information_Request_CriteriaType
      */
-    public function setPerson_Type_Criteria_Data(\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data = null)
+    public function setPerson_Type_Criteria_Data(\WorkdayWsdl\\StructType\Person_Type_CriteriaType $person_Type_Criteria_Data = null)
     {
         $this->Person_Type_Criteria_Data = $person_Type_Criteria_Data;
         return $this;
@@ -54,7 +54,7 @@ class Get_Change_Home_Contact_Information_Request_CriteriaType extends AbstractS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Change_Home_Contact_Information_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Home_Contact_Information_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

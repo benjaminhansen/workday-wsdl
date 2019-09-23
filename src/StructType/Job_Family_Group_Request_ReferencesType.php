@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Job Family Group.
      * - maxOccurs: unbounded
-     * @var \StructType\Job_FamilyObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_FamilyObjectType[]
      */
     public $Job_Family_Group_Reference;
     /**
@@ -29,7 +29,7 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
      * Constructor method for Job_Family_Group_Request_ReferencesType
      * @uses Job_Family_Group_Request_ReferencesType::setJob_Family_Group_Reference()
      * @uses Job_Family_Group_Request_ReferencesType::setSkip_Non_Existing_Instances()
-     * @param \StructType\Job_FamilyObjectType[] $job_Family_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType[] $job_Family_Group_Reference
      * @param bool $skip_Non_Existing_Instances
      */
     public function __construct(array $job_Family_Group_Reference = array(), $skip_Non_Existing_Instances = null)
@@ -40,7 +40,7 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Group_Reference value
-     * @return \StructType\Job_FamilyObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_FamilyObjectType[]|null
      */
     public function getJob_Family_Group_Reference()
     {
@@ -58,12 +58,12 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem instanceof \StructType\Job_FamilyObjectType) {
+            if (!$job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_FamilyObjectType) {
                 $invalidValues[] = is_object($job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem) ? get_class($job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem) : sprintf('%s(%s)', gettype($job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem), var_export($job_Family_Group_Request_ReferencesTypeJob_Family_Group_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Family_Group_Reference property can only contain items of type \StructType\Job_FamilyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Family_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_FamilyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Job_Family_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_FamilyObjectType[] $job_Family_Group_Reference
-     * @return \StructType\Job_Family_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType[] $job_Family_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Request_ReferencesType
      */
     public function setJob_Family_Group_Reference(array $job_Family_Group_Reference = array())
     {
@@ -86,14 +86,14 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Job_Family_Group_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_FamilyObjectType $item
-     * @return \StructType\Job_Family_Group_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Request_ReferencesType
      */
-    public function addToJob_Family_Group_Reference(\StructType\Job_FamilyObjectType $item)
+    public function addToJob_Family_Group_Reference(\WorkdayWsdl\\StructType\Job_FamilyObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_FamilyObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Family_Group_Reference property can only contain items of type \StructType\Job_FamilyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_FamilyObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Family_Group_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_FamilyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Family_Group_Reference[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Skip_Non_Existing_Instances value
      * @param bool $skip_Non_Existing_Instances
-     * @return \StructType\Job_Family_Group_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Request_ReferencesType
      */
     public function setSkip_Non_Existing_Instances($skip_Non_Existing_Instances = null)
     {
@@ -126,7 +126,7 @@ class Job_Family_Group_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Family_Group_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

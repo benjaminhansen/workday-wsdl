@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Service_Center_RepresentativeType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the Service Center Representative.
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeObjectType
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public $Service_Center_Representative_Reference;
     /**
      * The Service_Center_Representative_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Service_Center_Representative_DataType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public $Service_Center_Representative_Data;
     /**
      * Constructor method for Service_Center_RepresentativeType
      * @uses Service_Center_RepresentativeType::setService_Center_Representative_Reference()
      * @uses Service_Center_RepresentativeType::setService_Center_Representative_Data()
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
-     * @param \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
      */
-    public function __construct(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null, \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null, \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
     {
         $this
             ->setService_Center_Representative_Reference($service_Center_Representative_Reference)
@@ -42,7 +42,7 @@ class Service_Center_RepresentativeType extends AbstractStructBase
     }
     /**
      * Get Service_Center_Representative_Reference value
-     * @return \StructType\Service_Center_RepresentativeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType|null
      */
     public function getService_Center_Representative_Reference()
     {
@@ -50,17 +50,17 @@ class Service_Center_RepresentativeType extends AbstractStructBase
     }
     /**
      * Set Service_Center_Representative_Reference value
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
-     * @return \StructType\Service_Center_RepresentativeType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeType
      */
-    public function setService_Center_Representative_Reference(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null)
+    public function setService_Center_Representative_Reference(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null)
     {
         $this->Service_Center_Representative_Reference = $service_Center_Representative_Reference;
         return $this;
     }
     /**
      * Get Service_Center_Representative_Data value
-     * @return \StructType\Service_Center_Representative_DataType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType|null
      */
     public function getService_Center_Representative_Data()
     {
@@ -68,10 +68,10 @@ class Service_Center_RepresentativeType extends AbstractStructBase
     }
     /**
      * Set Service_Center_Representative_Data value
-     * @param \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
-     * @return \StructType\Service_Center_RepresentativeType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeType
      */
-    public function setService_Center_Representative_Data(\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
+    public function setService_Center_Representative_Data(\WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
     {
         $this->Service_Center_Representative_Data = $service_Center_Representative_Data;
         return $this;
@@ -82,7 +82,7 @@ class Service_Center_RepresentativeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_RepresentativeType
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeType
      */
     public static function __set_state(array $array)
     {

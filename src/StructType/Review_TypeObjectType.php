@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Review_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Review_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Review_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Review_TypeObjectType extends AbstractStructBase
      * Constructor method for Review_TypeObjectType
      * @uses Review_TypeObjectType::setID()
      * @uses Review_TypeObjectType::setDescriptor()
-     * @param \StructType\Review_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Review_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Review_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Review_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Review_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Review_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $review_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$review_TypeObjectTypeIDItem instanceof \StructType\Review_TypeObjectIDType) {
+            if (!$review_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Review_TypeObjectIDType) {
                 $invalidValues[] = is_object($review_TypeObjectTypeIDItem) ? get_class($review_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($review_TypeObjectTypeIDItem), var_export($review_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Review_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Review_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Review_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Review_TypeObjectIDType[] $iD
-     * @return \StructType\Review_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Review_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Review_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Review_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Review_TypeObjectIDType $item
-     * @return \StructType\Review_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Review_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Review_TypeObjectType
      */
-    public function addToID(\StructType\Review_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Review_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Review_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Review_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Review_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Review_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Review_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Review_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Review_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Review_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Review_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Review_TypeObjectType
      */
     public static function __set_state(array $array)
     {

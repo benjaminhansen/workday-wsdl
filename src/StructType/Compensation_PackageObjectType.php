@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Compensation_PackageObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Compensation_PackageObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Compensation_PackageObjectType extends AbstractStructBase
      * Constructor method for Compensation_PackageObjectType
      * @uses Compensation_PackageObjectType::setID()
      * @uses Compensation_PackageObjectType::setDescriptor()
-     * @param \StructType\Compensation_PackageObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Compensation_PackageObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Compensation_PackageObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Compensation_PackageObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $compensation_PackageObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$compensation_PackageObjectTypeIDItem instanceof \StructType\Compensation_PackageObjectIDType) {
+            if (!$compensation_PackageObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType) {
                 $invalidValues[] = is_object($compensation_PackageObjectTypeIDItem) ? get_class($compensation_PackageObjectTypeIDItem) : sprintf('%s(%s)', gettype($compensation_PackageObjectTypeIDItem), var_export($compensation_PackageObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Compensation_PackageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Compensation_PackageObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_PackageObjectIDType[] $iD
-     * @return \StructType\Compensation_PackageObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Compensation_PackageObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Compensation_PackageObjectIDType $item
-     * @return \StructType\Compensation_PackageObjectType
+     * @param \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectType
      */
-    public function addToID(\StructType\Compensation_PackageObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Compensation_PackageObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Compensation_PackageObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Compensation_PackageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Compensation_PackageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Compensation_PackageObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Compensation_PackageObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Compensation_PackageObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_PackageObjectType
+     * @return \WorkdayWsdl\\StructType\Compensation_PackageObjectType
      */
     public static function __set_state(array $array)
     {

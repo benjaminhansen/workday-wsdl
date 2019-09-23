@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Academic_RankObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Academic_RankReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Academic_RankReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Academic_RankReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Academic_RankReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Academic_RankObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Academic_RankReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Academic_RankReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Academic_RankReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Academic_RankReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Academic_RankReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Academic_RankReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Academic_RankObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Academic_RankObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Academic_RankObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_RankObjectIDType
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectIDType
      */
     public static function __set_state(array $array)
     {

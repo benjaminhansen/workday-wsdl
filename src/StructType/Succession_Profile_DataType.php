@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Succession_Profile_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Succession_Plan_Candidate_DataType[]
+     * @var \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType[]
      */
     public $Candidate_Data;
     /**
      * Constructor method for Succession_Profile_DataType
      * @uses Succession_Profile_DataType::setCandidate_Data()
-     * @param \StructType\Succession_Plan_Candidate_DataType[] $candidate_Data
+     * @param \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType[] $candidate_Data
      */
     public function __construct(array $candidate_Data = array())
     {
@@ -32,7 +32,7 @@ class Succession_Profile_DataType extends AbstractStructBase
     }
     /**
      * Get Candidate_Data value
-     * @return \StructType\Succession_Plan_Candidate_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType[]|null
      */
     public function getCandidate_Data()
     {
@@ -50,12 +50,12 @@ class Succession_Profile_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $succession_Profile_DataTypeCandidate_DataItem) {
             // validation for constraint: itemType
-            if (!$succession_Profile_DataTypeCandidate_DataItem instanceof \StructType\Succession_Plan_Candidate_DataType) {
+            if (!$succession_Profile_DataTypeCandidate_DataItem instanceof \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType) {
                 $invalidValues[] = is_object($succession_Profile_DataTypeCandidate_DataItem) ? get_class($succession_Profile_DataTypeCandidate_DataItem) : sprintf('%s(%s)', gettype($succession_Profile_DataTypeCandidate_DataItem), var_export($succession_Profile_DataTypeCandidate_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Candidate_Data property can only contain items of type \StructType\Succession_Plan_Candidate_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Candidate_Data property can only contain items of type \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Succession_Profile_DataType extends AbstractStructBase
     /**
      * Set Candidate_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Succession_Plan_Candidate_DataType[] $candidate_Data
-     * @return \StructType\Succession_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType[] $candidate_Data
+     * @return \WorkdayWsdl\\StructType\Succession_Profile_DataType
      */
     public function setCandidate_Data(array $candidate_Data = array())
     {
@@ -78,14 +78,14 @@ class Succession_Profile_DataType extends AbstractStructBase
     /**
      * Add item to Candidate_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Succession_Plan_Candidate_DataType $item
-     * @return \StructType\Succession_Profile_DataType
+     * @param \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType $item
+     * @return \WorkdayWsdl\\StructType\Succession_Profile_DataType
      */
-    public function addToCandidate_Data(\StructType\Succession_Plan_Candidate_DataType $item)
+    public function addToCandidate_Data(\WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Succession_Plan_Candidate_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Candidate_Data property can only contain items of type \StructType\Succession_Plan_Candidate_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Candidate_Data property can only contain items of type \WorkdayWsdl\\StructType\Succession_Plan_Candidate_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Candidate_Data[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Succession_Profile_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Succession_Profile_DataType
+     * @return \WorkdayWsdl\\StructType\Succession_Profile_DataType
      */
     public static function __set_state(array $array)
     {

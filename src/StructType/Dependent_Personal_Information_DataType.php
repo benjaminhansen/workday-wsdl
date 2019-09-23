@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for this dependent's name data.
      * - minOccurs: 0
-     * @var \StructType\Person_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public $Person_Name_Data;
     /**
@@ -25,7 +25,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for this dependent's contact information.
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public $Contact_Information_Data;
     /**
@@ -33,7 +33,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for this dependent's ID data.
      * - minOccurs: 0
-     * @var \StructType\Person_Identification_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Identification_DataType
      */
     public $Person_Identification_Data;
     /**
@@ -59,7 +59,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The gender of the dependent.
      * - minOccurs: 0
-     * @var \StructType\GenderObjectType
+     * @var \WorkdayWsdl\\StructType\GenderObjectType
      */
     public $Gender_Reference;
     /**
@@ -130,12 +130,12 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * @uses Dependent_Personal_Information_DataType::setStudent_Status_End_Date()
      * @uses Dependent_Personal_Information_DataType::setDisabled()
      * @uses Dependent_Personal_Information_DataType::setInactive_Date()
-     * @param \StructType\Person_Name_DataType $person_Name_Data
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
      * @param string $date_of_Birth
      * @param string $date_of_Death
-     * @param \StructType\GenderObjectType $gender_Reference
+     * @param \WorkdayWsdl\\StructType\GenderObjectType $gender_Reference
      * @param bool $uses_Tobacco
      * @param bool $full_Time_Student
      * @param string $student_Status_Start_Date
@@ -143,7 +143,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * @param bool $disabled
      * @param string $inactive_Date
      */
-    public function __construct(\StructType\Person_Name_DataType $person_Name_Data = null, \StructType\Contact_Information_DataType $contact_Information_Data = null, \StructType\Person_Identification_DataType $person_Identification_Data = null, $date_of_Birth = null, $date_of_Death = null, \StructType\GenderObjectType $gender_Reference = null, $uses_Tobacco = null, $full_Time_Student = null, $student_Status_Start_Date = null, $student_Status_End_Date = null, $disabled = null, $inactive_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data = null, \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null, \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null, $date_of_Birth = null, $date_of_Death = null, \WorkdayWsdl\\StructType\GenderObjectType $gender_Reference = null, $uses_Tobacco = null, $full_Time_Student = null, $student_Status_Start_Date = null, $student_Status_End_Date = null, $disabled = null, $inactive_Date = null)
     {
         $this
             ->setPerson_Name_Data($person_Name_Data)
@@ -161,7 +161,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Name_Data value
-     * @return \StructType\Person_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType|null
      */
     public function getPerson_Name_Data()
     {
@@ -169,17 +169,17 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Name_Data value
-     * @param \StructType\Person_Name_DataType $person_Name_Data
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
-    public function setPerson_Name_Data(\StructType\Person_Name_DataType $person_Name_Data = null)
+    public function setPerson_Name_Data(\WorkdayWsdl\\StructType\Person_Name_DataType $person_Name_Data = null)
     {
         $this->Person_Name_Data = $person_Name_Data;
         return $this;
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType|null
      */
     public function getContact_Information_Data()
     {
@@ -187,17 +187,17 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Contact_Information_Data value
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
-    public function setContact_Information_Data(\StructType\Contact_Information_DataType $contact_Information_Data = null)
+    public function setContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null)
     {
         $this->Contact_Information_Data = $contact_Information_Data;
         return $this;
     }
     /**
      * Get Person_Identification_Data value
-     * @return \StructType\Person_Identification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Identification_DataType|null
      */
     public function getPerson_Identification_Data()
     {
@@ -205,10 +205,10 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Identification_Data value
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
-    public function setPerson_Identification_Data(\StructType\Person_Identification_DataType $person_Identification_Data = null)
+    public function setPerson_Identification_Data(\WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null)
     {
         $this->Person_Identification_Data = $person_Identification_Data;
         return $this;
@@ -224,7 +224,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Date_of_Birth value
      * @param string $date_of_Birth
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setDate_of_Birth($date_of_Birth = null)
     {
@@ -246,7 +246,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Date_of_Death value
      * @param string $date_of_Death
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setDate_of_Death($date_of_Death = null)
     {
@@ -259,7 +259,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Gender_Reference value
-     * @return \StructType\GenderObjectType|null
+     * @return \WorkdayWsdl\\StructType\GenderObjectType|null
      */
     public function getGender_Reference()
     {
@@ -267,10 +267,10 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Gender_Reference value
-     * @param \StructType\GenderObjectType $gender_Reference
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\GenderObjectType $gender_Reference
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
-    public function setGender_Reference(\StructType\GenderObjectType $gender_Reference = null)
+    public function setGender_Reference(\WorkdayWsdl\\StructType\GenderObjectType $gender_Reference = null)
     {
         $this->Gender_Reference = $gender_Reference;
         return $this;
@@ -286,7 +286,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Uses_Tobacco value
      * @param bool $uses_Tobacco
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setUses_Tobacco($uses_Tobacco = null)
     {
@@ -308,7 +308,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Full_Time_Student value
      * @param bool $full_Time_Student
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setFull_Time_Student($full_Time_Student = null)
     {
@@ -330,7 +330,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Student_Status_Start_Date value
      * @param string $student_Status_Start_Date
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setStudent_Status_Start_Date($student_Status_Start_Date = null)
     {
@@ -352,7 +352,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Student_Status_End_Date value
      * @param string $student_Status_End_Date
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setStudent_Status_End_Date($student_Status_End_Date = null)
     {
@@ -374,7 +374,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Disabled value
      * @param bool $disabled
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setDisabled($disabled = null)
     {
@@ -396,7 +396,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Inactive_Date value
      * @param string $inactive_Date
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public function setInactive_Date($inactive_Date = null)
     {
@@ -413,7 +413,7 @@ class Dependent_Personal_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Dependent_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public static function __set_state(array $array)
     {

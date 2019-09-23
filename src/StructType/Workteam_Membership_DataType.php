@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: Worker ID. Can specify either the ID or WID.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -35,7 +35,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Required unless Delete is true. Valid values are Active, Passive, or Inactive.
      * - minOccurs: 0
-     * @var \StructType\Workteam_Membership_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType
      */
     public $Workteam_Membership_Status_Reference;
     /**
@@ -53,11 +53,11 @@ class Workteam_Membership_DataType extends AbstractStructBase
      * @uses Workteam_Membership_DataType::setWorkteam_Membership_Status_Reference()
      * @uses Workteam_Membership_DataType::setDelete()
      * @param string $effective_Date
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference
      * @param bool $delete
      */
-    public function __construct($effective_Date = null, \StructType\WorkerObjectType $worker_Reference = null, \StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference = null, $delete = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference = null, $delete = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -76,7 +76,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Workteam_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -89,7 +89,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -97,17 +97,17 @@ class Workteam_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Workteam_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Workteam_Membership_Status_Reference value
-     * @return \StructType\Workteam_Membership_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType|null
      */
     public function getWorkteam_Membership_Status_Reference()
     {
@@ -115,10 +115,10 @@ class Workteam_Membership_DataType extends AbstractStructBase
     }
     /**
      * Set Workteam_Membership_Status_Reference value
-     * @param \StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference
-     * @return \StructType\Workteam_Membership_DataType
+     * @param \WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType
      */
-    public function setWorkteam_Membership_Status_Reference(\StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference = null)
+    public function setWorkteam_Membership_Status_Reference(\WorkdayWsdl\\StructType\Workteam_Membership_StatusObjectType $workteam_Membership_Status_Reference = null)
     {
         $this->Workteam_Membership_Status_Reference = $workteam_Membership_Status_Reference;
         return $this;
@@ -134,7 +134,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Workteam_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType
      */
     public function setDelete($delete = null)
     {
@@ -151,7 +151,7 @@ class Workteam_Membership_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workteam_Membership_DataType
+     * @return \WorkdayWsdl\\StructType\Workteam_Membership_DataType
      */
     public static function __set_state(array $array)
     {

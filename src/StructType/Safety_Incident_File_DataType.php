@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Safety_Incident_File_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The safety incident file that will be added.
      * - minOccurs: 0
-     * @var \StructType\Safety_Incident_FileObjectType
+     * @var \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType
      */
     public $Safety_Incident_File_Attachment_Reference;
     /**
@@ -26,17 +26,17 @@ class Safety_Incident_File_DataType extends AbstractStructBase
      * - documentation: The information for the attachment.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Attachment_WWS_DataType[]
+     * @var \WorkdayWsdl\\StructType\Attachment_WWS_DataType[]
      */
     public $File_Attachment_Data;
     /**
      * Constructor method for Safety_Incident_File_DataType
      * @uses Safety_Incident_File_DataType::setSafety_Incident_File_Attachment_Reference()
      * @uses Safety_Incident_File_DataType::setFile_Attachment_Data()
-     * @param \StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference
-     * @param \StructType\Attachment_WWS_DataType[] $file_Attachment_Data
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType[] $file_Attachment_Data
      */
-    public function __construct(\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference = null, array $file_Attachment_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference = null, array $file_Attachment_Data = array())
     {
         $this
             ->setSafety_Incident_File_Attachment_Reference($safety_Incident_File_Attachment_Reference)
@@ -44,7 +44,7 @@ class Safety_Incident_File_DataType extends AbstractStructBase
     }
     /**
      * Get Safety_Incident_File_Attachment_Reference value
-     * @return \StructType\Safety_Incident_FileObjectType|null
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType|null
      */
     public function getSafety_Incident_File_Attachment_Reference()
     {
@@ -52,17 +52,17 @@ class Safety_Incident_File_DataType extends AbstractStructBase
     }
     /**
      * Set Safety_Incident_File_Attachment_Reference value
-     * @param \StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference
-     * @return \StructType\Safety_Incident_File_DataType
+     * @param \WorkdayWsdl\\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_File_DataType
      */
-    public function setSafety_Incident_File_Attachment_Reference(\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference = null)
+    public function setSafety_Incident_File_Attachment_Reference(\WorkdayWsdl\\StructType\Safety_Incident_FileObjectType $safety_Incident_File_Attachment_Reference = null)
     {
         $this->Safety_Incident_File_Attachment_Reference = $safety_Incident_File_Attachment_Reference;
         return $this;
     }
     /**
      * Get File_Attachment_Data value
-     * @return \StructType\Attachment_WWS_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Attachment_WWS_DataType[]|null
      */
     public function getFile_Attachment_Data()
     {
@@ -80,12 +80,12 @@ class Safety_Incident_File_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $safety_Incident_File_DataTypeFile_Attachment_DataItem) {
             // validation for constraint: itemType
-            if (!$safety_Incident_File_DataTypeFile_Attachment_DataItem instanceof \StructType\Attachment_WWS_DataType) {
+            if (!$safety_Incident_File_DataTypeFile_Attachment_DataItem instanceof \WorkdayWsdl\\StructType\Attachment_WWS_DataType) {
                 $invalidValues[] = is_object($safety_Incident_File_DataTypeFile_Attachment_DataItem) ? get_class($safety_Incident_File_DataTypeFile_Attachment_DataItem) : sprintf('%s(%s)', gettype($safety_Incident_File_DataTypeFile_Attachment_DataItem), var_export($safety_Incident_File_DataTypeFile_Attachment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The File_Attachment_Data property can only contain items of type \StructType\Attachment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The File_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Attachment_WWS_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Safety_Incident_File_DataType extends AbstractStructBase
     /**
      * Set File_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attachment_WWS_DataType[] $file_Attachment_Data
-     * @return \StructType\Safety_Incident_File_DataType
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType[] $file_Attachment_Data
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_File_DataType
      */
     public function setFile_Attachment_Data(array $file_Attachment_Data = array())
     {
@@ -108,14 +108,14 @@ class Safety_Incident_File_DataType extends AbstractStructBase
     /**
      * Add item to File_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Attachment_WWS_DataType $item
-     * @return \StructType\Safety_Incident_File_DataType
+     * @param \WorkdayWsdl\\StructType\Attachment_WWS_DataType $item
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_File_DataType
      */
-    public function addToFile_Attachment_Data(\StructType\Attachment_WWS_DataType $item)
+    public function addToFile_Attachment_Data(\WorkdayWsdl\\StructType\Attachment_WWS_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment_WWS_DataType) {
-            throw new \InvalidArgumentException(sprintf('The File_Attachment_Data property can only contain items of type \StructType\Attachment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Attachment_WWS_DataType) {
+            throw new \InvalidArgumentException(sprintf('The File_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Attachment_WWS_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->File_Attachment_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Safety_Incident_File_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Safety_Incident_File_DataType
+     * @return \WorkdayWsdl\\StructType\Safety_Incident_File_DataType
      */
     public static function __set_state(array $array)
     {

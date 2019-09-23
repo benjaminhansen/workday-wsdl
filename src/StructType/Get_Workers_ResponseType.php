@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,42 +16,42 @@ class Get_Workers_ResponseType extends AbstractStructBase
      * The Request_References
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Worker_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Request_Criteria
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Worker_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
      * The Response_Group
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_Response_GroupType
+     * @var \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public $Response_Group;
     /**
      * The Response_Results
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_ResultsType
+     * @var \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public $Response_Results;
     /**
      * The Response_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Workers_Response_DataType
+     * @var \WorkdayWsdl\\StructType\Workers_Response_DataType
      */
     public $Response_Data;
     /**
@@ -59,7 +59,7 @@ class Get_Workers_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Invalid_Reference_ID_ResponseType[]
+     * @var \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType[]
      */
     public $Invalid_Reference_ID_Response;
     /**
@@ -71,15 +71,15 @@ class Get_Workers_ResponseType extends AbstractStructBase
      * @uses Get_Workers_ResponseType::setResponse_Results()
      * @uses Get_Workers_ResponseType::setResponse_Data()
      * @uses Get_Workers_ResponseType::setInvalid_Reference_ID_Response()
-     * @param \StructType\Worker_Request_ReferencesType $request_References
-     * @param \StructType\Worker_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Worker_Response_GroupType $response_Group
-     * @param \StructType\Response_ResultsType $response_Results
-     * @param \StructType\Workers_Response_DataType $response_Data
-     * @param \StructType\Invalid_Reference_ID_ResponseType[] $invalid_Reference_ID_Response
+     * @param \WorkdayWsdl\\StructType\Worker_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Worker_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Worker_Response_GroupType $response_Group
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @param \WorkdayWsdl\\StructType\Workers_Response_DataType $response_Data
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType[] $invalid_Reference_ID_Response
      */
-    public function __construct(\StructType\Worker_Request_ReferencesType $request_References = null, \StructType\Worker_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Worker_Response_GroupType $response_Group = null, \StructType\Response_ResultsType $response_Results = null, \StructType\Workers_Response_DataType $response_Data = null, array $invalid_Reference_ID_Response = array())
+    public function __construct(\WorkdayWsdl\\StructType\Worker_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Worker_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Worker_Response_GroupType $response_Group = null, \WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null, \WorkdayWsdl\\StructType\Workers_Response_DataType $response_Data = null, array $invalid_Reference_ID_Response = array())
     {
         $this
             ->setRequest_References($request_References)
@@ -92,7 +92,7 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Worker_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -100,17 +100,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Worker_Request_ReferencesType $request_References
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Worker_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setRequest_References(\StructType\Worker_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Worker_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Worker_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -118,17 +118,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Request_Criteria value
-     * @param \StructType\Worker_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Worker_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setRequest_Criteria(\StructType\Worker_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Worker_Request_CriteriaType $request_Criteria = null)
     {
         $this->Request_Criteria = $request_Criteria;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -136,17 +136,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\Worker_Response_GroupType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType|null
      */
     public function getResponse_Group()
     {
@@ -154,17 +154,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Group value
-     * @param \StructType\Worker_Response_GroupType $response_Group
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Worker_Response_GroupType $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setResponse_Group(\StructType\Worker_Response_GroupType $response_Group = null)
+    public function setResponse_Group(\WorkdayWsdl\\StructType\Worker_Response_GroupType $response_Group = null)
     {
         $this->Response_Group = $response_Group;
         return $this;
     }
     /**
      * Get Response_Results value
-     * @return \StructType\Response_ResultsType|null
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType|null
      */
     public function getResponse_Results()
     {
@@ -172,17 +172,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Results value
-     * @param \StructType\Response_ResultsType $response_Results
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setResponse_Results(\StructType\Response_ResultsType $response_Results = null)
+    public function setResponse_Results(\WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null)
     {
         $this->Response_Results = $response_Results;
         return $this;
     }
     /**
      * Get Response_Data value
-     * @return \StructType\Workers_Response_DataType|null
+     * @return \WorkdayWsdl\\StructType\Workers_Response_DataType|null
      */
     public function getResponse_Data()
     {
@@ -190,17 +190,17 @@ class Get_Workers_ResponseType extends AbstractStructBase
     }
     /**
      * Set Response_Data value
-     * @param \StructType\Workers_Response_DataType $response_Data
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Workers_Response_DataType $response_Data
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function setResponse_Data(\StructType\Workers_Response_DataType $response_Data = null)
+    public function setResponse_Data(\WorkdayWsdl\\StructType\Workers_Response_DataType $response_Data = null)
     {
         $this->Response_Data = $response_Data;
         return $this;
     }
     /**
      * Get Invalid_Reference_ID_Response value
-     * @return \StructType\Invalid_Reference_ID_ResponseType[]|null
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType[]|null
      */
     public function getInvalid_Reference_ID_Response()
     {
@@ -218,12 +218,12 @@ class Get_Workers_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem) {
             // validation for constraint: itemType
-            if (!$get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem instanceof \StructType\Invalid_Reference_ID_ResponseType) {
+            if (!$get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem instanceof \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType) {
                 $invalidValues[] = is_object($get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem) ? get_class($get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem) : sprintf('%s(%s)', gettype($get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem), var_export($get_Workers_ResponseTypeInvalid_Reference_ID_ResponseItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Invalid_Reference_ID_Response property can only contain items of type \StructType\Invalid_Reference_ID_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Invalid_Reference_ID_Response property can only contain items of type \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -231,8 +231,8 @@ class Get_Workers_ResponseType extends AbstractStructBase
     /**
      * Set Invalid_Reference_ID_Response value
      * @throws \InvalidArgumentException
-     * @param \StructType\Invalid_Reference_ID_ResponseType[] $invalid_Reference_ID_Response
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType[] $invalid_Reference_ID_Response
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
     public function setInvalid_Reference_ID_Response(array $invalid_Reference_ID_Response = array())
     {
@@ -246,14 +246,14 @@ class Get_Workers_ResponseType extends AbstractStructBase
     /**
      * Add item to Invalid_Reference_ID_Response value
      * @throws \InvalidArgumentException
-     * @param \StructType\Invalid_Reference_ID_ResponseType $item
-     * @return \StructType\Get_Workers_ResponseType
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType $item
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
-    public function addToInvalid_Reference_ID_Response(\StructType\Invalid_Reference_ID_ResponseType $item)
+    public function addToInvalid_Reference_ID_Response(\WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Invalid_Reference_ID_ResponseType) {
-            throw new \InvalidArgumentException(sprintf('The Invalid_Reference_ID_Response property can only contain items of type \StructType\Invalid_Reference_ID_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType) {
+            throw new \InvalidArgumentException(sprintf('The Invalid_Reference_ID_Response property can only contain items of type \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Invalid_Reference_ID_Response[] = $item;
         return $this;
@@ -264,7 +264,7 @@ class Get_Workers_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Workers_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseType
      */
     public static function __set_state(array $array)
     {

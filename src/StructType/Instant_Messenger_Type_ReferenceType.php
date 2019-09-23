@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Instant_Messenger_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Provider value
      * @param string $instant_Messenger_Provider
-     * @return \StructType\Instant_Messenger_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType
      */
     public function setInstant_Messenger_Provider($instant_Messenger_Provider = null)
     {
@@ -58,7 +58,7 @@ class Instant_Messenger_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instant_Messenger_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

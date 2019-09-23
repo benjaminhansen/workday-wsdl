@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Integration_Document_FieldObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
      * Constructor method for Integration_Document_FieldObjectType
      * @uses Integration_Document_FieldObjectType::setID()
      * @uses Integration_Document_FieldObjectType::setDescriptor()
-     * @param \StructType\Integration_Document_FieldObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Integration_Document_FieldObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $integration_Document_FieldObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$integration_Document_FieldObjectTypeIDItem instanceof \StructType\Integration_Document_FieldObjectIDType) {
+            if (!$integration_Document_FieldObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType) {
                 $invalidValues[] = is_object($integration_Document_FieldObjectTypeIDItem) ? get_class($integration_Document_FieldObjectTypeIDItem) : sprintf('%s(%s)', gettype($integration_Document_FieldObjectTypeIDItem), var_export($integration_Document_FieldObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Integration_Document_FieldObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Integration_Document_FieldObjectIDType[] $iD
-     * @return \StructType\Integration_Document_FieldObjectType
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Integration_Document_FieldObjectIDType $item
-     * @return \StructType\Integration_Document_FieldObjectType
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
-    public function addToID(\StructType\Integration_Document_FieldObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Integration_Document_FieldObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Integration_Document_FieldObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Integration_Document_FieldObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Integration_Document_FieldObjectType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Integration_Document_FieldObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Integration_Document_FieldObjectType
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
     public static function __set_state(array $array)
     {

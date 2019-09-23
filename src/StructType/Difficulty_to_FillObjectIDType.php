@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Difficulty_to_FillObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Difficulty_to_FillReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Difficulty_to_FillReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Difficulty_to_FillReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Difficulty_to_FillReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Difficulty_to_FillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Difficulty_to_FillReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Difficulty_to_FillReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Difficulty_to_FillReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Difficulty_to_FillReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Difficulty_to_FillReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Difficulty_to_FillReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Difficulty_to_FillObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Difficulty_to_FillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Difficulty_to_FillObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Difficulty_to_FillObjectIDType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectIDType
      */
     public static function __set_state(array $array)
     {

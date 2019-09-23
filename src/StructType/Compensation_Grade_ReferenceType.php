@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Compensation_Grade_ReferenceType extends AbstractStructBase
     /**
      * Set Compensation_Grade_Name value
      * @param string $compensation_Grade_Name
-     * @return \StructType\Compensation_Grade_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ReferenceType
      */
     public function setCompensation_Grade_Name($compensation_Grade_Name = null)
     {
@@ -58,7 +58,7 @@ class Compensation_Grade_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_Grade_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Compensation_Grade_ReferenceType
      */
     public static function __set_state(array $array)
     {

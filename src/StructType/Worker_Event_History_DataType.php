@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Worker_Event_History_DataType extends AbstractStructBase
      * The Event_Date_Range_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Effective_And_Updated_DateTime_DataType
+     * @var \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public $Event_Date_Range_Data;
     /**
@@ -24,17 +24,17 @@ class Worker_Event_History_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Event_History_DataType[]
+     * @var \WorkdayWsdl\\StructType\Event_History_DataType[]
      */
     public $Event_Data;
     /**
      * Constructor method for Worker_Event_History_DataType
      * @uses Worker_Event_History_DataType::setEvent_Date_Range_Data()
      * @uses Worker_Event_History_DataType::setEvent_Data()
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
-     * @param \StructType\Event_History_DataType[] $event_Data
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
+     * @param \WorkdayWsdl\\StructType\Event_History_DataType[] $event_Data
      */
-    public function __construct(\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null, array $event_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null, array $event_Data = array())
     {
         $this
             ->setEvent_Date_Range_Data($event_Date_Range_Data)
@@ -42,7 +42,7 @@ class Worker_Event_History_DataType extends AbstractStructBase
     }
     /**
      * Get Event_Date_Range_Data value
-     * @return \StructType\Effective_And_Updated_DateTime_DataType|null
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType|null
      */
     public function getEvent_Date_Range_Data()
     {
@@ -50,17 +50,17 @@ class Worker_Event_History_DataType extends AbstractStructBase
     }
     /**
      * Set Event_Date_Range_Data value
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
-     * @return \StructType\Worker_Event_History_DataType
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_DataType
      */
-    public function setEvent_Date_Range_Data(\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null)
+    public function setEvent_Date_Range_Data(\WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null)
     {
         $this->Event_Date_Range_Data = $event_Date_Range_Data;
         return $this;
     }
     /**
      * Get Event_Data value
-     * @return \StructType\Event_History_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Event_History_DataType[]|null
      */
     public function getEvent_Data()
     {
@@ -78,12 +78,12 @@ class Worker_Event_History_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Event_History_DataTypeEvent_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Event_History_DataTypeEvent_DataItem instanceof \StructType\Event_History_DataType) {
+            if (!$worker_Event_History_DataTypeEvent_DataItem instanceof \WorkdayWsdl\\StructType\Event_History_DataType) {
                 $invalidValues[] = is_object($worker_Event_History_DataTypeEvent_DataItem) ? get_class($worker_Event_History_DataTypeEvent_DataItem) : sprintf('%s(%s)', gettype($worker_Event_History_DataTypeEvent_DataItem), var_export($worker_Event_History_DataTypeEvent_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Event_Data property can only contain items of type \StructType\Event_History_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Event_History_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -91,8 +91,8 @@ class Worker_Event_History_DataType extends AbstractStructBase
     /**
      * Set Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_History_DataType[] $event_Data
-     * @return \StructType\Worker_Event_History_DataType
+     * @param \WorkdayWsdl\\StructType\Event_History_DataType[] $event_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_DataType
      */
     public function setEvent_Data(array $event_Data = array())
     {
@@ -106,14 +106,14 @@ class Worker_Event_History_DataType extends AbstractStructBase
     /**
      * Add item to Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Event_History_DataType $item
-     * @return \StructType\Worker_Event_History_DataType
+     * @param \WorkdayWsdl\\StructType\Event_History_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_DataType
      */
-    public function addToEvent_Data(\StructType\Event_History_DataType $item)
+    public function addToEvent_Data(\WorkdayWsdl\\StructType\Event_History_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Event_History_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Event_Data property can only contain items of type \StructType\Event_History_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Event_History_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Event_History_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Event_Data[] = $item;
         return $this;
@@ -124,7 +124,7 @@ class Worker_Event_History_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Event_History_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_DataType
      */
     public static function __set_state(array $array)
     {

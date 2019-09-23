@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Location_HierarchyObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_HierarchyObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Location_HierarchyObjectType extends AbstractStructBase
      * Constructor method for Location_HierarchyObjectType
      * @uses Location_HierarchyObjectType::setID()
      * @uses Location_HierarchyObjectType::setDescriptor()
-     * @param \StructType\Location_HierarchyObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Location_HierarchyObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Location_HierarchyObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Location_HierarchyObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_HierarchyObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$location_HierarchyObjectTypeIDItem instanceof \StructType\Location_HierarchyObjectIDType) {
+            if (!$location_HierarchyObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType) {
                 $invalidValues[] = is_object($location_HierarchyObjectTypeIDItem) ? get_class($location_HierarchyObjectTypeIDItem) : sprintf('%s(%s)', gettype($location_HierarchyObjectTypeIDItem), var_export($location_HierarchyObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Location_HierarchyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Location_HierarchyObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_HierarchyObjectIDType[] $iD
-     * @return \StructType\Location_HierarchyObjectType
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Location_HierarchyObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_HierarchyObjectIDType $item
-     * @return \StructType\Location_HierarchyObjectType
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType
      */
-    public function addToID(\StructType\Location_HierarchyObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Location_HierarchyObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_HierarchyObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Location_HierarchyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Location_HierarchyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Location_HierarchyObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Location_HierarchyObjectType
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Location_HierarchyObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_HierarchyObjectType
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType
      */
     public static function __set_state(array $array)
     {

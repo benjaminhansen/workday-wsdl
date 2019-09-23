@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,14 +14,14 @@ class Worker_Event_History_GetType extends AbstractStructBase
 {
     /**
      * The Worker_Reference
-     * @var \StructType\Worker_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Worker_ReferenceType
      */
     public $Worker_Reference;
     /**
      * The Event_Date_Range_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Effective_And_Updated_DateTime_DataType
+     * @var \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType
      */
     public $Event_Date_Range_Data;
     /**
@@ -36,11 +36,11 @@ class Worker_Event_History_GetType extends AbstractStructBase
      * @uses Worker_Event_History_GetType::setWorker_Reference()
      * @uses Worker_Event_History_GetType::setEvent_Date_Range_Data()
      * @uses Worker_Event_History_GetType::setVersion()
-     * @param \StructType\Worker_ReferenceType $worker_Reference
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
      * @param string $version
      */
-    public function __construct(\StructType\Worker_ReferenceType $worker_Reference = null, \StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null, \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null, $version = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -49,7 +49,7 @@ class Worker_Event_History_GetType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\Worker_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Worker_ReferenceType|null
      */
     public function getWorker_Reference()
     {
@@ -57,17 +57,17 @@ class Worker_Event_History_GetType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\Worker_ReferenceType $worker_Reference
-     * @return \StructType\Worker_Event_History_GetType
+     * @param \WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_GetType
      */
-    public function setWorker_Reference(\StructType\Worker_ReferenceType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\Worker_ReferenceType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Event_Date_Range_Data value
-     * @return \StructType\Effective_And_Updated_DateTime_DataType|null
+     * @return \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType|null
      */
     public function getEvent_Date_Range_Data()
     {
@@ -75,10 +75,10 @@ class Worker_Event_History_GetType extends AbstractStructBase
     }
     /**
      * Set Event_Date_Range_Data value
-     * @param \StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
-     * @return \StructType\Worker_Event_History_GetType
+     * @param \WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_GetType
      */
-    public function setEvent_Date_Range_Data(\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null)
+    public function setEvent_Date_Range_Data(\WorkdayWsdl\\StructType\Effective_And_Updated_DateTime_DataType $event_Date_Range_Data = null)
     {
         $this->Event_Date_Range_Data = $event_Date_Range_Data;
         return $this;
@@ -94,7 +94,7 @@ class Worker_Event_History_GetType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Worker_Event_History_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_GetType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Worker_Event_History_GetType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Event_History_GetType
+     * @return \WorkdayWsdl\\StructType\Worker_Event_History_GetType
      */
     public static function __set_state(array $array)
     {

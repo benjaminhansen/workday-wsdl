@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class CompetencyObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\CompetencyReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\CompetencyReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\CompetencyReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\CompetencyReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\CompetencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CompetencyObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CompetencyReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CompetencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\CompetencyReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\CompetencyReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\CompetencyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\CompetencyReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class CompetencyObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CompetencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CompetencyObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class CompetencyObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CompetencyObjectIDType
+     * @return \WorkdayWsdl\\StructType\CompetencyObjectIDType
      */
     public static function __set_state(array $array)
     {

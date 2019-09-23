@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class Get_Workers_ResponseRootType extends Get_Workers_ResponseType
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Workers_ResponseRootType
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseRootType
      */
     public function setVersion($version = null)
     {
@@ -55,7 +55,7 @@ class Get_Workers_ResponseRootType extends Get_Workers_ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Workers_ResponseRootType
+     * @return \WorkdayWsdl\\StructType\Get_Workers_ResponseRootType
      */
     public static function __set_state(array $array)
     {

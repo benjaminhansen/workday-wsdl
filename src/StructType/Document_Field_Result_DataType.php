@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Document_Field_Result_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Integration Document Field Reference. Eligibility Criteria element is used in conjunction with Workday delivered integrations.
      * - minOccurs: 0
-     * @var \StructType\Integration_Document_FieldObjectType
+     * @var \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType
      */
     public $Field_Reference;
     /**
@@ -33,10 +33,10 @@ class Document_Field_Result_DataType extends AbstractStructBase
      * Constructor method for Document_Field_Result_DataType
      * @uses Document_Field_Result_DataType::setField_Reference()
      * @uses Document_Field_Result_DataType::setValue()
-     * @param \StructType\Integration_Document_FieldObjectType $field_Reference
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference
      * @param string $value
      */
-    public function __construct(\StructType\Integration_Document_FieldObjectType $field_Reference = null, $value = null)
+    public function __construct(\WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference = null, $value = null)
     {
         $this
             ->setField_Reference($field_Reference)
@@ -44,7 +44,7 @@ class Document_Field_Result_DataType extends AbstractStructBase
     }
     /**
      * Get Field_Reference value
-     * @return \StructType\Integration_Document_FieldObjectType|null
+     * @return \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType|null
      */
     public function getField_Reference()
     {
@@ -52,10 +52,10 @@ class Document_Field_Result_DataType extends AbstractStructBase
     }
     /**
      * Set Field_Reference value
-     * @param \StructType\Integration_Document_FieldObjectType $field_Reference
-     * @return \StructType\Document_Field_Result_DataType
+     * @param \WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference
+     * @return \WorkdayWsdl\\StructType\Document_Field_Result_DataType
      */
-    public function setField_Reference(\StructType\Integration_Document_FieldObjectType $field_Reference = null)
+    public function setField_Reference(\WorkdayWsdl\\StructType\Integration_Document_FieldObjectType $field_Reference = null)
     {
         $this->Field_Reference = $field_Reference;
         return $this;
@@ -71,7 +71,7 @@ class Document_Field_Result_DataType extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \StructType\Document_Field_Result_DataType
+     * @return \WorkdayWsdl\\StructType\Document_Field_Result_DataType
      */
     public function setValue($value = null)
     {
@@ -88,7 +88,7 @@ class Document_Field_Result_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Document_Field_Result_DataType
+     * @return \WorkdayWsdl\\StructType\Document_Field_Result_DataType
      */
     public static function __set_state(array $array)
     {

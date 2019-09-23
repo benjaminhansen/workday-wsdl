@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Job_Category_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_CategoryType[]
+     * @var \WorkdayWsdl\\StructType\Job_CategoryType[]
      */
     public $Job_Category;
     /**
      * Constructor method for Job_Category_Response_DataType
      * @uses Job_Category_Response_DataType::setJob_Category()
-     * @param \StructType\Job_CategoryType[] $job_Category
+     * @param \WorkdayWsdl\\StructType\Job_CategoryType[] $job_Category
      */
     public function __construct(array $job_Category = array())
     {
@@ -32,7 +32,7 @@ class Job_Category_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Category value
-     * @return \StructType\Job_CategoryType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryType[]|null
      */
     public function getJob_Category()
     {
@@ -50,12 +50,12 @@ class Job_Category_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Category_Response_DataTypeJob_CategoryItem) {
             // validation for constraint: itemType
-            if (!$job_Category_Response_DataTypeJob_CategoryItem instanceof \StructType\Job_CategoryType) {
+            if (!$job_Category_Response_DataTypeJob_CategoryItem instanceof \WorkdayWsdl\\StructType\Job_CategoryType) {
                 $invalidValues[] = is_object($job_Category_Response_DataTypeJob_CategoryItem) ? get_class($job_Category_Response_DataTypeJob_CategoryItem) : sprintf('%s(%s)', gettype($job_Category_Response_DataTypeJob_CategoryItem), var_export($job_Category_Response_DataTypeJob_CategoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Category property can only contain items of type \StructType\Job_CategoryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Category property can only contain items of type \WorkdayWsdl\\StructType\Job_CategoryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Job_Category_Response_DataType extends AbstractStructBase
     /**
      * Set Job_Category value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_CategoryType[] $job_Category
-     * @return \StructType\Job_Category_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryType[] $job_Category
+     * @return \WorkdayWsdl\\StructType\Job_Category_Response_DataType
      */
     public function setJob_Category(array $job_Category = array())
     {
@@ -78,14 +78,14 @@ class Job_Category_Response_DataType extends AbstractStructBase
     /**
      * Add item to Job_Category value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_CategoryType $item
-     * @return \StructType\Job_Category_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryType $item
+     * @return \WorkdayWsdl\\StructType\Job_Category_Response_DataType
      */
-    public function addToJob_Category(\StructType\Job_CategoryType $item)
+    public function addToJob_Category(\WorkdayWsdl\\StructType\Job_CategoryType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_CategoryType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Category property can only contain items of type \StructType\Job_CategoryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_CategoryType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Category property can only contain items of type \WorkdayWsdl\\StructType\Job_CategoryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Category[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Job_Category_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Category_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Category_Response_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
      * 'Academic_Person_ID' for a student
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType[]
+     * @var \WorkdayWsdl\\StructType\RoleObjectType[]
      */
     public $Person_Reference;
     /**
@@ -29,15 +29,15 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
      * - documentation: A reference to the Universal ID for a person
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Universal_IdentifierObjectType[]
+     * @var \WorkdayWsdl\\StructType\Universal_IdentifierObjectType[]
      */
     public $Universal_ID_Reference;
     /**
      * Constructor method for Get_Change_Government_IDs_Request_ReferencesType
      * @uses Get_Change_Government_IDs_Request_ReferencesType::setPerson_Reference()
      * @uses Get_Change_Government_IDs_Request_ReferencesType::setUniversal_ID_Reference()
-     * @param \StructType\RoleObjectType[] $person_Reference
-     * @param \StructType\Universal_IdentifierObjectType[] $universal_ID_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType[] $universal_ID_Reference
      */
     public function __construct(array $person_Reference = array(), array $universal_ID_Reference = array())
     {
@@ -47,7 +47,7 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType[]|null
      */
     public function getPerson_Reference()
     {
@@ -65,12 +65,12 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem instanceof \StructType\RoleObjectType) {
+            if (!$get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
                 $invalidValues[] = is_object($get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem) ? get_class($get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem) : sprintf('%s(%s)', gettype($get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem), var_export($get_Change_Government_IDs_Request_ReferencesTypePerson_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -78,8 +78,8 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
     /**
      * Set Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType[] $person_Reference
-     * @return \StructType\Get_Change_Government_IDs_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType[] $person_Reference
+     * @return \WorkdayWsdl\\StructType\Get_Change_Government_IDs_Request_ReferencesType
      */
     public function setPerson_Reference(array $person_Reference = array())
     {
@@ -93,21 +93,21 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
     /**
      * Add item to Person_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectType $item
-     * @return \StructType\Get_Change_Government_IDs_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Government_IDs_Request_ReferencesType
      */
-    public function addToPerson_Reference(\StructType\RoleObjectType $item)
+    public function addToPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoleObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\RoleObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Reference property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Reference[] = $item;
         return $this;
     }
     /**
      * Get Universal_ID_Reference value
-     * @return \StructType\Universal_IdentifierObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectType[]|null
      */
     public function getUniversal_ID_Reference()
     {
@@ -125,12 +125,12 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem instanceof \StructType\Universal_IdentifierObjectType) {
+            if (!$get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem instanceof \WorkdayWsdl\\StructType\Universal_IdentifierObjectType) {
                 $invalidValues[] = is_object($get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem) ? get_class($get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem) : sprintf('%s(%s)', gettype($get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem), var_export($get_Change_Government_IDs_Request_ReferencesTypeUniversal_ID_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Universal_ID_Reference property can only contain items of type \StructType\Universal_IdentifierObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Universal_ID_Reference property can only contain items of type \WorkdayWsdl\\StructType\Universal_IdentifierObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -138,8 +138,8 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
     /**
      * Set Universal_ID_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_IdentifierObjectType[] $universal_ID_Reference
-     * @return \StructType\Get_Change_Government_IDs_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType[] $universal_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Get_Change_Government_IDs_Request_ReferencesType
      */
     public function setUniversal_ID_Reference(array $universal_ID_Reference = array())
     {
@@ -153,14 +153,14 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
     /**
      * Add item to Universal_ID_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Universal_IdentifierObjectType $item
-     * @return \StructType\Get_Change_Government_IDs_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Government_IDs_Request_ReferencesType
      */
-    public function addToUniversal_ID_Reference(\StructType\Universal_IdentifierObjectType $item)
+    public function addToUniversal_ID_Reference(\WorkdayWsdl\\StructType\Universal_IdentifierObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Universal_IdentifierObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Universal_ID_Reference property can only contain items of type \StructType\Universal_IdentifierObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Universal_IdentifierObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Universal_ID_Reference property can only contain items of type \WorkdayWsdl\\StructType\Universal_IdentifierObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Universal_ID_Reference[] = $item;
         return $this;
@@ -171,7 +171,7 @@ class Get_Change_Government_IDs_Request_ReferencesType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Change_Government_IDs_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Government_IDs_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

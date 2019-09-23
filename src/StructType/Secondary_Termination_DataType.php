@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Secondary_Termination_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Secondary reason for the worker's termination.
      * - minOccurs: 0
-     * @var \StructType\Event_Classification_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType
      */
     public $Secondary_Termination_Reason_Reference;
     /**
@@ -25,17 +25,17 @@ class Secondary_Termination_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the secondary termination reason category.
      * - minOccurs: 0
-     * @var \StructType\Event_Classification_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType
      */
     public $Secondary_Termination_Reason_Category_Reference;
     /**
      * Constructor method for Secondary_Termination_DataType
      * @uses Secondary_Termination_DataType::setSecondary_Termination_Reason_Reference()
      * @uses Secondary_Termination_DataType::setSecondary_Termination_Reason_Category_Reference()
-     * @param \StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference
-     * @param \StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference
      */
-    public function __construct(\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference = null, \StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference = null, \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference = null)
     {
         $this
             ->setSecondary_Termination_Reason_Reference($secondary_Termination_Reason_Reference)
@@ -43,7 +43,7 @@ class Secondary_Termination_DataType extends AbstractStructBase
     }
     /**
      * Get Secondary_Termination_Reason_Reference value
-     * @return \StructType\Event_Classification_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType|null
      */
     public function getSecondary_Termination_Reason_Reference()
     {
@@ -51,17 +51,17 @@ class Secondary_Termination_DataType extends AbstractStructBase
     }
     /**
      * Set Secondary_Termination_Reason_Reference value
-     * @param \StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference
-     * @return \StructType\Secondary_Termination_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\Secondary_Termination_DataType
      */
-    public function setSecondary_Termination_Reason_Reference(\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference = null)
+    public function setSecondary_Termination_Reason_Reference(\WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $secondary_Termination_Reason_Reference = null)
     {
         $this->Secondary_Termination_Reason_Reference = $secondary_Termination_Reason_Reference;
         return $this;
     }
     /**
      * Get Secondary_Termination_Reason_Category_Reference value
-     * @return \StructType\Event_Classification_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType|null
      */
     public function getSecondary_Termination_Reason_Category_Reference()
     {
@@ -69,10 +69,10 @@ class Secondary_Termination_DataType extends AbstractStructBase
     }
     /**
      * Set Secondary_Termination_Reason_Category_Reference value
-     * @param \StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference
-     * @return \StructType\Secondary_Termination_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Secondary_Termination_DataType
      */
-    public function setSecondary_Termination_Reason_Category_Reference(\StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference = null)
+    public function setSecondary_Termination_Reason_Category_Reference(\WorkdayWsdl\\StructType\Event_Classification_CategoryObjectType $secondary_Termination_Reason_Category_Reference = null)
     {
         $this->Secondary_Termination_Reason_Category_Reference = $secondary_Termination_Reason_Category_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Secondary_Termination_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Secondary_Termination_DataType
+     * @return \WorkdayWsdl\\StructType\Secondary_Termination_DataType
      */
     public static function __set_state(array $array)
     {

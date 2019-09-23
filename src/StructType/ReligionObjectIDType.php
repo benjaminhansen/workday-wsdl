@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class ReligionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ReligionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\ReligionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\ReligionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\ReligionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ReligionObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReligionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ReligionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ReligionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ReligionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\ReligionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\ReligionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\ReligionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class ReligionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ReligionObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReligionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class ReligionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReligionObjectIDType
+     * @return \WorkdayWsdl\\StructType\ReligionObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Vendor_ReferenceType extends AbstractStructBase
     /**
      * Set Vendor_Name value
      * @param string $vendor_Name
-     * @return \StructType\Vendor_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Vendor_ReferenceType
      */
     public function setVendor_Name($vendor_Name = null)
     {
@@ -59,7 +59,7 @@ class Vendor_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Vendor_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Vendor_ReferenceType
      */
     public static function __set_state(array $array)
     {

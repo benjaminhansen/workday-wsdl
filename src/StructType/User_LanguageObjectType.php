@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class User_LanguageObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class User_LanguageObjectType extends AbstractStructBase
      * Constructor method for User_LanguageObjectType
      * @uses User_LanguageObjectType::setID()
      * @uses User_LanguageObjectType::setDescriptor()
-     * @param \StructType\User_LanguageObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class User_LanguageObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\User_LanguageObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class User_LanguageObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $user_LanguageObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$user_LanguageObjectTypeIDItem instanceof \StructType\User_LanguageObjectIDType) {
+            if (!$user_LanguageObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\User_LanguageObjectIDType) {
                 $invalidValues[] = is_object($user_LanguageObjectTypeIDItem) ? get_class($user_LanguageObjectTypeIDItem) : sprintf('%s(%s)', gettype($user_LanguageObjectTypeIDItem), var_export($user_LanguageObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\User_LanguageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\User_LanguageObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class User_LanguageObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_LanguageObjectIDType[] $iD
-     * @return \StructType\User_LanguageObjectType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class User_LanguageObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_LanguageObjectIDType $item
-     * @return \StructType\User_LanguageObjectType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
-    public function addToID(\StructType\User_LanguageObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\User_LanguageObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_LanguageObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\User_LanguageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_LanguageObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\User_LanguageObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class User_LanguageObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\User_LanguageObjectType
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class User_LanguageObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\User_LanguageObjectType
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public static function __set_state(array $array)
     {

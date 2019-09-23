@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to a Worker.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
      * The Worker_Photo_Data
-     * @var \StructType\Employee_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Photo_DataType
      */
     public $Worker_Photo_Data;
     /**
@@ -36,11 +36,11 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
      * @uses Put_Worker_Photo_RequestType::setWorker_Reference()
      * @uses Put_Worker_Photo_RequestType::setWorker_Photo_Data()
      * @uses Put_Worker_Photo_RequestType::setVersion()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Employee_Photo_DataType $worker_Photo_Data
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Photo_DataType $worker_Photo_Data
      * @param string $version
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\Employee_Photo_DataType $worker_Photo_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Employee_Photo_DataType $worker_Photo_Data = null, $version = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -49,7 +49,7 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -57,17 +57,17 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Put_Worker_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_RequestType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Worker_Photo_Data value
-     * @return \StructType\Employee_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Photo_DataType|null
      */
     public function getWorker_Photo_Data()
     {
@@ -75,10 +75,10 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
     }
     /**
      * Set Worker_Photo_Data value
-     * @param \StructType\Employee_Photo_DataType $worker_Photo_Data
-     * @return \StructType\Put_Worker_Photo_RequestType
+     * @param \WorkdayWsdl\\StructType\Employee_Photo_DataType $worker_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_RequestType
      */
-    public function setWorker_Photo_Data(\StructType\Employee_Photo_DataType $worker_Photo_Data = null)
+    public function setWorker_Photo_Data(\WorkdayWsdl\\StructType\Employee_Photo_DataType $worker_Photo_Data = null)
     {
         $this->Worker_Photo_Data = $worker_Photo_Data;
         return $this;
@@ -94,7 +94,7 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Worker_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Put_Worker_Photo_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Worker_Photo_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Worker_Photo_RequestType
      */
     public static function __set_state(array $array)
     {

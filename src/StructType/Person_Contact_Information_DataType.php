@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element that tracks all addresses.
      * - minOccurs: 0
-     * @var \StructType\Person_Address_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Address_Information_DataType
      */
     public $Person_Address_Information_Data;
     /**
@@ -25,7 +25,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element that tracks all phones.
      * - minOccurs: 0
-     * @var \StructType\Person_Phone_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Phone_Information_DataType
      */
     public $Person_Phone_Information_Data;
     /**
@@ -33,7 +33,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element that tracks all emails.
      * - minOccurs: 0
-     * @var \StructType\Person_Email_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Email_Information_DataType
      */
     public $Person_Email_Information_Data;
     /**
@@ -41,7 +41,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element that tracks all instant messengers.
      * - minOccurs: 0
-     * @var \StructType\Person_Instant_Messenger_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType
      */
     public $Person_Instant_Messenger_Information_Data;
     /**
@@ -49,7 +49,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element that tracks all web addresses.
      * - minOccurs: 0
-     * @var \StructType\Person_Web_Address_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType
      */
     public $Person_Web_Address_Information_Data;
     /**
@@ -59,13 +59,13 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * @uses Person_Contact_Information_DataType::setPerson_Email_Information_Data()
      * @uses Person_Contact_Information_DataType::setPerson_Instant_Messenger_Information_Data()
      * @uses Person_Contact_Information_DataType::setPerson_Web_Address_Information_Data()
-     * @param \StructType\Person_Address_Information_DataType $person_Address_Information_Data
-     * @param \StructType\Person_Phone_Information_DataType $person_Phone_Information_Data
-     * @param \StructType\Person_Email_Information_DataType $person_Email_Information_Data
-     * @param \StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data
-     * @param \StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Address_Information_DataType $person_Address_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Phone_Information_DataType $person_Phone_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Email_Information_DataType $person_Email_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data
      */
-    public function __construct(\StructType\Person_Address_Information_DataType $person_Address_Information_Data = null, \StructType\Person_Phone_Information_DataType $person_Phone_Information_Data = null, \StructType\Person_Email_Information_DataType $person_Email_Information_Data = null, \StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data = null, \StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Person_Address_Information_DataType $person_Address_Information_Data = null, \WorkdayWsdl\\StructType\Person_Phone_Information_DataType $person_Phone_Information_Data = null, \WorkdayWsdl\\StructType\Person_Email_Information_DataType $person_Email_Information_Data = null, \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data = null, \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data = null)
     {
         $this
             ->setPerson_Address_Information_Data($person_Address_Information_Data)
@@ -76,7 +76,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Address_Information_Data value
-     * @return \StructType\Person_Address_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Address_Information_DataType|null
      */
     public function getPerson_Address_Information_Data()
     {
@@ -84,17 +84,17 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Address_Information_Data value
-     * @param \StructType\Person_Address_Information_DataType $person_Address_Information_Data
-     * @return \StructType\Person_Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Address_Information_DataType $person_Address_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
-    public function setPerson_Address_Information_Data(\StructType\Person_Address_Information_DataType $person_Address_Information_Data = null)
+    public function setPerson_Address_Information_Data(\WorkdayWsdl\\StructType\Person_Address_Information_DataType $person_Address_Information_Data = null)
     {
         $this->Person_Address_Information_Data = $person_Address_Information_Data;
         return $this;
     }
     /**
      * Get Person_Phone_Information_Data value
-     * @return \StructType\Person_Phone_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Phone_Information_DataType|null
      */
     public function getPerson_Phone_Information_Data()
     {
@@ -102,17 +102,17 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Phone_Information_Data value
-     * @param \StructType\Person_Phone_Information_DataType $person_Phone_Information_Data
-     * @return \StructType\Person_Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Phone_Information_DataType $person_Phone_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
-    public function setPerson_Phone_Information_Data(\StructType\Person_Phone_Information_DataType $person_Phone_Information_Data = null)
+    public function setPerson_Phone_Information_Data(\WorkdayWsdl\\StructType\Person_Phone_Information_DataType $person_Phone_Information_Data = null)
     {
         $this->Person_Phone_Information_Data = $person_Phone_Information_Data;
         return $this;
     }
     /**
      * Get Person_Email_Information_Data value
-     * @return \StructType\Person_Email_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Email_Information_DataType|null
      */
     public function getPerson_Email_Information_Data()
     {
@@ -120,17 +120,17 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Email_Information_Data value
-     * @param \StructType\Person_Email_Information_DataType $person_Email_Information_Data
-     * @return \StructType\Person_Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Email_Information_DataType $person_Email_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
-    public function setPerson_Email_Information_Data(\StructType\Person_Email_Information_DataType $person_Email_Information_Data = null)
+    public function setPerson_Email_Information_Data(\WorkdayWsdl\\StructType\Person_Email_Information_DataType $person_Email_Information_Data = null)
     {
         $this->Person_Email_Information_Data = $person_Email_Information_Data;
         return $this;
     }
     /**
      * Get Person_Instant_Messenger_Information_Data value
-     * @return \StructType\Person_Instant_Messenger_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType|null
      */
     public function getPerson_Instant_Messenger_Information_Data()
     {
@@ -138,17 +138,17 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Instant_Messenger_Information_Data value
-     * @param \StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data
-     * @return \StructType\Person_Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
-    public function setPerson_Instant_Messenger_Information_Data(\StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data = null)
+    public function setPerson_Instant_Messenger_Information_Data(\WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType $person_Instant_Messenger_Information_Data = null)
     {
         $this->Person_Instant_Messenger_Information_Data = $person_Instant_Messenger_Information_Data;
         return $this;
     }
     /**
      * Get Person_Web_Address_Information_Data value
-     * @return \StructType\Person_Web_Address_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType|null
      */
     public function getPerson_Web_Address_Information_Data()
     {
@@ -156,10 +156,10 @@ class Person_Contact_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Web_Address_Information_Data value
-     * @param \StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data
-     * @return \StructType\Person_Contact_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
-    public function setPerson_Web_Address_Information_Data(\StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data = null)
+    public function setPerson_Web_Address_Information_Data(\WorkdayWsdl\\StructType\Person_Web_Address_Information_DataType $person_Web_Address_Information_Data = null)
     {
         $this->Person_Web_Address_Information_Data = $person_Web_Address_Information_Data;
         return $this;
@@ -170,7 +170,7 @@ class Person_Contact_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Contact_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Contact_Information_DataType
      */
     public static function __set_state(array $array)
     {

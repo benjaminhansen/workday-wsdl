@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Location_Reference_WWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Integration ID reference is used as a unique identifier for integratable objects in the Workday system.
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType
      */
     public $Integration_ID_Reference;
     /**
@@ -26,17 +26,17 @@ class Location_Reference_WWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Location must be of usage Business Site. | A reference to a location.
      * - minOccurs: 0
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Location_ID_Reference;
     /**
      * Constructor method for Location_Reference_WWSType
      * @uses Location_Reference_WWSType::setIntegration_ID_Reference()
      * @uses Location_Reference_WWSType::setLocation_ID_Reference()
-     * @param \StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
-     * @param \StructType\LocationObjectType $location_ID_Reference
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_ID_Reference
      */
-    public function __construct(\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null, \StructType\LocationObjectType $location_ID_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null, \WorkdayWsdl\\StructType\LocationObjectType $location_ID_Reference = null)
     {
         $this
             ->setIntegration_ID_Reference($integration_ID_Reference)
@@ -44,7 +44,7 @@ class Location_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Reference value
-     * @return \StructType\External_Integration_ID_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType|null
      */
     public function getIntegration_ID_Reference()
     {
@@ -52,17 +52,17 @@ class Location_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Reference value
-     * @param \StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
-     * @return \StructType\Location_Reference_WWSType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Reference_WWSType
      */
-    public function setIntegration_ID_Reference(\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null)
+    public function setIntegration_ID_Reference(\WorkdayWsdl\\StructType\External_Integration_ID_Reference_DataType $integration_ID_Reference = null)
     {
         $this->Integration_ID_Reference = $integration_ID_Reference;
         return $this;
     }
     /**
      * Get Location_ID_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getLocation_ID_Reference()
     {
@@ -70,10 +70,10 @@ class Location_Reference_WWSType extends AbstractStructBase
     }
     /**
      * Set Location_ID_Reference value
-     * @param \StructType\LocationObjectType $location_ID_Reference
-     * @return \StructType\Location_Reference_WWSType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $location_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Reference_WWSType
      */
-    public function setLocation_ID_Reference(\StructType\LocationObjectType $location_ID_Reference = null)
+    public function setLocation_ID_Reference(\WorkdayWsdl\\StructType\LocationObjectType $location_ID_Reference = null)
     {
         $this->Location_ID_Reference = $location_ID_Reference;
         return $this;
@@ -84,7 +84,7 @@ class Location_Reference_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Reference_WWSType
+     * @return \WorkdayWsdl\\StructType\Location_Reference_WWSType
      */
     public static function __set_state(array $array)
     {

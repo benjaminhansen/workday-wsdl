@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Pay_ComponentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Pay_ComponentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Pay_ComponentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Pay_ComponentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Pay_ComponentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Pay_ComponentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Pay_ComponentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Pay_ComponentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Pay_ComponentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Pay_ComponentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Pay_ComponentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Pay_ComponentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Pay_ComponentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Pay_ComponentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Pay_ComponentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Pay_ComponentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Pay_ComponentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pay_ComponentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Pay_ComponentObjectIDType
      */
     public static function __set_state(array $array)
     {

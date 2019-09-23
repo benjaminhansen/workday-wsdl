@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
      * The Orderable_Item_Reference
      * Meta information extracted from the WSDL
      * - documentation: Orderable Item instance reference.
-     * @var \StructType\Orderable_ItemObjectType
+     * @var \WorkdayWsdl\\StructType\Orderable_ItemObjectType
      */
     public $Orderable_Item_Reference;
     /**
@@ -34,9 +34,9 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
      * @uses Sort_Order_Enabled_Order_DataType::setOrder()
      * @uses Sort_Order_Enabled_Order_DataType::setOrderable_Item_Reference()
      * @param string $order
-     * @param \StructType\Orderable_ItemObjectType $orderable_Item_Reference
+     * @param \WorkdayWsdl\\StructType\Orderable_ItemObjectType $orderable_Item_Reference
      */
-    public function __construct($order = null, \StructType\Orderable_ItemObjectType $orderable_Item_Reference = null)
+    public function __construct($order = null, \WorkdayWsdl\\StructType\Orderable_ItemObjectType $orderable_Item_Reference = null)
     {
         $this
             ->setOrder($order)
@@ -53,7 +53,7 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
     /**
      * Set Order value
      * @param string $order
-     * @return \StructType\Sort_Order_Enabled_Order_DataType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_DataType
      */
     public function setOrder($order = null)
     {
@@ -70,7 +70,7 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
     }
     /**
      * Get Orderable_Item_Reference value
-     * @return \StructType\Orderable_ItemObjectType|null
+     * @return \WorkdayWsdl\\StructType\Orderable_ItemObjectType|null
      */
     public function getOrderable_Item_Reference()
     {
@@ -78,10 +78,10 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
     }
     /**
      * Set Orderable_Item_Reference value
-     * @param \StructType\Orderable_ItemObjectType $orderable_Item_Reference
-     * @return \StructType\Sort_Order_Enabled_Order_DataType
+     * @param \WorkdayWsdl\\StructType\Orderable_ItemObjectType $orderable_Item_Reference
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_DataType
      */
-    public function setOrderable_Item_Reference(\StructType\Orderable_ItemObjectType $orderable_Item_Reference = null)
+    public function setOrderable_Item_Reference(\WorkdayWsdl\\StructType\Orderable_ItemObjectType $orderable_Item_Reference = null)
     {
         $this->Orderable_Item_Reference = $orderable_Item_Reference;
         return $this;
@@ -92,7 +92,7 @@ class Sort_Order_Enabled_Order_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sort_Order_Enabled_Order_DataType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Order_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the currency.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -59,9 +59,9 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
      * @param string $allocation_Type
      * @param float $amount
      * @param string $amount_Type
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct($allocation_Type = null, $amount = null, $amount_Type = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct($allocation_Type = null, $amount = null, $amount_Type = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setAllocation_Type($allocation_Type)
@@ -80,7 +80,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
     /**
      * Set Allocation_Type value
      * @param string $allocation_Type
-     * @return \StructType\Beneficiary_Allocation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
     public function setAllocation_Type($allocation_Type = null)
     {
@@ -102,7 +102,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \StructType\Beneficiary_Allocation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
     public function setAmount($amount = null)
     {
@@ -136,7 +136,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
     /**
      * Set Amount_Type value
      * @param string $amount_Type
-     * @return \StructType\Beneficiary_Allocation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
     public function setAmount_Type($amount_Type = null)
     {
@@ -149,7 +149,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -157,10 +157,10 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Beneficiary_Allocation_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -171,7 +171,7 @@ class Beneficiary_Allocation_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Beneficiary_Allocation_DataType
+     * @return \WorkdayWsdl\\StructType\Beneficiary_Allocation_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Compensation_MatrixObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Compensation_MatrixReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Compensation_MatrixReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Compensation_MatrixReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Compensation_MatrixReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Compensation_MatrixObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Compensation_MatrixReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Compensation_MatrixReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Compensation_MatrixReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Compensation_MatrixReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Compensation_MatrixReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Compensation_MatrixReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Compensation_MatrixObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Compensation_MatrixObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Compensation_MatrixObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_MatrixObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectIDType
      */
     public static function __set_state(array $array)
     {

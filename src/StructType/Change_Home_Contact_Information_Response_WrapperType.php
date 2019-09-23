@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
      * - documentation: A reference to the ID of the person through one of its active person types, such as worker, student, affiliate, external committee member, and so on. The ID consists of a type attribute, which should be set to one of either
      * "Employee_ID", "Contingent_Worker_ID", "Student_ID", etc, and a value attribute, such as "04345".
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -28,17 +28,17 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
      * - documentation: Wrapper element for the Contact Information data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Home_Contact_Information_Business_Process_DataType[]
+     * @var \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType[]
      */
     public $Change_Home_Contact_Information_Data;
     /**
      * Constructor method for Change_Home_Contact_Information_Response_WrapperType
      * @uses Change_Home_Contact_Information_Response_WrapperType::setPerson_Reference()
      * @uses Change_Home_Contact_Information_Response_WrapperType::setChange_Home_Contact_Information_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Change_Home_Contact_Information_Business_Process_DataType[] $change_Home_Contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType[] $change_Home_Contact_Information_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, array $change_Home_Contact_Information_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, array $change_Home_Contact_Information_Data = array())
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -46,7 +46,7 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -54,17 +54,17 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Change_Home_Contact_Information_Response_WrapperType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Response_WrapperType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Change_Home_Contact_Information_Data value
-     * @return \StructType\Change_Home_Contact_Information_Business_Process_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType[]|null
      */
     public function getChange_Home_Contact_Information_Data()
     {
@@ -82,12 +82,12 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem instanceof \StructType\Change_Home_Contact_Information_Business_Process_DataType) {
+            if (!$change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem instanceof \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType) {
                 $invalidValues[] = is_object($change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem) ? get_class($change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem) : sprintf('%s(%s)', gettype($change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem), var_export($change_Home_Contact_Information_Response_WrapperTypeChange_Home_Contact_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Home_Contact_Information_Data property can only contain items of type \StructType\Change_Home_Contact_Information_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Home_Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -95,8 +95,8 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
     /**
      * Set Change_Home_Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Home_Contact_Information_Business_Process_DataType[] $change_Home_Contact_Information_Data
-     * @return \StructType\Change_Home_Contact_Information_Response_WrapperType
+     * @param \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType[] $change_Home_Contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Response_WrapperType
      */
     public function setChange_Home_Contact_Information_Data(array $change_Home_Contact_Information_Data = array())
     {
@@ -110,14 +110,14 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
     /**
      * Add item to Change_Home_Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Home_Contact_Information_Business_Process_DataType $item
-     * @return \StructType\Change_Home_Contact_Information_Response_WrapperType
+     * @param \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType $item
+     * @return \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Response_WrapperType
      */
-    public function addToChange_Home_Contact_Information_Data(\StructType\Change_Home_Contact_Information_Business_Process_DataType $item)
+    public function addToChange_Home_Contact_Information_Data(\WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Home_Contact_Information_Business_Process_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Home_Contact_Information_Data property can only contain items of type \StructType\Change_Home_Contact_Information_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Home_Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Business_Process_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Home_Contact_Information_Data[] = $item;
         return $this;
@@ -128,7 +128,7 @@ class Change_Home_Contact_Information_Response_WrapperType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Home_Contact_Information_Response_WrapperType
+     * @return \WorkdayWsdl\\StructType\Change_Home_Contact_Information_Response_WrapperType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -246,7 +246,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Enable_Worker_Editing_Options value
      * @param bool $enable_Worker_Editing_Options
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setEnable_Worker_Editing_Options($enable_Worker_Editing_Options = null)
     {
@@ -268,7 +268,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Change_Scheduled_and_Non_Scheduled_Days value
      * @param bool $change_Scheduled_and_Non_Scheduled_Days
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setChange_Scheduled_and_Non_Scheduled_Days($change_Scheduled_and_Non_Scheduled_Days = null)
     {
@@ -290,7 +290,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Change_Number_of_Scheduled_Days value
      * @param bool $change_Number_of_Scheduled_Days
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setChange_Number_of_Scheduled_Days($change_Number_of_Scheduled_Days = null)
     {
@@ -312,7 +312,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Enable_Hours_Restrictions value
      * @param bool $enable_Hours_Restrictions
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setEnable_Hours_Restrictions($enable_Hours_Restrictions = null)
     {
@@ -334,7 +334,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Minimum_Number_of_Hours_per_Day value
      * @param float $minimum_Number_of_Hours_per_Day
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMinimum_Number_of_Hours_per_Day($minimum_Number_of_Hours_per_Day = null)
     {
@@ -368,7 +368,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Maximum_Number_of_Hours_per_Day value
      * @param float $maximum_Number_of_Hours_per_Day
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMaximum_Number_of_Hours_per_Day($maximum_Number_of_Hours_per_Day = null)
     {
@@ -402,7 +402,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Minimum_Number_of_Hours_per_Week value
      * @param float $minimum_Number_of_Hours_per_Week
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMinimum_Number_of_Hours_per_Week($minimum_Number_of_Hours_per_Week = null)
     {
@@ -436,7 +436,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Maximum_Number_of_Hours_per_Week value
      * @param float $maximum_Number_of_Hours_per_Week
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMaximum_Number_of_Hours_per_Week($maximum_Number_of_Hours_per_Week = null)
     {
@@ -470,7 +470,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Change_Daily_Start_and_End_Times value
      * @param bool $change_Daily_Start_and_End_Times
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setChange_Daily_Start_and_End_Times($change_Daily_Start_and_End_Times = null)
     {
@@ -492,7 +492,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Uniform_Start_and_End_Times value
      * @param bool $uniform_Start_and_End_Times
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setUniform_Start_and_End_Times($uniform_Start_and_End_Times = null)
     {
@@ -514,7 +514,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Flexible_Start_Time value
      * @param string $flexible_Start_Time
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setFlexible_Start_Time($flexible_Start_Time = null)
     {
@@ -536,7 +536,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Flexible_End_Time value
      * @param string $flexible_End_Time
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setFlexible_End_Time($flexible_End_Time = null)
     {
@@ -558,7 +558,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Allow_Meals value
      * @param bool $allow_Meals
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setAllow_Meals($allow_Meals = null)
     {
@@ -580,7 +580,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Change_Meal_Start_and_End_Times value
      * @param bool $change_Meal_Start_and_End_Times
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setChange_Meal_Start_and_End_Times($change_Meal_Start_and_End_Times = null)
     {
@@ -602,7 +602,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Minimum_Meal_Duration value
      * @param float $minimum_Meal_Duration
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMinimum_Meal_Duration($minimum_Meal_Duration = null)
     {
@@ -636,7 +636,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
     /**
      * Set Maximum_Meal_Duration value
      * @param float $maximum_Meal_Duration
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public function setMaximum_Meal_Duration($maximum_Meal_Duration = null)
     {
@@ -665,7 +665,7 @@ class Worker_Editing_Options_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Editing_Options_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Editing_Options_DataType
      */
     public static function __set_state(array $array)
     {

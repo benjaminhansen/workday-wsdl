@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Transaction_Log_EntryType[]
+     * @var \WorkdayWsdl\\StructType\Transaction_Log_EntryType[]
      */
     public $Transaction_Log_Entry;
     /**
      * Constructor method for Event_Target_Transaction_Log_Entry_DataType
      * @uses Event_Target_Transaction_Log_Entry_DataType::setTransaction_Log_Entry()
-     * @param \StructType\Transaction_Log_EntryType[] $transaction_Log_Entry
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_EntryType[] $transaction_Log_Entry
      */
     public function __construct(array $transaction_Log_Entry = array())
     {
@@ -32,7 +32,7 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
     }
     /**
      * Get Transaction_Log_Entry value
-     * @return \StructType\Transaction_Log_EntryType[]|null
+     * @return \WorkdayWsdl\\StructType\Transaction_Log_EntryType[]|null
      */
     public function getTransaction_Log_Entry()
     {
@@ -50,12 +50,12 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem) {
             // validation for constraint: itemType
-            if (!$event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem instanceof \StructType\Transaction_Log_EntryType) {
+            if (!$event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem instanceof \WorkdayWsdl\\StructType\Transaction_Log_EntryType) {
                 $invalidValues[] = is_object($event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem) ? get_class($event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem) : sprintf('%s(%s)', gettype($event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem), var_export($event_Target_Transaction_Log_Entry_DataTypeTransaction_Log_EntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Transaction_Log_Entry property can only contain items of type \StructType\Transaction_Log_EntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Transaction_Log_Entry property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_EntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
     /**
      * Set Transaction_Log_Entry value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_EntryType[] $transaction_Log_Entry
-     * @return \StructType\Event_Target_Transaction_Log_Entry_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_EntryType[] $transaction_Log_Entry
+     * @return \WorkdayWsdl\\StructType\Event_Target_Transaction_Log_Entry_DataType
      */
     public function setTransaction_Log_Entry(array $transaction_Log_Entry = array())
     {
@@ -78,14 +78,14 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
     /**
      * Add item to Transaction_Log_Entry value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transaction_Log_EntryType $item
-     * @return \StructType\Event_Target_Transaction_Log_Entry_DataType
+     * @param \WorkdayWsdl\\StructType\Transaction_Log_EntryType $item
+     * @return \WorkdayWsdl\\StructType\Event_Target_Transaction_Log_Entry_DataType
      */
-    public function addToTransaction_Log_Entry(\StructType\Transaction_Log_EntryType $item)
+    public function addToTransaction_Log_Entry(\WorkdayWsdl\\StructType\Transaction_Log_EntryType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Transaction_Log_EntryType) {
-            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Entry property can only contain items of type \StructType\Transaction_Log_EntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Transaction_Log_EntryType) {
+            throw new \InvalidArgumentException(sprintf('The Transaction_Log_Entry property can only contain items of type \WorkdayWsdl\\StructType\Transaction_Log_EntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Transaction_Log_Entry[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Event_Target_Transaction_Log_Entry_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Event_Target_Transaction_Log_Entry_DataType
+     * @return \WorkdayWsdl\\StructType\Event_Target_Transaction_Log_Entry_DataType
      */
     public static function __set_state(array $array)
     {

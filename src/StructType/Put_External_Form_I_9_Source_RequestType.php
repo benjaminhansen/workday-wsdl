@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External Form I-9 Source Reference
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_SourceObjectType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType
      */
     public $External_Form_I_9_Source_Reference;
     /**
@@ -34,7 +34,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External Form I-9 Source Data
      * - maxOccurs: unbounded
-     * @var \StructType\External_Form_I_9_Source_DataType[]
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType[]
      */
     public $External_Form_I_9_Source_Data;
     /**
@@ -51,11 +51,11 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
      * @uses Put_External_Form_I_9_Source_RequestType::setExternal_Form_I_9_Source_Data()
      * @uses Put_External_Form_I_9_Source_RequestType::setVersion()
      * @param bool $add_Only
-     * @param \StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
-     * @param \StructType\External_Form_I_9_Source_DataType[] $external_Form_I_9_Source_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType[] $external_Form_I_9_Source_Data
      * @param string $version
      */
-    public function __construct($add_Only = null, \StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, array $external_Form_I_9_Source_Data = array(), $version = null)
+    public function __construct($add_Only = null, \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, array $external_Form_I_9_Source_Data = array(), $version = null)
     {
         $this
             ->setAdd_Only($add_Only)
@@ -74,7 +74,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -96,9 +96,9 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Reference value
      * @param external_Form_I_Source_Reference $external_Form_I_Source_Reference
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
-    public function setExternal_Form_I_9_Source_Reference(\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
+    public function setExternal_Form_I_9_Source_Reference(\WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
     {
         $this->External_Form_I_9_Source_Reference = $this->{'External_Form_I-9_Source_Reference'} = $external_Form_I_9_Source_Reference;
         return $this;
@@ -123,12 +123,12 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem) {
             // validation for constraint: itemType
-            if (!$put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem instanceof \StructType\External_Form_I_9_Source_DataType) {
+            if (!$put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem instanceof \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType) {
                 $invalidValues[] = is_object($put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem) ? get_class($put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem) : sprintf('%s(%s)', gettype($put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem), var_export($put_External_Form_I_9_Source_RequestTypeExternal_Form_I_9_Source_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The External_Form_I_9_Source_Data property can only contain items of type \StructType\External_Form_I_9_Source_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The External_Form_I_9_Source_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -136,7 +136,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Data value
      * @param external_Form_I_Source_Data $external_Form_I_Source_Data
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
     public function setExternal_Form_I_9_Source_Data(array $external_Form_I_9_Source_Data = array())
     {
@@ -150,14 +150,14 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
     /**
      * Add item to External_Form_I_9_Source_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Form_I_9_Source_DataType $item
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
-    public function addToExternal_Form_I_9_Source_Data(\StructType\External_Form_I_9_Source_DataType $item)
+    public function addToExternal_Form_I_9_Source_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Form_I_9_Source_DataType) {
-            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Source_Data property can only contain items of type \StructType\External_Form_I_9_Source_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType) {
+            throw new \InvalidArgumentException(sprintf('The External_Form_I_9_Source_Data property can only contain items of type \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->External_Form_I_9_Source_Data[] = $this->{'External_Form_I-9_Source_Data'}[] = $item;
         return $this;
@@ -173,7 +173,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
     public function setVersion($version = null)
     {
@@ -190,7 +190,7 @@ class Put_External_Form_I_9_Source_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_External_Form_I_9_Source_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_External_Form_I_9_Source_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -87,7 +87,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill_Sort_Order value
      * @param string $difficulty_to_Fill_Sort_Order
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public function setDifficulty_to_Fill_Sort_Order($difficulty_to_Fill_Sort_Order = null)
     {
@@ -109,7 +109,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill_Name value
      * @param string $difficulty_to_Fill_Name
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public function setDifficulty_to_Fill_Name($difficulty_to_Fill_Name = null)
     {
@@ -131,7 +131,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill_Code value
      * @param string $difficulty_to_Fill_Code
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public function setDifficulty_to_Fill_Code($difficulty_to_Fill_Code = null)
     {
@@ -153,7 +153,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill_Description value
      * @param string $difficulty_to_Fill_Description
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public function setDifficulty_to_Fill_Description($difficulty_to_Fill_Description = null)
     {
@@ -175,7 +175,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
     /**
      * Set Difficulty_to_Fill_Inactive value
      * @param bool $difficulty_to_Fill_Inactive
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public function setDifficulty_to_Fill_Inactive($difficulty_to_Fill_Inactive = null)
     {
@@ -192,7 +192,7 @@ class Difficulty_to_Fill_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Difficulty_to_Fill_DataType
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_Fill_DataType
      */
     public static function __set_state(array $array)
     {

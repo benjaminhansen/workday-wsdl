@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType
      */
     public $Request_References;
     /**
@@ -32,14 +32,14 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -47,7 +47,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * Meta information extracted from the WSDL
      * - documentation: Response Group
      * - minOccurs: 0
-     * @var \StructType\Service_Center_Representative_Workday_Account_Response_GroupType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType
      */
     public $Response_Group;
     /**
@@ -65,13 +65,13 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * @uses Get_Service_Center_Representative_Workday_Accounts_RequestType::setResponse_Filter()
      * @uses Get_Service_Center_Representative_Workday_Accounts_RequestType::setResponse_Group()
      * @uses Get_Service_Center_Representative_Workday_Accounts_RequestType::setVersion()
-     * @param \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References
-     * @param \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group
      * @param string $version
      */
-    public function __construct(\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References = null, \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -82,7 +82,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     }
     /**
      * Get Request_References value
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -121,10 +121,10 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
-    public function setRequest_References(\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_ReferencesType $request_References = null)
     {
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($request_ReferencesChoiceErrorMessage = self::validateRequest_ReferencesForChoiceConstraintsFromSetRequest_References($request_References))) {
@@ -139,7 +139,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -178,10 +178,10 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
-    public function setRequest_Criteria(\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Request_CriteriaType $request_Criteria = null)
     {
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($request_CriteriaChoiceErrorMessage = self::validateRequest_CriteriaForChoiceConstraintsFromSetRequest_Criteria($request_Criteria))) {
@@ -196,7 +196,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -204,17 +204,17 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\Service_Center_Representative_Workday_Account_Response_GroupType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType|null
      */
     public function getResponse_Group()
     {
@@ -222,10 +222,10 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     }
     /**
      * Set Response_Group value
-     * @param \StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
-    public function setResponse_Group(\StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group = null)
+    public function setResponse_Group(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_Response_GroupType $response_Group = null)
     {
         $this->Response_Group = $response_Group;
         return $this;
@@ -241,7 +241,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
     public function setVersion($version = null)
     {
@@ -258,7 +258,7 @@ class Get_Service_Center_Representative_Workday_Accounts_RequestType extends Abs
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Service_Center_Representative_Workday_Accounts_RequestType
      */
     public static function __set_state(array $array)
     {

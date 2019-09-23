@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     public $Custom_ID;
     /**
      * The Custom_ID_Type_Reference
-     * @var \StructType\Custom_ID_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType
      */
     public $Custom_ID_Type_Reference;
     /**
@@ -47,7 +47,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
      * The Organization_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType
      */
     public $Organization_Reference;
     /**
@@ -68,13 +68,13 @@ class Custom_Identifier_DataType extends AbstractStructBase
      * @uses Custom_Identifier_DataType::setOrganization_Reference()
      * @uses Custom_Identifier_DataType::setCustom_Description()
      * @param string $custom_ID
-     * @param \StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference
      * @param string $issued_Date
      * @param string $expiration_Date
-     * @param \StructType\Organization_ReferenceType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
      * @param string $custom_Description
      */
-    public function __construct($custom_ID = null, \StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference = null, $issued_Date = null, $expiration_Date = null, \StructType\Organization_ReferenceType $organization_Reference = null, $custom_Description = null)
+    public function __construct($custom_ID = null, \WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference = null, $issued_Date = null, $expiration_Date = null, \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null, $custom_Description = null)
     {
         $this
             ->setCustom_ID($custom_ID)
@@ -95,7 +95,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     /**
      * Set Custom_ID value
      * @param string $custom_ID
-     * @return \StructType\Custom_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
     public function setCustom_ID($custom_ID = null)
     {
@@ -108,7 +108,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Custom_ID_Type_Reference value
-     * @return \StructType\Custom_ID_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType|null
      */
     public function getCustom_ID_Type_Reference()
     {
@@ -116,10 +116,10 @@ class Custom_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Custom_ID_Type_Reference value
-     * @param \StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference
-     * @return \StructType\Custom_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
-    public function setCustom_ID_Type_Reference(\StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference = null)
+    public function setCustom_ID_Type_Reference(\WorkdayWsdl\\StructType\Custom_ID_Type_ReferenceType $custom_ID_Type_Reference = null)
     {
         $this->Custom_ID_Type_Reference = $custom_ID_Type_Reference;
         return $this;
@@ -135,7 +135,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\Custom_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -157,7 +157,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\Custom_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -170,7 +170,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\Organization_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType|null
      */
     public function getOrganization_Reference()
     {
@@ -178,10 +178,10 @@ class Custom_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\Organization_ReferenceType $organization_Reference
-     * @return \StructType\Custom_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
-    public function setOrganization_Reference(\StructType\Organization_ReferenceType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
@@ -197,7 +197,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
     /**
      * Set Custom_Description value
      * @param string $custom_Description
-     * @return \StructType\Custom_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
     public function setCustom_Description($custom_Description = null)
     {
@@ -214,7 +214,7 @@ class Custom_Identifier_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Custom_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
      * - documentation: This element allows you to filter the organizations retrieved by type. This is an optional parameter. Ignored if an organization is specified.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Organization_TypeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Organization_TypeObjectType[]
      */
     public $Organization_Type_Reference;
     /**
@@ -58,7 +58,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
      * @uses Organization_Name_Request_CriteriaType::setInclude_Inactive()
      * @param string $organization_Name_in_Effect_From
      * @param string $organization_Name_in_Effect_To
-     * @param \StructType\Organization_TypeObjectType[] $organization_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType[] $organization_Type_Reference
      * @param bool $include_Inactive
      */
     public function __construct($organization_Name_in_Effect_From = null, $organization_Name_in_Effect_To = null, array $organization_Type_Reference = array(), $include_Inactive = null)
@@ -80,7 +80,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Organization_Name_in_Effect_From value
      * @param string $organization_Name_in_Effect_From
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
     public function setOrganization_Name_in_Effect_From($organization_Name_in_Effect_From = null)
     {
@@ -102,7 +102,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Organization_Name_in_Effect_To value
      * @param string $organization_Name_in_Effect_To
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
     public function setOrganization_Name_in_Effect_To($organization_Name_in_Effect_To = null)
     {
@@ -115,7 +115,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Organization_Type_Reference value
-     * @return \StructType\Organization_TypeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Organization_TypeObjectType[]|null
      */
     public function getOrganization_Type_Reference()
     {
@@ -133,12 +133,12 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem instanceof \StructType\Organization_TypeObjectType) {
+            if (!$organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectType) {
                 $invalidValues[] = is_object($organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem) ? get_class($organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem), var_export($organization_Name_Request_CriteriaTypeOrganization_Type_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Organization_Type_Reference property can only contain items of type \StructType\Organization_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Organization_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -146,8 +146,8 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Organization_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectType[] $organization_Type_Reference
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType[] $organization_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
     public function setOrganization_Type_Reference(array $organization_Type_Reference = array())
     {
@@ -161,14 +161,14 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     /**
      * Add item to Organization_Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Organization_TypeObjectType $item
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Organization_TypeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
-    public function addToOrganization_Type_Reference(\StructType\Organization_TypeObjectType $item)
+    public function addToOrganization_Type_Reference(\WorkdayWsdl\\StructType\Organization_TypeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Organization_TypeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Organization_Type_Reference property can only contain items of type \StructType\Organization_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Organization_TypeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Organization_Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Organization_TypeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Organization_Type_Reference[] = $item;
         return $this;
@@ -184,7 +184,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Include_Inactive value
      * @param bool $include_Inactive
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
     public function setInclude_Inactive($include_Inactive = null)
     {
@@ -201,7 +201,7 @@ class Organization_Name_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Name_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Organization_Name_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

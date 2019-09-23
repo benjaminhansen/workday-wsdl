@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Work Schedule Calendar.
      * - maxOccurs: unbounded
-     * @var \StructType\Work_Schedule_CalendarObjectType[]
+     * @var \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType[]
      */
     public $Work_Schedule_Calendar_Request_Reference;
     /**
      * Constructor method for Work_Schedule_Calendar_Request_ReferencesType
      * @uses Work_Schedule_Calendar_Request_ReferencesType::setWork_Schedule_Calendar_Request_Reference()
-     * @param \StructType\Work_Schedule_CalendarObjectType[] $work_Schedule_Calendar_Request_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType[] $work_Schedule_Calendar_Request_Reference
      */
     public function __construct(array $work_Schedule_Calendar_Request_Reference = array())
     {
@@ -32,7 +32,7 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Work_Schedule_Calendar_Request_Reference value
-     * @return \StructType\Work_Schedule_CalendarObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType[]|null
      */
     public function getWork_Schedule_Calendar_Request_Reference()
     {
@@ -50,12 +50,12 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem instanceof \StructType\Work_Schedule_CalendarObjectType) {
+            if (!$work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem instanceof \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType) {
                 $invalidValues[] = is_object($work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem) ? get_class($work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem) : sprintf('%s(%s)', gettype($work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem), var_export($work_Schedule_Calendar_Request_ReferencesTypeWork_Schedule_Calendar_Request_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Work_Schedule_Calendar_Request_Reference property can only contain items of type \StructType\Work_Schedule_CalendarObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Work_Schedule_Calendar_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Work_Schedule_Calendar_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_CalendarObjectType[] $work_Schedule_Calendar_Request_Reference
-     * @return \StructType\Work_Schedule_Calendar_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType[] $work_Schedule_Calendar_Request_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Request_ReferencesType
      */
     public function setWork_Schedule_Calendar_Request_Reference(array $work_Schedule_Calendar_Request_Reference = array())
     {
@@ -78,14 +78,14 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Work_Schedule_Calendar_Request_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Schedule_CalendarObjectType $item
-     * @return \StructType\Work_Schedule_Calendar_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType $item
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Request_ReferencesType
      */
-    public function addToWork_Schedule_Calendar_Request_Reference(\StructType\Work_Schedule_CalendarObjectType $item)
+    public function addToWork_Schedule_Calendar_Request_Reference(\WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Schedule_CalendarObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Work_Schedule_Calendar_Request_Reference property can only contain items of type \StructType\Work_Schedule_CalendarObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Work_Schedule_Calendar_Request_Reference property can only contain items of type \WorkdayWsdl\\StructType\Work_Schedule_CalendarObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Work_Schedule_Calendar_Request_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Work_Schedule_Calendar_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Schedule_Calendar_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Work_Schedule_Calendar_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -118,7 +118,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Link value
      * @param string $link
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setLink($link = null)
     {
@@ -140,7 +140,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Capacity value
      * @param float $capacity
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setCapacity($capacity = null)
     {
@@ -174,7 +174,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Directions value
      * @param string $directions
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setDirections($directions = null)
     {
@@ -196,7 +196,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Equipment value
      * @param string $equipment
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setEquipment($equipment = null)
     {
@@ -218,7 +218,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Reservation_Details value
      * @param string $reservation_Details
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setReservation_Details($reservation_Details = null)
     {
@@ -240,7 +240,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Video_Conference_Details value
      * @param string $video_Conference_Details
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setVideo_Conference_Details($video_Conference_Details = null)
     {
@@ -262,7 +262,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
     /**
      * Set Additional_Details value
      * @param string $additional_Details
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public function setAdditional_Details($additional_Details = null)
     {
@@ -279,7 +279,7 @@ class Location_Training_Room_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Training_Room_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Training_Room_DataType
      */
     public static function __set_state(array $array)
     {

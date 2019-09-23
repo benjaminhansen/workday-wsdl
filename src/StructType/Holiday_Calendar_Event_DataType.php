@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
      * The Start_End_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element containing date and times for the Calendar Event.
-     * @var \StructType\Start_End_DataType
+     * @var \WorkdayWsdl\\StructType\Start_End_DataType
      */
     public $Start_End_Data;
     /**
@@ -32,7 +32,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element containing recurrence data for the Calendar Event.
      * - minOccurs: 0
-     * @var \StructType\Recurrence_DataType
+     * @var \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public $Recurrence_Data;
     /**
@@ -49,11 +49,11 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
      * @uses Holiday_Calendar_Event_DataType::setRecurrence_Data()
      * @uses Holiday_Calendar_Event_DataType::setID()
      * @param string $name
-     * @param \StructType\Start_End_DataType $start_End_Data
-     * @param \StructType\Recurrence_DataType $recurrence_Data
+     * @param \WorkdayWsdl\\StructType\Start_End_DataType $start_End_Data
+     * @param \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data
      * @param string $iD
      */
-    public function __construct($name = null, \StructType\Start_End_DataType $start_End_Data = null, \StructType\Recurrence_DataType $recurrence_Data = null, $iD = null)
+    public function __construct($name = null, \WorkdayWsdl\\StructType\Start_End_DataType $start_End_Data = null, \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data = null, $iD = null)
     {
         $this
             ->setName($name)
@@ -72,7 +72,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Holiday_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType
      */
     public function setName($name = null)
     {
@@ -85,7 +85,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Start_End_Data value
-     * @return \StructType\Start_End_DataType|null
+     * @return \WorkdayWsdl\\StructType\Start_End_DataType|null
      */
     public function getStart_End_Data()
     {
@@ -93,17 +93,17 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Start_End_Data value
-     * @param \StructType\Start_End_DataType $start_End_Data
-     * @return \StructType\Holiday_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Start_End_DataType $start_End_Data
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType
      */
-    public function setStart_End_Data(\StructType\Start_End_DataType $start_End_Data = null)
+    public function setStart_End_Data(\WorkdayWsdl\\StructType\Start_End_DataType $start_End_Data = null)
     {
         $this->Start_End_Data = $start_End_Data;
         return $this;
     }
     /**
      * Get Recurrence_Data value
-     * @return \StructType\Recurrence_DataType|null
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType|null
      */
     public function getRecurrence_Data()
     {
@@ -111,10 +111,10 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Recurrence_Data value
-     * @param \StructType\Recurrence_DataType $recurrence_Data
-     * @return \StructType\Holiday_Calendar_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType
      */
-    public function setRecurrence_Data(\StructType\Recurrence_DataType $recurrence_Data = null)
+    public function setRecurrence_Data(\WorkdayWsdl\\StructType\Recurrence_DataType $recurrence_Data = null)
     {
         $this->Recurrence_Data = $recurrence_Data;
         return $this;
@@ -130,7 +130,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Holiday_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType
      */
     public function setID($iD = null)
     {
@@ -147,7 +147,7 @@ class Holiday_Calendar_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_Calendar_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Event_DataType
      */
     public static function __set_state(array $array)
     {

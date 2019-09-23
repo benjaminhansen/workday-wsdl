@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Skill_Item_CategoryObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Skill_Item_CategoryReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Skill_Item_CategoryReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Skill_Item_CategoryReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Skill_Item_CategoryReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Skill_Item_CategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Skill_Item_CategoryReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Skill_Item_CategoryReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Skill_Item_CategoryReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Skill_Item_CategoryReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Skill_Item_CategoryReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Skill_Item_CategoryReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Skill_Item_CategoryObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Skill_Item_CategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Skill_Item_CategoryObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Skill_Item_CategoryObjectIDType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element for all core Web Address data.
      * - minOccurs: 0
-     * @var \StructType\Web_Address_Core_DataType
+     * @var \WorkdayWsdl\\StructType\Web_Address_Core_DataType
      */
     public $Web_Address_Data;
     /**
@@ -28,7 +28,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public $Usage_Data;
     /**
@@ -36,7 +36,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Web Address Reference Instance
      * - minOccurs: 0
-     * @var \StructType\Web_Address_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType
      */
     public $Web_Address_Reference;
     /**
@@ -63,13 +63,13 @@ class Person_Web_Address_DataType extends AbstractStructBase
      * @uses Person_Web_Address_DataType::setWeb_Address_Reference()
      * @uses Person_Web_Address_DataType::setWeb_Address_ID()
      * @uses Person_Web_Address_DataType::setDelete()
-     * @param \StructType\Web_Address_Core_DataType $web_Address_Data
-     * @param \StructType\Communication_Method_Usage_Information_DataType $usage_Data
-     * @param \StructType\Web_Address_ReferenceObjectType $web_Address_Reference
+     * @param \WorkdayWsdl\\StructType\Web_Address_Core_DataType $web_Address_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $usage_Data
+     * @param \WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType $web_Address_Reference
      * @param string $web_Address_ID
      * @param bool $delete
      */
-    public function __construct(\StructType\Web_Address_Core_DataType $web_Address_Data = null, \StructType\Communication_Method_Usage_Information_DataType $usage_Data = null, \StructType\Web_Address_ReferenceObjectType $web_Address_Reference = null, $web_Address_ID = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Web_Address_Core_DataType $web_Address_Data = null, \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $usage_Data = null, \WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType $web_Address_Reference = null, $web_Address_ID = null, $delete = null)
     {
         $this
             ->setWeb_Address_Data($web_Address_Data)
@@ -80,7 +80,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Web_Address_Data value
-     * @return \StructType\Web_Address_Core_DataType|null
+     * @return \WorkdayWsdl\\StructType\Web_Address_Core_DataType|null
      */
     public function getWeb_Address_Data()
     {
@@ -88,17 +88,17 @@ class Person_Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Web_Address_Data value
-     * @param \StructType\Web_Address_Core_DataType $web_Address_Data
-     * @return \StructType\Person_Web_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Web_Address_Core_DataType $web_Address_Data
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
-    public function setWeb_Address_Data(\StructType\Web_Address_Core_DataType $web_Address_Data = null)
+    public function setWeb_Address_Data(\WorkdayWsdl\\StructType\Web_Address_Core_DataType $web_Address_Data = null)
     {
         $this->Web_Address_Data = $web_Address_Data;
         return $this;
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType|null
      */
     public function getUsage_Data()
     {
@@ -106,17 +106,17 @@ class Person_Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Usage_Data value
-     * @param \StructType\Communication_Method_Usage_Information_DataType $usage_Data
-     * @return \StructType\Person_Web_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $usage_Data
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
-    public function setUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $usage_Data = null)
+    public function setUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $usage_Data = null)
     {
         $this->Usage_Data = $usage_Data;
         return $this;
     }
     /**
      * Get Web_Address_Reference value
-     * @return \StructType\Web_Address_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType|null
      */
     public function getWeb_Address_Reference()
     {
@@ -124,10 +124,10 @@ class Person_Web_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Web_Address_Reference value
-     * @param \StructType\Web_Address_ReferenceObjectType $web_Address_Reference
-     * @return \StructType\Person_Web_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType $web_Address_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
-    public function setWeb_Address_Reference(\StructType\Web_Address_ReferenceObjectType $web_Address_Reference = null)
+    public function setWeb_Address_Reference(\WorkdayWsdl\\StructType\Web_Address_ReferenceObjectType $web_Address_Reference = null)
     {
         $this->Web_Address_Reference = $web_Address_Reference;
         return $this;
@@ -143,7 +143,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
     /**
      * Set Web_Address_ID value
      * @param string $web_Address_ID
-     * @return \StructType\Person_Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
     public function setWeb_Address_ID($web_Address_ID = null)
     {
@@ -165,7 +165,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Person_Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
     public function setDelete($delete = null)
     {
@@ -182,7 +182,7 @@ class Person_Web_Address_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Web_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Web_Address_DataType
      */
     public static function __set_state(array $array)
     {

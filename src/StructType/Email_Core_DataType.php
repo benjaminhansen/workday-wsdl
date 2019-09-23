@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Email_Core_DataType extends AbstractStructBase
     /**
      * Set Email_Address value
      * @param string $email_Address
-     * @return \StructType\Email_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Email_Core_DataType
      */
     public function setEmail_Address($email_Address = null)
     {
@@ -75,7 +75,7 @@ class Email_Core_DataType extends AbstractStructBase
     /**
      * Set Email_Comment value
      * @param string $email_Comment
-     * @return \StructType\Email_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Email_Core_DataType
      */
     public function setEmail_Comment($email_Comment = null)
     {
@@ -92,7 +92,7 @@ class Email_Core_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Email_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Email_Core_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Committee Classification. Used to identify the Committee Classification Group to update. Leave blank on an Add.
      * - maxOccurs: unbounded
-     * @var \StructType\Committee_ClassificationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Committee_ClassificationObjectType[]
      */
     public $Committee_Classification_Reference;
     /**
      * Constructor method for Committee_Classification_Request_ReferencesType
      * @uses Committee_Classification_Request_ReferencesType::setCommittee_Classification_Reference()
-     * @param \StructType\Committee_ClassificationObjectType[] $committee_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_ClassificationObjectType[] $committee_Classification_Reference
      */
     public function __construct(array $committee_Classification_Reference = array())
     {
@@ -32,7 +32,7 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Committee_Classification_Reference value
-     * @return \StructType\Committee_ClassificationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_ClassificationObjectType[]|null
      */
     public function getCommittee_Classification_Reference()
     {
@@ -50,12 +50,12 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem instanceof \StructType\Committee_ClassificationObjectType) {
+            if (!$committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem instanceof \WorkdayWsdl\\StructType\Committee_ClassificationObjectType) {
                 $invalidValues[] = is_object($committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem) ? get_class($committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem) : sprintf('%s(%s)', gettype($committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem), var_export($committee_Classification_Request_ReferencesTypeCommittee_Classification_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Classification_Reference property can only contain items of type \StructType\Committee_ClassificationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Classification_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_ClassificationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Committee_Classification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_ClassificationObjectType[] $committee_Classification_Reference
-     * @return \StructType\Committee_Classification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Committee_ClassificationObjectType[] $committee_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_Request_ReferencesType
      */
     public function setCommittee_Classification_Reference(array $committee_Classification_Reference = array())
     {
@@ -78,14 +78,14 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Committee_Classification_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_ClassificationObjectType $item
-     * @return \StructType\Committee_Classification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Committee_ClassificationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_Request_ReferencesType
      */
-    public function addToCommittee_Classification_Reference(\StructType\Committee_ClassificationObjectType $item)
+    public function addToCommittee_Classification_Reference(\WorkdayWsdl\\StructType\Committee_ClassificationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_ClassificationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Classification_Reference property can only contain items of type \StructType\Committee_ClassificationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_ClassificationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Classification_Reference property can only contain items of type \WorkdayWsdl\\StructType\Committee_ClassificationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Classification_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Committee_Classification_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Classification_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Committee_Classification_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

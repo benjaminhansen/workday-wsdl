@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class International_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The International Assignment Type for the international assignment position.
      * - minOccurs: 0
-     * @var \StructType\International_Assignment_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType
      */
     public $International_Assignment_Type_Reference;
     /**
@@ -25,7 +25,7 @@ class International_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the reason from this position's Start International Assignment business process.
      * - minOccurs: 0
-     * @var \StructType\Event_Classification_SubcategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType
      */
     public $Start_International_Assignment_Reason_Reference;
     /**
@@ -42,7 +42,7 @@ class International_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the host country for worker's international assignment
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Host_Country_Reference;
     /**
@@ -50,7 +50,7 @@ class International_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the home country for worker's primary job
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Home_Country_Reference;
     /**
@@ -60,13 +60,13 @@ class International_Assignment_DataType extends AbstractStructBase
      * @uses International_Assignment_DataType::setExpected_Assignment_End_Date()
      * @uses International_Assignment_DataType::setHost_Country_Reference()
      * @uses International_Assignment_DataType::setHome_Country_Reference()
-     * @param \StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference
-     * @param \StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference
+     * @param \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference
      * @param string $expected_Assignment_End_Date
-     * @param \StructType\CountryObjectType $host_Country_Reference
-     * @param \StructType\CountryObjectType $home_Country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $host_Country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference
      */
-    public function __construct(\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference = null, \StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference = null, $expected_Assignment_End_Date = null, \StructType\CountryObjectType $host_Country_Reference = null, \StructType\CountryObjectType $home_Country_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference = null, \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference = null, $expected_Assignment_End_Date = null, \WorkdayWsdl\\StructType\CountryObjectType $host_Country_Reference = null, \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference = null)
     {
         $this
             ->setInternational_Assignment_Type_Reference($international_Assignment_Type_Reference)
@@ -77,7 +77,7 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get International_Assignment_Type_Reference value
-     * @return \StructType\International_Assignment_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType|null
      */
     public function getInternational_Assignment_Type_Reference()
     {
@@ -85,17 +85,17 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set International_Assignment_Type_Reference value
-     * @param \StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference
-     * @return \StructType\International_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
-    public function setInternational_Assignment_Type_Reference(\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference = null)
+    public function setInternational_Assignment_Type_Reference(\WorkdayWsdl\\StructType\International_Assignment_TypeObjectType $international_Assignment_Type_Reference = null)
     {
         $this->International_Assignment_Type_Reference = $international_Assignment_Type_Reference;
         return $this;
     }
     /**
      * Get Start_International_Assignment_Reason_Reference value
-     * @return \StructType\Event_Classification_SubcategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType|null
      */
     public function getStart_International_Assignment_Reason_Reference()
     {
@@ -103,10 +103,10 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Start_International_Assignment_Reason_Reference value
-     * @param \StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference
-     * @return \StructType\International_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
-    public function setStart_International_Assignment_Reason_Reference(\StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference = null)
+    public function setStart_International_Assignment_Reason_Reference(\WorkdayWsdl\\StructType\Event_Classification_SubcategoryObjectType $start_International_Assignment_Reason_Reference = null)
     {
         $this->Start_International_Assignment_Reason_Reference = $start_International_Assignment_Reason_Reference;
         return $this;
@@ -122,7 +122,7 @@ class International_Assignment_DataType extends AbstractStructBase
     /**
      * Set Expected_Assignment_End_Date value
      * @param string $expected_Assignment_End_Date
-     * @return \StructType\International_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
     public function setExpected_Assignment_End_Date($expected_Assignment_End_Date = null)
     {
@@ -135,7 +135,7 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Host_Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getHost_Country_Reference()
     {
@@ -143,17 +143,17 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Host_Country_Reference value
-     * @param \StructType\CountryObjectType $host_Country_Reference
-     * @return \StructType\International_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $host_Country_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
-    public function setHost_Country_Reference(\StructType\CountryObjectType $host_Country_Reference = null)
+    public function setHost_Country_Reference(\WorkdayWsdl\\StructType\CountryObjectType $host_Country_Reference = null)
     {
         $this->Host_Country_Reference = $host_Country_Reference;
         return $this;
     }
     /**
      * Get Home_Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getHome_Country_Reference()
     {
@@ -161,10 +161,10 @@ class International_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Home_Country_Reference value
-     * @param \StructType\CountryObjectType $home_Country_Reference
-     * @return \StructType\International_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
-    public function setHome_Country_Reference(\StructType\CountryObjectType $home_Country_Reference = null)
+    public function setHome_Country_Reference(\WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference = null)
     {
         $this->Home_Country_Reference = $home_Country_Reference;
         return $this;
@@ -175,7 +175,7 @@ class International_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\International_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

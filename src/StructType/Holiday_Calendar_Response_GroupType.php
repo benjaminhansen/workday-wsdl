@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Holiday_Calendar_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Holiday_Calendar_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -76,7 +76,7 @@ class Holiday_Calendar_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Holiday_Calendar_Data value
      * @param bool $include_Holiday_Calendar_Data
-     * @return \StructType\Holiday_Calendar_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_GroupType
      */
     public function setInclude_Holiday_Calendar_Data($include_Holiday_Calendar_Data = null)
     {
@@ -93,7 +93,7 @@ class Holiday_Calendar_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_Calendar_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_GroupType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Veteran_Status_IdentificationType[]
+     * @var \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType[]
      */
     public $Change_Veteran_Status_Identification;
     /**
      * Constructor method for Change_Veteran_Status_Identification_Response_DataType
      * @uses Change_Veteran_Status_Identification_Response_DataType::setChange_Veteran_Status_Identification()
-     * @param \StructType\Change_Veteran_Status_IdentificationType[] $change_Veteran_Status_Identification
+     * @param \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType[] $change_Veteran_Status_Identification
      */
     public function __construct(array $change_Veteran_Status_Identification = array())
     {
@@ -33,7 +33,7 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
     }
     /**
      * Get Change_Veteran_Status_Identification value
-     * @return \StructType\Change_Veteran_Status_IdentificationType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType[]|null
      */
     public function getChange_Veteran_Status_Identification()
     {
@@ -51,12 +51,12 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
         $invalidValues = [];
         foreach ($values as $change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem) {
             // validation for constraint: itemType
-            if (!$change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem instanceof \StructType\Change_Veteran_Status_IdentificationType) {
+            if (!$change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem instanceof \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType) {
                 $invalidValues[] = is_object($change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem) ? get_class($change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem) : sprintf('%s(%s)', gettype($change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem), var_export($change_Veteran_Status_Identification_Response_DataTypeChange_Veteran_Status_IdentificationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Veteran_Status_Identification property can only contain items of type \StructType\Change_Veteran_Status_IdentificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Veteran_Status_Identification property can only contain items of type \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
     /**
      * Set Change_Veteran_Status_Identification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Veteran_Status_IdentificationType[] $change_Veteran_Status_Identification
-     * @return \StructType\Change_Veteran_Status_Identification_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType[] $change_Veteran_Status_Identification
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_Identification_Response_DataType
      */
     public function setChange_Veteran_Status_Identification(array $change_Veteran_Status_Identification = array())
     {
@@ -79,14 +79,14 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
     /**
      * Add item to Change_Veteran_Status_Identification value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Veteran_Status_IdentificationType $item
-     * @return \StructType\Change_Veteran_Status_Identification_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType $item
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_Identification_Response_DataType
      */
-    public function addToChange_Veteran_Status_Identification(\StructType\Change_Veteran_Status_IdentificationType $item)
+    public function addToChange_Veteran_Status_Identification(\WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Veteran_Status_IdentificationType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Veteran_Status_Identification property can only contain items of type \StructType\Change_Veteran_Status_IdentificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Veteran_Status_Identification property can only contain items of type \WorkdayWsdl\\StructType\Change_Veteran_Status_IdentificationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Veteran_Status_Identification[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Change_Veteran_Status_Identification_Response_DataType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Veteran_Status_Identification_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Veteran_Status_Identification_Response_DataType
      */
     public static function __set_state(array $array)
     {

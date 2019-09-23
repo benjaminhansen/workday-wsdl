@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Work_Contact_Information_HVType[]
+     * @var \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType[]
      */
     public $Change_Work_Contact_Information_HV;
     /**
@@ -43,7 +43,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
      * @uses Import_Change_Work_Contact_Information_RequestType::setChange_Work_Contact_Information_HV()
      * @uses Import_Change_Work_Contact_Information_RequestType::setVersion()
      * @param string $iD
-     * @param \StructType\Change_Work_Contact_Information_HVType[] $change_Work_Contact_Information_HV
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType[] $change_Work_Contact_Information_HV
      * @param string $version
      */
     public function __construct($iD = null, array $change_Work_Contact_Information_HV = array(), $version = null)
@@ -64,7 +64,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Import_Change_Work_Contact_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Change_Work_Contact_Information_RequestType
      */
     public function setID($iD = null)
     {
@@ -77,7 +77,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
     }
     /**
      * Get Change_Work_Contact_Information_HV value
-     * @return \StructType\Change_Work_Contact_Information_HVType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType[]|null
      */
     public function getChange_Work_Contact_Information_HV()
     {
@@ -95,12 +95,12 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
         $invalidValues = [];
         foreach ($values as $import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem) {
             // validation for constraint: itemType
-            if (!$import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem instanceof \StructType\Change_Work_Contact_Information_HVType) {
+            if (!$import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem instanceof \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType) {
                 $invalidValues[] = is_object($import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem) ? get_class($import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem) : sprintf('%s(%s)', gettype($import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem), var_export($import_Change_Work_Contact_Information_RequestTypeChange_Work_Contact_Information_HVItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Change_Work_Contact_Information_HV property can only contain items of type \StructType\Change_Work_Contact_Information_HVType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Change_Work_Contact_Information_HV property can only contain items of type \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -108,8 +108,8 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
     /**
      * Set Change_Work_Contact_Information_HV value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Work_Contact_Information_HVType[] $change_Work_Contact_Information_HV
-     * @return \StructType\Import_Change_Work_Contact_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType[] $change_Work_Contact_Information_HV
+     * @return \WorkdayWsdl\\StructType\Import_Change_Work_Contact_Information_RequestType
      */
     public function setChange_Work_Contact_Information_HV(array $change_Work_Contact_Information_HV = array())
     {
@@ -123,14 +123,14 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
     /**
      * Add item to Change_Work_Contact_Information_HV value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Work_Contact_Information_HVType $item
-     * @return \StructType\Import_Change_Work_Contact_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType $item
+     * @return \WorkdayWsdl\\StructType\Import_Change_Work_Contact_Information_RequestType
      */
-    public function addToChange_Work_Contact_Information_HV(\StructType\Change_Work_Contact_Information_HVType $item)
+    public function addToChange_Work_Contact_Information_HV(\WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Work_Contact_Information_HVType) {
-            throw new \InvalidArgumentException(sprintf('The Change_Work_Contact_Information_HV property can only contain items of type \StructType\Change_Work_Contact_Information_HVType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType) {
+            throw new \InvalidArgumentException(sprintf('The Change_Work_Contact_Information_HV property can only contain items of type \WorkdayWsdl\\StructType\Change_Work_Contact_Information_HVType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Change_Work_Contact_Information_HV[] = $item;
         return $this;
@@ -146,7 +146,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Import_Change_Work_Contact_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Change_Work_Contact_Information_RequestType
      */
     public function setVersion($version = null)
     {
@@ -163,7 +163,7 @@ class Import_Change_Work_Contact_Information_RequestType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Import_Change_Work_Contact_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Import_Change_Work_Contact_Information_RequestType
      */
     public static function __set_state(array $array)
     {

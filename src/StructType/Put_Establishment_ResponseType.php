@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Establishment_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Establishment Reference
      * - minOccurs: 0
-     * @var \StructType\EstablishmentObjectType
+     * @var \WorkdayWsdl\\StructType\EstablishmentObjectType
      */
     public $Establishment_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Establishment_ResponseType extends AbstractStructBase
      * Constructor method for Put_Establishment_ResponseType
      * @uses Put_Establishment_ResponseType::setEstablishment_Reference()
      * @uses Put_Establishment_ResponseType::setVersion()
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
      * @param string $version
      */
-    public function __construct(\StructType\EstablishmentObjectType $establishment_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null, $version = null)
     {
         $this
             ->setEstablishment_Reference($establishment_Reference)
@@ -42,7 +42,7 @@ class Put_Establishment_ResponseType extends AbstractStructBase
     }
     /**
      * Get Establishment_Reference value
-     * @return \StructType\EstablishmentObjectType|null
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectType|null
      */
     public function getEstablishment_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Establishment_ResponseType extends AbstractStructBase
     }
     /**
      * Set Establishment_Reference value
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
-     * @return \StructType\Put_Establishment_ResponseType
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_ResponseType
      */
-    public function setEstablishment_Reference(\StructType\EstablishmentObjectType $establishment_Reference = null)
+    public function setEstablishment_Reference(\WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null)
     {
         $this->Establishment_Reference = $establishment_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Establishment_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Establishment_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Establishment_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Establishment_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Establishment_ResponseType
      */
     public static function __set_state(array $array)
     {

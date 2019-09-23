@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: Organization Assignment Restrictions Request References
      * - minOccurs: 0
-     * @var \StructType\Organization_Assignment_Restrictions_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -40,11 +40,11 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * @uses Get_Organization_Assignment_Restrictions_RequestType::setRequest_References()
      * @uses Get_Organization_Assignment_Restrictions_RequestType::setResponse_Filter()
      * @uses Get_Organization_Assignment_Restrictions_RequestType::setVersion()
-     * @param \StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References
-     * @param \StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
      * @param string $version
      */
-    public function __construct(\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References = null, \StructType\Response_FilterType $response_Filter = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -53,7 +53,7 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     }
     /**
      * Get Request_References value
-     * @return \StructType\Organization_Assignment_Restrictions_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -61,17 +61,17 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     }
     /**
      * Set Request_References value
-     * @param \StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References
-     * @return \StructType\Get_Organization_Assignment_Restrictions_RequestType
+     * @param \WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Organization_Assignment_Restrictions_RequestType
      */
-    public function setRequest_References(\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Organization_Assignment_Restrictions_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -79,10 +79,10 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Organization_Assignment_Restrictions_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Organization_Assignment_Restrictions_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
@@ -98,7 +98,7 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Organization_Assignment_Restrictions_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Organization_Assignment_Restrictions_RequestType
      */
     public function setVersion($version = null)
     {
@@ -115,7 +115,7 @@ class Get_Organization_Assignment_Restrictions_RequestType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Organization_Assignment_Restrictions_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Organization_Assignment_Restrictions_RequestType
      */
     public static function __set_state(array $array)
     {

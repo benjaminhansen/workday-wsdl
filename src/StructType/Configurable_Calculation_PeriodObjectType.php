@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Configurable_Calculation_PeriodObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
      * Constructor method for Configurable_Calculation_PeriodObjectType
      * @uses Configurable_Calculation_PeriodObjectType::setID()
      * @uses Configurable_Calculation_PeriodObjectType::setDescriptor()
-     * @param \StructType\Configurable_Calculation_PeriodObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Configurable_Calculation_PeriodObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $configurable_Calculation_PeriodObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$configurable_Calculation_PeriodObjectTypeIDItem instanceof \StructType\Configurable_Calculation_PeriodObjectIDType) {
+            if (!$configurable_Calculation_PeriodObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType) {
                 $invalidValues[] = is_object($configurable_Calculation_PeriodObjectTypeIDItem) ? get_class($configurable_Calculation_PeriodObjectTypeIDItem) : sprintf('%s(%s)', gettype($configurable_Calculation_PeriodObjectTypeIDItem), var_export($configurable_Calculation_PeriodObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Configurable_Calculation_PeriodObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Configurable_Calculation_PeriodObjectIDType[] $iD
-     * @return \StructType\Configurable_Calculation_PeriodObjectType
+     * @param \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Configurable_Calculation_PeriodObjectIDType $item
-     * @return \StructType\Configurable_Calculation_PeriodObjectType
+     * @param \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectType
      */
-    public function addToID(\StructType\Configurable_Calculation_PeriodObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Configurable_Calculation_PeriodObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Configurable_Calculation_PeriodObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Configurable_Calculation_PeriodObjectType
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Configurable_Calculation_PeriodObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Configurable_Calculation_PeriodObjectType
+     * @return \WorkdayWsdl\\StructType\Configurable_Calculation_PeriodObjectType
      */
     public static function __set_state(array $array)
     {

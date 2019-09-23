@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
      * The Field_And_Parameter_Criteria_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Field_And_Parameter_Criteria_DataType
+     * @var \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType
      */
     public $Field_And_Parameter_Criteria_Data;
     /**
@@ -32,10 +32,10 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
      * Constructor method for Job_Families_Request_CriteriaType
      * @uses Job_Families_Request_CriteriaType::setField_And_Parameter_Criteria_Data()
      * @uses Job_Families_Request_CriteriaType::setInclude_InActive_Job_Families()
-     * @param \StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
      * @param bool $include_InActive_Job_Families
      */
-    public function __construct(\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null, $include_InActive_Job_Families = null)
+    public function __construct(\WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null, $include_InActive_Job_Families = null)
     {
         $this
             ->setField_And_Parameter_Criteria_Data($field_And_Parameter_Criteria_Data)
@@ -43,7 +43,7 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Get Field_And_Parameter_Criteria_Data value
-     * @return \StructType\Field_And_Parameter_Criteria_DataType|null
+     * @return \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType|null
      */
     public function getField_And_Parameter_Criteria_Data()
     {
@@ -51,10 +51,10 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Set Field_And_Parameter_Criteria_Data value
-     * @param \StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
-     * @return \StructType\Job_Families_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data
+     * @return \WorkdayWsdl\\StructType\Job_Families_Request_CriteriaType
      */
-    public function setField_And_Parameter_Criteria_Data(\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
+    public function setField_And_Parameter_Criteria_Data(\WorkdayWsdl\\StructType\Field_And_Parameter_Criteria_DataType $field_And_Parameter_Criteria_Data = null)
     {
         $this->Field_And_Parameter_Criteria_Data = $field_And_Parameter_Criteria_Data;
         return $this;
@@ -70,7 +70,7 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Include_InActive_Job_Families value
      * @param bool $include_InActive_Job_Families
-     * @return \StructType\Job_Families_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Job_Families_Request_CriteriaType
      */
     public function setInclude_InActive_Job_Families($include_InActive_Job_Families = null)
     {
@@ -87,7 +87,7 @@ class Job_Families_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Families_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Job_Families_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Experience_RatingObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
      * Constructor method for Work_Experience_RatingObjectType
      * @uses Work_Experience_RatingObjectType::setID()
      * @uses Work_Experience_RatingObjectType::setDescriptor()
-     * @param \StructType\Work_Experience_RatingObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Work_Experience_RatingObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Experience_RatingObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$work_Experience_RatingObjectTypeIDItem instanceof \StructType\Work_Experience_RatingObjectIDType) {
+            if (!$work_Experience_RatingObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType) {
                 $invalidValues[] = is_object($work_Experience_RatingObjectTypeIDItem) ? get_class($work_Experience_RatingObjectTypeIDItem) : sprintf('%s(%s)', gettype($work_Experience_RatingObjectTypeIDItem), var_export($work_Experience_RatingObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Work_Experience_RatingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_RatingObjectIDType[] $iD
-     * @return \StructType\Work_Experience_RatingObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Experience_RatingObjectIDType $item
-     * @return \StructType\Work_Experience_RatingObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType
      */
-    public function addToID(\StructType\Work_Experience_RatingObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Experience_RatingObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Work_Experience_RatingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Experience_RatingObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Work_Experience_RatingObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Work_Experience_RatingObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Experience_RatingObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Experience_RatingObjectType
      */
     public static function __set_state(array $array)
     {

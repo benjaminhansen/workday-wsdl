@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Job_Category_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Job Category. Only needed when updating the Reference ID for the Job Category.
      * - minOccurs: 0
-     * @var \StructType\Job_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Job_CategoryObjectType
      */
     public $Job_Category_Reference;
     /**
      * The Job_Category_Data
-     * @var \StructType\Job_Category_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Category_DataType
      */
     public $Job_Category_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Job_Category_RequestType extends AbstractStructBase
      * @uses Put_Job_Category_RequestType::setJob_Category_Data()
      * @uses Put_Job_Category_RequestType::setAdd_Only()
      * @uses Put_Job_Category_RequestType::setVersion()
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @param \StructType\Job_Category_DataType $job_Category_Data
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Category_DataType $job_Category_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Job_CategoryObjectType $job_Category_Reference = null, \StructType\Job_Category_DataType $job_Category_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null, \WorkdayWsdl\\StructType\Job_Category_DataType $job_Category_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setJob_Category_Reference($job_Category_Reference)
@@ -60,7 +60,7 @@ class Put_Job_Category_RequestType extends AbstractStructBase
     }
     /**
      * Get Job_Category_Reference value
-     * @return \StructType\Job_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryObjectType|null
      */
     public function getJob_Category_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Job_Category_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Category_Reference value
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @return \StructType\Put_Job_Category_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_RequestType
      */
-    public function setJob_Category_Reference(\StructType\Job_CategoryObjectType $job_Category_Reference = null)
+    public function setJob_Category_Reference(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null)
     {
         $this->Job_Category_Reference = $job_Category_Reference;
         return $this;
     }
     /**
      * Get Job_Category_Data value
-     * @return \StructType\Job_Category_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Category_DataType|null
      */
     public function getJob_Category_Data()
     {
@@ -86,10 +86,10 @@ class Put_Job_Category_RequestType extends AbstractStructBase
     }
     /**
      * Set Job_Category_Data value
-     * @param \StructType\Job_Category_DataType $job_Category_Data
-     * @return \StructType\Put_Job_Category_RequestType
+     * @param \WorkdayWsdl\\StructType\Job_Category_DataType $job_Category_Data
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_RequestType
      */
-    public function setJob_Category_Data(\StructType\Job_Category_DataType $job_Category_Data = null)
+    public function setJob_Category_Data(\WorkdayWsdl\\StructType\Job_Category_DataType $job_Category_Data = null)
     {
         $this->Job_Category_Data = $job_Category_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Job_Category_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Job_Category_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Job_Category_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Job_Category_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Job_Category_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Job_Category_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Job_Category_RequestType
      */
     public static function __set_state(array $array)
     {

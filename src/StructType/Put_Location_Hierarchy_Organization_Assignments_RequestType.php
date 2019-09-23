@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
      * Meta information extracted from the WSDL
      * - documentation: Input data for Organization Assignments; the Location Hierarchy Reference, and Organization Type Data Element
      * - minOccurs: 0
-     * @var \StructType\Location_Hierarchy_Organization_Assignments_DataType
+     * @var \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType
      */
     public $Location_Hierarchy_Organization_Assignments_Data;
     /**
@@ -33,10 +33,10 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
      * Put_Location_Hierarchy_Organization_Assignments_RequestType
      * @uses Put_Location_Hierarchy_Organization_Assignments_RequestType::setLocation_Hierarchy_Organization_Assignments_Data()
      * @uses Put_Location_Hierarchy_Organization_Assignments_RequestType::setVersion()
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data
      * @param string $version
      */
-    public function __construct(\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data = null, $version = null)
     {
         $this
             ->setLocation_Hierarchy_Organization_Assignments_Data($location_Hierarchy_Organization_Assignments_Data)
@@ -44,7 +44,7 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
     }
     /**
      * Get Location_Hierarchy_Organization_Assignments_Data value
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_DataType|null
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType|null
      */
     public function getLocation_Hierarchy_Organization_Assignments_Data()
     {
@@ -52,10 +52,10 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
     }
     /**
      * Set Location_Hierarchy_Organization_Assignments_Data value
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
      */
-    public function setLocation_Hierarchy_Organization_Assignments_Data(\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data = null)
+    public function setLocation_Hierarchy_Organization_Assignments_Data(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_DataType $location_Hierarchy_Organization_Assignments_Data = null)
     {
         $this->Location_Hierarchy_Organization_Assignments_Data = $location_Hierarchy_Organization_Assignments_Data;
         return $this;
@@ -71,7 +71,7 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
      */
     public function setVersion($version = null)
     {
@@ -88,7 +88,7 @@ class Put_Location_Hierarchy_Organization_Assignments_RequestType extends Abstra
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_RequestType
      */
     public static function __set_state(array $array)
     {

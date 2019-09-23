@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -727,7 +727,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -749,7 +749,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Personal_Information value
      * @param bool $include_Personal_Information
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Personal_Information($include_Personal_Information = null)
     {
@@ -771,7 +771,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Additional_Jobs value
      * @param bool $include_Additional_Jobs
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Additional_Jobs($include_Additional_Jobs = null)
     {
@@ -793,7 +793,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Employment_Information value
      * @param bool $include_Employment_Information
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Employment_Information($include_Employment_Information = null)
     {
@@ -815,7 +815,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Compensation value
      * @param bool $include_Compensation
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Compensation($include_Compensation = null)
     {
@@ -837,7 +837,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Organizations value
      * @param bool $include_Organizations
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Organizations($include_Organizations = null)
     {
@@ -859,7 +859,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Organization_Support_Role_Data value
      * @param bool $exclude_Organization_Support_Role_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Organization_Support_Role_Data($exclude_Organization_Support_Role_Data = null)
     {
@@ -881,7 +881,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Location_Hierarchies value
      * @param bool $exclude_Location_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Location_Hierarchies($exclude_Location_Hierarchies = null)
     {
@@ -903,7 +903,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Cost_Centers value
      * @param bool $exclude_Cost_Centers
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Cost_Centers($exclude_Cost_Centers = null)
     {
@@ -925,7 +925,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Cost_Center_Hierarchies value
      * @param bool $exclude_Cost_Center_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Cost_Center_Hierarchies($exclude_Cost_Center_Hierarchies = null)
     {
@@ -947,7 +947,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Companies value
      * @param bool $exclude_Companies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Companies($exclude_Companies = null)
     {
@@ -969,7 +969,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Company_Hierarchies value
      * @param bool $exclude_Company_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Company_Hierarchies($exclude_Company_Hierarchies = null)
     {
@@ -991,7 +991,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Matrix_Organizations value
      * @param bool $exclude_Matrix_Organizations
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Matrix_Organizations($exclude_Matrix_Organizations = null)
     {
@@ -1013,7 +1013,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Pay_Groups value
      * @param bool $exclude_Pay_Groups
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Pay_Groups($exclude_Pay_Groups = null)
     {
@@ -1035,7 +1035,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Regions value
      * @param bool $exclude_Regions
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Regions($exclude_Regions = null)
     {
@@ -1057,7 +1057,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Region_Hierarchies value
      * @param bool $exclude_Region_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Region_Hierarchies($exclude_Region_Hierarchies = null)
     {
@@ -1079,7 +1079,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Supervisory_Organizations value
      * @param bool $exclude_Supervisory_Organizations
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Supervisory_Organizations($exclude_Supervisory_Organizations = null)
     {
@@ -1101,7 +1101,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Teams value
      * @param bool $exclude_Teams
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Teams($exclude_Teams = null)
     {
@@ -1123,7 +1123,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Custom_Organizations value
      * @param bool $exclude_Custom_Organizations
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Custom_Organizations($exclude_Custom_Organizations = null)
     {
@@ -1145,7 +1145,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Roles value
      * @param bool $include_Roles
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Roles($include_Roles = null)
     {
@@ -1167,7 +1167,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Management_Chain_Data value
      * @param bool $include_Management_Chain_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Management_Chain_Data($include_Management_Chain_Data = null)
     {
@@ -1189,7 +1189,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Multiple_Managers_in_Management_Chain_Data value
      * @param bool $include_Multiple_Managers_in_Management_Chain_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Multiple_Managers_in_Management_Chain_Data($include_Multiple_Managers_in_Management_Chain_Data = null)
     {
@@ -1211,7 +1211,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Benefit_Enrollments value
      * @param bool $include_Benefit_Enrollments
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Benefit_Enrollments($include_Benefit_Enrollments = null)
     {
@@ -1233,7 +1233,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Benefit_Eligibility value
      * @param bool $include_Benefit_Eligibility
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Benefit_Eligibility($include_Benefit_Eligibility = null)
     {
@@ -1255,7 +1255,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Related_Persons value
      * @param bool $include_Related_Persons
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Related_Persons($include_Related_Persons = null)
     {
@@ -1277,7 +1277,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Qualifications value
      * @param bool $include_Qualifications
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Qualifications($include_Qualifications = null)
     {
@@ -1299,7 +1299,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Employee_Review value
      * @param bool $include_Employee_Review
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Employee_Review($include_Employee_Review = null)
     {
@@ -1321,7 +1321,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Goals value
      * @param bool $include_Goals
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Goals($include_Goals = null)
     {
@@ -1343,7 +1343,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Development_Items value
      * @param bool $include_Development_Items
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Development_Items($include_Development_Items = null)
     {
@@ -1365,7 +1365,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Skills value
      * @param bool $include_Skills
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Skills($include_Skills = null)
     {
@@ -1387,7 +1387,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Photo value
      * @param bool $include_Photo
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Photo($include_Photo = null)
     {
@@ -1409,7 +1409,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Worker_Documents value
      * @param bool $include_Worker_Documents
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Worker_Documents($include_Worker_Documents = null)
     {
@@ -1431,7 +1431,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Transaction_Log_Data value
      * @param bool $include_Transaction_Log_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Transaction_Log_Data($include_Transaction_Log_Data = null)
     {
@@ -1453,7 +1453,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Subevents_for_Corrected_Transaction value
      * @param bool $include_Subevents_for_Corrected_Transaction
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Subevents_for_Corrected_Transaction($include_Subevents_for_Corrected_Transaction = null)
     {
@@ -1475,7 +1475,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Subevents_for_Rescinded_Transaction value
      * @param bool $include_Subevents_for_Rescinded_Transaction
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Subevents_for_Rescinded_Transaction($include_Subevents_for_Rescinded_Transaction = null)
     {
@@ -1497,7 +1497,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Succession_Profile value
      * @param bool $include_Succession_Profile
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Succession_Profile($include_Succession_Profile = null)
     {
@@ -1519,7 +1519,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Talent_Assessment value
      * @param bool $include_Talent_Assessment
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Talent_Assessment($include_Talent_Assessment = null)
     {
@@ -1541,7 +1541,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Employee_Contract_Data value
      * @param bool $include_Employee_Contract_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Employee_Contract_Data($include_Employee_Contract_Data = null)
     {
@@ -1563,7 +1563,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Contracts_for_Terminated_Workers value
      * @param bool $include_Contracts_for_Terminated_Workers
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Contracts_for_Terminated_Workers($include_Contracts_for_Terminated_Workers = null)
     {
@@ -1585,7 +1585,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Collective_Agreement_Data value
      * @param bool $include_Collective_Agreement_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Collective_Agreement_Data($include_Collective_Agreement_Data = null)
     {
@@ -1607,7 +1607,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Probation_Period_Data value
      * @param bool $include_Probation_Period_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Probation_Period_Data($include_Probation_Period_Data = null)
     {
@@ -1629,7 +1629,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Extended_Employee_Contract_Details value
      * @param bool $include_Extended_Employee_Contract_Details
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Extended_Employee_Contract_Details($include_Extended_Employee_Contract_Details = null)
     {
@@ -1651,7 +1651,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Feedback_Received value
      * @param bool $include_Feedback_Received
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Feedback_Received($include_Feedback_Received = null)
     {
@@ -1673,7 +1673,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_User_Account value
      * @param bool $include_User_Account
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_User_Account($include_User_Account = null)
     {
@@ -1695,7 +1695,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Career value
      * @param bool $include_Career
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Career($include_Career = null)
     {
@@ -1717,7 +1717,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Account_Provisioning value
      * @param bool $include_Account_Provisioning
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Account_Provisioning($include_Account_Provisioning = null)
     {
@@ -1739,7 +1739,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Background_Check_Data value
      * @param bool $include_Background_Check_Data
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Background_Check_Data($include_Background_Check_Data = null)
     {
@@ -1761,7 +1761,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Contingent_Worker_Tax_Authority_Form_Information value
      * @param bool $include_Contingent_Worker_Tax_Authority_Form_Information
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setInclude_Contingent_Worker_Tax_Authority_Form_Information($include_Contingent_Worker_Tax_Authority_Form_Information = null)
     {
@@ -1783,7 +1783,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Funds value
      * @param bool $exclude_Funds
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Funds($exclude_Funds = null)
     {
@@ -1805,7 +1805,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Fund_Hierarchies value
      * @param bool $exclude_Fund_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Fund_Hierarchies($exclude_Fund_Hierarchies = null)
     {
@@ -1827,7 +1827,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Grants value
      * @param bool $exclude_Grants
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Grants($exclude_Grants = null)
     {
@@ -1849,7 +1849,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Grant_Hierarchies value
      * @param bool $exclude_Grant_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Grant_Hierarchies($exclude_Grant_Hierarchies = null)
     {
@@ -1871,7 +1871,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Business_Units value
      * @param bool $exclude_Business_Units
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Business_Units($exclude_Business_Units = null)
     {
@@ -1893,7 +1893,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Business_Unit_Hierarchies value
      * @param bool $exclude_Business_Unit_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Business_Unit_Hierarchies($exclude_Business_Unit_Hierarchies = null)
     {
@@ -1915,7 +1915,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Programs value
      * @param bool $exclude_Programs
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Programs($exclude_Programs = null)
     {
@@ -1937,7 +1937,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Program_Hierarchies value
      * @param bool $exclude_Program_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Program_Hierarchies($exclude_Program_Hierarchies = null)
     {
@@ -1959,7 +1959,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Gifts value
      * @param bool $exclude_Gifts
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Gifts($exclude_Gifts = null)
     {
@@ -1981,7 +1981,7 @@ class Worker_Response_GroupType extends AbstractStructBase
     /**
      * Set Exclude_Gift_Hierarchies value
      * @param bool $exclude_Gift_Hierarchies
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public function setExclude_Gift_Hierarchies($exclude_Gift_Hierarchies = null)
     {
@@ -1998,7 +1998,7 @@ class Worker_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Worker_Response_GroupType
      */
     public static function __set_state(array $array)
     {

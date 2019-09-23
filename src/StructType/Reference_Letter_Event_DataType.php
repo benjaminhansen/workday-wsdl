@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: Worker Reference
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -24,14 +24,14 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Language of Document Generated
      * - minOccurs: 0
-     * @var \StructType\User_LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\User_LanguageObjectType
      */
     public $Document_Language_Reference;
     /**
      * The Template_Reference
      * Meta information extracted from the WSDL
      * - documentation: Template Reference
-     * @var \StructType\Reference_Letter_TemplateObjectType
+     * @var \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType
      */
     public $Template_Reference;
     /**
@@ -39,11 +39,11 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
      * @uses Reference_Letter_Event_DataType::setWorker_Reference()
      * @uses Reference_Letter_Event_DataType::setDocument_Language_Reference()
      * @uses Reference_Letter_Event_DataType::setTemplate_Reference()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\User_LanguageObjectType $document_Language_Reference
-     * @param \StructType\Reference_Letter_TemplateObjectType $template_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $document_Language_Reference
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType $template_Reference
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\User_LanguageObjectType $document_Language_Reference = null, \StructType\Reference_Letter_TemplateObjectType $template_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\User_LanguageObjectType $document_Language_Reference = null, \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType $template_Reference = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -52,7 +52,7 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -60,17 +60,17 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Reference_Letter_Event_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Document_Language_Reference value
-     * @return \StructType\User_LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_LanguageObjectType|null
      */
     public function getDocument_Language_Reference()
     {
@@ -78,17 +78,17 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Language_Reference value
-     * @param \StructType\User_LanguageObjectType $document_Language_Reference
-     * @return \StructType\Reference_Letter_Event_DataType
+     * @param \WorkdayWsdl\\StructType\User_LanguageObjectType $document_Language_Reference
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType
      */
-    public function setDocument_Language_Reference(\StructType\User_LanguageObjectType $document_Language_Reference = null)
+    public function setDocument_Language_Reference(\WorkdayWsdl\\StructType\User_LanguageObjectType $document_Language_Reference = null)
     {
         $this->Document_Language_Reference = $document_Language_Reference;
         return $this;
     }
     /**
      * Get Template_Reference value
-     * @return \StructType\Reference_Letter_TemplateObjectType|null
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType|null
      */
     public function getTemplate_Reference()
     {
@@ -96,10 +96,10 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Template_Reference value
-     * @param \StructType\Reference_Letter_TemplateObjectType $template_Reference
-     * @return \StructType\Reference_Letter_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType $template_Reference
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType
      */
-    public function setTemplate_Reference(\StructType\Reference_Letter_TemplateObjectType $template_Reference = null)
+    public function setTemplate_Reference(\WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType $template_Reference = null)
     {
         $this->Template_Reference = $template_Reference;
         return $this;
@@ -110,7 +110,7 @@ class Reference_Letter_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reference_Letter_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_Event_DataType
      */
     public static function __set_state(array $array)
     {

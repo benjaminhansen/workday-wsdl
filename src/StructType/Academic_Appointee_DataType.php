@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Person Name Data
      * - minOccurs: 0
-     * @var \StructType\Person_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_DataType
      */
     public $Person_Data;
     /**
@@ -25,7 +25,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Person Identification Data
      * - minOccurs: 0
-     * @var \StructType\Person_Identification_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Identification_DataType
      */
     public $Person_Identification_Data;
     /**
@@ -33,7 +33,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Generic Personal Information Data
      * - minOccurs: 0
-     * @var \StructType\Generic_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType
      */
     public $Personal_Information_Data;
     /**
@@ -41,7 +41,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Person Photo Data
      * - minOccurs: 0
-     * @var \StructType\Person_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Photo_DataType
      */
     public $Person_Photo_Data;
     /**
@@ -50,7 +50,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * - documentation: Academic Appointment Snapshot Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_Snapshot_DataType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType[]
      */
     public $Appointment_Data;
     /**
@@ -60,13 +60,13 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * @uses Academic_Appointee_DataType::setPersonal_Information_Data()
      * @uses Academic_Appointee_DataType::setPerson_Photo_Data()
      * @uses Academic_Appointee_DataType::setAppointment_Data()
-     * @param \StructType\Person_Name_DataType $person_Data
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
-     * @param \StructType\Generic_Personal_Information_DataType $personal_Information_Data
-     * @param \StructType\Person_Photo_DataType $person_Photo_Data
-     * @param \StructType\Academic_Appointment_Snapshot_DataType[] $appointment_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Data
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
+     * @param \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType[] $appointment_Data
      */
-    public function __construct(\StructType\Person_Name_DataType $person_Data = null, \StructType\Person_Identification_DataType $person_Identification_Data = null, \StructType\Generic_Personal_Information_DataType $personal_Information_Data = null, \StructType\Person_Photo_DataType $person_Photo_Data = null, array $appointment_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Person_Name_DataType $person_Data = null, \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null, \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null, \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data = null, array $appointment_Data = array())
     {
         $this
             ->setPerson_Data($person_Data)
@@ -77,7 +77,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Data value
-     * @return \StructType\Person_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType|null
      */
     public function getPerson_Data()
     {
@@ -85,17 +85,17 @@ class Academic_Appointee_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Data value
-     * @param \StructType\Person_Name_DataType $person_Data
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $person_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
-    public function setPerson_Data(\StructType\Person_Name_DataType $person_Data = null)
+    public function setPerson_Data(\WorkdayWsdl\\StructType\Person_Name_DataType $person_Data = null)
     {
         $this->Person_Data = $person_Data;
         return $this;
     }
     /**
      * Get Person_Identification_Data value
-     * @return \StructType\Person_Identification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Identification_DataType|null
      */
     public function getPerson_Identification_Data()
     {
@@ -103,17 +103,17 @@ class Academic_Appointee_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Identification_Data value
-     * @param \StructType\Person_Identification_DataType $person_Identification_Data
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
-    public function setPerson_Identification_Data(\StructType\Person_Identification_DataType $person_Identification_Data = null)
+    public function setPerson_Identification_Data(\WorkdayWsdl\\StructType\Person_Identification_DataType $person_Identification_Data = null)
     {
         $this->Person_Identification_Data = $person_Identification_Data;
         return $this;
     }
     /**
      * Get Personal_Information_Data value
-     * @return \StructType\Generic_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType|null
      */
     public function getPersonal_Information_Data()
     {
@@ -121,17 +121,17 @@ class Academic_Appointee_DataType extends AbstractStructBase
     }
     /**
      * Set Personal_Information_Data value
-     * @param \StructType\Generic_Personal_Information_DataType $personal_Information_Data
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
-    public function setPersonal_Information_Data(\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null)
+    public function setPersonal_Information_Data(\WorkdayWsdl\\StructType\Generic_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this->Personal_Information_Data = $personal_Information_Data;
         return $this;
     }
     /**
      * Get Person_Photo_Data value
-     * @return \StructType\Person_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Photo_DataType|null
      */
     public function getPerson_Photo_Data()
     {
@@ -139,17 +139,17 @@ class Academic_Appointee_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Photo_Data value
-     * @param \StructType\Person_Photo_DataType $person_Photo_Data
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
-    public function setPerson_Photo_Data(\StructType\Person_Photo_DataType $person_Photo_Data = null)
+    public function setPerson_Photo_Data(\WorkdayWsdl\\StructType\Person_Photo_DataType $person_Photo_Data = null)
     {
         $this->Person_Photo_Data = $person_Photo_Data;
         return $this;
     }
     /**
      * Get Appointment_Data value
-     * @return \StructType\Academic_Appointment_Snapshot_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType[]|null
      */
     public function getAppointment_Data()
     {
@@ -167,12 +167,12 @@ class Academic_Appointee_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Appointee_DataTypeAppointment_DataItem) {
             // validation for constraint: itemType
-            if (!$academic_Appointee_DataTypeAppointment_DataItem instanceof \StructType\Academic_Appointment_Snapshot_DataType) {
+            if (!$academic_Appointee_DataTypeAppointment_DataItem instanceof \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType) {
                 $invalidValues[] = is_object($academic_Appointee_DataTypeAppointment_DataItem) ? get_class($academic_Appointee_DataTypeAppointment_DataItem) : sprintf('%s(%s)', gettype($academic_Appointee_DataTypeAppointment_DataItem), var_export($academic_Appointee_DataTypeAppointment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Appointment_Data property can only contain items of type \StructType\Academic_Appointment_Snapshot_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Appointment_Data property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -180,8 +180,8 @@ class Academic_Appointee_DataType extends AbstractStructBase
     /**
      * Set Appointment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_Snapshot_DataType[] $appointment_Data
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType[] $appointment_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
     public function setAppointment_Data(array $appointment_Data = array())
     {
@@ -195,14 +195,14 @@ class Academic_Appointee_DataType extends AbstractStructBase
     /**
      * Add item to Appointment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Appointment_Snapshot_DataType $item
-     * @return \StructType\Academic_Appointee_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
-    public function addToAppointment_Data(\StructType\Academic_Appointment_Snapshot_DataType $item)
+    public function addToAppointment_Data(\WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Appointment_Snapshot_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Appointment_Data property can only contain items of type \StructType\Academic_Appointment_Snapshot_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Appointment_Data property can only contain items of type \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Appointment_Data[] = $item;
         return $this;
@@ -213,7 +213,7 @@ class Academic_Appointee_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointee_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_DataType
      */
     public static function __set_state(array $array)
     {

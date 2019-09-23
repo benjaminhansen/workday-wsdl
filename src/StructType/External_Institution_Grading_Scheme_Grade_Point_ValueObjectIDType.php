@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,17 +50,17 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType extends 
     }
     /**
      * Set type value
-     * @uses \EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\External_Institution_Grading_Scheme_Grade_Point_ValueReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -76,7 +76,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType extends 
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
      */
     public function set_($_ = null)
     {
@@ -93,7 +93,7 @@ class External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType extends 
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Institution_Grading_Scheme_Grade_Point_ValueObjectIDType
      */
     public static function __set_state(array $array)
     {

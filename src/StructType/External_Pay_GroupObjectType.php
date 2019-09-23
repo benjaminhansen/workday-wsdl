@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class External_Pay_GroupObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Pay_GroupObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class External_Pay_GroupObjectType extends AbstractStructBase
      * Constructor method for External_Pay_GroupObjectType
      * @uses External_Pay_GroupObjectType::setID()
      * @uses External_Pay_GroupObjectType::setDescriptor()
-     * @param \StructType\External_Pay_GroupObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class External_Pay_GroupObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\External_Pay_GroupObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class External_Pay_GroupObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $external_Pay_GroupObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Pay_GroupObjectTypeIDItem instanceof \StructType\External_Pay_GroupObjectIDType) {
+            if (!$external_Pay_GroupObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType) {
                 $invalidValues[] = is_object($external_Pay_GroupObjectTypeIDItem) ? get_class($external_Pay_GroupObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Pay_GroupObjectTypeIDItem), var_export($external_Pay_GroupObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Pay_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class External_Pay_GroupObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Pay_GroupObjectIDType[] $iD
-     * @return \StructType\External_Pay_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class External_Pay_GroupObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Pay_GroupObjectIDType $item
-     * @return \StructType\External_Pay_GroupObjectType
+     * @param \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectType
      */
-    public function addToID(\StructType\External_Pay_GroupObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Pay_GroupObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Pay_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Pay_GroupObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class External_Pay_GroupObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Pay_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class External_Pay_GroupObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Pay_GroupObjectType
+     * @return \WorkdayWsdl\\StructType\External_Pay_GroupObjectType
      */
     public static function __set_state(array $array)
     {

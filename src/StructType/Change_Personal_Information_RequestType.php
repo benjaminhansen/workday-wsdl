@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Change_Personal_Information_Data
-     * @var \StructType\Change_Personal_Information_Business_Process_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType
      */
     public $Change_Personal_Information_Data;
     /**
@@ -36,11 +36,11 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
      * @uses Change_Personal_Information_RequestType::setBusiness_Process_Parameters()
      * @uses Change_Personal_Information_RequestType::setChange_Personal_Information_Data()
      * @uses Change_Personal_Information_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -49,7 +49,7 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -57,17 +57,17 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Change_Personal_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Change_Personal_Information_Data value
-     * @return \StructType\Change_Personal_Information_Business_Process_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType|null
      */
     public function getChange_Personal_Information_Data()
     {
@@ -75,10 +75,10 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
     }
     /**
      * Set Change_Personal_Information_Data value
-     * @param \StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data
-     * @return \StructType\Change_Personal_Information_RequestType
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_RequestType
      */
-    public function setChange_Personal_Information_Data(\StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data = null)
+    public function setChange_Personal_Information_Data(\WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType $change_Personal_Information_Data = null)
     {
         $this->Change_Personal_Information_Data = $change_Personal_Information_Data;
         return $this;
@@ -94,7 +94,7 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Personal_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Change_Personal_Information_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Personal_Information_RequestType
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_RequestType
      */
     public static function __set_state(array $array)
     {

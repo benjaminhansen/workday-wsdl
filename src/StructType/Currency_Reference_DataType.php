@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,17 +40,17 @@ class Currency_Reference_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Code value
-     * @uses \EnumType\CurrencyEnumeration::valueIsValid()
-     * @uses \EnumType\CurrencyEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\CurrencyEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\CurrencyEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currency_Code
-     * @return \StructType\Currency_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Currency_Reference_DataType
      */
     public function setCurrency_Code($currency_Code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyEnumeration::valueIsValid($currency_Code)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CurrencyEnumeration', is_array($currency_Code) ? implode(', ', $currency_Code) : var_export($currency_Code, true), implode(', ', \EnumType\CurrencyEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\CurrencyEnumeration::valueIsValid($currency_Code)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\CurrencyEnumeration', is_array($currency_Code) ? implode(', ', $currency_Code) : var_export($currency_Code, true), implode(', ', \WorkdayWsdl\\EnumType\CurrencyEnumeration::getValidValues())), __LINE__);
         }
         $this->Currency_Code = $currency_Code;
         return $this;
@@ -61,7 +61,7 @@ class Currency_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Currency_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Currency_Reference_DataType
      */
     public static function __set_state(array $array)
     {

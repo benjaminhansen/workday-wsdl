@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Lives_With_Worker_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Lives_With_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Lives_With_Worker_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -76,7 +76,7 @@ class Lives_With_Worker_DataType extends AbstractStructBase
     /**
      * Set Lives_With_Worker value
      * @param bool $lives_With_Worker
-     * @return \StructType\Lives_With_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Lives_With_Worker_DataType
      */
     public function setLives_With_Worker($lives_With_Worker = null)
     {
@@ -93,7 +93,7 @@ class Lives_With_Worker_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Lives_With_Worker_DataType
+     * @return \WorkdayWsdl\\StructType\Lives_With_Worker_DataType
      */
     public static function __set_state(array $array)
     {

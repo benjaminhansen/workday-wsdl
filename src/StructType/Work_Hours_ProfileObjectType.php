@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Work_Hours_ProfileObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
      * Constructor method for Work_Hours_ProfileObjectType
      * @uses Work_Hours_ProfileObjectType::setID()
      * @uses Work_Hours_ProfileObjectType::setDescriptor()
-     * @param \StructType\Work_Hours_ProfileObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Work_Hours_ProfileObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $work_Hours_ProfileObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$work_Hours_ProfileObjectTypeIDItem instanceof \StructType\Work_Hours_ProfileObjectIDType) {
+            if (!$work_Hours_ProfileObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType) {
                 $invalidValues[] = is_object($work_Hours_ProfileObjectTypeIDItem) ? get_class($work_Hours_ProfileObjectTypeIDItem) : sprintf('%s(%s)', gettype($work_Hours_ProfileObjectTypeIDItem), var_export($work_Hours_ProfileObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Work_Hours_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Hours_ProfileObjectIDType[] $iD
-     * @return \StructType\Work_Hours_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Work_Hours_ProfileObjectIDType $item
-     * @return \StructType\Work_Hours_ProfileObjectType
+     * @param \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType
      */
-    public function addToID(\StructType\Work_Hours_ProfileObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Work_Hours_ProfileObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Work_Hours_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Work_Hours_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Work_Hours_ProfileObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Hours_ProfileObjectType
+     * @return \WorkdayWsdl\\StructType\Work_Hours_ProfileObjectType
      */
     public static function __set_state(array $array)
     {

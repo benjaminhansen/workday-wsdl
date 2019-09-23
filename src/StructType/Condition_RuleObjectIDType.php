@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Condition_RuleObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Condition_RuleReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Condition_RuleReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Condition_RuleReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Condition_RuleReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Condition_RuleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Condition_RuleReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Condition_RuleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Condition_RuleReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Condition_RuleReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Condition_RuleReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Condition_RuleReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Condition_RuleObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Condition_RuleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Condition_RuleObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Condition_RuleObjectIDType
+     * @return \WorkdayWsdl\\StructType\Condition_RuleObjectIDType
      */
     public static function __set_state(array $array)
     {

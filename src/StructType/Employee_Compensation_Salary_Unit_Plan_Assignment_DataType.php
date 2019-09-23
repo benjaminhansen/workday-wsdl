@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
     public $Unit_Salary_Plan_Name;
     /**
      * The Compensation_Element_Values_for_Unit_Salary_Plan_Data
-     * @var \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType
      */
     public $Compensation_Element_Values_for_Unit_Salary_Plan_Data;
     /**
@@ -32,9 +32,9 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
      * @uses Employee_Compensation_Salary_Unit_Plan_Assignment_DataType::setUnit_Salary_Plan_Name()
      * @uses Employee_Compensation_Salary_Unit_Plan_Assignment_DataType::setCompensation_Element_Values_for_Unit_Salary_Plan_Data()
      * @param string $unit_Salary_Plan_Name
-     * @param \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data
      */
-    public function __construct($unit_Salary_Plan_Name = null, \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data = null)
+    public function __construct($unit_Salary_Plan_Name = null, \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data = null)
     {
         $this
             ->setUnit_Salary_Plan_Name($unit_Salary_Plan_Name)
@@ -51,7 +51,7 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
     /**
      * Set Unit_Salary_Plan_Name value
      * @param string $unit_Salary_Plan_Name
-     * @return \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
      */
     public function setUnit_Salary_Plan_Name($unit_Salary_Plan_Name = null)
     {
@@ -64,7 +64,7 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
     }
     /**
      * Get Compensation_Element_Values_for_Unit_Salary_Plan_Data value
-     * @return \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType|null
      */
     public function getCompensation_Element_Values_for_Unit_Salary_Plan_Data()
     {
@@ -72,10 +72,10 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
     }
     /**
      * Set Compensation_Element_Values_for_Unit_Salary_Plan_Data value
-     * @param \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data
-     * @return \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Values_for_Unit_Salary_Plan_Data(\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data = null)
+    public function setCompensation_Element_Values_for_Unit_Salary_Plan_Data(\WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Unit_Salary_Plan_Data = null)
     {
         $this->Compensation_Element_Values_for_Unit_Salary_Plan_Data = $compensation_Element_Values_for_Unit_Salary_Plan_Data;
         return $this;
@@ -86,7 +86,7 @@ class Employee_Compensation_Salary_Unit_Plan_Assignment_DataType extends Abstrac
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Salary_Unit_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class External_Form_I_9_SourceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External Form I-9 Source Reference
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_SourceObjectType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType
      */
     public $External_Form_I_9_Source_Reference;
     /**
@@ -25,17 +25,17 @@ class External_Form_I_9_SourceType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: External Form I-9 Source Data
      * - minOccurs: 0
-     * @var \StructType\External_Form_I_9_Source_DataType
+     * @var \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType
      */
     public $External_Form_I_9_Source_Data;
     /**
      * Constructor method for External_Form_I-9_SourceType
      * @uses External_Form_I_9_SourceType::setExternal_Form_I_9_Source_Reference()
      * @uses External_Form_I_9_SourceType::setExternal_Form_I_9_Source_Data()
-     * @param \StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
-     * @param \StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference
+     * @param \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data
      */
-    public function __construct(\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, \StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null, \WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data = null)
     {
         $this
             ->setExternal_Form_I_9_Source_Reference($external_Form_I_9_Source_Reference)
@@ -52,9 +52,9 @@ class External_Form_I_9_SourceType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Reference value
      * @param external_Form_I_Source_Reference $external_Form_I_Source_Reference
-     * @return \StructType\External_Form_I_9_SourceType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_SourceType
      */
-    public function setExternal_Form_I_9_Source_Reference(\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
+    public function setExternal_Form_I_9_Source_Reference(\WorkdayWsdl\\StructType\External_Form_I_9_SourceObjectType $external_Form_I_9_Source_Reference = null)
     {
         $this->External_Form_I_9_Source_Reference = $this->{'External_Form_I-9_Source_Reference'} = $external_Form_I_9_Source_Reference;
         return $this;
@@ -70,9 +70,9 @@ class External_Form_I_9_SourceType extends AbstractStructBase
     /**
      * Set external_Form_I_Source_Data value
      * @param external_Form_I_Source_Data $external_Form_I_Source_Data
-     * @return \StructType\External_Form_I_9_SourceType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_SourceType
      */
-    public function setExternal_Form_I_9_Source_Data(\StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data = null)
+    public function setExternal_Form_I_9_Source_Data(\WorkdayWsdl\\StructType\External_Form_I_9_Source_DataType $external_Form_I_9_Source_Data = null)
     {
         $this->External_Form_I_9_Source_Data = $this->{'External_Form_I-9_Source_Data'} = $external_Form_I_9_Source_Data;
         return $this;
@@ -83,7 +83,7 @@ class External_Form_I_9_SourceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Form_I_9_SourceType
+     * @return \WorkdayWsdl\\StructType\External_Form_I_9_SourceType
      */
     public static function __set_state(array $array)
     {

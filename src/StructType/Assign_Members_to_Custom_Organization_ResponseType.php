@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
      * Meta information extracted from the WSDL
      * - documentation: Returning custom organization.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Assign_Workers_to_Custom_Organization_Reference;
     /**
@@ -32,10 +32,10 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
      * Constructor method for Assign_Members_to_Custom_Organization_ResponseType
      * @uses Assign_Members_to_Custom_Organization_ResponseType::setAssign_Workers_to_Custom_Organization_Reference()
      * @uses Assign_Members_to_Custom_Organization_ResponseType::setVersion()
-     * @param \StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference
      * @param string $version
      */
-    public function __construct(\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference = null, $version = null)
     {
         $this
             ->setAssign_Workers_to_Custom_Organization_Reference($assign_Workers_to_Custom_Organization_Reference)
@@ -43,7 +43,7 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
     }
     /**
      * Get Assign_Workers_to_Custom_Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getAssign_Workers_to_Custom_Organization_Reference()
     {
@@ -51,10 +51,10 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
     }
     /**
      * Set Assign_Workers_to_Custom_Organization_Reference value
-     * @param \StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference
-     * @return \StructType\Assign_Members_to_Custom_Organization_ResponseType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_ResponseType
      */
-    public function setAssign_Workers_to_Custom_Organization_Reference(\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference = null)
+    public function setAssign_Workers_to_Custom_Organization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $assign_Workers_to_Custom_Organization_Reference = null)
     {
         $this->Assign_Workers_to_Custom_Organization_Reference = $assign_Workers_to_Custom_Organization_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Assign_Members_to_Custom_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Assign_Members_to_Custom_Organization_ResponseType extends AbstractStructB
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Members_to_Custom_Organization_ResponseType
+     * @return \WorkdayWsdl\\StructType\Assign_Members_to_Custom_Organization_ResponseType
      */
     public static function __set_state(array $array)
     {

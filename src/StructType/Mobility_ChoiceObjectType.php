@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Mobility_ChoiceObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
      * Constructor method for Mobility_ChoiceObjectType
      * @uses Mobility_ChoiceObjectType::setID()
      * @uses Mobility_ChoiceObjectType::setDescriptor()
-     * @param \StructType\Mobility_ChoiceObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Mobility_ChoiceObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $mobility_ChoiceObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$mobility_ChoiceObjectTypeIDItem instanceof \StructType\Mobility_ChoiceObjectIDType) {
+            if (!$mobility_ChoiceObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType) {
                 $invalidValues[] = is_object($mobility_ChoiceObjectTypeIDItem) ? get_class($mobility_ChoiceObjectTypeIDItem) : sprintf('%s(%s)', gettype($mobility_ChoiceObjectTypeIDItem), var_export($mobility_ChoiceObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Mobility_ChoiceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Mobility_ChoiceObjectIDType[] $iD
-     * @return \StructType\Mobility_ChoiceObjectType
+     * @param \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Mobility_ChoiceObjectIDType $item
-     * @return \StructType\Mobility_ChoiceObjectType
+     * @param \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType
      */
-    public function addToID(\StructType\Mobility_ChoiceObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Mobility_ChoiceObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Mobility_ChoiceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Mobility_ChoiceObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Mobility_ChoiceObjectType
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Mobility_ChoiceObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Mobility_ChoiceObjectType
+     * @return \WorkdayWsdl\\StructType\Mobility_ChoiceObjectType
      */
     public static function __set_state(array $array)
     {

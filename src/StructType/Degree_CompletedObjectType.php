@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Degree_CompletedObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Degree_CompletedObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Degree_CompletedObjectType extends AbstractStructBase
      * Constructor method for Degree_CompletedObjectType
      * @uses Degree_CompletedObjectType::setID()
      * @uses Degree_CompletedObjectType::setDescriptor()
-     * @param \StructType\Degree_CompletedObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Degree_CompletedObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Degree_CompletedObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Degree_CompletedObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $degree_CompletedObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$degree_CompletedObjectTypeIDItem instanceof \StructType\Degree_CompletedObjectIDType) {
+            if (!$degree_CompletedObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType) {
                 $invalidValues[] = is_object($degree_CompletedObjectTypeIDItem) ? get_class($degree_CompletedObjectTypeIDItem) : sprintf('%s(%s)', gettype($degree_CompletedObjectTypeIDItem), var_export($degree_CompletedObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Degree_CompletedObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Degree_CompletedObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Degree_CompletedObjectIDType[] $iD
-     * @return \StructType\Degree_CompletedObjectType
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Degree_CompletedObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Degree_CompletedObjectIDType $item
-     * @return \StructType\Degree_CompletedObjectType
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
-    public function addToID(\StructType\Degree_CompletedObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Degree_CompletedObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Degree_CompletedObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Degree_CompletedObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Degree_CompletedObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Degree_CompletedObjectType
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Degree_CompletedObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Degree_CompletedObjectType
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
     public static function __set_state(array $array)
     {

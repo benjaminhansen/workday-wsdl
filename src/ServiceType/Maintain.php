@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace WorkdayWsdl\\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Maintain extends AbstractSoapClientBase
     /**
      * Sets the Workday_Common_Header SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\Workday_Common_HeaderType $workday_Common_Header
+     * @param \WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderWorkday_Common_Header(\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderWorkday_Common_Header(\WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'Workday_Common_Header', $workday_Common_Header, $mustUnderstand, $actor);
     }
@@ -28,7 +28,7 @@ class Maintain extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: Creates or updates contact information for a person. Contact information includes email addresses, physical addresses, phone numbers, web addresses, and instant messenger contact information. Changes are routed through existing
      * Contact Information for Person Event business process for necessary approvals.Submitted contact information by default replaces existing entries of the same type. For example, submitting a new email address replaces the current email address. Set the
@@ -37,10 +37,10 @@ class Maintain extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Maintain_Contact_Information_for_Person_Event_RequestType $body
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_ResponseType|bool
+     * @param \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType $body
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType|bool
      */
-    public function Maintain_Contact_Information(\StructType\Maintain_Contact_Information_for_Person_Event_RequestType $body)
+    public function Maintain_Contact_Information(\WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Maintain_Contact_Information($body));
@@ -55,17 +55,17 @@ class Maintain extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: This operation adds or updates a Committee Definition
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Maintain_Committee_Definition_RequestType $body
-     * @return \StructType\Maintain_Committee_Definition_ResponseType|bool
+     * @param \WorkdayWsdl\\StructType\Maintain_Committee_Definition_RequestType $body
+     * @return \WorkdayWsdl\\StructType\Maintain_Committee_Definition_ResponseType|bool
      */
-    public function Maintain_Committee_Definition(\StructType\Maintain_Committee_Definition_RequestType $body)
+    public function Maintain_Committee_Definition(\WorkdayWsdl\\StructType\Maintain_Committee_Definition_RequestType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Maintain_Committee_Definition($body));
@@ -78,7 +78,7 @@ class Maintain extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\Maintain_Committee_Definition_ResponseType|\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\Maintain_Committee_Definition_ResponseType|\WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_ResponseType
      */
     public function getResult()
     {

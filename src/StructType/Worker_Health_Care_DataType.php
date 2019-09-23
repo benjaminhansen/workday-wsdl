@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Worker_Health_Care_DataType extends AbstractStructBase
      * - documentation: Contains the health care period data for an employee based on the benefit plan year.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_Health_Care_Period_DataType[]
+     * @var \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType[]
      */
     public $Health_Care_Period_Data;
     /**
      * Constructor method for Worker_Health_Care_DataType
      * @uses Worker_Health_Care_DataType::setHealth_Care_Period_Data()
-     * @param \StructType\Worker_Health_Care_Period_DataType[] $health_Care_Period_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType[] $health_Care_Period_Data
      */
     public function __construct(array $health_Care_Period_Data = array())
     {
@@ -33,7 +33,7 @@ class Worker_Health_Care_DataType extends AbstractStructBase
     }
     /**
      * Get Health_Care_Period_Data value
-     * @return \StructType\Worker_Health_Care_Period_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType[]|null
      */
     public function getHealth_Care_Period_Data()
     {
@@ -51,12 +51,12 @@ class Worker_Health_Care_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Health_Care_DataTypeHealth_Care_Period_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Health_Care_DataTypeHealth_Care_Period_DataItem instanceof \StructType\Worker_Health_Care_Period_DataType) {
+            if (!$worker_Health_Care_DataTypeHealth_Care_Period_DataItem instanceof \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType) {
                 $invalidValues[] = is_object($worker_Health_Care_DataTypeHealth_Care_Period_DataItem) ? get_class($worker_Health_Care_DataTypeHealth_Care_Period_DataItem) : sprintf('%s(%s)', gettype($worker_Health_Care_DataTypeHealth_Care_Period_DataItem), var_export($worker_Health_Care_DataTypeHealth_Care_Period_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Health_Care_Period_Data property can only contain items of type \StructType\Worker_Health_Care_Period_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Health_Care_Period_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Worker_Health_Care_DataType extends AbstractStructBase
     /**
      * Set Health_Care_Period_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Health_Care_Period_DataType[] $health_Care_Period_Data
-     * @return \StructType\Worker_Health_Care_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType[] $health_Care_Period_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_DataType
      */
     public function setHealth_Care_Period_Data(array $health_Care_Period_Data = array())
     {
@@ -79,14 +79,14 @@ class Worker_Health_Care_DataType extends AbstractStructBase
     /**
      * Add item to Health_Care_Period_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Health_Care_Period_DataType $item
-     * @return \StructType\Worker_Health_Care_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_DataType
      */
-    public function addToHealth_Care_Period_Data(\StructType\Worker_Health_Care_Period_DataType $item)
+    public function addToHealth_Care_Period_Data(\WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_Health_Care_Period_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Health_Care_Period_Data property can only contain items of type \StructType\Worker_Health_Care_Period_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Health_Care_Period_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Health_Care_Period_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Health_Care_Period_Data[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Worker_Health_Care_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Health_Care_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Health_Care_DataType
      */
     public static function __set_state(array $array)
     {

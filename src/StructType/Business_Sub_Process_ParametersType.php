@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -51,7 +51,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * The Business_Process_Comment_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_Comment_DataType
+     * @var \WorkdayWsdl\\StructType\Business_Process_Comment_DataType
      */
     public $Business_Process_Comment_Data;
     /**
@@ -59,7 +59,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Business_Process_Attachment_DataType[]
+     * @var \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType[]
      */
     public $Business_Process_Attachment_Data;
     /**
@@ -72,10 +72,10 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * @param bool $auto_Complete
      * @param bool $skip
      * @param bool $discard_On_Exit_Validation_Error
-     * @param \StructType\Business_Process_Comment_DataType $business_Process_Comment_Data
-     * @param \StructType\Business_Process_Attachment_DataType[] $business_Process_Attachment_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_Comment_DataType $business_Process_Comment_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType[] $business_Process_Attachment_Data
      */
-    public function __construct($auto_Complete = null, $skip = null, $discard_On_Exit_Validation_Error = null, \StructType\Business_Process_Comment_DataType $business_Process_Comment_Data = null, array $business_Process_Attachment_Data = array())
+    public function __construct($auto_Complete = null, $skip = null, $discard_On_Exit_Validation_Error = null, \WorkdayWsdl\\StructType\Business_Process_Comment_DataType $business_Process_Comment_Data = null, array $business_Process_Attachment_Data = array())
     {
         $this
             ->setAuto_Complete($auto_Complete)
@@ -126,7 +126,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param bool $auto_Complete
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
     public function setAuto_Complete($auto_Complete = null)
     {
@@ -187,7 +187,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @param bool $skip
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
     public function setSkip($skip = null)
     {
@@ -217,7 +217,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
     /**
      * Set Discard_On_Exit_Validation_Error value
      * @param bool $discard_On_Exit_Validation_Error
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
     public function setDiscard_On_Exit_Validation_Error($discard_On_Exit_Validation_Error = null)
     {
@@ -230,7 +230,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Comment_Data value
-     * @return \StructType\Business_Process_Comment_DataType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_Comment_DataType|null
      */
     public function getBusiness_Process_Comment_Data()
     {
@@ -238,17 +238,17 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Comment_Data value
-     * @param \StructType\Business_Process_Comment_DataType $business_Process_Comment_Data
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @param \WorkdayWsdl\\StructType\Business_Process_Comment_DataType $business_Process_Comment_Data
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
-    public function setBusiness_Process_Comment_Data(\StructType\Business_Process_Comment_DataType $business_Process_Comment_Data = null)
+    public function setBusiness_Process_Comment_Data(\WorkdayWsdl\\StructType\Business_Process_Comment_DataType $business_Process_Comment_Data = null)
     {
         $this->Business_Process_Comment_Data = $business_Process_Comment_Data;
         return $this;
     }
     /**
      * Get Business_Process_Attachment_Data value
-     * @return \StructType\Business_Process_Attachment_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType[]|null
      */
     public function getBusiness_Process_Attachment_Data()
     {
@@ -266,12 +266,12 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem) {
             // validation for constraint: itemType
-            if (!$business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem instanceof \StructType\Business_Process_Attachment_DataType) {
+            if (!$business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem instanceof \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType) {
                 $invalidValues[] = is_object($business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem) ? get_class($business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem) : sprintf('%s(%s)', gettype($business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem), var_export($business_Sub_Process_ParametersTypeBusiness_Process_Attachment_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Business_Process_Attachment_Data property can only contain items of type \StructType\Business_Process_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Business_Process_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -279,8 +279,8 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
     /**
      * Set Business_Process_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Business_Process_Attachment_DataType[] $business_Process_Attachment_Data
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @param \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType[] $business_Process_Attachment_Data
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
     public function setBusiness_Process_Attachment_Data(array $business_Process_Attachment_Data = array())
     {
@@ -294,14 +294,14 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
     /**
      * Add item to Business_Process_Attachment_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Business_Process_Attachment_DataType $item
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @param \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType $item
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
-    public function addToBusiness_Process_Attachment_Data(\StructType\Business_Process_Attachment_DataType $item)
+    public function addToBusiness_Process_Attachment_Data(\WorkdayWsdl\\StructType\Business_Process_Attachment_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Business_Process_Attachment_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Business_Process_Attachment_Data property can only contain items of type \StructType\Business_Process_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Business_Process_Attachment_Data property can only contain items of type \WorkdayWsdl\\StructType\Business_Process_Attachment_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Business_Process_Attachment_Data[] = $item;
         return $this;
@@ -312,7 +312,7 @@ class Business_Sub_Process_ParametersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Sub_Process_ParametersType
+     * @return \WorkdayWsdl\\StructType\Business_Sub_Process_ParametersType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
      * The Benefit_Coverage_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Enforce court order for this benefit coverage type.
-     * @var \StructType\Benefit_Coverage_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType
      */
     public $Benefit_Coverage_Type_Reference;
     /**
@@ -41,11 +41,11 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
      * @uses Qualified_Domestic_Relations_Order_Replacement_DataType::setBenefit_Coverage_Type_Reference()
      * @uses Qualified_Domestic_Relations_Order_Replacement_DataType::setStart_Date()
      * @uses Qualified_Domestic_Relations_Order_Replacement_DataType::setEnd_Date()
-     * @param \StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
      * @param string $start_Date
      * @param string $end_Date
      */
-    public function __construct(\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null, $start_Date = null, $end_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null, $start_Date = null, $end_Date = null)
     {
         $this
             ->setBenefit_Coverage_Type_Reference($benefit_Coverage_Type_Reference)
@@ -54,7 +54,7 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
     }
     /**
      * Get Benefit_Coverage_Type_Reference value
-     * @return \StructType\Benefit_Coverage_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType|null
      */
     public function getBenefit_Coverage_Type_Reference()
     {
@@ -62,10 +62,10 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
     }
     /**
      * Set Benefit_Coverage_Type_Reference value
-     * @param \StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
      */
-    public function setBenefit_Coverage_Type_Reference(\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null)
+    public function setBenefit_Coverage_Type_Reference(\WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null)
     {
         $this->Benefit_Coverage_Type_Reference = $benefit_Coverage_Type_Reference;
         return $this;
@@ -81,7 +81,7 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -103,7 +103,7 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -120,7 +120,7 @@ class Qualified_Domestic_Relations_Order_Replacement_DataType extends AbstractSt
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

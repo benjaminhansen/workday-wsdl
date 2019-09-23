@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
      * - documentation: Reference to an existing Workers' Compensation Code
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_CodeObjectType[]
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType[]
      */
     public $Workers_Compensation_Code_Reference;
     /**
      * Constructor method for Workers_Compensation_Code_Request_ReferencesType
      * @uses Workers_Compensation_Code_Request_ReferencesType::setWorkers_Compensation_Code_Reference()
-     * @param \StructType\Workers_Compensation_CodeObjectType[] $workers_Compensation_Code_Reference
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType[] $workers_Compensation_Code_Reference
      */
     public function __construct(array $workers_Compensation_Code_Reference = array())
     {
@@ -34,7 +34,7 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
     }
     /**
      * Get Workers_Compensation_Code_Reference value
-     * @return \StructType\Workers_Compensation_CodeObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType[]|null
      */
     public function getWorkers_Compensation_Code_Reference()
     {
@@ -52,12 +52,12 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem instanceof \StructType\Workers_Compensation_CodeObjectType) {
+            if (!$workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem instanceof \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType) {
                 $invalidValues[] = is_object($workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem) ? get_class($workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem) : sprintf('%s(%s)', gettype($workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem), var_export($workers_Compensation_Code_Request_ReferencesTypeWorkers_Compensation_Code_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workers_Compensation_Code_Reference property can only contain items of type \StructType\Workers_Compensation_CodeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workers_Compensation_Code_Reference property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
     /**
      * Set Workers_Compensation_Code_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_CodeObjectType[] $workers_Compensation_Code_Reference
-     * @return \StructType\Workers_Compensation_Code_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType[] $workers_Compensation_Code_Reference
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_Request_ReferencesType
      */
     public function setWorkers_Compensation_Code_Reference(array $workers_Compensation_Code_Reference = array())
     {
@@ -80,14 +80,14 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
     /**
      * Add item to Workers_Compensation_Code_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_CodeObjectType $item
-     * @return \StructType\Workers_Compensation_Code_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $item
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_Request_ReferencesType
      */
-    public function addToWorkers_Compensation_Code_Reference(\StructType\Workers_Compensation_CodeObjectType $item)
+    public function addToWorkers_Compensation_Code_Reference(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workers_Compensation_CodeObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Workers_Compensation_Code_Reference property can only contain items of type \StructType\Workers_Compensation_CodeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Workers_Compensation_Code_Reference property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workers_Compensation_Code_Reference[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Workers_Compensation_Code_Request_ReferencesType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workers_Compensation_Code_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_Code_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

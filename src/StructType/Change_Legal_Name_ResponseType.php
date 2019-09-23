@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Event ID of the Legal Name Change Event.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Legal_Name_Change_Event_Reference;
     /**
@@ -31,10 +31,10 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
      * Constructor method for Change_Legal_Name_ResponseType
      * @uses Change_Legal_Name_ResponseType::setLegal_Name_Change_Event_Reference()
      * @uses Change_Legal_Name_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference = null, $version = null)
     {
         $this
             ->setLegal_Name_Change_Event_Reference($legal_Name_Change_Event_Reference)
@@ -42,7 +42,7 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
     }
     /**
      * Get Legal_Name_Change_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getLegal_Name_Change_Event_Reference()
     {
@@ -50,10 +50,10 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
     }
     /**
      * Set Legal_Name_Change_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference
-     * @return \StructType\Change_Legal_Name_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_ResponseType
      */
-    public function setLegal_Name_Change_Event_Reference(\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference = null)
+    public function setLegal_Name_Change_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $legal_Name_Change_Event_Reference = null)
     {
         $this->Legal_Name_Change_Event_Reference = $legal_Name_Change_Event_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Change_Legal_Name_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Change_Legal_Name_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Legal_Name_ResponseType
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_ResponseType
      */
     public static function __set_state(array $array)
     {

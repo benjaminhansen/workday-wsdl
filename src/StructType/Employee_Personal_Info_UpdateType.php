@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,12 +14,12 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
 {
     /**
      * The Employee_Reference
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_Reference;
     /**
      * The Employee_Personal_Info_Data
-     * @var \StructType\Worker_Personal_Info_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType
      */
     public $Employee_Personal_Info_Data;
     /**
@@ -34,11 +34,11 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
      * @uses Employee_Personal_Info_UpdateType::setEmployee_Reference()
      * @uses Employee_Personal_Info_UpdateType::setEmployee_Personal_Info_Data()
      * @uses Employee_Personal_Info_UpdateType::setVersion()
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @param \StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data
      * @param string $version
      */
-    public function __construct(\StructType\Employee_ReferenceType $employee_Reference = null, \StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null, \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data = null, $version = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -47,7 +47,7 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_Reference()
     {
@@ -55,17 +55,17 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @return \StructType\Employee_Personal_Info_UpdateType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Personal_Info_UpdateType
      */
-    public function setEmployee_Reference(\StructType\Employee_ReferenceType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Employee_Personal_Info_Data value
-     * @return \StructType\Worker_Personal_Info_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType|null
      */
     public function getEmployee_Personal_Info_Data()
     {
@@ -73,10 +73,10 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Set Employee_Personal_Info_Data value
-     * @param \StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data
-     * @return \StructType\Employee_Personal_Info_UpdateType
+     * @param \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Personal_Info_UpdateType
      */
-    public function setEmployee_Personal_Info_Data(\StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data = null)
+    public function setEmployee_Personal_Info_Data(\WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $employee_Personal_Info_Data = null)
     {
         $this->Employee_Personal_Info_Data = $employee_Personal_Info_Data;
         return $this;
@@ -92,7 +92,7 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Employee_Personal_Info_UpdateType
+     * @return \WorkdayWsdl\\StructType\Employee_Personal_Info_UpdateType
      */
     public function setVersion($version = null)
     {
@@ -109,7 +109,7 @@ class Employee_Personal_Info_UpdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Personal_Info_UpdateType
+     * @return \WorkdayWsdl\\StructType\Employee_Personal_Info_UpdateType
      */
     public static function __set_state(array $array)
     {

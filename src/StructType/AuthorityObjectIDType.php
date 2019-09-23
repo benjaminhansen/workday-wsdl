@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class AuthorityObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\AuthorityReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\AuthorityReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\AuthorityReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\AuthorityReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\AuthorityObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AuthorityReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\AuthorityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\AuthorityReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\AuthorityReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\AuthorityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\AuthorityReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class AuthorityObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\AuthorityObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class AuthorityObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\AuthorityObjectIDType
      */
     public static function __set_state(array $array)
     {

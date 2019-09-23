@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Emergency_ContactObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Emergency_ContactObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Emergency_ContactObjectType extends AbstractStructBase
      * Constructor method for Emergency_ContactObjectType
      * @uses Emergency_ContactObjectType::setID()
      * @uses Emergency_ContactObjectType::setDescriptor()
-     * @param \StructType\Emergency_ContactObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Emergency_ContactObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Emergency_ContactObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Emergency_ContactObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $emergency_ContactObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$emergency_ContactObjectTypeIDItem instanceof \StructType\Emergency_ContactObjectIDType) {
+            if (!$emergency_ContactObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType) {
                 $invalidValues[] = is_object($emergency_ContactObjectTypeIDItem) ? get_class($emergency_ContactObjectTypeIDItem) : sprintf('%s(%s)', gettype($emergency_ContactObjectTypeIDItem), var_export($emergency_ContactObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Emergency_ContactObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Emergency_ContactObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Emergency_ContactObjectIDType[] $iD
-     * @return \StructType\Emergency_ContactObjectType
+     * @param \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Emergency_ContactObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Emergency_ContactObjectIDType $item
-     * @return \StructType\Emergency_ContactObjectType
+     * @param \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectType
      */
-    public function addToID(\StructType\Emergency_ContactObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Emergency_ContactObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Emergency_ContactObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Emergency_ContactObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Emergency_ContactObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Emergency_ContactObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Emergency_ContactObjectType
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Emergency_ContactObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Emergency_ContactObjectType
+     * @return \WorkdayWsdl\\StructType\Emergency_ContactObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -138,7 +138,7 @@ class Global_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains Address information.
      * - minOccurs: 0
-     * @var \StructType\Country_RegionObjectType
+     * @var \WorkdayWsdl\\StructType\Country_RegionObjectType
      */
     public $Country_Region_Reference;
     /**
@@ -173,7 +173,7 @@ class Global_Address_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains Address information.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -347,11 +347,11 @@ class Global_Address_DataType extends AbstractStructBase
      * @param string $city
      * @param string $city_Subdivision_1
      * @param string $city_Subdivision_2
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
      * @param string $region_Subdivision_1
      * @param string $region_Subdivision_2
      * @param string $postal_Code
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      * @param string $address_Line_1___Local
      * @param string $address_Line_2___Local
      * @param string $address_Line_3___Local
@@ -367,7 +367,7 @@ class Global_Address_DataType extends AbstractStructBase
      * @param string $region_Subdivision_1___Local
      * @param string $region_Subdivision_2___Local
      */
-    public function __construct($address_Line_1 = null, $address_Line_2 = null, $address_Line_3 = null, $address_Line_4 = null, $address_Line_5 = null, $address_Line_6 = null, $address_Line_7 = null, $address_Line_8 = null, $address_Line_9 = null, $city = null, $city_Subdivision_1 = null, $city_Subdivision_2 = null, \StructType\Country_RegionObjectType $country_Region_Reference = null, $region_Subdivision_1 = null, $region_Subdivision_2 = null, $postal_Code = null, \StructType\CountryObjectType $country_Reference = null, $address_Line_1___Local = null, $address_Line_2___Local = null, $address_Line_3___Local = null, $address_Line_4___Local = null, $address_Line_5___Local = null, $address_Line_6___Local = null, $address_Line_7___Local = null, $address_Line_8___Local = null, $address_Line_9___Local = null, $city___Local = null, $city_Subdivision_1___Local = null, $city_Subdivision_2___Local = null, $region_Subdivision_1___Local = null, $region_Subdivision_2___Local = null)
+    public function __construct($address_Line_1 = null, $address_Line_2 = null, $address_Line_3 = null, $address_Line_4 = null, $address_Line_5 = null, $address_Line_6 = null, $address_Line_7 = null, $address_Line_8 = null, $address_Line_9 = null, $city = null, $city_Subdivision_1 = null, $city_Subdivision_2 = null, \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null, $region_Subdivision_1 = null, $region_Subdivision_2 = null, $postal_Code = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, $address_Line_1___Local = null, $address_Line_2___Local = null, $address_Line_3___Local = null, $address_Line_4___Local = null, $address_Line_5___Local = null, $address_Line_6___Local = null, $address_Line_7___Local = null, $address_Line_8___Local = null, $address_Line_9___Local = null, $city___Local = null, $city_Subdivision_1___Local = null, $city_Subdivision_2___Local = null, $region_Subdivision_1___Local = null, $region_Subdivision_2___Local = null)
     {
         $this
             ->setAddress_Line_1($address_Line_1)
@@ -413,7 +413,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_1($address_Line_1 = null)
     {
@@ -435,7 +435,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_2($address_Line_2 = null)
     {
@@ -457,7 +457,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_3($address_Line_3 = null)
     {
@@ -479,7 +479,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_4($address_Line_4 = null)
     {
@@ -501,7 +501,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_5($address_Line_5 = null)
     {
@@ -523,7 +523,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_6($address_Line_6 = null)
     {
@@ -545,7 +545,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_7($address_Line_7 = null)
     {
@@ -567,7 +567,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_8($address_Line_8 = null)
     {
@@ -589,7 +589,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line value
      * @param address_Line $address_Line
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_9($address_Line_9 = null)
     {
@@ -611,7 +611,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity($city = null)
     {
@@ -633,7 +633,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set city_Subdivision value
      * @param city_Subdivision $city_Subdivision
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity_Subdivision_1($city_Subdivision_1 = null)
     {
@@ -655,7 +655,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set city_Subdivision value
      * @param city_Subdivision $city_Subdivision
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity_Subdivision_2($city_Subdivision_2 = null)
     {
@@ -668,7 +668,7 @@ class Global_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Region_Reference value
-     * @return \StructType\Country_RegionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_RegionObjectType|null
      */
     public function getCountry_Region_Reference()
     {
@@ -676,10 +676,10 @@ class Global_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Region_Reference value
-     * @param \StructType\Country_RegionObjectType $country_Region_Reference
-     * @return \StructType\Global_Address_DataType
+     * @param \WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
-    public function setCountry_Region_Reference(\StructType\Country_RegionObjectType $country_Region_Reference = null)
+    public function setCountry_Region_Reference(\WorkdayWsdl\\StructType\Country_RegionObjectType $country_Region_Reference = null)
     {
         $this->Country_Region_Reference = $country_Region_Reference;
         return $this;
@@ -695,7 +695,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set region_Subdivision value
      * @param region_Subdivision $region_Subdivision
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setRegion_Subdivision_1($region_Subdivision_1 = null)
     {
@@ -717,7 +717,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set region_Subdivision value
      * @param region_Subdivision $region_Subdivision
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setRegion_Subdivision_2($region_Subdivision_2 = null)
     {
@@ -739,7 +739,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set Postal_Code value
      * @param string $postal_Code
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setPostal_Code($postal_Code = null)
     {
@@ -752,7 +752,7 @@ class Global_Address_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -760,10 +760,10 @@ class Global_Address_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Global_Address_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -779,7 +779,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_1___Local($address_Line_1___Local = null)
     {
@@ -801,7 +801,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_2___Local($address_Line_2___Local = null)
     {
@@ -823,7 +823,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_3___Local($address_Line_3___Local = null)
     {
@@ -845,7 +845,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_4___Local($address_Line_4___Local = null)
     {
@@ -867,7 +867,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_5___Local($address_Line_5___Local = null)
     {
@@ -889,7 +889,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_6___Local($address_Line_6___Local = null)
     {
@@ -911,7 +911,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_7___Local($address_Line_7___Local = null)
     {
@@ -933,7 +933,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_8___Local($address_Line_8___Local = null)
     {
@@ -955,7 +955,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set address_Line___Local value
      * @param address_Line___Local $address_Line___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setAddress_Line_9___Local($address_Line_9___Local = null)
     {
@@ -977,7 +977,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set City___Local value
      * @param string $city___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity___Local($city___Local = null)
     {
@@ -999,7 +999,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set city_Subdivision___Local value
      * @param city_Subdivision___Local $city_Subdivision___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity_Subdivision_1___Local($city_Subdivision_1___Local = null)
     {
@@ -1021,7 +1021,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set city_Subdivision___Local value
      * @param city_Subdivision___Local $city_Subdivision___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setCity_Subdivision_2___Local($city_Subdivision_2___Local = null)
     {
@@ -1043,7 +1043,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set region_Subdivision___Local value
      * @param region_Subdivision___Local $region_Subdivision___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setRegion_Subdivision_1___Local($region_Subdivision_1___Local = null)
     {
@@ -1065,7 +1065,7 @@ class Global_Address_DataType extends AbstractStructBase
     /**
      * Set region_Subdivision___Local value
      * @param region_Subdivision___Local $region_Subdivision___Local
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public function setRegion_Subdivision_2___Local($region_Subdivision_2___Local = null)
     {
@@ -1082,7 +1082,7 @@ class Global_Address_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Global_Address_DataType
+     * @return \WorkdayWsdl\\StructType\Global_Address_DataType
      */
     public static function __set_state(array $array)
     {

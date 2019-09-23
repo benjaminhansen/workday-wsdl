@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Relationship of the emergency contact to the person.
      * - maxOccurs: unbounded
-     * @var \StructType\Related_Person_RelationshipObjectType[]
+     * @var \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[]
      */
     public $Related_Person_Relationship_Reference;
     /**
@@ -55,7 +55,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
      * - documentation: The preferred language for the emergency contact.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\LanguageObjectType[]
+     * @var \WorkdayWsdl\\StructType\LanguageObjectType[]
      */
     public $Language_Reference;
     /**
@@ -63,7 +63,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The name and contact information of the emergency contact
      * - minOccurs: 0
-     * @var \StructType\Emergency_Contact_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
     public $Emergency_Contact_Personal_Information_Data;
     /**
@@ -77,11 +77,11 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
      * @param string $emergency_Contact_ID
      * @param bool $primary
      * @param float $priority
-     * @param \StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
-     * @param \StructType\LanguageObjectType[] $language_Reference
-     * @param \StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType[] $language_Reference
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data
      */
-    public function __construct($emergency_Contact_ID = null, $primary = null, $priority = null, array $related_Person_Relationship_Reference = array(), array $language_Reference = array(), \StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data = null)
+    public function __construct($emergency_Contact_ID = null, $primary = null, $priority = null, array $related_Person_Relationship_Reference = array(), array $language_Reference = array(), \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data = null)
     {
         $this
             ->setEmergency_Contact_ID($emergency_Contact_ID)
@@ -102,7 +102,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Emergency_Contact_ID value
      * @param string $emergency_Contact_ID
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public function setEmergency_Contact_ID($emergency_Contact_ID = null)
     {
@@ -124,7 +124,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Primary value
      * @param bool $primary
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public function setPrimary($primary = null)
     {
@@ -146,7 +146,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Priority value
      * @param float $priority
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public function setPriority($priority = null)
     {
@@ -167,7 +167,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     }
     /**
      * Get Related_Person_Relationship_Reference value
-     * @return \StructType\Related_Person_RelationshipObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[]|null
      */
     public function getRelated_Person_Relationship_Reference()
     {
@@ -185,12 +185,12 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem instanceof \StructType\Related_Person_RelationshipObjectType) {
+            if (!$change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType) {
                 $invalidValues[] = is_object($change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem) ? get_class($change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem) : sprintf('%s(%s)', gettype($change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem), var_export($change_Emergency_Contact_DataTypeRelated_Person_Relationship_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Related_Person_Relationship_Reference property can only contain items of type \StructType\Related_Person_RelationshipObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Related_Person_Relationship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -198,8 +198,8 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Related_Person_Relationship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType[] $related_Person_Relationship_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public function setRelated_Person_Relationship_Reference(array $related_Person_Relationship_Reference = array())
     {
@@ -213,21 +213,21 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Add item to Related_Person_Relationship_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectType $item
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $item
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
-    public function addToRelated_Person_Relationship_Reference(\StructType\Related_Person_RelationshipObjectType $item)
+    public function addToRelated_Person_Relationship_Reference(\WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Related_Person_RelationshipObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Related_Person_Relationship_Reference property can only contain items of type \StructType\Related_Person_RelationshipObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Related_Person_Relationship_Reference property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Related_Person_Relationship_Reference[] = $item;
         return $this;
     }
     /**
      * Get Language_Reference value
-     * @return \StructType\LanguageObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\LanguageObjectType[]|null
      */
     public function getLanguage_Reference()
     {
@@ -245,12 +245,12 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $change_Emergency_Contact_DataTypeLanguage_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$change_Emergency_Contact_DataTypeLanguage_ReferenceItem instanceof \StructType\LanguageObjectType) {
+            if (!$change_Emergency_Contact_DataTypeLanguage_ReferenceItem instanceof \WorkdayWsdl\\StructType\LanguageObjectType) {
                 $invalidValues[] = is_object($change_Emergency_Contact_DataTypeLanguage_ReferenceItem) ? get_class($change_Emergency_Contact_DataTypeLanguage_ReferenceItem) : sprintf('%s(%s)', gettype($change_Emergency_Contact_DataTypeLanguage_ReferenceItem), var_export($change_Emergency_Contact_DataTypeLanguage_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language_Reference property can only contain items of type \StructType\LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\LanguageObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -258,8 +258,8 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Set Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LanguageObjectType[] $language_Reference
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType[] $language_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public function setLanguage_Reference(array $language_Reference = array())
     {
@@ -273,21 +273,21 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     /**
      * Add item to Language_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\LanguageObjectType $item
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType $item
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
-    public function addToLanguage_Reference(\StructType\LanguageObjectType $item)
+    public function addToLanguage_Reference(\WorkdayWsdl\\StructType\LanguageObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\LanguageObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Language_Reference property can only contain items of type \StructType\LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\LanguageObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Language_Reference property can only contain items of type \WorkdayWsdl\\StructType\LanguageObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language_Reference[] = $item;
         return $this;
     }
     /**
      * Get Emergency_Contact_Personal_Information_Data value
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType|null
      */
     public function getEmergency_Contact_Personal_Information_Data()
     {
@@ -295,10 +295,10 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
     }
     /**
      * Set Emergency_Contact_Personal_Information_Data value
-     * @param \StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
-    public function setEmergency_Contact_Personal_Information_Data(\StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data = null)
+    public function setEmergency_Contact_Personal_Information_Data(\WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType $emergency_Contact_Personal_Information_Data = null)
     {
         $this->Emergency_Contact_Personal_Information_Data = $emergency_Contact_Personal_Information_Data;
         return $this;
@@ -309,7 +309,7 @@ class Change_Emergency_Contact_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Emergency_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Emergency_Contact_DataType
      */
     public static function __set_state(array $array)
     {

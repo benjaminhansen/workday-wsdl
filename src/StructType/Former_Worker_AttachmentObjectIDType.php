@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Former_Worker_AttachmentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Former_Worker_AttachmentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Former_Worker_AttachmentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Former_Worker_AttachmentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Former_Worker_AttachmentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Former_Worker_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_AttachmentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Former_Worker_AttachmentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Former_Worker_AttachmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Former_Worker_AttachmentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Former_Worker_AttachmentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Former_Worker_AttachmentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Former_Worker_AttachmentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Former_Worker_AttachmentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Former_Worker_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_AttachmentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Former_Worker_AttachmentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_Worker_AttachmentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Former_Worker_AttachmentObjectIDType
      */
     public static function __set_state(array $array)
     {

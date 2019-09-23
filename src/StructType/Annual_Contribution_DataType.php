@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -75,7 +75,7 @@ class Annual_Contribution_DataType extends AbstractStructBase
     /**
      * Set Annual_Contribution_Amount value
      * @param float $annual_Contribution_Amount
-     * @return \StructType\Annual_Contribution_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Contribution_DataType
      */
     public function setAnnual_Contribution_Amount($annual_Contribution_Amount = null)
     {
@@ -109,7 +109,7 @@ class Annual_Contribution_DataType extends AbstractStructBase
     /**
      * Set Prior_Contribution_Amount value
      * @param float $prior_Contribution_Amount
-     * @return \StructType\Annual_Contribution_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Contribution_DataType
      */
     public function setPrior_Contribution_Amount($prior_Contribution_Amount = null)
     {
@@ -143,7 +143,7 @@ class Annual_Contribution_DataType extends AbstractStructBase
     /**
      * Set Remaining_Periods value
      * @param float $remaining_Periods
-     * @return \StructType\Annual_Contribution_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Contribution_DataType
      */
     public function setRemaining_Periods($remaining_Periods = null)
     {
@@ -172,7 +172,7 @@ class Annual_Contribution_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Annual_Contribution_DataType
+     * @return \WorkdayWsdl\\StructType\Annual_Contribution_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_ClassificationType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier use to reference a Job Classification.
      * - minOccurs: 0
-     * @var \StructType\Job_ClassificationObjectType
+     * @var \WorkdayWsdl\\StructType\Job_ClassificationObjectType
      */
     public $Job_Classification_Reference;
     /**
@@ -25,7 +25,7 @@ class Job_ClassificationType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Job Classification Data
      * - minOccurs: 0
-     * @var \StructType\Job_Classification_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public $Job_Classification_Data;
     /**
@@ -40,11 +40,11 @@ class Job_ClassificationType extends AbstractStructBase
      * @uses Job_ClassificationType::setJob_Classification_Reference()
      * @uses Job_ClassificationType::setJob_Classification_Data()
      * @uses Job_ClassificationType::setDelete()
-     * @param \StructType\Job_ClassificationObjectType $job_Classification_Reference
-     * @param \StructType\Job_Classification_DataType $job_Classification_Data
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Classification_DataType $job_Classification_Data
      * @param bool $delete
      */
-    public function __construct(\StructType\Job_ClassificationObjectType $job_Classification_Reference = null, \StructType\Job_Classification_DataType $job_Classification_Data = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference = null, \WorkdayWsdl\\StructType\Job_Classification_DataType $job_Classification_Data = null, $delete = null)
     {
         $this
             ->setJob_Classification_Reference($job_Classification_Reference)
@@ -53,7 +53,7 @@ class Job_ClassificationType extends AbstractStructBase
     }
     /**
      * Get Job_Classification_Reference value
-     * @return \StructType\Job_ClassificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationObjectType|null
      */
     public function getJob_Classification_Reference()
     {
@@ -61,17 +61,17 @@ class Job_ClassificationType extends AbstractStructBase
     }
     /**
      * Set Job_Classification_Reference value
-     * @param \StructType\Job_ClassificationObjectType $job_Classification_Reference
-     * @return \StructType\Job_ClassificationType
+     * @param \WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationType
      */
-    public function setJob_Classification_Reference(\StructType\Job_ClassificationObjectType $job_Classification_Reference = null)
+    public function setJob_Classification_Reference(\WorkdayWsdl\\StructType\Job_ClassificationObjectType $job_Classification_Reference = null)
     {
         $this->Job_Classification_Reference = $job_Classification_Reference;
         return $this;
     }
     /**
      * Get Job_Classification_Data value
-     * @return \StructType\Job_Classification_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType|null
      */
     public function getJob_Classification_Data()
     {
@@ -79,10 +79,10 @@ class Job_ClassificationType extends AbstractStructBase
     }
     /**
      * Set Job_Classification_Data value
-     * @param \StructType\Job_Classification_DataType $job_Classification_Data
-     * @return \StructType\Job_ClassificationType
+     * @param \WorkdayWsdl\\StructType\Job_Classification_DataType $job_Classification_Data
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationType
      */
-    public function setJob_Classification_Data(\StructType\Job_Classification_DataType $job_Classification_Data = null)
+    public function setJob_Classification_Data(\WorkdayWsdl\\StructType\Job_Classification_DataType $job_Classification_Data = null)
     {
         $this->Job_Classification_Data = $job_Classification_Data;
         return $this;
@@ -98,7 +98,7 @@ class Job_ClassificationType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Job_ClassificationType
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationType
      */
     public function setDelete($delete = null)
     {
@@ -115,7 +115,7 @@ class Job_ClassificationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_ClassificationType
+     * @return \WorkdayWsdl\\StructType\Job_ClassificationType
      */
     public static function __set_state(array $array)
     {

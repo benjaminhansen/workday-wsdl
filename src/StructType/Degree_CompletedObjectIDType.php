@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Degree_CompletedObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Degree_CompletedReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Degree_CompletedReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Degree_CompletedReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Degree_CompletedReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Degree_CompletedObjectIDType
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Degree_CompletedReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Degree_CompletedReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Degree_CompletedReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Degree_CompletedReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Degree_CompletedReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Degree_CompletedReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Degree_CompletedObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Degree_CompletedObjectIDType
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Degree_CompletedObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Degree_CompletedObjectIDType
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectIDType
      */
     public static function __set_state(array $array)
     {

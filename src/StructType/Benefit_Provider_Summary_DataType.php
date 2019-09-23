@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the benefit provider.
      * - minOccurs: 0
-     * @var \StructType\Benefit_ProviderObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_ProviderObjectType
      */
     public $Benefit_Provider_Reference;
     /**
@@ -34,7 +34,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The name of the benefit provider.
      * - minOccurs: 0
-     * @var \StructType\Benefit_Provider_Identifier_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType
      */
     public $Benefit_Provider_Identifier_Type_Reference;
     /**
@@ -42,11 +42,11 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
      * @uses Benefit_Provider_Summary_DataType::setBenefit_Provider_Reference()
      * @uses Benefit_Provider_Summary_DataType::setBenefit_Provider_Name()
      * @uses Benefit_Provider_Summary_DataType::setBenefit_Provider_Identifier_Type_Reference()
-     * @param \StructType\Benefit_ProviderObjectType $benefit_Provider_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference
      * @param string $benefit_Provider_Name
-     * @param \StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference
      */
-    public function __construct(\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference = null, $benefit_Provider_Name = null, \StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference = null, $benefit_Provider_Name = null, \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference = null)
     {
         $this
             ->setBenefit_Provider_Reference($benefit_Provider_Reference)
@@ -55,7 +55,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Provider_Reference value
-     * @return \StructType\Benefit_ProviderObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_ProviderObjectType|null
      */
     public function getBenefit_Provider_Reference()
     {
@@ -63,10 +63,10 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Provider_Reference value
-     * @param \StructType\Benefit_ProviderObjectType $benefit_Provider_Reference
-     * @return \StructType\Benefit_Provider_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType
      */
-    public function setBenefit_Provider_Reference(\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference = null)
+    public function setBenefit_Provider_Reference(\WorkdayWsdl\\StructType\Benefit_ProviderObjectType $benefit_Provider_Reference = null)
     {
         $this->Benefit_Provider_Reference = $benefit_Provider_Reference;
         return $this;
@@ -82,7 +82,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
     /**
      * Set Benefit_Provider_Name value
      * @param string $benefit_Provider_Name
-     * @return \StructType\Benefit_Provider_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType
      */
     public function setBenefit_Provider_Name($benefit_Provider_Name = null)
     {
@@ -95,7 +95,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Provider_Identifier_Type_Reference value
-     * @return \StructType\Benefit_Provider_Identifier_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType|null
      */
     public function getBenefit_Provider_Identifier_Type_Reference()
     {
@@ -103,10 +103,10 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Provider_Identifier_Type_Reference value
-     * @param \StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference
-     * @return \StructType\Benefit_Provider_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType
      */
-    public function setBenefit_Provider_Identifier_Type_Reference(\StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference = null)
+    public function setBenefit_Provider_Identifier_Type_Reference(\WorkdayWsdl\\StructType\Benefit_Provider_Identifier_TypeObjectType $benefit_Provider_Identifier_Type_Reference = null)
     {
         $this->Benefit_Provider_Identifier_Type_Reference = $benefit_Provider_Identifier_Type_Reference;
         return $this;
@@ -117,7 +117,7 @@ class Benefit_Provider_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Benefit_Provider_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType
      */
     public static function __set_state(array $array)
     {

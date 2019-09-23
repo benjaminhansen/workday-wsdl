@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class Address_Line_DataType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Address_Line_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Line_DataType
      */
     public function set_($_ = null)
     {
@@ -81,7 +81,7 @@ class Address_Line_DataType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Address_Line_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Line_DataType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -103,7 +103,7 @@ class Address_Line_DataType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\Address_Line_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Line_DataType
      */
     public function setType($type = null)
     {
@@ -120,7 +120,7 @@ class Address_Line_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Address_Line_DataType
+     * @return \WorkdayWsdl\\StructType\Address_Line_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Created/Edited Work Status Rule Set
      * - minOccurs: 0
-     * @var \StructType\Work_Status_Rule_SetObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType
      */
     public $Work_Status_Rule_Set_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
      * Constructor method for Put_Work_Status_Rule_Set_ResponseType
      * @uses Put_Work_Status_Rule_Set_ResponseType::setWork_Status_Rule_Set_Reference()
      * @uses Put_Work_Status_Rule_Set_ResponseType::setVersion()
-     * @param \StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference = null, $version = null)
     {
         $this
             ->setWork_Status_Rule_Set_Reference($work_Status_Rule_Set_Reference)
@@ -42,7 +42,7 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
     }
     /**
      * Get Work_Status_Rule_Set_Reference value
-     * @return \StructType\Work_Status_Rule_SetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType|null
      */
     public function getWork_Status_Rule_Set_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
     }
     /**
      * Set Work_Status_Rule_Set_Reference value
-     * @param \StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference
-     * @return \StructType\Put_Work_Status_Rule_Set_ResponseType
+     * @param \WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Work_Status_Rule_Set_ResponseType
      */
-    public function setWork_Status_Rule_Set_Reference(\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference = null)
+    public function setWork_Status_Rule_Set_Reference(\WorkdayWsdl\\StructType\Work_Status_Rule_SetObjectType $work_Status_Rule_Set_Reference = null)
     {
         $this->Work_Status_Rule_Set_Reference = $work_Status_Rule_Set_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Work_Status_Rule_Set_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Status_Rule_Set_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Work_Status_Rule_Set_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Work_Status_Rule_Set_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Work_Status_Rule_Set_ResponseType
      */
     public static function __set_state(array $array)
     {

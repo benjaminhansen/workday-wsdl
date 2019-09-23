@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * Meta information extracted from the WSDL
      * - documentation: The Location Hierarchy in whose allowed organization assignments are changed.
      * - minOccurs: 0
-     * @var \StructType\Location_HierarchyObjectType
+     * @var \WorkdayWsdl\\StructType\Location_HierarchyObjectType
      */
     public $Location_Hierarchy_Reference;
     /**
@@ -33,10 +33,10 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * Put_Location_Hierarchy_Organization_Assignments_ResponseType
      * @uses Put_Location_Hierarchy_Organization_Assignments_ResponseType::setLocation_Hierarchy_Reference()
      * @uses Put_Location_Hierarchy_Organization_Assignments_ResponseType::setVersion()
-     * @param \StructType\Location_HierarchyObjectType $location_Hierarchy_Reference
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference = null, $version = null)
     {
         $this
             ->setLocation_Hierarchy_Reference($location_Hierarchy_Reference)
@@ -44,7 +44,7 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Get Location_Hierarchy_Reference value
-     * @return \StructType\Location_HierarchyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Location_HierarchyObjectType|null
      */
     public function getLocation_Hierarchy_Reference()
     {
@@ -52,10 +52,10 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Set Location_Hierarchy_Reference value
-     * @param \StructType\Location_HierarchyObjectType $location_Hierarchy_Reference
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
      */
-    public function setLocation_Hierarchy_Reference(\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference = null)
+    public function setLocation_Hierarchy_Reference(\WorkdayWsdl\\StructType\Location_HierarchyObjectType $location_Hierarchy_Reference = null)
     {
         $this->Location_Hierarchy_Reference = $location_Hierarchy_Reference;
         return $this;
@@ -71,7 +71,7 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -88,7 +88,7 @@ class Put_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Location_Hierarchy_Organization_Assignments_ResponseType
      */
     public static function __set_state(array $array)
     {

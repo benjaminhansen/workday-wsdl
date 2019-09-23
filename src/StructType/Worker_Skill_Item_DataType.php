@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SkillType[]
+     * @var \WorkdayWsdl\\StructType\SkillType[]
      */
     public $Worker_Skill_Item;
     /**
      * Constructor method for Worker_Skill_Item_DataType
      * @uses Worker_Skill_Item_DataType::setWorker_Skill_Item()
-     * @param \StructType\SkillType[] $worker_Skill_Item
+     * @param \WorkdayWsdl\\StructType\SkillType[] $worker_Skill_Item
      */
     public function __construct(array $worker_Skill_Item = array())
     {
@@ -32,7 +32,7 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Skill_Item value
-     * @return \StructType\SkillType[]|null
+     * @return \WorkdayWsdl\\StructType\SkillType[]|null
      */
     public function getWorker_Skill_Item()
     {
@@ -50,12 +50,12 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Skill_Item_DataTypeWorker_Skill_ItemItem) {
             // validation for constraint: itemType
-            if (!$worker_Skill_Item_DataTypeWorker_Skill_ItemItem instanceof \StructType\SkillType) {
+            if (!$worker_Skill_Item_DataTypeWorker_Skill_ItemItem instanceof \WorkdayWsdl\\StructType\SkillType) {
                 $invalidValues[] = is_object($worker_Skill_Item_DataTypeWorker_Skill_ItemItem) ? get_class($worker_Skill_Item_DataTypeWorker_Skill_ItemItem) : sprintf('%s(%s)', gettype($worker_Skill_Item_DataTypeWorker_Skill_ItemItem), var_export($worker_Skill_Item_DataTypeWorker_Skill_ItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Skill_Item property can only contain items of type \StructType\SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Skill_Item property can only contain items of type \WorkdayWsdl\\StructType\SkillType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
     /**
      * Set Worker_Skill_Item value
      * @throws \InvalidArgumentException
-     * @param \StructType\SkillType[] $worker_Skill_Item
-     * @return \StructType\Worker_Skill_Item_DataType
+     * @param \WorkdayWsdl\\StructType\SkillType[] $worker_Skill_Item
+     * @return \WorkdayWsdl\\StructType\Worker_Skill_Item_DataType
      */
     public function setWorker_Skill_Item(array $worker_Skill_Item = array())
     {
@@ -78,14 +78,14 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Skill_Item value
      * @throws \InvalidArgumentException
-     * @param \StructType\SkillType $item
-     * @return \StructType\Worker_Skill_Item_DataType
+     * @param \WorkdayWsdl\\StructType\SkillType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Skill_Item_DataType
      */
-    public function addToWorker_Skill_Item(\StructType\SkillType $item)
+    public function addToWorker_Skill_Item(\WorkdayWsdl\\StructType\SkillType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SkillType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Skill_Item property can only contain items of type \StructType\SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\SkillType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Skill_Item property can only contain items of type \WorkdayWsdl\\StructType\SkillType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Skill_Item[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Worker_Skill_Item_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Skill_Item_DataType
      */
     public static function __set_state(array $array)
     {

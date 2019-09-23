@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
      * The Competency_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Competency ID in the Competencies report.
-     * @var \StructType\CompetencyObjectType
+     * @var \WorkdayWsdl\\StructType\CompetencyObjectType
      */
     public $Competency_Reference;
     /**
@@ -26,7 +26,7 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
      * Meta information extracted from the WSDL
      * - documentation: The Proficiency Rating Behavior ID in the Proficiency Rating Behavior report.
      * - minOccurs: 0
-     * @var \StructType\Proficiency_RatingObjectType
+     * @var \WorkdayWsdl\\StructType\Proficiency_RatingObjectType
      */
     public $Proficiency_Rating_Reference;
     /**
@@ -43,11 +43,11 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
      * @uses Competency_Qualification_Profile_Replacement_DataType::setCompetency_Reference()
      * @uses Competency_Qualification_Profile_Replacement_DataType::setProficiency_Rating_Reference()
      * @uses Competency_Qualification_Profile_Replacement_DataType::setRequired()
-     * @param \StructType\CompetencyObjectType $competency_Reference
-     * @param \StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference
+     * @param \WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference
+     * @param \WorkdayWsdl\\StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference
      * @param bool $required
      */
-    public function __construct(\StructType\CompetencyObjectType $competency_Reference = null, \StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference = null, $required = null)
+    public function __construct(\WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference = null, \WorkdayWsdl\\StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference = null, $required = null)
     {
         $this
             ->setCompetency_Reference($competency_Reference)
@@ -56,7 +56,7 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
     }
     /**
      * Get Competency_Reference value
-     * @return \StructType\CompetencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CompetencyObjectType|null
      */
     public function getCompetency_Reference()
     {
@@ -64,17 +64,17 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
     }
     /**
      * Set Competency_Reference value
-     * @param \StructType\CompetencyObjectType $competency_Reference
-     * @return \StructType\Competency_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference
+     * @return \WorkdayWsdl\\StructType\Competency_Qualification_Profile_Replacement_DataType
      */
-    public function setCompetency_Reference(\StructType\CompetencyObjectType $competency_Reference = null)
+    public function setCompetency_Reference(\WorkdayWsdl\\StructType\CompetencyObjectType $competency_Reference = null)
     {
         $this->Competency_Reference = $competency_Reference;
         return $this;
     }
     /**
      * Get Proficiency_Rating_Reference value
-     * @return \StructType\Proficiency_RatingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Proficiency_RatingObjectType|null
      */
     public function getProficiency_Rating_Reference()
     {
@@ -82,10 +82,10 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
     }
     /**
      * Set Proficiency_Rating_Reference value
-     * @param \StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference
-     * @return \StructType\Competency_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference
+     * @return \WorkdayWsdl\\StructType\Competency_Qualification_Profile_Replacement_DataType
      */
-    public function setProficiency_Rating_Reference(\StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference = null)
+    public function setProficiency_Rating_Reference(\WorkdayWsdl\\StructType\Proficiency_RatingObjectType $proficiency_Rating_Reference = null)
     {
         $this->Proficiency_Rating_Reference = $proficiency_Rating_Reference;
         return $this;
@@ -101,7 +101,7 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
     /**
      * Set Required value
      * @param bool $required
-     * @return \StructType\Competency_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Competency_Qualification_Profile_Replacement_DataType
      */
     public function setRequired($required = null)
     {
@@ -118,7 +118,7 @@ class Competency_Qualification_Profile_Replacement_DataType extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Competency_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Competency_Qualification_Profile_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

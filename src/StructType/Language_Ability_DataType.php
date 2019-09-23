@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Language_Ability_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Language Proficiency.
      * - minOccurs: 0
-     * @var \StructType\Language_ProficiencyObjectType
+     * @var \WorkdayWsdl\\StructType\Language_ProficiencyObjectType
      */
     public $Language_Proficiency_Reference;
     /**
      * The Language_Ability_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Language Ability Type.
-     * @var \StructType\Language_Ability_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Language_Ability_TypeObjectType
      */
     public $Language_Ability_Type_Reference;
     /**
      * Constructor method for Language_Ability_DataType
      * @uses Language_Ability_DataType::setLanguage_Proficiency_Reference()
      * @uses Language_Ability_DataType::setLanguage_Ability_Type_Reference()
-     * @param \StructType\Language_ProficiencyObjectType $language_Proficiency_Reference
-     * @param \StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference
+     * @param \WorkdayWsdl\\StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference
      */
-    public function __construct(\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference = null, \StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference = null, \WorkdayWsdl\\StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference = null)
     {
         $this
             ->setLanguage_Proficiency_Reference($language_Proficiency_Reference)
@@ -42,7 +42,7 @@ class Language_Ability_DataType extends AbstractStructBase
     }
     /**
      * Get Language_Proficiency_Reference value
-     * @return \StructType\Language_ProficiencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Language_ProficiencyObjectType|null
      */
     public function getLanguage_Proficiency_Reference()
     {
@@ -50,17 +50,17 @@ class Language_Ability_DataType extends AbstractStructBase
     }
     /**
      * Set Language_Proficiency_Reference value
-     * @param \StructType\Language_ProficiencyObjectType $language_Proficiency_Reference
-     * @return \StructType\Language_Ability_DataType
+     * @param \WorkdayWsdl\\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference
+     * @return \WorkdayWsdl\\StructType\Language_Ability_DataType
      */
-    public function setLanguage_Proficiency_Reference(\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference = null)
+    public function setLanguage_Proficiency_Reference(\WorkdayWsdl\\StructType\Language_ProficiencyObjectType $language_Proficiency_Reference = null)
     {
         $this->Language_Proficiency_Reference = $language_Proficiency_Reference;
         return $this;
     }
     /**
      * Get Language_Ability_Type_Reference value
-     * @return \StructType\Language_Ability_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Language_Ability_TypeObjectType|null
      */
     public function getLanguage_Ability_Type_Reference()
     {
@@ -68,10 +68,10 @@ class Language_Ability_DataType extends AbstractStructBase
     }
     /**
      * Set Language_Ability_Type_Reference value
-     * @param \StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference
-     * @return \StructType\Language_Ability_DataType
+     * @param \WorkdayWsdl\\StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Language_Ability_DataType
      */
-    public function setLanguage_Ability_Type_Reference(\StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference = null)
+    public function setLanguage_Ability_Type_Reference(\WorkdayWsdl\\StructType\Language_Ability_TypeObjectType $language_Ability_Type_Reference = null)
     {
         $this->Language_Ability_Type_Reference = $language_Ability_Type_Reference;
         return $this;
@@ -82,7 +82,7 @@ class Language_Ability_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Language_Ability_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Ability_DataType
      */
     public static function __set_state(array $array)
     {

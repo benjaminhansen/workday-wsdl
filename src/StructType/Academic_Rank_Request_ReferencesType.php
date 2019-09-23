@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Academic Rank Reference
      * - maxOccurs: unbounded
-     * @var \StructType\Academic_RankObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_RankObjectType[]
      */
     public $Academic_Rank_Reference;
     /**
      * Constructor method for Academic_Rank_Request_ReferencesType
      * @uses Academic_Rank_Request_ReferencesType::setAcademic_Rank_Reference()
-     * @param \StructType\Academic_RankObjectType[] $academic_Rank_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType[] $academic_Rank_Reference
      */
     public function __construct(array $academic_Rank_Reference = array())
     {
@@ -32,7 +32,7 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Academic_Rank_Reference value
-     * @return \StructType\Academic_RankObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectType[]|null
      */
     public function getAcademic_Rank_Reference()
     {
@@ -50,12 +50,12 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem instanceof \StructType\Academic_RankObjectType) {
+            if (!$academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_RankObjectType) {
                 $invalidValues[] = is_object($academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem) ? get_class($academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem), var_export($academic_Rank_Request_ReferencesTypeAcademic_Rank_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Rank_Reference property can only contain items of type \StructType\Academic_RankObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Rank_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_RankObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Academic_Rank_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_RankObjectType[] $academic_Rank_Reference
-     * @return \StructType\Academic_Rank_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType[] $academic_Rank_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Request_ReferencesType
      */
     public function setAcademic_Rank_Reference(array $academic_Rank_Reference = array())
     {
@@ -78,14 +78,14 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Academic_Rank_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_RankObjectType $item
-     * @return \StructType\Academic_Rank_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Request_ReferencesType
      */
-    public function addToAcademic_Rank_Reference(\StructType\Academic_RankObjectType $item)
+    public function addToAcademic_Rank_Reference(\WorkdayWsdl\\StructType\Academic_RankObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_RankObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Rank_Reference property can only contain items of type \StructType\Academic_RankObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_RankObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Rank_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_RankObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Rank_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Academic_Rank_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Rank_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Academic_Rank_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

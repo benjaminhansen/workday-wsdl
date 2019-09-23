@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,12 +16,12 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
      * The Business_Process_Parameters
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Union_Member_Data
-     * @var \StructType\Union_Member_DataType
+     * @var \WorkdayWsdl\\StructType\Union_Member_DataType
      */
     public $Union_Member_Data;
     /**
@@ -36,11 +36,11 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
      * @uses Manage_Union_Membership_RequestType::setBusiness_Process_Parameters()
      * @uses Manage_Union_Membership_RequestType::setUnion_Member_Data()
      * @uses Manage_Union_Membership_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Union_Member_DataType $union_Member_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Union_Member_DataType $union_Member_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Union_Member_DataType $union_Member_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Union_Member_DataType $union_Member_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -49,7 +49,7 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -57,17 +57,17 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Manage_Union_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Manage_Union_Membership_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Union_Member_Data value
-     * @return \StructType\Union_Member_DataType|null
+     * @return \WorkdayWsdl\\StructType\Union_Member_DataType|null
      */
     public function getUnion_Member_Data()
     {
@@ -75,10 +75,10 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
     }
     /**
      * Set Union_Member_Data value
-     * @param \StructType\Union_Member_DataType $union_Member_Data
-     * @return \StructType\Manage_Union_Membership_RequestType
+     * @param \WorkdayWsdl\\StructType\Union_Member_DataType $union_Member_Data
+     * @return \WorkdayWsdl\\StructType\Manage_Union_Membership_RequestType
      */
-    public function setUnion_Member_Data(\StructType\Union_Member_DataType $union_Member_Data = null)
+    public function setUnion_Member_Data(\WorkdayWsdl\\StructType\Union_Member_DataType $union_Member_Data = null)
     {
         $this->Union_Member_Data = $union_Member_Data;
         return $this;
@@ -94,7 +94,7 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Manage_Union_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Union_Membership_RequestType
      */
     public function setVersion($version = null)
     {
@@ -111,7 +111,7 @@ class Manage_Union_Membership_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Union_Membership_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Union_Membership_RequestType
      */
     public static function __set_state(array $array)
     {

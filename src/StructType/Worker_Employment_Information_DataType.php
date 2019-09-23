@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Worker_Job_DataType[]
+     * @var \WorkdayWsdl\\StructType\Worker_Job_DataType[]
      */
     public $Worker_Job_Data;
     /**
@@ -26,7 +26,7 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Status data for a Worker.
      * - minOccurs: 0
-     * @var \StructType\Worker_Status_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType
      */
     public $Worker_Status_Data;
     /**
@@ -34,14 +34,14 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element containing all Contract data for a Worker.
      * - minOccurs: 0
-     * @var \StructType\Worker_Contract_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType
      */
     public $Worker_Contract_Data;
     /**
      * The International_Assignment_Summary_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\International_Assignment_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
     public $International_Assignment_Summary_Data;
     /**
@@ -50,12 +50,12 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
      * @uses Worker_Employment_Information_DataType::setWorker_Status_Data()
      * @uses Worker_Employment_Information_DataType::setWorker_Contract_Data()
      * @uses Worker_Employment_Information_DataType::setInternational_Assignment_Summary_Data()
-     * @param \StructType\Worker_Job_DataType[] $worker_Job_Data
-     * @param \StructType\Worker_Status_Detail_DataType $worker_Status_Data
-     * @param \StructType\Worker_Contract_Detail_DataType $worker_Contract_Data
-     * @param \StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Job_DataType[] $worker_Job_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType $worker_Status_Data
+     * @param \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType $worker_Contract_Data
+     * @param \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data
      */
-    public function __construct(array $worker_Job_Data = array(), \StructType\Worker_Status_Detail_DataType $worker_Status_Data = null, \StructType\Worker_Contract_Detail_DataType $worker_Contract_Data = null, \StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data = null)
+    public function __construct(array $worker_Job_Data = array(), \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType $worker_Status_Data = null, \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType $worker_Contract_Data = null, \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data = null)
     {
         $this
             ->setWorker_Job_Data($worker_Job_Data)
@@ -65,7 +65,7 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Job_Data value
-     * @return \StructType\Worker_Job_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Worker_Job_DataType[]|null
      */
     public function getWorker_Job_Data()
     {
@@ -83,12 +83,12 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Employment_Information_DataTypeWorker_Job_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Employment_Information_DataTypeWorker_Job_DataItem instanceof \StructType\Worker_Job_DataType) {
+            if (!$worker_Employment_Information_DataTypeWorker_Job_DataItem instanceof \WorkdayWsdl\\StructType\Worker_Job_DataType) {
                 $invalidValues[] = is_object($worker_Employment_Information_DataTypeWorker_Job_DataItem) ? get_class($worker_Employment_Information_DataTypeWorker_Job_DataItem) : sprintf('%s(%s)', gettype($worker_Employment_Information_DataTypeWorker_Job_DataItem), var_export($worker_Employment_Information_DataTypeWorker_Job_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Job_Data property can only contain items of type \StructType\Worker_Job_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Job_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Job_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -96,8 +96,8 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     /**
      * Set Worker_Job_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Job_DataType[] $worker_Job_Data
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Job_DataType[] $worker_Job_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
     public function setWorker_Job_Data(array $worker_Job_Data = array())
     {
@@ -111,21 +111,21 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Job_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Worker_Job_DataType $item
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Job_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
-    public function addToWorker_Job_Data(\StructType\Worker_Job_DataType $item)
+    public function addToWorker_Job_Data(\WorkdayWsdl\\StructType\Worker_Job_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Worker_Job_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Job_Data property can only contain items of type \StructType\Worker_Job_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Worker_Job_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Job_Data property can only contain items of type \WorkdayWsdl\\StructType\Worker_Job_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Job_Data[] = $item;
         return $this;
     }
     /**
      * Get Worker_Status_Data value
-     * @return \StructType\Worker_Status_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType|null
      */
     public function getWorker_Status_Data()
     {
@@ -133,17 +133,17 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Status_Data value
-     * @param \StructType\Worker_Status_Detail_DataType $worker_Status_Data
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Status_Detail_DataType $worker_Status_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
-    public function setWorker_Status_Data(\StructType\Worker_Status_Detail_DataType $worker_Status_Data = null)
+    public function setWorker_Status_Data(\WorkdayWsdl\\StructType\Worker_Status_Detail_DataType $worker_Status_Data = null)
     {
         $this->Worker_Status_Data = $worker_Status_Data;
         return $this;
     }
     /**
      * Get Worker_Contract_Data value
-     * @return \StructType\Worker_Contract_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType|null
      */
     public function getWorker_Contract_Data()
     {
@@ -151,17 +151,17 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Contract_Data value
-     * @param \StructType\Worker_Contract_Detail_DataType $worker_Contract_Data
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType $worker_Contract_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
-    public function setWorker_Contract_Data(\StructType\Worker_Contract_Detail_DataType $worker_Contract_Data = null)
+    public function setWorker_Contract_Data(\WorkdayWsdl\\StructType\Worker_Contract_Detail_DataType $worker_Contract_Data = null)
     {
         $this->Worker_Contract_Data = $worker_Contract_Data;
         return $this;
     }
     /**
      * Get International_Assignment_Summary_Data value
-     * @return \StructType\International_Assignment_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType|null
      */
     public function getInternational_Assignment_Summary_Data()
     {
@@ -169,10 +169,10 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
     }
     /**
      * Set International_Assignment_Summary_Data value
-     * @param \StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @param \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
-    public function setInternational_Assignment_Summary_Data(\StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data = null)
+    public function setInternational_Assignment_Summary_Data(\WorkdayWsdl\\StructType\International_Assignment_Summary_DataType $international_Assignment_Summary_Data = null)
     {
         $this->International_Assignment_Summary_Data = $international_Assignment_Summary_Data;
         return $this;
@@ -183,7 +183,7 @@ class Worker_Employment_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Employment_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Employment_Information_DataType
      */
     public static function __set_state(array $array)
     {

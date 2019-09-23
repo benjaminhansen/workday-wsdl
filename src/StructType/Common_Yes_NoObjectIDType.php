@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Common_Yes_NoObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Common_Yes_NoReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Common_Yes_NoReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Common_Yes_NoReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Common_Yes_NoReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Common_Yes_NoObjectIDType
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Common_Yes_NoReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Common_Yes_NoReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Common_Yes_NoReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Common_Yes_NoReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Common_Yes_NoReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Common_Yes_NoReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Common_Yes_NoObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Common_Yes_NoObjectIDType
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Common_Yes_NoObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Common_Yes_NoObjectIDType
+     * @return \WorkdayWsdl\\StructType\Common_Yes_NoObjectIDType
      */
     public static function __set_state(array $array)
     {

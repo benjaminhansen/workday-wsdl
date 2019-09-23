@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: The unique identifier of the Degree.
      * - minOccurs: 0
-     * @var \StructType\DegreeObjectType
+     * @var \WorkdayWsdl\\StructType\DegreeObjectType
      */
     public $Degree_Reference;
     /**
@@ -27,7 +27,7 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - documentation: The Field of Study ID specified in the Fields of Study report.
      * - minOccurs: 0
-     * @var \StructType\Field_of_StudyObjectType
+     * @var \WorkdayWsdl\\StructType\Field_of_StudyObjectType
      */
     public $Field_Of_Study_Reference;
     /**
@@ -44,11 +44,11 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
      * @uses Education_Qualification_Profile_Replacement_DataType::setDegree_Reference()
      * @uses Education_Qualification_Profile_Replacement_DataType::setField_Of_Study_Reference()
      * @uses Education_Qualification_Profile_Replacement_DataType::setRequired()
-     * @param \StructType\DegreeObjectType $degree_Reference
-     * @param \StructType\Field_of_StudyObjectType $field_Of_Study_Reference
+     * @param \WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference
+     * @param \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference
      * @param bool $required
      */
-    public function __construct(\StructType\DegreeObjectType $degree_Reference = null, \StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null, $required = null)
+    public function __construct(\WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference = null, \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null, $required = null)
     {
         $this
             ->setDegree_Reference($degree_Reference)
@@ -57,7 +57,7 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
     }
     /**
      * Get Degree_Reference value
-     * @return \StructType\DegreeObjectType|null
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType|null
      */
     public function getDegree_Reference()
     {
@@ -65,17 +65,17 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
     }
     /**
      * Set Degree_Reference value
-     * @param \StructType\DegreeObjectType $degree_Reference
-     * @return \StructType\Education_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType
      */
-    public function setDegree_Reference(\StructType\DegreeObjectType $degree_Reference = null)
+    public function setDegree_Reference(\WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference = null)
     {
         $this->Degree_Reference = $degree_Reference;
         return $this;
     }
     /**
      * Get Field_Of_Study_Reference value
-     * @return \StructType\Field_of_StudyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Field_of_StudyObjectType|null
      */
     public function getField_Of_Study_Reference()
     {
@@ -83,10 +83,10 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
     }
     /**
      * Set Field_Of_Study_Reference value
-     * @param \StructType\Field_of_StudyObjectType $field_Of_Study_Reference
-     * @return \StructType\Education_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType
      */
-    public function setField_Of_Study_Reference(\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null)
+    public function setField_Of_Study_Reference(\WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null)
     {
         $this->Field_Of_Study_Reference = $field_Of_Study_Reference;
         return $this;
@@ -102,7 +102,7 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
     /**
      * Set Required value
      * @param bool $required
-     * @return \StructType\Education_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType
      */
     public function setRequired($required = null)
     {
@@ -119,7 +119,7 @@ class Education_Qualification_Profile_Replacement_DataType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Education_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Qualification_Profile_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

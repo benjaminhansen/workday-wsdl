@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
 {
     /**
      * The Contingent_Worker_Reference
-     * @var \StructType\Contingent_Worker_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType
      */
     public $Contingent_Worker_Reference;
     /**
@@ -46,12 +46,12 @@ class Contingent_Worker_GetType extends AbstractStructBase
      * @uses Contingent_Worker_GetType::setAs_Of_Date()
      * @uses Contingent_Worker_GetType::setAs_Of_Moment()
      * @uses Contingent_Worker_GetType::setVersion()
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setContingent_Worker_Reference($contingent_Worker_Reference)
@@ -61,7 +61,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
     }
     /**
      * Get Contingent_Worker_Reference value
-     * @return \StructType\Contingent_Worker_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType|null
      */
     public function getContingent_Worker_Reference()
     {
@@ -69,10 +69,10 @@ class Contingent_Worker_GetType extends AbstractStructBase
     }
     /**
      * Set Contingent_Worker_Reference value
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
-     * @return \StructType\Contingent_Worker_GetType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_GetType
      */
-    public function setContingent_Worker_Reference(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
+    public function setContingent_Worker_Reference(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
     {
         $this->Contingent_Worker_Reference = $contingent_Worker_Reference;
         return $this;
@@ -88,7 +88,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\Contingent_Worker_GetType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_GetType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -110,7 +110,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\Contingent_Worker_GetType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_GetType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -132,7 +132,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Contingent_Worker_GetType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_GetType
      */
     public function setVersion($version = null)
     {
@@ -149,7 +149,7 @@ class Contingent_Worker_GetType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contingent_Worker_GetType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_GetType
      */
     public static function __set_state(array $array)
     {

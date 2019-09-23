@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
      * Meta information extracted from the WSDL
      * - documentation: Worker for the Collective Agreement Event
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -33,7 +33,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
      * The Collective_Agreement_Data
      * Meta information extracted from the WSDL
      * - documentation: Contains the Data relevant to the Collective agreement
-     * @var \StructType\Assign_Employee_Collective_Agreement_DataType
+     * @var \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType
      */
     public $Collective_Agreement_Data;
     /**
@@ -41,11 +41,11 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
      * @uses Assign_Employee_Collective_Agreement_Event_DataType::setWorker_Reference()
      * @uses Assign_Employee_Collective_Agreement_Event_DataType::setEffective_Date()
      * @uses Assign_Employee_Collective_Agreement_Event_DataType::setCollective_Agreement_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $effective_Date
-     * @param \StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data
+     * @param \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $effective_Date = null, \StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $effective_Date = null, \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -54,7 +54,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -62,10 +62,10 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -81,7 +81,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -94,7 +94,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
     }
     /**
      * Get Collective_Agreement_Data value
-     * @return \StructType\Assign_Employee_Collective_Agreement_DataType|null
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType|null
      */
     public function getCollective_Agreement_Data()
     {
@@ -102,10 +102,10 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
     }
     /**
      * Set Collective_Agreement_Data value
-     * @param \StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_DataType
      */
-    public function setCollective_Agreement_Data(\StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data = null)
+    public function setCollective_Agreement_Data(\WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_DataType $collective_Agreement_Data = null)
     {
         $this->Collective_Agreement_Data = $collective_Agreement_Data;
         return $this;
@@ -116,7 +116,7 @@ class Assign_Employee_Collective_Agreement_Event_DataType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Employee_Collective_Agreement_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Employee_Collective_Agreement_Event_DataType
      */
     public static function __set_state(array $array)
     {

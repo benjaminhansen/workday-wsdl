@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: Reference to agenda item attachment
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType
      */
     public $Attachment_Reference;
     /**
@@ -65,13 +65,13 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
      * @uses Committee_Meeting_Agenda_Item_Attachment_DataType::setFilename()
      * @uses Committee_Meeting_Agenda_Item_Attachment_DataType::setComment()
      * @uses Committee_Meeting_Agenda_Item_Attachment_DataType::setFile()
-     * @param \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference
      * @param string $iD
      * @param string $filename
      * @param string $comment
      * @param string $file
      */
-    public function __construct(\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference = null, $iD = null, $filename = null, $comment = null, $file = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference = null, $iD = null, $filename = null, $comment = null, $file = null)
     {
         $this
             ->setAttachment_Reference($attachment_Reference)
@@ -82,7 +82,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     }
     /**
      * Get Attachment_Reference value
-     * @return \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType|null
      */
     public function getAttachment_Reference()
     {
@@ -90,10 +90,10 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     }
     /**
      * Set Attachment_Reference value
-     * @param \StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
-    public function setAttachment_Reference(\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference = null)
+    public function setAttachment_Reference(\WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_AttachmentObjectType $attachment_Reference = null)
     {
         $this->Attachment_Reference = $attachment_Reference;
         return $this;
@@ -109,7 +109,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
     public function setID($iD = null)
     {
@@ -131,7 +131,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     /**
      * Set Filename value
      * @param string $filename
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
     public function setFilename($filename = null)
     {
@@ -157,7 +157,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
     public function setComment($comment = null)
     {
@@ -179,7 +179,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
     public function setFile($file = null)
     {
@@ -196,7 +196,7 @@ class Committee_Meeting_Agenda_Item_Attachment_DataType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_Agenda_Item_Attachment_DataType
      */
     public static function __set_state(array $array)
     {

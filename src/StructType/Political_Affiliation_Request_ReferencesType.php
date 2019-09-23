@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Political Affiliation.{+3}
      * - maxOccurs: unbounded
-     * @var \StructType\Political_AffiliationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Political_AffiliationObjectType[]
      */
     public $Political_Affiliation_Reference;
     /**
      * Constructor method for Political_Affiliation_Request_ReferencesType
      * @uses Political_Affiliation_Request_ReferencesType::setPolitical_Affiliation_Reference()
-     * @param \StructType\Political_AffiliationObjectType[] $political_Affiliation_Reference
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType[] $political_Affiliation_Reference
      */
     public function __construct(array $political_Affiliation_Reference = array())
     {
@@ -32,7 +32,7 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Political_Affiliation_Reference value
-     * @return \StructType\Political_AffiliationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Political_AffiliationObjectType[]|null
      */
     public function getPolitical_Affiliation_Reference()
     {
@@ -50,12 +50,12 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem instanceof \StructType\Political_AffiliationObjectType) {
+            if (!$political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem instanceof \WorkdayWsdl\\StructType\Political_AffiliationObjectType) {
                 $invalidValues[] = is_object($political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem) ? get_class($political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem) : sprintf('%s(%s)', gettype($political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem), var_export($political_Affiliation_Request_ReferencesTypePolitical_Affiliation_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Political_Affiliation_Reference property can only contain items of type \StructType\Political_AffiliationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Political_Affiliation_Reference property can only contain items of type \WorkdayWsdl\\StructType\Political_AffiliationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Political_Affiliation_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Political_AffiliationObjectType[] $political_Affiliation_Reference
-     * @return \StructType\Political_Affiliation_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType[] $political_Affiliation_Reference
+     * @return \WorkdayWsdl\\StructType\Political_Affiliation_Request_ReferencesType
      */
     public function setPolitical_Affiliation_Reference(array $political_Affiliation_Reference = array())
     {
@@ -78,14 +78,14 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Political_Affiliation_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Political_AffiliationObjectType $item
-     * @return \StructType\Political_Affiliation_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Political_AffiliationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Political_Affiliation_Request_ReferencesType
      */
-    public function addToPolitical_Affiliation_Reference(\StructType\Political_AffiliationObjectType $item)
+    public function addToPolitical_Affiliation_Reference(\WorkdayWsdl\\StructType\Political_AffiliationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Political_AffiliationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Political_Affiliation_Reference property can only contain items of type \StructType\Political_AffiliationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Political_AffiliationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Political_Affiliation_Reference property can only contain items of type \WorkdayWsdl\\StructType\Political_AffiliationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Political_Affiliation_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Political_Affiliation_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Political_Affiliation_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Political_Affiliation_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Stock_Vesting_ScheduleObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
      * Constructor method for Stock_Vesting_ScheduleObjectType
      * @uses Stock_Vesting_ScheduleObjectType::setID()
      * @uses Stock_Vesting_ScheduleObjectType::setDescriptor()
-     * @param \StructType\Stock_Vesting_ScheduleObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Stock_Vesting_ScheduleObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $stock_Vesting_ScheduleObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$stock_Vesting_ScheduleObjectTypeIDItem instanceof \StructType\Stock_Vesting_ScheduleObjectIDType) {
+            if (!$stock_Vesting_ScheduleObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType) {
                 $invalidValues[] = is_object($stock_Vesting_ScheduleObjectTypeIDItem) ? get_class($stock_Vesting_ScheduleObjectTypeIDItem) : sprintf('%s(%s)', gettype($stock_Vesting_ScheduleObjectTypeIDItem), var_export($stock_Vesting_ScheduleObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Stock_Vesting_ScheduleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Stock_Vesting_ScheduleObjectIDType[] $iD
-     * @return \StructType\Stock_Vesting_ScheduleObjectType
+     * @param \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Stock_Vesting_ScheduleObjectIDType $item
-     * @return \StructType\Stock_Vesting_ScheduleObjectType
+     * @param \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType
      */
-    public function addToID(\StructType\Stock_Vesting_ScheduleObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Stock_Vesting_ScheduleObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Stock_Vesting_ScheduleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Stock_Vesting_ScheduleObjectType
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Stock_Vesting_ScheduleObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Stock_Vesting_ScheduleObjectType
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType
      */
     public static function __set_state(array $array)
     {

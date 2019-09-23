@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Holiday_CalendarType[]
+     * @var \WorkdayWsdl\\StructType\Holiday_CalendarType[]
      */
     public $Holiday_Calendar;
     /**
      * Constructor method for Holiday_Calendar_Response_DataType
      * @uses Holiday_Calendar_Response_DataType::setHoliday_Calendar()
-     * @param \StructType\Holiday_CalendarType[] $holiday_Calendar
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarType[] $holiday_Calendar
      */
     public function __construct(array $holiday_Calendar = array())
     {
@@ -32,7 +32,7 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Holiday_Calendar value
-     * @return \StructType\Holiday_CalendarType[]|null
+     * @return \WorkdayWsdl\\StructType\Holiday_CalendarType[]|null
      */
     public function getHoliday_Calendar()
     {
@@ -50,12 +50,12 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $holiday_Calendar_Response_DataTypeHoliday_CalendarItem) {
             // validation for constraint: itemType
-            if (!$holiday_Calendar_Response_DataTypeHoliday_CalendarItem instanceof \StructType\Holiday_CalendarType) {
+            if (!$holiday_Calendar_Response_DataTypeHoliday_CalendarItem instanceof \WorkdayWsdl\\StructType\Holiday_CalendarType) {
                 $invalidValues[] = is_object($holiday_Calendar_Response_DataTypeHoliday_CalendarItem) ? get_class($holiday_Calendar_Response_DataTypeHoliday_CalendarItem) : sprintf('%s(%s)', gettype($holiday_Calendar_Response_DataTypeHoliday_CalendarItem), var_export($holiday_Calendar_Response_DataTypeHoliday_CalendarItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Holiday_Calendar property can only contain items of type \StructType\Holiday_CalendarType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Holiday_Calendar property can only contain items of type \WorkdayWsdl\\StructType\Holiday_CalendarType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
     /**
      * Set Holiday_Calendar value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_CalendarType[] $holiday_Calendar
-     * @return \StructType\Holiday_Calendar_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarType[] $holiday_Calendar
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_DataType
      */
     public function setHoliday_Calendar(array $holiday_Calendar = array())
     {
@@ -78,14 +78,14 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
     /**
      * Add item to Holiday_Calendar value
      * @throws \InvalidArgumentException
-     * @param \StructType\Holiday_CalendarType $item
-     * @return \StructType\Holiday_Calendar_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Holiday_CalendarType $item
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_DataType
      */
-    public function addToHoliday_Calendar(\StructType\Holiday_CalendarType $item)
+    public function addToHoliday_Calendar(\WorkdayWsdl\\StructType\Holiday_CalendarType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Holiday_CalendarType) {
-            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar property can only contain items of type \StructType\Holiday_CalendarType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Holiday_CalendarType) {
+            throw new \InvalidArgumentException(sprintf('The Holiday_Calendar property can only contain items of type \WorkdayWsdl\\StructType\Holiday_CalendarType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Holiday_Calendar[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Holiday_Calendar_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Holiday_Calendar_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Holiday_Calendar_Response_DataType
      */
     public static function __set_state(array $array)
     {

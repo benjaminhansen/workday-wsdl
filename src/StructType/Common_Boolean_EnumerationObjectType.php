@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Common_Boolean_EnumerationObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
      * Constructor method for Common_Boolean_EnumerationObjectType
      * @uses Common_Boolean_EnumerationObjectType::setID()
      * @uses Common_Boolean_EnumerationObjectType::setDescriptor()
-     * @param \StructType\Common_Boolean_EnumerationObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Common_Boolean_EnumerationObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $common_Boolean_EnumerationObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$common_Boolean_EnumerationObjectTypeIDItem instanceof \StructType\Common_Boolean_EnumerationObjectIDType) {
+            if (!$common_Boolean_EnumerationObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType) {
                 $invalidValues[] = is_object($common_Boolean_EnumerationObjectTypeIDItem) ? get_class($common_Boolean_EnumerationObjectTypeIDItem) : sprintf('%s(%s)', gettype($common_Boolean_EnumerationObjectTypeIDItem), var_export($common_Boolean_EnumerationObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Common_Boolean_EnumerationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Common_Boolean_EnumerationObjectIDType[] $iD
-     * @return \StructType\Common_Boolean_EnumerationObjectType
+     * @param \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Common_Boolean_EnumerationObjectIDType $item
-     * @return \StructType\Common_Boolean_EnumerationObjectType
+     * @param \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectType
      */
-    public function addToID(\StructType\Common_Boolean_EnumerationObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Common_Boolean_EnumerationObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Common_Boolean_EnumerationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Common_Boolean_EnumerationObjectType
+     * @return \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Common_Boolean_EnumerationObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Common_Boolean_EnumerationObjectType
+     * @return \WorkdayWsdl\\StructType\Common_Boolean_EnumerationObjectType
      */
     public static function __set_state(array $array)
     {

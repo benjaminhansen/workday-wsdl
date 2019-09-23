@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Generic_Military_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Generic_Military_Service_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType[]
      */
     public $Military_Service_Information_Data;
     /**
@@ -32,7 +32,7 @@ class Generic_Military_Information_DataType extends AbstractStructBase
      * Constructor method for Generic_Military_Information_DataType
      * @uses Generic_Military_Information_DataType::setMilitary_Service_Information_Data()
      * @uses Generic_Military_Information_DataType::setReplace_All()
-     * @param \StructType\Generic_Military_Service_Information_DataType[] $military_Service_Information_Data
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType[] $military_Service_Information_Data
      * @param bool $replace_All
      */
     public function __construct(array $military_Service_Information_Data = array(), $replace_All = null)
@@ -43,7 +43,7 @@ class Generic_Military_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Military_Service_Information_Data value
-     * @return \StructType\Generic_Military_Service_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType[]|null
      */
     public function getMilitary_Service_Information_Data()
     {
@@ -61,12 +61,12 @@ class Generic_Military_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $generic_Military_Information_DataTypeMilitary_Service_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$generic_Military_Information_DataTypeMilitary_Service_Information_DataItem instanceof \StructType\Generic_Military_Service_Information_DataType) {
+            if (!$generic_Military_Information_DataTypeMilitary_Service_Information_DataItem instanceof \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType) {
                 $invalidValues[] = is_object($generic_Military_Information_DataTypeMilitary_Service_Information_DataItem) ? get_class($generic_Military_Information_DataTypeMilitary_Service_Information_DataItem) : sprintf('%s(%s)', gettype($generic_Military_Information_DataTypeMilitary_Service_Information_DataItem), var_export($generic_Military_Information_DataTypeMilitary_Service_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Military_Service_Information_Data property can only contain items of type \StructType\Generic_Military_Service_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Military_Service_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Generic_Military_Information_DataType extends AbstractStructBase
     /**
      * Set Military_Service_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Military_Service_Information_DataType[] $military_Service_Information_Data
-     * @return \StructType\Generic_Military_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType[] $military_Service_Information_Data
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Information_DataType
      */
     public function setMilitary_Service_Information_Data(array $military_Service_Information_Data = array())
     {
@@ -89,14 +89,14 @@ class Generic_Military_Information_DataType extends AbstractStructBase
     /**
      * Add item to Military_Service_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Generic_Military_Service_Information_DataType $item
-     * @return \StructType\Generic_Military_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Information_DataType
      */
-    public function addToMilitary_Service_Information_Data(\StructType\Generic_Military_Service_Information_DataType $item)
+    public function addToMilitary_Service_Information_Data(\WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Generic_Military_Service_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Military_Service_Information_Data property can only contain items of type \StructType\Generic_Military_Service_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Military_Service_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Generic_Military_Service_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Military_Service_Information_Data[] = $item;
         return $this;
@@ -112,7 +112,7 @@ class Generic_Military_Information_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Generic_Military_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Information_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -129,7 +129,7 @@ class Generic_Military_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Generic_Military_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Generic_Military_Information_DataType
      */
     public static function __set_state(array $array)
     {

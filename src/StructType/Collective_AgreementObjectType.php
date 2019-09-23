@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Collective_AgreementObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Collective_AgreementObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Collective_AgreementObjectType extends AbstractStructBase
      * Constructor method for Collective_AgreementObjectType
      * @uses Collective_AgreementObjectType::setID()
      * @uses Collective_AgreementObjectType::setDescriptor()
-     * @param \StructType\Collective_AgreementObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Collective_AgreementObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Collective_AgreementObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Collective_AgreementObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $collective_AgreementObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$collective_AgreementObjectTypeIDItem instanceof \StructType\Collective_AgreementObjectIDType) {
+            if (!$collective_AgreementObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType) {
                 $invalidValues[] = is_object($collective_AgreementObjectTypeIDItem) ? get_class($collective_AgreementObjectTypeIDItem) : sprintf('%s(%s)', gettype($collective_AgreementObjectTypeIDItem), var_export($collective_AgreementObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Collective_AgreementObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Collective_AgreementObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_AgreementObjectIDType[] $iD
-     * @return \StructType\Collective_AgreementObjectType
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Collective_AgreementObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_AgreementObjectIDType $item
-     * @return \StructType\Collective_AgreementObjectType
+     * @param \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectType
      */
-    public function addToID(\StructType\Collective_AgreementObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Collective_AgreementObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Collective_AgreementObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Collective_AgreementObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Collective_AgreementObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Collective_AgreementObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Collective_AgreementObjectType
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Collective_AgreementObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_AgreementObjectType
+     * @return \WorkdayWsdl\\StructType\Collective_AgreementObjectType
      */
     public static function __set_state(array $array)
     {

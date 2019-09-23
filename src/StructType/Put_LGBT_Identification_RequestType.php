@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a LGBT Identification
      * - minOccurs: 0
-     * @var \StructType\LGBT_IdentificationObjectType
+     * @var \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType
      */
     public $LGBT_Identification_Reference;
     /**
      * The LGBT_Identification_Data
-     * @var \StructType\LGBT_Identification_DataType
+     * @var \WorkdayWsdl\\StructType\LGBT_Identification_DataType
      */
     public $LGBT_Identification_Data;
     /**
@@ -45,12 +45,12 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
      * @uses Put_LGBT_Identification_RequestType::setLGBT_Identification_Data()
      * @uses Put_LGBT_Identification_RequestType::setAdd_Only()
      * @uses Put_LGBT_Identification_RequestType::setVersion()
-     * @param \StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference
-     * @param \StructType\LGBT_Identification_DataType $lGBT_Identification_Data
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference
+     * @param \WorkdayWsdl\\StructType\LGBT_Identification_DataType $lGBT_Identification_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference = null, \StructType\LGBT_Identification_DataType $lGBT_Identification_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference = null, \WorkdayWsdl\\StructType\LGBT_Identification_DataType $lGBT_Identification_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setLGBT_Identification_Reference($lGBT_Identification_Reference)
@@ -60,7 +60,7 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
     }
     /**
      * Get LGBT_Identification_Reference value
-     * @return \StructType\LGBT_IdentificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType|null
      */
     public function getLGBT_Identification_Reference()
     {
@@ -68,17 +68,17 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
     }
     /**
      * Set LGBT_Identification_Reference value
-     * @param \StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference
-     * @return \StructType\Put_LGBT_Identification_RequestType
+     * @param \WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference
+     * @return \WorkdayWsdl\\StructType\Put_LGBT_Identification_RequestType
      */
-    public function setLGBT_Identification_Reference(\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference = null)
+    public function setLGBT_Identification_Reference(\WorkdayWsdl\\StructType\LGBT_IdentificationObjectType $lGBT_Identification_Reference = null)
     {
         $this->LGBT_Identification_Reference = $lGBT_Identification_Reference;
         return $this;
     }
     /**
      * Get LGBT_Identification_Data value
-     * @return \StructType\LGBT_Identification_DataType|null
+     * @return \WorkdayWsdl\\StructType\LGBT_Identification_DataType|null
      */
     public function getLGBT_Identification_Data()
     {
@@ -86,10 +86,10 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
     }
     /**
      * Set LGBT_Identification_Data value
-     * @param \StructType\LGBT_Identification_DataType $lGBT_Identification_Data
-     * @return \StructType\Put_LGBT_Identification_RequestType
+     * @param \WorkdayWsdl\\StructType\LGBT_Identification_DataType $lGBT_Identification_Data
+     * @return \WorkdayWsdl\\StructType\Put_LGBT_Identification_RequestType
      */
-    public function setLGBT_Identification_Data(\StructType\LGBT_Identification_DataType $lGBT_Identification_Data = null)
+    public function setLGBT_Identification_Data(\WorkdayWsdl\\StructType\LGBT_Identification_DataType $lGBT_Identification_Data = null)
     {
         $this->LGBT_Identification_Data = $lGBT_Identification_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_LGBT_Identification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_LGBT_Identification_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_LGBT_Identification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_LGBT_Identification_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_LGBT_Identification_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_LGBT_Identification_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_LGBT_Identification_RequestType
      */
     public static function __set_state(array $array)
     {

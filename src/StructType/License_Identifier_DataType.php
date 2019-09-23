@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class License_Identifier_DataType extends AbstractStructBase
     public $License_ID;
     /**
      * The License_Type_Reference
-     * @var \StructType\License_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\License_Type_ReferenceType
      */
     public $License_Type_Reference;
     /**
@@ -68,7 +68,7 @@ class License_Identifier_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -78,7 +78,7 @@ class License_Identifier_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Country_Region_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_Region_ReferenceType
      */
     public $Country_Region_Reference;
     /**
@@ -88,7 +88,7 @@ class License_Identifier_DataType extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Authority_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Authority_ReferenceType
      */
     public $Authority_Reference;
     /**
@@ -103,16 +103,16 @@ class License_Identifier_DataType extends AbstractStructBase
      * @uses License_Identifier_DataType::setCountry_Region_Reference()
      * @uses License_Identifier_DataType::setAuthority_Reference()
      * @param string $license_ID
-     * @param \StructType\License_Type_ReferenceType $license_Type_Reference
+     * @param \WorkdayWsdl\\StructType\License_Type_ReferenceType $license_Type_Reference
      * @param string $license_Class
      * @param string $issued_Date
      * @param string $expiration_Date
      * @param string $verification_Date
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @param \StructType\Country_Region_ReferenceType $country_Region_Reference
-     * @param \StructType\Authority_ReferenceType $authority_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_Region_ReferenceType $country_Region_Reference
+     * @param \WorkdayWsdl\\StructType\Authority_ReferenceType $authority_Reference
      */
-    public function __construct($license_ID = null, \StructType\License_Type_ReferenceType $license_Type_Reference = null, $license_Class = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \StructType\Country_ReferenceType $country_Reference = null, \StructType\Country_Region_ReferenceType $country_Region_Reference = null, \StructType\Authority_ReferenceType $authority_Reference = null)
+    public function __construct($license_ID = null, \WorkdayWsdl\\StructType\License_Type_ReferenceType $license_Type_Reference = null, $license_Class = null, $issued_Date = null, $expiration_Date = null, $verification_Date = null, \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null, \WorkdayWsdl\\StructType\Country_Region_ReferenceType $country_Region_Reference = null, \WorkdayWsdl\\StructType\Authority_ReferenceType $authority_Reference = null)
     {
         $this
             ->setLicense_ID($license_ID)
@@ -136,7 +136,7 @@ class License_Identifier_DataType extends AbstractStructBase
     /**
      * Set License_ID value
      * @param string $license_ID
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public function setLicense_ID($license_ID = null)
     {
@@ -149,7 +149,7 @@ class License_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get License_Type_Reference value
-     * @return \StructType\License_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\License_Type_ReferenceType|null
      */
     public function getLicense_Type_Reference()
     {
@@ -157,10 +157,10 @@ class License_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Set License_Type_Reference value
-     * @param \StructType\License_Type_ReferenceType $license_Type_Reference
-     * @return \StructType\License_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\License_Type_ReferenceType $license_Type_Reference
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
-    public function setLicense_Type_Reference(\StructType\License_Type_ReferenceType $license_Type_Reference = null)
+    public function setLicense_Type_Reference(\WorkdayWsdl\\StructType\License_Type_ReferenceType $license_Type_Reference = null)
     {
         $this->License_Type_Reference = $license_Type_Reference;
         return $this;
@@ -176,7 +176,7 @@ class License_Identifier_DataType extends AbstractStructBase
     /**
      * Set License_Class value
      * @param string $license_Class
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public function setLicense_Class($license_Class = null)
     {
@@ -198,7 +198,7 @@ class License_Identifier_DataType extends AbstractStructBase
     /**
      * Set Issued_Date value
      * @param string $issued_Date
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public function setIssued_Date($issued_Date = null)
     {
@@ -220,7 +220,7 @@ class License_Identifier_DataType extends AbstractStructBase
     /**
      * Set Expiration_Date value
      * @param string $expiration_Date
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public function setExpiration_Date($expiration_Date = null)
     {
@@ -242,7 +242,7 @@ class License_Identifier_DataType extends AbstractStructBase
     /**
      * Set Verification_Date value
      * @param string $verification_Date
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public function setVerification_Date($verification_Date = null)
     {
@@ -255,7 +255,7 @@ class License_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -295,10 +295,10 @@ class License_Identifier_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\License_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         // validation for constraint: choice(Country_Reference, Country_Region_Reference, Authority_Reference)
         if ('' !== ($country_ReferenceChoiceErrorMessage = self::validateCountry_ReferenceForChoiceConstraintsFromSetCountry_Reference($country_Reference))) {
@@ -313,7 +313,7 @@ class License_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Region_Reference value
-     * @return \StructType\Country_Region_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_Region_ReferenceType|null
      */
     public function getCountry_Region_Reference()
     {
@@ -353,10 +353,10 @@ class License_Identifier_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_Region_ReferenceType $country_Region_Reference
-     * @return \StructType\License_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Country_Region_ReferenceType $country_Region_Reference
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
-    public function setCountry_Region_Reference(\StructType\Country_Region_ReferenceType $country_Region_Reference = null)
+    public function setCountry_Region_Reference(\WorkdayWsdl\\StructType\Country_Region_ReferenceType $country_Region_Reference = null)
     {
         // validation for constraint: choice(Country_Reference, Country_Region_Reference, Authority_Reference)
         if ('' !== ($country_Region_ReferenceChoiceErrorMessage = self::validateCountry_Region_ReferenceForChoiceConstraintsFromSetCountry_Region_Reference($country_Region_Reference))) {
@@ -371,7 +371,7 @@ class License_Identifier_DataType extends AbstractStructBase
     }
     /**
      * Get Authority_Reference value
-     * @return \StructType\Authority_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Authority_ReferenceType|null
      */
     public function getAuthority_Reference()
     {
@@ -411,10 +411,10 @@ class License_Identifier_DataType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Authority_ReferenceType $authority_Reference
-     * @return \StructType\License_Identifier_DataType
+     * @param \WorkdayWsdl\\StructType\Authority_ReferenceType $authority_Reference
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
-    public function setAuthority_Reference(\StructType\Authority_ReferenceType $authority_Reference = null)
+    public function setAuthority_Reference(\WorkdayWsdl\\StructType\Authority_ReferenceType $authority_Reference = null)
     {
         // validation for constraint: choice(Country_Reference, Country_Region_Reference, Authority_Reference)
         if ('' !== ($authority_ReferenceChoiceErrorMessage = self::validateAuthority_ReferenceForChoiceConstraintsFromSetAuthority_Reference($authority_Reference))) {
@@ -433,7 +433,7 @@ class License_Identifier_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\License_Identifier_DataType
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType
      */
     public static function __set_state(array $array)
     {

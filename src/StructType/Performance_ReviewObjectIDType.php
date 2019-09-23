@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Performance_ReviewObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Performance_ReviewReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Performance_ReviewReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Performance_ReviewReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Performance_ReviewReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Performance_ReviewObjectIDType
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Performance_ReviewReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Performance_ReviewReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Performance_ReviewReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Performance_ReviewReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Performance_ReviewReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Performance_ReviewReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Performance_ReviewObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Performance_ReviewObjectIDType
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Performance_ReviewObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Performance_ReviewObjectIDType
+     * @return \WorkdayWsdl\\StructType\Performance_ReviewObjectIDType
      */
     public static function __set_state(array $array)
     {

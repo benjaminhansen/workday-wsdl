@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Mime_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Mime_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Mime_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Mime_TypeObjectType extends AbstractStructBase
      * Constructor method for Mime_TypeObjectType
      * @uses Mime_TypeObjectType::setID()
      * @uses Mime_TypeObjectType::setDescriptor()
-     * @param \StructType\Mime_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Mime_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Mime_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Mime_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Mime_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $mime_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$mime_TypeObjectTypeIDItem instanceof \StructType\Mime_TypeObjectIDType) {
+            if (!$mime_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Mime_TypeObjectIDType) {
                 $invalidValues[] = is_object($mime_TypeObjectTypeIDItem) ? get_class($mime_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($mime_TypeObjectTypeIDItem), var_export($mime_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Mime_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Mime_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Mime_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Mime_TypeObjectIDType[] $iD
-     * @return \StructType\Mime_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Mime_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Mime_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Mime_TypeObjectIDType $item
-     * @return \StructType\Mime_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Mime_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectType
      */
-    public function addToID(\StructType\Mime_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Mime_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Mime_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Mime_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Mime_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Mime_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Mime_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Mime_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Mime_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Mime_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Mime_TypeObjectType
      */
     public static function __set_state(array $array)
     {

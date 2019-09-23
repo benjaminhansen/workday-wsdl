@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Usage_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
      * Constructor method for Communication_Usage_TypeObjectType
      * @uses Communication_Usage_TypeObjectType::setID()
      * @uses Communication_Usage_TypeObjectType::setDescriptor()
-     * @param \StructType\Communication_Usage_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Communication_Usage_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Usage_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$communication_Usage_TypeObjectTypeIDItem instanceof \StructType\Communication_Usage_TypeObjectIDType) {
+            if (!$communication_Usage_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType) {
                 $invalidValues[] = is_object($communication_Usage_TypeObjectTypeIDItem) ? get_class($communication_Usage_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($communication_Usage_TypeObjectTypeIDItem), var_export($communication_Usage_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Communication_Usage_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_TypeObjectIDType[] $iD
-     * @return \StructType\Communication_Usage_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_TypeObjectIDType $item
-     * @return \StructType\Communication_Usage_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType
      */
-    public function addToID(\StructType\Communication_Usage_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Usage_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Communication_Usage_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Communication_Usage_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Communication_Usage_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Communication_Usage_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_TypeObjectType
      */
     public static function __set_state(array $array)
     {

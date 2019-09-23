@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\General_Event_SubcategoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
      * Constructor method for General_Event_SubcategoryObjectType
      * @uses General_Event_SubcategoryObjectType::setID()
      * @uses General_Event_SubcategoryObjectType::setDescriptor()
-     * @param \StructType\General_Event_SubcategoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\General_Event_SubcategoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $general_Event_SubcategoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$general_Event_SubcategoryObjectTypeIDItem instanceof \StructType\General_Event_SubcategoryObjectIDType) {
+            if (!$general_Event_SubcategoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType) {
                 $invalidValues[] = is_object($general_Event_SubcategoryObjectTypeIDItem) ? get_class($general_Event_SubcategoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($general_Event_SubcategoryObjectTypeIDItem), var_export($general_Event_SubcategoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\General_Event_SubcategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\General_Event_SubcategoryObjectIDType[] $iD
-     * @return \StructType\General_Event_SubcategoryObjectType
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\General_Event_SubcategoryObjectIDType $item
-     * @return \StructType\General_Event_SubcategoryObjectType
+     * @param \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
-    public function addToID(\StructType\General_Event_SubcategoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\General_Event_SubcategoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\General_Event_SubcategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\General_Event_SubcategoryObjectType
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class General_Event_SubcategoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\General_Event_SubcategoryObjectType
+     * @return \WorkdayWsdl\\StructType\General_Event_SubcategoryObjectType
      */
     public static function __set_state(array $array)
     {

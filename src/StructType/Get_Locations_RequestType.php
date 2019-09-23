@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Get_Locations_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Element containing reference to a specific Location.
      * - minOccurs: 0
-     * @var \StructType\Location_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Location_Request_ReferencesType
      */
     public $Request_References;
     /**
@@ -25,14 +25,14 @@ class Get_Locations_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Element containing filtering criteria to specify the Location to return in the response.
      * - minOccurs: 0
-     * @var \StructType\Location_Request_CriteriaType
+     * @var \WorkdayWsdl\\StructType\Location_Request_CriteriaType
      */
     public $Request_Criteria;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -40,7 +40,7 @@ class Get_Locations_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The response group allows for the response data to be tailored to only included elements that the user is looking for. If no response group is provided in the request, then all groups will be returned.
      * - minOccurs: 0
-     * @var \StructType\Location_Response_GroupType
+     * @var \WorkdayWsdl\\StructType\Location_Response_GroupType
      */
     public $Response_Group;
     /**
@@ -57,13 +57,13 @@ class Get_Locations_RequestType extends AbstractStructBase
      * @uses Get_Locations_RequestType::setResponse_Filter()
      * @uses Get_Locations_RequestType::setResponse_Group()
      * @uses Get_Locations_RequestType::setVersion()
-     * @param \StructType\Location_Request_ReferencesType $request_References
-     * @param \StructType\Location_Request_CriteriaType $request_Criteria
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Location_Response_GroupType $response_Group
+     * @param \WorkdayWsdl\\StructType\Location_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Location_Request_CriteriaType $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Location_Response_GroupType $response_Group
      * @param string $version
      */
-    public function __construct(\StructType\Location_Request_ReferencesType $request_References = null, \StructType\Location_Request_CriteriaType $request_Criteria = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Location_Response_GroupType $response_Group = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Location_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Location_Request_CriteriaType $request_Criteria = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Location_Response_GroupType $response_Group = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -74,7 +74,7 @@ class Get_Locations_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Location_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Location_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -82,17 +82,17 @@ class Get_Locations_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Location_Request_ReferencesType $request_References
-     * @return \StructType\Get_Locations_RequestType
+     * @param \WorkdayWsdl\\StructType\Location_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
-    public function setRequest_References(\StructType\Location_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Location_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\Location_Request_CriteriaType|null
+     * @return \WorkdayWsdl\\StructType\Location_Request_CriteriaType|null
      */
     public function getRequest_Criteria()
     {
@@ -100,17 +100,17 @@ class Get_Locations_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_Criteria value
-     * @param \StructType\Location_Request_CriteriaType $request_Criteria
-     * @return \StructType\Get_Locations_RequestType
+     * @param \WorkdayWsdl\\StructType\Location_Request_CriteriaType $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
-    public function setRequest_Criteria(\StructType\Location_Request_CriteriaType $request_Criteria = null)
+    public function setRequest_Criteria(\WorkdayWsdl\\StructType\Location_Request_CriteriaType $request_Criteria = null)
     {
         $this->Request_Criteria = $request_Criteria;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -118,17 +118,17 @@ class Get_Locations_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Locations_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\Location_Response_GroupType|null
+     * @return \WorkdayWsdl\\StructType\Location_Response_GroupType|null
      */
     public function getResponse_Group()
     {
@@ -136,10 +136,10 @@ class Get_Locations_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Group value
-     * @param \StructType\Location_Response_GroupType $response_Group
-     * @return \StructType\Get_Locations_RequestType
+     * @param \WorkdayWsdl\\StructType\Location_Response_GroupType $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
-    public function setResponse_Group(\StructType\Location_Response_GroupType $response_Group = null)
+    public function setResponse_Group(\WorkdayWsdl\\StructType\Location_Response_GroupType $response_Group = null)
     {
         $this->Response_Group = $response_Group;
         return $this;
@@ -155,7 +155,7 @@ class Get_Locations_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Locations_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
     public function setVersion($version = null)
     {
@@ -172,7 +172,7 @@ class Get_Locations_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Locations_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Locations_RequestType
      */
     public static function __set_state(array $array)
     {

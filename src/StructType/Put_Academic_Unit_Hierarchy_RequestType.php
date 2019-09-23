@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Academic Unit Hierarchy that is being updated.
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_HierarchyObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType
      */
     public $Academic_Unit_Hierarchy_Reference;
     /**
      * The Academic_Unit_Hierarchy_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Academic Unit Hierarchy detail data.
-     * @var \StructType\Academic_Unit_Hierarchy_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public $Academic_Unit_Hierarchy_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
      * @uses Put_Academic_Unit_Hierarchy_RequestType::setAcademic_Unit_Hierarchy_Data()
      * @uses Put_Academic_Unit_Hierarchy_RequestType::setAdd_Only()
      * @uses Put_Academic_Unit_Hierarchy_RequestType::setVersion()
-     * @param \StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference
-     * @param \StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference = null, \StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference = null, \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setAcademic_Unit_Hierarchy_Reference($academic_Unit_Hierarchy_Reference)
@@ -62,7 +62,7 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
     }
     /**
      * Get Academic_Unit_Hierarchy_Reference value
-     * @return \StructType\Academic_Unit_HierarchyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType|null
      */
     public function getAcademic_Unit_Hierarchy_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Hierarchy_Reference value
-     * @param \StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference
-     * @return \StructType\Put_Academic_Unit_Hierarchy_RequestType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_Hierarchy_RequestType
      */
-    public function setAcademic_Unit_Hierarchy_Reference(\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference = null)
+    public function setAcademic_Unit_Hierarchy_Reference(\WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $academic_Unit_Hierarchy_Reference = null)
     {
         $this->Academic_Unit_Hierarchy_Reference = $academic_Unit_Hierarchy_Reference;
         return $this;
     }
     /**
      * Get Academic_Unit_Hierarchy_Data value
-     * @return \StructType\Academic_Unit_Hierarchy_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType|null
      */
     public function getAcademic_Unit_Hierarchy_Data()
     {
@@ -88,10 +88,10 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Hierarchy_Data value
-     * @param \StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data
-     * @return \StructType\Put_Academic_Unit_Hierarchy_RequestType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_Hierarchy_RequestType
      */
-    public function setAcademic_Unit_Hierarchy_Data(\StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data = null)
+    public function setAcademic_Unit_Hierarchy_Data(\WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType $academic_Unit_Hierarchy_Data = null)
     {
         $this->Academic_Unit_Hierarchy_Data = $academic_Unit_Hierarchy_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Academic_Unit_Hierarchy_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_Hierarchy_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Academic_Unit_Hierarchy_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_Hierarchy_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Academic_Unit_Hierarchy_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Academic_Unit_Hierarchy_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_Hierarchy_RequestType
      */
     public static function __set_state(array $array)
     {

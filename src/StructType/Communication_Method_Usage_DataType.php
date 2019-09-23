@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
      * The Type_Reference
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Communication_Usage_Type_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType[]
      */
     public $Type_Reference;
     /**
@@ -50,7 +50,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
      * @uses Communication_Method_Usage_DataType::setUse_For_Reference()
      * @uses Communication_Method_Usage_DataType::setComments()
      * @uses Communication_Method_Usage_DataType::setPublic()
-     * @param \StructType\Communication_Usage_Type_ReferenceType[] $type_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType[] $type_Reference
      * @param string[] $use_For_Reference
      * @param string $comments
      * @param bool $public
@@ -65,7 +65,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     }
     /**
      * Get Type_Reference value
-     * @return \StructType\Communication_Usage_Type_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType[]|null
      */
     public function getType_Reference()
     {
@@ -83,12 +83,12 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Method_Usage_DataTypeType_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$communication_Method_Usage_DataTypeType_ReferenceItem instanceof \StructType\Communication_Usage_Type_ReferenceType) {
+            if (!$communication_Method_Usage_DataTypeType_ReferenceItem instanceof \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType) {
                 $invalidValues[] = is_object($communication_Method_Usage_DataTypeType_ReferenceItem) ? get_class($communication_Method_Usage_DataTypeType_ReferenceItem) : sprintf('%s(%s)', gettype($communication_Method_Usage_DataTypeType_ReferenceItem), var_export($communication_Method_Usage_DataTypeType_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Type_Reference property can only contain items of type \StructType\Communication_Usage_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -96,8 +96,8 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     /**
      * Set Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Type_ReferenceType[] $type_Reference
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType[] $type_Reference
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public function setType_Reference(array $type_Reference = array())
     {
@@ -111,14 +111,14 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     /**
      * Add item to Type_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Type_ReferenceType $item
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
-    public function addToType_Reference(\StructType\Communication_Usage_Type_ReferenceType $item)
+    public function addToType_Reference(\WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Usage_Type_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Type_Reference property can only contain items of type \StructType\Communication_Usage_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Type_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Type_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Type_Reference[] = $item;
         return $this;
@@ -143,23 +143,23 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Method_Usage_DataTypeUse_For_ReferenceItem) {
             // validation for constraint: enumeration
-            if (!\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid($communication_Method_Usage_DataTypeUse_For_ReferenceItem)) {
+            if (!\WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid($communication_Method_Usage_DataTypeUse_For_ReferenceItem)) {
                 $invalidValues[] = is_object($communication_Method_Usage_DataTypeUse_For_ReferenceItem) ? get_class($communication_Method_Usage_DataTypeUse_For_ReferenceItem) : sprintf('%s(%s)', gettype($communication_Method_Usage_DataTypeUse_For_ReferenceItem), var_export($communication_Method_Usage_DataTypeUse_For_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Communication_Usage_BehaviorEnumeration', is_array($invalidValues) ? implode(', ', $invalidValues) : var_export($invalidValues, true), implode(', ', \EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()));
+            $message = sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration', is_array($invalidValues) ? implode(', ', $invalidValues) : var_export($invalidValues, true), implode(', ', \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()));
         }
         unset($invalidValues);
         return $message;
     }
     /**
      * Set Use_For_Reference value
-     * @uses \EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid()
-     * @uses \EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $use_For_Reference
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public function setUse_For_Reference(array $use_For_Reference = array())
     {
@@ -172,17 +172,17 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     }
     /**
      * Add item to Use_For_Reference value
-     * @uses \EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid()
-     * @uses \EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public function addToUse_For_Reference($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Communication_Usage_BehaviorEnumeration', is_array($item) ? implode(', ', $item) : var_export($item, true), implode(', ', \EnumType\Communication_Usage_BehaviorEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration', is_array($item) ? implode(', ', $item) : var_export($item, true), implode(', ', \WorkdayWsdl\\EnumType\Communication_Usage_BehaviorEnumeration::getValidValues())), __LINE__);
         }
         $this->Use_For_Reference[] = $item;
         return $this;
@@ -198,7 +198,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     /**
      * Set Comments value
      * @param string $comments
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public function setComments($comments = null)
     {
@@ -220,7 +220,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
     /**
      * Set Public value
      * @param bool $public
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public function setPublic($public = null)
     {
@@ -237,7 +237,7 @@ class Communication_Method_Usage_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Communication_Method_Usage_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_DataType
      */
     public static function __set_state(array $array)
     {

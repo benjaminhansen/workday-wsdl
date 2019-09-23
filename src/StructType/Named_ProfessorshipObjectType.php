@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Named_ProfessorshipObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
      * Constructor method for Named_ProfessorshipObjectType
      * @uses Named_ProfessorshipObjectType::setID()
      * @uses Named_ProfessorshipObjectType::setDescriptor()
-     * @param \StructType\Named_ProfessorshipObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Named_ProfessorshipObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $named_ProfessorshipObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$named_ProfessorshipObjectTypeIDItem instanceof \StructType\Named_ProfessorshipObjectIDType) {
+            if (!$named_ProfessorshipObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType) {
                 $invalidValues[] = is_object($named_ProfessorshipObjectTypeIDItem) ? get_class($named_ProfessorshipObjectTypeIDItem) : sprintf('%s(%s)', gettype($named_ProfessorshipObjectTypeIDItem), var_export($named_ProfessorshipObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Named_ProfessorshipObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Named_ProfessorshipObjectIDType[] $iD
-     * @return \StructType\Named_ProfessorshipObjectType
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Named_ProfessorshipObjectIDType $item
-     * @return \StructType\Named_ProfessorshipObjectType
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
-    public function addToID(\StructType\Named_ProfessorshipObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Named_ProfessorshipObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Named_ProfessorshipObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Named_ProfessorshipObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Named_ProfessorshipObjectType
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Named_ProfessorshipObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Named_ProfessorshipObjectType
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
     public static function __set_state(array $array)
     {

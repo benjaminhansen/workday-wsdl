@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,14 +26,14 @@ class Put_Workteam_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Instance ID or Reference ID.
      * - minOccurs: 0
-     * @var \StructType\WorkteamObjectType
+     * @var \WorkdayWsdl\\StructType\WorkteamObjectType
      */
     public $Workteam_Reference;
     /**
      * The Workteam_Data
      * Meta information extracted from the WSDL
      * - documentation: Workteam Data
-     * @var \StructType\Workteam_DataType
+     * @var \WorkdayWsdl\\StructType\Workteam_DataType
      */
     public $Workteam_Data;
     /**
@@ -50,11 +50,11 @@ class Put_Workteam_RequestType extends AbstractStructBase
      * @uses Put_Workteam_RequestType::setWorkteam_Data()
      * @uses Put_Workteam_RequestType::setVersion()
      * @param bool $add_Only
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @param \StructType\Workteam_DataType $workteam_Data
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @param \WorkdayWsdl\\StructType\Workteam_DataType $workteam_Data
      * @param string $version
      */
-    public function __construct($add_Only = null, \StructType\WorkteamObjectType $workteam_Reference = null, \StructType\Workteam_DataType $workteam_Data = null, $version = null)
+    public function __construct($add_Only = null, \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null, \WorkdayWsdl\\StructType\Workteam_DataType $workteam_Data = null, $version = null)
     {
         $this
             ->setAdd_Only($add_Only)
@@ -73,7 +73,7 @@ class Put_Workteam_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Workteam_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -86,7 +86,7 @@ class Put_Workteam_RequestType extends AbstractStructBase
     }
     /**
      * Get Workteam_Reference value
-     * @return \StructType\WorkteamObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkteamObjectType|null
      */
     public function getWorkteam_Reference()
     {
@@ -94,17 +94,17 @@ class Put_Workteam_RequestType extends AbstractStructBase
     }
     /**
      * Set Workteam_Reference value
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @return \StructType\Put_Workteam_RequestType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_RequestType
      */
-    public function setWorkteam_Reference(\StructType\WorkteamObjectType $workteam_Reference = null)
+    public function setWorkteam_Reference(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null)
     {
         $this->Workteam_Reference = $workteam_Reference;
         return $this;
     }
     /**
      * Get Workteam_Data value
-     * @return \StructType\Workteam_DataType|null
+     * @return \WorkdayWsdl\\StructType\Workteam_DataType|null
      */
     public function getWorkteam_Data()
     {
@@ -112,10 +112,10 @@ class Put_Workteam_RequestType extends AbstractStructBase
     }
     /**
      * Set Workteam_Data value
-     * @param \StructType\Workteam_DataType $workteam_Data
-     * @return \StructType\Put_Workteam_RequestType
+     * @param \WorkdayWsdl\\StructType\Workteam_DataType $workteam_Data
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_RequestType
      */
-    public function setWorkteam_Data(\StructType\Workteam_DataType $workteam_Data = null)
+    public function setWorkteam_Data(\WorkdayWsdl\\StructType\Workteam_DataType $workteam_Data = null)
     {
         $this->Workteam_Data = $workteam_Data;
         return $this;
@@ -131,7 +131,7 @@ class Put_Workteam_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Workteam_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_RequestType
      */
     public function setVersion($version = null)
     {
@@ -148,7 +148,7 @@ class Put_Workteam_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Workteam_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Workteam_RequestType
      */
     public static function __set_state(array $array)
     {

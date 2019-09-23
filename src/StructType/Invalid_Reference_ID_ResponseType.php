@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
      * - documentation: Invalid Reference ID Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Invalid_Reference_ID_DataType[]
+     * @var \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType[]
      */
     public $Invalid_Reference;
     /**
      * Constructor method for Invalid_Reference_ID_ResponseType
      * @uses Invalid_Reference_ID_ResponseType::setInvalid_Reference()
-     * @param \StructType\Invalid_Reference_ID_DataType[] $invalid_Reference
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType[] $invalid_Reference
      */
     public function __construct(array $invalid_Reference = array())
     {
@@ -33,7 +33,7 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
     }
     /**
      * Get Invalid_Reference value
-     * @return \StructType\Invalid_Reference_ID_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType[]|null
      */
     public function getInvalid_Reference()
     {
@@ -51,12 +51,12 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem instanceof \StructType\Invalid_Reference_ID_DataType) {
+            if (!$invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem instanceof \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType) {
                 $invalidValues[] = is_object($invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem) ? get_class($invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem) : sprintf('%s(%s)', gettype($invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem), var_export($invalid_Reference_ID_ResponseTypeInvalid_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Invalid_Reference property can only contain items of type \StructType\Invalid_Reference_ID_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Invalid_Reference property can only contain items of type \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
     /**
      * Set Invalid_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Invalid_Reference_ID_DataType[] $invalid_Reference
-     * @return \StructType\Invalid_Reference_ID_ResponseType
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType[] $invalid_Reference
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType
      */
     public function setInvalid_Reference(array $invalid_Reference = array())
     {
@@ -79,14 +79,14 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
     /**
      * Add item to Invalid_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Invalid_Reference_ID_DataType $item
-     * @return \StructType\Invalid_Reference_ID_ResponseType
+     * @param \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType $item
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType
      */
-    public function addToInvalid_Reference(\StructType\Invalid_Reference_ID_DataType $item)
+    public function addToInvalid_Reference(\WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Invalid_Reference_ID_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Invalid_Reference property can only contain items of type \StructType\Invalid_Reference_ID_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Invalid_Reference property can only contain items of type \WorkdayWsdl\\StructType\Invalid_Reference_ID_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Invalid_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Invalid_Reference_ID_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Invalid_Reference_ID_ResponseType
+     * @return \WorkdayWsdl\\StructType\Invalid_Reference_ID_ResponseType
      */
     public static function __set_state(array $array)
     {

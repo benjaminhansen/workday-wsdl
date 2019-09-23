@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ class Emergency_Contact_Priority_ReferenceType extends AbstractStructBase
     /**
      * Set Emergency_Contact_Priority value
      * @param string $emergency_Contact_Priority
-     * @return \StructType\Emergency_Contact_Priority_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Priority_ReferenceType
      */
     public function setEmergency_Contact_Priority($emergency_Contact_Priority = null)
     {
@@ -59,7 +59,7 @@ class Emergency_Contact_Priority_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Emergency_Contact_Priority_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Priority_ReferenceType
      */
     public static function __set_state(array $array)
     {

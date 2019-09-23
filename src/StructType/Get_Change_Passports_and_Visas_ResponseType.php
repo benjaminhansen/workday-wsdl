@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[]
+     * @var \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[]
      */
     public $Request_References;
     /**
@@ -25,7 +25,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType[]
+     * @var \WorkdayWsdl\\StructType\Response_FilterType[]
      */
     public $Response_Filter;
     /**
@@ -33,7 +33,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Response_ResultsType[]
+     * @var \WorkdayWsdl\\StructType\Response_ResultsType[]
      */
     public $Response_Results;
     /**
@@ -41,7 +41,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Change_Passports_and_Visas_Response_DataType[]
+     * @var \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType[]
      */
     public $Response_Data;
     /**
@@ -58,10 +58,10 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * @uses Get_Change_Passports_and_Visas_ResponseType::setResponse_Results()
      * @uses Get_Change_Passports_and_Visas_ResponseType::setResponse_Data()
      * @uses Get_Change_Passports_and_Visas_ResponseType::setVersion()
-     * @param \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[] $request_References
-     * @param \StructType\Response_FilterType[] $response_Filter
-     * @param \StructType\Response_ResultsType[] $response_Results
-     * @param \StructType\Change_Passports_and_Visas_Response_DataType[] $response_Data
+     * @param \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[] $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType[] $response_Filter
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType[] $response_Results
+     * @param \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType[] $response_Data
      * @param string $version
      */
     public function __construct(array $request_References = array(), array $response_Filter = array(), array $response_Results = array(), array $response_Data = array(), $version = null)
@@ -75,7 +75,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[]|null
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[]|null
      */
     public function getRequest_References()
     {
@@ -93,12 +93,12 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem instanceof \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType) {
+            if (!$get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem instanceof \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType) {
                 $invalidValues[] = is_object($get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem) ? get_class($get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem) : sprintf('%s(%s)', gettype($get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem), var_export($get_Change_Passports_and_Visas_ResponseTypeRequest_ReferencesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Request_References property can only contain items of type \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Request_References property can only contain items of type \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -106,8 +106,8 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Set Request_References value
      * @throws \InvalidArgumentException
-     * @param \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[] $request_References
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType[] $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public function setRequest_References(array $request_References = array())
     {
@@ -121,21 +121,21 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Add item to Request_References value
      * @throws \InvalidArgumentException
-     * @param \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType $item
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
-    public function addToRequest_References(\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType $item)
+    public function addToRequest_References(\WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType) {
-            throw new \InvalidArgumentException(sprintf('The Request_References property can only contain items of type \StructType\Get_Change_Passports_and_Visas_Request_ReferencesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType) {
+            throw new \InvalidArgumentException(sprintf('The Request_References property can only contain items of type \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_Request_ReferencesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Request_References[] = $item;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType[]|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType[]|null
      */
     public function getResponse_Filter()
     {
@@ -153,12 +153,12 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem instanceof \StructType\Response_FilterType) {
+            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem instanceof \WorkdayWsdl\\StructType\Response_FilterType) {
                 $invalidValues[] = is_object($get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem) ? get_class($get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem) : sprintf('%s(%s)', gettype($get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem), var_export($get_Change_Passports_and_Visas_ResponseTypeResponse_FilterItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Response_Filter property can only contain items of type \StructType\Response_FilterType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Response_Filter property can only contain items of type \WorkdayWsdl\\StructType\Response_FilterType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -166,8 +166,8 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Set Response_Filter value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_FilterType[] $response_Filter
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType[] $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public function setResponse_Filter(array $response_Filter = array())
     {
@@ -181,21 +181,21 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Add item to Response_Filter value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_FilterType $item
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
-    public function addToResponse_Filter(\StructType\Response_FilterType $item)
+    public function addToResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Response_FilterType) {
-            throw new \InvalidArgumentException(sprintf('The Response_Filter property can only contain items of type \StructType\Response_FilterType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Response_FilterType) {
+            throw new \InvalidArgumentException(sprintf('The Response_Filter property can only contain items of type \WorkdayWsdl\\StructType\Response_FilterType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Response_Filter[] = $item;
         return $this;
     }
     /**
      * Get Response_Results value
-     * @return \StructType\Response_ResultsType[]|null
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType[]|null
      */
     public function getResponse_Results()
     {
@@ -213,12 +213,12 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem instanceof \StructType\Response_ResultsType) {
+            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem instanceof \WorkdayWsdl\\StructType\Response_ResultsType) {
                 $invalidValues[] = is_object($get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem) ? get_class($get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem) : sprintf('%s(%s)', gettype($get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem), var_export($get_Change_Passports_and_Visas_ResponseTypeResponse_ResultsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Response_Results property can only contain items of type \StructType\Response_ResultsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Response_Results property can only contain items of type \WorkdayWsdl\\StructType\Response_ResultsType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -226,8 +226,8 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Set Response_Results value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_ResultsType[] $response_Results
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType[] $response_Results
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public function setResponse_Results(array $response_Results = array())
     {
@@ -241,21 +241,21 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Add item to Response_Results value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_ResultsType $item
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
-    public function addToResponse_Results(\StructType\Response_ResultsType $item)
+    public function addToResponse_Results(\WorkdayWsdl\\StructType\Response_ResultsType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Response_ResultsType) {
-            throw new \InvalidArgumentException(sprintf('The Response_Results property can only contain items of type \StructType\Response_ResultsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Response_ResultsType) {
+            throw new \InvalidArgumentException(sprintf('The Response_Results property can only contain items of type \WorkdayWsdl\\StructType\Response_ResultsType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Response_Results[] = $item;
         return $this;
     }
     /**
      * Get Response_Data value
-     * @return \StructType\Change_Passports_and_Visas_Response_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType[]|null
      */
     public function getResponse_Data()
     {
@@ -273,12 +273,12 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem instanceof \StructType\Change_Passports_and_Visas_Response_DataType) {
+            if (!$get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem instanceof \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType) {
                 $invalidValues[] = is_object($get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem) ? get_class($get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem) : sprintf('%s(%s)', gettype($get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem), var_export($get_Change_Passports_and_Visas_ResponseTypeResponse_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Response_Data property can only contain items of type \StructType\Change_Passports_and_Visas_Response_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -286,8 +286,8 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Set Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Passports_and_Visas_Response_DataType[] $response_Data
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType[] $response_Data
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public function setResponse_Data(array $response_Data = array())
     {
@@ -301,14 +301,14 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Add item to Response_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Change_Passports_and_Visas_Response_DataType $item
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @param \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
-    public function addToResponse_Data(\StructType\Change_Passports_and_Visas_Response_DataType $item)
+    public function addToResponse_Data(\WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Change_Passports_and_Visas_Response_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Response_Data property can only contain items of type \StructType\Change_Passports_and_Visas_Response_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Response_Data property can only contain items of type \WorkdayWsdl\\StructType\Change_Passports_and_Visas_Response_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Response_Data[] = $item;
         return $this;
@@ -324,7 +324,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -341,7 +341,7 @@ class Get_Change_Passports_and_Visas_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Change_Passports_and_Visas_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Passports_and_Visas_ResponseType
      */
     public static function __set_state(array $array)
     {

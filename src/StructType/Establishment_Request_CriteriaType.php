@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Establishment_Request_CriteriaType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: Country for Establishments
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
      * Constructor method for Establishment_Request_CriteriaType
      * @uses Establishment_Request_CriteriaType::setCountry_Reference()
-     * @param \StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this
             ->setCountry_Reference($country_Reference);
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -39,10 +39,10 @@ class Establishment_Request_CriteriaType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Establishment_Request_CriteriaType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -53,7 +53,7 @@ class Establishment_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Establishment_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

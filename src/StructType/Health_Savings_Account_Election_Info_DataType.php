@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The currency of the annual maximum amount for Health Savings Account.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -48,9 +48,9 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
      * @uses Health_Savings_Account_Election_Info_DataType::setCurrency_Reference()
      * @param string $coverage_Target_Name
      * @param float $maximum_Annual_Contribution_Amount
-     * @param \StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
      */
-    public function __construct($coverage_Target_Name = null, $maximum_Annual_Contribution_Amount = null, \StructType\CurrencyObjectType $currency_Reference = null)
+    public function __construct($coverage_Target_Name = null, $maximum_Annual_Contribution_Amount = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this
             ->setCoverage_Target_Name($coverage_Target_Name)
@@ -68,7 +68,7 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
     /**
      * Set Coverage_Target_Name value
      * @param string $coverage_Target_Name
-     * @return \StructType\Health_Savings_Account_Election_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Health_Savings_Account_Election_Info_DataType
      */
     public function setCoverage_Target_Name($coverage_Target_Name = null)
     {
@@ -90,7 +90,7 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
     /**
      * Set Maximum_Annual_Contribution_Amount value
      * @param float $maximum_Annual_Contribution_Amount
-     * @return \StructType\Health_Savings_Account_Election_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Health_Savings_Account_Election_Info_DataType
      */
     public function setMaximum_Annual_Contribution_Amount($maximum_Annual_Contribution_Amount = null)
     {
@@ -111,7 +111,7 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -119,10 +119,10 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Health_Savings_Account_Election_Info_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Health_Savings_Account_Election_Info_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
@@ -133,7 +133,7 @@ class Health_Savings_Account_Election_Info_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Health_Savings_Account_Election_Info_DataType
+     * @return \WorkdayWsdl\\StructType\Health_Savings_Account_Election_Info_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class User_Based_Security_Group_Reference_Only_Response_GroupType extends Abstra
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -61,7 +61,7 @@ class User_Based_Security_Group_Reference_Only_Response_GroupType extends Abstra
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType
      */
     public static function __set_state(array $array)
     {

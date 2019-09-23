@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CIP_Code__Workday_Owned_ObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
      * Constructor method for CIP_Code__Workday_Owned_ObjectType
      * @uses CIP_Code__Workday_Owned_ObjectType::setID()
      * @uses CIP_Code__Workday_Owned_ObjectType::setDescriptor()
-     * @param \StructType\CIP_Code__Workday_Owned_ObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cIP_Code_Workday_Owned_ObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$cIP_Code_Workday_Owned_ObjectTypeIDItem instanceof \StructType\CIP_Code__Workday_Owned_ObjectIDType) {
+            if (!$cIP_Code_Workday_Owned_ObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType) {
                 $invalidValues[] = is_object($cIP_Code_Workday_Owned_ObjectTypeIDItem) ? get_class($cIP_Code_Workday_Owned_ObjectTypeIDItem) : sprintf('%s(%s)', gettype($cIP_Code_Workday_Owned_ObjectTypeIDItem), var_export($cIP_Code_Workday_Owned_ObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\CIP_Code__Workday_Owned_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CIP_Code__Workday_Owned_ObjectIDType[] $iD
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectType
+     * @param \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\CIP_Code__Workday_Owned_ObjectIDType $item
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectType
+     * @param \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType
      */
-    public function addToID(\StructType\CIP_Code__Workday_Owned_ObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CIP_Code__Workday_Owned_ObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\CIP_Code__Workday_Owned_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectType
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class CIP_Code__Workday_Owned_ObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CIP_Code__Workday_Owned_ObjectType
+     * @return \WorkdayWsdl\\StructType\CIP_Code__Workday_Owned_ObjectType
      */
     public static function __set_state(array $array)
     {

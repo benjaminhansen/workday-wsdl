@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
      * The Request_References
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_Type_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -38,11 +38,11 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
      * @uses Get_Company_Insider_Types_RequestType::setRequest_References()
      * @uses Get_Company_Insider_Types_RequestType::setResponse_Filter()
      * @uses Get_Company_Insider_Types_RequestType::setVersion()
-     * @param \StructType\Company_Insider_Type_Request_ReferencesType $request_References
-     * @param \StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
      * @param string $version
      */
-    public function __construct(\StructType\Company_Insider_Type_Request_ReferencesType $request_References = null, \StructType\Response_FilterType $response_Filter = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -51,7 +51,7 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Company_Insider_Type_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -59,17 +59,17 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Company_Insider_Type_Request_ReferencesType $request_References
-     * @return \StructType\Get_Company_Insider_Types_RequestType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Company_Insider_Types_RequestType
      */
-    public function setRequest_References(\StructType\Company_Insider_Type_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Company_Insider_Type_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -77,10 +77,10 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Company_Insider_Types_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Company_Insider_Types_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
@@ -96,7 +96,7 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Company_Insider_Types_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Company_Insider_Types_RequestType
      */
     public function setVersion($version = null)
     {
@@ -113,7 +113,7 @@ class Get_Company_Insider_Types_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Company_Insider_Types_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Company_Insider_Types_RequestType
      */
     public static function __set_state(array $array)
     {

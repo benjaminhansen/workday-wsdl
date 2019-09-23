@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
      * Meta information extracted from the WSDL
      * - documentation: Business Process Parameters
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
@@ -27,7 +27,7 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
      * - documentation: Details of the Probation Period that is being added to the Worker
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Manage_Employee_Probation_Periods_Event_DataType[]
+     * @var \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType[]
      */
     public $Manage_Employee_Probation_Periods_Event_Data;
     /**
@@ -42,11 +42,11 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
      * @uses Manage_Employee_Probation_Periods_Event_RequestType::setBusiness_Process_Parameters()
      * @uses Manage_Employee_Probation_Periods_Event_RequestType::setManage_Employee_Probation_Periods_Event_Data()
      * @uses Manage_Employee_Probation_Periods_Event_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Manage_Employee_Probation_Periods_Event_DataType[] $manage_Employee_Probation_Periods_Event_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType[] $manage_Employee_Probation_Periods_Event_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, array $manage_Employee_Probation_Periods_Event_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, array $manage_Employee_Probation_Periods_Event_Data = array(), $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -55,7 +55,7 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -63,17 +63,17 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Manage_Employee_Probation_Periods_Event_Data value
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType[]|null
      */
     public function getManage_Employee_Probation_Periods_Event_Data()
     {
@@ -91,12 +91,12 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
         $invalidValues = [];
         foreach ($values as $manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem) {
             // validation for constraint: itemType
-            if (!$manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem instanceof \StructType\Manage_Employee_Probation_Periods_Event_DataType) {
+            if (!$manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem instanceof \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType) {
                 $invalidValues[] = is_object($manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem) ? get_class($manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem) : sprintf('%s(%s)', gettype($manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem), var_export($manage_Employee_Probation_Periods_Event_RequestTypeManage_Employee_Probation_Periods_Event_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Manage_Employee_Probation_Periods_Event_Data property can only contain items of type \StructType\Manage_Employee_Probation_Periods_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Manage_Employee_Probation_Periods_Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -104,8 +104,8 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
     /**
      * Set Manage_Employee_Probation_Periods_Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Employee_Probation_Periods_Event_DataType[] $manage_Employee_Probation_Periods_Event_Data
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType[] $manage_Employee_Probation_Periods_Event_Data
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_RequestType
      */
     public function setManage_Employee_Probation_Periods_Event_Data(array $manage_Employee_Probation_Periods_Event_Data = array())
     {
@@ -119,14 +119,14 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
     /**
      * Add item to Manage_Employee_Probation_Periods_Event_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Manage_Employee_Probation_Periods_Event_DataType $item
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType $item
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_RequestType
      */
-    public function addToManage_Employee_Probation_Periods_Event_Data(\StructType\Manage_Employee_Probation_Periods_Event_DataType $item)
+    public function addToManage_Employee_Probation_Periods_Event_Data(\WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Manage_Employee_Probation_Periods_Event_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Manage_Employee_Probation_Periods_Event_Data property can only contain items of type \StructType\Manage_Employee_Probation_Periods_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Manage_Employee_Probation_Periods_Event_Data property can only contain items of type \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Manage_Employee_Probation_Periods_Event_Data[] = $item;
         return $this;
@@ -142,7 +142,7 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_RequestType
      */
     public function setVersion($version = null)
     {
@@ -159,7 +159,7 @@ class Manage_Employee_Probation_Periods_Event_RequestType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Manage_Employee_Probation_Periods_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\Manage_Employee_Probation_Periods_Event_RequestType
      */
     public static function __set_state(array $array)
     {

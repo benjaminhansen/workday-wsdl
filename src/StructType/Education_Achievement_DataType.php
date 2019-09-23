@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * The Country_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Reference of the Country in which the school is located. If the Country Reference and School Name matches an entry from the Schools report, this reference will not be set; a School Reference will be used instead.
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -42,7 +42,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Reference of the School where the education was received. The Schools report returns all of the schools that can be referenced.
      * - minOccurs: 0
-     * @var \StructType\SchoolObjectType
+     * @var \WorkdayWsdl\\StructType\SchoolObjectType
      */
     public $School_Reference;
     /**
@@ -59,7 +59,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A Reference of the of School Type. If a School Reference is submitted, or found by a matching Country Reference and School Name, this value will not be saved because the School Reference is linked to a School Type.
      * - minOccurs: 0
-     * @var \StructType\School_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\School_TypeObjectType
      */
     public $School_Type_Reference;
     /**
@@ -76,7 +76,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The degree earned.
      * - minOccurs: 0
-     * @var \StructType\DegreeObjectType
+     * @var \WorkdayWsdl\\StructType\DegreeObjectType
      */
     public $Degree_Reference;
     /**
@@ -84,7 +84,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Indicates whether the degree was received.
      * - minOccurs: 0
-     * @var \StructType\Degree_CompletedObjectType
+     * @var \WorkdayWsdl\\StructType\Degree_CompletedObjectType
      */
     public $Degree_Completed_Reference;
     /**
@@ -101,7 +101,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The field of study.
      * - minOccurs: 0
-     * @var \StructType\Field_of_StudyObjectType
+     * @var \WorkdayWsdl\\StructType\Field_of_StudyObjectType
      */
     public $Field_Of_Study_Reference;
     /**
@@ -181,15 +181,15 @@ class Education_Achievement_DataType extends AbstractStructBase
      * @uses Education_Achievement_DataType::setLast_Day_Attended()
      * @param string $education_ID
      * @param bool $remove_Education
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\SchoolObjectType $school_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference
      * @param string $school_Name
-     * @param \StructType\School_TypeObjectType $school_Type_Reference
+     * @param \WorkdayWsdl\\StructType\School_TypeObjectType $school_Type_Reference
      * @param string $location
-     * @param \StructType\DegreeObjectType $degree_Reference
-     * @param \StructType\Degree_CompletedObjectType $degree_Completed_Reference
+     * @param \WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference
      * @param string $date_Degree_Received
-     * @param \StructType\Field_of_StudyObjectType $field_Of_Study_Reference
+     * @param \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference
      * @param string $grade_Average
      * @param string $first_Year_Attended
      * @param string $last_Year_Attended
@@ -197,7 +197,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * @param string $first_Day_Attended
      * @param string $last_Day_Attended
      */
-    public function __construct($education_ID = null, $remove_Education = null, \StructType\CountryObjectType $country_Reference = null, \StructType\SchoolObjectType $school_Reference = null, $school_Name = null, \StructType\School_TypeObjectType $school_Type_Reference = null, $location = null, \StructType\DegreeObjectType $degree_Reference = null, \StructType\Degree_CompletedObjectType $degree_Completed_Reference = null, $date_Degree_Received = null, \StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null, $grade_Average = null, $first_Year_Attended = null, $last_Year_Attended = null, $is_Highest_Level_of_Education = null, $first_Day_Attended = null, $last_Day_Attended = null)
+    public function __construct($education_ID = null, $remove_Education = null, \WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference = null, $school_Name = null, \WorkdayWsdl\\StructType\School_TypeObjectType $school_Type_Reference = null, $location = null, \WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference = null, \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null, $date_Degree_Received = null, \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null, $grade_Average = null, $first_Year_Attended = null, $last_Year_Attended = null, $is_Highest_Level_of_Education = null, $first_Day_Attended = null, $last_Day_Attended = null)
     {
         $this
             ->setEducation_ID($education_ID)
@@ -229,7 +229,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Education_ID value
      * @param string $education_ID
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setEducation_ID($education_ID = null)
     {
@@ -251,7 +251,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Remove_Education value
      * @param bool $remove_Education
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setRemove_Education($remove_Education = null)
     {
@@ -264,7 +264,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -272,17 +272,17 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get School_Reference value
-     * @return \StructType\SchoolObjectType|null
+     * @return \WorkdayWsdl\\StructType\SchoolObjectType|null
      */
     public function getSchool_Reference()
     {
@@ -290,10 +290,10 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set School_Reference value
-     * @param \StructType\SchoolObjectType $school_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\SchoolObjectType $school_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setSchool_Reference(\StructType\SchoolObjectType $school_Reference = null)
+    public function setSchool_Reference(\WorkdayWsdl\\StructType\SchoolObjectType $school_Reference = null)
     {
         $this->School_Reference = $school_Reference;
         return $this;
@@ -309,7 +309,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set School_Name value
      * @param string $school_Name
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setSchool_Name($school_Name = null)
     {
@@ -322,7 +322,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get School_Type_Reference value
-     * @return \StructType\School_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\School_TypeObjectType|null
      */
     public function getSchool_Type_Reference()
     {
@@ -330,10 +330,10 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set School_Type_Reference value
-     * @param \StructType\School_TypeObjectType $school_Type_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\School_TypeObjectType $school_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setSchool_Type_Reference(\StructType\School_TypeObjectType $school_Type_Reference = null)
+    public function setSchool_Type_Reference(\WorkdayWsdl\\StructType\School_TypeObjectType $school_Type_Reference = null)
     {
         $this->School_Type_Reference = $school_Type_Reference;
         return $this;
@@ -349,7 +349,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Location value
      * @param string $location
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setLocation($location = null)
     {
@@ -362,7 +362,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Degree_Reference value
-     * @return \StructType\DegreeObjectType|null
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType|null
      */
     public function getDegree_Reference()
     {
@@ -370,17 +370,17 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Degree_Reference value
-     * @param \StructType\DegreeObjectType $degree_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setDegree_Reference(\StructType\DegreeObjectType $degree_Reference = null)
+    public function setDegree_Reference(\WorkdayWsdl\\StructType\DegreeObjectType $degree_Reference = null)
     {
         $this->Degree_Reference = $degree_Reference;
         return $this;
     }
     /**
      * Get Degree_Completed_Reference value
-     * @return \StructType\Degree_CompletedObjectType|null
+     * @return \WorkdayWsdl\\StructType\Degree_CompletedObjectType|null
      */
     public function getDegree_Completed_Reference()
     {
@@ -388,10 +388,10 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Degree_Completed_Reference value
-     * @param \StructType\Degree_CompletedObjectType $degree_Completed_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setDegree_Completed_Reference(\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null)
+    public function setDegree_Completed_Reference(\WorkdayWsdl\\StructType\Degree_CompletedObjectType $degree_Completed_Reference = null)
     {
         $this->Degree_Completed_Reference = $degree_Completed_Reference;
         return $this;
@@ -407,7 +407,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Date_Degree_Received value
      * @param string $date_Degree_Received
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setDate_Degree_Received($date_Degree_Received = null)
     {
@@ -420,7 +420,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Field_Of_Study_Reference value
-     * @return \StructType\Field_of_StudyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Field_of_StudyObjectType|null
      */
     public function getField_Of_Study_Reference()
     {
@@ -428,10 +428,10 @@ class Education_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Field_Of_Study_Reference value
-     * @param \StructType\Field_of_StudyObjectType $field_Of_Study_Reference
-     * @return \StructType\Education_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
-    public function setField_Of_Study_Reference(\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null)
+    public function setField_Of_Study_Reference(\WorkdayWsdl\\StructType\Field_of_StudyObjectType $field_Of_Study_Reference = null)
     {
         $this->Field_Of_Study_Reference = $field_Of_Study_Reference;
         return $this;
@@ -447,7 +447,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Grade_Average value
      * @param string $grade_Average
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setGrade_Average($grade_Average = null)
     {
@@ -469,7 +469,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set First_Year_Attended value
      * @param string $first_Year_Attended
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setFirst_Year_Attended($first_Year_Attended = null)
     {
@@ -491,7 +491,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Last_Year_Attended value
      * @param string $last_Year_Attended
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setLast_Year_Attended($last_Year_Attended = null)
     {
@@ -513,7 +513,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Is_Highest_Level_of_Education value
      * @param bool $is_Highest_Level_of_Education
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setIs_Highest_Level_of_Education($is_Highest_Level_of_Education = null)
     {
@@ -535,7 +535,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set First_Day_Attended value
      * @param string $first_Day_Attended
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setFirst_Day_Attended($first_Day_Attended = null)
     {
@@ -557,7 +557,7 @@ class Education_Achievement_DataType extends AbstractStructBase
     /**
      * Set Last_Day_Attended value
      * @param string $last_Day_Attended
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public function setLast_Day_Attended($last_Day_Attended = null)
     {
@@ -574,7 +574,7 @@ class Education_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Education_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Education_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

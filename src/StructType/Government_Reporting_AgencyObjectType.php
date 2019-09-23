@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Government_Reporting_AgencyObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
      * Constructor method for Government_Reporting_AgencyObjectType
      * @uses Government_Reporting_AgencyObjectType::setID()
      * @uses Government_Reporting_AgencyObjectType::setDescriptor()
-     * @param \StructType\Government_Reporting_AgencyObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Government_Reporting_AgencyObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $government_Reporting_AgencyObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$government_Reporting_AgencyObjectTypeIDItem instanceof \StructType\Government_Reporting_AgencyObjectIDType) {
+            if (!$government_Reporting_AgencyObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType) {
                 $invalidValues[] = is_object($government_Reporting_AgencyObjectTypeIDItem) ? get_class($government_Reporting_AgencyObjectTypeIDItem) : sprintf('%s(%s)', gettype($government_Reporting_AgencyObjectTypeIDItem), var_export($government_Reporting_AgencyObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Government_Reporting_AgencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_Reporting_AgencyObjectIDType[] $iD
-     * @return \StructType\Government_Reporting_AgencyObjectType
+     * @param \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_Reporting_AgencyObjectIDType $item
-     * @return \StructType\Government_Reporting_AgencyObjectType
+     * @param \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType
      */
-    public function addToID(\StructType\Government_Reporting_AgencyObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Government_Reporting_AgencyObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Government_Reporting_AgencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Government_Reporting_AgencyObjectType
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Government_Reporting_AgencyObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Government_Reporting_AgencyObjectType
+     * @return \WorkdayWsdl\\StructType\Government_Reporting_AgencyObjectType
      */
     public static function __set_state(array $array)
     {

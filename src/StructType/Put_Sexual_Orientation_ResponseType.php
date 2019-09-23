@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the sexual orientation of the person.
      * - minOccurs: 0
-     * @var \StructType\Sexual_OrientationObjectType
+     * @var \WorkdayWsdl\\StructType\Sexual_OrientationObjectType
      */
     public $Sexual_Orientation_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
      * Constructor method for Put_Sexual_Orientation_ResponseType
      * @uses Put_Sexual_Orientation_ResponseType::setSexual_Orientation_Reference()
      * @uses Put_Sexual_Orientation_ResponseType::setVersion()
-     * @param \StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference = null, $version = null)
     {
         $this
             ->setSexual_Orientation_Reference($sexual_Orientation_Reference)
@@ -42,7 +42,7 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
     }
     /**
      * Get Sexual_Orientation_Reference value
-     * @return \StructType\Sexual_OrientationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType|null
      */
     public function getSexual_Orientation_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
     }
     /**
      * Set Sexual_Orientation_Reference value
-     * @param \StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference
-     * @return \StructType\Put_Sexual_Orientation_ResponseType
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Sexual_Orientation_ResponseType
      */
-    public function setSexual_Orientation_Reference(\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference = null)
+    public function setSexual_Orientation_Reference(\WorkdayWsdl\\StructType\Sexual_OrientationObjectType $sexual_Orientation_Reference = null)
     {
         $this->Sexual_Orientation_Reference = $sexual_Orientation_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Sexual_Orientation_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Sexual_Orientation_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Sexual_Orientation_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Sexual_Orientation_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Sexual_Orientation_ResponseType
      */
     public static function __set_state(array $array)
     {

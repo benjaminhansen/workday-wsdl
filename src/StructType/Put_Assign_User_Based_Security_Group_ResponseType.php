@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
      * Meta information extracted from the WSDL
      * - documentation: User-Based Security Groups assigned to a Workday Account
      * - minOccurs: 0
-     * @var \StructType\User_Based_Security_GroupObjectType
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType
      */
     public $User_Based_Security_Group_Reference;
     /**
@@ -32,10 +32,10 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
      * Constructor method for Put_Assign_User-Based_Security_Group_ResponseType
      * @uses Put_Assign_User_Based_Security_Group_ResponseType::setUser_Based_Security_Group_Reference()
      * @uses Put_Assign_User_Based_Security_Group_ResponseType::setVersion()
-     * @param \StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
      * @param string $version
      */
-    public function __construct(\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null, $version = null)
     {
         $this
             ->setUser_Based_Security_Group_Reference($user_Based_Security_Group_Reference)
@@ -43,7 +43,7 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
     }
     /**
      * Get User_Based_Security_Group_Reference value
-     * @return \StructType\User_Based_Security_GroupObjectType|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType|null
      */
     public function getUser_Based_Security_Group_Reference()
     {
@@ -51,10 +51,10 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
     }
     /**
      * Set User_Based_Security_Group_Reference value
-     * @param \StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
-     * @return \StructType\Put_Assign_User_Based_Security_Group_ResponseType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_ResponseType
      */
-    public function setUser_Based_Security_Group_Reference(\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null)
+    public function setUser_Based_Security_Group_Reference(\WorkdayWsdl\\StructType\User_Based_Security_GroupObjectType $user_Based_Security_Group_Reference = null)
     {
         $this->User_Based_Security_Group_Reference = $this->{'User-Based_Security_Group_Reference'} = $user_Based_Security_Group_Reference;
         return $this;
@@ -70,7 +70,7 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Assign_User_Based_Security_Group_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class Put_Assign_User_Based_Security_Group_ResponseType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Assign_User_Based_Security_Group_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Assign_User_Based_Security_Group_ResponseType
      */
     public static function __set_state(array $array)
     {

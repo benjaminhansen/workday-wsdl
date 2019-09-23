@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace WorkdayWsdl\\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Find extends AbstractSoapClientBase
     /**
      * Sets the Workday_Common_Header SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\Workday_Common_HeaderType $workday_Common_Header
+     * @param \WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderWorkday_Common_Header(\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderWorkday_Common_Header(\WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'Workday_Common_Header', $workday_Common_Header, $mustUnderstand, $actor);
     }
@@ -28,7 +28,7 @@ class Find extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: DEPRECATED: This web service operation is deprecated. Please use the Get Locations web service operation instead. This operation responds with a set of references to Business Sites that match the criteria specified in the request
      * element.1
@@ -36,10 +36,10 @@ class Find extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Business_Site_FindType $body
-     * @return \StructType\Business_Site_ReferencesRootType|bool
+     * @param \WorkdayWsdl\\StructType\Business_Site_FindType $body
+     * @return \WorkdayWsdl\\StructType\Business_Site_ReferencesRootType|bool
      */
-    public function Find_Business_Site(\StructType\Business_Site_FindType $body)
+    public function Find_Business_Site(\WorkdayWsdl\\StructType\Business_Site_FindType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Find_Business_Site($body));
@@ -54,17 +54,17 @@ class Find extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: This operation responds with a set of references to Organizations that match the criteria specified in the request element.
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Organization_FindType $body
-     * @return \StructType\Organization_ReferencesRootType|bool
+     * @param \WorkdayWsdl\\StructType\Organization_FindType $body
+     * @return \WorkdayWsdl\\StructType\Organization_ReferencesRootType|bool
      */
-    public function Find_Organization(\StructType\Organization_FindType $body)
+    public function Find_Organization(\WorkdayWsdl\\StructType\Organization_FindType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Find_Organization($body));
@@ -77,7 +77,7 @@ class Find extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\Business_Site_ReferencesRootType|\StructType\Organization_ReferencesRootType
+     * @return \WorkdayWsdl\\StructType\Business_Site_ReferencesRootType|\WorkdayWsdl\\StructType\Organization_ReferencesRootType
      */
     public function getResult()
     {

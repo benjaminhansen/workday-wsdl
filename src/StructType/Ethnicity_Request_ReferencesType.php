@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Ethnicity.
      * - maxOccurs: unbounded
-     * @var \StructType\EthnicityObjectType[]
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectType[]
      */
     public $Ethnicity_Reference;
     /**
      * Constructor method for Ethnicity_Request_ReferencesType
      * @uses Ethnicity_Request_ReferencesType::setEthnicity_Reference()
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
      */
     public function __construct(array $ethnicity_Reference = array())
     {
@@ -32,7 +32,7 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Ethnicity_Reference value
-     * @return \StructType\EthnicityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType[]|null
      */
     public function getEthnicity_Reference()
     {
@@ -50,12 +50,12 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem instanceof \StructType\EthnicityObjectType) {
+            if (!$ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
                 $invalidValues[] = is_object($ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem) ? get_class($ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem) : sprintf('%s(%s)', gettype($ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem), var_export($ethnicity_Request_ReferencesTypeEthnicity_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType[] $ethnicity_Reference
-     * @return \StructType\Ethnicity_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType[] $ethnicity_Reference
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Request_ReferencesType
      */
     public function setEthnicity_Reference(array $ethnicity_Reference = array())
     {
@@ -78,14 +78,14 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Ethnicity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectType $item
-     * @return \StructType\Ethnicity_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Request_ReferencesType
      */
-    public function addToEthnicity_Reference(\StructType\EthnicityObjectType $item)
+    public function addToEthnicity_Reference(\WorkdayWsdl\\StructType\EthnicityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EthnicityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EthnicityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Ethnicity_Reference property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Ethnicity_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Ethnicity_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Ethnicity_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

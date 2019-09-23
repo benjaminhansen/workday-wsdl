@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class Feedback_ResponseType extends AbstractStructBase
     /**
      * Set Feedback_Question value
      * @param string $feedback_Question
-     * @return \StructType\Feedback_ResponseType
+     * @return \WorkdayWsdl\\StructType\Feedback_ResponseType
      */
     public function setFeedback_Question($feedback_Question = null)
     {
@@ -78,7 +78,7 @@ class Feedback_ResponseType extends AbstractStructBase
     /**
      * Set Feedback_Comment value
      * @param string $feedback_Comment
-     * @return \StructType\Feedback_ResponseType
+     * @return \WorkdayWsdl\\StructType\Feedback_ResponseType
      */
     public function setFeedback_Comment($feedback_Comment = null)
     {
@@ -95,7 +95,7 @@ class Feedback_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Feedback_ResponseType
+     * @return \WorkdayWsdl\\StructType\Feedback_ResponseType
      */
     public static function __set_state(array $array)
     {

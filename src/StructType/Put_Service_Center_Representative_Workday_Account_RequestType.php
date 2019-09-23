@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,14 +18,14 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the Service Center Representative.
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeObjectType
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public $Service_Center_Representative_Workday_Account_Reference;
     /**
      * The Service_Center_Representative_Workday_Account_Data
      * Meta information extracted from the WSDL
      * - documentation: Element containing Service Center Representative Workday Account data.
-     * @var \StructType\Service_Center_Representative_Workday_Account_DataType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType
      */
     public $Service_Center_Representative_Workday_Account_Data;
     /**
@@ -41,11 +41,11 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
      * @uses Put_Service_Center_Representative_Workday_Account_RequestType::setService_Center_Representative_Workday_Account_Reference()
      * @uses Put_Service_Center_Representative_Workday_Account_RequestType::setService_Center_Representative_Workday_Account_Data()
      * @uses Put_Service_Center_Representative_Workday_Account_RequestType::setVersion()
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
-     * @param \StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data
      * @param string $version
      */
-    public function __construct(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null, \StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null, \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data = null, $version = null)
     {
         $this
             ->setService_Center_Representative_Workday_Account_Reference($service_Center_Representative_Workday_Account_Reference)
@@ -54,7 +54,7 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
     }
     /**
      * Get Service_Center_Representative_Workday_Account_Reference value
-     * @return \StructType\Service_Center_RepresentativeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType|null
      */
     public function getService_Center_Representative_Workday_Account_Reference()
     {
@@ -62,17 +62,17 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
     }
     /**
      * Set Service_Center_Representative_Workday_Account_Reference value
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
-     * @return \StructType\Put_Service_Center_Representative_Workday_Account_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_Workday_Account_RequestType
      */
-    public function setService_Center_Representative_Workday_Account_Reference(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null)
+    public function setService_Center_Representative_Workday_Account_Reference(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Workday_Account_Reference = null)
     {
         $this->Service_Center_Representative_Workday_Account_Reference = $service_Center_Representative_Workday_Account_Reference;
         return $this;
     }
     /**
      * Get Service_Center_Representative_Workday_Account_Data value
-     * @return \StructType\Service_Center_Representative_Workday_Account_DataType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType|null
      */
     public function getService_Center_Representative_Workday_Account_Data()
     {
@@ -80,10 +80,10 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
     }
     /**
      * Set Service_Center_Representative_Workday_Account_Data value
-     * @param \StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data
-     * @return \StructType\Put_Service_Center_Representative_Workday_Account_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_Workday_Account_RequestType
      */
-    public function setService_Center_Representative_Workday_Account_Data(\StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data = null)
+    public function setService_Center_Representative_Workday_Account_Data(\WorkdayWsdl\\StructType\Service_Center_Representative_Workday_Account_DataType $service_Center_Representative_Workday_Account_Data = null)
     {
         $this->Service_Center_Representative_Workday_Account_Data = $service_Center_Representative_Workday_Account_Data;
         return $this;
@@ -99,7 +99,7 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Service_Center_Representative_Workday_Account_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_Workday_Account_RequestType
      */
     public function setVersion($version = null)
     {
@@ -116,7 +116,7 @@ class Put_Service_Center_Representative_Workday_Account_RequestType extends Abst
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Service_Center_Representative_Workday_Account_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_Workday_Account_RequestType
      */
     public static function __set_state(array $array)
     {

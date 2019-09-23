@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Disciplinary_ActionObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Disciplinary_ActionReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Disciplinary_ActionReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Disciplinary_ActionReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Disciplinary_ActionReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Disciplinary_ActionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Disciplinary_ActionReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Disciplinary_ActionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Disciplinary_ActionReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Disciplinary_ActionReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Disciplinary_ActionReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Disciplinary_ActionReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Disciplinary_ActionObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Disciplinary_ActionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Disciplinary_ActionObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disciplinary_ActionObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disciplinary_ActionObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Health_Care_ClassificationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Health_Care_ClassificationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Health_Care_ClassificationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Health_Care_ClassificationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Health_Care_ClassificationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Health_Care_ClassificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Health_Care_ClassificationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Health_Care_ClassificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Health_Care_ClassificationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Health_Care_ClassificationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Health_Care_ClassificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Health_Care_ClassificationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Health_Care_ClassificationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Health_Care_ClassificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Health_Care_ClassificationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Health_Care_ClassificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectIDType
      */
     public static function __set_state(array $array)
     {

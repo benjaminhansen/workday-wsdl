@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Performance_Improvement_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
      * Constructor method for Performance_Improvement_PlanObjectType
      * @uses Performance_Improvement_PlanObjectType::setID()
      * @uses Performance_Improvement_PlanObjectType::setDescriptor()
-     * @param \StructType\Performance_Improvement_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Performance_Improvement_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $performance_Improvement_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$performance_Improvement_PlanObjectTypeIDItem instanceof \StructType\Performance_Improvement_PlanObjectIDType) {
+            if (!$performance_Improvement_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType) {
                 $invalidValues[] = is_object($performance_Improvement_PlanObjectTypeIDItem) ? get_class($performance_Improvement_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($performance_Improvement_PlanObjectTypeIDItem), var_export($performance_Improvement_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Performance_Improvement_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Performance_Improvement_PlanObjectIDType[] $iD
-     * @return \StructType\Performance_Improvement_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Performance_Improvement_PlanObjectIDType $item
-     * @return \StructType\Performance_Improvement_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectType
      */
-    public function addToID(\StructType\Performance_Improvement_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Performance_Improvement_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Performance_Improvement_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Performance_Improvement_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Performance_Improvement_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Performance_Improvement_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Performance_Improvement_PlanObjectType
      */
     public static function __set_state(array $array)
     {

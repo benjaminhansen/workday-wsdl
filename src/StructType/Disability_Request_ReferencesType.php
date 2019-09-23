@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Disability_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference an Disability.
      * - maxOccurs: unbounded
-     * @var \StructType\DisabilityObjectType[]
+     * @var \WorkdayWsdl\\StructType\DisabilityObjectType[]
      */
     public $Disability_Reference;
     /**
      * Constructor method for Disability_Request_ReferencesType
      * @uses Disability_Request_ReferencesType::setDisability_Reference()
-     * @param \StructType\DisabilityObjectType[] $disability_Reference
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType[] $disability_Reference
      */
     public function __construct(array $disability_Reference = array())
     {
@@ -32,7 +32,7 @@ class Disability_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Disability_Reference value
-     * @return \StructType\DisabilityObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\DisabilityObjectType[]|null
      */
     public function getDisability_Reference()
     {
@@ -50,12 +50,12 @@ class Disability_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disability_Request_ReferencesTypeDisability_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$disability_Request_ReferencesTypeDisability_ReferenceItem instanceof \StructType\DisabilityObjectType) {
+            if (!$disability_Request_ReferencesTypeDisability_ReferenceItem instanceof \WorkdayWsdl\\StructType\DisabilityObjectType) {
                 $invalidValues[] = is_object($disability_Request_ReferencesTypeDisability_ReferenceItem) ? get_class($disability_Request_ReferencesTypeDisability_ReferenceItem) : sprintf('%s(%s)', gettype($disability_Request_ReferencesTypeDisability_ReferenceItem), var_export($disability_Request_ReferencesTypeDisability_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Disability_Reference property can only contain items of type \StructType\DisabilityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Disability_Reference property can only contain items of type \WorkdayWsdl\\StructType\DisabilityObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Disability_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Disability_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\DisabilityObjectType[] $disability_Reference
-     * @return \StructType\Disability_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType[] $disability_Reference
+     * @return \WorkdayWsdl\\StructType\Disability_Request_ReferencesType
      */
     public function setDisability_Reference(array $disability_Reference = array())
     {
@@ -78,14 +78,14 @@ class Disability_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Disability_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\DisabilityObjectType $item
-     * @return \StructType\Disability_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\DisabilityObjectType $item
+     * @return \WorkdayWsdl\\StructType\Disability_Request_ReferencesType
      */
-    public function addToDisability_Reference(\StructType\DisabilityObjectType $item)
+    public function addToDisability_Reference(\WorkdayWsdl\\StructType\DisabilityObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DisabilityObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Disability_Reference property can only contain items of type \StructType\DisabilityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\DisabilityObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Disability_Reference property can only contain items of type \WorkdayWsdl\\StructType\DisabilityObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Disability_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Disability_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Disability_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

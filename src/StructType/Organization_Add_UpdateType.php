@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Organization_Add_UpdateType extends AbstractStructBase
 {
     /**
      * The Organization_Data
-     * @var \StructType\Organization_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_DataType
      */
     public $Organization_Data;
     /**
@@ -29,10 +29,10 @@ class Organization_Add_UpdateType extends AbstractStructBase
      * Constructor method for Organization_Add_UpdateType
      * @uses Organization_Add_UpdateType::setOrganization_Data()
      * @uses Organization_Add_UpdateType::setVersion()
-     * @param \StructType\Organization_DataType $organization_Data
+     * @param \WorkdayWsdl\\StructType\Organization_DataType $organization_Data
      * @param string $version
      */
-    public function __construct(\StructType\Organization_DataType $organization_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_DataType $organization_Data = null, $version = null)
     {
         $this
             ->setOrganization_Data($organization_Data)
@@ -40,7 +40,7 @@ class Organization_Add_UpdateType extends AbstractStructBase
     }
     /**
      * Get Organization_Data value
-     * @return \StructType\Organization_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_DataType|null
      */
     public function getOrganization_Data()
     {
@@ -48,10 +48,10 @@ class Organization_Add_UpdateType extends AbstractStructBase
     }
     /**
      * Set Organization_Data value
-     * @param \StructType\Organization_DataType $organization_Data
-     * @return \StructType\Organization_Add_UpdateType
+     * @param \WorkdayWsdl\\StructType\Organization_DataType $organization_Data
+     * @return \WorkdayWsdl\\StructType\Organization_Add_UpdateType
      */
-    public function setOrganization_Data(\StructType\Organization_DataType $organization_Data = null)
+    public function setOrganization_Data(\WorkdayWsdl\\StructType\Organization_DataType $organization_Data = null)
     {
         $this->Organization_Data = $organization_Data;
         return $this;
@@ -67,7 +67,7 @@ class Organization_Add_UpdateType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Organization_Add_UpdateType
+     * @return \WorkdayWsdl\\StructType\Organization_Add_UpdateType
      */
     public function setVersion($version = null)
     {
@@ -84,7 +84,7 @@ class Organization_Add_UpdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Add_UpdateType
+     * @return \WorkdayWsdl\\StructType\Organization_Add_UpdateType
      */
     public static function __set_state(array $array)
     {

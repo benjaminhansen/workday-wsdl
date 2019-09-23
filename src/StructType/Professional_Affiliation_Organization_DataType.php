@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Professional Affiliation that this achievement is representing a relationship with.
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType
      */
     public $Professional_Affiliation_Reference;
     /**
@@ -54,7 +54,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The type of Professional Affiliation.
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_Type__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType
      */
     public $Professional_Affiliation_Type_Reference;
     /**
@@ -71,7 +71,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Relationship that this Person has to this Organization.
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_Relationship_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType
      */
     public $Professional_Affiliation_Relationship_Type_Reference;
     /**
@@ -97,7 +97,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType[]
      */
     public $Contact_Information_Data;
     /**
@@ -114,16 +114,16 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * @uses Professional_Affiliation_Organization_DataType::setContact_Information_Data()
      * @param string $professional_Affiliation_ID
      * @param bool $remove_Professional_Affiliation
-     * @param \StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference
      * @param string $professional_Affiliation
-     * @param \StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference
      * @param string $affiliation
-     * @param \StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference
      * @param string $begin_Date
      * @param string $end_Date
-     * @param \StructType\Contact_Information_DataType[] $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType[] $contact_Information_Data
      */
-    public function __construct($professional_Affiliation_ID = null, $remove_Professional_Affiliation = null, \StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference = null, $professional_Affiliation = null, \StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference = null, $affiliation = null, \StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference = null, $begin_Date = null, $end_Date = null, array $contact_Information_Data = array())
+    public function __construct($professional_Affiliation_ID = null, $remove_Professional_Affiliation = null, \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference = null, $professional_Affiliation = null, \WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference = null, $affiliation = null, \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference = null, $begin_Date = null, $end_Date = null, array $contact_Information_Data = array())
     {
         $this
             ->setProfessional_Affiliation_ID($professional_Affiliation_ID)
@@ -148,7 +148,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Professional_Affiliation_ID value
      * @param string $professional_Affiliation_ID
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setProfessional_Affiliation_ID($professional_Affiliation_ID = null)
     {
@@ -170,7 +170,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Remove_Professional_Affiliation value
      * @param bool $remove_Professional_Affiliation
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setRemove_Professional_Affiliation($remove_Professional_Affiliation = null)
     {
@@ -183,7 +183,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Professional_Affiliation_Reference value
-     * @return \StructType\Professional_Affiliation_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType|null
      */
     public function getProfessional_Affiliation_Reference()
     {
@@ -191,10 +191,10 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Professional_Affiliation_Reference value
-     * @param \StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
-    public function setProfessional_Affiliation_Reference(\StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference = null)
+    public function setProfessional_Affiliation_Reference(\WorkdayWsdl\\StructType\Professional_Affiliation_ReferenceObjectType $professional_Affiliation_Reference = null)
     {
         $this->Professional_Affiliation_Reference = $professional_Affiliation_Reference;
         return $this;
@@ -210,7 +210,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Professional_Affiliation value
      * @param string $professional_Affiliation
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setProfessional_Affiliation($professional_Affiliation = null)
     {
@@ -223,7 +223,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Professional_Affiliation_Type_Reference value
-     * @return \StructType\Professional_Affiliation_Type__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType|null
      */
     public function getProfessional_Affiliation_Type_Reference()
     {
@@ -231,10 +231,10 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Professional_Affiliation_Type_Reference value
-     * @param \StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
-    public function setProfessional_Affiliation_Type_Reference(\StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference = null)
+    public function setProfessional_Affiliation_Type_Reference(\WorkdayWsdl\\StructType\Professional_Affiliation_Type__All_ObjectType $professional_Affiliation_Type_Reference = null)
     {
         $this->Professional_Affiliation_Type_Reference = $professional_Affiliation_Type_Reference;
         return $this;
@@ -250,7 +250,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Affiliation value
      * @param string $affiliation
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setAffiliation($affiliation = null)
     {
@@ -263,7 +263,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Professional_Affiliation_Relationship_Type_Reference value
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType|null
      */
     public function getProfessional_Affiliation_Relationship_Type_Reference()
     {
@@ -271,10 +271,10 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Set Professional_Affiliation_Relationship_Type_Reference value
-     * @param \StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
-    public function setProfessional_Affiliation_Relationship_Type_Reference(\StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference = null)
+    public function setProfessional_Affiliation_Relationship_Type_Reference(\WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType $professional_Affiliation_Relationship_Type_Reference = null)
     {
         $this->Professional_Affiliation_Relationship_Type_Reference = $professional_Affiliation_Relationship_Type_Reference;
         return $this;
@@ -290,7 +290,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Begin_Date value
      * @param string $begin_Date
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setBegin_Date($begin_Date = null)
     {
@@ -312,7 +312,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -325,7 +325,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType[]|null
      */
     public function getContact_Information_Data()
     {
@@ -343,12 +343,12 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $professional_Affiliation_Organization_DataTypeContact_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$professional_Affiliation_Organization_DataTypeContact_Information_DataItem instanceof \StructType\Contact_Information_DataType) {
+            if (!$professional_Affiliation_Organization_DataTypeContact_Information_DataItem instanceof \WorkdayWsdl\\StructType\Contact_Information_DataType) {
                 $invalidValues[] = is_object($professional_Affiliation_Organization_DataTypeContact_Information_DataItem) ? get_class($professional_Affiliation_Organization_DataTypeContact_Information_DataItem) : sprintf('%s(%s)', gettype($professional_Affiliation_Organization_DataTypeContact_Information_DataItem), var_export($professional_Affiliation_Organization_DataTypeContact_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Contact_Information_Data property can only contain items of type \StructType\Contact_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Contact_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -356,8 +356,8 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Set Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contact_Information_DataType[] $contact_Information_Data
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType[] $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public function setContact_Information_Data(array $contact_Information_Data = array())
     {
@@ -371,14 +371,14 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
     /**
      * Add item to Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contact_Information_DataType $item
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
-    public function addToContact_Information_Data(\StructType\Contact_Information_DataType $item)
+    public function addToContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Contact_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Contact_Information_Data property can only contain items of type \StructType\Contact_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Contact_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Contact_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Contact_Information_Data[] = $item;
         return $this;
@@ -389,7 +389,7 @@ class Professional_Affiliation_Organization_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Affiliation_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Organization_DataType
      */
     public static function __set_state(array $array)
     {

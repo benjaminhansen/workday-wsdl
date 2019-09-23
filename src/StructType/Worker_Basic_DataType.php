@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Worker_Basic_DataType extends AbstractStructBase
      * - documentation: A reference to the ID of the worker. The ID consists of a type attribute, which should be set to "Employee_ID" or "Contingent_Worker_ID", and a value attribute, such as "04345". If Skip Non Existing Instances value is set to true.
      * When a reference id value that does not meet the entry date criteria is passed, the non existent reference id will be ignored.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -34,10 +34,10 @@ class Worker_Basic_DataType extends AbstractStructBase
      * Constructor method for Worker_Basic_DataType
      * @uses Worker_Basic_DataType::setWorker_Reference()
      * @uses Worker_Basic_DataType::setWorker_Descriptor()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $worker_Descriptor
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $worker_Descriptor = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $worker_Descriptor = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -45,7 +45,7 @@ class Worker_Basic_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -53,10 +53,10 @@ class Worker_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Worker_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Worker_Basic_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -72,7 +72,7 @@ class Worker_Basic_DataType extends AbstractStructBase
     /**
      * Set Worker_Descriptor value
      * @param string $worker_Descriptor
-     * @return \StructType\Worker_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Basic_DataType
      */
     public function setWorker_Descriptor($worker_Descriptor = null)
     {
@@ -89,7 +89,7 @@ class Worker_Basic_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Basic_DataType
      */
     public static function __set_state(array $array)
     {

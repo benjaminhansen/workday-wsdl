@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -30,7 +30,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the instant messenger type.
      * - minOccurs: 0
-     * @var \StructType\Instant_Messenger_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
     public $Instant_Messenger_Type_Reference;
     /**
@@ -48,7 +48,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all Communication Method Usage data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Method_Usage_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]
      */
     public $Usage_Data;
     /**
@@ -56,7 +56,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Instant Messenger Reference
      * - minOccurs: 0
-     * @var \StructType\Instant_Messenger_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType
      */
     public $Instant_Messenger_Reference;
     /**
@@ -95,15 +95,15 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
      * @uses Instant_Messenger_Information_DataType::setDelete()
      * @uses Instant_Messenger_Information_DataType::setDo_Not_Replace_All()
      * @param string $instant_Messenger_Address
-     * @param \StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
      * @param string $instant_Messenger_Comment
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @param \StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference
      * @param string $iD
      * @param bool $delete
      * @param bool $do_Not_Replace_All
      */
-    public function __construct($instant_Messenger_Address = null, \StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null, $instant_Messenger_Comment = null, array $usage_Data = array(), \StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference = null, $iD = null, $delete = null, $do_Not_Replace_All = null)
+    public function __construct($instant_Messenger_Address = null, \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null, $instant_Messenger_Comment = null, array $usage_Data = array(), \WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference = null, $iD = null, $delete = null, $do_Not_Replace_All = null)
     {
         $this
             ->setInstant_Messenger_Address($instant_Messenger_Address)
@@ -126,7 +126,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Address value
      * @param string $instant_Messenger_Address
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setInstant_Messenger_Address($instant_Messenger_Address = null)
     {
@@ -139,7 +139,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Instant_Messenger_Type_Reference value
-     * @return \StructType\Instant_Messenger_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType|null
      */
     public function getInstant_Messenger_Type_Reference()
     {
@@ -147,10 +147,10 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Instant_Messenger_Type_Reference value
-     * @param \StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
-    public function setInstant_Messenger_Type_Reference(\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null)
+    public function setInstant_Messenger_Type_Reference(\WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null)
     {
         $this->Instant_Messenger_Type_Reference = $instant_Messenger_Type_Reference;
         return $this;
@@ -166,7 +166,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Comment value
      * @param string $instant_Messenger_Comment
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setInstant_Messenger_Comment($instant_Messenger_Comment = null)
     {
@@ -179,7 +179,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Usage_Data value
-     * @return \StructType\Communication_Method_Usage_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[]|null
      */
     public function getUsage_Data()
     {
@@ -197,12 +197,12 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $instant_Messenger_Information_DataTypeUsage_DataItem) {
             // validation for constraint: itemType
-            if (!$instant_Messenger_Information_DataTypeUsage_DataItem instanceof \StructType\Communication_Method_Usage_Information_DataType) {
+            if (!$instant_Messenger_Information_DataTypeUsage_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
                 $invalidValues[] = is_object($instant_Messenger_Information_DataTypeUsage_DataItem) ? get_class($instant_Messenger_Information_DataTypeUsage_DataItem) : sprintf('%s(%s)', gettype($instant_Messenger_Information_DataTypeUsage_DataItem), var_export($instant_Messenger_Information_DataTypeUsage_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -210,8 +210,8 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType[] $usage_Data
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setUsage_Data(array $usage_Data = array())
     {
@@ -225,21 +225,21 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Add item to Usage_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Method_Usage_Information_DataType $item
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
-    public function addToUsage_Data(\StructType\Communication_Method_Usage_Information_DataType $item)
+    public function addToUsage_Data(\WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Method_Usage_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Usage_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Usage_Data[] = $item;
         return $this;
     }
     /**
      * Get Instant_Messenger_Reference value
-     * @return \StructType\Instant_Messenger_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType|null
      */
     public function getInstant_Messenger_Reference()
     {
@@ -247,10 +247,10 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     }
     /**
      * Set Instant_Messenger_Reference value
-     * @param \StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
-    public function setInstant_Messenger_Reference(\StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference = null)
+    public function setInstant_Messenger_Reference(\WorkdayWsdl\\StructType\Instant_Messenger_ReferenceObjectType $instant_Messenger_Reference = null)
     {
         $this->Instant_Messenger_Reference = $instant_Messenger_Reference;
         return $this;
@@ -266,7 +266,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setID($iD = null)
     {
@@ -288,7 +288,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setDelete($delete = null)
     {
@@ -310,7 +310,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Do_Not_Replace_All value
      * @param bool $do_Not_Replace_All
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public function setDo_Not_Replace_All($do_Not_Replace_All = null)
     {
@@ -327,7 +327,7 @@ class Instant_Messenger_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Information_DataType
      */
     public static function __set_state(array $array)
     {

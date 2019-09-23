@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -78,7 +78,7 @@ class Company_Insider_Type_DataType extends AbstractStructBase
     /**
      * Set Company_Insider_Type_ID value
      * @param string $company_Insider_Type_ID
-     * @return \StructType\Company_Insider_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType
      */
     public function setCompany_Insider_Type_ID($company_Insider_Type_ID = null)
     {
@@ -100,7 +100,7 @@ class Company_Insider_Type_DataType extends AbstractStructBase
     /**
      * Set Company_Insider_Type_Name value
      * @param string $company_Insider_Type_Name
-     * @return \StructType\Company_Insider_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType
      */
     public function setCompany_Insider_Type_Name($company_Insider_Type_Name = null)
     {
@@ -122,7 +122,7 @@ class Company_Insider_Type_DataType extends AbstractStructBase
     /**
      * Set Company_Insider_Type_Description value
      * @param string $company_Insider_Type_Description
-     * @return \StructType\Company_Insider_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType
      */
     public function setCompany_Insider_Type_Description($company_Insider_Type_Description = null)
     {
@@ -144,7 +144,7 @@ class Company_Insider_Type_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Company_Insider_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -161,7 +161,7 @@ class Company_Insider_Type_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Company_Insider_Type_DataType
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Type_DataType
      */
     public static function __set_state(array $array)
     {

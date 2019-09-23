@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Collective_Agreement_Factor_5_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The collective agreement factor 5.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_FactorObjectType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType
      */
     public $Collective_Agreement_Factor_5_Reference;
     /**
@@ -25,17 +25,17 @@ class Collective_Agreement_Factor_5_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The collective agreement factor option 5.
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_OptionObjectType
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType
      */
     public $Collective_Agreement_Factor_Option_5_Reference;
     /**
      * Constructor method for Collective_Agreement_Factor_5_DataType
      * @uses Collective_Agreement_Factor_5_DataType::setCollective_Agreement_Factor_5_Reference()
      * @uses Collective_Agreement_Factor_5_DataType::setCollective_Agreement_Factor_Option_5_Reference()
-     * @param \StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference
      */
-    public function __construct(\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference = null, \StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference = null, \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference = null)
     {
         $this
             ->setCollective_Agreement_Factor_5_Reference($collective_Agreement_Factor_5_Reference)
@@ -52,9 +52,9 @@ class Collective_Agreement_Factor_5_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Reference value
      * @param collective_Agreement_Factor_Reference $collective_Agreement_Factor_Reference
-     * @return \StructType\Collective_Agreement_Factor_5_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType
      */
-    public function setCollective_Agreement_Factor_5_Reference(\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference = null)
+    public function setCollective_Agreement_Factor_5_Reference(\WorkdayWsdl\\StructType\Collective_Agreement_FactorObjectType $collective_Agreement_Factor_5_Reference = null)
     {
         $this->Collective_Agreement_Factor_5_Reference = $collective_Agreement_Factor_5_Reference;
         return $this;
@@ -70,9 +70,9 @@ class Collective_Agreement_Factor_5_DataType extends AbstractStructBase
     /**
      * Set collective_Agreement_Factor_Option_Reference value
      * @param collective_Agreement_Factor_Option_Reference $collective_Agreement_Factor_Option_Reference
-     * @return \StructType\Collective_Agreement_Factor_5_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType
      */
-    public function setCollective_Agreement_Factor_Option_5_Reference(\StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference = null)
+    public function setCollective_Agreement_Factor_Option_5_Reference(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType $collective_Agreement_Factor_Option_5_Reference = null)
     {
         $this->Collective_Agreement_Factor_Option_5_Reference = $collective_Agreement_Factor_Option_5_Reference;
         return $this;
@@ -83,7 +83,7 @@ class Collective_Agreement_Factor_5_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Factor_5_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_5_DataType
      */
     public static function __set_state(array $array)
     {

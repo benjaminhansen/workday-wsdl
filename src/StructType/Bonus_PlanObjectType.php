@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Bonus_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Bonus_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Bonus_PlanObjectType extends AbstractStructBase
      * Constructor method for Bonus_PlanObjectType
      * @uses Bonus_PlanObjectType::setID()
      * @uses Bonus_PlanObjectType::setDescriptor()
-     * @param \StructType\Bonus_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Bonus_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Bonus_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Bonus_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $bonus_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$bonus_PlanObjectTypeIDItem instanceof \StructType\Bonus_PlanObjectIDType) {
+            if (!$bonus_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType) {
                 $invalidValues[] = is_object($bonus_PlanObjectTypeIDItem) ? get_class($bonus_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($bonus_PlanObjectTypeIDItem), var_export($bonus_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Bonus_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Bonus_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Bonus_PlanObjectIDType[] $iD
-     * @return \StructType\Bonus_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Bonus_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Bonus_PlanObjectIDType $item
-     * @return \StructType\Bonus_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectType
      */
-    public function addToID(\StructType\Bonus_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Bonus_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Bonus_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Bonus_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Bonus_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Bonus_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Bonus_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Bonus_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Bonus_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Bonus_PlanObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Job_Classification_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Workday Owned metadata value the job classification maps to
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Job_Classification_Mapping_ID_Reference;
     /**
@@ -66,10 +66,10 @@ class Job_Classification_DataType extends AbstractStructBase
      * @param string $iD
      * @param string $job_Classification_ID
      * @param string $description
-     * @param \StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference
      * @param bool $inactive
      */
-    public function __construct($iD = null, $job_Classification_ID = null, $description = null, \StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference = null, $inactive = null)
+    public function __construct($iD = null, $job_Classification_ID = null, $description = null, \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference = null, $inactive = null)
     {
         $this
             ->setID($iD)
@@ -89,7 +89,7 @@ class Job_Classification_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Job_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public function setID($iD = null)
     {
@@ -111,7 +111,7 @@ class Job_Classification_DataType extends AbstractStructBase
     /**
      * Set Job_Classification_ID value
      * @param string $job_Classification_ID
-     * @return \StructType\Job_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public function setJob_Classification_ID($job_Classification_ID = null)
     {
@@ -133,7 +133,7 @@ class Job_Classification_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Job_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public function setDescription($description = null)
     {
@@ -146,7 +146,7 @@ class Job_Classification_DataType extends AbstractStructBase
     }
     /**
      * Get Job_Classification_Mapping_ID_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getJob_Classification_Mapping_ID_Reference()
     {
@@ -154,10 +154,10 @@ class Job_Classification_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Classification_Mapping_ID_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference
-     * @return \StructType\Job_Classification_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
-    public function setJob_Classification_Mapping_ID_Reference(\StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference = null)
+    public function setJob_Classification_Mapping_ID_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $job_Classification_Mapping_ID_Reference = null)
     {
         $this->Job_Classification_Mapping_ID_Reference = $job_Classification_Mapping_ID_Reference;
         return $this;
@@ -173,7 +173,7 @@ class Job_Classification_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -190,7 +190,7 @@ class Job_Classification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Classification_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Classification_DataType
      */
     public static function __set_state(array $array)
     {

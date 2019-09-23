@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
      * - documentation: Service Center to which the Service Center Representative belongs.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Service_CenterObjectType[]
+     * @var \WorkdayWsdl\\StructType\Service_CenterObjectType[]
      */
     public $Service_Center_Reference;
     /**
@@ -35,7 +35,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Encapsulating element for all of the Name data for a person.
      * - minOccurs: 0
-     * @var \StructType\Legal_Name_DataType
+     * @var \WorkdayWsdl\\StructType\Legal_Name_DataType
      */
     public $Name_Data;
     /**
@@ -43,7 +43,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contact Information Data
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType
      */
     public $Contact_Information_Data;
     /**
@@ -60,13 +60,13 @@ class Service_Center_Representative_DataType extends AbstractStructBase
      * @uses Service_Center_Representative_DataType::setName_Data()
      * @uses Service_Center_Representative_DataType::setContact_Information_Data()
      * @uses Service_Center_Representative_DataType::setID()
-     * @param \StructType\Service_CenterObjectType[] $service_Center_Reference
+     * @param \WorkdayWsdl\\StructType\Service_CenterObjectType[] $service_Center_Reference
      * @param bool $inactive
-     * @param \StructType\Legal_Name_DataType $name_Data
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Legal_Name_DataType $name_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
      * @param string $iD
      */
-    public function __construct(array $service_Center_Reference = array(), $inactive = null, \StructType\Legal_Name_DataType $name_Data = null, \StructType\Contact_Information_DataType $contact_Information_Data = null, $iD = null)
+    public function __construct(array $service_Center_Reference = array(), $inactive = null, \WorkdayWsdl\\StructType\Legal_Name_DataType $name_Data = null, \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null, $iD = null)
     {
         $this
             ->setService_Center_Reference($service_Center_Reference)
@@ -77,7 +77,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     }
     /**
      * Get Service_Center_Reference value
-     * @return \StructType\Service_CenterObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Service_CenterObjectType[]|null
      */
     public function getService_Center_Reference()
     {
@@ -95,12 +95,12 @@ class Service_Center_Representative_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $service_Center_Representative_DataTypeService_Center_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$service_Center_Representative_DataTypeService_Center_ReferenceItem instanceof \StructType\Service_CenterObjectType) {
+            if (!$service_Center_Representative_DataTypeService_Center_ReferenceItem instanceof \WorkdayWsdl\\StructType\Service_CenterObjectType) {
                 $invalidValues[] = is_object($service_Center_Representative_DataTypeService_Center_ReferenceItem) ? get_class($service_Center_Representative_DataTypeService_Center_ReferenceItem) : sprintf('%s(%s)', gettype($service_Center_Representative_DataTypeService_Center_ReferenceItem), var_export($service_Center_Representative_DataTypeService_Center_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Service_Center_Reference property can only contain items of type \StructType\Service_CenterObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Service_Center_Reference property can only contain items of type \WorkdayWsdl\\StructType\Service_CenterObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -108,8 +108,8 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     /**
      * Set Service_Center_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_CenterObjectType[] $service_Center_Reference
-     * @return \StructType\Service_Center_Representative_DataType
+     * @param \WorkdayWsdl\\StructType\Service_CenterObjectType[] $service_Center_Reference
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public function setService_Center_Reference(array $service_Center_Reference = array())
     {
@@ -123,14 +123,14 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     /**
      * Add item to Service_Center_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Service_CenterObjectType $item
-     * @return \StructType\Service_Center_Representative_DataType
+     * @param \WorkdayWsdl\\StructType\Service_CenterObjectType $item
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
-    public function addToService_Center_Reference(\StructType\Service_CenterObjectType $item)
+    public function addToService_Center_Reference(\WorkdayWsdl\\StructType\Service_CenterObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Service_CenterObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Service_Center_Reference property can only contain items of type \StructType\Service_CenterObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Service_CenterObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Service_Center_Reference property can only contain items of type \WorkdayWsdl\\StructType\Service_CenterObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Service_Center_Reference[] = $item;
         return $this;
@@ -146,7 +146,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Service_Center_Representative_DataType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -159,7 +159,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     }
     /**
      * Get Name_Data value
-     * @return \StructType\Legal_Name_DataType|null
+     * @return \WorkdayWsdl\\StructType\Legal_Name_DataType|null
      */
     public function getName_Data()
     {
@@ -167,17 +167,17 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     }
     /**
      * Set Name_Data value
-     * @param \StructType\Legal_Name_DataType $name_Data
-     * @return \StructType\Service_Center_Representative_DataType
+     * @param \WorkdayWsdl\\StructType\Legal_Name_DataType $name_Data
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
-    public function setName_Data(\StructType\Legal_Name_DataType $name_Data = null)
+    public function setName_Data(\WorkdayWsdl\\StructType\Legal_Name_DataType $name_Data = null)
     {
         $this->Name_Data = $name_Data;
         return $this;
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType|null
      */
     public function getContact_Information_Data()
     {
@@ -185,10 +185,10 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     }
     /**
      * Set Contact_Information_Data value
-     * @param \StructType\Contact_Information_DataType $contact_Information_Data
-     * @return \StructType\Service_Center_Representative_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
-    public function setContact_Information_Data(\StructType\Contact_Information_DataType $contact_Information_Data = null)
+    public function setContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $contact_Information_Data = null)
     {
         $this->Contact_Information_Data = $contact_Information_Data;
         return $this;
@@ -204,7 +204,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Service_Center_Representative_DataType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public function setID($iD = null)
     {
@@ -221,7 +221,7 @@ class Service_Center_Representative_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_DataType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public static function __set_state(array $array)
     {

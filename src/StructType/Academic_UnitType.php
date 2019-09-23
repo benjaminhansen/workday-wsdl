@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Academic_UnitType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Academic Unit
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Academic_Unit_Reference;
     /**
@@ -25,17 +25,17 @@ class Academic_UnitType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A container for detailed information about the Academic Unit
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public $Academic_Unit_Data;
     /**
      * Constructor method for Academic_UnitType
      * @uses Academic_UnitType::setAcademic_Unit_Reference()
      * @uses Academic_UnitType::setAcademic_Unit_Data()
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @param \StructType\Academic_Unit_DataType $academic_Unit_Data
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data
      */
-    public function __construct(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null, \StructType\Academic_Unit_DataType $academic_Unit_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null, \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data = null)
     {
         $this
             ->setAcademic_Unit_Reference($academic_Unit_Reference)
@@ -43,7 +43,7 @@ class Academic_UnitType extends AbstractStructBase
     }
     /**
      * Get Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getAcademic_Unit_Reference()
     {
@@ -51,17 +51,17 @@ class Academic_UnitType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @return \StructType\Academic_UnitType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_UnitType
      */
-    public function setAcademic_Unit_Reference(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
+    public function setAcademic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
     {
         $this->Academic_Unit_Reference = $academic_Unit_Reference;
         return $this;
     }
     /**
      * Get Academic_Unit_Data value
-     * @return \StructType\Academic_Unit_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType|null
      */
     public function getAcademic_Unit_Data()
     {
@@ -69,10 +69,10 @@ class Academic_UnitType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Data value
-     * @param \StructType\Academic_Unit_DataType $academic_Unit_Data
-     * @return \StructType\Academic_UnitType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data
+     * @return \WorkdayWsdl\\StructType\Academic_UnitType
      */
-    public function setAcademic_Unit_Data(\StructType\Academic_Unit_DataType $academic_Unit_Data = null)
+    public function setAcademic_Unit_Data(\WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data = null)
     {
         $this->Academic_Unit_Data = $academic_Unit_Data;
         return $this;
@@ -83,7 +83,7 @@ class Academic_UnitType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_UnitType
+     * @return \WorkdayWsdl\\StructType\Academic_UnitType
      */
     public static function __set_state(array $array)
     {

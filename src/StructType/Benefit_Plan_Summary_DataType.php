@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference for the benefit plan.
      * - minOccurs: 0
-     * @var \StructType\Benefit_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_PlanObjectType
      */
     public $Benefit_Plan_Reference;
     /**
@@ -43,7 +43,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The type of coverage that the benefit plan is for.
      * - minOccurs: 0
-     * @var \StructType\Benefit_Coverage_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType
      */
     public $Benefit_Coverage_Type_Reference;
     /**
@@ -51,7 +51,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The default currency of the benefit plan.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -59,7 +59,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The default currency of the benefit plan.
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -67,7 +67,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The classification of the health care plan.
      * - minOccurs: 0
-     * @var \StructType\Health_Care_ClassificationObjectType
+     * @var \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType
      */
     public $Health_Care_Classification_Reference;
     /**
@@ -75,7 +75,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The insurance coverage target for the insurance plan.
      * - minOccurs: 0
-     * @var \StructType\Insurance_Coverage_TargetObjectType
+     * @var \WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType
      */
     public $Insurance_Coverage_Target_Reference;
     /**
@@ -83,14 +83,14 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the summary information about the benefit provider of the benefit plan.
      * - minOccurs: 0
-     * @var \StructType\Benefit_Provider_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType
      */
     public $Benefit_Provider_Summary_Data;
     /**
      * The External_Integration_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $External_Integration_ID_Data;
     /**
@@ -99,7 +99,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * - documentation: Pay Component Reference for the Benefit Plan
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Pay_ComponentObjectType[]
+     * @var \WorkdayWsdl\\StructType\Pay_ComponentObjectType[]
      */
     public $Pay_Component_Reference;
     /**
@@ -115,19 +115,19 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * @uses Benefit_Plan_Summary_DataType::setBenefit_Provider_Summary_Data()
      * @uses Benefit_Plan_Summary_DataType::setExternal_Integration_ID_Data()
      * @uses Benefit_Plan_Summary_DataType::setPay_Component_Reference()
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
      * @param string $benefit_Plan_Name
      * @param string $group_Identifier
-     * @param \StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @param \StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference
-     * @param \StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference
-     * @param \StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data
-     * @param \StructType\External_Integration_ID_DataType $external_Integration_ID_Data
-     * @param \StructType\Pay_ComponentObjectType[] $pay_Component_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference
+     * @param \WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference
+     * @param \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $external_Integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\Pay_ComponentObjectType[] $pay_Component_Reference
      */
-    public function __construct(\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null, $benefit_Plan_Name = null, $group_Identifier = null, \StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\FrequencyObjectType $frequency_Reference = null, \StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference = null, \StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference = null, \StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data = null, \StructType\External_Integration_ID_DataType $external_Integration_ID_Data = null, array $pay_Component_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null, $benefit_Plan_Name = null, $group_Identifier = null, \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference = null, \WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference = null, \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data = null, \WorkdayWsdl\\StructType\External_Integration_ID_DataType $external_Integration_ID_Data = null, array $pay_Component_Reference = array())
     {
         $this
             ->setBenefit_Plan_Reference($benefit_Plan_Reference)
@@ -144,7 +144,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Plan_Reference value
-     * @return \StructType\Benefit_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_PlanObjectType|null
      */
     public function getBenefit_Plan_Reference()
     {
@@ -152,10 +152,10 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Plan_Reference value
-     * @param \StructType\Benefit_PlanObjectType $benefit_Plan_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setBenefit_Plan_Reference(\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
+    public function setBenefit_Plan_Reference(\WorkdayWsdl\\StructType\Benefit_PlanObjectType $benefit_Plan_Reference = null)
     {
         $this->Benefit_Plan_Reference = $benefit_Plan_Reference;
         return $this;
@@ -171,7 +171,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     /**
      * Set Benefit_Plan_Name value
      * @param string $benefit_Plan_Name
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
     public function setBenefit_Plan_Name($benefit_Plan_Name = null)
     {
@@ -193,7 +193,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     /**
      * Set Group_Identifier value
      * @param string $group_Identifier
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
     public function setGroup_Identifier($group_Identifier = null)
     {
@@ -206,7 +206,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Coverage_Type_Reference value
-     * @return \StructType\Benefit_Coverage_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType|null
      */
     public function getBenefit_Coverage_Type_Reference()
     {
@@ -214,17 +214,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Coverage_Type_Reference value
-     * @param \StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setBenefit_Coverage_Type_Reference(\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null)
+    public function setBenefit_Coverage_Type_Reference(\WorkdayWsdl\\StructType\Benefit_Coverage_TypeObjectType $benefit_Coverage_Type_Reference = null)
     {
         $this->Benefit_Coverage_Type_Reference = $benefit_Coverage_Type_Reference;
         return $this;
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -232,17 +232,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -250,17 +250,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
     }
     /**
      * Get Health_Care_Classification_Reference value
-     * @return \StructType\Health_Care_ClassificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType|null
      */
     public function getHealth_Care_Classification_Reference()
     {
@@ -268,17 +268,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Health_Care_Classification_Reference value
-     * @param \StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setHealth_Care_Classification_Reference(\StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference = null)
+    public function setHealth_Care_Classification_Reference(\WorkdayWsdl\\StructType\Health_Care_ClassificationObjectType $health_Care_Classification_Reference = null)
     {
         $this->Health_Care_Classification_Reference = $health_Care_Classification_Reference;
         return $this;
     }
     /**
      * Get Insurance_Coverage_Target_Reference value
-     * @return \StructType\Insurance_Coverage_TargetObjectType|null
+     * @return \WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType|null
      */
     public function getInsurance_Coverage_Target_Reference()
     {
@@ -286,17 +286,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Insurance_Coverage_Target_Reference value
-     * @param \StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setInsurance_Coverage_Target_Reference(\StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference = null)
+    public function setInsurance_Coverage_Target_Reference(\WorkdayWsdl\\StructType\Insurance_Coverage_TargetObjectType $insurance_Coverage_Target_Reference = null)
     {
         $this->Insurance_Coverage_Target_Reference = $insurance_Coverage_Target_Reference;
         return $this;
     }
     /**
      * Get Benefit_Provider_Summary_Data value
-     * @return \StructType\Benefit_Provider_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType|null
      */
     public function getBenefit_Provider_Summary_Data()
     {
@@ -304,17 +304,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Provider_Summary_Data value
-     * @param \StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setBenefit_Provider_Summary_Data(\StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data = null)
+    public function setBenefit_Provider_Summary_Data(\WorkdayWsdl\\StructType\Benefit_Provider_Summary_DataType $benefit_Provider_Summary_Data = null)
     {
         $this->Benefit_Provider_Summary_Data = $benefit_Provider_Summary_Data;
         return $this;
     }
     /**
      * Get External_Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getExternal_Integration_ID_Data()
     {
@@ -322,17 +322,17 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set External_Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $external_Integration_ID_Data
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $external_Integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function setExternal_Integration_ID_Data(\StructType\External_Integration_ID_DataType $external_Integration_ID_Data = null)
+    public function setExternal_Integration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $external_Integration_ID_Data = null)
     {
         $this->External_Integration_ID_Data = $external_Integration_ID_Data;
         return $this;
     }
     /**
      * Get Pay_Component_Reference value
-     * @return \StructType\Pay_ComponentObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Pay_ComponentObjectType[]|null
      */
     public function getPay_Component_Reference()
     {
@@ -350,12 +350,12 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $benefit_Plan_Summary_DataTypePay_Component_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$benefit_Plan_Summary_DataTypePay_Component_ReferenceItem instanceof \StructType\Pay_ComponentObjectType) {
+            if (!$benefit_Plan_Summary_DataTypePay_Component_ReferenceItem instanceof \WorkdayWsdl\\StructType\Pay_ComponentObjectType) {
                 $invalidValues[] = is_object($benefit_Plan_Summary_DataTypePay_Component_ReferenceItem) ? get_class($benefit_Plan_Summary_DataTypePay_Component_ReferenceItem) : sprintf('%s(%s)', gettype($benefit_Plan_Summary_DataTypePay_Component_ReferenceItem), var_export($benefit_Plan_Summary_DataTypePay_Component_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Pay_Component_Reference property can only contain items of type \StructType\Pay_ComponentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Pay_Component_Reference property can only contain items of type \WorkdayWsdl\\StructType\Pay_ComponentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -363,8 +363,8 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     /**
      * Set Pay_Component_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_ComponentObjectType[] $pay_Component_Reference
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_ComponentObjectType[] $pay_Component_Reference
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
     public function setPay_Component_Reference(array $pay_Component_Reference = array())
     {
@@ -378,14 +378,14 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
     /**
      * Add item to Pay_Component_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Pay_ComponentObjectType $item
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_ComponentObjectType $item
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
-    public function addToPay_Component_Reference(\StructType\Pay_ComponentObjectType $item)
+    public function addToPay_Component_Reference(\WorkdayWsdl\\StructType\Pay_ComponentObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Pay_ComponentObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Pay_Component_Reference property can only contain items of type \StructType\Pay_ComponentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Pay_ComponentObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Pay_Component_Reference property can only contain items of type \WorkdayWsdl\\StructType\Pay_ComponentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Pay_Component_Reference[] = $item;
         return $this;
@@ -396,7 +396,7 @@ class Benefit_Plan_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Benefit_Plan_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
     public static function __set_state(array $array)
     {

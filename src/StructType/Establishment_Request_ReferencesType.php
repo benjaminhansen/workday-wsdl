@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Establishment References
      * - maxOccurs: unbounded
-     * @var \StructType\EstablishmentObjectType[]
+     * @var \WorkdayWsdl\\StructType\EstablishmentObjectType[]
      */
     public $Establishment_Reference;
     /**
      * Constructor method for Establishment_Request_ReferencesType
      * @uses Establishment_Request_ReferencesType::setEstablishment_Reference()
-     * @param \StructType\EstablishmentObjectType[] $establishment_Reference
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType[] $establishment_Reference
      */
     public function __construct(array $establishment_Reference = array())
     {
@@ -32,7 +32,7 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Establishment_Reference value
-     * @return \StructType\EstablishmentObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectType[]|null
      */
     public function getEstablishment_Reference()
     {
@@ -50,12 +50,12 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $establishment_Request_ReferencesTypeEstablishment_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$establishment_Request_ReferencesTypeEstablishment_ReferenceItem instanceof \StructType\EstablishmentObjectType) {
+            if (!$establishment_Request_ReferencesTypeEstablishment_ReferenceItem instanceof \WorkdayWsdl\\StructType\EstablishmentObjectType) {
                 $invalidValues[] = is_object($establishment_Request_ReferencesTypeEstablishment_ReferenceItem) ? get_class($establishment_Request_ReferencesTypeEstablishment_ReferenceItem) : sprintf('%s(%s)', gettype($establishment_Request_ReferencesTypeEstablishment_ReferenceItem), var_export($establishment_Request_ReferencesTypeEstablishment_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Establishment_Reference property can only contain items of type \StructType\EstablishmentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Establishment_Reference property can only contain items of type \WorkdayWsdl\\StructType\EstablishmentObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Establishment_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EstablishmentObjectType[] $establishment_Reference
-     * @return \StructType\Establishment_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType[] $establishment_Reference
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType
      */
     public function setEstablishment_Reference(array $establishment_Reference = array())
     {
@@ -78,14 +78,14 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Establishment_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\EstablishmentObjectType $item
-     * @return \StructType\Establishment_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $item
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType
      */
-    public function addToEstablishment_Reference(\StructType\EstablishmentObjectType $item)
+    public function addToEstablishment_Reference(\WorkdayWsdl\\StructType\EstablishmentObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EstablishmentObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Establishment_Reference property can only contain items of type \StructType\EstablishmentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EstablishmentObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Establishment_Reference property can only contain items of type \WorkdayWsdl\\StructType\EstablishmentObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Establishment_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Establishment_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Establishment_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Establishment_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

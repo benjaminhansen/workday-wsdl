@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class Ethnicity_ReferenceType extends AbstractStructBase
      * The Regulatory_Region_Organization_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType
      */
     public $Regulatory_Region_Organization_Reference;
     /**
@@ -33,9 +33,9 @@ class Ethnicity_ReferenceType extends AbstractStructBase
      * @uses Ethnicity_ReferenceType::setEthnicity_Name()
      * @uses Ethnicity_ReferenceType::setRegulatory_Region_Organization_Reference()
      * @param string $ethnicity_Name
-     * @param \StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference
      */
-    public function __construct($ethnicity_Name = null, \StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference = null)
+    public function __construct($ethnicity_Name = null, \WorkdayWsdl\\StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference = null)
     {
         $this
             ->setEthnicity_Name($ethnicity_Name)
@@ -52,7 +52,7 @@ class Ethnicity_ReferenceType extends AbstractStructBase
     /**
      * Set Ethnicity_Name value
      * @param string $ethnicity_Name
-     * @return \StructType\Ethnicity_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_ReferenceType
      */
     public function setEthnicity_Name($ethnicity_Name = null)
     {
@@ -65,7 +65,7 @@ class Ethnicity_ReferenceType extends AbstractStructBase
     }
     /**
      * Get Regulatory_Region_Organization_Reference value
-     * @return \StructType\Organization_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType|null
      */
     public function getRegulatory_Region_Organization_Reference()
     {
@@ -73,10 +73,10 @@ class Ethnicity_ReferenceType extends AbstractStructBase
     }
     /**
      * Set Regulatory_Region_Organization_Reference value
-     * @param \StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference
-     * @return \StructType\Ethnicity_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference
+     * @return \WorkdayWsdl\\StructType\Ethnicity_ReferenceType
      */
-    public function setRegulatory_Region_Organization_Reference(\StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference = null)
+    public function setRegulatory_Region_Organization_Reference(\WorkdayWsdl\\StructType\Organization_ReferenceType $regulatory_Region_Organization_Reference = null)
     {
         $this->Regulatory_Region_Organization_Reference = $regulatory_Region_Organization_Reference;
         return $this;
@@ -87,7 +87,7 @@ class Ethnicity_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Ethnicity_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_ReferenceType
      */
     public static function __set_state(array $array)
     {

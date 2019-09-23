@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Committee_DefinitionType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Committee Definition Instance
      * - minOccurs: 0
-     * @var \StructType\CommitteeObjectType
+     * @var \WorkdayWsdl\\StructType\CommitteeObjectType
      */
     public $Committee_Definition_Reference;
     /**
@@ -25,17 +25,17 @@ class Committee_DefinitionType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Definition_DataType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Definition_DataType[]
      */
     public $Committee_Definition_Data;
     /**
      * Constructor method for Committee_DefinitionType
      * @uses Committee_DefinitionType::setCommittee_Definition_Reference()
      * @uses Committee_DefinitionType::setCommittee_Definition_Data()
-     * @param \StructType\CommitteeObjectType $committee_Definition_Reference
-     * @param \StructType\Committee_Definition_DataType[] $committee_Definition_Data
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Definition_DataType[] $committee_Definition_Data
      */
-    public function __construct(\StructType\CommitteeObjectType $committee_Definition_Reference = null, array $committee_Definition_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference = null, array $committee_Definition_Data = array())
     {
         $this
             ->setCommittee_Definition_Reference($committee_Definition_Reference)
@@ -43,7 +43,7 @@ class Committee_DefinitionType extends AbstractStructBase
     }
     /**
      * Get Committee_Definition_Reference value
-     * @return \StructType\CommitteeObjectType|null
+     * @return \WorkdayWsdl\\StructType\CommitteeObjectType|null
      */
     public function getCommittee_Definition_Reference()
     {
@@ -51,17 +51,17 @@ class Committee_DefinitionType extends AbstractStructBase
     }
     /**
      * Set Committee_Definition_Reference value
-     * @param \StructType\CommitteeObjectType $committee_Definition_Reference
-     * @return \StructType\Committee_DefinitionType
+     * @param \WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_DefinitionType
      */
-    public function setCommittee_Definition_Reference(\StructType\CommitteeObjectType $committee_Definition_Reference = null)
+    public function setCommittee_Definition_Reference(\WorkdayWsdl\\StructType\CommitteeObjectType $committee_Definition_Reference = null)
     {
         $this->Committee_Definition_Reference = $committee_Definition_Reference;
         return $this;
     }
     /**
      * Get Committee_Definition_Data value
-     * @return \StructType\Committee_Definition_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Definition_DataType[]|null
      */
     public function getCommittee_Definition_Data()
     {
@@ -79,12 +79,12 @@ class Committee_DefinitionType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_DefinitionTypeCommittee_Definition_DataItem) {
             // validation for constraint: itemType
-            if (!$committee_DefinitionTypeCommittee_Definition_DataItem instanceof \StructType\Committee_Definition_DataType) {
+            if (!$committee_DefinitionTypeCommittee_Definition_DataItem instanceof \WorkdayWsdl\\StructType\Committee_Definition_DataType) {
                 $invalidValues[] = is_object($committee_DefinitionTypeCommittee_Definition_DataItem) ? get_class($committee_DefinitionTypeCommittee_Definition_DataItem) : sprintf('%s(%s)', gettype($committee_DefinitionTypeCommittee_Definition_DataItem), var_export($committee_DefinitionTypeCommittee_Definition_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Committee_Definition_Data property can only contain items of type \StructType\Committee_Definition_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Committee_Definition_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Definition_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Committee_DefinitionType extends AbstractStructBase
     /**
      * Set Committee_Definition_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Definition_DataType[] $committee_Definition_Data
-     * @return \StructType\Committee_DefinitionType
+     * @param \WorkdayWsdl\\StructType\Committee_Definition_DataType[] $committee_Definition_Data
+     * @return \WorkdayWsdl\\StructType\Committee_DefinitionType
      */
     public function setCommittee_Definition_Data(array $committee_Definition_Data = array())
     {
@@ -107,14 +107,14 @@ class Committee_DefinitionType extends AbstractStructBase
     /**
      * Add item to Committee_Definition_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Definition_DataType $item
-     * @return \StructType\Committee_DefinitionType
+     * @param \WorkdayWsdl\\StructType\Committee_Definition_DataType $item
+     * @return \WorkdayWsdl\\StructType\Committee_DefinitionType
      */
-    public function addToCommittee_Definition_Data(\StructType\Committee_Definition_DataType $item)
+    public function addToCommittee_Definition_Data(\WorkdayWsdl\\StructType\Committee_Definition_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Definition_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Committee_Definition_Data property can only contain items of type \StructType\Committee_Definition_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Definition_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Committee_Definition_Data property can only contain items of type \WorkdayWsdl\\StructType\Committee_Definition_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Committee_Definition_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Committee_DefinitionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_DefinitionType
+     * @return \WorkdayWsdl\\StructType\Committee_DefinitionType
      */
     public static function __set_state(array $array)
     {

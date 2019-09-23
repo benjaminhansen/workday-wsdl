@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Phone_Device_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
      * Constructor method for Phone_Device_TypeObjectType
      * @uses Phone_Device_TypeObjectType::setID()
      * @uses Phone_Device_TypeObjectType::setDescriptor()
-     * @param \StructType\Phone_Device_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Phone_Device_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $phone_Device_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$phone_Device_TypeObjectTypeIDItem instanceof \StructType\Phone_Device_TypeObjectIDType) {
+            if (!$phone_Device_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType) {
                 $invalidValues[] = is_object($phone_Device_TypeObjectTypeIDItem) ? get_class($phone_Device_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($phone_Device_TypeObjectTypeIDItem), var_export($phone_Device_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Phone_Device_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Device_TypeObjectIDType[] $iD
-     * @return \StructType\Phone_Device_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Phone_Device_TypeObjectIDType $item
-     * @return \StructType\Phone_Device_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
-    public function addToID(\StructType\Phone_Device_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone_Device_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Phone_Device_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Phone_Device_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Phone_Device_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Phone_Device_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Phone_Device_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Phone_Device_TypeObjectType
      */
     public static function __set_state(array $array)
     {

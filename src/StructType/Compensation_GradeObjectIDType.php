@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Compensation_GradeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Compensation_GradeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Compensation_GradeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Compensation_GradeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Compensation_GradeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Compensation_GradeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_GradeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Compensation_GradeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Compensation_GradeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Compensation_GradeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Compensation_GradeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Compensation_GradeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Compensation_GradeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Compensation_GradeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Compensation_GradeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_GradeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Compensation_GradeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Compensation_GradeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Compensation_GradeObjectIDType
      */
     public static function __set_state(array $array)
     {

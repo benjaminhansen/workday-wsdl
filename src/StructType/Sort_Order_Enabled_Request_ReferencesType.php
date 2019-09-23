@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
      * - documentation: Sort Order Enabled instance references.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Sort_Order_EnabledObjectType[]
+     * @var \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType[]
      */
     public $Sort_Order_Enabled_Reference;
     /**
      * Constructor method for Sort_Order_Enabled_Request_ReferencesType
      * @uses Sort_Order_Enabled_Request_ReferencesType::setSort_Order_Enabled_Reference()
-     * @param \StructType\Sort_Order_EnabledObjectType[] $sort_Order_Enabled_Reference
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType[] $sort_Order_Enabled_Reference
      */
     public function __construct(array $sort_Order_Enabled_Reference = array())
     {
@@ -33,7 +33,7 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Sort_Order_Enabled_Reference value
-     * @return \StructType\Sort_Order_EnabledObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType[]|null
      */
     public function getSort_Order_Enabled_Reference()
     {
@@ -51,12 +51,12 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem instanceof \StructType\Sort_Order_EnabledObjectType) {
+            if (!$sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem instanceof \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType) {
                 $invalidValues[] = is_object($sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem) ? get_class($sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem) : sprintf('%s(%s)', gettype($sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem), var_export($sort_Order_Enabled_Request_ReferencesTypeSort_Order_Enabled_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Sort_Order_Enabled_Reference property can only contain items of type \StructType\Sort_Order_EnabledObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Sort_Order_Enabled_Reference property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Sort_Order_Enabled_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_EnabledObjectType[] $sort_Order_Enabled_Reference
-     * @return \StructType\Sort_Order_Enabled_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType[] $sort_Order_Enabled_Reference
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Request_ReferencesType
      */
     public function setSort_Order_Enabled_Reference(array $sort_Order_Enabled_Reference = array())
     {
@@ -79,14 +79,14 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Sort_Order_Enabled_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sort_Order_EnabledObjectType $item
-     * @return \StructType\Sort_Order_Enabled_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $item
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Request_ReferencesType
      */
-    public function addToSort_Order_Enabled_Reference(\StructType\Sort_Order_EnabledObjectType $item)
+    public function addToSort_Order_Enabled_Reference(\WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Sort_Order_EnabledObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Sort_Order_Enabled_Reference property can only contain items of type \StructType\Sort_Order_EnabledObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Sort_Order_Enabled_Reference property can only contain items of type \WorkdayWsdl\\StructType\Sort_Order_EnabledObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Sort_Order_Enabled_Reference[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Sort_Order_Enabled_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sort_Order_Enabled_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Sort_Order_Enabled_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

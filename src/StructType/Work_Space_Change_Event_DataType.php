@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
      * The Position_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Position you want to specify for the "Change Work Space" Web Service.
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Reference;
     /**
@@ -31,7 +31,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
      * The Work_Space_Reference
      * Meta information extracted from the WSDL
      * - documentation: Work Space location for the Position.
-     * @var \StructType\LocationObjectType
+     * @var \WorkdayWsdl\\StructType\LocationObjectType
      */
     public $Work_Space_Reference;
     /**
@@ -39,11 +39,11 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
      * @uses Work_Space_Change_Event_DataType::setPosition_Reference()
      * @uses Work_Space_Change_Event_DataType::setEffective_Date()
      * @uses Work_Space_Change_Event_DataType::setWork_Space_Reference()
-     * @param \StructType\Position_ElementObjectType $position_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
      * @param string $effective_Date
-     * @param \StructType\LocationObjectType $work_Space_Reference
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $work_Space_Reference
      */
-    public function __construct(\StructType\Position_ElementObjectType $position_Reference = null, $effective_Date = null, \StructType\LocationObjectType $work_Space_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null, $effective_Date = null, \WorkdayWsdl\\StructType\LocationObjectType $work_Space_Reference = null)
     {
         $this
             ->setPosition_Reference($position_Reference)
@@ -52,7 +52,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Reference()
     {
@@ -60,10 +60,10 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @return \StructType\Work_Space_Change_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Space_Change_Event_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ElementObjectType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
@@ -79,7 +79,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Work_Space_Change_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Space_Change_Event_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -92,7 +92,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Work_Space_Reference value
-     * @return \StructType\LocationObjectType|null
+     * @return \WorkdayWsdl\\StructType\LocationObjectType|null
      */
     public function getWork_Space_Reference()
     {
@@ -100,10 +100,10 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Work_Space_Reference value
-     * @param \StructType\LocationObjectType $work_Space_Reference
-     * @return \StructType\Work_Space_Change_Event_DataType
+     * @param \WorkdayWsdl\\StructType\LocationObjectType $work_Space_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Space_Change_Event_DataType
      */
-    public function setWork_Space_Reference(\StructType\LocationObjectType $work_Space_Reference = null)
+    public function setWork_Space_Reference(\WorkdayWsdl\\StructType\LocationObjectType $work_Space_Reference = null)
     {
         $this->Work_Space_Reference = $work_Space_Reference;
         return $this;
@@ -114,7 +114,7 @@ class Work_Space_Change_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Space_Change_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Work_Space_Change_Event_DataType
      */
     public static function __set_state(array $array)
     {

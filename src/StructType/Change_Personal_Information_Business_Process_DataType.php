@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Change_Personal_Information_Business_Process_DataType extends AbstractStru
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Worker that the Personal Information will be applied to.
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
      * The Personal_Information_Data
-     * @var \StructType\Change_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Personal_Information_DataType
      */
     public $Personal_Information_Data;
     /**
      * Constructor method for Change_Personal_Information_Business_Process_DataType
      * @uses Change_Personal_Information_Business_Process_DataType::setWorker_Reference()
      * @uses Change_Personal_Information_Business_Process_DataType::setPersonal_Information_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Change_Personal_Information_DataType $personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, \StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -40,7 +40,7 @@ class Change_Personal_Information_Business_Process_DataType extends AbstractStru
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -48,17 +48,17 @@ class Change_Personal_Information_Business_Process_DataType extends AbstractStru
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Change_Personal_Information_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Personal_Information_Data value
-     * @return \StructType\Change_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_DataType|null
      */
     public function getPersonal_Information_Data()
     {
@@ -66,10 +66,10 @@ class Change_Personal_Information_Business_Process_DataType extends AbstractStru
     }
     /**
      * Set Personal_Information_Data value
-     * @param \StructType\Change_Personal_Information_DataType $personal_Information_Data
-     * @return \StructType\Change_Personal_Information_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType
      */
-    public function setPersonal_Information_Data(\StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
+    public function setPersonal_Information_Data(\WorkdayWsdl\\StructType\Change_Personal_Information_DataType $personal_Information_Data = null)
     {
         $this->Personal_Information_Data = $personal_Information_Data;
         return $this;
@@ -80,7 +80,7 @@ class Change_Personal_Information_Business_Process_DataType extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Personal_Information_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Personal_Information_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

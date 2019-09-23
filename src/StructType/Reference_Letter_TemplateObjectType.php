@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Reference_Letter_TemplateObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
      * Constructor method for Reference_Letter_TemplateObjectType
      * @uses Reference_Letter_TemplateObjectType::setID()
      * @uses Reference_Letter_TemplateObjectType::setDescriptor()
-     * @param \StructType\Reference_Letter_TemplateObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Reference_Letter_TemplateObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $reference_Letter_TemplateObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$reference_Letter_TemplateObjectTypeIDItem instanceof \StructType\Reference_Letter_TemplateObjectIDType) {
+            if (!$reference_Letter_TemplateObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType) {
                 $invalidValues[] = is_object($reference_Letter_TemplateObjectTypeIDItem) ? get_class($reference_Letter_TemplateObjectTypeIDItem) : sprintf('%s(%s)', gettype($reference_Letter_TemplateObjectTypeIDItem), var_export($reference_Letter_TemplateObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Reference_Letter_TemplateObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Reference_Letter_TemplateObjectIDType[] $iD
-     * @return \StructType\Reference_Letter_TemplateObjectType
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Reference_Letter_TemplateObjectIDType $item
-     * @return \StructType\Reference_Letter_TemplateObjectType
+     * @param \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType
      */
-    public function addToID(\StructType\Reference_Letter_TemplateObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Reference_Letter_TemplateObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Reference_Letter_TemplateObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Reference_Letter_TemplateObjectType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Reference_Letter_TemplateObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reference_Letter_TemplateObjectType
+     * @return \WorkdayWsdl\\StructType\Reference_Letter_TemplateObjectType
      */
     public static function __set_state(array $array)
     {

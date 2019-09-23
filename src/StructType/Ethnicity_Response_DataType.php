@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Ethnicity_Response_DataType extends AbstractStructBase
      * - documentation: Encapsulating element containing all Ethnicity data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EthnicityType[]
+     * @var \WorkdayWsdl\\StructType\EthnicityType[]
      */
     public $Ethnicity;
     /**
      * Constructor method for Ethnicity_Response_DataType
      * @uses Ethnicity_Response_DataType::setEthnicity()
-     * @param \StructType\EthnicityType[] $ethnicity
+     * @param \WorkdayWsdl\\StructType\EthnicityType[] $ethnicity
      */
     public function __construct(array $ethnicity = array())
     {
@@ -33,7 +33,7 @@ class Ethnicity_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Ethnicity value
-     * @return \StructType\EthnicityType[]|null
+     * @return \WorkdayWsdl\\StructType\EthnicityType[]|null
      */
     public function getEthnicity()
     {
@@ -51,12 +51,12 @@ class Ethnicity_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ethnicity_Response_DataTypeEthnicityItem) {
             // validation for constraint: itemType
-            if (!$ethnicity_Response_DataTypeEthnicityItem instanceof \StructType\EthnicityType) {
+            if (!$ethnicity_Response_DataTypeEthnicityItem instanceof \WorkdayWsdl\\StructType\EthnicityType) {
                 $invalidValues[] = is_object($ethnicity_Response_DataTypeEthnicityItem) ? get_class($ethnicity_Response_DataTypeEthnicityItem) : sprintf('%s(%s)', gettype($ethnicity_Response_DataTypeEthnicityItem), var_export($ethnicity_Response_DataTypeEthnicityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Ethnicity property can only contain items of type \StructType\EthnicityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Ethnicity property can only contain items of type \WorkdayWsdl\\StructType\EthnicityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Ethnicity_Response_DataType extends AbstractStructBase
     /**
      * Set Ethnicity value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityType[] $ethnicity
-     * @return \StructType\Ethnicity_Response_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityType[] $ethnicity
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Response_DataType
      */
     public function setEthnicity(array $ethnicity = array())
     {
@@ -79,14 +79,14 @@ class Ethnicity_Response_DataType extends AbstractStructBase
     /**
      * Add item to Ethnicity value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityType $item
-     * @return \StructType\Ethnicity_Response_DataType
+     * @param \WorkdayWsdl\\StructType\EthnicityType $item
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Response_DataType
      */
-    public function addToEthnicity(\StructType\EthnicityType $item)
+    public function addToEthnicity(\WorkdayWsdl\\StructType\EthnicityType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EthnicityType) {
-            throw new \InvalidArgumentException(sprintf('The Ethnicity property can only contain items of type \StructType\EthnicityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EthnicityType) {
+            throw new \InvalidArgumentException(sprintf('The Ethnicity property can only contain items of type \WorkdayWsdl\\StructType\EthnicityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Ethnicity[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Ethnicity_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Ethnicity_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Ethnicity_Response_DataType
      */
     public static function __set_state(array $array)
     {

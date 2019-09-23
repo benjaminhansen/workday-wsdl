@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
      * Meta information extracted from the WSDL
      * - documentation: The country of certification.
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Country_Reference;
     /**
@@ -27,7 +27,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
      * Meta information extracted from the WSDL
      * - documentation: The certification ID reference.
      * - minOccurs: 0
-     * @var \StructType\CertificationObjectType
+     * @var \WorkdayWsdl\\StructType\CertificationObjectType
      */
     public $Certification_Reference;
     /**
@@ -62,7 +62,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Specialty_Achievement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Specialty_Achievement_DataType[]
      */
     public $Specialty_Achievement_Reference;
     /**
@@ -73,14 +73,14 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
      * @uses Certification_Qualification_Profile_Replacement_DataType::setIssuer()
      * @uses Certification_Qualification_Profile_Replacement_DataType::setRequired()
      * @uses Certification_Qualification_Profile_Replacement_DataType::setSpecialty_Achievement_Reference()
-     * @param \StructType\CountryObjectType $country_Reference
-     * @param \StructType\CertificationObjectType $certification_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @param \WorkdayWsdl\\StructType\CertificationObjectType $certification_Reference
      * @param string $name
      * @param string $issuer
      * @param bool $required
-     * @param \StructType\Specialty_Achievement_DataType[] $specialty_Achievement_Reference
+     * @param \WorkdayWsdl\\StructType\Specialty_Achievement_DataType[] $specialty_Achievement_Reference
      */
-    public function __construct(\StructType\CountryObjectType $country_Reference = null, \StructType\CertificationObjectType $certification_Reference = null, $name = null, $issuer = null, $required = null, array $specialty_Achievement_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null, \WorkdayWsdl\\StructType\CertificationObjectType $certification_Reference = null, $name = null, $issuer = null, $required = null, array $specialty_Achievement_Reference = array())
     {
         $this
             ->setCountry_Reference($country_Reference)
@@ -92,7 +92,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getCountry_Reference()
     {
@@ -100,17 +100,17 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\CountryObjectType $country_Reference
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
-    public function setCountry_Reference(\StructType\CountryObjectType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\CountryObjectType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
     }
     /**
      * Get Certification_Reference value
-     * @return \StructType\CertificationObjectType|null
+     * @return \WorkdayWsdl\\StructType\CertificationObjectType|null
      */
     public function getCertification_Reference()
     {
@@ -118,10 +118,10 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     }
     /**
      * Set Certification_Reference value
-     * @param \StructType\CertificationObjectType $certification_Reference
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\CertificationObjectType $certification_Reference
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
-    public function setCertification_Reference(\StructType\CertificationObjectType $certification_Reference = null)
+    public function setCertification_Reference(\WorkdayWsdl\\StructType\CertificationObjectType $certification_Reference = null)
     {
         $this->Certification_Reference = $certification_Reference;
         return $this;
@@ -137,7 +137,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
     public function setName($name = null)
     {
@@ -159,7 +159,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     /**
      * Set Issuer value
      * @param string $issuer
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
     public function setIssuer($issuer = null)
     {
@@ -181,7 +181,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     /**
      * Set Required value
      * @param bool $required
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
     public function setRequired($required = null)
     {
@@ -194,7 +194,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     }
     /**
      * Get Specialty_Achievement_Reference value
-     * @return \StructType\Specialty_Achievement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Specialty_Achievement_DataType[]|null
      */
     public function getSpecialty_Achievement_Reference()
     {
@@ -212,12 +212,12 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
         $invalidValues = [];
         foreach ($values as $certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem instanceof \StructType\Specialty_Achievement_DataType) {
+            if (!$certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem instanceof \WorkdayWsdl\\StructType\Specialty_Achievement_DataType) {
                 $invalidValues[] = is_object($certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem) ? get_class($certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem) : sprintf('%s(%s)', gettype($certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem), var_export($certification_Qualification_Profile_Replacement_DataTypeSpecialty_Achievement_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Specialty_Achievement_Reference property can only contain items of type \StructType\Specialty_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Specialty_Achievement_Reference property can only contain items of type \WorkdayWsdl\\StructType\Specialty_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -225,8 +225,8 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     /**
      * Set Specialty_Achievement_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Specialty_Achievement_DataType[] $specialty_Achievement_Reference
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Specialty_Achievement_DataType[] $specialty_Achievement_Reference
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
     public function setSpecialty_Achievement_Reference(array $specialty_Achievement_Reference = array())
     {
@@ -240,14 +240,14 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
     /**
      * Add item to Specialty_Achievement_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Specialty_Achievement_DataType $item
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @param \WorkdayWsdl\\StructType\Specialty_Achievement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
-    public function addToSpecialty_Achievement_Reference(\StructType\Specialty_Achievement_DataType $item)
+    public function addToSpecialty_Achievement_Reference(\WorkdayWsdl\\StructType\Specialty_Achievement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Specialty_Achievement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Specialty_Achievement_Reference property can only contain items of type \StructType\Specialty_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Specialty_Achievement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Specialty_Achievement_Reference property can only contain items of type \WorkdayWsdl\\StructType\Specialty_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Specialty_Achievement_Reference[] = $item;
         return $this;
@@ -258,7 +258,7 @@ class Certification_Qualification_Profile_Replacement_DataType extends AbstractS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Certification_Qualification_Profile_Replacement_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Qualification_Profile_Replacement_DataType
      */
     public static function __set_state(array $array)
     {

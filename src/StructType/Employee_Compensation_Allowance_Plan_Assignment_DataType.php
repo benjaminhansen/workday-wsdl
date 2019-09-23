@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
     public $Allowance_Plan_Name;
     /**
      * The Compensation_Element_Values_for_Allowance_Plan_Data
-     * @var \StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType
      */
     public $Compensation_Element_Values_for_Allowance_Plan_Data;
     /**
@@ -31,9 +31,9 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
      * @uses Employee_Compensation_Allowance_Plan_Assignment_DataType::setAllowance_Plan_Name()
      * @uses Employee_Compensation_Allowance_Plan_Assignment_DataType::setCompensation_Element_Values_for_Allowance_Plan_Data()
      * @param string $allowance_Plan_Name
-     * @param \StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data
      */
-    public function __construct($allowance_Plan_Name = null, \StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data = null)
+    public function __construct($allowance_Plan_Name = null, \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data = null)
     {
         $this
             ->setAllowance_Plan_Name($allowance_Plan_Name)
@@ -50,7 +50,7 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
     /**
      * Set Allowance_Plan_Name value
      * @param string $allowance_Plan_Name
-     * @return \StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
      */
     public function setAllowance_Plan_Name($allowance_Plan_Name = null)
     {
@@ -63,7 +63,7 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
     }
     /**
      * Get Compensation_Element_Values_for_Allowance_Plan_Data value
-     * @return \StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType|null
      */
     public function getCompensation_Element_Values_for_Allowance_Plan_Data()
     {
@@ -71,10 +71,10 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
     }
     /**
      * Set Compensation_Element_Values_for_Allowance_Plan_Data value
-     * @param \StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data
-     * @return \StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
      */
-    public function setCompensation_Element_Values_for_Allowance_Plan_Data(\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data = null)
+    public function setCompensation_Element_Values_for_Allowance_Plan_Data(\WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_Detail_DataType $compensation_Element_Values_for_Allowance_Plan_Data = null)
     {
         $this->Compensation_Element_Values_for_Allowance_Plan_Data = $compensation_Element_Values_for_Allowance_Plan_Data;
         return $this;
@@ -85,7 +85,7 @@ class Employee_Compensation_Allowance_Plan_Assignment_DataType extends AbstractS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Compensation_Allowance_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

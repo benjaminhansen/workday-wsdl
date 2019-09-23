@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a Job Family Group.
      * - minOccurs: 0
-     * @var \StructType\Job_FamilyObjectType
+     * @var \WorkdayWsdl\\StructType\Job_FamilyObjectType
      */
     public $Job_Family_Group_Reference;
     /**
@@ -25,7 +25,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the detailed information about an Job Family Group.
      * - minOccurs: 0
-     * @var \StructType\Job_Family_Group_DataType
+     * @var \WorkdayWsdl\\StructType\Job_Family_Group_DataType
      */
     public $Job_Family_Group_Data;
     /**
@@ -50,12 +50,12 @@ class Job_Family_Group_NewType extends AbstractStructBase
      * @uses Job_Family_Group_NewType::setJob_Family_Group_Data()
      * @uses Job_Family_Group_NewType::setAs_Of_Date()
      * @uses Job_Family_Group_NewType::setAs_Of_Moment()
-     * @param \StructType\Job_FamilyObjectType $job_Family_Group_Reference
-     * @param \StructType\Job_Family_Group_DataType $job_Family_Group_Data
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Group_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Family_Group_DataType $job_Family_Group_Data
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      */
-    public function __construct(\StructType\Job_FamilyObjectType $job_Family_Group_Reference = null, \StructType\Job_Family_Group_DataType $job_Family_Group_Data = null, $as_Of_Date = null, $as_Of_Moment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Group_Reference = null, \WorkdayWsdl\\StructType\Job_Family_Group_DataType $job_Family_Group_Data = null, $as_Of_Date = null, $as_Of_Moment = null)
     {
         $this
             ->setJob_Family_Group_Reference($job_Family_Group_Reference)
@@ -65,7 +65,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
     }
     /**
      * Get Job_Family_Group_Reference value
-     * @return \StructType\Job_FamilyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_FamilyObjectType|null
      */
     public function getJob_Family_Group_Reference()
     {
@@ -73,17 +73,17 @@ class Job_Family_Group_NewType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Group_Reference value
-     * @param \StructType\Job_FamilyObjectType $job_Family_Group_Reference
-     * @return \StructType\Job_Family_Group_NewType
+     * @param \WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_NewType
      */
-    public function setJob_Family_Group_Reference(\StructType\Job_FamilyObjectType $job_Family_Group_Reference = null)
+    public function setJob_Family_Group_Reference(\WorkdayWsdl\\StructType\Job_FamilyObjectType $job_Family_Group_Reference = null)
     {
         $this->Job_Family_Group_Reference = $job_Family_Group_Reference;
         return $this;
     }
     /**
      * Get Job_Family_Group_Data value
-     * @return \StructType\Job_Family_Group_DataType|null
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_DataType|null
      */
     public function getJob_Family_Group_Data()
     {
@@ -91,10 +91,10 @@ class Job_Family_Group_NewType extends AbstractStructBase
     }
     /**
      * Set Job_Family_Group_Data value
-     * @param \StructType\Job_Family_Group_DataType $job_Family_Group_Data
-     * @return \StructType\Job_Family_Group_NewType
+     * @param \WorkdayWsdl\\StructType\Job_Family_Group_DataType $job_Family_Group_Data
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_NewType
      */
-    public function setJob_Family_Group_Data(\StructType\Job_Family_Group_DataType $job_Family_Group_Data = null)
+    public function setJob_Family_Group_Data(\WorkdayWsdl\\StructType\Job_Family_Group_DataType $job_Family_Group_Data = null)
     {
         $this->Job_Family_Group_Data = $job_Family_Group_Data;
         return $this;
@@ -110,7 +110,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\Job_Family_Group_NewType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_NewType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -132,7 +132,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\Job_Family_Group_NewType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_NewType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -149,7 +149,7 @@ class Job_Family_Group_NewType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Family_Group_NewType
+     * @return \WorkdayWsdl\\StructType\Job_Family_Group_NewType
      */
     public static function __set_state(array $array)
     {

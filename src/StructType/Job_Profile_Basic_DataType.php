@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -101,7 +101,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Management Level.
      * - minOccurs: 0
-     * @var \StructType\Management_LevelObjectType
+     * @var \WorkdayWsdl\\StructType\Management_LevelObjectType
      */
     public $Management_Level_Reference;
     /**
@@ -109,7 +109,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a Job Category.
      * - minOccurs: 0
-     * @var \StructType\Job_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Job_CategoryObjectType
      */
     public $Job_Category_Reference;
     /**
@@ -117,7 +117,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a job level for a job profile
      * - minOccurs: 0
-     * @var \StructType\Job_LevelObjectType
+     * @var \WorkdayWsdl\\StructType\Job_LevelObjectType
      */
     public $Job_Level_Reference;
     /**
@@ -125,7 +125,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Job_Profile_Job_Family_DataType[]
+     * @var \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType[]
      */
     public $Job_Family_Data;
     /**
@@ -133,7 +133,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Company_Insider_Job_Profile_DataType[]
+     * @var \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType[]
      */
     public $Company_Insider_Data;
     /**
@@ -141,7 +141,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for an Active Referral One-Time Payment Plan
      * - minOccurs: 0
-     * @var \StructType\One_Time_Payment_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType
      */
     public $Referral_Payment_Plan_Reference;
     /**
@@ -158,7 +158,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a difficulty to fill.
      * - minOccurs: 0
-     * @var \StructType\Difficulty_to_FillObjectType
+     * @var \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType
      */
     public $Difficulty_to_Fill_Reference;
     /**
@@ -167,7 +167,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * - documentation: Restrict to Country Reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType[]
+     * @var \WorkdayWsdl\\StructType\CountryObjectType[]
      */
     public $Restrict_to_Country_Reference;
     /**
@@ -199,17 +199,17 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * @param string $additional_Job_Description
      * @param bool $work_Shift_Required
      * @param bool $public_Job
-     * @param \StructType\Management_LevelObjectType $management_Level_Reference
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @param \StructType\Job_LevelObjectType $job_Level_Reference
-     * @param \StructType\Job_Profile_Job_Family_DataType[] $job_Family_Data
-     * @param \StructType\Company_Insider_Job_Profile_DataType[] $company_Insider_Data
-     * @param \StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Job_LevelObjectType $job_Level_Reference
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType[] $job_Family_Data
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType[] $company_Insider_Data
+     * @param \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference
      * @param bool $critical_Job
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
-     * @param \StructType\CountryObjectType[] $restrict_to_Country_Reference
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $restrict_to_Country_Reference
      */
-    public function __construct($inactive = null, $job_Title = null, $include_Job_Code_in_Name = null, $job_Profile_Private_Title = null, $job_Profile_Summary = null, $job_Description = null, $additional_Job_Description = null, $work_Shift_Required = null, $public_Job = null, \StructType\Management_LevelObjectType $management_Level_Reference = null, \StructType\Job_CategoryObjectType $job_Category_Reference = null, \StructType\Job_LevelObjectType $job_Level_Reference = null, array $job_Family_Data = array(), array $company_Insider_Data = array(), \StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference = null, $critical_Job = null, \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null, array $restrict_to_Country_Reference = array())
+    public function __construct($inactive = null, $job_Title = null, $include_Job_Code_in_Name = null, $job_Profile_Private_Title = null, $job_Profile_Summary = null, $job_Description = null, $additional_Job_Description = null, $work_Shift_Required = null, $public_Job = null, \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference = null, \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null, \WorkdayWsdl\\StructType\Job_LevelObjectType $job_Level_Reference = null, array $job_Family_Data = array(), array $company_Insider_Data = array(), \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference = null, $critical_Job = null, \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null, array $restrict_to_Country_Reference = array())
     {
         $this
             ->setInactive($inactive)
@@ -242,7 +242,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -264,7 +264,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Job_Title value
      * @param string $job_Title
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setJob_Title($job_Title = null)
     {
@@ -286,7 +286,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Include_Job_Code_in_Name value
      * @param bool $include_Job_Code_in_Name
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setInclude_Job_Code_in_Name($include_Job_Code_in_Name = null)
     {
@@ -308,7 +308,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Private_Title value
      * @param string $job_Profile_Private_Title
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setJob_Profile_Private_Title($job_Profile_Private_Title = null)
     {
@@ -330,7 +330,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Job_Profile_Summary value
      * @param string $job_Profile_Summary
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setJob_Profile_Summary($job_Profile_Summary = null)
     {
@@ -352,7 +352,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Job_Description value
      * @param string $job_Description
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setJob_Description($job_Description = null)
     {
@@ -374,7 +374,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Additional_Job_Description value
      * @param string $additional_Job_Description
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setAdditional_Job_Description($additional_Job_Description = null)
     {
@@ -396,7 +396,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Work_Shift_Required value
      * @param bool $work_Shift_Required
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setWork_Shift_Required($work_Shift_Required = null)
     {
@@ -418,7 +418,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Public_Job value
      * @param bool $public_Job
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setPublic_Job($public_Job = null)
     {
@@ -431,7 +431,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Get Management_Level_Reference value
-     * @return \StructType\Management_LevelObjectType|null
+     * @return \WorkdayWsdl\\StructType\Management_LevelObjectType|null
      */
     public function getManagement_Level_Reference()
     {
@@ -439,17 +439,17 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Management_Level_Reference value
-     * @param \StructType\Management_LevelObjectType $management_Level_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function setManagement_Level_Reference(\StructType\Management_LevelObjectType $management_Level_Reference = null)
+    public function setManagement_Level_Reference(\WorkdayWsdl\\StructType\Management_LevelObjectType $management_Level_Reference = null)
     {
         $this->Management_Level_Reference = $management_Level_Reference;
         return $this;
     }
     /**
      * Get Job_Category_Reference value
-     * @return \StructType\Job_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryObjectType|null
      */
     public function getJob_Category_Reference()
     {
@@ -457,17 +457,17 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Category_Reference value
-     * @param \StructType\Job_CategoryObjectType $job_Category_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function setJob_Category_Reference(\StructType\Job_CategoryObjectType $job_Category_Reference = null)
+    public function setJob_Category_Reference(\WorkdayWsdl\\StructType\Job_CategoryObjectType $job_Category_Reference = null)
     {
         $this->Job_Category_Reference = $job_Category_Reference;
         return $this;
     }
     /**
      * Get Job_Level_Reference value
-     * @return \StructType\Job_LevelObjectType|null
+     * @return \WorkdayWsdl\\StructType\Job_LevelObjectType|null
      */
     public function getJob_Level_Reference()
     {
@@ -475,17 +475,17 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Job_Level_Reference value
-     * @param \StructType\Job_LevelObjectType $job_Level_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Job_LevelObjectType $job_Level_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function setJob_Level_Reference(\StructType\Job_LevelObjectType $job_Level_Reference = null)
+    public function setJob_Level_Reference(\WorkdayWsdl\\StructType\Job_LevelObjectType $job_Level_Reference = null)
     {
         $this->Job_Level_Reference = $job_Level_Reference;
         return $this;
     }
     /**
      * Get Job_Family_Data value
-     * @return \StructType\Job_Profile_Job_Family_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType[]|null
      */
     public function getJob_Family_Data()
     {
@@ -503,12 +503,12 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Basic_DataTypeJob_Family_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Basic_DataTypeJob_Family_DataItem instanceof \StructType\Job_Profile_Job_Family_DataType) {
+            if (!$job_Profile_Basic_DataTypeJob_Family_DataItem instanceof \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType) {
                 $invalidValues[] = is_object($job_Profile_Basic_DataTypeJob_Family_DataItem) ? get_class($job_Profile_Basic_DataTypeJob_Family_DataItem) : sprintf('%s(%s)', gettype($job_Profile_Basic_DataTypeJob_Family_DataItem), var_export($job_Profile_Basic_DataTypeJob_Family_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Family_Data property can only contain items of type \StructType\Job_Profile_Job_Family_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Family_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -516,8 +516,8 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Job_Family_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Job_Family_DataType[] $job_Family_Data
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType[] $job_Family_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setJob_Family_Data(array $job_Family_Data = array())
     {
@@ -531,21 +531,21 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Add item to Job_Family_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_Profile_Job_Family_DataType $item
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function addToJob_Family_Data(\StructType\Job_Profile_Job_Family_DataType $item)
+    public function addToJob_Family_Data(\WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_Profile_Job_Family_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Family_Data property can only contain items of type \StructType\Job_Profile_Job_Family_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Family_Data property can only contain items of type \WorkdayWsdl\\StructType\Job_Profile_Job_Family_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Family_Data[] = $item;
         return $this;
     }
     /**
      * Get Company_Insider_Data value
-     * @return \StructType\Company_Insider_Job_Profile_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType[]|null
      */
     public function getCompany_Insider_Data()
     {
@@ -563,12 +563,12 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Basic_DataTypeCompany_Insider_DataItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Basic_DataTypeCompany_Insider_DataItem instanceof \StructType\Company_Insider_Job_Profile_DataType) {
+            if (!$job_Profile_Basic_DataTypeCompany_Insider_DataItem instanceof \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType) {
                 $invalidValues[] = is_object($job_Profile_Basic_DataTypeCompany_Insider_DataItem) ? get_class($job_Profile_Basic_DataTypeCompany_Insider_DataItem) : sprintf('%s(%s)', gettype($job_Profile_Basic_DataTypeCompany_Insider_DataItem), var_export($job_Profile_Basic_DataTypeCompany_Insider_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Company_Insider_Data property can only contain items of type \StructType\Company_Insider_Job_Profile_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Company_Insider_Data property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -576,8 +576,8 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Company_Insider_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Job_Profile_DataType[] $company_Insider_Data
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType[] $company_Insider_Data
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setCompany_Insider_Data(array $company_Insider_Data = array())
     {
@@ -591,21 +591,21 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Add item to Company_Insider_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Company_Insider_Job_Profile_DataType $item
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function addToCompany_Insider_Data(\StructType\Company_Insider_Job_Profile_DataType $item)
+    public function addToCompany_Insider_Data(\WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Company_Insider_Job_Profile_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Company_Insider_Data property can only contain items of type \StructType\Company_Insider_Job_Profile_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Company_Insider_Data property can only contain items of type \WorkdayWsdl\\StructType\Company_Insider_Job_Profile_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Company_Insider_Data[] = $item;
         return $this;
     }
     /**
      * Get Referral_Payment_Plan_Reference value
-     * @return \StructType\One_Time_Payment_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType|null
      */
     public function getReferral_Payment_Plan_Reference()
     {
@@ -613,10 +613,10 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Referral_Payment_Plan_Reference value
-     * @param \StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function setReferral_Payment_Plan_Reference(\StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference = null)
+    public function setReferral_Payment_Plan_Reference(\WorkdayWsdl\\StructType\One_Time_Payment_PlanObjectType $referral_Payment_Plan_Reference = null)
     {
         $this->Referral_Payment_Plan_Reference = $referral_Payment_Plan_Reference;
         return $this;
@@ -632,7 +632,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Critical_Job value
      * @param bool $critical_Job
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setCritical_Job($critical_Job = null)
     {
@@ -645,7 +645,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Get Difficulty_to_Fill_Reference value
-     * @return \StructType\Difficulty_to_FillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType|null
      */
     public function getDifficulty_to_Fill_Reference()
     {
@@ -653,17 +653,17 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     }
     /**
      * Set Difficulty_to_Fill_Reference value
-     * @param \StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function setDifficulty_to_Fill_Reference(\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
+    public function setDifficulty_to_Fill_Reference(\WorkdayWsdl\\StructType\Difficulty_to_FillObjectType $difficulty_to_Fill_Reference = null)
     {
         $this->Difficulty_to_Fill_Reference = $difficulty_to_Fill_Reference;
         return $this;
     }
     /**
      * Get Restrict_to_Country_Reference value
-     * @return \StructType\CountryObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType[]|null
      */
     public function getRestrict_to_Country_Reference()
     {
@@ -681,12 +681,12 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem instanceof \StructType\CountryObjectType) {
+            if (!$job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
                 $invalidValues[] = is_object($job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem) ? get_class($job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem) : sprintf('%s(%s)', gettype($job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem), var_export($job_Profile_Basic_DataTypeRestrict_to_Country_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Restrict_to_Country_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Restrict_to_Country_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -694,8 +694,8 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Set Restrict_to_Country_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType[] $restrict_to_Country_Reference
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $restrict_to_Country_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public function setRestrict_to_Country_Reference(array $restrict_to_Country_Reference = array())
     {
@@ -709,14 +709,14 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
     /**
      * Add item to Restrict_to_Country_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType $item
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
-    public function addToRestrict_to_Country_Reference(\StructType\CountryObjectType $item)
+    public function addToRestrict_to_Country_Reference(\WorkdayWsdl\\StructType\CountryObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CountryObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Restrict_to_Country_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Restrict_to_Country_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Restrict_to_Country_Reference[] = $item;
         return $this;
@@ -727,7 +727,7 @@ class Job_Profile_Basic_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Basic_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Basic_DataType
      */
     public static function __set_state(array $array)
     {

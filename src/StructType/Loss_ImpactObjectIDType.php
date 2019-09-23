@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Loss_ImpactObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Loss_ImpactReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Loss_ImpactReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Loss_ImpactReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Loss_ImpactReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Loss_ImpactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Loss_ImpactReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Loss_ImpactReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Loss_ImpactReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Loss_ImpactReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Loss_ImpactReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Loss_ImpactReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Loss_ImpactObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Loss_ImpactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Loss_ImpactObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Loss_ImpactObjectIDType
+     * @return \WorkdayWsdl\\StructType\Loss_ImpactObjectIDType
      */
     public static function __set_state(array $array)
     {

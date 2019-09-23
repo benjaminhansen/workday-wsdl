@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Stock Plan.
      * - minOccurs: 0
-     * @var \StructType\Stock_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Stock_PlanObjectType
      */
     public $Compensation_Plan_Reference;
     /**
@@ -129,7 +129,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Currency of amount.
      * - minOccurs: 0
-     * @var \StructType\CurrencyObjectType
+     * @var \WorkdayWsdl\\StructType\CurrencyObjectType
      */
     public $Currency_Reference;
     /**
@@ -137,7 +137,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference element representing a unique instance of Stock Vesting Schedule.
      * - minOccurs: 0
-     * @var \StructType\Stock_Vesting_ScheduleObjectType
+     * @var \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType
      */
     public $Vesting_Schedule_Reference;
     /**
@@ -145,7 +145,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Compensation Matrix of plan.
      * - minOccurs: 0
-     * @var \StructType\Compensation_MatrixObjectType
+     * @var \WorkdayWsdl\\StructType\Compensation_MatrixObjectType
      */
     public $Compensation_Matrix_Reference;
     /**
@@ -172,7 +172,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * @uses Employee_Stock_Plan_Assignment_DataType::setVesting_Schedule_Reference()
      * @uses Employee_Stock_Plan_Assignment_DataType::setCompensation_Matrix_Reference()
      * @uses Employee_Stock_Plan_Assignment_DataType::setAssignment_Effective_Date()
-     * @param \StructType\Stock_PlanObjectType $compensation_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Stock_PlanObjectType $compensation_Plan_Reference
      * @param float $percent_of_Target_as_Option
      * @param float $percent_of_Target_as_Stock
      * @param float $target_Shares
@@ -181,12 +181,12 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * @param float $individual_Target_Amount
      * @param float $target_Amount
      * @param float $individual_Target_Percent
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @param \StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference
-     * @param \StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @param \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference
      * @param string $assignment_Effective_Date
      */
-    public function __construct(\StructType\Stock_PlanObjectType $compensation_Plan_Reference = null, $percent_of_Target_as_Option = null, $percent_of_Target_as_Stock = null, $target_Shares = null, $individual_Target_Shares = null, $target_Percent = null, $individual_Target_Amount = null, $target_Amount = null, $individual_Target_Percent = null, \StructType\CurrencyObjectType $currency_Reference = null, \StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference = null, \StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference = null, $assignment_Effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Stock_PlanObjectType $compensation_Plan_Reference = null, $percent_of_Target_as_Option = null, $percent_of_Target_as_Stock = null, $target_Shares = null, $individual_Target_Shares = null, $target_Percent = null, $individual_Target_Amount = null, $target_Amount = null, $individual_Target_Percent = null, \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null, \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference = null, \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference = null, $assignment_Effective_Date = null)
     {
         $this
             ->setCompensation_Plan_Reference($compensation_Plan_Reference)
@@ -205,7 +205,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Compensation_Plan_Reference value
-     * @return \StructType\Stock_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Stock_PlanObjectType|null
      */
     public function getCompensation_Plan_Reference()
     {
@@ -213,10 +213,10 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Plan_Reference value
-     * @param \StructType\Stock_PlanObjectType $compensation_Plan_Reference
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Stock_PlanObjectType $compensation_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
-    public function setCompensation_Plan_Reference(\StructType\Stock_PlanObjectType $compensation_Plan_Reference = null)
+    public function setCompensation_Plan_Reference(\WorkdayWsdl\\StructType\Stock_PlanObjectType $compensation_Plan_Reference = null)
     {
         $this->Compensation_Plan_Reference = $compensation_Plan_Reference;
         return $this;
@@ -232,7 +232,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Percent_of_Target_as_Option value
      * @param float $percent_of_Target_as_Option
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setPercent_of_Target_as_Option($percent_of_Target_as_Option = null)
     {
@@ -266,7 +266,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Percent_of_Target_as_Stock value
      * @param float $percent_of_Target_as_Stock
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setPercent_of_Target_as_Stock($percent_of_Target_as_Stock = null)
     {
@@ -300,7 +300,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Target_Shares value
      * @param float $target_Shares
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setTarget_Shares($target_Shares = null)
     {
@@ -334,7 +334,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Shares value
      * @param float $individual_Target_Shares
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Shares($individual_Target_Shares = null)
     {
@@ -368,7 +368,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Target_Percent value
      * @param float $target_Percent
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setTarget_Percent($target_Percent = null)
     {
@@ -402,7 +402,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Amount value
      * @param float $individual_Target_Amount
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Amount($individual_Target_Amount = null)
     {
@@ -432,7 +432,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Target_Amount value
      * @param float $target_Amount
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setTarget_Amount($target_Amount = null)
     {
@@ -462,7 +462,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Individual_Target_Percent value
      * @param float $individual_Target_Percent
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setIndividual_Target_Percent($individual_Target_Percent = null)
     {
@@ -487,7 +487,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Get Currency_Reference value
-     * @return \StructType\CurrencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\CurrencyObjectType|null
      */
     public function getCurrency_Reference()
     {
@@ -495,17 +495,17 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Currency_Reference value
-     * @param \StructType\CurrencyObjectType $currency_Reference
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
-    public function setCurrency_Reference(\StructType\CurrencyObjectType $currency_Reference = null)
+    public function setCurrency_Reference(\WorkdayWsdl\\StructType\CurrencyObjectType $currency_Reference = null)
     {
         $this->Currency_Reference = $currency_Reference;
         return $this;
     }
     /**
      * Get Vesting_Schedule_Reference value
-     * @return \StructType\Stock_Vesting_ScheduleObjectType|null
+     * @return \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType|null
      */
     public function getVesting_Schedule_Reference()
     {
@@ -513,17 +513,17 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Vesting_Schedule_Reference value
-     * @param \StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
-    public function setVesting_Schedule_Reference(\StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference = null)
+    public function setVesting_Schedule_Reference(\WorkdayWsdl\\StructType\Stock_Vesting_ScheduleObjectType $vesting_Schedule_Reference = null)
     {
         $this->Vesting_Schedule_Reference = $vesting_Schedule_Reference;
         return $this;
     }
     /**
      * Get Compensation_Matrix_Reference value
-     * @return \StructType\Compensation_MatrixObjectType|null
+     * @return \WorkdayWsdl\\StructType\Compensation_MatrixObjectType|null
      */
     public function getCompensation_Matrix_Reference()
     {
@@ -531,10 +531,10 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Compensation_Matrix_Reference value
-     * @param \StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
-    public function setCompensation_Matrix_Reference(\StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference = null)
+    public function setCompensation_Matrix_Reference(\WorkdayWsdl\\StructType\Compensation_MatrixObjectType $compensation_Matrix_Reference = null)
     {
         $this->Compensation_Matrix_Reference = $compensation_Matrix_Reference;
         return $this;
@@ -550,7 +550,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
     /**
      * Set Assignment_Effective_Date value
      * @param string $assignment_Effective_Date
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public function setAssignment_Effective_Date($assignment_Effective_Date = null)
     {
@@ -567,7 +567,7 @@ class Employee_Stock_Plan_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Stock_Plan_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Stock_Plan_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

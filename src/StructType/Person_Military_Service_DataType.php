@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * The Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: Inactive military statuses are not allowed in this request. | Person's Military Status.
-     * @var \StructType\Military_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Military_StatusObjectType
      */
     public $Status_Reference;
     /**
@@ -43,7 +43,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Military Service Type.
      * - minOccurs: 0
-     * @var \StructType\Military_Service_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Military_Service_TypeObjectType
      */
     public $Military_Service_Type_Reference;
     /**
@@ -51,7 +51,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Military Rank for Military Service Type.
      * - minOccurs: 0
-     * @var \StructType\Military_RankObjectType
+     * @var \WorkdayWsdl\\StructType\Military_RankObjectType
      */
     public $Military_Rank_Reference;
     /**
@@ -69,7 +69,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for Military Service.
      * - minOccurs: 0
-     * @var \StructType\Military_Service_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType
      */
     public $Military_Service_Reference;
     /**
@@ -81,15 +81,15 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * @uses Person_Military_Service_DataType::setMilitary_Rank_Reference()
      * @uses Person_Military_Service_DataType::setNotes()
      * @uses Person_Military_Service_DataType::setMilitary_Service_Reference()
-     * @param \StructType\Military_StatusObjectType $status_Reference
+     * @param \WorkdayWsdl\\StructType\Military_StatusObjectType $status_Reference
      * @param string $discharge_Date
      * @param string $status_Begin_Date
-     * @param \StructType\Military_Service_TypeObjectType $military_Service_Type_Reference
-     * @param \StructType\Military_RankObjectType $military_Rank_Reference
+     * @param \WorkdayWsdl\\StructType\Military_Service_TypeObjectType $military_Service_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Military_RankObjectType $military_Rank_Reference
      * @param string $notes
-     * @param \StructType\Military_Service_ReferenceObjectType $military_Service_Reference
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference
      */
-    public function __construct(\StructType\Military_StatusObjectType $status_Reference = null, $discharge_Date = null, $status_Begin_Date = null, \StructType\Military_Service_TypeObjectType $military_Service_Type_Reference = null, \StructType\Military_RankObjectType $military_Rank_Reference = null, $notes = null, \StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Military_StatusObjectType $status_Reference = null, $discharge_Date = null, $status_Begin_Date = null, \WorkdayWsdl\\StructType\Military_Service_TypeObjectType $military_Service_Type_Reference = null, \WorkdayWsdl\\StructType\Military_RankObjectType $military_Rank_Reference = null, $notes = null, \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
     {
         $this
             ->setStatus_Reference($status_Reference)
@@ -102,7 +102,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Get Status_Reference value
-     * @return \StructType\Military_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Military_StatusObjectType|null
      */
     public function getStatus_Reference()
     {
@@ -110,10 +110,10 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Set Status_Reference value
-     * @param \StructType\Military_StatusObjectType $status_Reference
-     * @return \StructType\Person_Military_Service_DataType
+     * @param \WorkdayWsdl\\StructType\Military_StatusObjectType $status_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
-    public function setStatus_Reference(\StructType\Military_StatusObjectType $status_Reference = null)
+    public function setStatus_Reference(\WorkdayWsdl\\StructType\Military_StatusObjectType $status_Reference = null)
     {
         $this->Status_Reference = $status_Reference;
         return $this;
@@ -129,7 +129,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     /**
      * Set Discharge_Date value
      * @param string $discharge_Date
-     * @return \StructType\Person_Military_Service_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
     public function setDischarge_Date($discharge_Date = null)
     {
@@ -151,7 +151,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     /**
      * Set Status_Begin_Date value
      * @param string $status_Begin_Date
-     * @return \StructType\Person_Military_Service_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
     public function setStatus_Begin_Date($status_Begin_Date = null)
     {
@@ -164,7 +164,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Get Military_Service_Type_Reference value
-     * @return \StructType\Military_Service_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Military_Service_TypeObjectType|null
      */
     public function getMilitary_Service_Type_Reference()
     {
@@ -172,17 +172,17 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Set Military_Service_Type_Reference value
-     * @param \StructType\Military_Service_TypeObjectType $military_Service_Type_Reference
-     * @return \StructType\Person_Military_Service_DataType
+     * @param \WorkdayWsdl\\StructType\Military_Service_TypeObjectType $military_Service_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
-    public function setMilitary_Service_Type_Reference(\StructType\Military_Service_TypeObjectType $military_Service_Type_Reference = null)
+    public function setMilitary_Service_Type_Reference(\WorkdayWsdl\\StructType\Military_Service_TypeObjectType $military_Service_Type_Reference = null)
     {
         $this->Military_Service_Type_Reference = $military_Service_Type_Reference;
         return $this;
     }
     /**
      * Get Military_Rank_Reference value
-     * @return \StructType\Military_RankObjectType|null
+     * @return \WorkdayWsdl\\StructType\Military_RankObjectType|null
      */
     public function getMilitary_Rank_Reference()
     {
@@ -190,10 +190,10 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Set Military_Rank_Reference value
-     * @param \StructType\Military_RankObjectType $military_Rank_Reference
-     * @return \StructType\Person_Military_Service_DataType
+     * @param \WorkdayWsdl\\StructType\Military_RankObjectType $military_Rank_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
-    public function setMilitary_Rank_Reference(\StructType\Military_RankObjectType $military_Rank_Reference = null)
+    public function setMilitary_Rank_Reference(\WorkdayWsdl\\StructType\Military_RankObjectType $military_Rank_Reference = null)
     {
         $this->Military_Rank_Reference = $military_Rank_Reference;
         return $this;
@@ -209,7 +209,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     /**
      * Set Notes value
      * @param string $notes
-     * @return \StructType\Person_Military_Service_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
     public function setNotes($notes = null)
     {
@@ -222,7 +222,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Get Military_Service_Reference value
-     * @return \StructType\Military_Service_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType|null
      */
     public function getMilitary_Service_Reference()
     {
@@ -230,10 +230,10 @@ class Person_Military_Service_DataType extends AbstractStructBase
     }
     /**
      * Set Military_Service_Reference value
-     * @param \StructType\Military_Service_ReferenceObjectType $military_Service_Reference
-     * @return \StructType\Person_Military_Service_DataType
+     * @param \WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
-    public function setMilitary_Service_Reference(\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
+    public function setMilitary_Service_Reference(\WorkdayWsdl\\StructType\Military_Service_ReferenceObjectType $military_Service_Reference = null)
     {
         $this->Military_Service_Reference = $military_Service_Reference;
         return $this;
@@ -244,7 +244,7 @@ class Person_Military_Service_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Military_Service_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Military_Service_DataType
      */
     public static function __set_state(array $array)
     {

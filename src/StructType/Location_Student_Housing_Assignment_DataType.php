@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Location_Student_Housing_Assignment_DataType extends AbstractStructBase
      * The Academic_Unit_Reference
      * Meta information extracted from the WSDL
      * - documentation: The Academic Unit Reference for a Student Housing Assignment
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Academic_Unit_Reference;
     /**
      * Constructor method for Location_Student_Housing_Assignment_DataType
      * @uses Location_Student_Housing_Assignment_DataType::setAcademic_Unit_Reference()
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
      */
-    public function __construct(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
     {
         $this
             ->setAcademic_Unit_Reference($academic_Unit_Reference);
     }
     /**
      * Get Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getAcademic_Unit_Reference()
     {
@@ -39,10 +39,10 @@ class Location_Student_Housing_Assignment_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @return \StructType\Location_Student_Housing_Assignment_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Location_Student_Housing_Assignment_DataType
      */
-    public function setAcademic_Unit_Reference(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
+    public function setAcademic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
     {
         $this->Academic_Unit_Reference = $academic_Unit_Reference;
         return $this;
@@ -53,7 +53,7 @@ class Location_Student_Housing_Assignment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Student_Housing_Assignment_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Student_Housing_Assignment_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
      * The Instant_Messenger_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the instant messenger type.
-     * @var \StructType\Instant_Messenger_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType
      */
     public $Instant_Messenger_Type_Reference;
     /**
@@ -41,11 +41,11 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
      * @uses Instant_Messenger_Core_DataType::setInstant_Messenger_Type_Reference()
      * @uses Instant_Messenger_Core_DataType::setInstant_Messenger_Address()
      * @uses Instant_Messenger_Core_DataType::setInstant_Messenger_Comment()
-     * @param \StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
      * @param string $instant_Messenger_Address
      * @param string $instant_Messenger_Comment
      */
-    public function __construct(\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null, $instant_Messenger_Address = null, $instant_Messenger_Comment = null)
+    public function __construct(\WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null, $instant_Messenger_Address = null, $instant_Messenger_Comment = null)
     {
         $this
             ->setInstant_Messenger_Type_Reference($instant_Messenger_Type_Reference)
@@ -54,7 +54,7 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
     }
     /**
      * Get Instant_Messenger_Type_Reference value
-     * @return \StructType\Instant_Messenger_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType|null
      */
     public function getInstant_Messenger_Type_Reference()
     {
@@ -62,10 +62,10 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
     }
     /**
      * Set Instant_Messenger_Type_Reference value
-     * @param \StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
-     * @return \StructType\Instant_Messenger_Core_DataType
+     * @param \WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Core_DataType
      */
-    public function setInstant_Messenger_Type_Reference(\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null)
+    public function setInstant_Messenger_Type_Reference(\WorkdayWsdl\\StructType\Instant_Messenger_TypeObjectType $instant_Messenger_Type_Reference = null)
     {
         $this->Instant_Messenger_Type_Reference = $instant_Messenger_Type_Reference;
         return $this;
@@ -81,7 +81,7 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Address value
      * @param string $instant_Messenger_Address
-     * @return \StructType\Instant_Messenger_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Core_DataType
      */
     public function setInstant_Messenger_Address($instant_Messenger_Address = null)
     {
@@ -103,7 +103,7 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
     /**
      * Set Instant_Messenger_Comment value
      * @param string $instant_Messenger_Comment
-     * @return \StructType\Instant_Messenger_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Core_DataType
      */
     public function setInstant_Messenger_Comment($instant_Messenger_Comment = null)
     {
@@ -120,7 +120,7 @@ class Instant_Messenger_Core_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Instant_Messenger_Core_DataType
+     * @return \WorkdayWsdl\\StructType\Instant_Messenger_Core_DataType
      */
     public static function __set_state(array $array)
     {

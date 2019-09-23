@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Gender_IdentityObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Gender_IdentityReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Gender_IdentityReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Gender_IdentityReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Gender_IdentityReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Gender_IdentityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Gender_IdentityReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Gender_IdentityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Gender_IdentityReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Gender_IdentityReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Gender_IdentityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Gender_IdentityReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Gender_IdentityObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Gender_IdentityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Gender_IdentityObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Gender_IdentityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Gender_IdentityObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Business_Process_Type_Reference_DataType extends AbstractStructBase
     /**
      * Set Event_Type_Name value
      * @param string $event_Type_Name
-     * @return \StructType\Business_Process_Type_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType
      */
     public function setEvent_Type_Name($event_Type_Name = null)
     {
@@ -58,7 +58,7 @@ class Business_Process_Type_Reference_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Business_Process_Type_Reference_DataType
+     * @return \WorkdayWsdl\\StructType\Business_Process_Type_Reference_DataType
      */
     public static function __set_state(array $array)
     {

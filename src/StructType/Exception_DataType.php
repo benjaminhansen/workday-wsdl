@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -54,7 +54,7 @@ class Exception_DataType extends AbstractStructBase
     /**
      * Set Classification value
      * @param string $classification
-     * @return \StructType\Exception_DataType
+     * @return \WorkdayWsdl\\StructType\Exception_DataType
      */
     public function setClassification($classification = null)
     {
@@ -76,7 +76,7 @@ class Exception_DataType extends AbstractStructBase
     /**
      * Set Message value
      * @param string $message
-     * @return \StructType\Exception_DataType
+     * @return \WorkdayWsdl\\StructType\Exception_DataType
      */
     public function setMessage($message = null)
     {
@@ -93,7 +93,7 @@ class Exception_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Exception_DataType
+     * @return \WorkdayWsdl\\StructType\Exception_DataType
      */
     public static function __set_state(array $array)
     {

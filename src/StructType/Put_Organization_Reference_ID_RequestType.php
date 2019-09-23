@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Holds the Organization for which Organization Reference ID is going to be changed.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_Reference;
     /**
      * The Organization_Reference_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_Reference_ID_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType
      */
     public $Organization_Reference_ID_Data;
     /**
@@ -39,11 +39,11 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
      * @uses Put_Organization_Reference_ID_RequestType::setOrganization_Reference()
      * @uses Put_Organization_Reference_ID_RequestType::setOrganization_Reference_ID_Data()
      * @uses Put_Organization_Reference_ID_RequestType::setVersion()
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @param \StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data
      * @param string $version
      */
-    public function __construct(\StructType\OrganizationObjectType $organization_Reference = null, \StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null, \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data = null, $version = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -52,7 +52,7 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_Reference()
     {
@@ -60,17 +60,17 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @return \StructType\Put_Organization_Reference_ID_RequestType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Reference_ID_RequestType
      */
-    public function setOrganization_Reference(\StructType\OrganizationObjectType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Reference_ID_Data value
-     * @return \StructType\Organization_Reference_ID_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType|null
      */
     public function getOrganization_Reference_ID_Data()
     {
@@ -78,10 +78,10 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference_ID_Data value
-     * @param \StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data
-     * @return \StructType\Put_Organization_Reference_ID_RequestType
+     * @param \WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Reference_ID_RequestType
      */
-    public function setOrganization_Reference_ID_Data(\StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data = null)
+    public function setOrganization_Reference_ID_Data(\WorkdayWsdl\\StructType\Organization_Reference_ID_Reference_DataType $organization_Reference_ID_Data = null)
     {
         $this->Organization_Reference_ID_Data = $organization_Reference_ID_Data;
         return $this;
@@ -97,7 +97,7 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Organization_Reference_ID_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Reference_ID_RequestType
      */
     public function setVersion($version = null)
     {
@@ -114,7 +114,7 @@ class Put_Organization_Reference_ID_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Organization_Reference_ID_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Organization_Reference_ID_RequestType
      */
     public static function __set_state(array $array)
     {

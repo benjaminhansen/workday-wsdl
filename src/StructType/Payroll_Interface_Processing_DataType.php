@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the pay rate type for the position.
      * - minOccurs: 0
-     * @var \StructType\Pay_Rate_Type_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType
      */
     public $Pay_Rate_Type_Reference;
     /**
@@ -25,7 +25,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a Frequency.
      * - minOccurs: 0
-     * @var \StructType\Frequency_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Frequency_Reference_DataType
      */
     public $Frequency_Reference;
     /**
@@ -33,7 +33,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The external pay group for the position.
      * - minOccurs: 0
-     * @var \StructType\External_Pay_Group_ReferenceType
+     * @var \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType
      */
     public $Pay_Group_Reference;
     /**
@@ -42,7 +42,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * - documentation: The external payroll entity for the position.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Payroll_Entity_ReferenceType[]
+     * @var \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType[]
      */
     public $Payroll_Entity_Reference;
     /**
@@ -59,13 +59,13 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * @uses Payroll_Interface_Processing_DataType::setPay_Group_Reference()
      * @uses Payroll_Interface_Processing_DataType::setPayroll_Entity_Reference()
      * @uses Payroll_Interface_Processing_DataType::setEffective_Date()
-     * @param \StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference
-     * @param \StructType\Frequency_Reference_DataType $frequency_Reference
-     * @param \StructType\External_Pay_Group_ReferenceType $pay_Group_Reference
-     * @param \StructType\External_Payroll_Entity_ReferenceType[] $payroll_Entity_Reference
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Frequency_Reference_DataType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType $pay_Group_Reference
+     * @param \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType[] $payroll_Entity_Reference
      * @param string $effective_Date
      */
-    public function __construct(\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference = null, \StructType\Frequency_Reference_DataType $frequency_Reference = null, \StructType\External_Pay_Group_ReferenceType $pay_Group_Reference = null, array $payroll_Entity_Reference = array(), $effective_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference = null, \WorkdayWsdl\\StructType\Frequency_Reference_DataType $frequency_Reference = null, \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType $pay_Group_Reference = null, array $payroll_Entity_Reference = array(), $effective_Date = null)
     {
         $this
             ->setPay_Rate_Type_Reference($pay_Rate_Type_Reference)
@@ -76,7 +76,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     }
     /**
      * Get Pay_Rate_Type_Reference value
-     * @return \StructType\Pay_Rate_Type_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType|null
      */
     public function getPay_Rate_Type_Reference()
     {
@@ -84,17 +84,17 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     }
     /**
      * Set Pay_Rate_Type_Reference value
-     * @param \StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @param \WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
-    public function setPay_Rate_Type_Reference(\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference = null)
+    public function setPay_Rate_Type_Reference(\WorkdayWsdl\\StructType\Pay_Rate_Type_ReferenceType $pay_Rate_Type_Reference = null)
     {
         $this->Pay_Rate_Type_Reference = $pay_Rate_Type_Reference;
         return $this;
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\Frequency_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Frequency_Reference_DataType|null
      */
     public function getFrequency_Reference()
     {
@@ -102,17 +102,17 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\Frequency_Reference_DataType $frequency_Reference
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @param \WorkdayWsdl\\StructType\Frequency_Reference_DataType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
-    public function setFrequency_Reference(\StructType\Frequency_Reference_DataType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\Frequency_Reference_DataType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
     }
     /**
      * Get Pay_Group_Reference value
-     * @return \StructType\External_Pay_Group_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType|null
      */
     public function getPay_Group_Reference()
     {
@@ -120,17 +120,17 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     }
     /**
      * Set Pay_Group_Reference value
-     * @param \StructType\External_Pay_Group_ReferenceType $pay_Group_Reference
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @param \WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType $pay_Group_Reference
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
-    public function setPay_Group_Reference(\StructType\External_Pay_Group_ReferenceType $pay_Group_Reference = null)
+    public function setPay_Group_Reference(\WorkdayWsdl\\StructType\External_Pay_Group_ReferenceType $pay_Group_Reference = null)
     {
         $this->Pay_Group_Reference = $pay_Group_Reference;
         return $this;
     }
     /**
      * Get Payroll_Entity_Reference value
-     * @return \StructType\External_Payroll_Entity_ReferenceType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType[]|null
      */
     public function getPayroll_Entity_Reference()
     {
@@ -148,12 +148,12 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem instanceof \StructType\External_Payroll_Entity_ReferenceType) {
+            if (!$payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem instanceof \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType) {
                 $invalidValues[] = is_object($payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem) ? get_class($payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem) : sprintf('%s(%s)', gettype($payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem), var_export($payroll_Interface_Processing_DataTypePayroll_Entity_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Payroll_Entity_Reference property can only contain items of type \StructType\External_Payroll_Entity_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Payroll_Entity_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -161,8 +161,8 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     /**
      * Set Payroll_Entity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Payroll_Entity_ReferenceType[] $payroll_Entity_Reference
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @param \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType[] $payroll_Entity_Reference
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
     public function setPayroll_Entity_Reference(array $payroll_Entity_Reference = array())
     {
@@ -176,14 +176,14 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     /**
      * Add item to Payroll_Entity_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Payroll_Entity_ReferenceType $item
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @param \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType $item
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
-    public function addToPayroll_Entity_Reference(\StructType\External_Payroll_Entity_ReferenceType $item)
+    public function addToPayroll_Entity_Reference(\WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Payroll_Entity_ReferenceType) {
-            throw new \InvalidArgumentException(sprintf('The Payroll_Entity_Reference property can only contain items of type \StructType\External_Payroll_Entity_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType) {
+            throw new \InvalidArgumentException(sprintf('The Payroll_Entity_Reference property can only contain items of type \WorkdayWsdl\\StructType\External_Payroll_Entity_ReferenceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Payroll_Entity_Reference[] = $item;
         return $this;
@@ -199,7 +199,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -216,7 +216,7 @@ class Payroll_Interface_Processing_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Payroll_Interface_Processing_DataType
+     * @return \WorkdayWsdl\\StructType\Payroll_Interface_Processing_DataType
      */
     public static function __set_state(array $array)
     {

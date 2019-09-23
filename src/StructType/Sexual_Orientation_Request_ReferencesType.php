@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the sexual orientation of the person.
      * - maxOccurs: unbounded
-     * @var \StructType\Sexual_OrientationObjectType[]
+     * @var \WorkdayWsdl\\StructType\Sexual_OrientationObjectType[]
      */
     public $Sexual_Orientation_Reference;
     /**
      * Constructor method for Sexual_Orientation_Request_ReferencesType
      * @uses Sexual_Orientation_Request_ReferencesType::setSexual_Orientation_Reference()
-     * @param \StructType\Sexual_OrientationObjectType[] $sexual_Orientation_Reference
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectType[] $sexual_Orientation_Reference
      */
     public function __construct(array $sexual_Orientation_Reference = array())
     {
@@ -32,7 +32,7 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Sexual_Orientation_Reference value
-     * @return \StructType\Sexual_OrientationObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Sexual_OrientationObjectType[]|null
      */
     public function getSexual_Orientation_Reference()
     {
@@ -50,12 +50,12 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem instanceof \StructType\Sexual_OrientationObjectType) {
+            if (!$sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem instanceof \WorkdayWsdl\\StructType\Sexual_OrientationObjectType) {
                 $invalidValues[] = is_object($sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem) ? get_class($sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem) : sprintf('%s(%s)', gettype($sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem), var_export($sexual_Orientation_Request_ReferencesTypeSexual_Orientation_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Sexual_Orientation_Reference property can only contain items of type \StructType\Sexual_OrientationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Sexual_Orientation_Reference property can only contain items of type \WorkdayWsdl\\StructType\Sexual_OrientationObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Sexual_Orientation_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sexual_OrientationObjectType[] $sexual_Orientation_Reference
-     * @return \StructType\Sexual_Orientation_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectType[] $sexual_Orientation_Reference
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_Request_ReferencesType
      */
     public function setSexual_Orientation_Reference(array $sexual_Orientation_Reference = array())
     {
@@ -78,14 +78,14 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Sexual_Orientation_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Sexual_OrientationObjectType $item
-     * @return \StructType\Sexual_Orientation_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Sexual_OrientationObjectType $item
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_Request_ReferencesType
      */
-    public function addToSexual_Orientation_Reference(\StructType\Sexual_OrientationObjectType $item)
+    public function addToSexual_Orientation_Reference(\WorkdayWsdl\\StructType\Sexual_OrientationObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Sexual_OrientationObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Sexual_Orientation_Reference property can only contain items of type \StructType\Sexual_OrientationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Sexual_OrientationObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Sexual_Orientation_Reference property can only contain items of type \WorkdayWsdl\\StructType\Sexual_OrientationObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Sexual_Orientation_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Sexual_Orientation_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Sexual_Orientation_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Sexual_Orientation_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

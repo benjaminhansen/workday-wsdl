@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_of_Absence_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
      * Constructor method for Leave_of_Absence_TypeObjectType
      * @uses Leave_of_Absence_TypeObjectType::setID()
      * @uses Leave_of_Absence_TypeObjectType::setDescriptor()
-     * @param \StructType\Leave_of_Absence_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Leave_of_Absence_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $leave_of_Absence_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$leave_of_Absence_TypeObjectTypeIDItem instanceof \StructType\Leave_of_Absence_TypeObjectIDType) {
+            if (!$leave_of_Absence_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType) {
                 $invalidValues[] = is_object($leave_of_Absence_TypeObjectTypeIDItem) ? get_class($leave_of_Absence_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($leave_of_Absence_TypeObjectTypeIDItem), var_export($leave_of_Absence_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Leave_of_Absence_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_of_Absence_TypeObjectIDType[] $iD
-     * @return \StructType\Leave_of_Absence_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_of_Absence_TypeObjectIDType $item
-     * @return \StructType\Leave_of_Absence_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType
      */
-    public function addToID(\StructType\Leave_of_Absence_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_of_Absence_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Leave_of_Absence_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Leave_of_Absence_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Leave_of_Absence_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Leave_of_Absence_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Leave_of_Absence_TypeObjectType
      */
     public static function __set_state(array $array)
     {

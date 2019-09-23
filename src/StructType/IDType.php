@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class IDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\IDType
+     * @return \WorkdayWsdl\\StructType\IDType
      */
     public function set_($_ = null)
     {
@@ -70,7 +70,7 @@ class IDType extends AbstractStructBase
     /**
      * Set System_ID value
      * @param string $system_ID
-     * @return \StructType\IDType
+     * @return \WorkdayWsdl\\StructType\IDType
      */
     public function setSystem_ID($system_ID = null)
     {
@@ -87,7 +87,7 @@ class IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\IDType
+     * @return \WorkdayWsdl\\StructType\IDType
      */
     public static function __set_state(array $array)
     {

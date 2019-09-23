@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Committee_Member_EnabledObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
      * Constructor method for Committee_Member_EnabledObjectType
      * @uses Committee_Member_EnabledObjectType::setID()
      * @uses Committee_Member_EnabledObjectType::setDescriptor()
-     * @param \StructType\Committee_Member_EnabledObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Committee_Member_EnabledObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $committee_Member_EnabledObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$committee_Member_EnabledObjectTypeIDItem instanceof \StructType\Committee_Member_EnabledObjectIDType) {
+            if (!$committee_Member_EnabledObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType) {
                 $invalidValues[] = is_object($committee_Member_EnabledObjectTypeIDItem) ? get_class($committee_Member_EnabledObjectTypeIDItem) : sprintf('%s(%s)', gettype($committee_Member_EnabledObjectTypeIDItem), var_export($committee_Member_EnabledObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Committee_Member_EnabledObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Member_EnabledObjectIDType[] $iD
-     * @return \StructType\Committee_Member_EnabledObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Committee_Member_EnabledObjectIDType $item
-     * @return \StructType\Committee_Member_EnabledObjectType
+     * @param \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType
      */
-    public function addToID(\StructType\Committee_Member_EnabledObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Committee_Member_EnabledObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Committee_Member_EnabledObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Committee_Member_EnabledObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Committee_Member_EnabledObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_Member_EnabledObjectType
+     * @return \WorkdayWsdl\\StructType\Committee_Member_EnabledObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Former_WorkerType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to a Former Worker.Reference ID Type: Former_Worker_ID
      * - minOccurs: 0
-     * @var \StructType\Former_WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\Former_WorkerObjectType
      */
     public $Former_Worker_Reference;
     /**
      * The Former_Worker_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Former_Worker_DataType
+     * @var \WorkdayWsdl\\StructType\Former_Worker_DataType
      */
     public $Former_Worker_Data;
     /**
      * Constructor method for Former_WorkerType
      * @uses Former_WorkerType::setFormer_Worker_Reference()
      * @uses Former_WorkerType::setFormer_Worker_Data()
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
-     * @param \StructType\Former_Worker_DataType $former_Worker_Data
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Former_Worker_DataType $former_Worker_Data
      */
-    public function __construct(\StructType\Former_WorkerObjectType $former_Worker_Reference = null, \StructType\Former_Worker_DataType $former_Worker_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null, \WorkdayWsdl\\StructType\Former_Worker_DataType $former_Worker_Data = null)
     {
         $this
             ->setFormer_Worker_Reference($former_Worker_Reference)
@@ -42,7 +42,7 @@ class Former_WorkerType extends AbstractStructBase
     }
     /**
      * Get Former_Worker_Reference value
-     * @return \StructType\Former_WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Former_WorkerObjectType|null
      */
     public function getFormer_Worker_Reference()
     {
@@ -50,17 +50,17 @@ class Former_WorkerType extends AbstractStructBase
     }
     /**
      * Set Former_Worker_Reference value
-     * @param \StructType\Former_WorkerObjectType $former_Worker_Reference
-     * @return \StructType\Former_WorkerType
+     * @param \WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Former_WorkerType
      */
-    public function setFormer_Worker_Reference(\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
+    public function setFormer_Worker_Reference(\WorkdayWsdl\\StructType\Former_WorkerObjectType $former_Worker_Reference = null)
     {
         $this->Former_Worker_Reference = $former_Worker_Reference;
         return $this;
     }
     /**
      * Get Former_Worker_Data value
-     * @return \StructType\Former_Worker_DataType|null
+     * @return \WorkdayWsdl\\StructType\Former_Worker_DataType|null
      */
     public function getFormer_Worker_Data()
     {
@@ -68,10 +68,10 @@ class Former_WorkerType extends AbstractStructBase
     }
     /**
      * Set Former_Worker_Data value
-     * @param \StructType\Former_Worker_DataType $former_Worker_Data
-     * @return \StructType\Former_WorkerType
+     * @param \WorkdayWsdl\\StructType\Former_Worker_DataType $former_Worker_Data
+     * @return \WorkdayWsdl\\StructType\Former_WorkerType
      */
-    public function setFormer_Worker_Data(\StructType\Former_Worker_DataType $former_Worker_Data = null)
+    public function setFormer_Worker_Data(\WorkdayWsdl\\StructType\Former_Worker_DataType $former_Worker_Data = null)
     {
         $this->Former_Worker_Data = $former_Worker_Data;
         return $this;
@@ -82,7 +82,7 @@ class Former_WorkerType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Former_WorkerType
+     * @return \WorkdayWsdl\\StructType\Former_WorkerType
      */
     public static function __set_state(array $array)
     {

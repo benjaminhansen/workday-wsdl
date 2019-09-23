@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,21 +24,21 @@ class Assign_Establishment_DataType extends AbstractStructBase
      * The Worker_Reference
      * Meta information extracted from the WSDL
      * - documentation: The worker who is to be assigned the specified establishment on the specified date
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
      * The Position_Reference
      * Meta information extracted from the WSDL
      * - documentation: The position of the worker for which the establishment is taking effect
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Reference;
     /**
      * The Establishment_Reference
      * Meta information extracted from the WSDL
      * - documentation: The establishment we wish to assign to the specified worker position
-     * @var \StructType\EstablishmentObjectType
+     * @var \WorkdayWsdl\\StructType\EstablishmentObjectType
      */
     public $Establishment_Reference;
     /**
@@ -48,11 +48,11 @@ class Assign_Establishment_DataType extends AbstractStructBase
      * @uses Assign_Establishment_DataType::setPosition_Reference()
      * @uses Assign_Establishment_DataType::setEstablishment_Reference()
      * @param string $effective_Date
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
      */
-    public function __construct($effective_Date = null, \StructType\WorkerObjectType $worker_Reference = null, \StructType\Position_ElementObjectType $position_Reference = null, \StructType\EstablishmentObjectType $establishment_Reference = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null, \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -71,7 +71,7 @@ class Assign_Establishment_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Assign_Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -84,7 +84,7 @@ class Assign_Establishment_DataType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -92,17 +92,17 @@ class Assign_Establishment_DataType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\Assign_Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Reference()
     {
@@ -110,17 +110,17 @@ class Assign_Establishment_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @return \StructType\Assign_Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ElementObjectType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
     }
     /**
      * Get Establishment_Reference value
-     * @return \StructType\EstablishmentObjectType|null
+     * @return \WorkdayWsdl\\StructType\EstablishmentObjectType|null
      */
     public function getEstablishment_Reference()
     {
@@ -128,10 +128,10 @@ class Assign_Establishment_DataType extends AbstractStructBase
     }
     /**
      * Set Establishment_Reference value
-     * @param \StructType\EstablishmentObjectType $establishment_Reference
-     * @return \StructType\Assign_Establishment_DataType
+     * @param \WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType
      */
-    public function setEstablishment_Reference(\StructType\EstablishmentObjectType $establishment_Reference = null)
+    public function setEstablishment_Reference(\WorkdayWsdl\\StructType\EstablishmentObjectType $establishment_Reference = null)
     {
         $this->Establishment_Reference = $establishment_Reference;
         return $this;
@@ -142,7 +142,7 @@ class Assign_Establishment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Assign_Establishment_DataType
+     * @return \WorkdayWsdl\\StructType\Assign_Establishment_DataType
      */
     public static function __set_state(array $array)
     {

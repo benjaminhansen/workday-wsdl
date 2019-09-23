@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to a Job Category.
      * - maxOccurs: unbounded
-     * @var \StructType\Job_CategoryObjectType[]
+     * @var \WorkdayWsdl\\StructType\Job_CategoryObjectType[]
      */
     public $Job_Category_Reference;
     /**
      * Constructor method for Job_Category_Request_ReferencesType
      * @uses Job_Category_Request_ReferencesType::setJob_Category_Reference()
-     * @param \StructType\Job_CategoryObjectType[] $job_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType[] $job_Category_Reference
      */
     public function __construct(array $job_Category_Reference = array())
     {
@@ -32,7 +32,7 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
     }
     /**
      * Get Job_Category_Reference value
-     * @return \StructType\Job_CategoryObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Job_CategoryObjectType[]|null
      */
     public function getJob_Category_Reference()
     {
@@ -50,12 +50,12 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Category_Request_ReferencesTypeJob_Category_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Category_Request_ReferencesTypeJob_Category_ReferenceItem instanceof \StructType\Job_CategoryObjectType) {
+            if (!$job_Category_Request_ReferencesTypeJob_Category_ReferenceItem instanceof \WorkdayWsdl\\StructType\Job_CategoryObjectType) {
                 $invalidValues[] = is_object($job_Category_Request_ReferencesTypeJob_Category_ReferenceItem) ? get_class($job_Category_Request_ReferencesTypeJob_Category_ReferenceItem) : sprintf('%s(%s)', gettype($job_Category_Request_ReferencesTypeJob_Category_ReferenceItem), var_export($job_Category_Request_ReferencesTypeJob_Category_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Job_Category_Reference property can only contain items of type \StructType\Job_CategoryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Job_Category_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_CategoryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
     /**
      * Set Job_Category_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_CategoryObjectType[] $job_Category_Reference
-     * @return \StructType\Job_Category_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType[] $job_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Category_Request_ReferencesType
      */
     public function setJob_Category_Reference(array $job_Category_Reference = array())
     {
@@ -78,14 +78,14 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
     /**
      * Add item to Job_Category_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Job_CategoryObjectType $item
-     * @return \StructType\Job_Category_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\Job_CategoryObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Category_Request_ReferencesType
      */
-    public function addToJob_Category_Reference(\StructType\Job_CategoryObjectType $item)
+    public function addToJob_Category_Reference(\WorkdayWsdl\\StructType\Job_CategoryObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Job_CategoryObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Job_Category_Reference property can only contain items of type \StructType\Job_CategoryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Job_CategoryObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Job_Category_Reference property can only contain items of type \WorkdayWsdl\\StructType\Job_CategoryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Job_Category_Reference[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Job_Category_Request_ReferencesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Category_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Job_Category_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

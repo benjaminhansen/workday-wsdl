@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Recurrence_DataType extends AbstractStructBase
      * The Recurrence_Type_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference for Run Frequency for Calendar Event.
-     * @var \StructType\Schedule_Request_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType
      */
     public $Recurrence_Type_Reference;
     /**
@@ -47,7 +47,7 @@ class Recurrence_DataType extends AbstractStructBase
      * - documentation: Reference for Day of the Week for Calendar Event.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_WeekObjectType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]
      */
     public $Day_of_the_Week_Reference;
     /**
@@ -55,7 +55,7 @@ class Recurrence_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: First Day of the Week for Weekly Recurrences. Defaults to Sunday if not set.
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_WeekObjectType
+     * @var \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType
      */
     public $First_Day_of_the_Week_Reference;
     /**
@@ -64,7 +64,7 @@ class Recurrence_DataType extends AbstractStructBase
      * - documentation: Reference for Month for Calendar Event.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\MonthObjectType[]
+     * @var \WorkdayWsdl\\StructType\MonthObjectType[]
      */
     public $Month_Reference;
     /**
@@ -73,7 +73,7 @@ class Recurrence_DataType extends AbstractStructBase
      * - documentation: Reference for Day of the Month for Calendar Event.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Day_of_the_MonthObjectType[]
+     * @var \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType[]
      */
     public $Day_of_the_Month_Reference;
     /**
@@ -81,7 +81,7 @@ class Recurrence_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Week of the Month for Calendar Event.
      * - minOccurs: 0
-     * @var \StructType\Week_of_the_MonthObjectType
+     * @var \WorkdayWsdl\\StructType\Week_of_the_MonthObjectType
      */
     public $Week_of_the_Month_Reference;
     /**
@@ -113,18 +113,18 @@ class Recurrence_DataType extends AbstractStructBase
      * @uses Recurrence_DataType::setWeek_of_the_Month_Reference()
      * @uses Recurrence_DataType::setRecurrence_Start_Date()
      * @uses Recurrence_DataType::setRecurrence_End_Date()
-     * @param \StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference
      * @param float $recurrence_Interval_Multiplier
      * @param bool $recurs_Every_Weekday
-     * @param \StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
-     * @param \StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference
-     * @param \StructType\MonthObjectType[] $month_Reference
-     * @param \StructType\Day_of_the_MonthObjectType[] $day_of_the_Month_Reference
-     * @param \StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference
+     * @param \WorkdayWsdl\\StructType\MonthObjectType[] $month_Reference
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType[] $day_of_the_Month_Reference
+     * @param \WorkdayWsdl\\StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference
      * @param string $recurrence_Start_Date
      * @param string $recurrence_End_Date
      */
-    public function __construct(\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference = null, $recurrence_Interval_Multiplier = null, $recurs_Every_Weekday = null, array $day_of_the_Week_Reference = array(), \StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference = null, array $month_Reference = array(), array $day_of_the_Month_Reference = array(), \StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference = null, $recurrence_Start_Date = null, $recurrence_End_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference = null, $recurrence_Interval_Multiplier = null, $recurs_Every_Weekday = null, array $day_of_the_Week_Reference = array(), \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference = null, array $month_Reference = array(), array $day_of_the_Month_Reference = array(), \WorkdayWsdl\\StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference = null, $recurrence_Start_Date = null, $recurrence_End_Date = null)
     {
         $this
             ->setRecurrence_Type_Reference($recurrence_Type_Reference)
@@ -140,7 +140,7 @@ class Recurrence_DataType extends AbstractStructBase
     }
     /**
      * Get Recurrence_Type_Reference value
-     * @return \StructType\Schedule_Request_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType|null
      */
     public function getRecurrence_Type_Reference()
     {
@@ -148,10 +148,10 @@ class Recurrence_DataType extends AbstractStructBase
     }
     /**
      * Set Recurrence_Type_Reference value
-     * @param \StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function setRecurrence_Type_Reference(\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference = null)
+    public function setRecurrence_Type_Reference(\WorkdayWsdl\\StructType\Schedule_Request_TypeObjectType $recurrence_Type_Reference = null)
     {
         $this->Recurrence_Type_Reference = $recurrence_Type_Reference;
         return $this;
@@ -167,7 +167,7 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Recurrence_Interval_Multiplier value
      * @param float $recurrence_Interval_Multiplier
-     * @return \StructType\Recurrence_DataType
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setRecurrence_Interval_Multiplier($recurrence_Interval_Multiplier = null)
     {
@@ -201,7 +201,7 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Recurs_Every_Weekday value
      * @param bool $recurs_Every_Weekday
-     * @return \StructType\Recurrence_DataType
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setRecurs_Every_Weekday($recurs_Every_Weekday = null)
     {
@@ -214,7 +214,7 @@ class Recurrence_DataType extends AbstractStructBase
     }
     /**
      * Get Day_of_the_Week_Reference value
-     * @return \StructType\Day_of_the_WeekObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[]|null
      */
     public function getDay_of_the_Week_Reference()
     {
@@ -232,12 +232,12 @@ class Recurrence_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurrence_DataTypeDay_of_the_Week_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$recurrence_DataTypeDay_of_the_Week_ReferenceItem instanceof \StructType\Day_of_the_WeekObjectType) {
+            if (!$recurrence_DataTypeDay_of_the_Week_ReferenceItem instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
                 $invalidValues[] = is_object($recurrence_DataTypeDay_of_the_Week_ReferenceItem) ? get_class($recurrence_DataTypeDay_of_the_Week_ReferenceItem) : sprintf('%s(%s)', gettype($recurrence_DataTypeDay_of_the_Week_ReferenceItem), var_export($recurrence_DataTypeDay_of_the_Week_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Day_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Day_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -245,8 +245,8 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Day_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType[] $day_of_the_Week_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setDay_of_the_Week_Reference(array $day_of_the_Week_Reference = array())
     {
@@ -260,21 +260,21 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Add item to Day_of_the_Week_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_WeekObjectType $item
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function addToDay_of_the_Week_Reference(\StructType\Day_of_the_WeekObjectType $item)
+    public function addToDay_of_the_Week_Reference(\WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_WeekObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Day_of_the_Week_Reference property can only contain items of type \StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Day_of_the_Week_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Day_of_the_Week_Reference[] = $item;
         return $this;
     }
     /**
      * Get First_Day_of_the_Week_Reference value
-     * @return \StructType\Day_of_the_WeekObjectType|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType|null
      */
     public function getFirst_Day_of_the_Week_Reference()
     {
@@ -282,17 +282,17 @@ class Recurrence_DataType extends AbstractStructBase
     }
     /**
      * Set First_Day_of_the_Week_Reference value
-     * @param \StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function setFirst_Day_of_the_Week_Reference(\StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference = null)
+    public function setFirst_Day_of_the_Week_Reference(\WorkdayWsdl\\StructType\Day_of_the_WeekObjectType $first_Day_of_the_Week_Reference = null)
     {
         $this->First_Day_of_the_Week_Reference = $first_Day_of_the_Week_Reference;
         return $this;
     }
     /**
      * Get Month_Reference value
-     * @return \StructType\MonthObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\MonthObjectType[]|null
      */
     public function getMonth_Reference()
     {
@@ -310,12 +310,12 @@ class Recurrence_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurrence_DataTypeMonth_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$recurrence_DataTypeMonth_ReferenceItem instanceof \StructType\MonthObjectType) {
+            if (!$recurrence_DataTypeMonth_ReferenceItem instanceof \WorkdayWsdl\\StructType\MonthObjectType) {
                 $invalidValues[] = is_object($recurrence_DataTypeMonth_ReferenceItem) ? get_class($recurrence_DataTypeMonth_ReferenceItem) : sprintf('%s(%s)', gettype($recurrence_DataTypeMonth_ReferenceItem), var_export($recurrence_DataTypeMonth_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Month_Reference property can only contain items of type \StructType\MonthObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Month_Reference property can only contain items of type \WorkdayWsdl\\StructType\MonthObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -323,8 +323,8 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Month_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\MonthObjectType[] $month_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\MonthObjectType[] $month_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setMonth_Reference(array $month_Reference = array())
     {
@@ -338,21 +338,21 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Add item to Month_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\MonthObjectType $item
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\MonthObjectType $item
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function addToMonth_Reference(\StructType\MonthObjectType $item)
+    public function addToMonth_Reference(\WorkdayWsdl\\StructType\MonthObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\MonthObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Month_Reference property can only contain items of type \StructType\MonthObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\MonthObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Month_Reference property can only contain items of type \WorkdayWsdl\\StructType\MonthObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Month_Reference[] = $item;
         return $this;
     }
     /**
      * Get Day_of_the_Month_Reference value
-     * @return \StructType\Day_of_the_MonthObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType[]|null
      */
     public function getDay_of_the_Month_Reference()
     {
@@ -370,12 +370,12 @@ class Recurrence_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurrence_DataTypeDay_of_the_Month_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$recurrence_DataTypeDay_of_the_Month_ReferenceItem instanceof \StructType\Day_of_the_MonthObjectType) {
+            if (!$recurrence_DataTypeDay_of_the_Month_ReferenceItem instanceof \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType) {
                 $invalidValues[] = is_object($recurrence_DataTypeDay_of_the_Month_ReferenceItem) ? get_class($recurrence_DataTypeDay_of_the_Month_ReferenceItem) : sprintf('%s(%s)', gettype($recurrence_DataTypeDay_of_the_Month_ReferenceItem), var_export($recurrence_DataTypeDay_of_the_Month_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Day_of_the_Month_Reference property can only contain items of type \StructType\Day_of_the_MonthObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Day_of_the_Month_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -383,8 +383,8 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Day_of_the_Month_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_MonthObjectType[] $day_of_the_Month_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType[] $day_of_the_Month_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setDay_of_the_Month_Reference(array $day_of_the_Month_Reference = array())
     {
@@ -398,21 +398,21 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Add item to Day_of_the_Month_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Day_of_the_MonthObjectType $item
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType $item
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function addToDay_of_the_Month_Reference(\StructType\Day_of_the_MonthObjectType $item)
+    public function addToDay_of_the_Month_Reference(\WorkdayWsdl\\StructType\Day_of_the_MonthObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Day_of_the_MonthObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Day_of_the_Month_Reference property can only contain items of type \StructType\Day_of_the_MonthObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Day_of_the_Month_Reference property can only contain items of type \WorkdayWsdl\\StructType\Day_of_the_MonthObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Day_of_the_Month_Reference[] = $item;
         return $this;
     }
     /**
      * Get Week_of_the_Month_Reference value
-     * @return \StructType\Week_of_the_MonthObjectType|null
+     * @return \WorkdayWsdl\\StructType\Week_of_the_MonthObjectType|null
      */
     public function getWeek_of_the_Month_Reference()
     {
@@ -420,10 +420,10 @@ class Recurrence_DataType extends AbstractStructBase
     }
     /**
      * Set Week_of_the_Month_Reference value
-     * @param \StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference
-     * @return \StructType\Recurrence_DataType
+     * @param \WorkdayWsdl\\StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
-    public function setWeek_of_the_Month_Reference(\StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference = null)
+    public function setWeek_of_the_Month_Reference(\WorkdayWsdl\\StructType\Week_of_the_MonthObjectType $week_of_the_Month_Reference = null)
     {
         $this->Week_of_the_Month_Reference = $week_of_the_Month_Reference;
         return $this;
@@ -439,7 +439,7 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Recurrence_Start_Date value
      * @param string $recurrence_Start_Date
-     * @return \StructType\Recurrence_DataType
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setRecurrence_Start_Date($recurrence_Start_Date = null)
     {
@@ -461,7 +461,7 @@ class Recurrence_DataType extends AbstractStructBase
     /**
      * Set Recurrence_End_Date value
      * @param string $recurrence_End_Date
-     * @return \StructType\Recurrence_DataType
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public function setRecurrence_End_Date($recurrence_End_Date = null)
     {
@@ -478,7 +478,7 @@ class Recurrence_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Recurrence_DataType
+     * @return \WorkdayWsdl\\StructType\Recurrence_DataType
      */
     public static function __set_state(array $array)
     {

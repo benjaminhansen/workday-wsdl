@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Skill_Item_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Skill Item Category associated with the Skill Item.
      * - minOccurs: 0
-     * @var \StructType\Skill_Item_CategoryObjectType
+     * @var \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType
      */
     public $Category_Reference;
     /**
@@ -59,13 +59,13 @@ class Skill_Item_DataType extends AbstractStructBase
      * @uses Skill_Item_DataType::setHide_from_Candidates()
      * @uses Skill_Item_DataType::setName()
      * @uses Skill_Item_DataType::setInactive()
-     * @param \StructType\Skill_Item_CategoryObjectType $category_Reference
+     * @param \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType $category_Reference
      * @param string $iD
      * @param bool $hide_from_Candidates
      * @param string $name
      * @param bool $inactive
      */
-    public function __construct(\StructType\Skill_Item_CategoryObjectType $category_Reference = null, $iD = null, $hide_from_Candidates = null, $name = null, $inactive = null)
+    public function __construct(\WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType $category_Reference = null, $iD = null, $hide_from_Candidates = null, $name = null, $inactive = null)
     {
         $this
             ->setCategory_Reference($category_Reference)
@@ -76,7 +76,7 @@ class Skill_Item_DataType extends AbstractStructBase
     }
     /**
      * Get Category_Reference value
-     * @return \StructType\Skill_Item_CategoryObjectType|null
+     * @return \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType|null
      */
     public function getCategory_Reference()
     {
@@ -84,10 +84,10 @@ class Skill_Item_DataType extends AbstractStructBase
     }
     /**
      * Set Category_Reference value
-     * @param \StructType\Skill_Item_CategoryObjectType $category_Reference
-     * @return \StructType\Skill_Item_DataType
+     * @param \WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType $category_Reference
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
-    public function setCategory_Reference(\StructType\Skill_Item_CategoryObjectType $category_Reference = null)
+    public function setCategory_Reference(\WorkdayWsdl\\StructType\Skill_Item_CategoryObjectType $category_Reference = null)
     {
         $this->Category_Reference = $category_Reference;
         return $this;
@@ -103,7 +103,7 @@ class Skill_Item_DataType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public function setID($iD = null)
     {
@@ -125,7 +125,7 @@ class Skill_Item_DataType extends AbstractStructBase
     /**
      * Set Hide_from_Candidates value
      * @param bool $hide_from_Candidates
-     * @return \StructType\Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public function setHide_from_Candidates($hide_from_Candidates = null)
     {
@@ -147,7 +147,7 @@ class Skill_Item_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public function setName($name = null)
     {
@@ -169,7 +169,7 @@ class Skill_Item_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -186,7 +186,7 @@ class Skill_Item_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Skill_Item_DataType
+     * @return \WorkdayWsdl\\StructType\Skill_Item_DataType
      */
     public static function __set_state(array $array)
     {

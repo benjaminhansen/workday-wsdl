@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Goal_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains an optional reference to an Organization Goal which this Goal Detail supports.
      * - minOccurs: 0
-     * @var \StructType\Organization_GoalObjectType
+     * @var \WorkdayWsdl\\StructType\Organization_GoalObjectType
      */
     public $Organization_Goal_Reference;
     /**
@@ -61,7 +61,7 @@ class Goal_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains an optional reference to a Completion Status that indicates progress of the goal.
      * - minOccurs: 0
-     * @var \StructType\Component_CompletionObjectType
+     * @var \WorkdayWsdl\\StructType\Component_CompletionObjectType
      */
     public $Completion_Status_Reference;
     /**
@@ -85,12 +85,12 @@ class Goal_Detail_DataType extends AbstractStructBase
      * @param string $goal_Reference_ID
      * @param string $goal
      * @param string $description
-     * @param \StructType\Organization_GoalObjectType $organization_Goal_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_GoalObjectType $organization_Goal_Reference
      * @param string $due_Date
-     * @param \StructType\Component_CompletionObjectType $completion_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Component_CompletionObjectType $completion_Status_Reference
      * @param string $completion_Date
      */
-    public function __construct($goal_Reference_ID = null, $goal = null, $description = null, \StructType\Organization_GoalObjectType $organization_Goal_Reference = null, $due_Date = null, \StructType\Component_CompletionObjectType $completion_Status_Reference = null, $completion_Date = null)
+    public function __construct($goal_Reference_ID = null, $goal = null, $description = null, \WorkdayWsdl\\StructType\Organization_GoalObjectType $organization_Goal_Reference = null, $due_Date = null, \WorkdayWsdl\\StructType\Component_CompletionObjectType $completion_Status_Reference = null, $completion_Date = null)
     {
         $this
             ->setGoal_Reference_ID($goal_Reference_ID)
@@ -112,7 +112,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     /**
      * Set Goal_Reference_ID value
      * @param string $goal_Reference_ID
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public function setGoal_Reference_ID($goal_Reference_ID = null)
     {
@@ -134,7 +134,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     /**
      * Set Goal value
      * @param string $goal
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public function setGoal($goal = null)
     {
@@ -156,7 +156,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public function setDescription($description = null)
     {
@@ -169,7 +169,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Organization_Goal_Reference value
-     * @return \StructType\Organization_GoalObjectType|null
+     * @return \WorkdayWsdl\\StructType\Organization_GoalObjectType|null
      */
     public function getOrganization_Goal_Reference()
     {
@@ -177,10 +177,10 @@ class Goal_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Organization_Goal_Reference value
-     * @param \StructType\Organization_GoalObjectType $organization_Goal_Reference
-     * @return \StructType\Goal_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Organization_GoalObjectType $organization_Goal_Reference
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
-    public function setOrganization_Goal_Reference(\StructType\Organization_GoalObjectType $organization_Goal_Reference = null)
+    public function setOrganization_Goal_Reference(\WorkdayWsdl\\StructType\Organization_GoalObjectType $organization_Goal_Reference = null)
     {
         $this->Organization_Goal_Reference = $organization_Goal_Reference;
         return $this;
@@ -196,7 +196,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     /**
      * Set Due_Date value
      * @param string $due_Date
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public function setDue_Date($due_Date = null)
     {
@@ -209,7 +209,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Completion_Status_Reference value
-     * @return \StructType\Component_CompletionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Component_CompletionObjectType|null
      */
     public function getCompletion_Status_Reference()
     {
@@ -217,10 +217,10 @@ class Goal_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Completion_Status_Reference value
-     * @param \StructType\Component_CompletionObjectType $completion_Status_Reference
-     * @return \StructType\Goal_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Component_CompletionObjectType $completion_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
-    public function setCompletion_Status_Reference(\StructType\Component_CompletionObjectType $completion_Status_Reference = null)
+    public function setCompletion_Status_Reference(\WorkdayWsdl\\StructType\Component_CompletionObjectType $completion_Status_Reference = null)
     {
         $this->Completion_Status_Reference = $completion_Status_Reference;
         return $this;
@@ -236,7 +236,7 @@ class Goal_Detail_DataType extends AbstractStructBase
     /**
      * Set Completion_Date value
      * @param string $completion_Date
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public function setCompletion_Date($completion_Date = null)
     {
@@ -253,7 +253,7 @@ class Goal_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Goal_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Goal_Detail_DataType
      */
     public static function __set_state(array $array)
     {

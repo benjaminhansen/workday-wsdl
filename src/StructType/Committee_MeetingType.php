@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Committee_MeetingType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: container for the created committee meeting
      * - minOccurs: 0
-     * @var \StructType\Committee_MeetingObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_MeetingObjectType
      */
     public $Committee_Meeting_Reference;
     /**
      * The Committee_Meeting_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Committee_Meeting_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Meeting_DataType
      */
     public $Committee_Meeting_Data;
     /**
      * Constructor method for Committee_MeetingType
      * @uses Committee_MeetingType::setCommittee_Meeting_Reference()
      * @uses Committee_MeetingType::setCommittee_Meeting_Data()
-     * @param \StructType\Committee_MeetingObjectType $committee_Meeting_Reference
-     * @param \StructType\Committee_Meeting_DataType $committee_Meeting_Data
+     * @param \WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data
      */
-    public function __construct(\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null, \StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null, \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
     {
         $this
             ->setCommittee_Meeting_Reference($committee_Meeting_Reference)
@@ -42,7 +42,7 @@ class Committee_MeetingType extends AbstractStructBase
     }
     /**
      * Get Committee_Meeting_Reference value
-     * @return \StructType\Committee_MeetingObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_MeetingObjectType|null
      */
     public function getCommittee_Meeting_Reference()
     {
@@ -50,17 +50,17 @@ class Committee_MeetingType extends AbstractStructBase
     }
     /**
      * Set Committee_Meeting_Reference value
-     * @param \StructType\Committee_MeetingObjectType $committee_Meeting_Reference
-     * @return \StructType\Committee_MeetingType
+     * @param \WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference
+     * @return \WorkdayWsdl\\StructType\Committee_MeetingType
      */
-    public function setCommittee_Meeting_Reference(\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null)
+    public function setCommittee_Meeting_Reference(\WorkdayWsdl\\StructType\Committee_MeetingObjectType $committee_Meeting_Reference = null)
     {
         $this->Committee_Meeting_Reference = $committee_Meeting_Reference;
         return $this;
     }
     /**
      * Get Committee_Meeting_Data value
-     * @return \StructType\Committee_Meeting_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Meeting_DataType|null
      */
     public function getCommittee_Meeting_Data()
     {
@@ -68,10 +68,10 @@ class Committee_MeetingType extends AbstractStructBase
     }
     /**
      * Set Committee_Meeting_Data value
-     * @param \StructType\Committee_Meeting_DataType $committee_Meeting_Data
-     * @return \StructType\Committee_MeetingType
+     * @param \WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data
+     * @return \WorkdayWsdl\\StructType\Committee_MeetingType
      */
-    public function setCommittee_Meeting_Data(\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
+    public function setCommittee_Meeting_Data(\WorkdayWsdl\\StructType\Committee_Meeting_DataType $committee_Meeting_Data = null)
     {
         $this->Committee_Meeting_Data = $committee_Meeting_Data;
         return $this;
@@ -82,7 +82,7 @@ class Committee_MeetingType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Committee_MeetingType
+     * @return \WorkdayWsdl\\StructType\Committee_MeetingType
      */
     public static function __set_state(array $array)
     {

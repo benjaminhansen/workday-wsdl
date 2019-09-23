@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Factor_OptionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
      * Constructor method for Collective_Agreement_Factor_OptionObjectType
      * @uses Collective_Agreement_Factor_OptionObjectType::setID()
      * @uses Collective_Agreement_Factor_OptionObjectType::setDescriptor()
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $collective_Agreement_Factor_OptionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$collective_Agreement_Factor_OptionObjectTypeIDItem instanceof \StructType\Collective_Agreement_Factor_OptionObjectIDType) {
+            if (!$collective_Agreement_Factor_OptionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType) {
                 $invalidValues[] = is_object($collective_Agreement_Factor_OptionObjectTypeIDItem) ? get_class($collective_Agreement_Factor_OptionObjectTypeIDItem) : sprintf('%s(%s)', gettype($collective_Agreement_Factor_OptionObjectTypeIDItem), var_export($collective_Agreement_Factor_OptionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Collective_Agreement_Factor_OptionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectIDType[] $iD
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Factor_OptionObjectIDType $item
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType
      */
-    public function addToID(\StructType\Collective_Agreement_Factor_OptionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Collective_Agreement_Factor_OptionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Collective_Agreement_Factor_OptionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Collective_Agreement_Factor_OptionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Factor_OptionObjectType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Factor_OptionObjectType
      */
     public static function __set_state(array $array)
     {

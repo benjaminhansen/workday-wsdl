@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class WorkteamType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Workteam
      * - minOccurs: 0
-     * @var \StructType\WorkteamObjectType
+     * @var \WorkdayWsdl\\StructType\WorkteamObjectType
      */
     public $Workteam_Reference;
     /**
@@ -26,17 +26,17 @@ class WorkteamType extends AbstractStructBase
      * - documentation: Workteam Data
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Workteam_DataType[]
+     * @var \WorkdayWsdl\\StructType\Workteam_DataType[]
      */
     public $Workteam_Data;
     /**
      * Constructor method for WorkteamType
      * @uses WorkteamType::setWorkteam_Reference()
      * @uses WorkteamType::setWorkteam_Data()
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @param \StructType\Workteam_DataType[] $workteam_Data
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @param \WorkdayWsdl\\StructType\Workteam_DataType[] $workteam_Data
      */
-    public function __construct(\StructType\WorkteamObjectType $workteam_Reference = null, array $workteam_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null, array $workteam_Data = array())
     {
         $this
             ->setWorkteam_Reference($workteam_Reference)
@@ -44,7 +44,7 @@ class WorkteamType extends AbstractStructBase
     }
     /**
      * Get Workteam_Reference value
-     * @return \StructType\WorkteamObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkteamObjectType|null
      */
     public function getWorkteam_Reference()
     {
@@ -52,17 +52,17 @@ class WorkteamType extends AbstractStructBase
     }
     /**
      * Set Workteam_Reference value
-     * @param \StructType\WorkteamObjectType $workteam_Reference
-     * @return \StructType\WorkteamType
+     * @param \WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference
+     * @return \WorkdayWsdl\\StructType\WorkteamType
      */
-    public function setWorkteam_Reference(\StructType\WorkteamObjectType $workteam_Reference = null)
+    public function setWorkteam_Reference(\WorkdayWsdl\\StructType\WorkteamObjectType $workteam_Reference = null)
     {
         $this->Workteam_Reference = $workteam_Reference;
         return $this;
     }
     /**
      * Get Workteam_Data value
-     * @return \StructType\Workteam_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Workteam_DataType[]|null
      */
     public function getWorkteam_Data()
     {
@@ -80,12 +80,12 @@ class WorkteamType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workteamTypeWorkteam_DataItem) {
             // validation for constraint: itemType
-            if (!$workteamTypeWorkteam_DataItem instanceof \StructType\Workteam_DataType) {
+            if (!$workteamTypeWorkteam_DataItem instanceof \WorkdayWsdl\\StructType\Workteam_DataType) {
                 $invalidValues[] = is_object($workteamTypeWorkteam_DataItem) ? get_class($workteamTypeWorkteam_DataItem) : sprintf('%s(%s)', gettype($workteamTypeWorkteam_DataItem), var_export($workteamTypeWorkteam_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Workteam_Data property can only contain items of type \StructType\Workteam_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Workteam_Data property can only contain items of type \WorkdayWsdl\\StructType\Workteam_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class WorkteamType extends AbstractStructBase
     /**
      * Set Workteam_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workteam_DataType[] $workteam_Data
-     * @return \StructType\WorkteamType
+     * @param \WorkdayWsdl\\StructType\Workteam_DataType[] $workteam_Data
+     * @return \WorkdayWsdl\\StructType\WorkteamType
      */
     public function setWorkteam_Data(array $workteam_Data = array())
     {
@@ -108,14 +108,14 @@ class WorkteamType extends AbstractStructBase
     /**
      * Add item to Workteam_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workteam_DataType $item
-     * @return \StructType\WorkteamType
+     * @param \WorkdayWsdl\\StructType\Workteam_DataType $item
+     * @return \WorkdayWsdl\\StructType\WorkteamType
      */
-    public function addToWorkteam_Data(\StructType\Workteam_DataType $item)
+    public function addToWorkteam_Data(\WorkdayWsdl\\StructType\Workteam_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workteam_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Workteam_Data property can only contain items of type \StructType\Workteam_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workteam_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Workteam_Data property can only contain items of type \WorkdayWsdl\\StructType\Workteam_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Workteam_Data[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class WorkteamType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\WorkteamType
+     * @return \WorkdayWsdl\\StructType\WorkteamType
      */
     public static function __set_state(array $array)
     {

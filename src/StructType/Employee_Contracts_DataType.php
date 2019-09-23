@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Employee_Contracts_DataType extends AbstractStructBase
      * - documentation: Contains data for a Pre-Hire Contract.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Employee_Contract_DataType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Contract_DataType[]
      */
     public $Employee_Contract_Data;
     /**
      * Constructor method for Employee_Contracts_DataType
      * @uses Employee_Contracts_DataType::setEmployee_Contract_Data()
-     * @param \StructType\Employee_Contract_DataType[] $employee_Contract_Data
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_DataType[] $employee_Contract_Data
      */
     public function __construct(array $employee_Contract_Data = array())
     {
@@ -33,7 +33,7 @@ class Employee_Contracts_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Contract_Data value
-     * @return \StructType\Employee_Contract_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Contract_DataType[]|null
      */
     public function getEmployee_Contract_Data()
     {
@@ -51,12 +51,12 @@ class Employee_Contracts_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Contracts_DataTypeEmployee_Contract_DataItem) {
             // validation for constraint: itemType
-            if (!$employee_Contracts_DataTypeEmployee_Contract_DataItem instanceof \StructType\Employee_Contract_DataType) {
+            if (!$employee_Contracts_DataTypeEmployee_Contract_DataItem instanceof \WorkdayWsdl\\StructType\Employee_Contract_DataType) {
                 $invalidValues[] = is_object($employee_Contracts_DataTypeEmployee_Contract_DataItem) ? get_class($employee_Contracts_DataTypeEmployee_Contract_DataItem) : sprintf('%s(%s)', gettype($employee_Contracts_DataTypeEmployee_Contract_DataItem), var_export($employee_Contracts_DataTypeEmployee_Contract_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Contract_Data property can only contain items of type \StructType\Employee_Contract_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Contract_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contract_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Employee_Contracts_DataType extends AbstractStructBase
     /**
      * Set Employee_Contract_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contract_DataType[] $employee_Contract_Data
-     * @return \StructType\Employee_Contracts_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_DataType[] $employee_Contract_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Contracts_DataType
      */
     public function setEmployee_Contract_Data(array $employee_Contract_Data = array())
     {
@@ -79,14 +79,14 @@ class Employee_Contracts_DataType extends AbstractStructBase
     /**
      * Add item to Employee_Contract_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Contract_DataType $item
-     * @return \StructType\Employee_Contracts_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Contract_DataType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Contracts_DataType
      */
-    public function addToEmployee_Contract_Data(\StructType\Employee_Contract_DataType $item)
+    public function addToEmployee_Contract_Data(\WorkdayWsdl\\StructType\Employee_Contract_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Contract_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Data property can only contain items of type \StructType\Employee_Contract_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Contract_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Contract_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Contract_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Contract_Data[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Employee_Contracts_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Contracts_DataType
+     * @return \WorkdayWsdl\\StructType\Employee_Contracts_DataType
      */
     public static function __set_state(array $array)
     {

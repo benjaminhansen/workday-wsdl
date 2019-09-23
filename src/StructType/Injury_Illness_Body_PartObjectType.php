@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Injury_Illness_Body_PartObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
      * Constructor method for Injury_Illness_Body_PartObjectType
      * @uses Injury_Illness_Body_PartObjectType::setID()
      * @uses Injury_Illness_Body_PartObjectType::setDescriptor()
-     * @param \StructType\Injury_Illness_Body_PartObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Injury_Illness_Body_PartObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $injury_Illness_Body_PartObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$injury_Illness_Body_PartObjectTypeIDItem instanceof \StructType\Injury_Illness_Body_PartObjectIDType) {
+            if (!$injury_Illness_Body_PartObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType) {
                 $invalidValues[] = is_object($injury_Illness_Body_PartObjectTypeIDItem) ? get_class($injury_Illness_Body_PartObjectTypeIDItem) : sprintf('%s(%s)', gettype($injury_Illness_Body_PartObjectTypeIDItem), var_export($injury_Illness_Body_PartObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Injury_Illness_Body_PartObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Injury_Illness_Body_PartObjectIDType[] $iD
-     * @return \StructType\Injury_Illness_Body_PartObjectType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Injury_Illness_Body_PartObjectIDType $item
-     * @return \StructType\Injury_Illness_Body_PartObjectType
+     * @param \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType
      */
-    public function addToID(\StructType\Injury_Illness_Body_PartObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Injury_Illness_Body_PartObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Injury_Illness_Body_PartObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Injury_Illness_Body_PartObjectType
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Injury_Illness_Body_PartObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Injury_Illness_Body_PartObjectType
+     * @return \WorkdayWsdl\\StructType\Injury_Illness_Body_PartObjectType
      */
     public static function __set_state(array $array)
     {

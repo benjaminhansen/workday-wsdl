@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Related_Person_RelationshipObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
      * Constructor method for Related_Person_RelationshipObjectType
      * @uses Related_Person_RelationshipObjectType::setID()
      * @uses Related_Person_RelationshipObjectType::setDescriptor()
-     * @param \StructType\Related_Person_RelationshipObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Related_Person_RelationshipObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $related_Person_RelationshipObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$related_Person_RelationshipObjectTypeIDItem instanceof \StructType\Related_Person_RelationshipObjectIDType) {
+            if (!$related_Person_RelationshipObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType) {
                 $invalidValues[] = is_object($related_Person_RelationshipObjectTypeIDItem) ? get_class($related_Person_RelationshipObjectTypeIDItem) : sprintf('%s(%s)', gettype($related_Person_RelationshipObjectTypeIDItem), var_export($related_Person_RelationshipObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Related_Person_RelationshipObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectIDType[] $iD
-     * @return \StructType\Related_Person_RelationshipObjectType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Related_Person_RelationshipObjectIDType $item
-     * @return \StructType\Related_Person_RelationshipObjectType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType
      */
-    public function addToID(\StructType\Related_Person_RelationshipObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Related_Person_RelationshipObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Related_Person_RelationshipObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Related_Person_RelationshipObjectType
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Related_Person_RelationshipObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Related_Person_RelationshipObjectType
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType
      */
     public static function __set_state(array $array)
     {

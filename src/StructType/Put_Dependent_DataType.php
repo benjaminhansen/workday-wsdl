@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,7 +26,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Employee for the Dependent.
      * - minOccurs: 0
-     * @var \StructType\EmployeeObjectType
+     * @var \WorkdayWsdl\\StructType\EmployeeObjectType
      */
     public $Employee_Reference;
     /**
@@ -34,7 +34,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing related person for the Dependent. If this field is populated, this dependent's personal information data will be shared with the person specified.
      * - minOccurs: 0
-     * @var \StructType\Related_Person_for_WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType
      */
     public $Existing_Related_Person_Reference;
     /**
@@ -42,7 +42,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the relationship between the dependent and the related person.
      * - minOccurs: 0
-     * @var \StructType\Related_Person_RelationshipObjectType
+     * @var \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType
      */
     public $Related_Person_Relationship_Reference;
     /**
@@ -77,7 +77,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for this dependent's personal information.
      * - minOccurs: 0
-     * @var \StructType\Dependent_Personal_Information_DataType
+     * @var \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType
      */
     public $Dependent_Personal_Information_Data;
     /**
@@ -85,7 +85,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]
      */
     public $Court_Order_Replacement_Data;
     /**
@@ -100,16 +100,16 @@ class Put_Dependent_DataType extends AbstractStructBase
      * @uses Put_Dependent_DataType::setDependent_Personal_Information_Data()
      * @uses Put_Dependent_DataType::setCourt_Order_Replacement_Data()
      * @param string $dependent_ID
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @param \StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference
-     * @param \StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference
      * @param bool $use_Employee_Address
      * @param bool $use_Employee_Phone
      * @param bool $irrevocable
-     * @param \StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
+     * @param \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
      */
-    public function __construct($dependent_ID = null, \StructType\EmployeeObjectType $employee_Reference = null, \StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference = null, \StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference = null, $use_Employee_Address = null, $use_Employee_Phone = null, $irrevocable = null, \StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data = null, array $court_Order_Replacement_Data = array())
+    public function __construct($dependent_ID = null, \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null, \WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference = null, \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference = null, $use_Employee_Address = null, $use_Employee_Phone = null, $irrevocable = null, \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data = null, array $court_Order_Replacement_Data = array())
     {
         $this
             ->setDependent_ID($dependent_ID)
@@ -133,7 +133,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Set Dependent_ID value
      * @param string $dependent_ID
-     * @return \StructType\Put_Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public function setDependent_ID($dependent_ID = null)
     {
@@ -146,7 +146,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\EmployeeObjectType|null
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectType|null
      */
     public function getEmployee_Reference()
     {
@@ -154,17 +154,17 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
-    public function setEmployee_Reference(\StructType\EmployeeObjectType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Existing_Related_Person_Reference value
-     * @return \StructType\Related_Person_for_WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType|null
      */
     public function getExisting_Related_Person_Reference()
     {
@@ -172,17 +172,17 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Existing_Related_Person_Reference value
-     * @param \StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
-    public function setExisting_Related_Person_Reference(\StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference = null)
+    public function setExisting_Related_Person_Reference(\WorkdayWsdl\\StructType\Related_Person_for_WorkerObjectType $existing_Related_Person_Reference = null)
     {
         $this->Existing_Related_Person_Reference = $existing_Related_Person_Reference;
         return $this;
     }
     /**
      * Get Related_Person_Relationship_Reference value
-     * @return \StructType\Related_Person_RelationshipObjectType|null
+     * @return \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType|null
      */
     public function getRelated_Person_Relationship_Reference()
     {
@@ -190,10 +190,10 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Related_Person_Relationship_Reference value
-     * @param \StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
-    public function setRelated_Person_Relationship_Reference(\StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference = null)
+    public function setRelated_Person_Relationship_Reference(\WorkdayWsdl\\StructType\Related_Person_RelationshipObjectType $related_Person_Relationship_Reference = null)
     {
         $this->Related_Person_Relationship_Reference = $related_Person_Relationship_Reference;
         return $this;
@@ -209,7 +209,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Set Use_Employee_Address value
      * @param bool $use_Employee_Address
-     * @return \StructType\Put_Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public function setUse_Employee_Address($use_Employee_Address = null)
     {
@@ -231,7 +231,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Set Use_Employee_Phone value
      * @param bool $use_Employee_Phone
-     * @return \StructType\Put_Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public function setUse_Employee_Phone($use_Employee_Phone = null)
     {
@@ -253,7 +253,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Set Irrevocable value
      * @param bool $irrevocable
-     * @return \StructType\Put_Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public function setIrrevocable($irrevocable = null)
     {
@@ -266,7 +266,7 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Get Dependent_Personal_Information_Data value
-     * @return \StructType\Dependent_Personal_Information_DataType|null
+     * @return \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType|null
      */
     public function getDependent_Personal_Information_Data()
     {
@@ -274,17 +274,17 @@ class Put_Dependent_DataType extends AbstractStructBase
     }
     /**
      * Set Dependent_Personal_Information_Data value
-     * @param \StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
-    public function setDependent_Personal_Information_Data(\StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data = null)
+    public function setDependent_Personal_Information_Data(\WorkdayWsdl\\StructType\Dependent_Personal_Information_DataType $dependent_Personal_Information_Data = null)
     {
         $this->Dependent_Personal_Information_Data = $dependent_Personal_Information_Data;
         return $this;
     }
     /**
      * Get Court_Order_Replacement_Data value
-     * @return \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[]|null
      */
     public function getCourt_Order_Replacement_Data()
     {
@@ -302,12 +302,12 @@ class Put_Dependent_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $put_Dependent_DataTypeCourt_Order_Replacement_DataItem) {
             // validation for constraint: itemType
-            if (!$put_Dependent_DataTypeCourt_Order_Replacement_DataItem instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            if (!$put_Dependent_DataTypeCourt_Order_Replacement_DataItem instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
                 $invalidValues[] = is_object($put_Dependent_DataTypeCourt_Order_Replacement_DataItem) ? get_class($put_Dependent_DataTypeCourt_Order_Replacement_DataItem) : sprintf('%s(%s)', gettype($put_Dependent_DataTypeCourt_Order_Replacement_DataItem), var_export($put_Dependent_DataTypeCourt_Order_Replacement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Court_Order_Replacement_Data property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Court_Order_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -315,8 +315,8 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Set Court_Order_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType[] $court_Order_Replacement_Data
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public function setCourt_Order_Replacement_Data(array $court_Order_Replacement_Data = array())
     {
@@ -330,14 +330,14 @@ class Put_Dependent_DataType extends AbstractStructBase
     /**
      * Add item to Court_Order_Replacement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
-     * @return \StructType\Put_Dependent_DataType
+     * @param \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
-    public function addToCourt_Order_Replacement_Data(\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
+    public function addToCourt_Order_Replacement_Data(\WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Court_Order_Replacement_Data property can only contain items of type \StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Court_Order_Replacement_Data property can only contain items of type \WorkdayWsdl\\StructType\Qualified_Domestic_Relations_Order_Replacement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Court_Order_Replacement_Data[] = $item;
         return $this;
@@ -348,7 +348,7 @@ class Put_Dependent_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Dependent_DataType
+     * @return \WorkdayWsdl\\StructType\Put_Dependent_DataType
      */
     public static function __set_state(array $array)
     {

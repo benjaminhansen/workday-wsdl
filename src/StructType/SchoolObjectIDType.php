@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class SchoolObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\SchoolReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\SchoolReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\SchoolReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\SchoolReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\SchoolObjectIDType
+     * @return \WorkdayWsdl\\StructType\SchoolObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SchoolReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\SchoolReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\SchoolReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\SchoolReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\SchoolReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\SchoolReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class SchoolObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\SchoolObjectIDType
+     * @return \WorkdayWsdl\\StructType\SchoolObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class SchoolObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SchoolObjectIDType
+     * @return \WorkdayWsdl\\StructType\SchoolObjectIDType
      */
     public static function __set_state(array $array)
     {

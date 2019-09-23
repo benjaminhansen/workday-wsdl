@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -205,7 +205,7 @@ class Worker_Status_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Leave_Status_DataType[]
+     * @var \WorkdayWsdl\\StructType\Leave_Status_DataType[]
      */
     public $Leave_Status_Data;
     /**
@@ -213,7 +213,7 @@ class Worker_Status_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Termination_Status_DataType[]
+     * @var \WorkdayWsdl\\StructType\Termination_Status_DataType[]
      */
     public $Termination_Status_Data;
     /**
@@ -221,7 +221,7 @@ class Worker_Status_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Probation_Status_DataType[]
+     * @var \WorkdayWsdl\\StructType\Probation_Status_DataType[]
      */
     public $Probation_Status_Data;
     /**
@@ -269,9 +269,9 @@ class Worker_Status_DataType extends AbstractStructBase
      * @param string $date_Entered_Workforce
      * @param float $days_Unemployed
      * @param float $months_Continuous_Prior_Employment
-     * @param \StructType\Leave_Status_DataType[] $leave_Status_Data
-     * @param \StructType\Termination_Status_DataType[] $termination_Status_Data
-     * @param \StructType\Probation_Status_DataType[] $probation_Status_Data
+     * @param \WorkdayWsdl\\StructType\Leave_Status_DataType[] $leave_Status_Data
+     * @param \WorkdayWsdl\\StructType\Termination_Status_DataType[] $termination_Status_Data
+     * @param \WorkdayWsdl\\StructType\Probation_Status_DataType[] $probation_Status_Data
      */
     public function __construct($active = null, $hire_Date = null, $original_Hire_Date = null, $end_Employment_Date = null, $hire_Reason = null, $continuous_Service_Date = null, $first_Day_of_Work = null, $expected_Retirement_Date = null, $retirement_Eligibility_Date = null, $retired = null, $retirement_Date = null, $seniority_Date = null, $severance_Date = null, $benefits_Service_Date = null, $company_Service_Date = null, $time_Off_Service_Date = null, $vesting_Date = null, $date_Entered_Workforce = null, $days_Unemployed = null, $months_Continuous_Prior_Employment = null, array $leave_Status_Data = array(), array $termination_Status_Data = array(), array $probation_Status_Data = array())
     {
@@ -311,7 +311,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Active value
      * @param bool $active
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setActive($active = null)
     {
@@ -333,7 +333,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Hire_Date value
      * @param string $hire_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setHire_Date($hire_Date = null)
     {
@@ -355,7 +355,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Original_Hire_Date value
      * @param string $original_Hire_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setOriginal_Hire_Date($original_Hire_Date = null)
     {
@@ -377,7 +377,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set End_Employment_Date value
      * @param string $end_Employment_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setEnd_Employment_Date($end_Employment_Date = null)
     {
@@ -399,7 +399,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Hire_Reason value
      * @param string $hire_Reason
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setHire_Reason($hire_Reason = null)
     {
@@ -421,7 +421,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Continuous_Service_Date value
      * @param string $continuous_Service_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setContinuous_Service_Date($continuous_Service_Date = null)
     {
@@ -443,7 +443,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set First_Day_of_Work value
      * @param string $first_Day_of_Work
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setFirst_Day_of_Work($first_Day_of_Work = null)
     {
@@ -465,7 +465,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Expected_Retirement_Date value
      * @param string $expected_Retirement_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setExpected_Retirement_Date($expected_Retirement_Date = null)
     {
@@ -487,7 +487,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Retirement_Eligibility_Date value
      * @param string $retirement_Eligibility_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setRetirement_Eligibility_Date($retirement_Eligibility_Date = null)
     {
@@ -509,7 +509,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Retired value
      * @param bool $retired
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setRetired($retired = null)
     {
@@ -531,7 +531,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Retirement_Date value
      * @param string $retirement_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setRetirement_Date($retirement_Date = null)
     {
@@ -553,7 +553,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Seniority_Date value
      * @param string $seniority_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setSeniority_Date($seniority_Date = null)
     {
@@ -575,7 +575,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Severance_Date value
      * @param string $severance_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setSeverance_Date($severance_Date = null)
     {
@@ -597,7 +597,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Benefits_Service_Date value
      * @param string $benefits_Service_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setBenefits_Service_Date($benefits_Service_Date = null)
     {
@@ -619,7 +619,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Company_Service_Date value
      * @param string $company_Service_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setCompany_Service_Date($company_Service_Date = null)
     {
@@ -641,7 +641,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Time_Off_Service_Date value
      * @param string $time_Off_Service_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setTime_Off_Service_Date($time_Off_Service_Date = null)
     {
@@ -663,7 +663,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Vesting_Date value
      * @param string $vesting_Date
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setVesting_Date($vesting_Date = null)
     {
@@ -685,7 +685,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Date_Entered_Workforce value
      * @param string $date_Entered_Workforce
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setDate_Entered_Workforce($date_Entered_Workforce = null)
     {
@@ -707,7 +707,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Days_Unemployed value
      * @param float $days_Unemployed
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setDays_Unemployed($days_Unemployed = null)
     {
@@ -741,7 +741,7 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Months_Continuous_Prior_Employment value
      * @param float $months_Continuous_Prior_Employment
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setMonths_Continuous_Prior_Employment($months_Continuous_Prior_Employment = null)
     {
@@ -766,7 +766,7 @@ class Worker_Status_DataType extends AbstractStructBase
     }
     /**
      * Get Leave_Status_Data value
-     * @return \StructType\Leave_Status_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Leave_Status_DataType[]|null
      */
     public function getLeave_Status_Data()
     {
@@ -784,12 +784,12 @@ class Worker_Status_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_DataTypeLeave_Status_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_DataTypeLeave_Status_DataItem instanceof \StructType\Leave_Status_DataType) {
+            if (!$worker_Status_DataTypeLeave_Status_DataItem instanceof \WorkdayWsdl\\StructType\Leave_Status_DataType) {
                 $invalidValues[] = is_object($worker_Status_DataTypeLeave_Status_DataItem) ? get_class($worker_Status_DataTypeLeave_Status_DataItem) : sprintf('%s(%s)', gettype($worker_Status_DataTypeLeave_Status_DataItem), var_export($worker_Status_DataTypeLeave_Status_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Leave_Status_Data property can only contain items of type \StructType\Leave_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Leave_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -797,8 +797,8 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Leave_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Status_DataType[] $leave_Status_Data
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Status_DataType[] $leave_Status_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setLeave_Status_Data(array $leave_Status_Data = array())
     {
@@ -812,21 +812,21 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Add item to Leave_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Leave_Status_DataType $item
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Leave_Status_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
-    public function addToLeave_Status_Data(\StructType\Leave_Status_DataType $item)
+    public function addToLeave_Status_Data(\WorkdayWsdl\\StructType\Leave_Status_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Leave_Status_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Leave_Status_Data property can only contain items of type \StructType\Leave_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Leave_Status_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Leave_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Leave_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Leave_Status_Data[] = $item;
         return $this;
     }
     /**
      * Get Termination_Status_Data value
-     * @return \StructType\Termination_Status_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Termination_Status_DataType[]|null
      */
     public function getTermination_Status_Data()
     {
@@ -844,12 +844,12 @@ class Worker_Status_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_DataTypeTermination_Status_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_DataTypeTermination_Status_DataItem instanceof \StructType\Termination_Status_DataType) {
+            if (!$worker_Status_DataTypeTermination_Status_DataItem instanceof \WorkdayWsdl\\StructType\Termination_Status_DataType) {
                 $invalidValues[] = is_object($worker_Status_DataTypeTermination_Status_DataItem) ? get_class($worker_Status_DataTypeTermination_Status_DataItem) : sprintf('%s(%s)', gettype($worker_Status_DataTypeTermination_Status_DataItem), var_export($worker_Status_DataTypeTermination_Status_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Termination_Status_Data property can only contain items of type \StructType\Termination_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Termination_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Termination_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -857,8 +857,8 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Termination_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Termination_Status_DataType[] $termination_Status_Data
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Termination_Status_DataType[] $termination_Status_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setTermination_Status_Data(array $termination_Status_Data = array())
     {
@@ -872,21 +872,21 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Add item to Termination_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Termination_Status_DataType $item
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Termination_Status_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
-    public function addToTermination_Status_Data(\StructType\Termination_Status_DataType $item)
+    public function addToTermination_Status_Data(\WorkdayWsdl\\StructType\Termination_Status_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Termination_Status_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Termination_Status_Data property can only contain items of type \StructType\Termination_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Termination_Status_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Termination_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Termination_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Termination_Status_Data[] = $item;
         return $this;
     }
     /**
      * Get Probation_Status_Data value
-     * @return \StructType\Probation_Status_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Probation_Status_DataType[]|null
      */
     public function getProbation_Status_Data()
     {
@@ -904,12 +904,12 @@ class Worker_Status_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $worker_Status_DataTypeProbation_Status_DataItem) {
             // validation for constraint: itemType
-            if (!$worker_Status_DataTypeProbation_Status_DataItem instanceof \StructType\Probation_Status_DataType) {
+            if (!$worker_Status_DataTypeProbation_Status_DataItem instanceof \WorkdayWsdl\\StructType\Probation_Status_DataType) {
                 $invalidValues[] = is_object($worker_Status_DataTypeProbation_Status_DataItem) ? get_class($worker_Status_DataTypeProbation_Status_DataItem) : sprintf('%s(%s)', gettype($worker_Status_DataTypeProbation_Status_DataItem), var_export($worker_Status_DataTypeProbation_Status_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Probation_Status_Data property can only contain items of type \StructType\Probation_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Probation_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Probation_Status_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -917,8 +917,8 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Set Probation_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Probation_Status_DataType[] $probation_Status_Data
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Probation_Status_DataType[] $probation_Status_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public function setProbation_Status_Data(array $probation_Status_Data = array())
     {
@@ -932,14 +932,14 @@ class Worker_Status_DataType extends AbstractStructBase
     /**
      * Add item to Probation_Status_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Probation_Status_DataType $item
-     * @return \StructType\Worker_Status_DataType
+     * @param \WorkdayWsdl\\StructType\Probation_Status_DataType $item
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
-    public function addToProbation_Status_Data(\StructType\Probation_Status_DataType $item)
+    public function addToProbation_Status_Data(\WorkdayWsdl\\StructType\Probation_Status_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Probation_Status_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Probation_Status_Data property can only contain items of type \StructType\Probation_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Probation_Status_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Probation_Status_Data property can only contain items of type \WorkdayWsdl\\StructType\Probation_Status_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Probation_Status_Data[] = $item;
         return $this;
@@ -950,7 +950,7 @@ class Worker_Status_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Status_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Status_DataType
      */
     public static function __set_state(array $array)
     {

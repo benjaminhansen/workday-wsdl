@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class DegreeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\DegreeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\DegreeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class DegreeObjectType extends AbstractStructBase
      * Constructor method for DegreeObjectType
      * @uses DegreeObjectType::setID()
      * @uses DegreeObjectType::setDescriptor()
-     * @param \StructType\DegreeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\DegreeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class DegreeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\DegreeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\DegreeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class DegreeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $degreeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$degreeObjectTypeIDItem instanceof \StructType\DegreeObjectIDType) {
+            if (!$degreeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\DegreeObjectIDType) {
                 $invalidValues[] = is_object($degreeObjectTypeIDItem) ? get_class($degreeObjectTypeIDItem) : sprintf('%s(%s)', gettype($degreeObjectTypeIDItem), var_export($degreeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\DegreeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\DegreeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class DegreeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\DegreeObjectIDType[] $iD
-     * @return \StructType\DegreeObjectType
+     * @param \WorkdayWsdl\\StructType\DegreeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class DegreeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\DegreeObjectIDType $item
-     * @return \StructType\DegreeObjectType
+     * @param \WorkdayWsdl\\StructType\DegreeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType
      */
-    public function addToID(\StructType\DegreeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\DegreeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DegreeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\DegreeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\DegreeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\DegreeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class DegreeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\DegreeObjectType
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class DegreeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DegreeObjectType
+     * @return \WorkdayWsdl\\StructType\DegreeObjectType
      */
     public static function __set_state(array $array)
     {

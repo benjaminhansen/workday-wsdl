@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,22 +18,22 @@ class Reassign_Superior_to_Inactive_Organization_DataType extends AbstractStruct
      * Meta information extracted from the WSDL
      * - documentation: The organization that is currently inactive and does not currently have a superior.
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_Inactive_Reference;
     /**
      * Constructor method for Reassign_Superior_to_Inactive_Organization_DataType
      * @uses Reassign_Superior_to_Inactive_Organization_DataType::setOrganization_Inactive_Reference()
-     * @param \StructType\OrganizationObjectType $organization_Inactive_Reference
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Inactive_Reference
      */
-    public function __construct(\StructType\OrganizationObjectType $organization_Inactive_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Inactive_Reference = null)
     {
         $this
             ->setOrganization_Inactive_Reference($organization_Inactive_Reference);
     }
     /**
      * Get Organization_Inactive_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_Inactive_Reference()
     {
@@ -41,10 +41,10 @@ class Reassign_Superior_to_Inactive_Organization_DataType extends AbstractStruct
     }
     /**
      * Set Organization_Inactive_Reference value
-     * @param \StructType\OrganizationObjectType $organization_Inactive_Reference
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_DataType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Inactive_Reference
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType
      */
-    public function setOrganization_Inactive_Reference(\StructType\OrganizationObjectType $organization_Inactive_Reference = null)
+    public function setOrganization_Inactive_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Inactive_Reference = null)
     {
         $this->Organization_Inactive_Reference = $organization_Inactive_Reference;
         return $this;
@@ -55,7 +55,7 @@ class Reassign_Superior_to_Inactive_Organization_DataType extends AbstractStruct
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_DataType
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType
      */
     public static function __set_state(array $array)
     {

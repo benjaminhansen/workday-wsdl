@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace WorkdayWsdl\\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Inactivate extends AbstractSoapClientBase
     /**
      * Sets the Workday_Common_Header SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\Workday_Common_HeaderType $workday_Common_Header
+     * @param \WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderWorkday_Common_Header(\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderWorkday_Common_Header(\WorkdayWsdl\\StructType\Workday_Common_HeaderType $workday_Common_Header, $nameSpace = 'urn:com.workday/bsvc', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'Workday_Common_Header', $workday_Common_Header, $mustUnderstand, $actor);
     }
@@ -28,7 +28,7 @@ class Inactivate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: Workday_Common_Header
      * - SOAPHeaderNamespaces: urn:com.workday/bsvc
-     * - SOAPHeaderTypes: \StructType\Workday_Common_HeaderType
+     * - SOAPHeaderTypes: \WorkdayWsdl\\StructType\Workday_Common_HeaderType
      * - SOAPHeaders: required
      * - documentation: This operation will inactivate an Organization. If you do not choose to 'Keep in Hierarchy' then the organization being inactivated will be moved out of the hierarchy. Default behavior for inactive subordinates / included
      * organizations is that they remain as is. Default behavior for active subordinates is that they are moved to the superior unless you specify another organization to move them to. If the organization has subordinates or included content that you do not
@@ -38,10 +38,10 @@ class Inactivate extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Organization_InactivateType $body
+     * @param \WorkdayWsdl\\StructType\Organization_InactivateType $body
      * @return void|bool
      */
-    public function Inactivate_Organization(\StructType\Organization_InactivateType $body)
+    public function Inactivate_Organization(\WorkdayWsdl\\StructType\Organization_InactivateType $body)
     {
         try {
             $this->setResult($this->getSoapClient()->Inactivate_Organization($body));

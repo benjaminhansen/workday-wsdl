@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Person_Name_DataType[]
      */
     public $Person_Name_Data;
     /**
@@ -25,15 +25,15 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_DataType[]
+     * @var \WorkdayWsdl\\StructType\Contact_Information_DataType[]
      */
     public $Contact_Information_Data;
     /**
      * Constructor method for Emergency_Contact_Personal_Information_DataType
      * @uses Emergency_Contact_Personal_Information_DataType::setPerson_Name_Data()
      * @uses Emergency_Contact_Personal_Information_DataType::setContact_Information_Data()
-     * @param \StructType\Person_Name_DataType[] $person_Name_Data
-     * @param \StructType\Contact_Information_DataType[] $contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType[] $person_Name_Data
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType[] $contact_Information_Data
      */
     public function __construct(array $person_Name_Data = array(), array $contact_Information_Data = array())
     {
@@ -43,7 +43,7 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Name_Data value
-     * @return \StructType\Person_Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_DataType[]|null
      */
     public function getPerson_Name_Data()
     {
@@ -61,12 +61,12 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem) {
             // validation for constraint: itemType
-            if (!$emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem instanceof \StructType\Person_Name_DataType) {
+            if (!$emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem instanceof \WorkdayWsdl\\StructType\Person_Name_DataType) {
                 $invalidValues[] = is_object($emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem) ? get_class($emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem) : sprintf('%s(%s)', gettype($emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem), var_export($emergency_Contact_Personal_Information_DataTypePerson_Name_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Name_Data property can only contain items of type \StructType\Person_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -74,8 +74,8 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Person_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Name_DataType[] $person_Name_Data
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType[] $person_Name_Data
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
     public function setPerson_Name_Data(array $person_Name_Data = array())
     {
@@ -89,21 +89,21 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Person_Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Name_DataType $item
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
-    public function addToPerson_Name_Data(\StructType\Person_Name_DataType $item)
+    public function addToPerson_Name_Data(\WorkdayWsdl\\StructType\Person_Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Name_Data property can only contain items of type \StructType\Person_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Name_Data[] = $item;
         return $this;
     }
     /**
      * Get Contact_Information_Data value
-     * @return \StructType\Contact_Information_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_DataType[]|null
      */
     public function getContact_Information_Data()
     {
@@ -121,12 +121,12 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem) {
             // validation for constraint: itemType
-            if (!$emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem instanceof \StructType\Contact_Information_DataType) {
+            if (!$emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem instanceof \WorkdayWsdl\\StructType\Contact_Information_DataType) {
                 $invalidValues[] = is_object($emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem) ? get_class($emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem) : sprintf('%s(%s)', gettype($emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem), var_export($emergency_Contact_Personal_Information_DataTypeContact_Information_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Contact_Information_Data property can only contain items of type \StructType\Contact_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Contact_Information_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -134,8 +134,8 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
     /**
      * Set Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contact_Information_DataType[] $contact_Information_Data
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType[] $contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
     public function setContact_Information_Data(array $contact_Information_Data = array())
     {
@@ -149,14 +149,14 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
     /**
      * Add item to Contact_Information_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Contact_Information_DataType $item
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_DataType $item
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
-    public function addToContact_Information_Data(\StructType\Contact_Information_DataType $item)
+    public function addToContact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Contact_Information_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Contact_Information_Data property can only contain items of type \StructType\Contact_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Contact_Information_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Contact_Information_Data property can only contain items of type \WorkdayWsdl\\StructType\Contact_Information_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Contact_Information_Data[] = $item;
         return $this;
@@ -167,7 +167,7 @@ class Emergency_Contact_Personal_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Emergency_Contact_Personal_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Emergency_Contact_Personal_Information_DataType
      */
     public static function __set_state(array $array)
     {

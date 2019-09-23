@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class Organization_FindType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If specified, this search criterium will return those references with an exact match. The search index used to query on this value is not case-sensitive.
      * - minOccurs: 0
-     * @var \StructType\Business_Site_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Business_Site_Reference_DataType
      */
     public $Location_Reference_Data;
     /**
@@ -45,7 +45,7 @@ class Organization_FindType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If specified, this search criterium will return those references with an exact match. The search index used to query on this value is not case-sensitive.
      * - minOccurs: 0
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_Reference_Data;
     /**
@@ -53,7 +53,7 @@ class Organization_FindType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: If specified, this search criterium will return those references with an exact match. The search index used to query on this value is not case-sensitive.
      * - minOccurs: 0
-     * @var \StructType\Contingent_Worker_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType
      */
     public $Contingent_Worker_Reference_Data;
     /**
@@ -73,12 +73,12 @@ class Organization_FindType extends AbstractStructBase
      * @uses Organization_FindType::setVersion()
      * @param string $as_Of_Date
      * @param string $organization_Name
-     * @param \StructType\Business_Site_Reference_DataType $location_Reference_Data
-     * @param \StructType\Employee_ReferenceType $employee_Reference_Data
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference_Data
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data
      * @param string $version
      */
-    public function __construct($as_Of_Date = null, $organization_Name = null, \StructType\Business_Site_Reference_DataType $location_Reference_Data = null, \StructType\Employee_ReferenceType $employee_Reference_Data = null, \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data = null, $version = null)
+    public function __construct($as_Of_Date = null, $organization_Name = null, \WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference_Data = null, \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference_Data = null, \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data = null, $version = null)
     {
         $this
             ->setAs_Of_Date($as_Of_Date)
@@ -99,7 +99,7 @@ class Organization_FindType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\Organization_FindType
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -121,7 +121,7 @@ class Organization_FindType extends AbstractStructBase
     /**
      * Set Organization_Name value
      * @param string $organization_Name
-     * @return \StructType\Organization_FindType
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
     public function setOrganization_Name($organization_Name = null)
     {
@@ -134,7 +134,7 @@ class Organization_FindType extends AbstractStructBase
     }
     /**
      * Get Location_Reference_Data value
-     * @return \StructType\Business_Site_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Business_Site_Reference_DataType|null
      */
     public function getLocation_Reference_Data()
     {
@@ -142,17 +142,17 @@ class Organization_FindType extends AbstractStructBase
     }
     /**
      * Set Location_Reference_Data value
-     * @param \StructType\Business_Site_Reference_DataType $location_Reference_Data
-     * @return \StructType\Organization_FindType
+     * @param \WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
-    public function setLocation_Reference_Data(\StructType\Business_Site_Reference_DataType $location_Reference_Data = null)
+    public function setLocation_Reference_Data(\WorkdayWsdl\\StructType\Business_Site_Reference_DataType $location_Reference_Data = null)
     {
         $this->Location_Reference_Data = $location_Reference_Data;
         return $this;
     }
     /**
      * Get Employee_Reference_Data value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_Reference_Data()
     {
@@ -160,17 +160,17 @@ class Organization_FindType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference_Data value
-     * @param \StructType\Employee_ReferenceType $employee_Reference_Data
-     * @return \StructType\Organization_FindType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
-    public function setEmployee_Reference_Data(\StructType\Employee_ReferenceType $employee_Reference_Data = null)
+    public function setEmployee_Reference_Data(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference_Data = null)
     {
         $this->Employee_Reference_Data = $employee_Reference_Data;
         return $this;
     }
     /**
      * Get Contingent_Worker_Reference_Data value
-     * @return \StructType\Contingent_Worker_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType|null
      */
     public function getContingent_Worker_Reference_Data()
     {
@@ -178,10 +178,10 @@ class Organization_FindType extends AbstractStructBase
     }
     /**
      * Set Contingent_Worker_Reference_Data value
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data
-     * @return \StructType\Organization_FindType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
-    public function setContingent_Worker_Reference_Data(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data = null)
+    public function setContingent_Worker_Reference_Data(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference_Data = null)
     {
         $this->Contingent_Worker_Reference_Data = $contingent_Worker_Reference_Data;
         return $this;
@@ -197,7 +197,7 @@ class Organization_FindType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Organization_FindType
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
     public function setVersion($version = null)
     {
@@ -214,7 +214,7 @@ class Organization_FindType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_FindType
+     * @return \WorkdayWsdl\\StructType\Organization_FindType
      */
     public static function __set_state(array $array)
     {

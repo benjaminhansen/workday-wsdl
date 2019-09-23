@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,7 +27,7 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
      * - documentation: Contains the host countries for worker's international assignment job(s)
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType[]
+     * @var \WorkdayWsdl\\StructType\CountryObjectType[]
      */
     public $Host_Countries_Reference;
     /**
@@ -35,7 +35,7 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the home country for worker's primary job
      * - minOccurs: 0
-     * @var \StructType\CountryObjectType
+     * @var \WorkdayWsdl\\StructType\CountryObjectType
      */
     public $Home_Country_Reference;
     /**
@@ -44,10 +44,10 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
      * @uses International_Assignment_Summary_DataType::setHost_Countries_Reference()
      * @uses International_Assignment_Summary_DataType::setHome_Country_Reference()
      * @param bool $has_International_Assignment
-     * @param \StructType\CountryObjectType[] $host_Countries_Reference
-     * @param \StructType\CountryObjectType $home_Country_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $host_Countries_Reference
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference
      */
-    public function __construct($has_International_Assignment = null, array $host_Countries_Reference = array(), \StructType\CountryObjectType $home_Country_Reference = null)
+    public function __construct($has_International_Assignment = null, array $host_Countries_Reference = array(), \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference = null)
     {
         $this
             ->setHas_International_Assignment($has_International_Assignment)
@@ -65,7 +65,7 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
     /**
      * Set Has_International_Assignment value
      * @param bool $has_International_Assignment
-     * @return \StructType\International_Assignment_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
     public function setHas_International_Assignment($has_International_Assignment = null)
     {
@@ -78,7 +78,7 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
     }
     /**
      * Get Host_Countries_Reference value
-     * @return \StructType\CountryObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType[]|null
      */
     public function getHost_Countries_Reference()
     {
@@ -96,12 +96,12 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem instanceof \StructType\CountryObjectType) {
+            if (!$international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
                 $invalidValues[] = is_object($international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem) ? get_class($international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem) : sprintf('%s(%s)', gettype($international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem), var_export($international_Assignment_Summary_DataTypeHost_Countries_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Host_Countries_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Host_Countries_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -109,8 +109,8 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
     /**
      * Set Host_Countries_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType[] $host_Countries_Reference
-     * @return \StructType\International_Assignment_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType[] $host_Countries_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
     public function setHost_Countries_Reference(array $host_Countries_Reference = array())
     {
@@ -124,21 +124,21 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
     /**
      * Add item to Host_Countries_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\CountryObjectType $item
-     * @return \StructType\International_Assignment_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $item
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
-    public function addToHost_Countries_Reference(\StructType\CountryObjectType $item)
+    public function addToHost_Countries_Reference(\WorkdayWsdl\\StructType\CountryObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CountryObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Host_Countries_Reference property can only contain items of type \StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\CountryObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Host_Countries_Reference property can only contain items of type \WorkdayWsdl\\StructType\CountryObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Host_Countries_Reference[] = $item;
         return $this;
     }
     /**
      * Get Home_Country_Reference value
-     * @return \StructType\CountryObjectType|null
+     * @return \WorkdayWsdl\\StructType\CountryObjectType|null
      */
     public function getHome_Country_Reference()
     {
@@ -146,10 +146,10 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
     }
     /**
      * Set Home_Country_Reference value
-     * @param \StructType\CountryObjectType $home_Country_Reference
-     * @return \StructType\International_Assignment_Summary_DataType
+     * @param \WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
-    public function setHome_Country_Reference(\StructType\CountryObjectType $home_Country_Reference = null)
+    public function setHome_Country_Reference(\WorkdayWsdl\\StructType\CountryObjectType $home_Country_Reference = null)
     {
         $this->Home_Country_Reference = $home_Country_Reference;
         return $this;
@@ -160,7 +160,7 @@ class International_Assignment_Summary_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\International_Assignment_Summary_DataType
+     * @return \WorkdayWsdl\\StructType\International_Assignment_Summary_DataType
      */
     public static function __set_state(array $array)
     {

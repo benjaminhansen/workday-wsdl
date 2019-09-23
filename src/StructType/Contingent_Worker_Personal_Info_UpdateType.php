@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,12 +14,12 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
 {
     /**
      * The Contingent_Worker_Reference
-     * @var \StructType\Contingent_Worker_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType
      */
     public $Contingent_Worker_Reference;
     /**
      * The Contingent_Worker_Personal_Info_Data
-     * @var \StructType\Worker_Personal_Info_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType
      */
     public $Contingent_Worker_Personal_Info_Data;
     /**
@@ -34,11 +34,11 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
      * @uses Contingent_Worker_Personal_Info_UpdateType::setContingent_Worker_Reference()
      * @uses Contingent_Worker_Personal_Info_UpdateType::setContingent_Worker_Personal_Info_Data()
      * @uses Contingent_Worker_Personal_Info_UpdateType::setVersion()
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
-     * @param \StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data
      * @param string $version
      */
-    public function __construct(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null, \StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null, \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data = null, $version = null)
     {
         $this
             ->setContingent_Worker_Reference($contingent_Worker_Reference)
@@ -47,7 +47,7 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Get Contingent_Worker_Reference value
-     * @return \StructType\Contingent_Worker_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType|null
      */
     public function getContingent_Worker_Reference()
     {
@@ -55,17 +55,17 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Set Contingent_Worker_Reference value
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
-     * @return \StructType\Contingent_Worker_Personal_Info_UpdateType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Personal_Info_UpdateType
      */
-    public function setContingent_Worker_Reference(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
+    public function setContingent_Worker_Reference(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
     {
         $this->Contingent_Worker_Reference = $contingent_Worker_Reference;
         return $this;
     }
     /**
      * Get Contingent_Worker_Personal_Info_Data value
-     * @return \StructType\Worker_Personal_Info_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType|null
      */
     public function getContingent_Worker_Personal_Info_Data()
     {
@@ -73,10 +73,10 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
     }
     /**
      * Set Contingent_Worker_Personal_Info_Data value
-     * @param \StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data
-     * @return \StructType\Contingent_Worker_Personal_Info_UpdateType
+     * @param \WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Personal_Info_UpdateType
      */
-    public function setContingent_Worker_Personal_Info_Data(\StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data = null)
+    public function setContingent_Worker_Personal_Info_Data(\WorkdayWsdl\\StructType\Worker_Personal_Info_DataType $contingent_Worker_Personal_Info_Data = null)
     {
         $this->Contingent_Worker_Personal_Info_Data = $contingent_Worker_Personal_Info_Data;
         return $this;
@@ -92,7 +92,7 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Contingent_Worker_Personal_Info_UpdateType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Personal_Info_UpdateType
      */
     public function setVersion($version = null)
     {
@@ -109,7 +109,7 @@ class Contingent_Worker_Personal_Info_UpdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contingent_Worker_Personal_Info_UpdateType
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Personal_Info_UpdateType
      */
     public static function __set_state(array $array)
     {

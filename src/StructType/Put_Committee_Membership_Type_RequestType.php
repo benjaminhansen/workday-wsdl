@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Unique Reference to the Committee Member Type. Used to identify the Committee Member Type to update. Leave blank on an Add.
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType
      */
     public $Committee_Membership_Type_Reference;
     /**
@@ -25,7 +25,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Data for Committee Member Type
      * - minOccurs: 0
-     * @var \StructType\Committee_Membership_Type_DataType
+     * @var \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType
      */
     public $Committee_Membership_Type_Data;
     /**
@@ -48,12 +48,12 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
      * @uses Put_Committee_Membership_Type_RequestType::setCommittee_Membership_Type_Data()
      * @uses Put_Committee_Membership_Type_RequestType::setAdd_Only()
      * @uses Put_Committee_Membership_Type_RequestType::setVersion()
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
-     * @param \StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, \StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null, \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setCommittee_Membership_Type_Reference($committee_Membership_Type_Reference)
@@ -63,7 +63,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
     }
     /**
      * Get Committee_Membership_Type_Reference value
-     * @return \StructType\Committee_Membership_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType|null
      */
     public function getCommittee_Membership_Type_Reference()
     {
@@ -71,17 +71,17 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Membership_Type_Reference value
-     * @param \StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
-     * @return \StructType\Put_Committee_Membership_Type_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Membership_Type_RequestType
      */
-    public function setCommittee_Membership_Type_Reference(\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
+    public function setCommittee_Membership_Type_Reference(\WorkdayWsdl\\StructType\Committee_Membership_TypeObjectType $committee_Membership_Type_Reference = null)
     {
         $this->Committee_Membership_Type_Reference = $committee_Membership_Type_Reference;
         return $this;
     }
     /**
      * Get Committee_Membership_Type_Data value
-     * @return \StructType\Committee_Membership_Type_DataType|null
+     * @return \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType|null
      */
     public function getCommittee_Membership_Type_Data()
     {
@@ -89,10 +89,10 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
     }
     /**
      * Set Committee_Membership_Type_Data value
-     * @param \StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data
-     * @return \StructType\Put_Committee_Membership_Type_RequestType
+     * @param \WorkdayWsdl\\StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Membership_Type_RequestType
      */
-    public function setCommittee_Membership_Type_Data(\StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data = null)
+    public function setCommittee_Membership_Type_Data(\WorkdayWsdl\\StructType\Committee_Membership_Type_DataType $committee_Membership_Type_Data = null)
     {
         $this->Committee_Membership_Type_Data = $committee_Membership_Type_Data;
         return $this;
@@ -108,7 +108,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Committee_Membership_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Membership_Type_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -130,7 +130,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Committee_Membership_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Membership_Type_RequestType
      */
     public function setVersion($version = null)
     {
@@ -147,7 +147,7 @@ class Put_Committee_Membership_Type_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Committee_Membership_Type_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Committee_Membership_Type_RequestType
      */
     public static function __set_state(array $array)
     {

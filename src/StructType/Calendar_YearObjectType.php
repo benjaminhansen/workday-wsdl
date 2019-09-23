@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Calendar_YearObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Calendar_YearObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Calendar_YearObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Calendar_YearObjectType extends AbstractStructBase
      * Constructor method for Calendar_YearObjectType
      * @uses Calendar_YearObjectType::setID()
      * @uses Calendar_YearObjectType::setDescriptor()
-     * @param \StructType\Calendar_YearObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Calendar_YearObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Calendar_YearObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Calendar_YearObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Calendar_YearObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calendar_YearObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$calendar_YearObjectTypeIDItem instanceof \StructType\Calendar_YearObjectIDType) {
+            if (!$calendar_YearObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Calendar_YearObjectIDType) {
                 $invalidValues[] = is_object($calendar_YearObjectTypeIDItem) ? get_class($calendar_YearObjectTypeIDItem) : sprintf('%s(%s)', gettype($calendar_YearObjectTypeIDItem), var_export($calendar_YearObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Calendar_YearObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Calendar_YearObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Calendar_YearObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Calendar_YearObjectIDType[] $iD
-     * @return \StructType\Calendar_YearObjectType
+     * @param \WorkdayWsdl\\StructType\Calendar_YearObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Calendar_YearObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Calendar_YearObjectIDType $item
-     * @return \StructType\Calendar_YearObjectType
+     * @param \WorkdayWsdl\\StructType\Calendar_YearObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectType
      */
-    public function addToID(\StructType\Calendar_YearObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Calendar_YearObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Calendar_YearObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Calendar_YearObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Calendar_YearObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Calendar_YearObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Calendar_YearObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Calendar_YearObjectType
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Calendar_YearObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Calendar_YearObjectType
+     * @return \WorkdayWsdl\\StructType\Calendar_YearObjectType
      */
     public static function __set_state(array $array)
     {

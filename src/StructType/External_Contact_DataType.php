@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class External_Contact_DataType extends AbstractStructBase
      * The Integration_ID_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\External_Integration_ID_DataType
+     * @var \WorkdayWsdl\\StructType\External_Integration_ID_DataType
      */
     public $Integration_ID_Data;
     /**
@@ -31,10 +31,10 @@ class External_Contact_DataType extends AbstractStructBase
      * Constructor method for External_Contact_DataType
      * @uses External_Contact_DataType::setIntegration_ID_Data()
      * @uses External_Contact_DataType::setExternal_Contact_Type()
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
      * @param string $external_Contact_Type
      */
-    public function __construct(\StructType\External_Integration_ID_DataType $integration_ID_Data = null, $external_Contact_Type = null)
+    public function __construct(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null, $external_Contact_Type = null)
     {
         $this
             ->setIntegration_ID_Data($integration_ID_Data)
@@ -42,7 +42,7 @@ class External_Contact_DataType extends AbstractStructBase
     }
     /**
      * Get Integration_ID_Data value
-     * @return \StructType\External_Integration_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\External_Integration_ID_DataType|null
      */
     public function getIntegration_ID_Data()
     {
@@ -50,10 +50,10 @@ class External_Contact_DataType extends AbstractStructBase
     }
     /**
      * Set Integration_ID_Data value
-     * @param \StructType\External_Integration_ID_DataType $integration_ID_Data
-     * @return \StructType\External_Contact_DataType
+     * @param \WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data
+     * @return \WorkdayWsdl\\StructType\External_Contact_DataType
      */
-    public function setIntegration_ID_Data(\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
+    public function setIntegration_ID_Data(\WorkdayWsdl\\StructType\External_Integration_ID_DataType $integration_ID_Data = null)
     {
         $this->Integration_ID_Data = $integration_ID_Data;
         return $this;
@@ -69,7 +69,7 @@ class External_Contact_DataType extends AbstractStructBase
     /**
      * Set External_Contact_Type value
      * @param string $external_Contact_Type
-     * @return \StructType\External_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\External_Contact_DataType
      */
     public function setExternal_Contact_Type($external_Contact_Type = null)
     {
@@ -86,7 +86,7 @@ class External_Contact_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Contact_DataType
+     * @return \WorkdayWsdl\\StructType\External_Contact_DataType
      */
     public static function __set_state(array $array)
     {

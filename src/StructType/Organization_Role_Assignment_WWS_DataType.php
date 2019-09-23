@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier for the organization role.
      * - minOccurs: 0
-     * @var \StructType\Assignable_RoleObjectType
+     * @var \WorkdayWsdl\\StructType\Assignable_RoleObjectType
      */
     public $Role_Reference;
     /**
@@ -26,17 +26,17 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
      * - documentation: A unique identifier that can be used to reference a worker(s) that fills the organization role.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Worker_Reference;
     /**
      * Constructor method for Organization_Role_Assignment_WWS_DataType
      * @uses Organization_Role_Assignment_WWS_DataType::setRole_Reference()
      * @uses Organization_Role_Assignment_WWS_DataType::setWorker_Reference()
-     * @param \StructType\Assignable_RoleObjectType $role_Reference
-     * @param \StructType\WorkerObjectType[] $worker_Reference
+     * @param \WorkdayWsdl\\StructType\Assignable_RoleObjectType $role_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
      */
-    public function __construct(\StructType\Assignable_RoleObjectType $role_Reference = null, array $worker_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Assignable_RoleObjectType $role_Reference = null, array $worker_Reference = array())
     {
         $this
             ->setRole_Reference($role_Reference)
@@ -44,7 +44,7 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
     }
     /**
      * Get Role_Reference value
-     * @return \StructType\Assignable_RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\Assignable_RoleObjectType|null
      */
     public function getRole_Reference()
     {
@@ -52,17 +52,17 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
     }
     /**
      * Set Role_Reference value
-     * @param \StructType\Assignable_RoleObjectType $role_Reference
-     * @return \StructType\Organization_Role_Assignment_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\Assignable_RoleObjectType $role_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType
      */
-    public function setRole_Reference(\StructType\Assignable_RoleObjectType $role_Reference = null)
+    public function setRole_Reference(\WorkdayWsdl\\StructType\Assignable_RoleObjectType $role_Reference = null)
     {
         $this->Role_Reference = $role_Reference;
         return $this;
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorker_Reference()
     {
@@ -80,12 +80,12 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem) ? get_class($organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem) : sprintf('%s(%s)', gettype($organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem), var_export($organization_Role_Assignment_WWS_DataTypeWorker_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
     /**
      * Set Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $worker_Reference
-     * @return \StructType\Organization_Role_Assignment_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType
      */
     public function setWorker_Reference(array $worker_Reference = array())
     {
@@ -108,14 +108,14 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
     /**
      * Add item to Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Organization_Role_Assignment_WWS_DataType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType
      */
-    public function addToWorker_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Reference[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Organization_Role_Assignment_WWS_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Role_Assignment_WWS_DataType
+     * @return \WorkdayWsdl\\StructType\Organization_Role_Assignment_WWS_DataType
      */
     public static function __set_state(array $array)
     {

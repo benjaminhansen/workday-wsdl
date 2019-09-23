@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Professional_Affiliation_Relationship_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -30,7 +30,7 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
      * Constructor method for Professional_Affiliation_Relationship_TypeObjectType
      * @uses Professional_Affiliation_Relationship_TypeObjectType::setID()
      * @uses Professional_Affiliation_Relationship_TypeObjectType::setDescriptor()
-     * @param \StructType\Professional_Affiliation_Relationship_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -41,7 +41,7 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
     }
     /**
      * Get ID value
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -59,12 +59,12 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
         $invalidValues = [];
         foreach ($values as $professional_Affiliation_Relationship_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$professional_Affiliation_Relationship_TypeObjectTypeIDItem instanceof \StructType\Professional_Affiliation_Relationship_TypeObjectIDType) {
+            if (!$professional_Affiliation_Relationship_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType) {
                 $invalidValues[] = is_object($professional_Affiliation_Relationship_TypeObjectTypeIDItem) ? get_class($professional_Affiliation_Relationship_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($professional_Affiliation_Relationship_TypeObjectTypeIDItem), var_export($professional_Affiliation_Relationship_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_Relationship_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -72,8 +72,8 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_Relationship_TypeObjectIDType[] $iD
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -87,14 +87,14 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Professional_Affiliation_Relationship_TypeObjectIDType $item
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType
      */
-    public function addToID(\StructType\Professional_Affiliation_Relationship_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Professional_Affiliation_Relationship_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Professional_Affiliation_Relationship_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -110,7 +110,7 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -127,7 +127,7 @@ class Professional_Affiliation_Relationship_TypeObjectType extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Professional_Affiliation_Relationship_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Professional_Affiliation_Relationship_TypeObjectType
      */
     public static function __set_state(array $array)
     {

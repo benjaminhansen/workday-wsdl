@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
      * - documentation: An instant messenger data element.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Person_Instant_Messenger_DataType[]
+     * @var \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType[]
      */
     public $Person_Instant_Messenger_Data;
     /**
@@ -35,7 +35,7 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
      * Constructor method for Person_Instant_Messenger_Information_DataType
      * @uses Person_Instant_Messenger_Information_DataType::setPerson_Instant_Messenger_Data()
      * @uses Person_Instant_Messenger_Information_DataType::setReplace_All()
-     * @param \StructType\Person_Instant_Messenger_DataType[] $person_Instant_Messenger_Data
+     * @param \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType[] $person_Instant_Messenger_Data
      * @param bool $replace_All
      */
     public function __construct(array $person_Instant_Messenger_Data = array(), $replace_All = null)
@@ -46,7 +46,7 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Instant_Messenger_Data value
-     * @return \StructType\Person_Instant_Messenger_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType[]|null
      */
     public function getPerson_Instant_Messenger_Data()
     {
@@ -64,12 +64,12 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem) {
             // validation for constraint: itemType
-            if (!$person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem instanceof \StructType\Person_Instant_Messenger_DataType) {
+            if (!$person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem instanceof \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType) {
                 $invalidValues[] = is_object($person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem) ? get_class($person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem) : sprintf('%s(%s)', gettype($person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem), var_export($person_Instant_Messenger_Information_DataTypePerson_Instant_Messenger_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Person_Instant_Messenger_Data property can only contain items of type \StructType\Person_Instant_Messenger_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Person_Instant_Messenger_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -77,8 +77,8 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Person_Instant_Messenger_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Instant_Messenger_DataType[] $person_Instant_Messenger_Data
-     * @return \StructType\Person_Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType[] $person_Instant_Messenger_Data
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType
      */
     public function setPerson_Instant_Messenger_Data(array $person_Instant_Messenger_Data = array())
     {
@@ -92,14 +92,14 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Add item to Person_Instant_Messenger_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Person_Instant_Messenger_DataType $item
-     * @return \StructType\Person_Instant_Messenger_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType
      */
-    public function addToPerson_Instant_Messenger_Data(\StructType\Person_Instant_Messenger_DataType $item)
+    public function addToPerson_Instant_Messenger_Data(\WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Person_Instant_Messenger_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Person_Instant_Messenger_Data property can only contain items of type \StructType\Person_Instant_Messenger_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Person_Instant_Messenger_Data property can only contain items of type \WorkdayWsdl\\StructType\Person_Instant_Messenger_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Person_Instant_Messenger_Data[] = $item;
         return $this;
@@ -115,7 +115,7 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Person_Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -132,7 +132,7 @@ class Person_Instant_Messenger_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Instant_Messenger_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Instant_Messenger_Information_DataType
      */
     public static function __set_state(array $array)
     {

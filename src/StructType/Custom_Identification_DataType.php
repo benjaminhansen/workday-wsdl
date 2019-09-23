@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Custom_Identification_DataType extends AbstractStructBase
      * - documentation: Wrapper element for all Custom Identifier Data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Custom_IDType[]
+     * @var \WorkdayWsdl\\StructType\Custom_IDType[]
      */
     public $Custom_ID;
     /**
@@ -33,7 +33,7 @@ class Custom_Identification_DataType extends AbstractStructBase
      * Constructor method for Custom_Identification_DataType
      * @uses Custom_Identification_DataType::setCustom_ID()
      * @uses Custom_Identification_DataType::setReplace_All()
-     * @param \StructType\Custom_IDType[] $custom_ID
+     * @param \WorkdayWsdl\\StructType\Custom_IDType[] $custom_ID
      * @param bool $replace_All
      */
     public function __construct(array $custom_ID = array(), $replace_All = null)
@@ -44,7 +44,7 @@ class Custom_Identification_DataType extends AbstractStructBase
     }
     /**
      * Get Custom_ID value
-     * @return \StructType\Custom_IDType[]|null
+     * @return \WorkdayWsdl\\StructType\Custom_IDType[]|null
      */
     public function getCustom_ID()
     {
@@ -62,12 +62,12 @@ class Custom_Identification_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $custom_Identification_DataTypeCustom_IDItem) {
             // validation for constraint: itemType
-            if (!$custom_Identification_DataTypeCustom_IDItem instanceof \StructType\Custom_IDType) {
+            if (!$custom_Identification_DataTypeCustom_IDItem instanceof \WorkdayWsdl\\StructType\Custom_IDType) {
                 $invalidValues[] = is_object($custom_Identification_DataTypeCustom_IDItem) ? get_class($custom_Identification_DataTypeCustom_IDItem) : sprintf('%s(%s)', gettype($custom_Identification_DataTypeCustom_IDItem), var_export($custom_Identification_DataTypeCustom_IDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Custom_ID property can only contain items of type \StructType\Custom_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Custom_ID property can only contain items of type \WorkdayWsdl\\StructType\Custom_IDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -75,8 +75,8 @@ class Custom_Identification_DataType extends AbstractStructBase
     /**
      * Set Custom_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Custom_IDType[] $custom_ID
-     * @return \StructType\Custom_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Custom_IDType[] $custom_ID
+     * @return \WorkdayWsdl\\StructType\Custom_Identification_DataType
      */
     public function setCustom_ID(array $custom_ID = array())
     {
@@ -90,14 +90,14 @@ class Custom_Identification_DataType extends AbstractStructBase
     /**
      * Add item to Custom_ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Custom_IDType $item
-     * @return \StructType\Custom_Identification_DataType
+     * @param \WorkdayWsdl\\StructType\Custom_IDType $item
+     * @return \WorkdayWsdl\\StructType\Custom_Identification_DataType
      */
-    public function addToCustom_ID(\StructType\Custom_IDType $item)
+    public function addToCustom_ID(\WorkdayWsdl\\StructType\Custom_IDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Custom_IDType) {
-            throw new \InvalidArgumentException(sprintf('The Custom_ID property can only contain items of type \StructType\Custom_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Custom_IDType) {
+            throw new \InvalidArgumentException(sprintf('The Custom_ID property can only contain items of type \WorkdayWsdl\\StructType\Custom_IDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Custom_ID[] = $item;
         return $this;
@@ -113,7 +113,7 @@ class Custom_Identification_DataType extends AbstractStructBase
     /**
      * Set Replace_All value
      * @param bool $replace_All
-     * @return \StructType\Custom_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identification_DataType
      */
     public function setReplace_All($replace_All = null)
     {
@@ -130,7 +130,7 @@ class Custom_Identification_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Custom_Identification_DataType
+     * @return \WorkdayWsdl\\StructType\Custom_Identification_DataType
      */
     public static function __set_state(array $array)
     {

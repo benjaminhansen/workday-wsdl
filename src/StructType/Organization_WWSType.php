@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class Organization_WWSType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier to reference an Organization. (Not the business based Organization ID.)
      * - minOccurs: 0
-     * @var \StructType\OrganizationObjectType
+     * @var \WorkdayWsdl\\StructType\OrganizationObjectType
      */
     public $Organization_Reference;
     /**
      * The Organization_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_WWS_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_WWS_DataType
      */
     public $Organization_Data;
     /**
      * Constructor method for Organization_WWSType
      * @uses Organization_WWSType::setOrganization_Reference()
      * @uses Organization_WWSType::setOrganization_Data()
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @param \StructType\Organization_WWS_DataType $organization_Data
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_WWS_DataType $organization_Data
      */
-    public function __construct(\StructType\OrganizationObjectType $organization_Reference = null, \StructType\Organization_WWS_DataType $organization_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null, \WorkdayWsdl\\StructType\Organization_WWS_DataType $organization_Data = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -42,7 +42,7 @@ class Organization_WWSType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\OrganizationObjectType|null
+     * @return \WorkdayWsdl\\StructType\OrganizationObjectType|null
      */
     public function getOrganization_Reference()
     {
@@ -50,17 +50,17 @@ class Organization_WWSType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\OrganizationObjectType $organization_Reference
-     * @return \StructType\Organization_WWSType
+     * @param \WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\Organization_WWSType
      */
-    public function setOrganization_Reference(\StructType\OrganizationObjectType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\OrganizationObjectType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Data value
-     * @return \StructType\Organization_WWS_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_WWS_DataType|null
      */
     public function getOrganization_Data()
     {
@@ -68,10 +68,10 @@ class Organization_WWSType extends AbstractStructBase
     }
     /**
      * Set Organization_Data value
-     * @param \StructType\Organization_WWS_DataType $organization_Data
-     * @return \StructType\Organization_WWSType
+     * @param \WorkdayWsdl\\StructType\Organization_WWS_DataType $organization_Data
+     * @return \WorkdayWsdl\\StructType\Organization_WWSType
      */
-    public function setOrganization_Data(\StructType\Organization_WWS_DataType $organization_Data = null)
+    public function setOrganization_Data(\WorkdayWsdl\\StructType\Organization_WWS_DataType $organization_Data = null)
     {
         $this->Organization_Data = $organization_Data;
         return $this;
@@ -82,7 +82,7 @@ class Organization_WWSType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_WWSType
+     * @return \WorkdayWsdl\\StructType\Organization_WWSType
      */
     public static function __set_state(array $array)
     {

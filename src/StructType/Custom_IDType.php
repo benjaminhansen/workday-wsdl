@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Custom_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for Custom Identifier.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Custom_ID_Reference;
     /**
@@ -25,7 +25,7 @@ class Custom_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Custom Identifier data.
      * - minOccurs: 0
-     * @var \StructType\Custom_ID_DataType
+     * @var \WorkdayWsdl\\StructType\Custom_ID_DataType
      */
     public $Custom_ID_Data;
     /**
@@ -33,7 +33,7 @@ class Custom_IDType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Shared Reference ID for Custom Identifiers.
      * - minOccurs: 0
-     * @var \StructType\Custom_Identifier_ReferenceObjectType
+     * @var \WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType
      */
     public $Custom_ID_Shared_Reference;
     /**
@@ -49,12 +49,12 @@ class Custom_IDType extends AbstractStructBase
      * @uses Custom_IDType::setCustom_ID_Data()
      * @uses Custom_IDType::setCustom_ID_Shared_Reference()
      * @uses Custom_IDType::setDelete()
-     * @param \StructType\Unique_IdentifierObjectType $custom_ID_Reference
-     * @param \StructType\Custom_ID_DataType $custom_ID_Data
-     * @param \StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $custom_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Custom_ID_DataType $custom_ID_Data
+     * @param \WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference
      * @param bool $delete
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $custom_ID_Reference = null, \StructType\Custom_ID_DataType $custom_ID_Data = null, \StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference = null, $delete = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $custom_ID_Reference = null, \WorkdayWsdl\\StructType\Custom_ID_DataType $custom_ID_Data = null, \WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference = null, $delete = null)
     {
         $this
             ->setCustom_ID_Reference($custom_ID_Reference)
@@ -64,7 +64,7 @@ class Custom_IDType extends AbstractStructBase
     }
     /**
      * Get Custom_ID_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getCustom_ID_Reference()
     {
@@ -72,17 +72,17 @@ class Custom_IDType extends AbstractStructBase
     }
     /**
      * Set Custom_ID_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $custom_ID_Reference
-     * @return \StructType\Custom_IDType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $custom_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Custom_IDType
      */
-    public function setCustom_ID_Reference(\StructType\Unique_IdentifierObjectType $custom_ID_Reference = null)
+    public function setCustom_ID_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $custom_ID_Reference = null)
     {
         $this->Custom_ID_Reference = $custom_ID_Reference;
         return $this;
     }
     /**
      * Get Custom_ID_Data value
-     * @return \StructType\Custom_ID_DataType|null
+     * @return \WorkdayWsdl\\StructType\Custom_ID_DataType|null
      */
     public function getCustom_ID_Data()
     {
@@ -90,17 +90,17 @@ class Custom_IDType extends AbstractStructBase
     }
     /**
      * Set Custom_ID_Data value
-     * @param \StructType\Custom_ID_DataType $custom_ID_Data
-     * @return \StructType\Custom_IDType
+     * @param \WorkdayWsdl\\StructType\Custom_ID_DataType $custom_ID_Data
+     * @return \WorkdayWsdl\\StructType\Custom_IDType
      */
-    public function setCustom_ID_Data(\StructType\Custom_ID_DataType $custom_ID_Data = null)
+    public function setCustom_ID_Data(\WorkdayWsdl\\StructType\Custom_ID_DataType $custom_ID_Data = null)
     {
         $this->Custom_ID_Data = $custom_ID_Data;
         return $this;
     }
     /**
      * Get Custom_ID_Shared_Reference value
-     * @return \StructType\Custom_Identifier_ReferenceObjectType|null
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType|null
      */
     public function getCustom_ID_Shared_Reference()
     {
@@ -108,10 +108,10 @@ class Custom_IDType extends AbstractStructBase
     }
     /**
      * Set Custom_ID_Shared_Reference value
-     * @param \StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference
-     * @return \StructType\Custom_IDType
+     * @param \WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference
+     * @return \WorkdayWsdl\\StructType\Custom_IDType
      */
-    public function setCustom_ID_Shared_Reference(\StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference = null)
+    public function setCustom_ID_Shared_Reference(\WorkdayWsdl\\StructType\Custom_Identifier_ReferenceObjectType $custom_ID_Shared_Reference = null)
     {
         $this->Custom_ID_Shared_Reference = $custom_ID_Shared_Reference;
         return $this;
@@ -127,7 +127,7 @@ class Custom_IDType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Custom_IDType
+     * @return \WorkdayWsdl\\StructType\Custom_IDType
      */
     public function setDelete($delete = null)
     {
@@ -144,7 +144,7 @@ class Custom_IDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Custom_IDType
+     * @return \WorkdayWsdl\\StructType\Custom_IDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Skill_Item__Tenanted_ObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
      * Constructor method for Skill_Item__Tenanted_ObjectType
      * @uses Skill_Item__Tenanted_ObjectType::setID()
      * @uses Skill_Item__Tenanted_ObjectType::setDescriptor()
-     * @param \StructType\Skill_Item__Tenanted_ObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Skill_Item__Tenanted_ObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $skill_Item_Tenanted_ObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$skill_Item_Tenanted_ObjectTypeIDItem instanceof \StructType\Skill_Item__Tenanted_ObjectIDType) {
+            if (!$skill_Item_Tenanted_ObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType) {
                 $invalidValues[] = is_object($skill_Item_Tenanted_ObjectTypeIDItem) ? get_class($skill_Item_Tenanted_ObjectTypeIDItem) : sprintf('%s(%s)', gettype($skill_Item_Tenanted_ObjectTypeIDItem), var_export($skill_Item_Tenanted_ObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Skill_Item__Tenanted_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Skill_Item__Tenanted_ObjectIDType[] $iD
-     * @return \StructType\Skill_Item__Tenanted_ObjectType
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Skill_Item__Tenanted_ObjectIDType $item
-     * @return \StructType\Skill_Item__Tenanted_ObjectType
+     * @param \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
-    public function addToID(\StructType\Skill_Item__Tenanted_ObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Skill_Item__Tenanted_ObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Skill_Item__Tenanted_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Skill_Item__Tenanted_ObjectType
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Skill_Item__Tenanted_ObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Skill_Item__Tenanted_ObjectType
+     * @return \WorkdayWsdl\\StructType\Skill_Item__Tenanted_ObjectType
      */
     public static function __set_state(array $array)
     {

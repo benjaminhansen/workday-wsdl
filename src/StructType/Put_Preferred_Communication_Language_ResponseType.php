@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Put_Preferred_Communication_Language_ResponseType extends AbstractStructBa
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Preferred_Communication_Language_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -58,7 +58,7 @@ class Put_Preferred_Communication_Language_ResponseType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Preferred_Communication_Language_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Preferred_Communication_Language_ResponseType
      */
     public static function __set_state(array $array)
     {

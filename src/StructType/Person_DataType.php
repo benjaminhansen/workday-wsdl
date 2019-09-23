@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,28 +19,28 @@ class Person_DataType extends AbstractStructBase
      * - documentation: Encapsulating element for all of the Name data for a person.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Name_DataType[]
+     * @var \WorkdayWsdl\\StructType\Name_DataType[]
      */
     public $Name_Data;
     /**
      * The Contact_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Contact_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_DataType
      */
     public $Contact_Data;
     /**
      * The Demographic_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Demographic_DataType
+     * @var \WorkdayWsdl\\StructType\Demographic_DataType
      */
     public $Demographic_Data;
     /**
      * The Biographic_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Biographic_DataType
+     * @var \WorkdayWsdl\\StructType\Biographic_DataType
      */
     public $Biographic_Data;
     /**
@@ -48,7 +48,7 @@ class Person_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Visa_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\Visa_Identifier_DataType[]
      */
     public $Visa_ID_Data;
     /**
@@ -56,7 +56,7 @@ class Person_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Custom_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\Custom_Identifier_DataType[]
      */
     public $Custom_ID_Data;
     /**
@@ -64,7 +64,7 @@ class Person_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Government_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\Government_Identifier_DataType[]
      */
     public $Government_ID_Data;
     /**
@@ -72,7 +72,7 @@ class Person_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\License_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\License_Identifier_DataType[]
      */
     public $License_ID_Data;
     /**
@@ -80,14 +80,14 @@ class Person_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Passport_Identifier_DataType[]
+     * @var \WorkdayWsdl\\StructType\Passport_Identifier_DataType[]
      */
     public $Passport_ID_Data;
     /**
      * The Personal_Preferences_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Personal_Preferences_DataType
+     * @var \WorkdayWsdl\\StructType\Personal_Preferences_DataType
      */
     public $Personal_Preferences_Data;
     /**
@@ -102,18 +102,18 @@ class Person_DataType extends AbstractStructBase
      * @uses Person_DataType::setLicense_ID_Data()
      * @uses Person_DataType::setPassport_ID_Data()
      * @uses Person_DataType::setPersonal_Preferences_Data()
-     * @param \StructType\Name_DataType[] $name_Data
-     * @param \StructType\Contact_DataType $contact_Data
-     * @param \StructType\Demographic_DataType $demographic_Data
-     * @param \StructType\Biographic_DataType $biographic_Data
-     * @param \StructType\Visa_Identifier_DataType[] $visa_ID_Data
-     * @param \StructType\Custom_Identifier_DataType[] $custom_ID_Data
-     * @param \StructType\Government_Identifier_DataType[] $government_ID_Data
-     * @param \StructType\License_Identifier_DataType[] $license_ID_Data
-     * @param \StructType\Passport_Identifier_DataType[] $passport_ID_Data
-     * @param \StructType\Personal_Preferences_DataType $personal_Preferences_Data
+     * @param \WorkdayWsdl\\StructType\Name_DataType[] $name_Data
+     * @param \WorkdayWsdl\\StructType\Contact_DataType $contact_Data
+     * @param \WorkdayWsdl\\StructType\Demographic_DataType $demographic_Data
+     * @param \WorkdayWsdl\\StructType\Biographic_DataType $biographic_Data
+     * @param \WorkdayWsdl\\StructType\Visa_Identifier_DataType[] $visa_ID_Data
+     * @param \WorkdayWsdl\\StructType\Custom_Identifier_DataType[] $custom_ID_Data
+     * @param \WorkdayWsdl\\StructType\Government_Identifier_DataType[] $government_ID_Data
+     * @param \WorkdayWsdl\\StructType\License_Identifier_DataType[] $license_ID_Data
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_DataType[] $passport_ID_Data
+     * @param \WorkdayWsdl\\StructType\Personal_Preferences_DataType $personal_Preferences_Data
      */
-    public function __construct(array $name_Data = array(), \StructType\Contact_DataType $contact_Data = null, \StructType\Demographic_DataType $demographic_Data = null, \StructType\Biographic_DataType $biographic_Data = null, array $visa_ID_Data = array(), array $custom_ID_Data = array(), array $government_ID_Data = array(), array $license_ID_Data = array(), array $passport_ID_Data = array(), \StructType\Personal_Preferences_DataType $personal_Preferences_Data = null)
+    public function __construct(array $name_Data = array(), \WorkdayWsdl\\StructType\Contact_DataType $contact_Data = null, \WorkdayWsdl\\StructType\Demographic_DataType $demographic_Data = null, \WorkdayWsdl\\StructType\Biographic_DataType $biographic_Data = null, array $visa_ID_Data = array(), array $custom_ID_Data = array(), array $government_ID_Data = array(), array $license_ID_Data = array(), array $passport_ID_Data = array(), \WorkdayWsdl\\StructType\Personal_Preferences_DataType $personal_Preferences_Data = null)
     {
         $this
             ->setName_Data($name_Data)
@@ -129,7 +129,7 @@ class Person_DataType extends AbstractStructBase
     }
     /**
      * Get Name_Data value
-     * @return \StructType\Name_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Name_DataType[]|null
      */
     public function getName_Data()
     {
@@ -147,12 +147,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypeName_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypeName_DataItem instanceof \StructType\Name_DataType) {
+            if (!$person_DataTypeName_DataItem instanceof \WorkdayWsdl\\StructType\Name_DataType) {
                 $invalidValues[] = is_object($person_DataTypeName_DataItem) ? get_class($person_DataTypeName_DataItem) : sprintf('%s(%s)', gettype($person_DataTypeName_DataItem), var_export($person_DataTypeName_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Name_Data property can only contain items of type \StructType\Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Name_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -160,8 +160,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Name_DataType[] $name_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Name_DataType[] $name_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setName_Data(array $name_Data = array())
     {
@@ -175,21 +175,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to Name_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Name_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Name_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToName_Data(\StructType\Name_DataType $item)
+    public function addToName_Data(\WorkdayWsdl\\StructType\Name_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Name_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Name_Data property can only contain items of type \StructType\Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Name_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Name_Data property can only contain items of type \WorkdayWsdl\\StructType\Name_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Name_Data[] = $item;
         return $this;
     }
     /**
      * Get Contact_Data value
-     * @return \StructType\Contact_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_DataType|null
      */
     public function getContact_Data()
     {
@@ -197,17 +197,17 @@ class Person_DataType extends AbstractStructBase
     }
     /**
      * Set Contact_Data value
-     * @param \StructType\Contact_DataType $contact_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Contact_DataType $contact_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function setContact_Data(\StructType\Contact_DataType $contact_Data = null)
+    public function setContact_Data(\WorkdayWsdl\\StructType\Contact_DataType $contact_Data = null)
     {
         $this->Contact_Data = $contact_Data;
         return $this;
     }
     /**
      * Get Demographic_Data value
-     * @return \StructType\Demographic_DataType|null
+     * @return \WorkdayWsdl\\StructType\Demographic_DataType|null
      */
     public function getDemographic_Data()
     {
@@ -215,17 +215,17 @@ class Person_DataType extends AbstractStructBase
     }
     /**
      * Set Demographic_Data value
-     * @param \StructType\Demographic_DataType $demographic_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Demographic_DataType $demographic_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function setDemographic_Data(\StructType\Demographic_DataType $demographic_Data = null)
+    public function setDemographic_Data(\WorkdayWsdl\\StructType\Demographic_DataType $demographic_Data = null)
     {
         $this->Demographic_Data = $demographic_Data;
         return $this;
     }
     /**
      * Get Biographic_Data value
-     * @return \StructType\Biographic_DataType|null
+     * @return \WorkdayWsdl\\StructType\Biographic_DataType|null
      */
     public function getBiographic_Data()
     {
@@ -233,17 +233,17 @@ class Person_DataType extends AbstractStructBase
     }
     /**
      * Set Biographic_Data value
-     * @param \StructType\Biographic_DataType $biographic_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Biographic_DataType $biographic_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function setBiographic_Data(\StructType\Biographic_DataType $biographic_Data = null)
+    public function setBiographic_Data(\WorkdayWsdl\\StructType\Biographic_DataType $biographic_Data = null)
     {
         $this->Biographic_Data = $biographic_Data;
         return $this;
     }
     /**
      * Get Visa_ID_Data value
-     * @return \StructType\Visa_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Visa_Identifier_DataType[]|null
      */
     public function getVisa_ID_Data()
     {
@@ -261,12 +261,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypeVisa_ID_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypeVisa_ID_DataItem instanceof \StructType\Visa_Identifier_DataType) {
+            if (!$person_DataTypeVisa_ID_DataItem instanceof \WorkdayWsdl\\StructType\Visa_Identifier_DataType) {
                 $invalidValues[] = is_object($person_DataTypeVisa_ID_DataItem) ? get_class($person_DataTypeVisa_ID_DataItem) : sprintf('%s(%s)', gettype($person_DataTypeVisa_ID_DataItem), var_export($person_DataTypeVisa_ID_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Visa_ID_Data property can only contain items of type \StructType\Visa_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Visa_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Visa_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -274,8 +274,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set Visa_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Visa_Identifier_DataType[] $visa_ID_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Visa_Identifier_DataType[] $visa_ID_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setVisa_ID_Data(array $visa_ID_Data = array())
     {
@@ -289,21 +289,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to Visa_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Visa_Identifier_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Visa_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToVisa_ID_Data(\StructType\Visa_Identifier_DataType $item)
+    public function addToVisa_ID_Data(\WorkdayWsdl\\StructType\Visa_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Visa_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Visa_ID_Data property can only contain items of type \StructType\Visa_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Visa_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Visa_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Visa_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Visa_ID_Data[] = $item;
         return $this;
     }
     /**
      * Get Custom_ID_Data value
-     * @return \StructType\Custom_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Custom_Identifier_DataType[]|null
      */
     public function getCustom_ID_Data()
     {
@@ -321,12 +321,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypeCustom_ID_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypeCustom_ID_DataItem instanceof \StructType\Custom_Identifier_DataType) {
+            if (!$person_DataTypeCustom_ID_DataItem instanceof \WorkdayWsdl\\StructType\Custom_Identifier_DataType) {
                 $invalidValues[] = is_object($person_DataTypeCustom_ID_DataItem) ? get_class($person_DataTypeCustom_ID_DataItem) : sprintf('%s(%s)', gettype($person_DataTypeCustom_ID_DataItem), var_export($person_DataTypeCustom_ID_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Custom_ID_Data property can only contain items of type \StructType\Custom_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Custom_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Custom_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -334,8 +334,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set Custom_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Custom_Identifier_DataType[] $custom_ID_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Custom_Identifier_DataType[] $custom_ID_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setCustom_ID_Data(array $custom_ID_Data = array())
     {
@@ -349,21 +349,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to Custom_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Custom_Identifier_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Custom_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToCustom_ID_Data(\StructType\Custom_Identifier_DataType $item)
+    public function addToCustom_ID_Data(\WorkdayWsdl\\StructType\Custom_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Custom_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Custom_ID_Data property can only contain items of type \StructType\Custom_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Custom_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Custom_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Custom_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Custom_ID_Data[] = $item;
         return $this;
     }
     /**
      * Get Government_ID_Data value
-     * @return \StructType\Government_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Government_Identifier_DataType[]|null
      */
     public function getGovernment_ID_Data()
     {
@@ -381,12 +381,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypeGovernment_ID_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypeGovernment_ID_DataItem instanceof \StructType\Government_Identifier_DataType) {
+            if (!$person_DataTypeGovernment_ID_DataItem instanceof \WorkdayWsdl\\StructType\Government_Identifier_DataType) {
                 $invalidValues[] = is_object($person_DataTypeGovernment_ID_DataItem) ? get_class($person_DataTypeGovernment_ID_DataItem) : sprintf('%s(%s)', gettype($person_DataTypeGovernment_ID_DataItem), var_export($person_DataTypeGovernment_ID_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Government_ID_Data property can only contain items of type \StructType\Government_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Government_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Government_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -394,8 +394,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set Government_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_Identifier_DataType[] $government_ID_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Government_Identifier_DataType[] $government_ID_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setGovernment_ID_Data(array $government_ID_Data = array())
     {
@@ -409,21 +409,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to Government_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Government_Identifier_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Government_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToGovernment_ID_Data(\StructType\Government_Identifier_DataType $item)
+    public function addToGovernment_ID_Data(\WorkdayWsdl\\StructType\Government_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Government_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Government_ID_Data property can only contain items of type \StructType\Government_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Government_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Government_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Government_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Government_ID_Data[] = $item;
         return $this;
     }
     /**
      * Get License_ID_Data value
-     * @return \StructType\License_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\License_Identifier_DataType[]|null
      */
     public function getLicense_ID_Data()
     {
@@ -441,12 +441,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypeLicense_ID_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypeLicense_ID_DataItem instanceof \StructType\License_Identifier_DataType) {
+            if (!$person_DataTypeLicense_ID_DataItem instanceof \WorkdayWsdl\\StructType\License_Identifier_DataType) {
                 $invalidValues[] = is_object($person_DataTypeLicense_ID_DataItem) ? get_class($person_DataTypeLicense_ID_DataItem) : sprintf('%s(%s)', gettype($person_DataTypeLicense_ID_DataItem), var_export($person_DataTypeLicense_ID_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The License_ID_Data property can only contain items of type \StructType\License_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The License_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\License_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -454,8 +454,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set License_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\License_Identifier_DataType[] $license_ID_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\License_Identifier_DataType[] $license_ID_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setLicense_ID_Data(array $license_ID_Data = array())
     {
@@ -469,21 +469,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to License_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\License_Identifier_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\License_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToLicense_ID_Data(\StructType\License_Identifier_DataType $item)
+    public function addToLicense_ID_Data(\WorkdayWsdl\\StructType\License_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\License_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The License_ID_Data property can only contain items of type \StructType\License_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\License_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The License_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\License_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->License_ID_Data[] = $item;
         return $this;
     }
     /**
      * Get Passport_ID_Data value
-     * @return \StructType\Passport_Identifier_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Passport_Identifier_DataType[]|null
      */
     public function getPassport_ID_Data()
     {
@@ -501,12 +501,12 @@ class Person_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $person_DataTypePassport_ID_DataItem) {
             // validation for constraint: itemType
-            if (!$person_DataTypePassport_ID_DataItem instanceof \StructType\Passport_Identifier_DataType) {
+            if (!$person_DataTypePassport_ID_DataItem instanceof \WorkdayWsdl\\StructType\Passport_Identifier_DataType) {
                 $invalidValues[] = is_object($person_DataTypePassport_ID_DataItem) ? get_class($person_DataTypePassport_ID_DataItem) : sprintf('%s(%s)', gettype($person_DataTypePassport_ID_DataItem), var_export($person_DataTypePassport_ID_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Passport_ID_Data property can only contain items of type \StructType\Passport_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Passport_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Passport_Identifier_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -514,8 +514,8 @@ class Person_DataType extends AbstractStructBase
     /**
      * Set Passport_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_Identifier_DataType[] $passport_ID_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_DataType[] $passport_ID_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public function setPassport_ID_Data(array $passport_ID_Data = array())
     {
@@ -529,21 +529,21 @@ class Person_DataType extends AbstractStructBase
     /**
      * Add item to Passport_ID_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Passport_Identifier_DataType $item
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Passport_Identifier_DataType $item
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function addToPassport_ID_Data(\StructType\Passport_Identifier_DataType $item)
+    public function addToPassport_ID_Data(\WorkdayWsdl\\StructType\Passport_Identifier_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Passport_Identifier_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Passport_ID_Data property can only contain items of type \StructType\Passport_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Passport_Identifier_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Passport_ID_Data property can only contain items of type \WorkdayWsdl\\StructType\Passport_Identifier_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Passport_ID_Data[] = $item;
         return $this;
     }
     /**
      * Get Personal_Preferences_Data value
-     * @return \StructType\Personal_Preferences_DataType|null
+     * @return \WorkdayWsdl\\StructType\Personal_Preferences_DataType|null
      */
     public function getPersonal_Preferences_Data()
     {
@@ -551,10 +551,10 @@ class Person_DataType extends AbstractStructBase
     }
     /**
      * Set Personal_Preferences_Data value
-     * @param \StructType\Personal_Preferences_DataType $personal_Preferences_Data
-     * @return \StructType\Person_DataType
+     * @param \WorkdayWsdl\\StructType\Personal_Preferences_DataType $personal_Preferences_Data
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
-    public function setPersonal_Preferences_Data(\StructType\Personal_Preferences_DataType $personal_Preferences_Data = null)
+    public function setPersonal_Preferences_Data(\WorkdayWsdl\\StructType\Personal_Preferences_DataType $personal_Preferences_Data = null)
     {
         $this->Personal_Preferences_Data = $personal_Preferences_Data;
         return $this;
@@ -565,7 +565,7 @@ class Person_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_DataType
+     * @return \WorkdayWsdl\\StructType\Person_DataType
      */
     public static function __set_state(array $array)
     {

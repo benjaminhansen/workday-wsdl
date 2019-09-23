@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Specialty_ParentObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Specialty_ParentReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Specialty_ParentReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Specialty_ParentReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Specialty_ParentReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Specialty_ParentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ParentObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Specialty_ParentReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Specialty_ParentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Specialty_ParentReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Specialty_ParentReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Specialty_ParentReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Specialty_ParentReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Specialty_ParentObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Specialty_ParentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ParentObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Specialty_ParentObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Specialty_ParentObjectIDType
+     * @return \WorkdayWsdl\\StructType\Specialty_ParentObjectIDType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The description of the reference to the Title of a person.
      * - minOccurs: 0
-     * @var \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @var \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
     public $Title_Reference;
     /**
@@ -34,7 +34,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Form of Address for a person. This is only valid for the country of Germany.
      * - minOccurs: 0
-     * @var \StructType\Country_Predefined_Person_Name_Component_ValueObjectType
+     * @var \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType
      */
     public $Salutation_Reference;
     /**
@@ -42,11 +42,11 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
      * @uses Person_Name_Prefix_DataType::setTitle_Reference()
      * @uses Person_Name_Prefix_DataType::setTitle_Descriptor()
      * @uses Person_Name_Prefix_DataType::setSalutation_Reference()
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference
      * @param string $title_Descriptor
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference
      */
-    public function __construct(\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference = null, $title_Descriptor = null, \StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference = null, $title_Descriptor = null, \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference = null)
     {
         $this
             ->setTitle_Reference($title_Reference)
@@ -55,7 +55,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
     }
     /**
      * Get Title_Reference value
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType|null
      */
     public function getTitle_Reference()
     {
@@ -63,10 +63,10 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
     }
     /**
      * Set Title_Reference value
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference
-     * @return \StructType\Person_Name_Prefix_DataType
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType
      */
-    public function setTitle_Reference(\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference = null)
+    public function setTitle_Reference(\WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $title_Reference = null)
     {
         $this->Title_Reference = $title_Reference;
         return $this;
@@ -82,7 +82,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
     /**
      * Set Title_Descriptor value
      * @param string $title_Descriptor
-     * @return \StructType\Person_Name_Prefix_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType
      */
     public function setTitle_Descriptor($title_Descriptor = null)
     {
@@ -95,7 +95,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
     }
     /**
      * Get Salutation_Reference value
-     * @return \StructType\Country_Predefined_Person_Name_Component_ValueObjectType|null
+     * @return \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType|null
      */
     public function getSalutation_Reference()
     {
@@ -103,10 +103,10 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
     }
     /**
      * Set Salutation_Reference value
-     * @param \StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference
-     * @return \StructType\Person_Name_Prefix_DataType
+     * @param \WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference
+     * @return \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType
      */
-    public function setSalutation_Reference(\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference = null)
+    public function setSalutation_Reference(\WorkdayWsdl\\StructType\Country_Predefined_Person_Name_Component_ValueObjectType $salutation_Reference = null)
     {
         $this->Salutation_Reference = $salutation_Reference;
         return $this;
@@ -117,7 +117,7 @@ class Person_Name_Prefix_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_Name_Prefix_DataType
+     * @return \WorkdayWsdl\\StructType\Person_Name_Prefix_DataType
      */
     public static function __set_state(array $array)
     {

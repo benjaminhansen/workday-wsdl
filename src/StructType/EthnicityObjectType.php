@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class EthnicityObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\EthnicityObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\EthnicityObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class EthnicityObjectType extends AbstractStructBase
      * Constructor method for EthnicityObjectType
      * @uses EthnicityObjectType::setID()
      * @uses EthnicityObjectType::setDescriptor()
-     * @param \StructType\EthnicityObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class EthnicityObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\EthnicityObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class EthnicityObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $ethnicityObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$ethnicityObjectTypeIDItem instanceof \StructType\EthnicityObjectIDType) {
+            if (!$ethnicityObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\EthnicityObjectIDType) {
                 $invalidValues[] = is_object($ethnicityObjectTypeIDItem) ? get_class($ethnicityObjectTypeIDItem) : sprintf('%s(%s)', gettype($ethnicityObjectTypeIDItem), var_export($ethnicityObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\EthnicityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class EthnicityObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectIDType[] $iD
-     * @return \StructType\EthnicityObjectType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class EthnicityObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\EthnicityObjectIDType $item
-     * @return \StructType\EthnicityObjectType
+     * @param \WorkdayWsdl\\StructType\EthnicityObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType
      */
-    public function addToID(\StructType\EthnicityObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\EthnicityObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EthnicityObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\EthnicityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\EthnicityObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\EthnicityObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class EthnicityObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\EthnicityObjectType
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class EthnicityObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\EthnicityObjectType
+     * @return \WorkdayWsdl\\StructType\EthnicityObjectType
      */
     public static function __set_state(array $array)
     {

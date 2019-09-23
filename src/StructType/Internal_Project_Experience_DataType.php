@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -115,7 +115,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Internal_Project_Experience_ID value
      * @param string $internal_Project_Experience_ID
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setInternal_Project_Experience_ID($internal_Project_Experience_ID = null)
     {
@@ -137,7 +137,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Remove_Internal_Project_Experience value
      * @param bool $remove_Internal_Project_Experience
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setRemove_Internal_Project_Experience($remove_Internal_Project_Experience = null)
     {
@@ -159,7 +159,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Internal_Project value
      * @param string $internal_Project
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setInternal_Project($internal_Project = null)
     {
@@ -181,7 +181,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setDescription($description = null)
     {
@@ -203,7 +203,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Start_Date value
      * @param string $start_Date
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setStart_Date($start_Date = null)
     {
@@ -225,7 +225,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set End_Date value
      * @param string $end_Date
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setEnd_Date($end_Date = null)
     {
@@ -247,7 +247,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
     /**
      * Set Project_Leader value
      * @param string $project_Leader
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public function setProject_Leader($project_Leader = null)
     {
@@ -264,7 +264,7 @@ class Internal_Project_Experience_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Internal_Project_Experience_DataType
+     * @return \WorkdayWsdl\\StructType\Internal_Project_Experience_DataType
      */
     public static function __set_state(array $array)
     {

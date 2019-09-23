@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
      * The Document_Category_Reference
      * Meta information extracted from the WSDL
      * - documentation: Category of attachment.
-     * @var \StructType\Document_Category__All_ObjectType
+     * @var \WorkdayWsdl\\StructType\Document_Category__All_ObjectType
      */
     public $Document_Category_Reference;
     /**
@@ -68,10 +68,10 @@ class Certification_Attachment_DataType extends AbstractStructBase
      * @param string $file_Name
      * @param string $comment
      * @param string $file
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
      * @param string $content_Type
      */
-    public function __construct($file_Name = null, $comment = null, $file = null, \StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $content_Type = null)
+    public function __construct($file_Name = null, $comment = null, $file = null, \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null, $content_Type = null)
     {
         $this
             ->setFile_Name($file_Name)
@@ -91,7 +91,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
     /**
      * Set File_Name value
      * @param string $file_Name
-     * @return \StructType\Certification_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
     public function setFile_Name($file_Name = null)
     {
@@ -117,7 +117,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\Certification_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
     public function setComment($comment = null)
     {
@@ -139,7 +139,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\Certification_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
     public function setFile($file = null)
     {
@@ -152,7 +152,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Get Document_Category_Reference value
-     * @return \StructType\Document_Category__All_ObjectType|null
+     * @return \WorkdayWsdl\\StructType\Document_Category__All_ObjectType|null
      */
     public function getDocument_Category_Reference()
     {
@@ -160,10 +160,10 @@ class Certification_Attachment_DataType extends AbstractStructBase
     }
     /**
      * Set Document_Category_Reference value
-     * @param \StructType\Document_Category__All_ObjectType $document_Category_Reference
-     * @return \StructType\Certification_Attachment_DataType
+     * @param \WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
-    public function setDocument_Category_Reference(\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
+    public function setDocument_Category_Reference(\WorkdayWsdl\\StructType\Document_Category__All_ObjectType $document_Category_Reference = null)
     {
         $this->Document_Category_Reference = $document_Category_Reference;
         return $this;
@@ -179,7 +179,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
     /**
      * Set Content_Type value
      * @param string $content_Type
-     * @return \StructType\Certification_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
     public function setContent_Type($content_Type = null)
     {
@@ -200,7 +200,7 @@ class Certification_Attachment_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Certification_Attachment_DataType
+     * @return \WorkdayWsdl\\StructType\Certification_Attachment_DataType
      */
     public static function __set_state(array $array)
     {

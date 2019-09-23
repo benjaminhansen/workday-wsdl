@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,12 +25,12 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
      * The Academic_Appointment_Track_Reference
      * Meta information extracted from the WSDL
      * - documentation: Academic Appointment Track for edit additional data request.
-     * @var \StructType\Academic_Appointment_TrackObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType
      */
     public $Academic_Appointment_Track_Reference;
     /**
      * The Business_Object_Additional_Data
-     * @var \StructType\Effective_Dated_Web_Service_Additional_DataType
+     * @var \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType
      */
     public $Business_Object_Additional_Data;
     /**
@@ -39,10 +39,10 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
      * @uses Academic_Appointment_Track_Custom_Object_DataType::setAcademic_Appointment_Track_Reference()
      * @uses Academic_Appointment_Track_Custom_Object_DataType::setBusiness_Object_Additional_Data()
      * @param string $effective_Date
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
-     * @param \StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @param \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data
      */
-    public function __construct($effective_Date = null, \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, \StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data = null)
+    public function __construct($effective_Date = null, \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data = null)
     {
         $this
             ->setEffective_Date($effective_Date)
@@ -60,7 +60,7 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -73,7 +73,7 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
     }
     /**
      * Get Academic_Appointment_Track_Reference value
-     * @return \StructType\Academic_Appointment_TrackObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType|null
      */
     public function getAcademic_Appointment_Track_Reference()
     {
@@ -81,17 +81,17 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
     }
     /**
      * Set Academic_Appointment_Track_Reference value
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType
      */
-    public function setAcademic_Appointment_Track_Reference(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
+    public function setAcademic_Appointment_Track_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
     {
         $this->Academic_Appointment_Track_Reference = $academic_Appointment_Track_Reference;
         return $this;
     }
     /**
      * Get Business_Object_Additional_Data value
-     * @return \StructType\Effective_Dated_Web_Service_Additional_DataType|null
+     * @return \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType|null
      */
     public function getBusiness_Object_Additional_Data()
     {
@@ -99,10 +99,10 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
     }
     /**
      * Set Business_Object_Additional_Data value
-     * @param \StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType
+     * @param \WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType
      */
-    public function setBusiness_Object_Additional_Data(\StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data = null)
+    public function setBusiness_Object_Additional_Data(\WorkdayWsdl\\StructType\Effective_Dated_Web_Service_Additional_DataType $business_Object_Additional_Data = null)
     {
         $this->Business_Object_Additional_Data = $business_Object_Additional_Data;
         return $this;
@@ -113,7 +113,7 @@ class Academic_Appointment_Track_Custom_Object_DataType extends AbstractStructBa
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_Track_Custom_Object_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Track_Custom_Object_DataType
      */
     public static function __set_state(array $array)
     {

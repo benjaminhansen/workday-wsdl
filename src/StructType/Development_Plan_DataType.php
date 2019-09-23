@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Development_Plan_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains a reference to latest completed development plan for the employee.
      * - minOccurs: 0
-     * @var \StructType\Development_PlanObjectType
+     * @var \WorkdayWsdl\\StructType\Development_PlanObjectType
      */
     public $Development_Plan_Reference;
     /**
@@ -25,17 +25,17 @@ class Development_Plan_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Contains the information about the development plan for the employee.
      * - minOccurs: 0
-     * @var \StructType\Employee_Review_Details_DataType
+     * @var \WorkdayWsdl\\StructType\Employee_Review_Details_DataType
      */
     public $Review_Data;
     /**
      * Constructor method for Development_Plan_DataType
      * @uses Development_Plan_DataType::setDevelopment_Plan_Reference()
      * @uses Development_Plan_DataType::setReview_Data()
-     * @param \StructType\Development_PlanObjectType $development_Plan_Reference
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
+     * @param \WorkdayWsdl\\StructType\Development_PlanObjectType $development_Plan_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
      */
-    public function __construct(\StructType\Development_PlanObjectType $development_Plan_Reference = null, \StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\Development_PlanObjectType $development_Plan_Reference = null, \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this
             ->setDevelopment_Plan_Reference($development_Plan_Reference)
@@ -43,7 +43,7 @@ class Development_Plan_DataType extends AbstractStructBase
     }
     /**
      * Get Development_Plan_Reference value
-     * @return \StructType\Development_PlanObjectType|null
+     * @return \WorkdayWsdl\\StructType\Development_PlanObjectType|null
      */
     public function getDevelopment_Plan_Reference()
     {
@@ -51,17 +51,17 @@ class Development_Plan_DataType extends AbstractStructBase
     }
     /**
      * Set Development_Plan_Reference value
-     * @param \StructType\Development_PlanObjectType $development_Plan_Reference
-     * @return \StructType\Development_Plan_DataType
+     * @param \WorkdayWsdl\\StructType\Development_PlanObjectType $development_Plan_Reference
+     * @return \WorkdayWsdl\\StructType\Development_Plan_DataType
      */
-    public function setDevelopment_Plan_Reference(\StructType\Development_PlanObjectType $development_Plan_Reference = null)
+    public function setDevelopment_Plan_Reference(\WorkdayWsdl\\StructType\Development_PlanObjectType $development_Plan_Reference = null)
     {
         $this->Development_Plan_Reference = $development_Plan_Reference;
         return $this;
     }
     /**
      * Get Review_Data value
-     * @return \StructType\Employee_Review_Details_DataType|null
+     * @return \WorkdayWsdl\\StructType\Employee_Review_Details_DataType|null
      */
     public function getReview_Data()
     {
@@ -69,10 +69,10 @@ class Development_Plan_DataType extends AbstractStructBase
     }
     /**
      * Set Review_Data value
-     * @param \StructType\Employee_Review_Details_DataType $review_Data
-     * @return \StructType\Development_Plan_DataType
+     * @param \WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data
+     * @return \WorkdayWsdl\\StructType\Development_Plan_DataType
      */
-    public function setReview_Data(\StructType\Employee_Review_Details_DataType $review_Data = null)
+    public function setReview_Data(\WorkdayWsdl\\StructType\Employee_Review_Details_DataType $review_Data = null)
     {
         $this->Review_Data = $review_Data;
         return $this;
@@ -83,7 +83,7 @@ class Development_Plan_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Development_Plan_DataType
+     * @return \WorkdayWsdl\\StructType\Development_Plan_DataType
      */
     public static function __set_state(array $array)
     {

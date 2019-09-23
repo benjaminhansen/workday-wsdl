@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RoleObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RoleObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\RoleObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class RoleObjectType extends AbstractStructBase
      * Constructor method for RoleObjectType
      * @uses RoleObjectType::setID()
      * @uses RoleObjectType::setDescriptor()
-     * @param \StructType\RoleObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\RoleObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class RoleObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\RoleObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class RoleObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $roleObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$roleObjectTypeIDItem instanceof \StructType\RoleObjectIDType) {
+            if (!$roleObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\RoleObjectIDType) {
                 $invalidValues[] = is_object($roleObjectTypeIDItem) ? get_class($roleObjectTypeIDItem) : sprintf('%s(%s)', gettype($roleObjectTypeIDItem), var_export($roleObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\RoleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class RoleObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectIDType[] $iD
-     * @return \StructType\RoleObjectType
+     * @param \WorkdayWsdl\\StructType\RoleObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\RoleObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class RoleObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\RoleObjectIDType $item
-     * @return \StructType\RoleObjectType
+     * @param \WorkdayWsdl\\StructType\RoleObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\RoleObjectType
      */
-    public function addToID(\StructType\RoleObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\RoleObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RoleObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\RoleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\RoleObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\RoleObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class RoleObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\RoleObjectType
+     * @return \WorkdayWsdl\\StructType\RoleObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class RoleObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoleObjectType
+     * @return \WorkdayWsdl\\StructType\RoleObjectType
      */
     public static function __set_state(array $array)
     {

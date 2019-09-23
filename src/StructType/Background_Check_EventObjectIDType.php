@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Background_Check_EventObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Background_Check_EventReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Background_Check_EventReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Background_Check_EventReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Background_Check_EventReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Background_Check_EventObjectIDType
+     * @return \WorkdayWsdl\\StructType\Background_Check_EventObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Background_Check_EventReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Background_Check_EventReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Background_Check_EventReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Background_Check_EventReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Background_Check_EventReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Background_Check_EventReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Background_Check_EventObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Background_Check_EventObjectIDType
+     * @return \WorkdayWsdl\\StructType\Background_Check_EventObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Background_Check_EventObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Background_Check_EventObjectIDType
+     * @return \WorkdayWsdl\\StructType\Background_Check_EventObjectIDType
      */
     public static function __set_state(array $array)
     {

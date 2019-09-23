@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Country_SubregionObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Country_SubregionObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Country_SubregionObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Country_SubregionObjectType extends AbstractStructBase
      * Constructor method for Country_SubregionObjectType
      * @uses Country_SubregionObjectType::setID()
      * @uses Country_SubregionObjectType::setDescriptor()
-     * @param \StructType\Country_SubregionObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Country_SubregionObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Country_SubregionObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Country_SubregionObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Country_SubregionObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $country_SubregionObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$country_SubregionObjectTypeIDItem instanceof \StructType\Country_SubregionObjectIDType) {
+            if (!$country_SubregionObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Country_SubregionObjectIDType) {
                 $invalidValues[] = is_object($country_SubregionObjectTypeIDItem) ? get_class($country_SubregionObjectTypeIDItem) : sprintf('%s(%s)', gettype($country_SubregionObjectTypeIDItem), var_export($country_SubregionObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Country_SubregionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Country_SubregionObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Country_SubregionObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_SubregionObjectIDType[] $iD
-     * @return \StructType\Country_SubregionObjectType
+     * @param \WorkdayWsdl\\StructType\Country_SubregionObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Country_SubregionObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Country_SubregionObjectIDType $item
-     * @return \StructType\Country_SubregionObjectType
+     * @param \WorkdayWsdl\\StructType\Country_SubregionObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectType
      */
-    public function addToID(\StructType\Country_SubregionObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Country_SubregionObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Country_SubregionObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Country_SubregionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Country_SubregionObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Country_SubregionObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Country_SubregionObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Country_SubregionObjectType
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Country_SubregionObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Country_SubregionObjectType
+     * @return \WorkdayWsdl\\StructType\Country_SubregionObjectType
      */
     public static function __set_state(array $array)
     {

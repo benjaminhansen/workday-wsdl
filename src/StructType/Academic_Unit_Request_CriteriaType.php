@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class Academic_Unit_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Academic_Unit_Name value
      * @param string $academic_Unit_Name
-     * @return \StructType\Academic_Unit_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Request_CriteriaType
      */
     public function setAcademic_Unit_Name($academic_Unit_Name = null)
     {
@@ -75,7 +75,7 @@ class Academic_Unit_Request_CriteriaType extends AbstractStructBase
     /**
      * Set Effective_As_Of_Date value
      * @param string $effective_As_Of_Date
-     * @return \StructType\Academic_Unit_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Request_CriteriaType
      */
     public function setEffective_As_Of_Date($effective_As_Of_Date = null)
     {
@@ -92,7 +92,7 @@ class Academic_Unit_Request_CriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Unit_Request_CriteriaType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Request_CriteriaType
      */
     public static function __set_state(array $array)
     {

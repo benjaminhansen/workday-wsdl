@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -70,7 +70,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the subtype
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_SubtypeObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType
      */
     public $Type_Reference;
     /**
@@ -78,7 +78,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an external URL
      * - minOccurs: 0
-     * @var \StructType\External_URLObjectType
+     * @var \WorkdayWsdl\\StructType\External_URLObjectType
      */
     public $External_URL_Reference;
     /**
@@ -86,7 +86,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to the superior or parent Academic Unit Hierarchy
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_HierarchyObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType
      */
     public $Superior_Reference;
     /**
@@ -95,7 +95,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * - documentation: Reference to the subordinate Academic Unit Hierarchies. This is for display only. The superior-subordinate relationship is set by using the superior reference
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_Unit_HierarchyObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType[]
      */
     public $Subordinate_Reference;
     /**
@@ -104,7 +104,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * - documentation: Reference(s) to the Academic Unit included in this Academic Unit Hierarchy
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType[]
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType[]
      */
     public $Academic_Unit_Reference;
     /**
@@ -136,14 +136,14 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * @param bool $include_Code_in_Name
      * @param bool $include_Leadership_Role_Incumbent_in_Name
      * @param bool $include_Subtype_in_Name
-     * @param \StructType\Academic_Unit_SubtypeObjectType $type_Reference
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @param \StructType\Academic_Unit_HierarchyObjectType $superior_Reference
-     * @param \StructType\Academic_Unit_HierarchyObjectType[] $subordinate_Reference
-     * @param \StructType\Academic_UnitObjectType[] $academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $type_Reference
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $superior_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType[] $subordinate_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType[] $academic_Unit_Reference
      * @param bool $inactive
      */
-    public function __construct($academic_Unit_Hierarchy_ID = null, $name = null, $code = null, $include_Code_in_Name = null, $include_Leadership_Role_Incumbent_in_Name = null, $include_Subtype_in_Name = null, \StructType\Academic_Unit_SubtypeObjectType $type_Reference = null, \StructType\External_URLObjectType $external_URL_Reference = null, \StructType\Academic_Unit_HierarchyObjectType $superior_Reference = null, array $subordinate_Reference = array(), array $academic_Unit_Reference = array(), $inactive = null)
+    public function __construct($academic_Unit_Hierarchy_ID = null, $name = null, $code = null, $include_Code_in_Name = null, $include_Leadership_Role_Incumbent_in_Name = null, $include_Subtype_in_Name = null, \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $type_Reference = null, \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null, \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $superior_Reference = null, array $subordinate_Reference = array(), array $academic_Unit_Reference = array(), $inactive = null)
     {
         $this
             ->setAcademic_Unit_Hierarchy_ID($academic_Unit_Hierarchy_ID)
@@ -170,7 +170,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Academic_Unit_Hierarchy_ID value
      * @param string $academic_Unit_Hierarchy_ID
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setAcademic_Unit_Hierarchy_ID($academic_Unit_Hierarchy_ID = null)
     {
@@ -192,7 +192,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setName($name = null)
     {
@@ -214,7 +214,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setCode($code = null)
     {
@@ -236,7 +236,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Include_Code_in_Name value
      * @param bool $include_Code_in_Name
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setInclude_Code_in_Name($include_Code_in_Name = null)
     {
@@ -258,7 +258,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Include_Leadership_Role_Incumbent_in_Name value
      * @param bool $include_Leadership_Role_Incumbent_in_Name
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setInclude_Leadership_Role_Incumbent_in_Name($include_Leadership_Role_Incumbent_in_Name = null)
     {
@@ -280,7 +280,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Include_Subtype_in_Name value
      * @param bool $include_Subtype_in_Name
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setInclude_Subtype_in_Name($include_Subtype_in_Name = null)
     {
@@ -293,7 +293,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Get Type_Reference value
-     * @return \StructType\Academic_Unit_SubtypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType|null
      */
     public function getType_Reference()
     {
@@ -301,17 +301,17 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Set Type_Reference value
-     * @param \StructType\Academic_Unit_SubtypeObjectType $type_Reference
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $type_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
-    public function setType_Reference(\StructType\Academic_Unit_SubtypeObjectType $type_Reference = null)
+    public function setType_Reference(\WorkdayWsdl\\StructType\Academic_Unit_SubtypeObjectType $type_Reference = null)
     {
         $this->Type_Reference = $type_Reference;
         return $this;
     }
     /**
      * Get External_URL_Reference value
-     * @return \StructType\External_URLObjectType|null
+     * @return \WorkdayWsdl\\StructType\External_URLObjectType|null
      */
     public function getExternal_URL_Reference()
     {
@@ -319,17 +319,17 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Set External_URL_Reference value
-     * @param \StructType\External_URLObjectType $external_URL_Reference
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
-    public function setExternal_URL_Reference(\StructType\External_URLObjectType $external_URL_Reference = null)
+    public function setExternal_URL_Reference(\WorkdayWsdl\\StructType\External_URLObjectType $external_URL_Reference = null)
     {
         $this->External_URL_Reference = $external_URL_Reference;
         return $this;
     }
     /**
      * Get Superior_Reference value
-     * @return \StructType\Academic_Unit_HierarchyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType|null
      */
     public function getSuperior_Reference()
     {
@@ -337,17 +337,17 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     }
     /**
      * Set Superior_Reference value
-     * @param \StructType\Academic_Unit_HierarchyObjectType $superior_Reference
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $superior_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
-    public function setSuperior_Reference(\StructType\Academic_Unit_HierarchyObjectType $superior_Reference = null)
+    public function setSuperior_Reference(\WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $superior_Reference = null)
     {
         $this->Superior_Reference = $superior_Reference;
         return $this;
     }
     /**
      * Get Subordinate_Reference value
-     * @return \StructType\Academic_Unit_HierarchyObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType[]|null
      */
     public function getSubordinate_Reference()
     {
@@ -365,12 +365,12 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem instanceof \StructType\Academic_Unit_HierarchyObjectType) {
+            if (!$academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType) {
                 $invalidValues[] = is_object($academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem) ? get_class($academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem), var_export($academic_Unit_Hierarchy_DataTypeSubordinate_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Subordinate_Reference property can only contain items of type \StructType\Academic_Unit_HierarchyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Subordinate_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -378,8 +378,8 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Subordinate_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Unit_HierarchyObjectType[] $subordinate_Reference
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType[] $subordinate_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setSubordinate_Reference(array $subordinate_Reference = array())
     {
@@ -393,21 +393,21 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Add item to Subordinate_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_Unit_HierarchyObjectType $item
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
-    public function addToSubordinate_Reference(\StructType\Academic_Unit_HierarchyObjectType $item)
+    public function addToSubordinate_Reference(\WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_Unit_HierarchyObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Subordinate_Reference property can only contain items of type \StructType\Academic_Unit_HierarchyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Subordinate_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_Unit_HierarchyObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Subordinate_Reference[] = $item;
         return $this;
     }
     /**
      * Get Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType[]|null
      */
     public function getAcademic_Unit_Reference()
     {
@@ -425,12 +425,12 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem instanceof \StructType\Academic_UnitObjectType) {
+            if (!$academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem instanceof \WorkdayWsdl\\StructType\Academic_UnitObjectType) {
                 $invalidValues[] = is_object($academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem) ? get_class($academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem) : sprintf('%s(%s)', gettype($academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem), var_export($academic_Unit_Hierarchy_DataTypeAcademic_Unit_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Academic_Unit_Reference property can only contain items of type \StructType\Academic_UnitObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Academic_Unit_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_UnitObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -438,8 +438,8 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Academic_Unit_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_UnitObjectType[] $academic_Unit_Reference
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType[] $academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setAcademic_Unit_Reference(array $academic_Unit_Reference = array())
     {
@@ -453,14 +453,14 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Add item to Academic_Unit_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Academic_UnitObjectType $item
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $item
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
-    public function addToAcademic_Unit_Reference(\StructType\Academic_UnitObjectType $item)
+    public function addToAcademic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Academic_UnitObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Academic_Unit_Reference property can only contain items of type \StructType\Academic_UnitObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Academic_UnitObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Academic_Unit_Reference property can only contain items of type \WorkdayWsdl\\StructType\Academic_UnitObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Academic_Unit_Reference[] = $item;
         return $this;
@@ -476,7 +476,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
     /**
      * Set Inactive value
      * @param bool $inactive
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public function setInactive($inactive = null)
     {
@@ -493,7 +493,7 @@ class Academic_Unit_Hierarchy_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Unit_Hierarchy_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_Hierarchy_DataType
      */
     public static function __set_state(array $array)
     {

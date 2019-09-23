@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[]
      */
     public $ID;
     /**
@@ -31,7 +31,7 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
      * External_Field_and_Parameter_Initialization_ProviderObjectType
      * @uses External_Field_and_Parameter_Initialization_ProviderObjectType::setID()
      * @uses External_Field_and_Parameter_Initialization_ProviderObjectType::setDescriptor()
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -42,7 +42,7 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
     }
     /**
      * Get ID value
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[]|null
      */
     public function getID()
     {
@@ -60,12 +60,12 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
         $invalidValues = [];
         foreach ($values as $external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem instanceof \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType) {
+            if (!$external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType) {
                 $invalidValues[] = is_object($external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem) ? get_class($external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem) : sprintf('%s(%s)', gettype($external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem), var_export($external_Field_and_Parameter_Initialization_ProviderObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -73,8 +73,8 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[] $iD
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
      */
     public function setID(array $iD = array())
     {
@@ -88,14 +88,14 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType $item
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
+     * @param \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
      */
-    public function addToID(\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -111,7 +111,7 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -128,7 +128,7 @@ class External_Field_and_Parameter_Initialization_ProviderObjectType extends Abs
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
+     * @return \WorkdayWsdl\\StructType\External_Field_and_Parameter_Initialization_ProviderObjectType
      */
     public static function __set_state(array $array)
     {

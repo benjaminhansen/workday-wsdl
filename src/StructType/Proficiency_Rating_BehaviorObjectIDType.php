@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Proficiency_Rating_BehaviorObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Proficiency_Rating_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Proficiency_Rating_BehaviorReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Proficiency_Rating_BehaviorReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Proficiency_Rating_BehaviorObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Proficiency_Rating_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Proficiency_Rating_BehaviorObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Proficiency_Rating_BehaviorObjectIDType
+     * @return \WorkdayWsdl\\StructType\Proficiency_Rating_BehaviorObjectIDType
      */
     public static function __set_state(array $array)
     {

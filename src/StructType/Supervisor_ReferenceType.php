@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,24 +16,24 @@ class Supervisor_ReferenceType extends AbstractStructBase
      * The Employee_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_Reference;
     /**
      * The Contingent_Worker_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Contingent_Worker_Reference_DataType
+     * @var \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType
      */
     public $Contingent_Worker_Reference;
     /**
      * Constructor method for Supervisor_ReferenceType
      * @uses Supervisor_ReferenceType::setEmployee_Reference()
      * @uses Supervisor_ReferenceType::setContingent_Worker_Reference()
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
      */
-    public function __construct(\StructType\Employee_ReferenceType $employee_Reference = null, \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null, \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -41,7 +41,7 @@ class Supervisor_ReferenceType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_Reference()
     {
@@ -49,17 +49,17 @@ class Supervisor_ReferenceType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\Employee_ReferenceType $employee_Reference
-     * @return \StructType\Supervisor_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Supervisor_ReferenceType
      */
-    public function setEmployee_Reference(\StructType\Employee_ReferenceType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
     }
     /**
      * Get Contingent_Worker_Reference value
-     * @return \StructType\Contingent_Worker_Reference_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType|null
      */
     public function getContingent_Worker_Reference()
     {
@@ -67,10 +67,10 @@ class Supervisor_ReferenceType extends AbstractStructBase
     }
     /**
      * Set Contingent_Worker_Reference value
-     * @param \StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
-     * @return \StructType\Supervisor_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Supervisor_ReferenceType
      */
-    public function setContingent_Worker_Reference(\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
+    public function setContingent_Worker_Reference(\WorkdayWsdl\\StructType\Contingent_Worker_Reference_DataType $contingent_Worker_Reference = null)
     {
         $this->Contingent_Worker_Reference = $contingent_Worker_Reference;
         return $this;
@@ -81,7 +81,7 @@ class Supervisor_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Supervisor_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Supervisor_ReferenceType
      */
     public static function __set_state(array $array)
     {

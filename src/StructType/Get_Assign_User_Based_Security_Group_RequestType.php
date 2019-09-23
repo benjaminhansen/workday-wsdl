@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * - choiceMinOccurs: 1
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\User_Based_Security_Group_Request_ReferencesType[]
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType[]
      */
     public $Request_References;
     /**
@@ -32,7 +32,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * - choiceMinOccurs: 1
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\User_Based_Security_Group_Request_CriteriaType[]
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType[]
      */
     public $Request_Criteria;
     /**
@@ -40,7 +40,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType[]
+     * @var \WorkdayWsdl\\StructType\Response_FilterType[]
      */
     public $Response_Filter;
     /**
@@ -48,7 +48,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[]
+     * @var \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[]
      */
     public $Response_Group;
     /**
@@ -65,10 +65,10 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * @uses Get_Assign_User_Based_Security_Group_RequestType::setResponse_Filter()
      * @uses Get_Assign_User_Based_Security_Group_RequestType::setResponse_Group()
      * @uses Get_Assign_User_Based_Security_Group_RequestType::setVersion()
-     * @param \StructType\User_Based_Security_Group_Request_ReferencesType[] $request_References
-     * @param \StructType\User_Based_Security_Group_Request_CriteriaType[] $request_Criteria
-     * @param \StructType\Response_FilterType[] $response_Filter
-     * @param \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[] $response_Group
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType[] $request_References
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType[] $request_Criteria
+     * @param \WorkdayWsdl\\StructType\Response_FilterType[] $response_Filter
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[] $response_Group
      * @param string $version
      */
     public function __construct(array $request_References = array(), array $request_Criteria = array(), array $response_Filter = array(), array $response_Group = array(), $version = null)
@@ -82,7 +82,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     }
     /**
      * Get Request_References value
-     * @return \StructType\User_Based_Security_Group_Request_ReferencesType[]|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType[]|null
      */
     public function getRequest_References()
     {
@@ -100,12 +100,12 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem) {
             // validation for constraint: itemType
-            if (!$get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem instanceof \StructType\User_Based_Security_Group_Request_ReferencesType) {
+            if (!$get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType) {
                 $invalidValues[] = is_object($get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem) ? get_class($get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem) : sprintf('%s(%s)', gettype($get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem), var_export($get_Assign_User_Based_Security_Group_RequestTypeRequest_ReferencesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Request_References property can only contain items of type \StructType\User_Based_Security_Group_Request_ReferencesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Request_References property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -144,8 +144,8 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Request_ReferencesType[] $request_References
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType[] $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public function setRequest_References(array $request_References = array())
     {
@@ -194,14 +194,14 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Add item to Request_References value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Request_ReferencesType $item
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType $item
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
-    public function addToRequest_References(\StructType\User_Based_Security_Group_Request_ReferencesType $item)
+    public function addToRequest_References(\WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_Based_Security_Group_Request_ReferencesType) {
-            throw new \InvalidArgumentException(sprintf('The Request_References property can only contain items of type \StructType\User_Based_Security_Group_Request_ReferencesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType) {
+            throw new \InvalidArgumentException(sprintf('The Request_References property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_ReferencesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintsFromAddToRequest_References($item))) {
@@ -212,7 +212,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     }
     /**
      * Get Request_Criteria value
-     * @return \StructType\User_Based_Security_Group_Request_CriteriaType[]|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType[]|null
      */
     public function getRequest_Criteria()
     {
@@ -230,12 +230,12 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem) {
             // validation for constraint: itemType
-            if (!$get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem instanceof \StructType\User_Based_Security_Group_Request_CriteriaType) {
+            if (!$get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType) {
                 $invalidValues[] = is_object($get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem) ? get_class($get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem) : sprintf('%s(%s)', gettype($get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem), var_export($get_Assign_User_Based_Security_Group_RequestTypeRequest_CriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Request_Criteria property can only contain items of type \StructType\User_Based_Security_Group_Request_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Request_Criteria property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -274,8 +274,8 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Request_CriteriaType[] $request_Criteria
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType[] $request_Criteria
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public function setRequest_Criteria(array $request_Criteria = array())
     {
@@ -324,14 +324,14 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Add item to Request_Criteria value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Request_CriteriaType $item
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType $item
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
-    public function addToRequest_Criteria(\StructType\User_Based_Security_Group_Request_CriteriaType $item)
+    public function addToRequest_Criteria(\WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_Based_Security_Group_Request_CriteriaType) {
-            throw new \InvalidArgumentException(sprintf('The Request_Criteria property can only contain items of type \StructType\User_Based_Security_Group_Request_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType) {
+            throw new \InvalidArgumentException(sprintf('The Request_Criteria property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Request_CriteriaType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: choice(Request_References, Request_Criteria)
         if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintsFromAddToRequest_Criteria($item))) {
@@ -342,7 +342,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType[]|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType[]|null
      */
     public function getResponse_Filter()
     {
@@ -360,12 +360,12 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem) {
             // validation for constraint: itemType
-            if (!$get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem instanceof \StructType\Response_FilterType) {
+            if (!$get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem instanceof \WorkdayWsdl\\StructType\Response_FilterType) {
                 $invalidValues[] = is_object($get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem) ? get_class($get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem) : sprintf('%s(%s)', gettype($get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem), var_export($get_Assign_User_Based_Security_Group_RequestTypeResponse_FilterItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Response_Filter property can only contain items of type \StructType\Response_FilterType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Response_Filter property can only contain items of type \WorkdayWsdl\\StructType\Response_FilterType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -373,8 +373,8 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Set Response_Filter value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_FilterType[] $response_Filter
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType[] $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public function setResponse_Filter(array $response_Filter = array())
     {
@@ -388,21 +388,21 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Add item to Response_Filter value
      * @throws \InvalidArgumentException
-     * @param \StructType\Response_FilterType $item
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $item
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
-    public function addToResponse_Filter(\StructType\Response_FilterType $item)
+    public function addToResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Response_FilterType) {
-            throw new \InvalidArgumentException(sprintf('The Response_Filter property can only contain items of type \StructType\Response_FilterType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Response_FilterType) {
+            throw new \InvalidArgumentException(sprintf('The Response_Filter property can only contain items of type \WorkdayWsdl\\StructType\Response_FilterType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Response_Filter[] = $item;
         return $this;
     }
     /**
      * Get Response_Group value
-     * @return \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[]|null
+     * @return \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[]|null
      */
     public function getResponse_Group()
     {
@@ -420,12 +420,12 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
         $invalidValues = [];
         foreach ($values as $get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem) {
             // validation for constraint: itemType
-            if (!$get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem instanceof \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType) {
+            if (!$get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType) {
                 $invalidValues[] = is_object($get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem) ? get_class($get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem) : sprintf('%s(%s)', gettype($get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem), var_export($get_Assign_User_Based_Security_Group_RequestTypeResponse_GroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Response_Group property can only contain items of type \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Response_Group property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -433,8 +433,8 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Set Response_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[] $response_Group
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType[] $response_Group
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public function setResponse_Group(array $response_Group = array())
     {
@@ -448,14 +448,14 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Add item to Response_Group value
      * @throws \InvalidArgumentException
-     * @param \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType $item
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @param \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType $item
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
-    public function addToResponse_Group(\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType $item)
+    public function addToResponse_Group(\WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType) {
-            throw new \InvalidArgumentException(sprintf('The Response_Group property can only contain items of type \StructType\User_Based_Security_Group_Reference_Only_Response_GroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType) {
+            throw new \InvalidArgumentException(sprintf('The Response_Group property can only contain items of type \WorkdayWsdl\\StructType\User_Based_Security_Group_Reference_Only_Response_GroupType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Response_Group[] = $item;
         return $this;
@@ -471,7 +471,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public function setVersion($version = null)
     {
@@ -488,7 +488,7 @@ class Get_Assign_User_Based_Security_Group_RequestType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Assign_User_Based_Security_Group_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_Assign_User_Based_Security_Group_RequestType
      */
     public static function __set_state(array $array)
     {

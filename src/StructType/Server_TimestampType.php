@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -75,7 +75,7 @@ class Server_TimestampType extends AbstractStructBase
      * Set Server_Timestamp_Data value
      * @throws \InvalidArgumentException
      * @param string[] $server_Timestamp_Data
-     * @return \StructType\Server_TimestampType
+     * @return \WorkdayWsdl\\StructType\Server_TimestampType
      */
     public function setServer_Timestamp_Data(array $server_Timestamp_Data = array())
     {
@@ -90,7 +90,7 @@ class Server_TimestampType extends AbstractStructBase
      * Add item to Server_Timestamp_Data value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\Server_TimestampType
+     * @return \WorkdayWsdl\\StructType\Server_TimestampType
      */
     public function addToServer_Timestamp_Data($item)
     {
@@ -112,7 +112,7 @@ class Server_TimestampType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Server_TimestampType
+     * @return \WorkdayWsdl\\StructType\Server_TimestampType
      */
     public function setVersion($version = null)
     {
@@ -129,7 +129,7 @@ class Server_TimestampType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Server_TimestampType
+     * @return \WorkdayWsdl\\StructType\Server_TimestampType
      */
     public static function __set_state(array $array)
     {

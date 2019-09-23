@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class Organization_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Roles_Data value
      * @param bool $include_Roles_Data
-     * @return \StructType\Organization_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Response_GroupType
      */
     public function setInclude_Roles_Data($include_Roles_Data = null)
     {
@@ -101,7 +101,7 @@ class Organization_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Hierarchy_Data value
      * @param bool $include_Hierarchy_Data
-     * @return \StructType\Organization_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Response_GroupType
      */
     public function setInclude_Hierarchy_Data($include_Hierarchy_Data = null)
     {
@@ -123,7 +123,7 @@ class Organization_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Supervisory_Data value
      * @param bool $include_Supervisory_Data
-     * @return \StructType\Organization_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Response_GroupType
      */
     public function setInclude_Supervisory_Data($include_Supervisory_Data = null)
     {
@@ -145,7 +145,7 @@ class Organization_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Staffing_Restrictions_Data value
      * @param bool $include_Staffing_Restrictions_Data
-     * @return \StructType\Organization_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Response_GroupType
      */
     public function setInclude_Staffing_Restrictions_Data($include_Staffing_Restrictions_Data = null)
     {
@@ -162,7 +162,7 @@ class Organization_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Organization_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Organization_Response_GroupType
      */
     public static function __set_state(array $array)
     {

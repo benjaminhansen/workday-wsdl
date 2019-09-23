@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Put_Frequency_ResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference for Frequency object
      * - minOccurs: 0
-     * @var \StructType\FrequencyObjectType
+     * @var \WorkdayWsdl\\StructType\FrequencyObjectType
      */
     public $Frequency_Reference;
     /**
@@ -31,10 +31,10 @@ class Put_Frequency_ResponseType extends AbstractStructBase
      * Constructor method for Put_Frequency_ResponseType
      * @uses Put_Frequency_ResponseType::setFrequency_Reference()
      * @uses Put_Frequency_ResponseType::setVersion()
-     * @param \StructType\FrequencyObjectType $frequency_Reference
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
      * @param string $version
      */
-    public function __construct(\StructType\FrequencyObjectType $frequency_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null, $version = null)
     {
         $this
             ->setFrequency_Reference($frequency_Reference)
@@ -42,7 +42,7 @@ class Put_Frequency_ResponseType extends AbstractStructBase
     }
     /**
      * Get Frequency_Reference value
-     * @return \StructType\FrequencyObjectType|null
+     * @return \WorkdayWsdl\\StructType\FrequencyObjectType|null
      */
     public function getFrequency_Reference()
     {
@@ -50,10 +50,10 @@ class Put_Frequency_ResponseType extends AbstractStructBase
     }
     /**
      * Set Frequency_Reference value
-     * @param \StructType\FrequencyObjectType $frequency_Reference
-     * @return \StructType\Put_Frequency_ResponseType
+     * @param \WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_ResponseType
      */
-    public function setFrequency_Reference(\StructType\FrequencyObjectType $frequency_Reference = null)
+    public function setFrequency_Reference(\WorkdayWsdl\\StructType\FrequencyObjectType $frequency_Reference = null)
     {
         $this->Frequency_Reference = $frequency_Reference;
         return $this;
@@ -69,7 +69,7 @@ class Put_Frequency_ResponseType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Frequency_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -86,7 +86,7 @@ class Put_Frequency_ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Frequency_ResponseType
+     * @return \WorkdayWsdl\\StructType\Put_Frequency_ResponseType
      */
     public static function __set_state(array $array)
     {

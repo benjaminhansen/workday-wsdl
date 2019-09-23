@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,28 +17,28 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * The Request_References
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType
      */
     public $Request_References;
     /**
      * The Response_Filter
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
      * The Response_Results
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Response_ResultsType
+     * @var \WorkdayWsdl\\StructType\Response_ResultsType
      */
     public $Response_Results;
     /**
      * The Response_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
+     * @var \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType
      */
     public $Response_Data;
     /**
@@ -56,13 +56,13 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * @uses Get_Location_Hierarchy_Organization_Assignments_ResponseType::setResponse_Results()
      * @uses Get_Location_Hierarchy_Organization_Assignments_ResponseType::setResponse_Data()
      * @uses Get_Location_Hierarchy_Organization_Assignments_ResponseType::setVersion()
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References
-     * @param \StructType\Response_FilterType $response_Filter
-     * @param \StructType\Response_ResultsType $response_Results
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data
      * @param string $version
      */
-    public function __construct(\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References = null, \StructType\Response_FilterType $response_Filter = null, \StructType\Response_ResultsType $response_Results = null, \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, \WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null, \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -73,7 +73,7 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Get Request_References value
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -81,17 +81,17 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Set Request_References value
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
-    public function setRequest_References(\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -99,17 +99,17 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
     }
     /**
      * Get Response_Results value
-     * @return \StructType\Response_ResultsType|null
+     * @return \WorkdayWsdl\\StructType\Response_ResultsType|null
      */
     public function getResponse_Results()
     {
@@ -117,17 +117,17 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Set Response_Results value
-     * @param \StructType\Response_ResultsType $response_Results
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Response_ResultsType $response_Results
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
-    public function setResponse_Results(\StructType\Response_ResultsType $response_Results = null)
+    public function setResponse_Results(\WorkdayWsdl\\StructType\Response_ResultsType $response_Results = null)
     {
         $this->Response_Results = $response_Results;
         return $this;
     }
     /**
      * Get Response_Data value
-     * @return \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType|null
+     * @return \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType|null
      */
     public function getResponse_Data()
     {
@@ -135,10 +135,10 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     }
     /**
      * Set Response_Data value
-     * @param \StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @param \WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
-    public function setResponse_Data(\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data = null)
+    public function setResponse_Data(\WorkdayWsdl\\StructType\Location_Hierarchy_Organization_Assignments_Response_DataType $response_Data = null)
     {
         $this->Response_Data = $response_Data;
         return $this;
@@ -154,7 +154,7 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -171,7 +171,7 @@ class Get_Location_Hierarchy_Organization_Assignments_ResponseType extends Abstr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
+     * @return \WorkdayWsdl\\StructType\Get_Location_Hierarchy_Organization_Assignments_ResponseType
      */
     public static function __set_state(array $array)
     {

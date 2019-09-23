@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Disability_Certification_AuthorityObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Disability_Certification_AuthorityReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Disability_Certification_AuthorityReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Disability_Certification_AuthorityReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Disability_Certification_AuthorityReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Disability_Certification_AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Disability_Certification_AuthorityReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Disability_Certification_AuthorityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Disability_Certification_AuthorityReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Disability_Certification_AuthorityReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Disability_Certification_AuthorityReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Disability_Certification_AuthorityReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Disability_Certification_AuthorityObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Disability_Certification_AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Disability_Certification_AuthorityObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Disability_Certification_AuthorityObjectIDType
+     * @return \WorkdayWsdl\\StructType\Disability_Certification_AuthorityObjectIDType
      */
     public static function __set_state(array $array)
     {

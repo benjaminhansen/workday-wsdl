@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class WorkerType extends AbstractStructBase
      * - documentation: A reference to the ID of the worker. The ID consists of a type attribute, which should be set to "Employee_ID" or "Contingent_Worker_ID", and a value attribute, such as "04345". If Skip Non Existing Instances value is set to true.
      * When a reference id value that does not meet the entry date criteria is passed, the non existent reference id will be ignored.
      * - minOccurs: 0
-     * @var \StructType\WorkerObjectType
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType
      */
     public $Worker_Reference;
     /**
@@ -35,14 +35,14 @@ class WorkerType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Universal ID for the worker.
      * - minOccurs: 0
-     * @var \StructType\Universal_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Universal_IdentifierObjectType
      */
     public $Universal_Identifier_Reference;
     /**
      * The Worker_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Worker_DataType
+     * @var \WorkdayWsdl\\StructType\Worker_DataType
      */
     public $Worker_Data;
     /**
@@ -51,12 +51,12 @@ class WorkerType extends AbstractStructBase
      * @uses WorkerType::setWorker_Descriptor()
      * @uses WorkerType::setUniversal_Identifier_Reference()
      * @uses WorkerType::setWorker_Data()
-     * @param \StructType\WorkerObjectType $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
      * @param string $worker_Descriptor
-     * @param \StructType\Universal_IdentifierObjectType $universal_Identifier_Reference
-     * @param \StructType\Worker_DataType $worker_Data
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_Identifier_Reference
+     * @param \WorkdayWsdl\\StructType\Worker_DataType $worker_Data
      */
-    public function __construct(\StructType\WorkerObjectType $worker_Reference = null, $worker_Descriptor = null, \StructType\Universal_IdentifierObjectType $universal_Identifier_Reference = null, \StructType\Worker_DataType $worker_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null, $worker_Descriptor = null, \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_Identifier_Reference = null, \WorkdayWsdl\\StructType\Worker_DataType $worker_Data = null)
     {
         $this
             ->setWorker_Reference($worker_Reference)
@@ -66,7 +66,7 @@ class WorkerType extends AbstractStructBase
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType|null
      */
     public function getWorker_Reference()
     {
@@ -74,10 +74,10 @@ class WorkerType extends AbstractStructBase
     }
     /**
      * Set Worker_Reference value
-     * @param \StructType\WorkerObjectType $worker_Reference
-     * @return \StructType\WorkerType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference
+     * @return \WorkdayWsdl\\StructType\WorkerType
      */
-    public function setWorker_Reference(\StructType\WorkerObjectType $worker_Reference = null)
+    public function setWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $worker_Reference = null)
     {
         $this->Worker_Reference = $worker_Reference;
         return $this;
@@ -93,7 +93,7 @@ class WorkerType extends AbstractStructBase
     /**
      * Set Worker_Descriptor value
      * @param string $worker_Descriptor
-     * @return \StructType\WorkerType
+     * @return \WorkdayWsdl\\StructType\WorkerType
      */
     public function setWorker_Descriptor($worker_Descriptor = null)
     {
@@ -106,7 +106,7 @@ class WorkerType extends AbstractStructBase
     }
     /**
      * Get Universal_Identifier_Reference value
-     * @return \StructType\Universal_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectType|null
      */
     public function getUniversal_Identifier_Reference()
     {
@@ -114,17 +114,17 @@ class WorkerType extends AbstractStructBase
     }
     /**
      * Set Universal_Identifier_Reference value
-     * @param \StructType\Universal_IdentifierObjectType $universal_Identifier_Reference
-     * @return \StructType\WorkerType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_Identifier_Reference
+     * @return \WorkdayWsdl\\StructType\WorkerType
      */
-    public function setUniversal_Identifier_Reference(\StructType\Universal_IdentifierObjectType $universal_Identifier_Reference = null)
+    public function setUniversal_Identifier_Reference(\WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_Identifier_Reference = null)
     {
         $this->Universal_Identifier_Reference = $universal_Identifier_Reference;
         return $this;
     }
     /**
      * Get Worker_Data value
-     * @return \StructType\Worker_DataType|null
+     * @return \WorkdayWsdl\\StructType\Worker_DataType|null
      */
     public function getWorker_Data()
     {
@@ -132,10 +132,10 @@ class WorkerType extends AbstractStructBase
     }
     /**
      * Set Worker_Data value
-     * @param \StructType\Worker_DataType $worker_Data
-     * @return \StructType\WorkerType
+     * @param \WorkdayWsdl\\StructType\Worker_DataType $worker_Data
+     * @return \WorkdayWsdl\\StructType\WorkerType
      */
-    public function setWorker_Data(\StructType\Worker_DataType $worker_Data = null)
+    public function setWorker_Data(\WorkdayWsdl\\StructType\Worker_DataType $worker_Data = null)
     {
         $this->Worker_Data = $worker_Data;
         return $this;
@@ -146,7 +146,7 @@ class WorkerType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\WorkerType
+     * @return \WorkdayWsdl\\StructType\WorkerType
      */
     public static function __set_state(array $array)
     {

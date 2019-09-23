@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
      * The Employee_Reference
      * Meta information extracted from the WSDL
      * - documentation: Contains reference for employee who will have background check status updated.
-     * @var \StructType\EmployeeObjectType
+     * @var \WorkdayWsdl\\StructType\EmployeeObjectType
      */
     public $Employee_Reference;
     /**
@@ -31,7 +31,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
      * The Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: Background check status.
-     * @var \StructType\Background_Check_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Background_Check_StatusObjectType
      */
     public $Status_Reference;
     /**
@@ -49,12 +49,12 @@ class Background_Check_Event_DataType extends AbstractStructBase
      * @uses Background_Check_Event_DataType::setStatus_Date()
      * @uses Background_Check_Event_DataType::setStatus_Reference()
      * @uses Background_Check_Event_DataType::setStatus_Comment()
-     * @param \StructType\EmployeeObjectType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
      * @param string $status_Date
-     * @param \StructType\Background_Check_StatusObjectType $status_Reference
+     * @param \WorkdayWsdl\\StructType\Background_Check_StatusObjectType $status_Reference
      * @param string $status_Comment
      */
-    public function __construct(\StructType\EmployeeObjectType $employee_Reference = null, $status_Date = null, \StructType\Background_Check_StatusObjectType $status_Reference = null, $status_Comment = null)
+    public function __construct(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null, $status_Date = null, \WorkdayWsdl\\StructType\Background_Check_StatusObjectType $status_Reference = null, $status_Comment = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -64,7 +64,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\EmployeeObjectType|null
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectType|null
      */
     public function getEmployee_Reference()
     {
@@ -72,10 +72,10 @@ class Background_Check_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Employee_Reference value
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @return \StructType\Background_Check_Event_DataType
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Background_Check_Event_DataType
      */
-    public function setEmployee_Reference(\StructType\EmployeeObjectType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null)
     {
         $this->Employee_Reference = $employee_Reference;
         return $this;
@@ -91,7 +91,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
     /**
      * Set Status_Date value
      * @param string $status_Date
-     * @return \StructType\Background_Check_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Background_Check_Event_DataType
      */
     public function setStatus_Date($status_Date = null)
     {
@@ -104,7 +104,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
     }
     /**
      * Get Status_Reference value
-     * @return \StructType\Background_Check_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Background_Check_StatusObjectType|null
      */
     public function getStatus_Reference()
     {
@@ -112,10 +112,10 @@ class Background_Check_Event_DataType extends AbstractStructBase
     }
     /**
      * Set Status_Reference value
-     * @param \StructType\Background_Check_StatusObjectType $status_Reference
-     * @return \StructType\Background_Check_Event_DataType
+     * @param \WorkdayWsdl\\StructType\Background_Check_StatusObjectType $status_Reference
+     * @return \WorkdayWsdl\\StructType\Background_Check_Event_DataType
      */
-    public function setStatus_Reference(\StructType\Background_Check_StatusObjectType $status_Reference = null)
+    public function setStatus_Reference(\WorkdayWsdl\\StructType\Background_Check_StatusObjectType $status_Reference = null)
     {
         $this->Status_Reference = $status_Reference;
         return $this;
@@ -131,7 +131,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
     /**
      * Set Status_Comment value
      * @param string $status_Comment
-     * @return \StructType\Background_Check_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Background_Check_Event_DataType
      */
     public function setStatus_Comment($status_Comment = null)
     {
@@ -148,7 +148,7 @@ class Background_Check_Event_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Background_Check_Event_DataType
+     * @return \WorkdayWsdl\\StructType\Background_Check_Event_DataType
      */
     public static function __set_state(array $array)
     {

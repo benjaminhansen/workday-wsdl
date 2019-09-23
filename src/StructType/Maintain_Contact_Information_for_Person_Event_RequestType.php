@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
      * - documentation: Container for the processing options for a business process. If no options are submitted (or the options are submitted as 'false') then the business process is simply initiated as if it where submitted on-line with approvals,
      * reviews, notifications and to-do's in place.
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
@@ -27,7 +27,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for the Maintain Contact Information for Person business process web service
      * - minOccurs: 0
-     * @var \StructType\Contact_Information_for_Person_Event_DataType
+     * @var \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType
      */
     public $Maintain_Contact_Information_Data;
     /**
@@ -50,12 +50,12 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
      * @uses Maintain_Contact_Information_for_Person_Event_RequestType::setMaintain_Contact_Information_Data()
      * @uses Maintain_Contact_Information_for_Person_Event_RequestType::setAdd_Only()
      * @uses Maintain_Contact_Information_for_Person_Event_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -65,7 +65,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -73,17 +73,17 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Maintain_Contact_Information_Data value
-     * @return \StructType\Contact_Information_for_Person_Event_DataType|null
+     * @return \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType|null
      */
     public function getMaintain_Contact_Information_Data()
     {
@@ -91,10 +91,10 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
     }
     /**
      * Set Maintain_Contact_Information_Data value
-     * @param \StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_RequestType
+     * @param \WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType
      */
-    public function setMaintain_Contact_Information_Data(\StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data = null)
+    public function setMaintain_Contact_Information_Data(\WorkdayWsdl\\StructType\Contact_Information_for_Person_Event_DataType $maintain_Contact_Information_Data = null)
     {
         $this->Maintain_Contact_Information_Data = $maintain_Contact_Information_Data;
         return $this;
@@ -110,7 +110,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -132,7 +132,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType
      */
     public function setVersion($version = null)
     {
@@ -149,7 +149,7 @@ class Maintain_Contact_Information_for_Person_Event_RequestType extends Abstract
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Maintain_Contact_Information_for_Person_Event_RequestType
+     * @return \WorkdayWsdl\\StructType\Maintain_Contact_Information_for_Person_Event_RequestType
      */
     public static function __set_state(array $array)
     {

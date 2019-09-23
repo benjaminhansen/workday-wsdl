@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,14 +16,14 @@ class OrganizationType extends AbstractStructBase
      * The Organization_Reference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Organization_ReferenceType
      */
     public $Organization_Reference;
     /**
      * The Organization_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Organization_DataType
+     * @var \WorkdayWsdl\\StructType\Organization_DataType
      */
     public $Organization_Data;
     /**
@@ -56,13 +56,13 @@ class OrganizationType extends AbstractStructBase
      * @uses OrganizationType::setAs_Of_Date()
      * @uses OrganizationType::setAs_Of_Moment()
      * @uses OrganizationType::setVersion()
-     * @param \StructType\Organization_ReferenceType $organization_Reference
-     * @param \StructType\Organization_DataType $organization_Data
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
+     * @param \WorkdayWsdl\\StructType\Organization_DataType $organization_Data
      * @param string $as_Of_Date
      * @param string $as_Of_Moment
      * @param string $version
      */
-    public function __construct(\StructType\Organization_ReferenceType $organization_Reference = null, \StructType\Organization_DataType $organization_Data = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null, \WorkdayWsdl\\StructType\Organization_DataType $organization_Data = null, $as_Of_Date = null, $as_Of_Moment = null, $version = null)
     {
         $this
             ->setOrganization_Reference($organization_Reference)
@@ -73,7 +73,7 @@ class OrganizationType extends AbstractStructBase
     }
     /**
      * Get Organization_Reference value
-     * @return \StructType\Organization_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Organization_ReferenceType|null
      */
     public function getOrganization_Reference()
     {
@@ -81,17 +81,17 @@ class OrganizationType extends AbstractStructBase
     }
     /**
      * Set Organization_Reference value
-     * @param \StructType\Organization_ReferenceType $organization_Reference
-     * @return \StructType\OrganizationType
+     * @param \WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
-    public function setOrganization_Reference(\StructType\Organization_ReferenceType $organization_Reference = null)
+    public function setOrganization_Reference(\WorkdayWsdl\\StructType\Organization_ReferenceType $organization_Reference = null)
     {
         $this->Organization_Reference = $organization_Reference;
         return $this;
     }
     /**
      * Get Organization_Data value
-     * @return \StructType\Organization_DataType|null
+     * @return \WorkdayWsdl\\StructType\Organization_DataType|null
      */
     public function getOrganization_Data()
     {
@@ -99,10 +99,10 @@ class OrganizationType extends AbstractStructBase
     }
     /**
      * Set Organization_Data value
-     * @param \StructType\Organization_DataType $organization_Data
-     * @return \StructType\OrganizationType
+     * @param \WorkdayWsdl\\StructType\Organization_DataType $organization_Data
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
-    public function setOrganization_Data(\StructType\Organization_DataType $organization_Data = null)
+    public function setOrganization_Data(\WorkdayWsdl\\StructType\Organization_DataType $organization_Data = null)
     {
         $this->Organization_Data = $organization_Data;
         return $this;
@@ -118,7 +118,7 @@ class OrganizationType extends AbstractStructBase
     /**
      * Set As_Of_Date value
      * @param string $as_Of_Date
-     * @return \StructType\OrganizationType
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
     public function setAs_Of_Date($as_Of_Date = null)
     {
@@ -140,7 +140,7 @@ class OrganizationType extends AbstractStructBase
     /**
      * Set As_Of_Moment value
      * @param string $as_Of_Moment
-     * @return \StructType\OrganizationType
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
     public function setAs_Of_Moment($as_Of_Moment = null)
     {
@@ -162,7 +162,7 @@ class OrganizationType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\OrganizationType
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
     public function setVersion($version = null)
     {
@@ -179,7 +179,7 @@ class OrganizationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OrganizationType
+     * @return \WorkdayWsdl\\StructType\OrganizationType
      */
     public static function __set_state(array $array)
     {

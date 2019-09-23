@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Merit_Percent_PlanObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
      * Constructor method for Merit_Percent_PlanObjectType
      * @uses Merit_Percent_PlanObjectType::setID()
      * @uses Merit_Percent_PlanObjectType::setDescriptor()
-     * @param \StructType\Merit_Percent_PlanObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Merit_Percent_PlanObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $merit_Percent_PlanObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$merit_Percent_PlanObjectTypeIDItem instanceof \StructType\Merit_Percent_PlanObjectIDType) {
+            if (!$merit_Percent_PlanObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType) {
                 $invalidValues[] = is_object($merit_Percent_PlanObjectTypeIDItem) ? get_class($merit_Percent_PlanObjectTypeIDItem) : sprintf('%s(%s)', gettype($merit_Percent_PlanObjectTypeIDItem), var_export($merit_Percent_PlanObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Merit_Percent_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Merit_Percent_PlanObjectIDType[] $iD
-     * @return \StructType\Merit_Percent_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Merit_Percent_PlanObjectIDType $item
-     * @return \StructType\Merit_Percent_PlanObjectType
+     * @param \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType
      */
-    public function addToID(\StructType\Merit_Percent_PlanObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Merit_Percent_PlanObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Merit_Percent_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Merit_Percent_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Merit_Percent_PlanObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Merit_Percent_PlanObjectType
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectType
      */
     public static function __set_state(array $array)
     {

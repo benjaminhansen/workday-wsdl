@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Workers_Compensation_CodeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
      * Constructor method for Workers_Compensation_CodeObjectType
      * @uses Workers_Compensation_CodeObjectType::setID()
      * @uses Workers_Compensation_CodeObjectType::setDescriptor()
-     * @param \StructType\Workers_Compensation_CodeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Workers_Compensation_CodeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $workers_Compensation_CodeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$workers_Compensation_CodeObjectTypeIDItem instanceof \StructType\Workers_Compensation_CodeObjectIDType) {
+            if (!$workers_Compensation_CodeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType) {
                 $invalidValues[] = is_object($workers_Compensation_CodeObjectTypeIDItem) ? get_class($workers_Compensation_CodeObjectTypeIDItem) : sprintf('%s(%s)', gettype($workers_Compensation_CodeObjectTypeIDItem), var_export($workers_Compensation_CodeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Workers_Compensation_CodeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_CodeObjectIDType[] $iD
-     * @return \StructType\Workers_Compensation_CodeObjectType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Workers_Compensation_CodeObjectIDType $item
-     * @return \StructType\Workers_Compensation_CodeObjectType
+     * @param \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
-    public function addToID(\StructType\Workers_Compensation_CodeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Workers_Compensation_CodeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Workers_Compensation_CodeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Workers_Compensation_CodeObjectType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Workers_Compensation_CodeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Workers_Compensation_CodeObjectType
+     * @return \WorkdayWsdl\\StructType\Workers_Compensation_CodeObjectType
      */
     public static function __set_state(array $array)
     {

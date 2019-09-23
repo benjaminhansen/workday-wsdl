@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A reference to the Academic Unit
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Academic_Unit_Reference;
     /**
      * The Academic_Unit_Data
-     * @var \StructType\Academic_Unit_DataType
+     * @var \WorkdayWsdl\\StructType\Academic_Unit_DataType
      */
     public $Academic_Unit_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
      * @uses Put_Academic_Unit_RequestType::setAcademic_Unit_Data()
      * @uses Put_Academic_Unit_RequestType::setAdd_Only()
      * @uses Put_Academic_Unit_RequestType::setVersion()
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @param \StructType\Academic_Unit_DataType $academic_Unit_Data
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null, \StructType\Academic_Unit_DataType $academic_Unit_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null, \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setAcademic_Unit_Reference($academic_Unit_Reference)
@@ -60,7 +60,7 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
     }
     /**
      * Get Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getAcademic_Unit_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @return \StructType\Put_Academic_Unit_RequestType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_RequestType
      */
-    public function setAcademic_Unit_Reference(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
+    public function setAcademic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
     {
         $this->Academic_Unit_Reference = $academic_Unit_Reference;
         return $this;
     }
     /**
      * Get Academic_Unit_Data value
-     * @return \StructType\Academic_Unit_DataType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Unit_DataType|null
      */
     public function getAcademic_Unit_Data()
     {
@@ -86,10 +86,10 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Data value
-     * @param \StructType\Academic_Unit_DataType $academic_Unit_Data
-     * @return \StructType\Put_Academic_Unit_RequestType
+     * @param \WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_RequestType
      */
-    public function setAcademic_Unit_Data(\StructType\Academic_Unit_DataType $academic_Unit_Data = null)
+    public function setAcademic_Unit_Data(\WorkdayWsdl\\StructType\Academic_Unit_DataType $academic_Unit_Data = null)
     {
         $this->Academic_Unit_Data = $academic_Unit_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Academic_Unit_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Academic_Unit_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Academic_Unit_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Academic_Unit_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Academic_Unit_RequestType
      */
     public static function __set_state(array $array)
     {

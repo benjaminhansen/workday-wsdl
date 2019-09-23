@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Certification_AchievementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The reference to the certification profile.
      * - minOccurs: 0
-     * @var \StructType\Certification_SkillObjectType
+     * @var \WorkdayWsdl\\StructType\Certification_SkillObjectType
      */
     public $Certification_Reference;
     /**
@@ -25,17 +25,17 @@ class Certification_AchievementType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for Certification data.
      * - maxOccurs: unbounded
-     * @var \StructType\Certification_Achievement_DataType[]
+     * @var \WorkdayWsdl\\StructType\Certification_Achievement_DataType[]
      */
     public $Certification_Data;
     /**
      * Constructor method for Certification_AchievementType
      * @uses Certification_AchievementType::setCertification_Reference()
      * @uses Certification_AchievementType::setCertification_Data()
-     * @param \StructType\Certification_SkillObjectType $certification_Reference
-     * @param \StructType\Certification_Achievement_DataType[] $certification_Data
+     * @param \WorkdayWsdl\\StructType\Certification_SkillObjectType $certification_Reference
+     * @param \WorkdayWsdl\\StructType\Certification_Achievement_DataType[] $certification_Data
      */
-    public function __construct(\StructType\Certification_SkillObjectType $certification_Reference = null, array $certification_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Certification_SkillObjectType $certification_Reference = null, array $certification_Data = array())
     {
         $this
             ->setCertification_Reference($certification_Reference)
@@ -43,7 +43,7 @@ class Certification_AchievementType extends AbstractStructBase
     }
     /**
      * Get Certification_Reference value
-     * @return \StructType\Certification_SkillObjectType|null
+     * @return \WorkdayWsdl\\StructType\Certification_SkillObjectType|null
      */
     public function getCertification_Reference()
     {
@@ -51,17 +51,17 @@ class Certification_AchievementType extends AbstractStructBase
     }
     /**
      * Set Certification_Reference value
-     * @param \StructType\Certification_SkillObjectType $certification_Reference
-     * @return \StructType\Certification_AchievementType
+     * @param \WorkdayWsdl\\StructType\Certification_SkillObjectType $certification_Reference
+     * @return \WorkdayWsdl\\StructType\Certification_AchievementType
      */
-    public function setCertification_Reference(\StructType\Certification_SkillObjectType $certification_Reference = null)
+    public function setCertification_Reference(\WorkdayWsdl\\StructType\Certification_SkillObjectType $certification_Reference = null)
     {
         $this->Certification_Reference = $certification_Reference;
         return $this;
     }
     /**
      * Get Certification_Data value
-     * @return \StructType\Certification_Achievement_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Certification_Achievement_DataType[]|null
      */
     public function getCertification_Data()
     {
@@ -79,12 +79,12 @@ class Certification_AchievementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $certification_AchievementTypeCertification_DataItem) {
             // validation for constraint: itemType
-            if (!$certification_AchievementTypeCertification_DataItem instanceof \StructType\Certification_Achievement_DataType) {
+            if (!$certification_AchievementTypeCertification_DataItem instanceof \WorkdayWsdl\\StructType\Certification_Achievement_DataType) {
                 $invalidValues[] = is_object($certification_AchievementTypeCertification_DataItem) ? get_class($certification_AchievementTypeCertification_DataItem) : sprintf('%s(%s)', gettype($certification_AchievementTypeCertification_DataItem), var_export($certification_AchievementTypeCertification_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Certification_Data property can only contain items of type \StructType\Certification_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Certification_Data property can only contain items of type \WorkdayWsdl\\StructType\Certification_Achievement_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -92,8 +92,8 @@ class Certification_AchievementType extends AbstractStructBase
     /**
      * Set Certification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_Achievement_DataType[] $certification_Data
-     * @return \StructType\Certification_AchievementType
+     * @param \WorkdayWsdl\\StructType\Certification_Achievement_DataType[] $certification_Data
+     * @return \WorkdayWsdl\\StructType\Certification_AchievementType
      */
     public function setCertification_Data(array $certification_Data = array())
     {
@@ -107,14 +107,14 @@ class Certification_AchievementType extends AbstractStructBase
     /**
      * Add item to Certification_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Certification_Achievement_DataType $item
-     * @return \StructType\Certification_AchievementType
+     * @param \WorkdayWsdl\\StructType\Certification_Achievement_DataType $item
+     * @return \WorkdayWsdl\\StructType\Certification_AchievementType
      */
-    public function addToCertification_Data(\StructType\Certification_Achievement_DataType $item)
+    public function addToCertification_Data(\WorkdayWsdl\\StructType\Certification_Achievement_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Certification_Achievement_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Certification_Data property can only contain items of type \StructType\Certification_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Certification_Achievement_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Certification_Data property can only contain items of type \WorkdayWsdl\\StructType\Certification_Achievement_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Certification_Data[] = $item;
         return $this;
@@ -125,7 +125,7 @@ class Certification_AchievementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Certification_AchievementType
+     * @return \WorkdayWsdl\\StructType\Certification_AchievementType
      */
     public static function __set_state(array $array)
     {

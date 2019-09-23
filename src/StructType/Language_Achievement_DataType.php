@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Language_Achievement_DataType extends AbstractStructBase
      * The Language_Reference
      * Meta information extracted from the WSDL
      * - documentation: Language Reference
-     * @var \StructType\LanguageObjectType
+     * @var \WorkdayWsdl\\StructType\LanguageObjectType
      */
     public $Language_Reference;
     /**
@@ -42,7 +42,7 @@ class Language_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Language_AbilityType[]
+     * @var \WorkdayWsdl\\StructType\Language_AbilityType[]
      */
     public $Language_Ability;
     /**
@@ -68,7 +68,7 @@ class Language_Achievement_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Worker assessing the language
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Assessed_by_Worker_Reference;
     /**
@@ -80,15 +80,15 @@ class Language_Achievement_DataType extends AbstractStructBase
      * @uses Language_Achievement_DataType::setAssessed_On()
      * @uses Language_Achievement_DataType::setNote()
      * @uses Language_Achievement_DataType::setAssessed_by_Worker_Reference()
-     * @param \StructType\LanguageObjectType $language_Reference
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType $language_Reference
      * @param bool $remove_Language
      * @param bool $native_Language
-     * @param \StructType\Language_AbilityType[] $language_Ability
+     * @param \WorkdayWsdl\\StructType\Language_AbilityType[] $language_Ability
      * @param string $assessed_On
      * @param string $note
-     * @param \StructType\RoleObjectType $assessed_by_Worker_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $assessed_by_Worker_Reference
      */
-    public function __construct(\StructType\LanguageObjectType $language_Reference = null, $remove_Language = null, $native_Language = null, array $language_Ability = array(), $assessed_On = null, $note = null, \StructType\RoleObjectType $assessed_by_Worker_Reference = null)
+    public function __construct(\WorkdayWsdl\\StructType\LanguageObjectType $language_Reference = null, $remove_Language = null, $native_Language = null, array $language_Ability = array(), $assessed_On = null, $note = null, \WorkdayWsdl\\StructType\RoleObjectType $assessed_by_Worker_Reference = null)
     {
         $this
             ->setLanguage_Reference($language_Reference)
@@ -101,7 +101,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Language_Reference value
-     * @return \StructType\LanguageObjectType|null
+     * @return \WorkdayWsdl\\StructType\LanguageObjectType|null
      */
     public function getLanguage_Reference()
     {
@@ -109,10 +109,10 @@ class Language_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Language_Reference value
-     * @param \StructType\LanguageObjectType $language_Reference
-     * @return \StructType\Language_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\LanguageObjectType $language_Reference
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
-    public function setLanguage_Reference(\StructType\LanguageObjectType $language_Reference = null)
+    public function setLanguage_Reference(\WorkdayWsdl\\StructType\LanguageObjectType $language_Reference = null)
     {
         $this->Language_Reference = $language_Reference;
         return $this;
@@ -128,7 +128,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Set Remove_Language value
      * @param bool $remove_Language
-     * @return \StructType\Language_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public function setRemove_Language($remove_Language = null)
     {
@@ -150,7 +150,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Set Native_Language value
      * @param bool $native_Language
-     * @return \StructType\Language_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public function setNative_Language($native_Language = null)
     {
@@ -163,7 +163,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Language_Ability value
-     * @return \StructType\Language_AbilityType[]|null
+     * @return \WorkdayWsdl\\StructType\Language_AbilityType[]|null
      */
     public function getLanguage_Ability()
     {
@@ -181,12 +181,12 @@ class Language_Achievement_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $language_Achievement_DataTypeLanguage_AbilityItem) {
             // validation for constraint: itemType
-            if (!$language_Achievement_DataTypeLanguage_AbilityItem instanceof \StructType\Language_AbilityType) {
+            if (!$language_Achievement_DataTypeLanguage_AbilityItem instanceof \WorkdayWsdl\\StructType\Language_AbilityType) {
                 $invalidValues[] = is_object($language_Achievement_DataTypeLanguage_AbilityItem) ? get_class($language_Achievement_DataTypeLanguage_AbilityItem) : sprintf('%s(%s)', gettype($language_Achievement_DataTypeLanguage_AbilityItem), var_export($language_Achievement_DataTypeLanguage_AbilityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language_Ability property can only contain items of type \StructType\Language_AbilityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language_Ability property can only contain items of type \WorkdayWsdl\\StructType\Language_AbilityType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -194,8 +194,8 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Set Language_Ability value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_AbilityType[] $language_Ability
-     * @return \StructType\Language_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Language_AbilityType[] $language_Ability
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public function setLanguage_Ability(array $language_Ability = array())
     {
@@ -209,14 +209,14 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Add item to Language_Ability value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_AbilityType $item
-     * @return \StructType\Language_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\Language_AbilityType $item
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
-    public function addToLanguage_Ability(\StructType\Language_AbilityType $item)
+    public function addToLanguage_Ability(\WorkdayWsdl\\StructType\Language_AbilityType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Language_AbilityType) {
-            throw new \InvalidArgumentException(sprintf('The Language_Ability property can only contain items of type \StructType\Language_AbilityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Language_AbilityType) {
+            throw new \InvalidArgumentException(sprintf('The Language_Ability property can only contain items of type \WorkdayWsdl\\StructType\Language_AbilityType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language_Ability[] = $item;
         return $this;
@@ -232,7 +232,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Set Assessed_On value
      * @param string $assessed_On
-     * @return \StructType\Language_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public function setAssessed_On($assessed_On = null)
     {
@@ -254,7 +254,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     /**
      * Set Note value
      * @param string $note
-     * @return \StructType\Language_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public function setNote($note = null)
     {
@@ -267,7 +267,7 @@ class Language_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Get Assessed_by_Worker_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getAssessed_by_Worker_Reference()
     {
@@ -275,10 +275,10 @@ class Language_Achievement_DataType extends AbstractStructBase
     }
     /**
      * Set Assessed_by_Worker_Reference value
-     * @param \StructType\RoleObjectType $assessed_by_Worker_Reference
-     * @return \StructType\Language_Achievement_DataType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $assessed_by_Worker_Reference
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
-    public function setAssessed_by_Worker_Reference(\StructType\RoleObjectType $assessed_by_Worker_Reference = null)
+    public function setAssessed_by_Worker_Reference(\WorkdayWsdl\\StructType\RoleObjectType $assessed_by_Worker_Reference = null)
     {
         $this->Assessed_by_Worker_Reference = $assessed_by_Worker_Reference;
         return $this;
@@ -289,7 +289,7 @@ class Language_Achievement_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Language_Achievement_DataType
+     * @return \WorkdayWsdl\\StructType\Language_Achievement_DataType
      */
     public static function __set_state(array $array)
     {

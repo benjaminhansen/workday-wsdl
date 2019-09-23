@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Feedback_Received_DataType extends AbstractStructBase
      * - documentation: Contains the informational components of a feedback (comment, date, question asked, sender, requester, and type).
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Feedback_ReceivedType[]
+     * @var \WorkdayWsdl\\StructType\Feedback_ReceivedType[]
      */
     public $Feedback_Received;
     /**
      * Constructor method for Feedback_Received_DataType
      * @uses Feedback_Received_DataType::setFeedback_Received()
-     * @param \StructType\Feedback_ReceivedType[] $feedback_Received
+     * @param \WorkdayWsdl\\StructType\Feedback_ReceivedType[] $feedback_Received
      */
     public function __construct(array $feedback_Received = array())
     {
@@ -33,7 +33,7 @@ class Feedback_Received_DataType extends AbstractStructBase
     }
     /**
      * Get Feedback_Received value
-     * @return \StructType\Feedback_ReceivedType[]|null
+     * @return \WorkdayWsdl\\StructType\Feedback_ReceivedType[]|null
      */
     public function getFeedback_Received()
     {
@@ -51,12 +51,12 @@ class Feedback_Received_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $feedback_Received_DataTypeFeedback_ReceivedItem) {
             // validation for constraint: itemType
-            if (!$feedback_Received_DataTypeFeedback_ReceivedItem instanceof \StructType\Feedback_ReceivedType) {
+            if (!$feedback_Received_DataTypeFeedback_ReceivedItem instanceof \WorkdayWsdl\\StructType\Feedback_ReceivedType) {
                 $invalidValues[] = is_object($feedback_Received_DataTypeFeedback_ReceivedItem) ? get_class($feedback_Received_DataTypeFeedback_ReceivedItem) : sprintf('%s(%s)', gettype($feedback_Received_DataTypeFeedback_ReceivedItem), var_export($feedback_Received_DataTypeFeedback_ReceivedItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Feedback_Received property can only contain items of type \StructType\Feedback_ReceivedType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Feedback_Received property can only contain items of type \WorkdayWsdl\\StructType\Feedback_ReceivedType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Feedback_Received_DataType extends AbstractStructBase
     /**
      * Set Feedback_Received value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feedback_ReceivedType[] $feedback_Received
-     * @return \StructType\Feedback_Received_DataType
+     * @param \WorkdayWsdl\\StructType\Feedback_ReceivedType[] $feedback_Received
+     * @return \WorkdayWsdl\\StructType\Feedback_Received_DataType
      */
     public function setFeedback_Received(array $feedback_Received = array())
     {
@@ -79,14 +79,14 @@ class Feedback_Received_DataType extends AbstractStructBase
     /**
      * Add item to Feedback_Received value
      * @throws \InvalidArgumentException
-     * @param \StructType\Feedback_ReceivedType $item
-     * @return \StructType\Feedback_Received_DataType
+     * @param \WorkdayWsdl\\StructType\Feedback_ReceivedType $item
+     * @return \WorkdayWsdl\\StructType\Feedback_Received_DataType
      */
-    public function addToFeedback_Received(\StructType\Feedback_ReceivedType $item)
+    public function addToFeedback_Received(\WorkdayWsdl\\StructType\Feedback_ReceivedType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Feedback_ReceivedType) {
-            throw new \InvalidArgumentException(sprintf('The Feedback_Received property can only contain items of type \StructType\Feedback_ReceivedType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Feedback_ReceivedType) {
+            throw new \InvalidArgumentException(sprintf('The Feedback_Received property can only contain items of type \WorkdayWsdl\\StructType\Feedback_ReceivedType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Feedback_Received[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Feedback_Received_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Feedback_Received_DataType
+     * @return \WorkdayWsdl\\StructType\Feedback_Received_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -102,7 +102,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -124,7 +124,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Person_Name_Data value
      * @param bool $include_Person_Name_Data
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Person_Name_Data($include_Person_Name_Data = null)
     {
@@ -146,7 +146,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Person_Identification_Data value
      * @param bool $include_Person_Identification_Data
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Person_Identification_Data($include_Person_Identification_Data = null)
     {
@@ -168,7 +168,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Personal_Information_Data value
      * @param bool $include_Personal_Information_Data
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Personal_Information_Data($include_Personal_Information_Data = null)
     {
@@ -190,7 +190,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Photo_Data value
      * @param bool $include_Photo_Data
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Photo_Data($include_Photo_Data = null)
     {
@@ -212,7 +212,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
     /**
      * Set Include_Appointment_Data value
      * @param bool $include_Appointment_Data
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public function setInclude_Appointment_Data($include_Appointment_Data = null)
     {
@@ -229,7 +229,7 @@ class Academic_Appointee_Response_GroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointee_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointee_Response_GroupType
      */
     public static function __set_state(array $array)
     {

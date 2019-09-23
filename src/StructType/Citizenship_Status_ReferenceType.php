@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
     public $Citizenship_Status_Description;
     /**
      * The Country_Reference
-     * @var \StructType\Country_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Country_ReferenceType
      */
     public $Country_Reference;
     /**
@@ -30,9 +30,9 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
      * @uses Citizenship_Status_ReferenceType::setCitizenship_Status_Description()
      * @uses Citizenship_Status_ReferenceType::setCountry_Reference()
      * @param string $citizenship_Status_Description
-     * @param \StructType\Country_ReferenceType $country_Reference
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
      */
-    public function __construct($citizenship_Status_Description = null, \StructType\Country_ReferenceType $country_Reference = null)
+    public function __construct($citizenship_Status_Description = null, \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this
             ->setCitizenship_Status_Description($citizenship_Status_Description)
@@ -49,7 +49,7 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
     /**
      * Set Citizenship_Status_Description value
      * @param string $citizenship_Status_Description
-     * @return \StructType\Citizenship_Status_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Citizenship_Status_ReferenceType
      */
     public function setCitizenship_Status_Description($citizenship_Status_Description = null)
     {
@@ -62,7 +62,7 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
     }
     /**
      * Get Country_Reference value
-     * @return \StructType\Country_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Country_ReferenceType|null
      */
     public function getCountry_Reference()
     {
@@ -70,10 +70,10 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
     }
     /**
      * Set Country_Reference value
-     * @param \StructType\Country_ReferenceType $country_Reference
-     * @return \StructType\Citizenship_Status_ReferenceType
+     * @param \WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference
+     * @return \WorkdayWsdl\\StructType\Citizenship_Status_ReferenceType
      */
-    public function setCountry_Reference(\StructType\Country_ReferenceType $country_Reference = null)
+    public function setCountry_Reference(\WorkdayWsdl\\StructType\Country_ReferenceType $country_Reference = null)
     {
         $this->Country_Reference = $country_Reference;
         return $this;
@@ -84,7 +84,7 @@ class Citizenship_Status_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Citizenship_Status_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Citizenship_Status_ReferenceType
      */
     public static function __set_state(array $array)
     {

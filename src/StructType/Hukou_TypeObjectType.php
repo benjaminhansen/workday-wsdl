@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Hukou_TypeObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Hukou_TypeObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Hukou_TypeObjectType extends AbstractStructBase
      * Constructor method for Hukou_TypeObjectType
      * @uses Hukou_TypeObjectType::setID()
      * @uses Hukou_TypeObjectType::setDescriptor()
-     * @param \StructType\Hukou_TypeObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Hukou_TypeObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Hukou_TypeObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Hukou_TypeObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $hukou_TypeObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$hukou_TypeObjectTypeIDItem instanceof \StructType\Hukou_TypeObjectIDType) {
+            if (!$hukou_TypeObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType) {
                 $invalidValues[] = is_object($hukou_TypeObjectTypeIDItem) ? get_class($hukou_TypeObjectTypeIDItem) : sprintf('%s(%s)', gettype($hukou_TypeObjectTypeIDItem), var_export($hukou_TypeObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Hukou_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Hukou_TypeObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Hukou_TypeObjectIDType[] $iD
-     * @return \StructType\Hukou_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Hukou_TypeObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Hukou_TypeObjectIDType $item
-     * @return \StructType\Hukou_TypeObjectType
+     * @param \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectType
      */
-    public function addToID(\StructType\Hukou_TypeObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Hukou_TypeObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Hukou_TypeObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Hukou_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Hukou_TypeObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Hukou_TypeObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Hukou_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Hukou_TypeObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Hukou_TypeObjectType
+     * @return \WorkdayWsdl\\StructType\Hukou_TypeObjectType
      */
     public static function __set_state(array $array)
     {

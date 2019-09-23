@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class COBRA_Eligibility_ReasonObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\COBRA_Eligibility_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\COBRA_Eligibility_ReasonReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\COBRA_Eligibility_ReasonReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class COBRA_Eligibility_ReasonObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\COBRA_Eligibility_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class COBRA_Eligibility_ReasonObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\COBRA_Eligibility_ReasonObjectIDType
+     * @return \WorkdayWsdl\\StructType\COBRA_Eligibility_ReasonObjectIDType
      */
     public static function __set_state(array $array)
     {

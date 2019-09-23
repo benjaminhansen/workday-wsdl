@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Time_ZoneObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Time_ZoneObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Time_ZoneObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Time_ZoneObjectType extends AbstractStructBase
      * Constructor method for Time_ZoneObjectType
      * @uses Time_ZoneObjectType::setID()
      * @uses Time_ZoneObjectType::setDescriptor()
-     * @param \StructType\Time_ZoneObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Time_ZoneObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Time_ZoneObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Time_ZoneObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Time_ZoneObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $time_ZoneObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$time_ZoneObjectTypeIDItem instanceof \StructType\Time_ZoneObjectIDType) {
+            if (!$time_ZoneObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Time_ZoneObjectIDType) {
                 $invalidValues[] = is_object($time_ZoneObjectTypeIDItem) ? get_class($time_ZoneObjectTypeIDItem) : sprintf('%s(%s)', gettype($time_ZoneObjectTypeIDItem), var_export($time_ZoneObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Time_ZoneObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Time_ZoneObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Time_ZoneObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Time_ZoneObjectIDType[] $iD
-     * @return \StructType\Time_ZoneObjectType
+     * @param \WorkdayWsdl\\StructType\Time_ZoneObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Time_ZoneObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Time_ZoneObjectIDType $item
-     * @return \StructType\Time_ZoneObjectType
+     * @param \WorkdayWsdl\\StructType\Time_ZoneObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectType
      */
-    public function addToID(\StructType\Time_ZoneObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Time_ZoneObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Time_ZoneObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Time_ZoneObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Time_ZoneObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Time_ZoneObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Time_ZoneObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Time_ZoneObjectType
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Time_ZoneObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Time_ZoneObjectType
+     * @return \WorkdayWsdl\\StructType\Time_ZoneObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Termination_SubcategoryObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
      * Constructor method for Termination_SubcategoryObjectType
      * @uses Termination_SubcategoryObjectType::setID()
      * @uses Termination_SubcategoryObjectType::setDescriptor()
-     * @param \StructType\Termination_SubcategoryObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\Termination_SubcategoryObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $termination_SubcategoryObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$termination_SubcategoryObjectTypeIDItem instanceof \StructType\Termination_SubcategoryObjectIDType) {
+            if (!$termination_SubcategoryObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType) {
                 $invalidValues[] = is_object($termination_SubcategoryObjectTypeIDItem) ? get_class($termination_SubcategoryObjectTypeIDItem) : sprintf('%s(%s)', gettype($termination_SubcategoryObjectTypeIDItem), var_export($termination_SubcategoryObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\Termination_SubcategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Termination_SubcategoryObjectIDType[] $iD
-     * @return \StructType\Termination_SubcategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\Termination_SubcategoryObjectIDType $item
-     * @return \StructType\Termination_SubcategoryObjectType
+     * @param \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType
      */
-    public function addToID(\StructType\Termination_SubcategoryObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Termination_SubcategoryObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\Termination_SubcategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\Termination_SubcategoryObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\Termination_SubcategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class Termination_SubcategoryObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Termination_SubcategoryObjectType
+     * @return \WorkdayWsdl\\StructType\Termination_SubcategoryObjectType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
      * Meta information extracted from the WSDL
      * - documentation: The reference to the generated End Collective Agreement Assignment Event
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $End_Collective_Agreement_Event_Reference;
     /**
@@ -32,10 +32,10 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
      * Constructor method for End_Collective_Agreement_Assignment_Event_ResponseType
      * @uses End_Collective_Agreement_Assignment_Event_ResponseType::setEnd_Collective_Agreement_Event_Reference()
      * @uses End_Collective_Agreement_Assignment_Event_ResponseType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference = null, $version = null)
     {
         $this
             ->setEnd_Collective_Agreement_Event_Reference($end_Collective_Agreement_Event_Reference)
@@ -43,7 +43,7 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
     }
     /**
      * Get End_Collective_Agreement_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getEnd_Collective_Agreement_Event_Reference()
     {
@@ -51,10 +51,10 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
     }
     /**
      * Set End_Collective_Agreement_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_ResponseType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_ResponseType
      */
-    public function setEnd_Collective_Agreement_Event_Reference(\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference = null)
+    public function setEnd_Collective_Agreement_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $end_Collective_Agreement_Event_Reference = null)
     {
         $this->End_Collective_Agreement_Event_Reference = $end_Collective_Agreement_Event_Reference;
         return $this;
@@ -70,7 +70,7 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_ResponseType
      */
     public function setVersion($version = null)
     {
@@ -87,7 +87,7 @@ class End_Collective_Agreement_Assignment_Event_ResponseType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\End_Collective_Agreement_Assignment_Event_ResponseType
+     * @return \WorkdayWsdl\\StructType\End_Collective_Agreement_Assignment_Event_ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: References a Work-Study Award which is directly associated with the Job Profile.
      * - minOccurs: 0
-     * @var \StructType\Requirement_OptionObjectType
+     * @var \WorkdayWsdl\\StructType\Requirement_OptionObjectType
      */
     public $Requirement_Option_Reference;
     /**
@@ -26,17 +26,17 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
      * - documentation: References an allowed Student Award Sources which is directly associated with the Job Profile.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Student_Award_SourceObjectType[]
+     * @var \WorkdayWsdl\\StructType\Student_Award_SourceObjectType[]
      */
     public $Allowed_Student_Award_Sources_Reference;
     /**
      * Constructor method for Job_Profile_Work-Study_DataType
      * @uses Job_Profile_Work_Study_DataType::setRequirement_Option_Reference()
      * @uses Job_Profile_Work_Study_DataType::setAllowed_Student_Award_Sources_Reference()
-     * @param \StructType\Requirement_OptionObjectType $requirement_Option_Reference
-     * @param \StructType\Student_Award_SourceObjectType[] $allowed_Student_Award_Sources_Reference
+     * @param \WorkdayWsdl\\StructType\Requirement_OptionObjectType $requirement_Option_Reference
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectType[] $allowed_Student_Award_Sources_Reference
      */
-    public function __construct(\StructType\Requirement_OptionObjectType $requirement_Option_Reference = null, array $allowed_Student_Award_Sources_Reference = array())
+    public function __construct(\WorkdayWsdl\\StructType\Requirement_OptionObjectType $requirement_Option_Reference = null, array $allowed_Student_Award_Sources_Reference = array())
     {
         $this
             ->setRequirement_Option_Reference($requirement_Option_Reference)
@@ -44,7 +44,7 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
     }
     /**
      * Get Requirement_Option_Reference value
-     * @return \StructType\Requirement_OptionObjectType|null
+     * @return \WorkdayWsdl\\StructType\Requirement_OptionObjectType|null
      */
     public function getRequirement_Option_Reference()
     {
@@ -52,17 +52,17 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
     }
     /**
      * Set Requirement_Option_Reference value
-     * @param \StructType\Requirement_OptionObjectType $requirement_Option_Reference
-     * @return \StructType\Job_Profile_Work_Study_DataType
+     * @param \WorkdayWsdl\\StructType\Requirement_OptionObjectType $requirement_Option_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType
      */
-    public function setRequirement_Option_Reference(\StructType\Requirement_OptionObjectType $requirement_Option_Reference = null)
+    public function setRequirement_Option_Reference(\WorkdayWsdl\\StructType\Requirement_OptionObjectType $requirement_Option_Reference = null)
     {
         $this->Requirement_Option_Reference = $requirement_Option_Reference;
         return $this;
     }
     /**
      * Get Allowed_Student_Award_Sources_Reference value
-     * @return \StructType\Student_Award_SourceObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Student_Award_SourceObjectType[]|null
      */
     public function getAllowed_Student_Award_Sources_Reference()
     {
@@ -80,12 +80,12 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem instanceof \StructType\Student_Award_SourceObjectType) {
+            if (!$job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem instanceof \WorkdayWsdl\\StructType\Student_Award_SourceObjectType) {
                 $invalidValues[] = is_object($job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem) ? get_class($job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem) : sprintf('%s(%s)', gettype($job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem), var_export($job_Profile_Work_Study_DataTypeAllowed_Student_Award_Sources_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Allowed_Student_Award_Sources_Reference property can only contain items of type \StructType\Student_Award_SourceObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Allowed_Student_Award_Sources_Reference property can only contain items of type \WorkdayWsdl\\StructType\Student_Award_SourceObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -93,8 +93,8 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
     /**
      * Set Allowed_Student_Award_Sources_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Student_Award_SourceObjectType[] $allowed_Student_Award_Sources_Reference
-     * @return \StructType\Job_Profile_Work_Study_DataType
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectType[] $allowed_Student_Award_Sources_Reference
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType
      */
     public function setAllowed_Student_Award_Sources_Reference(array $allowed_Student_Award_Sources_Reference = array())
     {
@@ -108,14 +108,14 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
     /**
      * Add item to Allowed_Student_Award_Sources_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Student_Award_SourceObjectType $item
-     * @return \StructType\Job_Profile_Work_Study_DataType
+     * @param \WorkdayWsdl\\StructType\Student_Award_SourceObjectType $item
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType
      */
-    public function addToAllowed_Student_Award_Sources_Reference(\StructType\Student_Award_SourceObjectType $item)
+    public function addToAllowed_Student_Award_Sources_Reference(\WorkdayWsdl\\StructType\Student_Award_SourceObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Student_Award_SourceObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Allowed_Student_Award_Sources_Reference property can only contain items of type \StructType\Student_Award_SourceObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Student_Award_SourceObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Allowed_Student_Award_Sources_Reference property can only contain items of type \WorkdayWsdl\\StructType\Student_Award_SourceObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Allowed_Student_Award_Sources_Reference[] = $item;
         return $this;
@@ -126,7 +126,7 @@ class Job_Profile_Work_Study_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Job_Profile_Work_Study_DataType
+     * @return \WorkdayWsdl\\StructType\Job_Profile_Work_Study_DataType
      */
     public static function __set_state(array $array)
     {

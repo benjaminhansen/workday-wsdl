@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: A unique identifier used to reference a provisioning group assignment.
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Provisioning_Group_Assignment_Reference;
     /**
      * The Provisioning_Group_Assignment_Data
-     * @var \StructType\Provisioning_Group_Assignment_DataType
+     * @var \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType
      */
     public $Provisioning_Group_Assignment_Data;
     /**
@@ -37,11 +37,11 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
      * @uses Put_Provisioning_Group_Assignment_RequestType::setProvisioning_Group_Assignment_Reference()
      * @uses Put_Provisioning_Group_Assignment_RequestType::setProvisioning_Group_Assignment_Data()
      * @uses Put_Provisioning_Group_Assignment_RequestType::setVersion()
-     * @param \StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference
-     * @param \StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data
      * @param string $version
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference = null, \StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference = null, \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data = null, $version = null)
     {
         $this
             ->setProvisioning_Group_Assignment_Reference($provisioning_Group_Assignment_Reference)
@@ -50,7 +50,7 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
     }
     /**
      * Get Provisioning_Group_Assignment_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getProvisioning_Group_Assignment_Reference()
     {
@@ -58,17 +58,17 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
     }
     /**
      * Set Provisioning_Group_Assignment_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference
-     * @return \StructType\Put_Provisioning_Group_Assignment_RequestType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Provisioning_Group_Assignment_RequestType
      */
-    public function setProvisioning_Group_Assignment_Reference(\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference = null)
+    public function setProvisioning_Group_Assignment_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $provisioning_Group_Assignment_Reference = null)
     {
         $this->Provisioning_Group_Assignment_Reference = $provisioning_Group_Assignment_Reference;
         return $this;
     }
     /**
      * Get Provisioning_Group_Assignment_Data value
-     * @return \StructType\Provisioning_Group_Assignment_DataType|null
+     * @return \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType|null
      */
     public function getProvisioning_Group_Assignment_Data()
     {
@@ -76,10 +76,10 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
     }
     /**
      * Set Provisioning_Group_Assignment_Data value
-     * @param \StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data
-     * @return \StructType\Put_Provisioning_Group_Assignment_RequestType
+     * @param \WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data
+     * @return \WorkdayWsdl\\StructType\Put_Provisioning_Group_Assignment_RequestType
      */
-    public function setProvisioning_Group_Assignment_Data(\StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data = null)
+    public function setProvisioning_Group_Assignment_Data(\WorkdayWsdl\\StructType\Provisioning_Group_Assignment_DataType $provisioning_Group_Assignment_Data = null)
     {
         $this->Provisioning_Group_Assignment_Data = $provisioning_Group_Assignment_Data;
         return $this;
@@ -95,7 +95,7 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Provisioning_Group_Assignment_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Provisioning_Group_Assignment_RequestType
      */
     public function setVersion($version = null)
     {
@@ -112,7 +112,7 @@ class Put_Provisioning_Group_Assignment_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Provisioning_Group_Assignment_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Provisioning_Group_Assignment_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GoalObjectType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\GoalObjectIDType[]
+     * @var \WorkdayWsdl\\StructType\GoalObjectIDType[]
      */
     public $ID;
     /**
@@ -29,7 +29,7 @@ class GoalObjectType extends AbstractStructBase
      * Constructor method for GoalObjectType
      * @uses GoalObjectType::setID()
      * @uses GoalObjectType::setDescriptor()
-     * @param \StructType\GoalObjectIDType[] $iD
+     * @param \WorkdayWsdl\\StructType\GoalObjectIDType[] $iD
      * @param string $descriptor
      */
     public function __construct(array $iD = array(), $descriptor = null)
@@ -40,7 +40,7 @@ class GoalObjectType extends AbstractStructBase
     }
     /**
      * Get ID value
-     * @return \StructType\GoalObjectIDType[]|null
+     * @return \WorkdayWsdl\\StructType\GoalObjectIDType[]|null
      */
     public function getID()
     {
@@ -58,12 +58,12 @@ class GoalObjectType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $goalObjectTypeIDItem) {
             // validation for constraint: itemType
-            if (!$goalObjectTypeIDItem instanceof \StructType\GoalObjectIDType) {
+            if (!$goalObjectTypeIDItem instanceof \WorkdayWsdl\\StructType\GoalObjectIDType) {
                 $invalidValues[] = is_object($goalObjectTypeIDItem) ? get_class($goalObjectTypeIDItem) : sprintf('%s(%s)', gettype($goalObjectTypeIDItem), var_export($goalObjectTypeIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ID property can only contain items of type \StructType\GoalObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\GoalObjectIDType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -71,8 +71,8 @@ class GoalObjectType extends AbstractStructBase
     /**
      * Set ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\GoalObjectIDType[] $iD
-     * @return \StructType\GoalObjectType
+     * @param \WorkdayWsdl\\StructType\GoalObjectIDType[] $iD
+     * @return \WorkdayWsdl\\StructType\GoalObjectType
      */
     public function setID(array $iD = array())
     {
@@ -86,14 +86,14 @@ class GoalObjectType extends AbstractStructBase
     /**
      * Add item to ID value
      * @throws \InvalidArgumentException
-     * @param \StructType\GoalObjectIDType $item
-     * @return \StructType\GoalObjectType
+     * @param \WorkdayWsdl\\StructType\GoalObjectIDType $item
+     * @return \WorkdayWsdl\\StructType\GoalObjectType
      */
-    public function addToID(\StructType\GoalObjectIDType $item)
+    public function addToID(\WorkdayWsdl\\StructType\GoalObjectIDType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GoalObjectIDType) {
-            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \StructType\GoalObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\GoalObjectIDType) {
+            throw new \InvalidArgumentException(sprintf('The ID property can only contain items of type \WorkdayWsdl\\StructType\GoalObjectIDType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ID[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class GoalObjectType extends AbstractStructBase
     /**
      * Set Descriptor value
      * @param string $descriptor
-     * @return \StructType\GoalObjectType
+     * @return \WorkdayWsdl\\StructType\GoalObjectType
      */
     public function setDescriptor($descriptor = null)
     {
@@ -126,7 +126,7 @@ class GoalObjectType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GoalObjectType
+     * @return \WorkdayWsdl\\StructType\GoalObjectType
      */
     public static function __set_state(array $array)
     {

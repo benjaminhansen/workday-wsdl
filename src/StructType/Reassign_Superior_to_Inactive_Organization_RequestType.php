@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,14 +19,14 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
      * - documentation: Container for the processing options for a business process. If no options are submitted (or the options are submitted as 'false') then the business process is simply initiated as if it where submitted on-line with approvals,
      * reviews, notifications and to-do's in place. If the Initiator is an Integration System User, any validations you configured on the Initiation step are ignored.
      * - minOccurs: 0
-     * @var \StructType\Business_Process_ParametersType
+     * @var \WorkdayWsdl\\StructType\Business_Process_ParametersType
      */
     public $Business_Process_Parameters;
     /**
      * The Reassign_Superior_to_Inactive_Organization_Data
      * Meta information extracted from the WSDL
      * - documentation: Wrapper element for the Reassign Superior to Inactive Organization web service operation.
-     * @var \StructType\Reassign_Superior_to_Inactive_Organization_DataType
+     * @var \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType
      */
     public $Reassign_Superior_to_Inactive_Organization_Data;
     /**
@@ -41,11 +41,11 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
      * @uses Reassign_Superior_to_Inactive_Organization_RequestType::setBusiness_Process_Parameters()
      * @uses Reassign_Superior_to_Inactive_Organization_RequestType::setReassign_Superior_to_Inactive_Organization_Data()
      * @uses Reassign_Superior_to_Inactive_Organization_RequestType::setVersion()
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @param \StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @param \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data
      * @param string $version
      */
-    public function __construct(\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null, \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data = null, $version = null)
     {
         $this
             ->setBusiness_Process_Parameters($business_Process_Parameters)
@@ -54,7 +54,7 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
     }
     /**
      * Get Business_Process_Parameters value
-     * @return \StructType\Business_Process_ParametersType|null
+     * @return \WorkdayWsdl\\StructType\Business_Process_ParametersType|null
      */
     public function getBusiness_Process_Parameters()
     {
@@ -62,17 +62,17 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
     }
     /**
      * Set Business_Process_Parameters value
-     * @param \StructType\Business_Process_ParametersType $business_Process_Parameters
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_RequestType
+     * @param \WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_RequestType
      */
-    public function setBusiness_Process_Parameters(\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
+    public function setBusiness_Process_Parameters(\WorkdayWsdl\\StructType\Business_Process_ParametersType $business_Process_Parameters = null)
     {
         $this->Business_Process_Parameters = $business_Process_Parameters;
         return $this;
     }
     /**
      * Get Reassign_Superior_to_Inactive_Organization_Data value
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_DataType|null
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType|null
      */
     public function getReassign_Superior_to_Inactive_Organization_Data()
     {
@@ -80,10 +80,10 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
     }
     /**
      * Set Reassign_Superior_to_Inactive_Organization_Data value
-     * @param \StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_RequestType
+     * @param \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_RequestType
      */
-    public function setReassign_Superior_to_Inactive_Organization_Data(\StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data = null)
+    public function setReassign_Superior_to_Inactive_Organization_Data(\WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_DataType $reassign_Superior_to_Inactive_Organization_Data = null)
     {
         $this->Reassign_Superior_to_Inactive_Organization_Data = $reassign_Superior_to_Inactive_Organization_Data;
         return $this;
@@ -99,7 +99,7 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_RequestType
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_RequestType
      */
     public function setVersion($version = null)
     {
@@ -116,7 +116,7 @@ class Reassign_Superior_to_Inactive_Organization_RequestType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Reassign_Superior_to_Inactive_Organization_RequestType
+     * @return \WorkdayWsdl\\StructType\Reassign_Superior_to_Inactive_Organization_RequestType
      */
     public static function __set_state(array $array)
     {

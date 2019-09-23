@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class External_Source_SystemObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\External_Source_SystemReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\External_Source_SystemReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\External_Source_SystemReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\External_Source_SystemReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\External_Source_SystemObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\External_Source_SystemReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\External_Source_SystemReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\External_Source_SystemReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\External_Source_SystemReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\External_Source_SystemReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\External_Source_SystemReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class External_Source_SystemObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\External_Source_SystemObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class External_Source_SystemObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\External_Source_SystemObjectIDType
+     * @return \WorkdayWsdl\\StructType\External_Source_SystemObjectIDType
      */
     public static function __set_state(array $array)
     {

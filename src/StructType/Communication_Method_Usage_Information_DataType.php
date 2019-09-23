@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the communication usage type.
      * - maxOccurs: unbounded
-     * @var \StructType\Communication_Usage_Type_DataType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType[]
      */
     public $Type_Data;
     /**
@@ -26,7 +26,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
      * - documentation: Reference ID for communication usage behavior.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Usage_BehaviorObjectType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType[]
      */
     public $Use_For_Reference;
     /**
@@ -35,7 +35,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
      * - documentation: Reference ID for communication usage behavior tenanted.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Communication_Usage_Behavior_TenantedObjectType[]
+     * @var \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType[]
      */
     public $Use_For_Tenanted_Reference;
     /**
@@ -61,9 +61,9 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
      * @uses Communication_Method_Usage_Information_DataType::setUse_For_Tenanted_Reference()
      * @uses Communication_Method_Usage_Information_DataType::setComments()
      * @uses Communication_Method_Usage_Information_DataType::setPublic()
-     * @param \StructType\Communication_Usage_Type_DataType[] $type_Data
-     * @param \StructType\Communication_Usage_BehaviorObjectType[] $use_For_Reference
-     * @param \StructType\Communication_Usage_Behavior_TenantedObjectType[] $use_For_Tenanted_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType[] $type_Data
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType[] $use_For_Reference
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType[] $use_For_Tenanted_Reference
      * @param string $comments
      * @param bool $public
      */
@@ -78,7 +78,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     }
     /**
      * Get Type_Data value
-     * @return \StructType\Communication_Usage_Type_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType[]|null
      */
     public function getType_Data()
     {
@@ -96,12 +96,12 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Method_Usage_Information_DataTypeType_DataItem) {
             // validation for constraint: itemType
-            if (!$communication_Method_Usage_Information_DataTypeType_DataItem instanceof \StructType\Communication_Usage_Type_DataType) {
+            if (!$communication_Method_Usage_Information_DataTypeType_DataItem instanceof \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType) {
                 $invalidValues[] = is_object($communication_Method_Usage_Information_DataTypeType_DataItem) ? get_class($communication_Method_Usage_Information_DataTypeType_DataItem) : sprintf('%s(%s)', gettype($communication_Method_Usage_Information_DataTypeType_DataItem), var_export($communication_Method_Usage_Information_DataTypeType_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Type_Data property can only contain items of type \StructType\Communication_Usage_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -109,8 +109,8 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Set Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Type_DataType[] $type_Data
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType[] $type_Data
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public function setType_Data(array $type_Data = array())
     {
@@ -124,21 +124,21 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Add item to Type_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Type_DataType $item
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType $item
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
-    public function addToType_Data(\StructType\Communication_Usage_Type_DataType $item)
+    public function addToType_Data(\WorkdayWsdl\\StructType\Communication_Usage_Type_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Usage_Type_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Type_Data property can only contain items of type \StructType\Communication_Usage_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Type_Data property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Type_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Type_Data[] = $item;
         return $this;
     }
     /**
      * Get Use_For_Reference value
-     * @return \StructType\Communication_Usage_BehaviorObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType[]|null
      */
     public function getUse_For_Reference()
     {
@@ -156,12 +156,12 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem instanceof \StructType\Communication_Usage_BehaviorObjectType) {
+            if (!$communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem instanceof \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType) {
                 $invalidValues[] = is_object($communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem) ? get_class($communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem) : sprintf('%s(%s)', gettype($communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem), var_export($communication_Method_Usage_Information_DataTypeUse_For_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Use_For_Reference property can only contain items of type \StructType\Communication_Usage_BehaviorObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Use_For_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -169,8 +169,8 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Set Use_For_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_BehaviorObjectType[] $use_For_Reference
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType[] $use_For_Reference
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public function setUse_For_Reference(array $use_For_Reference = array())
     {
@@ -184,21 +184,21 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Add item to Use_For_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_BehaviorObjectType $item
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType $item
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
-    public function addToUse_For_Reference(\StructType\Communication_Usage_BehaviorObjectType $item)
+    public function addToUse_For_Reference(\WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Usage_BehaviorObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Use_For_Reference property can only contain items of type \StructType\Communication_Usage_BehaviorObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Use_For_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_BehaviorObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Use_For_Reference[] = $item;
         return $this;
     }
     /**
      * Get Use_For_Tenanted_Reference value
-     * @return \StructType\Communication_Usage_Behavior_TenantedObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType[]|null
      */
     public function getUse_For_Tenanted_Reference()
     {
@@ -216,12 +216,12 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem instanceof \StructType\Communication_Usage_Behavior_TenantedObjectType) {
+            if (!$communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem instanceof \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType) {
                 $invalidValues[] = is_object($communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem) ? get_class($communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem) : sprintf('%s(%s)', gettype($communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem), var_export($communication_Method_Usage_Information_DataTypeUse_For_Tenanted_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Use_For_Tenanted_Reference property can only contain items of type \StructType\Communication_Usage_Behavior_TenantedObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Use_For_Tenanted_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -229,8 +229,8 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Set Use_For_Tenanted_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Behavior_TenantedObjectType[] $use_For_Tenanted_Reference
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType[] $use_For_Tenanted_Reference
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public function setUse_For_Tenanted_Reference(array $use_For_Tenanted_Reference = array())
     {
@@ -244,14 +244,14 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Add item to Use_For_Tenanted_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\Communication_Usage_Behavior_TenantedObjectType $item
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @param \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType $item
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
-    public function addToUse_For_Tenanted_Reference(\StructType\Communication_Usage_Behavior_TenantedObjectType $item)
+    public function addToUse_For_Tenanted_Reference(\WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Communication_Usage_Behavior_TenantedObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Use_For_Tenanted_Reference property can only contain items of type \StructType\Communication_Usage_Behavior_TenantedObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Use_For_Tenanted_Reference property can only contain items of type \WorkdayWsdl\\StructType\Communication_Usage_Behavior_TenantedObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Use_For_Tenanted_Reference[] = $item;
         return $this;
@@ -267,7 +267,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Set Comments value
      * @param string $comments
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public function setComments($comments = null)
     {
@@ -289,7 +289,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
     /**
      * Set Public value
      * @param bool $public
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public function setPublic($public = null)
     {
@@ -306,7 +306,7 @@ class Communication_Method_Usage_Information_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Communication_Method_Usage_Information_DataType
+     * @return \WorkdayWsdl\\StructType\Communication_Method_Usage_Information_DataType
      */
     public static function __set_state(array $array)
     {

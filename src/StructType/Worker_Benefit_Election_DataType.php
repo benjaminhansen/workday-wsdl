@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -116,7 +116,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Indicates the date on file for the enrollment signature.
      * - minOccurs: 0
-     * @var \StructType\Benefit_Plan_Summary_DataType
+     * @var \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType
      */
     public $Benefit_Plan_Summary_Data;
     /**
@@ -172,12 +172,12 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
      * @param string $enrollment_Signature_Date
      * @param string $latest_Enrollment_Signature_Date
      * @param bool $passive_Enrollment
-     * @param \StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data
+     * @param \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data
      * @param string $original_Plan_Enrollment_Date
      * @param string $original_Benefit_Provider_Enrollment_Date
      * @param bool $is_Corrected_or_Rescinded
      */
-    public function __construct($coverage_Begin_Date = null, $coverage_End_Date = null, $election_Coverage_Begin_Date = null, $original_Coverage_Begin_Date = null, $original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null, $deduction_Begin_Date = null, $deduction_End_Date = null, $election_Status = null, $enrollment_Signature_Date = null, $latest_Enrollment_Signature_Date = null, $passive_Enrollment = null, \StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data = null, $original_Plan_Enrollment_Date = null, $original_Benefit_Provider_Enrollment_Date = null, $is_Corrected_or_Rescinded = null)
+    public function __construct($coverage_Begin_Date = null, $coverage_End_Date = null, $election_Coverage_Begin_Date = null, $original_Coverage_Begin_Date = null, $original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null, $deduction_Begin_Date = null, $deduction_End_Date = null, $election_Status = null, $enrollment_Signature_Date = null, $latest_Enrollment_Signature_Date = null, $passive_Enrollment = null, \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data = null, $original_Plan_Enrollment_Date = null, $original_Benefit_Provider_Enrollment_Date = null, $is_Corrected_or_Rescinded = null)
     {
         $this
             ->setCoverage_Begin_Date($coverage_Begin_Date)
@@ -207,7 +207,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Coverage_Begin_Date value
      * @param string $coverage_Begin_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setCoverage_Begin_Date($coverage_Begin_Date = null)
     {
@@ -229,7 +229,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Coverage_End_Date value
      * @param string $coverage_End_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setCoverage_End_Date($coverage_End_Date = null)
     {
@@ -251,7 +251,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Election_Coverage_Begin_Date value
      * @param string $election_Coverage_Begin_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setElection_Coverage_Begin_Date($election_Coverage_Begin_Date = null)
     {
@@ -273,7 +273,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date value
      * @param string $original_Coverage_Begin_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setOriginal_Coverage_Begin_Date($original_Coverage_Begin_Date = null)
     {
@@ -295,7 +295,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Original_Coverage_Begin_Date_for_Benefit_Coverage_Type value
      * @param string $original_Coverage_Begin_Date_for_Benefit_Coverage_Type
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setOriginal_Coverage_Begin_Date_for_Benefit_Coverage_Type($original_Coverage_Begin_Date_for_Benefit_Coverage_Type = null)
     {
@@ -317,7 +317,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Deduction_Begin_Date value
      * @param string $deduction_Begin_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setDeduction_Begin_Date($deduction_Begin_Date = null)
     {
@@ -339,7 +339,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Deduction_End_Date value
      * @param string $deduction_End_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setDeduction_End_Date($deduction_End_Date = null)
     {
@@ -361,7 +361,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Election_Status value
      * @param string $election_Status
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setElection_Status($election_Status = null)
     {
@@ -383,7 +383,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Enrollment_Signature_Date value
      * @param string $enrollment_Signature_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setEnrollment_Signature_Date($enrollment_Signature_Date = null)
     {
@@ -405,7 +405,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Latest_Enrollment_Signature_Date value
      * @param string $latest_Enrollment_Signature_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setLatest_Enrollment_Signature_Date($latest_Enrollment_Signature_Date = null)
     {
@@ -427,7 +427,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Passive_Enrollment value
      * @param bool $passive_Enrollment
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setPassive_Enrollment($passive_Enrollment = null)
     {
@@ -440,7 +440,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     }
     /**
      * Get Benefit_Plan_Summary_Data value
-     * @return \StructType\Benefit_Plan_Summary_DataType|null
+     * @return \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType|null
      */
     public function getBenefit_Plan_Summary_Data()
     {
@@ -448,10 +448,10 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     }
     /**
      * Set Benefit_Plan_Summary_Data value
-     * @param \StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @param \WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
-    public function setBenefit_Plan_Summary_Data(\StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data = null)
+    public function setBenefit_Plan_Summary_Data(\WorkdayWsdl\\StructType\Benefit_Plan_Summary_DataType $benefit_Plan_Summary_Data = null)
     {
         $this->Benefit_Plan_Summary_Data = $benefit_Plan_Summary_Data;
         return $this;
@@ -467,7 +467,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Original_Plan_Enrollment_Date value
      * @param string $original_Plan_Enrollment_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setOriginal_Plan_Enrollment_Date($original_Plan_Enrollment_Date = null)
     {
@@ -489,7 +489,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Original_Benefit_Provider_Enrollment_Date value
      * @param string $original_Benefit_Provider_Enrollment_Date
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setOriginal_Benefit_Provider_Enrollment_Date($original_Benefit_Provider_Enrollment_Date = null)
     {
@@ -511,7 +511,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
     /**
      * Set Is_Corrected_or_Rescinded value
      * @param bool $is_Corrected_or_Rescinded
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public function setIs_Corrected_or_Rescinded($is_Corrected_or_Rescinded = null)
     {
@@ -528,7 +528,7 @@ class Worker_Benefit_Election_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Worker_Benefit_Election_DataType
+     * @return \WorkdayWsdl\\StructType\Worker_Benefit_Election_DataType
      */
     public static function __set_state(array $array)
     {

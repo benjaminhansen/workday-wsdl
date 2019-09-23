@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,7 +43,7 @@ class Service_Center_Representative_Response_GroupType extends AbstractStructBas
     /**
      * Set Include_Reference value
      * @param bool $include_Reference
-     * @return \StructType\Service_Center_Representative_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Response_GroupType
      */
     public function setInclude_Reference($include_Reference = null)
     {
@@ -60,7 +60,7 @@ class Service_Center_Representative_Response_GroupType extends AbstractStructBas
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Service_Center_Representative_Response_GroupType
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_Response_GroupType
      */
     public static function __set_state(array $array)
     {

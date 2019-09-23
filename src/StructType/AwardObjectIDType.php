@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class AwardObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\AwardReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\AwardReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\AwardReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\AwardReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\AwardObjectIDType
+     * @return \WorkdayWsdl\\StructType\AwardObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AwardReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\AwardReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\AwardReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\AwardReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\AwardReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\AwardReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class AwardObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\AwardObjectIDType
+     * @return \WorkdayWsdl\\StructType\AwardObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class AwardObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AwardObjectIDType
+     * @return \WorkdayWsdl\\StructType\AwardObjectIDType
      */
     public static function __set_state(array $array)
     {

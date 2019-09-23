@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,24 +18,24 @@ class Person_PhotoType extends AbstractStructBase
      * - documentation: A reference to the ID of the person through one of its active person types, such as worker, student, affiliate, external committee member, and so on. The ID consists of a type attribute, which should be set to one of either
      * "Employee_ID", "Contingent_Worker_ID", "Student_ID", etc, and a value attribute, such as "04345".
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
      * The Person_Photo_Data
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Change_Person_Photo_DataType
+     * @var \WorkdayWsdl\\StructType\Change_Person_Photo_DataType
      */
     public $Person_Photo_Data;
     /**
      * Constructor method for Person_PhotoType
      * @uses Person_PhotoType::setPerson_Reference()
      * @uses Person_PhotoType::setPerson_Photo_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Change_Person_Photo_DataType $person_Photo_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, \StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -43,7 +43,7 @@ class Person_PhotoType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -51,17 +51,17 @@ class Person_PhotoType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Person_PhotoType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Person_PhotoType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Person_Photo_Data value
-     * @return \StructType\Change_Person_Photo_DataType|null
+     * @return \WorkdayWsdl\\StructType\Change_Person_Photo_DataType|null
      */
     public function getPerson_Photo_Data()
     {
@@ -69,10 +69,10 @@ class Person_PhotoType extends AbstractStructBase
     }
     /**
      * Set Person_Photo_Data value
-     * @param \StructType\Change_Person_Photo_DataType $person_Photo_Data
-     * @return \StructType\Person_PhotoType
+     * @param \WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data
+     * @return \WorkdayWsdl\\StructType\Person_PhotoType
      */
-    public function setPerson_Photo_Data(\StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
+    public function setPerson_Photo_Data(\WorkdayWsdl\\StructType\Change_Person_Photo_DataType $person_Photo_Data = null)
     {
         $this->Person_Photo_Data = $person_Photo_Data;
         return $this;
@@ -83,7 +83,7 @@ class Person_PhotoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Person_PhotoType
+     * @return \WorkdayWsdl\\StructType\Person_PhotoType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The Worker Reference to extract External Form I-9 Section 3 for Workers.
      * - minOccurs: 0
-     * @var \StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType
+     * @var \WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType
      */
     public $Request_References;
     /**
@@ -25,7 +25,7 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Parameters that let you filter the data returned in the response. You can filter returned data by dates and page attributes.
      * - minOccurs: 0
-     * @var \StructType\Response_FilterType
+     * @var \WorkdayWsdl\\StructType\Response_FilterType
      */
     public $Response_Filter;
     /**
@@ -40,11 +40,11 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
      * @uses Get_External_Form_I_9_Section_3_RequestType::setRequest_References()
      * @uses Get_External_Form_I_9_Section_3_RequestType::setResponse_Filter()
      * @uses Get_External_Form_I_9_Section_3_RequestType::setVersion()
-     * @param \StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References
-     * @param \StructType\Response_FilterType $response_Filter
+     * @param \WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
      * @param string $version
      */
-    public function __construct(\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References = null, \StructType\Response_FilterType $response_Filter = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References = null, \WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null, $version = null)
     {
         $this
             ->setRequest_References($request_References)
@@ -53,7 +53,7 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
     }
     /**
      * Get Request_References value
-     * @return \StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType|null
+     * @return \WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType|null
      */
     public function getRequest_References()
     {
@@ -61,17 +61,17 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
     }
     /**
      * Set Request_References value
-     * @param \StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References
-     * @return \StructType\Get_External_Form_I_9_Section_3_RequestType
+     * @param \WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References
+     * @return \WorkdayWsdl\\StructType\Get_External_Form_I_9_Section_3_RequestType
      */
-    public function setRequest_References(\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References = null)
+    public function setRequest_References(\WorkdayWsdl\\StructType\Get_Change_External_Form_I_9_Section_3_Request_ReferencesType $request_References = null)
     {
         $this->Request_References = $request_References;
         return $this;
     }
     /**
      * Get Response_Filter value
-     * @return \StructType\Response_FilterType|null
+     * @return \WorkdayWsdl\\StructType\Response_FilterType|null
      */
     public function getResponse_Filter()
     {
@@ -79,10 +79,10 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
     }
     /**
      * Set Response_Filter value
-     * @param \StructType\Response_FilterType $response_Filter
-     * @return \StructType\Get_External_Form_I_9_Section_3_RequestType
+     * @param \WorkdayWsdl\\StructType\Response_FilterType $response_Filter
+     * @return \WorkdayWsdl\\StructType\Get_External_Form_I_9_Section_3_RequestType
      */
-    public function setResponse_Filter(\StructType\Response_FilterType $response_Filter = null)
+    public function setResponse_Filter(\WorkdayWsdl\\StructType\Response_FilterType $response_Filter = null)
     {
         $this->Response_Filter = $response_Filter;
         return $this;
@@ -98,7 +98,7 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Get_External_Form_I_9_Section_3_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_External_Form_I_9_Section_3_RequestType
      */
     public function setVersion($version = null)
     {
@@ -115,7 +115,7 @@ class Get_External_Form_I_9_Section_3_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_External_Form_I_9_Section_3_RequestType
+     * @return \WorkdayWsdl\\StructType\Get_External_Form_I_9_Section_3_RequestType
      */
     public static function __set_state(array $array)
     {

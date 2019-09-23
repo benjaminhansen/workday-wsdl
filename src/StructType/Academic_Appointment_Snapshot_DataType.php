@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the academic appointment thread being updated. Required on Update Academic Appointment events. Leave blank on Add Academic Appointment events.
      * - minOccurs: 0
-     * @var \StructType\Academic_Appointment_TrackObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType
      */
     public $Academic_Appointment_Track_Reference;
     /**
@@ -34,14 +34,14 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the academic track type.
      * - minOccurs: 0
-     * @var \StructType\Academic_Track_TypeObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType
      */
     public $Track_Type_Reference;
     /**
      * The Appointment_Identifier_Reference
      * Meta information extracted from the WSDL
      * - documentation: Indicates the type of appointment, such as primary, joint, or dual. Workday recommends only 1 primary active academic appointment.
-     * @var \StructType\Academic_Appointment_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType
      */
     public $Appointment_Identifier_Reference;
     /**
@@ -49,14 +49,14 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Appointee's filled position that's associated with an academic appointment. Can't use on the Hire subprocess, because the position isn't filled yet.
      * - minOccurs: 0
-     * @var \StructType\Position_ElementObjectType
+     * @var \WorkdayWsdl\\StructType\Position_ElementObjectType
      */
     public $Position_Reference;
     /**
      * The Academic_Unit_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the academic unit.
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Academic_Unit_Reference;
     /**
@@ -103,7 +103,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the academic rank.
      * - minOccurs: 0
-     * @var \StructType\Academic_RankObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_RankObjectType
      */
     public $Rank_Reference;
     /**
@@ -111,7 +111,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the named professorship.
      * - minOccurs: 0
-     * @var \StructType\Named_ProfessorshipObjectType
+     * @var \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType
      */
     public $Named_Professorship_Reference;
     /**
@@ -119,7 +119,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the appointment specialty.
      * - minOccurs: 0
-     * @var \StructType\Appointment_SpecialtyObjectType
+     * @var \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType
      */
     public $Appointment_Specialty_Reference;
     /**
@@ -162,7 +162,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the related academic unit.
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Related_Academic_Unit_Reference;
     /**
@@ -170,7 +170,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the academic unit for the tenure track appointment.
      * - minOccurs: 0
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Tenure_Home_Reference;
     /**
@@ -178,7 +178,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference ID for the tenure status.
      * - minOccurs: 0
-     * @var \StructType\Academic_Tenure_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType
      */
     public $Tenure_Status_Reference;
     /**
@@ -223,30 +223,30 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * @uses Academic_Appointment_Snapshot_DataType::setTenure_Status_Reference()
      * @uses Academic_Appointment_Snapshot_DataType::setProbationary_End_Date()
      * @uses Academic_Appointment_Snapshot_DataType::setTenure_Award_Date()
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
      * @param string $appointment_Track_ID
-     * @param \StructType\Academic_Track_TypeObjectType $track_Type_Reference
-     * @param \StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $track_Type_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
      * @param float $roster_Percent
      * @param string $appointment_Start_Date
      * @param string $appointment_End_Date
      * @param string $track_Start_Date_Override
-     * @param \StructType\Academic_RankObjectType $rank_Reference
-     * @param \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType $rank_Reference
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
      * @param string $constructed_Title
      * @param string $appointment_Title
      * @param string $adjusted_Title_Start_Date
      * @param string $academic_Review_Date
-     * @param \StructType\Academic_UnitObjectType $related_Academic_Unit_Reference
-     * @param \StructType\Academic_UnitObjectType $tenure_Home_Reference
-     * @param \StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $related_Academic_Unit_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $tenure_Home_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference
      * @param string $probationary_End_Date
      * @param string $tenure_Award_Date
      */
-    public function __construct(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $appointment_Track_ID = null, \StructType\Academic_Track_TypeObjectType $track_Type_Reference = null, \StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference = null, \StructType\Position_ElementObjectType $position_Reference = null, \StructType\Academic_UnitObjectType $academic_Unit_Reference = null, $roster_Percent = null, $appointment_Start_Date = null, $appointment_End_Date = null, $track_Start_Date_Override = null, \StructType\Academic_RankObjectType $rank_Reference = null, \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null, \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, $constructed_Title = null, $appointment_Title = null, $adjusted_Title_Start_Date = null, $academic_Review_Date = null, \StructType\Academic_UnitObjectType $related_Academic_Unit_Reference = null, \StructType\Academic_UnitObjectType $tenure_Home_Reference = null, \StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference = null, $probationary_End_Date = null, $tenure_Award_Date = null)
+    public function __construct(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null, $appointment_Track_ID = null, \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $track_Type_Reference = null, \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference = null, \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null, \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null, $roster_Percent = null, $appointment_Start_Date = null, $appointment_End_Date = null, $track_Start_Date_Override = null, \WorkdayWsdl\\StructType\Academic_RankObjectType $rank_Reference = null, \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null, \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null, $constructed_Title = null, $appointment_Title = null, $adjusted_Title_Start_Date = null, $academic_Review_Date = null, \WorkdayWsdl\\StructType\Academic_UnitObjectType $related_Academic_Unit_Reference = null, \WorkdayWsdl\\StructType\Academic_UnitObjectType $tenure_Home_Reference = null, \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference = null, $probationary_End_Date = null, $tenure_Award_Date = null)
     {
         $this
             ->setAcademic_Appointment_Track_Reference($academic_Appointment_Track_Reference)
@@ -274,7 +274,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Appointment_Track_Reference value
-     * @return \StructType\Academic_Appointment_TrackObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType|null
      */
     public function getAcademic_Appointment_Track_Reference()
     {
@@ -282,10 +282,10 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Appointment_Track_Reference value
-     * @param \StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setAcademic_Appointment_Track_Reference(\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
+    public function setAcademic_Appointment_Track_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_TrackObjectType $academic_Appointment_Track_Reference = null)
     {
         $this->Academic_Appointment_Track_Reference = $academic_Appointment_Track_Reference;
         return $this;
@@ -301,7 +301,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Appointment_Track_ID value
      * @param string $appointment_Track_ID
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAppointment_Track_ID($appointment_Track_ID = null)
     {
@@ -314,7 +314,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Track_Type_Reference value
-     * @return \StructType\Academic_Track_TypeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType|null
      */
     public function getTrack_Type_Reference()
     {
@@ -322,17 +322,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Track_Type_Reference value
-     * @param \StructType\Academic_Track_TypeObjectType $track_Type_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $track_Type_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setTrack_Type_Reference(\StructType\Academic_Track_TypeObjectType $track_Type_Reference = null)
+    public function setTrack_Type_Reference(\WorkdayWsdl\\StructType\Academic_Track_TypeObjectType $track_Type_Reference = null)
     {
         $this->Track_Type_Reference = $track_Type_Reference;
         return $this;
     }
     /**
      * Get Appointment_Identifier_Reference value
-     * @return \StructType\Academic_Appointment_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType|null
      */
     public function getAppointment_Identifier_Reference()
     {
@@ -340,17 +340,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Appointment_Identifier_Reference value
-     * @param \StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setAppointment_Identifier_Reference(\StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference = null)
+    public function setAppointment_Identifier_Reference(\WorkdayWsdl\\StructType\Academic_Appointment_IdentifierObjectType $appointment_Identifier_Reference = null)
     {
         $this->Appointment_Identifier_Reference = $appointment_Identifier_Reference;
         return $this;
     }
     /**
      * Get Position_Reference value
-     * @return \StructType\Position_ElementObjectType|null
+     * @return \WorkdayWsdl\\StructType\Position_ElementObjectType|null
      */
     public function getPosition_Reference()
     {
@@ -358,17 +358,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Position_Reference value
-     * @param \StructType\Position_ElementObjectType $position_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setPosition_Reference(\StructType\Position_ElementObjectType $position_Reference = null)
+    public function setPosition_Reference(\WorkdayWsdl\\StructType\Position_ElementObjectType $position_Reference = null)
     {
         $this->Position_Reference = $position_Reference;
         return $this;
     }
     /**
      * Get Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getAcademic_Unit_Reference()
     {
@@ -376,10 +376,10 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setAcademic_Unit_Reference(\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
+    public function setAcademic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_Reference = null)
     {
         $this->Academic_Unit_Reference = $academic_Unit_Reference;
         return $this;
@@ -395,7 +395,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Roster_Percent value
      * @param float $roster_Percent
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setRoster_Percent($roster_Percent = null)
     {
@@ -429,7 +429,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Appointment_Start_Date value
      * @param string $appointment_Start_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAppointment_Start_Date($appointment_Start_Date = null)
     {
@@ -451,7 +451,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Appointment_End_Date value
      * @param string $appointment_End_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAppointment_End_Date($appointment_End_Date = null)
     {
@@ -473,7 +473,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Track_Start_Date_Override value
      * @param string $track_Start_Date_Override
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setTrack_Start_Date_Override($track_Start_Date_Override = null)
     {
@@ -486,7 +486,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Rank_Reference value
-     * @return \StructType\Academic_RankObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_RankObjectType|null
      */
     public function getRank_Reference()
     {
@@ -494,17 +494,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Rank_Reference value
-     * @param \StructType\Academic_RankObjectType $rank_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_RankObjectType $rank_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setRank_Reference(\StructType\Academic_RankObjectType $rank_Reference = null)
+    public function setRank_Reference(\WorkdayWsdl\\StructType\Academic_RankObjectType $rank_Reference = null)
     {
         $this->Rank_Reference = $rank_Reference;
         return $this;
     }
     /**
      * Get Named_Professorship_Reference value
-     * @return \StructType\Named_ProfessorshipObjectType|null
+     * @return \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType|null
      */
     public function getNamed_Professorship_Reference()
     {
@@ -512,17 +512,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Named_Professorship_Reference value
-     * @param \StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setNamed_Professorship_Reference(\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null)
+    public function setNamed_Professorship_Reference(\WorkdayWsdl\\StructType\Named_ProfessorshipObjectType $named_Professorship_Reference = null)
     {
         $this->Named_Professorship_Reference = $named_Professorship_Reference;
         return $this;
     }
     /**
      * Get Appointment_Specialty_Reference value
-     * @return \StructType\Appointment_SpecialtyObjectType|null
+     * @return \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType|null
      */
     public function getAppointment_Specialty_Reference()
     {
@@ -530,10 +530,10 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Appointment_Specialty_Reference value
-     * @param \StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setAppointment_Specialty_Reference(\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
+    public function setAppointment_Specialty_Reference(\WorkdayWsdl\\StructType\Appointment_SpecialtyObjectType $appointment_Specialty_Reference = null)
     {
         $this->Appointment_Specialty_Reference = $appointment_Specialty_Reference;
         return $this;
@@ -549,7 +549,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Constructed_Title value
      * @param string $constructed_Title
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setConstructed_Title($constructed_Title = null)
     {
@@ -571,7 +571,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Appointment_Title value
      * @param string $appointment_Title
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAppointment_Title($appointment_Title = null)
     {
@@ -593,7 +593,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Adjusted_Title_Start_Date value
      * @param string $adjusted_Title_Start_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAdjusted_Title_Start_Date($adjusted_Title_Start_Date = null)
     {
@@ -615,7 +615,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Academic_Review_Date value
      * @param string $academic_Review_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setAcademic_Review_Date($academic_Review_Date = null)
     {
@@ -628,7 +628,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Related_Academic_Unit_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getRelated_Academic_Unit_Reference()
     {
@@ -636,17 +636,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Related_Academic_Unit_Reference value
-     * @param \StructType\Academic_UnitObjectType $related_Academic_Unit_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $related_Academic_Unit_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setRelated_Academic_Unit_Reference(\StructType\Academic_UnitObjectType $related_Academic_Unit_Reference = null)
+    public function setRelated_Academic_Unit_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $related_Academic_Unit_Reference = null)
     {
         $this->Related_Academic_Unit_Reference = $related_Academic_Unit_Reference;
         return $this;
     }
     /**
      * Get Tenure_Home_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getTenure_Home_Reference()
     {
@@ -654,17 +654,17 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Tenure_Home_Reference value
-     * @param \StructType\Academic_UnitObjectType $tenure_Home_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $tenure_Home_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setTenure_Home_Reference(\StructType\Academic_UnitObjectType $tenure_Home_Reference = null)
+    public function setTenure_Home_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $tenure_Home_Reference = null)
     {
         $this->Tenure_Home_Reference = $tenure_Home_Reference;
         return $this;
     }
     /**
      * Get Tenure_Status_Reference value
-     * @return \StructType\Academic_Tenure_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType|null
      */
     public function getTenure_Status_Reference()
     {
@@ -672,10 +672,10 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Tenure_Status_Reference value
-     * @param \StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
-    public function setTenure_Status_Reference(\StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference = null)
+    public function setTenure_Status_Reference(\WorkdayWsdl\\StructType\Academic_Tenure_StatusObjectType $tenure_Status_Reference = null)
     {
         $this->Tenure_Status_Reference = $tenure_Status_Reference;
         return $this;
@@ -691,7 +691,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Probationary_End_Date value
      * @param string $probationary_End_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setProbationary_End_Date($probationary_End_Date = null)
     {
@@ -713,7 +713,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Tenure_Award_Date value
      * @param string $tenure_Award_Date
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public function setTenure_Award_Date($tenure_Award_Date = null)
     {
@@ -730,7 +730,7 @@ class Academic_Appointment_Snapshot_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Academic_Appointment_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Academic_Appointment_Snapshot_DataType
      */
     public static function __set_state(array $array)
     {

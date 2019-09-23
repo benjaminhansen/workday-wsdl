@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Field_of_StudyObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Field_of_StudyReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Field_of_StudyReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Field_of_StudyReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Field_of_StudyReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Field_of_StudyObjectIDType
+     * @return \WorkdayWsdl\\StructType\Field_of_StudyObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Field_of_StudyReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Field_of_StudyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Field_of_StudyReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Field_of_StudyReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Field_of_StudyReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Field_of_StudyReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Field_of_StudyObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Field_of_StudyObjectIDType
+     * @return \WorkdayWsdl\\StructType\Field_of_StudyObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Field_of_StudyObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Field_of_StudyObjectIDType
+     * @return \WorkdayWsdl\\StructType\Field_of_StudyObjectIDType
      */
     public static function __set_state(array $array)
     {

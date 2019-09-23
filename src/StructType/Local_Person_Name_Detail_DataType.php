@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -149,7 +149,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setFirst_Name($first_Name = null)
     {
@@ -171,7 +171,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Middle_Name value
      * @param string $middle_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setMiddle_Name($middle_Name = null)
     {
@@ -193,7 +193,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @param string $last_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setLast_Name($last_Name = null)
     {
@@ -215,7 +215,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Secondary_Last_Name value
      * @param string $secondary_Last_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setSecondary_Last_Name($secondary_Last_Name = null)
     {
@@ -237,7 +237,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set First_Name value
      * @param string $first_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setFirst_Name_2($first_Name_2 = null)
     {
@@ -259,7 +259,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Middle_Name value
      * @param string $middle_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setMiddle_Name_2($middle_Name_2 = null)
     {
@@ -281,7 +281,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Last_Name value
      * @param string $last_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setLast_Name_2($last_Name_2 = null)
     {
@@ -303,7 +303,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Secondary_Last_Name value
      * @param string $secondary_Last_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setSecondary_Last_Name_2($secondary_Last_Name_2 = null)
     {
@@ -325,7 +325,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Local_Name value
      * @param string $local_Name
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setLocal_Name($local_Name = null)
     {
@@ -347,7 +347,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
     /**
      * Set Local_Script value
      * @param string $local_Script
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public function setLocal_Script($local_Script = null)
     {
@@ -364,7 +364,7 @@ class Local_Person_Name_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Local_Person_Name_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Local_Person_Name_Detail_DataType
      */
     public static function __set_state(array $array)
     {

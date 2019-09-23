@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,14 +42,14 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
      * The Work_Status_Reference
      * Meta information extracted from the WSDL
      * - documentation: Specific Work Status associated to the row
-     * @var \StructType\Work_StatusObjectType
+     * @var \WorkdayWsdl\\StructType\Work_StatusObjectType
      */
     public $Work_Status_Reference;
     /**
      * The Work_Status_Rule_Reference
      * Meta information extracted from the WSDL
      * - documentation: Evaluation designated for the row
-     * @var \StructType\Work_Status_RuleObjectType
+     * @var \WorkdayWsdl\\StructType\Work_Status_RuleObjectType
      */
     public $Work_Status_Rule_Reference;
     /**
@@ -78,12 +78,12 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
      * @param string $work_Status_Rule_Row_ID
      * @param string $order
      * @param string $work_Status_Rule_Name
-     * @param \StructType\Work_StatusObjectType $work_Status_Reference
-     * @param \StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference
+     * @param \WorkdayWsdl\\StructType\Work_StatusObjectType $work_Status_Reference
+     * @param \WorkdayWsdl\\StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference
      * @param bool $delete
      * @param bool $add_Only
      */
-    public function __construct($work_Status_Rule_Row_ID = null, $order = null, $work_Status_Rule_Name = null, \StructType\Work_StatusObjectType $work_Status_Reference = null, \StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference = null, $delete = null, $add_Only = null)
+    public function __construct($work_Status_Rule_Row_ID = null, $order = null, $work_Status_Rule_Name = null, \WorkdayWsdl\\StructType\Work_StatusObjectType $work_Status_Reference = null, \WorkdayWsdl\\StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference = null, $delete = null, $add_Only = null)
     {
         $this
             ->setWork_Status_Rule_Row_ID($work_Status_Rule_Row_ID)
@@ -105,7 +105,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     /**
      * Set Work_Status_Rule_Row_ID value
      * @param string $work_Status_Rule_Row_ID
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public function setWork_Status_Rule_Row_ID($work_Status_Rule_Row_ID = null)
     {
@@ -127,7 +127,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     /**
      * Set Order value
      * @param string $order
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public function setOrder($order = null)
     {
@@ -153,7 +153,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     /**
      * Set Work_Status_Rule_Name value
      * @param string $work_Status_Rule_Name
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public function setWork_Status_Rule_Name($work_Status_Rule_Name = null)
     {
@@ -166,7 +166,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     }
     /**
      * Get Work_Status_Reference value
-     * @return \StructType\Work_StatusObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_StatusObjectType|null
      */
     public function getWork_Status_Reference()
     {
@@ -174,17 +174,17 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     }
     /**
      * Set Work_Status_Reference value
-     * @param \StructType\Work_StatusObjectType $work_Status_Reference
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @param \WorkdayWsdl\\StructType\Work_StatusObjectType $work_Status_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
-    public function setWork_Status_Reference(\StructType\Work_StatusObjectType $work_Status_Reference = null)
+    public function setWork_Status_Reference(\WorkdayWsdl\\StructType\Work_StatusObjectType $work_Status_Reference = null)
     {
         $this->Work_Status_Reference = $work_Status_Reference;
         return $this;
     }
     /**
      * Get Work_Status_Rule_Reference value
-     * @return \StructType\Work_Status_RuleObjectType|null
+     * @return \WorkdayWsdl\\StructType\Work_Status_RuleObjectType|null
      */
     public function getWork_Status_Rule_Reference()
     {
@@ -192,10 +192,10 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     }
     /**
      * Set Work_Status_Rule_Reference value
-     * @param \StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @param \WorkdayWsdl\\StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
-    public function setWork_Status_Rule_Reference(\StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference = null)
+    public function setWork_Status_Rule_Reference(\WorkdayWsdl\\StructType\Work_Status_RuleObjectType $work_Status_Rule_Reference = null)
     {
         $this->Work_Status_Rule_Reference = $work_Status_Rule_Reference;
         return $this;
@@ -211,7 +211,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     /**
      * Set Delete value
      * @param bool $delete
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public function setDelete($delete = null)
     {
@@ -233,7 +233,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -250,7 +250,7 @@ class Work_Status_Rule_Row_SubdataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Work_Status_Rule_Row_SubdataType
+     * @return \WorkdayWsdl\\StructType\Work_Status_Rule_Row_SubdataType
      */
     public static function __set_state(array $array)
     {

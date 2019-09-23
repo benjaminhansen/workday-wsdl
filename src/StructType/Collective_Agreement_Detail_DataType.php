@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Assign Employee Collective Agreement Event
      * - minOccurs: 0
-     * @var \StructType\Unique_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Unique_IdentifierObjectType
      */
     public $Assign_Employee_Collective_Agreement_Event_Reference;
     /**
@@ -44,7 +44,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
      * - documentation: The Collective Agreement Snapshot Data.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Collective_Agreement_Snapshot_DataType[]
+     * @var \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType[]
      */
     public $Collective_Agreement_Data;
     /**
@@ -53,12 +53,12 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
      * @uses Collective_Agreement_Detail_DataType::setEffective_Date()
      * @uses Collective_Agreement_Detail_DataType::setEnd_Assignment_Date()
      * @uses Collective_Agreement_Detail_DataType::setCollective_Agreement_Data()
-     * @param \StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
      * @param string $effective_Date
      * @param string $end_Assignment_Date
-     * @param \StructType\Collective_Agreement_Snapshot_DataType[] $collective_Agreement_Data
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType[] $collective_Agreement_Data
      */
-    public function __construct(\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null, $effective_Date = null, $end_Assignment_Date = null, array $collective_Agreement_Data = array())
+    public function __construct(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null, $effective_Date = null, $end_Assignment_Date = null, array $collective_Agreement_Data = array())
     {
         $this
             ->setAssign_Employee_Collective_Agreement_Event_Reference($assign_Employee_Collective_Agreement_Event_Reference)
@@ -68,7 +68,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Assign_Employee_Collective_Agreement_Event_Reference value
-     * @return \StructType\Unique_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Unique_IdentifierObjectType|null
      */
     public function getAssign_Employee_Collective_Agreement_Event_Reference()
     {
@@ -76,10 +76,10 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     }
     /**
      * Set Assign_Employee_Collective_Agreement_Event_Reference value
-     * @param \StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
-    public function setAssign_Employee_Collective_Agreement_Event_Reference(\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null)
+    public function setAssign_Employee_Collective_Agreement_Event_Reference(\WorkdayWsdl\\StructType\Unique_IdentifierObjectType $assign_Employee_Collective_Agreement_Event_Reference = null)
     {
         $this->Assign_Employee_Collective_Agreement_Event_Reference = $assign_Employee_Collective_Agreement_Event_Reference;
         return $this;
@@ -95,7 +95,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -117,7 +117,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     /**
      * Set End_Assignment_Date value
      * @param string $end_Assignment_Date
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
     public function setEnd_Assignment_Date($end_Assignment_Date = null)
     {
@@ -130,7 +130,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     }
     /**
      * Get Collective_Agreement_Data value
-     * @return \StructType\Collective_Agreement_Snapshot_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType[]|null
      */
     public function getCollective_Agreement_Data()
     {
@@ -148,12 +148,12 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem) {
             // validation for constraint: itemType
-            if (!$collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem instanceof \StructType\Collective_Agreement_Snapshot_DataType) {
+            if (!$collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType) {
                 $invalidValues[] = is_object($collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem) ? get_class($collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem) : sprintf('%s(%s)', gettype($collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem), var_export($collective_Agreement_Detail_DataTypeCollective_Agreement_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Collective_Agreement_Data property can only contain items of type \StructType\Collective_Agreement_Snapshot_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Collective_Agreement_Data property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -161,8 +161,8 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     /**
      * Set Collective_Agreement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Snapshot_DataType[] $collective_Agreement_Data
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType[] $collective_Agreement_Data
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
     public function setCollective_Agreement_Data(array $collective_Agreement_Data = array())
     {
@@ -176,14 +176,14 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
     /**
      * Add item to Collective_Agreement_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Collective_Agreement_Snapshot_DataType $item
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @param \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType $item
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
-    public function addToCollective_Agreement_Data(\StructType\Collective_Agreement_Snapshot_DataType $item)
+    public function addToCollective_Agreement_Data(\WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Collective_Agreement_Snapshot_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Collective_Agreement_Data property can only contain items of type \StructType\Collective_Agreement_Snapshot_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Collective_Agreement_Data property can only contain items of type \WorkdayWsdl\\StructType\Collective_Agreement_Snapshot_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Collective_Agreement_Data[] = $item;
         return $this;
@@ -194,7 +194,7 @@ class Collective_Agreement_Detail_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Collective_Agreement_Detail_DataType
+     * @return \WorkdayWsdl\\StructType\Collective_Agreement_Detail_DataType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Educational_Taxonomy_CodeObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Educational_Taxonomy_CodeReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Educational_Taxonomy_CodeReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Educational_Taxonomy_CodeReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Educational_Taxonomy_CodeReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Educational_Taxonomy_CodeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Educational_Taxonomy_CodeReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Educational_Taxonomy_CodeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Educational_Taxonomy_CodeReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Educational_Taxonomy_CodeReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Educational_Taxonomy_CodeReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Educational_Taxonomy_CodeReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Educational_Taxonomy_CodeObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Educational_Taxonomy_CodeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Educational_Taxonomy_CodeObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Educational_Taxonomy_CodeObjectIDType
+     * @return \WorkdayWsdl\\StructType\Educational_Taxonomy_CodeObjectIDType
      */
     public static function __set_state(array $array)
     {

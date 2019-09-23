@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Person Reference
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
      * The Universal_Identifier_Data
-     * @var \StructType\Universal_Identifier_DataType
+     * @var \WorkdayWsdl\\StructType\Universal_Identifier_DataType
      */
     public $Universal_Identifier_Data;
     /**
@@ -45,12 +45,12 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
      * @uses Put_Universal_Identifier_RequestType::setUniversal_Identifier_Data()
      * @uses Put_Universal_Identifier_RequestType::setAdd_Only()
      * @uses Put_Universal_Identifier_RequestType::setVersion()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Universal_Identifier_DataType $universal_Identifier_Data
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_DataType $universal_Identifier_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, \StructType\Universal_Identifier_DataType $universal_Identifier_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Universal_Identifier_DataType $universal_Identifier_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -60,7 +60,7 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -68,17 +68,17 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Put_Universal_Identifier_RequestType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_RequestType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Universal_Identifier_Data value
-     * @return \StructType\Universal_Identifier_DataType|null
+     * @return \WorkdayWsdl\\StructType\Universal_Identifier_DataType|null
      */
     public function getUniversal_Identifier_Data()
     {
@@ -86,10 +86,10 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
     }
     /**
      * Set Universal_Identifier_Data value
-     * @param \StructType\Universal_Identifier_DataType $universal_Identifier_Data
-     * @return \StructType\Put_Universal_Identifier_RequestType
+     * @param \WorkdayWsdl\\StructType\Universal_Identifier_DataType $universal_Identifier_Data
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_RequestType
      */
-    public function setUniversal_Identifier_Data(\StructType\Universal_Identifier_DataType $universal_Identifier_Data = null)
+    public function setUniversal_Identifier_Data(\WorkdayWsdl\\StructType\Universal_Identifier_DataType $universal_Identifier_Data = null)
     {
         $this->Universal_Identifier_Data = $universal_Identifier_Data;
         return $this;
@@ -105,7 +105,7 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -127,7 +127,7 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_RequestType
      */
     public function setVersion($version = null)
     {
@@ -144,7 +144,7 @@ class Put_Universal_Identifier_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Universal_Identifier_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Universal_Identifier_RequestType
      */
     public static function __set_state(array $array)
     {

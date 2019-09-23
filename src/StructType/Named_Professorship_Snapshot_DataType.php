@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
      * The Gift_Reference
      * Meta information extracted from the WSDL
      * - documentation: Reference to the Gift for which the Named Professorship is being added.
-     * @var \StructType\GiftObjectType
+     * @var \WorkdayWsdl\\StructType\GiftObjectType
      */
     public $Gift_Reference;
     /**
@@ -39,7 +39,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
      * The Academic_Unit_for_Named_Professorship_Reference
      * Meta information extracted from the WSDL
      * - documentation: Academic Unit for the Named Professorship.
-     * @var \StructType\Academic_UnitObjectType
+     * @var \WorkdayWsdl\\StructType\Academic_UnitObjectType
      */
     public $Academic_Unit_for_Named_Professorship_Reference;
     /**
@@ -73,14 +73,14 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
      * @uses Named_Professorship_Snapshot_DataType::setAcademic_Unit_for_Named_Professorship_Reference()
      * @uses Named_Professorship_Snapshot_DataType::setTerm_Limits()
      * @uses Named_Professorship_Snapshot_DataType::setAppointment_Restrictions()
-     * @param \StructType\GiftObjectType $gift_Reference
+     * @param \WorkdayWsdl\\StructType\GiftObjectType $gift_Reference
      * @param string $professorship_Name
      * @param string $named_Professorship_Title
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference
      * @param float $term_Limits
      * @param string $appointment_Restrictions
      */
-    public function __construct(\StructType\GiftObjectType $gift_Reference = null, $professorship_Name = null, $named_Professorship_Title = null, \StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference = null, $term_Limits = null, $appointment_Restrictions = null)
+    public function __construct(\WorkdayWsdl\\StructType\GiftObjectType $gift_Reference = null, $professorship_Name = null, $named_Professorship_Title = null, \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference = null, $term_Limits = null, $appointment_Restrictions = null)
     {
         $this
             ->setGift_Reference($gift_Reference)
@@ -92,7 +92,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Gift_Reference value
-     * @return \StructType\GiftObjectType|null
+     * @return \WorkdayWsdl\\StructType\GiftObjectType|null
      */
     public function getGift_Reference()
     {
@@ -100,10 +100,10 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Gift_Reference value
-     * @param \StructType\GiftObjectType $gift_Reference
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\GiftObjectType $gift_Reference
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
-    public function setGift_Reference(\StructType\GiftObjectType $gift_Reference = null)
+    public function setGift_Reference(\WorkdayWsdl\\StructType\GiftObjectType $gift_Reference = null)
     {
         $this->Gift_Reference = $gift_Reference;
         return $this;
@@ -119,7 +119,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Professorship_Name value
      * @param string $professorship_Name
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public function setProfessorship_Name($professorship_Name = null)
     {
@@ -141,7 +141,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Named_Professorship_Title value
      * @param string $named_Professorship_Title
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public function setNamed_Professorship_Title($named_Professorship_Title = null)
     {
@@ -154,7 +154,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Get Academic_Unit_for_Named_Professorship_Reference value
-     * @return \StructType\Academic_UnitObjectType|null
+     * @return \WorkdayWsdl\\StructType\Academic_UnitObjectType|null
      */
     public function getAcademic_Unit_for_Named_Professorship_Reference()
     {
@@ -162,10 +162,10 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     }
     /**
      * Set Academic_Unit_for_Named_Professorship_Reference value
-     * @param \StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @param \WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
-    public function setAcademic_Unit_for_Named_Professorship_Reference(\StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference = null)
+    public function setAcademic_Unit_for_Named_Professorship_Reference(\WorkdayWsdl\\StructType\Academic_UnitObjectType $academic_Unit_for_Named_Professorship_Reference = null)
     {
         $this->Academic_Unit_for_Named_Professorship_Reference = $academic_Unit_for_Named_Professorship_Reference;
         return $this;
@@ -181,7 +181,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Term_Limits value
      * @param float $term_Limits
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public function setTerm_Limits($term_Limits = null)
     {
@@ -215,7 +215,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
     /**
      * Set Appointment_Restrictions value
      * @param string $appointment_Restrictions
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public function setAppointment_Restrictions($appointment_Restrictions = null)
     {
@@ -232,7 +232,7 @@ class Named_Professorship_Snapshot_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Named_Professorship_Snapshot_DataType
+     * @return \WorkdayWsdl\\StructType\Named_Professorship_Snapshot_DataType
      */
     public static function __set_state(array $array)
     {

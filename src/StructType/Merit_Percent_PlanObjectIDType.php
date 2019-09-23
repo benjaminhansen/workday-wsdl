@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class Merit_Percent_PlanObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\Merit_Percent_PlanReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\Merit_Percent_PlanReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\Merit_Percent_PlanReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\Merit_Percent_PlanReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Merit_Percent_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Merit_Percent_PlanReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Merit_Percent_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Merit_Percent_PlanReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\Merit_Percent_PlanReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\Merit_Percent_PlanReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\Merit_Percent_PlanReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class Merit_Percent_PlanObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Merit_Percent_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class Merit_Percent_PlanObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Merit_Percent_PlanObjectIDType
+     * @return \WorkdayWsdl\\StructType\Merit_Percent_PlanObjectIDType
      */
     public static function __set_state(array $array)
     {

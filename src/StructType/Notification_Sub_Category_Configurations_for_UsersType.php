@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,13 +19,13 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
      * - documentation: Notification Sub Type configuration(includes selected notification channels) for each Notification Sub Type.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Notification_Sub_Type_ConfigurationType[]
+     * @var \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType[]
      */
     public $Notification_Sub_Type_Configuration;
     /**
      * Constructor method for Notification_Sub_Category_Configurations_for_UsersType
      * @uses Notification_Sub_Category_Configurations_for_UsersType::setNotification_Sub_Type_Configuration()
-     * @param \StructType\Notification_Sub_Type_ConfigurationType[] $notification_Sub_Type_Configuration
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType[] $notification_Sub_Type_Configuration
      */
     public function __construct(array $notification_Sub_Type_Configuration = array())
     {
@@ -34,7 +34,7 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
     }
     /**
      * Get Notification_Sub_Type_Configuration value
-     * @return \StructType\Notification_Sub_Type_ConfigurationType[]|null
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType[]|null
      */
     public function getNotification_Sub_Type_Configuration()
     {
@@ -52,12 +52,12 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
         $invalidValues = [];
         foreach ($values as $notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem) {
             // validation for constraint: itemType
-            if (!$notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem instanceof \StructType\Notification_Sub_Type_ConfigurationType) {
+            if (!$notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem instanceof \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType) {
                 $invalidValues[] = is_object($notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem) ? get_class($notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem) : sprintf('%s(%s)', gettype($notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem), var_export($notification_Sub_Category_Configurations_for_UsersTypeNotification_Sub_Type_ConfigurationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Notification_Sub_Type_Configuration property can only contain items of type \StructType\Notification_Sub_Type_ConfigurationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Notification_Sub_Type_Configuration property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -65,8 +65,8 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
     /**
      * Set Notification_Sub_Type_Configuration value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Type_ConfigurationType[] $notification_Sub_Type_Configuration
-     * @return \StructType\Notification_Sub_Category_Configurations_for_UsersType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType[] $notification_Sub_Type_Configuration
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType
      */
     public function setNotification_Sub_Type_Configuration(array $notification_Sub_Type_Configuration = array())
     {
@@ -80,14 +80,14 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
     /**
      * Add item to Notification_Sub_Type_Configuration value
      * @throws \InvalidArgumentException
-     * @param \StructType\Notification_Sub_Type_ConfigurationType $item
-     * @return \StructType\Notification_Sub_Category_Configurations_for_UsersType
+     * @param \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType $item
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType
      */
-    public function addToNotification_Sub_Type_Configuration(\StructType\Notification_Sub_Type_ConfigurationType $item)
+    public function addToNotification_Sub_Type_Configuration(\WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Notification_Sub_Type_ConfigurationType) {
-            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configuration property can only contain items of type \StructType\Notification_Sub_Type_ConfigurationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType) {
+            throw new \InvalidArgumentException(sprintf('The Notification_Sub_Type_Configuration property can only contain items of type \WorkdayWsdl\\StructType\Notification_Sub_Type_ConfigurationType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Notification_Sub_Type_Configuration[] = $item;
         return $this;
@@ -98,7 +98,7 @@ class Notification_Sub_Category_Configurations_for_UsersType extends AbstractStr
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Notification_Sub_Category_Configurations_for_UsersType
+     * @return \WorkdayWsdl\\StructType\Notification_Sub_Category_Configurations_for_UsersType
      */
     public static function __set_state(array $array)
     {

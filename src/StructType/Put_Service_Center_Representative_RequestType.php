@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Reference to an existing Service Center Representative for update purposes only.
      * - minOccurs: 0
-     * @var \StructType\Service_Center_RepresentativeObjectType
+     * @var \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType
      */
     public $Service_Center_Representative_Reference;
     /**
      * The Service_Center_Representative_Data
      * Meta information extracted from the WSDL
      * - documentation: Service Center Representative Data
-     * @var \StructType\Service_Center_Representative_DataType
+     * @var \WorkdayWsdl\\StructType\Service_Center_Representative_DataType
      */
     public $Service_Center_Representative_Data;
     /**
@@ -47,12 +47,12 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
      * @uses Put_Service_Center_Representative_RequestType::setService_Center_Representative_Data()
      * @uses Put_Service_Center_Representative_RequestType::setAdd_Only()
      * @uses Put_Service_Center_Representative_RequestType::setVersion()
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
-     * @param \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
      * @param bool $add_Only
      * @param string $version
      */
-    public function __construct(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null, \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null, $add_Only = null, $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null, \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null, $add_Only = null, $version = null)
     {
         $this
             ->setService_Center_Representative_Reference($service_Center_Representative_Reference)
@@ -62,7 +62,7 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
     }
     /**
      * Get Service_Center_Representative_Reference value
-     * @return \StructType\Service_Center_RepresentativeObjectType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType|null
      */
     public function getService_Center_Representative_Reference()
     {
@@ -70,17 +70,17 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
     }
     /**
      * Set Service_Center_Representative_Reference value
-     * @param \StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
-     * @return \StructType\Put_Service_Center_Representative_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_RequestType
      */
-    public function setService_Center_Representative_Reference(\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null)
+    public function setService_Center_Representative_Reference(\WorkdayWsdl\\StructType\Service_Center_RepresentativeObjectType $service_Center_Representative_Reference = null)
     {
         $this->Service_Center_Representative_Reference = $service_Center_Representative_Reference;
         return $this;
     }
     /**
      * Get Service_Center_Representative_Data value
-     * @return \StructType\Service_Center_Representative_DataType|null
+     * @return \WorkdayWsdl\\StructType\Service_Center_Representative_DataType|null
      */
     public function getService_Center_Representative_Data()
     {
@@ -88,10 +88,10 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
     }
     /**
      * Set Service_Center_Representative_Data value
-     * @param \StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
-     * @return \StructType\Put_Service_Center_Representative_RequestType
+     * @param \WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_RequestType
      */
-    public function setService_Center_Representative_Data(\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
+    public function setService_Center_Representative_Data(\WorkdayWsdl\\StructType\Service_Center_Representative_DataType $service_Center_Representative_Data = null)
     {
         $this->Service_Center_Representative_Data = $service_Center_Representative_Data;
         return $this;
@@ -107,7 +107,7 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
     /**
      * Set Add_Only value
      * @param bool $add_Only
-     * @return \StructType\Put_Service_Center_Representative_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_RequestType
      */
     public function setAdd_Only($add_Only = null)
     {
@@ -129,7 +129,7 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Put_Service_Center_Representative_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_RequestType
      */
     public function setVersion($version = null)
     {
@@ -146,7 +146,7 @@ class Put_Service_Center_Representative_RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Put_Service_Center_Representative_RequestType
+     * @return \WorkdayWsdl\\StructType\Put_Service_Center_Representative_RequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
      * - documentation: A reference to the ID of the person through one of its active person types, such as worker, student, affiliate, external committee member, and so on. The ID consists of a type attribute, which should be set to one of either
      * "Employee_ID", "Contingent_Worker_ID", "Student_ID", etc, and a value attribute, such as "04345".
      * - minOccurs: 0
-     * @var \StructType\RoleObjectType
+     * @var \WorkdayWsdl\\StructType\RoleObjectType
      */
     public $Person_Reference;
     /**
@@ -26,7 +26,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Universal ID Reference for the Person that the Legal Name will be applied to.
      * - minOccurs: 0
-     * @var \StructType\Universal_IdentifierObjectType
+     * @var \WorkdayWsdl\\StructType\Universal_IdentifierObjectType
      */
     public $Universal_ID_Reference;
     /**
@@ -40,7 +40,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     public $Effective_Date;
     /**
      * The Name_Data
-     * @var \StructType\Person_Name_Detail_DataType
+     * @var \WorkdayWsdl\\StructType\Person_Name_Detail_DataType
      */
     public $Name_Data;
     /**
@@ -49,12 +49,12 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
      * @uses Change_Legal_Name_Business_Process_DataType::setUniversal_ID_Reference()
      * @uses Change_Legal_Name_Business_Process_DataType::setEffective_Date()
      * @uses Change_Legal_Name_Business_Process_DataType::setName_Data()
-     * @param \StructType\RoleObjectType $person_Reference
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
      * @param string $effective_Date
-     * @param \StructType\Person_Name_Detail_DataType $name_Data
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Data
      */
-    public function __construct(\StructType\RoleObjectType $person_Reference = null, \StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, $effective_Date = null, \StructType\Person_Name_Detail_DataType $name_Data = null)
+    public function __construct(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null, \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null, $effective_Date = null, \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Data = null)
     {
         $this
             ->setPerson_Reference($person_Reference)
@@ -64,7 +64,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Get Person_Reference value
-     * @return \StructType\RoleObjectType|null
+     * @return \WorkdayWsdl\\StructType\RoleObjectType|null
      */
     public function getPerson_Reference()
     {
@@ -72,17 +72,17 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Person_Reference value
-     * @param \StructType\RoleObjectType $person_Reference
-     * @return \StructType\Change_Legal_Name_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\RoleObjectType $person_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_Business_Process_DataType
      */
-    public function setPerson_Reference(\StructType\RoleObjectType $person_Reference = null)
+    public function setPerson_Reference(\WorkdayWsdl\\StructType\RoleObjectType $person_Reference = null)
     {
         $this->Person_Reference = $person_Reference;
         return $this;
     }
     /**
      * Get Universal_ID_Reference value
-     * @return \StructType\Universal_IdentifierObjectType|null
+     * @return \WorkdayWsdl\\StructType\Universal_IdentifierObjectType|null
      */
     public function getUniversal_ID_Reference()
     {
@@ -90,10 +90,10 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Universal_ID_Reference value
-     * @param \StructType\Universal_IdentifierObjectType $universal_ID_Reference
-     * @return \StructType\Change_Legal_Name_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_Business_Process_DataType
      */
-    public function setUniversal_ID_Reference(\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
+    public function setUniversal_ID_Reference(\WorkdayWsdl\\StructType\Universal_IdentifierObjectType $universal_ID_Reference = null)
     {
         $this->Universal_ID_Reference = $universal_ID_Reference;
         return $this;
@@ -109,7 +109,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     /**
      * Set Effective_Date value
      * @param string $effective_Date
-     * @return \StructType\Change_Legal_Name_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_Business_Process_DataType
      */
     public function setEffective_Date($effective_Date = null)
     {
@@ -122,7 +122,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Get Name_Data value
-     * @return \StructType\Person_Name_Detail_DataType|null
+     * @return \WorkdayWsdl\\StructType\Person_Name_Detail_DataType|null
      */
     public function getName_Data()
     {
@@ -130,10 +130,10 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
     }
     /**
      * Set Name_Data value
-     * @param \StructType\Person_Name_Detail_DataType $name_Data
-     * @return \StructType\Change_Legal_Name_Business_Process_DataType
+     * @param \WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Data
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_Business_Process_DataType
      */
-    public function setName_Data(\StructType\Person_Name_Detail_DataType $name_Data = null)
+    public function setName_Data(\WorkdayWsdl\\StructType\Person_Name_Detail_DataType $name_Data = null)
     {
         $this->Name_Data = $name_Data;
         return $this;
@@ -144,7 +144,7 @@ class Change_Legal_Name_Business_Process_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Change_Legal_Name_Business_Process_DataType
+     * @return \WorkdayWsdl\\StructType\Change_Legal_Name_Business_Process_DataType
      */
     public static function __set_state(array $array)
     {

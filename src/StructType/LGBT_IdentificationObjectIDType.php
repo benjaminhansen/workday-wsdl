@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,17 +48,17 @@ class LGBT_IdentificationObjectIDType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\LGBT_IdentificationReferenceEnumeration::valueIsValid()
-     * @uses \EnumType\LGBT_IdentificationReferenceEnumeration::getValidValues()
+     * @uses \WorkdayWsdl\\EnumType\LGBT_IdentificationReferenceEnumeration::valueIsValid()
+     * @uses \WorkdayWsdl\\EnumType\LGBT_IdentificationReferenceEnumeration::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\LGBT_IdentificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\LGBT_IdentificationReferenceEnumeration::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\LGBT_IdentificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\LGBT_IdentificationReferenceEnumeration::getValidValues())), __LINE__);
+        if (!\WorkdayWsdl\\EnumType\LGBT_IdentificationReferenceEnumeration::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \WorkdayWsdl\\EnumType\LGBT_IdentificationReferenceEnumeration', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \WorkdayWsdl\\EnumType\LGBT_IdentificationReferenceEnumeration::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -74,7 +74,7 @@ class LGBT_IdentificationObjectIDType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\LGBT_IdentificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType
      */
     public function set_($_ = null)
     {
@@ -91,7 +91,7 @@ class LGBT_IdentificationObjectIDType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LGBT_IdentificationObjectIDType
+     * @return \WorkdayWsdl\\StructType\LGBT_IdentificationObjectIDType
      */
     public static function __set_state(array $array)
     {

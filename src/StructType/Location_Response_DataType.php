@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class Location_Response_DataType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Location_ResponseType[]
+     * @var \WorkdayWsdl\\StructType\Location_ResponseType[]
      */
     public $Location;
     /**
      * Constructor method for Location_Response_DataType
      * @uses Location_Response_DataType::setLocation()
-     * @param \StructType\Location_ResponseType[] $location
+     * @param \WorkdayWsdl\\StructType\Location_ResponseType[] $location
      */
     public function __construct(array $location = array())
     {
@@ -32,7 +32,7 @@ class Location_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Location value
-     * @return \StructType\Location_ResponseType[]|null
+     * @return \WorkdayWsdl\\StructType\Location_ResponseType[]|null
      */
     public function getLocation()
     {
@@ -50,12 +50,12 @@ class Location_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $location_Response_DataTypeLocationItem) {
             // validation for constraint: itemType
-            if (!$location_Response_DataTypeLocationItem instanceof \StructType\Location_ResponseType) {
+            if (!$location_Response_DataTypeLocationItem instanceof \WorkdayWsdl\\StructType\Location_ResponseType) {
                 $invalidValues[] = is_object($location_Response_DataTypeLocationItem) ? get_class($location_Response_DataTypeLocationItem) : sprintf('%s(%s)', gettype($location_Response_DataTypeLocationItem), var_export($location_Response_DataTypeLocationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location property can only contain items of type \StructType\Location_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location property can only contain items of type \WorkdayWsdl\\StructType\Location_ResponseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -63,8 +63,8 @@ class Location_Response_DataType extends AbstractStructBase
     /**
      * Set Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_ResponseType[] $location
-     * @return \StructType\Location_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ResponseType[] $location
+     * @return \WorkdayWsdl\\StructType\Location_Response_DataType
      */
     public function setLocation(array $location = array())
     {
@@ -78,14 +78,14 @@ class Location_Response_DataType extends AbstractStructBase
     /**
      * Add item to Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location_ResponseType $item
-     * @return \StructType\Location_Response_DataType
+     * @param \WorkdayWsdl\\StructType\Location_ResponseType $item
+     * @return \WorkdayWsdl\\StructType\Location_Response_DataType
      */
-    public function addToLocation(\StructType\Location_ResponseType $item)
+    public function addToLocation(\WorkdayWsdl\\StructType\Location_ResponseType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location_ResponseType) {
-            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of type \StructType\Location_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Location_ResponseType) {
+            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of type \WorkdayWsdl\\StructType\Location_ResponseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location[] = $item;
         return $this;
@@ -96,7 +96,7 @@ class Location_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Location_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Location_Response_DataType
      */
     public static function __set_state(array $array)
     {

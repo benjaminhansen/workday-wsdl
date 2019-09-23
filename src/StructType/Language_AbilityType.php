@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,13 +16,13 @@ class Language_AbilityType extends AbstractStructBase
      * The Language_Ability_Data
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Language_Ability_DataType[]
+     * @var \WorkdayWsdl\\StructType\Language_Ability_DataType[]
      */
     public $Language_Ability_Data;
     /**
      * Constructor method for Language_AbilityType
      * @uses Language_AbilityType::setLanguage_Ability_Data()
-     * @param \StructType\Language_Ability_DataType[] $language_Ability_Data
+     * @param \WorkdayWsdl\\StructType\Language_Ability_DataType[] $language_Ability_Data
      */
     public function __construct(array $language_Ability_Data = array())
     {
@@ -31,7 +31,7 @@ class Language_AbilityType extends AbstractStructBase
     }
     /**
      * Get Language_Ability_Data value
-     * @return \StructType\Language_Ability_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Language_Ability_DataType[]|null
      */
     public function getLanguage_Ability_Data()
     {
@@ -49,12 +49,12 @@ class Language_AbilityType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $language_AbilityTypeLanguage_Ability_DataItem) {
             // validation for constraint: itemType
-            if (!$language_AbilityTypeLanguage_Ability_DataItem instanceof \StructType\Language_Ability_DataType) {
+            if (!$language_AbilityTypeLanguage_Ability_DataItem instanceof \WorkdayWsdl\\StructType\Language_Ability_DataType) {
                 $invalidValues[] = is_object($language_AbilityTypeLanguage_Ability_DataItem) ? get_class($language_AbilityTypeLanguage_Ability_DataItem) : sprintf('%s(%s)', gettype($language_AbilityTypeLanguage_Ability_DataItem), var_export($language_AbilityTypeLanguage_Ability_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Language_Ability_Data property can only contain items of type \StructType\Language_Ability_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Language_Ability_Data property can only contain items of type \WorkdayWsdl\\StructType\Language_Ability_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -62,8 +62,8 @@ class Language_AbilityType extends AbstractStructBase
     /**
      * Set Language_Ability_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Ability_DataType[] $language_Ability_Data
-     * @return \StructType\Language_AbilityType
+     * @param \WorkdayWsdl\\StructType\Language_Ability_DataType[] $language_Ability_Data
+     * @return \WorkdayWsdl\\StructType\Language_AbilityType
      */
     public function setLanguage_Ability_Data(array $language_Ability_Data = array())
     {
@@ -77,14 +77,14 @@ class Language_AbilityType extends AbstractStructBase
     /**
      * Add item to Language_Ability_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Language_Ability_DataType $item
-     * @return \StructType\Language_AbilityType
+     * @param \WorkdayWsdl\\StructType\Language_Ability_DataType $item
+     * @return \WorkdayWsdl\\StructType\Language_AbilityType
      */
-    public function addToLanguage_Ability_Data(\StructType\Language_Ability_DataType $item)
+    public function addToLanguage_Ability_Data(\WorkdayWsdl\\StructType\Language_Ability_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Language_Ability_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Language_Ability_Data property can only contain items of type \StructType\Language_Ability_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Language_Ability_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Language_Ability_Data property can only contain items of type \WorkdayWsdl\\StructType\Language_Ability_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Language_Ability_Data[] = $item;
         return $this;
@@ -95,7 +95,7 @@ class Language_AbilityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Language_AbilityType
+     * @return \WorkdayWsdl\\StructType\Language_AbilityType
      */
     public static function __set_state(array $array)
     {

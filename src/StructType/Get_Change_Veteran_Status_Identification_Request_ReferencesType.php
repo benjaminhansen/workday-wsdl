@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,14 +19,14 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
      * - documentation: A reference to the ID of the worker. The ID consists of a type attribute, which should be set to "Employee_ID" or "Contingent_Worker_ID", and a value attribute, such as "04345". If Skip Non Existing Instances value is set to true.
      * When a reference id value that does not meet the entry date criteria is passed, the non existent reference id will be ignored.
      * - maxOccurs: unbounded
-     * @var \StructType\WorkerObjectType[]
+     * @var \WorkdayWsdl\\StructType\WorkerObjectType[]
      */
     public $Worker_Reference;
     /**
      * Constructor method for
      * Get_Change_Veteran_Status_Identification_Request_ReferencesType
      * @uses Get_Change_Veteran_Status_Identification_Request_ReferencesType::setWorker_Reference()
-     * @param \StructType\WorkerObjectType[] $worker_Reference
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
      */
     public function __construct(array $worker_Reference = array())
     {
@@ -35,7 +35,7 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
     }
     /**
      * Get Worker_Reference value
-     * @return \StructType\WorkerObjectType[]|null
+     * @return \WorkdayWsdl\\StructType\WorkerObjectType[]|null
      */
     public function getWorker_Reference()
     {
@@ -53,12 +53,12 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
         $invalidValues = [];
         foreach ($values as $get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem) {
             // validation for constraint: itemType
-            if (!$get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem instanceof \StructType\WorkerObjectType) {
+            if (!$get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
                 $invalidValues[] = is_object($get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem) ? get_class($get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem) : sprintf('%s(%s)', gettype($get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem), var_export($get_Change_Veteran_Status_Identification_Request_ReferencesTypeWorker_ReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -66,8 +66,8 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
     /**
      * Set Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType[] $worker_Reference
-     * @return \StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType[] $worker_Reference
+     * @return \WorkdayWsdl\\StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
      */
     public function setWorker_Reference(array $worker_Reference = array())
     {
@@ -81,14 +81,14 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
     /**
      * Add item to Worker_Reference value
      * @throws \InvalidArgumentException
-     * @param \StructType\WorkerObjectType $item
-     * @return \StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
+     * @param \WorkdayWsdl\\StructType\WorkerObjectType $item
+     * @return \WorkdayWsdl\\StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
      */
-    public function addToWorker_Reference(\StructType\WorkerObjectType $item)
+    public function addToWorker_Reference(\WorkdayWsdl\\StructType\WorkerObjectType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\WorkerObjectType) {
-            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\WorkerObjectType) {
+            throw new \InvalidArgumentException(sprintf('The Worker_Reference property can only contain items of type \WorkdayWsdl\\StructType\WorkerObjectType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Worker_Reference[] = $item;
         return $this;
@@ -99,7 +99,7 @@ class Get_Change_Veteran_Status_Identification_Request_ReferencesType extends Ab
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
+     * @return \WorkdayWsdl\\StructType\Get_Change_Veteran_Status_Identification_Request_ReferencesType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,7 +41,7 @@ class Employee_Type_ReferenceType extends AbstractStructBase
     /**
      * Set Employee_Type_Description value
      * @param string $employee_Type_Description
-     * @return \StructType\Employee_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Employee_Type_ReferenceType
      */
     public function setEmployee_Type_Description($employee_Type_Description = null)
     {
@@ -58,7 +58,7 @@ class Employee_Type_ReferenceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Type_ReferenceType
+     * @return \WorkdayWsdl\\StructType\Employee_Type_ReferenceType
      */
     public static function __set_state(array $array)
     {

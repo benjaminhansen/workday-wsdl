@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,13 +18,13 @@ class Pronoun_Response_DataType extends AbstractStructBase
      * - documentation: The pronoun for a worker.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\PronounType[]
+     * @var \WorkdayWsdl\\StructType\PronounType[]
      */
     public $Pronoun;
     /**
      * Constructor method for Pronoun_Response_DataType
      * @uses Pronoun_Response_DataType::setPronoun()
-     * @param \StructType\PronounType[] $pronoun
+     * @param \WorkdayWsdl\\StructType\PronounType[] $pronoun
      */
     public function __construct(array $pronoun = array())
     {
@@ -33,7 +33,7 @@ class Pronoun_Response_DataType extends AbstractStructBase
     }
     /**
      * Get Pronoun value
-     * @return \StructType\PronounType[]|null
+     * @return \WorkdayWsdl\\StructType\PronounType[]|null
      */
     public function getPronoun()
     {
@@ -51,12 +51,12 @@ class Pronoun_Response_DataType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pronoun_Response_DataTypePronounItem) {
             // validation for constraint: itemType
-            if (!$pronoun_Response_DataTypePronounItem instanceof \StructType\PronounType) {
+            if (!$pronoun_Response_DataTypePronounItem instanceof \WorkdayWsdl\\StructType\PronounType) {
                 $invalidValues[] = is_object($pronoun_Response_DataTypePronounItem) ? get_class($pronoun_Response_DataTypePronounItem) : sprintf('%s(%s)', gettype($pronoun_Response_DataTypePronounItem), var_export($pronoun_Response_DataTypePronounItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Pronoun property can only contain items of type \StructType\PronounType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Pronoun property can only contain items of type \WorkdayWsdl\\StructType\PronounType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -64,8 +64,8 @@ class Pronoun_Response_DataType extends AbstractStructBase
     /**
      * Set Pronoun value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounType[] $pronoun
-     * @return \StructType\Pronoun_Response_DataType
+     * @param \WorkdayWsdl\\StructType\PronounType[] $pronoun
+     * @return \WorkdayWsdl\\StructType\Pronoun_Response_DataType
      */
     public function setPronoun(array $pronoun = array())
     {
@@ -79,14 +79,14 @@ class Pronoun_Response_DataType extends AbstractStructBase
     /**
      * Add item to Pronoun value
      * @throws \InvalidArgumentException
-     * @param \StructType\PronounType $item
-     * @return \StructType\Pronoun_Response_DataType
+     * @param \WorkdayWsdl\\StructType\PronounType $item
+     * @return \WorkdayWsdl\\StructType\Pronoun_Response_DataType
      */
-    public function addToPronoun(\StructType\PronounType $item)
+    public function addToPronoun(\WorkdayWsdl\\StructType\PronounType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PronounType) {
-            throw new \InvalidArgumentException(sprintf('The Pronoun property can only contain items of type \StructType\PronounType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\PronounType) {
+            throw new \InvalidArgumentException(sprintf('The Pronoun property can only contain items of type \WorkdayWsdl\\StructType\PronounType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Pronoun[] = $item;
         return $this;
@@ -97,7 +97,7 @@ class Pronoun_Response_DataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Pronoun_Response_DataType
+     * @return \WorkdayWsdl\\StructType\Pronoun_Response_DataType
      */
     public static function __set_state(array $array)
     {

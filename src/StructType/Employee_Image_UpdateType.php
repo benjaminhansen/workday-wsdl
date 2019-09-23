@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace WorkdayWsdl\\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * - choice: Employee_Reference | Employee_External_ID_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\EmployeeObjectType
+     * @var \WorkdayWsdl\\StructType\EmployeeObjectType
      */
     public $Employee_Reference;
     /**
@@ -28,14 +28,14 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * - choice: Employee_Reference | Employee_External_ID_Reference
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
-     * @var \StructType\Employee_ReferenceType
+     * @var \WorkdayWsdl\\StructType\Employee_ReferenceType
      */
     public $Employee_External_ID_Reference;
     /**
      * The Employee_Image_Data
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Employee_Image_DataType[]
+     * @var \WorkdayWsdl\\StructType\Employee_Image_DataType[]
      */
     public $Employee_Image_Data;
     /**
@@ -51,12 +51,12 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * @uses Employee_Image_UpdateType::setEmployee_External_ID_Reference()
      * @uses Employee_Image_UpdateType::setEmployee_Image_Data()
      * @uses Employee_Image_UpdateType::setVersion()
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @param \StructType\Employee_ReferenceType $employee_External_ID_Reference
-     * @param \StructType\Employee_Image_DataType[] $employee_Image_Data
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_External_ID_Reference
+     * @param \WorkdayWsdl\\StructType\Employee_Image_DataType[] $employee_Image_Data
      * @param string $version
      */
-    public function __construct(\StructType\EmployeeObjectType $employee_Reference = null, \StructType\Employee_ReferenceType $employee_External_ID_Reference = null, array $employee_Image_Data = array(), $version = null)
+    public function __construct(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null, \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_External_ID_Reference = null, array $employee_Image_Data = array(), $version = null)
     {
         $this
             ->setEmployee_Reference($employee_Reference)
@@ -66,7 +66,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
     }
     /**
      * Get Employee_Reference value
-     * @return \StructType\EmployeeObjectType|null
+     * @return \WorkdayWsdl\\StructType\EmployeeObjectType|null
      */
     public function getEmployee_Reference()
     {
@@ -105,10 +105,10 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\EmployeeObjectType $employee_Reference
-     * @return \StructType\Employee_Image_UpdateType
+     * @param \WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
-    public function setEmployee_Reference(\StructType\EmployeeObjectType $employee_Reference = null)
+    public function setEmployee_Reference(\WorkdayWsdl\\StructType\EmployeeObjectType $employee_Reference = null)
     {
         // validation for constraint: choice(Employee_Reference, Employee_External_ID_Reference)
         if ('' !== ($employee_ReferenceChoiceErrorMessage = self::validateEmployee_ReferenceForChoiceConstraintsFromSetEmployee_Reference($employee_Reference))) {
@@ -123,7 +123,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
     }
     /**
      * Get Employee_External_ID_Reference value
-     * @return \StructType\Employee_ReferenceType|null
+     * @return \WorkdayWsdl\\StructType\Employee_ReferenceType|null
      */
     public function getEmployee_External_ID_Reference()
     {
@@ -162,10 +162,10 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_ReferenceType $employee_External_ID_Reference
-     * @return \StructType\Employee_Image_UpdateType
+     * @param \WorkdayWsdl\\StructType\Employee_ReferenceType $employee_External_ID_Reference
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
-    public function setEmployee_External_ID_Reference(\StructType\Employee_ReferenceType $employee_External_ID_Reference = null)
+    public function setEmployee_External_ID_Reference(\WorkdayWsdl\\StructType\Employee_ReferenceType $employee_External_ID_Reference = null)
     {
         // validation for constraint: choice(Employee_Reference, Employee_External_ID_Reference)
         if ('' !== ($employee_External_ID_ReferenceChoiceErrorMessage = self::validateEmployee_External_ID_ReferenceForChoiceConstraintsFromSetEmployee_External_ID_Reference($employee_External_ID_Reference))) {
@@ -180,7 +180,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
     }
     /**
      * Get Employee_Image_Data value
-     * @return \StructType\Employee_Image_DataType[]|null
+     * @return \WorkdayWsdl\\StructType\Employee_Image_DataType[]|null
      */
     public function getEmployee_Image_Data()
     {
@@ -198,12 +198,12 @@ class Employee_Image_UpdateType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $employee_Image_UpdateTypeEmployee_Image_DataItem) {
             // validation for constraint: itemType
-            if (!$employee_Image_UpdateTypeEmployee_Image_DataItem instanceof \StructType\Employee_Image_DataType) {
+            if (!$employee_Image_UpdateTypeEmployee_Image_DataItem instanceof \WorkdayWsdl\\StructType\Employee_Image_DataType) {
                 $invalidValues[] = is_object($employee_Image_UpdateTypeEmployee_Image_DataItem) ? get_class($employee_Image_UpdateTypeEmployee_Image_DataItem) : sprintf('%s(%s)', gettype($employee_Image_UpdateTypeEmployee_Image_DataItem), var_export($employee_Image_UpdateTypeEmployee_Image_DataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Employee_Image_Data property can only contain items of type \StructType\Employee_Image_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Employee_Image_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Image_DataType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -211,8 +211,8 @@ class Employee_Image_UpdateType extends AbstractStructBase
     /**
      * Set Employee_Image_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Image_DataType[] $employee_Image_Data
-     * @return \StructType\Employee_Image_UpdateType
+     * @param \WorkdayWsdl\\StructType\Employee_Image_DataType[] $employee_Image_Data
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
     public function setEmployee_Image_Data(array $employee_Image_Data = array())
     {
@@ -226,14 +226,14 @@ class Employee_Image_UpdateType extends AbstractStructBase
     /**
      * Add item to Employee_Image_Data value
      * @throws \InvalidArgumentException
-     * @param \StructType\Employee_Image_DataType $item
-     * @return \StructType\Employee_Image_UpdateType
+     * @param \WorkdayWsdl\\StructType\Employee_Image_DataType $item
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
-    public function addToEmployee_Image_Data(\StructType\Employee_Image_DataType $item)
+    public function addToEmployee_Image_Data(\WorkdayWsdl\\StructType\Employee_Image_DataType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Employee_Image_DataType) {
-            throw new \InvalidArgumentException(sprintf('The Employee_Image_Data property can only contain items of type \StructType\Employee_Image_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \WorkdayWsdl\\StructType\Employee_Image_DataType) {
+            throw new \InvalidArgumentException(sprintf('The Employee_Image_Data property can only contain items of type \WorkdayWsdl\\StructType\Employee_Image_DataType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Employee_Image_Data[] = $item;
         return $this;
@@ -249,7 +249,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\Employee_Image_UpdateType
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
     public function setVersion($version = null)
     {
@@ -266,7 +266,7 @@ class Employee_Image_UpdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Employee_Image_UpdateType
+     * @return \WorkdayWsdl\\StructType\Employee_Image_UpdateType
      */
     public static function __set_state(array $array)
     {
